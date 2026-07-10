@@ -96,7 +96,7 @@ Push is done with a **dedicated PAT**, not SSH:
 
 - Token: `GITHUB_GARDEN_TOKEN` in `~/.config/.keys` (never commit it).
 - Repo: `taxkcd/garden` → published at `taxkcd.github.io/garden`.
-- Use the helper: `atuin scripts run garden-deploy` (build-check + commit + push), or:
+- Deploy: `cmd=deploy atuin scripts run garden` (build-check + commit + push), or manually:
   ```bash
   cd ~/dev/myrepos/garden
   set -a; . ~/.config/.keys; set +a
@@ -105,12 +105,33 @@ Push is done with a **dedicated PAT**, not SSH:
   ```
 - `baseUrl` in `src/quartz.config.ts` is `taxkcd.github.io/garden`.
 
+## The `garden` control script (do everything with one flag-driven script)
+
+Run from ANY directory. Full manual: `atuin scripts get garden`.
+
+```
+atuin scripts run garden                          # guide + live status (default)
+cmd=ls    atuin scripts run garden                # sections (folders) + URLs
+cmd=tree  atuin scripts run garden                # folders + pages with URLs
+cmd=find  q=stripe atuin scripts run garden       # search folders/files/titles
+cmd=new   folder=work/nexa title="Nexa Setup" tags="nextjs,setup" from=./doc.md deploy=1 \
+          atuin scripts run garden                # create a doc (folder=URL), optionally deploy
+cmd=capture text="stripe needs raw body" atuin scripts run garden   # scrap -> inbox
+cmd=deploy atuin scripts run garden               # build-check + commit + push
+cmd=url   page=work/nexa/nexa-setup.md atuin scripts run garden      # published URL
+```
+
+`new` creates `content/<folder>/<slug>.md`; the folder is created if missing (reused if it
+exists), a same-named file is never overwritten unless `force=1`, and folders can never be
+created outside `content/` (no `..`/escaping). Ergonomic capture — add to `~/.zshrc`:
+`note(){ text="$*" cmd=capture atuin scripts run garden; }`
+
 ## Quick command reference
 
-- `atuin scripts run garden` — orientation: what this is, how/why it works (read first).
-- `note "…"` — capture a scrap to the inbox (works anywhere; atuin-synced).
-- `atuin scripts run garden-deploy` — build-check, commit, and deploy the garden.
-- "write up this session and add it to the garden" — you draft the doc per the rules above.
+- `atuin scripts run garden` — orientation + live status (read first).
+- `cmd=new …` — create/file a doc (see above); add `deploy=1` to publish immediately.
+- `cmd=deploy …` — build-check, commit, and deploy.
+- "write up this session and add it to the garden" — draft the doc per the rules above, then `cmd=new … deploy=1`.
 
 ## What the human can ask
 
