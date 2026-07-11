@@ -7,8 +7,7 @@ export const sharedPageComponents: SharedLayout = {
   header: [],
   footer: Component.Footer({
     links: {
-      "GitHub": "https://github.com/",
-      "Linkedin": "http://linkedin.com/",
+      "GitHub": "https://github.com/taxkcd",
     },
   }),
 }
@@ -26,12 +25,6 @@ export const defaultContentPageLayout: PageLayout = {
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
     Component.Search(),
-    Component.DesktopOnly(
-      Component.ConditionalRender({
-        component: Component.NowPlaying(),
-        condition: (page) => page.fileData.slug === "index",
-      })
-    ),
     Component.Darkmode(),
     // Component.DesktopOnly(
     //   Component.Explorer({

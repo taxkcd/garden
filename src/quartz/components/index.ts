@@ -21,8 +21,6 @@ import RecentNotes from "./RecentNotes"
 import Breadcrumbs from "./Breadcrumbs"
 
 // Custom
-import NowPlaying from "./NowPlaying"
-import Links from "./Links"
 import ConditionalRender from "./ConditionalRender";
 
 export {
@@ -48,8 +46,4 @@ export {
   NotFound,
   Breadcrumbs,
   ConditionalRender,
-
-  // Custom
-  Links,  
-  NowPlaying,  
 }
