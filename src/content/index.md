@@ -10,6 +10,7 @@ A living, agent-maintained garden of things worth keeping — work write-ups, no
 - [[work/index|Work]] — Next.js, migrations, implementation docs, debugging write-ups
 - [[personal/index|Personal]] — cold outreach, side projects, learning
 - [[til/index|TIL]] — quick "today I learned" notes
+- [[wezterm/index|WezTerm]] — terminal setup, configuration, and keybindings
 
 > [!note] How this stays alive
 > I capture; agents curate. Raw thoughts go to the inbox with `note "…"`; after real
