@@ -98,7 +98,7 @@ Push is done with a **dedicated PAT**, not SSH:
 - Repo: `taxkcd/garden` → published at `taxkcd.github.io/garden`.
 - Deploy: `cmd=deploy atuin scripts run garden` (build-check + commit + push), or manually:
   ```bash
-  cd ~/dev/myrepos/garden
+  cd ~/garden
   set -a; . ~/.config/.keys; set +a
   git add -A && git commit -m "docs: <what>"
   git push "https://x-access-token:${GITHUB_GARDEN_TOKEN}@github.com/taxkcd/garden.git" HEAD:main
