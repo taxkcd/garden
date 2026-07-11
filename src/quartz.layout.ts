@@ -119,7 +119,13 @@ export const defaultContentPageLayout: PageLayout = {
     //     },
     //   }),
     // ),    
-    Component.DesktopOnly(Component.Links()),
+    Component.DesktopOnly(
+      Component.Explorer({
+        title: "Explore",
+        folderClickBehavior: "collapse",
+        folderDefaultState: "open",
+      }),
+    ),
   ],
   right: [
     // Component.Graph(),
@@ -143,7 +149,13 @@ export const defaultListPageLayout: PageLayout = {
     Component.MobileOnly(Component.Spacer()),
     Component.Search(),
     Component.Darkmode(),
-    Component.DesktopOnly(Component.Links()),
+    Component.DesktopOnly(
+      Component.Explorer({
+        title: "Explore",
+        folderClickBehavior: "collapse",
+        folderDefaultState: "open",
+      }),
+    ),
   ],
   right: [],
 }
