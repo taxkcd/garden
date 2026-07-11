@@ -7,6 +7,7 @@ A living, agent-maintained garden of things worth keeping — work write-ups, no
 
 ## Sections
 
+- [[Shortcuts/index|Shortcuts]] — keyboard and mouse shortcut references
 - [[wezterm/index|WezTerm]] — terminal setup, configuration, and keybindings
 
 > [!note] How this stays alive
