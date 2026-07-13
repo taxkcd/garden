@@ -1,5 +1,5 @@
 ---
-title: "PhysiBoSS-Models: A database for multiscale models — Paul Macklin"
+title: "003 · PhysiBoSS-Models: A database for multiscale models — Paul Macklin"
 date: 2026-07-13
 tags:
   - research-paper
@@ -12,7 +12,7 @@ sequence: 3
 generator: "outreach-garden: managed"
 ---
 
-# PhysiBoSS-Models: A database for multiscale models
+# 003 · PhysiBoSS-Models: A database for multiscale models
 
 ## At a glance
 

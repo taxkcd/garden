@@ -1,5 +1,5 @@
 ---
-title: "Approximately Counting Triangles in Sublinear Time — C. Seshadhri"
+title: "001 · Approximately Counting Triangles in Sublinear Time — C. Seshadhri"
 date: 2026-07-13
 tags:
   - research-paper
@@ -12,7 +12,7 @@ sequence: 1
 generator: "outreach-garden: managed"
 ---
 
-# Approximately Counting Triangles in Sublinear Time
+# 001 · Approximately Counting Triangles in Sublinear Time
 
 ## At a glance
 

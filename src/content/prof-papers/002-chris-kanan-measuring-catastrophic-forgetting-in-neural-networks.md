@@ -1,5 +1,5 @@
 ---
-title: "Measuring Catastrophic Forgetting in Neural Networks — Chris Kanan"
+title: "002 · Measuring Catastrophic Forgetting in Neural Networks — Chris Kanan"
 date: 2026-07-13
 tags:
   - research-paper
@@ -12,7 +12,7 @@ sequence: 2
 generator: "outreach-garden: managed"
 ---
 
-# Measuring Catastrophic Forgetting in Neural Networks
+# 002 · Measuring Catastrophic Forgetting in Neural Networks
 
 ## At a glance
 
