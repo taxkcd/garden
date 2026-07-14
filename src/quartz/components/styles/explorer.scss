@@ -26,6 +26,14 @@ button#explorer {
   }
 }
 
+// let the explorer grow to fill the remaining vertical space in the sidebar
+.explorer {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-height: 0;
+}
+
 .folder-outer {
   display: grid;
   grid-template-rows: 0fr;
@@ -46,6 +54,17 @@ button#explorer {
   max-height: none;
   transition: max-height 0.35s ease;
   margin-top: 0.5rem;
+  // fill the explorer's height and let the list itself scroll
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+
+  & > ul.overflow {
+    flex: 1 1 auto;
+    min-height: 0;
+    max-height: none;
+  }
 
   &.collapsed > .overflow::after {
     opacity: 0;
@@ -63,6 +82,12 @@ button#explorer {
       color: var(--dark);
       opacity: 0.75;
       pointer-events: all;
+      // keep each entry on a single line, like a table of contents
+      display: block;
+      max-width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
   }
 }
@@ -81,13 +106,23 @@ svg {
   align-items: center;
   user-select: none;
 
+  // let the title container shrink so its text can truncate instead of wrapping
+  & > div {
+    min-width: 0;
+    flex: 1 1 auto;
+  }
+
   & div > a {
     color: var(--secondary);
     font-family: var(--headerFont);
     font-size: 0.95rem;
     font-weight: 600;
     line-height: 1.5rem;
-    display: inline-block;
+    display: block;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   & div > a:hover {
@@ -102,18 +137,23 @@ svg {
     cursor: pointer;
     padding-left: 0;
     padding-right: 0;
-    display: flex;
-    align-items: center;
+    display: block;
+    max-width: 100%;
+    min-width: 0;
     font-family: var(--headerFont);
 
     & p {
       font-size: 0.95rem;
-      display: inline-block;
+      display: block;
+      max-width: 100%;
       color: var(--secondary);
       font-weight: 600;
       margin: 0;
       line-height: 1.5rem;
       pointer-events: none;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
   }
 }
@@ -124,6 +164,7 @@ svg {
   cursor: pointer;
   transition: transform 0.3s ease;
   backface-visibility: visible;
+  flex-shrink: 0;
 }
 
 div:has(> .folder-outer:not(.open)) > .folder-container > svg {

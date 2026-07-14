@@ -225,6 +225,23 @@ a {
       grid-area: grid-sidebar-left;
       flex-direction: column;
       gap: 2rem;
+      @media all and ($tablet) {
+        // off-canvas overlay panel, slid in via the hamburger toggle
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: $sidePanelWidth;
+        box-sizing: border-box;
+        padding: $topSpacing 2rem 2rem 2rem;
+        background-color: var(--light);
+        overflow-y: auto;
+        gap: 2rem;
+        z-index: 101;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+        box-shadow: 2px 0 12px rgba(0, 0, 0, 0.15);
+      }
       @media all and ($mobile) {
         gap: 0;
         align-items: center;
@@ -234,6 +251,12 @@ a {
         flex-direction: row;
         padding: 0;
         padding-top: 2rem;
+      }
+    }
+
+    @media all and ($tablet) {
+      body.left-sidebar-open & .sidebar.left {
+        transform: translateX(0);
       }
     }
 

@@ -41,16 +41,19 @@ $mobileGrid: (
       "grid-sidebar-right"\
       "grid-footer"',
 );
+// On tablet the left sidebar is pulled out of the grid and shown as an
+// off-canvas overlay (toggled by the hamburger button), so the content column
+// spans the full width instead of being squeezed next to a fixed sidebar.
 $tabletGrid: (
-  templateRows: "auto auto auto auto",
-  templateColumns: "#{$sidePanelWidth} auto",
+  templateRows: "auto auto auto",
+  templateColumns: "auto",
   rowGap: "5px",
   columnGap: "5px",
   templateAreas:
-    '"grid-sidebar-left grid-header"\
-      "grid-sidebar-left grid-center"\
-      "grid-sidebar-left grid-sidebar-right"\
-      "grid-sidebar-left grid-footer"',
+    '"grid-header"\
+      "grid-center"\
+      "grid-sidebar-right"\
+      "grid-footer"',
 );
 $desktopGrid: (
   templateRows: "auto auto auto",

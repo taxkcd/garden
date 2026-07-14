@@ -1,0 +1,74 @@
+@use "../../styles/variables.scss" as *;
+
+// The hamburger toggle and backdrop only exist for the tablet layout, where the
+// left sidebar becomes an off-canvas overlay. Hidden on mobile and desktop.
+.sidebar-toggle {
+  display: none;
+}
+
+.sidebar-backdrop {
+  display: none;
+}
+
+@media all and ($tablet) {
+  .sidebar-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 102;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0;
+    border: 1px solid var(--lightgray);
+    border-radius: 6px;
+    background-color: var(--light);
+    color: var(--darkgray);
+    cursor: pointer;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    transition:
+      color 0.2s ease,
+      background-color 0.2s ease;
+
+    &:hover {
+      color: var(--secondary);
+    }
+
+    & .close-icon {
+      display: none;
+    }
+  }
+
+  // when open, swap hamburger -> close icon and lift the button above the panel
+  body.left-sidebar-open .sidebar-toggle {
+    left: calc(#{$sidePanelWidth} + 1rem);
+    z-index: 103;
+
+    & .hamburger-icon {
+      display: none;
+    }
+    & .close-icon {
+      display: block;
+    }
+  }
+
+  .sidebar-backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.35);
+    opacity: 0;
+    visibility: hidden;
+    transition:
+      opacity 0.3s ease,
+      visibility 0.3s ease;
+  }
+
+  body.left-sidebar-open .sidebar-backdrop {
+    opacity: 1;
+    visibility: visible;
+  }
+}

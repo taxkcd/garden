@@ -22,6 +22,7 @@ import Breadcrumbs from "./Breadcrumbs"
 
 // Custom
 import ConditionalRender from "./ConditionalRender";
+import SidebarToggle from "./SidebarToggle";
 
 export {
   ArticleTitle,
@@ -46,4 +47,5 @@ export {
   NotFound,
   Breadcrumbs,
   ConditionalRender,
+  SidebarToggle,
 }
