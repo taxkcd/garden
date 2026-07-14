@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/006-amy-e-ogan-the-potential-of-diverse-youth-as-stakeholders-in-identifying|006 · The Potential of Diverse Youth as Stakeholders in Identifying and Mitigating Algorithmic Bias for a Future of Fairer AI — Amy E. Ogan]] · 2026-07-14
 - [[prof-papers/005-r-v-dantu-hidden-anchors-in-multi-agent-llm-deliberation|005 · Hidden Anchors in Multi-Agent LLM Deliberation — R. V. Dantu]] · 2026-07-14
 - [[prof-papers/004-pavan-k-turaga-geometry-preserving-loss-functions-promote-improved-adapt|004 · Geometry Preserving Loss Functions Promote Improved Adaptation of Blackbox Generative Models — Pavan K. Turaga]] · 2026-07-13
 - [[prof-papers/003-paul-macklin-physiboss-models-a-database-for-multiscale-models|003 · PhysiBoSS-Models: A database for multiscale models — Paul Macklin]] · 2026-07-13
