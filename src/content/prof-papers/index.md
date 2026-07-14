@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/009-pinar-yanardag-noiseclr-a-contrastive-learning-approach-for-unsupervised|009 · NoiseCLR: A Contrastive Learning Approach for Unsupervised Discovery of Interpretable Directions in Diffusion Models — Pinar Yanardag]] · 2026-07-14
 - [[prof-papers/008-sanjoy-k-baruah-learning-assisted-schedulability-analysis-opportunities|008 · Learning-assisted schedulability analysis: opportunities and limitations — Sanjoy K. Baruah]] · 2026-07-14
 - [[prof-papers/007-kyla-a-mcmullen-the-corsi-block-tapping-test-evaluating-methodological-p|007 · The Corsi Block-Tapping Test: Evaluating methodological practices with an eye towards modern digital frameworks — Kyla A. McMullen]] · 2026-07-14
 - [[prof-papers/006-amy-e-ogan-the-potential-of-diverse-youth-as-stakeholders-in-identifying|006 · The Potential of Diverse Youth as Stakeholders in Identifying and Mitigating Algorithmic Bias for a Future of Fairer AI — Amy E. Ogan]] · 2026-07-14
