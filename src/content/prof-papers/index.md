@@ -1,6 +1,6 @@
 ---
 title: "Professor papers and learning paths"
-date: 2026-07-14
+date: 2026-07-15
 tags:
   - research-paper
   - learning-path
@@ -12,6 +12,8 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/011-deliang-l-wang-towards-scaling-up-classification-based-speech-separation|011 · Towards Scaling Up Classification-Based Speech Separation — DeLiang L. Wang]] · 2026-07-14
+- [[prof-papers/010-harish-chaandar-ravichandar-inferring-implicit-trait-preferences-for-tas|010 · Inferring Implicit Trait Preferences for Task Allocation in Heterogeneous Teams — Harish Chaandar Ravichandar]] · 2026-07-14
 - [[prof-papers/009-pinar-yanardag-noiseclr-a-contrastive-learning-approach-for-unsupervised|009 · NoiseCLR: A Contrastive Learning Approach for Unsupervised Discovery of Interpretable Directions in Diffusion Models — Pinar Yanardag]] · 2026-07-14
 - [[prof-papers/008-sanjoy-k-baruah-learning-assisted-schedulability-analysis-opportunities|008 · Learning-assisted schedulability analysis: opportunities and limitations — Sanjoy K. Baruah]] · 2026-07-14
 - [[prof-papers/007-kyla-a-mcmullen-the-corsi-block-tapping-test-evaluating-methodological-p|007 · The Corsi Block-Tapping Test: Evaluating methodological practices with an eye towards modern digital frameworks — Kyla A. McMullen]] · 2026-07-14
