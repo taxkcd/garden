@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-index-html"
-source_hash: "ac3eab6e5d823a61bd840d330fb1a2883b994f91b50ed2f5d0675d790b1c7955"
+source_hash: "24a0482e0f57557794f0cd3d4ff6381a571374452b8dc9cc91e696013b953258"
 sequence: 5
 generator: "outreach-garden: managed"
 ---
@@ -49,41 +49,34 @@ This paper studies how multiple large language model (LLM) agents deliberate tog
 
 ## Learning path
 
-To understand the paper 'Hidden Anchors in Multi-Agent LLM Deliberation,' start by learning the foundational concepts of Large Language Models (LLMs) and multi-agent systems, which provide the technological and interaction context for the study. Then, explore classical opinion dynamics and consensus models to grasp the baseline frameworks the paper challenges. Next, study closed-loop dynamical systems to comprehend the modeling approach used for agent deliberation dynamics. Finally, focus on the paper's core novel concept of hidden internal beliefs (anchors) influencing opinion updates in multi-agent LLM deliberation.
+To deeply understand the paper 'Hidden Anchors in Multi-Agent LLM Deliberation,' start by grounding yourself in the foundational theories of opinion dynamics and closed-loop dynamical systems, which underpin the paper's novel modeling approach. Then, explore latent variable inference methods relevant for recovering hidden anchors from observed data. Finally, focus on the paper's core contribution by watching the authors' own talk presenting their hidden-anchor model and empirical findings.
 
 ## Recommended videos (in order)
 
-### Large Language Models (LLMs) basics *(prerequisite)*
-This section introduces the foundational technology behind the agents studied in the paper. It covers how LLMs like transformers are pretrained and used for tasks such as chatbots, providing essential background on the models whose deliberation dynamics are analyzed.
+### Multi-agent consensus and opinion dynamics models *(prerequisite)*
+This section covers classical open-loop consensus models such as DeGroot and Friedkin–Johnsen, which the paper extends by introducing hidden anchors. Understanding these models is essential to appreciate why the authors propose a closed-loop system with latent internal beliefs.
 
-*How the paper uses it:* Understanding LLMs is crucial as the paper studies deliberation among multiple LLM agents.
+*How the paper uses it:* The paper challenges classical open-loop consensus models and builds upon them to explain observed deliberation behaviors.
 
-▶ [Large Language Models explained briefly](https://www.youtube.com/watch?v=LPZh9BOjkQs) — 3Blue1Brown · 7:58 · 1 year ago
+▶ [A General Model of Opinion Dynamics on Networks: Consensus, Dissensus, and Cascades](https://www.youtube.com/watch?v=qQ1cEIPF3yw) — C3 Digital Transformation Institute · 5 years ago
 
-### Multi-agent systems fundamentals *(prerequisite)*
-This section explains how multiple AI agents interact and deliberate collectively, including architectures and frameworks for building multi-agent AI systems. It provides the necessary context for understanding how LLM agents collaborate in the paper's experiments.
+### Closed-loop dynamical systems in opinion dynamics *(prerequisite)*
+This section introduces the theory of closed-loop dynamical systems and control, which is the mathematical framework used by the authors to model agent opinion updates influenced by hidden anchors. A solid grasp of these concepts is crucial to understand the paper's modeling approach.
 
-*How the paper uses it:* The paper models deliberation among multiple LLM agents, so grasping multi-agent system fundamentals is essential.
+*How the paper uses it:* The paper models multi-agent LLM deliberation as a closed-loop dynamical system with hidden anchors influencing opinions.
 
-▶ [Multi Agent Systems Explained: How AI Agents & LLMs Work Together](https://www.youtube.com/watch?v=sWH0T4Zez6I) — IBM Technology · 7:57 · 6 months ago
+▶ [Linear Dynamical Systems and Control (Prof. Scott Dawson)](https://www.youtube.com/watch?v=Y5jWRnya3ds) — von Karman Institute for Fluid Dynamics · 40:20 · 6 years ago
 
-### Opinion dynamics and consensus models *(prerequisite)*
-This section covers classical models of opinion evolution and consensus formation, such as DeGroot and Friedkin–Johnsen models. These models serve as the baseline that the paper challenges with its hidden-anchor closed-loop model.
+### Latent variable inference in dynamical systems *(prerequisite)*
+This section explains methods for inferring latent variables from observed trajectories in dynamical systems, which parallels the paper's approach to recovering hidden anchors from output-probability trajectories. Understanding these techniques helps in appreciating the system identification and validation procedures used.
 
-*How the paper uses it:* The paper contrasts its hidden-anchor model against classical open-loop consensus models to explain observed deliberation behaviors.
+*How the paper uses it:* The paper recovers latent hidden anchors from observed deliberation trajectories using system identification methods.
 
-▶ [The Mathematics of Influence and Opinion Dynamics](https://www.youtube.com/watch?v=VKGsRU5yBzc) — UC Davis Social Sciences · 27:55 · 11 years ago
+▶ [Lecture 19 - Reward Model & Linear Dynamical System | Stanford CS229: Machine Learning (Autumn 2018)](https://www.youtube.com/watch?v=0rt2CsEQv6U) — Stanford Online · 6 years ago
 
-### Closed-loop dynamical systems in AI *(prerequisite)*
-This section introduces closed-loop control systems and dynamical systems theory, which are used to model feedback-driven processes. Understanding these concepts helps in comprehending the paper's approach of modeling multi-agent deliberation as a closed-loop dynamical system.
+### Hidden-anchor model of multi-agent LLM deliberation
+This section focuses on the paper's central novel model explaining opinion dynamics beyond classical consensus through hidden anchors. It includes the authors' own talk, which provides direct insights into their modeling, empirical results, and implications for multi-agent LLM deliberation.
 
-*How the paper uses it:* The paper models multi-agent LLM deliberation as a closed-loop dynamical system with hidden anchors influencing opinion updates.
+*How the paper uses it:* This is the core contribution of the paper, presenting the hidden-anchor model and its empirical validation.
 
-▶ [Control Systems Lectures - Closed Loop Control](https://www.youtube.com/watch?v=O-OqgFE9SD4) — Brian Douglas · 13 years ago
-
-### Hidden internal beliefs (anchors) in multi-agent deliberation
-This core concept explains the novel idea that each agent has a latent internal belief or 'anchor' that influences its opinion updates during deliberation. This hidden-anchor model better explains observed opinion dynamics that classical models cannot reproduce.
-
-*How the paper uses it:* The paper's key contribution is proposing and validating the hidden-anchor model to explain multi-agent LLM deliberation dynamics.
-
-▶ [Engineering Objectivity  The Multi Agent Deliberation Framework](https://www.youtube.com/watch?v=_Ady1mwtg3I) — Erik Benjaminson · 7:30 · 3 months ago
+▶ [LLM-Deliberation: Evaluating LLMs with Interactive Multi-Agent Negotiation Games](https://www.youtube.com/watch?v=OAXUkjd7mec) — ACL SIGSEC · 48:17 · 2 years ago

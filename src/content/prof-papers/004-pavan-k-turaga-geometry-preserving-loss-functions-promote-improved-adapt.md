@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-pavanturaga-com"
-source_hash: "7b401c9055553ab5cea762b26dc004f517f66023f698cb90fdfca764296f78f0"
+source_hash: "526788576c277aa91d0bc8785d101f935deede4f908fb2e61336f8eb1c0e2b9c"
 sequence: 4
 generator: "outreach-garden: managed"
 ---
@@ -56,41 +56,41 @@ Research interests: computer vision, machine learning, immersive technologies, h
 
 ## Learning path
 
-To understand the paper on geometry preserving loss functions for blackbox generative model adaptation, start by learning foundational concepts including Generative Adversarial Networks (GANs), GAN inversion techniques, diffusion models for generative modeling, and manifold geometry with tangent spaces in machine learning. These prerequisites build the necessary background on generative models, latent space manipulation, and geometric concepts. Finally, focus on the core concept of geometry-preserving loss functions for domain adaptation, which is central to the paper's novel method.
+To deeply understand the paper on geometry preserving loss functions for blackbox generative model adaptation, start with foundational concepts including manifold learning and tangent space estimation, domain adaptation for generative models, GAN inversion methods, and diffusion models for generative sampling. These prerequisites build the necessary background on geometric priors, latent space modeling, and generative techniques. Finally, focus on the core concept of geometry-preserving loss functions in generative modeling, selecting a rigorous university lecture that covers loss functions and optimization, which aligns closely with the paper's novel loss design.
 
 ## Recommended videos (in order)
 
-### Generative Adversarial Networks (GANs) *(prerequisite)*
-Understanding GANs is essential as the paper adapts pre-trained GAN generators. This video from Computerphile provides a clear and accessible explanation of how GANs work by having neural networks compete to generate realistic data.
+### Manifold learning and tangent space estimation lecture *(prerequisite)*
+Understanding manifold learning and tangent space estimation is foundational for grasping the geometric priors and tangent space preservation that the paper enforces in latent and image spaces. These concepts provide the mathematical background to appreciate how geometry-preserving losses maintain manifold structure during adaptation.
 
-*How the paper uses it:* The paper adapts large pre-trained GAN generators without modifying their weights.
+*How the paper uses it:* The paper's geometry-preserving loss relies on tangent space relationships in latent and image manifolds.
 
-▶ [Generative Adversarial Networks (GANs) - Computerphile](https://www.youtube.com/watch?v=Sw9r8CL98N0) — Computerphile · 21:21 · 8 years ago
+▶ [noc20 ma01 lec23  Tangent space of a submanifold](https://www.youtube.com/watch?v=70l0mhysGO8) — NPTEL - Indian Institute of Science, Bengaluru · 29:48 · 6 years ago
 
-### GAN Inversion *(prerequisite)*
-GAN inversion maps images back into the latent space of a GAN, a key step in the adaptation pipeline. The video 'PR-293: In-Domain GAN Inversion for Real Image Editing' provides a focused overview of GAN inversion techniques relevant to real image editing and latent code recovery.
+### Domain adaptation for generative models lecture *(prerequisite)*
+Domain adaptation lectures contextualize the problem of adapting pretrained generative models to new target domains, highlighting challenges such as limited data and restricted model access. This background helps understand the motivation behind blackbox adaptation methods without generator fine-tuning.
 
-*How the paper uses it:* The method uses state-of-the-art GAN inversion to embed target domain images into the latent space of the source generator.
+*How the paper uses it:* The paper addresses domain adaptation challenges for blackbox generative models.
 
-▶ [PR-293: In-Domain GAN Inversion for Real Image Editing](https://www.youtube.com/watch?v=TVSJO9uNq7g) — 만끽 MaanGeek · 5 years ago
+▶ [Stanford CS236: Deep Generative Models I 2023 I Lecture 1 - Introduction](https://www.youtube.com/watch?v=XZ0PMRWXBEU) — Stanford Online · 57:28 · 2 years ago
 
-### Diffusion Models for Generative Modeling *(prerequisite)*
-Diffusion models are a powerful class of generative models used here as a lightweight latent sampler. The video 'What are Diffusion Models?' by Ari Seff offers a concise tutorial on the basics and expressiveness of diffusion models, suitable for understanding their role in generative modeling.
+### GAN inversion methods lecture *(prerequisite)*
+GAN inversion methods are essential for mapping target domain images into the latent space of a pretrained generator, a critical first step in the paper's adaptation pipeline. Understanding inversion techniques clarifies how latent codes are obtained for subsequent diffusion modeling.
 
-*How the paper uses it:* The paper employs a 1D diffusion model to learn the distribution of inverted latent codes for adaptation.
+*How the paper uses it:* The paper uses state-of-the-art GAN inversion to embed target images into the latent space.
 
-▶ [What are Diffusion Models?](https://www.youtube.com/watch?v=fbLgFrlTnGU) — Ari Seff · 4 years ago
+▶ [Stanford CS236: Deep Generative Models I 2023 I Lecture 9 - GANs](https://www.youtube.com/watch?v=3Zv-gokhLu8) — Stanford Online · 2 years ago
 
-### Manifold Geometry and Tangent Spaces in Machine Learning *(prerequisite)*
-Geometry-preserving losses rely on manifold and tangent space concepts to maintain relationships between latent and image spaces. The video 'What is a manifold?' by GeometryForPhysicists provides a visual and intuitive introduction to manifolds, which is foundational for understanding the geometric priors used in the paper.
+### Diffusion models for generative sampling lecture *(prerequisite)*
+Diffusion models provide a modern approach to generative sampling, which the paper leverages as a lightweight 1D diffusion latent sampler to model the distribution of inverted latent codes. Understanding diffusion models aids in grasping how the latent sampler learns target latent distributions effectively.
 
-*How the paper uses it:* The geometry-preserving loss enforces manifold priors by preserving distances and tangent space orientations.
+*How the paper uses it:* The paper employs a 1D diffusion model as a latent sampler in the adaptation pipeline.
 
-▶ [What is a manifold?](https://www.youtube.com/watch?v=zIjBArHTPZ4) — GeometryForPhysicists · 3:51 · 10 years ago
+▶ [Stanford CS236: Deep Generative Models I 2023 I Lecture 18 - Diffusion Models for Discrete Data](https://www.youtube.com/watch?v=mCaRNnEnYwA) — Stanford Online · 1:00:03 · 2 years ago
 
-### Geometry-Preserving Loss Functions for Domain Adaptation
-This core concept involves loss functions that maintain geometric relationships during adaptation, enabling blackbox model adaptation without fine-tuning the generator. While there are no videos specifically on geometry-preserving losses for domain adaptation, the video 'What is a Loss Function? Understanding How AI Models Learn' by IBM Technology provides a solid foundation on loss functions in AI, which helps in grasping the role and importance of the novel loss introduced in the paper.
+### Geometry-preserving loss functions in generative modeling seminar
+This concept covers the paper's core novel contribution: the geometry-preserving loss function that maintains manifold priors by preserving distances and tangent space orientations. A rigorous university lecture on loss functions and optimization provides the theoretical foundation to understand this loss design and its impact on adaptation performance.
 
-*How the paper uses it:* The novel geometry-preserving loss function is central to the paper's method for adapting blackbox generative models effectively.
+*How the paper uses it:* The geometry-preserving loss function is central to the paper's improved adaptation method.
 
-▶ [What is a Loss Function? Understanding How AI Models Learn](https://www.youtube.com/watch?v=v_ueBW_5dLg) — IBM Technology · 1 year ago
+▶ [Lecture 3 | Loss Functions and Optimization](https://www.youtube.com/watch?v=h7iBpEHGVNc) — Stanford University School of Engineering · 1:14:40 · 8 years ago

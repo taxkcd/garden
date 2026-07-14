@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-amy-ogan"
-source_hash: "23fda37d79e4216d2a7cf157e028124fb593fe2a22af265e88628ee6bab964f7"
+source_hash: "1dd29da117fe57fe40de57fb92dadf828142a025c904f9944533cb9255545cb6"
 sequence: 6
 generator: "outreach-garden: managed"
 ---
@@ -55,41 +55,27 @@ Research interests: Learning Sciences and Educational Technologies, Human-Center
 
 ## Learning path
 
-To understand the paper on engaging diverse youth in identifying and mitigating algorithmic bias, start by learning foundational concepts of algorithmic bias and AI fairness and ethics. Then explore youth civic engagement in technology and participatory design with marginalized communities to grasp the social and design context. Finally, focus on the core concept of youth-inclusive AI auditing and mitigation to directly connect with the paper's main contributions.
+To deeply understand the paper on engaging diverse youth as stakeholders in identifying and mitigating algorithmic bias, start with foundational knowledge on algorithmic bias and fairness in AI, followed by human-centered AI ethics frameworks that support youth agency. Finally, focus on participatory AI design approaches that directly relate to youth engagement in AI fairness, culminating in the core concept of the paper.
 
 ## Recommended videos (in order)
 
-### Algorithmic Bias *(prerequisite)*
-Algorithmic bias refers to systematic and unfair discrimination embedded in AI systems, often reflecting societal prejudices. Understanding different types of bias in AI is foundational to recognizing how youth can identify and address these issues.
+### Algorithmic bias and fairness in AI conference talk *(prerequisite)*
+This section provides foundational understanding of the types and impacts of algorithmic bias and fairness considerations in AI systems. The selected talks from reputable academic and policy institutions offer rigorous insights into responsible AI governance and ethical challenges, which underpin the youth's ability to identify and mitigate bias as explored in the paper.
 
-*How the paper uses it:* The paper builds on youth's ability to perceive and articulate complex algorithmic biases in AI systems.
+*How the paper uses it:* Foundational to grasp the types and impacts of bias that youth are identifying and mitigating.
 
-▶ [3 types of bias in AI | Machine learning](https://www.youtube.com/watch?v=59bMh59JQDo) — Google · 2:33 · 8 years ago
+▶ [UN AI for Good – Law Track Conference: Responsible AI Governance and Use](https://www.youtube.com/watch?v=BmG8bDcqi50) — Stanford Law School · 1:01:17 · 1 year ago
 
-### AI Fairness and Ethics *(prerequisite)*
-AI fairness and ethics cover the principles and challenges involved in ensuring AI systems operate justly and without harm. This background is essential for understanding the ethical considerations youth engage with in the paper.
+### Human-centered AI ethics lecture *(prerequisite)*
+Understanding ethical frameworks and human-centered design principles in AI is crucial to appreciate how youth can be empowered as ethical agents in AI systems. The selected university seminars provide advanced academic perspectives on designing AI with inclusivity and ethical awareness, directly supporting the paper's focus on youth agency and moral reasoning.
 
-*How the paper uses it:* The research explores youth's ethical reflections and opinions on AI fairness and bias mitigation.
+*How the paper uses it:* Important for understanding ethical frameworks that support youth agency in AI systems.
 
-▶ [What Does Fairness Mean In AI Ethics? - AI and Machine Learning Explained](https://www.youtube.com/watch?v=S5lBroCBXMU) — AI and Machine Learning Explained · 2:41 · 8 months ago
+▶ [Stanford CS547 HCI Seminar | Spring 2026 | Toward Ontological Multiplicity in AI and Computing](https://www.youtube.com/watch?v=IpzIDAqJDwI) — Stanford Online · 47:45 · 18 hours ago
 
-### Youth Civic Engagement in Technology *(prerequisite)*
-Youth civic engagement involves young people actively participating in social and technological issues affecting their communities. This concept contextualizes youth as stakeholders capable of contributing to AI fairness efforts.
+### Participatory AI design seminar
+This section focuses on participatory design approaches in AI, especially involving marginalized groups. It is central to understanding how youth can be engaged as active stakeholders in AI fairness efforts, reflecting the core contributions of the paper about youth-inclusive AI auditing and design.
 
-*How the paper uses it:* The study positions youth as active stakeholders in identifying and mitigating AI bias.
+*How the paper uses it:* Central to understanding how youth can be engaged as stakeholders in AI fairness efforts.
 
-▶ [What is Civic Engagement?](https://www.youtube.com/watch?v=x6bNwmrBPXI) — Presidential Precinct · 1:53 · 7 years ago
-
-### Participatory Design with Marginalized Communities *(prerequisite)*
-Participatory design involves collaborating with underrepresented groups to co-create technology that meets their needs and values. Understanding this approach is key to the paper's methodology of engaging diverse youth and parents.
-
-*How the paper uses it:* The paper's workshops used participatory design methods to involve marginalized youth and parents in AI fairness discussions.
-
-▶ [Introducing Participatory Design](https://www.youtube.com/watch?v=U3Hn-sONiRg) — Edinburgh Living Lab · 17:47 · 10 years ago
-
-### Youth-Inclusive AI Auditing and Mitigation
-This concept focuses on involving diverse youth in auditing AI systems for bias and designing mechanisms to mitigate harms. It directly relates to the paper's core contribution of proposing youth-inclusive AI auditing systems.
-
-*How the paper uses it:* Central to the paper, this concept encapsulates youth's role in identifying, reporting, and mitigating algorithmic bias with support from peers and parents.
-
-▶ [Algorithmic Bias in AI: What It Is and How to Fix It](https://www.youtube.com/watch?v=og67qeTZPYs) — IBM Technology · 8:38 · 1 year ago
+▶ [SafeHer | Feminist AI Research fAIr: From Paper to Prototype to Pilot](https://www.youtube.com/watch?v=3oxoDIc4czA) — Social Development Research Center DLSU · 5:28 · 4 days ago

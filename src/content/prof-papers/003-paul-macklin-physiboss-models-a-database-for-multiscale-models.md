@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-mathcancer-org"
-source_hash: "db1167ec9f9212207131a487a91073c320bdc175c71f21af2d2dc4306a87bc9a"
+source_hash: "b791425138a5497876691ba908dd28e4defd35a1719b9f72a065ac7b0c21093a"
 sequence: 3
 generator: "outreach-garden: managed"
 ---
@@ -54,34 +54,39 @@ Research interests: data-driven computational systems that can help engineer the
 
 ## Learning path
 
-To understand the PhysiBoSS-Models paper, start by learning foundational concepts including agent-based modeling in biology, Boolean networks in systems biology, and version control with GitHub for scientific projects. These provide the necessary background on simulation techniques and software management. Finally, focus on the core concept of the PhysiBoSS platform, which integrates these approaches for multiscale biological modeling.
+To deeply understand the PhysiBoSS-Models paper, start with foundational knowledge on stochastic Boolean networks and computational systems biology of multicellular systems to grasp the intracellular signaling and multiscale modeling context. Then, learn about version control and continuous integration as key infrastructure for reproducibility. Finally, focus on the core concept of the PhysiBoSS-Models database itself, prioritizing the authors' own detailed talks to understand the platform, database design, and integration with PhysiCell Studio.
 
 ## Recommended videos (in order)
 
-### Agent-based modeling in biology *(prerequisite)*
-Agent-based modeling simulates the interactions of autonomous agents, such as cells, to assess their effects on the system. This approach is widely used in biology to model cell populations and their behaviors in complex environments. Understanding this concept is essential to grasp how PhysiBoSS simulates cell populations.
+### Stochastic Boolean networks lecture *(prerequisite)*
+Stochastic Boolean networks form the intracellular signaling modeling approach used in PhysiBoSS. Understanding stochastic processes in Boolean networks provides the mathematical and computational foundation for how PhysiBoSS simulates cell signaling dynamics.
 
-*How the paper uses it:* PhysiBoSS integrates agent-based modeling of cell populations with Boolean networks to simulate complex biological behaviors.
+*How the paper uses it:* PhysiBoSS integrates agent-based modeling with stochastic Boolean networks for multiscale simulations.
 
-▶ [Agent-Based Modeling: What is Agent-Based Modeling?](https://www.youtube.com/watch?v=FVmQbfsOkGc) — Complexity Explorer · 8 years ago
+▶ [Stochastic processes for Boolean profit - Renan Gross, Weizmann Institute](https://www.youtube.com/watch?v=_QOpi5YDaGA) — Horowitz Seminar · 6 years ago
 
-### Boolean networks in systems biology *(prerequisite)*
-Boolean networks model intracellular signaling pathways using simple on/off logic states to represent gene or protein activity. This abstraction helps capture complex regulatory dynamics within cells. Grasping Boolean networks is key to understanding how PhysiBoSS models intracellular processes stochastically.
+### Computational systems biology of multicellular systems seminar *(prerequisite)*
+This foundational knowledge covers modeling complex biological behaviors across scales, which is essential to appreciate the multiscale modeling approach of PhysiBoSS-Models. It provides context on systems biology and computational methods for multicellular systems.
 
-*How the paper uses it:* PhysiBoSS uses stochastic Boolean networks to represent intracellular signaling within agent-based models.
+*How the paper uses it:* PhysiBoSS-Models enables multiscale simulations of complex biological behaviors across scales.
 
-▶ [Introduction to Boolean Networks in Biology](https://www.youtube.com/watch?v=V9EYs8h0ON0) — Eric Eager · 26:11 · 8 years ago
+▶ [Introduction to the Class and Overview of Topics](https://www.youtube.com/watch?v=gc3O2sKIsX4) — MIT OpenCourseWare · 1:07:20 · 10 years ago
 
-### Version control and GitHub for scientific projects *(prerequisite)*
-Version control systems like Git and platforms like GitHub enable tracking changes, collaboration, and reproducibility in scientific software projects. They are crucial for managing complex model repositories and ensuring consistent sharing and reuse. Understanding these tools explains how PhysiBoSS-Models maintains and distributes its curated database.
+### Version control and continuous integration for scientific software *(prerequisite)*
+Version control and continuous integration are critical infrastructure concepts that enable reproducibility, collaboration, and automated testing in PhysiBoSS-Models. Understanding these concepts helps appreciate the database's design and maintenance.
 
-*How the paper uses it:* PhysiBoSS-Models uses GitHub for version control and continuous integration to manage model sharing and updates.
+*How the paper uses it:* PhysiBoSS-Models is hosted on GitHub with version control and continuous integration.
 
-▶ [Complete Git and GitHub Tutorial for Beginners](https://www.youtube.com/watch?v=Ez8F0nW6S-w) — Apna College · 2 years ago
+▶ [Continuous Integration vs Feature Branch Workflow](https://www.youtube.com/watch?v=v4Ijkq6Myfc) — Modern Software Engineering · 5 years ago
 
-### PhysiBoSS platform overview
-The PhysiBoSS platform integrates agent-based modeling of cell populations with intracellular stochastic Boolean networks to enable multiscale simulations of biological systems. This video introduces the core concepts and the PhysiBoSS plugin, providing a comprehensive understanding of the platform's capabilities and design.
+### PhysiBoSS-Models database talk *(the paper's own talk)*
+This section focuses on the core concept of the paper: the PhysiBoSS-Models database. The authors' own detailed talks provide the most direct and in-depth explanation of the platform, database structure, API, and integration with PhysiCell Studio, which are central to the paper's contributions.
 
-*How the paper uses it:* PhysiBoSS is the foundational platform underlying the PhysiBoSS-Models database presented in the paper.
+*How the paper uses it:* The paper presents PhysiBoSS-Models, a curated and version-controlled database for multiscale models built using the PhysiBoSS platform.
 
-▶ [PhysiCell ws2022 Session 10: Introduction to PhysiBoSS and Boolean Networks](https://www.youtube.com/watch?v=P3sE6YCNPaM) — PhysiCell · 23:55 · 3 years ago
+▶ [PhysiCell ws2021: Special PhysiBoSS Lecture](https://www.youtube.com/watch?v=2w2-Q-gvO4U) — PhysiCell · 1:06:45 · 4 years ago
+
+## Already in your library
+
+- [PhysiCell ws2022 Session 10: Introduction to PhysiBoSS and Boolean Networks](https://www.youtube.com/watch?v=P3sE6YCNPaM) — also for: PhysiBoSS-Models: A database for multiscale models (Paul Macklin)
+- [Agent-Based Modeling: What is Agent-Based Modeling?](https://www.youtube.com/watch?v=FVmQbfsOkGc) — also for: PhysiBoSS-Models: A database for multiscale models (Paul Macklin)
