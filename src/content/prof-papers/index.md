@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/014-aniruddha-bora-learning-bias-corrections-for-climate-models-using-deep-n|014 · Learning bias corrections for climate models using deep neural operators — Aniruddha Bora]] · 2026-07-15
 - [[prof-papers/013-marty-a-humphrey-leveraging-the-cloud-for-intelligent-clinical-data-regi|013 · Leveraging the Cloud for Intelligent Clinical Data Registries — Marty A. Humphrey]] · 2026-07-15
 - [[prof-papers/012-yanfang-fanny-ye-heterogeneous-graph-attention-network|012 · Heterogeneous Graph Attention Network — Yanfang (Fanny) Ye]] · 2026-07-14
 - [[prof-papers/011-deliang-l-wang-towards-scaling-up-classification-based-speech-separation|011 · Towards Scaling Up Classification-Based Speech Separation — DeLiang L. Wang]] · 2026-07-14
