@@ -1,6 +1,6 @@
 ---
 title: "Professor papers and learning paths"
-date: 2026-07-15
+date: 2026-07-16
 tags:
   - research-paper
   - learning-path
@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/015-michelle-a-borkin-fractional-brownian-motion-in-a-finite-interval-correl|015 · Fractional Brownian motion in a finite interval: correlations effect depletion or accretion zones of particles near boundaries — Michelle A. Borkin]] · 2026-07-15
 - [[prof-papers/014-aniruddha-bora-learning-bias-corrections-for-climate-models-using-deep-n|014 · Learning bias corrections for climate models using deep neural operators — Aniruddha Bora]] · 2026-07-15
 - [[prof-papers/013-marty-a-humphrey-leveraging-the-cloud-for-intelligent-clinical-data-regi|013 · Leveraging the Cloud for Intelligent Clinical Data Registries — Marty A. Humphrey]] · 2026-07-15
 - [[prof-papers/012-yanfang-fanny-ye-heterogeneous-graph-attention-network|012 · Heterogeneous Graph Attention Network — Yanfang (Fanny) Ye]] · 2026-07-14
