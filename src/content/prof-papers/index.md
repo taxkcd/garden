@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/025-bahman-kalantari-robust-vertex-enumeration-for-convex-hulls-in-high-dime|025 · Robust Vertex Enumeration for Convex Hulls in High Dimensions — Bahman Kalantari]] · 2026-07-16
 - [[prof-papers/024-nanpeng-yu-coordinating-gpu-data-centers-and-power-grid-regulation-servi|024 · Coordinating GPU Data Centers and Power Grid Regulation Service for Exogenous Carbon Benefits — Nanpeng Yu]] · 2026-07-16
 - [[prof-papers/023-leslie-f-greengard-a-fast-adaptive-multipole-algorithm-for-particle-simu|023 · A Fast Adaptive Multipole Algorithm for Particle Simulations — Leslie F. Greengard]] · 2026-07-16
 - [[prof-papers/022-amy-zhang-regularized-latent-dynamics-prediction-is-a-strong-baseline-fo|022 · Regularized Latent Dynamics Prediction is a Strong Baseline for Behavioral Foundation Models — Amy Zhang]] · 2026-07-16
