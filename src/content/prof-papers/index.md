@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/019-fangxing-li-adjustable-and-distributionally-robust-chance-constrained-ec|019 · Adjustable and distributionally robust chance-constrained economic dispatch considering wind power uncertainty — Fangxing Li]] · 2026-07-16
 - [[prof-papers/018-nima-karimian-gru-aunet-a-domain-adaptation-framework-for-contactless-fi|018 · GRU-AUNet: A Domain Adaptation Framework for Contactless Fingerprint Presentation Attack Detection — Nima Karimian]] · 2026-07-16
 - [[prof-papers/017-abhijit-s-pandya-an-empirical-analysis-of-diffusion-autoencoders-and-adv|017 · An Empirical Analysis of Diffusion, Autoencoders, and Adversarial Deep Learning Models for Predicting Dementia Using High-Fidelity MRI — Abhijit S. Pandya]] · 2026-07-16
 - [[prof-papers/016-ravi-k-iyer-asap-accelerated-short-read-alignment-on-programmable-hardwa|016 · ASAP: Accelerated Short-Read Alignment on Programmable Hardware — Ravi K. Iyer]] · 2026-07-16
