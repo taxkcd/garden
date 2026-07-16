@@ -1,5 +1,5 @@
 ---
-title: "015 · Interband coherence induced correction to Thouless pumping: Possible observation in cold-atom systems — Michelle A. Borkin"
+title: "015 · Evaluating the Effect of Timeline Shape on Visualization Task Performance — Michelle A. Borkin"
 date: 2026-07-15
 tags:
   - research-paper
@@ -7,38 +7,38 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-borkin"
-source_hash: "f1645a1dfdf78b9f408ec3da5d3a2164a5c7621adb6965d2de0f09a3b9a38ffc"
+source_hash: "fe6dd567818d8447608c71a84513d6d627e4c51d3ae45592fdc9931cc9a54c33"
 sequence: 15
 generator: "outreach-garden: managed"
 ---
 
-# 015 · Interband coherence induced correction to Thouless pumping: Possible observation in cold-atom systems
+# 015 · Evaluating the Effect of Timeline Shape on Visualization Task Performance
 
 ## At a glance
 
 - **Professor:** Michelle A. Borkin
 - **Institution:** Northeastern University
-- **Paper:** [Interband coherence induced correction to Thouless pumping: Possible observation in cold-atom systems](https://arxiv.org/abs/2005.05765)
-- **Authors:** Gudapati Naresh Raghava, Longwen Zhou, Jiangbin Gong
+- **Paper:** [Evaluating the Effect of Timeline Shape on Visualization Task Performance](https://arxiv.org/abs/2005.06039)
+- **Authors:** Sara Di Bartolomeo, Aditeya Pandey, Aristotelis Leventidis, David Saffo, Uzma Haque Syeda, Elin Carstensdottir, Magy Seif El-Nasr, Michelle A. Borkin, Cody Dunne
 - **Year:** 2020
 
 ## Paper overview
 
-This paper studies how initial quantum states that are out of equilibrium, specifically those with interband coherence, affect the quantized charge transport known as Thouless pumping in one-dimensional insulators. Using theoretical and numerical analysis based on cold-atom experiments, the authors show that interband coherence introduces a new correction to the pumped charge, which can be experimentally observed and used to detect topological phase transitions.
+This study investigates how the shape of timelines—horizontal line, vertical line, circle, and spiral—affects how quickly and accurately people can perform common tasks using timeline visualizations. Conducted with 192 participants via Amazon Mechanical Turk, the experiment found that linear timelines (horizontal and vertical) generally allow faster task completion and are preferred by users, while spiral timelines tend to be slower and less preferred. Accuracy was not significantly affected by timeline shape. The study offers design recommendations for choosing timeline shapes based on task complexity and user needs.
 
 ### Why it matters
 
-**Research problem:** How does interband coherence in nonequilibrium initial states modify the quantized charge transport (Thouless pumping) in one-dimensional insulators, and can this effect be experimentally observed and controlled?
+**Research problem:** Despite the widespread use of timelines to represent temporal event sequences, little empirical evidence exists on how the shape of a timeline affects user task performance, including speed, accuracy, and preference.
 
-**Why it matters:** Thouless pumping is a fundamental quantum phenomenon linked to topological invariants and has been experimentally realized in cold-atom systems. Understanding corrections due to nonequilibrium initial states with interband coherence expands the theory beyond equilibrium assumptions, enabling new quantum control strategies and dynamic detection of topological phase transitions.
+**Why it matters:** Timelines are pervasive in many domains such as history, personal health, and scheduling. Understanding how timeline shape influences readability and task performance can guide better visualization design, improving user experience and effectiveness in interpreting temporal data.
 
 **Key contributions:**
 
-- Identification of a coherence-induced correction to Thouless pumping independent of pumping duration.
-- Proposal and detailed analysis of preparing initial states with interband coherence via quantum quenches.
-- Demonstration that interband coherence effects dominate pumping behavior and peak near topological phase transitions.
-- Prediction that the coherence correction can be tuned by varying adiabatic protocol switching-on speeds.
-- Validation of theoretical predictions with numerical simulations matching existing cold-atom experimental setups.
+- First systematic evaluation of the effect of timeline shape alone on user task performance for general temporal event sequence data.
+- Design and execution of a large-scale crowd-sourced experiment testing four timeline shapes across three dataset types and four common timeline tasks.
+- Empirical evidence that timeline shape affects task completion time but not accuracy.
+- User preference data showing strong favor for linear timelines.
+- Design guidelines recommending linear timelines for fast lookup and complex tasks, and cautioning against spiral timelines without user training.
 
 ## About the professor
 
@@ -51,27 +51,20 @@ This paper studies how initial quantum states that are out of equilibrium, speci
 
 ## Learning path
 
-To deeply understand the paper on interband coherence corrections to Thouless pumping, start with foundational concepts including Berry curvature and topological invariants, which underpin the quantized charge transport phenomena. Next, explore quantum quenches in cold atom systems to grasp how nonequilibrium initial states with interband coherence are prepared experimentally. Then, study the Rice-Mele model and adiabatic pumping protocols as the theoretical framework used in the paper. Finally, focus on the paper's core concept by reviewing the authors' own talks or the most relevant advanced lectures on interband coherence effects in Thouless pumping.
+To deeply understand the paper on the effect of timeline shape on visualization task performance, start by exploring foundational knowledge on timeline visualization evaluation to grasp empirical methods and design considerations. Then, focus on the authors' own recorded talk presenting their experimental approach, findings, and design implications, which provides the most direct and advanced insight into their work.
 
 ## Recommended videos (in order)
 
-### Berry curvature and topological invariants *(prerequisite)*
-Berry curvature and topological invariants form the mathematical foundation for understanding quantized charge transport and topological phases in condensed matter systems. A rigorous lecture on these topics provides the necessary background to appreciate how topological properties govern Thouless pumping and how corrections might arise.
+### Timeline visualization evaluation *(prerequisite)*
+This section covers empirical methods and practical considerations for evaluating timeline visualizations, including user performance and design trade-offs. The selected talk from Aalto University provides an academic-level seminar on visualizing time, which aligns well with understanding the broader context and challenges in timeline visualization research.
 
-*How the paper uses it:* The paper's correction to Thouless pumping is expressed as a weighted integral of Berry curvature plus an interband coherence term, making this foundational knowledge essential.
+*How the paper uses it:* Understanding timeline visualization evaluation methods and challenges sets the stage for appreciating the experimental design and significance of the paper's contributions.
 
-▶ [Lec 2: Topological invariant, Berry phase](https://www.youtube.com/watch?v=cjCqJOuHXTM) — NPTEL IIT Guwahati · 56:44 · 2 years ago
+▶ [Masood Masoodian: “Visualizing time”](https://www.youtube.com/watch?v=6oKEeiIUvJo) — Aalto University · 8 years ago
 
-### Quantum quenches in cold atom systems *(prerequisite)*
-Quantum quenches in cold atom systems are experimental techniques to prepare nonequilibrium initial states with interband coherence. Understanding these methods is crucial to connect the theoretical predictions of the paper with feasible experimental realizations.
+### Authors' recorded talk *(the paper's own talk)*
+This is the authors' own presentation of their study, detailing the experimental setup, timeline shapes tested, task types, results, and design recommendations. It offers the most direct and comprehensive explanation of their research, suitable for an advanced reader seeking to understand the nuances and implications of their findings.
 
-*How the paper uses it:* The authors propose preparing initial states with interband coherence via quantum quenches of the cold-atom Hamiltonian, enabling observation of the coherence-induced corrections.
+*How the paper uses it:* This talk directly presents the paper's core contributions and empirical evidence on how timeline shape affects task performance and user preference.
 
-▶ [Dan Stamper-Kurn - Approaches to quantum information processing with cold atoms - IPAM at UCLA](https://www.youtube.com/watch?v=Q7v5i4ozy_s) — Institute for Pure & Applied Mathematics (IPAM) · 38:00 · 4 years ago
-
-### Rice-Mele model and adiabatic pumping *(prerequisite)*
-The Rice-Mele model is a prototypical one-dimensional system used to study topological charge pumping. Adiabatic pumping protocols within this model provide the theoretical framework for analyzing how interband coherence modifies the pumped charge.
-
-*How the paper uses it:* The paper analyzes the time-dependent Rice-Mele model and different adiabatic protocols to characterize coherence-induced corrections to Thouless pumping.
-
-▶ [OBSTRUCTION OF STOKES THEOREM AND QUANTIZATION OF THE PUMPED CHARGE](https://www.youtube.com/watch?v=x0KhWxIofvY) — Topological quantum matter  - Weizmann online · 17:55 · 4 years ago
+▶ [Evaluating the Effect of Timeline Shape on Visualization Task Performance](https://www.youtube.com/watch?v=MeIM6gKS6fY) — ACM SIGCHI · 13:33 · 6 years ago
