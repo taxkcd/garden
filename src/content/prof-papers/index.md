@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/016-ravi-k-iyer-asap-accelerated-short-read-alignment-on-programmable-hardwa|016 · ASAP: Accelerated Short-Read Alignment on Programmable Hardware — Ravi K. Iyer]] · 2026-07-16
 - [[prof-papers/015-michelle-a-borkin-fractional-brownian-motion-in-a-finite-interval-correl|015 · Evaluating the Effect of Timeline Shape on Visualization Task Performance — Michelle A. Borkin]] · 2026-07-15
 - [[prof-papers/014-aniruddha-bora-learning-bias-corrections-for-climate-models-using-deep-n|014 · Learning bias corrections for climate models using deep neural operators — Aniruddha Bora]] · 2026-07-15
 - [[prof-papers/013-marty-a-humphrey-leveraging-the-cloud-for-intelligent-clinical-data-regi|013 · Leveraging the Cloud for Intelligent Clinical Data Registries — Marty A. Humphrey]] · 2026-07-15
