@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/022-amy-zhang-regularized-latent-dynamics-prediction-is-a-strong-baseline-fo|022 · Regularized Latent Dynamics Prediction is a Strong Baseline for Behavioral Foundation Models — Amy Zhang]] · 2026-07-16
 - [[prof-papers/021-tiffany-li-inform-the-uninformed-improving-online-informed-consent-readi|021 · Inform the uninformed: Improving Online Informed Consent Reading with an AI-Powered Chatbot — Tiffany Li]] · 2026-07-16
 - [[prof-papers/020-bruno-f-m-ribeiro-double-equivariance-for-inductive-link-prediction-for|020 · Double Equivariance for Inductive Link Prediction for Both New Nodes and New Relation Types — Bruno F. M. Ribeiro]] · 2026-07-16
 - [[prof-papers/019-fangxing-li-adjustable-and-distributionally-robust-chance-constrained-ec|019 · Adjustable and distributionally robust chance-constrained economic dispatch considering wind power uncertainty — Fangxing Li]] · 2026-07-16
