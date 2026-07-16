@@ -32,6 +32,7 @@ button#explorer {
   flex-direction: column;
   flex: 1 1 auto;
   min-height: 0;
+  overflow: hidden;
 }
 
 .folder-outer {
@@ -64,6 +65,8 @@ button#explorer {
     flex: 1 1 auto;
     min-height: 0;
     max-height: none;
+    overflow-y: auto;
+    overscroll-behavior: contain;
   }
 
   &.collapsed > .overflow::after {
