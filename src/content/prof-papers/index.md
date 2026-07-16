@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/024-nanpeng-yu-coordinating-gpu-data-centers-and-power-grid-regulation-servi|024 · Coordinating GPU Data Centers and Power Grid Regulation Service for Exogenous Carbon Benefits — Nanpeng Yu]] · 2026-07-16
 - [[prof-papers/023-leslie-f-greengard-a-fast-adaptive-multipole-algorithm-for-particle-simu|023 · A Fast Adaptive Multipole Algorithm for Particle Simulations — Leslie F. Greengard]] · 2026-07-16
 - [[prof-papers/022-amy-zhang-regularized-latent-dynamics-prediction-is-a-strong-baseline-fo|022 · Regularized Latent Dynamics Prediction is a Strong Baseline for Behavioral Foundation Models — Amy Zhang]] · 2026-07-16
 - [[prof-papers/021-tiffany-li-inform-the-uninformed-improving-online-informed-consent-readi|021 · Inform the uninformed: Improving Online Informed Consent Reading with an AI-Powered Chatbot — Tiffany Li]] · 2026-07-16
