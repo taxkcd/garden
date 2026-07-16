@@ -1,5 +1,5 @@
 ---
-title: "015 · Fractional Brownian motion in a finite interval: correlations effect depletion or accretion zones of particles near boundaries — Michelle A. Borkin"
+title: "015 · Interband coherence induced correction to Thouless pumping: Possible observation in cold-atom systems — Michelle A. Borkin"
 date: 2026-07-15
 tags:
   - research-paper
@@ -7,38 +7,38 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-borkin"
-source_hash: "780906c6bf6cb3cfa82ba357ee59d9d3df61354cd8d88d596cf769cafb0e464c"
+source_hash: "f1645a1dfdf78b9f408ec3da5d3a2164a5c7621adb6965d2de0f09a3b9a38ffc"
 sequence: 15
 generator: "outreach-garden: managed"
 ---
 
-# 015 · Fractional Brownian motion in a finite interval: correlations effect depletion or accretion zones of particles near boundaries
+# 015 · Interband coherence induced correction to Thouless pumping: Possible observation in cold-atom systems
 
 ## At a glance
 
 - **Professor:** Michelle A. Borkin
 - **Institution:** Northeastern University
-- **Paper:** [Fractional Brownian motion in a finite interval: correlations effect depletion or accretion zones of particles near boundaries](https://arxiv.org/abs/1903.08927)
-- **Authors:** T Guggenberger, G Pagnini, T Vojta, R Metzler
-- **Year:** 2019
+- **Paper:** [Interband coherence induced correction to Thouless pumping: Possible observation in cold-atom systems](https://arxiv.org/abs/2005.05765)
+- **Authors:** Gudapati Naresh Raghava, Longwen Zhou, Jiangbin Gong
+- **Year:** 2020
 
 ## Paper overview
 
-This paper studies how fractional Brownian motion (FBM), a model for anomalous diffusion with long-time correlations, behaves when confined within a finite interval with reflecting boundaries. Unlike normal Brownian motion, where particles distribute evenly over time, FBM shows either depletion or accumulation of particles near boundaries depending on whether the diffusion is subdiffusive or superdiffusive. This has implications for understanding particle motion in confined biological or microfluidic environments.
+This paper studies how initial quantum states that are out of equilibrium, specifically those with interband coherence, affect the quantized charge transport known as Thouless pumping in one-dimensional insulators. Using theoretical and numerical analysis based on cold-atom experiments, the authors show that interband coherence introduces a new correction to the pumped charge, which can be experimentally observed and used to detect topological phase transitions.
 
 ### Why it matters
 
-**Research problem:** Understanding the stationary probability distribution and mean squared displacement (MSD) of fractional Brownian motion confined to a finite interval with reflecting boundary conditions, and how correlations in FBM increments affect particle distribution near boundaries.
+**Research problem:** How does interband coherence in nonequilibrium initial states modify the quantized charge transport (Thouless pumping) in one-dimensional insulators, and can this effect be experimentally observed and controlled?
 
-**Why it matters:** FBM is widely used to model anomalous diffusion in complex systems such as biological cells and crowded liquids. Knowing how confinement and boundary effects alter particle distributions is crucial for interpreting experimental data and for modeling processes like molecule diffusion or tracer transport in confined environments.
+**Why it matters:** Thouless pumping is a fundamental quantum phenomenon linked to topological invariants and has been experimentally realized in cold-atom systems. Understanding corrections due to nonequilibrium initial states with interband coherence expands the theory beyond equilibrium assumptions, enabling new quantum control strategies and dynamic detection of topological phase transitions.
 
 **Key contributions:**
 
-- Demonstration that the stationary probability density of reflected FBM deviates significantly from the uniform distribution found in normal Brownian motion.
-- Identification that subdiffusive FBM leads to depletion zones near boundaries, while superdiffusive FBM causes accretion zones near boundaries.
-- Quantification that the stationary MSD increases monotonically with the anomalous diffusion exponent α and scales proportionally to the square of the interval length L.
-- Comparison of different implementations of reflecting boundary conditions and justification of the chosen approach.
-- Discussion of fundamental differences between reflected FBM and FBM confined by harmonic potentials.
+- Identification of a coherence-induced correction to Thouless pumping independent of pumping duration.
+- Proposal and detailed analysis of preparing initial states with interband coherence via quantum quenches.
+- Demonstration that interband coherence effects dominate pumping behavior and peak near topological phase transitions.
+- Prediction that the coherence correction can be tuned by varying adiabatic protocol switching-on speeds.
+- Validation of theoretical predictions with numerical simulations matching existing cold-atom experimental setups.
 
 ## About the professor
 
@@ -51,34 +51,27 @@ This paper studies how fractional Brownian motion (FBM), a model for anomalous d
 
 ## Learning path
 
-To deeply understand the paper on fractional Brownian motion (FBM) in confined intervals, start with foundational knowledge on stochastic processes with memory to grasp the non-Markovian nature of FBM increments. Next, study anomalous diffusion to contextualize the deviation from classical Brownian motion that FBM models. Finally, focus on the core concept of fractional Brownian motion itself, including its simulation and properties, to directly connect with the paper's specific findings about boundary effects and particle distributions.
+To deeply understand the paper on interband coherence corrections to Thouless pumping, start with foundational concepts including Berry curvature and topological invariants, which underpin the quantized charge transport phenomena. Next, explore quantum quenches in cold atom systems to grasp how nonequilibrium initial states with interband coherence are prepared experimentally. Then, study the Rice-Mele model and adiabatic pumping protocols as the theoretical framework used in the paper. Finally, focus on the paper's core concept by reviewing the authors' own talks or the most relevant advanced lectures on interband coherence effects in Thouless pumping.
 
 ## Recommended videos (in order)
 
-### Stochastic processes with memory lecture *(prerequisite)*
-This section covers the fundamentals of stochastic processes that exhibit memory, which is crucial for understanding the long-range correlations inherent in fractional Brownian motion. The non-Markovian nature of FBM increments underpins the unique boundary behaviors studied in the paper.
+### Berry curvature and topological invariants *(prerequisite)*
+Berry curvature and topological invariants form the mathematical foundation for understanding quantized charge transport and topological phases in condensed matter systems. A rigorous lecture on these topics provides the necessary background to appreciate how topological properties govern Thouless pumping and how corrections might arise.
 
-*How the paper uses it:* Understanding the memory effects in stochastic processes is key to grasping why FBM behaves differently near boundaries compared to normal Brownian motion.
+*How the paper uses it:* The paper's correction to Thouless pumping is expressed as a weighted integral of Berry curvature plus an interband coherence term, making this foundational knowledge essential.
 
-▶ [5. Stochastic Processes I](https://www.youtube.com/watch?v=TuTmC8aOQJE) — MIT OpenCourseWare · 1:17:41 · 11 years ago
+▶ [Lec 2: Topological invariant, Berry phase](https://www.youtube.com/watch?v=cjCqJOuHXTM) — NPTEL IIT Guwahati · 56:44 · 2 years ago
 
-### Anomalous diffusion lecture *(prerequisite)*
-Anomalous diffusion lectures provide insight into diffusion processes that deviate from classical Brownian motion, including subdiffusion and superdiffusion regimes. This background is essential to appreciate the anomalous scaling and particle distribution effects observed in FBM within confined intervals.
+### Quantum quenches in cold atom systems *(prerequisite)*
+Quantum quenches in cold atom systems are experimental techniques to prepare nonequilibrium initial states with interband coherence. Understanding these methods is crucial to connect the theoretical predictions of the paper with feasible experimental realizations.
 
-*How the paper uses it:* The paper investigates how anomalous diffusion modeled by FBM leads to depletion or accretion zones near boundaries, making this context critical.
+*How the paper uses it:* The authors propose preparing initial states with interband coherence via quantum quenches of the cold-atom Hamiltonian, enabling observation of the coherence-induced corrections.
 
-▶ [Prof. Ralf Metzler | Anomalous diffusion in biological membranes and their mathematical description](https://www.youtube.com/watch?v=TsaISdbDq7A) — INI Seminar Room 2 · 1:04:14 · 7 months ago
+▶ [Dan Stamper-Kurn - Approaches to quantum information processing with cold atoms - IPAM at UCLA](https://www.youtube.com/watch?v=Q7v5i4ozy_s) — Institute for Pure & Applied Mathematics (IPAM) · 38:00 · 4 years ago
 
-### Fractional Brownian motion lecture
-This section focuses on the core stochastic process studied in the paper: fractional Brownian motion. It covers the fundamental properties, simulation techniques, and mathematical characterization of FBM, providing the necessary theoretical foundation to understand the paper's numerical simulation approach and results.
+### Rice-Mele model and adiabatic pumping *(prerequisite)*
+The Rice-Mele model is a prototypical one-dimensional system used to study topological charge pumping. Adiabatic pumping protocols within this model provide the theoretical framework for analyzing how interband coherence modifies the pumped charge.
 
-*How the paper uses it:* The paper centers on FBM confined to finite intervals with reflecting boundaries, making a deep understanding of FBM itself indispensable.
+*How the paper uses it:* The paper analyzes the time-dependent Rice-Mele model and different adiabatic protocols to characterize coherence-induced corrections to Thouless pumping.
 
-▶ [Mohamed Ndaoud - Constructing the fractional Brownian motion](https://www.youtube.com/watch?v=XXSCwm06J_w) — Institut des Hautes Etudes Scientifiques (IHES) · 21:16
-
-### Authors' talk on fractional Brownian motion boundaries *(the paper's own talk)*
-While no direct recorded talk by the paper's authors on this exact work was found, talks by experts on fractional Brownian motion simulation and properties provide valuable insights into the numerical methods and theoretical challenges relevant to the paper's approach.
-
-*How the paper uses it:* The paper relies heavily on simulation of FBM with reflecting boundaries; expert talks on FBM simulation methods complement understanding of their approach.
-
-▶ [How to Simulate Fractional Brownian Motion (fBm) via Davies-Harte](https://www.youtube.com/watch?v=qQYgbIYz9i0) — Roman Paolucci · 23:56 · 1 year ago
+▶ [OBSTRUCTION OF STOKES THEOREM AND QUANTIZATION OF THE PUMPED CHARGE](https://www.youtube.com/watch?v=x0KhWxIofvY) — Topological quantum matter  - Weizmann online · 17:55 · 4 years ago
