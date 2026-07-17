@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/028-pradeep-k-atrey-generating-higher-quality-anti-forensics-deepfakes-with|028 · Generating Higher-Quality Anti-Forensics DeepFakes with Adversarial Sharpening Mask — Pradeep K. Atrey]] · 2026-07-17
 - [[prof-papers/027-james-n-smith-generative-ai-health-assistants-in-modern-healthcare-drive|027 · Generative AI Health Assistants in Modern Healthcare: Drivers and Barriers to Adoption — James N. Smith]] · 2026-07-17
 - [[prof-papers/026-yuanyuan-yy-zhou-on-the-impact-of-formal-verification-on-software-develo|026 · On the Impact of Formal Verification on Software Development — Yuanyuan (YY) Zhou]] · 2026-07-17
 - [[prof-papers/025-bahman-kalantari-robust-vertex-enumeration-for-convex-hulls-in-high-dime|025 · Robust Vertex Enumeration for Convex Hulls in High Dimensions — Bahman Kalantari]] · 2026-07-16
