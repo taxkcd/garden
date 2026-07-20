@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-sesh"
-source_hash: "ec5d7ca7d54db9f126d2fb2233730ac3bf252ee68af73fb2c0c7675da00fad90"
+source_hash: "c6f49f1c587ec833aba0007baf8a547f1150e0b0aaf121f274d4fa9cc16b975a"
 sequence: 1
 generator: "outreach-garden: managed"
 ---
@@ -55,40 +55,48 @@ Research interests: theoretical study of algorithms, especially those with a mix
 
 ## Learning path
 
-To deeply understand the paper "Approximately Counting Triangles in Sublinear Time," start by building foundational knowledge on sublinear-time graph algorithms and randomized algorithms for graph property testing, as these form the theoretical basis for the paper's approach. Next, gain context on classical and advanced triangle counting methods to appreciate the novelty of the authors' contributions. Finally, focus on the authors' own talk presenting their algorithm, which provides the most direct and detailed explanation of their techniques and results.
+To understand the paper 'Approximately Counting Triangles in Sublinear Time,' start with foundational graph theory concepts and the problem of triangle counting in graphs. Then, learn about sublinear time algorithms and graph query models to grasp the algorithmic framework. Next, study randomized sampling and variance reduction techniques which are key to the paper's estimation approach. Finally, focus on the core concept of sublinear-time triangle counting algorithms to directly connect with the paper's novel contributions.
 
 ## Recommended videos (in order)
 
-### Sublinear-time graph algorithms seminar *(prerequisite)*
-This section covers the general framework and techniques behind sublinear-time algorithms for graph problems, which is essential to understand the algorithmic model and complexity measures used in the paper. It introduces query models and sampling methods that underpin the paper's approach to triangle counting without reading the entire graph.
+### Graph Theory Basics *(prerequisite)*
+This section covers fundamental graph concepts such as vertices, edges, and graph traversal techniques like BFS and DFS. Understanding these basics is essential for grasping how graphs are structured and navigated, which underpins the triangle counting problem.
 
-*How the paper uses it:* The paper designs a sublinear-time algorithm for triangle counting, so understanding sublinear graph algorithms is foundational.
+*How the paper uses it:* The paper deals with counting triangles in graphs, so a solid understanding of graph basics is necessary.
 
-▶ [Counting Subgraphs in Sublinear Time](https://www.youtube.com/watch?v=4p2cq6Vy_9g) — Simons Institute for the Theory of Computing · 1:01:38 · Streamed 2 years ago
+▶ [Algorithms Course - Graph Theory Tutorial from a Google Engineer](https://www.youtube.com/watch?v=09_LlHjoEiY) — freeCodeCamp.org · 6 years ago
 
-### Randomized algorithms for graph property testing lecture *(prerequisite)*
-This section provides insights into randomized sampling and query-based property testing methods for graphs, which are crucial for the paper's use of degree, neighbor, and vertex-pair queries to approximate triangle counts. It also covers variance reduction and probabilistic guarantees common in such algorithms.
+### Triangle Counting in Graphs *(prerequisite)*
+This section introduces the problem of counting triangles within graphs, explaining why it is important and how it relates to graph analysis tasks. It provides context on the significance of triangles and the challenges in counting them efficiently.
 
-*How the paper uses it:* The paper uses randomized query models and sampling techniques common in graph property testing to approximate triangle counts efficiently.
+*How the paper uses it:* The paper focuses on approximating the number of triangles in large graphs, making this concept directly relevant.
 
-▶ [Property Testing for Graphs](https://www.youtube.com/watch?v=JzYGN28dv_Q) — Simons Institute for the Theory of Computing · 1:22:35 · Streamed 2 years ago
+▶ [Number of Triangles in an Undirected Graph | GeeksForGeeks](https://www.youtube.com/watch?v=ChdNz1Ui1uc) — GeeksforGeeks · 8:44 · 10 years ago
 
-### Triangle counting and enumeration algorithms conference talk *(prerequisite)*
-This section surveys classical and advanced triangle counting and enumeration algorithms, providing background on the problem's computational challenges and existing approaches. It contextualizes the paper's contribution by highlighting why sublinear-time approximation is significant compared to prior methods.
+### Sublinear Time Algorithms *(prerequisite)*
+Learn about algorithms that run faster than reading the entire input, using techniques like sampling and sketching. This knowledge is crucial to understanding how the paper achieves efficient triangle counting without full graph traversal.
 
-*How the paper uses it:* Understanding classical triangle counting methods helps appreciate the novelty and efficiency of the paper's sublinear-time algorithm.
+*How the paper uses it:* The paper designs a sublinear-time algorithm to approximate triangle counts, so understanding sublinear algorithms is key.
 
-▶ [3SUM Hardness of Triangle Enumeration Problems, and their Consequences](https://www.youtube.com/watch?v=glPfU0Qn4mM) — Simons Institute for the Theory of Computing · 38:08 · 10 years ago
+▶ [Sketching, Sampling and Sublinear Time Algorithms](https://www.youtube.com/watch?v=bUhE7rwtH5k) — Simons Institute for the Theory of Computing · 29:36 · Streamed 5 years ago
 
-### Authors' talk on sublinear triangle counting *(the paper's own talk)*
-This section features the authors' own presentation of their sublinear-time triangle counting algorithm, offering the most precise and detailed explanation of their methodology, theoretical guarantees, and innovations such as vertex classification and weighted sampling. It is the core resource for understanding the paper's contributions directly from the researchers.
+### Graph Query Models *(prerequisite)*
+This section explains the types of queries used to access graph data efficiently, such as degree queries, neighbor queries, and vertex-pair queries. These queries form the basis of the paper's algorithmic access to the graph.
 
-*How the paper uses it:* This is the authors' own talk on the paper's topic, providing direct insights into their algorithm and results.
+*How the paper uses it:* The paper's algorithm relies on degree, neighbor, and vertex-pair queries to approximate triangle counts.
 
-▶ [On counting subgraphs and why counting seeds makes more sense (if one thinks about it clearly)](https://www.youtube.com/watch?v=1QeROlBFyTM) — Simons Institute for the Theory of Computing · 41:11 · Streamed 1 year ago
+▶ [Degree of a vertex in Graph | Graph Theory #6](https://www.youtube.com/watch?v=aXaVIxvweHA) — Vivekanand Khyade - Algorithm Every Day · 6:39 · 8 years ago
 
-## Already in your library
+### Randomized Sampling and Variance Reduction *(prerequisite)*
+Explore techniques for approximating counts accurately with fewer samples by reducing variance, including importance sampling and other variance reduction methods. These are essential for the paper's weighted sampling approach to triangle counting.
 
-- [An Optimal Algorithm for Triangle Counting](https://www.youtube.com/watch?v=VjRjhl8Gg5M) — also for: Approximately Counting Triangles in Sublinear Time (C. Seshadhri)
-- [Counting and Sampling Subgraphs in Sublinear Time](https://www.youtube.com/watch?v=nbB_0ED6tX8) — also for: Approximately Counting Triangles in Sublinear Time (C. Seshadhri)
-- [Sketching, Sampling and Sublinear Time Algorithms](https://www.youtube.com/watch?v=bUhE7rwtH5k) — also for: Approximately Counting Triangles in Sublinear Time (C. Seshadhri)
+*How the paper uses it:* The paper uses a novel weighting scheme and sampling techniques to reduce variance in triangle count estimation.
+
+▶ [Monte Carlo Methods: Methods of Variance Reduction](https://www.youtube.com/watch?v=Q9dAaw_bJ-o) — Brittany Schwan · 7 years ago
+
+### Sublinear-Time Triangle Counting Algorithms
+Focus on algorithms specifically designed to approximate triangle counts using sublinear queries and vertex classification. This section directly relates to the paper's core contributions and methods.
+
+*How the paper uses it:* This is the core concept of the paper, detailing the novel sublinear-time algorithm and its theoretical guarantees.
+
+▶ [An Optimal Algorithm for Triangle Counting](https://www.youtube.com/watch?v=VjRjhl8Gg5M) — APPROX RANDOM 2021 · 15:29 · 4 years ago

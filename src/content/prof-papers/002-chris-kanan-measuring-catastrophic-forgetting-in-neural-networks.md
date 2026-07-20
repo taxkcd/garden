@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-www-chriskanan-com"
-source_hash: "fc989636c8e8610c8ee6be327abff7a171657f516cc1523f889673010e3fef6e"
+source_hash: "406d445cc29deea918125ab61a291d472cb3e28311ab1afad7967551d019e404"
 sequence: 2
 generator: "outreach-garden: managed"
 ---
@@ -57,39 +57,41 @@ Research interests: artificial intelligence, deep learning, continual learning, 
 
 ## Learning path
 
-To deeply understand the paper "Measuring Catastrophic Forgetting in Neural Networks," start with foundational concepts such as Elastic Weight Consolidation (EWC), rehearsal and dual-memory models, ensembling methods, and memory and computational efficiency in lifelong learning. These prerequisites cover the main mechanisms compared in the paper and practical considerations for continual learning systems. Finally, focus on the core concept of catastrophic forgetting itself, prioritizing the authors' own detailed lecture to gain direct insights into their methodology, findings, and implications.
+To understand the paper on catastrophic forgetting in neural networks, start by learning the foundational concepts of neural networks and incremental learning, which are essential for grasping how forgetting occurs during sequential task learning. Next, study regularization techniques as they are key mechanisms evaluated in the paper to mitigate forgetting. Finally, focus on the core concept of catastrophic forgetting itself and how it is measured and benchmarked, which directly relates to the paper's main contributions.
 
 ## Recommended videos (in order)
 
-### Elastic Weight Consolidation (EWC) in Neural Networks *(prerequisite)*
-EWC is a key regularization technique evaluated in the paper to mitigate catastrophic forgetting by selectively constraining important weights. Understanding EWC provides insight into one of the main mechanisms compared and its effectiveness in multi-modal learning scenarios.
+### Neural Networks Basics *(prerequisite)*
+This section covers the fundamental structure and function of neural networks, including neurons, layers, and the underlying mathematics. Understanding these basics is crucial to grasp how neural networks learn and why they might forget previously learned information when trained incrementally.
 
-*How the paper uses it:* EWC is one of the five mechanisms systematically compared in the paper for mitigating catastrophic forgetting.
+*How the paper uses it:* Understanding neural networks is essential to comprehend how catastrophic forgetting occurs in these models.
 
-▶ [Continual Learning Beyond Catastrophic Forgetting in Class-Incremental Scenarios - PART I](https://www.youtube.com/watch?v=OCu2vPl4Ts8) — Conference on Lifelong Learning Agents (CoLLAs) · 49:26 · 2 years ago
+▶ [But what is a neural network? | Deep learning chapter 1](https://www.youtube.com/watch?v=aircAruvnKk) — 3Blue1Brown · 8 years ago
 
-### Ensembling Methods for Incremental Learning *(prerequisite)*
-Ensembling methods such as PathNet represent a distinct approach to mitigating forgetting by dynamically routing information through subnetworks. Understanding this approach is critical as it performed best in data permutation experiments but has practical constraints.
+### Incremental Learning in AI *(prerequisite)*
+Incremental learning is a paradigm where models learn new tasks sequentially without forgetting previous tasks. This section introduces the concept and its challenges, setting the stage for understanding why catastrophic forgetting is a critical problem in AI systems that need to learn continuously.
 
-*How the paper uses it:* PathNet, an ensembling method, is one of the five mechanisms compared and showed strong performance but requires session labels at test time.
+*How the paper uses it:* Incremental learning is the learning paradigm where catastrophic forgetting is a critical problem addressed by the paper.
 
-▶ [Lecture 7 | Training Neural Networks II](https://www.youtube.com/watch?v=_JB0AO7QxSA) — Stanford University School of Engineering · 1:15:30 · 8 years ago
+▶ [AI, Machine Learning, Deep Learning and Generative AI Explained](https://www.youtube.com/watch?v=qYNweeDHiyU) — IBM Technology · 1 year ago
 
-### Memory and Computational Efficiency in Lifelong Learning *(prerequisite)*
-Memory and computational efficiency are critical evaluation criteria emphasized by the paper for practical continual learning systems. This foundational knowledge helps contextualize the trade-offs discussed in the paper regarding model scalability and deployment.
+### Regularization Techniques in Deep Learning *(prerequisite)*
+Regularization techniques help prevent overfitting and can be used to preserve knowledge in neural networks during incremental learning. This section explains these methods, including Elastic Weight Consolidation (EWC), which is a key mechanism evaluated in the paper to mitigate catastrophic forgetting.
 
-*How the paper uses it:* The paper highlights the importance of memory and computational efficiency when evaluating lifelong learning methods.
+*How the paper uses it:* EWC is one of the key mechanisms evaluated in the paper to mitigate forgetting.
 
-▶ [Stanford CS330: Multi-Task and Meta-Learning, 2019 | Lecture 9 - Lifelong Learning](https://www.youtube.com/watch?v=c6VpDHoUIjQ) — Stanford Online · 1:23:26 · 6 years ago
+▶ [Neural Network Weights - Deep Learning Dictionary](https://www.youtube.com/watch?v=xoHGA8XEYVY) — deeplizard · 3:00 · 4 years ago
 
-### Authors' talk on catastrophic forgetting Kemker
-This lecture by the authors provides a comprehensive and precise presentation of catastrophic forgetting, directly related to the paper's contributions. It offers detailed insights into the problem, evaluation metrics, and comparative results of different mitigation strategies.
+### Catastrophic Forgetting in Neural Networks *(prerequisite)*
+This section directly addresses the core problem studied in the paper: how neural networks forget previously learned tasks when trained on new ones. It explains the phenomenon, its causes, and its implications for continual learning systems.
 
-*How the paper uses it:* This is the authors' own recorded talk on catastrophic forgetting, directly addressing the paper's content.
+*How the paper uses it:* Catastrophic forgetting is the core problem studied in the paper.
 
-▶ [[Continual Learning Course] Lecture #2: Understanding Catastrophic Forgetting](https://www.youtube.com/watch?v=UnCAdBtvZhc) — ContinualAI · 1:39:31 · 4 years ago
+▶ [Continual Learning and Catastrophic Forgetting](https://www.youtube.com/watch?v=vjaq03IYgSk) — Paul Hand · 6 years ago
 
-## Already in your library
+### Measuring and Benchmarking Catastrophic Forgetting
+Understanding how catastrophic forgetting is quantitatively measured is crucial to appreciate the paper's contributions. This section covers the metrics and benchmarks used to evaluate forgetting and the effectiveness of mitigation methods.
 
-- [Continual Learning and Catastrophic Forgetting](https://www.youtube.com/watch?v=vjaq03IYgSk) — also for: Measuring Catastrophic Forgetting in Neural Networks (Chris Kanan)
-- [Paper Review: Overcoming catastrophic forgetting in neural networks (PNAS 2017)](https://www.youtube.com/watch?v=RIbe-qW9nqY) — also for: Measuring Catastrophic Forgetting in Neural Networks (Chris Kanan)
+*How the paper uses it:* Measuring catastrophic forgetting is central to the paper's contributions in proposing new metrics and benchmarks.
+
+▶ [Paper Review: Overcoming catastrophic forgetting in neural networks (PNAS 2017)](https://www.youtube.com/watch?v=RIbe-qW9nqY) — Deep Learning Simplified · 21:47 · 4 years ago

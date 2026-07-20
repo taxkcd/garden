@@ -1,6 +1,6 @@
 ---
 title: "Professor papers and learning paths"
-date: 2026-07-20
+date: 2026-07-21
 tags:
   - research-paper
   - learning-path
@@ -12,6 +12,8 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/031-tim-roughgarden-shill-proof-auctions|031 · Shill-Proof Auctions — Tim Roughgarden]] · 2026-07-20
+- [[prof-papers/030-yang-p-liu-maximum-flow-and-minimum-cost-flow-in-almost-linear-time|030 · Maximum Flow and Minimum-Cost Flow in Almost-Linear Time — Yang P. Liu]] · 2026-07-20
 - [[prof-papers/029-adam-charles-decomposed-linear-dynamical-systems-dlds-for-learning-the-l|029 · Decomposed Linear Dynamical Systems (dLDS) for learning the latent components of neural dynamics — Adam Charles]] · 2026-07-20
 - [[prof-papers/028-pradeep-k-atrey-generating-higher-quality-anti-forensics-deepfakes-with|028 · Generating Higher-Quality Anti-Forensics DeepFakes with Adversarial Sharpening Mask — Pradeep K. Atrey]] · 2026-07-17
 - [[prof-papers/027-james-n-smith-generative-ai-health-assistants-in-modern-healthcare-drive|027 · Generative AI Health Assistants in Modern Healthcare: Drivers and Barriers to Adoption — James N. Smith]] · 2026-07-17
