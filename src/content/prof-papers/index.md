@@ -1,6 +1,6 @@
 ---
 title: "Professor papers and learning paths"
-date: 2026-07-18
+date: 2026-07-20
 tags:
   - research-paper
   - learning-path
@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/029-adam-charles-decomposed-linear-dynamical-systems-dlds-for-learning-the-l|029 · Decomposed Linear Dynamical Systems (dLDS) for learning the latent components of neural dynamics — Adam Charles]] · 2026-07-20
 - [[prof-papers/028-pradeep-k-atrey-generating-higher-quality-anti-forensics-deepfakes-with|028 · Generating Higher-Quality Anti-Forensics DeepFakes with Adversarial Sharpening Mask — Pradeep K. Atrey]] · 2026-07-17
 - [[prof-papers/027-james-n-smith-generative-ai-health-assistants-in-modern-healthcare-drive|027 · Generative AI Health Assistants in Modern Healthcare: Drivers and Barriers to Adoption — James N. Smith]] · 2026-07-17
 - [[prof-papers/026-yuanyuan-yy-zhou-on-the-impact-of-formal-verification-on-software-develo|026 · On the Impact of Formal Verification on Software Development — Yuanyuan (YY) Zhou]] · 2026-07-17
