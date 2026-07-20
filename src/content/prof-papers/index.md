@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/033-anxiao-andrew-jiang-machine-learning-and-algorithmic-techniques-for-erro|033 · Machine Learning and Algorithmic Techniques for Error Correction — Anxiao Andrew Jiang]] · 2026-07-20
 - [[prof-papers/032-meng-ye-learning-volumetric-neural-deformable-models-to-recover-3d-regio|032 · Learning Volumetric Neural Deformable Models to Recover 3D Regional Heart Wall Motion from Multi-Planar Tagged MRI — Meng Ye]] · 2026-07-20
 - [[prof-papers/031-tim-roughgarden-shill-proof-auctions|031 · Shill-Proof Auctions — Tim Roughgarden]] · 2026-07-20
 - [[prof-papers/030-yang-p-liu-maximum-flow-and-minimum-cost-flow-in-almost-linear-time|030 · Maximum Flow and Minimum-Cost Flow in Almost-Linear Time — Yang P. Liu]] · 2026-07-20
