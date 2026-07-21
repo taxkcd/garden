@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/040-jennifer-m-groh-conserved-features-of-eye-movement-related-eardrum-oscil|040 · Conserved features of eye movement related eardrum oscillations (EMREOs) across humans and monkeys — Jennifer M. Groh]] · 2026-07-21
 - [[prof-papers/039-sudarshan-chawathe-meaningful-change-detection-in-structured-data|039 · Meaningful Change Detection in Structured Data — Sudarshan Chawathe]] · 2026-07-21
 - [[prof-papers/038-david-andrews-seeking-solutions-in-configurable-computing|038 · Seeking Solutions in Configurable Computing — David Andrews]] · 2026-07-21
 - [[prof-papers/037-brandon-m-booth-a-multimodal-analysis-of-physical-activity-sleep-and-wor|037 · A multimodal analysis of physical activity, sleep, and work shift in nurses with wearable sensor data — Brandon M. Booth]] · 2026-07-21
