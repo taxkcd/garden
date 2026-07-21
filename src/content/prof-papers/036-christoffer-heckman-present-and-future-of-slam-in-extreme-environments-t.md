@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-www-ristoffer-ch"
-source_hash: "af039fa705a5be80aad8a25631d463f207ba5a282015b8e1f4e24b121e3ae0a8"
+source_hash: "842bf2da2f15bb6d58bc33e0b15fa392ea4e2c017670f420b6ae7e3f8757c228"
 sequence: 36
 generator: "outreach-garden: managed"
 ---

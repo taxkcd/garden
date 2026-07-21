@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-ribeirob"
-source_hash: "cdd2b739f48dfefd0f570794d3041eacb9f2b582337617a6ae47e35934d23dbe"
+source_hash: "1c3d35a2806275b639d7d266c4eb8e3da83d7ac9fac6ad2f60c2c3a416bc7a4e"
 sequence: 20
 generator: "outreach-garden: managed"
 ---

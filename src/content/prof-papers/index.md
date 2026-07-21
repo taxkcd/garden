@@ -12,6 +12,9 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/045-laurent-hbert-dufresne-reconstructing-networks-from-simple-and-complex-c|045 · Reconstructing networks from simple and complex contagions — Laurent Hébert-Dufresne]] · 2026-07-21
+- [[prof-papers/044-santosh-s-vempala-the-localization-method-for-high-dimensional-inequalit|044 · The Localization Method for High-dimensional Inequalities — Santosh S. Vempala]] · 2026-07-21
+- [[prof-papers/043-ron-rivest-time-lock-puzzles-and-timed-release-crypto|043 · Time-lock puzzles and timed-release Crypto — Ron Rivest]] · 2026-07-16
 - [[prof-papers/042-annie-liang-friend-or-foe-delegating-to-an-ai-whose-alignment-is-unknown|042 · Friend or Foe: Delegating to an AI whose Alignment is Unknown — Annie Liang]] · 2026-07-21
 - [[prof-papers/041-hamed-hassani-smoothllm-defending-large-language-models-against-jailbrea|041 · SmoothLLM: Defending Large Language Models Against Jailbreaking Attacks — Hamed Hassani]] · 2026-07-21
 - [[prof-papers/040-jennifer-m-groh-conserved-features-of-eye-movement-related-eardrum-oscil|040 · Conserved features of eye movement related eardrum oscillations (EMREOs) across humans and monkeys — Jennifer M. Groh]] · 2026-07-21
@@ -40,7 +43,7 @@ Research papers encountered through professor outreach, paired with practical le
 - [[prof-papers/017-abhijit-s-pandya-an-empirical-analysis-of-diffusion-autoencoders-and-adv|017 · An Empirical Analysis of Diffusion, Autoencoders, and Adversarial Deep Learning Models for Predicting Dementia Using High-Fidelity MRI — Abhijit S. Pandya]] · 2026-07-16
 - [[prof-papers/016-ravi-k-iyer-asap-accelerated-short-read-alignment-on-programmable-hardwa|016 · ASAP: Accelerated Short-Read Alignment on Programmable Hardware — Ravi K. Iyer]] · 2026-07-16
 - [[prof-papers/015-michelle-a-borkin-fractional-brownian-motion-in-a-finite-interval-correl|015 · Evaluating the Effect of Timeline Shape on Visualization Task Performance — Michelle A. Borkin]] · 2026-07-15
-- [[prof-papers/014-aniruddha-bora-learning-bias-corrections-for-climate-models-using-deep-n|014 · Learning bias corrections for climate models using deep neural operators — Aniruddha Bora]] · 2026-07-15
+- [[prof-papers/014-aniruddha-bora-learning-bias-corrections-for-climate-models-using-deep-n|014 · Learning bias corrections for climate models using deep neural operators — Jenna L. Marquard]] · 2026-07-15
 - [[prof-papers/013-marty-a-humphrey-leveraging-the-cloud-for-intelligent-clinical-data-regi|013 · Leveraging the Cloud for Intelligent Clinical Data Registries — Marty A. Humphrey]] · 2026-07-15
 - [[prof-papers/012-yanfang-fanny-ye-heterogeneous-graph-attention-network|012 · Heterogeneous Graph Attention Network — Yanfang (Fanny) Ye]] · 2026-07-14
 - [[prof-papers/011-deliang-l-wang-towards-scaling-up-classification-based-speech-separation|011 · Towards Scaling Up Classification-Based Speech Separation — DeLiang L. Wang]] · 2026-07-14

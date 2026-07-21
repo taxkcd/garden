@@ -1,5 +1,5 @@
 ---
-title: "014 · Learning bias corrections for climate models using deep neural operators — Aniruddha Bora"
+title: "014 · Learning bias corrections for climate models using deep neural operators — Jenna L. Marquard"
 date: 2026-07-15
 tags:
   - research-paper
@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-aniruddhabora-github-io"
-source_hash: "cc01483fecd3a4839e59d186fd3384c6a35300d517380c5452797bd2f63b8a98"
+source_hash: "2ed81629ad815bf58fe77f7ef89648b1bbd441819495f6ef20b098ccf7985974"
 sequence: 14
 generator: "outreach-garden: managed"
 ---
@@ -16,9 +16,9 @@ generator: "outreach-garden: managed"
 
 ## At a glance
 
-- **Professor:** Aniruddha Bora
-- **Institution:** Texas State University
-- **Paper:** [Learning bias corrections for climate models using deep neural operators](https://arxiv.org/abs/2302.03173)
+- **Professor:** Jenna L. Marquard
+- **Institution:** Univ. of Massachusetts Amherst
+- **Paper:** Learning bias corrections for climate models using deep neural operators
 - **Authors:** Aniruddha Bora, Khemraj Shukla, Shixuan Zhang, Bryce Harrop, Ruby Leung, George Em Karniadakis
 - **Year:** 2023
 
@@ -41,13 +41,14 @@ This paper develops a machine learning model using Deep Operator Networks (DeepO
 
 ## About the professor
 
-**Aniruddha Bora** — Assistant Professor, Department of Computer Science, Texas State University.
+**Jenna L. Marquard** — Assistant Professor, Department of Computer Science, Univ. of Massachusetts Amherst.
 
 Research interests: Physics-Informed and Scientific Machine Learning, Generative AI for Scientific Modeling, Interpretable Scientific Machine Learning, Surrogate Modeling for Multiphysics Systems, Multi-Fidelity and Data-Efficient Learning, Numerical Methods + AI for Scientific Discovery, Inverse Design for Metamaterials, Symbolic Regression and Grey box modelling
 
 ### Research links
 
-- [Faculty/profile page](https://aniruddhabora.github.io)
+- [Faculty/profile page](https://mie.umass.edu/faculty/jenna-marquard)
+- [Professor website](https://aniruddhabora.github.io)
 - [Resolved homepage](https://aniruddhabora.github.io/)
 - [Lab website](https://aniruddhabora.github.io/spark/)
 - [Google Scholar](https://scholar.google.com/citations?user=4OMm56YAAAAJ&hl=en)
