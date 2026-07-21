@@ -12,7 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
-- [[prof-papers/038-david-andrews-rendering-postscript-fonts-on-fpgas|038 · Rendering PostScript™ Fonts on FPGAs — David Andrews]] · 2026-07-21
+- [[prof-papers/038-david-andrews-seeking-solutions-in-configurable-computing|038 · Seeking Solutions in Configurable Computing — David Andrews]] · 2026-07-21
 - [[prof-papers/037-brandon-m-booth-a-multimodal-analysis-of-physical-activity-sleep-and-wor|037 · A multimodal analysis of physical activity, sleep, and work shift in nurses with wearable sensor data — Brandon M. Booth]] · 2026-07-21
 - [[prof-papers/036-christoffer-heckman-present-and-future-of-slam-in-extreme-environments-t|036 · Present and Future of SLAM in Extreme Environments: The DARPA SubT Challenge — Christoffer Heckman]] · 2026-07-21
 - [[prof-papers/035-carlos-varela-uncertainty-aware-elastic-virtual-machine-scheduling-for-s|035 · Uncertainty-Aware Elastic Virtual Machine Scheduling for Stream Processing Systems — Carlos Varela]] · 2026-07-20
