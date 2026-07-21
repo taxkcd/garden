@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/036-christoffer-heckman-present-and-future-of-slam-in-extreme-environments-t|036 · Present and Future of SLAM in Extreme Environments: The DARPA SubT Challenge — Christoffer Heckman]] · 2026-07-21
 - [[prof-papers/035-carlos-varela-uncertainty-aware-elastic-virtual-machine-scheduling-for-s|035 · Uncertainty-Aware Elastic Virtual Machine Scheduling for Stream Processing Systems — Carlos Varela]] · 2026-07-20
 - [[prof-papers/034-john-d-storey-capturing-heterogeneity-in-gene-expression-studies-by-surr|034 · Capturing Heterogeneity in Gene Expression Studies by Surrogate Variable Analysis — John D. Storey]] · 2026-07-20
 - [[prof-papers/033-anxiao-andrew-jiang-machine-learning-and-algorithmic-techniques-for-erro|033 · Machine Learning and Algorithmic Techniques for Error Correction — Anxiao Andrew Jiang]] · 2026-07-20
