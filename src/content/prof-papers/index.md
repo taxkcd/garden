@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/042-annie-liang-friend-or-foe-delegating-to-an-ai-whose-alignment-is-unknown|042 · Friend or Foe: Delegating to an AI whose Alignment is Unknown — Annie Liang]] · 2026-07-21
 - [[prof-papers/041-hamed-hassani-smoothllm-defending-large-language-models-against-jailbrea|041 · SmoothLLM: Defending Large Language Models Against Jailbreaking Attacks — Hamed Hassani]] · 2026-07-21
 - [[prof-papers/040-jennifer-m-groh-conserved-features-of-eye-movement-related-eardrum-oscil|040 · Conserved features of eye movement related eardrum oscillations (EMREOs) across humans and monkeys — Jennifer M. Groh]] · 2026-07-21
 - [[prof-papers/039-sudarshan-chawathe-meaningful-change-detection-in-structured-data|039 · Meaningful Change Detection in Structured Data — Sudarshan Chawathe]] · 2026-07-21
