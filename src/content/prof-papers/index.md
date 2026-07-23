@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/048-funda-ergn-palindrome-recognition-in-the-streaming-model|048 · Palindrome Recognition In The Streaming Model — Funda Ergün]] · 2026-07-23
 - [[prof-papers/047-sou-young-jin-beyond-final-answers-crystal-benchmark-for-transparent-mul|047 · Beyond Final Answers: CRYSTAL Benchmark for Transparent Multimodal Reasoning Evaluation — Sou-Young Jin]] · 2026-07-23
 - [[prof-papers/046-neil-s-gaikwad-when-identity-overrides-incentives-representational-choic|046 · When Identity Overrides Incentives: Representational Choices as Governance Decisions in Multi-Agent LLM Systems — Neil S. Gaikwad]] · 2026-07-23
 - [[prof-papers/045-laurent-hbert-dufresne-reconstructing-networks-from-simple-and-complex-c|045 · Reconstructing networks from simple and complex contagions — Laurent Hébert-Dufresne]] · 2026-07-21
