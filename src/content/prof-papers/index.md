@@ -1,6 +1,6 @@
 ---
 title: "Professor papers and learning paths"
-date: 2026-07-23
+date: 2026-07-24
 tags:
   - research-paper
   - learning-path
@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/050-sahand-n-negahban-a-unified-framework-for-high-dimensional-analysis-of-m|050 · A Unified Framework for High-Dimensional Analysis of M-Estimators with Decomposable Regularizers — Sahand N. Negahban]] · 2026-07-23
 - [[prof-papers/049-larry-b-holder-introduction-to-open-world-ai|049 · Introduction to open-world AI — Larry B. Holder]] · 2026-07-23
 - [[prof-papers/048-funda-ergn-palindrome-recognition-in-the-streaming-model|048 · Palindrome Recognition In The Streaming Model — Funda Ergün]] · 2026-07-23
 - [[prof-papers/047-sou-young-jin-beyond-final-answers-crystal-benchmark-for-transparent-mul|047 · Beyond Final Answers: CRYSTAL Benchmark for Transparent Multimodal Reasoning Evaluation — Sou-Young Jin]] · 2026-07-23
