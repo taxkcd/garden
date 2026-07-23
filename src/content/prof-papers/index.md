@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/047-sou-young-jin-beyond-final-answers-crystal-benchmark-for-transparent-mul|047 · Beyond Final Answers: CRYSTAL Benchmark for Transparent Multimodal Reasoning Evaluation — Sou-Young Jin]] · 2026-07-23
 - [[prof-papers/046-neil-s-gaikwad-when-identity-overrides-incentives-representational-choic|046 · When Identity Overrides Incentives: Representational Choices as Governance Decisions in Multi-Agent LLM Systems — Neil S. Gaikwad]] · 2026-07-23
 - [[prof-papers/045-laurent-hbert-dufresne-reconstructing-networks-from-simple-and-complex-c|045 · Reconstructing networks from simple and complex contagions — Laurent Hébert-Dufresne]] · 2026-07-21
 - [[prof-papers/044-santosh-s-vempala-the-localization-method-for-high-dimensional-inequalit|044 · The Localization Method for High-dimensional Inequalities — Santosh S. Vempala]] · 2026-07-21
