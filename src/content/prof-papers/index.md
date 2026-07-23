@@ -12,6 +12,9 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/053-mani-b-srivastava-towards-causally-interpretable-wi-fi-csi-based-human-a|053 · Towards Causally Interpretable Wi-Fi CSI-Based Human Activity Recognition with Discrete Latent Compression and LTL Rule Extraction — Mani B. Srivastava]] · 2026-07-23
+- [[prof-papers/052-varsha-dani-reconstruction-of-random-geometric-graphs-breaking-the-r-dis|052 · Reconstruction of random geometric graphs: Breaking the Ω (r) distortion barrier — Varsha Dani]] · 2026-07-23
+- [[prof-papers/051-fow-sen-choa-rapid-bacterial-detection-and-identification-of-bacterial-s|051 · Rapid Bacterial Detection and Identification of Bacterial Strains Using Machine Learning Methods Integrated With a Portable Multichannel Fluorometer — Fow-Sen Choa]] · 2026-07-22
 - [[prof-papers/050-sahand-n-negahban-a-unified-framework-for-high-dimensional-analysis-of-m|050 · A Unified Framework for High-Dimensional Analysis of M-Estimators with Decomposable Regularizers — Sahand N. Negahban]] · 2026-07-23
 - [[prof-papers/049-larry-b-holder-introduction-to-open-world-ai|049 · Introduction to open-world AI — Larry B. Holder]] · 2026-07-23
 - [[prof-papers/048-funda-ergn-palindrome-recognition-in-the-streaming-model|048 · Palindrome Recognition In The Streaming Model — Funda Ergün]] · 2026-07-23
