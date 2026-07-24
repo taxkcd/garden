@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-xianfeng-david-gu"
-source_hash: "9a0fee2cff60b64188ed9eb013acdc22ba9f1a153f70934d9778505282d84271"
+source_hash: "897b79ce1e0bcebc93299d8bc3a0288baa6188699ff2b2d4299389fa25030835"
 sequence: 56
 generator: "outreach-garden: managed"
 ---

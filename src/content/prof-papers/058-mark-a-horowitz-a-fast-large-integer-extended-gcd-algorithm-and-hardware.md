@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-mark-a-horowitz"
-source_hash: "c1c20eb1c846df4b4278f1e1d1cc9ffa5e176884c753c7388351d30ddad29245"
+source_hash: "c03d52067e1d66b6c761824b712c87e2f7f661210e1badb72ffde973f13a51bc"
 sequence: 58
 generator: "outreach-garden: managed"
 ---

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-sariel-har-peled"
-source_hash: "4e29f3cffe89772c6e572e8d2fcb76462c2bfb9dfbbdfc37f30c6bf19c57d502"
+source_hash: "42f6e251edb3a202722c6be290c182d62a36eb3bcb9d186917cf915c8a9d1a4f"
 sequence: 55
 generator: "outreach-garden: managed"
 ---
