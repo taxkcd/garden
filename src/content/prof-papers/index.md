@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/054-luke-s-zettlemoyer-byte-latent-transformer-patches-scale-better-than-tok|054 · Byte Latent Transformer: Patches Scale Better Than Tokens — Luke S. Zettlemoyer]] · 2026-07-24
 - [[prof-papers/053-mani-b-srivastava-towards-causally-interpretable-wi-fi-csi-based-human-a|053 · Towards Causally Interpretable Wi-Fi CSI-Based Human Activity Recognition with Discrete Latent Compression and LTL Rule Extraction — Mani B. Srivastava]] · 2026-07-23
 - [[prof-papers/052-varsha-dani-reconstruction-of-random-geometric-graphs-breaking-the-r-dis|052 · Reconstruction of random geometric graphs: Breaking the Ω (r) distortion barrier — Varsha Dani]] · 2026-07-23
 - [[prof-papers/051-fow-sen-choa-rapid-bacterial-detection-and-identification-of-bacterial-s|051 · Rapid Bacterial Detection and Identification of Bacterial Strains Using Machine Learning Methods Integrated With a Portable Multichannel Fluorometer — Fow-Sen Choa]] · 2026-07-22
