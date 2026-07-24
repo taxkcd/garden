@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/057-shuang-hao-a-duty-to-forget-a-right-to-be-assured-exposing-vulnerabiliti|057 · A Duty to Forget, a Right to be Assured? Exposing Vulnerabilities in Machine Unlearning Services — Shuang Hao]] · 2026-07-24
 - [[prof-papers/056-xianfeng-david-gu-geometric-understanding-of-deep-learning|056 · Geometric Understanding of Deep Learning — Xianfeng David Gu]] · 2026-07-24
 - [[prof-papers/055-sariel-har-peled-spite-simple-polyhedral-intersection-techniques-for-mod|055 · SPITE: Simple Polyhedral Intersection Techniques for modified Environments — Sariel Har-Peled]] · 2026-07-24
 - [[prof-papers/054-luke-s-zettlemoyer-byte-latent-transformer-patches-scale-better-than-tok|054 · Byte Latent Transformer: Patches Scale Better Than Tokens — Luke S. Zettlemoyer]] · 2026-07-24
