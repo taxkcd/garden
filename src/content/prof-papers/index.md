@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/058-mark-a-horowitz-a-fast-large-integer-extended-gcd-algorithm-and-hardware|058 · A Fast Large-Integer Extended GCD Algorithm and Hardware Design for Verifiable Delay Functions and Modular Inversion — Mark A. Horowitz]] · 2026-07-24
 - [[prof-papers/057-shuang-hao-a-duty-to-forget-a-right-to-be-assured-exposing-vulnerabiliti|057 · A Duty to Forget, a Right to be Assured? Exposing Vulnerabilities in Machine Unlearning Services — Shuang Hao]] · 2026-07-24
 - [[prof-papers/056-xianfeng-david-gu-geometric-understanding-of-deep-learning|056 · Geometric Understanding of Deep Learning — Xianfeng David Gu]] · 2026-07-24
 - [[prof-papers/055-sariel-har-peled-spite-simple-polyhedral-intersection-techniques-for-mod|055 · SPITE: Simple Polyhedral Intersection Techniques for modified Environments — Sariel Har-Peled]] · 2026-07-24
