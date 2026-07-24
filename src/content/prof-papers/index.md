@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/062-marijn-heule-automated-reencoding-meets-graph-theory|062 · Automated Reencoding Meets Graph Theory — Marijn Heule]] · 2026-07-24
 - [[prof-papers/061-alexandros-v-gerbessiotis-a-survey-of-chernoff-and-hoeffding-bounds|061 · A survey of Chernoff and Hoeffding bounds — Alexandros V. Gerbessiotis]] · 2026-07-24
 - [[prof-papers/060-ravi-sundaram-optimal-fair-learning-robust-to-adversarial-distribution-s|060 · Optimal Fair Learning Robust to Adversarial Distribution Shift — Ravi Sundaram]] · 2026-07-24
 - [[prof-papers/059-jyotirmoy-deshmukh-conformalnl2ltl-translating-natural-language-instruct|059 · ConformalNL2LTL: Translating Natural Language Instructions into Temporal Logic Formulas with Conformal Correctness Guarantees — Jyotirmoy Deshmukh]] · 2026-07-24
