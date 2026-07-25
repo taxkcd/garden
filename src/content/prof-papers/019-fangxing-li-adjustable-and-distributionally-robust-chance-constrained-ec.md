@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-fli6"
-source_hash: "85e74dba0a0addcd7edb8a4c0eec7e9e7493e7b9539f2a9cd482ba8b3dfe3347"
+source_hash: "709ddf6058cc4dcc9ddf6c436890e6ee6c1406ef8e4d0128fdf1c7a4b3735609"
 sequence: 19
 generator: "outreach-garden: managed"
 ---
@@ -54,41 +54,83 @@ Research interests: advancing the economic, resilient, and intelligent operation
 
 ## Learning path
 
-To deeply understand the paper on adjustable and distributionally robust chance-constrained economic dispatch considering wind power uncertainty, start with foundational concepts in distributionally robust optimization and chance-constrained optimization to grasp the uncertainty modeling and probabilistic constraint handling. Then, build knowledge on economic dispatch under uncertainty and second-order cone programming, which are essential for the problem context and mathematical formulation. Finally, focus on the core concept of the paper by reviewing the authors' own talk or closely related advanced talks on distributionally robust chance-constrained programs to directly connect theory with the paper's contributions.
+## Track 1 — Academic deep-dives (long-form)
 
-## Recommended videos (in order)
+_Rigorous lectures, seminars and conference talks. Deeper, but longer._
+
+To deeply understand the paper on adjustable and distributionally robust chance-constrained economic dispatch considering wind power uncertainty, start with foundational knowledge on distributionally robust optimization, chance-constrained optimization, economic dispatch in power systems, and second-order cone programming. These prerequisites build the mathematical and domain-specific background needed to grasp the novel ADRCC-OPF model. Finally, focus on the core concept of adjustable distributionally robust chance-constrained optimization to directly connect with the paper's main methodological contribution.
 
 ### Distributionally robust optimization lecture *(prerequisite)*
-This section covers the fundamental theory and applications of distributionally robust optimization, which is crucial for understanding how the paper models wind power uncertainty without strict distributional assumptions. The selected lecture provides a rigorous and advanced treatment suitable for graduate-level readers.
+Distributionally robust optimization (DRO) provides the theoretical foundation for modeling uncertainty without strict distributional assumptions, which is central to the paper's approach. These lectures cover DRO theory and applications, helping understand how the paper uses moment-based ambiguity sets to handle wind power forecast errors.
 
-*How the paper uses it:* The paper's ADRCC-OPF model uses distributionally robust optimization to represent wind forecast errors by their first and second moments without assuming a specific distribution.
+*How the paper uses it:* The paper's ADRCC-OPF model is distributionally robust by using only first and second moments of wind forecast errors instead of assuming a specific distribution.
 
-▶ [Daniel Kuhn: Data-driven and Distributionally Robust ...](https://www.youtube.com/watch?v=b4lJENGAeEA) — DTU: Lectures on Power & Energy Systems · 1:18:16
+▶ [Distributional Robust Optimization, Online Linear Programming, Yinyu Ye, Stanford University](https://www.youtube.com/watch?v=7l6mi2e94yw) — 运筹OR帷幄(Operation Research China Society) · 1:27:49 · 4 years ago
 
 ### Chance-constrained optimization lecture *(prerequisite)*
-Chance constraints form the mathematical backbone for handling probabilistic constraints under uncertainty in optimization problems. This lecture offers a detailed and mathematically rigorous explanation of chance constraints, which is essential to understand the chance-constrained aspect of the ADRCC-OPF model.
+Chance-constrained optimization introduces probabilistic constraints that ensure system reliability under uncertainty, a core mathematical framework used in the paper. These lectures explain how chance constraints work and their role in balancing risk and cost.
 
-*How the paper uses it:* The paper formulates chance constraints to ensure system reliability under uncertain wind power, balancing violation probabilities with operational cost.
+*How the paper uses it:* The paper formulates economic dispatch with chance constraints to manage the risk of violating operational limits under wind uncertainty.
 
-▶ [Gradient-based stochastic optimization under chance constraints](https://www.youtube.com/watch?v=GbejSkpPJbg) — OPTIMA ARC · 1:05:17
+▶ [Chance constraints](https://www.youtube.com/watch?v=FRLmJZEsS44) — Dr. Clausen · 5 years ago
 
-### Economic dispatch under uncertainty lecture *(prerequisite)*
-This section contextualizes the power system operational problem addressed by the paper, focusing on economic dispatch under uncertainty. The selected talk provides advanced modeling techniques and robust optimization approaches relevant to power system operations with renewable integration.
+### Economic dispatch in power systems lecture *(prerequisite)*
+Economic dispatch is the fundamental operational problem addressed by the paper. These lectures provide essential background on how power generation is optimally scheduled to meet demand at minimum cost, setting the stage for understanding the paper's optimization model.
 
-*How the paper uses it:* The paper addresses economic dispatch considering wind power uncertainty, aiming to improve operational decisions balancing cost and reliability.
+*How the paper uses it:* The paper proposes an economic dispatch model that incorporates wind power uncertainty and chance constraints.
 
-▶ [Andy Xu Sun: Robust Optimization in Electric Power System ...](https://www.youtube.com/watch?v=_mRMOrdbRR4) — CAM - Cornell Center for Applied Math Colloquium · 1:00:52
+▶ [03- Introduction to Optimization and Economic Dispatch, part 1](https://www.youtube.com/watch?v=ufODuY6PImU) — Daniel Kirschen · 1:11:58
 
 ### Second-order cone programming lecture *(prerequisite)*
-Second-order cone programming (SOCP) is the mathematical optimization technique used to formulate and solve the ADRCC-OPF model. This lecture offers a comprehensive and advanced introduction to SOCP, enabling understanding of the model's computational approach.
+Second-order cone programming (SOCP) is the mathematical optimization technique used to solve the ADRCC-OPF model efficiently. These lectures explain SOCP formulations and solution methods, enabling comprehension of the paper's computational approach.
 
-*How the paper uses it:* The ADRCC-OPF model is formulated as a second-order cone program to efficiently solve the adjustable and distributionally robust chance-constrained optimization problem.
+*How the paper uses it:* The ADRCC-OPF model is formulated as a second-order cone program to handle the adjustable and distributionally robust chance constraints.
 
-▶ [Lecture 8 | Second Order Cone Programming (SOCP)](https://www.youtube.com/watch?v=sVbcJx4g-LQ) — Ahmad Bazzi · 1:04:46
+▶ [EE563 Convex Optimization - Second-Order Cone Programming](https://www.youtube.com/watch?v=uHFNDDoPkVc) — Zubair Khalid · 29:01
 
-### Authors' talk on ADRCC-OPF *(the paper's own talk)*
-This section features the authors' own presentation or closely related advanced talks on distributionally robust chance-constrained programs, providing direct insight into the paper's model, methodology, and results. It is the most direct and authoritative source for understanding the paper's contributions.
+### Adjustable distributionally robust chance-constrained optimization lecture
+This concept directly addresses the paper's central methodological innovation: tuning the robustness level of chance constraints to balance cost and reliability under uncertain wind power. The selected lectures provide advanced insights into adjustable and distributionally robust chance-constrained optimization frameworks.
 
-*How the paper uses it:* The authors' talk presents the ADRCC-OPF model and its validation, directly reflecting the paper's core contributions and findings.
+*How the paper uses it:* The paper's key contribution is the ADRCC-OPF model that allows adjustable robustness in chance constraints for economic dispatch under wind uncertainty.
 
-▶ [Distributionally Robust Chance-Constrained Programs under ...](https://www.youtube.com/watch?v=tisRmRCJE08) — Discrete Optimization Talks · 27:49
+▶ [Understanding Chance-Constrained Optimization](https://www.youtube.com/watch?v=YSIIs27yxvU) — Keerthi Chacko: Control and Optimization · 13:20
+
+## Track 2 — Beginner → Advanced (short-form)
+
+_Concise, high-quality explainers that build intuition — for when time is short._
+
+To understand this paper, start by learning the basics of economic dispatch in power systems, which is the operational problem the paper addresses. Next, build intuition on chance-constrained optimization to grasp how probabilistic constraints manage uncertainty. Then, study distributionally robust optimization to see how uncertainty is modeled without strict distribution assumptions. Finally, explore second-order cone programming as the mathematical tool used to solve the proposed model, and conclude with the adjustable distributionally robust chance-constrained optimization concept that is central to the paper's novel approach.
+
+### Economic dispatch in power systems lecture *(prerequisite)*
+Economic dispatch is the process of determining the optimal output of multiple power generation units to meet demand at the lowest cost while respecting operational constraints. Understanding this foundational concept is essential to grasp the paper’s focus on optimizing power system operations under uncertainty.
+
+*How the paper uses it:* The paper proposes an improved economic dispatch model that accounts for wind power uncertainty.
+
+▶ [Lec 01 Economic Load Dispatch Introduction, objective and its ...](https://www.youtube.com/watch?v=J4WGO3VzPCo) — Chinmay Deshpande · 10:36
+
+### Chance-constrained optimization lecture *(prerequisite)*
+Chance-constrained optimization incorporates probabilistic constraints to ensure that certain conditions hold with a specified probability, allowing for controlled risk in decision-making under uncertainty. This framework is key to managing the variability of wind power in the paper’s model.
+
+*How the paper uses it:* The paper uses chance constraints to handle wind power forecast uncertainty with a controllable risk level.
+
+▶ [Understanding Chance-Constrained Optimization](https://www.youtube.com/watch?v=YSIIs27yxvU) — Keerthi Chacko: Control and Optimization · 13:20
+
+### Distributionally robust optimization lecture *(prerequisite)*
+Distributionally robust optimization models uncertainty by considering all probability distributions consistent with known moments (like mean and covariance), avoiding reliance on a single assumed distribution. This approach provides a safeguard against model misspecification, which is critical for the paper’s wind uncertainty modeling.
+
+*How the paper uses it:* The paper’s ADRCC-OPF model is distributionally robust, using only first and second moments of wind forecast errors.
+
+▶ [Introduction to Distributionally Robust Optimization](https://www.youtube.com/watch?v=Kfu-qYGWuhY) — PSMR UMONS · 19:29 · 5 years ago
+
+### Second-order cone programming lecture *(prerequisite)*
+Second-order cone programming (SOCP) is a convex optimization technique that efficiently solves problems with quadratic and conic constraints. Understanding SOCP is important because the paper formulates its adjustable distributionally robust chance-constrained model as an SOCP for computational tractability.
+
+*How the paper uses it:* The ADRCC-OPF model is formulated as a second-order cone program to solve the optimization efficiently.
+
+▶ [EE563 Convex Optimization - Second-Order Cone Programming](https://www.youtube.com/watch?v=uHFNDDoPkVc) — Zubair Khalid · 29:01
+
+## Already in your library
+
+- [Daniel Kuhn: Data-driven and Distributionally Robust ...](https://www.youtube.com/watch?v=b4lJENGAeEA) — also for: Adjustable and distributionally robust chance-constrained economic dispatch considering wind power uncertainty (Fangxing Li)
+- [Lecture 8 | Second Order Cone Programming (SOCP)](https://www.youtube.com/watch?v=sVbcJx4g-LQ) — also for: Adjustable and distributionally robust chance-constrained economic dispatch considering wind power uncertainty (Fangxing Li)
+- [Distributionally Robust Chance-Constrained Programs under ...](https://www.youtube.com/watch?v=tisRmRCJE08) — also for: Adjustable and distributionally robust chance-constrained economic dispatch considering wind power uncertainty (Fangxing Li)

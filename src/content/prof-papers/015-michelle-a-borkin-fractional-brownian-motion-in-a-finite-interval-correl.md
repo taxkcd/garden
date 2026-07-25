@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-borkin"
-source_hash: "fe6dd567818d8447608c71a84513d6d627e4c51d3ae45592fdc9931cc9a54c33"
+source_hash: "841f86a272ef50d9fede2bc7b2f10adc544cd7c77f663f11ea0198b6362c349c"
 sequence: 15
 generator: "outreach-garden: managed"
 ---
@@ -51,20 +51,74 @@ This study investigates how the shape of timelines—horizontal line, vertical l
 
 ## Learning path
 
-To deeply understand the paper on the effect of timeline shape on visualization task performance, start by exploring foundational knowledge on timeline visualization evaluation to grasp empirical methods and design considerations. Then, focus on the authors' own recorded talk presenting their experimental approach, findings, and design implications, which provides the most direct and advanced insight into their work.
+## Track 1 — Academic deep-dives (long-form)
 
-## Recommended videos (in order)
+_Rigorous lectures, seminars and conference talks. Deeper, but longer._
 
-### Timeline visualization evaluation *(prerequisite)*
-This section covers empirical methods and practical considerations for evaluating timeline visualizations, including user performance and design trade-offs. The selected talk from Aalto University provides an academic-level seminar on visualizing time, which aligns well with understanding the broader context and challenges in timeline visualization research.
+To deeply understand the paper on how timeline shape affects visualization task performance, start by grounding yourself in foundational knowledge of human-computer interaction experimental methods and visual encoding principles, which underpin the study's design and interpretation. Next, build domain-specific understanding of temporal data visualization techniques. Finally, focus on the core concept of timeline visualization design, emphasizing the paper's unique contribution, and conclude with the authors' own talk if available to get direct insights into their methodology and findings.
 
-*How the paper uses it:* Understanding timeline visualization evaluation methods and challenges sets the stage for appreciating the experimental design and significance of the paper's contributions.
+### Human-Computer Interaction Experimental Methods *(prerequisite)*
+This section covers the experimental design and evaluation methods commonly used in HCI research, which are critical to understanding the rigor and validity of the paper's crowd-sourced study. It provides context on how user studies are structured, analyzed, and interpreted in visualization research.
 
-▶ [Masood Masoodian: “Visualizing time”](https://www.youtube.com/watch?v=6oKEeiIUvJo) — Aalto University · 8 years ago
+*How the paper uses it:* The paper employs a controlled, crowd-sourced experiment with statistical analysis to evaluate timeline shapes, making understanding HCI experimental methods essential.
 
-### Authors' recorded talk *(the paper's own talk)*
-This is the authors' own presentation of their study, detailing the experimental setup, timeline shapes tested, task types, results, and design recommendations. It offers the most direct and comprehensive explanation of their research, suitable for an advanced reader seeking to understand the nuances and implications of their findings.
+▶ [Study Design Explained in Less Than 10 Minutes](https://www.youtube.com/watch?v=1MCFvSNIF14) — Mirko von Hein · 13:35
 
-*How the paper uses it:* This talk directly presents the paper's core contributions and empirical evidence on how timeline shape affects task performance and user preference.
+### Visual Encoding and Perception in Visualization *(prerequisite)*
+Understanding visual encoding channels and how humans perceive visual information is key to grasping why timeline shape might affect task performance. This section explains fundamental visualization concepts such as marks and channels that influence readability and user preference.
 
-▶ [Evaluating the Effect of Timeline Shape on Visualization Task Performance](https://www.youtube.com/watch?v=MeIM6gKS6fY) — ACM SIGCHI · 13:33 · 6 years ago
+*How the paper uses it:* The paper investigates how different timeline shapes, as visual encodings of temporal data, impact user speed and preference, relying on principles of visual perception.
+
+▶ [Marks and Channels (Ch 5), Visualization Analysis & Design ...](https://www.youtube.com/watch?v=xplSAMwlTmY) — Tamara Munzner · 12:36
+
+### Temporal Data Visualization *(prerequisite)*
+This section introduces techniques and challenges in visualizing time-based data sequences, providing foundational knowledge about temporal data representation. It helps situate timeline visualizations within the broader context of temporal data visualization methods.
+
+*How the paper uses it:* The paper focuses on timeline visualizations, a primary method for representing temporal event sequences, making temporal data visualization knowledge fundamental.
+
+▶ [Lecture 4.1: Temporal Data](https://www.youtube.com/watch?v=bb655HEJpk4) — Designing with AI Lab · 4 years ago
+
+### Timeline Visualization Design
+This section delves into the design considerations and variations of timeline visualizations, directly addressing the paper's core topic. It provides context on different timeline shapes and their implications for user tasks, complementing the paper's empirical findings.
+
+*How the paper uses it:* The paper systematically evaluates the effect of timeline shape on task performance, making timeline visualization design the central concept.
+
+▶ [What story does your timeline tell? - Matthew Brehmer](https://www.youtube.com/watch?v=gQKUl_1ryo4) — BocoupLLC · 28:43
+
+## Track 2 — Beginner → Advanced (short-form)
+
+_Concise, high-quality explainers that build intuition — for when time is short._
+
+To understand this paper, start by learning the basics of human-computer interaction experimental methods to grasp how the study was designed and evaluated. Next, build foundational knowledge on temporal data visualization to understand how time-based data is represented visually. Then, learn about visual encoding and perception to see how visual design choices affect readability and task performance. Finally, focus on timeline visualization design, the core concept of the paper, to understand how different timeline shapes impact user task speed, accuracy, and preference.
+
+### Human-Computer Interaction Experimental Methods *(prerequisite)*
+This section introduces how to design and conduct user studies in human-computer interaction, including planning experiments, measuring task performance, and analyzing results. Understanding these methods helps you appreciate the rigor behind the paper's evaluation of timeline shapes.
+
+*How the paper uses it:* The paper uses a controlled, crowd-sourced experiment to evaluate timeline shape effects on task performance.
+
+▶ [Study Design Explained in Less Than 10 Minutes](https://www.youtube.com/watch?v=1MCFvSNIF14) — Mirko von Hein · 13:35
+
+### Temporal Data Visualization *(prerequisite)*
+Learn how data that changes over time can be visually represented to reveal patterns and trends. This foundational knowledge covers common techniques and challenges in visualizing temporal event sequences.
+
+*How the paper uses it:* The paper studies different timeline shapes as ways to visualize temporal event sequences.
+
+▶ [Lecture 4.1: Temporal Data](https://www.youtube.com/watch?v=bb655HEJpk4) — Designing with AI Lab · 4 years ago
+
+### Visual Encoding and Perception in Visualization *(prerequisite)*
+Visual encoding is about how data attributes are mapped to visual elements like position, color, and shape, which affects how easily users can interpret information. Understanding perception principles explains why some visual designs are more effective than others.
+
+*How the paper uses it:* The paper investigates how the visual encoding of time via timeline shape influences readability and task speed.
+
+▶ [Marks and Channels (Ch 5), Visualization Analysis & Design ...](https://www.youtube.com/watch?v=xplSAMwlTmY) — Tamara Munzner · 12:36
+
+### Timeline Visualization Design
+This section focuses on the design choices for timelines, including different shapes like linear, circular, and spiral, and how these affect user interaction and understanding. It ties together the previous concepts to show practical implications for timeline usability.
+
+*How the paper uses it:* The core of the paper is evaluating how timeline shape affects user task performance and preference.
+
+▶ [Timelines - What Are They and How Do We Make One?](https://www.youtube.com/watch?v=hBXVSNJAbKY) — Miacademy & MiaPrep Learning Channel · 5:37
+
+## Already in your library
+
+- [Evaluating the Effect of Timeline Shape on Visualization Task Performance](https://www.youtube.com/watch?v=MeIM6gKS6fY) — also for: Evaluating the Effect of Timeline Shape on Visualization Task Performance (Michelle A. Borkin)
