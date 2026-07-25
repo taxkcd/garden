@@ -9,7 +9,7 @@ draft: false
 source_workspace: "outreach-deeptag-github-io"
 source_hash: "8a9af728b41fab0282e5d21110e99b28fcce136877c2681be7134bae9c38fcf8"
 sequence: 32
-generator: "outreach-garden: managed (hand-enriched 2026-07-21)"
+generator: "outreach-garden: pinned (hand-enriched 2026-07-21)"
 ---
 
 # 032 · Learning Volumetric Neural Deformable Models to Recover 3D Regional Heart Wall Motion from Multi-Planar Tagged MRI
