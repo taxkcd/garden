@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-storeylab-org"
-source_hash: "a8cd856f3dcc0941f2a205e21f2150c86090f052d08482e4ace711db5586fcfa"
+source_hash: "98058b03c8a2b54c267c6b5989f946aa2d41d0b50827e1aa1ed96c1a6982569b"
 sequence: 34
 generator: "outreach-garden: managed"
 ---
