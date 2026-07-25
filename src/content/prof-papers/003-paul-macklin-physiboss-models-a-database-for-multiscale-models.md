@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-mathcancer-org"
-source_hash: "b791425138a5497876691ba908dd28e4defd35a1719b9f72a065ac7b0c21093a"
+source_hash: "47d2cf447dfae488e951695d856c227d96a3692dd43e6af53c6748a614a25809"
 sequence: 3
 generator: "outreach-garden: managed"
 ---

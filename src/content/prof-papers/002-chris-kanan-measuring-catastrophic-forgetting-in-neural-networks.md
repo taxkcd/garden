@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-www-chriskanan-com"
-source_hash: "fc989636c8e8610c8ee6be327abff7a171657f516cc1523f889673010e3fef6e"
+source_hash: "fa73407b4f815d2c2a8dda19580786d50cde5b8925ba7ff2e376035b7de3c292"
 sequence: 2
 generator: "outreach-garden: managed"
 ---

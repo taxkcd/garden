@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-brandon-booth-php"
-source_hash: "dc7fc75d89c30d3564d1a0f267cd1d51a30a40fd279708780456bc611ea8abce"
+source_hash: "2ad9219bf35f89696a85c0136bd3df451e819e8bbc4597c2deb8900d47331b44"
 sequence: 37
 generator: "outreach-garden: managed"
 ---
@@ -53,34 +53,81 @@ Research interests: Human-centered computing, psychometrics, mobile health, arti
 
 ## Learning path
 
-To deeply understand the paper on multimodal analysis of physical activity, sleep, and work shift in nurses using wearable sensor data, start with foundational knowledge on circadian rhythms and shift work, followed by understanding physical activity monitoring and sleep quality assessment using wearables. Then, focus on the core concept of wearable sensor data analysis methods. Finally, conclude with the authors' own talk to gain direct insights into their study design, findings, and implications.
+## Track 1 — Academic deep-dives (long-form)
 
-## Recommended videos (in order)
+_Rigorous lectures, seminars and conference talks. Deeper, but longer._
 
-### Circadian rhythms and shift work lecture *(prerequisite)*
-This section provides foundational understanding of biological clock disruption in night shift workers, which is central to the paper's focus on circadian misalignment and its health impacts. The selected lecture offers an in-depth academic treatment of circadian rhythms and their relevance to shift work.
+To deeply understand the paper on multimodal analysis of physical activity, sleep, and work shift in nurses using wearable sensor data, start with foundational knowledge on circadian rhythms and their physiological impact, followed by understanding physical activity monitoring and sleep quality assessment methods. Then, focus on wearable sensor data analysis techniques, which are central to the paper's methodology. Finally, conclude with the authors' own talks or closely related multimodal analysis presentations to gain direct insights into the study's approach and findings.
 
-*How the paper uses it:* The paper investigates circadian misalignment and social jet lag in night shift nurses, making a solid grasp of circadian biology essential.
+### Circadian rhythms and misalignment *(prerequisite)*
+Circadian rhythms are fundamental biological processes that regulate sleep-wake cycles and other physiological functions. Understanding circadian misalignment is critical to grasping how night shift work disrupts these rhythms, leading to health and behavioral consequences. This section provides the biological and theoretical background necessary to contextualize the paper's focus on shift work impacts.
 
-▶ [The Circadian Clock and Shift Work in the 21st Century](https://www.youtube.com/watch?v=3EcxZL-qmJc) — Library of Congress · 1:17:31 · 6 years ago
+*How the paper uses it:* The paper investigates circadian misalignment effects on nurses working night shifts, making foundational knowledge of circadian rhythms essential.
 
-### Physical activity monitoring with wearables lecture *(prerequisite)*
-Understanding how physical activity is objectively measured using wearable sensors is critical to interpreting the paper's use of Fitbit data to quantify sedentary behavior and walking activity. The chosen lecture provides a rigorous academic overview of wearable accelerometer technology and data analysis.
+▶ [Circadian Rhythms:  Past, Present and Future - Michael Rosbash](https://www.youtube.com/watch?v=lsEWfCvdVUg) — Institute for Advanced Study · 6 years ago
 
-*How the paper uses it:* The study quantifies physical activity differences between day and night shift nurses using wearable sensor data.
+### Physical activity monitoring *(prerequisite)*
+Physical activity monitoring techniques, especially using wearable sensors, are key to objectively quantifying sedentary behavior and activity levels. This section covers methods and technologies for capturing and analyzing physical activity data, which underpin the paper's measurement of nurse activity differences across shifts.
 
-▶ [3. Reproducible machine learning of movement behaviours from wearable sensors - Aiden Doherty](https://www.youtube.com/watch?v=xA5KkW-qqao) — Health Data Research UK (HDR UK) · 1:03:08 · 5 years ago
+*How the paper uses it:* The paper quantifies physical activity differences between day and night shift nurses using wearable sensor data.
 
-### Sleep quality assessment and analysis seminar *(prerequisite)*
-This section covers methods for objectively and subjectively measuring sleep quality, a key variable in the paper. The selected seminar is a detailed academic presentation on actigraphy and sleep measurement techniques relevant to wearable sensor studies.
+▶ [Using Wearable Technology to Measure Physical Activity and Mobility](https://www.youtube.com/watch?v=nPbEuGrxoSQ) — Johns Hopkins Medicine · 8 years ago
 
-*How the paper uses it:* The paper assesses sleep quality differences between shifts using Fitbit-derived sleep metrics and self-reported PSQI scores.
+### Sleep quality assessment *(prerequisite)*
+Sleep quality assessment methods, including objective and subjective measures like the Pittsburgh Sleep Quality Index (PSQI), are crucial for interpreting sleep pattern differences and their health implications. This section provides an understanding of how sleep quality is evaluated in research and clinical contexts.
 
-▶ [Actigraphy in the Diagnosis and Management of Patients with Sleep Disorders](https://www.youtube.com/watch?v=dKhorziMZ7U) — American Academy of Sleep Medicine · 1:01:45 · 4 years ago
+*How the paper uses it:* The study assesses sleep quality differences between shift types using both wearable sensor data and PSQI scores.
 
-### Wearable sensor data analysis lecture
-This section focuses on the central methodology of the paper: collecting and analyzing objective physiological and behavioral data from wearable sensors. The chosen talk provides a comprehensive academic overview of wearable sensor technologies and their application in health monitoring.
+▶ [The Pittsburgh Sleep Quality Index (PSQI)](https://www.youtube.com/watch?v=QlZUUmUOAsI) — HIGN at NYU Meyers · 32:47 · 12 years ago
 
-*How the paper uses it:* The paper's core contribution is the multimodal analysis of wearable sensor data to study nurse behavior and physiology across shifts.
+### Wearable sensor data analysis
+Wearable sensor data analysis encompasses the collection, processing, and interpretation of physiological and behavioral signals from devices like Fitbit. This section delves into the methodologies for analyzing multimodal sensor data, which is central to the paper's approach to objectively measuring nurse activity, sleep, and circadian patterns.
 
-▶ [Wearables in Clinical Research: Data, Trends, and Challenges](https://www.youtube.com/watch?v=QT9mxXwZcN4) — Duke Clinical Research Institute · 35:34
+*How the paper uses it:* The paper's core methodology relies on analyzing Fitbit wearable sensor data collected longitudinally from nurses.
+
+▶ [Akane Sano - Human Sensing & Data Analysis: Modeling for ...](https://www.youtube.com/watch?v=t8MHxkWwkwA) — Rice Ken Kennedy Institute · 29:32
+
+### Paper authors talk *(the paper's own talk)*
+Direct talks by the paper's authors or closely related presentations provide the most precise insights into the study's motivations, methods, and interpretations. These talks often include nuanced discussion of challenges and future directions that are not fully captured in the paper text.
+
+*How the paper uses it:* Hearing from the authors themselves offers the best understanding of their interdisciplinary approach combining wearable sensing and behavioral analysis in healthcare workers.
+
+▶ [FatigueSet: A Multi-modal Dataset for Modeling Mental Fatigue and Fatigability](https://www.youtube.com/watch?v=lP2NKP0m5Fk) — EAI · 4 years ago
+
+## Track 2 — Beginner → Advanced (short-form)
+
+_Concise, high-quality explainers that build intuition — for when time is short._
+
+This beginner-to-advanced path introduces foundational concepts needed to understand the paper's analysis of nurses' physical activity, sleep, and circadian rhythms using wearable sensors. We start with circadian rhythms to grasp the biological basis of shift work effects, then cover physical activity monitoring and sleep quality assessment to understand the objective data collected. Finally, we explore wearable sensor data analysis methods that underpin the study's multimodal approach.
+
+### Circadian rhythms and misalignment *(prerequisite)*
+Circadian rhythms are natural, roughly 24-hour cycles in biological processes that regulate sleep-wake patterns and other bodily functions. Understanding how these rhythms can be disrupted, especially by night shift work, is key to grasping the physiological impacts studied in the paper.
+
+*How the paper uses it:* The paper investigates how night shift nurses experience greater circadian misalignment, affecting sleep and well-being.
+
+▶ [How optimizing circadian rhythms can increase healthy years | Satchin Panda | TEDxBoston](https://www.youtube.com/watch?v=fciGNBN0nKM) — TEDx Talks · 13:12 · 4 years ago
+
+### Physical activity monitoring *(prerequisite)*
+Physical activity monitoring involves using sensors to objectively measure movement and sedentary behavior. This helps quantify differences in activity levels, which are important for understanding health impacts of shift work.
+
+*How the paper uses it:* The study uses wearable sensors to compare sedentary behavior and walking activity between day and night shift nurses.
+
+▶ [Physical Activity, Posture & Sleep: ProPASS 2023 Overview ...](https://www.youtube.com/watch?v=H1DJ2c3jSQw) — Physical Activity Researcher Podcast · 15:50
+
+### Sleep quality assessment *(prerequisite)*
+Sleep quality assessment evaluates how well a person sleeps, including factors like duration, continuity, and restfulness. Tools like the Pittsburgh Sleep Quality Index (PSQI) provide standardized measures to compare sleep health.
+
+*How the paper uses it:* The paper uses PSQI scores and sensor data to assess differences in sleep quality between shift types.
+
+▶ [The Pittsburgh Sleep Quality Index (PSQI)](https://www.youtube.com/watch?v=QlZUUmUOAsI) — HIGN at NYU Meyers · 32:47 · 12 years ago
+
+### Wearable sensor data analysis
+Wearable sensor data analysis involves processing continuous physiological and behavioral data collected from devices like Fitbits to extract meaningful patterns. This multimodal approach enables objective, long-term monitoring of health-related variables.
+
+*How the paper uses it:* The study's core method is analyzing 10 weeks of Fitbit data combined with self-reports to understand nurse well-being across shifts.
+
+▶ [Wearable Biosensors for Continuous Health Monitoring - Wei ...](https://www.youtube.com/watch?v=-RZwHDSFz6o) — caltech · 29:15
+
+## Already in your library
+
+- [Wearables in Clinical Research: Data, Trends, and Challenges](https://www.youtube.com/watch?v=QT9mxXwZcN4) — also for: A multimodal analysis of physical activity, sleep, and work shift in nurses with wearable sensor data (Brandon M. Booth)

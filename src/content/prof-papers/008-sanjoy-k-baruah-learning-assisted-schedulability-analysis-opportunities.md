@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-baruah"
-source_hash: "ac94d308825724a77697630ffc4ed45d0085740917ea2335c8ed662a992d782a"
+source_hash: "f0fe6e1fb13b74439bb4481b2c8b3df5050db7dcdb7a028a5481c7bed9b1b9f0"
 sequence: 8
 generator: "outreach-garden: managed"
 ---
@@ -52,34 +52,67 @@ This paper presents a novel framework that uses deep learning to analyze whether
 
 ## Learning path
 
-To deeply understand the paper on learning-assisted schedulability analysis, start with foundational knowledge of computational complexity theory, especially NP and coNP classes, as this underpins the framework's applicability. Next, study Fixed-Priority scheduling theory, the core scheduling paradigm analyzed in the paper. Then, explore certificate-based verification methods, crucial for guaranteeing safety by eliminating false positives. Following that, review the application of deep learning in safety-critical systems to contextualize the use of neural networks with safety guarantees. Finally, focus on the paper's core contribution: the deep learning-based schedulability classification framework, ideally through the authors' own talk or closely related advanced seminars.
+## Track 1 — Academic deep-dives (long-form)
 
-## Recommended videos (in order)
+_Rigorous lectures, seminars and conference talks. Deeper, but longer._
 
-### Computational complexity of schedulability problems *(prerequisite)*
-Understanding the computational complexity classes NP and coNP is essential to grasp why the proposed framework applies to Fixed-Priority schedulability (NP-complete) but not to EDF schedulability (coNP-complete). This foundational knowledge clarifies the theoretical limits of the approach.
+To deeply understand the paper on learning-assisted schedulability analysis, start with foundational knowledge in computational complexity theory to grasp the NP and coNP complexity classes relevant to the framework's applicability. Next, build a solid understanding of real-time scheduling theory, focusing on Fixed-Priority and EDF scheduling algorithms. Then, study deep learning classification methods as they form the core technique used in the paper. Finally, explore the paper authors' own talk or closely related academic talks on schedulability analysis to gain direct insights into their novel framework and experimental results.
 
-*How the paper uses it:* The paper formally derives that the framework applies only to schedulability problems in NP, explaining its applicability to Fixed-Priority but not EDF schedulability.
+### Computational complexity theory *(prerequisite)*
+Understanding computational complexity, especially the classes NP and coNP, is essential to appreciate why the proposed framework applies to Fixed-Priority schedulability (NP-complete) but not EDF schedulability (coNP-complete). This foundation clarifies the theoretical limits and guarantees of the learning-assisted approach.
 
-▶ [Lecture 23: Computational Complexity](https://www.youtube.com/watch?v=moPtwq_cVH8) — MIT OpenCourseWare · 51:12 · 13 years ago
+*How the paper uses it:* The paper formally derives that the framework applies only to schedulability problems in NP, explaining the difference in applicability between Fixed-Priority and EDF schedulability.
 
-### Fixed-Priority scheduling theory *(prerequisite)*
-Fixed-Priority scheduling is the primary scheduling paradigm analyzed in the paper. A solid understanding of its principles and how it differs from dynamic priority scheduling is necessary to appreciate the framework's focus and results.
+▶ [Recitation 23: Computational Complexity](https://www.youtube.com/watch?v=t5Wxk96QjUk) — MIT OpenCourseWare · 13 years ago
 
-*How the paper uses it:* The framework is implemented and evaluated specifically for Fixed-Priority schedulability analysis, which is NP-complete.
+### Real-time scheduling theory *(prerequisite)*
+A thorough understanding of real-time scheduling algorithms, including Fixed-Priority and Earliest Deadline First (EDF), and their schedulability analysis is critical. This knowledge provides the context for the paper’s focus on constrained-deadline sporadic task systems and the scheduling policies evaluated.
 
-▶ [OS - Rate Monotonic Scheduling || Fixed Priority Scheduling || Real Time Scheduling || Examples](https://www.youtube.com/watch?v=SIqQXNSt-pE) — Mukesh Chinta · 28:23 · 4 years ago
+*How the paper uses it:* The paper focuses on Fixed-Priority and EDF schedulability analysis, making foundational knowledge of these scheduling paradigms necessary.
 
-### Certificate-based verification methods *(prerequisite)*
-Certificate-based verification is a key technique used in the paper to eliminate unsafe false positives by verifying the neural network's schedulability claims efficiently. Understanding digital certificates and verification methods provides insight into how safety guarantees are achieved.
+▶ [Scheduling in Hard Real Time Systems: The Response Time Approach](https://www.youtube.com/watch?v=kJ6Y1KbF4Xc) — ASET Forum · Streamed 5 years ago
 
-*How the paper uses it:* The paper proposes that the deep learning component generates verifiable certificates to guarantee no false positives in schedulability classification.
+### Deep learning for classification *(prerequisite)*
+Deep learning classification techniques, especially multilayer perceptrons used for binary classification, underpin the paper’s approach to predicting schedulability. Understanding these methods is vital to grasp how neural networks can be trained and verified for safety-critical decisions.
 
-▶ [Intro to Digital Certificates](https://www.youtube.com/watch?v=qXLD2UHq2vk) — Dave Crabbe · 9 years ago
+*How the paper uses it:* The authors use deep learning classifiers to predict schedulability and generate certificates for verification, making classification fundamentals essential.
 
-### Deep learning for safety-critical systems *(prerequisite)*
-Applying deep learning in safety-critical systems requires careful consideration of safety guarantees and validation. This background helps contextualize the challenges and significance of the paper's approach to using neural networks safely in real-time schedulability analysis.
+▶ [Machine Learning Crash Course: Classification](https://www.youtube.com/watch?v=QM0sYbEQSkM) — Google for Developers · 1 year ago
 
-*How the paper uses it:* The paper applies deep learning with a novel certificate-based verification to ensure safety in real-time schedulability analysis.
+## Track 2 — Beginner → Advanced (short-form)
 
-▶ [Can We Make Machine Learning Safe for Safety-Critical Systems?](https://www.youtube.com/watch?v=qw4_SX_JYiM) — Software Engineering Institute | Carnegie Mellon University · 57:58 · 1 year ago
+_Concise, high-quality explainers that build intuition — for when time is short._
+
+This beginner-to-advanced learning path introduces foundational concepts needed to understand the paper's novel deep learning framework for schedulability analysis. It starts with the basics of computational complexity theory to grasp why some schedulability problems are tractable and others are not, then covers real-time scheduling theory to understand the scheduling models and constraints involved. Next, it explains deep learning classification methods as the core technique used for schedulability prediction, followed by a focused look at schedulability analysis itself. Finally, it touches on certificate-based verification methods that guarantee safety by eliminating false positives in the framework.
+
+### Computational complexity theory *(prerequisite)*
+Learn the basics of computational complexity, including the classes NP and coNP, which categorize problems based on how easily their solutions can be verified. Understanding these classes helps explain why some schedulability problems can be efficiently analyzed with the proposed framework, while others cannot.
+
+*How the paper uses it:* The paper's framework applies only to schedulability problems in NP, such as Fixed-Priority scheduling, but not to coNP-complete problems like EDF schedulability.
+
+▶ [Recitation 23: Computational Complexity](https://www.youtube.com/watch?v=t5Wxk96QjUk) — MIT OpenCourseWare · 13 years ago
+
+### Real-time scheduling theory *(prerequisite)*
+This concept covers how tasks with timing constraints are scheduled on processors, focusing on algorithms like Fixed-Priority and Earliest Deadline First (EDF). Understanding these scheduling policies and their constraints is essential to grasp the problem of schedulability analysis tackled in the paper.
+
+*How the paper uses it:* The paper analyzes schedulability under Fixed-Priority (Deadline-Monotonic) and EDF scheduling policies on uniprocessors.
+
+▶ [Real time Scheduling | ES | Embedded Systems | Lec-31 | Bhanu Priya](https://www.youtube.com/watch?v=oU4RwHkmnaM) — Education 4u · 7 years ago
+
+### Deep learning for classification *(prerequisite)*
+This section introduces how deep learning models, particularly neural networks, can be trained to classify data into categories. It explains the intuition behind supervised learning and classification tasks, which is the core method used in the paper to predict schedulability of task systems.
+
+*How the paper uses it:* The paper uses multilayer perceptrons to classify task systems as schedulable or unschedulable based on learned patterns.
+
+▶ [Machine Learning Crash Course: Classification](https://www.youtube.com/watch?v=QM0sYbEQSkM) — Google for Developers · 1 year ago
+
+### Schedulability analysis *(the paper's own talk)*
+This concept explains how to determine whether a set of real-time tasks can meet their deadlines under a given scheduling policy. It covers the challenges of computational complexity and the importance of safe, efficient analysis methods in safety-critical systems.
+
+*How the paper uses it:* The paper proposes a deep learning-assisted framework to perform fast and safe schedulability analysis for real-time systems.
+
+▶ [Schedulability Analysis](https://www.youtube.com/watch?v=Rs0ow2pS_K0) — Software Engineering Institute | Carnegie Mellon University · 9:33 · 10 years ago
+
+## Already in your library
+
+- [Lecture 23: Computational Complexity](https://www.youtube.com/watch?v=moPtwq_cVH8) — also for: Learning-assisted schedulability analysis: opportunities and limitations (Sanjoy K. Baruah)

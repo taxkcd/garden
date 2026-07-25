@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-alexandros-v-gerbessiotis"
-source_hash: "e5671543a3ca16c887c5d7414ea9f5df30584bb4d56ac2758c377e6c44799b88"
+source_hash: "ff800d128e40fc0e73c2fe1cf77b1e02c8dbf513bb6ad4c0e87810e644cff41e"
 sequence: 61
 generator: "outreach-garden: managed"
 ---
@@ -57,41 +57,81 @@ Research interests: Parallel Model, Parallel Algorithm, Bulk Synchronous Paralle
 
 ## Learning path
 
-To deeply understand the surveyed Chernoff and Hoeffding bounds, start by building a solid foundation on key probabilistic tools such as Markov inequalities, moment generating functions, and Kullback-Leibler divergence, which are essential in the derivations and proofs of these bounds. Then, proceed to advanced concentration inequalities lectures to grasp the broader theoretical context. Finally, study the authors' own detailed lecture on Chernoff-Hoeffding bounds to directly connect with the paper's comprehensive survey and proofs.
+## Track 1 — Academic deep-dives (long-form)
 
-## Recommended videos (in order)
+_Rigorous lectures, seminars and conference talks. Deeper, but longer._
 
-### Markov inequality seminar *(prerequisite)*
-Markov's inequality is a fundamental probabilistic inequality used extensively in the proofs of Chernoff bounds. Understanding this inequality and its relation to Chebyshev's inequality provides the necessary groundwork for grasping exponential tail bounds.
+To deeply understand the survey on Chernoff and Hoeffding bounds, start with foundational prerequisites including Markov inequality, moment generating functions, and Kullback-Leibler divergence, as these underpin the derivations of concentration inequalities. Then, study the core concept of concentration inequalities, which encompasses Chernoff and Hoeffding bounds. Finally, explore the paper author's own talks if available, to gain direct insight into the survey's contributions and context.
 
-*How the paper uses it:* The paper's proofs of Chernoff bounds rely on Markov's inequality as a starting point.
+### Markov inequality *(prerequisite)*
+Markov inequality is a fundamental probabilistic inequality used as a starting point for deriving Chernoff bounds via moment generating functions. Understanding this inequality is critical for following the proofs and derivations in the paper.
 
-▶ [Lecture 28: Inequalities | Statistics 110](https://www.youtube.com/watch?v=UtXK_EQ3Pow) — Harvard University · 47:29
+*How the paper uses it:* The paper uses Markov’s inequality as a key step in proving Chernoff bounds for sums of independent Bernoulli random variables.
 
-### Moment generating functions lecture *(prerequisite)*
-Moment generating functions (MGFs) are key tools for deriving exponential tail bounds and are central to the paper's approach in proving Chernoff and Hoeffding inequalities. A rigorous lecture on MGFs will clarify their properties and applications in probability theory.
+▶ [L18.2 The Markov Inequality](https://www.youtube.com/watch?v=vjYanZ1nsZg) — MIT OpenCourseWare · 8 years ago
 
-*How the paper uses it:* The paper uses MGFs to derive tight tail bounds for sums of independent random variables.
+### Moment generating functions *(prerequisite)*
+Moment generating functions (MGFs) are essential tools for analyzing sums of independent random variables and are central to the proofs of Chernoff and Hoeffding bounds. A solid grasp of MGFs enables understanding of how exponential tail bounds are derived.
 
-▶ [Lecture 17: Moment Generating Functions | Statistics 110](https://www.youtube.com/watch?v=N8O6zd6vTZ8) — Harvard University · 50:45
+*How the paper uses it:* The paper’s proofs of Chernoff bounds rely heavily on moment generating functions to bound tail probabilities.
 
-### Kullback-Leibler divergence talk *(prerequisite)*
-Kullback-Leibler divergence is used in the paper to express the tight Chernoff bound formulas for tail probabilities. A focused lecture on KL divergence will help understand its role in measuring the difference between probability distributions and its mathematical properties.
+▶ [What is a Moment Generating Function (MGF)? ("Best explanation on YouTube")](https://www.youtube.com/watch?v=wjwLTNYOuI4) — Iain Explains Signals, Systems, and Digital Comms · 8:51 · 5 years ago
 
-*How the paper uses it:* The paper's explicit Chernoff bounds are expressed using the Kullback-Leibler divergence.
+### Kullback-Leibler divergence *(prerequisite)*
+Kullback-Leibler divergence quantifies the difference between probability distributions and appears explicitly in the tight Chernoff tail bounds presented in the paper. Understanding KL divergence is necessary to appreciate the form and tightness of these bounds.
 
-▶ [Shaowei Lin - Singular Learning, Relative Information and the ...](https://www.youtube.com/watch?v=VmZy1Fn48zo) — Institute for Pure & Applied Mathematics (IPAM) · 49:17
+*How the paper uses it:* The paper expresses explicit Chernoff bounds using the Kullback-Leibler divergence function D(r||p).
 
-### Concentration inequalities lecture *(prerequisite)*
-Concentration inequalities provide the theoretical framework underlying Chernoff and Hoeffding bounds. Advanced university lectures on this topic offer a rigorous treatment of tail probability control and related inequalities beyond the basics.
+▶ [The KL Divergence : Data Science Basics](https://www.youtube.com/watch?v=q0AkK8aYbLY) — ritvikmath · 3 years ago
 
-*How the paper uses it:* The paper surveys various concentration inequalities including Chernoff and Hoeffding bounds with detailed proofs.
+### Concentration inequalities
+Concentration inequalities provide probabilistic bounds on how a random variable deviates from some value (like its mean). Chernoff and Hoeffding bounds are key examples of such inequalities, and understanding the general framework helps contextualize the paper’s detailed survey.
 
-▶ [Stanford CS229M - Lecture 4: Advanced concentration ...](https://www.youtube.com/watch?v=fKM6fcOkXuk) — Stanford Online · 1:31:17
+*How the paper uses it:* The paper surveys Chernoff and Hoeffding bounds, which are fundamental concentration inequalities for sums of independent random variables.
 
-### Author's talk on Chernoff Hoeffding bounds *(the paper's own talk)*
-The authors' own lecture on Chernoff-Hoeffding bounds provides direct insights into the survey's content, including detailed proofs and derivations. This lecture is the most relevant and advanced resource to understand the paper's comprehensive treatment of these inequalities.
+▶ [Lecture 7 - Concentration Inequalities](https://www.youtube.com/watch?v=wOfTC0yzTxo) — Centre for Networked Intelligence, IISc · 1:22:08 · 4 years ago
 
-*How the paper uses it:* This lecture aligns closely with the paper's comprehensive restatement and proof of Chernoff and Hoeffding bounds.
+## Track 2 — Beginner → Advanced (short-form)
 
-▶ [DataMining12-L3: Chernoff-Hoeffding Bounds (1 of 3)](https://www.youtube.com/watch?v=b1Ksv50CUx0) — Jeff Phillips · 37:50 · 13 years ago
+_Concise, high-quality explainers that build intuition — for when time is short._
+
+To understand the paper's survey of Chernoff and Hoeffding bounds, start by building foundational intuition on Markov's inequality and moment generating functions, which are key tools used in the proofs. Then, learn about Kullback-Leibler divergence, which expresses the tightness of Chernoff bounds. Finally, explore concentration inequalities themselves, focusing on Chernoff and Hoeffding bounds as surveyed in the paper. This progression ensures a clear grasp of the mathematical tools before tackling the core probabilistic inequalities.
+
+### Markov inequality *(prerequisite)*
+Markov's inequality provides a simple upper bound on the probability that a non-negative random variable exceeds a certain value. It is foundational because it underpins more advanced concentration inequalities by bounding tail probabilities using expectations.
+
+*How the paper uses it:* The paper uses Markov's inequality as a starting point for deriving Chernoff bounds via moment generating functions.
+
+▶ [L18.2 The Markov Inequality](https://www.youtube.com/watch?v=vjYanZ1nsZg) — MIT OpenCourseWare · 8 years ago
+
+### Moment generating functions *(prerequisite)*
+Moment generating functions (MGFs) encode all moments of a random variable and are crucial for analyzing sums of independent variables. They enable the derivation of exponential tail bounds by transforming probability inequalities into manageable expressions.
+
+*How the paper uses it:* The paper employs MGFs to prove Chernoff bounds and related concentration inequalities.
+
+▶ [What is a Moment Generating Function (MGF)? ("Best explanation on YouTube")](https://www.youtube.com/watch?v=wjwLTNYOuI4) — Iain Explains Signals, Systems, and Digital Comms · 8:51 · 5 years ago
+
+### Kullback-Leibler divergence *(prerequisite)*
+Kullback-Leibler (KL) divergence measures how one probability distribution differs from another. It appears naturally in Chernoff bounds to quantify the exponential decay rate of tail probabilities, providing tight and interpretable bounds.
+
+*How the paper uses it:* The paper expresses Chernoff tail bounds explicitly using KL divergence to show tightness.
+
+▶ [Intuitively Understanding the KL Divergence](https://www.youtube.com/watch?v=SxGYPqCgJWM) — Adian Liusie · 5:13 · 5 years ago
+
+### Concentration inequalities
+Concentration inequalities provide bounds on how a random variable deviates from some central value, typically its expectation. Chernoff and Hoeffding bounds are key examples that give exponentially decreasing tail probabilities for sums of independent random variables.
+
+*How the paper uses it:* The paper surveys Chernoff and Hoeffding concentration inequalities with detailed proofs and variants.
+
+▶ [An Introduction to Concentration Inequalities and Statistical Learning Theory](https://www.youtube.com/watch?v=HqXQI_nK2JE) — Microsoft Research · 10 years ago
+
+### Paper author talk *(the paper's own talk)*
+Hearing directly from the author offers insight into the motivation, scope, and key contributions of the survey on Chernoff and Hoeffding bounds, complementing the technical understanding with context and applications.
+
+*How the paper uses it:* The author talk provides an overview of the survey and its relevance to probabilistic analysis and parallel algorithms.
+
+▶ [What is the Chernoff Bound?](https://www.youtube.com/watch?v=WKUeBoQp2Uo) — Iain Explains Signals, Systems, and Digital Comms · 5 years ago
+
+## Already in your library
+
+- [Lecture 17: Moment Generating Functions | Statistics 110](https://www.youtube.com/watch?v=N8O6zd6vTZ8) — also for: A survey of Chernoff and Hoeffding bounds (Alexandros V. Gerbessiotis)

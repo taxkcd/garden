@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-ascharles"
-source_hash: "a03b8672bd75337ac713613b7e7faa54293b890700a7808ed9e39e7d80235e38"
+source_hash: "c689cdd7d461399bfd7a1b507d715980214c51ea1d5537946542a85f085bb974"
 sequence: 29
 generator: "outreach-garden: managed"
 ---
@@ -54,34 +54,75 @@ Research interests: machine learning and signal processing for neural imaging, d
 
 ## Learning path
 
-To deeply understand the paper on decomposed Linear Dynamical Systems (dLDS), start with foundational knowledge on linear dynamical systems theory, which underpins the dynamic operators in dLDS. Next, build understanding of manifold learning in neural data to grasp the latent low-dimensional structure assumed by the model. Then, study expectation maximization for latent variable models to comprehend the training algorithm used. Finally, focus on sparse coding for dynamical systems, the core concept enabling dLDS to decompose neural dynamics into sparse linear components.
+## Track 1 — Academic deep-dives (long-form)
 
-## Recommended videos (in order)
+_Rigorous lectures, seminars and conference talks. Deeper, but longer._
 
-### Linear dynamical systems theory *(prerequisite)*
-Linear dynamical systems theory provides the mathematical framework for modeling time-evolving systems with linear operators, which is fundamental to understanding the dynamic operators in dLDS. This includes concepts like eigenvalues, stability, and continuous versus discrete time dynamics.
+To deeply understand the paper on decomposed Linear Dynamical Systems (dLDS) for neural dynamics, start with foundational knowledge on linear dynamical systems and sparse coding/dictionary learning, which underpin the model's mathematical framework. Next, explore switched linear dynamical systems to grasp the baseline models that dLDS improves upon. Finally, focus on the core concept of dLDS itself, emphasizing the authors' own talks and advanced lectures that integrate manifold hypotheses with sparse dynamical system decomposition for interpretable neural modeling.
 
-*How the paper uses it:* dLDS models neural dynamics as sparse combinations of linear dynamic operators, so understanding linear dynamical systems is essential.
+### Linear Dynamical Systems lecture *(prerequisite)*
+Linear dynamical systems form the mathematical foundation for modeling time-evolving processes in a linear state-space framework. Understanding their properties, solutions, and applications is essential to grasp how dLDS decomposes complex neural dynamics into linear components.
 
-▶ [Lecture 1 | Introduction to Linear Dynamical Systems](https://www.youtube.com/watch?v=bf1264iFr-w) — Stanford · 1:16:46
+*How the paper uses it:* dLDS builds on linear dynamical systems theory to represent neural population dynamics as combinations of simpler linear flows.
 
-### Manifold learning in neural data *(prerequisite)*
-Manifold learning techniques reveal low-dimensional geometric structures underlying high-dimensional neural data, aligning with the dLDS assumption that latent neural activity evolves on a low-dimensional manifold. This knowledge helps interpret how dLDS captures neural dynamics in a structured latent space.
+▶ [Lecture 5 | Introduction to Linear Dynamical Systems](https://www.youtube.com/watch?v=HvumsVkVbdk) — Stanford · 1:15:14
 
-*How the paper uses it:* dLDS assumes latent neural activity lies on a low-dimensional manifold, integrating manifold hypothesis with dynamical systems modeling.
+### Sparse coding and dictionary learning seminar *(prerequisite)*
+Sparse coding and dictionary learning provide the framework for representing data as sparse combinations of learned basis elements. This is critical for understanding how dLDS decomposes neural dynamics into a sparse set of dynamic operators, enabling interpretability and efficiency.
 
-▶ [Smita Krishnaswamy | Manifold Learning Yields Insight into ...](https://www.youtube.com/watch?v=deUVFAOY0kU) — Computational Genomics Summer Institute CGSI · 45:39
+*How the paper uses it:* dLDS uses a sparse coding framework to represent neural dynamics as sparse combinations of dictionary elements called dynamic operators.
 
-### Expectation maximization for latent variable models *(prerequisite)*
-Expectation maximization (EM) is a key algorithmic approach for parameter estimation in models with latent variables, such as dLDS. Understanding EM enables comprehension of how dLDS parameters are efficiently learned despite latent states and sparse coding constraints.
+▶ [Simple, Efficient and Neural Algorithms for Sparse Coding](https://www.youtube.com/watch?v=XU_5s8lgTsY) — Simons Institute for the Theory of Computing · 11 years ago
 
-*How the paper uses it:* The dLDS model is trained via an EM algorithm with gradient-based updates for efficient inference and learning.
+### Switched linear dynamical systems lecture *(prerequisite)*
+Switched linear dynamical systems (SLDS) are a class of models that represent dynamics as switching between discrete linear modes. Understanding SLDS is important to appreciate the limitations that dLDS overcomes, such as modeling smooth transitions and overlapping subnetworks.
 
-▶ [CSCI 3151 - M09 - Latent-variable models & the EM algorithm](https://www.youtube.com/watch?v=c0THKJTN-ZQ) — Atlantic AI Institute · 1:12:02
+*How the paper uses it:* dLDS improves upon SLDS by enabling smooth transitions and overlapping dynamics rather than discrete switching.
 
-### Sparse coding for dynamical systems
-Sparse coding decomposes complex signals into a small number of active components from a learned dictionary, which is central to how dLDS represents neural dynamics as sparse combinations of linear dynamic operators. This concept enables interpretability and expressivity in the model.
+▶ [Day 2, Scott Linderman, State Space Models for Natural and ...](https://www.youtube.com/watch?v=xNaay0W04ZI) — allen institute · 28:34
 
-*How the paper uses it:* dLDS uses sparse coding to decompose neural dynamics into reusable linear components allowing smooth transitions and overlapping dynamics.
+### dLDS paper talk *(the paper's own talk)*
+The authors' own talks and advanced seminars provide the most direct and detailed exposition of the dLDS model, its motivation, mathematical formulation, and empirical results. These talks are invaluable for understanding the novel contributions and nuances of the approach.
 
-▶ [Michael Elad: "Sparse Modeling in Image Processing and ...](https://www.youtube.com/watch?v=2bW4TkfTk-M) — Institute for Pure & Applied Mathematics (IPAM) · 42:05
+*How the paper uses it:* Direct presentation of the dLDS model by experts offers the clearest insight into its design and advantages over existing methods.
+
+▶ [B. Hamzi:  Kernel Flows and Kernel Mode Decomposition for learning dynamical systems from data](https://www.youtube.com/watch?v=UAd1gE9oLAk) — Machine Learning and Dynamical Systems Seminar · 2 years ago
+
+## Track 2 — Beginner → Advanced (short-form)
+
+_Concise, high-quality explainers that build intuition — for when time is short._
+
+To understand the decomposed Linear Dynamical Systems (dLDS) paper, start by building a foundation in linear dynamical systems, which are the building blocks of the model. Next, learn about sparse coding and dictionary learning, as these techniques enable the decomposition of complex dynamics into simpler components. Then, explore the manifold learning concept to grasp the low-dimensional structure assumption of neural data. Finally, study the core idea of decomposed linear dynamical systems to see how these elements integrate into a novel, interpretable model for neural dynamics.
+
+### Linear Dynamical Systems lecture *(prerequisite)*
+Linear dynamical systems describe how a system's state evolves over time according to linear rules, often represented by matrices. Understanding these systems is essential because dLDS models neural dynamics as combinations of simpler linear systems. This foundation helps grasp how dynamics can be decomposed and analyzed.
+
+*How the paper uses it:* dLDS builds on linear dynamical systems by decomposing complex neural dynamics into sparse combinations of simpler linear operators.
+
+▶ [Lecture 5 | Introduction to Linear Dynamical Systems](https://www.youtube.com/watch?v=HvumsVkVbdk) — Stanford · 1:15:14
+
+### Sparse coding and dictionary learning seminar *(prerequisite)*
+Sparse coding and dictionary learning are techniques to represent complex data as combinations of a few basic elements (dictionary atoms). This approach helps in efficiently capturing structure and interpretability by enforcing sparsity. Understanding these methods is crucial to see how dLDS represents neural dynamics as sparse combinations of dynamic operators.
+
+*How the paper uses it:* dLDS uses sparse coding to represent neural dynamics as sparse linear combinations of dictionary elements called dynamic operators.
+
+▶ [Neural networks [8.1] : Sparse coding - definition](https://www.youtube.com/watch?v=7a0_iEruGoM) — Hugo Larochelle · 12 years ago
+
+### Manifold learning for neural data talk *(prerequisite)*
+Manifold learning assumes that high-dimensional data lie on a lower-dimensional curved space (manifold). This concept is important to understand how neural activity can be modeled as evolving on a low-dimensional manifold, which dLDS exploits to improve interpretability and expressivity.
+
+*How the paper uses it:* dLDS integrates the manifold hypothesis by modeling latent neural states evolving on a low-dimensional manifold.
+
+▶ [Dimensionality Reduction Techniques | Introduction and ...](https://www.youtube.com/watch?v=jc1_yPYmspk) — DeepFindr · 13:10
+
+### Decomposed Linear Dynamical Systems lecture
+This concept combines the previous ideas by decomposing complex neural dynamics into sparse, smooth combinations of linear dynamic operators on a manifold. It enables modeling smooth transitions and overlapping subnetworks, overcoming limitations of discrete switching models.
+
+*How the paper uses it:* The core contribution of the paper is the dLDS model, which decomposes neural dynamics into sparse combinations of linear operators with smooth transitions on a manifold.
+
+▶ [Lecture 12 | Introduction to Linear Dynamical Systems](https://www.youtube.com/watch?v=PBUWAf1uvSA) — Stanford · 1:13:37
+
+## Already in your library
+
+- [Linear Dynamical Systems and Control (Prof. Scott Dawson)](https://www.youtube.com/watch?v=Y5jWRnya3ds) — also for: Hidden Anchors in Multi-Agent LLM Deliberation (R. V. Dantu)
+- [Lecture 1 | Introduction to Linear Dynamical Systems](https://www.youtube.com/watch?v=bf1264iFr-w) — also for: Decomposed Linear Dynamical Systems (dLDS) for learning the latent components of neural dynamics (Adam Charles)

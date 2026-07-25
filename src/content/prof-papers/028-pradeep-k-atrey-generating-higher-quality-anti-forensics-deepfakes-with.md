@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-patrey"
-source_hash: "824846faccd5583c19fb3cb35a3e3692f7f7b7495de4a032695ab72bcf1af56f"
+source_hash: "c63850d3d1c9468f4bd0ffadb83c9d16c9278f40b89796e06466af047cc82cfa"
 sequence: 28
 generator: "outreach-garden: managed"
 ---

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-amy-ogan"
-source_hash: "1dd29da117fe57fe40de57fb92dadf828142a025c904f9944533cb9255545cb6"
+source_hash: "3204b347cc0e76148dd9e115dc2e9cfd37e830f253b3a0d2c024ec1a5447c947"
 sequence: 6
 generator: "outreach-garden: managed"
 ---
@@ -55,27 +55,74 @@ Research interests: Learning Sciences and Educational Technologies, Human-Center
 
 ## Learning path
 
-To deeply understand the paper on engaging diverse youth as stakeholders in identifying and mitigating algorithmic bias, start with foundational knowledge on algorithmic bias and fairness in AI, followed by human-centered AI ethics frameworks that support youth agency. Finally, focus on participatory AI design approaches that directly relate to youth engagement in AI fairness, culminating in the core concept of the paper.
+## Track 1 — Academic deep-dives (long-form)
 
-## Recommended videos (in order)
+_Rigorous lectures, seminars and conference talks. Deeper, but longer._
 
-### Algorithmic bias and fairness in AI conference talk *(prerequisite)*
-This section provides foundational understanding of the types and impacts of algorithmic bias and fairness considerations in AI systems. The selected talks from reputable academic and policy institutions offer rigorous insights into responsible AI governance and ethical challenges, which underpin the youth's ability to identify and mitigate bias as explored in the paper.
+To deeply understand the paper on youth engagement in identifying and mitigating algorithmic bias, start with foundational knowledge on youth moral development and ethics to appreciate their capacity for ethical reasoning. Next, explore participatory design in AI to grasp the methodological approach of involving youth as stakeholders. Then, build AI literacy and education understanding to see how youth can be empowered to engage with AI fairness. Finally, focus on the core concept of algorithmic bias and fairness, featuring a rigorous university lecture, to ground the paper's central theme in technical and ethical detail.
 
-*How the paper uses it:* Foundational to grasp the types and impacts of bias that youth are identifying and mitigating.
+### Youth moral development and ethics *(prerequisite)*
+This section provides foundational insights into how youth develop moral reasoning and ethical awareness, which supports the paper's claim that youth can engage meaningfully with AI fairness issues. Understanding moral development theories helps contextualize youth capacity for ethical reflection on algorithmic harms.
 
-▶ [UN AI for Good – Law Track Conference: Responsible AI Governance and Use](https://www.youtube.com/watch?v=BmG8bDcqi50) — Stanford Law School · 1:01:17 · 1 year ago
+*How the paper uses it:* Supports understanding youth capacity for ethical reasoning about AI harms.
 
-### Human-centered AI ethics lecture *(prerequisite)*
-Understanding ethical frameworks and human-centered design principles in AI is crucial to appreciate how youth can be empowered as ethical agents in AI systems. The selected university seminars provide advanced academic perspectives on designing AI with inclusivity and ethical awareness, directly supporting the paper's focus on youth agency and moral reasoning.
+▶ [The Moral Development of Children | Karen Hussar ...](https://www.youtube.com/watch?v=3FIfeccdu1U) — TEDx Talks · 16:00
 
-*How the paper uses it:* Important for understanding ethical frameworks that support youth agency in AI systems.
+### Participatory design in AI *(prerequisite)*
+Participatory design is a core methodological approach for involving youth as active stakeholders in AI system design. This section covers advanced discussions and panels on participatory AI and social justice, providing context for the paper's workshop-based approach and youth-inclusive design proposals.
 
-▶ [Stanford CS547 HCI Seminar | Spring 2026 | Toward Ontological Multiplicity in AI and Computing](https://www.youtube.com/watch?v=IpzIDAqJDwI) — Stanford Online · 47:45 · 18 hours ago
+*How the paper uses it:* Foundational approach for involving youth as stakeholders in AI design.
 
-### Participatory AI design seminar
-This section focuses on participatory design approaches in AI, especially involving marginalized groups. It is central to understanding how youth can be engaged as active stakeholders in AI fairness efforts, reflecting the core contributions of the paper about youth-inclusive AI auditing and design.
+▶ [Panel: Participatory AI & Social Justice](https://www.youtube.com/watch?v=RMZZn4HJehU) — ACM SIGCHI · 1:39:41
 
-*How the paper uses it:* Central to understanding how youth can be engaged as stakeholders in AI fairness efforts.
+### AI literacy and education *(prerequisite)*
+AI literacy is critical for empowering youth to understand and critically engage with AI fairness and bias. This section includes advanced seminars and talks on human-centered AI literacy and education, aligning with the paper's emphasis on fostering youth AI literacy and ethical awareness.
 
-▶ [SafeHer | Feminist AI Research fAIr: From Paper to Prototype to Pilot](https://www.youtube.com/watch?v=3oxoDIc4czA) — Social Development Research Center DLSU · 5:28 · 4 days ago
+*How the paper uses it:* Important for fostering youth understanding and engagement with AI fairness.
+
+▶ [HAI Seminar: Learning by Creating – A Human-Centered Vision for AI in Education](https://www.youtube.com/watch?v=iOyaj5u0-DY) — Stanford HAI · 3 months ago
+
+### Algorithmic bias and fairness
+This core concept section provides a rigorous university lecture on algorithmic bias and fairness, offering a deep technical and ethical foundation for understanding the types of biases youth identified and the fairness mechanisms they proposed. It directly relates to the paper's central theme of identifying and mitigating algorithmic bias.
+
+*How the paper uses it:* Central concept of identifying and mitigating bias in AI systems.
+
+▶ [MIT 6.S191: AI Bias and Fairness](https://www.youtube.com/watch?v=wmyVODy_WD8) — Alexander Amini · 43:22
+
+## Track 2 — Beginner → Advanced (short-form)
+
+_Concise, high-quality explainers that build intuition — for when time is short._
+
+This beginner-to-advanced path introduces foundational concepts to understand how diverse youth can engage with identifying and mitigating algorithmic bias in AI. It starts with youth moral development and ethics to appreciate their capacity for ethical reasoning, then covers AI literacy and education to build understanding of AI systems, followed by participatory design in AI to grasp how youth can be involved in AI system design. Finally, it explains algorithmic bias and fairness as the core concept, culminating in insights directly related to the paper's focus on youth as stakeholders in fair AI.
+
+### Youth moral development and ethics *(prerequisite)*
+Understanding how children and adolescents develop moral reasoning helps us appreciate their ability to engage with complex ethical issues like AI fairness. This section introduces key theories and stages of moral development, showing that youth can reflect on fairness and injustice from an early age.
+
+*How the paper uses it:* The paper challenges assumptions that youth lack moral reasoning capacity relevant to AI ethics.
+
+▶ [Kohlberg's 6 Stages of Moral Development](https://www.youtube.com/watch?v=bounwXLkme4) — Sprouts · 6:46
+
+### AI literacy and education *(prerequisite)*
+AI literacy equips learners with the knowledge to recognize, understand, and critically assess AI technologies and their societal impacts. This section covers foundational AI concepts and the importance of education in empowering youth to engage with AI fairness and bias.
+
+*How the paper uses it:* Fostering youth AI literacy is key to enabling their participation in identifying and mitigating algorithmic bias.
+
+▶ [What is AI Literacy?](https://www.youtube.com/watch?v=e3c1ncQ2SJo) — Data Literacy · 8:35
+
+### Participatory design in AI *(prerequisite)*
+Participatory design involves including users and stakeholders in the AI design process to create more ethical and inclusive systems. This section explains how engaging diverse communities, including youth, early in design leads to fairer AI outcomes.
+
+*How the paper uses it:* The paper uses participatory workshops with youth and parents to co-design AI auditing systems.
+
+▶ ["AI For Good” Isn't Good Enough: A Call for Human-Centered AI](https://www.youtube.com/watch?v=1FhgHHrhC5Q) — Stanford HAI · 57:41
+
+### Algorithmic bias and fairness
+Algorithmic bias occurs when AI systems produce unfair or discriminatory outcomes due to biased data or design. This section introduces common types of bias and fairness concepts to understand the challenges AI systems pose to marginalized groups.
+
+*How the paper uses it:* The core concept of the paper is youth identifying and mitigating algorithmic bias to create fairer AI.
+
+▶ [Algorithmic Bias and Fairness: Crash Course AI #18](https://www.youtube.com/watch?v=gV0_raKR2UQ) — CrashCourse · 11:20
+
+## Already in your library
+
+- [Introducing Participatory Design](https://www.youtube.com/watch?v=U3Hn-sONiRg) — also for: The Potential of Diverse Youth as Stakeholders in Identifying and Mitigating Algorithmic Bias for a Future of Fairer AI (Amy E. Ogan)

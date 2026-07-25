@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-luke-s-zettlemoyer"
-source_hash: "aaa69e9b0c0d7eea2d5d905ed782df9f92eab890594a81a6fe75dbcf5d2664a5"
+source_hash: "f081a625cb51028f0bf16c6b2d716a151123635c4545a1ccfd8772e96aeac5f2"
 sequence: 54
 generator: "outreach-garden: managed"
 ---
@@ -53,53 +53,87 @@ This paper introduces the Byte Latent Transformer (BLT), a novel large language 
 
 ## Learning path
 
-To deeply understand the Byte Latent Transformer (BLT) paper, start with foundational concepts including byte-level language models, transformer architectures for long sequences, cross-attention mechanisms, and scaling laws for large language models. Then, explore entropy-based dynamic patching as it is central to BLT's novel patching approach. Finally, focus on the core concept of the Byte Latent Transformer itself through the authors' own talks and detailed explainers to grasp the architecture, scaling strategies, and empirical results.
+## Track 1 — Academic deep-dives (long-form)
 
-## Recommended videos (in order)
+_Rigorous lectures, seminars and conference talks. Deeper, but longer._
 
-### Byte level language models *(prerequisite)*
-Understanding how language models operate directly on raw byte sequences without tokenization is foundational to BLT. This includes challenges of long sequence lengths and efficiency considerations. The selected seminar provides a detailed, research-level treatment of efficient byte-level language models at scale.
+To deeply understand the Byte Latent Transformer (BLT) paper, start with foundational knowledge on Transformer architectures and scaling laws for language models, as these underpin the BLT design and its scaling insights. Next, study byte-level language modeling to grasp the challenges and prior work on modeling raw bytes without tokenization. Finally, focus on the core concept of the BLT itself, prioritizing the authors' own detailed talks and rigorous explainers to fully appreciate the novel entropy-based dynamic patching and architectural innovations.
 
-*How the paper uses it:* BLT builds on byte-level modeling to avoid tokenization biases and inefficiencies.
+### Transformer architectures *(prerequisite)*
+Transformers are the fundamental neural architecture behind BLT and all modern large language models. Understanding their encoder-decoder structure, self-attention, and cross-attention mechanisms is essential to grasp how BLT modifies and extends these components.
 
-▶ [EvaByte: Efficient Byte-level Language Models at Scale - Lin ...](https://www.youtube.com/watch?v=z3Nhg9DQzdU) — ASAP Seminar Series · 1:36:21
+*How the paper uses it:* BLT builds on the Transformer architecture by introducing a novel patching mechanism and cross-attention between byte and patch representations.
 
-### Transformer architectures for long sequences *(prerequisite)*
-Transformers face computational and memory challenges when processing long sequences such as raw bytes. This lecture covers advanced transformer design choices and complexity considerations relevant to BLT's architecture, which handles long byte sequences efficiently.
+▶ [Lec 08. Architectures: Transformers](https://www.youtube.com/watch?v=Q1HOKrNeh2M) — MIT OpenCourseWare · 1:14:35 · 5 months ago
 
-*How the paper uses it:* BLT's architecture is designed to handle long byte sequences efficiently using transformer variants.
+### Scaling laws for language models *(prerequisite)*
+Scaling laws describe how model performance improves with increases in model size, data, and compute, which is critical to understanding BLT's contributions in scaling both model and patch size efficiently. This background helps contextualize the paper's flop-controlled scaling studies and efficiency claims.
 
-▶ [CMU Advanced NLP Fall 2024 (13): Long Sequence Models](https://www.youtube.com/watch?v=t_FZAGUjbks) — Graham Neubig · 57:11
+*How the paper uses it:* BLT demonstrates new scaling dimensions by simultaneously increasing model and patch size under fixed inference budgets, informed by scaling laws.
+
+▶ [Stanford CS336 Language Modeling from Scratch | Spring ...](https://www.youtube.com/watch?v=vTfEyOyzV9E) — Stanford Online · 1:17:04
+
+### Byte level language modeling *(prerequisite)*
+This concept covers modeling raw byte sequences directly, without tokenization, which is the foundational challenge BLT addresses. Understanding prior byte-level models and their limitations sets the stage for appreciating BLT's dynamic patching and efficiency improvements.
+
+*How the paper uses it:* BLT is a byte-level large language model that operates directly on raw bytes, overcoming inefficiencies of fixed tokenization.
+
+▶ [BLT: Innovative Advances in Byte Level Language Models (Meta)](https://www.youtube.com/watch?v=SxB9dVQPsZM) — Machine tired of learning · 1 year ago
+
+### Byte Latent Transformer talk *(the paper's own talk)*
+This section focuses on the core paper topic: the BLT architecture itself. The authors' own talks provide the most authoritative and detailed exposition of their novel entropy-based patching, architectural design, and empirical results, making them indispensable for advanced understanding.
+
+*How the paper uses it:* The authors' talks present the BLT architecture, its entropy-based dynamic patching, and scaling results in depth.
+
+▶ [Byte Latent Transformer - BLT explained (Entropy of Next Byte ...](https://www.youtube.com/watch?v=KZfGgmtQFh0) — Discover AI · 37:31
+
+## Track 2 — Beginner → Advanced (short-form)
+
+_Concise, high-quality explainers that build intuition — for when time is short._
+
+To understand the Byte Latent Transformer paper, start by building a foundation in Transformer architectures and the basics of byte-level language modeling, which are core to the BLT approach. Next, learn about cross-attention mechanisms that connect different representation levels in the model, followed by scaling laws that explain how model and patch sizes impact performance. Finally, focus on the paper's core innovation: entropy-based dynamic patching, which enables efficient and adaptive grouping of bytes for improved model efficiency and robustness.
+
+### Transformer architectures *(prerequisite)*
+Transformers are the fundamental neural network architecture behind modern large language models. They use self-attention mechanisms to process sequences in parallel, enabling efficient learning of complex dependencies in data.
+
+*How the paper uses it:* BLT builds on the Transformer architecture by introducing a novel patching mechanism and cross-attention between byte and patch representations.
+
+▶ [Transformers, explained: Understand the model behind GPT, BERT, and T5](https://www.youtube.com/watch?v=SZorAJ4I-sA) — Google Cloud Tech · 9:11 · 4 years ago
+
+### Byte level language modeling *(prerequisite)*
+Byte-level language modeling involves training models directly on raw byte sequences instead of tokenized text, which avoids tokenization biases but introduces challenges due to longer sequences and computational cost.
+
+*How the paper uses it:* BLT operates directly on raw bytes, dynamically grouping them into patches to overcome the inefficiencies of fixed tokenization.
+
+▶ [Byte Latent Transformer (BLT) by Meta AI - A Tokenizer-free LLM](https://www.youtube.com/watch?v=HuEgzyNOg7Y) — AI Papers Academy · 10:07
 
 ### Cross attention mechanisms *(prerequisite)*
-Cross-attention connects different representation levels in transformer architectures. Understanding how cross-attention works is critical to grasping BLT's mechanism that links byte-level and patch-level representations via dynamic masking.
+Cross-attention allows a model to connect and integrate information from two different sequences or representations, such as bytes and patches, by attending to one sequence while processing another.
 
-*How the paper uses it:* BLT uses cross-attention to connect byte-level and patch-level representations in its architecture.
+*How the paper uses it:* BLT uses cross-attention to link byte-level and patch-level representations, enabling effective encoding and decoding between these granularities.
 
-▶ [Cross Attention | Method Explanation | Math Explained](https://www.youtube.com/watch?v=aw3H-wPuRcw) — Outlier · 13:06
+▶ [Self Attention vs Cross Attention in Transformers](https://www.youtube.com/watch?v=BxocebEC03E) — Alkademy Learning · 8:56
 
-### Scaling laws for large language models *(prerequisite)*
-Scaling laws describe how model performance and efficiency evolve with size and compute. This lecture provides a rigorous overview of scaling paradigms, essential for understanding BLT's novel scaling strategies involving simultaneous increases in model and patch size.
+### Scaling laws for language models *(prerequisite)*
+Scaling laws describe how increasing model size, dataset size, and compute affect language model performance, guiding efficient resource allocation and architecture design.
 
-*How the paper uses it:* BLT introduces new scaling dimensions under fixed inference budgets, informed by scaling laws.
+*How the paper uses it:* BLT demonstrates new scaling strategies by simultaneously increasing model and patch sizes within fixed computational budgets, improving efficiency and performance.
 
-▶ [Jason Wei: Scaling Paradigms for Large Language Models](https://www.youtube.com/watch?v=yhpjpNXJDco) — Mayur Naik · 40:10
+▶ [LLMs | Scaling Laws | Lec 11](https://www.youtube.com/watch?v=S7GOt85DWBs) — LCS2 · 1:29:45
 
-### Entropy based dynamic patching
-Entropy-based dynamic patching is the core innovation in BLT, enabling adaptive grouping of bytes into patches based on the predicted entropy of the next byte. This concept is crucial for understanding how BLT allocates compute efficiently and robustly.
+### Byte Latent Transformer talk *(the paper's own talk)*
+A detailed presentation by the authors explaining the BLT architecture, its motivation, design, and empirical results, providing direct insights into the paper's contributions.
 
-*How the paper uses it:* BLT segments byte sequences into patches dynamically using entropy of next-byte predictions.
+*How the paper uses it:* This talk offers an in-depth overview of BLT from the creators themselves, complementing the foundational concepts with specific architectural and experimental details.
 
-▶ [Information Theory, Lecture 1: Defining Entropy and Information - Oxford Mathematics 3rd Yr Lecture](https://www.youtube.com/watch?v=ScX2aBFyrVU) — Oxford Mathematics · 53:46 · 1 year ago
-
-### Byte Latent Transformer author talk *(the paper's own talk)*
-The authors' own talks provide the most direct and detailed exposition of the BLT architecture, its motivation, design, and empirical results. These presentations are invaluable for advanced readers seeking deep insights straight from the creators.
-
-*How the paper uses it:* These talks present the BLT architecture and results directly from the paper's authors.
-
-▶ [Byte Latent Transformer: Scaling LLMs Beyond Tokens](https://www.youtube.com/watch?v=RxAEAlgUBIw) — AI Research Roundup · 1 year ago
+▶ [Byte Latent Transformer: Patches Scale Better Than Tokens (Paper Explained)](https://www.youtube.com/watch?v=loaTGpqfctI) — Yannic Kilcher · 1 year ago
 
 ## Already in your library
 
+- [Information Theory, Lecture 1: Defining Entropy and Information - Oxford Mathematics 3rd Yr Lecture](https://www.youtube.com/watch?v=ScX2aBFyrVU) — also for: Byte Latent Transformer: Patches Scale Better Than Tokens (Luke S. Zettlemoyer)
+- [Byte Latent Transformer: Patches Scale Better Than Tokens](https://www.youtube.com/watch?v=NzMDCXT5ZcE) — also for: Byte Latent Transformer: Patches Scale Better Than Tokens (Luke S. Zettlemoyer)
+- [EvaByte: Efficient Byte-level Language Models at Scale - Lin ...](https://www.youtube.com/watch?v=z3Nhg9DQzdU) — also for: Byte Latent Transformer: Patches Scale Better Than Tokens (Luke S. Zettlemoyer)
+- [Stanford CS25: Transformers United V6 I Serving ...](https://www.youtube.com/watch?v=ZUdIsRZhWXI) — also for: Byte Latent Transformer: Patches Scale Better Than Tokens (Luke S. Zettlemoyer)
 - [How Cross Attention Powers Translation in Transformers ...](https://www.youtube.com/watch?v=b40PL-sWmSM) — also for: Byte Latent Transformer: Patches Scale Better Than Tokens (Luke S. Zettlemoyer)
 - [Attention in transformers, step-by-step | Deep Learning Chapter 6](https://www.youtube.com/watch?v=eMlx5fFNoYc) — also for: Heterogeneous Graph Attention Network (Yanfang (Fanny) Ye)
+- [Cross Attention | Method Explanation | Math Explained](https://www.youtube.com/watch?v=aw3H-wPuRcw) — also for: Byte Latent Transformer: Patches Scale Better Than Tokens (Luke S. Zettlemoyer)

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-dandrews"
-source_hash: "2c5d7ce224230e4cf079bdfa252e03cbc276182a7c65e4fa0677917cbef6d4e6"
+source_hash: "7082e8a84dd1b96d6ecb93c6887022ce2df23772161249c14fe9e6290f007db7"
 sequence: 38
 generator: "outreach-garden: managed"
 ---
@@ -55,38 +55,62 @@ Research interests: embedded systems architectures
 
 ## Learning path
 
-To deeply understand the 1997 paper 'Seeking Solutions in Configurable Computing,' start with foundational knowledge of FPGA technology and hardware/software co-design principles, which underpin configurable computing systems. Then, explore advanced seminar talks on reconfigurable computing architectures and systems to grasp the architectural classifications and computing models discussed in the paper. Finally, focus on the core concept of configurable computing architectures to connect these foundations directly to the paper's key contributions and challenges.
+## Track 1 — Academic deep-dives (long-form)
 
-## Recommended videos (in order)
+_Rigorous lectures, seminars and conference talks. Deeper, but longer._
 
-### Field programmable gate arrays FPGA seminar *(prerequisite)*
-FPGAs are the hardware foundation of configurable computing systems. Understanding their architecture, capabilities, and limitations is essential to appreciate the challenges and opportunities discussed in the paper. The Stanford seminar by Oskar Mencer, a co-author, provides an advanced, research-level perspective on FPGA performance and programming methodologies.
+To deeply understand the 1997 paper "Seeking Solutions in Configurable Computing," start by building foundational knowledge on FPGA technology and hardware-software co-design, which underpin configurable computing systems. Next, explore configurable computing architectures to grasp the classification and design decisions central to the paper. Finally, focus on the core concept of configurable computing itself, emphasizing the architectural and programmability challenges surveyed by the authors.
 
-*How the paper uses it:* The paper discusses FPGA technology limitations and their impact on configurable computing system capacity and configuration speed.
+### Field Programmable Gate Arrays FPGA *(prerequisite)*
+FPGAs are the fundamental hardware enabling configurable computing systems. Understanding their architecture, capabilities, and limitations is essential to appreciate the hardware constraints and opportunities discussed in the paper. The selected video provides a detailed and technical introduction suitable for advanced learners.
 
-▶ [Stanford Seminar - Computing with FPGAs - Oskar Mencer](https://www.youtube.com/watch?v=AHJZKoAh8wE) — Stanford Online · 1:00:11
+*How the paper uses it:* The paper discusses FPGA technology as the hardware basis for configurable computing and highlights its limitations in capacity, configuration speed, and memory interfacing.
 
-### Hardware/software co-design lecture *(prerequisite)*
-Hardware/software co-design is critical for addressing the programming abstractions and tool support challenges in configurable computing. Advanced university lectures, such as the ETH Zürich course, provide rigorous insights into the integration of hardware and software development, which aligns with the paper's emphasis on CAD and compilation challenges.
+▶ [Introduction to FPGA Part 1 - What is an FPGA? | Digi-Key ...](https://www.youtube.com/watch?v=lLg1AgA2Xoo) — DigiKey · 15:21
 
-*How the paper uses it:* The paper highlights the complexity of development tools and the need for effective hardware/software co-design in configurable computing.
+### Hardware Software Co-design *(prerequisite)*
+Hardware-software co-design is key to addressing the programmability and tool challenges in configurable computing. This concept involves the integrated development of hardware and software components to optimize performance and flexibility. The chosen seminar talk offers an in-depth, research-level perspective on co-design approaches relevant to embedded and configurable systems.
 
-▶ [Hardware/Software Co-design Course - Lecture 1: 16.03.22 ...](https://www.youtube.com/watch?v=OJRBbOoiHXw) — Onur Mutlu Lectures · 31:06
+*How the paper uses it:* The paper emphasizes the need for improved CAD and compilation tools and software/hardware APIs to overcome development complexity in configurable computing.
 
-### Reconfigurable computing systems seminar *(prerequisite)*
-Reconfigurable computing seminars cover dynamic and static configuration models and runtime reconfiguration strategies, directly relating to the paper's discussion of computing models based on configuration rate. These talks provide current research perspectives on improving FPGA efficiency and predictability, which are key challenges identified in the paper.
+▶ [Hardware-software co-design with the Parallel Research ...](https://www.youtube.com/watch?v=HTbjM5GDIRM) — NHR@FAU · 59:13
 
-*How the paper uses it:* The paper analyzes static, time-sharing, and dynamic configuration models as part of configurable computing system design.
+### Configurable Computing Architectures *(prerequisite)*
+Understanding the architectural classifications and design decisions in configurable computing is central to the paper. This includes the distinction between netlist computers and chunky function unit architectures, and design trade-offs like granularity and CPU proximity. The selected lecture provides a comprehensive academic treatment of reconfigurable processor architectures.
 
-▶ [Adrian Sampson (Cornell University) Toward a Predictable ...](https://www.youtube.com/watch?v=pyf6JWRZpLQ) — UCSC Hardware Systems Collective · 1:07:12
+*How the paper uses it:* The paper classifies configurable computing architectures and identifies key architectural design decisions impacting flexibility and efficiency.
 
-### Configurable computing architectures
-This section focuses on the classification and architectural design decisions of configurable computing hardware, which are central to the paper's contributions. The Microsoft Research talk offers a detailed and technical discussion of reconfigurable computing and FPGA architectures, aligning well with the paper's survey and analysis of netlist and chunky function unit approaches.
+▶ [Reconfigurable Computing Lec1.1 - Intro to Processors ...](https://www.youtube.com/watch?v=Zm5RCaoRNvY) — Computer & IT lectures · 35:14
 
-*How the paper uses it:* The paper classifies configurable computing architectures and discusses key design decisions such as granularity, CPU proximity, and system capacity.
+## Track 2 — Beginner → Advanced (short-form)
 
-▶ [Reconfigurable Computing: Architectural and Design Tool ...](https://www.youtube.com/watch?v=5_H_j72Ftq8) — Microsoft Research · 1:12:16
+_Concise, high-quality explainers that build intuition — for when time is short._
+
+This learning path introduces the foundational hardware technology of FPGAs first, as they are the building blocks of configurable computing systems. Next, it covers hardware-software co-design to understand how programmability and hardware flexibility are integrated. Then, it explains configurable computing architectures to grasp the main architectural classifications and design trade-offs discussed in the paper. Finally, it touches on reconfigurable computing models to appreciate different configuration approaches. This order builds intuition from hardware basics to system-level concepts relevant to the paper.
+
+### Field Programmable Gate Arrays FPGA *(prerequisite)*
+FPGAs are integrated circuits that can be programmed after manufacturing to implement custom digital circuits. Understanding what FPGAs are and how they work is essential because configurable computing systems rely on FPGAs to provide hardware flexibility combined with software programmability.
+
+*How the paper uses it:* The paper discusses FPGA technology as the fundamental hardware enabling configurable computing systems and highlights current FPGA limitations.
+
+▶ [Introduction to FPGA Part 1 - What is an FPGA? | Digi-Key ...](https://www.youtube.com/watch?v=lLg1AgA2Xoo) — DigiKey · 15:21
+
+### Hardware Software Co-design *(prerequisite)*
+Hardware-software co-design is the collaborative design of hardware and software components to optimize system performance and programmability. This concept is key to addressing the challenges of making configurable computing systems practical and programmable.
+
+*How the paper uses it:* The paper emphasizes the importance of hardware/software co-design to overcome programmability and tool challenges in configurable computing.
+
+▶ [Hardware-Software Co-design | Embedded System & RTOS](https://www.youtube.com/watch?v=w-KHW7ZxMW8) — Ekeeda · 13:07
+
+### Configurable Computing Architectures *(prerequisite)*
+Configurable computing architectures define how programmable hardware and processors are combined, focusing on design decisions like granularity, CPU proximity, and system capacity. Understanding these architectural classifications helps grasp the paper's core contributions and challenges.
+
+*How the paper uses it:* The paper classifies configurable computing architectures into netlist and chunky function unit types and discusses key architectural design decisions.
+
+▶ [Reconfigurable Computing Lec1.1 - Intro to Processors ...](https://www.youtube.com/watch?v=Zm5RCaoRNvY) — Computer & IT lectures · 35:14
 
 ## Already in your library
 
-- [ASPLOS'24 - FPGAs and Reconfigurable Hardware](https://www.youtube.com/watch?v=2XgOWAtJ8vs) — also for: ASAP: Accelerated Short-Read Alignment on Programmable Hardware (Ravi K. Iyer)
+- [Reconfigurable Computing: Architectural and Design Tool ...](https://www.youtube.com/watch?v=5_H_j72Ftq8) — also for: Seeking Solutions in Configurable Computing (David Andrews)
+- [Stanford Seminar - Computing with FPGAs - Oskar Mencer](https://www.youtube.com/watch?v=AHJZKoAh8wE) — also for: Seeking Solutions in Configurable Computing (David Andrews)
+- [Hardware/Software Co-design Course - Lecture 1: 16.03.22 ...](https://www.youtube.com/watch?v=OJRBbOoiHXw) — also for: Seeking Solutions in Configurable Computing (David Andrews)

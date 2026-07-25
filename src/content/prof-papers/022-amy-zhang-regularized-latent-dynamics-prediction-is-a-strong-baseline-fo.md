@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-amyzhang-github-io"
-source_hash: "490ba2b438bc76ff9405d36cafffaa5224af7b3c0c871c489d002396322989b3"
+source_hash: "b8a428198ec13d55df42faed233f4958f66a4c2724772e04e1c5d98e5799c174"
 sequence: 22
 generator: "outreach-garden: managed"
 ---
@@ -54,41 +54,88 @@ Research interests: theory and algorithms for sequential decision-making problem
 
 ## Learning path
 
-To deeply understand the paper 'Regularized Latent Dynamics Prediction is a Strong Baseline for Behavioral Foundation Models,' start by building foundational knowledge on representation learning in reinforcement learning and offline RL challenges, which provide the context for the paper's contributions. Then study orthogonality regularization and successor features to grasp key techniques used in the method. Finally, focus on the core concept of latent dynamics prediction and the authors' own talk or closest relevant advanced talk to directly engage with the paper's novel approach and empirical results.
+## Track 1 — Academic deep-dives (long-form)
 
-## Recommended videos (in order)
+_Rigorous lectures, seminars and conference talks. Deeper, but longer._
+
+To deeply understand the paper "Regularized Latent Dynamics Prediction is a Strong Baseline for Behavioral Foundation Models," start with foundational concepts in reinforcement learning representation learning and orthogonality regularization to grasp the theoretical underpinnings of the method. Then, study zero-shot reinforcement learning and successor features to contextualize the application domain and downstream use of learned representations. Finally, focus on the core concept of latent dynamics prediction and the authors' own talk on RLDP to directly learn about their novel approach and empirical findings.
 
 ### Representation learning in reinforcement learning *(prerequisite)*
-Representation learning is fundamental for extracting meaningful state features that enable generalization and zero-shot learning in RL. This section covers advanced university lectures and seminars that rigorously explain reconstruction-based and other representation learning methods in RL.
+Representation learning is fundamental to understanding how RLDP learns effective state features that enable zero-shot RL. This section covers advanced university lectures that explain the theory and algorithms behind learning useful representations in RL, which is critical for grasping the motivation and design of RLDP.
 
-*How the paper uses it:* The paper builds on representation learning to develop effective state features for zero-shot RL without complex objectives.
+*How the paper uses it:* RLDP proposes a simple latent dynamics prediction objective with orthogonality regularization to learn robust state representations for zero-shot RL.
 
-▶ [Representation Learning and Exploration in Reinforcement Learning](https://www.youtube.com/watch?v=_t3lRD6Gml8) — Simons Institute for the Theory of Computing · 29:56 · Streamed 5 years ago
-
-### Offline reinforcement learning challenges *(prerequisite)*
-Understanding the challenges of offline RL, especially in low-coverage datasets, is critical to appreciate RLDP's robustness and practical advantages. Selected talks provide advanced insights into offline RL algorithms and their limitations.
-
-*How the paper uses it:* RLDP demonstrates robustness in low-coverage offline datasets where prior methods fail.
-
-▶ [Offline Reinforcement Learning](https://www.youtube.com/watch?v=qgZPZREor5I) — RAIL · 51:34
+▶ [Stanford CS224R Deep Reinforcement Learning | Spring 2025 | Lecture 15: Hierarchical RL and IL](https://www.youtube.com/watch?v=iKWYLSVAtfM) — Stanford Online · 7 months ago
 
 ### Orthogonality regularization in neural networks *(prerequisite)*
-Orthogonality regularization is a key technique to prevent feature collapse and maintain diverse representations. This section includes mathematically rigorous and research-level discussions on orthogonality and related regularization methods in neural networks.
+Orthogonality regularization is a key technique used in RLDP to prevent feature collapse and maintain diversity in learned representations. This section includes university-level lectures on regularization methods specific to neural networks, providing the theoretical background necessary to understand the orthogonality regularizer introduced in the paper.
 
-*How the paper uses it:* The paper introduces orthogonality regularization to maintain feature diversity in latent dynamics prediction.
+*How the paper uses it:* The paper introduces an orthogonality regularizer to maintain feature diversity and prevent collapse in latent dynamics prediction.
 
-▶ [How To Learn Math for Machine Learning FAST (Even With ...](https://www.youtube.com/watch?v=KgolhE7p-KY) — Marina Wyss - AI & Machine Learning · 12:09
+▶ [L10.0 Regularization Methods for Neural Networks -- Lecture Overview](https://www.youtube.com/watch?v=Va4K-wYh_p8) — Sebastian Raschka · 5 years ago
+
+### Zero-shot reinforcement learning *(prerequisite)*
+Zero-shot RL is the target application domain where RLDP enables agents to generalize to new tasks without retraining. Understanding this concept is crucial to appreciate the significance and impact of the proposed method. Although no perfect advanced talks were found, this section includes a research lab talk that is more substantive than beginner explainers.
+
+*How the paper uses it:* RLDP is designed to learn representations that enable zero-shot RL across diverse tasks without additional training.
+
+▶ [Zero-shot reinforcement learning policy transfer with robust control](https://www.youtube.com/watch?v=fFKJu2jeHm4) — MSC Lab at UC Berkeley · 6 years ago
 
 ### Successor features and successor measures *(prerequisite)*
-Successor features provide a powerful framework for generalization and policy improvement in RL. Advanced talks explain the theory and applications of successor representations relevant to behavioral foundation models.
+Successor features and measures are used in the paper to train behavioral foundation models using the learned representations from RLDP. This section provides advanced university lectures explaining these concepts, which are essential for understanding how RLDP's representations are leveraged for policy improvement.
 
-*How the paper uses it:* RLDP uses learned representations to train BFMs via successor measure estimation and policy improvement.
+*How the paper uses it:* The learned RLDP representations are used to train BFMs via successor measure estimation and policy improvement.
 
-▶ [Generalizing successor representations across policies](https://www.youtube.com/watch?v=Gfv26bD3Mlo) — Microsoft Research · 9:34
+▶ [Successor Feature Representations](https://www.youtube.com/watch?v=RYemlh2NSzQ) — Chris Reinke · 8:32 · 3 years ago
 
 ### Latent dynamics prediction
-Latent dynamics prediction is the core method for learning state representations by predicting future latent states. This section features advanced research talks on latent world models and dynamics prediction relevant to the paper's approach.
+Latent dynamics prediction is the core method RLDP uses to predict future states in latent space, forming the backbone of the representation learning approach. This section includes the authors' own talk on RLDP, providing direct insights into their methodology and results.
 
-*How the paper uses it:* RLDP centers on latent dynamics prediction combined with orthogonality regularization for representation learning.
+*How the paper uses it:* RLDP learns state representations by predicting future latent states combined with orthogonality regularization.
 
-▶ [Latent Video World Models: Present and Future [Wonjun Jo]](https://www.youtube.com/watch?v=S6iDCg9SDmo) — AMI Lab @ KAIST (PI: Prof. Tae-Hyun Oh) · 21:56
+▶ [Regularized Latent Dynamics Prediction is a Strong Baseline for Behavioral Foundation Models](https://www.youtube.com/watch?v=uUVOUnk7CiE) — Pranaya Jajoo · 5:49 · 3 months ago
+
+## Track 2 — Beginner → Advanced (short-form)
+
+_Concise, high-quality explainers that build intuition — for when time is short._
+
+This beginner-to-advanced path introduces foundational concepts needed to understand RLDP, starting with basics of reinforcement learning and representation learning, then covering zero-shot RL and successor features, followed by orthogonality regularization to prevent feature collapse, and finally focusing on latent dynamics prediction, the core method behind RLDP. Each step builds intuition with concise, clear videos that connect directly to the paper's approach and contributions.
+
+### Representation learning in reinforcement learning *(prerequisite)*
+Representation learning helps an RL agent understand and encode the environment's state in a way that makes learning and generalization easier. This video introduces how representations are learned and why they matter in RL.
+
+*How the paper uses it:* RLDP learns effective state representations to enable zero-shot RL without complex objectives.
+
+▶ [Introduction to Representation Learning](https://www.youtube.com/watch?v=e3GaXeqrG9I) — Jordan Boyd-Graber · 4:50 · 8 years ago
+
+### Zero-shot reinforcement learning *(prerequisite)*
+Zero-shot RL refers to an agent's ability to perform well on new, unseen tasks without additional training. Understanding this concept is key to appreciating RLDP's goal of enabling agents to generalize across tasks.
+
+*How the paper uses it:* RLDP is designed to enable zero-shot RL by learning policy-independent representations.
+
+▶ [What is Zero Shot Learning | How Zero-shot Classification model works | NLP | transformers   | Code](https://www.youtube.com/watch?v=PH_eb1udpew) — Pradip Nichite · 3 years ago
+
+### Successor features and successor measures *(prerequisite)*
+Successor features are a way to represent the expected future state occupancy, which helps in transfer learning and policy improvement. This video explains the concept and its role in RL.
+
+*How the paper uses it:* The paper uses successor measure estimation with RLDP representations to train behavioral foundation models.
+
+▶ [Successor Feature Representations](https://www.youtube.com/watch?v=RYemlh2NSzQ) — Chris Reinke · 8:32 · 3 years ago
+
+### Orthogonality regularization in neural networks *(prerequisite)*
+Orthogonality regularization encourages learned features to be diverse and uncorrelated, preventing feature collapse. This video explains the intuition and benefits of such regularization in neural networks.
+
+*How the paper uses it:* RLDP uses orthogonality regularization to maintain diverse latent features and avoid collapse.
+
+▶ [Orthogonality and Orthonormality](https://www.youtube.com/watch?v=6nqMegdbxik) — Professor Dave Explains · 7 years ago
+
+### Latent dynamics prediction
+Latent dynamics prediction involves predicting future states in a compressed latent space, which helps in learning meaningful representations for control. This video provides intuition on how latent spaces and dynamics prediction work.
+
+*How the paper uses it:* RLDP's core method is predicting future latent states from current states and actions to learn representations.
+
+▶ [Regularized Latent Dynamics Prediction is a Strong Baseline for Behavioral Foundation Models](https://www.youtube.com/watch?v=uUVOUnk7CiE) — Pranaya Jajoo · 5:49 · 3 months ago
+
+## Already in your library
+
+- [Representation Learning and Exploration in Reinforcement Learning](https://www.youtube.com/watch?v=_t3lRD6Gml8) — also for: Regularized Latent Dynamics Prediction is a Strong Baseline for Behavioral Foundation Models (Amy Zhang)

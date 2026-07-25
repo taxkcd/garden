@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-laurent-hebert-dufresne"
-source_hash: "6e1ca8b98df60872b651ccd7db5c1eed5f142505ca78cbc8f257677a5cf0fa49"
+source_hash: "64a627be56f85be62bac651d1299313f5e6c5306cd9e9cdd7230d6907abc3087"
 sequence: 45
 generator: "outreach-garden: managed"
 ---
