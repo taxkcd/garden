@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-cvarela"
-source_hash: "193ce82ed3d6b5689eeede3e20ef6f68de9ebf60f9578aa4974fdf76edfe4404"
+source_hash: "9936a5ca61a546772b088854bd37feec05a1e5ffb9fcc768f3bdeea8f670afbe"
 sequence: 35
 generator: "outreach-garden: managed"
 ---

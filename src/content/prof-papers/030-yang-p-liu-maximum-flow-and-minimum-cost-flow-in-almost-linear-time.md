@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-yangpliu-github-io"
-source_hash: "bc04f90367c06ca2fd57bf6152a800c2622beba411ec4ea84ea572603b355733"
+source_hash: "8af0eeb002579e4b9d2d8fe1eae6d11e2e24018f60be057afb539392cfa49684"
 sequence: 30
 generator: "outreach-garden: managed"
 ---

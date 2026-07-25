@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-hassani"
-source_hash: "b0a3319ad75302d3bab7c54a827b9c55563b7ec0ae9cf040fb1a309a69c856ca"
+source_hash: "605d977eddab27d88c46a9a6cb23d7f9ae78286b7d017ada9f8169192ed48b97"
 sequence: 41
 generator: "outreach-garden: managed"
 ---
@@ -57,41 +57,88 @@ Research interests: Foundations of Machine Learning, Submodular Optimization, Fe
 
 ## Learning path
 
-To deeply understand the SmoothLLM paper, start by grounding yourself in the nature of adversarial attacks on language models and black-box adversarial defenses, which form the threat model and operational constraints SmoothLLM addresses. Then, explore theoretical guarantees in adversarial robustness to appreciate the formal underpinnings of SmoothLLM's defense success. Next, study randomized smoothing for robustness, the core methodological principle behind SmoothLLM's perturbation and aggregation approach. Finally, conclude with the authors' own talk or the closest available advanced presentation to get direct insights into their novel defense algorithm and empirical results.
+## Track 1 — Academic deep-dives (long-form)
 
-## Recommended videos (in order)
+_Rigorous lectures, seminars and conference talks. Deeper, but longer._
+
+To deeply understand the SmoothLLM paper, start by building foundational knowledge on adversarial attacks on language models and jailbreaking attacks, which define the threat model SmoothLLM defends against. Next, explore black-box adversarial defense methods to grasp the context of SmoothLLM's approach that requires no retraining and works in a black-box setting. Then, study randomized smoothing for robustness, the central technique underlying SmoothLLM's defense. Finally, conclude with the authors' own seminar talk that directly addresses robustness in LLMs and jailbreaking defenses, providing the most relevant and advanced insights into SmoothLLM.
 
 ### Adversarial attacks on language models *(prerequisite)*
-Understanding the types and mechanisms of adversarial jailbreaking attacks on large language models is essential to grasp the threat SmoothLLM defends against. This includes how adversaries craft inputs to bypass alignment and induce harmful outputs.
+Understanding adversarial attacks on language models is crucial as it defines the threat landscape that SmoothLLM aims to defend against. This includes knowledge of how adversaries craft inputs to manipulate model outputs and the challenges in defending against such attacks.
 
-*How the paper uses it:* SmoothLLM is designed specifically to mitigate jailbreaking attacks that exploit adversarial suffixes in LLM prompts.
+*How the paper uses it:* SmoothLLM is designed to mitigate adversarial jailbreak attacks that exploit vulnerabilities in LLMs.
 
-▶ [Zico Kolter - Adversarial Attacks on Aligned Language Models](https://www.youtube.com/watch?v=v1FMHokdWXI) — FAR․AI · 30:55
+▶ [Stanford CS230 | Autumn 2025 | Lecture 4: Adversarial Robustness and Generative Models](https://www.youtube.com/watch?v=aWlRtOlacYM) — Stanford Online · 1:47:17 · 9 months ago
 
-### Black-box adversarial defense *(prerequisite)*
-SmoothLLM operates as a black-box defense without retraining or internal access to the LLM, so understanding black-box adversarial attack and defense strategies is critical. This knowledge contextualizes the efficiency and compatibility advantages of SmoothLLM.
+### Jailbreaking attacks on LLMs *(prerequisite)*
+Jailbreaking attacks are a specific type of adversarial attack targeting LLMs to bypass alignment and produce harmful content. Understanding these attacks provides context for the specific vulnerabilities SmoothLLM addresses.
 
-*How the paper uses it:* SmoothLLM's black-box defense approach enables compatibility with closed-source LLMs and avoids costly retraining.
+*How the paper uses it:* SmoothLLM specifically targets jailbreaking attacks to improve LLM safety and alignment.
 
-▶ [[ITW 2021] Towards Universal Adversarial Examples and Defenses](https://www.youtube.com/watch?v=ytsGK9w10KU) — Mitsubishi Electric Research Laboratories (MERL) · 19:54 · 4 years ago
+▶ [Large Language Model Security: Jailbreak Attacks](https://www.youtube.com/watch?v=s9eVIDSxVbQ) — Fuzzy Labs · 2 years ago
 
-### Theoretical guarantees in adversarial robustness *(prerequisite)*
-The paper provides theoretical guarantees on defense success probability under a k-unstable adversarial suffix assumption. Familiarity with formal robustness certification and theoretical bounds in adversarial machine learning will deepen understanding of these guarantees.
+### Black-box adversarial defense methods *(prerequisite)*
+Black-box adversarial defenses operate without access to model internals or retraining, which aligns with SmoothLLM’s practical approach. Familiarity with these methods helps appreciate the efficiency and compatibility advantages of SmoothLLM.
 
-*How the paper uses it:* SmoothLLM's theoretical success bounds rely on adversarial robustness theory under instability assumptions.
+*How the paper uses it:* SmoothLLM is a black-box defense method that requires no retraining and uses multiple queries to improve robustness.
 
-▶ [Generalizable Adversarial Robustness to Unforeseen Attacks - Soheil Feizi](https://www.youtube.com/watch?v=RGgDQumPOU8) — Institute for Advanced Study · 1:14:56 · 6 years ago
+▶ [Recent Progress in Adversarial Robustness of AI Models: Attacks, Defenses, and Certification](https://www.youtube.com/watch?v=RYpmTldTkcw) — IBM Research · 59:43 · 7 years ago
 
 ### Randomized smoothing for robustness
-Randomized smoothing is the central technique SmoothLLM adapts to LLM jailbreak defense by perturbing inputs and aggregating outputs to detect adversarial manipulations. Understanding this method's principles and certified robustness results is key to grasping SmoothLLM's innovation.
+Randomized smoothing is the core theoretical technique underlying SmoothLLM’s defense, involving perturbing inputs and aggregating outputs to certify robustness. Understanding this concept is essential to grasp how SmoothLLM achieves its guarantees and empirical success.
 
-*How the paper uses it:* SmoothLLM applies randomized smoothing principles via character-level perturbations and response aggregation to mitigate jailbreak attacks.
+*How the paper uses it:* SmoothLLM applies randomized smoothing principles to mitigate adversarial suffix jailbreaks via character-level perturbations.
 
-▶ [Randomized smoothing for certified robustness](https://www.youtube.com/watch?v=O84mcq7P_es) — Sebastien Bubeck · 32:27
+▶ [Reliable and Interpretable Artificial Intelligence -- Lecture 12 (Randomized Smoothing)](https://www.youtube.com/watch?v=tokD9Wgor3k) — ETH SRI · 5 years ago
 
-### SmoothLLM authors talk *(the paper's own talk)*
-The authors' own presentation or closest advanced talk provides the most direct and authoritative explanation of SmoothLLM's design, empirical results, and theoretical contributions. This talk will offer insights not easily gleaned from the paper alone.
+### SmoothLLM paper talk *(the paper's own talk)*
+The authors’ own seminar talk provides direct insights into the motivation, methodology, theoretical guarantees, and empirical results of SmoothLLM. This talk is the most authoritative and detailed resource to understand the paper’s contributions and context.
 
-*How the paper uses it:* Hamed Hassani, a co-author, is affiliated with the University of Pennsylvania and has expertise in adversarial training, making his talks highly relevant.
+*How the paper uses it:* This talk by Hamed Hassani, a co-author, covers robustness in LLMs and jailbreaking defenses, directly relating to SmoothLLM.
 
-▶ [It's Not About Scale, It's About Abstraction](https://www.youtube.com/watch?v=s7_NlkBwdj8) — Machine Learning Street Talk · 46:22 · 1 year ago
+▶ [IFML Seminar: 4/5/24 - Robustness in the Era of LLMs: Jailbreaking Attacks and Defenses](https://www.youtube.com/watch?v=CoWz0xEKIdo) — IFML · 2 years ago
+
+## Track 2 — Beginner → Advanced (short-form)
+
+_Concise, high-quality explainers that build intuition — for when time is short._
+
+This beginner-to-advanced path introduces foundational concepts needed to understand SmoothLLM, a defense against jailbreaking attacks on large language models (LLMs). We start with the basics of adversarial attacks on language models, then explain jailbreaking attacks specifically. Next, we cover black-box adversarial defense methods, followed by the key technique of randomized smoothing. Finally, we conclude with a direct paper talk by the authors to consolidate understanding of SmoothLLM's novel approach.
+
+### Adversarial attacks on language models *(prerequisite)*
+Learn what adversarial attacks are in machine learning, focusing on how attackers craft inputs to fool models into making wrong or harmful predictions. This section builds intuition about the threat models that SmoothLLM aims to defend against, especially in the context of language models.
+
+*How the paper uses it:* Understanding adversarial attacks is essential because SmoothLLM defends LLMs against adversarial jailbreak inputs.
+
+▶ [LLM Vulnerabilities Explained: Adversarial Attacks, Jailbreaks & Data Poisoning](https://www.youtube.com/watch?v=MQbJL8JJu1U) — Network Intelligence · 8 months ago
+
+### Jailbreaking attacks on LLMs *(prerequisite)*
+This section dives into jailbreaking attacks, a specific type of adversarial attack where malicious prompts trick LLMs into generating objectionable or harmful content despite alignment efforts. It explains the nature and impact of these attacks on AI safety.
+
+*How the paper uses it:* SmoothLLM specifically targets jailbreaking attacks to improve LLM safety and trustworthiness.
+
+▶ [Large Language Model Security: Jailbreak Attacks](https://www.youtube.com/watch?v=s9eVIDSxVbQ) — Fuzzy Labs · 2 years ago
+
+### Black-box adversarial defense methods *(prerequisite)*
+Explore defense strategies that do not require access to or retraining of the model internals, known as black-box defenses. This section explains how such methods work by querying the model and analyzing outputs to detect adversarial inputs.
+
+*How the paper uses it:* SmoothLLM is a black-box defense that improves robustness without retraining the underlying LLM.
+
+▶ [Recent Progress in Adversarial Robustness of AI Models: Attacks, Defenses, and Certification](https://www.youtube.com/watch?v=RYpmTldTkcw) — IBM Research · 59:43 · 7 years ago
+
+### Randomized smoothing for robustness
+Randomized smoothing is a technique to certify and improve model robustness by averaging predictions over randomly perturbed inputs. This section builds intuition on how smoothing can mitigate adversarial effects by making models less sensitive to small input changes.
+
+*How the paper uses it:* SmoothLLM applies randomized smoothing principles by perturbing input prompts and aggregating outputs to defend against adversarial suffixes.
+
+▶ [Reliable and Interpretable Artificial Intelligence -- Lecture 12 (Randomized Smoothing)](https://www.youtube.com/watch?v=tokD9Wgor3k) — ETH SRI · 5 years ago
+
+### SmoothLLM paper talk *(the paper's own talk)*
+Hear directly from the authors about SmoothLLM’s design, theoretical guarantees, and empirical results. This talk consolidates understanding of the novel defense method and its significance in advancing LLM robustness against jailbreak attacks.
+
+*How the paper uses it:* This talk is by Hamed Hassani, a co-author, explaining SmoothLLM’s approach and contributions in detail.
+
+▶ [IFML Seminar: 4/5/24 - Robustness in the Era of LLMs: Jailbreaking Attacks and Defenses](https://www.youtube.com/watch?v=CoWz0xEKIdo) — IFML · 2 years ago
+
+## Already in your library
+
+- [Randomized smoothing for certified robustness](https://www.youtube.com/watch?v=O84mcq7P_es) — also for: SmoothLLM: Defending Large Language Models Against Jailbreaking Attacks (Hamed Hassani)

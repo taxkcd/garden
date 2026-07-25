@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-gaikwad"
-source_hash: "1d28a8b9cf1a092e25c7b114756822fff9ab6630e352b6f2a08ea1079ee058a5"
+source_hash: "d441cb3822bb3e058a8ca0122a7796d85c71e661c6bdce0beddeb857b8fd46b1"
 sequence: 46
 generator: "outreach-garden: managed"
 ---
@@ -53,41 +53,68 @@ Research interests: machine learning and social computing, human-AI collaborativ
 
 ## Learning path
 
-To deeply understand the paper's findings on how persona assignment influences multi-agent LLM systems' strategic behavior, start with foundational knowledge of game theory and Nash equilibrium to grasp equilibrium concepts. Then, build understanding of role-based agent personas and chain-of-thought reasoning in LLMs, which are key mechanisms analyzed in the paper. Finally, focus on the paper's core concept by watching the authors' own talk or the closest available academic presentation on identity and incentives in strategic settings.
+## Track 1 — Academic deep-dives (long-form)
 
-## Recommended videos (in order)
+_Rigorous lectures, seminars and conference talks. Deeper, but longer._
 
-### Game theory Nash equilibrium lecture *(prerequisite)*
-Understanding Nash equilibrium is foundational for analyzing how agents in multi-agent systems select strategies and reach stable outcomes. This section provides rigorous university-level lectures on Nash equilibrium, essential for interpreting the paper's equilibrium analysis.
+To deeply understand the paper on how identity (persona) influences strategic behavior in multi-agent LLM systems, start with foundational knowledge on multi-agent strategic games and Nash equilibrium concepts, which underpin the experimental design and analysis. Then, build background on large language model agents to appreciate the agent architecture used. Finally, focus on the paper's core concept of representational choices as governance decisions in multi-agent systems, culminating with the authors' own talk if available.
 
-*How the paper uses it:* The paper analyzes equilibrium attainment and selection in multi-agent LLM strategic games using Nash equilibrium concepts.
+### Multi-agent strategic games lecture *(prerequisite)*
+This section covers the game-theoretic framework essential for understanding agent interactions in the paper's experiments. It introduces multi-agent reinforcement learning and strategic behavior modeling, which are foundational to analyzing equilibrium outcomes.
 
-▶ [Lecture 5: Nash Equilibrium](https://www.youtube.com/watch?v=ftCXguW2k4o) — MIT OpenCourseWare · 1:19:27
+*How the paper uses it:* The paper models environmental policy scenarios as four-agent strategic games, so understanding multi-agent strategic games is crucial.
 
-### Role-based agent personas in AI systems *(prerequisite)*
-Role-based personas are central to how the paper conditions LLM agents and studies their influence on strategic behavior. This section offers academic talks and seminars that explore AI agent personas and their behavioral impact, providing context for the paper's persona design choices.
+▶ [Reinforcement Learning for Complex Security Games and Beyond](https://www.youtube.com/watch?v=fVLwKRLDYSg) — Simons Institute for the Theory of Computing · Streamed 4 years ago
 
-*How the paper uses it:* The paper investigates how assigning role-based identities (personas) biases agent behavior in multi-agent LLM systems.
+### Nash equilibrium lecture *(prerequisite)*
+Nash equilibrium is the core solution concept used in the paper to analyze strategic outcomes. This section explains the definition, intuition, and examples of Nash equilibria, enabling comprehension of equilibrium attainment and selection in the experiments.
 
-▶ [Stanford Global Alumni Webinar | August 2025 | AI Agent Simulation of Human Behavior](https://www.youtube.com/watch?v=sMB4YYJDeIg) — Stanford Online · 46:01 · 9 months ago
+*How the paper uses it:* The paper analyzes Nash equilibrium attainment and selection to understand how personas affect strategic outcomes.
 
-### Chain-of-thought reasoning in large language models *(prerequisite)*
-Chain-of-thought prompting is a key method used in the paper to analyze shifts in agent reasoning from identity-driven to payoff-optimal strategies. This section includes detailed academic talks on chain-of-thought reasoning in LLMs, crucial for understanding the paper's behavioral mechanism analysis.
+▶ [Nash Equilibrium in 5 Minutes](https://www.youtube.com/watch?v=tDQ4_W3eUiw) — Ashley Hodgson · 3 years ago
 
-*How the paper uses it:* The paper uses chain-of-thought reasoning analysis to reveal how personas affect strategic reasoning in LLM agents.
+### Representational choices in multi-agent systems lecture
+This section focuses on how assigning identities or roles to agents influences their strategic behavior, a central theme of the paper. It discusses how representational choices govern multi-agent interactions and outcomes, providing context for the paper's framing of persona assignment as a governance decision.
 
-▶ [CMU LLM Inference (7): Chain of Thought and Intermediate ...](https://www.youtube.com/watch?v=pKR3Vr6yg4U) — Graham Neubig · 54:55
+*How the paper uses it:* The paper's core contribution is demonstrating that representational choices like persona assignment govern strategic behavior in multi-agent LLM systems.
 
-### Multi-agent strategic behavior in LLM systems
-This section covers how multiple LLM agents interact strategically and reach equilibria, directly relating to the paper's experimental setup and analysis of multi-agent games. The selected university-level lecture provides a rigorous treatment of LLM agents' strategic behavior.
+▶ [Prof. Jeff Rosenschein - Cooperative Games in Multiagent Systems](https://www.youtube.com/watch?v=1-ep_QqYVvQ) — Hebrew University of Jerusalem · 1:01:51 · 12 years ago
 
-*How the paper uses it:* The paper studies multi-agent LLM systems playing strategic games under different persona and payoff conditions.
+## Track 2 — Beginner → Advanced (short-form)
 
-▶ [Adv. LLM Agents MOOC | UC Berkeley Sp25 | Abstraction, Discovery w/ LLM Agents by Swarat Chaudhuri](https://www.youtube.com/watch?v=IHc0TEMrEdY) — Berkeley RDI · 1:27:38 · Streamed 1 year ago
+_Concise, high-quality explainers that build intuition — for when time is short._
 
-### Authors' talk on persona effects in multi-agent LLMs *(the paper's own talk)*
-The authors' own talk would provide the most direct and detailed insights into their study on how identity and incentives interact in multi-agent LLM systems. Unfortunately, no exact talk by the authors on this paper was found, so the closest available academic talk on identity and incentives is selected.
+This beginner-to-advanced path introduces foundational concepts needed to understand how role-based identities (personas) influence strategic decision-making in multi-agent large language model (LLM) systems. Starting with the basics of large language models and multi-agent systems, it then covers game theory fundamentals like Nash equilibrium before focusing on the paper's core idea that representational choices govern agent behavior in multi-agent LLM setups.
 
-*How the paper uses it:* Direct presentation of the paper's core findings and implications by the authors would best illuminate their research contributions.
+### Large language model agents seminar *(prerequisite)*
+Learn what large language models (LLMs) are, how they work, and how they can act as agents in multi-agent systems. This foundation helps understand the nature of the AI agents studied in the paper.
 
-▶ [Identity and Economic Incentives](https://www.youtube.com/watch?v=zfL2ecNwqaw) — MIT Institute for Data, Systems, and Society · 55:12 · 2 years ago
+*How the paper uses it:* The paper studies multi-agent systems composed of LLM agents, so understanding LLM basics is essential.
+
+▶ [Large Language Models explained briefly](https://www.youtube.com/watch?v=LPZh9BOjkQs) — 3Blue1Brown · 1 year ago
+
+### Multi-agent strategic games lecture *(prerequisite)*
+This section introduces the concept of multiple agents interacting strategically, each making decisions that affect others. Understanding multi-agent systems and their challenges sets the stage for analyzing strategic behavior in the paper's experiments.
+
+*How the paper uses it:* The paper models environmental policy scenarios as multi-agent strategic games involving LLM agents.
+
+▶ [Introduction to Multi-Agent Reinforcement Learning](https://www.youtube.com/watch?v=qgb0gyrpiGk) — MATLAB · 3 years ago
+
+### Nash equilibrium lecture *(prerequisite)*
+Nash equilibrium is a core game theory concept describing stable outcomes where no agent benefits from unilaterally changing their strategy. Grasping this helps interpret the paper's analysis of equilibrium selection by LLM agents.
+
+*How the paper uses it:* The paper evaluates how LLM agents reach or fail to reach Nash equilibria under different persona and payoff conditions.
+
+▶ [The Nash Equilibrium (A Beautiful Mind, John Nash): Definition, Explanation & Examples in One Minute](https://www.youtube.com/watch?v=MSxgzaeKCJ0) — One Minute Economics · 7 years ago
+
+### Representational choices in multi-agent systems lecture
+This concept covers how assigning identities or roles to agents influences their behavior and interactions in multi-agent systems. It directly relates to how persona assignment acts as a governance decision shaping outcomes.
+
+*How the paper uses it:* The paper's core finding is that persona presence biases LLM agents toward socially preferred equilibria, overriding payoff incentives.
+
+▶ [Multi-agent Systems Explained in 17 Minutes](https://www.youtube.com/watch?v=Mi5wOpAgixw) — Shaw Talebi · 17:40 · 5 months ago
+
+## Already in your library
+
+- [Identity and Economic Incentives](https://www.youtube.com/watch?v=zfL2ecNwqaw) — also for: When Identity Overrides Incentives: Representational Choices as Governance Decisions in Multi-Agent LLM Systems (Neil S. Gaikwad)
+- [Lecture 5: Nash Equilibrium](https://www.youtube.com/watch?v=ftCXguW2k4o) — also for: When Identity Overrides Incentives: Representational Choices as Governance Decisions in Multi-Agent LLM Systems (Neil S. Gaikwad)

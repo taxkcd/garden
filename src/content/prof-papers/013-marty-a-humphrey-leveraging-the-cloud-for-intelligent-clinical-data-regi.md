@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-humphrey-html"
-source_hash: "b266a2e16b5886c3c9b77bb3b0420fbe12b0436af7787d98f30f545cfcfef64e"
+source_hash: "6c18afea7a18824fa75e92f1a5aa7e745a73533362e9c5e983f4503c875c9212"
 sequence: 13
 generator: "outreach-garden: managed"
 ---
@@ -59,34 +59,102 @@ Research interests: text mining, quality control, statistics, asymmetric distrib
 
 ## Learning path
 
-To deeply understand the paper 'Leveraging the Cloud for Intelligent Clinical Data Registries,' start with foundational knowledge on HIPAA-compliant cloud security and serverless computing with AWS Lambda, as these are critical for secure, scalable clinical data platforms. Next, explore the challenges of medical audio transcription to grasp the limitations and improvements needed for the paper's transcription feature. Finally, focus on the core concept of cloud-based clinical data registries, emphasizing the authors' own talk to gain direct insights into their system design and implementation.
+## Track 1 — Academic deep-dives (long-form)
 
-## Recommended videos (in order)
+_Rigorous lectures, seminars and conference talks. Deeper, but longer._
 
-### HIPAA compliant cloud security *(prerequisite)*
-Understanding HIPAA compliance in cloud environments is essential for grasping the privacy and regulatory requirements that underpin the secure handling of clinical data in CPOP. This section covers the necessary security frameworks and best practices for healthcare data in the cloud.
+To deeply understand the paper 'Leveraging the Cloud for Intelligent Clinical Data Registries,' start with foundational knowledge on cloud computing architectures specialized for healthcare, followed by security and privacy compliance with HIPAA in cloud environments. Then, explore serverless architectures like AWS Lambda, which underpin the system's scalable backend. Next, study medical audio transcription technologies, especially Amazon Transcribe, as they are key to the paper's audio transcription feature. Finally, focus on the core concept of cloud-based clinical data registries and the authors' own talk to grasp the specific design, implementation, and evaluation of the CPOP platform.
 
-*How the paper uses it:* Security and privacy are central to the system design, complying with HIPAA standards.
+### cloud computing architecture for healthcare *(prerequisite)*
+Understanding cloud architectures tailored for healthcare data is essential to appreciate the system design choices in CPOP. This includes concepts like scalability, reliability, and secure data handling in cloud environments, which form the backbone of the platform.
 
-▶ [HIPAA Compliance in the Cloud with AWS for Healthcare Organizations | DevCom](https://www.youtube.com/watch?v=mGLWgP5_Zpw) — DevCom · 6 years ago
+*How the paper uses it:* The paper builds on a scalable cloud architecture for clinical data registries using AWS services.
 
-### Serverless computing AWS Lambda lecture *(prerequisite)*
-Serverless computing, particularly AWS Lambda, is a key technology used in the paper's backend architecture for scalable and efficient API management. This section explains the serverless paradigm and contrasts it with traditional server-based approaches.
+▶ [Cloud Adoption Essentials: Cloud Architecture Basics](https://www.youtube.com/watch?v=pM45hWKia5o) — A Cloud Guru · 15:39 · 5 years ago
 
-*How the paper uses it:* The paper uses AWS Lambda and API Gateway for serverless APIs in the platform architecture.
+### HIPAA compliance cloud security *(prerequisite)*
+Security and privacy compliance under HIPAA is critical for clinical data systems. This section covers the regulatory requirements and best practices for securing healthcare data in the cloud, which is central to the paper's design.
 
-▶ [Lec-29 : What is Serverless? | AWS Lambda vs EC2 | Serverless Vs Server Based](https://www.youtube.com/watch?v=SDt36JcxTW4) — Gate Smashers · 9:08 · 1 year ago
+*How the paper uses it:* The paper emphasizes a security architecture ensuring HIPAA compliance and data privacy.
 
-### Medical audio transcription challenges *(prerequisite)*
-This section addresses the technical challenges and current state of medical audio transcription, which is critical for understanding the paper's evaluation of Amazon Transcribe and its limitations in clinical settings.
+▶ [HIPAA Rules and Compliance Training Video](https://www.youtube.com/watch?v=CRQwUlXMoqM) — SafetyVideos.com · 7 years ago
+
+### serverless architectures AWS Lambda *(prerequisite)*
+Serverless computing with AWS Lambda enables scalable, event-driven backend APIs without managing servers. Understanding this technology is key to grasping how CPOP implements its serverless APIs for data interaction and processing.
+
+*How the paper uses it:* The paper uses AWS Lambda and API Gateway for serverless backend APIs in CPOP.
+
+▶ [Introduction to AWS Lambda - Serverless Compute on Amazon Web Services](https://www.youtube.com/watch?v=eOBq__h4OJ4) — Amazon Web Services · 11 years ago
+
+### medical audio transcription Amazon Transcribe *(prerequisite)*
+Medical audio transcription technology, particularly Amazon Transcribe Medical, is crucial for converting doctor-patient conversations into text. This section explains the capabilities and challenges of such transcription services relevant to the paper's evaluation.
 
 *How the paper uses it:* The paper evaluates Amazon Transcribe for doctor-patient audio transcription with a 15.6% word error rate.
 
-▶ [Medical Transcription Analysis with Machine Learning - Doctor/Patient Conversation Demo](https://www.youtube.com/watch?v=f5HVIALG5g4) — Amazon Web Services · 5:27 · 5 years ago
+▶ [AWS re:Invent 2019: [NEW LAUNCH!] Amazon Transcribe Medical: Transforming Healthcare w/ AI (AIM210)](https://www.youtube.com/watch?v=W_fDlbFlf14) — AWS Events · 42:46 · 6 years ago
 
-### Cloud-based clinical data registries architecture
-Central to the paper is the design of scalable, secure cloud platforms for managing clinical data registries. This section provides architectural insights and design patterns relevant to building such systems, complementing the paper's contributions.
+### cloud-based clinical data registries
+This section focuses on the central concept of the paper: using cloud platforms to manage clinical data registries. It covers the design, benefits, and challenges of cloud-based registries for healthcare data management and analytics.
 
-*How the paper uses it:* The paper presents CPOP, a scalable cloud architecture for clinical data registries.
+*How the paper uses it:* The paper presents CPOP, a cloud-based platform for clinical data registries with patient and doctor interfaces.
 
-▶ [Scalable Patient Data Curation with AI](https://www.youtube.com/watch?v=HPEZWk8o7wE) — John Snow Labs – Healthcare AI Company · 19:22
+▶ [Sources of RWD: An Introduction to Patient Registries](https://www.youtube.com/watch?v=mus4ig5O4eM) — nhcouncil · 47:35 · 5 years ago
+
+### CPOP cloud clinical data platform talk *(the paper's own talk)*
+The authors' own talk provides the most direct and detailed explanation of the CPOP system, including its architecture, implementation, and evaluation results. Watching this talk offers insights straight from the creators, complementing the paper's content.
+
+*How the paper uses it:* This is the authors' own presentation explaining their system design and results for CPOP-CRS.
+
+▶ [Overcoming Barriers: Capturing Clinical Data Using the Cloud](https://www.youtube.com/watch?v=L_Vds1YWCWs) — Executives for Health Innovation · 3 years ago
+
+## Track 2 — Beginner → Advanced (short-form)
+
+_Concise, high-quality explainers that build intuition — for when time is short._
+
+This beginner-to-advanced path introduces foundational cloud computing concepts and security compliance before focusing on specialized healthcare cloud architectures and serverless AWS Lambda functions. It then covers medical audio transcription technology and concludes with the core concept of cloud-based clinical data registries as applied in the paper. This order builds intuition step-by-step, enabling a clear understanding of how the paper's CPOP platform leverages cloud technologies for clinical data management.
+
+### cloud computing architecture for healthcare *(prerequisite)*
+Start by understanding the basics of cloud computing architecture, including how cloud systems are designed for scalability, reliability, and security. This foundation is essential to grasp how healthcare data platforms operate in the cloud.
+
+*How the paper uses it:* The paper builds on cloud architecture principles to design a scalable and secure platform for clinical data registries.
+
+▶ [Cloud Adoption Essentials: Cloud Architecture Basics](https://www.youtube.com/watch?v=pM45hWKia5o) — A Cloud Guru · 15:39 · 5 years ago
+
+### HIPAA compliance cloud security *(prerequisite)*
+Learn about HIPAA regulations and how cloud security practices ensure the privacy and protection of sensitive medical data. This knowledge is critical for understanding the security design of clinical data systems.
+
+*How the paper uses it:* The paper emphasizes HIPAA-compliant security architecture to protect patient data in the cloud.
+
+▶ [HIPAA Rules and Compliance Training Video](https://www.youtube.com/watch?v=CRQwUlXMoqM) — SafetyVideos.com · 7 years ago
+
+### serverless architectures AWS Lambda *(prerequisite)*
+Explore serverless computing with AWS Lambda, which allows running backend code without managing servers, enabling scalable and cost-efficient cloud applications. This concept underpins the paper's backend API implementation.
+
+*How the paper uses it:* The paper uses AWS Lambda and API Gateway to implement serverless, scalable backend services for CPOP.
+
+▶ [Introduction to AWS Lambda - Serverless Compute on Amazon Web Services](https://www.youtube.com/watch?v=eOBq__h4OJ4) — Amazon Web Services · 11 years ago
+
+### medical audio transcription Amazon Transcribe *(prerequisite)*
+Understand how Amazon Transcribe converts spoken medical conversations into text, a key feature for capturing doctor-patient interactions. This helps appreciate the challenges and performance metrics discussed in the paper.
+
+*How the paper uses it:* The paper evaluates Amazon Transcribe's accuracy in transcribing clinical audio with a 15.6% word error rate.
+
+▶ [AWS re:Invent 2019: [NEW LAUNCH!] Amazon Transcribe Medical: Transforming Healthcare w/ AI (AIM210)](https://www.youtube.com/watch?v=W_fDlbFlf14) — AWS Events · 42:46 · 6 years ago
+
+### cloud-based clinical data registries
+Learn what clinical data registries are and how cloud platforms enable centralized, scalable management of patient data for research and care improvement. This concept is central to the paper's contribution.
+
+*How the paper uses it:* The paper presents CPOP, a cloud-based platform for managing clinical data registries focused on Chronic Rhinosinusitis.
+
+▶ [What is a clinical data registry?](https://www.youtube.com/watch?v=xFfwCXe0iWo) — American Academy of Otolaryngology—Head and Neck Surgery · 10 years ago
+
+### CPOP cloud clinical data platform talk *(the paper's own talk)*
+Finally, watch a focused talk on cloud technologies applied to healthcare solutions, providing insight into the system design and results similar to those in the paper. This consolidates understanding of the paper's core platform.
+
+*How the paper uses it:* This talk aligns with the paper's presentation of the CPOP platform and its application to clinical data registries.
+
+▶ [Overcoming Barriers: Capturing Clinical Data Using the Cloud](https://www.youtube.com/watch?v=L_Vds1YWCWs) — Executives for Health Innovation · 3 years ago
+
+## Already in your library
+
+- [Medical Transcription Analysis with Machine Learning - Doctor/Patient Conversation Demo](https://www.youtube.com/watch?v=f5HVIALG5g4) — also for: Leveraging the Cloud for Intelligent Clinical Data Registries (Marty A. Humphrey)

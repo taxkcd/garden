@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-ajiang"
-source_hash: "f7d7e48d4e56c820f67012451f209e5095fee9513a2ea81bb8123d70b712f79c"
+source_hash: "87ea402548e19e4e9c2eb5f204a9114ed6d3e8203ea34a5bbf47098c9044ab85"
 sequence: 33
 generator: "outreach-garden: managed"
 ---
