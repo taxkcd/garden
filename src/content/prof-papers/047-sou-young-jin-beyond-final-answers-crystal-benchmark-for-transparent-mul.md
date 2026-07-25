@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-souyoungjin-github-io"
-source_hash: "9f1b7fd0d8c61f4d7e50c5af7c2b9a92b095db409cd6f86b9f0d10f5ba808c71"
+source_hash: "02d585a742e48cd2bceb7807a875cb9cc7f5ca6580896887ae02cee34fc752cf"
 sequence: 47
 generator: "outreach-garden: managed"
 ---
@@ -55,34 +55,69 @@ Research interests: Teaching Machines to See and Feel, empathy-driven video unde
 
 ## Learning path
 
-To deeply understand the CRYSTAL benchmark paper, start with foundational knowledge on multimodal large language models and reinforcement learning techniques for reasoning, as these underpin the paper's approach. Then, explore the concept of step-by-step reasoning evaluation to grasp the motivation behind CRYSTAL's detailed intermediate step assessment. Finally, focus on the core concept of the CRYSTAL benchmark itself through the authors' own talk, which provides direct insights into their methodology and contributions.
+## Track 1 — Academic deep-dives (long-form)
 
-## Recommended videos (in order)
+_Rigorous lectures, seminars and conference talks. Deeper, but longer._
 
-### multimodal large language models *(prerequisite)*
-This section covers the foundational architecture and training principles of models that integrate vision and language modalities, essential for understanding the input and output modalities CRYSTAL evaluates. The selected university-level seminar provides a rigorous overview suitable for advanced readers.
+To deeply understand the CRYSTAL benchmark paper, start by building foundational knowledge on multimodal large language models and reinforcement learning techniques for reasoning, as these underpin the models evaluated and the training methods proposed. Next, study step-level reasoning metrics to grasp how intermediate reasoning quality and order are quantitatively assessed. Finally, focus on the core concept of transparent multimodal reasoning evaluation with the authors' own talk on the CRYSTAL benchmark to gain direct insight into their novel benchmark, evaluation metrics, and training strategies.
 
-*How the paper uses it:* CRYSTAL evaluates reasoning in multimodal large language models that combine vision and language inputs.
+### Multimodal large language models *(prerequisite)*
+This section covers the architecture and capabilities of large language models that process multiple modalities such as vision and language. Understanding these models is essential because CRYSTAL evaluates their reasoning abilities on vision-language tasks.
 
-▶ [Stanford CS25: Transformers United V6 I From Language ...](https://www.youtube.com/watch?v=NDdc39KYqDU) — Stanford Online · 1:04:40
+*How the paper uses it:* CRYSTAL evaluates step-by-step reasoning in multimodal large language models, so understanding these models is foundational.
 
-### reinforcement learning for reasoning *(prerequisite)*
-Understanding reinforcement learning methods that enhance reasoning capabilities is critical, as the paper introduces the Causal Process Reward (CPR) and CPR-Curriculum training strategies based on RL. The chosen talks are research seminars and advanced presentations that delve into RL frameworks relevant to reasoning improvements.
+▶ [Stanford CS25: V4 I From Large Language Models to Large Multimodal Models](https://www.youtube.com/watch?v=cYfKQ6YG9Qo) — Stanford Online · 1:20:04 · 2 years ago
 
-*How the paper uses it:* CPR and CPR-Curriculum use reinforcement learning to improve step-level reasoning quality in multimodal models.
+### Reinforcement learning for reasoning *(prerequisite)*
+This section explores how reinforcement learning can be used to improve reasoning capabilities in language models, including reward design and curriculum strategies. This knowledge is crucial to understand the CPR and CPR-Curriculum training methods introduced in the paper.
 
-▶ [Research Seminar: Beyond Pretraining: A Deep Dive into RL ...](https://www.youtube.com/watch?v=SD5raqvYG-0) — Clarifai · 55:02
+*How the paper uses it:* The paper proposes CPR and CPR-Curriculum, reinforcement learning methods to enhance reasoning quality in multimodal models.
 
-### step-by-step reasoning evaluation *(prerequisite)*
-This concept explains the importance and methods of evaluating intermediate reasoning steps rather than just final answers, directly motivating CRYSTAL's design. The selected talks are from academic and research institutions focusing on fine-grained reasoning evaluation frameworks.
+▶ [Stanford CS224R Deep Reinforcement Learning | Spring 2025 | Lecture 10: RL for LLM Reasoning](https://www.youtube.com/watch?v=O2VpNnwB4lM) — Stanford Online · 1:10:30 · 7 months ago
 
-*How the paper uses it:* CRYSTAL's key innovation is evaluating intermediate reasoning steps with novel metrics to detect reasoning failures.
+### Step-level reasoning metrics *(prerequisite)*
+This section focuses on metrics that evaluate the quality and order of intermediate reasoning steps rather than just final answers. Grasping these metrics is key to appreciating how CRYSTAL assesses reasoning transparency and coherence.
 
-▶ [LLM Reasoning @ DLCT](https://www.youtube.com/watch?v=x7kg0JR8dTg) — ML Collective · 45:04 · 2 years ago
+*How the paper uses it:* CRYSTAL introduces Match F1 and Ordered Match F1 metrics to evaluate reasoning step quality and order.
 
-### CRYSTAL benchmark talk *(the paper's own talk)*
-The authors' own presentation on CRYSTAL is the most direct and authoritative source to understand their benchmark, evaluation metrics, multi-agent pipeline, and training methods. This talk provides detailed insights into the paper's contributions and experimental findings.
+▶ [How do thinking and reasoning models work?](https://www.youtube.com/watch?v=xCRvOUykOX0) — Google for Developers · 13:26 · 7 months ago
 
-*How the paper uses it:* This is the authors' own detailed presentation on the CRYSTAL benchmark and their novel training and evaluation methods.
+## Track 2 — Beginner → Advanced (short-form)
 
-▶ [LLaMA-Adapter - 5-Minute Student Presentation by Wayner Barrios and Baris Yildirim @dartmouth](https://www.youtube.com/watch?v=go-oWBTi90M) — Yu-Wing Tai · 4:54 · 1 year ago
+_Concise, high-quality explainers that build intuition — for when time is short._
+
+This beginner-to-advanced path introduces foundational concepts needed to understand the CRYSTAL benchmark paper, starting with the basics of multimodal large language models (MLLMs), then covering reinforcement learning techniques for reasoning enhancement, followed by step-level reasoning metrics to evaluate intermediate reasoning steps, and culminating in the core concept of multimodal reasoning evaluation. Each step builds intuition with clear, concise videos to help grasp how CRYSTAL advances transparent and trustworthy AI reasoning.
+
+### Multimodal large language models *(prerequisite)*
+Learn what multimodal large language models are—AI systems that process and reason over multiple data types like images and text. This foundation helps understand the types of models evaluated by CRYSTAL.
+
+*How the paper uses it:* CRYSTAL evaluates reasoning abilities of multimodal large language models on vision-language tasks.
+
+▶ [What is Multimodal AI? How LLMs Process Text, Images, and More](https://www.youtube.com/watch?v=J51oZYcNvP8) — IBM Technology · 3 months ago
+
+### Reinforcement learning for reasoning *(prerequisite)*
+Understand how reinforcement learning can improve AI reasoning by rewarding better thought processes, not just correct answers. This intuition is key to grasping the CPR training method introduced in the paper.
+
+*How the paper uses it:* The paper uses reinforcement learning with the Causal Process Reward to enhance reasoning quality in MLLMs.
+
+▶ [Why Reinforcement Learning Unlocks Reasoning in LLMs (Aha Moments Explained)](https://www.youtube.com/watch?v=B52Dna2tYDY) — AI Papers Academy · 11:23 · 6 months ago
+
+### Step-level reasoning metrics *(prerequisite)*
+Explore how to evaluate AI reasoning beyond final answers by measuring the quality and order of intermediate reasoning steps. This concept is essential to understanding CRYSTAL’s novel evaluation metrics.
+
+*How the paper uses it:* CRYSTAL proposes Match F1 and Ordered Match F1 metrics to assess step-level reasoning quality and order.
+
+▶ [How do thinking and reasoning models work?](https://www.youtube.com/watch?v=xCRvOUykOX0) — Google for Developers · 13:26 · 7 months ago
+
+### Multimodal reasoning evaluation
+Dive into the challenges and methods for evaluating reasoning in multimodal AI systems, focusing on transparent, step-by-step reasoning rather than just final answers.
+
+*How the paper uses it:* CRYSTAL is a benchmark specifically designed to evaluate transparent multimodal reasoning with detailed intermediate steps.
+
+▶ [Multimodal Reasoning: Survey & Roadmap](https://www.youtube.com/watch?v=z0u9kSuspbQ) — AI Research Roundup · 1 year ago
+
+## Already in your library
+
+- [LLaMA-Adapter - 5-Minute Student Presentation by Wayner Barrios and Baris Yildirim @dartmouth](https://www.youtube.com/watch?v=go-oWBTi90M) — also for: Beyond Final Answers: CRYSTAL Benchmark for Transparent Multimodal Reasoning Evaluation (Sou-Young Jin)
+- [Stanford CS25: Transformers United V6 I From Language ...](https://www.youtube.com/watch?v=NDdc39KYqDU) — also for: Beyond Final Answers: CRYSTAL Benchmark for Transparent Multimodal Reasoning Evaluation (Sou-Young Jin)
+- [LLM Reasoning @ DLCT](https://www.youtube.com/watch?v=x7kg0JR8dTg) — also for: Beyond Final Answers: CRYSTAL Benchmark for Transparent Multimodal Reasoning Evaluation (Sou-Young Jin)

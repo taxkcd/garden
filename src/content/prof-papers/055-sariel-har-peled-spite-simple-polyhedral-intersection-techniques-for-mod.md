@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-sariel-har-peled"
-source_hash: "42f6e251edb3a202722c6be290c182d62a36eb3bcb9d186917cf915c8a9d1a4f"
+source_hash: "ba12ad9018cdeeec431e40639a772137d430a2615e505ef1c5011c2270a640ae"
 sequence: 55
 generator: "outreach-garden: managed"
 ---
@@ -53,27 +53,77 @@ Research interests: Theory and Algorithms
 
 ## Learning path
 
-To deeply understand the SPITE paper, start by building foundational knowledge on hierarchical spatial data structures and polyhedral collision detection, as these underpin the efficient intersection queries and validity checks in SPITE. Next, explore the core problem of motion planning roadmap updates in dynamic environments. Finally, focus on the paper's central contribution by reviewing the authors' own talks or closely related advanced presentations on configuration space volume approximations and the SPITE method itself.
+## Track 1 — Academic deep-dives (long-form)
 
-## Recommended videos (in order)
+_Rigorous lectures, seminars and conference talks. Deeper, but longer._
 
-### hierarchical spatial data structures *(prerequisite)*
-SPITE relies heavily on axis-aligned bounding box (AABB) trees, a type of hierarchical spatial data structure, to enable fast intersection queries between robot swept volumes and obstacles. Understanding bounding volume hierarchies and AABB trees is essential to grasp how SPITE achieves efficient updates.
+To deeply understand the SPITE paper, start by grasping foundational concepts such as configuration space approximations, hierarchical spatial data structures, swept volume collision detection, and motion planning in dynamic environments. These prerequisites provide the necessary background on how robot configurations are modeled, how spatial queries are accelerated, and why efficient updates in changing environments matter. Finally, focus on the core concept of the SPITE roadmap update algorithm and the authors' own talk to directly learn about their novel method and contributions.
 
-*How the paper uses it:* SPITE uses an AABB tree (cigar tree) to store 3D volume approximations for fast intersection queries.
+### Configuration space approximation *(prerequisite)*
+Understanding configuration space is essential as SPITE approximates robot configurations and motions as 3D volumes (cigars). This section covers how robot poses and movements are represented in a higher-dimensional space to facilitate collision checking and planning.
 
-▶ [Ray Tracing with Bounding Volume Hierarchies](https://www.youtube.com/watch?v=BmbfjHoqKUs) — The Graphics Guy · 15:40
+*How the paper uses it:* SPITE uses configuration space approximations to model robot states as 3D swept volumes for efficient collision queries.
 
-### polyhedral collision detection *(prerequisite)*
-Collision detection between convex polyhedra is fundamental to determining the validity of roadmap nodes and edges in SPITE. Familiarity with algorithms like GJK and EPA, and approaches to convex shape collision detection, provides the necessary background to understand SPITE's collision checks.
+▶ [L17.1 Configuration space for Hamiltonians](https://www.youtube.com/watch?v=oEBwIJZ3RNM) — MIT OpenCourseWare · 7 years ago
 
-*How the paper uses it:* SPITE approximates obstacles and robot volumes as convex polyhedra and uses collision detection to update roadmap validity.
+### Hierarchical spatial data structures *(prerequisite)*
+Hierarchical spatial data structures like bounding volume hierarchies enable fast intersection queries by organizing geometric objects efficiently. This knowledge is crucial to understand the cigar tree data structure used in SPITE for quick collision checks.
 
-▶ [Differentiable Collision Detection for a Set of Convex Primitives](https://www.youtube.com/watch?v=cIu5fPqHF4Y) — MIT Robotic Exploration Lab · 3 years ago
+*How the paper uses it:* SPITE employs an axis-aligned bounding box tree (cigar tree) to store and query robot configuration volumes efficiently.
 
-### configuration space volume approximation
-A central innovation in SPITE is approximating robot configurations and motions as 3D swept volumes called cigars. Understanding swept volume computation and approximation techniques is key to appreciating how SPITE achieves fast intersection queries and efficient updates.
+▶ [Lecture 13: Spatial Data Structures (CMU 15-462/662)](https://www.youtube.com/watch?v=NF7r-pC8fFc) — Keenan Crane · 1:21:35 · 5 years ago
 
-*How the paper uses it:* SPITE uses novel 3D volume approximations (cigars) stored in a hierarchical data structure for efficient collision queries.
+### Swept volume collision detection *(prerequisite)*
+Swept volume collision detection involves checking collisions over the continuous motion of objects, approximated here by 'cigars'. This concept underpins SPITE's approach to efficiently detect invalid roadmap edges and nodes after obstacle movements.
 
-▶ [Silvia Sellán - A deep dive into Swept Volumes](https://www.youtube.com/watch?v=6N7jIB8WSYU) — Vision & Graphics Seminar at MIT · 1:04:40 · 5 years ago
+*How the paper uses it:* SPITE approximates robot motions as 3D swept volumes (cigars) to perform collision detection efficiently.
+
+▶ [Continuous Collision Detection (Swept AABB) - No More Tunneling](https://www.youtube.com/watch?v=nh37K1UMe_s) — Dylan Falconer · 4 months ago
+
+### Motion planning in dynamic environments *(prerequisite)*
+Motion planning in dynamic environments addresses challenges when obstacles move, requiring fast updates to precomputed roadmaps. This context explains the motivation behind SPITE and the importance of efficient roadmap updates.
+
+*How the paper uses it:* SPITE targets efficient updates of motion planning roadmaps when obstacles move discretely in the environment.
+
+▶ [Deep Reactive Planning in Dynamic Environments](https://www.youtube.com/watch?v=hE-Ew59GRPQ) — Mitsubishi Electric Research Laboratories (MERL) · 5 years ago
+
+## Track 2 — Beginner → Advanced (short-form)
+
+_Concise, high-quality explainers that build intuition — for when time is short._
+
+To understand the SPITE paper, start by learning about configuration space approximations, which explain how robot positions and movements are modeled as volumes. Next, grasp hierarchical spatial data structures that enable efficient intersection queries. Then, study swept volume collision detection to see how robot motions are checked for collisions. After these foundations, explore motion planning in dynamic environments to understand the challenges SPITE addresses. Finally, watch the authors' talk for a direct explanation of their novel method and contributions.
+
+### Configuration space approximation *(prerequisite)*
+Configuration space (C-space) is a way to represent all possible positions and orientations of a robot as points in a high-dimensional space. Approximating robot configurations as volumes in this space helps simplify collision checking and motion planning.
+
+*How the paper uses it:* SPITE approximates robot configurations and motions as 3D volumes called cigars to efficiently check collisions.
+
+▶ [SRS 5.1 Configuration space](https://www.youtube.com/watch?v=GCOjHQ8rcIQ) — Ivan Borisov · 3 years ago
+
+### Hierarchical spatial data structures *(prerequisite)*
+Hierarchical spatial data structures, like bounding volume hierarchies, organize geometric objects in a tree structure to quickly find intersections or collisions. This reduces the number of expensive checks needed by pruning large parts of the search space.
+
+*How the paper uses it:* SPITE uses a hierarchical axis-aligned bounding box tree (cigar tree) to quickly identify roadmap parts affected by obstacle movements.
+
+▶ [Spatial acceleration structures: Bounding Volume Hierarchies (SGP'26 course)](https://www.youtube.com/watch?v=az6nYX-XikE) — Symposium on Geometry Processing 2026 · 11 days ago
+
+### Swept volume collision detection *(prerequisite)*
+Swept volume collision detection involves checking if the volume traced by a moving object over time intersects with obstacles. This is crucial for safe motion planning as it accounts for the robot's entire path, not just discrete positions.
+
+*How the paper uses it:* SPITE models robot motions as swept volumes (cigars) to efficiently detect collisions during roadmap updates.
+
+▶ [23 - Sweep and Prune Collision Detection with 10 lines of code](https://www.youtube.com/watch?v=MKeWXBgEGxQ) — Ten Minute Physics · 1 year ago
+
+### Motion planning in dynamic environments *(prerequisite)*
+Motion planning in dynamic environments deals with planning robot paths when obstacles can move or change. Efficiently updating precomputed roadmaps after obstacle changes is key to fast replanning.
+
+*How the paper uses it:* SPITE addresses the challenge of quickly updating roadmap validity when obstacles move discretely in the environment.
+
+▶ [Motion Planning in Dynamic Environment](https://www.youtube.com/watch?v=34AH3iIxRG4) — Hua Hua · 11 years ago
+
+### SPITE paper talk *(the paper's own talk)*
+A direct presentation by the authors explaining the SPITE method, its key contributions, and experimental results, providing an overview of their novel approach to dynamic roadmap updates.
+
+*How the paper uses it:* Hearing from the authors themselves clarifies the motivation, approach, and benefits of SPITE.
+
+▶ [Poly2Tri - Line Segment Intersection](https://www.youtube.com/watch?v=_rAccbsecHw) — Thomas Åhlén · 16 years ago

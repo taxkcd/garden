@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-sahand-n-negahban"
-source_hash: "aab47a5b0ab945b02f02f27998c161dc673c19e44cc37c73c9485d456d44b5df"
+source_hash: "b91689087c7a13907466e767eefdc4c7bde294b19ba4af8c0656c733b5e4cc2d"
 sequence: 50
 generator: "outreach-garden: managed"
 ---
@@ -52,41 +52,89 @@ This paper develops a general theoretical framework to analyze a wide class of h
 
 ## Learning path
 
-To deeply understand the paper's unified framework for high-dimensional M-estimators with decomposable regularizers, start by building foundational knowledge on key prerequisite concepts such as restricted strong convexity, decomposable regularizers, high-dimensional M-estimation theory, and convex regularization methods. These foundations will prepare you to grasp the core theoretical framework and results presented by the authors. Finally, engage with the authors' own talk or closely related advanced lectures to see the unified framework in action and its implications.
+## Track 1 — Academic deep-dives (long-form)
 
-## Recommended videos (in order)
+_Rigorous lectures, seminars and conference talks. Deeper, but longer._
+
+To deeply understand the paper's unified framework for high-dimensional analysis of M-estimators with decomposable regularizers, start by building foundational knowledge on restricted strong convexity and decomposable regularizers, as these are key technical conditions in the analysis. Then, gain familiarity with the general class of high-dimensional M-estimators and convex regularization methods in statistics, which form the basis of the estimators studied. Finally, focus on the paper's core contribution by watching a talk from the paper's authors or a closely related advanced lecture on the unified framework itself.
 
 ### Restricted strong convexity *(prerequisite)*
-Restricted strong convexity (RSC) is a central property ensuring that the loss function behaves well over certain restricted subsets of the parameter space, which is crucial for establishing error bounds and convergence rates in high-dimensional estimation. Understanding RSC provides the mathematical foundation to appreciate how the paper guarantees performance of M-estimators under structural constraints.
+Restricted strong convexity (RSC) is a central property that guarantees the loss function behaves well on certain restricted subsets of the parameter space, enabling sharp error bounds and convergence rates for high-dimensional estimators. Understanding RSC is foundational to grasping the theoretical guarantees in the paper.
 
-*How the paper uses it:* The paper identifies restricted strong convexity of the loss function as a key property enabling deterministic error bounds for regularized M-estimators.
+*How the paper uses it:* The paper identifies restricted strong convexity of the loss function as a key property ensuring deterministic error bounds for M-estimators.
 
-▶ [[CS292F 2020 Spring] Convex Optimization: Lecture 16 ...](https://www.youtube.com/watch?v=qAnGlwPE1-s) — Yu-Xiang Wang · 1:56:53
+▶ [Restricted Strong Convexity Implies Weak Submodularity, Alex Dimakis](https://www.youtube.com/watch?v=BIIHyF0itT8) — MMDS Foundation · 27:57 · 9 years ago
 
 ### Decomposable regularizers *(prerequisite)*
-Decomposability characterizes the structure of regularizers that allow splitting the parameter space into subspaces, facilitating analysis of estimators exploiting sparsity or low-rankness. Grasping this concept is essential to understand how the paper unifies various regularization schemes under a common theoretical framework.
+Decomposability is a structural property of regularizers that allows the separation of the parameter space into subspaces, facilitating unified analysis of various regularization schemes like Lasso, group Lasso, and nuclear norm. This concept is crucial for understanding how the paper generalizes and unifies existing results.
 
-*How the paper uses it:* The paper isolates decomposability of the regularizer as a fundamental property for analyzing high-dimensional M-estimators.
+*How the paper uses it:* The paper highlights decomposability of regularizers as a key property enabling the unified framework for analyzing M-estimators.
 
-▶ [UW - MSR Machine Learning workshop 2015 - Session 4](https://www.youtube.com/watch?v=Hh5eIgCwnbk) — Microsoft Research · 55:40
+▶ [Lecture 12 - Regularization](https://www.youtube.com/watch?v=I-VfYXzC5ro) — caltech · 1:15:14 · 14 years ago
 
-### High-dimensional M-estimation theory *(prerequisite)*
-High-dimensional M-estimation theory provides the statistical and asymptotic properties of estimators when the number of parameters is large relative to the sample size. This background is necessary to understand the challenges and techniques the paper addresses in establishing finite-sample error bounds for complex models.
+### High-dimensional M-estimators *(prerequisite)*
+M-estimators form a broad class of estimators defined via optimization of a loss function, often regularized for high-dimensional settings. Familiarity with M-estimators and their role in robust and high-dimensional statistics is essential to appreciate the scope of the paper's framework.
 
-*How the paper uses it:* The paper builds on foundational theory of M-estimators in high dimensions to develop its unified framework.
+*How the paper uses it:* The paper analyzes a wide class of high-dimensional M-estimators with decomposable regularizers.
 
-▶ [Andreas Andresen. Finite sample analysis of semiparametric M-Estimators](https://www.youtube.com/watch?v=P8L3DM2RqEA) — Optimization and Statistics · 38:45 · 12 years ago
+▶ [MATH3714, Section 18.1: M-Estimators](https://www.youtube.com/watch?v=ZQqFz83Kgq8) — Jochen Voss · 4 years ago
 
-### Convex regularization methods *(prerequisite)*
-Convex regularization methods, such as the Lasso and nuclear norm penalties, are widely used to impose structural constraints like sparsity and low-rankness. Understanding these convex penalties and their optimization properties is crucial for appreciating the paper's focus on convex M-estimators with decomposable regularizers.
+### Convex regularization in statistics *(prerequisite)*
+Convex regularization techniques underpin the optimization problems studied in the paper, providing computational tractability and theoretical guarantees. Understanding these methods in a statistical context helps in grasping how the paper's framework applies to various regularized estimators.
 
-*How the paper uses it:* The paper analyzes convex regularizers including the Lasso and nuclear norm within its unified framework.
+*How the paper uses it:* The paper studies convex regularizers such as the Lasso and nuclear norm within its unified framework.
 
-▶ [Lecture 18 | Convex Optimization I (Stanford)](https://www.youtube.com/watch?v=oMRVDILkpUI) — Stanford · 18 years ago
+▶ [Statistical Learning: 2.1 Introduction to Regression Models](https://www.youtube.com/watch?v=ox0cKk7h4o0) — Stanford Online · 11:42 · 3 years ago
 
-### Authors' talk on unified framework for M-estimators *(the paper's own talk)*
-The authors' own talk or closely related presentations provide the most direct and authoritative exposition of the unified framework, its key concepts, and main results. Engaging with such a talk offers insights into the motivation, technical challenges, and implications of their work that are not easily gleaned from the paper alone.
+### Paper authors talk
+A talk by the paper's authors or a closely related seminar provides direct insight into the motivations, key ideas, and implications of the unified framework, offering the most authoritative and focused exposition of the paper's contributions.
 
-*How the paper uses it:* This section features the authors' own presentation or closely related advanced talks explaining the unified framework and its theoretical contributions.
+*How the paper uses it:* Direct insight from the authors on the paper's contributions and framework.
 
-▶ [Sketching for M-Estimators: A Unified Approach to Robust Regression](https://www.youtube.com/watch?v=tZpmRYxh7ZM) — Simons Institute for the Theory of Computing · 27:39 · 11 years ago
+▶ [Lecture 8: Inference with M-Estimators](https://www.youtube.com/watch?v=RzX8FgO8sqw) — Jesper Sørensen · 5 years ago
+
+## Track 2 — Beginner → Advanced (short-form)
+
+_Concise, high-quality explainers that build intuition — for when time is short._
+
+This beginner-to-advanced path introduces key foundational concepts needed to understand the paper's unified framework for high-dimensional M-estimators. We start with the basics of regularization in statistics to grasp why and how regularizers are used, then explain decomposable regularizers as a structural property crucial to the paper. Next, we cover restricted strong convexity, the central condition on the loss function enabling sharp error bounds. Finally, we discuss high-dimensional M-estimators themselves, culminating in the unified framework that integrates these ideas. Each step builds intuition with clear, focused videos directly relevant to the paper's core contributions.
+
+### Convex regularization in statistics *(prerequisite)*
+Regularization methods add constraints or penalties to statistical models to prevent overfitting, especially important when dealing with many parameters. Understanding common regularizers like L1 (Lasso) and L2 (Ridge) helps grasp how these penalties control model complexity and improve generalization.
+
+*How the paper uses it:* The paper analyzes M-estimators with convex regularizers, which form the optimization backbone of the framework.
+
+▶ [Regularization Part 1: Ridge (L2) Regression](https://www.youtube.com/watch?v=Q81RR3yKn30) — StatQuest with Josh Starmer · 7 years ago
+
+### Decomposable regularizers *(prerequisite)*
+Decomposability is a key structural property of regularizers that allows separating parameter space into meaningful subspaces, enabling unified theoretical analysis. This concept explains why certain regularizers like the Lasso or nuclear norm work well for sparse or low-rank structures.
+
+*How the paper uses it:* The paper identifies decomposability of regularizers as central to establishing error bounds for high-dimensional M-estimators.
+
+▶ [Lecture 12 - Regularization](https://www.youtube.com/watch?v=I-VfYXzC5ro) — caltech · 1:15:14 · 14 years ago
+
+### Restricted strong convexity *(prerequisite)*
+Restricted strong convexity (RSC) is a property of the loss function that ensures it behaves like a strongly convex function when restricted to certain low-dimensional subspaces. This condition is crucial for guaranteeing fast convergence and tight error bounds in high-dimensional estimation.
+
+*How the paper uses it:* The framework relies on RSC of the loss function to prove deterministic error bounds for M-estimators.
+
+▶ [3.2 Smooth and Strongly Convex Functions](https://www.youtube.com/watch?v=Clw24Fajnqg) — Constantine Caramanis · 28:59 · 5 years ago
+
+### High-dimensional M-estimators *(prerequisite)*
+M-estimators generalize maximum likelihood estimators and are widely used for robust parameter estimation. In high dimensions, they require regularization and structural assumptions to perform well, making them fundamental to modern statistical learning.
+
+*How the paper uses it:* The paper studies a broad class of regularized M-estimators in high-dimensional settings with structural constraints.
+
+▶ [MATH3714, Section 18.1: M-Estimators](https://www.youtube.com/watch?v=ZQqFz83Kgq8) — Jochen Voss · 4 years ago
+
+### Paper authors talk
+Hearing directly from the authors can provide valuable insights into the motivation, key ideas, and implications of the paper, complementing technical understanding with expert perspective.
+
+*How the paper uses it:* Direct author talks can clarify the framework's significance and applications as presented in the paper.
+
+▶ [M Estimators | Robust Regression](https://www.youtube.com/watch?v=TDEU-t79qFk) — PSC Guide · 5 years ago
+
+## Already in your library
+
+- [Andreas Andresen. Finite sample analysis of semiparametric M-Estimators](https://www.youtube.com/watch?v=P8L3DM2RqEA) — also for: A Unified Framework for High-Dimensional Analysis of M-Estimators with Decomposable Regularizers (Sahand N. Negahban)
+- [Sketching for M-Estimators: A Unified Approach to Robust Regression](https://www.youtube.com/watch?v=tZpmRYxh7ZM) — also for: A Unified Framework for High-Dimensional Analysis of M-Estimators with Decomposable Regularizers (Sahand N. Negahban)

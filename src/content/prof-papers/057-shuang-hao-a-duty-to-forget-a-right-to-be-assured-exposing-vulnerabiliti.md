@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-shuang-hao"
-source_hash: "3e44803cee3e7b6b28b99a30e106ab9301e20d2c1305d729ef74d29060781c0f"
+source_hash: "3ca0c77041fd91f12f805ae73de130031f5964cd7df000de7ad8dc323f6cf0df"
 sequence: 57
 generator: "outreach-garden: managed"
 ---
@@ -54,34 +54,63 @@ Research interests: security and privacy, particularly developing data-driven an
 
 ## Learning path
 
-To deeply understand the vulnerabilities in machine unlearning services explored in this paper, start by building foundational knowledge on black-box adversarial attacks and the security context of machine learning as a service (MLaaS). Then, gain background on the regulatory and privacy motivations behind machine unlearning. Finally, focus on the core concept of machine unlearning security threats and the authors' own presentation of their novel over-unlearning attacks to grasp the specific contributions and experimental insights.
+## Track 1 — Academic deep-dives (long-form)
 
-## Recommended videos (in order)
+_Rigorous lectures, seminars and conference talks. Deeper, but longer._
+
+To deeply understand the vulnerabilities in machine unlearning services explored in the paper, start with foundational knowledge on black-box adversarial attacks and the security context of Machine Learning as a Service (MLaaS). Then, build understanding of the unlearning methods targeted by the attacks, specifically gradient-based and fine-tuning approaches. Finally, focus on the core concept of machine unlearning attacks, emphasizing the novel over-unlearning threat, with priority given to the authors' own talk if available.
 
 ### Black-box adversarial attacks *(prerequisite)*
-Understanding black-box adversarial attacks is essential because the paper's proposed over-unlearning attack strategies operate under black-box access constraints, without requiring internal model knowledge. This section covers the theory and practical methods of black-box attacks, including zeroth order optimization and adversarial perturbations.
+This section covers the fundamentals and advanced techniques of black-box adversarial attacks, which are critical since the paper's proposed over-unlearning attacks operate under black-box access constraints. Understanding query-efficient and targeted black-box attacks provides the necessary background to grasp how attackers manipulate unlearning requests without internal model knowledge.
 
-*How the paper uses it:* The paper's attack strategies (blending and pushing) rely on black-box adversarial techniques to manipulate unlearning requests.
+*How the paper uses it:* The paper's attack strategies require only black-box access, making knowledge of black-box adversarial attacks essential.
 
-▶ [Adversarial Examples for Deep Neural Networks](https://www.youtube.com/watch?v=kxyacmVSGlI) — Paul Hand · 43:54
+▶ [Black-Box Attacks (Continued) | Lecture 19 (Part 1) | Applied Deep Learning (Supplementary)](https://www.youtube.com/watch?v=S0gwYgCdgCk) — Maziar Raissi · 4 years ago
 
-### Machine learning as a service security *(prerequisite)*
-This section provides context on the deployment environment of MLaaS platforms and the associated security challenges. It discusses vulnerabilities and abuse vectors in cloud-based ML services, which is critical to understanding the threat model and practical feasibility of over-unlearning attacks.
+### Machine Learning as a Service security *(prerequisite)*
+This section contextualizes the deployment environment and threat model for the paper by exploring the security challenges inherent in MLaaS platforms. Understanding the operational and security aspects of MLaaS helps frame why machine unlearning vulnerabilities pose a significant risk in real-world settings.
 
-*How the paper uses it:* The paper investigates vulnerabilities specifically in MLaaS unlearning services, making this context vital for appreciating the threat model.
+*How the paper uses it:* The paper investigates vulnerabilities specifically in MLaaS unlearning services, making MLaaS security context crucial.
 
-▶ [#HITB2023HKT D2T2 - Breaking ML Services: Finding 0-days ...](https://www.youtube.com/watch?v=-K08hpzevYY) — Hack In The Box Security Conference · 1:06:13
+▶ [Introduction to AI Security - Jim Manico - NDC AI 2025](https://www.youtube.com/watch?v=RLOaFg7XAzM) — NDC Conferences · 5 months ago
 
-### Data deletion and right to be forgotten in ML *(prerequisite)*
-This section covers the foundational motivation for machine unlearning, including privacy regulations like GDPR and CCPA that mandate data deletion rights. Understanding this regulatory background clarifies why machine unlearning services exist and why their security is critical.
+### Model fine-tuning and gradient-based unlearning *(prerequisite)*
+This section explains the unlearning methods targeted by the attacks, focusing on gradient-based and fine-tuning techniques. A solid understanding of these methods is necessary to appreciate how the proposed over-unlearning attacks exploit the unlearning pipeline to degrade model performance.
 
-*How the paper uses it:* The paper addresses security gaps in machine unlearning services designed to comply with data protection regulations.
+*How the paper uses it:* The attacks in the paper target gradient-based and fine-tuning unlearning methods, so understanding these is key to grasping the threat.
 
-▶ [Episode 48 — Evaluate AI and Machine-Learning Privacy ...](https://www.youtube.com/watch?v=3ruEmUFgfFw) — Bare Metal Cyber · 16:25
+▶ [SaTML 2023 - Korbinian Koch - Machine Unlearning with SISA Comes at the Expense of Minority Classes](https://www.youtube.com/watch?v=9qz_fkHcCbI) — Nicolas Papernot · 11:54 · 3 years ago
 
-### Machine unlearning security threats
-This section focuses on the core concept of the paper: vulnerabilities and adversarial threats in machine unlearning. It includes research talks on attacks and defenses related to unlearning, providing a broader academic context for the paper's contributions.
+## Track 2 — Beginner → Advanced (short-form)
 
-*How the paper uses it:* The paper identifies and formalizes the over-unlearning threat as a novel security vulnerability in machine unlearning.
+_Concise, high-quality explainers that build intuition — for when time is short._
 
-▶ [Nicolas Papernot | What does it mean for machine learning to ...](https://www.youtube.com/watch?v=rQRbb-4Hy7E) — Schwartz Reisman Institute · 1:24:17
+This learning path introduces foundational concepts needed to understand vulnerabilities in machine unlearning services in MLaaS, starting with the basics of model fine-tuning and gradient-based learning, then explaining the MLaaS security context, followed by black-box adversarial attacks, and culminating in the core topic of machine unlearning attacks. Each step builds intuition with concise, clear videos to help beginners grasp how malicious users can exploit unlearning to degrade model performance.
+
+### Model fine-tuning and gradient-based unlearning *(prerequisite)*
+Fine-tuning and gradient descent are key techniques in training and updating machine learning models. Understanding these methods helps grasp how models learn from data and how unlearning can be approximated by reversing or modifying these updates.
+
+*How the paper uses it:* The paper targets gradient-based and fine-tuning unlearning methods to demonstrate over-unlearning attacks.
+
+▶ [Gradient descent simple explanation|gradient descent machine learning|gradient descent algorithm](https://www.youtube.com/watch?v=gzrQvzYEvYc) — Unfold Data Science · 15:39 · 6 years ago
+
+### Machine Learning as a Service security *(prerequisite)*
+MLaaS platforms provide machine learning models as a service but face unique security challenges, especially when users can request unlearning of their data. Understanding this environment clarifies the threat model and why vulnerabilities arise.
+
+*How the paper uses it:* The paper studies vulnerabilities in MLaaS unlearning services where providers lack original training data.
+
+▶ [Introduction to AI Security - Jim Manico - NDC AI 2025](https://www.youtube.com/watch?v=RLOaFg7XAzM) — NDC Conferences · 5 months ago
+
+### Black-box adversarial attacks *(prerequisite)*
+Black-box attacks manipulate models without access to their internal parameters, relying only on inputs and outputs. This concept is crucial to understand how attackers can craft inputs to cause over-unlearning without insider knowledge.
+
+*How the paper uses it:* The proposed over-unlearning attacks operate under black-box access constraints.
+
+▶ [Black-Box Attacks (Continued) | Lecture 19 (Part 1) | Applied Deep Learning (Supplementary)](https://www.youtube.com/watch?v=S0gwYgCdgCk) — Maziar Raissi · 4 years ago
+
+### Machine unlearning attacks
+Machine unlearning allows models to forget specific data, but attackers can exploit this to degrade model performance by causing excessive forgetting. Understanding these attacks reveals the novel threat of over-unlearning introduced in the paper.
+
+*How the paper uses it:* The core contribution of the paper is identifying and demonstrating over-unlearning attacks on machine unlearning services.
+
+▶ [What is Machine Unlearning?](https://www.youtube.com/watch?v=0_ciCzHaM4o) — Probably Private · 10 months ago
