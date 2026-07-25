@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-dr-pandya-php"
-source_hash: "a409de072c2ff2498e8f3d0e8ec020bb8a21229d70107c3b774e0920cc6d9e31"
+source_hash: "64650dbccc731b000ff4e87ff58947579d559e05ad7a25792bf9b7f7da8be37a"
 sequence: 17
 generator: "outreach-garden: managed"
 ---
@@ -53,34 +53,83 @@ Research interests: Drug Discovery: Apply computational intelligence algorithms 
 
 ## Learning path
 
-To deeply understand the paper's contributions on generative models for synthetic MRI in dementia prediction, start with foundational knowledge on advanced generative adversarial networks and variational autoencoders, as these are key baseline models compared in the study. Then, build expertise on diffusion models, the central generative approach yielding the best results. Finally, explore medical image synthesis applications to contextualize the use of these models in MRI data augmentation. The paper's own talk was not found, so the path relies on rigorous university lectures and research seminars.
+## Track 1 — Academic deep-dives (long-form)
 
-## Recommended videos (in order)
+_Rigorous lectures, seminars and conference talks. Deeper, but longer._
 
-### Generative adversarial networks advanced lecture *(prerequisite)*
-This section covers advanced topics in GANs, including their theoretical foundations and recent developments, which are crucial since the paper compares standard and data-efficient GANs for MRI image generation. Understanding GAN dynamics and improvements will clarify why data-efficient GANs performed well in the study.
+To deeply understand the paper, start by grounding yourself in the foundational generative models relevant to the study: Generative Adversarial Networks (GANs) and Variational Autoencoders (VAEs), as these are key baselines compared in the paper. Next, explore MRI-based dementia classification methods to appreciate the downstream application validating synthetic data utility. Finally, focus on the core concept of generative diffusion models, which the paper identifies as producing the highest quality synthetic MRI images, and conclude with the authors' own related talks or closely aligned advanced research presentations to gain direct insights into their methodology and findings.
 
-*How the paper uses it:* The paper introduces and evaluates data-efficient GANs as a key generative model for synthetic MRI generation.
+### Generative adversarial networks *(prerequisite)*
+GANs are a fundamental generative model baseline in this study, used for synthetic MRI image generation. Understanding their adversarial training framework and applications in medical imaging is crucial for appreciating the comparative analysis in the paper.
 
-▶ [Deep Generative Models. Lecture 10: Advanced Topics in GANs](https://www.youtube.com/watch?v=Ml15crPldBk) — Volodymyr Kuleshov · 1:04:14
+*How the paper uses it:* The paper empirically compares standard GANs and data-efficient GANs as key generative models for synthetic MRI generation.
 
-### Variational autoencoders deep learning lecture *(prerequisite)*
-This lecture provides an in-depth treatment of VAEs, including variational inference and training methods, which is essential since VAEs serve as a baseline generative model in the paper. Despite poorer FID scores, VAEs' faster training times and probabilistic framework are important to understand.
+▶ [Synthesizing medical images using generative adversarial ...](https://www.youtube.com/watch?v=O6J9zdbL7NM) — Institute for Advanced Study · 28:11
 
-*How the paper uses it:* VAEs are a baseline generative model analyzed for synthetic MRI generation and compared against GANs and diffusion models.
+### Variational autoencoders *(prerequisite)*
+VAEs provide an important generative modeling approach analyzed in the paper, especially for their trade-offs between image quality and computational efficiency. A solid understanding of VAEs will clarify why they performed differently compared to GANs and diffusion models.
 
-▶ [Ali Ghodsi, Deep Learning, Variational Autoencoder, VAE ...](https://www.youtube.com/watch?v=gErs0bAM63E) — Data Science Courses · 1:12:48
+*How the paper uses it:* The paper evaluates VAEs for synthetic MRI generation, noting their poorer FID scores but faster training and testing times.
 
-### Medical image synthesis deep learning seminar *(prerequisite)*
-This seminar contextualizes the application of deep generative models to medical image synthesis, covering challenges and methods relevant to MRI data augmentation. It provides domain-specific insights that bridge general generative modeling with medical imaging applications.
+▶ [Variational Autoencoders](https://www.youtube.com/watch?v=Zkv_YuzEVfs) — Machine Learning in the Nanoworld · 1:51:16 · 2 years ago
 
-*How the paper uses it:* The paper applies generative models to augment MRI datasets for dementia detection, making this medical imaging context highly relevant.
+### MRI-based dementia classification *(prerequisite)*
+This concept covers the downstream classification tasks that validate the utility of synthetic images generated by the models. Understanding MRI-based dementia detection methods contextualizes the practical impact of the generative models evaluated.
 
-▶ [MedAI Session 29: Medical Image Analysis and Reconstruction ...](https://www.youtube.com/watch?v=HhqgbVnR2ZQ) — Stanford MedAI · 59:03
+*How the paper uses it:* The paper uses ResNet and DenseNet classifiers trained on synthetic images to detect Alzheimer's and Parkinson's diseases, validating generative model effectiveness.
 
-### Generative diffusion models seminar
-Diffusion models are the core generative approach in the paper, producing the highest quality synthetic MRI images and best classification accuracy. These lectures cover the principles, mathematical foundations, and recent advances in diffusion models, providing deep technical understanding of the paper's central method.
+▶ [Advancing Alzheimer's Diagnosis with Dr. Samaneh Abolpour ...](https://www.youtube.com/watch?v=5gWOfozdpaE) — SAIConference · 8:31
 
-*How the paper uses it:* Diffusion models yielded the best synthetic image quality and classification results in the study, making them the paper's core generative technique.
+### Generative diffusion models
+Diffusion models are the core generative approach in the paper, producing the highest quality synthetic MRI images and best classification accuracy. A detailed understanding of diffusion models is essential to grasp the paper's main contributions and results.
 
-▶ [Stanford CS236: Deep Generative Models I 2023 I Lecture 16](https://www.youtube.com/watch?v=VsllsC2JMGY) — Stanford Online · 1:09:37
+*How the paper uses it:* Diffusion models yielded the lowest FID scores and highest classification accuracy in the study, making them central to the paper's findings.
+
+▶ [Stanford CS231N Deep Learning for Computer Vision | Spring ...](https://www.youtube.com/watch?v=Edr4uZFh4EE) — Stanford Online · 1:12:09
+
+### Paper authors talk *(the paper's own talk)*
+Direct talks by the paper authors or closely related advanced research presentations provide the most precise insights into their methodology, experimental setup, and nuanced findings. These talks can clarify complex aspects and contextualize the empirical results.
+
+*How the paper uses it:* While no direct talk by the authors on this exact paper is available, related advanced diffusion MRI talks provide relevant domain context.
+
+▶ [“Advanced diffusion MRI methods for studying white matter integrity in Aphasia”, Emilie McKinnon](https://www.youtube.com/watch?v=l6GTwt_-ZC0) — C-STAR Lecture Series · 8 years ago
+
+## Track 2 — Beginner → Advanced (short-form)
+
+_Concise, high-quality explainers that build intuition — for when time is short._
+
+This beginner-to-advanced path introduces foundational concepts in deep learning generative models and their application to MRI-based dementia detection. Starting with core generative models like GANs and VAEs, it then covers MRI-based dementia classification to understand the medical context, and culminates with diffusion models, the paper's key method for generating high-quality synthetic MRI images. Each step builds intuition with clear, concise explainers tailored to the paper's focus.
+
+### Generative adversarial networks *(prerequisite)*
+Generative Adversarial Networks (GANs) are a class of deep learning models where two neural networks compete—the generator creates synthetic data, and the discriminator evaluates its authenticity. This adversarial process helps GANs generate realistic images, making them a foundational technique for synthetic MRI generation in medical imaging.
+
+*How the paper uses it:* The paper compares standard and data-efficient GANs for generating synthetic MRI images to augment dementia datasets.
+
+▶ [Understanding GANs (Generative Adversarial Networks)](https://www.youtube.com/watch?v=RAa55G-oEuk) — DeepBean · 1 year ago
+
+### Variational autoencoders *(prerequisite)*
+Variational Autoencoders (VAEs) are generative models that learn to compress data into a latent space and then reconstruct it, enabling the generation of new, similar data samples. VAEs trade off image quality for faster training and inference, which is important for understanding their role in medical image synthesis.
+
+*How the paper uses it:* The paper evaluates VAEs for synthetic MRI generation, noting their speed advantage but poorer image quality compared to GANs and diffusion models.
+
+▶ [Variational Autoencoders | Generative AI Animated](https://www.youtube.com/watch?v=qJeaCHQ1k2w) — Deepia · 1 year ago
+
+### MRI-based dementia classification *(prerequisite)*
+MRI-based dementia classification involves using machine learning models to analyze brain MRI scans and detect signs of neurodegenerative diseases like Alzheimer's and Parkinson's. Understanding this task provides context for why synthetic MRI data generation is valuable for improving classification accuracy.
+
+*How the paper uses it:* The paper validates synthetic images by training classifiers to detect dementia from MRI scans, demonstrating the practical utility of generated data.
+
+▶ [MRI And Dementia: Why A Normal Scan Isn't Enough](https://www.youtube.com/watch?v=OyYh1NdRKrU) — Rosabel Unscripted · 5:50
+
+### Generative diffusion models
+Diffusion models are a newer class of generative models that iteratively refine random noise into realistic images through a learned denoising process. They have recently achieved state-of-the-art results in image synthesis, producing higher-quality and more diverse samples than GANs or VAEs.
+
+*How the paper uses it:* Diffusion models in the paper produced the highest-quality synthetic MRI images and led to the best dementia classification accuracy.
+
+▶ [Diffusion Models: DDPM | Generative AI Animated](https://www.youtube.com/watch?v=EhndHhIvWWw) — Deepia · 1 year ago
+
+## Already in your library
+
+- [Stanford CS236: Deep Generative Models I 2023 I Lecture 18 - Diffusion Models for Discrete Data](https://www.youtube.com/watch?v=mCaRNnEnYwA) — also for: Geometry Preserving Loss Functions Promote Improved Adaptation of Blackbox Generative Models (Pavan K. Turaga)
+- [What are Diffusion Models?](https://www.youtube.com/watch?v=fbLgFrlTnGU) — also for: Geometry Preserving Loss Functions Promote Improved Adaptation of Blackbox Generative Models (Pavan K. Turaga)
+- [Generative Adversarial Networks (GANs) - Computerphile](https://www.youtube.com/watch?v=Sw9r8CL98N0) — also for: Geometry Preserving Loss Functions Promote Improved Adaptation of Blackbox Generative Models (Pavan K. Turaga)

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-fow-sen-choa"
-source_hash: "8758fccef594bf35ad592f75085dd61bf96658cf5832d46140f8c2057bc54ba6"
+source_hash: "406bdb98245424ed1d8e84218ac67c7532ce0de06beecf991204791e00182fde"
 sequence: 51
 generator: "outreach-garden: managed"
 ---
@@ -55,34 +55,77 @@ Research interests: Current treatment techniques for neural diseases and disorde
 
 ## Learning path
 
-To deeply understand the paper on rapid bacterial detection using a portable multichannel fluorometer integrated with machine learning, start with foundational knowledge on fluorescence spectroscopy instrumentation to grasp the hardware and optical principles. Next, study supervised machine learning classification methods, especially SVM and ensemble techniques, as these are central to the paper's bacterial strain classification. Then, learn about feature extraction and normalization in biosignal processing, which are key preprocessing steps that improved classifier accuracy in the study. Finally, focus on the core concept by watching the authors' own talk or the closest available detailed presentation on their fluorometer and machine learning integration for bacterial detection.
+## Track 1 — Academic deep-dives (long-form)
 
-## Recommended videos (in order)
+_Rigorous lectures, seminars and conference talks. Deeper, but longer._
 
-### Fluorescence spectroscopy instrumentation seminar *(prerequisite)*
-Understanding the hardware and optical principles behind fluorescence spectroscopy is essential to appreciate the design and operation of the portable multichannel fluorometer developed in the paper. This section covers instrumentation details and working principles of fluorescence spectrometers, providing the foundational knowledge needed to interpret fluorescence time-series data.
+To deeply understand the paper on rapid bacterial detection using a portable multichannel fluorometer integrated with machine learning, start by building foundational knowledge on fluorescence spectroscopy and machine learning for time series classification, as these are core to the data acquisition and analysis methods. Next, learn about feature extraction and normalization, and key machine learning algorithms like support vector machines and ensemble classifiers, which are critical for model performance. Finally, focus on the paper's core concept by watching the authors' own talks presenting their work, which provide direct insights into their methodology and results.
 
-*How the paper uses it:* The paper's novel portable multichannel fluorometer relies on fluorescence spectroscopy instrumentation principles for bacterial detection.
+### Fluorescence spectroscopy in biosensing *(prerequisite)*
+This section covers the fundamental principles and instrumentation of fluorescence spectroscopy, the sensing technique used to generate the time-series data for bacterial detection. Understanding fluorescence mechanisms and spectral properties is essential to grasp how the portable fluorometer detects bacterial contamination.
 
-▶ [Lecture 23 - Instrumentation of Fluorescence Spectrophotometer](https://www.youtube.com/watch?v=3cWnV8aIbB4) — AMU MOOCs · 26:27 · 2 months ago
+*How the paper uses it:* The paper uses fluorescence time-series data collected by a portable multichannel fluorometer to detect bacteria.
 
-### Supervised machine learning classification lecture *(prerequisite)*
-This section introduces fundamental supervised machine learning techniques such as classification and regression, focusing on algorithms like SVM and ensemble methods that the paper applies for bacterial strain and gram-type classification. Understanding these methods is crucial to grasp how the fluorescence data is analyzed and interpreted.
+▶ [Lecture 18: Fluorescence Spectroscopy and Imaging Part 1 (Introduction)](https://www.youtube.com/watch?v=HY_AVz9zJeE) — LEAP Lab@IIITDM Kancheepuram · 2 years ago
 
-*How the paper uses it:* The paper uses supervised ML algorithms including SVM and ensemble classifiers for bacterial detection and strain identification.
+### Machine learning for time series classification *(prerequisite)*
+Machine learning methods for time series classification are core to analyzing the fluorescence data collected over time to detect and identify bacteria. This section explains the challenges and approaches to classifying dynamic data sequences, which is directly relevant to the paper's methodology.
 
-▶ [W1_L4: Supervised learning: classification](https://www.youtube.com/watch?v=QtOrjs0Fzzc) — IIT Madras - B.S. Degree Programme · 24:56
+*How the paper uses it:* The paper applies supervised and unsupervised machine learning algorithms on fluorescence time-series data for bacterial detection and strain classification.
 
-### Feature extraction and normalization in biosignal processing *(prerequisite)*
-Feature extraction and normalization are key preprocessing steps that enhance classifier performance by transforming raw fluorescence data into meaningful inputs for machine learning models. This section explains these techniques in the context of biosignal processing, which directly relates to the paper's approach to improving detection accuracy.
+▶ [UoA ML Seminar: Geoff Webb – Time Series Classification at Scale](https://www.youtube.com/watch?v=SOnHXymw48k) — Machine Learning Group - University of Auckland · 5 years ago
 
-*How the paper uses it:* The paper demonstrates that feature extraction and normalization significantly improve classifier accuracy on fluorescence biosensor data.
+### Feature extraction and normalization in ML *(prerequisite)*
+Feature extraction and normalization are critical preprocessing steps that improve the accuracy and robustness of machine learning models by transforming raw fluorescence data into informative features. This section details these techniques, which the paper uses to enhance classifier performance.
 
-▶ [Acquisition and Processing of Biomedical Signals and images using Machine Learning](https://www.youtube.com/watch?v=S6EfSwgOL7Q) — NishantJainEducation · 3 years ago
+*How the paper uses it:* The paper demonstrates that feature extraction and normalization improve classifier accuracy compared to raw fluorescence data.
 
-### Authors' talk on bacterial detection fluorometer *(the paper's own talk)*
-This section focuses on the authors' own detailed presentation or the closest available talk about their portable multichannel fluorometer integrated with machine learning for rapid bacterial detection. It provides direct insights into their methodology, experimental setup, and results, offering the most relevant and advanced understanding of the paper's core contributions.
+▶ [Lec-36: Feature Extraction in Data preprocessing | Machine Learning](https://www.youtube.com/watch?v=lzWcVVCXMfo) — Gate Smashers · 2 years ago
 
-*How the paper uses it:* The authors' talk presents their novel portable fluorometer and machine learning integration for rapid bacterial detection and strain identification.
+### Support vector machines and ensemble classifiers *(prerequisite)*
+Support vector machines (SVM) and ensemble classifiers are key machine learning algorithms employed in the paper for bacterial strain classification and binary detection tasks. This section provides an in-depth understanding of these algorithms' principles and applications.
 
-▶ [Fluorometer and Assays](https://www.youtube.com/watch?v=6VWjpgfnZ3w) — EnZtekDiagnostics · 13 years ago
+*How the paper uses it:* The paper uses SVM and ensemble classifiers to achieve high accuracy in bacterial strain and contamination detection.
+
+▶ [Lec-40: Support Vector Machines (SVMs) | Machine Learning](https://www.youtube.com/watch?v=NDqACjz5j8g) — Gate Smashers · 1 year ago
+
+### Paper authors talk *(the paper's own talk)*
+This section features talks by researchers presenting their work on rapid bacterial detection using machine learning and portable fluorometry. These talks provide direct insights into the study's experimental setup, data analysis, and key findings, offering the most precise understanding of the paper.
+
+*How the paper uses it:* The authors' talks present their methodology and results on integrating a portable multichannel fluorometer with machine learning for rapid bacterial detection.
+
+▶ [Rapid and Real-time monitoring of bacterial growth](https://www.youtube.com/watch?v=aNZu_mGwYa4) — School of Engineering UBC Okanagan · 4 years ago
+
+## Track 2 — Beginner → Advanced (short-form)
+
+_Concise, high-quality explainers that build intuition — for when time is short._
+
+To understand this paper, start by learning the basics of fluorescence spectroscopy, the sensing technique used to generate data. Next, grasp how machine learning analyzes time-series data, focusing on classification tasks relevant to bacterial detection. Then, explore feature extraction and normalization, crucial preprocessing steps that improve model accuracy. Finally, learn about support vector machines and ensemble classifiers, the key algorithms used for bacterial strain classification in this study.
+
+### Fluorescence spectroscopy in biosensing *(prerequisite)*
+Fluorescence spectroscopy is a technique that measures light emitted by a substance after it absorbs light, revealing molecular properties. It is widely used in biosensing to detect biological molecules by their fluorescent signals. Understanding this helps you grasp how the portable fluorometer collects data on bacterial samples in the paper.
+
+*How the paper uses it:* The paper uses fluorescence time-series data from a portable multichannel fluorometer to detect bacteria.
+
+▶ [Fluorescence Spectroscopy Tutorial - Basics of Fluorescence](https://www.youtube.com/watch?v=5Q0n27pnQQU) — Ibsen Photonics · 6 years ago
+
+### Machine learning for time series classification *(prerequisite)*
+Time series classification involves analyzing data points collected over time to identify patterns or categories. Machine learning models can learn from these patterns to classify or predict outcomes. This concept is essential to understand how the paper's algorithms interpret fluorescence data to detect bacterial contamination.
+
+*How the paper uses it:* The study applies machine learning algorithms to classify bacterial presence and strains from fluorescence time-series data.
+
+▶ [What is Time Series l Machine Learning](https://www.youtube.com/watch?v=lcS0jiNoj6o) — 5 Minutes Engineering · 8:29 · 4 years ago
+
+### Feature extraction and normalization in ML *(prerequisite)*
+Feature extraction transforms raw data into meaningful attributes that improve machine learning model performance. Normalization scales features to a common range, preventing bias in learning. These preprocessing steps are critical for the paper's improved classifier accuracy on fluorescence data.
+
+*How the paper uses it:* The paper shows that feature extraction and normalization significantly enhance classification accuracy over raw data.
+
+▶ [Lec - 9 : Normalization in Data Transformation | Min-Max & Z-score Techniques with example](https://www.youtube.com/watch?v=lggqjmQzsGI) — Gate Smashers · 2 years ago
+
+### Support vector machines and ensemble classifiers *(prerequisite)*
+Support vector machines (SVM) find the best boundary separating classes in data, while ensemble classifiers combine multiple models to improve accuracy. Both are powerful supervised learning methods for classification tasks. Understanding these helps explain the paper's approach to bacterial strain and contamination classification.
+
+*How the paper uses it:* The study uses SVM and ensemble classifiers as key algorithms for bacterial strain identification and contamination detection.
+
+▶ [Lec-40: Support Vector Machines (SVMs) | Machine Learning](https://www.youtube.com/watch?v=NDqACjz5j8g) — Gate Smashers · 1 year ago
