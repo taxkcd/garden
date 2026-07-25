@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-marijn-heule"
-source_hash: "95ca1902af7fb9a7c122749de5279b34d4ed61123bbe49955678661bc5b3109c"
+source_hash: "f056863a125ac1f1fe50c7935bd9d1e5507a86f16f490d6d041d6765fa8f24db"
 sequence: 62
 generator: "outreach-garden: managed"
 ---
@@ -58,85 +58,70 @@ Research interests: solving hard-combinatorial problems in areas such as formal 
 
 _Rigorous lectures, seminars and conference talks. Deeper, but longer._
 
-To deeply understand the paper "Automated Reencoding Meets Graph Theory," start with foundational knowledge on 2-CNF formulas and SAT to grasp the formula class targeted by BVA. Next, build a solid understanding of graph theory concepts as they underpin the paper's graph-theoretic framework. Then, study biclique partition algorithms, which are key to the paper's efficient BVA implementation. Finally, focus on the core concept of Bounded Variable Addition (BVA) and the authors' own talk to directly engage with their contributions and results.
+To deeply understand the paper "Automated Reencoding Meets Graph Theory," start by building a solid foundation in the theory of 2-CNF formulas and SAT solving, as these form the class of formulas the paper focuses on. Next, study graph theory concepts relevant to SAT solving and biclique partition algorithms, which underpin the paper's graph-theoretic framework and efficient BVA implementation. Finally, engage with the authors' own talks or advanced research presentations that directly address BVA and its graph-theoretic characterization to grasp the novel contributions and experimental results.
 
 ### 2-CNF Formulas and SAT *(prerequisite)*
-Understanding 2-CNF formulas and the satisfiability problem is essential as the paper focuses on reencoding 2-CNF formulas using BVA. This section provides the necessary background on the formula class and the SAT problem complexity.
+Understanding 2-CNF formulas and their satisfiability is essential since the paper's theoretical framework and results focus on reencoding 2-CNF formulas. This section covers the complexity and algorithms related to 2-SAT, providing the logical and computational background necessary for the paper's analysis.
 
 *How the paper uses it:* The paper studies BVA's power and limitations specifically on 2-CNF formulas.
 
-▶ [Lecture 03-2/3 SAT problem and truth table](https://www.youtube.com/watch?v=EOon-yMB2M8) — Automated Reasoning · 11:15
+▶ [How to solve the 2-SAT problem in POLYNOMIAL TIME?](https://www.youtube.com/watch?v=Ku-jJ0G4tIc) — Inside code · 2 years ago
 
-### Graph Theory in SAT *(prerequisite)*
-Graph theory forms the foundation of the paper's novel characterization of BVA reencodings. A solid grasp of graph concepts, especially those related to planar graphs and graph algorithms, is crucial to understanding the theoretical framework developed by the authors.
+### Graph Theory in SAT Solving *(prerequisite)*
+The paper develops a graph-theoretic characterization of BVA reencodings, so a solid grasp of graph theory concepts applied to SAT solving is crucial. This section introduces graph theory from a computer science perspective, emphasizing its role in analyzing SAT preprocessing techniques.
 
-*How the paper uses it:* The authors develop a graph-theoretic framework characterizing BVA reencodings using strict polarized rectifier networks.
+*How the paper uses it:* The authors use graph-theoretic characterizations to analyze BVA reencodings.
 
-▶ [The Satisfiability Problem](https://www.youtube.com/watch?v=4K1MyG4ljI8) — JetBrains · 57:58
+▶ [Introduction to Graph Theory: A Computer Science Perspective](https://www.youtube.com/watch?v=LFKZLXVO-Dg) — Reducible · 6 years ago
 
 ### Biclique Partition Algorithms *(prerequisite)*
-Biclique partition algorithms are key algorithmic tools leveraged in the paper to achieve a more efficient BVA implementation. Understanding these algorithms provides insight into the practical improvements and runtime optimizations presented.
+Biclique partition algorithms are key to the paper's efficient BVA implementation, enabling an O(n^2) runtime improvement. This section covers algorithmic techniques for graph partitioning, focusing on bipartite graphs and bicliques, which directly relate to the paper's algorithmic contributions.
 
-*How the paper uses it:* The paper uses biclique partition algorithms to develop a drastically more efficient BVA implementation with O(n^2) runtime.
+*How the paper uses it:* The paper leverages biclique partition algorithms to develop a more efficient BVA implementation.
 
-▶ [Graph Coloring, Biclique Partition, and Communication Complexity - Hao Huang](https://www.youtube.com/watch?v=jTL8b2Pr8rU) — Institute for Advanced Study · 9 years ago
-
-### Bounded Variable Addition BVA
-BVA is the central preprocessing technique studied and improved in the paper. This section covers the theoretical foundations and practical aspects of BVA in SAT solving, setting the stage for understanding the paper's contributions.
-
-*How the paper uses it:* The paper analyzes BVA's theoretical capabilities and presents a new efficient implementation.
-
-▶ [Preprocessing SAT, MaxSAT, and QBF 3](https://www.youtube.com/watch?v=mAvaCDVsu38) — Simons Institute for the Theory of Computing · Streamed 5 years ago
+▶ [Lecture 7. Graph partitioning algorithms.](https://www.youtube.com/watch?v=zZae_C2BU_4) — Leonid Zhukov · 1:03:57 · 5 years ago
 
 ### Automated Reencoding BVA Talk *(the paper's own talk)*
-The authors' own talk provides direct insight into their research, including the graph-theoretic characterization, theoretical bounds, and implementation details. This is the most authoritative source for understanding the paper's contributions.
+This section focuses on talks that directly address the paper's novel graph-theoretic framework and efficient BVA implementation. Engaging with these presentations provides insight into the authors' motivations, technical details, and experimental validations, offering the most direct and advanced understanding of the paper's contributions.
 
-*How the paper uses it:* This is a direct presentation by an expert closely related to the paper's topic, offering deep understanding of the work.
+*How the paper uses it:* This is the authors' own or closely related research presentations on BVA and its graph-theoretic characterization.
 
-▶ [Ayman Badawi: 20 minutes talk at 11th Conference on Graph Theory and Algebraic Combinatorics, Iran](https://www.youtube.com/watch?v=GU2M4A1KwIk) — Ayman Badawi · 5 years ago
+▶ [Ayman Badawi: 20 minutes talk at 11th Conference on Graph Theory and Algebraic Combinatorics, Iran](https://www.youtube.com/watch?v=GU2M4A1KwIk) — Ayman Badawi · 15:27 · 5 years ago
 
 ## Track 2 — Beginner → Advanced (short-form)
 
 _Concise, high-quality explainers that build intuition — for when time is short._
 
-To understand the paper on Automated Reencoding and Bounded Variable Addition (BVA), start by learning the basics of 2-CNF formulas and SAT problems, which form the foundation of the paper's focus. Next, build intuition on graph theory concepts relevant to SAT solving, as the paper uses graph-theoretic frameworks. Then study biclique partition algorithms, which enable the paper's efficient BVA implementation. Finally, explore BVA itself, the core preprocessing technique studied and improved in the paper, and conclude with a direct talk by an author for deeper insight.
+To understand the paper 'Automated Reencoding Meets Graph Theory,' start by learning the basics of 2-CNF formulas and SAT solving, which form the foundation of the problem. Next, explore graph theory concepts as they relate to SAT solving to grasp the paper's analytical approach. Then, study biclique partition algorithms, which underpin the efficient implementation of BVA. Finally, focus on Bounded Variable Addition (BVA) itself, the core preprocessing technique analyzed and improved in the paper.
 
 ### 2-CNF Formulas and SAT *(prerequisite)*
-Learn what 2-CNF formulas are and how they relate to the Boolean satisfiability problem (SAT). This includes understanding conjunctive normal form (CNF), clauses, and why SAT is a fundamental problem in computer science and automated reasoning.
+2-CNF formulas are a special class of Boolean formulas where each clause has exactly two literals. Understanding 2-CNF and the SAT problem is essential because the paper focuses on reencoding these formulas to reduce their size. This foundation helps you appreciate the constraints and goals of the BVA technique.
 
-*How the paper uses it:* The paper studies BVA's power and limitations specifically on 2-CNF formulas, so understanding this formula class is essential.
+*How the paper uses it:* The paper studies BVA's power and limits specifically on 2-CNF formulas.
 
-▶ [Lecture-25-CNF, DNF and satisfiability and Validity ...](https://www.youtube.com/watch?v=pfFv8ms8CrA) — CH 25: IIT KANPUR 02: Humanities & Social Sciences · 59:34
+▶ [How to solve the 2-SAT problem in POLYNOMIAL TIME?](https://www.youtube.com/watch?v=Ku-jJ0G4tIc) — Inside code · 2 years ago
 
-### Graph Theory in SAT *(prerequisite)*
-Gain intuition about graph theory concepts such as vertices, edges, bipartite graphs, and how graphs can represent logical formulas and constraints. This foundation helps understand the paper's graph-theoretic characterization of BVA.
+### Graph Theory in SAT Solving *(prerequisite)*
+Graph theory provides tools to represent and analyze relationships between variables and clauses in SAT problems. Learning how graphs model SAT formulas helps you understand the paper's novel graph-theoretic framework for characterizing BVA reencodings.
 
-*How the paper uses it:* The authors develop a graph-theoretic framework characterizing BVA reencodings using strict polarized rectifier networks.
+*How the paper uses it:* The authors use graph-theoretic characterizations to analyze BVA reencodings.
 
-▶ [2-SAT Problem Explained: CSES Giant Pizza Solution | Graph ...](https://www.youtube.com/watch?v=J6JPHsX5RHc) — Yatish Garg · 13:05
+▶ [Introduction to Graph Theory: A Computer Science Perspective](https://www.youtube.com/watch?v=LFKZLXVO-Dg) — Reducible · 6 years ago
 
 ### Biclique Partition Algorithms *(prerequisite)*
-Understand what biclique partitions are in graphs and how algorithms can efficiently find these partitions. This knowledge is key to grasping the paper's improved BVA implementation that leverages biclique partitioning for speed.
+Biclique partitioning breaks bipartite graphs into complete bipartite subgraphs, which is a key step in the paper's efficient BVA implementation. Understanding these algorithms clarifies how the authors achieve a faster runtime for BVA.
 
-*How the paper uses it:* The paper uses biclique partition algorithms to achieve an O(n^2) runtime in their new BVA implementation.
+*How the paper uses it:* The paper leverages biclique partition algorithms to implement BVA with O(n^2) runtime.
 
-▶ [Graph Theory: What is a Complete Bipartite Graph?](https://www.youtube.com/watch?v=HYNzYM8aYFM) — Zach's Math Zone · 5:39 · 1 year ago
+▶ [What is a Bipartite Graph? | Graph Theory](https://www.youtube.com/watch?v=HqlUbSA9cEY) — Wrath of Math · 5:17 · 7 years ago
 
 ### Bounded Variable Addition BVA
-Learn what Bounded Variable Addition is as a preprocessing technique in SAT solving, how it reduces formula size by introducing auxiliary variables, and its practical importance in improving solver performance.
+Bounded Variable Addition is a preprocessing technique that reduces formula size by introducing auxiliary variables. Learning BVA helps you grasp the paper's main focus: characterizing BVA's theoretical limits and improving its practical implementation.
 
-*How the paper uses it:* BVA is the central preprocessing technique studied and improved in the paper.
+*How the paper uses it:* BVA is the central method studied and improved in the paper.
 
 ▶ [Preprocessing SAT, MaxSAT, and QBF 3](https://www.youtube.com/watch?v=mAvaCDVsu38) — Simons Institute for the Theory of Computing · Streamed 5 years ago
-
-### Automated Reencoding BVA Talk *(the paper's own talk)*
-Watch a concise talk by an expert presenting the paper's main contributions, including the graph-theoretic characterization of BVA, theoretical bounds, and the new efficient implementation.
-
-*How the paper uses it:* Direct access to the authors' presentation provides a deep understanding of their contributions and results.
-
-▶ [Ayman Badawi: 20 minutes talk at 11th Conference on Graph Theory and Algebraic Combinatorics, Iran](https://www.youtube.com/watch?v=GU2M4A1KwIk) — Ayman Badawi · 5 years ago
 
 ## Already in your library
 
 - [Preprocessing SAT, MaxSAT, and QBF 1](https://www.youtube.com/watch?v=ez9ArInp8w4) — also for: Automated Reencoding Meets Graph Theory (Marijn Heule)
-- [Theory of Computation Lecture: NP-Completeness and CNF ...](https://www.youtube.com/watch?v=BAUWVipNwb8) — also for: Automated Reencoding Meets Graph Theory (Marijn Heule)

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-yangpliu-github-io"
-source_hash: "bb1e75be391622cda9883629a744f1d26fb5a82d14ff2f7a5dbec983c23a50c1"
+source_hash: "1cb18addd418f1661cb376e0c951c609c8468f6a57cb7567f5cec24fee5d6833"
 sequence: 30
 generator: "outreach-garden: managed"
 ---
@@ -52,41 +52,70 @@ Research interests: graph algorithms, optimization, high-dimensional geometry, a
 
 ## Learning path
 
-To deeply understand the paper 'Maximum Flow and Minimum-Cost Flow in Almost-Linear Time,' start by building foundational knowledge in dynamic graph data structures and low stretch spanning trees, which are crucial for the novel data structures used. Then, study interior point methods as the central optimization framework underlying the algorithm. Finally, focus on the paper's core contributions through the authors' own talks and detailed tutorials on the minimum ratio cycle problem, which is the key subproblem to which min-cost flow is reduced.
+## Track 1 — Academic deep-dives (long-form)
 
-## Recommended videos (in order)
+_Rigorous lectures, seminars and conference talks. Deeper, but longer._
 
-### Dynamic graph data structures seminar *(prerequisite)*
-Dynamic graph data structures are essential for maintaining approximate minimum-ratio cycles efficiently under adaptive updates, a core technical challenge addressed by the paper. Understanding these data structures provides insight into how the algorithm achieves amortized near-constant update times.
+To deeply understand the paper "Maximum Flow and Minimum-Cost Flow in Almost-Linear Time," start by building foundational knowledge in dynamic graph data structures and low stretch spanning trees, which are critical for the paper's recursive data structure hierarchy. Then, study interior point methods for flow problems to grasp the central algorithmic framework used in the paper. Finally, focus on the authors' own talk and advanced lectures on minimum cost flow and maximum flow algorithms to directly connect with the paper's novel contributions and techniques.
 
-*How the paper uses it:* The paper introduces a randomized dynamic data structure maintaining approximate min-ratio cycles with amortized mo(1) update time.
+### Dynamic graph data structures *(prerequisite)*
+Dynamic graph data structures are essential for efficiently maintaining approximate solutions under adaptive updates, a key technical challenge addressed by the paper. Understanding the latest developments and advanced data structures in this area provides the necessary background to appreciate the paper's randomized dynamic data structure with amortized update time.
 
-▶ [19. Dynamic Graphs I](https://www.youtube.com/watch?v=XZLN6NxEQWo) — MIT OpenCourseWare · 1:14:44
+*How the paper uses it:* The paper designs a randomized dynamic data structure to maintain approximate min-ratio cycles efficiently under adaptive updates from the interior point method.
 
-### Low stretch spanning trees lecture *(prerequisite)*
-Low stretch spanning trees are a fundamental graph-theoretic tool used in the recursive data structure hierarchy that underpins the algorithm's efficiency. Grasping this concept helps understand how the authors build stable and efficient embeddings for dynamic updates.
+▶ [19. Dynamic Graphs I](https://www.youtube.com/watch?v=XZLN6NxEQWo) — MIT OpenCourseWare · 12 years ago
 
-*How the paper uses it:* The recursive data structure hierarchy combines low-stretch spanning trees with other graph structures to maintain approximate solutions efficiently.
+### Low stretch spanning trees *(prerequisite)*
+Low stretch spanning trees are fundamental graph structures used in the paper's recursive data structure hierarchy. They enable efficient embeddings and approximations critical to the algorithm's performance. A solid understanding of minimum spanning trees and their properties is necessary to follow the paper's construction.
 
-▶ [12. Greedy Algorithms: Minimum Spanning Tree](https://www.youtube.com/watch?v=tKwnms5iRBU) — MIT OpenCourseWare · 1:22:10 · 10 years ago
+*How the paper uses it:* The paper uses low stretch spanning trees as a core component in its recursive data structure hierarchy to maintain approximate solutions.
 
-### Interior point methods for combinatorial optimization *(prerequisite)*
-Interior point methods form the central algorithmic framework that reduces the min-cost flow problem to a sequence of minimum-ratio cycle problems. A solid understanding of IPMs in convex optimization is necessary to appreciate the novel potential reduction method introduced.
+▶ [12. Greedy Algorithms: Minimum Spanning Tree](https://www.youtube.com/watch?v=tKwnms5iRBU) — MIT OpenCourseWare · 10 years ago
 
-*How the paper uses it:* The authors develop a new potential reduction interior point method to solve min-cost flow via approximate minimum-ratio cycle computations.
+### Interior point methods for flow *(prerequisite)*
+Interior point methods form the central algorithmic framework in the paper, reducing the min-cost flow problem to a sequence of minimum-ratio cycle problems. Understanding the theory and application of interior point methods in constrained optimization and flow problems is crucial to grasp the paper's novel potential reduction IPM.
 
-▶ [Optimization: Interior Point Methods Part 1](https://www.youtube.com/watch?v=SNqLy6vyVe4) — Simons Institute for the Theory of Computing · 1:15:38
+*How the paper uses it:* The paper develops a new potential reduction interior point method to solve min-cost flow via approximate minimum-ratio cycle computations.
 
-### Minimum ratio cycle problem lecture *(prerequisite)*
-The minimum ratio cycle problem is the core subproblem to which the min-cost flow problem is reduced in the paper's algorithm. Understanding this problem and its algorithmic treatment is critical to grasping the overall approach.
+▶ [CSE 550 (2022, Fall): 3.6 The Minimum-Cost-Flow Problem](https://www.youtube.com/watch?v=0tjpC0MCwY8) — Joshua J. Daymude · 3 years ago
 
-*How the paper uses it:* The IPM reduces min-cost flow to solving a sequence of approximate undirected minimum-ratio cycle problems.
+### Paper authors talk *(the paper's own talk)*
+The authors' own talks provide the most direct and detailed insights into the paper's contributions, techniques, and results. Watching these presentations allows for a deeper understanding of the novel algorithmic ideas and their significance in the context of maximum flow and minimum-cost flow problems.
 
-▶ [Rasmus Kyng - Tutorial (Part 2): Continuous Methods in ...](https://www.youtube.com/watch?v=ISsMYFt7z7k) — DIMACS CCICADA · 1:26:51
+*How the paper uses it:* Direct source for understanding the authors' presentation and insights on the paper.
 
-### Authors' talk on almost-linear time flow *(the paper's own talk)*
-The authors' own talks provide the most direct and detailed exposition of their new algorithm, including the novel IPM, dynamic data structures, and applications. These talks are invaluable for understanding the paper's contributions and technical innovations.
+▶ [Circulation Control for Faster Minimum Cost Flow in Unit-Capacity Graphs](https://www.youtube.com/watch?v=Z6SjnJ399WE) — IEEE FOCS: Foundations of Computer Science · 23:23 · 5 years ago
 
-*How the paper uses it:* These talks present the new almost-linear time algorithms for maximum flow and minimum-cost flow developed in the paper.
+## Track 2 — Beginner → Advanced (short-form)
 
-▶ [Sushant Sachdeva @ Princeton Theory Lunch](https://www.youtube.com/watch?v=9fVAFQdW2ys) — Princeton TCS · 1:04:51
+_Concise, high-quality explainers that build intuition — for when time is short._
+
+To understand the paper's contributions on fast algorithms for maximum flow and minimum-cost flow, start by building a foundation in dynamic graph data structures and low stretch spanning trees, which are key to efficient updates. Then learn about convex flow optimization and interior point methods, which form the algorithmic framework. Finally, focus on the minimum ratio cycle problem, the core subproblem to which min-cost flow is reduced in this work.
+
+### Dynamic graph data structures *(prerequisite)*
+Dynamic graph data structures allow efficient updates and queries on graphs that change over time, such as edge insertions or deletions. Understanding these is crucial because the paper's algorithm maintains approximate solutions under adaptive updates with very low amortized cost.
+
+*How the paper uses it:* The paper designs a randomized dynamic data structure to maintain approximate minimum-ratio cycles efficiently under adaptive updates from the interior point method.
+
+▶ [Developments in Dynamic Graph Algorithms](https://www.youtube.com/watch?v=oZGSdfyU_YU) — Microsoft Research · 9 years ago
+
+### Low stretch spanning trees *(prerequisite)*
+Low stretch spanning trees are special spanning trees that approximate distances in the original graph with low distortion. They are fundamental in the paper's recursive data structure hierarchy to maintain approximate solutions efficiently.
+
+*How the paper uses it:* The algorithm uses low stretch spanning trees as a core component of its recursive data structure hierarchy for fast updates.
+
+▶ [12. Greedy Algorithms: Minimum Spanning Tree](https://www.youtube.com/watch?v=tKwnms5iRBU) — MIT OpenCourseWare · 10 years ago
+
+### Convex flow optimization *(prerequisite)*
+Convex flow optimization generalizes min-cost flow problems by allowing convex cost functions on edges. This broader framework enables solving problems like optimal transport and matrix scaling, which the paper's approach also addresses.
+
+*How the paper uses it:* The paper extends its algorithm to general edge-separable convex flow problems beyond min-cost flow.
+
+▶ [What Is Mathematical Optimization?](https://www.youtube.com/watch?v=AM6BY4btj-M) — Visually Explained · 5 years ago
+
+### Interior point methods for flow
+Interior point methods are optimization algorithms that solve constrained problems by traversing the interior of the feasible region. The paper introduces a novel potential reduction interior point method to reduce min-cost flow to minimum-ratio cycle problems.
+
+*How the paper uses it:* The core algorithmic framework is a new interior point method that reduces min-cost flow to a sequence of approximate minimum-ratio cycle problems.
+
+▶ [Interior-point methods for constrained optimization (Logarithmic barrier function and central path)](https://www.youtube.com/watch?v=bJ0Kkf4u9bo) — OptiML PSE · 5 years ago

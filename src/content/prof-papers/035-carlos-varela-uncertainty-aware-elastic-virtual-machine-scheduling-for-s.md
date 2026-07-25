@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-cvarela"
-source_hash: "d246c557c3430f0bad973446502dcef183cdcd1fce6335dff8a23e09f386d121"
+source_hash: "0d1c74d38f2068bae81676d4c6b355ef8fa0132a1dcb061e7ad4e55c26de57d6"
 sequence: 35
 generator: "outreach-garden: managed"
 ---
@@ -53,34 +53,81 @@ Research interests: safer flight systems, software verification, cloud and edge 
 
 ## Learning path
 
-To deeply understand the paper on uncertainty-aware elastic VM scheduling for stream processing systems, start by building foundational knowledge on stream processing resource management, online learning for adaptive systems, ARMA workload forecasting methods, and uncertainty quantification in cloud scheduling. These prerequisites provide the necessary background on the system environment, adaptive modeling, forecasting techniques, and uncertainty handling. Finally, focus on the authors' own talk or closely related advanced talks on elastic VM scheduling under uncertainty to grasp the paper's core contributions and methodology.
+## Track 1 — Academic deep-dives (long-form)
 
-## Recommended videos (in order)
+_Rigorous lectures, seminars and conference talks. Deeper, but longer._
 
-### Stream processing systems resource management *(prerequisite)*
-Understanding how resources are managed in stream processing environments is foundational to appreciating the challenges and solutions proposed in the paper. This section covers architectures and resource allocation strategies specific to streaming data systems, which are the target application domain of the paper.
+To deeply understand the paper on uncertainty-aware elastic VM scheduling for stream processing systems, start by grasping the foundational statistical and machine learning techniques it builds upon. First, learn about ARMA models for workload forecasting, then explore online learning methods for dynamic model adaptation, followed by uncertainty quantification in performance modeling. Finally, focus on the paper's core contribution by reviewing the authors' own talk or the closest available substitute on their uncertainty-aware elastic VM scheduling framework.
 
-*How the paper uses it:* The paper addresses elastic VM scheduling specifically for stream processing systems, so foundational knowledge of resource management in these systems is essential.
+### Statistical workload forecasting ARMA *(prerequisite)*
+The paper relies on ARMA models to forecast future workloads and quantify uncertainty in these predictions. Understanding ARMA processes and their forecasting capabilities is essential to appreciate how workload variance is incorporated into the scheduling decisions.
 
-▶ [Managing Streaming between Multiple External Resources ...](https://www.youtube.com/watch?v=9V4UqFkuPUM) — Decodable · 49:33
+*How the paper uses it:* The scheduler uses ARMA-based workload forecasting with uncertainty quantification to predict future workloads.
 
-### Online learning for adaptive systems *(prerequisite)*
-The paper integrates online learning to dynamically update maximum sustainable throughput models during execution. This section introduces adaptive systems and online learning techniques that enable models to improve over time based on new data, which is critical for the paper's approach to uncertainty-aware scheduling.
+▶ [Time Series Analysis, Lecture 15: Forecasting for ARMA](https://www.youtube.com/watch?v=w1191j6e9x4) — Cache Lack Math & Stats Lectures · 4 years ago
 
-*How the paper uses it:* Online learning is a key technique used in the paper to adapt MST models dynamically, improving scheduling decisions under uncertainty.
+### Online learning for model adaptation *(prerequisite)*
+Online learning techniques enable the dynamic updating of maximum sustainable throughput models with new performance data, improving accuracy over time. This adaptive approach is critical for maintaining high QoS under changing conditions.
 
-▶ [Sibyl: Adaptive Data Placement in Storage Systems using ...](https://www.youtube.com/watch?v=5-WedkiB000) — Onur Mutlu Lectures · 16:15
+*How the paper uses it:* Integration of online learning to adapt MST models dynamically during execution.
 
-### ARMA workload forecasting methods *(prerequisite)*
-ARMA models are used in the paper to forecast workloads with quantified uncertainty. This section provides an advanced understanding of ARMA time series models and their forecasting capabilities, which underpin the workload prediction component of the scheduling framework.
+▶ [Optimal and Adaptive Online Learning](https://www.youtube.com/watch?v=A4kOXiJmNFQ) — Microsoft Research · 10 years ago
 
-*How the paper uses it:* The paper uses ARMA-based workload forecasting with uncertainty quantification to predict future workloads for VM allocation decisions.
+### Uncertainty quantification in performance modeling *(prerequisite)*
+Explicitly modeling uncertainty in throughput and workload predictions is fundamental to the paper's approach. Understanding uncertainty quantification methods helps in appreciating how probabilistic constraints are formulated for VM allocation.
 
-▶ [TSA Lecture 15: Forecasting for ARMA](https://www.youtube.com/watch?v=d5c0Rt_1bgo) — Adam Kashlak · 1:27:47 · 5 years ago
+*How the paper uses it:* Explicit modeling of uncertainty in throughput and workload predictions is fundamental to the approach.
 
-### Uncertainty quantification in cloud scheduling *(prerequisite)*
-Explicit modeling and quantification of uncertainty in performance and workload predictions is central to the paper. This section covers advanced concepts in uncertainty quantification relevant to cloud resource management and scheduling, providing the theoretical foundation for the paper's probabilistic approach.
+▶ [Uncertainty Quantification and Deep Learning ǀ Elise Jennings, Argonne National Laboratory](https://www.youtube.com/watch?v=Puc_ujh5QZs) — Argonne Meetings, Webinars, and Lectures · 6 years ago
 
-*How the paper uses it:* The paper explicitly models uncertainty in MST and workload predictions using normal distributions to make probabilistic scheduling decisions.
+### Uncertainty-aware elastic VM scheduling *(the paper's own talk)*
+This is the core concept of the paper, combining uncertainty modeling, workload forecasting, and online learning to enable elastic VM scheduling that balances cost and QoS. Ideally, the authors' own talk would provide the most direct and detailed insight into their framework.
 
-▶ [Mini Tutorial 6:  An Introduction to Uncertainty Quantification for Modeling & Simulation](https://www.youtube.com/watch?v=7w-K_EF2j64) — IDA · 59:45 · 3 years ago
+*How the paper uses it:* Central method combining uncertainty modeling, forecasting, and online learning for elastic VM allocation.
+
+▶ [MobiSys 26 - StreamSplit: Continuous Audio Representation Learning via Uncertainty-Guided Adaptive](https://www.youtube.com/watch?v=UR9u0xLdlrI) — ACM SIGMOBILE ONLINE · 6:12 · 2 weeks ago
+
+## Track 2 — Beginner → Advanced (short-form)
+
+_Concise, high-quality explainers that build intuition — for when time is short._
+
+This beginner-to-advanced path introduces foundational concepts needed to understand uncertainty-aware elastic VM scheduling for stream processing systems. Start with statistical workload forecasting using ARMA models to grasp how future workloads and their uncertainties are predicted. Then learn about online learning for model adaptation to see how performance models improve dynamically. Next, explore uncertainty quantification to understand how the framework models prediction uncertainties explicitly. After that, study probabilistic QoS constraints to appreciate how VM allocations satisfy service quality targets under uncertainty. Finally, consolidate knowledge by reviewing the paper authors' talk for direct insights into their novel scheduling framework.
+
+### Statistical workload forecasting ARMA *(prerequisite)*
+Learn how ARMA models predict future workloads by capturing patterns in time series data, including how they estimate uncertainty in those predictions. This statistical forecasting is crucial for proactive VM scheduling decisions in the paper.
+
+*How the paper uses it:* The paper uses ARMA models to forecast workloads with uncertainty quantification for conservative VM allocation.
+
+▶ [Time Series Talk : ARMA Model](https://www.youtube.com/watch?v=HhvTlaN06AM) — ritvikmath · 7 years ago
+
+### Online learning for model adaptation *(prerequisite)*
+Understand online learning as a method to update models continuously with new data, improving accuracy over time. This dynamic adaptation helps the scheduler maintain precise performance models despite changing conditions.
+
+*How the paper uses it:* The framework applies online learning to update maximum sustainable throughput models during execution.
+
+▶ [Optimal and Adaptive Online Learning](https://www.youtube.com/watch?v=A4kOXiJmNFQ) — Microsoft Research · 10 years ago
+
+### Uncertainty quantification in performance modeling *(prerequisite)*
+Explore how uncertainty quantification measures confidence in model predictions, allowing systems to account for variability and risk. This is key to making robust scheduling decisions under unpredictable workloads and performance.
+
+*How the paper uses it:* The paper explicitly models uncertainty in throughput and workload predictions using normal distributions.
+
+▶ [Module 8.1: Introduction to Uncertainty Quantification Methods](https://www.youtube.com/watch?v=ACApE0aFpM8) — Dr. Kamal Choudhary · 12:36 · 1 year ago
+
+### Probabilistic QoS constraints in cloud scheduling *(prerequisite)*
+Learn how probabilistic constraints ensure that quality-of-service targets are met with high confidence rather than absolute certainty, balancing reliability and cost. This approach enables elastic VM allocation under uncertainty.
+
+*How the paper uses it:* The scheduler formulates VM allocation as a probabilistic QoS satisfaction problem to trade off cost and reliability.
+
+▶ [Dynamic Resource Allocation in Cloud Computing | Preetham Vemasani | Conf42 Observability 2024](https://www.youtube.com/watch?v=j_jpvkSjzhg) — Conf42 · 2 years ago
+
+### Paper authors talk *(the paper's own talk)*
+Hear directly from the authors about their uncertainty-aware elastic VM scheduling framework, gaining insights into their motivation, approach, and results in their own words.
+
+*How the paper uses it:* This talk provides a direct source for understanding the novel scheduling framework proposed in the paper.
+
+▶ [MobiSys 26 - StreamSplit: Continuous Audio Representation Learning via Uncertainty-Guided Adaptive](https://www.youtube.com/watch?v=UR9u0xLdlrI) — ACM SIGMOBILE ONLINE · 6:12 · 2 weeks ago
+
+## Already in your library
+
+- [Mini Tutorial 6:  An Introduction to Uncertainty Quantification for Modeling & Simulation](https://www.youtube.com/watch?v=7w-K_EF2j64) — also for: Uncertainty-Aware Elastic Virtual Machine Scheduling for Stream Processing Systems (Carlos Varela)
