@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-ribeirob"
-source_hash: "d05da9f34fc2ee48368cf71ead23d9913627020429f23a5f88527334eaf926de"
+source_hash: "3b7f11df9dd7ba579fc20e50907c90effa81539a1d51fc466250bc8c8630bab0"
 sequence: 20
 generator: "outreach-garden: managed"
 ---
@@ -53,34 +53,81 @@ Research interests: mathematical challenges and potential solutions for harnessi
 
 ## Learning path
 
-To deeply understand the paper on double equivariance for fully inductive link prediction, start with foundational knowledge on permutation group theory and equivariance in graph neural networks, as these underpin the theoretical framework. Then, study the concept of double permutation-equivariant representations, which is central to the paper's novel contributions. Finally, review the authors' own talk or related advanced talks to grasp the specific innovations, empirical results, and future directions presented in the paper.
+## Track 1 — Academic deep-dives (long-form)
 
-## Recommended videos (in order)
+_Rigorous lectures, seminars and conference talks. Deeper, but longer._
+
+To deeply understand the paper on double equivariance for inductive link prediction, start with foundational concepts in permutation group theory and graph neural network equivariance, which underpin the theoretical framework. Then, study inductive link prediction in knowledge graphs to grasp the task context. Finally, focus on the core concept of double permutation-equivariant representations and the authors' own talk to directly learn about their novel contributions and results.
 
 ### Permutation group theory in machine learning *(prerequisite)*
-Permutation group theory provides the mathematical foundation for understanding permutation equivariance, a key property exploited in the paper's model design. Familiarity with symmetric groups and their actions is essential to grasp how models maintain invariance or equivariance under node and relation permutations.
+Permutation group theory provides the mathematical foundation for understanding permutation equivariance, a key property exploited in the paper's double equivariant models. This section covers the basics of permutation groups, symmetric groups, and their role in machine learning models dealing with structured data.
 
-*How the paper uses it:* The paper's double permutation-equivariant framework relies on permutation group theory to formalize invariance to permutations of nodes and relation types.
+*How the paper uses it:* Permutation groups underlie the double permutation-equivariant representations central to the paper's theoretical framework.
 
-▶ [MSC |MATHEMATICAL METHODS OF PHYSICS 2| SEMINAR|](https://www.youtube.com/watch?v=aHdUCIVrZ2g) — Mr Photons Physics Classes · 14:13
+▶ [Jean Phillippe Vert: Learning on the symmetric group](https://www.youtube.com/watch?v=Aw8EIK3o6Zw) — Centre International de Rencontres Mathématiques · 36:10 · 8 years ago
 
-### Graph neural networks equivariance theory *(prerequisite)*
-Understanding equivariance in graph neural networks is foundational to appreciating how the paper extends these ideas to double equivariance for nodes and relations. These lectures cover the theoretical underpinnings and practical implementations of equivariant GNNs.
+### Graph neural networks equivariance *(prerequisite)*
+Equivariance in graph neural networks is a fundamental property that ensures model outputs transform predictably under permutations of input nodes. Understanding GNN equivariance is essential to grasp how the paper extends these ideas to double equivariance involving both nodes and relation types.
 
-*How the paper uses it:* The paper builds on equivariant GNN theory to develop double equivariant models for knowledge graphs.
+*How the paper uses it:* The paper builds on GNN equivariance to define double permutation-equivariant representations for knowledge graphs.
 
-▶ [Equivariant Networks and Natural Graph Networks - Taco Cohen](https://www.youtube.com/watch?v=_8P8cLC9a14) — Workshop on Equivariance and Data Augmentation · 36:23
+▶ [Equivariant Neural Networks | Part 1/3 - Introduction](https://www.youtube.com/watch?v=2bP_KuBrXSc) — DeepFindr · 18:51 · 3 years ago
 
 ### Inductive link prediction knowledge graphs *(prerequisite)*
-Inductive link prediction in knowledge graphs is the core application domain of the paper. These talks provide context on the challenges of predicting links involving unseen nodes and relations, setting the stage for the paper's fully inductive approach.
+Inductive link prediction involves predicting links involving unseen nodes or relations without retraining, which is the core task addressed by the paper. This section introduces the problem setting and challenges in knowledge graph link prediction.
 
-*How the paper uses it:* The paper addresses fully inductive link prediction, requiring understanding of inductive vs transductive settings in knowledge graph completion.
+*How the paper uses it:* The paper proposes models for fully inductive link prediction, predicting links with new nodes and relation types.
 
-▶ [[Deep Graph Learning] 4.6 GNN inductive vs transductive ...](https://www.youtube.com/watch?v=Lrr25EzAgkI) — BASIRA Lab · 20:46
+▶ [InGram: Inductive Knowledge Graph Embedding via Relation Graphs (ICML 2023)](https://www.youtube.com/watch?v=hDi1sdDlMZ8) — BDI Lab · 3 years ago
 
 ### Double permutation-equivariant representations
-This concept is the central theoretical framework introduced by the paper to enable fully inductive link prediction. Videos on equivariant structures and group equivariant deep learning provide the mathematical and machine learning background necessary to understand double equivariance.
+This concept is the paper's central theoretical contribution, defining representations invariant to permutations of both nodes and relation types. Understanding this concept is crucial to grasp the paper's novel framework and its improvements over existing models.
 
-*How the paper uses it:* The paper formalizes double permutation-equivariant representations as necessary for fully inductive link prediction and analyzes existing models within this framework.
+*How the paper uses it:* The paper introduces and formalizes double permutation-equivariant representations as necessary for fully inductive link prediction.
 
-▶ [Equivariant message passing as non-linear convolution](https://www.youtube.com/watch?v=o-KcYASwUco) — Erik Bekkers · 33:08
+▶ [Leveraging permutation group symmetries for designing equivariant neural networks - Haggai Maron](https://www.youtube.com/watch?v=k3E3XyMtQcA) — Workshop on Equivariance and Data Augmentation · 5 years ago
+
+### Paper authors talk *(the paper's own talk)*
+The authors' own talk provides a direct and detailed presentation of their novel framework, theoretical insights, and empirical results. It is the most authoritative source to understand their contributions and the context of their work.
+
+*How the paper uses it:* This talk is the authors' presentation of their work on double equivariance for fully inductive link prediction.
+
+▶ [Cai Zhou: Coevolutionary Continuous Discrete DLMs, Semantic Scale Prediction via Hierarchical DLMs](https://www.youtube.com/watch?v=QGdXR9MIHEQ) — Formal Languages and Neural Networks Seminar · 46:17 · 5 months ago
+
+## Track 2 — Beginner → Advanced (short-form)
+
+_Concise, high-quality explainers that build intuition — for when time is short._
+
+To understand this paper, start by learning the fundamentals of graph neural networks (GNNs) and their key property of equivariance, which is essential for modeling relational data. Next, build a mathematical foundation in permutation group theory to grasp how permutations affect graph structures and model invariances. Then, explore the concept of double permutation-equivariant representations, the core theoretical innovation enabling fully inductive link prediction on unseen nodes and relations. Finally, study the specific task of inductive link prediction in knowledge graphs to see how these concepts apply in practice.
+
+### Graph neural networks equivariance *(prerequisite)*
+Graph neural networks learn by passing messages between nodes and are designed to respect the structure of graphs. Equivariance means that if you permute the nodes of a graph, the output of the GNN changes in a predictable way, preserving the graph's relational information. Understanding this property is key to grasping how GNNs can generalize across different graph structures.
+
+*How the paper uses it:* The paper builds on the equivariance property of GNNs to design models that are invariant to permutations of both nodes and relation types.
+
+▶ [Equivariant Neural Networks | Part 1/3 - Introduction](https://www.youtube.com/watch?v=2bP_KuBrXSc) — DeepFindr · 18:51 · 3 years ago
+
+### Permutation group theory in machine learning *(prerequisite)*
+Permutation groups formalize how elements can be rearranged and combined, providing the mathematical language to describe symmetries and invariances in data. In machine learning, understanding permutation groups helps in designing models that respect these symmetries, such as equivariant neural networks.
+
+*How the paper uses it:* The paper uses permutation group theory to define double permutation-equivariant representations that are invariant to permutations of nodes and relations.
+
+▶ [Permutation Groups and Symmetric Groups | Abstract Algebra](https://www.youtube.com/watch?v=NwqCi63p2ik) — Wrath of Math · 18:24 · 3 years ago
+
+### Double permutation-equivariant representations
+Double permutation-equivariant representations extend the idea of equivariance to simultaneously handle permutations of two different sets, such as nodes and relation types in a knowledge graph. This ensures the model's outputs remain consistent regardless of how these elements are reordered, enabling fully inductive link prediction on unseen data.
+
+*How the paper uses it:* This is the core theoretical framework introduced by the paper to unify and improve fully inductive link prediction models.
+
+▶ [Leveraging permutation group symmetries for designing equivariant neural networks - Haggai Maron](https://www.youtube.com/watch?v=k3E3XyMtQcA) — Workshop on Equivariance and Data Augmentation · 5 years ago
+
+### Inductive link prediction knowledge graphs
+Inductive link prediction involves predicting missing links in knowledge graphs, especially when the graph contains new nodes or relation types not seen during training. This task requires models that can generalize without retraining, making it a challenging and important problem in graph machine learning.
+
+*How the paper uses it:* The paper addresses fully inductive link prediction where both nodes and relation types are unseen, demonstrating improvements using double equivariant models.
+
+▶ [InGram: Inductive Knowledge Graph Embedding via Relation Graphs (ICML 2023)](https://www.youtube.com/watch?v=hDi1sdDlMZ8) — BDI Lab · 3 years ago
+
+## Already in your library
+
+- [Equivariant Networks and Natural Graph Networks - Taco Cohen](https://www.youtube.com/watch?v=_8P8cLC9a14) — also for: Double Equivariance for Inductive Link Prediction for Both New Nodes and New Relation Types (Bruno F. M. Ribeiro)

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-nyu"
-source_hash: "cdf37b6fddfc875d237a0b179378632a0f5eb869f59120483b28c0931d7c41eb"
+source_hash: "43dcd6a3da1bc6373ae243fe1af49bdb40e29e4fd7bd5a12bf6906ac4b0e3ad7"
 sequence: 24
 generator: "outreach-garden: managed"
 ---
@@ -51,41 +51,74 @@ This paper addresses the challenge of increasing energy consumption and carbon e
 
 ## Learning path
 
-To deeply understand the paper "Coordinating GPU Data Centers and Power Grid Regulation Service for Exogenous Carbon Benefits," start by building foundational knowledge on power system unit commitment and demand response in smart grids, which underpin the grid modeling and frequency regulation context. Next, gain insights into GPU power management challenges relevant to the EcoCenter framework. Finally, focus on the core concept of frequency regulation with data centers and the authors' own talks to grasp their novel contributions and framework details.
+## Track 1 — Academic deep-dives (long-form)
 
-## Recommended videos (in order)
+_Rigorous lectures, seminars and conference talks. Deeper, but longer._
 
-### Power system unit commitment lecture *(prerequisite)*
-Unit commitment is a fundamental optimization problem in power systems that schedules generation resources to meet demand while minimizing costs and respecting constraints. Understanding this topic is crucial because the paper uses detailed unit commitment simulations to model hidden emissions and optimize data center participation in frequency regulation markets.
+To deeply understand the paper on coordinating GPU data centers with power grid frequency regulation for carbon benefits, start by building foundational knowledge on power grid frequency regulation services, GPU power management and modulation, unit commitment and grid emission modeling, and workload scheduling and optimization in data centers. These prerequisites provide the necessary background on grid operations, GPU power control challenges, and data center workload coordination. Finally, focus on the paper's core contribution by watching the authors' own talk or the closest available detailed presentation about their EcoCenter framework and its role in enabling GPU data centers to provide frequency regulation with carbon benefits.
 
-*How the paper uses it:* The paper's grid emission modeling and optimization rely on unit commitment simulations to capture hidden carbon emissions from fossil-fueled frequency regulation reserves.
+### Frequency regulation services in power grids *(prerequisite)*
+Frequency regulation is essential for maintaining grid stability by balancing supply and demand in real time. Understanding how frequency regulation works and its economic and operational aspects is foundational to grasping how data centers can participate in these services to reduce carbon emissions.
 
-▶ [Lecture - 33 Optimal Unit Commitment](https://www.youtube.com/watch?v=8n8ZNeQIldw) — nptelhrd · 44:56
+*How the paper uses it:* The paper leverages frequency regulation services as the mechanism through which GPU data centers modulate power consumption to provide grid stability and carbon benefits.
 
-### Demand response in smart grids colloquium *(prerequisite)*
-Demand response programs enable flexible loads to adjust consumption in response to grid needs, enhancing stability and integrating renewables. This context is essential to appreciate how data centers can act as flexible resources providing frequency regulation and carbon benefits.
+▶ [Economics #69: Frequency Regulation and Dispatch](https://www.youtube.com/watch?v=7E6yxPCCRJ0) — Regulatory Assistance Project · 9:49 · 6 years ago
 
-*How the paper uses it:* The paper explores data center flexibility as a demand response resource providing frequency regulation services to reduce grid carbon emissions.
+### GPU power management and modulation *(prerequisite)*
+GPU power modulation is challenging due to limited low-power states and high static power consumption. Understanding GPU power-performance characteristics and modulation techniques is critical to appreciate how EcoCenter achieves precise power control for frequency regulation.
 
-▶ [Flexing the grid: A deep dive into demand-side solutions](https://www.youtube.com/watch?v=YB964fO1GBs) — Canary Media · 57:34
+*How the paper uses it:* EcoCenter overcomes GPU power modulation challenges by coordinating GPU power capping and core allocation to provide high-precision power modulation.
 
-### GPU power management techniques talk *(prerequisite)*
-GPU power management is challenging due to limited low-power states and high static power consumption. Understanding these technical constraints is foundational to grasping how EcoCenter achieves precise power modulation by coordinating GPU power capping and core allocation.
+▶ [AI Datacenters as Grid-Responsive Flexible Loads:  Real-Time GPU Power Modulation](https://www.youtube.com/watch?v=LP3FdH-5SCU) — Open Compute Project · 2 months ago
 
-*How the paper uses it:* EcoCenter overcomes GPU power modulation challenges to provide high-precision frequency regulation services.
+### Unit commitment and grid emission modeling *(prerequisite)*
+Unit commitment involves optimizing the operation of power generation units to meet demand efficiently. Modeling grid emissions through unit commitment simulations is crucial to quantify hidden carbon emissions from fossil-fueled frequency regulation reserves.
 
-▶ [2026 AI Infra Strategies | GPU Capacity and Cost Optimization ...](https://www.youtube.com/watch?v=sKQdSRmLBGE) — WEKA · 46:53
+*How the paper uses it:* The paper uses detailed unit commitment simulations to model hidden carbon emissions and optimize data center participation in frequency regulation markets.
 
-### Frequency regulation with data centers seminar
-Frequency regulation is a critical grid service maintaining stability by balancing supply and demand on short timescales. Seminars on frequency regulation with data centers provide domain-specific insights into how data centers can participate in these services, which is the central application of the paper.
+▶ [05 Unit Commitment](https://www.youtube.com/watch?v=jS15dU_422Q) — Daniel Kirschen · 4 years ago
 
-*How the paper uses it:* The paper's core contribution is enabling GPU data centers to provide frequency regulation services to the power grid.
+### Workload scheduling and optimization in data centers *(prerequisite)*
+Coordinating workloads in data centers is key to managing power consumption without impacting latency-sensitive tasks. Understanding workload scheduling and optimization helps in grasping how EcoCenter co-locates latency-critical and best-effort workloads for effective power modulation.
 
-▶ [Synchronization in the Datacenter](https://www.youtube.com/watch?v=3gUvZikFePA) — Open Compute Project · 18:15
+*How the paper uses it:* EcoCenter coordinates multi-GPU workload scheduling to enable precise power modulation while maintaining service quality.
 
-### Authors' talk on EcoCenter *(the paper's own talk)*
-The authors' own presentations provide the most direct and detailed explanation of their novel EcoCenter framework, the Exogenous Carbon metric, and their experimental and modeling results. These talks are invaluable for understanding the paper's unique contributions and technical approach.
+▶ [Optimizing Datacenter Operations with Practical Complexity](https://www.youtube.com/watch?v=SDMwtJPrD9I) — Microsoft Research · 9 years ago
 
-*How the paper uses it:* This is the authors' own presentation explaining their novel framework and results on coordinating GPU data centers with grid frequency regulation for carbon benefits.
+## Track 2 — Beginner → Advanced (short-form)
 
-▶ [Energy Usage Impact - New Holistic Metrics for AI Data Centers: A Discussion with The Green Grid](https://www.youtube.com/watch?v=Dln_ixkQ6rI) — The Green Grid · 1:05:37 · 2mo ago
+_Concise, high-quality explainers that build intuition — for when time is short._
+
+To understand this paper, start by learning how power grids maintain stability through frequency regulation services, which is essential to grasp why data centers can help reduce carbon emissions. Next, explore GPU power management challenges to see how EcoCenter modulates GPU power for grid services. Then, study unit commitment and grid emission modeling to understand how hidden carbon emissions are quantified. After that, learn about workload scheduling and optimization in data centers to appreciate how EcoCenter coordinates workloads for precise power modulation. Finally, dive into the EcoCenter framework itself, which integrates these concepts to enable GPU data centers to provide frequency regulation with carbon benefits.
+
+### Frequency regulation services in power grids *(prerequisite)*
+Frequency regulation is a key grid service that balances supply and demand in real time to maintain stable grid frequency. Understanding this helps explain why data centers can modulate power consumption to support grid stability and reduce reliance on fossil-fueled reserves.
+
+*How the paper uses it:* The paper leverages frequency regulation services as the mechanism through which GPU data centers provide grid support and achieve carbon emission reductions.
+
+▶ [https://www.youtube.com › watch?v=qAKxPf0onG4](https://www.youtube.com/watch?v=qAKxPf0onG4) — YouTube result via DuckDuckGo
+
+### GPU power management and modulation *(prerequisite)*
+GPUs have limited low-power states and high static power, making precise power modulation challenging. Learning about GPU power management reveals why EcoCenter uses coordinated power capping and core allocation to finely control GPU power consumption.
+
+*How the paper uses it:* EcoCenter overcomes GPU power modulation challenges to provide high-precision power adjustments needed for frequency regulation.
+
+▶ [AI Datacenters as Grid-Responsive Flexible Loads:  Real-Time GPU Power Modulation](https://www.youtube.com/watch?v=LP3FdH-5SCU) — Open Compute Project · 2 months ago
+
+### Unit commitment and grid emission modeling *(prerequisite)*
+Unit commitment is an optimization problem that schedules power plants to meet demand efficiently. Understanding this helps explain how the paper models hidden carbon emissions from fossil-fueled regulation reserves and quantifies the carbon benefits of data center participation.
+
+*How the paper uses it:* The paper uses detailed unit commitment simulations to capture hidden emissions and optimize data center frequency regulation participation.
+
+▶ [05 Unit Commitment](https://www.youtube.com/watch?v=jS15dU_422Q) — Daniel Kirschen · 4 years ago
+
+### Workload scheduling and optimization in data centers *(prerequisite)*
+Data centers run diverse workloads with different latency and resource needs. Learning about workload scheduling shows how EcoCenter co-locates latency-critical and best-effort tasks to enable effective power modulation without hurting performance.
+
+*How the paper uses it:* EcoCenter coordinates multi-GPU workload management to achieve precise power modulation while maintaining latency-sensitive service quality.
+
+▶ [The Entire AI Data Center Explained — From Electricity to ChatGPT](https://www.youtube.com/watch?v=ckoi0RTEgcY) — Leo Cui, Ph.D., CFA · 40:19 · 1 day ago
+
+## Already in your library
+
+- [Lecture - 33 Optimal Unit Commitment](https://www.youtube.com/watch?v=8n8ZNeQIldw) — also for: Coordinating GPU Data Centers and Power Grid Regulation Service for Exogenous Carbon Benefits (Nanpeng Yu)

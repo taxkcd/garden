@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-pavanturaga-com"
-source_hash: "8667c3e897e18bf059c1a00d0e82718264d0e99cf2e0272b2e5b37c60729cd8d"
+source_hash: "40c6c248ecddd13bedea7ae83ec57dfce5e42ecad866e5d39e90c8e3a35c290b"
 sequence: 4
 generator: "outreach-garden: managed"
 ---
@@ -56,41 +56,63 @@ Research interests: computer vision, machine learning, immersive technologies, h
 
 ## Learning path
 
-To deeply understand the paper on geometry preserving loss functions for blackbox generative model adaptation, start with foundational concepts including manifold learning and tangent space estimation, domain adaptation for generative models, GAN inversion methods, and diffusion models for generative sampling. These prerequisites build the necessary background on geometric priors, latent space modeling, and generative techniques. Finally, focus on the core concept of geometry-preserving loss functions in generative modeling, selecting a rigorous university lecture that covers loss functions and optimization, which aligns closely with the paper's novel loss design.
+## Track 1 — Academic deep-dives (long-form)
 
-## Recommended videos (in order)
+_Rigorous lectures, seminars and conference talks. Deeper, but longer._
 
-### Manifold learning and tangent space estimation lecture *(prerequisite)*
-Understanding manifold learning and tangent space estimation is foundational for grasping the geometric priors and tangent space preservation that the paper enforces in latent and image spaces. These concepts provide the mathematical background to appreciate how geometry-preserving losses maintain manifold structure during adaptation.
+To deeply understand the paper on geometry preserving loss functions for blackbox generative model adaptation, start by grounding yourself in the key prerequisite topics: GAN inversion methods and diffusion models for latent sampling, as these are critical technical components of the approach. Next, study the geometric priors and geometry preserving loss functions that form the novel theoretical foundation of the paper. Finally, focus on the core concept of blackbox generative model adaptation, which ties these elements together in the proposed pipeline. This progression ensures a solid grasp of both the technical building blocks and the paper's innovative contributions.
 
-*How the paper uses it:* The paper's geometry-preserving loss relies on tangent space relationships in latent and image manifolds.
+### Generative adversarial networks inversion *(prerequisite)*
+GAN inversion is essential to map target domain images into the latent space of the pre-trained generator, enabling adaptation without modifying the generator weights. Understanding state-of-the-art inversion techniques and their limitations provides insight into the first stage of the proposed pipeline and the challenges faced with far out-of-domain images.
 
-▶ [noc20 ma01 lec23  Tangent space of a submanifold](https://www.youtube.com/watch?v=70l0mhysGO8) — NPTEL - Indian Institute of Science, Bengaluru · 29:48 · 6 years ago
+*How the paper uses it:* The paper relies on GAN inversion to embed target images into the latent space for subsequent latent distribution modeling.
 
-### Domain adaptation for generative models lecture *(prerequisite)*
-Domain adaptation lectures contextualize the problem of adapting pretrained generative models to new target domains, highlighting challenges such as limited data and restricted model access. This background helps understand the motivation behind blackbox adaptation methods without generator fine-tuning.
+▶ [Revisiting Latent Space of GAN Inversion for Robust Real Image Editing](https://www.youtube.com/watch?v=36hLx1CtKr4) — ComputerVisionFoundation Videos · 2 years ago
 
-*How the paper uses it:* The paper addresses domain adaptation challenges for blackbox generative models.
+### Diffusion models latent sampling *(prerequisite)*
+Diffusion models are used in the paper as a lightweight latent sampler to learn the distribution of inverted latent codes. Understanding how diffusion models operate in latent spaces and their sampling mechanisms is crucial to appreciate the second stage of the pipeline and the efficiency gains achieved.
 
-▶ [Stanford CS236: Deep Generative Models I 2023 I Lecture 1 - Introduction](https://www.youtube.com/watch?v=XZ0PMRWXBEU) — Stanford Online · 57:28 · 2 years ago
+*How the paper uses it:* The paper employs a 1D diffusion model to sample adapted latent codes, enabling effective domain adaptation without generator fine-tuning.
 
-### GAN inversion methods lecture *(prerequisite)*
-GAN inversion methods are essential for mapping target domain images into the latent space of a pretrained generator, a critical first step in the paper's adaptation pipeline. Understanding inversion techniques clarifies how latent codes are obtained for subsequent diffusion modeling.
+▶ [Stanford CME296 Diffusion & Large Vision Models | Spring 2026 | Lecture 4 - Latent Space & Guidance](https://www.youtube.com/watch?v=WUUq6TVAu8U) — Stanford Online · 1:40:58 · 2 months ago
 
-*How the paper uses it:* The paper uses state-of-the-art GAN inversion to embed target images into the latent space.
+### Geometry preserving loss functions *(prerequisite)*
+The novel geometry preserving loss function enforces manifold priors by preserving distances and tangent space orientations between latent and image spaces. Familiarity with geometric concepts such as manifolds, tangent spaces, and their role in learning is necessary to understand the theoretical innovation and its impact on adaptation performance.
 
-▶ [Stanford CS236: Deep Generative Models I 2023 I Lecture 9 - GANs](https://www.youtube.com/watch?v=3Zv-gokhLu8) — Stanford Online · 2 years ago
+*How the paper uses it:* The geometry preserving loss is the key contribution that improves adaptation by maintaining geometric relationships during latent distribution learning.
 
-### Diffusion models for generative sampling lecture *(prerequisite)*
-Diffusion models provide a modern approach to generative sampling, which the paper leverages as a lightweight 1D diffusion latent sampler to model the distribution of inverted latent codes. Understanding diffusion models aids in grasping how the latent sampler learns target latent distributions effectively.
+▶ [Riemannian manifolds, kernels and learning](https://www.youtube.com/watch?v=MtZV82LCNHc) — Microsoft Research · 56:33 · 9 years ago
 
-*How the paper uses it:* The paper employs a 1D diffusion model as a latent sampler in the adaptation pipeline.
+### Blackbox generative model adaptation
+This concept covers methods to adapt pretrained generative models without access to internal weights, which is the central challenge addressed by the paper. Understanding existing blackbox adaptation techniques and their limitations contextualizes the novelty and practical significance of the proposed pipeline.
 
-▶ [Stanford CS236: Deep Generative Models I 2023 I Lecture 18 - Diffusion Models for Discrete Data](https://www.youtube.com/watch?v=mCaRNnEnYwA) — Stanford Online · 1:00:03 · 2 years ago
+*How the paper uses it:* The paper proposes a secure and efficient blackbox adaptation pipeline that does not require generator weight access or fine-tuning.
 
-### Geometry-preserving loss functions in generative modeling seminar
-This concept covers the paper's core novel contribution: the geometry-preserving loss function that maintains manifold priors by preserving distances and tangent space orientations. A rigorous university lecture on loss functions and optimization provides the theoretical foundation to understand this loss design and its impact on adaptation performance.
+▶ [Auxiliary Task-Guided CycleGAN for Black-Box Model Domain Adaptation](https://www.youtube.com/watch?v=ruSyh2ZXpjM) — ComputerVisionFoundation Videos · 2 years ago
 
-*How the paper uses it:* The geometry-preserving loss function is central to the paper's improved adaptation method.
+## Track 2 — Beginner → Advanced (short-form)
 
-▶ [Lecture 3 | Loss Functions and Optimization](https://www.youtube.com/watch?v=h7iBpEHGVNc) — Stanford University School of Engineering · 1:14:40 · 8 years ago
+_Concise, high-quality explainers that build intuition — for when time is short._
+
+To understand this paper's approach to adapting blackbox generative models, start by learning about GAN inversion, which maps real images into the latent space of pretrained generators. Next, grasp diffusion models used for latent sampling to model distributions effectively. Then, study geometry-preserving loss functions that enforce geometric structure during adaptation. Finally, explore the concept of blackbox generative model adaptation, which ties these components together to adapt models without accessing internal weights.
+
+### Generative adversarial networks inversion *(prerequisite)*
+GAN inversion is the process of finding a latent code in a pretrained GAN's latent space that reconstructs a given real image. This step is crucial for adapting generative models to new domains by enabling manipulation in the latent space rather than retraining the generator.
+
+*How the paper uses it:* The paper uses state-of-the-art GAN inversion methods to map target domain images into the latent space of the source generator as the first step in adaptation.
+
+▶ [Revisiting Latent Space of GAN Inversion for Robust Real Image Editing](https://www.youtube.com/watch?v=36hLx1CtKr4) — ComputerVisionFoundation Videos · 2 years ago
+
+### Diffusion models latent sampling *(prerequisite)*
+Diffusion models are generative models that learn to gradually denoise data starting from pure noise, effectively modeling complex distributions. When applied to latent spaces, they can sample new latent codes that follow the target domain distribution, enabling generation of adapted images.
+
+*How the paper uses it:* The paper trains a lightweight 1D diffusion model as a latent sampler to model the distribution of inverted latents from the target domain.
+
+▶ [Sampling Diffusion Models in the Era of Generative AI](https://www.youtube.com/watch?v=xUwxZj_2d2s) — C3 Digital Transformation Institute · 2 years ago
+
+### Geometry preserving loss functions *(prerequisite)*
+Geometry-preserving loss functions enforce that geometric relationships such as distances and tangent space orientations between points are maintained during transformations. This helps preserve the manifold structure of data, leading to more meaningful and stable adaptations.
+
+*How the paper uses it:* The novel geometry-preserving loss introduced in the paper maintains pairwise distances and tangent space relationships between latent and image spaces, improving adaptation quality.
+
+▶ [Riemannian manifolds, kernels and learning](https://www.youtube.com/watch?v=MtZV82LCNHc) — Microsoft Research · 56:33 · 9 years ago

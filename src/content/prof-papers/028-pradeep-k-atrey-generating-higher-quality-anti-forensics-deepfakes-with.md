@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-patrey"
-source_hash: "c63850d3d1c9468f4bd0ffadb83c9d16c9278f40b89796e06466af047cc82cfa"
+source_hash: "c516df91e1f3ef9b8182702da76bbdddf66447f1f569c4ed4018d05bc5a53a68"
 sequence: 28
 generator: "outreach-garden: managed"
 ---
@@ -55,34 +55,81 @@ Research interests: cybersecurity, privacy, trust, and fairness, with a focus on
 
 ## Learning path
 
-To deeply understand the paper on generating higher-quality anti-forensics DeepFakes with adversarial sharpening masks, start by building foundational knowledge on Generative Adversarial Networks (GANs), as the paper's method relies on a two-module GAN framework. Next, study adversarial attacks on image forensics to grasp how adversarial noise disrupts forensic detectors, a key part of the Forensics Disruption Network. Then, learn about the MobileViT2 architecture to appreciate the Visual Enhancement Network's design and efficiency. Finally, focus on the core concept by reviewing the authors' own or closely related talks on adversarial anti-forensics DeepFakes to understand the novel contributions and experimental results.
+## Track 1 — Academic deep-dives (long-form)
 
-## Recommended videos (in order)
+_Rigorous lectures, seminars and conference talks. Deeper, but longer._
 
-### Generative adversarial networks seminar *(prerequisite)*
-Understanding the architecture, training dynamics, and challenges of GANs is essential because the paper's approach uses a two-stage GAN framework (FDN and VEN) to generate adversarial sharpening masks. The selected video provides a rigorous university-level lecture on GANs, covering theoretical and practical aspects relevant for advanced readers.
+To deeply understand the paper on generating higher-quality anti-forensics DeepFakes with adversarial sharpening masks, start by building foundational knowledge on Vision Transformers and MobileViT architectures, which are critical for the Visual Enhancement Network (VEN). Then, study adversarial attacks on DeepFake detectors to grasp how adversarial perturbations can fool forensic algorithms. Next, explore image sharpening and enhancement techniques to understand the core concept of adversarial sharpening masks improving visual realism. Finally, focus on the paper's core concept of GAN-based anti-forensics DeepFake generation, selecting the best available talks related to adversarial machine learning and anti-forensics.
 
-*How the paper uses it:* The paper's method is built upon a two-module GAN framework, making GAN fundamentals critical to comprehend.
+### MobileViT and Vision Transformers *(prerequisite)*
+Vision Transformers and their efficient variants like MobileViT2 are key architectural components used in the VEN module to enhance image quality and reduce computational complexity. Understanding the transformer architecture in vision tasks provides insight into how global attention mechanisms improve the sharpening mask generation.
 
-▶ [VAPS58:"Generative Adversarial Networks: Dynamics and ...](https://www.youtube.com/watch?v=aPyA65XvWro) — Virtual Analysis and PDE Seminar · 58:20
+*How the paper uses it:* The VEN uses MobileViT2 blocks to incorporate global attention and reduce computational complexity, critical for refining image quality.
 
-### Adversarial attacks on image forensics lecture *(prerequisite)*
-To understand how adversarial noise can effectively disrupt forensic detectors, it is important to study adversarial attacks specifically in the context of image forensics. The chosen lecture presents a research-level discussion on adversarial attacks and defenses in deep learning models, which aligns well with the Forensics Disruption Network component of the paper.
+▶ [CS 198-126: Lecture 15 - Vision Transformers](https://www.youtube.com/watch?v=jzPbx9Y0vHg) — Machine Learning at Berkeley · 49:27 · 3 years ago
 
-*How the paper uses it:* The Forensics Disruption Network injects adversarial noise to evade detection, so understanding adversarial attacks on forensic models is foundational.
+### Adversarial Attacks on DeepFake Detectors *(prerequisite)*
+Adversarial attacks on DeepFake detectors form the foundation for understanding how forensic algorithms can be fooled by carefully crafted perturbations. This knowledge is essential to appreciate the Forensics Disruption Network (FDN) in the paper, which injects adversarial noise to evade detection.
 
-▶ [Security of Facial Forensics Models Against Adversarial Attacks](https://www.youtube.com/watch?v=qWWkLW9N3ZU) — NII Yamagishi Lab · 14:06 · 5 years ago
+*How the paper uses it:* The FDN module injects adversarial noise to disrupt state-of-the-art DeepFake detectors, forming the first stage of the anti-forensics framework.
 
-### Vision transformers MobileViT2 architecture talk *(prerequisite)*
-The Visual Enhancement Network (VEN) in the paper uses MobileViT2 blocks to incorporate global attention while reducing computational complexity. Understanding the MobileViT2 architecture and vision transformers is crucial to appreciate how the VEN improves image quality and undetectability efficiently.
+▶ [66 - Adversarial Deepfakes: Evaluating Vulnerability of Deepfake Detectors to Adversarial Examples](https://www.youtube.com/watch?v=quHQ6Et59OY) — ComputerVisionFoundation Videos · 5 years ago
 
-*How the paper uses it:* MobileViT2 blocks are a key architectural choice in VEN to enhance visual quality and reduce complexity.
+### Image Sharpening and Enhancement Techniques *(prerequisite)*
+Image sharpening techniques are fundamental to the paper's novel approach of generating adversarial sharpening masks that disguise DeepFakes as sharpened authentic images. Understanding classical sharpening methods provides context for how the VEN improves visual realism.
 
-▶ [Vision Transformer Quick Guide - Theory and Code in (almost) 15 min](https://www.youtube.com/watch?v=j3VNqtJUoz0) — DeepFindr · 16:51 · 3 years ago
+*How the paper uses it:* The adversarial sharpening masks generated by VEN disguise DeepFake images as properly sharpened pristine ones, improving visual quality.
 
-### Authors' talk on adversarial sharpening mask DeepFakes *(the paper's own talk)*
-The core concept of the paper is the novel two-module GAN framework generating adversarial sharpening masks to produce high-quality, undetectable DeepFakes. Although no direct talk by the authors on this exact paper is available, the closest relevant talk on adversarial threats to DeepFake detection provides practical insights into the challenges and approaches in this research area.
+▶ [Image sharpening in digital image processing || EC Academy](https://www.youtube.com/watch?v=VbJK0UyZMXU) — EC Academy · 10:57 · 5 years ago
 
-*How the paper uses it:* This concept directly addresses the paper's novel method for DeepFake anti-forensics using adversarial sharpening masks.
+### Generative Adversarial Networks for Anti-Forensics
+This concept covers how GANs can be used to generate adversarial examples that evade forensic detection, directly relating to the paper's two-stage GAN framework (FDN and VEN). Understanding anti-forensics GAN applications contextualizes the paper's contributions in the broader research landscape.
 
-▶ [Adversarial threats to DeepFake Detection: A Practical Perspective (Neekhara et al.)](https://www.youtube.com/watch?v=XLzXnqeMhWw) — Workshop Media Forensics · 5:09 · 5 years ago
+*How the paper uses it:* The paper proposes a novel two-module GAN framework to generate adversarial sharpening masks for DeepFake anti-forensics.
+
+▶ [Forensics & Anti-Forensics by Dr. Saeed Shafiee](https://www.youtube.com/watch?v=47DIChRGZ14) — Canadian Institute for Cybersecurity (CIC) · 4 years ago
+
+### Paper Author Talk *(the paper's own talk)*
+Direct talks by the paper authors provide the most precise and detailed insights into their novel method, experimental results, and future directions. Although no exact talk by the authors on this paper was found, closely related adversarial machine learning talks by experts provide valuable context.
+
+*How the paper uses it:* While no direct author talk on this paper is available, related adversarial machine learning talks help understand the adversarial disruption aspect of the framework.
+
+▶ [Adversarial Machine Learning explained! | With examples.](https://www.youtube.com/watch?v=YyTyWGUUhmo) — AI Coffee Break with Letitia · 6 years ago
+
+## Track 2 — Beginner → Advanced (short-form)
+
+_Concise, high-quality explainers that build intuition — for when time is short._
+
+This beginner-to-advanced path introduces foundational concepts needed to understand the paper's novel method for generating high-quality, undetectable DeepFakes using adversarial sharpening masks. We start with basic image sharpening techniques to grasp how visual quality is enhanced, then cover MobileViT and Vision Transformers to understand the architectural improvements in the Visual Enhancement Network. Next, we explore adversarial attacks on DeepFake detectors to see how DeepFakes can evade forensic algorithms. Finally, we focus on the core concept of using GANs for anti-forensics, tying all prior knowledge to the paper's specific approach.
+
+### Image Sharpening and Enhancement Techniques *(prerequisite)*
+Image sharpening is a fundamental technique in digital image processing that enhances edges and fine details to improve visual clarity. Understanding how sharpening works helps appreciate how adversarial sharpening masks disguise DeepFakes as authentic, high-quality images.
+
+*How the paper uses it:* The paper uses adversarial sharpening masks to improve the visual realism of DeepFake images.
+
+▶ [Image sharpening in digital image processing || EC Academy](https://www.youtube.com/watch?v=VbJK0UyZMXU) — EC Academy · 10:57 · 5 years ago
+
+### MobileViT and Vision Transformers *(prerequisite)*
+Vision Transformers are a modern neural network architecture that applies attention mechanisms to image patches, capturing global context more effectively than traditional CNNs. MobileViT combines this power with lightweight design to reduce computational complexity, making it suitable for enhancing image quality efficiently.
+
+*How the paper uses it:* The Visual Enhancement Network (VEN) in the paper incorporates MobileViT2 blocks to boost image quality and reduce computational cost.
+
+▶ [Vision Transformer and its Applications](https://www.youtube.com/watch?v=hPb6A92LROc) — Open Data Science and AI Conference · 4 years ago
+
+### Adversarial Attacks on DeepFake Detectors *(prerequisite)*
+Adversarial attacks involve adding subtle perturbations to images that fool machine learning models into making incorrect predictions. In the context of DeepFakes, adversarial attacks can help evade forensic detectors by making manipulated images appear authentic to algorithms.
+
+*How the paper uses it:* The paper’s Forensics Disruption Network (FDN) injects adversarial noise to evade DeepFake detection algorithms.
+
+▶ [Adversarial Attacks in Machine Learning](https://www.youtube.com/watch?v=Xe_ShxUtuMo) — Halfling Wizard · 4 years ago
+
+### Generative Adversarial Networks for Anti-Forensics
+Generative Adversarial Networks (GANs) consist of two neural networks competing to generate realistic data, which can be used to create adversarial examples that fool forensic tools. Understanding GANs in anti-forensics helps grasp how the paper’s two-module GAN framework generates adversarial sharpening masks to both disrupt detectors and enhance image quality.
+
+*How the paper uses it:* The paper proposes a two-stage GAN framework (FDN and VEN) to generate adversarial sharpening masks for DeepFake anti-forensics.
+
+▶ [Forensics & Anti-Forensics by Dr. Saeed Shafiee](https://www.youtube.com/watch?v=47DIChRGZ14) — Canadian Institute for Cybersecurity (CIC) · 4 years ago
+
+## Already in your library
+
+- [Vision Transformer Quick Guide - Theory and Code in (almost) 15 min](https://www.youtube.com/watch?v=j3VNqtJUoz0) — also for: Generating Higher-Quality Anti-Forensics DeepFakes with Adversarial Sharpening Mask (Pradeep K. Atrey)

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-ravi-sundaram"
-source_hash: "aa44d6190ebceef91d4a5f0b4b77c549872433d58231f80df387a9b7d7b8879b"
+source_hash: "c1340b664b0f231f068664bcc5970cb28f7e94385018d55231a53f23b62248f2"
 sequence: 60
 generator: "outreach-garden: managed"
 ---
@@ -50,34 +50,74 @@ This paper studies how to design fair machine learning classifiers that remain a
 
 ## Learning path
 
-To deeply understand the paper "Optimal Fair Learning Robust to Adversarial Distribution Shift," start by building foundational knowledge on adversarial distribution shifts and group fairness constraints, which are critical to grasping the robustness and fairness challenges addressed. Then, explore the role of randomized classifiers in fair machine learning to appreciate the key innovation of the paper. Finally, focus on the authors' own talk to get direct insights into their theoretical contributions, algorithms, and robustness guarantees.
+## Track 1 — Academic deep-dives (long-form)
 
-## Recommended videos (in order)
+_Rigorous lectures, seminars and conference talks. Deeper, but longer._
 
-### Adversarial distribution shift in machine learning *(prerequisite)*
-This section covers the foundational challenges of distribution shifts, especially adversarial ones, which the paper addresses by designing robust fair classifiers. Understanding these shifts is crucial to appreciate why deterministic classifiers fail and randomized ones succeed under malicious noise.
+To deeply understand the paper "Optimal Fair Learning Robust to Adversarial Distribution Shift," start by building foundational knowledge on adversarial distribution shift robustness and group fairness constraints in machine learning, as these underpin the paper's robustness and fairness guarantees. Next, grasp the theoretical basis of Bayes optimal classifiers, which form the core classifier model analyzed. Finally, focus on the paper's central contribution: the robustness and fairness achieved through randomized classifiers, ideally via the authors' own talk or closely related advanced research presentations.
 
-*How the paper uses it:* The paper studies robustness of fair classifiers under adversarial distribution shifts, making this foundational knowledge essential.
+### Adversarial distribution shift robustness *(prerequisite)*
+This concept covers how machine learning models maintain performance when the data distribution changes adversarially, a key challenge addressed by the paper. Understanding robustness to distribution shifts is essential to appreciate the paper's guarantees on fairness and accuracy under malicious noise.
 
-▶ [Principles for Tackling Distribution Shift: Pessimism, Adaptation, and Anticipation](https://www.youtube.com/watch?v=QKBh6TmvBaw) — Fields Institute · 5 years ago
+*How the paper uses it:* The paper's main contribution is proving robustness of randomized fair classifiers under adversarial distribution shifts.
 
-### Group fairness constraints in classification *(prerequisite)*
-This section introduces the key group fairness notions—Demographic Parity, Equal Opportunity, and Predictive Equality—that the paper analyzes. A rigorous understanding of these constraints is necessary to follow the theoretical results and robustness proofs.
+▶ [Learning Decision Making Systems under (Adversarial) Distribution Shifts](https://www.youtube.com/watch?v=xYnDV0-1EP8) — Furong Huang · 4 years ago
 
-*How the paper uses it:* The paper analyzes Fair Bayes Optimal Classifiers under these three popular group fairness constraints.
+### Group fairness constraints in ML *(prerequisite)*
+Group fairness notions like Demographic Parity, Equal Opportunity, and Predictive Equality are central to the paper's fairness constraints. This section introduces these fairness definitions and their role in fair classification algorithms.
 
-▶ [Inherent Trade-Offs in Algorithmic Fairness](https://www.youtube.com/watch?v=p5yY2MyTJXA) — Microsoft Research · 1:23:51
+*How the paper uses it:* The paper analyzes Fair Bayes Optimal Classifiers under these group fairness constraints.
 
-### Randomized classifiers in fair machine learning *(prerequisite)*
-Randomization is the core technical tool the paper uses to achieve robustness while maintaining fairness and interpretability. This section explains why and how randomization can improve fairness and robustness simultaneously, setting the stage for the paper's main results.
+▶ [Michael Kearns - Between Group and Individual Fairness in Machine Learning](https://www.youtube.com/watch?v=36iQr_jwbiE) — Center for Game Theory at Stony Brook · 4 years ago
 
-*How the paper uses it:* The paper proves that randomized Fair BOCs are robust and randomize on at most one data point, balancing fairness and interpretability.
+### Bayes optimal classifier theory *(prerequisite)*
+Bayes Optimal Classifiers represent the theoretical foundation for optimal classification under given distributions. Understanding this theory is critical to grasp how the paper extends it to fair and robust classifiers.
 
-▶ [On the Power of Randomization in Fair Classification and Representation](https://www.youtube.com/watch?v=1X4RoNrf45A) — Fields Institute · 3 years ago
+*How the paper uses it:* The paper studies the Fair Bayes Optimal Classifier as the basis for their robust fair learning approach.
 
-### Authors' talk on robust fair learning *(the paper's own talk)*
-The authors' own talk is the most direct and authoritative source to understand their motivations, theoretical contributions, and algorithmic results. It provides detailed insights into the robustness of randomized fair classifiers under adversarial noise.
+▶ [Probability and Bayes Learning - # 3 - Bayes Optimal Classifier](https://www.youtube.com/watch?v=O56-MQR0vgk) — Dr. Smriti Bhandari · 6 years ago
 
-*How the paper uses it:* This talk by Sushant Agarwal, one of the paper's authors, directly addresses the robustness of fair machine learning under adversarial bias.
+### Randomized classifiers in fairness
+Randomization in classifiers is key to achieving robustness and fairness simultaneously, as deterministic classifiers fail under adversarial noise. This section explores the role and theory behind randomized classifiers in fair machine learning.
 
-▶ [On Adversarial Bias and the Robustness of Fair Machine Learning by Hongyan Chang](https://www.youtube.com/watch?v=fhOq2aLt8GU) — CS Research Week · 5 years ago
+*How the paper uses it:* The paper proves that randomized Fair Bayes Optimal Classifiers are robust and nearly deterministic, randomizing on at most one data point.
+
+▶ [Fairness and robustness in machine learning – a formal methods perspective - Aditya Nori, Microsoft](https://www.youtube.com/watch?v=iKiB5fDglZs) — The Alan Turing Institute · 33:55 · 8 years ago
+
+## Track 2 — Beginner → Advanced (short-form)
+
+_Concise, high-quality explainers that build intuition — for when time is short._
+
+This learning path introduces foundational concepts needed to understand how to build fair and robust machine learning classifiers under adversarial distribution shifts. We start with the basics of Bayes optimal classifiers to grasp the theoretical foundation, then cover group fairness constraints to understand fairness definitions used in the paper. Next, we explore adversarial distribution shift robustness to appreciate the challenges of malicious data shifts. Finally, we focus on randomized classifiers in fairness, which are central to the paper's novel robust fair learning approach.
+
+### Bayes optimal classifier theory *(prerequisite)*
+Learn what a Bayes optimal classifier is — the theoretically best classifier that minimizes error given the data distribution. This concept forms the mathematical foundation for understanding the Fair Bayes Optimal Classifier analyzed in the paper.
+
+*How the paper uses it:* The paper builds on the Fair Bayes Optimal Classifier as the theoretical basis for designing fair and robust classifiers.
+
+▶ [2.4 Bayes Optimal Classifier with Example in Machine Learning](https://www.youtube.com/watch?v=K5N_M3MrfMo) — KnowledgeGATE Bytes · 2 years ago
+
+### Group fairness constraints in ML *(prerequisite)*
+Understand key group fairness definitions like Demographic Parity and Equal Opportunity, which ensure that machine learning models treat different demographic groups fairly. These fairness constraints are critical to the paper's analysis and robustness guarantees.
+
+*How the paper uses it:* The paper analyzes robustness of Fair Bayes Optimal Classifiers under popular group fairness constraints including Demographic Parity and Equal Opportunity.
+
+▶ [Definitions of Fairness in Machine Learning | Equal Opportunity, Equalized Odds & Disparate Impact](https://www.youtube.com/watch?v=c2_ezuAnCrA) — A Data Odyssey · 2 years ago
+
+### Adversarial distribution shift robustness *(prerequisite)*
+Explore what adversarial distribution shifts are — malicious or biased changes in data distribution that can degrade model performance. Understanding robustness to such shifts is key to appreciating the paper's motivation and contributions.
+
+*How the paper uses it:* The paper studies robustness of fair classifiers under adversarial distribution shifts that corrupt or bias training data.
+
+▶ [【EP11】Improving Robustness to Distribution Shifts: Methods and Benchmarks](https://www.youtube.com/watch?v=wSh2ln-SVg0) — The AI Talks · 3 years ago
+
+### Randomized classifiers in fairness
+Learn how introducing randomness into classifiers can help achieve fairness and robustness simultaneously. The paper shows that randomized Fair Bayes Optimal Classifiers, which randomize on at most one data point, are robust and nearly deterministic.
+
+*How the paper uses it:* Randomized classifiers are central to the paper’s approach for achieving robustness and fairness under adversarial noise.
+
+▶ [Fairness and robustness in machine learning – a formal methods perspective - Aditya Nori, Microsoft](https://www.youtube.com/watch?v=iKiB5fDglZs) — The Alan Turing Institute · 33:55 · 8 years ago
+
+## Already in your library
+
+- [On the Power of Randomization in Fair Classification and Representation](https://www.youtube.com/watch?v=1X4RoNrf45A) — also for: Optimal Fair Learning Robust to Adversarial Distribution Shift (Ravi Sundaram)

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-rkiyer"
-source_hash: "c5e8a73f6b2cd6cc1a22cdd8d90eadb3b84a46ac54e25d4c5f4990c9e3abb0ee"
+source_hash: "309fced28bd46c0186bf85d0b1616beaf078a9fa6cee6ad925f38cdf8ba15aa3"
 sequence: 16
 generator: "outreach-garden: managed"
 ---
@@ -54,41 +54,67 @@ Research interests: Reliable and secure networks and systems, Measurement and mo
 
 ## Learning path
 
-To deeply understand the ASAP paper, start with foundational knowledge on FPGA hardware acceleration and short-read alignment algorithms to grasp the hardware and bioinformatics context. Then, study the RaceLogic delay computing model and Levenshtein distance algorithms to comprehend the core computational techniques. Finally, focus on the ASAP FPGA alignment talk by the authors themselves to gain detailed insights into their novel hardware accelerator design and its integration with genomic alignment workflows.
+## Track 1 — Academic deep-dives (long-form)
 
-## Recommended videos (in order)
+_Rigorous lectures, seminars and conference talks. Deeper, but longer._
 
-### FPGA hardware acceleration *(prerequisite)*
-This section covers FPGA design principles and acceleration techniques, providing the necessary hardware background to understand how ASAP leverages FPGA resources and clock gating for energy-efficient computation.
+To deeply understand the ASAP paper, start with foundational knowledge of FPGA architecture and programming since ASAP is implemented on FPGA hardware. Next, learn about RaceLogic delay-based computation, the core technique ASAP builds upon for encoding Levenshtein distance as circuit delays. Then, study short-read alignment algorithms to grasp the bioinformatics context and challenges ASAP addresses. Finally, focus on the ASAP FPGA accelerator itself through the authors' own talk or closest available detailed presentations to see the novel hardware design and integration with alignment tools.
 
-*How the paper uses it:* ASAP is implemented on an FPGA platform using architectural innovations for acceleration and energy efficiency.
+### FPGA architecture and programming *(prerequisite)*
+Understanding FPGA hardware fundamentals is essential because ASAP is implemented on a Xilinx Virtex 7 FPGA. This knowledge helps in appreciating how circuit propagation delays are exploited and how resource constraints affect design scalability.
 
-▶ [ASPLOS'24 - FPGAs and Reconfigurable Hardware](https://www.youtube.com/watch?v=2XgOWAtJ8vs) — ACM SIGARCH · 1:01:07
+*How the paper uses it:* ASAP is an FPGA-based accelerator that uses programmable hardware to speed up Levenshtein distance computation.
 
-### short-read alignment algorithms *(prerequisite)*
-Understanding the computational challenges and algorithmic strategies for short-read alignment is critical to appreciate the problem ASAP addresses and the significance of accelerating Levenshtein distance computations.
+▶ [FPGA in HFT Systems Explained | Why Reconfigurable Hardware Beats CPUs](https://www.youtube.com/watch?v=JmVOEkskft4) — ByteMonk · 8:16 · 1 year ago
 
-*How the paper uses it:* ASAP accelerates the Levenshtein distance computation, a core bottleneck in short-read alignment workflows.
+### RaceLogic delay-based computation *(prerequisite)*
+RaceLogic is the foundational delay encoding technique that ASAP extends and optimizes. Understanding delay lines and propagation delay concepts is critical to grasp how ASAP maps edit-distance computations to circuit delays.
 
-▶ [Fundamental Algorithms in Deep Sequencing II: Mapping/Alignment](https://www.youtube.com/watch?v=mYt4JB8xH6I) — Simons Institute for the Theory of Computing · 1:19:56 · 10 years ago
+*How the paper uses it:* ASAP builds on the RaceLogic delay-based computation model to approximate Levenshtein distance.
 
-### RaceLogic delay computing *(prerequisite)*
-RaceLogic introduces the delay-based computation model that ASAP builds upon, encoding dynamic programming problems as circuit propagation delays, which is fundamental to ASAP's approach.
+▶ [Delay](https://www.youtube.com/watch?v=_1pBznDWZMg) — nptelhrd · 1:05:25 · 11 years ago
 
-*How the paper uses it:* ASAP extends the RaceLogic delay encoding model to approximate Levenshtein distance computations on FPGA.
+### Short-read alignment algorithms *(prerequisite)*
+Short-read alignment is the bioinformatics problem ASAP accelerates. Learning about alignment algorithms like SNAP and the computational bottlenecks involved provides context for ASAP's design goals and performance improvements.
 
-▶ [Propogation Delay Lecture](https://www.youtube.com/watch?v=IX4aK7Buv_Y) — CompArchIllinois · 13:52 · 11 years ago
+*How the paper uses it:* ASAP accelerates the Levenshtein distance computation, which dominates runtime in short-read alignment tools.
 
-### Levenshtein distance algorithms *(prerequisite)*
-This section explains the classical algorithmic foundations of edit-distance computation, which ASAP approximates using hardware delay encoding, making it essential for understanding the computational problem ASAP accelerates.
+▶ [5. Library Complexity and Short Read Alignment (Mapping)](https://www.youtube.com/watch?v=P3ORBMon8aw) — MIT OpenCourseWare · 1:20:06 · 11 years ago
 
-*How the paper uses it:* ASAP accelerates Levenshtein distance computation, the fundamental metric for sequence alignment.
+## Track 2 — Beginner → Advanced (short-form)
 
-▶ [Lecture 137: EDIT Distance || DP on Strings](https://www.youtube.com/watch?v=8HEjwf28LyE) — CodeHelp - by Babbar · 30:03
+_Concise, high-quality explainers that build intuition — for when time is short._
 
-### ASAP FPGA alignment talk *(the paper's own talk)*
-The authors' own detailed presentation on the ASAP accelerator provides the most direct and authoritative insight into their design, implementation, and evaluation of the hardware accelerator for short-read alignment.
+This learning path introduces foundational concepts to understand the ASAP FPGA accelerator for short-read alignment. Start with FPGA architecture to grasp the hardware platform, then learn about short-read alignment algorithms to understand the bioinformatics problem ASAP addresses. Next, study Levenshtein distance computation, the core algorithm ASAP accelerates, followed by RaceLogic delay-based computation, the innovative hardware technique ASAP builds upon.
 
-*How the paper uses it:* This is the authors' own talk about the ASAP accelerator, directly explaining their work.
+### FPGA architecture and programming *(prerequisite)*
+Learn what an FPGA is and how it works as a reconfigurable hardware platform. This knowledge is essential to understand how ASAP implements accelerated computations using programmable logic.
 
-▶ [Automatic travel preference elicitation from social media - Ashmi Banerjee](https://www.youtube.com/watch?v=Bl5jmnTNelw) — Munich Science Slam · 6:03 · 7 years ago
+*How the paper uses it:* ASAP is implemented on a Xilinx Virtex 7 FPGA, leveraging its reconfigurable hardware to encode Levenshtein distance computations as circuit delays.
+
+▶ [What's an FPGA?](https://www.youtube.com/watch?v=iHg0mmIg0UU) — Charles Clayton · 7 years ago
+
+### Short-read alignment algorithms *(prerequisite)*
+Understand the basics of short-read alignment, a key step in genomic data analysis where millions of short DNA sequences are mapped to a reference genome. This sets the biological context for why ASAP accelerates Levenshtein distance computations.
+
+*How the paper uses it:* ASAP accelerates the computationally expensive step of short-read alignment by speeding up edit-distance calculations used in aligners like SNAP.
+
+▶ [Tutorial-8: Short-read alignment (Part-1) - BWA](https://www.youtube.com/watch?v=iXFeyexbJ44) — Rashedul Islam · 10:47 · 1 year ago
+
+### Levenshtein distance computation
+Learn what Levenshtein distance (edit distance) is and how it measures the minimum number of edits to transform one string into another. This metric is central to sequence alignment and the main computation ASAP accelerates.
+
+*How the paper uses it:* ASAP approximates Levenshtein distance calculations using circuit propagation delays to speed up short-read alignment.
+
+▶ [Edit Distance Between 2 Strings - The Levenshtein Distance ("Edit Distance" on LeetCode)](https://www.youtube.com/watch?v=MiqoA-yF-0M) — Back To Back SWE · 7 years ago
+
+### RaceLogic delay-based computation
+Explore the concept of encoding computations as circuit propagation delays, a novel hardware technique called RaceLogic. This approach underpins ASAP's acceleration method by mapping edit-distance parameters to delays.
+
+*How the paper uses it:* ASAP builds on RaceLogic's delay-based computation model to approximate Levenshtein distance efficiently on FPGA hardware.
+
+▶ [Delay](https://www.youtube.com/watch?v=_1pBznDWZMg) — nptelhrd · 1:05:25 · 11 years ago
+
+## Already in your library
+
+- [Stanford Seminar - Computing with FPGAs - Oskar Mencer](https://www.youtube.com/watch?v=AHJZKoAh8wE) — also for: Seeking Solutions in Configurable Computing (David Andrews)
