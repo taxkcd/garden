@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-kyla"
-source_hash: "30b6338643f55d1d6a05d550b3b6d6390485a8519f087092b49bda64a0cfd724"
+source_hash: "94a3402012cada761851b537c76348de13a13a38a0aeae4502e88a48b0eaeed8"
 sequence: 7
 generator: "outreach-garden: managed"
 ---
@@ -51,41 +51,74 @@ This paper systematically reviews 39 studies of the Corsi Block-Tapping Test (CB
 
 ## Learning path
 
-To deeply understand the paper on methodological practices and digital frameworks for the Corsi Block-Tapping Test (CBT), start by grounding yourself in the foundational knowledge of spatial memory assessment methods and human-computer interaction principles relevant to cognitive testing. Next, explore the importance of standardization in psychological testing and digital cognitive test frameworks to appreciate the challenges and solutions proposed. Finally, focus on the core concept by watching the authors' own detailed presentation on the CBT and its digital adaptations, which directly addresses the paper's contributions and future directions.
+## Track 1 — Academic deep-dives (long-form)
 
-## Recommended videos (in order)
+_Rigorous lectures, seminars and conference talks. Deeper, but longer._
+
+To deeply understand the methodological challenges and proposals in the Corsi Block-Tapping Test (CBT) as reviewed by Arce and McMullen (2021), start with foundational knowledge on neuropsychological testing standardization and digital cognitive testing frameworks. Then, explore spatial memory assessment methods to contextualize CBT within broader cognitive research. Finally, focus on the core concept of the CBT methodology itself, culminating with the authors' own detailed presentation of the test using a digital platform, which provides direct insight into practical and methodological considerations.
+
+### Neuropsychological testing standardization *(prerequisite)*
+This section covers the importance and challenges of standardizing cognitive tests, which is central to the paper's critique of CBT methodological variability. Understanding fundamental principles of neuropsychological test administration and scoring will provide a framework for appreciating the need for standardization in CBT.
+
+*How the paper uses it:* The paper highlights widespread variability and poor reporting in CBT methodologies, underscoring the need for standardization in neuropsychological testing.
+
+▶ [Fundamentals of Neuropsychological Testing](https://www.youtube.com/watch?v=kCc_MPxSZxc) — BRAIN Seminar Series · 6 years ago
+
+### Digital cognitive testing frameworks *(prerequisite)*
+This section introduces digital adaptations and frameworks for cognitive testing, which are directly relevant to the paper's focus on modern digital CBT versions and the proposal for an open-source digital CBT framework. Understanding digital test design and analysis will help grasp the technical and methodological challenges discussed.
+
+*How the paper uses it:* The paper discusses the rise of digital CBT versions and the need for a standardized digital framework to improve reliability and comparability.
+
+▶ [#ATAGTR2020 - 'Cognitive Test Design and Analysis – Automated Designing' by SatParkash Maurya](https://www.youtube.com/watch?v=DI1gShI2LrA) — Agile Testing Alliance · 5 years ago
 
 ### Spatial memory assessment methods *(prerequisite)*
-This section provides foundational knowledge on spatial memory, its neural basis, and assessment techniques, which is critical for understanding the role and importance of the Corsi Block-Tapping Test in cognitive research. The selected talk offers an advanced academic perspective on spatial cognition and its impairments, aligning well with the paper's focus on spatial memory evaluation.
+This section provides broader context on spatial memory measurement techniques, situating the CBT within the landscape of spatial memory research. It helps understand the cognitive functions CBT aims to assess and the relevance of spatial memory in various populations.
 
-*How the paper uses it:* Understanding spatial memory assessment methods contextualizes the CBT's role and the need for methodological rigor.
+*How the paper uses it:* The paper situates CBT as a widely used spatial memory test critical for research across psychology and medicine.
 
-▶ [Visual Spatial Cognition in Neurodegenerative Disease](https://www.youtube.com/watch?v=SQ0fQTXTjEI) — Microsoft Research · 9 years ago
+▶ [Hippocampal Codes in Spatial Memory and Alzheimer’s Disease](https://www.youtube.com/watch?v=ZFqWgM4Zam8) — Georgia Tech Neuro · 3 years ago
 
-### Human-computer interaction for cognitive testing *(prerequisite)*
-This section covers advanced concepts in human-computer interaction (HCI) relevant to designing and administering digital cognitive tests like the CBT. The chosen lecture provides a substantive academic treatment of cognitive walkthroughs in HCI, which is essential for appreciating the challenges in digital CBT adaptations discussed in the paper.
+### Corsi Block-Tapping Test methodology
+This section focuses on the core method analyzed in the paper, detailing the CBT procedure and its variations. It is essential to understand the test's administration, parameters, and scoring to appreciate the paper's systematic review and critique.
 
-*How the paper uses it:* HCI principles underpin the design and standardization challenges of digital CBT versions highlighted in the paper.
+*How the paper uses it:* The paper systematically reviews CBT methodological practices and highlights inconsistencies in administration and reporting.
 
-▶ [Lecture 15 (Part-1): Cognitive Walkthrough - Human-Computer Interaction (HCI)](https://www.youtube.com/watch?v=5poZf3aHXHw) — Dr. On Wheels · 41:13 · 6 years ago
+▶ [Corsi block tapping test on PEBL](https://www.youtube.com/watch?v=SOo9Vc-iWXw) — Dr. Anupama S · 5:50 · 2 years ago
 
-### Standardization in psychological testing *(prerequisite)*
-This section addresses the critical issue of standardization in psychological assessments, a central theme of the paper. The selected video offers an in-depth academic discussion on the necessity and methods of standardizing psychological tests, directly relating to the paper's critique of inconsistent CBT methodologies.
+## Track 2 — Beginner → Advanced (short-form)
 
-*How the paper uses it:* Standardization is key to resolving the methodological variability and reporting issues identified in CBT studies.
+_Concise, high-quality explainers that build intuition — for when time is short._
 
-▶ [Standardization of Psychological Tests](https://www.youtube.com/watch?v=Ol14UZPodZg) — S.B. Mam Class · 18:10 · 4 years ago
+This learning path introduces spatial memory and its assessment methods first, providing foundational understanding of the cognitive domain relevant to the Corsi Block-Tapping Test (CBT). Next, it covers the importance and challenges of standardizing neuropsychological tests to appreciate the methodological issues highlighted in the paper. Then, it explores digital cognitive testing frameworks to contextualize the paper’s focus on digital CBT adaptations. Finally, it presents concise, clear explainers on the CBT methodology itself, enabling a solid grasp of the test critiqued and analyzed in the paper.
 
-### Digital cognitive test frameworks *(prerequisite)*
-This section explores the development and application of digital frameworks for cognitive testing, which is the paper's proposed solution to CBT methodological challenges. The chosen talk is a rigorous, research-focused presentation on digital cognitive assessments, providing advanced insights into computerized testing relevant to the paper's open-source digital CBT framework proposal.
+### Spatial memory assessment methods *(prerequisite)*
+Spatial memory is the ability to remember locations and spatial relationships, critical for navigation and everyday tasks. This section introduces how spatial memory is studied and assessed, setting the cognitive context for the Corsi Block-Tapping Test. Understanding these methods helps appreciate why spatial memory tests like CBT are important and what they aim to measure.
 
-*How the paper uses it:* Digital cognitive test frameworks represent the future direction proposed to standardize and improve CBT administration and reporting.
+*How the paper uses it:* The paper focuses on the Corsi Block-Tapping Test, a key spatial memory assessment tool, so understanding spatial memory methods grounds the reader in the cognitive domain under study.
 
-▶ [Dr. Kate Papp - Digital Cognitive Assessments in Preclinical Alzheimer’s Disease](https://www.youtube.com/watch?v=EpOYQnm0oJY) — a2 Collective · 3 years ago
+▶ [Niamh Merriman: Familiar Environments Enhance Object and Spatial Memory](https://www.youtube.com/watch?v=YMqo5oR3sbQ) — Academy of Neuroscience for Architecture · 11 years ago
 
-### Authors' recorded talk *(the paper's own talk)*
-This section features the authors' own detailed presentation on the Corsi Block-Tapping Test, offering the most direct and authoritative insight into their systematic review, findings, and conceptual proposals for digital CBT frameworks. It is essential for grasping the nuances and specific contributions of their work.
+### Neuropsychological testing standardization *(prerequisite)*
+Standardization in neuropsychological testing ensures tests are administered and scored consistently, which is crucial for reliable and comparable results across studies and clinical settings. This section explains why standardization matters and the challenges involved, providing insight into the methodological problems the paper identifies in CBT practices.
 
-*How the paper uses it:* The authors' talk directly presents the paper's systematic review results and the rationale for a standardized digital CBT framework.
+*How the paper uses it:* The paper highlights the lack of standardization in CBT methodologies as a major issue affecting reliability and comparability.
 
-▶ [PEBL Corsi Block Task: Extended Description](https://www.youtube.com/watch?v=gRxf2axNtsc) — PEBL Video Tutorials · 19:55 · 8 years ago
+▶ [Fundamentals of Neuropsychological Testing](https://www.youtube.com/watch?v=kCc_MPxSZxc) — BRAIN Seminar Series · 6 years ago
+
+### Digital cognitive testing frameworks *(prerequisite)*
+Digital cognitive testing frameworks are software platforms that enable computerized administration of cognitive tests, offering advantages like automation and data consistency. This section introduces the concept and relevance of digital frameworks, which is essential to understand the paper’s discussion on digital CBT adaptations and the proposal for an open-source digital CBT framework.
+
+*How the paper uses it:* The paper discusses the rise of digital CBT versions and the need for standardized digital frameworks to improve methodological consistency.
+
+▶ [#ATAGTR2020 - 'Cognitive Test Design and Analysis – Automated Designing' by SatParkash Maurya](https://www.youtube.com/watch?v=DI1gShI2LrA) — Agile Testing Alliance · 5 years ago
+
+### Corsi Block-Tapping Test methodology
+The Corsi Block-Tapping Test is a widely used spatial memory test involving recalling sequences of tapped blocks. This section provides a clear, concise walkthrough of the CBT procedure, helping the viewer understand the core test analyzed and critiqued in the paper.
+
+*How the paper uses it:* The paper systematically reviews CBT methodological practices and proposes improvements, so understanding the test itself is essential.
+
+▶ [Corsi block tapping test on PEBL](https://www.youtube.com/watch?v=SOo9Vc-iWXw) — Dr. Anupama S · 5:50 · 2 years ago
+
+## Already in your library
+
+- [PEBL Corsi Block Task: Extended Description](https://www.youtube.com/watch?v=gRxf2axNtsc) — also for: The Corsi Block-Tapping Test: Evaluating methodological practices with an eye towards modern digital frameworks (Kyla A. McMullen)

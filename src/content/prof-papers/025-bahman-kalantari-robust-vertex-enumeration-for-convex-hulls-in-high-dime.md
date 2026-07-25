@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-kalantar"
-source_hash: "fb0283bdbd778cdfb8ed83c3620cc50d9d6c7f01cb802d473f0b5a1c0bb07783"
+source_hash: "fabbd5dfb76bb7bbcbee5d982aece7fc721c005189cb58b0cfc0ebe74f0b8e8f"
 sequence: 25
 generator: "outreach-garden: managed"
 ---
@@ -52,34 +52,74 @@ This paper presents the All Vertex Triangle Algorithm (AVTA), a robust and effic
 
 ## Learning path
 
-To deeply understand the paper on Robust Vertex Enumeration for Convex Hulls in High Dimensions, start with foundational concepts such as the Johnson-Lindenstrauss lemma for dimensionality reduction and robust convex optimization techniques to handle noisy data. Next, review the Triangle Algorithm, which AVTA extends, to grasp the underlying geometric algorithmic framework. Finally, focus on the core concept of convex hull vertex enumeration and the authors' own presentation of AVTA to connect theory with their novel contributions and applications.
+## Track 1 — Academic deep-dives (long-form)
 
-## Recommended videos (in order)
+_Rigorous lectures, seminars and conference talks. Deeper, but longer._
 
-### Johnson Lindenstrauss lemma lecture *(prerequisite)*
-The Johnson-Lindenstrauss lemma is a fundamental dimensionality reduction technique that preserves distances approximately, which the AVTA algorithm leverages to reduce high-dimensional data while maintaining vertex structure. Understanding this lemma is crucial to appreciate how AVTA achieves efficiency in high dimensions.
+To deeply understand the paper 'Robust Vertex Enumeration for Convex Hulls in High Dimensions,' start with foundational concepts in computational geometry focusing on convex hull vertex enumeration and robustness in computational geometry to grasp the problem context and challenges. Then study the Johnson-Lindenstrauss lemma for dimensionality reduction techniques used in the paper. Next, learn about the Triangle Algorithm, which AVTA extends. Finally, focus on the core concept of AVTA itself, prioritizing any direct talks by the authors or related advanced research talks.
 
-*How the paper uses it:* AVTA uses Johnson-Lindenstrauss random projections to reduce dimensionality while preserving vertex structure.
+### Convex hull vertex enumeration *(prerequisite)*
+This section covers the fundamental problem of enumerating vertices of convex hulls, which is central to the paper. Understanding classical algorithms and the computational challenges in high dimensions provides the necessary background to appreciate AVTA's contributions.
 
-▶ [MIT 6.854 Spring 2016 Lecture 5: Johnson Lindenstrauss ...](https://www.youtube.com/watch?v=Tw0J5Xv6xQw) — Andrew Xia · 1:17:54
+*How the paper uses it:* AVTA aims to efficiently compute all vertices of convex hulls in high-dimensional spaces, improving upon classical vertex enumeration methods.
 
-### Robust convex optimization talk *(prerequisite)*
-Robust convex optimization addresses optimization problems under data uncertainty and noise, which is essential background for understanding AVTA's robustness guarantees under perturbed input data. These talks provide theoretical and practical insights into handling uncertainty in convex optimization.
+▶ [Convex Hull or Mixing Things (5/5) | Computational Geometry - Lecture 01](https://www.youtube.com/watch?v=VTJH8vuFAk8) — Philipp Kindermann · 6 years ago
 
-*How the paper uses it:* AVTA handles noisy and perturbed data, requiring understanding of robustness in convex optimization.
+### Robustness in computational geometry *(prerequisite)*
+Robustness concepts explain how algorithms handle noisy or perturbed data, a key aspect of AVTA's design. This section introduces robustness notions and their importance in computational geometry algorithms.
 
-▶ [Robust Optimization and Generalization](https://www.youtube.com/watch?v=oAPSAwGKWOc) — Simons Institute for the Theory of Computing · 1:17:20
+*How the paper uses it:* AVTA's theoretical guarantees and practical performance depend on robustness parameters that handle data perturbations.
 
-### Convex hull vertex enumeration lecture
-Convex hull vertex enumeration is the central problem addressed by AVTA. These lectures provide rigorous treatments of vertex enumeration algorithms and convex hull properties, which are key to understanding the problem context and challenges AVTA addresses.
+▶ [Omrit Filtser: Robustly Guarding Polygons](https://www.youtube.com/watch?v=C7tAaADsR9Q) — Computational Geometry · 1 year ago
 
-*How the paper uses it:* Central problem addressed by AVTA, understanding vertex enumeration algorithms is key.
+### Johnson-Lindenstrauss lemma *(prerequisite)*
+The Johnson-Lindenstrauss lemma provides a theoretical foundation for dimensionality reduction via random projections, preserving geometric structure. Understanding this lemma is crucial to grasp how AVTA reduces dimensionality while maintaining vertex properties.
 
-▶ [IE513 20110221 LECTURE10nn   Convex hulls, extreme points, vertices](https://www.youtube.com/watch?v=wWZc2vr8AkM) — CosmoLearning · 46:23 · 11y ago
+*How the paper uses it:* AVTA leverages Johnson-Lindenstrauss random projections to reduce dimensionality while preserving the convex hull's vertex structure.
 
-### Authors AVTA talk *(the paper's own talk)*
-The authors' own talk on AVTA is the most direct and authoritative source for their algorithmic contributions, theoretical results, and applications. Watching this talk will provide detailed insights into AVTA's design, robustness, and empirical performance.
+▶ [W1_L6: Johnson-lindenstrauss lemma - introduction](https://www.youtube.com/watch?v=QNmBund3UXk) — IIT Madras - B.S. Degree Programme · 1 year ago
 
-*How the paper uses it:* Most direct source for the authors' presentation on AVTA and their contributions.
+### Triangle Algorithm for convex hull *(prerequisite)*
+The Triangle Algorithm is the basis for AVTA. Learning this algorithm helps understand the iterative approach AVTA extends to enumerate vertices robustly and efficiently.
 
-▶ [Solving Low-Dimensional Optimization Problems via Zonotope Vertex Enumeration](https://www.youtube.com/watch?v=NH_CpMYe3tw) — Purdue NLA · 48:59 · 9y ago
+*How the paper uses it:* AVTA is an extension of the Triangle Algorithm, iteratively identifying vertices of the convex hull.
+
+▶ [Algorithms   Lecture 13, Oct 10, 2019](https://www.youtube.com/watch?v=v80V473q1K4) — Gabriel Robins · 1:16:31 · 6 years ago
+
+## Track 2 — Beginner → Advanced (short-form)
+
+_Concise, high-quality explainers that build intuition — for when time is short._
+
+To understand the paper on AVTA, start by grasping the fundamental concept of convex hulls and vertex enumeration, which is the core geometric problem addressed. Next, learn about the Triangle Algorithm, which AVTA extends, followed by the Johnson-Lindenstrauss lemma for dimensionality reduction, and the role of robustness in computational geometry to handle noisy data. Finally, explore the AVTA method itself to see how these ideas combine into a robust, efficient vertex enumeration algorithm in high dimensions.
+
+### Convex hull vertex enumeration *(prerequisite)*
+Convex hull vertex enumeration is about finding all the corner points (vertices) that define the smallest convex shape enclosing a set of points. Understanding this geometric problem is essential because AVTA focuses on efficiently identifying these vertices in high-dimensional spaces.
+
+*How the paper uses it:* AVTA aims to efficiently compute all vertices of the convex hull of a point set, making this concept foundational.
+
+▶ [What is the Convex hull of a set?](https://www.youtube.com/watch?v=Y8yEN3Uwr2s) — Mathelecs · 7 years ago
+
+### Triangle Algorithm for convex hull *(prerequisite)*
+The Triangle Algorithm is an iterative method to test if a point lies inside a convex hull and to find approximate convex combinations. AVTA builds on this algorithm by extending it to enumerate all vertices robustly and efficiently.
+
+*How the paper uses it:* AVTA is an extension of the Triangle Algorithm, so understanding the original algorithm is key to grasping AVTA's approach.
+
+▶ [Convex Hull or Mixing Things (1/5) | Computational Geometry - Lecture 01](https://www.youtube.com/watch?v=7CtwuZJ18_Q) — Philipp Kindermann · 5 years ago
+
+### Johnson-Lindenstrauss lemma *(prerequisite)*
+The Johnson-Lindenstrauss lemma states that points in high-dimensional space can be projected into a lower-dimensional space while approximately preserving distances. This dimensionality reduction helps AVTA maintain vertex structure efficiently in high dimensions.
+
+*How the paper uses it:* AVTA leverages Johnson-Lindenstrauss random projections to reduce dimensionality while preserving the convex hull's vertex structure.
+
+▶ [Class 8, Video 1: Johnson-Lindenstrauss Lemma](https://www.youtube.com/watch?v=eiDD6lwLZ2k) — Mary Wootters · 4 years ago
+
+### Robustness in computational geometry *(prerequisite)*
+Robustness in computational geometry refers to algorithms' ability to handle noisy or perturbed data without losing correctness. AVTA uses robustness parameters to guarantee vertex recovery even when input data is noisy.
+
+*How the paper uses it:* AVTA's theoretical guarantees and practical performance depend on robustness parameters that handle data perturbations.
+
+▶ [Computational Geometry: Algorithms Explained for Beginners!](https://www.youtube.com/watch?v=hJ8RTeK6CYM) — CodeLucky · 1 year ago
+
+## Already in your library
+
+- [Solving Low-Dimensional Optimization Problems via Zonotope Vertex Enumeration](https://www.youtube.com/watch?v=NH_CpMYe3tw) — also for: Robust Vertex Enumeration for Convex Hulls in High Dimensions (Bahman Kalantari)

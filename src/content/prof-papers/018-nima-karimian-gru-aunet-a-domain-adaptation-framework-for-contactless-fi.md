@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-nima-karimian-aspx"
-source_hash: "b4607c1596571110d24eb84c55d5326cc93994518bcdc07aba4e1182be1a5e8b"
+source_hash: "fe3f6f12c1d71b3be4f65beee5ba4bd262e87f91d58956cec2772546e8fd8e78"
 sequence: 18
 generator: "outreach-garden: managed"
 ---
@@ -54,45 +54,75 @@ Research interests: biometrics, cybersecurity, generative AI, and trustworthy AI
 
 ## Learning path
 
-To deeply understand the GRU-AUNet paper, start with foundational concepts including attention mechanisms, dynamic filter networks, contrastive and focal loss functions, and Swin Transformer UNet architectures. These prerequisites provide the necessary background on the model's components and training strategies. Then, focus on the core concept of domain adaptation in biometric anti-spoofing to grasp the generalization challenge the paper addresses. Finally, review the authors' own talks or related advanced presentations to connect all concepts directly to the novel contributions of GRU-AUNet.
+## Track 1 — Academic deep-dives (long-form)
 
-## Recommended videos (in order)
+_Rigorous lectures, seminars and conference talks. Deeper, but longer._
+
+To deeply understand the GRU-AUNet paper, start by building foundational knowledge on contactless fingerprint recognition and domain adaptation in biometrics, as these provide the biometric modality context and the challenge of generalizing across datasets. Next, study attention mechanisms in deep learning to grasp the core technique enhancing feature focus in the model. Finally, focus on the paper's core concept by reviewing the authors' own talk or related advanced presentations on GRU-AUNet and its architectural innovations.
+
+### Contactless fingerprint recognition *(prerequisite)*
+This section covers the biometric modality targeted by the paper—contactless fingerprint recognition. Understanding the basics and challenges of contactless fingerprint systems is essential to appreciate the problem of presentation attack detection addressed by GRU-AUNet.
+
+*How the paper uses it:* The paper focuses on anti-spoofing for contactless fingerprint recognition systems.
+
+▶ [Touchless Fingerprint Recognition [Torsten Meister]](https://www.youtube.com/watch?v=Ortx1pONUeo) — SecuritySession · 32:06 · 14 years ago
+
+### Domain adaptation in biometrics *(prerequisite)*
+Domain adaptation is critical for models to generalize across different biometric datasets and spoof types. This section provides insight into techniques that enable robust performance despite distribution shifts, directly relevant to GRU-AUNet's goal of cross-dataset generalization.
+
+*How the paper uses it:* GRU-AUNet is a domain adaptation framework designed to improve generalization across datasets.
+
+▶ [Tutorial on  Domain Adaptation in Biometrics](https://www.youtube.com/watch?v=bgF0yThs8xI) — ComputerVisionFoundation Videos · 8 years ago
 
 ### Attention mechanisms in deep learning *(prerequisite)*
-Attention mechanisms are fundamental to understanding how GRU-enhanced attention replaces traditional skip connections in GRU-AUNet. This section covers the theory and implementation of attention and transformers, which are critical for grasping the model's dynamic feature focusing.
+Attention mechanisms allow neural networks to dynamically focus on important features, improving model accuracy. This foundational knowledge is necessary to understand the GRU-enhanced attention modules integrated into GRU-AUNet.
 
-*How the paper uses it:* The paper integrates GRU-enhanced attention mechanisms to improve classification accuracy by dynamically focusing on critical features.
+*How the paper uses it:* The model replaces traditional skip connections with GRU-enhanced attention mechanisms.
 
-▶ [Stanford CS231N | Spring 2025 | Lecture 8: Attention and Transformers](https://www.youtube.com/watch?v=RQowiOF_FvQ) — Stanford Online · 10 months ago
+▶ [Attention for Neural Networks, Clearly Explained!!!](https://www.youtube.com/watch?v=PSs6nxngL6k) — StatQuest with Josh Starmer · 15:51 · 3 years ago
 
-### Dynamic filter networks *(prerequisite)*
-Dynamic filter networks adapt filtering operations based on input features, a key innovation in the GRU-AUNet bottleneck. Understanding this concept is essential to appreciate how the model captures intricate patterns distinguishing genuine and spoof fingerprints.
+## Track 2 — Beginner → Advanced (short-form)
 
-*How the paper uses it:* The Dynamic Filter Network in the bottleneck dynamically adjusts filtering to better distinguish genuine and spoof fingerprints.
+_Concise, high-quality explainers that build intuition — for when time is short._
 
-▶ [Roman Zeyde Software Engineer @ Varada on Dynamic filtering](https://www.youtube.com/watch?v=B3vBwCCIQw8) — Trino · 14:12
+This beginner-to-advanced path introduces foundational concepts needed to understand GRU-AUNet for contactless fingerprint spoof detection. Start with the basics of contactless fingerprint recognition to grasp the biometric modality, then learn about domain adaptation to understand generalization challenges. Next, explore attention mechanisms in deep learning to see how models focus on important features, followed by a focused explanation of GRU units and their role in enhanced attention. Finally, cover dynamic filter networks to understand adaptive filtering, culminating in the core paper insights.
 
-### Contrastive and focal loss functions *(prerequisite)*
-This section explains the combined use of focal and contrastive loss functions, which address class imbalance and improve feature discrimination. These loss functions are crucial for the model's robustness and generalization in anti-spoofing tasks.
+### Contactless fingerprint recognition *(prerequisite)*
+Learn how contactless fingerprint recognition works as a biometric modality, including how fingerprints are captured without touch and matched. This foundational knowledge helps understand the input data and challenges in spoof detection.
 
-*How the paper uses it:* The model uses a combined Focal and Contrastive Loss to handle class imbalance and improve feature discrimination.
+*How the paper uses it:* The paper targets spoof detection specifically for contactless fingerprint systems.
 
-▶ [Focal Loss for Dense Object Detection](https://www.youtube.com/watch?v=44tlnmmt3h0) — ComputerVisionFoundation Videos · 12:57
+▶ [Biometrics: How Fingerprint Scanners Actually Work](https://www.youtube.com/watch?v=U6zsM_XGZmA) — WonderWise · 10:20 · 2 years ago
 
-### Swin Transformer UNet architectures *(prerequisite)*
-Understanding the Swin Transformer UNet architecture is vital as it forms the backbone of GRU-AUNet. This section covers how transformer concepts are integrated with UNet for hierarchical vision tasks, providing the structural basis for the model.
+### Domain adaptation in biometrics *(prerequisite)*
+Understand domain adaptation, which enables models to generalize across different datasets and spoof types by adapting to distribution shifts. This is crucial for robust anti-spoofing in diverse real-world scenarios.
 
-*How the paper uses it:* GRU-AUNet integrates a Swin Transformer-based UNet architecture as its backbone.
+*How the paper uses it:* GRU-AUNet improves generalization across datasets and spoof types via domain adaptation techniques.
 
-▶ [Swin-Unet: Unet-like Pure Transformer for Medical Image Segmentation](https://www.youtube.com/watch?v=ha1iphjz7S4) — MCV Workshop · 3 years ago
+▶ [Tutorial on  Domain Adaptation in Biometrics](https://www.youtube.com/watch?v=bgF0yThs8xI) — ComputerVisionFoundation Videos · 8 years ago
 
-### Domain adaptation in biometric anti-spoofing
-Domain adaptation is central to the paper's goal of generalizing anti-spoofing detection across different datasets and spoof types. This section focuses on advanced methods for learning domain-invariant features in biometric security.
+### Attention mechanisms in deep learning *(prerequisite)*
+Explore how attention mechanisms allow neural networks to dynamically focus on the most relevant parts of input data, improving feature extraction and classification accuracy.
 
-*How the paper uses it:* The paper addresses domain adaptation to improve generalization of spoof detection across datasets.
+*How the paper uses it:* GRU-AUNet uses attention mechanisms to replace traditional skip connections for better feature focus.
 
-▶ [Domain Agnostic Feature Learning for Image and Video Based Face Anti-spoofing (CVPR20 Workshop Oral)](https://www.youtube.com/watch?v=jRq7ZGEC4oY) — Suman Saha · 15:09 · 6 years ago
+▶ [Attention mechanism: Overview](https://www.youtube.com/watch?v=fjJOgb-E41w) — Google Cloud Tech · 3 years ago
+
+### GRU-enhanced attention networks
+Learn about Gated Recurrent Units (GRUs) and how they enhance attention mechanisms by capturing temporal dependencies and refining feature focus dynamically within the network.
+
+*How the paper uses it:* The model integrates GRU-enhanced attention to improve classification accuracy over standard attention.
+
+▶ [Illustrated Guide to LSTM's and GRU's: A step by step explanation](https://www.youtube.com/watch?v=8HyCNIVRbSU) — The AI Hacker · 11:18 · 7 years ago
+
+### Dynamic filter networks
+Understand dynamic filter networks that adapt their filtering operations based on input features, enabling the model to better distinguish subtle differences between genuine and spoof fingerprints.
+
+*How the paper uses it:* GRU-AUNet incorporates a Dynamic Filter Network in the bottleneck to adapt filtering dynamically.
+
+▶ [Decoupled Dynamic Filter Networks - CVPR 2021](https://www.youtube.com/watch?v=QecJD5HUF7U) — Jingkai Zhou · 5 years ago
 
 ## Already in your library
 
 - [Attention in transformers, step-by-step | Deep Learning Chapter 6](https://www.youtube.com/watch?v=eMlx5fFNoYc) — also for: Heterogeneous Graph Attention Network (Yanfang (Fanny) Ye)
+- [Transformers, the tech behind LLMs | Deep Learning Chapter 5](https://www.youtube.com/watch?v=wjZofJX0v4M) — also for: Learning Volumetric Neural Deformable Models to Recover 3D Regional Heart Wall Motion from Multi-Planar Tagged MRI (Meng Ye)
