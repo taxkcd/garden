@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-xianfeng-david-gu"
-source_hash: "897b79ce1e0bcebc93299d8bc3a0288baa6188699ff2b2d4299389fa25030835"
+source_hash: "65d3d0df97625829c619aa1d3873bf57a4bc70f484a84e733108e29ec220cb29"
 sequence: 56
 generator: "outreach-garden: managed"
 ---
@@ -55,34 +55,88 @@ Research interests: Optimal transportation, Explainable AI, 3D Vision, Computati
 
 ## Learning path
 
-To deeply understand the paper "Geometric Understanding of Deep Learning," start by building a solid foundation on the key mathematical and theoretical concepts it relies on: optimal mass transportation theory, manifold learning, and the expressivity of ReLU neural networks. These prerequisites provide the necessary background on the geometric and topological aspects of data and neural networks. Finally, engage with the authors' own talks presenting their geometric framework and results to directly connect theory with their novel contributions.
+## Track 1 — Academic deep-dives (long-form)
 
-## Recommended videos (in order)
+_Rigorous lectures, seminars and conference talks. Deeper, but longer._
 
-### Optimal mass transportation theory lecture *(prerequisite)*
-Optimal mass transportation theory is a central mathematical tool used in the paper to explicitly control latent space distributions and improve generative modeling. Understanding the geometric viewpoint and dynamics of optimal transport will clarify how the authors apply this theory to deep learning.
+To deeply understand the paper 'Geometric Understanding of Deep Learning,' start by grounding yourself in the key mathematical foundations that the paper builds upon: manifold learning, ReLU network complexity, autoencoder theory, and optimal mass transportation theory. These prerequisites provide the necessary background on data geometry, network capacity, and latent space control. Finally, engage with the authors' own talk and related advanced seminars on geometric deep learning to directly connect these concepts to the paper's novel geometric framework and theoretical contributions.
 
-*How the paper uses it:* The paper applies optimal mass transportation theory to control latent space distributions explicitly, offering a mathematically explicit alternative to adversarial training.
+### Manifold Learning in Deep Networks *(prerequisite)*
+Manifold learning is the core idea that natural high-dimensional data lies near low-dimensional manifolds, which is the foundational assumption of the paper. Understanding manifold learning techniques and their role in deep networks is essential to grasp how the paper models data geometry.
 
-▶ [Lecture 01 | Optimal Transportation, Geometry and Dynamics](https://www.youtube.com/watch?v=TAnoqeYfO1Y) — Fields Institute · 1:22:26
+*How the paper uses it:* The paper models data as lying on low-dimensional manifolds and analyzes how deep networks learn these structures.
 
-### Manifold learning seminar *(prerequisite)*
-Manifold learning is fundamental to the paper's framework, which models natural high-dimensional data as lying near low-dimensional manifolds. A rigorous seminar on manifold learning will provide the theoretical grounding on why and how data manifolds are used in machine learning.
+▶ [Deep Learning Weekly (IV) - Neural Networks, Manifolds, and Topology - Aidos Adilkhanov](https://www.youtube.com/watch?v=AIJORyWzm_k) — DSMLKZ - Data Science Kazakhstan · 7 years ago
 
-*How the paper uses it:* The paper's geometric framework is based on the assumption that natural high-dimensional data concentrates close to nonlinear low-dimensional manifolds.
+### Rectified Linear Unit Network Complexity *(prerequisite)*
+The paper introduces 'rectified linear complexity' to quantify the capacity of ReLU networks. A rigorous understanding of ReLU activations and their piecewise linear properties is crucial to appreciate the complexity bounds and limitations discussed.
 
-▶ [Marina Meilă: "Manifold Learning"](https://www.youtube.com/watch?v=PupDih20l3g) — Institute for Pure & Applied Mathematics (IPAM) · 1:12:32 · 6 years ago
+*How the paper uses it:* Rectified linear complexity measures the learning capacity of ReLU deep neural networks, a key contribution of the paper.
 
-### ReLU neural network expressivity lecture *(prerequisite)*
-Understanding the representational capacity and piecewise linear structure of ReLU networks is crucial to grasping the paper's concept of rectified linear complexity, which quantifies the learning capacity of ReLU deep neural networks.
+▶ [Network of ReLUs](https://www.youtube.com/watch?v=Opg63pan_YQ) — Udacity · 10 years ago
 
-*How the paper uses it:* The paper introduces rectified linear complexity to measure the learning capacity of ReLU deep neural networks and the complexity of embedded manifolds.
+### Optimal Mass Transportation Theory *(prerequisite)*
+Optimal mass transportation theory provides the mathematical foundation for controlling probability distributions in the latent space, a novel approach proposed by the paper. Familiarity with this theory is necessary to understand the paper's alternative to adversarial training in generative modeling.
 
-▶ [Understanding ReLU Networks Through Graph Problems and ...](https://www.youtube.com/watch?v=solcZvvt3Cw) — Simons Institute for the Theory of Computing · 1:03:00
+*How the paper uses it:* The paper applies optimal mass transportation theory to explicitly control latent space distributions in generative models.
 
-### Authors talk on geometric deep learning *(the paper's own talk)*
-The authors' own talks provide direct insights into their geometric framework, the theoretical results, and applications such as generative modeling and image denoising. These talks are the most authoritative and focused presentations on the paper's contributions.
+▶ [Science Café - Optimal Mass Transportation Theory and its Applications](https://www.youtube.com/watch?v=pboyXOFMgCY) — Carleton University · 11 years ago
 
-*How the paper uses it:* These talks present the authors' geometric interpretation of deep learning, their complexity measures, and the application of optimal mass transportation theory.
+### Autoencoder Architectures and Theory *(prerequisite)*
+Since the paper's framework primarily applies to autoencoders with ReLU activations, understanding autoencoder architectures and their theoretical underpinnings is essential. This knowledge helps contextualize the paper's analysis of encoding maps and manifold learning.
 
-▶ [A Geometric Understanding of Deep Learning](https://www.youtube.com/watch?v=OEQua1WASyM) — David Xianfeng Gu · 1:03:12
+*How the paper uses it:* The paper analyzes autoencoders as learning piecewise linear approximations of data manifolds using ReLU activations.
+
+▶ [Lecture 19 | Representations and Autoencoders](https://www.youtube.com/watch?v=gs8vT4pdbUs) — Carnegie Mellon University Deep Learning · 6 years ago
+
+### Paper Author Talk *(the paper's own talk)*
+The authors' own talk provides direct insight into their geometric framework, theoretical results, and applications. It offers the most precise and authoritative exposition of the paper's contributions and open problems.
+
+*How the paper uses it:* This talk by Govind Menon at the Fields Institute closely aligns with the paper's geometric theory of deep learning.
+
+▶ [Towards a geometric theory of deep learning](https://www.youtube.com/watch?v=53eKo-lNgQc) — Fields Institute · 1:02:54 · 4 months ago
+
+## Track 2 — Beginner → Advanced (short-form)
+
+_Concise, high-quality explainers that build intuition — for when time is short._
+
+This beginner-to-advanced path introduces the foundational ideas behind the paper, starting with the concept that high-dimensional data lies near low-dimensional manifolds, then explaining the role of ReLU networks and their complexity in learning these manifolds. Next, it covers optimal mass transportation theory to understand how latent space distributions can be controlled, followed by an introduction to autoencoders as the primary architecture studied. Finally, it culminates with the geometric framework that interprets deep learning as manifold learning, tying all concepts together.
+
+### Manifold Learning in Deep Networks *(prerequisite)*
+Manifold learning is the idea that high-dimensional data often lies close to a lower-dimensional surface (manifold) embedded in the high-dimensional space. Understanding this helps explain why deep learning models can generalize well by effectively learning these underlying structures.
+
+*How the paper uses it:* The paper builds on the principle that natural high-dimensional data concentrates near low-dimensional manifolds.
+
+▶ [Dimensionality Reduction Techniques | Introduction and Manifold Learning (1/5)](https://www.youtube.com/watch?v=jc1_yPYmspk) — DeepFindr · 2 years ago
+
+### Rectified Linear Unit Network Complexity *(prerequisite)*
+ReLU (Rectified Linear Unit) is a popular activation function in deep networks that creates piecewise linear functions. Understanding how the number of linear pieces relates to network capacity helps quantify how complex a function a ReLU network can learn.
+
+*How the paper uses it:* The paper introduces 'rectified linear complexity' to measure the learning capacity of ReLU networks.
+
+▶ [Neural Networks Pt. 3: ReLU In Action!!!](https://www.youtube.com/watch?v=68BZ5f7P94E) — StatQuest with Josh Starmer · 8:58 · 5 years ago
+
+### Optimal Mass Transportation Theory *(prerequisite)*
+Optimal mass transportation theory studies how to transform one probability distribution into another in the most efficient way. This mathematical framework helps control distributions in the latent space of generative models, improving their quality and stability.
+
+*How the paper uses it:* The authors apply optimal mass transportation theory to explicitly control latent space distributions in generative modeling.
+
+▶ [Wasserstein Distance & Optimal Transport — Fully Explained](https://www.youtube.com/watch?v=88ONbF_b3VE) — The Synthetic Mind · 6 months ago
+
+### Autoencoder Architectures and Theory *(prerequisite)*
+Autoencoders are neural networks trained to compress data into a lower-dimensional latent space and then reconstruct it. They are central to the paper's framework for learning manifolds and analyzing network capacity.
+
+*How the paper uses it:* The framework primarily applies to autoencoders with ReLU activations as the model for learning data manifolds.
+
+▶ [Autoencoders | Deep Learning Animated](https://www.youtube.com/watch?v=hZ4a4NgM3u0) — Deepia · 2 years ago
+
+### Geometric Framework for Deep Learning
+This concept interprets deep learning as learning the geometry and topology of data manifolds, providing a theoretical foundation for why deep networks work well and their limitations. It ties together manifold learning, network complexity, and latent space control.
+
+*How the paper uses it:* The paper proposes a geometric framework interpreting deep learning as learning manifolds and their probability distributions.
+
+▶ [Foundations of Geometric Deep Learning](https://www.youtube.com/watch?v=_-r4AdEecuw) — AI Research Roundup · 4:29 · 11 months ago
+
+## Already in your library
+
+- [A Geometric Understanding of Deep Learning](https://www.youtube.com/watch?v=OEQua1WASyM) — also for: Geometric Understanding of Deep Learning (Xianfeng David Gu)

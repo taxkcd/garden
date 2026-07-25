@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-vempala"
-source_hash: "feb9289c74f917a55d4f0bfb0a71f9f942616f6455002045ad44d1bd4f4bc02a"
+source_hash: "043cfcce69d2152bc31e5507608c074d5331706c780ef69ef2c8a0f6479b19a3"
 sequence: 44
 generator: "outreach-garden: managed"
 ---
@@ -54,39 +54,96 @@ Research interests: Algorithms, Geometry, Randomness, Brain
 
 ## Learning path
 
-To deeply understand the paper on the localization method for high-dimensional inequalities, start with foundational lectures on logconcave distributions and convex geometry to grasp the geometric and probabilistic setting. Then study isoperimetric inequalities in high dimensions to appreciate the key inequalities the localization method addresses. Next, explore the stochastic localization method lectures to learn the advanced technique extending classical localization. Finally, focus on the authors' own detailed lectures on the localization method itself, which directly present the surveyed methods and recent results.
+## Track 1 — Academic deep-dives (long-form)
 
-## Recommended videos (in order)
+_Rigorous lectures, seminars and conference talks. Deeper, but longer._
 
-### Logconcave distributions and convex geometry lecture *(prerequisite)*
-This section provides foundational knowledge on logconcave measures and convex geometry, which are central to the paper's setting. Understanding these distributions and their properties is essential before delving into the localization methods and inequalities.
+To deeply understand the localization method for high-dimensional inequalities, start with foundational concepts in convex geometry inequalities, logconcave distributions, and spectral analysis in high dimensions. These prerequisites build the necessary mathematical background on geometric inequalities, the class of distributions central to the paper, and spectral tools used in analysis. Then, proceed to the core concept of the classical localization method, followed by advanced stochastic localization techniques. Finally, conclude with the authors' own talks or related advanced lectures to gain direct insight into the surveyed methods and recent breakthroughs.
 
-*How the paper uses it:* The paper studies inequalities for logconcave distributions and convex bodies, so foundational understanding here is crucial.
+### Convex geometry inequalities *(prerequisite)*
+This section covers foundational geometric inequalities and convexity concepts that underpin the high-dimensional inequalities studied in the paper. Understanding these inequalities is essential to grasp the problems the localization method addresses, such as isoperimetric and slicing inequalities in convex geometry.
 
-▶ [Santosh Vempala - Gibbs Sampling for Convex Bodies and an ...](https://www.youtube.com/watch?v=ItCsGcGgf5A) — Institute for Pure & Applied Mathematics (IPAM) · 25:40
+*How the paper uses it:* The paper surveys localization methods applied to major conjectures in convex geometry, which rely on these foundational inequalities.
 
-### Isoperimetric inequalities in high dimension seminar *(prerequisite)*
-Isoperimetric inequalities form the mathematical backbone for many results in the paper, including applications of the localization lemma. These seminars provide rigorous treatments of such inequalities in high-dimensional settings.
+▶ [Quantitative Stability of Geometric Inequalities: Pr\'ekopa-Leindler and... - Peter van Hintum](https://www.youtube.com/watch?v=gJX7dTj81Io) — Institute for Advanced Study · 1 year ago
 
-*How the paper uses it:* The localization method is used to prove isoperimetric inequalities and related concentration results discussed in the paper.
+### Logconcave distributions *(prerequisite)*
+Logconcave distributions form the core class of probability measures to which the localization methods apply. This section introduces their properties and complexity, which are crucial for understanding the paper's focus on inequalities and conjectures related to these distributions.
 
-▶ [Lecture 41](https://www.youtube.com/watch?v=FsmJWmRcRnI) — Roman Vershynin · 1:00:55
+*How the paper uses it:* The localization and stochastic localization methods in the paper are developed and applied primarily for isotropic logconcave measures.
 
-### Stochastic localization method lecture
-Stochastic localization is a central advanced technique extending classical localization, crucial for the paper's discussion of recent breakthroughs and spectral analyses. These lectures explain the stochastic process and its applications in high-dimensional geometry.
+▶ [The Complexity of Log-Concave Sampling - Sinho Chewi](https://www.youtube.com/watch?v=sxoxYqXHYVM) — Institute for Advanced Study · 15:28 · 2 years ago
 
-*How the paper uses it:* The paper surveys the stochastic localization method as a dynamic extension of classical localization, key to recent progress on conjectures.
+### Spectral analysis in high dimensions *(prerequisite)*
+Spectral methods provide essential tools for analyzing bounds on thin-shell constants and mixing rates of Markov chains, which are key results discussed in the paper. This section introduces spectral techniques relevant to high-dimensional settings.
 
-▶ [Isoperimetry in convex bodies and Eldan's stochastic ...](https://www.youtube.com/watch?v=wHXD8CzK5gk) — Centre de recherches mathématiques - CRM · 1:07:13
+*How the paper uses it:* The paper connects localization methods to spectral gap and uses spectral analysis to refine bounds related to the thin-shell constant.
 
-### Authors' talk on localization method *(the paper's own talk)*
-The authors' own lectures provide the most direct and comprehensive exposition of the localization method and its applications to high-dimensional inequalities, including detailed proofs and recent results.
+▶ [Yue Lu: "Spectral Methods for High Dimensional Inference"](https://www.youtube.com/watch?v=JITN3U65UQU) — Institute for Pure & Applied Mathematics (IPAM) · 6 years ago
 
-*How the paper uses it:* These talks by Santosh Vempala directly cover the localization method surveyed in the paper.
+### Localization method classical
+This section focuses on the classical localization method, which reduces high-dimensional inequalities to one-dimensional integrals. It is the central technique surveyed in the paper and foundational to understanding the stochastic extension.
 
-▶ [The Localization Method for Proving High-Dimensional Inequalities (Lecture 1) by Santosh Vempala](https://www.youtube.com/watch?v=RFMYqmi1hu4) — International Centre for Theoretical Sciences · 1:33:32 · Streamed 1 year ago
+*How the paper uses it:* The paper surveys the classical localization method introduced by Lovász and Simonovits as a key approach to proving high-dimensional inequalities.
+
+▶ [Bo'az Klartag - Convexity in High Dimensions I](https://www.youtube.com/watch?v=DXRJlPvViG8) — princetonmathematics · 3 years ago
+
+### Stochastic localization method
+Stochastic localization extends the classical method by using continuous martingale processes to decompose distributions dynamically. This advanced technique is crucial for recent breakthroughs and ongoing progress on conjectures like KLS.
+
+*How the paper uses it:* The paper presents the stochastic localization method developed by Eldan and its applications to spectral analysis and Markov chain mixing.
+
+▶ [Localization schemes: A framework for proving mixing bounds for Markov chains - Ronen Eldan](https://www.youtube.com/watch?v=H3V2kAZe3GY) — Institute for Advanced Study · 4 years ago
+
+### Paper authors talk *(the paper's own talk)*
+Direct talks by the authors or closely related advanced lectures provide the most precise and up-to-date insights into the paper's contributions, methods, and open problems. These talks often include detailed explanations and context not found in the paper alone.
+
+*How the paper uses it:* Professor Santosh S. Vempala is a co-author of the paper, and talks by him or his collaborators offer direct insight into the surveyed localization methods and their applications.
+
+▶ [MAT1841 - Lec 1 - Concentration inequalities and high-dimensional geometry](https://www.youtube.com/watch?v=vO8VgbCHA0I) — Yun William Yu · 4 years ago
+
+## Track 2 — Beginner → Advanced (short-form)
+
+_Concise, high-quality explainers that build intuition — for when time is short._
+
+To understand the localization method for high-dimensional inequalities, start by building foundational intuition about convex geometry inequalities and logconcave distributions, which are central to the paper's context. Then, progress to spectral analysis concepts that underpin the advanced bounds and mixing rates discussed. Finally, explore the classical and stochastic localization methods themselves, which are the core techniques surveyed in the paper.
+
+### Convex geometry inequalities *(prerequisite)*
+Convex geometry inequalities describe fundamental properties of convex sets and functions, such as how volumes and measures behave under convexity constraints. Understanding these inequalities provides the geometric intuition needed to grasp the high-dimensional problems addressed by localization methods.
+
+*How the paper uses it:* The paper surveys localization methods applied to major convex geometry conjectures involving inequalities.
+
+▶ [Quantitative Stability of Geometric Inequalities: Pr\'ekopa-Leindler and... - Peter van Hintum](https://www.youtube.com/watch?v=gJX7dTj81Io) — Institute for Advanced Study · 1 year ago
+
+### Logconcave distributions *(prerequisite)*
+Logconcave distributions are probability distributions whose logarithm of the density is concave, a property that ensures strong concentration and geometric regularity. These distributions form the main class to which localization methods apply, making their understanding essential.
+
+*How the paper uses it:* The localization method and its stochastic extension are applied to isotropic logconcave measures in the paper.
+
+▶ [The Complexity of Log-Concave Sampling - Sinho Chewi](https://www.youtube.com/watch?v=sxoxYqXHYVM) — Institute for Advanced Study · 15:28 · 2 years ago
+
+### Spectral analysis in high dimensions *(prerequisite)*
+Spectral analysis studies eigenvalues and eigenvectors of operators, which in high dimensions relate to how functions and measures behave under diffusion and mixing. This analysis is key to understanding bounds on thin-shell constants and Markov chain mixing rates discussed in the paper.
+
+*How the paper uses it:* The paper uses spectral analysis of the heat semigroup adjoint to refine bounds on thin-shell constants.
+
+▶ [Yue Lu: "Spectral Methods for High Dimensional Inference"](https://www.youtube.com/watch?v=JITN3U65UQU) — Institute for Pure & Applied Mathematics (IPAM) · 6 years ago
+
+### Localization method classical
+The classical localization method reduces complex high-dimensional inequalities to simpler one-dimensional integrals over intervals called 'needles,' making difficult problems more tractable. This technique is foundational to the paper's survey and its applications to convex geometry conjectures.
+
+*How the paper uses it:* The paper surveys the classical localization method introduced by Lovász and Simonovits as a key tool.
+
+▶ [Bo'az Klartag - Convexity in High Dimensions I](https://www.youtube.com/watch?v=DXRJlPvViG8) — princetonmathematics · 3 years ago
+
+### Stochastic localization method
+Stochastic localization extends the classical method by defining a continuous-time martingale process that dynamically reweights the density, making it strongly logconcave over time. This advanced technique enables new breakthroughs and connections to sampling and optimization.
+
+*How the paper uses it:* The paper discusses the stochastic localization method developed by Eldan and its applications.
+
+▶ [Localization schemes: A framework for proving mixing bounds for Markov chains - Ronen Eldan](https://www.youtube.com/watch?v=H3V2kAZe3GY) — Institute for Advanced Study · 4 years ago
 
 ## Already in your library
 
-- [Stochastic processes for Boolean profit - Renan Gross, Weizmann Institute](https://www.youtube.com/watch?v=_QOpi5YDaGA) — also for: PhysiBoSS-Models: A database for multiscale models (Paul Macklin)
-- [5. Stochastic Processes I](https://www.youtube.com/watch?v=TuTmC8aOQJE) — also for: Fractional Brownian motion in a finite interval: correlations effect depletion or accretion zones of particles near boundaries (Michelle A. Borkin)
+- [The Localization Method for Proving High-Dimensional Inequalities (Lecture 1) by Santosh Vempala](https://www.youtube.com/watch?v=RFMYqmi1hu4) — also for: The Localization Method for High-dimensional Inequalities (Santosh S. Vempala)
+- [Lecture 41](https://www.youtube.com/watch?v=FsmJWmRcRnI) — also for: The Localization Method for High-dimensional Inequalities (Santosh S. Vempala)

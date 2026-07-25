@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-www-anniehliang-com"
-source_hash: "9d5323c619e91d3873b9855c5124d5a1151ddf8fe87850244b809c92833e098e"
+source_hash: "0975cdc65b89a0d5ee7f0b0fd47ffa59a947fec66899b690087a4376924fbf10"
 sequence: 42
 generator: "outreach-garden: managed"
 ---
@@ -53,34 +53,70 @@ Research interests: economic and social implications of AI systems, the use of m
 
 ## Learning path
 
-To deeply understand the paper 'Friend or Foe: Delegating to an AI whose Alignment is Unknown,' start by building foundational knowledge on ambiguity and robust decision theory, which underpins the model's treatment of uncertainty about AI alignment. Next, study information design and Bayesian persuasion to grasp how the paper extends these theories to restrict AI inputs optimally. Then, explore delegation theory in economics to understand the principal-agent framework relevant to AI delegation. Finally, focus on the paper's core concept by reviewing advanced talks on AI alignment and delegation, prioritizing the authors' own or closely related academic presentations.
+## Track 1 — Academic deep-dives (long-form)
 
-## Recommended videos (in order)
+_Rigorous lectures, seminars and conference talks. Deeper, but longer._
 
-### Ambiguity and robust decision theory seminar *(prerequisite)*
-This section covers decision-making under uncertainty and ambiguity sets, which is central to modeling unknown AI alignment in the paper. Understanding ambiguity aversion and robust optimization frameworks will provide the theoretical background for the paper's ambiguity set and worst-case payoff analysis.
+To deeply understand the paper 'Friend or Foe: Delegating to an AI whose Alignment is Unknown,' start by building foundational knowledge in robust decision making under ambiguity, delegation and principal-agent theory, and information design theory. These prerequisites provide the theoretical and methodological background necessary to grasp the paper's novel contributions. Then, focus on the core concept of AI delegation under alignment uncertainty, which directly addresses the paper's main research problem. Finally, if available, watch the authors' own talk to see their presentation of the framework and results firsthand.
 
-*How the paper uses it:* The paper models uncertainty about AI alignment and data distributions using ambiguity sets and worst-case payoffs.
+### Robust decision making under ambiguity *(prerequisite)*
+This concept covers methods for making decisions that remain effective under worst-case scenarios and uncertain environments, which is crucial for understanding how the paper models worst-case payoffs when AI alignment and data distributions are ambiguous. The selected talk from Mitsubishi Electric Research Laboratories (MERL) is a recent seminar presenting advanced robust decision making techniques with learning efficiency, aligning well with the paper's theoretical approach.
 
-▶ [Harita Dellaporta (UCL) - DRO with Robust Bayesian Ambiguity Sets](https://www.youtube.com/watch?v=J0FbxhYDBXU) — Post-Bayes seminar · 17:25 · 1 year ago
+*How the paper uses it:* The paper models worst-case outcomes under ambiguity about AI alignment and data, making robust decision making foundational.
 
-### Information design and Bayesian persuasion lecture *(prerequisite)*
-Information design and Bayesian persuasion theory explain how a principal can optimally restrict or reveal information to an agent to influence decisions. The paper extends these ideas to design input restrictions on AI to manage alignment risk, making this background essential for understanding the theoretical approach.
+▶ [[MERL Seminar Series Spring 2026] Robust Decision Making Without Compromising Learning Efficiency](https://www.youtube.com/watch?v=NnHUtizWcAo) — Mitsubishi Electric Research Laboratories (MERL) · 6 months ago
 
-*How the paper uses it:* The authors extend information design theory to restrict AI inputs optimally under alignment uncertainty.
+### Delegation and principal-agent theory *(prerequisite)*
+Delegation and principal-agent theory provide the economic framework to analyze how a principal (human designer) delegates decisions to an agent (AI) with potentially misaligned objectives. The chosen lecture from the Centre International de Rencontres Mathématiques offers a comprehensive and advanced overview of principal-agent modeling, suitable for graduate-level understanding.
 
-▶ [Emir Kamenica - Persuasion vs. incentives](https://www.youtube.com/watch?v=I3pccR-dumw) — Israel Institute for Advanced Studies · 1:28:02 · 9 years ago
+*How the paper uses it:* The paper formalizes delegation to an AI with unknown alignment, a principal-agent problem with ambiguity.
 
-### Delegation theory in economics seminar *(prerequisite)*
-Delegation theory provides the economic framework for understanding how a principal delegates decisions to an agent with potentially misaligned objectives. This theory underlies the paper's model of a human designer delegating to an AI with unknown alignment.
+▶ [Dylan Possamaï: Principal Agent Modelling - lecture 1](https://www.youtube.com/watch?v=dJrDMUldreI) — Centre International de Rencontres Mathématiques · 1:28:15 · 5 years ago
 
-*How the paper uses it:* The paper formalizes delegation to an AI with unknown alignment using economic delegation theory concepts.
+### Information design theory *(prerequisite)*
+Information design theory studies how to optimally structure information flow to influence decision-making outcomes, directly relevant to the paper's approach of restricting AI input informativeness. The lecture on 'Information design -- Correlated equilibrium approach' from a university mechanism design course provides a rigorous and technical treatment of information design suitable for advanced readers.
 
-▶ [Margins of Misalignment - Daniel Hermann](https://www.youtube.com/watch?v=AA5nRwChWbY) — ILIAD Conference · 57:34
+*How the paper uses it:* The paper extends information design theory to settings with ambiguity about AI objectives and data distributions.
 
-### Authors' talk on AI delegation alignment *(the paper's own talk)*
-This section features advanced talks by leading researchers on AI alignment and delegation, providing direct insight into the challenges and theoretical approaches to AI alignment uncertainty. Although the authors' own talk is not available, these talks closely relate to the paper's themes and offer rigorous academic perspectives.
+▶ [Lecture 14.3: Information design -- Correlated equilibrium approach (Mechanism Design)](https://www.youtube.com/watch?v=DJghAJVZOkM) — economification · 27:52 · 5 years ago
 
-*How the paper uses it:* These talks provide context and depth on AI alignment challenges and delegation, complementing the paper's theoretical contributions.
+### AI delegation under alignment uncertainty
+This concept directly addresses the core challenge of delegating decisions to AI systems when their objectives are uncertain or misaligned. The Anthropic course lecture on delegation provides a detailed and research-driven exploration of delegation under AI alignment uncertainty, making it highly relevant and rigorous for understanding the paper's central problem.
 
-▶ [[Talk] Jerry Wei - Constitutional Classifiers](https://www.youtube.com/watch?v=tKKXEQH5pJo) — Princeton AI Alignment · 59:28 · 1 year ago
+*How the paper uses it:* The paper studies how to delegate decisions optimally when AI alignment is unknown, the central research problem.
+
+▶ [Lesson 4: A closer look at Delegation | AI Fluency: Framework & Foundations Course](https://www.youtube.com/watch?v=EljzyfdYkrc) — Anthropic · 1 year ago
+
+## Track 2 — Beginner → Advanced (short-form)
+
+_Concise, high-quality explainers that build intuition — for when time is short._
+
+This learning path introduces foundational concepts necessary to understand delegating decisions to AI systems with uncertain alignment, as studied in the paper. We start with the basics of delegation and principal-agent theory to grasp the human-AI relationship, then cover robust decision making under ambiguity to understand managing worst-case risks. Next, we explore information design theory to see how input restrictions can be optimally set, and finally focus on AI delegation under alignment uncertainty, the paper's core concept.
+
+### Delegation and principal-agent theory *(prerequisite)*
+Delegation and principal-agent theory explain how one party (the principal) delegates decisions to another (the agent), who may have different goals. Understanding this helps clarify the challenges when humans delegate decisions to AI systems that might not share their objectives.
+
+*How the paper uses it:* The paper models the human designer as a principal delegating decisions to an AI agent with unknown alignment.
+
+▶ [Principal-Agent Modelling](https://www.youtube.com/watch?v=z1dprB5p30w) — Ashley Hodgson · 15:44 · 6 years ago
+
+### Robust decision making under ambiguity *(prerequisite)*
+Robust decision making focuses on making choices that perform well even in worst-case scenarios when there is uncertainty about the environment or model. This concept is key to understanding how the paper manages risks from AI misalignment and uncertain data.
+
+*How the paper uses it:* The paper characterizes worst-case payoffs under ambiguity about AI alignment and data distributions.
+
+▶ [Robust Decision Making](https://www.youtube.com/watch?v=IXlb8o-OOv8) — Deep Uncertainty · 4 years ago
+
+### Information design theory *(prerequisite)*
+Information design studies how to optimally control what information is revealed to decision-makers to influence outcomes. This theory underpins the paper’s approach to restricting AI input information to balance risk and reward.
+
+*How the paper uses it:* The paper uses information design to set bounds on how informative AI inputs can be for safe delegation.
+
+▶ [Lecture 13.1: Introduction to Information design (Mechanism Design)](https://www.youtube.com/watch?v=807cm9E4OTQ) — economification · 28:27 · 5 years ago
+
+### AI delegation under alignment uncertainty
+This concept focuses on how to delegate decisions to AI systems when their goals may not align with the human’s, especially in high-stakes settings. It covers strategies to limit AI discretion and information to manage risks from unknown AI objectives.
+
+*How the paper uses it:* This is the core concept of the paper, which develops a framework for optimal delegation under uncertain AI alignment.
+
+▶ [Lesson 4: A closer look at Delegation | AI Fluency: Framework & Foundations Course](https://www.youtube.com/watch?v=EljzyfdYkrc) — Anthropic · 1 year ago

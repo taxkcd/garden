@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-www-ristoffer-ch"
-source_hash: "ea9c2f3db59c8a187d68259e62708656adc783fde103a6823a7ff5ed7f5725d6"
+source_hash: "fe108075e4dba39afa2a74cdcbf37522991ff3f8c3086f9bc878b9b30e35ebe7"
 sequence: 36
 generator: "outreach-garden: managed"
 ---
@@ -55,34 +55,91 @@ Research interests: robotics, computer vision, and machine learning
 
 ## Learning path
 
-To deeply understand the paper on SLAM in extreme underground environments from the DARPA SubT Challenge, start by building foundational knowledge on LIDAR-based mapping and multi-robot SLAM architectures, as these are critical enablers for the surveyed systems. Then, study factor graph optimization to grasp the back-end techniques for robust SLAM performance. Finally, focus on the authors' own seminar talk to gain direct insights into their comprehensive survey and practical challenges in subterranean SLAM.
+## Track 1 — Academic deep-dives (long-form)
 
-## Recommended videos (in order)
+_Rigorous lectures, seminars and conference talks. Deeper, but longer._
 
-### LIDAR based mapping and perception *(prerequisite)*
-LIDAR-centric SLAM is the dominant approach for underground mapping discussed in the paper. Understanding the principles and applications of LIDAR sensors and data processing is essential to appreciate the front-end perception modules of the surveyed SLAM systems.
+To deeply understand the paper on SLAM in extreme subterranean environments, start by building foundational knowledge on LIDAR-based mapping and perception, as it is the key sensor modality emphasized. Then, study multi-robot SLAM architectures and factor graph optimization, which are critical for collaborative mapping and back-end optimization in the surveyed systems. Next, explore communication constraints in subterranean robotics to grasp the challenges in multi-robot coordination underground. Finally, focus on the core concept of SLAM itself, culminating with the authors' own talks on the DARPA Subterranean Challenge to gain direct insights into the surveyed systems and their real-world applications.
 
-*How the paper uses it:* The paper emphasizes LIDAR-centric SLAM as the go-to approach for subterranean environments.
+### LIDAR-based mapping and perception *(prerequisite)*
+LIDAR is the primary sensing modality used in the underground SLAM systems surveyed in the paper. Understanding how LIDAR works and its role in 3D mapping and perception is essential to appreciate the front-end sensor fusion and robustness strategies discussed.
 
-▶ [Lecture 33 : LiDAR Technique and applications](https://www.youtube.com/watch?v=FExWNMY9bWw) — IIT Roorkee July 2018 · 1:00:11 · 6 years ago
+*How the paper uses it:* The paper emphasizes LIDAR-centric SLAM as the dominant approach for subterranean mapping.
+
+▶ [Stanford Seminar-Solid State LiDar for Autonomous Vehicles,Security, Industrial Automation, 3D Maps](https://www.youtube.com/watch?v=uPqzo29Q9Wc) — Stanford Online · 1:07:37 · 10 years ago
 
 ### Multi-robot SLAM architectures *(prerequisite)*
-The paper discusses centralized, decentralized, and distributed multi-robot SLAM architectures, which are key to enabling collaboration and communication in challenging underground environments. This talk provides an advanced seminar perspective on resilient multi-robot coordination and learning.
+Multi-robot SLAM architectures—centralized, decentralized, and distributed—are fundamental to the collaborative mapping approaches analyzed in the paper. Understanding these architectures helps in grasping the trade-offs in communication and computation faced by the teams.
 
-*How the paper uses it:* Multi-robot SLAM architectures and communication strategies are a major focus of the paper.
+*How the paper uses it:* The paper surveys multi-robot SLAM architectures and communication strategies used in the DARPA SubT Challenge.
 
-▶ [Stephanie Gil: Resilient Multi-Robot Systems: Coordination and Learning in the Real-World](https://www.youtube.com/watch?v=9QzTo3xELiI) — MIT Robotics · 1:00:09 · 3 months ago
+▶ [ISTSC-1: Distributed Consistent Multi-Robot Semantic Localization and Mapping](https://www.youtube.com/watch?v=hwKRLAirQXg) — The Israeli Smart Transportation Research Center · 4 years ago
 
 ### Factor graph optimization in SLAM *(prerequisite)*
-Factor graph optimization is a critical back-end technique for sensor fusion and robust SLAM performance. Understanding this method is necessary to appreciate how the surveyed systems achieve accurate mapping and localization despite sensor noise and environmental challenges.
+Factor graph optimization is a core back-end technique for SLAM systems, enabling robust pose graph optimization and sensor fusion. Familiarity with this method is crucial to understand the optimization frameworks employed by the teams.
 
-*How the paper uses it:* The paper analyzes SLAM back-end architectures including factor graph optimization techniques.
+*How the paper uses it:* The paper discusses factor graph optimization as a key back-end component in the surveyed SLAM systems.
 
-▶ [Factor Graphs and Robust Perception | Michael Kaess | Tartan SLAM Series](https://www.youtube.com/watch?v=JmR2YpkLNt0) — AirLab · 1:09:25 · Streamed 5 years ago
+▶ [Understanding SLAM Using Pose Graph Optimization | Autonomous Navigation, Part 3](https://www.youtube.com/watch?v=saVZtgPyyJQ) — MATLAB · 6 years ago
 
-### Authors' talk on DARPA SubT SLAM *(the paper's own talk)*
-This seminar by Christoffer Heckman, a co-author of the paper, provides direct insights into robotic autonomy and perception in challenging environments, closely aligning with the paper's survey of underground SLAM systems developed for the DARPA Subterranean Challenge.
+### Communication constraints in subterranean robotics *(prerequisite)*
+Communication limitations in underground environments critically impact multi-robot SLAM system design and performance. Understanding these constraints and the networking strategies used is vital to appreciate the practical challenges and solutions presented.
 
-*How the paper uses it:* Christoffer Heckman is a co-author and expert on robust perception in challenging environments, making his talk highly relevant.
+*How the paper uses it:* The paper highlights communication constraints as a major challenge and discusses mesh networks and data prioritization strategies.
 
-▶ [Stanford Seminar - Robotic Autonomy and Perception in Challenging Environments](https://www.youtube.com/watch?v=4AudRBdZVV0) — Stanford Online · 58:05 · 6 years ago
+▶ [4 - Yasamin Mostofi: Robotics and Communications Opportunities and Challenges](https://www.youtube.com/watch?v=Du6lQ6XEpf8) — Southern California Robotics Symposium 2017 · 19:48 · 9 years ago
+
+### Simultaneous Localization and Mapping
+SLAM is the core concept underlying the entire paper. A rigorous, university-level lecture on SLAM provides the theoretical and algorithmic foundation necessary to understand the surveyed systems and their components.
+
+*How the paper uses it:* The paper surveys SLAM strategies and system architectures for underground environments.
+
+▶ [Lecture 11: Simultaneous Localization and Mapping (SLAM)](https://www.youtube.com/watch?v=GlNbLpYdADw) — dLabRoboticsMIT · 1:26:57 · 5 years ago
+
+### Paper-specific author talk *(the paper's own talk)*
+The authors' own talks on the DARPA Subterranean Challenge provide direct insights into the motivation, challenges, and system designs of the SLAM solutions surveyed. These talks offer the most precise and authoritative perspective on the paper's content.
+
+*How the paper uses it:* These talks are by the paper's authors or closely related teams presenting their DARPA SubT Challenge work.
+
+▶ [DARPA SubT Challenge - 3D SLAM flythrough](https://www.youtube.com/watch?v=EFmZN5fyx3c) — CSIRORobotics · 4 years ago
+
+## Track 2 — Beginner → Advanced (short-form)
+
+_Concise, high-quality explainers that build intuition — for when time is short._
+
+This beginner-to-advanced path introduces the foundational concepts needed to understand SLAM in extreme underground environments, as studied in the DARPA Subterranean Challenge. We start with the basics of LIDAR sensing, essential for mapping underground spaces, then cover multi-robot SLAM architectures to grasp collaborative mapping challenges. Next, we explore factor graph optimization, the core back-end technique for SLAM, followed by communication constraints critical for subterranean multi-robot systems. Finally, we conclude with a concise, intuitive SLAM overview to tie all concepts together in the context of the paper.
+
+### LIDAR-based mapping and perception *(prerequisite)*
+LIDAR sensors use laser pulses to measure distances to surrounding objects, creating detailed 3D maps of environments. Understanding how LIDAR works and its strengths in poor lighting and GPS-denied settings is key to appreciating why the paper emphasizes LIDAR-centric SLAM for underground mapping.
+
+*How the paper uses it:* The paper highlights LIDAR as the dominant sensor modality for robust underground SLAM.
+
+▶ [What is Lidar?  How does Lidar work? Know all about LiDAR](https://www.youtube.com/watch?v=H2-Yp30TGk4) — Geospatial World · 4:10 · 8 years ago
+
+### Multi-robot SLAM architectures *(prerequisite)*
+Multi-robot SLAM involves multiple robots working together to map and localize in an environment, using architectures like centralized, decentralized, or distributed systems. Understanding these architectures helps grasp how teams in the paper coordinate mapping under communication constraints.
+
+*How the paper uses it:* The paper surveys various multi-robot SLAM architectures used by teams in the DARPA SubT Challenge.
+
+▶ [ISTSC-1: Distributed Consistent Multi-Robot Semantic Localization and Mapping](https://www.youtube.com/watch?v=hwKRLAirQXg) — The Israeli Smart Transportation Research Center · 4 years ago
+
+### Factor graph optimization in SLAM *(prerequisite)*
+Factor graph optimization is a mathematical framework used in SLAM back-ends to fuse sensor data and optimize robot poses and map features. Learning this concept provides insight into how SLAM systems achieve accurate mapping despite sensor noise and drift.
+
+*How the paper uses it:* The paper analyzes factor graph optimization as a core back-end technique in underground SLAM systems.
+
+▶ [Factor Graph - 5 Minutes with Cyrill](https://www.youtube.com/watch?v=uuiaqGLFYa4) — Cyrill Stachniss · 5:27 · 5 years ago
+
+### Communication constraints in subterranean robotics *(prerequisite)*
+Communication in underground environments is challenging due to signal attenuation and obstacles, requiring specialized mesh networks and data prioritization. Understanding these constraints is vital to appreciate the design choices in multi-robot SLAM systems discussed in the paper.
+
+*How the paper uses it:* The paper discusses communication challenges and solutions for multi-robot SLAM in subterranean settings.
+
+▶ [Communication Constrained Multi-Robot Coordination](https://www.youtube.com/watch?v=FUBkTkpkqSc) — umrobotics · 33:30 · 6 years ago
+
+### Simultaneous Localization and Mapping
+SLAM is the process by which a robot simultaneously builds a map of an unknown environment and localizes itself within that map. This concise explainer builds intuition on the fundamental SLAM problem, tying together sensing, mapping, and localization.
+
+*How the paper uses it:* SLAM is the central method underlying all systems surveyed in the paper.
+
+▶ [SLAM - 5 Minutes with Cyrill](https://www.youtube.com/watch?v=BuRCJ2fegcc) — Cyrill Stachniss · 6 years ago

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-wli69"
-source_hash: "d20bb6b3b08854a15ea7672b991873e920b5dfd100cefd5aa1f86617031e63c9"
+source_hash: "a9af9a48906a00a3143d2567fad78b3b708b9a0d24b94f086d60bcadac6e160c"
 sequence: 21
 generator: "outreach-garden: managed"
 ---
@@ -51,34 +51,88 @@ Research interests: human-computer interaction, educational data mining, and res
 
 ## Learning path
 
-To deeply understand the paper on improving online informed consent with an AI-powered chatbot, start by exploring foundational concepts related to human-computer interaction and ethical research, as well as power dynamics in participant-researcher relationships and natural language understanding in hybrid chatbots. These prerequisites provide the theoretical and technical background necessary to appreciate the paper's contributions. Finally, focus on the core concept of AI-powered chatbots for informed consent, culminating with the authors' own recorded talk presenting their work in detail.
+## Track 1 — Academic deep-dives (long-form)
 
-## Recommended videos (in order)
+_Rigorous lectures, seminars and conference talks. Deeper, but longer._
 
-### Human-computer interaction for ethical research *(prerequisite)*
-This section provides foundational understanding of how human-computer interaction principles apply to ethical research processes, which is crucial for grasping how AI chatbots can be designed to improve informed consent experiences. The selected Stanford seminar offers a rigorous academic perspective from a leading institution's HCI group.
+To deeply understand the paper on improving online informed consent with an AI-powered chatbot, start by grounding yourself in foundational topics such as ethical and procedural aspects of informed consent in online research, human-computer interaction principles for chatbot design, hybrid AI chatbot architectures, power dynamics in participant-researcher interactions, and responsible AI frameworks for ethical research. After building this foundation, focus on the paper's core contribution—AI-powered chatbot-driven informed consent—through the authors' own talks or closely related academic presentations.
 
-*How the paper uses it:* The paper leverages HCI principles to design an AI chatbot that ethically enhances the informed consent process.
+### Informed consent in online research *(prerequisite)*
+Understanding the ethical and procedural basis of informed consent, especially in online contexts, is essential to appreciate the challenges the paper addresses. This section covers the principles, processes, and elements involved in obtaining valid informed consent remotely, which is the problem domain for the chatbot intervention.
 
-▶ [Stanford Seminar - Three Lessons Towards Ethical Tech](https://www.youtube.com/watch?v=LVCHidbq9Xg) — Stanford Online · 57:29 · 6 years ago
+*How the paper uses it:* The paper improves online informed consent comprehension and engagement, so foundational knowledge of online consent processes is critical.
 
-### Power dynamics in participant-researcher relationships *(prerequisite)*
-Understanding power asymmetry between participants and researchers is key to appreciating how the chatbot reduces this gap and fosters a more equal relationship. Although direct academic talks on this topic are limited, the Nobel Prize channel video provides a substantive discussion relevant to asymmetry and power.
+▶ [Online Questionnaire; Gaining respondent consent](https://www.youtube.com/watch?v=hlfZpr-RMak) — Mark Saunders on Research Methods · 8:23
 
-*How the paper uses it:* The paper demonstrates that the chatbot reduces power imbalance during consent, improving participant experience and data quality.
+### Human-computer interaction for chatbots *(prerequisite)*
+This section provides foundational knowledge on designing interactive AI agents, focusing on conversational agents and their user experience. Understanding HCI principles helps contextualize how the chatbot Rumi was designed to engage participants effectively and manage power dynamics.
 
-▶ [What is intelligence? Nobel Week Dialogue 2015: The future of ...](https://www.youtube.com/watch?v=kuEyo9CKnGw) — Nobel Prize · 18:46
+*How the paper uses it:* The paper's chatbot design relies on HCI principles to improve participant comprehension and interaction quality.
 
-### Natural language understanding in hybrid chatbots *(prerequisite)*
-This section covers the technical basis for the chatbot's ability to accurately answer participant questions using a hybrid AI approach. The chosen lecture from Arqus Alliance offers an in-depth introduction to large language models and chatbots, suitable for advanced readers.
+▶ [Stanford CS547 HCI Seminar | Spring 2026 | Promoting ...](https://www.youtube.com/watch?v=kk8TB8wBj-I) — Stanford Online · 44:21
 
-*How the paper uses it:* The chatbot's hybrid design combining rule-based and AI modules relies on advanced natural language understanding techniques.
+### AI-powered hybrid chatbots *(prerequisite)*
+Hybrid chatbots combine rule-based and AI modules to balance accuracy and conversational flexibility. This section explains the core method behind Rumi's architecture, which prioritizes answer authenticity while enabling interactive dialogue.
 
-▶ [4# Introduction to Large Language Models and ChatBots](https://www.youtube.com/watch?v=Hc9JabDrfCM) — Arqus Alliance · 1:14:06
+*How the paper uses it:* Rumi is a hybrid AI-powered chatbot combining rule-based and AI components to simulate in-person consent interactions.
 
-### AI-powered chatbot for informed consent *(the paper's own talk)*
-This core concept focuses on the use of AI chatbots to improve comprehension and engagement in informed consent processes. While many videos on this topic are introductory, none meet the advanced academic standard except the authors' own talk, which directly presents their novel system and empirical findings.
+▶ [Hybrid Chatbots: Merging LLMs and Classification Models ...](https://www.youtube.com/watch?v=b9Gx649jHp4) — Data Science Dojo · 58:01
 
-*How the paper uses it:* The paper's central contribution is the design and evaluation of Rumi, an AI-powered chatbot for online informed consent.
+### Power dynamics in participant-researcher interactions *(prerequisite)*
+Power asymmetry between participants and researchers can affect consent quality and participant autonomy. This section explores the social factors and dynamics that the chatbot aims to mitigate to foster a more equal relationship.
 
-▶ [Inform the uninformed: Improving Online Informed Consent Reading with an AI-Powered Chatbot](https://www.youtube.com/watch?v=zFZOhvzlkNw) — ACM SIGCHI · 9:48 · 3 years ago
+*How the paper uses it:* The paper shows that Rumi reduces power asymmetry, improving participant perceptions and response quality.
+
+▶ [CARE Panel: Power Dynamics in Research](https://www.youtube.com/watch?v=Jd1-eZIpU2I) — Ohio State Center for Ethics and Human Values · 1:00:25
+
+### AI for ethical research practices *(prerequisite)*
+Responsible AI frameworks guide the ethical design and deployment of AI systems in research contexts. This section contextualizes the ethical considerations underlying the chatbot's development and use in informed consent.
+
+*How the paper uses it:* The paper aligns with responsible AI principles to enhance ethical research practices through AI-powered consent.
+
+▶ [Responsible AI in Research: Highlights from the NCRM ...](https://www.youtube.com/watch?v=pRGsOywYLFY) — National Centre for Research Methods (NCRM) · 44:28
+
+## Track 2 — Beginner → Advanced (short-form)
+
+_Concise, high-quality explainers that build intuition — for when time is short._
+
+This beginner-to-advanced path introduces you first to the ethical and procedural foundations of informed consent in online research, then covers the basics of human-computer interaction and chatbot design, focusing on hybrid AI chatbots. Next, it explores the social aspect of power dynamics between participants and researchers, and responsible AI in research ethics. Finally, it presents the core concept of AI-powered chatbots improving informed consent, as demonstrated in the paper.
+
+### Informed consent in online research *(prerequisite)*
+Learn what informed consent means, why it is essential in research, and how it is typically obtained online. This foundation helps you understand the ethical and procedural challenges that the paper aims to address with AI chatbots.
+
+*How the paper uses it:* The paper targets improving online informed consent comprehension and engagement, a process grounded in these ethical principles.
+
+▶ [Informed Consent](https://www.youtube.com/watch?v=xTIdmv2VzNs) — WTH is Bioethics? · 6 years ago
+
+### Human-computer interaction for chatbots *(prerequisite)*
+Understand how humans interact with chatbots and the design principles that make these interactions effective and user-friendly. This knowledge is key to appreciating how the chatbot in the paper guides participants through consent forms.
+
+*How the paper uses it:* The paper's chatbot design relies on human-computer interaction principles to simulate an in-person consent experience.
+
+▶ [UX Research on Conversational Human-AI Interaction: A ...](https://www.youtube.com/watch?v=l7-hwOmuFGk) — ACM SIGCHI · 7:54
+
+### AI-powered hybrid chatbots *(prerequisite)*
+Explore how hybrid chatbots combine rule-based systems with AI modules to balance accuracy and conversational flexibility. This concept explains the technical approach behind the paper's chatbot, Rumi.
+
+*How the paper uses it:* Rumi uses a hybrid AI chatbot design to provide authentic and interactive consent guidance.
+
+▶ [How Do AI Chatbots Work?](https://www.youtube.com/watch?v=Y9YbX7FPIhQ) — Jotform · 8:55
+
+### Power dynamics in participant-researcher interactions *(prerequisite)*
+Learn about the social power imbalances that can exist between research participants and researchers, and why reducing these imbalances improves ethical research and participant engagement.
+
+*How the paper uses it:* The paper shows that the chatbot reduces power asymmetry, fostering a more equal participant-researcher relationship.
+
+▶ [What Are The Power Dynamics In Ethnographic Research ...](https://www.youtube.com/watch?v=NkFLFGxM2mY) — Anthropology Insights · 4:02
+
+### AI for ethical research practices *(prerequisite)*
+Understand the principles of responsible AI use in research, including fairness, transparency, and respect for participants. This context is crucial for appreciating the ethical considerations in deploying AI chatbots for informed consent.
+
+*How the paper uses it:* The paper aligns with responsible AI frameworks to ensure ethical chatbot design and deployment in research consent.
+
+▶ [AI Ethics | Responsible AI Explained 2025 | Principles, Risks ...](https://www.youtube.com/watch?v=JDxq-m7UC-Y) — IP Specialist · 13:09
+
+## Already in your library
+
+- [Inform the uninformed: Improving Online Informed Consent Reading with an AI-Powered Chatbot](https://www.youtube.com/watch?v=zFZOhvzlkNw) — also for: Inform the uninformed: Improving Online Informed Consent Reading with an AI-Powered Chatbot (Tiffany Li)
