@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-yanfang-fanny-ye"
-source_hash: "49a16a475470b543b040f3886139af44f3e21674eaeff0430ed8682e823abdf3"
+source_hash: "ad4d0d0d34482e512013e71dd0a85389447faff6d673cb4e8baa21973fd55488"
 sequence: 12
 generator: "outreach-garden: managed"
 ---
@@ -55,34 +55,75 @@ Research interests: artificial intelligence (AI), machine learning (ML), data mi
 
 ## Learning path
 
-To deeply understand the Heterogeneous Graph Attention Network (HAN) paper, start with foundational knowledge on graph neural networks and attention mechanisms, which are critical to grasp HAN's architecture and hierarchical attention design. Next, explore the challenges and structure of heterogeneous graphs to appreciate the problem context HAN addresses. Finally, focus on the authors' own talk presenting HAN, which provides direct insights into their hierarchical attention approach and experimental results.
+## Track 1 — Academic deep-dives (long-form)
 
-## Recommended videos (in order)
+_Rigorous lectures, seminars and conference talks. Deeper, but longer._
 
-### Graph neural networks lecture *(prerequisite)*
-Graph neural networks (GNNs) form the backbone of HAN's architecture. Understanding how GNNs encode node features and propagate information through graph structures is essential before delving into HAN's heterogeneous and attention-based extensions. The chosen lecture from Stanford Online provides a rigorous and concise introduction to GNNs, suitable for advanced learners.
+To deeply understand the HAN paper, start with foundational knowledge on Graph Neural Networks and Heterogeneous Graphs to grasp the underlying data structures and learning frameworks HAN builds upon. Then study Attention Mechanisms in Graphs and Meta-path based Graph Analysis to comprehend the key techniques HAN employs for weighting neighbors and semantic relations. Finally, focus on the HAN paper talk itself for the authors' detailed presentation of their hierarchical attention model for heterogeneous graphs.
 
-*How the paper uses it:* HAN builds on graph neural networks to handle heterogeneous graphs with attention mechanisms.
+### Graph Neural Networks *(prerequisite)*
+Graph Neural Networks (GNNs) provide the fundamental framework for learning on graph-structured data, which is essential to understand before diving into HAN. These videos cover the mathematical foundations, model architectures, and applications of GNNs, preparing you to appreciate how HAN extends these ideas to heterogeneous graphs.
 
-▶ [2021 | Lecture 6.1 - Introduction to Graph Neural Networks](https://www.youtube.com/watch?v=F3PgltDzllc) — Stanford Online · 10:31
+*How the paper uses it:* HAN builds on the GNN framework to handle heterogeneous graphs with multiple node and edge types.
 
-### Attention mechanisms in deep learning seminar *(prerequisite)*
-HAN leverages hierarchical attention mechanisms to weigh the importance of neighbors and meta-paths. A solid understanding of attention in neural networks, especially its motivation and implementation, is necessary to appreciate HAN's novel hierarchical attention design. The 3Blue1Brown video offers a mathematically clear and intuitive explanation of attention mechanisms.
+▶ [Graph Neural Networks - a perspective from the ground up](https://www.youtube.com/watch?v=GXhBEj1ZtE8) — Alex Foo · 4 years ago
 
-*How the paper uses it:* HAN's core innovation is the hierarchical attention mechanism combining node-level and semantic-level attentions.
+### Heterogeneous Graphs *(prerequisite)*
+Understanding heterogeneous graphs, which contain multiple types of nodes and edges, is crucial since HAN specifically targets this complex graph type. The selected university lecture from Stanford CS224W provides an advanced and rigorous introduction to machine learning on heterogeneous graphs.
 
-▶ [Attention in transformers, step-by-step | Deep Learning Chapter 6](https://www.youtube.com/watch?v=eMlx5fFNoYc) — 3Blue1Brown · 26:10 · 2 years ago
+*How the paper uses it:* HAN is designed to analyze heterogeneous graphs by capturing their rich semantic and structural information.
 
-### Heterogeneous graph mining conference *(prerequisite)*
-Heterogeneous graphs contain multiple node and edge types, posing unique challenges for graph learning. Understanding these challenges and the structure of heterogeneous graphs is crucial to grasp why HAN's hierarchical attention is necessary. The Stanford CS224W lecture on heterogeneous and knowledge graph embedding offers a comprehensive academic treatment of this topic.
+▶ [Stanford CS224W: Machine Learning w/ Graphs I 2023 I Machine Learning with Heterogeneous Graphs](https://www.youtube.com/watch?v=uvrlKxj8HVU) — Stanford Online · 2 years ago
 
-*How the paper uses it:* HAN targets the complex structure and semantics of heterogeneous graphs for improved node representation learning.
+### Attention Mechanisms in Graphs *(prerequisite)*
+Attention mechanisms allow models to weigh the importance of different nodes and edges dynamically. These videos explain how attention is integrated into graph neural networks, a core technique HAN uses to learn node-level and semantic-level importance.
 
-▶ [Stanford CS224W: ML with Graphs | 2021 | Lecture 10.1-Heterogeneous & Knowledge Graph Embedding](https://www.youtube.com/watch?v=Rfkntma6ZUI) — Stanford Online · 34:57 · 5 years ago
+*How the paper uses it:* HAN uses hierarchical attention mechanisms to learn the importance of neighbors and meta-paths.
 
-### HAN authors talk *(the paper's own talk)*
-The authors' own presentation on HAN provides the most direct and authoritative explanation of their hierarchical attention network for heterogeneous graphs. It covers the model design, motivation, and experimental validation, offering insights that are not easily found elsewhere. This talk is indispensable for understanding the paper's contributions and innovations.
+▶ [Understanding Graph Attention Networks](https://www.youtube.com/watch?v=A-yKQamf2Fc) — DeepFindr · 5 years ago
 
-*How the paper uses it:* This talk is by the authors of HAN, explaining their hierarchical attention network for heterogeneous graph analysis.
+### Meta-path based Graph Analysis *(prerequisite)*
+Meta-paths capture semantic relations in heterogeneous graphs by defining meaningful sequences of node and edge types. Understanding meta-paths is essential to grasp how HAN leverages them for semantic-level attention and embedding learning.
 
-▶ [RSS 2020, Spotlight Talk 94: Heterogeneous Graph ...](https://www.youtube.com/watch?v=W5eXnJDPm_Q) — Robotics Science and Systems · 5:03
+*How the paper uses it:* HAN relies on predefined meta-paths to model semantic relations in heterogeneous graphs.
+
+▶ [Meta Paths and Meta Structures: Discovery and Applications](https://www.youtube.com/watch?v=8JPcFXWXUmU) — HKU Faculty of Science · 5 years ago
+
+## Track 2 — Beginner → Advanced (short-form)
+
+_Concise, high-quality explainers that build intuition — for when time is short._
+
+To understand the HAN paper from a beginner to advanced perspective, start by learning the fundamentals of Graph Neural Networks (GNNs) to grasp how graphs are represented and processed in AI. Next, build intuition on heterogeneous graphs to appreciate the multi-typed nodes and edges HAN operates on. Then, study attention mechanisms in graphs to understand how HAN weighs neighbors and meta-paths. After that, learn about meta-path based graph analysis to see how semantic relations are captured. Finally, explore the HAN-specific hierarchical attention structure combining node-level and semantic-level attentions to fully comprehend the paper's core innovation.
+
+### Graph Neural Networks *(prerequisite)*
+Graph Neural Networks (GNNs) are a class of neural networks designed to work directly with graph-structured data by passing messages between nodes to learn useful representations. Understanding GNNs provides the foundation for how graph data is processed and why they are powerful for tasks like node classification.
+
+*How the paper uses it:* HAN builds on the GNN framework to handle heterogeneous graphs with multiple node and edge types.
+
+▶ [Graph Neural Networks - a perspective from the ground up](https://www.youtube.com/watch?v=GXhBEj1ZtE8) — Alex Foo · 4 years ago
+
+### Heterogeneous Graphs *(prerequisite)*
+Heterogeneous graphs contain different types of nodes and edges, representing complex real-world data with rich semantic information. Learning about heterogeneous graphs helps understand the challenges HAN addresses in modeling diverse relationships and node types.
+
+*How the paper uses it:* HAN is designed specifically to analyze heterogeneous graphs with multiple node and edge types.
+
+▶ [Stanford CS224W: Machine Learning w/ Graphs I 2023 I Machine Learning with Heterogeneous Graphs](https://www.youtube.com/watch?v=uvrlKxj8HVU) — Stanford Online · 2 years ago
+
+### Attention Mechanisms in Graphs *(prerequisite)*
+Attention mechanisms allow models to weigh the importance of different neighbors or features dynamically, improving representation learning by focusing on the most relevant information. In graph contexts, attention helps decide which neighboring nodes contribute more to a node's embedding.
+
+*How the paper uses it:* HAN uses attention mechanisms to learn the importance of neighbors and meta-paths in heterogeneous graphs.
+
+▶ [Understanding Graph Attention Networks](https://www.youtube.com/watch?v=A-yKQamf2Fc) — DeepFindr · 5 years ago
+
+### Meta-path based Graph Analysis *(prerequisite)*
+Meta-paths are sequences of node and edge types that capture semantic relationships in heterogeneous graphs, enabling models to consider meaningful multi-hop connections. Understanding meta-paths is key to grasping how HAN captures complex semantics in graph data.
+
+*How the paper uses it:* HAN leverages meta-paths to define semantic relations and applies attention to weigh their importance.
+
+▶ [Meta Paths and Meta Structures: Discovery and Applications](https://www.youtube.com/watch?v=8JPcFXWXUmU) — HKU Faculty of Science · 5 years ago
+
+## Already in your library
+
+- [2021 | Lecture 6.1 - Introduction to Graph Neural Networks](https://www.youtube.com/watch?v=F3PgltDzllc) — also for: Heterogeneous Graph Attention Network (Yanfang (Fanny) Ye)
+- [Stanford CS224W: ML with Graphs | 2021 | Lecture 10.1-Heterogeneous & Knowledge Graph Embedding](https://www.youtube.com/watch?v=Rfkntma6ZUI) — also for: Heterogeneous Graph Attention Network (Yanfang (Fanny) Ye)

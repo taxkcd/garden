@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-yyzhou"
-source_hash: "e9cf9534a22dd4ed01ad3c83fb8bb2042f1b2cf24480e4ccacdfb6d8320ba081"
+source_hash: "92b6b38887f230e44f4af7624d0fb8c688fcd7212c444fa4a7dece9c466ab6c0"
 sequence: 26
 generator: "outreach-garden: managed"
 ---
@@ -51,41 +51,70 @@ This paper studies how auto-active formal verification tools like Dafny affect r
 
 ## Learning path
 
-To deeply understand the impact of auto-active formal verification on software development as studied in the paper, start with foundational knowledge on formal specification languages and interactive theorem proving to grasp the formal underpinnings and proof debugging challenges. Then explore software verification tooling usability to appreciate practical challenges in tool support. Finally, focus on the core concept by watching the authors' own talks or closely related advanced presentations on formal verification impact and auto-active verification methods to connect theory with the paper's empirical findings.
+## Track 1 — Academic deep-dives (long-form)
 
-## Recommended videos (in order)
+_Rigorous lectures, seminars and conference talks. Deeper, but longer._
 
-### Formal specification languages seminar *(prerequisite)*
-Formal specifications are central to the paper's findings about how verification requires augmenting informal requirements with formal assertions. Understanding specification languages provides foundational knowledge about how properties are expressed and reasoned about formally.
+To deeply understand the impact of auto-active formal verification on software development as studied in the paper, start with foundational knowledge on formal specification and proof debugging techniques, which are critical for writing and maintaining formal proofs. Then, explore the phenomenon of proof brittleness and hardening to grasp challenges in proof maintenance. Finally, focus on the core concept of auto-active formal verification and the authors' own talk presenting their study, which directly addresses the paper's contributions and findings.
+
+### Formal specification in software *(prerequisite)*
+Formal specifications are the foundation for writing proofs and specifications in verification. Understanding formal specification helps grasp how developers write precise requirements and assertions that verification tools check.
 
 *How the paper uses it:* The paper discusses how formal specifications augment informal requirements and are essential for verification.
 
-▶ [The Design of A Formal Property-Specification Language](https://www.youtube.com/watch?v=qo1AjLgs3XA) — Microsoft Research · 1:13:10
+▶ [Module overview: Formal Methods for Software Engineering](https://www.youtube.com/watch?v=r00kOy1S4MU) — Jan Oliver Ringert · 3 years ago
 
-### Interactive theorem proving lecture *(prerequisite)*
-Interactive theorem proving lectures provide insight into proof development and debugging challenges, which relate directly to the paper's discussion of proof brittleness and the difficulty of understanding verifier internal states.
+### Proof debugging techniques *(prerequisite)*
+Proof debugging is a key challenge identified in the paper, involving understanding and fixing proof failures. Learning about modern functional verification and debugging techniques provides insight into the difficulties developers face and potential tool support.
 
-*How the paper uses it:* The paper highlights challenges in proof debugging and incremental proof development that relate to interactive theorem proving techniques.
+*How the paper uses it:* The paper highlights proof debugging challenges due to unclear error messages and hidden verifier state.
 
-▶ [Interactive Theorem Proving, Guest Lecture - Introduction to ...](https://www.youtube.com/watch?v=uvMjgKcZDec) — David Broman · 1:45:32
+▶ [An Overview of Modern Functional Verification and Debug](https://www.youtube.com/watch?v=dKFwQNsXaNU) — EECG Toronto - University of Toronto · 13 years ago
 
-### Software verification tooling usability talk *(prerequisite)*
-Understanding usability challenges and tool support improvements is crucial to contextualizing the paper's findings on proof debugging difficulties and opportunities for better tooling to improve verification adoption.
+### Proof brittleness and hardening *(prerequisite)*
+Proof brittleness refers to verified proofs breaking after minor changes, requiring hardening to maintain robustness. Understanding this phenomenon is crucial to appreciate the maintenance challenges and the new development phases introduced by verification.
 
-*How the paper uses it:* The paper identifies usability challenges and suggests improvements in tooling for proof debugging and error messages.
+*How the paper uses it:* The paper identifies proof brittleness as a major challenge requiring a new phase of proof hardening.
 
-▶ [Usability Testing is easier than you think - Jo Minney - NDC ...](https://www.youtube.com/watch?v=mA0tUkythNk) — NDC Conferences · 53:52
+▶ [Formal Methods for Dependable Computing: From Models, through Software, to Circuits](https://www.youtube.com/watch?v=VUyfi6JJRgA) — CITRIS and the Banatao Institute · 47:00 · 15 years ago
 
-### Auto-active formal verification lecture
-Auto-active verification is the central method studied in the paper. Lectures on this topic explain how automated proof guidance works and the verification workflow, providing technical background to understand the paper's empirical insights.
+### Auto-active formal verification
+Auto-active formal verification is the central method studied in the paper, where the verifier automates many proof details but requires user guidance. Understanding this approach is key to grasping the paper's analysis of verification's impact on software development.
 
 *How the paper uses it:* The paper studies the impact of auto-active verification tools like Dafny on software development.
 
-▶ [The Varied Forms of Verification with Z3](https://www.youtube.com/watch?v=wHSmAThRBHg) — Microsoft Research · 1:03:27
+▶ [Auto-Active Verification of Software with Timers and Clocks (STAC)](https://www.youtube.com/watch?v=BPYIAw9wMe4) — Software Engineering Institute | Carnegie Mellon University · 9:14 · 9 years ago
 
-### Authors' talk on formal verification impact *(the paper's own talk)*
-The authors' own talks or closely related advanced presentations provide the most direct and authoritative explanation of the study's motivation, methodology, findings, and implications, making them the best resource for understanding the paper in depth.
+### Paper authors talk
+The authors' own talk provides direct insights into their study, methodology, findings, and implications. It is the most authoritative and relevant resource to understand the paper's contributions and context.
 
-*How the paper uses it:* Direct presentation of the paper's study and findings by the authors or experts closely aligned with the paper's topic.
+*How the paper uses it:* This is the authors' recorded talk presenting the paper at OOPSLA 2025.
 
-▶ [Software Verification in the Age of Artificial Intelligence](https://www.youtube.com/watch?v=D_Qnu3P_klk) — Association for Computing Machinery (ACM) · 2 months ago
+▶ [https://www.youtube.com › watch?v=GptVarCy2v4](https://www.youtube.com/watch?v=GptVarCy2v4) — YouTube result via DuckDuckGo
+
+## Track 2 — Beginner → Advanced (short-form)
+
+_Concise, high-quality explainers that build intuition — for when time is short._
+
+Start by understanding the foundation of formal specifications in software, which are the precise descriptions needed for formal verification. Then learn about proof debugging techniques to grasp the challenges developers face when proofs fail. Next, explore proof brittleness and hardening to see why maintaining proofs is difficult. Finally, focus on auto-active formal verification, the core method studied in the paper, to understand how it automates proof details and impacts software development.
+
+### Formal specification in software *(prerequisite)*
+Formal specifications are precise, mathematical descriptions of what software should do. They form the foundation for writing proofs that verify software correctness. Understanding formal specifications helps you grasp how developers translate informal requirements into verifiable properties.
+
+*How the paper uses it:* The paper highlights that verification requires formal specifications augmenting informal requirements and auxiliary assertions.
+
+▶ [Intro to Formal Methods for Engineering  - Launch School Tech Talk - 2020](https://www.youtube.com/watch?v=RC9fAJhSTMY) — launchschool · 5 years ago
+
+### Proof debugging techniques *(prerequisite)*
+Proof debugging involves identifying why a formal proof fails and fixing it, which is often challenging due to unclear error messages and hidden internal states of verifiers. Learning common debugging strategies helps understand the mental effort developers invest in making proofs succeed.
+
+*How the paper uses it:* The paper discusses how proof debugging is challenging due to unclear error messages and the need to build mental models of the verifier's internal state.
+
+▶ [Programming Proofs and Proving Programs](https://www.youtube.com/watch?v=E5-y5kyyroc) — Microsoft Research · 9 years ago
+
+### Auto-active formal verification
+Auto-active formal verification automates many proof details but still requires user guidance through annotations and specifications. It balances automation and manual proof effort, making it a practical approach for verifying real-world software.
+
+*How the paper uses it:* The paper studies the impact of auto-active verification tools like Dafny on software development practices.
+
+▶ [Auto-Active Verification of Software with Timers and Clocks (STAC)](https://www.youtube.com/watch?v=BPYIAw9wMe4) — Software Engineering Institute | Carnegie Mellon University · 9:14 · 9 years ago
