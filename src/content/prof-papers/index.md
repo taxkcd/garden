@@ -1,6 +1,6 @@
 ---
 title: "Professor papers and learning paths"
-date: 2026-07-25
+date: 2026-07-27
 tags:
   - research-paper
   - learning-path
@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/063-roger-azevedo-the-promise-and-challenges-of-generative-ai-in-education|063 · The promise and challenges of generative AI in education — Roger Azevedo]] · 2026-07-27
 - [[prof-papers/062-marijn-heule-automated-reencoding-meets-graph-theory|062 · Automated Reencoding Meets Graph Theory — Marijn Heule]] · 2026-07-24
 - [[prof-papers/061-alexandros-v-gerbessiotis-a-survey-of-chernoff-and-hoeffding-bounds|061 · A survey of Chernoff and Hoeffding bounds — Alexandros V. Gerbessiotis]] · 2026-07-24
 - [[prof-papers/060-ravi-sundaram-optimal-fair-learning-robust-to-adversarial-distribution-s|060 · Optimal Fair Learning Robust to Adversarial Distribution Shift — Ravi Sundaram]] · 2026-07-24
