@@ -1,6 +1,6 @@
 ---
 title: "Professor papers and learning paths"
-date: 2026-07-27
+date: 2026-07-28
 tags:
   - research-paper
   - learning-path
@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/064-vicky-yao-splitpea-quantifying-protein-interaction-network-rewiring-chan|064 · Splitpea: quantifying protein interaction network rewiring changes due to alternative splicing in cancer — Vicky Yao]] · 2026-07-28
 - [[prof-papers/063-roger-azevedo-the-promise-and-challenges-of-generative-ai-in-education|063 · The promise and challenges of generative AI in education — Roger Azevedo]] · 2026-07-27
 - [[prof-papers/062-marijn-heule-automated-reencoding-meets-graph-theory|062 · Automated Reencoding Meets Graph Theory — Marijn Heule]] · 2026-07-24
 - [[prof-papers/061-alexandros-v-gerbessiotis-a-survey-of-chernoff-and-hoeffding-bounds|061 · A survey of Chernoff and Hoeffding bounds — Alexandros V. Gerbessiotis]] · 2026-07-24
