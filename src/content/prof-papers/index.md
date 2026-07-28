@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/065-audrey-k-bowden-a-rapid-and-lowcost-method-to-fabricate-well-of-the-well|065 · A rapid and low‑cost method to fabricate well of the well (WOW) dishes with arbitrary 3D microwell shapes for improved embryo culture — Audrey K. Bowden]] · 2026-07-28
 - [[prof-papers/064-vicky-yao-splitpea-quantifying-protein-interaction-network-rewiring-chan|064 · Splitpea: quantifying protein interaction network rewiring changes due to alternative splicing in cancer — Vicky Yao]] · 2026-07-28
 - [[prof-papers/063-roger-azevedo-the-promise-and-challenges-of-generative-ai-in-education|063 · The promise and challenges of generative AI in education — Roger Azevedo]] · 2026-07-27
 - [[prof-papers/062-marijn-heule-automated-reencoding-meets-graph-theory|062 · Automated Reencoding Meets Graph Theory — Marijn Heule]] · 2026-07-24
