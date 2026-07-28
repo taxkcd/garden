@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/070-russell-impagliazzo-approximate-replicability-in-learning|070 · Approximate Replicability in Learning — Russell Impagliazzo]] · 2026-07-28
 - [[prof-papers/069-sohini-ramachandran-ml-mages-enables-multivariate-genetic-association-an|069 · ML-MAGES enables multivariate genetic association analyses with genes and effect size shrinkage — Sohini Ramachandran]] · 2026-07-28
 - [[prof-papers/068-wlodek-zadrozny-implementing-tensor-logic-unifying-datalog-and-neural-re|068 · Implementing Tensor Logic: Unifying Datalog and Neural Reasoning via Tensor Contraction — Wlodek Zadrozny]] · 2026-07-28
 - [[prof-papers/067-rajiv-bagai-geographic-bias-analysis-and-cross-domain-generalization-in|067 · Geographic Bias Analysis and Cross-Domain Generalization in Deep Learning-Based Building Damage Assessment — Rajiv Bagai]] · 2026-07-28
