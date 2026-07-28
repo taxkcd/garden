@@ -1,6 +1,6 @@
 ---
 title: "Professor papers and learning paths"
-date: 2026-07-28
+date: 2026-07-29
 tags:
   - research-paper
   - learning-path
@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/067-rajiv-bagai-geographic-bias-analysis-and-cross-domain-generalization-in|067 · Geographic Bias Analysis and Cross-Domain Generalization in Deep Learning-Based Building Damage Assessment — Rajiv Bagai]] · 2026-07-28
 - [[prof-papers/066-emily-prud-hommeaux-what-data-should-i-include-in-my-pos-tagging-trainin|066 · What data should I include in my POS tagging training set? — Emily Prud'hommeaux]] · 2026-07-28
 - [[prof-papers/065-audrey-k-bowden-a-rapid-and-lowcost-method-to-fabricate-well-of-the-well|065 · A rapid and low‑cost method to fabricate well of the well (WOW) dishes with arbitrary 3D microwell shapes for improved embryo culture — Audrey K. Bowden]] · 2026-07-28
 - [[prof-papers/064-vicky-yao-splitpea-quantifying-protein-interaction-network-rewiring-chan|064 · Splitpea: quantifying protein interaction network rewiring changes due to alternative splicing in cancer — Vicky Yao]] · 2026-07-28
