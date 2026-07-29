@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/072-ankur-moitra-taming-imperfect-process-verifiers-a-sampling-perspective-o|072 · Taming Imperfect Process Verifiers: A Sampling Perspective on Backtracking — Ankur Moitra]] · 2026-07-29
 - [[prof-papers/071-steven-t-flammia-autonomous-hamiltonian-certification-and-changepoint-de|071 · Autonomous Hamiltonian certification and changepoint detection — Steven T. Flammia]] · 2026-07-29
 - [[prof-papers/070-russell-impagliazzo-approximate-replicability-in-learning|070 · Approximate Replicability in Learning — Russell Impagliazzo]] · 2026-07-28
 - [[prof-papers/069-sohini-ramachandran-ml-mages-enables-multivariate-genetic-association-an|069 · ML-MAGES enables multivariate genetic association analyses with genes and effect size shrinkage — Sohini Ramachandran]] · 2026-07-28
