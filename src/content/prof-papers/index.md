@@ -1,6 +1,6 @@
 ---
 title: "Professor papers and learning paths"
-date: 2026-07-29
+date: 2026-07-30
 tags:
   - research-paper
   - learning-path
@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/074-scott-a-kuhl-the-impact-of-surface-co-location-and-eye-tracking-on-mixed|074 · The Impact of Surface Co-location and Eye-tracking on Mixed Reality Typing — Scott A. Kuhl]] · 2026-07-29
 - [[prof-papers/073-quinn-o-snell-predicting-suicidal-thoughts-and-behavior-among-adolescent|073 · Predicting suicidal thoughts and behavior among adolescents using the risk and protective factor framework: A large-scale machine learning approach — Quinn O. Snell]] · 2026-07-29
 - [[prof-papers/072-ankur-moitra-taming-imperfect-process-verifiers-a-sampling-perspective-o|072 · Taming Imperfect Process Verifiers: A Sampling Perspective on Backtracking — Ankur Moitra]] · 2026-07-29
 - [[prof-papers/071-steven-t-flammia-autonomous-hamiltonian-certification-and-changepoint-de|071 · Autonomous Hamiltonian certification and changepoint detection — Steven T. Flammia]] · 2026-07-29
