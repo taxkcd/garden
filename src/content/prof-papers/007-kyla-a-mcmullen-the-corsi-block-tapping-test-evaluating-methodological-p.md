@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-kyla"
-source_hash: "94a3402012cada761851b537c76348de13a13a38a0aeae4502e88a48b0eaeed8"
+source_hash: "ef1bb1034b037cbab9307c74b0ee5fb9d2cb11f23a8babcaaf92428adfd1c67e"
 sequence: 7
 generator: "outreach-garden: managed"
 ---

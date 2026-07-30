@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/084-krzysztof-j-kochut-relations-prediction-for-knowledge-graph-completion-u|084 · Relations Prediction for Knowledge Graph Completion using Large Language Models — Krzysztof J. Kochut]] · 2026-07-30
 - [[prof-papers/083-josh-mccoy-dominion-a-new-frontier-for-ai-research|083 · Dominion: A New Frontier for AI Research — Josh McCoy]] · 2026-07-30
 - [[prof-papers/082-vijay-ganesh-understanding-cdcl-solvers-via-scalability-studies-and-proo|082 · Understanding CDCL Solvers via Scalability Studies and Proofdoors — Vijay Ganesh]] · 2026-07-30
 - [[prof-papers/081-sangmi-lee-pallickara-when-to-trust-how-to-distill-multi-foundation-mode|081 · When to Trust, How to Distill: Multi-Foundation Model Guidance for Lightweight, Robust Scientific Time Series Forecasting — Sangmi Lee Pallickara]] · 2026-07-30

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-ravi-sundaram"
-source_hash: "c1340b664b0f231f068664bcc5970cb28f7e94385018d55231a53f23b62248f2"
+source_hash: "2d5e5134ed241f8bdc09b72e30b1d23cd2a50e089fa5c5597e366f85d4c08b82"
 sequence: 60
 generator: "outreach-garden: managed"
 ---

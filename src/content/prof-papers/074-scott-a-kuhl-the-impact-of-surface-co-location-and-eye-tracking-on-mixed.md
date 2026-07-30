@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-scott-a-kuhl"
-source_hash: "61a0f5131aff7683df6c9f156d87ec1b7527684b03c2a5ef1bb7e8b9bf4b4e1d"
+source_hash: "870f483c2fb13cb52a5ec3705b1408001d270a0ff36a79b815bd01dfaba828a7"
 sequence: 74
 generator: "outreach-garden: managed"
 ---

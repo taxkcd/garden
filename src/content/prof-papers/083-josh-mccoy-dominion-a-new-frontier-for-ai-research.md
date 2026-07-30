@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-josh-mccoy"
-source_hash: "855b60caba713c7ca62fa851131d1aefd8072d183b7538a321163c16d25f0b06"
+source_hash: "d3df149a0986a796c053a14745b5cdb52e4ad9c6fb6f2f63f8629abddd6efe93"
 sequence: 83
 generator: "outreach-garden: managed"
 ---

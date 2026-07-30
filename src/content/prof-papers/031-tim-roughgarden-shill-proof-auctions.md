@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-timroughgarden-org"
-source_hash: "bcce5fdae13a8138e7eef6722c10891645bc5eb7ecd954f3448a9a186c4f7356"
+source_hash: "99a7a7fb6537429e9660b217f20a406b1f64b8772d8f9406f021df94771c9f20"
 sequence: 31
 generator: "outreach-garden: managed"
 ---

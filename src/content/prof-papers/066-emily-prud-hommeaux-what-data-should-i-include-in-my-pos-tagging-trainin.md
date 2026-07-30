@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-emily-prud-hommeaux"
-source_hash: "05195a49c42f702157355aadf12fbfb8f95c0773ca6a9c4912b5bb7d72673462"
+source_hash: "39afe9ee7fbf695afc23e1fd99ac5a22373deb77a960df16eb75da3840000a81"
 sequence: 66
 generator: "outreach-garden: managed"
 ---

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-zilin-jiang"
-source_hash: "8c57b6074e6e6d22a805d16e3b3a860c95e4a6b8301534c3df2248d282fed6d3"
+source_hash: "30ba115bca97c2ef92892c3ad89ad6646fd7d592dc1c011b4ce29396271595b3"
 sequence: 77
 generator: "outreach-garden: managed"
 ---

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-fergun"
-source_hash: "64592d983c80d150b654109fcba4e08a26e038d88ca04076a361fda68c7ef6d0"
+source_hash: "1b23918f4a91c5d7b02a418f71c86ca08ec2f837ec5dd6a9e3bcbdce7a6a235d"
 sequence: 48
 generator: "outreach-garden: managed"
 ---

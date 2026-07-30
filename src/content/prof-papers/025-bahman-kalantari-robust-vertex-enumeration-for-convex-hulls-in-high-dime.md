@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-kalantar"
-source_hash: "fabbd5dfb76bb7bbcbee5d982aece7fc721c005189cb58b0cfc0ebe74f0b8e8f"
+source_hash: "d8e6a720a8f1cb1d556f0af7e3afb7e1ca442dd9a8bb5f0d33300129d6d964be"
 sequence: 25
 generator: "outreach-garden: managed"
 ---

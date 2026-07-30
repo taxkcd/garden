@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-nyu"
-source_hash: "43dcd6a3da1bc6373ae243fe1af49bdb40e29e4fd7bd5a12bf6906ac4b0e3ad7"
+source_hash: "706085ace2df5d56d14f5a0ea799db9bd5c7e806c01a7b6e0a18c60f5ad795a5"
 sequence: 24
 generator: "outreach-garden: managed"
 ---

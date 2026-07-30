@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-dandrews"
-source_hash: "7082e8a84dd1b96d6ecb93c6887022ce2df23772161249c14fe9e6290f007db7"
+source_hash: "6c2213ff9ed0c1c2a83818384f8286c10c37f925d5ead6b004eb38b127910102"
 sequence: 38
 generator: "outreach-garden: managed"
 ---

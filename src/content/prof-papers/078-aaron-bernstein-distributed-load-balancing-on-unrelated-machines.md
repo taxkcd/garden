@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-aaron-bernstein"
-source_hash: "5063a2e50eec7dcb03623f1f8c26e26837a4a35849ffd84e56c90b8fb28012da"
+source_hash: "22c02ce742917dccf37d6f1e1e64f6bb50295e02f67093c951067909c9481646"
 sequence: 78
 generator: "outreach-garden: managed"
 ---

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-shuang-hao"
-source_hash: "3ca0c77041fd91f12f805ae73de130031f5964cd7df000de7ad8dc323f6cf0df"
+source_hash: "cfdcaa0761823f3b04a87ebfb53035f91ecb1dd37148fb73745de026fafe2094"
 sequence: 57
 generator: "outreach-garden: managed"
 ---

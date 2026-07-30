@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-wlodek-zadrozny"
-source_hash: "aa20e17fcfb6279a41498bdd7b9db00bbe660815068ea0b9d82fa5f53681b0ba"
+source_hash: "c646c2a35cf62ccae6926747a95a67bcecb6d928184c9fcc7276df48c83b475c"
 sequence: 68
 generator: "outreach-garden: managed"
 ---
