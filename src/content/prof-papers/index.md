@@ -1,6 +1,6 @@
 ---
 title: "Professor papers and learning paths"
-date: 2026-07-30
+date: 2026-07-31
 tags:
   - research-paper
   - learning-path
@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/085-mats-per-erik-heimdahl-architectural-modeling-and-analysis-for-safety-en|085 · Architectural Modeling and Analysis for Safety Engineering — Mats Per Erik Heimdahl]] · 2026-07-30
 - [[prof-papers/084-krzysztof-j-kochut-relations-prediction-for-knowledge-graph-completion-u|084 · Relations Prediction for Knowledge Graph Completion using Large Language Models — Krzysztof J. Kochut]] · 2026-07-30
 - [[prof-papers/083-josh-mccoy-dominion-a-new-frontier-for-ai-research|083 · Dominion: A New Frontier for AI Research — Josh McCoy]] · 2026-07-30
 - [[prof-papers/082-vijay-ganesh-understanding-cdcl-solvers-via-scalability-studies-and-proo|082 · Understanding CDCL Solvers via Scalability Studies and Proofdoors — Vijay Ganesh]] · 2026-07-30
