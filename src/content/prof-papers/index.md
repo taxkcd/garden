@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/080-uzi-vishkin-empirical-challenge-for-nc-theory|080 · Empirical Challenge for NC Theory — Uzi Vishkin]] · 2026-07-30
 - [[prof-papers/079-thatchaphol-saranurak-minimum-degree-spanning-tree-1-1-approximation-in|079 · Minimum Degree Spanning Tree: (1 + ε, 1)-Approximation in Near-Linear Time — Thatchaphol Saranurak]] · 2026-07-30
 - [[prof-papers/078-aaron-bernstein-distributed-load-balancing-on-unrelated-machines|078 · Distributed Load Balancing on Unrelated Machines — Aaron Bernstein]] · 2026-07-30
 - [[prof-papers/077-zilin-jiang-beyond-the-classification-theorem-of-cameron-goethals-seidel|077 · Beyond the classification theorem of Cameron, Goethals, Seidel, and Shult — Zilin Jiang]] · 2026-07-30
