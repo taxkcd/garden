@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/076-raj-sunderraman-functional-python-programming-in-introductory-computer-s|076 · Functional Python Programming in Introductory Computer Science Courses — Raj Sunderraman]] · 2026-07-30
 - [[prof-papers/075-jianer-chen-streaming-algorithms-for-graph-k-matching-with-optimal-or-ne|075 · Streaming Algorithms for Graph k-Matching with Optimal or Near-Optimal Update Time — Jianer Chen]] · 2026-07-30
 - [[prof-papers/074-scott-a-kuhl-the-impact-of-surface-co-location-and-eye-tracking-on-mixed|074 · The Impact of Surface Co-location and Eye-tracking on Mixed Reality Typing — Scott A. Kuhl]] · 2026-07-29
 - [[prof-papers/073-quinn-o-snell-predicting-suicidal-thoughts-and-behavior-among-adolescent|073 · Predicting suicidal thoughts and behavior among adolescents using the risk and protective factor framework: A large-scale machine learning approach — Quinn O. Snell]] · 2026-07-29
