@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/088-alistair-sinclair-on-quantum-to-classical-comparison-for-davies-generato|088 · On quantum to classical comparison for Davies generators — Alistair Sinclair]] · 2026-07-31
 - [[prof-papers/087-kent-quanrud-approximating-directed-connectivity-in-almost-linear-time|087 · Approximating Directed Connectivity in Almost-Linear Time — Kent Quanrud]] · 2026-07-31
 - [[prof-papers/086-suranjan-chakraborty-on-demand-generation-of-high-quality-software-engin|086 · On-demand generation of high-quality software engineering datasets using large language models and ontologies — Suranjan Chakraborty]] · 2026-07-30
 - [[prof-papers/085-mats-per-erik-heimdahl-architectural-modeling-and-analysis-for-safety-en|085 · Architectural Modeling and Analysis for Safety Engineering — Mats Per Erik Heimdahl]] · 2026-07-30
