@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-ferdinando-fioretto"
-source_hash: "ad5b7aa04c0a38a536b246440b79f0734e6d9c5d15a6a5215e9b1befbe060d81"
+source_hash: "f8a23c7d96be38e806044ed8d3100db7accd6721318e6b930ad85855ec882b13"
 sequence: 90
 generator: "outreach-garden: managed"
 ---
