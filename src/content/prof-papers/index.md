@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/091-jonathan-zittrain-legal-alignment-for-safe-and-ethical-ai|091 · Legal Alignment for Safe and Ethical AI — Jonathan Zittrain]] · 2026-07-31
 - [[prof-papers/090-ferdinando-fioretto-neurofilter-activation-based-guardrails-for-privacy|090 · NeuroFilter: Activation-Based Guardrails for Privacy-Conscious LLM Agents — Ferdinando Fioretto]] · 2026-07-31
 - [[prof-papers/089-ziv-bar-joseph-recovering-time-varying-single-cell-data-networks|089 · Recovering Time-Varying Single-Cell Data Networks — Ziv Bar-Joseph]] · 2026-07-31
 - [[prof-papers/088-alistair-sinclair-on-quantum-to-classical-comparison-for-davies-generato|088 · On quantum to classical comparison for Davies generators — Alistair Sinclair]] · 2026-07-31
