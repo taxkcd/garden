@@ -1,0 +1,158 @@
+---
+title: "090 · NeuroFilter: Activation-Based Guardrails for Privacy-Conscious LLM Agents — Ferdinando Fioretto"
+date: 2026-07-31
+tags:
+  - research-paper
+  - learning-path
+  - professor-outreach
+draft: false
+source_workspace: "outreach-ferdinando-fioretto"
+source_hash: "ad5b7aa04c0a38a536b246440b79f0734e6d9c5d15a6a5215e9b1befbe060d81"
+sequence: 90
+generator: "outreach-garden: managed"
+---
+
+# 090 · NeuroFilter: Activation-Based Guardrails for Privacy-Conscious LLM Agents
+
+## At a glance
+
+- **Professor:** Ferdinando Fioretto
+- **Institution:** University of Virginia
+- **Paper:** [NeuroFilter: Activation-Based Guardrails for Privacy-Conscious LLM Agents](https://arxiv.org/pdf/2601.14660)
+- **Authors:** Saswat Das, Ferdinando Fioretto
+- **Year:** 2026
+
+## Paper overview
+
+This paper introduces NeuroFilter, a novel method to protect large language model (LLM) agents from leaking sensitive information during conversations. Unlike existing methods that rely on expensive text-based monitoring, NeuroFilter detects privacy-violating intent by analyzing the internal activations of the model in real-time. It effectively identifies both single-turn and multi-turn privacy attacks, including sophisticated adversarial strategies, while maintaining low computational cost and preserving the utility of the agent.
+
+### Why it matters
+
+**Research problem:** Agentic LLMs require access to sensitive contextual information to perform tasks effectively, but this access creates risks of contextually inappropriate information disclosure. Existing defenses are costly, rely on semantic text analysis, and fail against multi-turn and mosaic attacks that distribute malicious intent across conversation turns.
+
+**Why it matters:** Privacy violations in LLM agents can lead to regulatory exposure (e.g., GDPR, HIPAA) and real-world harms such as increased insurance premiums or denied credit. Ensuring contextual privacy is critical for safe deployment of LLM agents in sensitive domains like healthcare, finance, and legal services.
+
+**Key contributions:**
+
+- Demonstration that privacy-violating intent is linearly detectable in intermediate-layer activations of LLMs.
+- Introduction of activation velocity as a trajectory-level signal to detect multi-turn conversational manipulation and mosaic attacks.
+- Development of a low-latency, computationally efficient input filtering framework compatible with real-time agentic LLM deployments.
+- Comprehensive evaluation across multiple LLM families, sizes, and precisions showing robustness and generalization.
+- Empirical evidence that NeuroFilter outperforms state-of-the-art baselines in safety and utility while incurring significantly lower computational costs.
+
+## About the professor
+
+**Ferdinando Fioretto** — Copenhaver Fellow and Associate Professor, Computer Science, University of Virginia.
+
+Research interests: Foundational ML and Generative AI under Constraints, AI for Science and Engineering, Discrete Diffusion Language Models, Decision Focused Learning, LLM Multiagent Systems, Responsible AI
+
+### Research links
+
+- [Faculty/profile page](http://nandofioretto.com)
+- [Resolved homepage](https://nandofioretto.github.io/)
+- [Lab website](https://nandofioretto.github.io/group/)
+- [Google Scholar](https://scholar.google.com/citations?user=ASf9Q04AAAAJ&sortby=pubdate)
+- [GitHub](https://github.com/nandofioretto)
+- [Social profile](https://twitter.com/nandofioretto)
+
+## Learning path
+
+## Track 1 — Academic deep-dives (long-form)
+
+_Rigorous lectures, seminars and conference talks. Deeper, but longer._
+
+To deeply understand the NeuroFilter paper, start by building foundational knowledge on probing internal activations of LLMs and the use of linear probes in neural networks, as these underpin the detection methodology. Next, explore the context of privacy attacks on conversational agents and real-time safety filtering challenges in LLM agents to appreciate the problem setting and deployment constraints. Finally, focus on the core novel contributions of NeuroFilter itself, including the authors' own talk and related activation velocity detection methods for multi-turn privacy attacks.
+
+### LLM internal activations probing *(prerequisite)*
+Understanding how semantic and intent information is encoded in the internal activations of large language models is critical. This section covers advanced research talks that explain how concepts can be linearly decoded from intermediate layers, providing the theoretical basis for NeuroFilter's activation-based detection.
+
+*How the paper uses it:* NeuroFilter relies on detecting privacy-violating intent from intermediate-layer activations of LLMs.
+
+▶ [Detection and Steering in LLMs using Feature Learning](https://www.youtube.com/watch?v=TlLu32yHYfk) — Simons Institute for the Theory of Computing · 1:02:35
+
+### Linear probes in neural networks *(prerequisite)*
+Linear probes are a key technique used to extract interpretable signals from neural network activations without modifying the model. This section includes rigorous explainers and conference talks that delve into the theory and application of probing classifiers, essential for understanding NeuroFilter's detection mechanism.
+
+*How the paper uses it:* NeuroFilter trains linear probes on cached activations to identify privacy-violating prompts.
+
+▶ [Linear representations of concepts in modern AI models](https://www.youtube.com/watch?v=nbuCGBhf_Og) — Simons Institute for the Theory of Computing · 36:36
+
+### Privacy attacks on conversational agents *(prerequisite)*
+This section provides advanced lectures and talks on the nature of privacy and security risks in conversational AI systems, including adversarial prompt injection and multi-turn attacks. Understanding these threats contextualizes the necessity and design goals of NeuroFilter.
+
+*How the paper uses it:* NeuroFilter aims to detect and prevent privacy violations and adversarial attacks in conversational LLM agents.
+
+▶ [Distinguished Lecture Series: Wenke Lee "Privacy and ...](https://www.youtube.com/watch?v=XOHmAp3GWRI) — ISTatPENNSTATE · 1:15:04
+
+### Real-time safety filtering in LLM agents *(prerequisite)*
+Deploying safety filters in real-time LLM agents involves balancing latency, computational cost, and detection accuracy. This section includes university lectures and research talks that discuss these challenges and existing approaches, framing the practical deployment context for NeuroFilter.
+
+*How the paper uses it:* NeuroFilter is designed as a low-latency, computationally efficient input filtering framework for real-time LLM agent deployments.
+
+▶ [Zhijing Jin | Emergent AI safety risks in multi-agent LLMs](https://www.youtube.com/watch?v=1MxpYJJHeik) — Schwartz Reisman Institute · 1:26:46
+
+### Activation velocity detection
+Activation velocity is a novel trajectory-level signal introduced by NeuroFilter to detect multi-turn conversational manipulation and mosaic attacks. This section includes recent research talks on activation-based detection methods in multi-agent systems, providing insight into this innovative approach.
+
+*How the paper uses it:* Activation velocity enables NeuroFilter to detect gradual adversarial steering across conversation turns.
+
+▶ [When Agents Go Rogue: Activation-Based Detection of Malicious Behaviors in Multi-Agent Systems](https://www.youtube.com/watch?v=rLv5VIjwL6o) — AI x Security · 7:51 · 2 weeks ago
+
+### NeuroFilter talk *(the paper's own talk)*
+The authors' own presentation of NeuroFilter offers the most direct and detailed explanation of their method, experimental results, and implications. Watching this talk provides authoritative insights into the design and evaluation of the activation-based guardrails for privacy in LLM agents.
+
+*How the paper uses it:* This is the authors' own recorded talk about NeuroFilter, the core contribution of the paper.
+
+▶ [Behind the Refusal: Determining Guardrail Activation via Behavioral Monitoring](https://www.youtube.com/watch?v=jpXwnOcNk2U) — AI x Security · 2 weeks ago
+
+## Track 2 — Beginner → Advanced (short-form)
+
+_Concise, high-quality explainers that build intuition — for when time is short._
+
+This learning path introduces foundational concepts needed to understand NeuroFilter, a method for privacy protection in large language model (LLM) agents. We start with how internal activations of LLMs can reveal semantic and intent information, then cover linear probes as a key technique to detect such information. Next, we explore real-time safety filtering challenges in LLM agents, followed by understanding privacy attacks on conversational agents that NeuroFilter aims to prevent. Finally, we focus on NeuroFilter's core innovation: activation velocity detection for multi-turn privacy attacks.
+
+### LLM internal activations probing *(prerequisite)*
+Large language models process inputs through multiple layers, producing internal activations that encode semantic and intent information. Probing these activations helps us understand what the model 'knows' at different stages, revealing hidden concepts without changing the model itself.
+
+*How the paper uses it:* NeuroFilter relies on detecting privacy-violating intent by analyzing intermediate-layer activations of LLMs.
+
+▶ [LLM Internal Concepts Shift During Chat](https://www.youtube.com/watch?v=9urAoDX-Lio) — AI Research Roundup · 4:21
+
+### Linear probes in neural networks *(prerequisite)*
+Linear probes are simple classifiers trained on neural network activations to detect specific concepts or behaviors. They provide an interpretable and computationally efficient way to identify whether certain information is linearly encoded in model activations.
+
+*How the paper uses it:* NeuroFilter uses linear probes trained on cached activations to detect privacy-violating prompts efficiently.
+
+▶ [Probing Classifiers: A Gentle Intro (Explainable AI for Deep ...](https://www.youtube.com/watch?v=HJn-OTNLnoE) — Jay Alammar · 11:26
+
+### Real-time safety filtering in LLM agents *(prerequisite)*
+Deploying LLM agents safely requires filtering inputs and outputs in real-time to prevent harmful or privacy-violating content. This involves balancing computational efficiency with accuracy to maintain agent utility and responsiveness.
+
+*How the paper uses it:* NeuroFilter addresses the challenge of low-latency, computationally efficient input filtering compatible with real-time LLM deployments.
+
+▶ [Zhijing Jin | Emergent AI safety risks in multi-agent LLMs](https://www.youtube.com/watch?v=1MxpYJJHeik) — Schwartz Reisman Institute · 1:26:46
+
+### Privacy attacks on conversational agents *(prerequisite)*
+Conversational agents can be vulnerable to privacy attacks where adversaries extract or leak sensitive information through malicious prompts or multi-turn manipulations. Understanding these threats is crucial to designing effective defenses.
+
+*How the paper uses it:* NeuroFilter aims to detect and prevent single-turn, multi-turn, and mosaic privacy attacks on LLM agents.
+
+▶ [AI Prompt Injection Attacks Explained: How Hackers Target AI ...](https://www.youtube.com/watch?v=hrLAU8nG63c) — Practical DevSecOps · 15:04
+
+### Activation velocity detection
+Activation velocity tracks how internal activations change over multiple conversation turns, enabling detection of gradual adversarial steering or multi-turn attacks that are hard to catch with single-turn analysis.
+
+*How the paper uses it:* NeuroFilter introduces activation velocity as a novel trajectory-level signal to detect multi-turn conversational privacy attacks.
+
+▶ [When Agents Go Rogue: Activation-Based Detection of Malicious Behaviors in Multi-Agent Systems](https://www.youtube.com/watch?v=rLv5VIjwL6o) — AI x Security · 7:51 · 2 weeks ago
+
+### NeuroFilter talk *(the paper's own talk)*
+A direct presentation from the authors explaining NeuroFilter’s design, methodology, and evaluation, providing insights into how activation-based guardrails enforce privacy in LLM agents.
+
+*How the paper uses it:* This talk offers the clearest overview of NeuroFilter’s approach and results from the original researchers.
+
+▶ [Behind the Refusal: Determining Guardrail Activation via Behavioral Monitoring](https://www.youtube.com/watch?v=jpXwnOcNk2U) — AI x Security · 2 weeks ago
+
+## Already in your library
+
+- [[1hr Talk] Intro to Large Language Models](https://www.youtube.com/watch?v=zjkBMFhNj_g) — also for: On-demand generation of high-quality software engineering datasets using large language models and ontologies (Suranjan Chakraborty)
