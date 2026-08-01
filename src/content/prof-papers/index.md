@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/107-avah-banerjee-non-uniform-mixing-of-quantum-walks-on-the-symmetric-group|107 · Non-uniform Mixing of Quantum Walks on the Symmetric Group — Avah Banerjee]] · 2026-08-01
 - [[prof-papers/106-sina-fazelpour-aspirational-affordances-of-ai|106 · Aspirational Affordances of AI — Sina Fazelpour]] · 2026-08-01
 - [[prof-papers/105-haitao-wang-visibility-queries-in-simple-polygons|105 · Visibility Queries in Simple Polygons — Haitao Wang]] · 2026-08-01
 - [[prof-papers/104-periklis-a-papakonstantinou-query-lower-bounds-for-correlation-clusterin|104 · Query Lower Bounds for Correlation Clustering under Memory Constraints — Periklis A. Papakonstantinou]] · 2026-08-01
