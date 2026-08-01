@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-andrey-a-popov"
-source_hash: "5cc2b24a4779f17b0cebbaaaa163c86553532097ac0e72052d3442355f9e5817"
+source_hash: "d9f9ff845fde29e0337b4814c83f53e0b716cc165266777253179958c9d7f356"
 sequence: 97
 generator: "outreach-garden: managed"
 ---

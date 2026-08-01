@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-jonathan-zittrain"
-source_hash: "e964c26658c8bdea38ce92cb6a0234615992fb7e4868de6ce965bb8ab97323db"
+source_hash: "c88e6594a79b2f01acef64e471583918088aceecb0d5ed67824a8fee90ce4a3b"
 sequence: 91
 generator: "outreach-garden: managed"
 ---

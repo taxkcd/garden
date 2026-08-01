@@ -12,6 +12,9 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/110-katherine-kosaian-formalizing-mltl-formula-progression-in-isabelle-hol|110 · Formalizing MLTL Formula Progression in Isabelle/HOL — Katherine Kosaian]] · 2026-07-30
+- [[prof-papers/109-marco-lvarez-a-survey-of-ai-based-anomaly-detection-in-iot-and-sensor-ne|109 · A Survey of AI-Based Anomaly Detection in IoT and Sensor Networks — Marco Álvarez]] · 2026-07-30
+- [[prof-papers/108-hana-khamfroush-one-round-is-all-you-need-analytic-federated-learning-fo|108 · One Round Is All You Need: Analytic Federated Learning for Task-Heterogeneous Multi-Label Medical Image Classification — Hana Khamfroush]] · 2026-07-30
 - [[prof-papers/107-avah-banerjee-non-uniform-mixing-of-quantum-walks-on-the-symmetric-group|107 · Non-uniform Mixing of Quantum Walks on the Symmetric Group — Avah Banerjee]] · 2026-08-01
 - [[prof-papers/106-sina-fazelpour-aspirational-affordances-of-ai|106 · Aspirational Affordances of AI — Sina Fazelpour]] · 2026-08-01
 - [[prof-papers/105-haitao-wang-visibility-queries-in-simple-polygons|105 · Visibility Queries in Simple Polygons — Haitao Wang]] · 2026-08-01

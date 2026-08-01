@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-kent-quanrud"
-source_hash: "320fff79f891b743b91c057e27fa858299b6d92231758bb9ab9c31ac77e6f6cc"
+source_hash: "aeebf73cc8028b849d4114a600314345dc6a02755623f2495236058a7505deb7"
 sequence: 87
 generator: "outreach-garden: managed"
 ---

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-alistair-sinclair"
-source_hash: "a7b07116d9a7201881158340e85e00ccc1dc71c7d5c96e15aa711cf5492e9a5d"
+source_hash: "c8d6dc9f827dbd0ea47b581dedfc49a2933b77b6dc8073753634055546f17f59"
 sequence: 88
 generator: "outreach-garden: managed"
 ---
