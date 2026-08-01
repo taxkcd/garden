@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/120-lawrence-o-hall-modeling-information-diffusion-in-social-media-data-driv|120 · Modeling information diffusion in social media: data-driven observations — Lawrence O. Hall]] · 2026-08-01
 - [[prof-papers/119-ying-cai-correction-verifiable-authenticated-data-structure-v-ads-for-an|119 · Correction: Verifiable Authenticated Data Structure (V-ADS) for Analytic Queries — Ying Cai]] · 2026-08-01
 - [[prof-papers/118-gerald-j-sussman-sparse-representations-for-fast-one-shot-learning|118 · Sparse Representations for Fast, One-Shot Learning — Gerald J. Sussman]] · 2026-08-01
 - [[prof-papers/117-jason-d-hartline-simple-mechanisms-for-agents-with-non-linear-utilities|117 · Simple Mechanisms for Agents with Non-linear Utilities — Jason D. Hartline]] · 2026-08-01
