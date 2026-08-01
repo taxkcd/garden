@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-haym-hirsh"
-source_hash: "fbf0e5bac9c2d23d9a4363d7b5763a2c20d5f1204d12f709d3e16c32511a5ff6"
+source_hash: "774894fa830167bac2f0da3c67c8f20fbc425f28371f7d60676c9b687851f346"
 sequence: 100
 generator: "outreach-garden: managed"
 ---
