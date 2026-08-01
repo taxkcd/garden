@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/099-gavriil-tsechpenakis-fkbp51-modulates-hippocampal-size-and-function-in-p|099 · FKBP51 Modulates Hippocampal Size and Function in Post-translational Regulation of Parkin — Gavriil Tsechpenakis]] · 2026-08-01
 - [[prof-papers/098-david-zuckerman-linear-hashing-is-optimal|098 · Linear Hashing Is Optimal — David Zuckerman]] · 2026-08-01
 - [[prof-papers/097-andrey-a-popov-the-model-forest-ensemble-kalman-filter|097 · The Model Forest Ensemble Kalman Filter — Andrey A. Popov]] · 2026-08-01
 - [[prof-papers/096-daniel-lokshtanov-covering-points-with-rectangular-boundaries|096 · Covering Points with Rectangular Boundaries — Daniel Lokshtanov]] · 2026-08-01
