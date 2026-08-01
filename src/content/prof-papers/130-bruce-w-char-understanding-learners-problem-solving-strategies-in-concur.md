@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-bruce-w-char"
-source_hash: "6772c20a2e35bfe0289565bbd1fd1bc486ebd5051842c1cb5a2086007773643c"
+source_hash: "d9fc32945b02f661f737d3e9132d10c6b30fb4ca380e83ffc4f0bd0833e76aad"
 sequence: 130
 generator: "outreach-garden: managed"
 ---
