@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/117-jason-d-hartline-simple-mechanisms-for-agents-with-non-linear-utilities|117 · Simple Mechanisms for Agents with Non-linear Utilities — Jason D. Hartline]] · 2026-08-01
 - [[prof-papers/116-zeyu-guo-optimal-pseudorandom-generators-for-low-degree-polynomials-over|116 · Optimal Pseudorandom Generators for Low-Degree Polynomials Over Moderately Large Fields — Zeyu Guo]] · 2026-08-01
 - [[prof-papers/115-eric-bach-a-novel-information-transmission-problem-and-its-optimal-solut|115 · A Novel Information Transmission Problem and Its Optimal Solution — Eric Bach]] · 2026-08-01
 - [[prof-papers/114-yan-li-the-association-between-social-determinants-of-health-and-populat|114 · The Association Between Social Determinants of Health and Population Health Outcomes: Ecological Analysis — Yan Li]] · 2026-08-01
