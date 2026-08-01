@@ -1,5 +1,5 @@
 ---
-title: "119 · Correction: Verifiable Authenticated Data Structure (V-ADS) for Analytic Queries — Ying Cai"
+title: "119 · Verifying the Correctness of Analytic Query Results — Ying Cai"
 date: 2026-08-01
 tags:
   - research-paper
@@ -7,35 +7,38 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-ying-cai"
-source_hash: "9b188d7d120cb8d5d0ad63b3109d2661c377eb5050883bc9785ca53d9d92eab4"
+source_hash: "8519ba5e18e355b2ca92e5086ce2a0d356cba53c72d08945da97e61f52a6d056"
 sequence: 119
 generator: "outreach-garden: managed"
 ---
 
-# 119 · Correction: Verifiable Authenticated Data Structure (V-ADS) for Analytic Queries
+# 119 · Verifying the Correctness of Analytic Query Results
 
 ## At a glance
 
 - **Professor:** Ying Cai
 - **Institution:** Iowa State University
-- **Paper:** [Correction: Verifiable Authenticated Data Structure (V-ADS) for Analytic Queries](https://link.springer.com/content/pdf/10.1007/s00778-025-00962-4.pdf)
+- **Paper:** [Verifying the Correctness of Analytic Query Results](https://arxiv.org/pdf/2011.11487)
 - **Authors:** Masoud Nosrati, Ying Cai
-- **Year:** 2026
+- **Year:** 2020
 
 ## Paper overview
 
-This document is a correction notice for a previously published article on Verifiable Authenticated Data Structures (V-ADS) used to ensure the integrity and authenticity of analytic query results in databases. The correction specifically addresses an error in Table 2 of the original article.
+This paper addresses the challenge of ensuring that query results returned by cloud servers for analytic queries are correct, given that clouds may be untrusted or compromised. The authors propose a new data structure combining intersection trees and Merkle hash trees to efficiently verify the correctness of complex analytic queries such as top-k, range, and KNN queries. Their approach reduces computational overhead for data owners, servers, and users compared to previous methods.
 
 ### Why it matters
 
-**Research problem:** Ensuring the correctness and authenticity of analytic query results in database systems using verifiable authenticated data structures.
+**Research problem:** How to enable users to verify the correctness (soundness and completeness) of results returned by untrusted cloud servers for analytic queries involving utility functions, where precomputing scores for data items is not feasible.
 
-**Why it matters:** In database management, especially for analytic queries, it is crucial to guarantee that query results are trustworthy and have not been tampered with, which is important for security and privacy.
+**Why it matters:** Data outsourcing to clouds is common for handling large data volumes and complex queries, but clouds may be malicious or hacked, risking incorrect query results. Verifying query results is critical for trust in cloud services, especially for sensitive applications like medical risk prediction and financial crime detection.
 
 **Key contributions:**
 
-- Development of a V-ADS framework for analytic queries (from original article).
-- Correction of an error in Table 2 to ensure accurate representation of data.
+- A generic verification data structure (IFMH-tree) combining I-tree and MH-tree concepts for analytic query result verification.
+- Two signature schemes (one-signature and multi-signature) balancing verification cost and signature overhead.
+- Efficient algorithms for building IFMH-tree, constructing verification objects, and verifying query results.
+- Security analysis proving soundness and completeness guarantees under adversarial models.
+- Comprehensive performance evaluation showing significant improvements over prior signature mesh approach in data owner, server, and user overhead.
 
 ## About the professor
 
@@ -54,66 +57,77 @@ Research interests: database management, security and privacy
 
 _Rigorous lectures, seminars and conference talks. Deeper, but longer._
 
-To deeply understand the paper on Verifiable Authenticated Data Structures (V-ADS) for analytic queries and its correction, start by building foundational knowledge on cryptographic accumulators and Merkle trees, which are essential building blocks for authenticated data structures. Then, explore verifiable query processing to grasp how query correctness and authenticity are ensured. Finally, focus on the core concept of verifiable authenticated data structures through advanced research talks, including the authors' own presentations, to directly connect with the paper's contributions.
+To deeply understand the paper on verifying the correctness of analytic query results, start by building foundational knowledge on the prerequisite concepts: Merkle hash trees, intersection trees, secure query verification, and analytic queries with utility functions. These provide the cryptographic, data structure, security, and query context necessary to grasp the novel IFMH-tree structure. Finally, focus on the core concept of the IFMH-tree verification structure itself to appreciate the paper's main contribution and methodology.
 
-### Cryptographic Accumulators *(prerequisite)*
-Cryptographic accumulators are fundamental cryptographic primitives that enable compact representation and verification of set membership, which underpin many verifiable data structures. Understanding accumulators provides insight into how V-ADS can efficiently authenticate analytic query results.
+### Merkle hash trees *(prerequisite)*
+Merkle hash trees are fundamental cryptographic data structures used for efficient and secure verification of data integrity. Understanding their construction and properties is essential since the IFMH-tree integrates Merkle hash trees for verification of analytic query results.
 
-*How the paper uses it:* Cryptographic accumulators form a foundational building block for constructing the verifiable authenticated data structures used in the paper.
+*How the paper uses it:* The IFMH-tree uses Merkle hash trees to ensure soundness and completeness of query results through cryptographic hashing and signatures.
 
-▶ [Lattice-Based Accumulator and Application to Anonymous ...](https://www.youtube.com/watch?v=YLXVH30Ho1M) — Microsoft Research · 54:46
+▶ [3. Blockchain Basics & Cryptography](https://www.youtube.com/watch?v=0UvVOMZqpEA) — MIT OpenCourseWare · 6 years ago
 
-### Merkle Trees *(prerequisite)*
-Merkle trees are a widely used authenticated data structure that enables efficient and secure verification of data integrity. They are a core technique underlying V-ADS frameworks for ensuring the authenticity of analytic query results.
+### Intersection trees *(prerequisite)*
+Intersection trees are advanced data structures used for indexing and querying multi-dimensional data efficiently. They form the indexing backbone of the IFMH-tree by organizing function intersections to facilitate quick subdomain searches.
 
-*How the paper uses it:* Merkle trees are a common authenticated data structure technique underlying the V-ADS framework presented in the paper.
+*How the paper uses it:* The IFMH-tree combines intersection trees with Merkle hash trees to index function intersections for analytic query verification.
 
-▶ [Merkle Trees Explained - How Databases Sync Billions of Keys](https://www.youtube.com/watch?v=KK5c0f7Gb6M) — Bankai Senpai · 8:24
+▶ [9. Augmentation: Range Trees](https://www.youtube.com/watch?v=xVka6z1hu-I) — MIT OpenCourseWare · 10 years ago
 
-### Verifiable Query Processing *(prerequisite)*
-Verifiable query processing focuses on methods to ensure that query results returned by an untrusted server are correct and authentic. This concept is critical for understanding the security guarantees that V-ADS frameworks aim to provide for analytic queries.
+### Secure query verification *(prerequisite)*
+Secure query verification techniques ensure that results returned from untrusted servers are correct and complete. This area provides the security context and adversarial model that the paper addresses with its novel verification data structure.
 
-*How the paper uses it:* The paper addresses ensuring correctness and authenticity of analytic query results, which is the core goal of verifiable query processing.
+*How the paper uses it:* The paper proposes a secure verification framework guaranteeing soundness and completeness of analytic query results from untrusted cloud servers.
 
-▶ [Verifiable Query Processing Over Outsourced Social Graph](https://www.youtube.com/watch?v=QbFiHOLHvQU) — XOOM PROJECTS · 2 years ago
+▶ [Verification and Secure Systems](https://www.youtube.com/watch?v=J9977DaNAlc) — Microsoft Research · 7 years ago
 
-### Verifiable Authenticated Data Structures
-This concept covers the design and implementation of data structures that allow verification of data authenticity and integrity, even when operated on by untrusted parties. It is central to the paper's contribution of a V-ADS framework for analytic queries.
+### Analytic queries with utility functions *(prerequisite)*
+Understanding analytic queries involving utility functions, such as top-k, range, and KNN queries, is crucial to grasp the types of queries the paper targets. Utility functions rank or score data items, which complicates verification.
 
-*How the paper uses it:* The paper's main contribution is the development and correction of a verifiable authenticated data structure framework for analytic queries.
+*How the paper uses it:* The paper focuses on verifying analytic queries that use utility functions for ranking, which cannot be precomputed easily.
 
-▶ [Authenticated Data Structures for Stateless Validation and Transparency Logs - Alin Tomescu](https://www.youtube.com/watch?v=TuZiEb_SLx0) — UCL Information Security Research Group · 59:07 · 5 years ago
+▶ [1.5 Utility Functions](https://www.youtube.com/watch?v=rdBbPlyCtTY) — AP Microeconomics with MIT Professor Jon Gruber · 8 years ago
+
+### IFMH-tree verification structure
+The IFMH-tree is the paper's core novel data structure that integrates intersection trees and Merkle hash trees to enable efficient verification of analytic query results. Understanding this structure is key to appreciating the paper's contributions and performance improvements.
+
+*How the paper uses it:* The IFMH-tree is the central contribution enabling efficient and secure verification of complex analytic queries in untrusted cloud environments.
+
+▶ [Merkle Trees Optimized for Stateless Clients inBitcoin](https://www.youtube.com/watch?v=HEKtDILPeaI) — ifca · 18:40 · 5 years ago
 
 ## Track 2 — Beginner → Advanced (short-form)
 
 _Concise, high-quality explainers that build intuition — for when time is short._
 
-Start by understanding the foundational data structures that enable verification in databases, beginning with Merkle Trees and Cryptographic Accumulators. Then, learn about Verifiable Query Processing to see how queries can be authenticated. Finally, focus on Verifiable Authenticated Data Structures (V-ADS), the core method used in the paper to ensure trustworthy analytic query results.
+To understand this paper's approach to verifying analytic query results from untrusted cloud servers, start by learning about the types of analytic queries and utility functions it targets. Then build foundational knowledge of data structures like intersection trees and Merkle hash trees, which underpin the proposed verification method. Finally, explore the context of secure query verification to see why these structures matter and how they fit into the paper's novel IFMH-tree design.
 
-### Merkle Trees *(prerequisite)*
-Merkle Trees are a cryptographic data structure that efficiently and securely verify data integrity by hashing data blocks in a tree structure. They are widely used in blockchain and database systems to detect tampering with data. Understanding Merkle Trees provides intuition on how data authenticity can be proven with minimal overhead.
+### Analytic queries with utility functions *(prerequisite)*
+Analytic queries such as top-k, range, and k-nearest neighbors (KNN) rely on utility functions to rank or filter data items. Understanding utility functions helps grasp what kinds of queries the paper aims to verify and why precomputing scores is challenging.
 
-*How the paper uses it:* The paper’s V-ADS framework relies on Merkle Trees as a fundamental technique for integrity verification of analytic query results.
+*How the paper uses it:* The paper focuses on verifying results of analytic queries involving utility functions where precomputing scores is not feasible.
 
-▶ [Merkle Tree with real world examples](https://www.youtube.com/watch?v=qHMLy5JjbjQ) — Gaurav Sen · 7 years ago
+▶ [1.5 Utility Functions](https://www.youtube.com/watch?v=rdBbPlyCtTY) — AP Microeconomics with MIT Professor Jon Gruber · 8 years ago
 
-### Cryptographic Accumulators *(prerequisite)*
-Cryptographic accumulators are compact data structures that allow one to prove membership of an element in a set without revealing the entire set. They are essential for building efficient verifiable data structures by compressing data and enabling quick verification.
+### Intersection trees *(prerequisite)*
+Intersection trees are a type of binary tree used to index and efficiently query intersections of function domains or subdomains. They help organize complex query spaces so that searching for relevant data is faster than scanning all records.
 
-*How the paper uses it:* Accumulators underpin the construction of the V-ADS framework by enabling compact and verifiable representations of analytic query data.
+*How the paper uses it:* The IFMH-tree integrates intersection trees to index function intersections for efficient query verification.
 
-▶ [Cryptographic Accumulator - VB20](https://www.youtube.com/watch?v=1oVWL4rP0O8) — Linfeng Zhou · 4 years ago
+▶ [6. Binary Trees, Part 1](https://www.youtube.com/watch?v=76dhtgZt38A) — MIT OpenCourseWare · 4 years ago
 
-### Verifiable Query Processing *(prerequisite)*
-Verifiable query processing ensures that the results returned by a database query are correct and have not been tampered with, even when processed by an untrusted server. This concept is crucial for secure analytic queries where trustworthiness of results is mandatory.
+### Merkle hash trees *(prerequisite)*
+Merkle hash trees are cryptographic data structures that enable efficient and secure verification of data integrity. They work by hashing data in a tree structure so that verifying any piece of data requires only a small proof, not the entire dataset.
 
-*How the paper uses it:* The paper addresses verifiable query processing by proposing a V-ADS framework that guarantees authenticity and correctness of analytic query results.
+*How the paper uses it:* The IFMH-tree uses Merkle hash trees to securely verify sorted function lists and ensure data integrity against tampering.
 
-▶ [Verifiable Query Processing Over Outsourced Social Graph](https://www.youtube.com/watch?v=QbFiHOLHvQU) — XOOM PROJECTS · 2 years ago
+▶ [What is the merkle tree in Bitcoin?](https://www.youtube.com/watch?v=V6gLY-1G4Mc) — Keifer Kif · 9 years ago
 
-### Verifiable Authenticated Data Structures
-Verifiable Authenticated Data Structures (V-ADS) are specialized data structures that allow an untrusted party to prove the correctness of query results efficiently. They combine cryptographic techniques like Merkle Trees and accumulators to authenticate data and queries, ensuring security and privacy.
+### Secure query verification *(prerequisite)*
+Secure query verification ensures that results returned from untrusted servers are both sound (correct) and complete (no missing data). It is critical when outsourcing data to cloud servers that may be compromised or malicious.
 
-*How the paper uses it:* The core contribution of the paper is the development and correction of a V-ADS framework tailored for analytic queries in databases.
+*How the paper uses it:* The paper's main goal is to enable users to verify correctness and completeness of analytic query results from untrusted cloud servers.
 
-▶ [Authenticated Data Structures, Generically](https://www.youtube.com/watch?v=srbzojREi4I) — Microsoft Research · 9 years ago
+▶ [Achieving secure, universal, and fine-grained query results verification for secure search scheme](https://www.youtube.com/watch?v=u7UtLvd8x-U) — AMAZEBIT SOFTWARE · 8 years ago
+
+## Already in your library
+
+- [Merkle Tree with real world examples](https://www.youtube.com/watch?v=qHMLy5JjbjQ) — also for: Correction: Verifiable Authenticated Data Structure (V-ADS) for Analytic Queries (Ying Cai)

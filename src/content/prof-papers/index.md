@@ -16,7 +16,7 @@ Research papers encountered through professor outreach, paired with practical le
 - [[prof-papers/122-daniel-grosu-speeding-up-graph-algorithms-via-clique-partitioning|122 · Speeding-up Graph Algorithms via Clique Partitioning — Daniel Grosu]] · 2026-08-01
 - [[prof-papers/121-atri-rudra-monarchrt-efficient-attention-for-real-time-video-generation|121 · MonarchRT: Efficient Attention for Real-Time Video Generation — Atri Rudra]] · 2026-08-01
 - [[prof-papers/120-lawrence-o-hall-modeling-information-diffusion-in-social-media-data-driv|120 · Modeling information diffusion in social media: data-driven observations — Lawrence O. Hall]] · 2026-08-01
-- [[prof-papers/119-ying-cai-correction-verifiable-authenticated-data-structure-v-ads-for-an|119 · Correction: Verifiable Authenticated Data Structure (V-ADS) for Analytic Queries — Ying Cai]] · 2026-08-01
+- [[prof-papers/119-ying-cai-correction-verifiable-authenticated-data-structure-v-ads-for-an|119 · Verifying the Correctness of Analytic Query Results — Ying Cai]] · 2026-08-01
 - [[prof-papers/118-gerald-j-sussman-sparse-representations-for-fast-one-shot-learning|118 · Sparse Representations for Fast, One-Shot Learning — Gerald J. Sussman]] · 2026-08-01
 - [[prof-papers/117-jason-d-hartline-simple-mechanisms-for-agents-with-non-linear-utilities|117 · Simple Mechanisms for Agents with Non-linear Utilities — Jason D. Hartline]] · 2026-08-01
 - [[prof-papers/116-zeyu-guo-optimal-pseudorandom-generators-for-low-degree-polynomials-over|116 · Optimal Pseudorandom Generators for Low-Degree Polynomials Over Moderately Large Fields — Zeyu Guo]] · 2026-08-01
