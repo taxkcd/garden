@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/102-anne-r-haake-predicting-biomedical-interactions-with-higher-order-graph|102 · Predicting Biomedical Interactions with Higher-Order Graph Convolutional Networks — Anne R. Haake]] · 2026-08-01
 - [[prof-papers/101-huck-bennett-on-non-isomorphism-of-self-dual-lattices-and-codes|101 · On (Non-)Isomorphism of Self-Dual Lattices and Codes — Huck Bennett]] · 2026-08-01
 - [[prof-papers/100-haym-hirsh-applying-artificial-intelligence-and-machine-learning-in-prec|100 · Applying Artificial Intelligence and machine learning in precision nutrition — Haym Hirsh]] · 2026-08-01
 - [[prof-papers/099-gavriil-tsechpenakis-fkbp51-modulates-hippocampal-size-and-function-in-p|099 · FKBP51 Modulates Hippocampal Size and Function in Post-translational Regulation of Parkin — Gavriil Tsechpenakis]] · 2026-08-01
