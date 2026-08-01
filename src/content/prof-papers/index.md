@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/123-zeev-dvir-incidence-theorems-and-their-applications|123 · Incidence Theorems and Their Applications — Zeev Dvir]] · 2026-08-01
 - [[prof-papers/122-daniel-grosu-speeding-up-graph-algorithms-via-clique-partitioning|122 · Speeding-up Graph Algorithms via Clique Partitioning — Daniel Grosu]] · 2026-08-01
 - [[prof-papers/121-atri-rudra-monarchrt-efficient-attention-for-real-time-video-generation|121 · MonarchRT: Efficient Attention for Real-Time Video Generation — Atri Rudra]] · 2026-08-01
 - [[prof-papers/120-lawrence-o-hall-modeling-information-diffusion-in-social-media-data-driv|120 · Modeling information diffusion in social media: data-driven observations — Lawrence O. Hall]] · 2026-08-01
