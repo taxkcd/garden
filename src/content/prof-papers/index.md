@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/126-glencora-borradaile-the-motivated-can-encrypt-even-with-pgp|126 · The Motivated Can Encrypt (Even with PGP) — Glencora Borradaile]] · 2026-08-01
 - [[prof-papers/125-michael-a-langston-a-comparative-study-of-gene-co-expression-thresholdin|125 · A Comparative Study of Gene Co-Expression Thresholding Algorithms — Michael A. Langston]] · 2026-08-01
 - [[prof-papers/124-sridhar-radhakrishnan-multi-objective-model-to-protect-infrastructure-ne|124 · Multi-objective model to protect infrastructure networks from disinformation diffusion — Sridhar Radhakrishnan]] · 2026-08-01
 - [[prof-papers/123-zeev-dvir-incidence-theorems-and-their-applications|123 · Incidence Theorems and Their Applications — Zeev Dvir]] · 2026-08-01
