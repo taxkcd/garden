@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/129-ning-xie-tlex-an-efficient-method-for-extracting-exact-timelines-from-ti|129 · TLEX: An Efficient Method for Extracting Exact Timelines from TimeML Temporal Graphs — Ning Xie]] · 2026-08-01
 - [[prof-papers/128-jing-yuan-learning-to-optimize-job-shop-scheduling-under-structural-unce|128 · Learning to Optimize Job Shop Scheduling Under Structural Uncertainty — Jing Yuan]] · 2026-08-01
 - [[prof-papers/127-yin-tat-lee-pseudo-asynchronous-local-sgd-robust-and-efficient-data-para|127 · Pseudo-Asynchronous Local SGD: Robust and Efficient Data-Parallel Training — Yin Tat Lee]] · 2026-08-01
 - [[prof-papers/126-glencora-borradaile-the-motivated-can-encrypt-even-with-pgp|126 · The Motivated Can Encrypt (Even with PGP) — Glencora Borradaile]] · 2026-08-01
