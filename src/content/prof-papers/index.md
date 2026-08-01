@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/114-yan-li-the-association-between-social-determinants-of-health-and-populat|114 · The Association Between Social Determinants of Health and Population Health Outcomes: Ecological Analysis — Yan Li]] · 2026-08-01
 - [[prof-papers/113-alva-l-couch-troubleshooting-with-human-readable-automated-reasoning|113 · Troubleshooting with human-readable automated reasoning — Alva L. Couch]] · 2026-08-01
 - [[prof-papers/112-anantaa-kotal-differentially-private-synthetic-data-generation-using-con|112 · Differentially Private Synthetic Data Generation Using Context-Aware GANs — Anantaa Kotal]] · 2026-08-01
 - [[prof-papers/111-saurabh-sinha-intravital-imaging-by-simultaneous-label-free-autofluoresc|111 · CIMLA: Interpretable AI for inference of differential causal networks — Saurabh Sinha]] · 2026-08-01
