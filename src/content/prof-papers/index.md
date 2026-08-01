@@ -19,7 +19,7 @@ Research papers encountered through professor outreach, paired with practical le
 - [[prof-papers/116-zeyu-guo-optimal-pseudorandom-generators-for-low-degree-polynomials-over|116 · Optimal Pseudorandom Generators for Low-Degree Polynomials Over Moderately Large Fields — Zeyu Guo]] · 2026-08-01
 - [[prof-papers/115-eric-bach-a-novel-information-transmission-problem-and-its-optimal-solut|115 · A Novel Information Transmission Problem and Its Optimal Solution — Eric Bach]] · 2026-08-01
 - [[prof-papers/114-yan-li-the-association-between-social-determinants-of-health-and-populat|114 · The Association Between Social Determinants of Health and Population Health Outcomes: Ecological Analysis — Yan Li]] · 2026-08-01
-- [[prof-papers/113-alva-l-couch-troubleshooting-with-human-readable-automated-reasoning|113 · Troubleshooting with human-readable automated reasoning — Alva L. Couch]] · 2026-08-01
+- [[prof-papers/113-alva-l-couch-troubleshooting-with-human-readable-automated-reasoning|113 · MEDFORD IN A BOX: IMPROVEMENTS AND FUTURE DIRECTIONS FOR A METADATA DESCRIPTION LANGUAGE — Alva L. Couch]] · 2026-08-01
 - [[prof-papers/112-anantaa-kotal-differentially-private-synthetic-data-generation-using-con|112 · Differentially Private Synthetic Data Generation Using Context-Aware GANs — Anantaa Kotal]] · 2026-08-01
 - [[prof-papers/111-saurabh-sinha-intravital-imaging-by-simultaneous-label-free-autofluoresc|111 · CIMLA: Interpretable AI for inference of differential causal networks — Saurabh Sinha]] · 2026-08-01
 - [[prof-papers/110-katherine-kosaian-formalizing-mltl-formula-progression-in-isabelle-hol|110 · Formalizing MLTL Formula Progression in Isabelle/HOL — Katherine Kosaian]] · 2026-07-30
