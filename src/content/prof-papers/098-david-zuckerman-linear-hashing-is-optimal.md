@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-david-zuckerman"
-source_hash: "9e664fd0c4dd48c4f4c29c7c6fcce3f1e865397e6830cfba7fbdf7a23e906982"
+source_hash: "fb7197826ae788c30117d65d39b1b42ec51803cd0dc371d9b7114e76d6908d23"
 sequence: 98
 generator: "outreach-garden: managed"
 ---
