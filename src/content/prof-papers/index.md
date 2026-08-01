@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/104-periklis-a-papakonstantinou-query-lower-bounds-for-correlation-clusterin|104 · Query Lower Bounds for Correlation Clustering under Memory Constraints — Periklis A. Papakonstantinou]] · 2026-08-01
 - [[prof-papers/103-meera-sitharam-angular-constraints-on-planar-frameworks|103 · Angular Constraints on Planar Frameworks — Meera Sitharam]] · 2026-08-01
 - [[prof-papers/102-anne-r-haake-predicting-biomedical-interactions-with-higher-order-graph|102 · Predicting Biomedical Interactions with Higher-Order Graph Convolutional Networks — Anne R. Haake]] · 2026-08-01
 - [[prof-papers/101-huck-bennett-on-non-isomorphism-of-self-dual-lattices-and-codes|101 · On (Non-)Isomorphism of Self-Dual Lattices and Codes — Huck Bennett]] · 2026-08-01
