@@ -12,7 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
-- [[prof-papers/111-saurabh-sinha-intravital-imaging-by-simultaneous-label-free-autofluoresc|111 · Intravital imaging by simultaneous label-free autofluorescence-multiharmonic microscopy — Saurabh Sinha]] · 2026-08-01
+- [[prof-papers/111-saurabh-sinha-intravital-imaging-by-simultaneous-label-free-autofluoresc|111 · CIMLA: Interpretable AI for inference of differential causal networks — Saurabh Sinha]] · 2026-08-01
 - [[prof-papers/110-katherine-kosaian-formalizing-mltl-formula-progression-in-isabelle-hol|110 · Formalizing MLTL Formula Progression in Isabelle/HOL — Katherine Kosaian]] · 2026-07-30
 - [[prof-papers/109-marco-lvarez-a-survey-of-ai-based-anomaly-detection-in-iot-and-sensor-ne|109 · A Survey of AI-Based Anomaly Detection in IoT and Sensor Networks — Marco Álvarez]] · 2026-07-30
 - [[prof-papers/108-hana-khamfroush-one-round-is-all-you-need-analytic-federated-learning-fo|108 · One Round Is All You Need: Analytic Federated Learning for Task-Heterogeneous Multi-Label Medical Image Classification — Hana Khamfroush]] · 2026-07-30

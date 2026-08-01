@@ -1,5 +1,5 @@
 ---
-title: "111 · Intravital imaging by simultaneous label-free autofluorescence-multiharmonic microscopy — Saurabh Sinha"
+title: "111 · CIMLA: Interpretable AI for inference of differential causal networks — Saurabh Sinha"
 date: 2026-08-01
 tags:
   - research-paper
@@ -7,38 +7,38 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-saurabh-sinha"
-source_hash: "833b1c4faf673f2e4c4c7bc76a103aef1195c9256c4ee4d1bb52c265305a85be"
+source_hash: "2753c5e7c1ee75111ab81fe9c1a9eb7b462d08c45e35259e2b1b5536c50725fe"
 sequence: 111
 generator: "outreach-garden: managed"
 ---
 
-# 111 · Intravital imaging by simultaneous label-free autofluorescence-multiharmonic microscopy
+# 111 · CIMLA: Interpretable AI for inference of differential causal networks
 
 ## At a glance
 
 - **Professor:** Saurabh Sinha
 - **Institution:** Georgia Institute of Technology
-- **Paper:** [Intravital imaging by simultaneous label-free autofluorescence-multiharmonic microscopy](https://www.nature.com/articles/s41467-018-04470-8.pdf)
-- **Authors:** Sixian You, Haohua Tu, Eric J. Chaney, Yi Sun, Youbo Zhao, Andrew J. Bower, Yuan-Zhi Liu, Marina Marjanovic, Saurabh Sinha, Yang Pu, Stephen A. Boppart
-- **Year:** 2018
+- **Paper:** [CIMLA: Interpretable AI for inference of differential causal networks](https://arxiv.org/pdf/2304.12523)
+- **Authors:** Payam Dibaeinia, Saurabh Sinha
+- **Year:** 2023
 
 ## Paper overview
 
-This paper introduces SLAM microscopy, a new imaging technology that uses a single laser source to simultaneously capture multiple types of label-free signals from living tissues. This method allows researchers to observe cells and their interactions in living animals without the need for fluorescent markers, providing detailed structural and metabolic information with minimal disturbance to the tissue.
+This paper presents CIMLA, a new AI tool that uses machine learning and interpretable models to identify changes in causal relationships between variables across different biological conditions. It focuses on gene regulatory networks and demonstrates improved accuracy and robustness, especially in the presence of confounding factors, compared to existing methods. The approach is validated on synthetic data and applied to Alzheimer's disease single-cell data, revealing known and novel regulatory factors.
 
 ### Why it matters
 
-**Research problem:** Existing intravital microscopy techniques often rely on fluorescent labels that can disturb biological functions and have limitations such as long acquisition times, photodamage, and difficulty in integrating multiple imaging modalities simultaneously with high spatial and temporal resolution.
+**Research problem:** Extracting causal relationships and their changes between conditions from high-dimensional omics data is challenging due to confounding variables and the complexity of biological systems. Existing methods often rely on pairwise associations or linear models, which can be inaccurate and confounded.
 
-**Why it matters:** Understanding cellular dynamics and interactions in their native environment is crucial for studying biological processes such as cancer progression and immune responses. Label-free, efficient, and simultaneous imaging of multiple cellular components can provide richer, less perturbative insights into these processes.
+**Why it matters:** Understanding differential causal relationships, such as changes in gene regulatory networks between healthy and disease states, is crucial for generating biological hypotheses and identifying potential therapeutic targets. Robust causal inference methods can improve the reliability of such discoveries.
 
 **Key contributions:**
 
-- Development of a single-source, single-excitation nonlinear imaging platform (SLAM microscopy) that simultaneously acquires four imaging modalities.
-- Demonstration of fast, label-free, in vivo imaging of tumor microenvironment components including tumor cells, immune cells, blood vessels, and extracellular matrix.
-- Visualization and tracking of leukocyte recruitment, arrest, and interstitial migration in living animals without labels.
-- Quantitative analysis of cellular metabolic states and dynamics using simultaneous NADH and FAD autofluorescence signals.
-- Provision of a versatile, minimally invasive imaging method with low photodamage suitable for long-term intravital studies.
+- Definition of a causal estimand for local treatment effect (LTE) of features on outcomes in the presence of confounders.
+- Theoretical proof that SHAP values estimate this causal quantity under reasonable assumptions.
+- Development of CIMLA, a framework and tool to infer differential causal associations between two conditions using ML models and SHAP.
+- Extensive benchmarking on synthetic transcriptomics data showing CIMLA's superior robustness and accuracy compared to leading co-expression and non-linear methods.
+- Application of CIMLA to Alzheimer's disease single-cell data, identifying known regulators CREB3 and NEUROD6 and suggesting novel candidates.
 
 ## About the professor
 
@@ -57,73 +57,65 @@ Research interests: gene regulation; single-cell multi-omics; spatial omics data
 
 _Rigorous lectures, seminars and conference talks. Deeper, but longer._
 
-To deeply understand the paper on SLAM microscopy, start with foundational knowledge of nonlinear multiphoton microscopy, autofluorescence imaging, second and third harmonic generation microscopy, and label-free intravital imaging. These prerequisites provide the physical and biological imaging context. Finally, focus on the core concept of SLAM microscopy itself, prioritizing the authors' own talk to grasp their novel simultaneous multimodal nonlinear imaging platform and its applications.
+To deeply understand the CIMLA paper, start with foundational concepts in causal inference and SHAP feature attribution, as these underpin the theoretical framework of CIMLA. Next, build domain-specific knowledge on gene regulatory network inference to appreciate the biological context and challenges. Finally, focus on the core concept of differential causal network inference and the authors' own presentation or closely related academic talks to grasp the novel contributions and methodology of CIMLA.
 
-### Nonlinear multiphoton microscopy lecture *(prerequisite)*
-Nonlinear multiphoton microscopy underpins the signal generation mechanisms in SLAM microscopy, including two-photon and three-photon excitation processes. Understanding these principles is essential to appreciate how SLAM microscopy achieves label-free imaging with high spatial and temporal resolution.
+### causal inference machine learning lecture *(prerequisite)*
+Understanding how machine learning models can estimate causal effects is central to CIMLA's approach, which relies on causal estimands and assumptions to interpret SHAP values causally. This section provides rigorous academic lectures on causal inference methods, including the use of ML for causal effect estimation, which is foundational for grasping CIMLA's theoretical basis.
 
-*How the paper uses it:* SLAM microscopy relies on multiphoton excitation to simultaneously capture autofluorescence and harmonic generation signals from living tissues.
+*How the paper uses it:* CIMLA defines a causal estimand and proves SHAP values estimate this causal quantity under assumptions, making causal inference knowledge essential.
 
-▶ [44/44 nonlinear microscopy](https://www.youtube.com/watch?v=4mESMygp5EU) — ISPNLO · 1:46:37
+▶ [Introduction to Causal Inference](https://www.youtube.com/watch?v=zQfLlv8iSek) — Data Science Festival · 49:06
 
-### Autofluorescence imaging seminar *(prerequisite)*
-Autofluorescence imaging is critical for detecting endogenous metabolic cofactors such as NADH and FAD without external labels. This seminar-level content provides the biochemical and optical basis for interpreting the metabolic contrast exploited by SLAM microscopy.
+### SHAP feature attribution lecture *(prerequisite)*
+SHAP values are a key tool in CIMLA for approximating local treatment effects of transcription factors on target genes. This section covers detailed, mathematically rigorous lectures on SHAP, including its foundations, variants, and limitations, which are critical for understanding how CIMLA interprets ML model outputs causally.
 
-*How the paper uses it:* SLAM microscopy uses autofluorescence signals from NADH and FAD to assess cellular metabolic states in vivo.
+*How the paper uses it:* The paper leverages SHAP values to estimate causal influence, so a deep understanding of SHAP is necessary to evaluate the method's assumptions and results.
 
-▶ [Autofluorescence in spectral flow cytometry - Rui Gardner, PhD](https://www.youtube.com/watch?v=5BliuAYgtMA) — FlowTex · 4 months ago
+▶ [Shapley Additive Explanations (SHAP)](https://www.youtube.com/watch?v=VB9uV-x0gtg) — KIE · 11:52
 
-### Second and third harmonic generation microscopy talk *(prerequisite)*
-Second and third harmonic generation microscopy provide label-free structural contrast by detecting noncentrosymmetric and interfacial molecular structures. This talk explains the nonlinear optical phenomena essential for understanding the harmonic signals acquired simultaneously in SLAM microscopy.
+### gene regulatory networks inference lecture *(prerequisite)*
+CIMLA targets differential gene regulatory network inference from transcriptomics data, a complex biological problem. This section includes university-level lectures and seminars on gene regulatory networks, their modeling, and inference methods, providing essential biological and computational context for the paper.
 
-*How the paper uses it:* SLAM microscopy integrates SHG and THG signals to visualize extracellular matrix and cellular structures without labels.
+*How the paper uses it:* The paper applies CIMLA to infer differential gene regulatory networks, so understanding GRN inference is crucial for appreciating the biological impact.
 
-▶ [Second Harmonic Generation](https://www.youtube.com/watch?v=5Rx2_GxlNvg) — Andrew Berger · 20:50
+▶ [15. Gene Regulatory Networks](https://www.youtube.com/watch?v=So6MK_FcP4E) — MIT OpenCourseWare · 1:19:19
 
-### Label-free intravital imaging lecture *(prerequisite)*
-Label-free intravital imaging techniques enable observation of living tissues without fluorescent dyes, minimizing perturbation. This lecture contextualizes the biological importance and challenges of such imaging, which SLAM microscopy addresses with its simultaneous multimodal approach.
+### differential causal network inference lecture
+Detecting changes in causal networks between conditions is the core innovation of CIMLA. This section offers advanced academic talks on causal inference in network structures and differential causal effects, helping to contextualize CIMLA's approach within the broader causal inference literature.
 
-*How the paper uses it:* SLAM microscopy is a label-free intravital imaging platform designed for minimally invasive, long-term studies of living tissues.
+*How the paper uses it:* CIMLA's main contribution is inferring differential causal associations between conditions, making this concept central to understanding the paper.
 
-▶ [An overview of label-free technologies](https://www.youtube.com/watch?v=QqDzwVZUBeQ) — NOC16 BT06 · 10 years ago
+▶ [Causal Inference in Single-cell Genomics (Yongjin Park ...](https://www.youtube.com/watch?v=z76y1GjRIUw) — Paul G. Allen School · 1:08:39
 
 ## Track 2 — Beginner → Advanced (short-form)
 
 _Concise, high-quality explainers that build intuition — for when time is short._
 
-To understand SLAM microscopy from the paper, start by learning the fundamentals of nonlinear multiphoton microscopy, which underpins the imaging technique. Then, explore autofluorescence imaging to grasp how metabolic cofactors like NADH and FAD provide label-free contrast. Next, study second and third harmonic generation microscopy to understand structural imaging signals. Follow with label-free intravital imaging concepts to appreciate imaging living tissues without labels. Finally, learn about simultaneous multimodal nonlinear imaging, the core innovation enabling SLAM microscopy's concurrent acquisition of multiple signals.
+To understand CIMLA and its application in differential causal network inference, start by building foundational knowledge of gene regulatory networks and causal inference concepts. Then, learn about SHAP feature attribution, which CIMLA uses to approximate causal effects. Finally, explore the core idea of CIMLA—interpretable AI for detecting differential causal relationships between biological conditions.
 
-### Nonlinear multiphoton microscopy lecture *(prerequisite)*
-Nonlinear multiphoton microscopy uses simultaneous absorption of multiple photons to excite fluorescence only at the focal point, enabling deep tissue imaging with less damage. This foundational technique allows high-resolution, 3D imaging of living tissues and is the basis for SLAM microscopy's signal generation.
+### gene regulatory networks inference lecture *(prerequisite)*
+Gene regulatory networks (GRNs) describe how genes regulate each other's expression through complex interactions. Understanding GRNs is essential to grasp how changes in these networks can reflect biological conditions like disease. This foundational knowledge sets the stage for interpreting how computational methods infer these networks from data.
 
-*How the paper uses it:* SLAM microscopy builds on nonlinear multiphoton excitation to simultaneously capture multiple label-free signals from living tissue.
+*How the paper uses it:* CIMLA aims to infer differential gene regulatory networks from omics data to detect changes between conditions.
 
-▶ [Introduction to 2-photon microscopy](https://www.youtube.com/watch?v=OZnsmczSy1g) — Harvard Center for Biological Imaging · 48:40
+▶ [15. Gene Regulatory Networks](https://www.youtube.com/watch?v=So6MK_FcP4E) — MIT OpenCourseWare · 1:19:19
 
-### Autofluorescence imaging seminar *(prerequisite)*
-Autofluorescence imaging detects natural fluorescence from cellular molecules like NADH and FAD without adding dyes, revealing metabolic states. Understanding this label-free contrast mechanism is key to interpreting SLAM microscopy's metabolic imaging.
+### causal inference machine learning lecture *(prerequisite)*
+Causal inference is about determining cause-effect relationships rather than mere correlations. Machine learning can help estimate causal effects when assumptions hold, which is critical for interpreting complex biological data. This concept helps understand how CIMLA uses ML models to infer causal influences in gene regulation.
 
-*How the paper uses it:* SLAM microscopy simultaneously captures autofluorescence signals from NADH and FAD to analyze cellular metabolism in vivo.
+*How the paper uses it:* CIMLA defines a causal estimand and uses ML to estimate local treatment effects, requiring causal inference understanding.
 
-▶ [Episode #14 - What Is Autofluorescence?](https://www.youtube.com/watch?v=35wcfCoWPVc) — Expert Cytometry · 9 years ago
+▶ [Causal Inference with Machine Learning - EXPLAINED!](https://www.youtube.com/watch?v=MFnOYNU5sbk) — CodeEmporium · 4 years ago
 
-### Second and third harmonic generation microscopy talk *(prerequisite)*
-Second and third harmonic generation microscopy are nonlinear optical processes producing signals from structural features like collagen without fluorescence. These signals provide label-free structural contrast complementary to autofluorescence.
+### SHAP feature attribution lecture *(prerequisite)*
+SHAP values explain how much each feature contributes to a machine learning model's prediction, based on game theory. Understanding SHAP is key to grasping how CIMLA approximates causal effects from ML models by interpreting feature importance locally and globally.
 
-*How the paper uses it:* SLAM microscopy uses SHG and THG signals to visualize extracellular matrix and cellular structures simultaneously with metabolic signals.
+*How the paper uses it:* The paper proves SHAP values estimate the causal quantity under assumptions and uses them to infer differential causal associations.
 
-▶ [Second Harmonic Generation](https://www.youtube.com/watch?v=5Rx2_GxlNvg) — Andrew Berger · 20:50
+▶ [Shapley Additive Explanations (SHAP)](https://www.youtube.com/watch?v=VB9uV-x0gtg) — KIE · 11:52
 
-### Label-free intravital imaging lecture *(prerequisite)*
-Label-free intravital imaging techniques allow visualization of living tissues without fluorescent labels, preserving native biological functions and reducing photodamage. This approach is critical for studying dynamic cellular processes in vivo over time.
+## Already in your library
 
-*How the paper uses it:* SLAM microscopy enables long-term, minimally invasive imaging of living tissues without exogenous labels.
-
-▶ [Label-Free Quantitative Phase Imaging of Live Cells and Tissue](https://www.youtube.com/watch?v=JBg42wO-2uc) — AXT · 41:01 · 7 years ago
-
-### Simultaneous multimodal nonlinear imaging
-Simultaneous multimodal nonlinear imaging combines multiple nonlinear optical signals acquired at once to provide comprehensive structural and functional information. This approach enhances imaging speed and data richness while minimizing tissue disturbance.
-
-*How the paper uses it:* SLAM microscopy's core innovation is the simultaneous acquisition of four nonlinear imaging modalities from a single excitation source.
-
-▶ [OSC Colloquium: Hongki Yoo, "Label-free Multimodal Optical Imaging for Translational Medicine"](https://www.youtube.com/watch?v=i0fLBBTtt58) — UA OSC · 1:04:22 · 2 years ago
+- [14. Causal Inference, Part 1](https://www.youtube.com/watch?v=gRkUhg9Wb-I) — also for: Applying Artificial Intelligence and machine learning in precision nutrition (Haym Hirsh)
+- [Causal Inference - EXPLAINED!](https://www.youtube.com/watch?v=Od6oAz1Op2k) — also for: Applying Artificial Intelligence and machine learning in precision nutrition (Haym Hirsh)
+- [Lecture 9 - Understanding SHAP | Explainable AI (XAI ...](https://www.youtube.com/watch?v=IIgTulcEUFw) — also for: Applying Artificial Intelligence and machine learning in precision nutrition (Haym Hirsh)
