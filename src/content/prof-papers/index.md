@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/096-daniel-lokshtanov-covering-points-with-rectangular-boundaries|096 · Covering Points with Rectangular Boundaries — Daniel Lokshtanov]] · 2026-08-01
 - [[prof-papers/095-alberto-e-cerpa-edrp-enhanced-dynamic-relay-point-protocol-for-data-diss|095 · EDRP: Enhanced Dynamic Relay Point Protocol for Data Dissemination in Multi-hop Wireless IoT Networks — Alberto E. Cerpa]] · 2026-08-01
 - [[prof-papers/094-vijay-v-vazirani-efficiently-restructuring-sovereign-debt-via-arctic-auc|094 · Efficiently Restructuring Sovereign Debt via Arctic Auctions with Convex Costs — Vijay V. Vazirani]] · 2026-08-01
 - [[prof-papers/093-craig-b-zilles-automated-grading-of-handwritten-mathematics-using-vision|093 · Automated Grading of Handwritten Mathematics Using Vision-Capable LLMs — Craig B. Zilles]] · 2026-08-01
