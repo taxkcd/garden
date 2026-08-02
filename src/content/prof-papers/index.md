@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/139-gregory-b-white-educational-games-to-teach-fundamental-principles-of-cyb|139 · Educational Games to Teach Fundamental Principles of Cybersecurity — Gregory B. White]] · 2026-08-02
 - [[prof-papers/138-vishesh-jain-sampling-colorings-close-to-the-maximum-degree-non-markovia|138 · Sampling Colorings Close to the Maximum Degree: Non-Markovian Coupling and Local Uniformity — Vishesh Jain]] · 2026-08-02
 - [[prof-papers/137-alexandr-andoni-a-framework-for-building-data-structures-from-communicat|137 · A Framework for Building Data Structures from Communication Protocols — Alexandr Andoni]] · 2026-08-02
 - [[prof-papers/136-adam-m-smith-analytic-procgen-with-composable-design-space-expressions|136 · Analytic Procgen with Composable Design Space Expressions — Adam M. Smith]] · 2026-08-02
