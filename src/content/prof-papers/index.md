@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/151-sal-a-blanco-generating-the-symmetric-group-by-three-prefix-reversals|151 · Generating the symmetric group by three prefix reversals — Saúl A. Blanco]] · 2026-08-02
 - [[prof-papers/150-trong-nghia-hoang-diffusion-inspired-reconfiguration-of-transformers-for|150 · Diffusion-Inspired Reconfiguration of Transformers for Uncertainty Calibration — Trong Nghia Hoang]] · 2026-08-02
 - [[prof-papers/149-supartha-podder-from-promises-to-totality-a-framework-for-ruling-out-qua|149 · From Promises to Totality: A Framework for Ruling Out Quantum Speedups — Supartha Podder]] · 2026-08-02
 - [[prof-papers/148-xinghua-mindy-shi-hyperevogen-exploring-deep-phylogeny-using-non-euclide|148 · HyperEvoGen: Exploring deep phylogeny using non-Euclidean variational inference — Xinghua Mindy Shi]] · 2026-08-02
