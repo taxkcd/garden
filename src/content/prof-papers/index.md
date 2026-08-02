@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/146-piotr-krysta-position-auctions-with-a-capacity-constraint|146 · Position Auctions with a Capacity Constraint — Piotr Krysta]] · 2026-08-02
 - [[prof-papers/145-kamesh-munagala-compact-conformal-subgraphs|145 · Compact Conformal Subgraphs — Kamesh Munagala]] · 2026-08-02
 - [[prof-papers/144-chee-hung-henry-chu-an-integrated-deep-learning-and-dynamic-programming|144 · An Integrated Deep Learning and Dynamic Programming Method for Predicting Tumor Suppressor Genes, Oncogenes, and Fusion from PDB Structures — Chee-Hung Henry Chu]] · 2026-08-02
 - [[prof-papers/143-mohammed-el-kebir-generative-modeling-of-discrete-latent-structures-via|143 · Generative Modeling of Discrete Latent Structures via Dynamic Policy Gradients — Mohammed El-Kebir]] · 2026-08-02
