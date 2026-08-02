@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/133-alexander-rodrguez-beyond-time-series-spatial-reasoning-for-epidemic-for|133 · Beyond Time Series: Spatial Reasoning for Epidemic Forecasting via Multimodal Learning — Alexander Rodríguez]] · 2026-08-02
 - [[prof-papers/132-william-c-regli-worksworld-a-domain-for-integrated-numeric-planning-and|132 · WORKSWORLD: A Domain for Integrated Numeric Planning and Scheduling of Distributed Pipelined Workflows — William C. Regli]] · 2026-08-02
 - [[prof-papers/131-fei-li-quantum-annealing-approaches-to-solving-the-shipment-rerouting-pr|131 · Quantum Annealing Approaches to Solving the Shipment Rerouting Problems — Fei Li]] · 2026-08-02
 - [[prof-papers/130-bruce-w-char-understanding-learners-problem-solving-strategies-in-concur|130 · Understanding Learners’ Problem-Solving Strategies in Concurrent and Parallel Programming: A Game-Based Approach — Bruce W. Char]] · 2026-08-01
