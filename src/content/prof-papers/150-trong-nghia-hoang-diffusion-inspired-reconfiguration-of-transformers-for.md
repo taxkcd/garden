@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-trong-nghia-hoang"
-source_hash: "50f780321615e03fc926c018ec7232164cdaa8e8a381680da466e8b9a9d22b10"
+source_hash: "f101483a23f6c09ee45f7aee9985c7790fed348668fab516aa09d831a0e2e717"
 sequence: 150
 generator: "outreach-garden: managed"
 ---
