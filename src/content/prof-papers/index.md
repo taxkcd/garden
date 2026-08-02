@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/134-yaacov-yesha-ccsgan-covid19-ct-scan-generation-and-classification-with-v|134 · CCS‑GAN: COVID‑19 CT Scan Generation and Classification with Very Few Positive Training Images — Yaacov Yesha]] · 2026-08-02
 - [[prof-papers/133-alexander-rodrguez-beyond-time-series-spatial-reasoning-for-epidemic-for|133 · Beyond Time Series: Spatial Reasoning for Epidemic Forecasting via Multimodal Learning — Alexander Rodríguez]] · 2026-08-02
 - [[prof-papers/132-william-c-regli-worksworld-a-domain-for-integrated-numeric-planning-and|132 · WORKSWORLD: A Domain for Integrated Numeric Planning and Scheduling of Distributed Pipelined Workflows — William C. Regli]] · 2026-08-02
 - [[prof-papers/131-fei-li-quantum-annealing-approaches-to-solving-the-shipment-rerouting-pr|131 · Quantum Annealing Approaches to Solving the Shipment Rerouting Problems — Fei Li]] · 2026-08-02
