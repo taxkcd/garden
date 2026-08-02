@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/137-alexandr-andoni-a-framework-for-building-data-structures-from-communicat|137 · A Framework for Building Data Structures from Communication Protocols — Alexandr Andoni]] · 2026-08-02
 - [[prof-papers/136-adam-m-smith-analytic-procgen-with-composable-design-space-expressions|136 · Analytic Procgen with Composable Design Space Expressions — Adam M. Smith]] · 2026-08-02
 - [[prof-papers/135-julian-togelius-dream-cubed-controllable-generative-modeling-in-minecraf|135 · Dream Cubed: Controllable Generative Modeling in Minecraft by Training on Billions of Cubes — Julian Togelius]] · 2026-08-02
 - [[prof-papers/134-yaacov-yesha-ccsgan-covid19-ct-scan-generation-and-classification-with-v|134 · CCS‑GAN: COVID‑19 CT Scan Generation and Classification with Very Few Positive Training Images — Yaacov Yesha]] · 2026-08-02
