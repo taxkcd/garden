@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/148-xinghua-mindy-shi-hyperevogen-exploring-deep-phylogeny-using-non-euclide|148 · HyperEvoGen: Exploring deep phylogeny using non-Euclidean variational inference — Xinghua Mindy Shi]] · 2026-08-02
 - [[prof-papers/147-irene-y-chen-do-sparse-autoencoders-identify-reasoning-features-in-langu|147 · Do Sparse Autoencoders Identify Reasoning Features in Language Models? — Irene Y. Chen]] · 2026-08-02
 - [[prof-papers/146-piotr-krysta-position-auctions-with-a-capacity-constraint|146 · Position Auctions with a Capacity Constraint — Piotr Krysta]] · 2026-08-02
 - [[prof-papers/145-kamesh-munagala-compact-conformal-subgraphs|145 · Compact Conformal Subgraphs — Kamesh Munagala]] · 2026-08-02
