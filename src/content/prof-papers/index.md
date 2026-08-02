@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/131-fei-li-quantum-annealing-approaches-to-solving-the-shipment-rerouting-pr|131 · Quantum Annealing Approaches to Solving the Shipment Rerouting Problems — Fei Li]] · 2026-08-02
 - [[prof-papers/130-bruce-w-char-understanding-learners-problem-solving-strategies-in-concur|130 · Understanding Learners’ Problem-Solving Strategies in Concurrent and Parallel Programming: A Game-Based Approach — Bruce W. Char]] · 2026-08-01
 - [[prof-papers/129-ning-xie-tlex-an-efficient-method-for-extracting-exact-timelines-from-ti|129 · TLEX: An Efficient Method for Extracting Exact Timelines from TimeML Temporal Graphs — Ning Xie]] · 2026-08-01
 - [[prof-papers/128-jing-yuan-learning-to-optimize-job-shop-scheduling-under-structural-unce|128 · Learning to Optimize Job Shop Scheduling Under Structural Uncertainty — Jing Yuan]] · 2026-08-01
