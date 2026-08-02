@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/143-mohammed-el-kebir-generative-modeling-of-discrete-latent-structures-via|143 · Generative Modeling of Discrete Latent Structures via Dynamic Policy Gradients — Mohammed El-Kebir]] · 2026-08-02
 - [[prof-papers/142-miranda-c-parker-toward-cs1-content-subscales-a-mixed-methods-analysis-o|142 · Toward CS1 Content Subscales: A Mixed-Methods Analysis of an Introductory Computing Assessment — Miranda C. Parker]] · 2026-08-02
 - [[prof-papers/141-shaddin-dughmi-adaptive-generate-rank-verify-inference-time-search-with|141 · Adaptive Generate-Rank-Verify: Inference-Time Search with Costly Verification — Shaddin Dughmi]] · 2026-08-02
 - [[prof-papers/140-alberto-cano-anticipating-to-change-a-proactive-approach-for-concept-dri|140 · Anticipating to Change: A Proactive Approach for Concept Drift Adaptation in Data Streams — Alberto Cano]] · 2026-08-02
