@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/141-shaddin-dughmi-adaptive-generate-rank-verify-inference-time-search-with|141 · Adaptive Generate-Rank-Verify: Inference-Time Search with Costly Verification — Shaddin Dughmi]] · 2026-08-02
 - [[prof-papers/140-alberto-cano-anticipating-to-change-a-proactive-approach-for-concept-dri|140 · Anticipating to Change: A Proactive Approach for Concept Drift Adaptation in Data Streams — Alberto Cano]] · 2026-08-02
 - [[prof-papers/139-gregory-b-white-educational-games-to-teach-fundamental-principles-of-cyb|139 · Educational Games to Teach Fundamental Principles of Cybersecurity — Gregory B. White]] · 2026-08-02
 - [[prof-papers/138-vishesh-jain-sampling-colorings-close-to-the-maximum-degree-non-markovia|138 · Sampling Colorings Close to the Maximum Degree: Non-Markovian Coupling and Local Uniformity — Vishesh Jain]] · 2026-08-02
