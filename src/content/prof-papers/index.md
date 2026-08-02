@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/153-jonathan-gryak-llm-ode-data-driven-discovery-of-dynamical-systems-with-l|153 · LLM-ODE: Data-driven Discovery of Dynamical Systems with Large Language Models — Jonathan Gryak]] · 2026-08-02
 - [[prof-papers/152-levent-burak-kara-natural-language-to-sysmlv2-translation-via-conformanc|152 · Natural-Language to SysMLv2 Translation via Conformance-Driven Iterative Refinement — Levent Burak Kara]] · 2026-08-02
 - [[prof-papers/151-sal-a-blanco-generating-the-symmetric-group-by-three-prefix-reversals|151 · Generating the symmetric group by three prefix reversals — Saúl A. Blanco]] · 2026-08-02
 - [[prof-papers/150-trong-nghia-hoang-diffusion-inspired-reconfiguration-of-transformers-for|150 · Diffusion-Inspired Reconfiguration of Transformers for Uncertainty Calibration — Trong Nghia Hoang]] · 2026-08-02
