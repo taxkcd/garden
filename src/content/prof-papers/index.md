@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/156-chaowen-guan-large-language-models-can-help-mitigate-barren-plateaus-in|156 · Large Language Models Can Help Mitigate Barren Plateaus in Quantum Neural Networks — Chaowen Guan]] · 2026-08-02
 - [[prof-papers/155-erin-w-chambers-topoagent-an-agentic-framework-for-automated-topology-le|155 · TopoAgent: An Agentic Framework for Automated Topology Learning in Medical Imaging — Erin W. Chambers]] · 2026-08-02
 - [[prof-papers/154-fillia-makedon-a-contrastive-few-shot-rgb-d-traversability-segmentation|154 · A Contrastive Few-shot RGB-D Traversability Segmentation Framework for Indoor Robotic Navigation — Fillia Makedon]] · 2026-08-02
 - [[prof-papers/153-jonathan-gryak-llm-ode-data-driven-discovery-of-dynamical-systems-with-l|153 · LLM-ODE: Data-driven Discovery of Dynamical Systems with Large Language Models — Jonathan Gryak]] · 2026-08-02
