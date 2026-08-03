@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/182-yair-zick-structuredagent-planning-with-and-or-trees-for-long-horizon-we|182 · STRUCTUREDAGENT: Planning with AND/OR Trees for Long-Horizon Web Tasks — Yair Zick]] · 2026-08-03
 - [[prof-papers/181-shubham-tulsiani-ghost-hierarchical-sub-goal-policies-for-generalizing-r|181 · GHOST: Hierarchical Sub-Goal Policies for Generalizing Robot Manipulation — Shubham Tulsiani]] · 2026-08-03
 - [[prof-papers/180-ramyaa-ramyaa-reinforcement-learning-for-data-driven-workflows-in-radio|180 · Reinforcement Learning for Data-Driven Workflows in Radio Interferometry. I. Principal Demonstration in Calibration — Ramyaa Ramyaa]] · 2026-08-03
 - [[prof-papers/179-briana-b-morrison-reducing-withdrawal-and-failure-rates-in-introductory|179 · Reducing withdrawal and failure rates in introductory programming with subgoal labeled worked examples — Briana B. Morrison]] · 2026-08-03
