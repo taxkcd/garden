@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/178-elizabeth-bradley-a-computational-topology-based-spatiotemporal-analysis|178 · A Computational Topology-based Spatiotemporal Analysis Technique for Honeybee Aggregation — Elizabeth Bradley]] · 2026-08-03
 - [[prof-papers/177-alexander-a-sherstov-the-communication-complexity-of-approximating-matri|177 · The Communication Complexity of Approximating Matrix Rank — Alexander A. Sherstov]] · 2026-08-03
 - [[prof-papers/176-ubbo-visser-lets-be-friends-a-rapport-building-3d-embodied-conversationa|176 · Let’s be friends! A rapport-building 3D embodied conversational agent for the Human Support Robot — Ubbo Visser]] · 2026-08-03
 - [[prof-papers/175-william-yeoh-argumentative-human-ai-decision-making-toward-ai-agents-tha|175 · Argumentative Human-AI Decision-Making: Toward AI Agents That Reason With Us, Not For Us — William Yeoh]] · 2026-08-03
