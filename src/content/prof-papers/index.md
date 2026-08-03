@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/162-jos-f-martnez-longsight-compute-enabled-memory-to-accelerate-large-conte|162 · LongSight: Compute-Enabled Memory to Accelerate Large-Context LLMs via Sparse Attention — José F. Martínez]] · 2026-08-03
 - [[prof-papers/161-yoojung-choi-peter-post-training-robustification-of-probabilistic-circui|161 · PeTeR: Post-Training Robustification of Probabilistic Circuits — YooJung Choi]] · 2026-08-03
 - [[prof-papers/160-gregory-valiant-on-the-entropy-calibration-of-language-models|160 · On the Entropy Calibration of Language Models — Gregory Valiant]] · 2026-08-03
 - [[prof-papers/159-tushar-krishna-leveraging-asic-ai-chips-for-homomorphic-encryption|159 · Leveraging ASIC AI Chips for Homomorphic Encryption — Tushar Krishna]] · 2026-08-02
