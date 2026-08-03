@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/160-gregory-valiant-on-the-entropy-calibration-of-language-models|160 · On the Entropy Calibration of Language Models — Gregory Valiant]] · 2026-08-03
 - [[prof-papers/159-tushar-krishna-leveraging-asic-ai-chips-for-homomorphic-encryption|159 · Leveraging ASIC AI Chips for Homomorphic Encryption — Tushar Krishna]] · 2026-08-02
 - [[prof-papers/158-tara-salman-gradualdiff-fed-a-federated-learning-specialized-framework-f|158 · GradualDiff-Fed: A Federated Learning Specialized Framework for Large Language Model — Tara Salman]] · 2026-08-02
 - [[prof-papers/157-joel-s-bader-prioritization-of-causal-genes-from-genome-wide-association|157 · Prioritization of causal genes from genome-wide association studies by Bayesian data integration across loci — Joel S. Bader]] · 2026-08-02
