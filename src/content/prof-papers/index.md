@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/163-predrag-radivojac-an-integrated-scaled-approach-to-resolve-tsc2-variants|163 · An integrated, scaled approach to resolve TSC2 variants of uncertain significance — Predrag Radivojac]] · 2026-08-03
 - [[prof-papers/162-jos-f-martnez-longsight-compute-enabled-memory-to-accelerate-large-conte|162 · LongSight: Compute-Enabled Memory to Accelerate Large-Context LLMs via Sparse Attention — José F. Martínez]] · 2026-08-03
 - [[prof-papers/161-yoojung-choi-peter-post-training-robustification-of-probabilistic-circui|161 · PeTeR: Post-Training Robustification of Probabilistic Circuits — YooJung Choi]] · 2026-08-03
 - [[prof-papers/160-gregory-valiant-on-the-entropy-calibration-of-language-models|160 · On the Entropy Calibration of Language Models — Gregory Valiant]] · 2026-08-03
