@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/191-toni-kazic-hypertopo-adapters-geometry-and-topology-aware-segmentation-o|191 · HyperTopo-Adapters: Geometry- and Topology-Aware Segmentation of Leaf Lesions on Frozen Encoders — Toni Kazic]] · 2026-08-03
 - [[prof-papers/190-jian-huang-benchmarking-llm-serving-systems-for-agentic-ai-workloads-wit|190 · Benchmarking LLM Serving Systems for Agentic AI Workloads with XPerf — Jian Huang]] · 2026-08-03
 - [[prof-papers/189-kaave-hosseini-a-lower-bound-on-the-trace-norm-of-boolean-matrices-and-i|189 · A Lower Bound on the Trace Norm of Boolean Matrices and Its Applications — Kaave Hosseini]] · 2026-08-03
 - [[prof-papers/188-nikhil-muralidhar-benchmarking-llms-on-can-ai-validate-science-claim-evi|188 · Benchmarking LLMs on Can AI Validate Science? Claim → Evidence Reasoning in AI Papers — Nikhil Muralidhar]] · 2026-08-03
