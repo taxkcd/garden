@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/173-jeffrey-mark-siskind-towards-effective-human-in-the-loop-assistive-ai-ag|173 · Towards Effective Human-in-the-Loop Assistive AI Agents — Jeffrey Mark Siskind]] · 2026-08-03
 - [[prof-papers/172-jacob-whitehill-mllm-based-speech-recognition-when-and-how-is-multimodal|172 · MLLM-based Speech Recognition: When and How is Multimodality Beneficial? — Jacob Whitehill]] · 2026-08-03
 - [[prof-papers/171-gautam-biswas-a-theory-of-adaptive-scaffolding-for-llm-based-pedagogical|171 · A Theory of Adaptive Scaffolding for LLM-Based Pedagogical Agents — Gautam Biswas]] · 2026-08-03
 - [[prof-papers/170-anh-nguyen-improving-human-verification-of-llm-reasoning-through-interac|170 · Improving Human Verification of LLM Reasoning through Interactive Explanation Interfaces — Anh Nguyen]] · 2026-08-03
