@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/166-antonio-blanca-cutoff-for-the-swendsenwang-dynamics-on-the-complete-grap|166 · Cutoff for the Swendsen–Wang dynamics on the complete graph — Antonio Blanca]] · 2026-08-03
 - [[prof-papers/165-krzysztof-onak-efficient-algorithms-for-adversarially-robust-approximate|165 · Efficient Algorithms for Adversarially Robust Approximate Nearest Neighbor Search — Krzysztof Onak]] · 2026-08-03
 - [[prof-papers/164-baruch-schieber-interweaving-real-time-jobs-with-energy-harvesting-to-ma|164 · Interweaving Real-Time Jobs with Energy Harvesting to Maximize Throughput — Baruch Schieber]] · 2026-08-03
 - [[prof-papers/163-predrag-radivojac-an-integrated-scaled-approach-to-resolve-tsc2-variants|163 · An integrated, scaled approach to resolve TSC2 variants of uncertain significance — Predrag Radivojac]] · 2026-08-03
