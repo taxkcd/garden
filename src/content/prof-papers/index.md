@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/185-sushmita-roy-examining-the-dynamics-of-three-dimensional-genome-organiza|185 · Examining the dynamics of three-dimensional genome organization with multitask matrix factorization — Sushmita Roy]] · 2026-08-03
 - [[prof-papers/184-radim-bartos-enhancing-qoe-in-http-3-using-eps-framework|184 · Enhancing QoE in HTTP/3 using EPS Framework — Radim Bartos]] · 2026-08-03
 - [[prof-papers/183-erik-brunvand-memory-efficient-bounding-volume-hierarchies-with-merged-n|183 · Memory-Efficient Bounding Volume Hierarchies with Merged Nodes for Hardware Ray Tracing — Erik Brunvand]] · 2026-08-03
 - [[prof-papers/182-yair-zick-structuredagent-planning-with-and-or-trees-for-long-horizon-we|182 · STRUCTUREDAGENT: Planning with AND/OR Trees for Long-Horizon Web Tasks — Yair Zick]] · 2026-08-03
