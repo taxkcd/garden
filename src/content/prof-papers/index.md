@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/180-ramyaa-ramyaa-reinforcement-learning-for-data-driven-workflows-in-radio|180 · Reinforcement Learning for Data-Driven Workflows in Radio Interferometry. I. Principal Demonstration in Calibration — Ramyaa Ramyaa]] · 2026-08-03
 - [[prof-papers/179-briana-b-morrison-reducing-withdrawal-and-failure-rates-in-introductory|179 · Reducing withdrawal and failure rates in introductory programming with subgoal labeled worked examples — Briana B. Morrison]] · 2026-08-03
 - [[prof-papers/178-elizabeth-bradley-a-computational-topology-based-spatiotemporal-analysis|178 · A Computational Topology-based Spatiotemporal Analysis Technique for Honeybee Aggregation — Elizabeth Bradley]] · 2026-08-03
 - [[prof-papers/177-alexander-a-sherstov-the-communication-complexity-of-approximating-matri|177 · The Communication Complexity of Approximating Matrix Rank — Alexander A. Sherstov]] · 2026-08-03
