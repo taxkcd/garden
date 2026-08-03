@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/170-anh-nguyen-improving-human-verification-of-llm-reasoning-through-interac|170 · Improving Human Verification of LLM Reasoning through Interactive Explanation Interfaces — Anh Nguyen]] · 2026-08-03
 - [[prof-papers/169-greg-kuperberg-the-hidden-subgroup-problem-for-infinite-groups|169 · The hidden subgroup problem for infinite groups — Greg Kuperberg]] · 2026-08-03
 - [[prof-papers/168-sam-lau-improving-llm-generated-educational-content-a-case-study-on-prot|168 · Improving LLM-Generated Educational Content: A Case Study on Prototyping, Prompt Engineering, and Evaluating a Tool for Generating Programming Problems for Data Science — Sam Lau]] · 2026-08-03
 - [[prof-papers/167-manolis-kellis-the-hidden-risk-of-round-numbers-and-sharp-thresholds-in|167 · The hidden risk of round numbers and sharp thresholds in clinical practice — Manolis Kellis]] · 2026-08-03
