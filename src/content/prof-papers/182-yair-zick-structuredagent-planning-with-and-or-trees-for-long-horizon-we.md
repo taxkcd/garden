@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-yair-zick"
-source_hash: "3b70e3eee3dd60f1fd14ddaff4efddf4d483c897e63c34ee56523eed3d4d0617"
+source_hash: "b093af45df7b3415513d477f853fbca1e9a86c52939c3bed2ad40e07b46fb18d"
 sequence: 182
 generator: "outreach-garden: managed"
 ---
