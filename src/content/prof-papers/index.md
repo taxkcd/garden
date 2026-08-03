@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/187-zihan-tan-paths-and-intersections-recognizing-outerplanar-metrics|187 · Paths and Intersections: Recognizing Outerplanar Metrics — Zihan Tan]] · 2026-08-03
 - [[prof-papers/186-james-aspnes-obfuscated-consensus|186 · Obfuscated Consensus — James Aspnes]] · 2026-08-03
 - [[prof-papers/185-sushmita-roy-examining-the-dynamics-of-three-dimensional-genome-organiza|185 · Examining the dynamics of three-dimensional genome organization with multitask matrix factorization — Sushmita Roy]] · 2026-08-03
 - [[prof-papers/184-radim-bartos-enhancing-qoe-in-http-3-using-eps-framework|184 · Enhancing QoE in HTTP/3 using EPS Framework — Radim Bartos]] · 2026-08-03
