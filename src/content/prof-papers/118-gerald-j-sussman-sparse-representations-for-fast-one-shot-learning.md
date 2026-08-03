@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-gerald-j-sussman"
-source_hash: "6190ecaa47191999aaa62862959b2a3419616b4ed4357d7b47674e88e381cac0"
+source_hash: "66462210e16d02d4bf13e70b5b3478c6414a4290733a5b088e011050c0e102f6"
 sequence: 118
 generator: "outreach-garden: managed"
 ---

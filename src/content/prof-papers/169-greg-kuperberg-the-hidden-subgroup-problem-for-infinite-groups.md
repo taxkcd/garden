@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-greg-kuperberg"
-source_hash: "fc2b2bdb443b8caf451b87331c36af16e54d75359790d7c55050a82c1223707a"
+source_hash: "f1fe59bb6174d7d44945600ef236c8f70d1372396f5f43a36f758ddfdff243d8"
 sequence: 169
 generator: "outreach-garden: managed"
 ---

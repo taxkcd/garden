@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-xinghua-mindy-shi"
-source_hash: "56383471d3177001a1a5be2cca3b7d75bdada22eda2a9182d98313563d55bf3d"
+source_hash: "cc0d56154ef8b51fbb5e3dd40dc66b5b527754029fa576f03341e647740919cc"
 sequence: 148
 generator: "outreach-garden: managed"
 ---

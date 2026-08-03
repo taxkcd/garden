@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-miranda-c-parker"
-source_hash: "cf6b4ed0417f1cfa0e5684c404028ed3da3395e534b636852c0e960f4a87bc77"
+source_hash: "0efd32bf0fda06c25b0bc3fcbd460943386724122eb1a6b25d3f9cf9d8fd2c0b"
 sequence: 142
 generator: "outreach-garden: managed"
 ---

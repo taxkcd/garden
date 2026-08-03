@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-eric-bach"
-source_hash: "725fe74ccddf3256e66f9dcd246f789a23efc1cb31db83a4646e017a2058e406"
+source_hash: "f788f3b04da3d52911b2128adf6f684eaef787c7d6965d7b9e50e9ea96ea864c"
 sequence: 115
 generator: "outreach-garden: managed"
 ---

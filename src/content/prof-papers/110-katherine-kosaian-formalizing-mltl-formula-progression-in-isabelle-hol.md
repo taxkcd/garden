@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-katherine-cordwell"
-source_hash: "4bda51fee8bc46e20da06e6bb0fbfc5cf0184ccc4b2f5f5d6dfc6462dc6b9905"
+source_hash: "35bbe2ce7817db6a72c78f728296c2c93031a7c1528f2378e15dfa79f7d7f43e"
 sequence: 110
 generator: "outreach-garden: managed"
 ---

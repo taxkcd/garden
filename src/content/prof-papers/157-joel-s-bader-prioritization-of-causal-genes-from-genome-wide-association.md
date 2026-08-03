@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-joel-s-bader"
-source_hash: "b0e6dc92ba3c5be7f3189b36c103e55edc2b3287658f9d2bbc53d07b8809e063"
+source_hash: "f0568d26634424c5e10f12b1738ff68ae763ed42c0c3b51287e77ae4539314ea"
 sequence: 157
 generator: "outreach-garden: managed"
 ---

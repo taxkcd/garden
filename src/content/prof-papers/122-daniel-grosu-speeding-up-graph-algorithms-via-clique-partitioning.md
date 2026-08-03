@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-daniel-grosu"
-source_hash: "55bf5d0a51cab14b6cc6defd622915a1f0340d2d4d6997713d20fecf7e00bdfc"
+source_hash: "a3f46e091f94876bf7097bcf4363f06e62efb59402f0430831847f97c9678cb3"
 sequence: 122
 generator: "outreach-garden: managed"
 ---

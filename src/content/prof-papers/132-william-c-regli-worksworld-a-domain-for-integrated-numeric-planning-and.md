@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-william-c-regli"
-source_hash: "f2a20acaa159768e33aba063f81460afcf55d3284ed67dce4487d89e1e4c34c3"
+source_hash: "b2233defa370315170802b6bcc5af8cc672c3b0a7fa738f65937091e5594f499"
 sequence: 132
 generator: "outreach-garden: managed"
 ---

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-gregory-b-white"
-source_hash: "6c29dc538bdce96907455115fb0154625d78508133d6f4506fe95472ec99f6e5"
+source_hash: "bce61cda363a49d11f450f39ff03fcfe3f1564d4aa7b5ca6ec015fde39a88d80"
 sequence: 139
 generator: "outreach-garden: managed"
 ---

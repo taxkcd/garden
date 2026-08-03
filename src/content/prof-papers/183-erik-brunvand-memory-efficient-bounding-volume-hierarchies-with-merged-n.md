@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-erik-brunvand"
-source_hash: "69469f22279b0e0e4db4fc0c90f7cef908fbe9bdfd65becc72e922569374647f"
+source_hash: "516e067af38d1f0051704c85effe84c69547b0e9d175b5a13f2ecafe2e3007a4"
 sequence: 183
 generator: "outreach-garden: managed"
 ---

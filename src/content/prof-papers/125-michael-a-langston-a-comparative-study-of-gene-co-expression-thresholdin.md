@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-michael-a-langston"
-source_hash: "342239c41340a46790fa2aae9fd48af4d57fc6a96abbab45f37fd144d6b4d149"
+source_hash: "7f40c6b6b7da5945655bf30587b1a16eba4e88fcdb8a0613a19efd9d4084c91b"
 sequence: 125
 generator: "outreach-garden: managed"
 ---

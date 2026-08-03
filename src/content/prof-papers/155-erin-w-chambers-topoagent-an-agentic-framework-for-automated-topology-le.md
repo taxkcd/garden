@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-erin-w-chambers"
-source_hash: "5b5e0f266b8e9cfb61e5e087ee651ec8b41892ddacedc702d7218d7e7f1c7c84"
+source_hash: "73a99fafa249290499b26a9c29ef6a23cc1b31c65322515f448227e4fc60bbe6"
 sequence: 155
 generator: "outreach-garden: managed"
 ---

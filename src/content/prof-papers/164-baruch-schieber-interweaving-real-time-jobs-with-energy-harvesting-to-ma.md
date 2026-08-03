@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-baruch-schieber"
-source_hash: "77d5b94595ead27e0a538e16088bf1a4ed0de8f314bb7e10d8b0128f6d8de9ae"
+source_hash: "1d1a1bc1b36d4ab33f4b72f41083304b8591c03a8ce40516a1bfbc9242068a9b"
 sequence: 164
 generator: "outreach-garden: managed"
 ---

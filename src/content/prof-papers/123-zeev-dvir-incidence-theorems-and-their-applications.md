@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-zeev-dvir"
-source_hash: "afb36fc790e5d6dd403a1f79179195de9fef5e046f7ca48ec0f2a750bc290bae"
+source_hash: "e46eea5a2c3d1ff4061ccf2404e40a4e72bec26313443cac85d1438bd9b94b2f"
 sequence: 123
 generator: "outreach-garden: managed"
 ---

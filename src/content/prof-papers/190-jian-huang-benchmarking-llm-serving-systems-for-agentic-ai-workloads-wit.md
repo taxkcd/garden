@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-jian-huang"
-source_hash: "c72282562832b4f49e4ec24aaf12455fcc7fc0b80d63aed32d4d8f7f5c1b9253"
+source_hash: "c6f7fd51279054eda2ec28ac883a8521e146c29f20d694ef16b3b03bd694eac7"
 sequence: 190
 generator: "outreach-garden: managed"
 ---

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-ubbo-visser"
-source_hash: "d1fdbc1363dc07ae276fb9f49d491ab26a9124996c9452373ab8bbcd1fe37e3d"
+source_hash: "21d929f5ea1845afb19de09be804bbd0749ded274839470e55d590af5c19093b"
 sequence: 176
 generator: "outreach-garden: managed"
 ---

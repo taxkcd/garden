@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-elizabeth-bradley"
-source_hash: "57b697d3b339e6955a6309719daf6470bca29aebdf631f25b32a25e1d98b6d1a"
+source_hash: "eb5fbc85945c42bab98253fbcfe3212b48ae32bf68bb1ff0263ba48b7c5dbd86"
 sequence: 178
 generator: "outreach-garden: managed"
 ---

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-irene-y-chen"
-source_hash: "ddd44cb374dc4c38bf5915b8a7133e86889e148d10cdab10133056e40265e3a0"
+source_hash: "84113331a657a768ad0e7fd17cb8b58a4d97bab40a60fa52fe5b71a675879bf8"
 sequence: 147
 generator: "outreach-garden: managed"
 ---

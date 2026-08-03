@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-jing-yuan"
-source_hash: "526d6b060a79ed953881f07c082ac483ac446c8f2ca8a59975e5de4b63849f80"
+source_hash: "25c05e507abec90f1c64ad1efb8deaa524a41507861897e3e79fac430aab6afa"
 sequence: 128
 generator: "outreach-garden: managed"
 ---

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-lawrence-o-hall"
-source_hash: "b411d7e5c585abdc4a0d40f36f0004448405f1facfb6ccc87a335da6b78dc379"
+source_hash: "f17e05ce43f9e3358129212606a4680923488915ad7de07badfa8a489be1ccf1"
 sequence: 120
 generator: "outreach-garden: managed"
 ---

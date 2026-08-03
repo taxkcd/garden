@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-chaowen-guan"
-source_hash: "0193e6329b608279d9163f99f45672f0bf53fb4286e8394ee57cb1443f6b7291"
+source_hash: "1a5dba5210cdd6386807a4b7c23c90d84aad4e67abd988d8d296c8c3f8cb8ef9"
 sequence: 156
 generator: "outreach-garden: managed"
 ---

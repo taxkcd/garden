@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-jeffrey-mark-siskind"
-source_hash: "44e71abcce7853a7ba2fe1cdb7f1db95f299e9ddeebb9131d17262302e038a6a"
+source_hash: "c61854b265d4b8f43954edec2245a46d54699fbc29223f16903e805274a8cb92"
 sequence: 173
 generator: "outreach-garden: managed"
 ---
