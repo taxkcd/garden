@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/175-william-yeoh-argumentative-human-ai-decision-making-toward-ai-agents-tha|175 · Argumentative Human-AI Decision-Making: Toward AI Agents That Reason With Us, Not For Us — William Yeoh]] · 2026-08-03
 - [[prof-papers/174-yasser-shoukry-exponential-approximation-rates-and-parameter-efficiency|174 · Exponential Approximation Rates and Parameter Efficiency of Learnable Bernstein Activations — Yasser Shoukry]] · 2026-08-03
 - [[prof-papers/173-jeffrey-mark-siskind-towards-effective-human-in-the-loop-assistive-ai-ag|173 · Towards Effective Human-in-the-Loop Assistive AI Agents — Jeffrey Mark Siskind]] · 2026-08-03
 - [[prof-papers/172-jacob-whitehill-mllm-based-speech-recognition-when-and-how-is-multimodal|172 · MLLM-based Speech Recognition: When and How is Multimodality Beneficial? — Jacob Whitehill]] · 2026-08-03
