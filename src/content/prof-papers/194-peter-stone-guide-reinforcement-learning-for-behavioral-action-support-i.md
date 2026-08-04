@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-peter-stone"
-source_hash: "77d6e8823a8662f6b97a23250bf88257d151bb1c6215964b3e3bd0f1c99d911e"
+source_hash: "312d628410e31d98c11cf6139798d7b11c2fdb73a05bd5e4aade0b1ae7168e78"
 sequence: 194
 generator: "outreach-garden: managed"
 ---
