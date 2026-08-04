@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/196-fernando-g-s-l-brando-efficient-quantum-thermal-simulation|196 · Efficient quantum thermal simulation — Fernando G. S. L. Brandão]] · 2026-08-04
 - [[prof-papers/195-greg-turk-functional-mean-flow-in-hilbert-space|195 · Functional Mean Flow in Hilbert Space — Greg Turk]] · 2026-08-04
 - [[prof-papers/194-peter-stone-guide-reinforcement-learning-for-behavioral-action-support-i|194 · GUIDE: Reinforcement Learning for Behavioral Action Support in Type 1 Diabetes — Peter Stone]] · 2026-08-04
 - [[prof-papers/193-mark-guzdial-the-teachers-dilemma-balancing-trade-offs-in-programming-ed|193 · The Teacher’s Dilemma: Balancing Trade-Offs in Programming Education for Emergent Bilingual Students — Mark Guzdial]] · 2026-08-04
