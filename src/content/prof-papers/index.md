@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/200-eran-halperin-memorize-and-rank-elevating-large-language-models-for-clin|200 · Memorize and Rank: Elevating Large Language Models for Clinical Diagnosis Prediction — Eran Halperin]] · 2026-08-04
 - [[prof-papers/199-eric-sedgwick-a-practical-algorithm-for-knot-factorisation|199 · A Practical Algorithm for Knot Factorisation — Eric Sedgwick]] · 2026-08-04
 - [[prof-papers/198-krishna-v-palem-algorithmic-foundations-of-inexact-computing|198 · Algorithmic Foundations of Inexact Computing — Krishna V. Palem]] · 2026-08-04
 - [[prof-papers/197-ronald-f-demara-dynarmic-a-dynamic-arm-instruction-counting-tool|197 · DynARMic: A Dynamic ARM Instruction Counting Tool — Ronald F. DeMara]] · 2026-08-04
