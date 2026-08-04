@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/216-suresh-venkatasubramanian-what-benchmarks-dont-measure-the-case-for-eval|216 · What Benchmarks Don’t Measure: The Case for Evaluating Abstention Competence in Autonomous Agents — Suresh Venkatasubramanian]] · 2026-08-04
 - [[prof-papers/215-hui-chen-towards-higher-quality-software-vulnerability-data-using-llm-ba|215 · Towards Higher Quality Software Vulnerability Data Using LLM-based Patch Filtering — Hui Chen]] · 2026-08-04
 - [[prof-papers/214-eric-torng-perimeter-defense-using-a-turret-with-finite-range-and-servic|214 · Perimeter Defense using a Turret with Finite Range and Service Times — Eric Torng]] · 2026-08-04
 - [[prof-papers/213-sara-mostafavi-benchguard-who-guards-the-benchmarks-automated-auditing-o|213 · BENCHGUARD: Who Guards the Benchmarks? Automated Auditing of LLM Agent Benchmarks — Sara Mostafavi]] · 2026-08-04
