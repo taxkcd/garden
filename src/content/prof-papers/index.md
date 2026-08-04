@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/222-kavita-bala-monitrs-multimodal-observations-of-natural-incidents-through|222 · MONITRS: Multimodal Observations of Natural Incidents Through Remote Sensing — Kavita Bala]] · 2026-08-04
 - [[prof-papers/221-mathias-unberath-twinor-photorealistic-digital-twins-of-dynamic-operatin|221 · TwinOR: Photorealistic Digital Twins of Dynamic Operating Rooms for Embodied AI Research — Mathias Unberath]] · 2026-08-04
 - [[prof-papers/220-yanjing-li-yflows-systematic-dataflow-exploration-and-code-generation-fo|220 · YFlows: Systematic Dataflow Exploration and Code Generation for Efficient Neural Network Inference using SIMD Architectures on CPUs — Yanjing Li]] · 2026-08-04
 - [[prof-papers/219-ke-wang-a-spatio-temporal-expert-prefetching-framework-for-efficient-moe|219 · A Spatio-Temporal Expert Prefetching Framework for Efficient MoE-based LLM Inference — Ke Wang]] · 2026-08-04
