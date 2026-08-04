@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/211-yoseph-barash-contrasting-and-combining-transcriptome-complexity-capture|211 · Contrasting and combining transcriptome complexity captured by short and long RNA sequencing reads — Yoseph Barash]] · 2026-08-04
 - [[prof-papers/210-armando-fox-supporting-students-in-prototyping-ai-backed-software-with-h|210 · Supporting Students in Prototyping AI-backed Software with Hosted Prompt Template APIs — Armando Fox]] · 2026-08-04
 - [[prof-papers/209-laurent-d-michel-busting-the-paper-ballot-voting-meets-adversarial-machi|209 · Busting the Paper Ballot: Voting Meets Adversarial Machine Learning — Laurent D. Michel]] · 2026-08-04
 - [[prof-papers/208-siavash-mirarab-krepp-a-k-mer-based-maximum-pseudo-likelihood-method-for|208 · krepp: a k-mer-based maximum pseudo-likelihood method for estimating read distances and genome-wide phylogenetic placement — Siavash Mirarab]] · 2026-08-04
