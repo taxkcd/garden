@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-clayton-thomas"
-source_hash: "9e18a649365be3e8b009a6238d900f5f0155a123cf1adcad9b9d913fe2ee59b0"
+source_hash: "de8b0fdb642c34e3551af6550e535c62550925d63b3db5bc037296cd64e1ff51"
 sequence: 207
 generator: "outreach-garden: managed"
 ---
