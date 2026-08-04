@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-eran-halperin"
-source_hash: "217f2706d2294ac6d13ad1d301520395bdd0a2b5c26ea6d3efaaecef212e8606"
+source_hash: "e121437d158522a01dc2aa1bc0d9fa91340e855b5d017daf7554f420124651ef"
 sequence: 200
 generator: "outreach-garden: managed"
 ---
