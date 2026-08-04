@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/206-yuan-luo-a-manda-agentic-medical-knowledge-augmentation-for-data-efficie|206 · A MANDA: Agentic Medical Knowledge Augmentation for Data-Efficient Medical Visual Question Answering — Yuan Luo]] · 2026-08-04
 - [[prof-papers/205-yoonsuck-choe-incorporating-visual-cortical-lateral-connection-propertie|205 · Incorporating Visual Cortical Lateral Connection Properties into CNN: Recurrent Activation and Excitatory-Inhibitory Separation — Yoonsuck Choe]] · 2026-08-04
 - [[prof-papers/204-matthew-w-hahn-unprecedented-female-mutation-bias-in-the-aye-aye-a-highl|204 · Unprecedented female mutation bias in the aye-aye, a highly unusual lemur from Madagascar — Matthew W. Hahn]] · 2026-08-04
 - [[prof-papers/203-arpita-biswas-agroaskai-a-multi-agentic-ai-framework-for-supporting-smal|203 · AgroAskAI: A Multi-Agentic AI Framework for Supporting Smallholder Farmers’ Enquiries Globally — Arpita Biswas]] · 2026-08-04
