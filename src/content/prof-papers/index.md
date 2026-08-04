@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/202-dongkuan-xu-safetalkcoach-diversity-driven-multi-agent-simulation-for-pa|202 · SafeTalkCoach: Diversity-Driven Multi-Agent Simulation for Parent-Teen Health Conversations — Dongkuan Xu]] · 2026-08-04
 - [[prof-papers/201-thomas-emrys-williams-augmenting-large-language-models-with-psychologica|201 · Augmenting large language models with psychologically grounded models of causal reasoning for planning under uncertainty — Thomas Emrys Williams]] · 2026-08-04
 - [[prof-papers/200-eran-halperin-memorize-and-rank-elevating-large-language-models-for-clin|200 · Memorize and Rank: Elevating Large Language Models for Clinical Diagnosis Prediction — Eran Halperin]] · 2026-08-04
 - [[prof-papers/199-eric-sedgwick-a-practical-algorithm-for-knot-factorisation|199 · A Practical Algorithm for Knot Factorisation — Eric Sedgwick]] · 2026-08-04
