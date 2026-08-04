@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-armando-fox"
-source_hash: "f2f47639ca4bc4fa8d20d9f56d29f05994001dbea13a0379aadc39f883e30077"
+source_hash: "02418ded61ebd788907b26059f716d8f92fee45b368a5bad908158be7a445ea6"
 sequence: 210
 generator: "outreach-garden: managed"
 ---
