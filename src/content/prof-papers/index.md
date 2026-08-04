@@ -1,6 +1,6 @@
 ---
 title: "Professor papers and learning paths"
-date: 2026-08-04
+date: 2026-08-05
 tags:
   - research-paper
   - learning-path
@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/218-tom-silver-exopredicator-learning-abstract-models-of-dynamic-worlds-for|218 · ExoPredicator: Learning Abstract Models of Dynamic Worlds for Robot Planning — Tom Silver]] · 2026-08-04
 - [[prof-papers/217-aayush-jain-quantum-advantage-via-solving-multivariate-polynomials|217 · Quantum Advantage via Solving Multivariate Polynomials — Aayush Jain]] · 2026-08-04
 - [[prof-papers/216-suresh-venkatasubramanian-what-benchmarks-dont-measure-the-case-for-eval|216 · What Benchmarks Don’t Measure: The Case for Evaluating Abstention Competence in Autonomous Agents — Suresh Venkatasubramanian]] · 2026-08-04
 - [[prof-papers/215-hui-chen-towards-higher-quality-software-vulnerability-data-using-llm-ba|215 · Towards Higher Quality Software Vulnerability Data Using LLM-based Patch Filtering — Hui Chen]] · 2026-08-04
