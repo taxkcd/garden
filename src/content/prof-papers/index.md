@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/209-laurent-d-michel-busting-the-paper-ballot-voting-meets-adversarial-machi|209 · Busting the Paper Ballot: Voting Meets Adversarial Machine Learning — Laurent D. Michel]] · 2026-08-04
 - [[prof-papers/208-siavash-mirarab-krepp-a-k-mer-based-maximum-pseudo-likelihood-method-for|208 · krepp: a k-mer-based maximum pseudo-likelihood method for estimating read distances and genome-wide phylogenetic placement — Siavash Mirarab]] · 2026-08-04
 - [[prof-papers/207-clayton-thomas-characterizing-off-chain-influence-proof-transaction-fee|207 · Characterizing Off-Chain Influence Proof Transaction Fee Mechanisms — Clayton Thomas]] · 2026-08-04
 - [[prof-papers/206-yuan-luo-a-manda-agentic-medical-knowledge-augmentation-for-data-efficie|206 · A MANDA: Agentic Medical Knowledge Augmentation for Data-Efficient Medical Visual Question Answering — Yuan Luo]] · 2026-08-04
