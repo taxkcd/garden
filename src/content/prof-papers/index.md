@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/214-eric-torng-perimeter-defense-using-a-turret-with-finite-range-and-servic|214 · Perimeter Defense using a Turret with Finite Range and Service Times — Eric Torng]] · 2026-08-04
 - [[prof-papers/213-sara-mostafavi-benchguard-who-guards-the-benchmarks-automated-auditing-o|213 · BENCHGUARD: Who Guards the Benchmarks? Automated Auditing of LLM Agent Benchmarks — Sara Mostafavi]] · 2026-08-04
 - [[prof-papers/212-lorenzo-orecchia-manifold-learning-and-optimization-using-tangent-space|212 · Manifold learning and optimization using tangent space proxies — Lorenzo Orecchia]] · 2026-08-04
 - [[prof-papers/211-yoseph-barash-contrasting-and-combining-transcriptome-complexity-capture|211 · Contrasting and combining transcriptome complexity captured by short and long RNA sequencing reads — Yoseph Barash]] · 2026-08-04
