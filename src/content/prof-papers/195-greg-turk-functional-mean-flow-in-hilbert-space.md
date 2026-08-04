@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-greg-turk"
-source_hash: "a4a52912542cb5920aa00fd95246035b21aa3f2d4b9f6b8f69902ec9de04662e"
+source_hash: "956afa8251a8e28e70d88d8a6f5a5bdf269c458ebf1efd859abe3fadb057d485"
 sequence: 195
 generator: "outreach-garden: managed"
 ---
