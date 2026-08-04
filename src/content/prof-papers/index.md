@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/197-ronald-f-demara-dynarmic-a-dynamic-arm-instruction-counting-tool|197 · DynARMic: A Dynamic ARM Instruction Counting Tool — Ronald F. DeMara]] · 2026-08-04
 - [[prof-papers/196-fernando-g-s-l-brando-efficient-quantum-thermal-simulation|196 · Efficient quantum thermal simulation — Fernando G. S. L. Brandão]] · 2026-08-04
 - [[prof-papers/195-greg-turk-functional-mean-flow-in-hilbert-space|195 · Functional Mean Flow in Hilbert Space — Greg Turk]] · 2026-08-04
 - [[prof-papers/194-peter-stone-guide-reinforcement-learning-for-behavioral-action-support-i|194 · GUIDE: Reinforcement Learning for Behavioral Action Support in Type 1 Diabetes — Peter Stone]] · 2026-08-04
