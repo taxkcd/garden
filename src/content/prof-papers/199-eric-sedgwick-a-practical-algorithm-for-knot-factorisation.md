@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-eric-sedgwick"
-source_hash: "9aa4f3660b5885f1a64302ae09889af1f2be53b01d7ec7d26e8573ea8e5680bf"
+source_hash: "fb3799451784723e7d464112ce468231f3ca992d6fcae42687fb66039028c369"
 sequence: 199
 generator: "outreach-garden: managed"
 ---

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-mark-guzdial"
-source_hash: "b3ef7c70980ff63ffa99cacac3e47ce7a3d980f92b9a03fdcbc28951a8abea41"
+source_hash: "790e318e0b90bd5eb34b0d52b831d60d0fecfbec4829c8c7c900b063ec710cd0"
 sequence: 193
 generator: "outreach-garden: managed"
 ---

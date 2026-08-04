@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-laurent-d-michel"
-source_hash: "877201fec8de3e96efefea451a1e230c42ad8f54790b0563ab6f622b916cbc51"
+source_hash: "7c3d98af0bb3e50f92625d8394ad3a711f1e0766672c3e3908db2f3aa9c1e50a"
 sequence: 209
 generator: "outreach-garden: managed"
 ---
