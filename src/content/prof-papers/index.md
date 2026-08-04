@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/212-lorenzo-orecchia-manifold-learning-and-optimization-using-tangent-space|212 · Manifold learning and optimization using tangent space proxies — Lorenzo Orecchia]] · 2026-08-04
 - [[prof-papers/211-yoseph-barash-contrasting-and-combining-transcriptome-complexity-capture|211 · Contrasting and combining transcriptome complexity captured by short and long RNA sequencing reads — Yoseph Barash]] · 2026-08-04
 - [[prof-papers/210-armando-fox-supporting-students-in-prototyping-ai-backed-software-with-h|210 · Supporting Students in Prototyping AI-backed Software with Hosted Prompt Template APIs — Armando Fox]] · 2026-08-04
 - [[prof-papers/209-laurent-d-michel-busting-the-paper-ballot-voting-meets-adversarial-machi|209 · Busting the Paper Ballot: Voting Meets Adversarial Machine Learning — Laurent D. Michel]] · 2026-08-04
