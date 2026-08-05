@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/236-mina-guirguis-pure-defender-a-game-theoretic-pull-request-assignment-wit|236 · PuRe Defender: A Game-Theoretic Pull Request Assignment with Deep RL — Mina Guirguis]] · 2026-08-05
 - [[prof-papers/235-gopal-gupta-symbolic-rule-extraction-from-attention-guided-sparse-repres|235 · Symbolic Rule Extraction From Attention-Guided Sparse Representations in Vision Transformers — Gopal Gupta]] · 2026-08-05
 - [[prof-papers/234-tim-oates-mdtoc-metacognitive-dynamic-tree-of-concepts-for-boosting-math|234 · MDToC: Metacognitive Dynamic Tree of Concepts for Boosting Mathematical Problem-Solving of Large Language Models — Tim Oates]] · 2026-08-05
 - [[prof-papers/233-deeparnab-chakrabarty-clustering-in-varying-metrics|233 · Clustering in Varying Metrics — Deeparnab Chakrabarty]] · 2026-08-05
