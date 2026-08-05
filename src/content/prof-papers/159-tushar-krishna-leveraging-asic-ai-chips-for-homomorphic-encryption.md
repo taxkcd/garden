@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-tushar-krishna"
-source_hash: "98e91529a38cb1fcd42aa3b13d4bbc2e709afcc3c21c6601d6cac8ee58b8480f"
+source_hash: "2535d63b9945b965aae8b4e2c78449c6cc40c8166b0d19fc18bd2dc7416cb724"
 sequence: 159
 generator: "outreach-garden: managed"
 ---
@@ -119,3 +119,96 @@ This talk presents the CROSS compiler framework that transforms homomorphic encr
 *How the paper uses it:* This is the authors’ own presentation explaining their approach and results in detail.
 
 ▶ [CROSS: Leveraging ASIC AI Chips for Homomorphic Encryption [HPCA'26]](https://www.youtube.com/watch?v=TFnQPlLZs1E) — jianming Tong · 6 months ago
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progression to demonstrate your understanding of the CROSS compiler framework for efficient homomorphic encryption (HE) on AI accelerators. Starting with a beginner-level exploration of modular arithmetic matrix multiplication, you then implement a simplified version of the Basis-Aligned Transformation (BAT) to accelerate HE kernels on TPU-like hardware. Finally, you tackle an advanced extension by addressing one of the paper's limitations—improving small matrix utilization or simulating data reorderings—showing your ability to innovate beyond the original work.
+
+### Beginner — Modular Arithmetic via Low-Precision Matrix Multiplication
+*Effort: a weekend, ~8 hours*
+
+You build a small Python program that demonstrates how high-precision modular arithmetic can be represented as low-precision matrix multiplications. This involves implementing a basic modular multiplication using dense 8-bit integer matrices and verifying correctness against a direct modular arithmetic baseline.
+
+**Why it shows you understood the paper:** This project shows you grasp the core insight of the paper's Basis-Aligned Transformation (BAT) by faithfully reproducing the arithmetic mapping that enables TPU MXU utilization.
+
+**Grounded in:** Basis-Aligned Transformation (BAT) to map high-precision modular integer arithmetic to low-precision matrix multiplication engines, enabling efficient use of TPU MXUs.
+
+**Tech stack:** Python 3.11, NumPy, Jupyter Notebook
+
+**Data:** Synthetic integer matrices generated within the program to simulate modular operands.
+
+**Build it:**
+
+1. Implement a baseline modular multiplication function for integers using Python and NumPy.
+2. Design a representation of modular integers as vectors/matrices suitable for 8-bit matrix multiplication.
+3. Implement the equivalent modular multiplication using low-precision dense matrix multiplication.
+4. Compare outputs of both methods on sample inputs to verify correctness.
+5. Document the approach and include simple performance timing comparisons.
+
+**Ships as:** A Jupyter Notebook demonstrating modular arithmetic via low-precision matrix multiplication with correctness verification and timing results.
+
+**Stretch goal:** Add visualization of how modular values map to matrix blocks to deepen intuition.
+
+### Intermediate — Simplified CROSS BAT Compiler for HE NTT Kernel
+*Effort: 2 weekends, ~20 hours*
+
+You implement a simplified version of the CROSS compiler's Basis-Aligned Transformation (BAT) targeting the Number Theoretic Transform (NTT) kernel of homomorphic encryption. Using JAX, you transform high-precision modular arithmetic into low-precision matrix multiplications and benchmark throughput against a naive modular NTT implementation.
+
+**Why it shows you understood the paper:** This project demonstrates your ability to reimplement the paper's core compiler transformation and validate its performance benefits on a critical HE operator, showing practical command of the paper's main contribution.
+
+**Grounded in:** On a real Google TPU v6e, CROSS achieves up to 1.43× throughput improvement for Number Theoretic Transform (NTT) over WarpDrive on NVIDIA A100 GPU.
+
+**Tech stack:** Python 3.11, JAX, NumPy
+
+**Data:** Synthetic polynomial coefficient vectors representing HE ciphertexts, generated in code as substitutes for real HE inputs.
+
+**Build it:**
+
+1. Implement a baseline NTT kernel performing modular arithmetic in Python/JAX.
+2. Implement the BAT transformation to convert modular arithmetic into low-precision matrix multiplications.
+3. Integrate the BAT-transformed kernel into a JAX program targeting TPU-like matrix multiplication primitives.
+4. Benchmark throughput and compare against the baseline NTT kernel on CPU or GPU.
+5. Write a README explaining the BAT approach, implementation details, and performance results.
+
+**Verified links from the paper:**
+
+- <https://github.com/EfficientPPML/CROSS> — a third-party/baseline artifact the paper cites — not the authors' own code
+- <http://github.com/google/jax> — a third-party/baseline artifact the paper cites — not the authors' own code
+
+**Ships as:** A GitHub repository with JAX code implementing BAT for NTT, performance benchmarks, and documentation.
+
+**Stretch goal:** Add Memory-Aligned Transformation (MAT) to embed data reorderings offline and measure runtime improvements.
+
+### Advanced — Extending CROSS: Improving Small Matrix Utilization for Evaluation Keys
+*Effort: 3+ weeks, ~80 hours*
+
+You develop an extension to the CROSS compiler framework addressing the limitation that BAT is less effective for small matrix sizes (e.g., evaluation keys). You explore hybrid approaches such as finer-grained tensor engines or fallback algorithms to improve MXU utilization and reduce underutilization. You implement and benchmark your approach against the original BAT method.
+
+**Why it shows you understood the paper:** This project shows deep engagement with the paper's limitations and future directions by proposing and implementing a concrete architectural or compiler-level improvement, demonstrating research-level thinking and technical skill.
+
+**Grounded in:** The BAT transformation is less effective for small matrix sizes such as evaluation keys, leading to underutilization of MXU in those cases.
+
+**Tech stack:** Python 3.11, JAX, NumPy, Matplotlib
+
+**Data:** Synthetic small matrix inputs simulating evaluation keys in HE schemes, generated programmatically.
+
+**Build it:**
+
+1. Study the BAT implementation and identify bottlenecks for small matrix sizes.
+2. Research and design a hybrid approach combining BAT with fallback algorithms or finer-grained tensor operations.
+3. Implement the hybrid approach in JAX, integrating with the existing BAT codebase.
+4. Benchmark throughput and MXU utilization against the original BAT method on small matrices.
+5. Visualize performance improvements and document the design decisions and results.
+6. Prepare a detailed README discussing the limitation addressed, your approach, and evaluation.
+
+**Verified links from the paper:**
+
+- <https://github.com/EfficientPPML/CROSS> — a third-party/baseline artifact the paper cites — not the authors' own code
+- <http://github.com/google/jax> — a third-party/baseline artifact the paper cites — not the authors' own code
+
+**Ships as:** A GitHub repository with extended CROSS BAT code, benchmarks showing improved small matrix utilization, and comprehensive documentation.
+
+**Stretch goal:** Prototype a simulated hardware data shuffling engine to further reduce memory bottlenecks as suggested in future directions.

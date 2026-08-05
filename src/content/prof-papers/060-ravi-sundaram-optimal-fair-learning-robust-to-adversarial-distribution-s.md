@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-ravi-sundaram"
-source_hash: "2d5e5134ed241f8bdc09b72e30b1d23cd2a50e089fa5c5597e366f85d4c08b82"
+source_hash: "31babf411226302a93c7ec9854fdf01765d3ae98616a0a2faefee46979ff3dc3"
 sequence: 60
 generator: "outreach-garden: managed"
 ---
@@ -121,3 +121,91 @@ Learn how introducing randomness into classifiers can help achieve fairness and 
 ## Already in your library
 
 - [On the Power of Randomization in Fair Classification and Representation](https://www.youtube.com/watch?v=1X4RoNrf45A) — also for: Optimal Fair Learning Robust to Adversarial Distribution Shift (Ravi Sundaram)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder to demonstrate understanding of the paper's core contributions on robust fair classification under adversarial distribution shifts. The beginner project reproduces a key theoretical insight about deterministic vs randomized fair classifiers on synthetic data. The intermediate project implements the randomized Fair Bayes Optimal Classifier (Fair BOC) under Demographic Parity on a public binary classification dataset with simulated adversarial noise, comparing accuracy and fairness robustness against a deterministic baseline. The advanced project extends the method to consider multiple fairness notions simultaneously or explores approximate fairness constraints, addressing one of the paper's stated future directions.
+
+### Beginner — Visualizing Robustness of Deterministic vs Randomized Fair Classifiers
+*Effort: a weekend, ~8 hours*
+
+You build a small Python notebook that simulates a simple binary classification dataset with a binary protected attribute and implements toy deterministic and randomized fair classifiers under Demographic Parity. You then simulate small adversarial distribution shifts and plot accuracy changes to reproduce the paper's Claim 1 and Theorem 1 insights about robustness and accuracy differences.
+
+**Why it shows you understood the paper:** This project shows you grasp the fundamental theoretical difference between deterministic and randomized Fair BOCs in terms of robustness to adversarial noise, and can concretely demonstrate the local Lipschitz property of randomized classifiers.
+
+**Grounded in:** Claim 1 (Non-Robustness of Deterministic Fair BOC’s) and Theorem 1 (Robustness of Randomized Fair BOC under Demographic Parity)
+
+**Tech stack:** Python 3.11, Jupyter Notebook, NumPy, Matplotlib, scikit-learn
+
+**Data:** Synthetic binary classification data with a binary protected group generated within the notebook.
+
+**Build it:**
+
+1. Generate a synthetic binary classification dataset with a binary protected attribute and labels.
+2. Implement a deterministic fair classifier enforcing Demographic Parity by thresholding scores.
+3. Implement a randomized fair classifier that randomizes prediction on at most one data point as per the paper's characterization.
+4. Simulate small adversarial distribution shifts by perturbing label or feature distributions.
+5. Plot accuracy and fairness metric changes for both classifiers under these shifts.
+6. Write a README explaining the connection to the paper's claims.
+
+**Ships as:** A Jupyter notebook with code and plots demonstrating robustness differences, plus a README linking the results to the paper's theoretical claims.
+
+**Stretch goal:** Add Equal Opportunity fairness constraint and show similar robustness behavior.
+
+### Intermediate — Implementing Randomized Fair BOC on Adult Dataset with Adversarial Noise
+*Effort: 2 weekends, ~20 hours*
+
+You implement the randomized Fair Bayes Optimal Classifier under Demographic Parity on the UCI Adult dataset (a standard binary classification dataset with a binary protected attribute 'gender'). You simulate adversarial distribution shifts by injecting label noise or biased sampling. You compare the accuracy and fairness robustness of your randomized classifier against a deterministic fair classifier baseline.
+
+**Why it shows you understood the paper:** This project demonstrates your ability to translate the paper's polynomial-time algorithm for randomized Fair BOCs into practice on a real dataset, and empirically validate the robustness and accuracy improvements claimed in the paper.
+
+**Grounded in:** Polynomial-time computability of randomized Fair BOCs (Claim 5) and robustness guarantees under Demographic Parity (Theorem 1)
+
+**Tech stack:** Python 3.11, scikit-learn, NumPy, Pandas, Jupyter Notebook, Matplotlib
+
+**Data:** UCI Adult dataset (publicly available) used as a substitute for binary classification with binary protected groups.
+
+**Build it:**
+
+1. Download and preprocess the UCI Adult dataset, encoding features and defining the binary protected attribute.
+2. Implement a deterministic fair classifier enforcing Demographic Parity as a baseline (e.g., post-processing or threshold adjustment).
+3. Implement the randomized Fair BOC algorithm as described in the paper, randomizing on at most one data point.
+4. Simulate adversarial distribution shifts by injecting label noise or biased sampling in the training data.
+5. Evaluate and compare accuracy and fairness metrics (Demographic Parity) of both classifiers under clean and shifted distributions.
+6. Document the implementation details, results, and relate findings to the paper's claims.
+
+**Ships as:** A Jupyter notebook or Python scripts with code, evaluation results, and a detailed README explaining the implementation and empirical validation of robustness.
+
+**Stretch goal:** Extend the implementation to Equal Opportunity fairness and compare robustness.
+
+### Advanced — Extending Robust Fair Classification to Multiple Fairness Constraints
+*Effort: 3+ weeks*
+
+You develop an extension of the randomized Fair BOC algorithm to simultaneously enforce multiple fairness constraints (e.g., Demographic Parity and Equal Opportunity) on a binary classification task. You implement this on the UCI Adult dataset with adversarial noise and evaluate robustness and accuracy trade-offs. This addresses the paper's future direction on considering multiple fairness notions simultaneously.
+
+**Why it shows you understood the paper:** This project shows deep comprehension of the paper's theoretical framework and limitations, and your ability to extend and apply its methods beyond the original scope, potentially contributing novel empirical insights.
+
+**Grounded in:** Extension of robustness results to multiple fairness notions (Key Contributions and Future Directions)
+
+**Tech stack:** Python 3.11, scikit-learn, NumPy, Pandas, Jupyter Notebook, Matplotlib, CVXPY or other convex optimization library
+
+**Data:** UCI Adult dataset used as a proxy for binary classification with binary protected groups.
+
+**Build it:**
+
+1. Review the paper's theoretical extension to multiple fairness constraints and understand the combined constraint formulation.
+2. Implement the randomized Fair BOC algorithm extended to handle multiple fairness constraints simultaneously.
+3. Preprocess the UCI Adult dataset and define relevant protected groups and labels.
+4. Simulate adversarial distribution shifts via label noise or biased sampling.
+5. Evaluate accuracy and multiple fairness metrics under clean and shifted data distributions.
+6. Analyze trade-offs between fairness constraints, robustness, and accuracy.
+7. Prepare a comprehensive README documenting methodology, results, and connection to the paper's future directions.
+
+**Ships as:** A well-documented codebase and notebook demonstrating the extended algorithm, empirical results on robustness under multiple fairness constraints, and a detailed report linking to the paper's contributions and future work.
+
+**Stretch goal:** Explore approximate fairness constraints or multi-class classification extensions as further research.
+
+_The paper authors released no code or datasets; all implementations must be built from the paper's descriptions and public datasets like UCI Adult used as substitutes._

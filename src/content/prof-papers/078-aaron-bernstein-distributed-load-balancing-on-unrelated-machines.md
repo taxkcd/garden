@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-aaron-bernstein"
-source_hash: "22c02ce742917dccf37d6f1e1e64f6bb50295e02f67093c951067909c9481646"
+source_hash: "bd268693a4bf8b06cb556896c015c7582f1fc752bab256d476a68a289e2d9f94"
 sequence: 78
 generator: "outreach-garden: managed"
 ---
@@ -124,3 +124,87 @@ Distributed rounding algorithms convert fractional solutions of optimization pro
 ## Already in your library
 
 - [17. Complexity: Approximation Algorithms](https://www.youtube.com/watch?v=MEz1J9wY2iM) — also for: Machine Learning and Algorithmic Techniques for Error Correction (Anxiao Andrew Jiang)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder of increasing depth and technical challenge to demonstrate understanding of the paper "Distributed Load Balancing on Unrelated Machines." The beginner project recreates a core mechanism of the paper's distributed parameter τ maintenance in a small simulated network. The intermediate project implements the paper's fractional load balancing algorithm for mixed packing-covering LPs on a synthetic unrelated machines instance and compares it to a simple baseline. The advanced project extends the paper's flow interpolation technique to a dynamic distributed load balancing scenario with job arrivals and departures, addressing a future direction proposed by the authors.
+
+### Beginner — Simulate Local τ Parameter Increase in Distributed Load Balancing
+*Effort: a weekend, ~8 hours*
+
+You build a small network simulation in Python that models a few machines and jobs, where each node locally maintains and increases a parameter τ over synchronous rounds without global coordination. The simulation visualizes how τ evolves locally and how it can guide load balancing decisions in a distributed setting.
+
+**Why it shows you understood the paper:** This project demonstrates you understand the paper's key technical advance of replacing global coordination with a locally maintained increasing parameter τ, a fundamental mechanism enabling the distributed algorithm.
+
+**Grounded in:** Section 1.2 explains: 'we show that we can effectively replace global with a single number τ that increases at a fixed rate... and can thus be maintained locally by all vertices without any communication.'
+
+**Tech stack:** Python 3.11, matplotlib
+
+**Data:** Synthetic small network of 5 machines and 10 jobs with arbitrary unrelated job sizes generated randomly.
+
+**Build it:**
+
+1. Implement a simple synchronous round simulation framework with nodes representing machines and jobs.
+2. Assign random unrelated job sizes per machine to simulate the unrelated machines model.
+3. Implement local τ parameter at each node that increases by a fixed increment each round independently.
+4. Visualize τ values over rounds for each node to show local maintenance without communication.
+5. Add simple load balancing decisions triggered by τ thresholds to illustrate its role.
+
+**Ships as:** A Python simulation script with visualizations and a README explaining how local τ maintenance works and its significance in distributed load balancing.
+
+**Stretch goal:** Add message passing simulation to compare local τ maintenance with a naive global coordination approach.
+
+### Intermediate — Distributed Fractional Load Balancing Algorithm for Unrelated Machines
+*Effort: 2 weekends, ~20 hours*
+
+You implement the core distributed algorithm for computing a (1 + ε)-approximate fractional solution to the mixed packing-covering LP formulation of unrelated machines load balancing. You simulate the CONGEST model on a synthetic unrelated machines instance and compare your solution's maximum load to a naive baseline that assigns jobs arbitrarily.
+
+**Why it shows you understood the paper:** This project shows you can reimplement the paper's main algorithmic contribution (Theorem 1.1 and Algorithm 1) faithfully, including the local τ parameter and freezing techniques, and evaluate its approximation quality.
+
+**Grounded in:** Theorem 1.1: 'there exists a CONGEST algorithm that runs in poly((log mn)/ε) rounds and outputs a non-negative fractional solution x that satisfies all the covering constraints exactly and satisfies each packing constraint within (1 + ε) multiplicative error.'
+
+**Tech stack:** Python 3.11, networkx, matplotlib
+
+**Data:** Synthetic unrelated machines instance with 20 machines and 50 jobs, job sizes randomly generated with arbitrary unrelated sizes per machine.
+
+**Build it:**
+
+1. Implement a graph model simulating the CONGEST communication constraints among machines and jobs.
+2. Encode the mixed packing-covering LP formulation of fractional load balancing for the instance.
+3. Implement the distributed algorithm maintaining local τ parameters and freezing as per Algorithm 1 (WeakFractLoadBalancer).
+4. Run the algorithm for polylogarithmic rounds and extract the fractional assignment solution.
+5. Implement a naive baseline that assigns jobs randomly and compute maximum load.
+6. Compare and visualize the maximum load of your algorithm's solution versus the baseline.
+
+**Ships as:** A Python codebase simulating the distributed algorithm with results showing near-optimal fractional load balancing and a README explaining the implementation and evaluation.
+
+**Stretch goal:** Extend the implementation to handle unknown size ratios using the paper's shifting and bucketing scheme.
+
+### Advanced — Dynamic Distributed Load Balancing with Flow Interpolation for Job Arrivals and Departures
+*Effort: 3+ weeks*
+
+You extend the paper's flow interpolation and freezing techniques to a dynamic distributed load balancing setting where jobs arrive and depart over time. You simulate a dynamic CONGEST model network and implement a distributed algorithm that maintains near-optimal load balancing under these changes, inspired by the paper's flow interpolation method for handling local failures and edge deletions.
+
+**Why it shows you understood the paper:** This project tackles a future direction proposed by the authors and demonstrates deep comprehension of their flow interpolation technique and its potential extension to dynamic or online distributed load balancing scenarios.
+
+**Grounded in:** Future directions: 'Investigating dynamic or online versions of unrelated machines load balancing in distributed settings.' and Section 1.2: 'we freeze not only the failed jobs, but also some more jobs... define a new frozen flow based on interpolating between the flow from the previous iteration and the one from this iteration.'
+
+**Tech stack:** Python 3.11, networkx, asyncio, matplotlib
+
+**Data:** Synthetic dynamic unrelated machines instances with jobs arriving and departing over simulated time steps, job sizes generated randomly with unrelated sizes per machine.
+
+**Build it:**
+
+1. Design a dynamic CONGEST model simulation framework supporting job arrivals and departures over time.
+2. Implement the flow interpolation and freezing techniques from the paper adapted to handle dynamic changes.
+3. Maintain local τ parameters and distributed coordination to update fractional load assignments dynamically.
+4. Evaluate the algorithm's ability to maintain near-optimal load balancing over time compared to a static recomputation baseline.
+5. Visualize load evolution and algorithm responsiveness to dynamic changes.
+6. Document challenges and insights on extending flow interpolation to dynamic distributed settings.
+
+**Ships as:** A comprehensive Python simulation demonstrating dynamic distributed load balancing with flow interpolation, with detailed README discussing methodology, results, and future work.
+
+**Stretch goal:** Incorporate distributed rounding to integral solutions dynamically as jobs arrive and depart.

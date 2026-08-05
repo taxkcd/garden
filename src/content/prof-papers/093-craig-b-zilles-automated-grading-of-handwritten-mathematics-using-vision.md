@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-craig-b-zilles"
-source_hash: "6e6240d095488fa18c6670581e87d1ec6b1f1f7031b3c651c1b16da845e987e8"
+source_hash: "cd5077ac8ec8fe883bb6e1c845907275aa34ea13a0f1adbde55589ab08f513e0"
 sequence: 93
 generator: "outreach-garden: managed"
 ---
@@ -132,3 +132,89 @@ This concept covers how vision-capable LLMs transcribe handwritten math from ima
 
 - [Stanford CS25: Transformers United V6 I From Language ...](https://www.youtube.com/watch?v=NDdc39KYqDU) — also for: Beyond Final Answers: CRYSTAL Benchmark for Transparent Multimodal Reasoning Evaluation (Sou-Young Jin)
 - [Large Language Models explained briefly](https://www.youtube.com/watch?v=LPZh9BOjkQs) — also for: On-demand generation of high-quality software engineering datasets using large language models and ontologies (Suranjan Chakraborty)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder to demonstrate your understanding of the paper "Automated Grading of Handwritten Mathematics Using Vision-Capable LLMs." The beginner project focuses on reproducing a key error analysis visualization using familiar tools. The intermediate project involves reimplementing the core multimodal LLM grading pipeline on a small handwritten math image dataset, comparing transcription vs. rubric application errors. The advanced project extends the pipeline by integrating an external handwriting recognition model to address the dominant transcription error limitation, evaluating its impact on grading accuracy and computational cost.
+
+### Beginner — Error Analysis Visualization of Handwritten Math Grading
+*Effort: a weekend, ~8 hours*
+
+You build a data visualization dashboard that replicates the paper's error breakdown at the rubric-item level, distinguishing transcription errors from rubric application errors. Using static data extracted from the paper's reported metrics and error types, you create charts that highlight common failure modes such as blurry images and hallucinated text.
+
+**Why it shows you understood the paper:** This project shows you grasp the paper's key finding that transcription errors dominate grading inaccuracies and that image quality issues critically affect performance. A professor would see you can interpret and faithfully reproduce core empirical results.
+
+**Grounded in:** Detailed error analysis distinguishing transcription failures from rubric application failures; Identification of common failure modes such as blurry images, rotated text, hallucinated content.
+
+**Tech stack:** TypeScript, React, D3.js
+
+**Data:** Use error statistics and failure mode descriptions reported in the paper; no external dataset required.
+
+**Build it:**
+
+1. Extract key error metrics and failure mode categories from the paper's text and figures.
+2. Design and implement React components to display bar charts and pie charts of error distributions.
+3. Use D3.js or a React charting library to visualize transcription vs. rubric application errors.
+4. Add interactive elements to filter errors by course or question type as reported.
+5. Write a README explaining the source of the data and the significance of the visualized errors.
+
+**Ships as:** A GitHub repository with a React-based dashboard visualizing the paper's error analysis, accompanied by a README that explains the data source and insights.
+
+**Stretch goal:** Add a small simulated dataset of handwritten math image metadata to dynamically update the charts.
+
+### Intermediate — Reimplementation of Multimodal LLM Grading Pipeline
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement the paper's core method: a single multimodal LLM call that transcribes handwritten math images and applies rubric-based grading. Using a small public handwritten math image dataset or simulated data, you compare grading accuracy and error types against a simple baseline that separates transcription and grading steps.
+
+**Why it shows you understood the paper:** This project demonstrates you can translate the paper's novel pipeline into a working system and reproduce its key metric—rubric-item accuracy—and error breakdown. It shows you understand the integration of vision and language models for grading handwritten math.
+
+**Grounded in:** Extension of a rubric-based LLM grading pipeline to handle handwritten math images in a single LLM call; Empirical evaluation of vision-capable LLMs on authentic student handwritten math submissions; Most grading errors (87%) due to transcription failures.
+
+**Tech stack:** Python 3.11, OpenAI API or equivalent LLM API, FastAPI, Jupyter Notebook
+
+**Data:** Use a small public handwritten math image dataset if available (e.g., CROHME dataset as a substitute) or simulate handwritten math images with known solutions and rubrics.
+
+**Build it:**
+
+1. Collect or simulate a small set of handwritten math problem images with reference solutions and rubrics.
+2. Implement a FastAPI backend that sends images and rubric prompts to a vision-capable LLM in a single call.
+3. Parse the LLM output to extract transcription and grading results per rubric item.
+4. Implement a baseline pipeline that first transcribes images using an OCR tool, then applies rubric grading with a text-only LLM call.
+5. Evaluate and compare rubric-item accuracy and error types between the integrated and baseline pipelines.
+6. Document the pipeline design, evaluation metrics, and error analysis in a Jupyter Notebook.
+
+**Ships as:** A GitHub repo with code to run the integrated multimodal grading pipeline, baseline comparison, evaluation scripts, and a notebook reporting rubric-item accuracy and error breakdown.
+
+**Stretch goal:** Add prompt engineering experiments to reduce hallucinated text and improve handling of equivalent expressions.
+
+### Advanced — Improving Transcription Accuracy with Handwriting Recognition Integration
+*Effort: 3+ weeks, ~80 hours*
+
+You extend the multimodal LLM grading pipeline by integrating a specialized handwriting recognition model (e.g., an open-source HWR system) as a preprocessing step before rubric evaluation. You evaluate how this integration affects transcription errors, rubric-item accuracy, and computational cost on handwritten math images.
+
+**Why it shows you understood the paper:** This project tackles the paper's main limitation—transcription errors dominating grading inaccuracies—by combining multimodal LLM grading with dedicated handwriting recognition. It shows you can innovate on the pipeline and critically assess trade-offs, a key research skill.
+
+**Grounded in:** Limitations: Transcription errors dominate grading inaccuracies; Future directions: Improving image capture quality and preprocessing to reduce transcription errors; Thoughtful question about integrating specialized handwriting recognition models to improve transcription before rubric evaluation.
+
+**Tech stack:** Python 3.11, FastAPI, OpenAI API or equivalent LLM API, Open-source handwriting recognition model (e.g., PyLaia, Kraken)
+
+**Data:** Use a small handwritten math image dataset or simulate handwritten math images with ground truth transcription and rubric labels.
+
+**Build it:**
+
+1. Select and set up an open-source handwriting recognition model suitable for math expressions.
+2. Implement a preprocessing pipeline that transcribes handwritten math images using the HWR model.
+3. Feed the HWR output as input text to the rubric-based LLM grading pipeline.
+4. Compare grading accuracy, transcription error rates, and runtime cost against the original integrated multimodal LLM pipeline.
+5. Analyze error cases where HWR integration improves or degrades performance.
+6. Write a detailed report and README documenting methodology, results, and implications for AI grading systems.
+
+**Ships as:** A GitHub repository with code integrating handwriting recognition into the grading pipeline, evaluation scripts comparing accuracy and cost, and a comprehensive report on findings.
+
+**Stretch goal:** Experiment with image preprocessing techniques (rotation correction, deblurring) to further reduce transcription errors.
+
+_No authors' own code or dataset is publicly available for this paper; substitute datasets like CROHME for handwritten math images or simulate data as needed._

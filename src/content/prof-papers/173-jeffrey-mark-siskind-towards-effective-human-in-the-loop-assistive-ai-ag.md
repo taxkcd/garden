@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-jeffrey-mark-siskind"
-source_hash: "c61854b265d4b8f43954edec2245a46d54699fbc29223f16903e805274a8cb92"
+source_hash: "06b6f7fcb45bf2487683ffbb3545bd3f82933657b53ae7ca9d4193dd0a954a68"
 sequence: 173
 generator: "outreach-garden: managed"
 ---
@@ -126,3 +126,89 @@ Hear directly from the authors about their AR AI agent and evaluation framework,
 *How the paper uses it:* This provides a direct source explaining the novel AR AI agent and evaluation framework developed in the paper.
 
 ▶ [What is Human In The Loop with AI? How HITL Shapes AI Systems](https://www.youtube.com/watch?v=9iS-YYLIXiw) — IBM Technology · 4 months ago
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progression to demonstrate your understanding of the paper "Towards Effective Human-in-the-Loop Assistive AI Agents." The beginner project recreates a core evaluation metric comparing AI guidance to baseline methods using simulated data. The intermediate project implements a simplified AR-like interactive guidance system for a physical task and evaluates its impact on user error rates. The advanced project extends the paper by exploring improved user-AI communication via a query interface to address the paper's noted limitation on interaction relevance.
+
+### Beginner — Reproduce AI Guidance Task Success and Error Metrics
+*Effort: a weekend, ~8 hours*
+
+You build a simple web app or script that simulates task completion attempts under three conditions: unassisted, paper instructions, and AI-assisted guidance. Using synthetic or small-scale simulated data inspired by the paper's reported success and error rates, you calculate and visualize metrics such as macro success rate and step error rate for each condition.
+
+**Why it shows you understood the paper:** This project shows you understand the paper's core evaluation framework and key quantitative results demonstrating AI assistance benefits. It also reflects comprehension of the tradeoffs between success rates and error reduction.
+
+**Grounded in:** Key results: AI-assisted guidance achieved 70% macro success rate vs. 20% unassisted and 28.57% paper instructions; step error rate lowest with AI assistance (16.43%)
+
+**Tech stack:** JavaScript, React, D3.js or Chart.js for visualization
+
+**Data:** Simulated task attempt data based on the paper's reported success and error rates; no real dataset available
+
+**Build it:**
+
+1. Create a React app with three simulated user groups representing unassisted, paper instructions, and AI-assisted conditions
+2. Generate synthetic data for task attempts and step errors reflecting the paper's reported percentages
+3. Implement calculations for macro success rate and step error rate per condition
+4. Visualize the metrics using charts comparing the three conditions
+5. Write a README explaining the metrics and how the simulation relates to the paper's findings
+
+**Ships as:** A GitHub repo with a React app showing simulated task success and error metrics for the three guidance conditions, with clear documentation linking to the paper's results
+
+**Stretch goal:** Add user interaction quality metrics visualization (clarity, proactivity, relevance) with simulated scores
+
+### Intermediate — Interactive AR-Style Guidance Simulator with User Error Evaluation
+*Effort: 2 weekends, ~20 hours*
+
+You implement a simplified interactive guidance system for a physical task (e.g., cooking a simple recipe) in a web app that simulates AR guidance by providing step-by-step instructions with real-time feedback. You recruit a small number of users or simulate user interactions to measure task success and step error rates under AI guidance versus static instructions.
+
+**Why it shows you understood the paper:** This project demonstrates your ability to reimplement the paper's core method of interactive AI guidance and evaluate its impact on task performance, reflecting understanding of multimodal guidance and human-in-the-loop evaluation.
+
+**Grounded in:** Key contribution: Development of an interactive AR-based AI agent providing context-aware, real-time guidance; key results on improved task success and error reduction
+
+**Tech stack:** TypeScript, React, Node.js/Express (optional backend), Jest or Cypress for testing
+
+**Data:** Simulated or small-scale user interaction logs collected during testing; no public dataset available
+
+**Build it:**
+
+1. Design a simple physical task workflow (e.g., making a sandwich) with discrete steps
+2. Build a React app that provides step-by-step guidance with simulated AR overlays (e.g., highlighted instructions, timers)
+3. Implement real-time feedback prompts to simulate AI agent interactivity (e.g., error warnings, next step suggestions)
+4. Conduct user tests or scripted simulations to collect task success and step error data under AI guidance and static instructions
+5. Analyze and visualize the collected metrics comparing conditions
+6. Document the system design and evaluation methodology referencing the paper's framework
+
+**Ships as:** A GitHub repo with an interactive guidance web app and evaluation scripts showing improved task success and error rates with AI-like guidance
+
+**Stretch goal:** Integrate a simple natural language query interface for users to ask questions during the task
+
+### Advanced — Query Interface to Improve AI Guidance Relevance in Human-in-the-Loop Tasks
+*Effort: 3+ weeks*
+
+You extend the interactive guidance system by implementing an intuitive human query interface allowing users to ask clarifying questions or request help during task execution. This addresses the paper's limitation on low user interaction relevance. You evaluate how this interface affects user satisfaction and task performance compared to baseline AI guidance without queries.
+
+**Why it shows you understood the paper:** This project tackles a stated future direction and limitation from the paper, showing deep engagement with the research challenges of human-AI communication and adaptability in physical task assistance.
+
+**Grounded in:** Limitation and future direction: User interaction relevance rated lowest; explore intuitive human query interfaces to improve user-AI communication
+
+**Tech stack:** TypeScript, React, Node.js/Express, OpenAI API or similar LLM for query handling, Socket.io or WebSockets for real-time interaction
+
+**Data:** Simulated or small user study data collected during evaluation; no public dataset available
+
+**Build it:**
+
+1. Enhance the existing interactive guidance app with a chat-based query interface for users to ask questions
+2. Integrate an LLM API to generate context-aware responses based on the current task step and user queries
+3. Implement logging to capture user queries, AI responses, and interaction relevance ratings
+4. Conduct a small user study or scripted simulation comparing task performance and user satisfaction with and without the query interface
+5. Analyze improvements in relevance scores and task metrics
+6. Write detailed documentation linking the implementation and results to the paper's discussion on interaction relevance
+
+**Ships as:** A GitHub repo with an enhanced interactive guidance system featuring a query interface, evaluation results showing improved relevance and user satisfaction, and thorough documentation
+
+**Stretch goal:** Incorporate proactive intervention strategies where the AI agent anticipates user needs and offers help before queries
+
+_The paper authors did not release code or datasets; all projects rely on simulated or small-scale user data approximating the paper's controlled study._

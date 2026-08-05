@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-siavash-mirarab"
-source_hash: "e50c71683a0f2eae467de2bc59615bea160dfe3551d7839abb9f2e159130bbd1"
+source_hash: "dff5963b8365551e348defc73ae76bfd6fb962a40d0282298c4503e244894780"
 sequence: 208
 generator: "outreach-garden: managed"
 ---
@@ -120,3 +120,87 @@ A talk by the authors or closely related experts provides direct insight into th
 *How the paper uses it:* Direct explanation of krepp’s design and innovations by experts helps consolidate understanding of the method.
 
 ▶ [Solving genomic problems with K-mers](https://www.youtube.com/watch?v=1DKqHJyR6Fg) — Ciência em CENA - USP · Streamed 3 years ago
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive learning ladder to demonstrate your understanding of krepp's k-mer-based maximum pseudo-likelihood method for read-to-genome distance estimation and genome-wide phylogenetic placement. The beginner project focuses on reproducing a key metric from the paper using your existing skills. The intermediate project involves reimplementing the core method on a smaller dataset and benchmarking against a simple baseline, introducing you to locality-sensitive hashing and likelihood estimation. The advanced project extends the method by addressing one of the paper's stated limitations, such as handling non-ultrametric trees or modeling k-mer dependencies, showcasing your ability to innovate beyond the original work.
+
+### Beginner — Reproduce krepp's Read-to-Genome Distance Accuracy Plot
+*Effort: a weekend, ~8 hours*
+
+You build a small Python script to simulate k-mer based distance estimation between short reads and reference genomes, reproducing the accuracy and bias plot similar to Fig. 2a in the paper. Using synthetic sequences with controlled mutation rates, you compute simple k-mer Jaccard distances and compare them to true distances, visualizing mapping rates and bias.
+
+**Why it shows you understood the paper:** This project shows you grasp the core concept of k-mer based distance estimation and the importance of accuracy and bias metrics in evaluating such methods, foundational to krepp's approach.
+
+**Grounded in:** krepp accurately estimates read-to-genome distances with low bias and high mapping rates.
+
+**Tech stack:** Python 3.11, matplotlib, numpy, scipy
+
+**Data:** Synthetic DNA sequences generated with controlled mutation rates to simulate reads and reference genomes.
+
+**Build it:**
+
+1. Generate pairs of synthetic DNA sequences with varying mutation distances.
+2. Extract k-mers from sequences and compute Jaccard distances as a proxy for read-to-genome distance.
+3. Calculate bias and mapping rates for different distance bins.
+4. Plot the estimated distances against true distances replicating the paper's Fig. 2a style.
+5. Write a README explaining the method and results.
+
+**Ships as:** A GitHub repo with scripts and plots demonstrating k-mer distance estimation accuracy and bias on synthetic data.
+
+**Stretch goal:** Add a simple locality-sensitive hashing scheme to speed up k-mer matching and show its effect on mapping rates.
+
+### Intermediate — Implement krepp's Maximum Pseudo-Likelihood Distance Estimation on Bacterial Genomes
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement the core krepp method: indexing k-mers from a small set of bacterial reference genomes using locality-sensitive hashing (LSH) allowing inexact matches, then estimate read-to-genome distances via maximum pseudo-likelihood from k-mer matches. You benchmark your implementation against a simple exact k-mer matching baseline and report distance estimation accuracy and mapping rates.
+
+**Why it shows you understood the paper:** This project demonstrates your ability to implement krepp's novel LSH-based k-mer indexing and maximum pseudo-likelihood framework, key technical contributions of the paper, and to evaluate them quantitatively.
+
+**Grounded in:** Development of a scalable k-mer based maximum pseudo-likelihood method (krepp) for read-to-genome distance estimation; krepp uses locality-sensitive hashing with bit sampling to allow inexact k-mer matches.
+
+**Tech stack:** Python 3.11, numpy, scipy, biopython
+
+**Data:** Public bacterial genomes from NCBI under bioproject ID GenBank: PRJEB33281 as referenced in the paper.
+
+**Build it:**
+
+1. Download a subset (~20-30) of bacterial genomes from PRJEB33281.
+2. Implement k-mer extraction and build an LSH index allowing inexact matches up to a small Hamming distance.
+3. Implement maximum pseudo-likelihood estimation of read-to-genome distances based on k-mer matches.
+4. Simulate short reads from the genomes and estimate distances using your method and a baseline exact k-mer matching method.
+5. Compare accuracy and mapping rates, and plot results similar to the paper's benchmarks.
+6. Document the implementation details and evaluation in a README.
+
+**Ships as:** A GitHub repo with code implementing krepp's core method, evaluation scripts, and plots comparing performance to a baseline.
+
+**Stretch goal:** Extend the method to handle sequencing errors by incorporating a simple error model in the likelihood estimation.
+
+### Advanced — Extend krepp for Phylogenetic Placement on Non-Ultrametric Trees
+*Effort: 3-4 weeks*
+
+You develop an extension to krepp's phylogenetic placement algorithm that relaxes the ultrametric tree assumption, enabling placement on rooted or unrooted non-ultrametric trees. You modify the placement criteria to incorporate branch lengths and explore alternative likelihood ratio tests or distance thresholds. You evaluate placement accuracy on simulated non-ultrametric trees and compare to the original method.
+
+**Why it shows you understood the paper:** This project tackles a key limitation identified by the authors, showing deep understanding of krepp's placement algorithm and the challenges of real phylogenies, as well as your ability to innovate and extend state-of-the-art methods.
+
+**Grounded in:** Current placement algorithm requires rooted trees and assumes ultrametricity, which may limit accuracy for non-ultrametric trees; Explore alternative placement algorithms that leverage branch lengths and relax rooting requirements.
+
+**Tech stack:** Python 3.11, numpy, scipy, ete3 (phylogenetics)
+
+**Data:** Simulated non-ultrametric phylogenetic trees and synthetic reads generated by mutating reference genomes; optionally use bacterial genomes from PRJEB33281 for realism.
+
+**Build it:**
+
+1. Review krepp's placement algorithm and understand its ultrametric assumption.
+2. Simulate non-ultrametric phylogenetic trees and generate synthetic reads.
+3. Modify the placement algorithm to incorporate branch lengths and allow unrooted tree placement.
+4. Implement alternative likelihood ratio tests or distance thresholds for placement decisions.
+5. Evaluate placement accuracy compared to the original method on simulated data.
+6. Write a detailed report and README explaining your extension, methods, and results.
+
+**Ships as:** A GitHub repo with extended placement code, simulation scripts, evaluation results, and a comprehensive README discussing the method and findings.
+
+**Stretch goal:** Incorporate modeling of k-mer dependencies or sequencing error models into the placement likelihood framework.

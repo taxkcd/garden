@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-pavanturaga-com"
-source_hash: "a039de51b0d4d97997050d57cceffabe4ddc683a9d8fb5037fb3ecd1194bc9df"
+source_hash: "b55c88f47f8502c0b3bfa9ca592bb4c73158ad7bb97542e493d105c41aa3984f"
 sequence: 4
 generator: "outreach-garden: managed"
 ---
@@ -116,3 +116,88 @@ Geometry-preserving loss functions enforce that geometric relationships such as 
 *How the paper uses it:* The novel geometry-preserving loss introduced in the paper maintains pairwise distances and tangent space relationships between latent and image spaces, improving adaptation quality.
 
 ▶ [Riemannian manifolds, kernels and learning](https://www.youtube.com/watch?v=MtZV82LCNHc) — Microsoft Research · 56:33 · 9 years ago
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive learning ladder to demonstrate your understanding of the paper's core ideas on geometry-preserving loss functions for blackbox generative model adaptation. Starting with a beginner-level exploration of GAN inversion and latent space geometry visualization, you then implement the paper's core latent sampler training with geometry-preserving loss on a small dataset at intermediate level. Finally, the advanced project extends the method to improve GAN inversion quality for far out-of-domain images, addressing a key limitation identified by the authors.
+
+### Beginner — Visualizing Latent Space Geometry via GAN Inversion
+*Effort: a weekend, ~8 hours*
+
+You build a small pipeline that takes a handful of target domain images (e.g., faces from the MetFaces dataset), performs GAN inversion using an existing open-source StyleGAN2 inverter, and visualizes the pairwise distances and tangent space approximations in the latent space versus the image space. This includes plotting distance preservation and illustrating how geometry is maintained or distorted by inversion.
+
+**Why it shows you understood the paper:** This project shows you understand the importance of latent space geometry and GAN inversion quality, foundational to the paper's approach. A professor would see you grasp the geometric relationships the paper aims to preserve and the challenges in inversion.
+
+**Grounded in:** Demonstrates the paper's reliance on GAN inversion quality and the geometric priors in latent space as described in the approach and limitations sections.
+
+**Tech stack:** Python 3.11, PyTorch, matplotlib, numpy, pretrained StyleGAN2 inverter (public)
+
+**Data:** Use a small subset (~10-20 images) of the MetFaces dataset, which the paper uses as a near out-of-domain target domain.
+
+**Build it:**
+
+1. Download or collect a small set of MetFaces images.
+2. Use a publicly available StyleGAN2 GAN inversion method to invert these images into latent codes.
+3. Compute pairwise Euclidean distances between images in pixel space and between their latent codes.
+4. Approximate tangent spaces at latent points via local PCA on latent neighbors.
+5. Visualize and compare distance preservation and tangent space alignment between latent and image spaces.
+6. Write a README explaining the geometric concepts and their relevance to the paper.
+
+**Ships as:** A GitHub repo with code to invert images, compute and visualize geometry preservation metrics, and a README explaining the significance of latent space geometry for blackbox adaptation.
+
+**Stretch goal:** Add a simple baseline visualization without tangent space approximation to highlight the improvement geometry-preserving losses bring.
+
+### Intermediate — Reimplementing Geometry-Preserving Latent Sampler Training
+*Effort: 2 weekends, ~20 hours*
+
+You implement the core pipeline of the paper: invert a small target domain dataset into StyleGAN2 latent space, then train a lightweight 1D diffusion latent sampler with the geometry-preserving loss function to model the target latent distribution. You compare adaptation quality metrics (e.g., FID) against a baseline latent sampler trained without the geometry-preserving loss.
+
+**Why it shows you understood the paper:** This project demonstrates you can reimplement the paper's main method from scratch, including the novel loss function and diffusion latent sampler, and evaluate its impact on adaptation quality. A professor would see you grasp the core technical contributions and can reproduce key results.
+
+**Grounded in:** Implements the paper's key contribution: the geometry-preserving loss function and latent sampler training pipeline, and reproduces improved adaptation metrics on near out-of-domain data.
+
+**Tech stack:** Python 3.11, PyTorch, numpy, scikit-learn, pretrained StyleGAN2 inverter (public)
+
+**Data:** Use a small subset (~50-100 images) of the MetFaces dataset as the target domain for inversion and latent sampler training.
+
+**Build it:**
+
+1. Invert the target domain images into the StyleGAN2 latent space using a public GAN inverter.
+2. Implement a lightweight 1D diffusion model to sample latent codes in the W+ space (18×512 dimensions).
+3. Implement the geometry-preserving loss function enforcing pairwise distance and tangent space preservation between latent and image spaces.
+4. Train the diffusion latent sampler on the inverted latents with and without the geometry-preserving loss.
+5. Generate adapted images by sampling from the trained latent sampler and passing samples through the frozen StyleGAN2 generator.
+6. Evaluate adaptation quality using FID and other relevant metrics, comparing geometry-preserving loss vs baseline.
+
+**Ships as:** A GitHub repo with code for inversion, latent sampler training with geometry-preserving loss, generation, evaluation scripts, and a report comparing metrics to baseline.
+
+**Stretch goal:** Add controlled attribute generation by conditioning the latent sampler on simple attributes (e.g., sunglasses) as in the paper.
+
+### Advanced — Improving GAN Inversion for Far Out-of-Domain Adaptation
+*Effort: 3-4 weeks*
+
+You develop an extension to improve GAN inversion quality for far out-of-domain images (e.g., Ukiyoe style faces), addressing a key limitation noted in the paper. This could involve integrating geometric priors or manifold learning techniques into the inversion process to better preserve latent manifold structure. You then demonstrate improved adaptation performance on far out-of-domain data using the adapted inversion method combined with the paper's latent sampler training.
+
+**Why it shows you understood the paper:** This project tackles a stated limitation and future direction of the paper, showing you can critically analyze and extend the method. A professor would see your ability to innovate on geometric methods for inversion robustness and apply them to blackbox generative model adaptation.
+
+**Grounded in:** Addresses the paper's limitation on GAN inversion quality for far out-of-domain images and explores future directions involving geometric priors and manifold learning to enhance inversion robustness.
+
+**Tech stack:** Python 3.11, PyTorch, scikit-learn, manifold learning libraries (e.g., PyManopt or Geomstats), pretrained StyleGAN2 inverter (public)
+
+**Data:** Use a small set (~50 images) of Ukiyoe or other far out-of-domain face images (publicly available or synthesized) as target domain.
+
+**Build it:**
+
+1. Collect or synthesize a far out-of-domain target dataset (e.g., Ukiyoe faces).
+2. Analyze failure modes of existing GAN inversion methods on this dataset.
+3. Implement geometric priors or manifold learning constraints (e.g., tangent space regularization, Riemannian metrics) into the inversion optimization.
+4. Integrate the improved inversion method into the latent sampler training pipeline from the intermediate project.
+5. Evaluate adaptation quality improvements on far out-of-domain data compared to baseline inversion.
+6. Document the method, results, and limitations in a detailed README.
+
+**Ships as:** A GitHub repo with improved GAN inversion code, integration with latent sampler training, evaluation scripts, and a comprehensive report on enhanced adaptation for far out-of-domain images.
+
+**Stretch goal:** Explore real-time or interactive inversion refinement using geometric feedback as suggested in the paper's future directions.

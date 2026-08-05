@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-nikhil-muralidhar"
-source_hash: "dede4c9efb5958d2835bf29ecb6be703ecdcb5c1fb75b977349bec8e73cad251"
+source_hash: "cab72d07256976d416b7cb1c372ad17c07ba6790b037dafa05e3a708f0250ef2"
 sequence: 188
 generator: "outreach-garden: managed"
 ---
@@ -135,3 +135,86 @@ Hearing directly from the authors provides unique insights into the motivation, 
 - [Stanford CS25: V5 I Large Language Model Reasoning ...](https://www.youtube.com/watch?v=ebnX5Ur1hBk) — also for: Argumentative Human-AI Decision-Making: Toward AI Agents That Reason With Us, Not For Us (William Yeoh)
 - [Large Language Models explained briefly](https://www.youtube.com/watch?v=LPZh9BOjkQs) — also for: On-demand generation of high-quality software engineering datasets using large language models and ontologies (Suranjan Chakraborty)
 - [Self Attention in Transformers | Transformers in Deep Learning](https://www.youtube.com/watch?v=SO2-3YS6e-k) — also for: Diffusion-Inspired Reconfiguration of Transformers for Uncertainty Calibration (Trong Nghia Hoang)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder of increasing complexity and depth around CLAIM-BENCH, the benchmark for claim-evidence reasoning in AI papers. The beginner project focuses on reproducing and visualizing the novel sentence_gap metric to understand long-range dependencies. The intermediate project implements and evaluates a simplified claim-evidence extraction pipeline using iterative prompting strategies on a small scientific text dataset. The advanced project extends the benchmark approach by integrating domain-specific scientific knowledge to improve claim-evidence validation accuracy and efficiency, addressing key limitations noted in the paper.
+
+### Beginner — Visualize Sentence Gap Metric on Sample Claim-Evidence Pairs
+*Effort: a weekend, ~8 hours*
+
+You build a small tool that computes and visualizes the sentence_gap metric, which measures the distance in sentences between claims and their linked evidence in scientific texts. Using a small set of manually created claim-evidence pairs from AI research paper excerpts, you plot distributions of sentence gaps to illustrate long-range dependencies.
+
+**Why it shows you understood the paper:** This project demonstrates your grasp of the paper's novel metric for quantifying long-range dependencies in claim-evidence reasoning, a core challenge identified by the authors.
+
+**Grounded in:** Introduction of the sentence_gap metric to quantify the distance between claims and linked evidence, highlighting models' ability to handle long-range dependencies.
+
+**Tech stack:** Python 3.11, Jupyter Notebook, matplotlib, pandas
+
+**Data:** Simulated small dataset of claim-evidence sentence pairs created from excerpts of AI research papers, since the authors released no dataset.
+
+**Build it:**
+
+1. Create a small sample dataset of claim-evidence pairs with sentence indices from AI paper excerpts.
+2. Implement a function to compute sentence_gap as the absolute difference between claim and evidence sentence indices.
+3. Plot histograms and boxplots of sentence_gap values to visualize distribution.
+4. Write a README explaining the metric, its significance, and your visualization results.
+
+**Ships as:** A Jupyter notebook and README showing sentence_gap computations and visualizations on sample data, illustrating long-range claim-evidence links.
+
+**Stretch goal:** Add interactive visualizations using Plotly or Dash to explore sentence gaps dynamically.
+
+### Intermediate — Implement Iterative Prompting for Claim-Evidence Extraction
+*Effort: 2 weekends, ~20 hours*
+
+You implement a simplified pipeline that uses iterative prompting strategies (Single-Pass and Three-Pass) with an open-source LLM API to extract claims and evidence from short AI research paper abstracts or introductions. You compare precision, recall, and F1-score of claim identification between strategies.
+
+**Why it shows you understood the paper:** This project faithfully reproduces the paper's core method of evaluating prompting strategies on claim-evidence reasoning, showing your ability to implement and measure model performance on scientific text tasks.
+
+**Grounded in:** Systematic evaluation of six state-of-the-art LLMs on claim-evidence reasoning tasks using multiple prompting strategies; Iterative prompting strategies significantly improve recall compared to Single-Pass.
+
+**Tech stack:** Python 3.11, FastAPI, OpenAI API or HuggingFace transformers, pandas, scikit-learn
+
+**Data:** Use publicly available AI research paper abstracts or introductions from arXiv as a proxy dataset; manually annotate a small subset for claims and evidence.
+
+**Build it:**
+
+1. Collect a small set (~20) of AI paper abstracts or introductions from arXiv.
+2. Manually annotate claim and evidence sentences for this subset.
+3. Implement Single-Pass and Three-Pass prompting strategies using an open-source LLM or OpenAI API.
+4. Run the prompts to extract claims and evidence, then link them.
+5. Compute precision, recall, and F1-score for claim identification and evidence extraction.
+6. Write a report comparing the strategies and discussing trade-offs.
+
+**Ships as:** A Python project with scripts to run iterative prompting on scientific abstracts, evaluation metrics, and a report comparing prompting strategies.
+
+**Stretch goal:** Add the One-by-One prompting strategy and evaluate its computational cost versus performance gains.
+
+### Advanced — Integrate Domain Knowledge to Improve Claim-Evidence Validation
+*Effort: 3-4 weeks*
+
+You develop an extended claim-evidence reasoning system that incorporates domain-specific scientific knowledge (e.g., physical laws or fluid dynamics constraints) as additional context or constraints to improve the accuracy and efficiency of claim-evidence validation in AI research papers. You evaluate the system on a small set of annotated papers and compare it to baseline LLM prompting without domain knowledge.
+
+**Why it shows you understood the paper:** This project tackles a key limitation and future direction from the paper by integrating scientific knowledge to address precision-recall trade-offs and computational costs, demonstrating deep comprehension and innovation beyond the original benchmark.
+
+**Grounded in:** Future directions: Developing novel LLM architectures with enhanced long-context understanding and scientific reasoning capabilities; Leveraging claim-evidence reasoning improvements to build advanced AI tools for peer review and scientific QA.
+
+**Tech stack:** Python 3.11, FastAPI, OpenAI API or Anthropic Claude API, pandas, domain knowledge libraries (e.g., SymPy for physics)
+
+**Data:** Small manually annotated subset of AI research papers with claim-evidence pairs; domain knowledge encoded as rules or constraints relevant to the paper topics.
+
+**Build it:**
+
+1. Select a small set of AI research papers with annotated claim-evidence pairs.
+2. Encode relevant domain knowledge (e.g., physical laws) as constraints or prompts.
+3. Modify the prompting pipeline to incorporate domain knowledge during claim-evidence validation.
+4. Evaluate the system's precision, recall, and F1-score compared to baseline prompting.
+5. Analyze computational cost and discuss trade-offs.
+6. Document methodology, results, and potential improvements.
+
+**Ships as:** A research prototype with code integrating domain knowledge into claim-evidence reasoning, evaluation results, and a detailed README discussing improvements and limitations.
+
+**Stretch goal:** Extend the system to handle multimodal data or cross-paper evidence integration as suggested by the paper.

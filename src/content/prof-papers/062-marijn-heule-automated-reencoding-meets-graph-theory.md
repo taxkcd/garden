@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-marijn-heule"
-source_hash: "8db7d3d398d388620d12ad31daa63b00a21c28ab1e635481bc2ce56b4e58c0b5"
+source_hash: "9eef04c105b4a6b5b9f6fc7452bbfc76b442ff90e467b3be2c54221d0e759ad6"
 sequence: 62
 generator: "outreach-garden: managed"
 ---
@@ -125,3 +125,93 @@ Bounded Variable Addition is a preprocessing technique that reduces formula size
 ## Already in your library
 
 - [Preprocessing SAT, MaxSAT, and QBF 1](https://www.youtube.com/watch?v=ez9ArInp8w4) — also for: Automated Reencoding Meets Graph Theory (Marijn Heule)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder to demonstrate your understanding of the paper "Automated Reencoding Meets Graph Theory" by Przybocki et al. The beginner project focuses on reproducing a core concept of Bounded Variable Addition (BVA) on small 2-CNF formulas using familiar programming skills. The intermediate project builds on this by running and extending the authors' efficient BVA implementation to evaluate clause reductions on random monotone 2-CNF formulas, introducing graph algorithms and performance measurement. The advanced project tackles a future direction by exploring generalization of BVA reencoding from 2-CNF to 3-CNF formulas using hypergraph decompositions, addressing a stated limitation and requiring deeper theoretical and implementation work.
+
+### Beginner — Visualize BVA Clause Reduction on Small 2-CNF Formulas
+*Effort: a weekend, ~8 hours*
+
+You build a small tool that takes manually created 2-CNF formulas (up to ~10 variables), applies a simplified BVA preprocessing step to reduce clauses by introducing auxiliary variables, and visualizes the original and reduced formulas along with clause counts. The tool includes a basic graph representation of the formula's implication graph to illustrate the graph-theoretic intuition behind BVA.
+
+**Why it shows you understood the paper:** This project demonstrates you understand the core mechanism of BVA and its graph-theoretic basis on 2-CNF formulas, as well as the practical effect of clause reduction. A professor would see you grasp the fundamental concept and can concretely reproduce a key idea from the paper.
+
+**Grounded in:** Key contribution: Graph-theoretic characterization of idealized BVA reencodings via strict polarized rectifier networks (Theorem 5).
+
+**Tech stack:** Python 3.11, NetworkX, Matplotlib or Plotly
+
+**Data:** You create small synthetic 2-CNF formulas manually to illustrate BVA effects; no external dataset needed.
+
+**Build it:**
+
+1. Implement a parser for small 2-CNF formulas in CNF format.
+2. Implement a simplified BVA procedure that identifies variable sets to introduce auxiliary variables and reduces clauses accordingly.
+3. Build a graph representation of the formula's implication graph using NetworkX.
+4. Visualize the original and reduced formulas and their clause counts side-by-side.
+5. Document the relation between the graph structure and the clause reduction achieved.
+
+**Ships as:** A GitHub repo with code, example 2-CNF formulas, visualizations of formulas before and after BVA, and a README explaining the graph-theoretic intuition.
+
+**Stretch goal:** Add an interactive web UI using React to input formulas and see live BVA reductions and graphs.
+
+### Intermediate — Run and Extend Efficient BiVA Implementation on Random 2-CNF Formulas
+*Effort: 2 weekends, ~20 hours*
+
+You clone and run the authors' BicliqueVA implementation from https://github.com/bsubercaseaux/BicliqueVA on randomly generated monotone 2-CNF formulas derived from random graphs. You measure clause counts and runtime, compare against a baseline naive BVA implementation you write, and reproduce the paper's experimental metrics on clause reduction and runtime improvements.
+
+**Why it shows you understood the paper:** This project shows you can work with the authors' codebase, understand their algorithmic improvements using biclique partition algorithms, and experimentally validate key results. It demonstrates practical skills in graph algorithms and SAT preprocessing.
+
+**Grounded in:** Key results: The new BVA implementation achieves an order-of-magnitude speedup over previous implementations on large random monotone 2-CNF formulas (Section 4 and Figures 6,7).
+
+**Tech stack:** Python 3.11, C++ (for BicliqueVA code), NetworkX, GNU Make or CMake, Matplotlib
+
+**Data:** Random monotone 2-CNF formulas generated from Erdős–Rényi random graphs G(n,p) as described in the paper; you generate these synthetically.
+
+**Build it:**
+
+1. Clone and build the BicliqueVA repository from https://github.com/bsubercaseaux/BicliqueVA following provided instructions.
+2. Implement a baseline naive BVA algorithm in Python for comparison.
+3. Write scripts to generate random monotone 2-CNF formulas from random graphs G(n,p).
+4. Run both implementations on these formulas, recording clause counts and runtimes.
+5. Plot and analyze the results to compare clause reduction and runtime improvements.
+6. Write a report summarizing your findings and relating them to the paper's claims.
+
+**Verified links from the paper:**
+
+- <https://github.com/bsubercaseaux/BicliqueVA> — released by the paper's authors
+
+**Ships as:** A GitHub repo with scripts to generate formulas, run both BVA implementations, produce plots of clause counts and runtimes, and a detailed README/report.
+
+**Stretch goal:** Integrate the new BiVA implementation with an existing SAT solver pipeline and measure end-to-end solver performance improvements.
+
+### Advanced — Explore BVA Generalization to 3-CNF via Hypergraph Decompositions
+*Effort: 3-4 weeks*
+
+You develop a prototype framework extending the paper's graph-theoretic characterization of BVA from 2-CNF formulas (graphs) to 3-CNF formulas (hypergraphs). You implement a hypergraph-based reencoding method inspired by BVA principles, experiment on small synthetic 3-CNF formulas, and analyze clause reduction and structural properties. This addresses the paper's stated limitation and future direction about generalizing to k-CNF.
+
+**Why it shows you understood the paper:** This project demonstrates deep comprehension of the paper's theoretical framework and limitations, and the ability to extend it to a challenging open problem. It shows initiative in tackling future research directions and applying advanced graph/hypergraph theory to SAT preprocessing.
+
+**Grounded in:** Limitation and future direction: The theoretical framework focuses on 2-CNF; generalization to k-CNF requires hypergraph theory and remains future work.
+
+**Tech stack:** Python 3.11, HyperNetX or similar hypergraph library, NetworkX, Matplotlib, Jupyter Notebook
+
+**Data:** Synthetic small 3-CNF formulas generated manually or via scripts; no public dataset available for this specialized task.
+
+**Build it:**
+
+1. Study hypergraph representations of 3-CNF formulas and existing hypergraph decomposition algorithms.
+2. Implement a hypergraph-based reencoding method inspired by BVA principles, introducing auxiliary variables to reduce clause counts.
+3. Generate small synthetic 3-CNF formulas to test your method.
+4. Measure clause counts before and after reencoding and analyze structural changes.
+5. Compare your results qualitatively to the 2-CNF case and discuss challenges.
+6. Document your approach, experiments, and insights in a detailed README or report.
+
+**Ships as:** A GitHub repo with code implementing hypergraph-based BVA reencoding, example formulas, experimental results, and a comprehensive write-up discussing the extension and its challenges.
+
+**Stretch goal:** Explore integration of your hypergraph BVA method with existing SAT solvers and evaluate solver performance on 3-CNF benchmarks.
+
+_The intermediate project depends on the authors' BicliqueVA codebase being buildable and runnable on your system; verify build instructions and dependencies before starting._

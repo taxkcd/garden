@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-cvarela"
-source_hash: "f4f5254faa2e0c82a8af6a3412df92c522f6a36cb8c1f09a0ddaf1491b280add"
+source_hash: "20599afaab76430efda792eacea1c297b08d1905423c613023a15b6a72d8c82b"
 sequence: 35
 generator: "outreach-garden: managed"
 ---
@@ -131,3 +131,89 @@ Hear directly from the authors about their uncertainty-aware elastic VM scheduli
 ## Already in your library
 
 - [Mini Tutorial 6:  An Introduction to Uncertainty Quantification for Modeling & Simulation](https://www.youtube.com/watch?v=7w-K_EF2j64) — also for: Uncertainty-Aware Elastic Virtual Machine Scheduling for Stream Processing Systems (Carlos Varela)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive learning path to demonstrate your understanding of uncertainty-aware elastic VM scheduling for stream processing systems as presented in the paper. The beginner project focuses on reproducing a core statistical forecasting technique from the paper using familiar tools. The intermediate project implements the core scheduling framework with uncertainty quantification and compares it against a simple baseline on synthetic workload data. The advanced project extends the framework by incorporating reconfiguration costs, addressing a stated limitation and future direction of the paper, and exploring the impact on scheduling decisions.
+
+### Beginner — ARMA Workload Forecasting with Uncertainty Quantification
+*Effort: a weekend, ~8 hours*
+
+You build a Python script that implements ARMA-based workload forecasting with uncertainty estimation, reproducing the paper's approach to predicting future workloads and their variance. You will generate synthetic workload time series data, fit an ARMA model, and visualize forecasted workloads with confidence intervals.
+
+**Why it shows you understood the paper:** This project demonstrates your grasp of the paper's key statistical forecasting technique that enables proactive VM scheduling under workload uncertainty.
+
+**Grounded in:** Use of ARMA-based workload forecasting with uncertainty quantification to predict future workloads.
+
+**Tech stack:** Python 3.11, statsmodels, matplotlib, numpy, pandas, Jupyter Notebook
+
+**Data:** Synthetic time series data simulating fluctuating stream processing workloads, generated to mimic real-world variability as described in the paper.
+
+**Build it:**
+
+1. Generate or simulate a synthetic workload time series with fluctuations and noise.
+2. Fit an ARMA model to the synthetic workload data using statsmodels.
+3. Forecast future workloads and compute confidence intervals representing uncertainty.
+4. Visualize the original workload, forecasted values, and uncertainty bands using matplotlib.
+5. Write a README explaining how this forecasting relates to the paper's scheduling framework.
+
+**Ships as:** A Jupyter Notebook or Python script that forecasts workload with ARMA, plots forecasts with uncertainty bands, and documents the connection to the paper's workload forecasting method.
+
+**Stretch goal:** Add an interactive dashboard (e.g., with Streamlit) to allow users to upload workload data and see ARMA forecasts with uncertainty.
+
+### Intermediate — Uncertainty-Aware Elastic VM Scheduler Simulation
+*Effort: 2 weekends, ~20 hours*
+
+You implement a simplified simulation of the paper's elastic VM scheduling framework that integrates uncertainty in MST and workload forecasts. Using synthetic workload traces, you model VM allocations under probabilistic QoS constraints and compare cost and QoS satisfaction against a static peak provisioning baseline.
+
+**Why it shows you understood the paper:** This project shows you can reimplement the core scheduling approach, including uncertainty quantification and probabilistic constraints, and evaluate its benefits quantitatively.
+
+**Grounded in:** Formulation of VM allocation as a probabilistic QoS satisfaction problem, allowing tunable tradeoffs between cost and reliability; achieved up to 48% cost reduction compared to static peak provisioning.
+
+**Tech stack:** Python 3.11, numpy, pandas, matplotlib, scipy, Jupyter Notebook
+
+**Data:** Synthetic workload traces generated to mimic fluctuating stream processing workloads; MST modeled as normal distributions with parameters inspired by the paper's description.
+
+**Build it:**
+
+1. Generate synthetic workload traces with variable demand over time.
+2. Model MST as normal distributions with mean and variance parameters.
+3. Implement ARMA-based workload forecasting with uncertainty quantification.
+4. Develop a VM scheduler that allocates VMs to meet probabilistic QoS constraints based on workload and MST uncertainties.
+5. Simulate the scheduler over the workload trace and record QoS satisfaction and VM cost metrics.
+6. Implement a static peak provisioning baseline for comparison.
+7. Visualize and compare QoS satisfaction rates and costs between the uncertainty-aware scheduler and baseline.
+
+**Ships as:** A simulation framework with scripts and notebooks demonstrating uncertainty-aware VM scheduling, comparison plots of QoS and cost metrics, and documentation linking to the paper's core method and results.
+
+**Stretch goal:** Incorporate online learning to update MST model parameters dynamically during simulation to improve scheduling decisions.
+
+### Advanced — Extending Uncertainty-Aware VM Scheduling with Reconfiguration Costs
+*Effort: 3+ weeks*
+
+You extend the uncertainty-aware elastic VM scheduling framework by incorporating VM reconfiguration costs (e.g., startup/shutdown delays and expenses) into the probabilistic scheduling model. You simulate the impact of these costs on scheduling decisions, cost savings, and QoS satisfaction, addressing a key limitation and future direction from the paper.
+
+**Why it shows you understood the paper:** This project demonstrates deep comprehension of the paper's framework and limitations, and your ability to innovate by integrating real-world constraints to improve practical applicability.
+
+**Grounded in:** Incorporate reconfiguration costs into the VM scheduler to better model real cloud environments (stated future direction and limitation).
+
+**Tech stack:** Python 3.11, numpy, pandas, matplotlib, scipy, Jupyter Notebook
+
+**Data:** Synthetic workload traces and MST uncertainty models as in the intermediate project, extended with parameters modeling VM reconfiguration costs based on literature or cloud provider documentation.
+
+**Build it:**
+
+1. Review the existing uncertainty-aware VM scheduling simulation from the intermediate project.
+2. Research typical VM reconfiguration costs (time and monetary) from cloud providers or literature.
+3. Model reconfiguration costs and delays as additional constraints in the scheduling problem.
+4. Modify the scheduler to consider these costs when making VM allocation and deallocation decisions.
+5. Simulate the extended scheduler on synthetic workload traces and compare results to the original scheduler without reconfiguration costs.
+6. Analyze tradeoffs between cost savings, QoS satisfaction, and reconfiguration overhead.
+7. Document findings and discuss challenges and implications for real-time production environments.
+
+**Ships as:** An extended simulation framework with code, analysis notebooks, and a detailed README discussing the integration of reconfiguration costs, their impact on scheduling, and alignment with the paper's future directions.
+
+**Stretch goal:** Explore heterogeneous VM types with different performance and cost profiles, integrating them into the uncertainty-aware scheduling model.

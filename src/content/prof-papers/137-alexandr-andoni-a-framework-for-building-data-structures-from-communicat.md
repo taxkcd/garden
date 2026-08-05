@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-alexandr-andoni"
-source_hash: "744168c8bface0a84b4d5f6d0537d9a6bee81ac1e03b96ec5eb31bcb965a0510"
+source_hash: "b28c6dfbe6e20d46f2366373a87108fd5f6a9a6ae695add926fb1d42b6f8aebb"
 sequence: 137
 generator: "outreach-garden: managed"
 ---
@@ -117,3 +117,88 @@ Learn how data-dependent data structures adapt their organization based on the d
 *How the paper uses it:* The paper's framework yields data-dependent data structures with improved query times and near-linear space.
 
 ▶ [CCMB Seminar 11/10 /2021 Robert M Haralick, PhD](https://www.youtube.com/watch?v=uOkZEZu9aXU) — University of Michigan Computational Medicine and Bioinformatics · 1:10:10
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive learning path to demonstrate your understanding of the paper's framework connecting communication protocols to data structures for the Partial Match problem. The beginner project recreates a core communication complexity concept in code, the intermediate project implements a simplified data-dependent data structure inspired by the paper's main result, and the advanced project explores extending the framework to approximate Partial Match queries, addressing a future direction noted by the authors. Each project builds on your existing skills while introducing new concepts relevant to the paper.
+
+### Beginner — Simulate a Sparse Set-Disjointness UAM Protocol
+*Effort: a weekend, ~8 hours*
+
+You build a Python simulation of the Unambiguous Arthur-Merlin (UAM) communication protocol for sparse set-disjointness with small error, as described in Theorem 1.4. The simulation will model the communication steps between Merlin, Arthur, and the two parties, and measure communication complexity as a function of the number of wildcards w and error ϵ.
+
+**Why it shows you understood the paper:** This project shows you understand the core communication protocol that underpins the paper's data structure design, including how non-determinism and one-sided error reduce communication complexity independent of dimension.
+
+**Grounded in:** Theorem 1.4: Existence of an ϵ-error UAM protocol for sparse partial match with communication Õ(w log(1/ϵ)) independent of the ambient dimension d.
+
+**Tech stack:** Python 3.11
+
+**Data:** Synthetic sparse sets generated randomly to simulate inputs for the set-disjointness problem; no external dataset needed.
+
+**Build it:**
+
+1. Read and extract the protocol description for the UAM sparse set-disjointness from the paper's relevant section.
+2. Implement a Python script that simulates Merlin's advice generation and Arthur's verification steps for given sparse sets.
+3. Generate synthetic sparse set pairs with varying sparsity (number of wildcards w) and simulate the communication protocol.
+4. Measure and plot communication cost versus w and error ϵ to verify dimension-free complexity.
+5. Write a README explaining the protocol, your implementation, and results.
+
+**Ships as:** A Python repository with simulation code, plots showing communication cost scaling, and a README explaining the UAM protocol and its dimension-free communication complexity.
+
+**Stretch goal:** Add a visualization of the communication transcript and simulate how increasing error tolerance ϵ affects communication cost.
+
+### Intermediate — Implement a Data-Dependent Partial Match Data Structure
+*Effort: 2 weekends, ~20 hours*
+
+You implement a simplified version of the paper's data-dependent data structure for Partial Match with w = c log n wildcards, focusing on the core idea of simulating the UAM protocol to build a query-efficient index. You compare query times against a naive linear scan baseline on a synthetic dataset.
+
+**Why it shows you understood the paper:** This project demonstrates your grasp of how communication protocols translate into data-dependent data structures with sublinear query time and near-linear space, reproducing the main algorithmic contribution in a manageable setting.
+
+**Grounded in:** Theorem 1.2: Data structure for PM_{n,d,w} with w ≤ c log n achieving space O(n^{1.1}) and expected query time n^{1 - 1/(Θ(c log c))}.
+
+**Tech stack:** Python 3.11, NumPy, Matplotlib
+
+**Data:** Synthetic high-dimensional binary vectors with controlled wildcards, generated to simulate Partial Match queries; no external dataset needed.
+
+**Build it:**
+
+1. Study the paper's description of the data-dependent data structure construction via simulating the UAM protocol.
+2. Generate a synthetic dataset of n binary vectors with dimension d and create queries with w wildcards.
+3. Implement the data structure construction that partitions data based on Merlin's advice simulation and supports queries with wildcards.
+4. Implement a naive linear scan baseline for Partial Match queries.
+5. Benchmark query times of your data structure versus the baseline for varying n and w.
+6. Document your implementation, benchmarks, and analysis in a README.
+
+**Ships as:** A Python repository with the data structure and baseline implementations, benchmark scripts, plots comparing query times, and a README explaining the approach and results.
+
+**Stretch goal:** Incorporate a simple product distribution assumption in data generation to observe its effect on query performance.
+
+### Advanced — Extend the Framework to Approximate Partial Match Queries
+*Effort: 3-4 weeks*
+
+You design and implement an extension of the paper's framework to support approximate Partial Match queries, exploring how to adapt the UAM communication protocol to allow approximate matches with controlled error. You evaluate the trade-offs in query time and space on synthetic datasets and discuss challenges encountered.
+
+**Why it shows you understood the paper:** This project tackles a stated future direction of the paper, showing deep engagement with the framework's limitations and the challenges of designing efficient communication protocols for approximate similarity search.
+
+**Grounded in:** Future direction: Extending the framework to approximate versions of Partial Match or other similarity search problems and designing efficient UAM protocols for such approximate settings.
+
+**Tech stack:** Python 3.11, NumPy, Matplotlib, Jupyter Notebook
+
+**Data:** Synthetic high-dimensional binary vectors with controlled noise to simulate approximate Partial Match queries; no external dataset needed.
+
+**Build it:**
+
+1. Review the paper's framework and limitations regarding exact Partial Match and UAM protocols.
+2. Research approximate Partial Match problem definitions and existing approximate similarity search techniques.
+3. Design a modified UAM protocol that tolerates approximate matches with bounded error.
+4. Implement a prototype data-dependent data structure simulating this approximate UAM protocol.
+5. Generate synthetic datasets with noise to test approximate queries.
+6. Benchmark query time, space, and accuracy trade-offs compared to exact data structure.
+7. Write a detailed report discussing design decisions, challenges, and potential for further research.
+
+**Ships as:** A code repository with the approximate data structure prototype, benchmark scripts, and a comprehensive README or Jupyter notebook documenting the extension, experiments, and insights.
+
+**Stretch goal:** Attempt to formalize theoretical communication bounds for the approximate UAM protocol and compare with exact bounds.

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-harish-ravichandar"
-source_hash: "5fa40e2f9b4abec7e12c6e8f572799bd1a08d69c2483f704c5be461179794448"
+source_hash: "b5d003443af4dd205b54759643e0e453c92cbb0f3be4754d280359fb4c0446fc"
 sequence: 10
 generator: "outreach-garden: managed"
 ---
@@ -123,3 +123,86 @@ Weighted constrained optimization is a mathematical approach to find the best so
 ## Already in your library
 
 - [Lecture 20: Malleability and Inaccessibility of Preferences](https://www.youtube.com/watch?v=Z0vdSf8m13k) — also for: Inferring Implicit Trait Preferences for Task Allocation in Heterogeneous Teams (Harish Chaandar Ravichandar)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive learning ladder to demonstrate understanding of the paper's core idea: inferring implicit trait preferences for task allocation in heterogeneous teams. The beginner project reproduces a key metric from the paper using synthetic data, the intermediate project implements the core preference inference and weighted allocation method on a substitute dataset, and the advanced project extends the method to address a stated limitation by adapting it for tasks requiring capability maximization rather than threshold satisfaction.
+
+### Beginner — Reproduce Weighted Trait Mismatch Metric on Synthetic Data
+*Effort: a weekend, ~8 hours*
+
+You build a small Python project that simulates a simple heterogeneous team with agents having multiple traits and a set of tasks with trait requirements. You implement the weighted trait mismatch error metric from the paper to evaluate allocation quality, comparing uniform trait weighting versus arbitrary weights. This reproduces the paper's key metric to understand how trait preferences affect allocation quality.
+
+**Why it shows you understood the paper:** This project shows you understand the paper's fundamental evaluation metric and the importance of weighting traits differently rather than treating all traits equally.
+
+**Grounded in:** Key results: Numerical simulations show the method outperforms baselines in allocation quality measured by weighted trait mismatch error.
+
+**Tech stack:** Python 3.11, Jupyter Notebook, NumPy, Matplotlib
+
+**Data:** Synthetic data simulating agent traits and task requirements, generated within the project.
+
+**Build it:**
+
+1. Simulate a small team of agents with multiple traits and a set of tasks with trait thresholds.
+2. Implement a baseline allocation that treats all traits equally and compute the trait mismatch error.
+3. Implement a weighted trait mismatch error metric where weights are manually assigned.
+4. Visualize and compare the mismatch errors under uniform and weighted schemes.
+5. Write a README explaining the metric and how weighting affects allocation quality.
+
+**Ships as:** A Jupyter notebook or Python script with code, plots comparing weighted vs uniform trait mismatch error, and a README explaining the metric and results.
+
+**Stretch goal:** Add a simple heuristic to infer trait weights from simulated expert demonstrations by measuring consistency of trait allocation.
+
+### Intermediate — Implement Implicit Trait Preference Inference and Weighted Allocation
+*Effort: 2 weekends, ~20 hours*
+
+You implement the core method from the paper: infer implicit trait preferences from expert demonstrations by measuring consistency and adjusting for inherent trait diversity using a cosine-based weighting function. Then incorporate these inferred weights into a constrained optimization for task allocation. You apply this method on a substitute public dataset representing heterogeneous agents and tasks, such as a synthetic multi-agent task allocation dataset or a publicly available multi-robot task dataset. You compare allocation quality against a baseline that ignores trait preferences using the weighted trait mismatch error metric.
+
+**Why it shows you understood the paper:** This project demonstrates you can faithfully reimplement the paper's main contribution and validate its effectiveness on real or substitute data, showing comprehension of both the inference mechanism and its impact on allocation.
+
+**Grounded in:** Key contributions: A method to infer implicit trait preferences from expert demonstrations by measuring consistency in trait allocation; A weighted constrained optimization algorithm for coalition formation that accounts for inferred trait preferences.
+
+**Tech stack:** Python 3.11, SciPy (for optimization), NumPy, Pandas, Matplotlib
+
+**Data:** A substitute dataset simulating expert demonstrations of task allocations with heterogeneous agents and traits, generated or adapted from public multi-agent task allocation datasets.
+
+**Build it:**
+
+1. Implement trait preference inference by computing observed variation (consistency) of trait allocation across expert demonstrations.
+2. Calculate inherent trait diversity in the team and apply the cosine-based weighting function to infer trait preferences.
+3. Formulate and solve the weighted constrained optimization problem for task allocation using inferred preferences.
+4. Compare allocation quality and computational time against a baseline ignoring trait preferences using the weighted trait mismatch error metric.
+5. Document the method, results, and insights in a README.
+
+**Ships as:** A Python package or scripts implementing the inference and allocation method, evaluation scripts comparing against baseline, plots of allocation quality metrics, and a detailed README.
+
+**Stretch goal:** Add visualization of inferred trait preference weights per task and analyze sensitivity to number of expert demonstrations.
+
+### Advanced — Extend Trait Preference Inference to Maximization Tasks
+*Effort: 3+ weeks*
+
+You extend the paper's method to handle tasks where success depends on maximizing certain capabilities rather than meeting fixed trait thresholds, addressing a key limitation noted by the authors. This involves modifying the preference inference and allocation optimization to support maximization objectives. You apply this extended method on a custom or synthetic dataset designed to simulate maximization tasks in heterogeneous teams. You evaluate the method's effectiveness compared to the original threshold-based approach and discuss challenges and potential improvements.
+
+**Why it shows you understood the paper:** This project shows deep comprehension of the paper's limitations and the ability to innovate beyond the original method, potentially opening new research directions.
+
+**Grounded in:** Limitations: The method assumes tasks require meeting specific trait thresholds and cannot handle tasks where capabilities must be maximized rather than met; Future directions: Extend the method to handle tasks requiring maximization of capabilities rather than threshold satisfaction.
+
+**Tech stack:** Python 3.11, SciPy (optimization), NumPy, Pandas, Matplotlib
+
+**Data:** Synthetic dataset simulating heterogeneous teams performing tasks with maximization objectives, generated as part of the project.
+
+**Build it:**
+
+1. Analyze the original preference inference and allocation method to identify components assuming threshold constraints.
+2. Design a modified inference approach that can infer trait preferences relevant for maximization tasks.
+3. Adapt the constrained optimization formulation to support maximization objectives instead of threshold satisfaction.
+4. Generate synthetic data representing maximization tasks and heterogeneous agent traits.
+5. Implement and evaluate the extended method, comparing allocation quality and computational efficiency against the original method applied naively.
+6. Document the extension, challenges, and results in a comprehensive README.
+
+**Ships as:** A Python implementation of the extended inference and allocation method, evaluation scripts, synthetic data generation code, and a detailed report README discussing the extension and results.
+
+**Stretch goal:** Explore integration of contrastive learning techniques to improve preference inference robustness in noisy or low-diversity settings as a further extension.

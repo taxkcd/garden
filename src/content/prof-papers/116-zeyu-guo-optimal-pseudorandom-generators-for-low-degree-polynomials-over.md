@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-zeyu-guo"
-source_hash: "8a1caebe6ac2b2cd7b212a24900dac24ddb79898fa53ac07e6113d06b81028c0"
+source_hash: "f088b7c87779a7378922b9de4d214c5ce0dd5dd8ed76de7e80ecdb1f06b72e18"
 sequence: 116
 generator: "outreach-garden: managed"
 ---
@@ -113,3 +113,88 @@ Pseudorandom generators (PRGs) produce sequences that appear random to specific 
 *How the paper uses it:* The paper constructs explicit PRGs that fool n-variate degree-d polynomials over finite fields with optimal seed length.
 
 ▶ [Pseudorandom Generators I](https://www.youtube.com/watch?v=WT_vXeuk8yk) — Simons Institute for the Theory of Computing · 1:04:17 · Streamed 9 years ago
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progression for understanding and applying the core ideas of the paper on pseudorandom generators (PRGs) for low-degree polynomials over finite fields. The beginner project focuses on implementing and visualizing the concept of fooling low-degree polynomials with simple PRGs over small fields. The intermediate project involves reimplementing the paper's core PRG construction method and comparing it against a baseline on synthetic polynomial data. The advanced project tackles one of the paper's open problems by exploring reductions in field size requirements or extending PRGs to sparse polynomials, demonstrating deeper engagement with the paper's limitations and future directions.
+
+### Beginner — Visualizing PRG Fooling on Low-Degree Polynomials Over Small Finite Fields
+*Effort: a weekend, ~8 hours*
+
+You build a small interactive notebook or script that generates random low-degree polynomials over a small finite field (e.g., F_7) and constructs a simple pseudorandom generator with a short seed. You then evaluate and visualize how the PRG output fools these polynomials by comparing polynomial evaluations on truly random inputs versus PRG outputs.
+
+**Why it shows you understood the paper:** This project demonstrates you understand the fundamental concept of fooling polynomials with PRGs and the role of seed length and field size, which are central to the paper's contributions.
+
+**Grounded in:** Theorem 1.1: Existence of explicit PRGs fooling n-variate degree-d polynomials over Fq with seed length O(d log n + log q).
+
+**Tech stack:** Python 3.11, Jupyter Notebook, NumPy, Matplotlib
+
+**Data:** Synthetic low-degree polynomials generated in code over small finite fields (e.g., F_7).
+
+**Build it:**
+
+1. Implement finite field arithmetic for a small prime field (e.g., F_7).
+2. Generate random low-degree multivariate polynomials over this field.
+3. Implement a simple PRG construction (e.g., a small-bias generator or a naive seed expansion).
+4. Evaluate polynomials on truly random inputs and on PRG outputs.
+5. Visualize and compare the distributions of polynomial evaluations to show the PRG fools the polynomial.
+6. Write a README explaining the connection to the paper's PRG seed length and field size concepts.
+
+**Ships as:** A Jupyter notebook or Python script with visualizations showing polynomial evaluation distributions on random vs PRG inputs, plus a README linking the experiment to the paper's PRG seed length and fooling guarantees.
+
+**Stretch goal:** Add an interactive widget to vary polynomial degree, number of variables, or seed length to observe effects on fooling quality.
+
+### Intermediate — Reimplementing the Paper's PRG Construction for Low-Degree Polynomials
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement the core PRG construction from the paper based on the description of restricting polynomials to planes and using hitting set generators. You generate synthetic low-degree polynomials over a moderately large finite field and evaluate the PRG's fooling error compared to a baseline naive PRG.
+
+**Why it shows you understood the paper:** This project shows you can translate the paper's algebraic and combinatorial techniques into code, reproducing the main PRG construction and empirically verifying its effectiveness and seed length benefits.
+
+**Grounded in:** Theorem 1.1 and Section 1.2: PRG construction using plane restrictions and hitting set generators with seed length O(d log n + log q).
+
+**Tech stack:** Python 3.11, NumPy, SymPy (for polynomial manipulation), Jupyter Notebook
+
+**Data:** Synthetic n-variate degree-d polynomials generated programmatically over finite fields of size q ≥ C(d^{2d}/ε + d^4/ε^2), simulated with moderate d and q values.
+
+**Build it:**
+
+1. Implement polynomial representation and evaluation over finite fields using SymPy and NumPy.
+2. Implement the plane restriction technique to reduce polynomial dimension as described in the paper.
+3. Implement hitting set generators for low-degree polynomials based on the paper's degree bounds.
+4. Construct the PRG by combining plane restrictions and hitting set generators.
+5. Generate synthetic test polynomials and measure the PRG's fooling error compared to truly random inputs and a naive baseline PRG.
+6. Document the implementation details, experimental setup, and results in a README.
+
+**Ships as:** A code repository with scripts/notebooks implementing the PRG construction, experimental results comparing fooling error and seed length against a baseline, and a detailed README linking the work to the paper's main theorem.
+
+**Stretch goal:** Extend the implementation to handle polynomials of prime degree and verify improved field size requirements as per Theorem 1.2.
+
+### Advanced — Exploring Field Size Reduction Techniques for PRGs on Low-Degree Polynomials
+*Effort: 3-4 weeks*
+
+You develop an experimental framework to investigate algebraic or combinatorial methods that could reduce the required field size from exponential to polynomial in d, inspired by the paper's open problem. You implement variants of the PRG construction incorporating alternative factorization or indecomposability heuristics and evaluate their impact on seed length and fooling error.
+
+**Why it shows you understood the paper:** This project engages deeply with the paper's limitations and future directions, demonstrating your ability to extend state-of-the-art methods and contribute novel insights to the field.
+
+**Grounded in:** Limitations and future directions: reducing field size to polynomial in d while maintaining seed length; improving combinatorial arguments to reduce union bound overheads.
+
+**Tech stack:** Python 3.11, SymPy, NumPy, Jupyter Notebook, Git for version control
+
+**Data:** Synthetic polynomials over finite fields with varying sizes; no external datasets required.
+
+**Build it:**
+
+1. Review the paper's analysis on field size requirements and factorization techniques.
+2. Implement baseline PRG construction as per the intermediate project.
+3. Research alternative polynomial factorization heuristics or indecomposability criteria that might relax field size constraints.
+4. Incorporate these heuristics into the PRG construction and implement experimental variants.
+5. Evaluate the fooling error and seed length trade-offs across different field sizes and polynomial degrees.
+6. Document findings, challenges, and potential avenues for further research in a comprehensive report.
+
+**Ships as:** A research-style repository containing code for experimental PRG variants, evaluation scripts, and a detailed report discussing attempts to reduce field size requirements and their outcomes, linked explicitly to the paper's open problems.
+
+**Stretch goal:** Attempt to extend the PRG construction to sparse polynomials or other algebraic circuit classes as suggested in the paper's future directions.

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-kalantar"
-source_hash: "d8e6a720a8f1cb1d556f0af7e3afb7e1ca442dd9a8bb5f0d33300129d6d964be"
+source_hash: "3c118c403ec2d8d8b852b0d787f0ff456a8e0624e006b203596bc0cdbbef8081"
 sequence: 25
 generator: "outreach-garden: managed"
 ---
@@ -123,3 +123,96 @@ Robustness in computational geometry refers to algorithms' ability to handle noi
 ## Already in your library
 
 - [Solving Low-Dimensional Optimization Problems via Zonotope Vertex Enumeration](https://www.youtube.com/watch?v=NH_CpMYe3tw) — also for: Robust Vertex Enumeration for Convex Hulls in High Dimensions (Bahman Kalantari)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive ladder to demonstrate your understanding of the AVTA algorithm from the paper "Robust Vertex Enumeration for Convex Hulls in High Dimensions." The beginner project focuses on implementing and visualizing the core Triangle Algorithm concept in low dimensions to grasp vertex enumeration basics. The intermediate project involves reimplementing AVTA from the paper's description, applying it to a public dataset, and comparing it against a baseline convex hull algorithm. The advanced project extends AVTA by exploring parameter estimation techniques to reduce multiple runs, addressing a key limitation noted in the paper.
+
+### Beginner — Visualizing Triangle Algorithm for Convex Hull Vertices in 2D
+*Effort: a weekend, ~8 hours*
+
+You build a simple interactive visualization of the Triangle Algorithm (the core building block of AVTA) to enumerate vertices of the convex hull of a small 2D point set. The app lets you input points, step through iterations, and see how candidate vertices are identified.
+
+**Why it shows you understood the paper:** This project shows you understand the fundamental geometric intuition behind AVTA's vertex enumeration approach and can implement the core iterative test of points against convex hull subsets.
+
+**Grounded in:** The approach section describing the Triangle Algorithm as the foundation for AVTA's vertex enumeration.
+
+**Tech stack:** JavaScript, React, D3.js or Canvas API
+
+**Data:** Synthetic 2D point sets generated within the app for visualization.
+
+**Build it:**
+
+1. Implement a function to compute the convex hull of a small 2D point set using a simple algorithm (e.g., Gift wrapping) for baseline comparison.
+2. Implement the Triangle Algorithm iteration: given a candidate point, test if it lies inside the convex hull of a subset of vertices.
+3. Create a React-based UI to input or randomly generate 2D points and visualize the convex hull and candidate vertices.
+4. Add step-through controls to show each iteration of the Triangle Algorithm identifying vertices.
+5. Highlight vertices found and points tested at each step.
+6. Document the geometric intuition and how the algorithm progresses.
+
+**Ships as:** An interactive web app repository with a README explaining the Triangle Algorithm and a demo showing vertex enumeration on 2D points.
+
+**Stretch goal:** Add noise to input points and visualize how the algorithm behaves under perturbations.
+
+### Intermediate — Reimplementing AVTA and Comparing with Quickhull on High-Dimensional Data
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement the All Vertex Triangle Algorithm (AVTA) from the paper's description in Python, including robustness parameters. You apply it to a moderately high-dimensional dataset (e.g., the UCI Bag of Words dataset as a proxy for topic modeling data) and compare vertex enumeration results and runtime against the Quickhull algorithm from a standard computational geometry library.
+
+**Why it shows you understood the paper:** This project demonstrates your ability to translate the paper's core algorithmic contributions into code, handle high-dimensional data, and empirically validate AVTA's efficiency and robustness claims.
+
+**Grounded in:** Key contributions and results sections describing AVTA's complexity and empirical performance compared to Quickhull, especially in high dimensions.
+
+**Tech stack:** Python 3.11, NumPy, scikit-learn, matplotlib
+
+**Data:** The UCI Bag of Words dataset ((link removed — unverified)) used as a substitute for topic modeling data mentioned in the paper.
+
+**Build it:**
+
+1. Implement AVTA based on the paper's pseudocode, including vertex testing and robustness parameters.
+2. Load and preprocess the UCI Bag of Words dataset to obtain a high-dimensional point set.
+3. Run AVTA to enumerate vertices of the convex hull of the dataset points.
+4. Use a standard Quickhull implementation (e.g., from scipy.spatial.ConvexHull) as a baseline.
+5. Compare runtime and number of vertices found between AVTA and Quickhull.
+6. Visualize or tabulate results and write a README explaining the implementation and findings.
+
+**Verified links from the paper:**
+
+- <https://archive.ics.uci.edu/ml/datasets/bag> — a third-party/baseline artifact the paper cites — not the authors' own code
+
+**Ships as:** A Python repository with AVTA implementation, scripts to run experiments on the Bag of Words dataset, and a report comparing AVTA and Quickhull.
+
+**Stretch goal:** Incorporate Johnson-Lindenstrauss random projections to reduce dimensionality before running AVTA and evaluate impact on vertex recovery.
+
+### Advanced — Adaptive Robustness Parameter Estimation for AVTA on Noisy Data
+*Effort: 3+ weeks*
+
+You extend the AVTA implementation by developing and integrating a method to estimate or adapt robustness parameters (γ and σ) automatically from data, reducing the need for multiple runs with varying parameters. You evaluate this adaptive AVTA on noisy synthetic and real datasets, measuring vertex recovery accuracy and runtime.
+
+**Why it shows you understood the paper:** This project tackles a key limitation and future direction from the paper by addressing practical parameter estimation challenges, demonstrating deep comprehension of AVTA's theoretical and empirical aspects and contributing a novel extension.
+
+**Grounded in:** Limitations and future directions sections discussing difficulty in estimating robustness parameters and the need to reduce multiple runs.
+
+**Tech stack:** Python 3.11, NumPy, scikit-learn, matplotlib, Jupyter Notebook
+
+**Data:** Synthetic high-dimensional point clouds with controlled noise and the UCI Bag of Words dataset for real data evaluation.
+
+**Build it:**
+
+1. Review AVTA's dependence on robustness parameters γ and σ and their role in vertex recovery.
+2. Design a heuristic or statistical method to estimate these parameters from data, e.g., via local geometry or perturbation analysis.
+3. Integrate the adaptive parameter estimation into the AVTA implementation to select parameters dynamically.
+4. Generate synthetic noisy datasets with known convex hull vertices to test vertex recovery accuracy.
+5. Run experiments on synthetic and UCI Bag of Words data comparing adaptive AVTA to fixed-parameter AVTA.
+6. Analyze results, focusing on accuracy, runtime, and robustness to noise, and document findings.
+
+**Verified links from the paper:**
+
+- <https://archive.ics.uci.edu/ml/datasets/bag> — a third-party/baseline artifact the paper cites — not the authors' own code
+
+**Ships as:** A Python repository with adaptive AVTA code, experimental notebooks, and a detailed report on parameter estimation methods and their impact.
+
+**Stretch goal:** Explore applying adaptive AVTA to non-negative matrix factorization tasks and evaluate improvements in factorization quality.

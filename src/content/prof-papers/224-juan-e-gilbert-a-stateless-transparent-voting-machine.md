@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-juan-e-gilbert"
-source_hash: "cca801560f464388509b41f40f40afaced8e20d1818eed04f213df84f117644b"
+source_hash: "69860a93db9400c79ebad6b995866c17c68c4fa90f60294346374b03cd6736dd"
 sequence: 224
 generator: "outreach-garden: managed"
 ---
@@ -119,3 +119,90 @@ Hear directly from the authors about the design goals, challenges, and features 
 *How the paper uses it:* The author talk explains the motivation and design of the STVM, complementing the paper's technical details.
 
 ▶ [Transparent Voting Machine Prototype](https://www.youtube.com/watch?v=6_G8bdlXBAc) — Juan E. Gilbert · 5 years ago
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder of increasing complexity and fidelity to the Stateless Transparent Voting Machine (STVM) paper. The beginner project recreates the core interactive ballot verification concept in a simple web app, the intermediate project implements a stateless voting machine prototype with secure boot simulation and voter verification metrics, and the advanced project extends the STVM design by prototyping AI-based tamper detection using computer vision on transparent casing mockups. Each project demonstrates understanding of a key paper contribution or limitation and leverages your existing software engineering and AI skills.
+
+### Beginner — Interactive Ballot Verification Web Demo
+*Effort: a weekend, ~8 hours*
+
+You build a React web application that simulates the STVM's transparent interactive printing interface. The app lets users select ballot choices and then interactively verify each printed selection on a transparent overlay before final submission. This reproduces the core voter verification mechanism that improved anomaly detection rates in the paper.
+
+**Why it shows you understood the paper:** This project shows you grasp the paper's key usability and security innovation: the transparent interactive printing interface that enforces voter verification. A professor would see you understand how voter interaction can improve detection of ballot anomalies.
+
+**Grounded in:** Development of a transparent interactive printing interface that enforces voter verification of each printed ballot selection.
+
+**Tech stack:** React, TypeScript, CSS
+
+**Data:** No external data needed; simulated ballot choices and verification steps are hardcoded in the app.
+
+**Build it:**
+
+1. Set up a React project with TypeScript.
+2. Create a ballot selection UI with multiple choice options.
+3. Implement a transparent overlay that shows the printed ballot selections.
+4. Add interactive confirmation steps requiring user verification of each selection.
+5. Track and display detection rate of simulated ballot anomalies based on user verification.
+6. Write a README explaining the connection to the STVM paper's interface.
+
+**Ships as:** A GitHub repo with a React app demonstrating interactive ballot verification and a README linking it to the paper's voter verification contribution.
+
+**Stretch goal:** Add accessibility features such as keyboard navigation and screen reader support to parallel the paper's accessibility claims.
+
+### Intermediate — Stateless Voting Machine Prototype with Verification Metrics
+*Effort: 2 weekends, ~20 hours*
+
+You implement a simplified stateless voting machine prototype in Python and React that simulates booting from read-only media and enforces voter verification via an interactive ballot printing interface. You simulate malware persistence by resetting state on reboot and measure voter detection rates of ballot anomalies compared to a baseline without interactive verification.
+
+**Why it shows you understood the paper:** This project demonstrates you can reimplement the paper's core method of a stateless architecture combined with interactive verification, and quantitatively compare detection rates, showing comprehension of the security and usability improvements.
+
+**Grounded in:** Introduction of a stateless voting machine architecture that boots from read-only media to prevent persistent malware and the 77% detection rate of ballot anomalies by voters.
+
+**Tech stack:** Python 3.11, FastAPI, React, TypeScript, Docker
+
+**Data:** Simulated ballot data generated within the app; no external dataset is available from the paper.
+
+**Build it:**
+
+1. Create a Python FastAPI backend that simulates a stateless voting machine by resetting state on each 'boot'.
+2. Develop a React frontend that implements the transparent interactive printing interface for ballot selection and verification.
+3. Implement a simulation of malware persistence by injecting vote flipping in a baseline version without stateless reset.
+4. Run user simulations or scripted tests to measure detection rates of ballot anomalies with and without interactive verification.
+5. Compare detection rates and document results in a report.
+6. Write a README linking the prototype and metrics to the STVM paper's core contributions.
+
+**Ships as:** A full-stack prototype demonstrating stateless boot and interactive verification with quantitative anomaly detection metrics, plus a report comparing baseline and STVM-like behavior.
+
+**Stretch goal:** Add support for accessibility features certified for statewide use, mimicking the paper's accessibility claims.
+
+### Advanced — AI-Based Tamper Detection for Transparent Voting Machine Casing
+*Effort: 3-4 weeks*
+
+You design and implement a computer vision system using Python and PyTorch to detect tampering or foreign components on a transparent voting machine casing mockup. Using synthetic or publicly available images of transparent devices with and without tampering, you train a model to identify anomalies, addressing the paper's future direction of integrating AI for tamper detection.
+
+**Why it shows you understood the paper:** This project tackles a stated limitation and future direction of the paper by prototyping the AI tamper detection system. It shows you can extend the STVM concept with trustworthy AI techniques, bridging your applied ML skills with the paper's vision.
+
+**Grounded in:** Proposal for a fully transparent physical casing and use of AI/computer vision to detect tampering (future direction).
+
+**Tech stack:** Python 3.11, PyTorch, OpenCV, Jupyter Notebook
+
+**Data:** No paper dataset available; you use synthetic images or publicly available transparent object datasets as a substitute to simulate tampering detection.
+
+**Build it:**
+
+1. Collect or generate a dataset of images of transparent casings with and without simulated tampering.
+2. Preprocess images and label tampered vs. untampered samples.
+3. Design and train a convolutional neural network (CNN) model to classify tampering.
+4. Evaluate model performance and tune hyperparameters.
+5. Create a demo script that takes an input image and outputs tampering detection results.
+6. Document the approach, limitations, and connection to the STVM paper's future directions.
+
+**Ships as:** A GitHub repo with code, trained model, demo scripts, and a detailed README explaining the AI tamper detection prototype and its relation to the STVM paper.
+
+**Stretch goal:** Integrate the tamper detection model into a live web demo with webcam input to simulate real-time tamper alerts.
+
+_The paper authors released no code or datasets for the STVM; all data must be simulated or substituted with synthetic/public data as described._

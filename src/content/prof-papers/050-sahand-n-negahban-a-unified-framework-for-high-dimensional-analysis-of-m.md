@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-sahand-n-negahban"
-source_hash: "516f83ca1d77145d52b7f2c05c2341b7c2107a2e261a8563a39db04c12506d0b"
+source_hash: "141a8a682a3412e2e2f94812b3cb3c0b67c4021ea7fc8f1b9cea9fbd671ee98e"
 sequence: 50
 generator: "outreach-garden: managed"
 ---
@@ -138,3 +138,88 @@ Hearing directly from the authors can provide valuable insights into the motivat
 
 - [Andreas Andresen. Finite sample analysis of semiparametric M-Estimators](https://www.youtube.com/watch?v=P8L3DM2RqEA) — also for: A Unified Framework for High-Dimensional Analysis of M-Estimators with Decomposable Regularizers (Sahand N. Negahban)
 - [Sketching for M-Estimators: A Unified Approach to Robust Regression](https://www.youtube.com/watch?v=tZpmRYxh7ZM) — also for: A Unified Framework for High-Dimensional Analysis of M-Estimators with Decomposable Regularizers (Sahand N. Negahban)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progression to demonstrate your understanding of the unified framework for high-dimensional M-estimators with decomposable regularizers. The beginner project reproduces a core concept from the paper using familiar tools and synthetic data. The intermediate project implements the Lasso estimator with restricted strong convexity on a public sparse regression dataset, comparing error bounds to theory. The advanced project extends the framework to a hierarchical group sparsity model, addressing a stated future direction and exploring decomposability beyond the original scope.
+
+### Beginner — Visualizing Decomposability and Restricted Strong Convexity
+*Effort: a weekend, ~8 hours*
+
+You build a Jupyter notebook that simulates a small sparse linear regression problem with synthetic data. You implement a simple Lasso estimator using Python and visualize how the decomposability of the ℓ1 regularizer splits the parameter space into subspaces. You also illustrate restricted strong convexity by plotting the curvature of the loss function restricted to sparse vectors.
+
+**Why it shows you understood the paper:** This project concretely demonstrates your grasp of the two key properties—decomposability and restricted strong convexity—that underpin the paper's unified framework. A professor would see you can translate abstract theoretical concepts into visual and computational intuition.
+
+**Grounded in:** Identification of decomposability of regularizers and restricted strong convexity of loss functions as central concepts for high-dimensional analysis.
+
+**Tech stack:** Python 3.11, Jupyter Notebook, NumPy, Matplotlib, scikit-learn
+
+**Data:** Synthetic sparse linear regression data generated within the notebook, following the paper's assumptions about sparsity and noise.
+
+**Build it:**
+
+1. Generate synthetic data for a sparse linear regression problem with known sparse coefficients and Gaussian noise.
+2. Implement the Lasso estimator using scikit-learn or coordinate descent from scratch.
+3. Visualize the parameter space decomposition induced by the ℓ1 regularizer, highlighting the subspace and its orthogonal complement.
+4. Compute and plot the loss function curvature restricted to sparse vectors to illustrate restricted strong convexity.
+5. Write explanatory comments linking each visualization to the paper's definitions and theorems.
+
+**Ships as:** A well-documented Jupyter notebook with code, plots, and explanations showing decomposability and restricted strong convexity on synthetic data.
+
+**Stretch goal:** Add an interactive widget to vary sparsity level and regularization strength to observe effects on decomposability and curvature.
+
+### Intermediate — Implementing Lasso with Restricted Strong Convexity on Real Data
+*Effort: 2 weekends, ~20 hours*
+
+You implement the Lasso estimator from the paper's framework on a public high-dimensional sparse regression dataset (e.g., the Leukemia gene expression dataset). You verify restricted strong convexity conditions empirically and compare the ℓ2-error of your estimator against ordinary least squares and ridge regression baselines. You report finite-sample error bounds consistent with the paper's theoretical rates.
+
+**Why it shows you understood the paper:** This project shows you can operationalize the paper's core theorem (Theorem 1) and key assumptions on real data, bridging theory and practice. A professor would see you understand how decomposability and RSC enable sharp error bounds and can validate these empirically.
+
+**Grounded in:** Restricted eigenvalue conditions for design matrices ensure restricted strong convexity for sparse linear regression, enabling sharp error bounds for the Lasso.
+
+**Tech stack:** Python 3.11, Jupyter Notebook, NumPy, scikit-learn, pandas, matplotlib
+
+**Data:** Public Leukemia gene expression dataset (or a similar high-dimensional sparse regression dataset) available from UCI or public repositories; used as a substitute for the paper's data.
+
+**Build it:**
+
+1. Download and preprocess the Leukemia gene expression dataset to form a sparse linear regression problem.
+2. Implement the Lasso estimator using coordinate descent or scikit-learn's Lasso with custom regularization parameter tuning.
+3. Empirically verify restricted strong convexity by checking restricted eigenvalue conditions on the design matrix.
+4. Train ordinary least squares and ridge regression models as baselines.
+5. Compare the ℓ2-error of all models on a held-out test set and plot error versus sparsity level or regularization parameter.
+6. Write a report linking empirical results to the paper's finite-sample error bounds and theoretical guarantees.
+
+**Ships as:** A GitHub repository with code, data preprocessing scripts, notebooks, and a report demonstrating Lasso error bounds consistent with the paper's theory on real data.
+
+**Stretch goal:** Extend the implementation to group Lasso regularization and compare convergence rates.
+
+### Advanced — Extending the Framework to Hierarchical Group Sparsity Models
+*Effort: 3-4 weeks*
+
+You develop an extension of the paper's unified framework to handle hierarchical structured sparsity regularizers, such as hierarchical group Lasso. You implement a convex optimization solver for this regularizer and verify decomposability and restricted strong convexity conditions theoretically and empirically on synthetic hierarchical group-sparse data. You compare error bounds and convergence rates to the original group Lasso results.
+
+**Why it shows you understood the paper:** This project tackles a stated future direction of the paper by extending decomposability and RSC concepts to more complex structured sparsity models. A professor would recognize your ability to innovate on the framework and address open research questions.
+
+**Grounded in:** Extending the framework to hierarchical, overlapping group, or fused Lasso regularizers and other structured sparsity models.
+
+**Tech stack:** Python 3.11, CVXPY, NumPy, SciPy, Jupyter Notebook, matplotlib
+
+**Data:** Synthetic hierarchical group-sparse regression data generated to mimic nested group structures as described in the paper's group sparsity section.
+
+**Build it:**
+
+1. Review the paper's definitions of decomposability and RSC for group sparsity and understand hierarchical group Lasso literature.
+2. Formulate the hierarchical group Lasso regularizer and prove or argue decomposability with respect to hierarchical subspaces.
+3. Implement a convex optimization solver for hierarchical group Lasso using CVXPY.
+4. Generate synthetic data with hierarchical group sparsity structure.
+5. Empirically verify restricted strong convexity on the synthetic data.
+6. Train hierarchical group Lasso and compare estimation error and convergence rates to standard group Lasso.
+7. Document theoretical extensions and empirical results in a detailed report.
+
+**Ships as:** A comprehensive GitHub repository with code, proofs/sketches, synthetic data generation, experiments, and a report extending the paper's framework to hierarchical group sparsity.
+
+**Stretch goal:** Explore nonconvex hierarchical regularizers and discuss challenges in extending decomposability and RSC.

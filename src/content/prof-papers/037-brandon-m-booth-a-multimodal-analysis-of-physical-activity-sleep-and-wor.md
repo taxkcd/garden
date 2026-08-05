@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-brandon-booth-php"
-source_hash: "bef34eab00133dffdacfc6cf8fcd6e90662670652e024f0d230c81a1e7a224af"
+source_hash: "2bcc4ce33da136b243644e9de99bff240be6422144463e74dae1e5fdade5ecd5"
 sequence: 37
 generator: "outreach-garden: managed"
 ---
@@ -131,3 +131,89 @@ Wearable sensor data analysis involves processing continuous physiological and b
 ## Already in your library
 
 - [Wearables in Clinical Research: Data, Trends, and Challenges](https://www.youtube.com/watch?v=QT9mxXwZcN4) — also for: A multimodal analysis of physical activity, sleep, and work shift in nurses with wearable sensor data (Brandon M. Booth)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder of increasing complexity and depth to demonstrate understanding of the paper "A multimodal analysis of physical activity, sleep, and work shift in nurses with wearable sensor data." The beginner project reproduces a key behavioral metric comparison using simulated data and visualization. The intermediate project implements the core analysis of physical activity and sleep differences between day and night shift nurses on a substitute dataset, including statistical testing. The advanced project extends the study by incorporating shift rotation frequency data to analyze its impact on circadian misalignment and well-being, addressing a stated limitation of the paper.
+
+### Beginner — Visualize sedentary behavior differences between day and night shift nurses
+*Effort: a weekend, ~8 hours*
+
+You build a simple data visualization comparing sedentary behavior (rest-activity ratio) and walking activity between day and night shift nurses on workdays and off-days. Using simulated wearable sensor data modeled after the paper's reported statistics, you create bar charts and summary tables to reproduce the key behavioral difference.
+
+**Why it shows you understood the paper:** This project shows you understand the paper's key result that night shift nurses are more sedentary and less active, and you can translate reported metrics into visualizations that reflect the study's findings.
+
+**Grounded in:** Night shift nurses exhibited higher sedentary behavior (higher rest-activity ratio) and lower walking activity than day shift nurses both on workdays and off-days.
+
+**Tech stack:** Python 3.11, pandas, matplotlib, seaborn, Jupyter Notebook
+
+**Data:** Simulated wearable sensor data based on the paper's reported rest-activity ratios and walking activity ratios for day and night shift nurses.
+
+**Build it:**
+
+1. Create a small synthetic dataset with rest-activity ratio and walking activity ratio for day and night shift nurses on workdays and off-days, using the paper's reported means and standard deviations.
+2. Load the data into pandas DataFrames and compute summary statistics.
+3. Use matplotlib and seaborn to plot bar charts comparing sedentary behavior and walking activity between shifts and day types.
+4. Add labels, legends, and captions referencing the paper's reported values.
+5. Write a README explaining the data simulation and how the visualization relates to the paper's findings.
+
+**Ships as:** A Jupyter notebook and Python scripts that generate visualizations of sedentary behavior differences with synthetic data, accompanied by a README linking the results to the paper's findings.
+
+**Stretch goal:** Add interactive visualization with plotly or a simple React frontend to toggle between workday and off-day views.
+
+### Intermediate — Reimplement shift-based sleep and activity analysis on public wearable dataset
+*Effort: 2 weekends, ~20 hours*
+
+You implement the core multimodal analysis comparing physical activity and sleep patterns between day and night shift nurses using a public wearable sensor dataset as a substitute. You extract features analogous to rest-activity ratio, sleep duration, and social jet lag, then perform statistical comparisons and linear regression to replicate the paper's approach.
+
+**Why it shows you understood the paper:** This project demonstrates your ability to reimplement the paper's core methods—feature extraction from wearable data, statistical testing, and modeling shift-related differences—even without the original dataset, showing comprehension of the paper's analytical pipeline.
+
+**Grounded in:** Quantified differences in physical activity, sleep patterns, and circadian misalignment between day and night shift nurses.
+
+**Tech stack:** Python 3.11, pandas, numpy, scipy, statsmodels, matplotlib, Jupyter Notebook
+
+**Data:** Use a public dataset such as the 'UK Biobank accelerometer data' or 'NHANES wearable data' as a substitute for the paper's Fitbit data; simulate shift labels if necessary.
+
+**Build it:**
+
+1. Obtain and preprocess a public wearable sensor dataset containing physical activity and sleep data.
+2. Define day and night shift groups by simulating or using available metadata.
+3. Extract features: rest-activity ratio (sedentary vs active time), sleep duration, sleep timing variability, and social jet lag proxy.
+4. Perform statistical tests (t-tests or Mann-Whitney U) comparing features between shifts.
+5. Fit linear regression models predicting life satisfaction or sleep quality proxies from activity and sleep features with shift interaction terms.
+6. Visualize key results and compare them qualitatively to the paper's findings.
+7. Document methodology, assumptions, and limitations in a detailed README.
+
+**Ships as:** A Jupyter notebook with code and analysis reproducing the paper's core comparisons on substitute data, with visualizations and statistical summaries, plus a README explaining the approach.
+
+**Stretch goal:** Incorporate self-reported well-being survey data if available in the public dataset to replicate correlations with sensor features.
+
+### Advanced — Analyze impact of shift rotation frequency on nurse circadian misalignment and well-being
+*Effort: 3+ weeks*
+
+You extend the original study by incorporating simulated or collected shift rotation frequency data to analyze its effect on circadian misalignment (social jet lag) and life satisfaction. You develop a computational pipeline to combine wearable sensor features with detailed shift schedule metadata, perform multivariate modeling, and visualize how rotation patterns influence nurse well-being, addressing a key limitation noted in the paper.
+
+**Why it shows you understood the paper:** This project shows deep understanding of the paper's limitations and future directions by tackling shift variability effects, integrating multimodal data, and applying advanced statistical modeling to reveal nuanced impacts on circadian rhythms and well-being.
+
+**Grounded in:** Primary shift schedule frequency and rotation patterns were not directly assessed, limiting understanding of shift variability effects.
+
+**Tech stack:** Python 3.11, pandas, numpy, scipy, statsmodels, matplotlib, seaborn, Jupyter Notebook, FastAPI (optional for data API)
+
+**Data:** Simulated wearable sensor data combined with synthetic shift rotation frequency schedules; optionally collect small-scale real data if feasible.
+
+**Build it:**
+
+1. Design a data schema to represent shift rotation frequency and patterns alongside wearable sensor features.
+2. Simulate or collect a dataset combining physical activity, sleep metrics, and detailed shift rotation schedules for nurses.
+3. Compute circadian misalignment metrics (e.g., social jet lag) and life satisfaction proxies.
+4. Perform multivariate regression and interaction analyses to assess the impact of rotation frequency on circadian misalignment and well-being.
+5. Visualize relationships and model results with clear plots and tables.
+6. Write comprehensive documentation explaining the extension, methodology, and implications for nurse scheduling.
+7. Optionally, build a simple FastAPI backend to serve the combined dataset and analysis results.
+
+**Ships as:** A well-documented repository containing data processing scripts, analysis notebooks, visualizations, and optionally a backend API demonstrating the impact of shift rotation frequency on nurse well-being.
+
+**Stretch goal:** Integrate real nurse scheduling data from a partner hospital or public source to validate the simulation and analysis.

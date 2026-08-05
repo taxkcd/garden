@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-katherine-cordwell"
-source_hash: "35bbe2ce7817db6a72c78f728296c2c93031a7c1528f2378e15dfa79f7d7f43e"
+source_hash: "d7efc9ac90d4e705e756a27e5899617ba9552861dc3f0ed794c4f37292639756"
 sequence: 110
 generator: "outreach-garden: managed"
 ---
@@ -120,3 +120,86 @@ MLTL extends Linear Temporal Logic by incorporating mission time constraints, ma
 
 - [Lecture 12 Linear temporal logic](https://www.youtube.com/watch?v=--4S7HjoZho) — also for: Towards Causally Interpretable Wi-Fi CSI-Based Human Activity Recognition with Discrete Latent Compression and LTL Rule Extraction (Mani B. Srivastava)
 - [Linear Temporal Logic](https://www.youtube.com/watch?v=5EO2yUwdODM) — also for: ConformalNL2LTL: Translating Natural Language Instructions into Temporal Logic Formulas with Conformal Correctness Guarantees (Jyotirmoy Deshmukh)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder of increasing depth and technical challenge to demonstrate understanding of the paper "Formalizing MLTL Formula Progression in Isabelle/HOL." The beginner project focuses on implementing a core MLTL formula progression concept in a familiar programming language, the intermediate project involves reimplementing and testing the formula progression algorithm with a simple baseline, and the advanced project extends the formalization to address one of the paper's stated limitations by exploring more expressive temporal operators or infinite traces.
+
+### Beginner — MLTL Formula Progression Simulator in Python
+*Effort: a weekend, ~8 hours*
+
+You build a simple Python script that simulates the progression of a small subset of MLTL formulas over finite traces. The script implements the core idea of formula progression, including negation normal form transformation and basic temporal operators covered in the paper's core subset. You demonstrate progression on example traces and formulas, printing intermediate progression steps.
+
+**Why it shows you understood the paper:** This project shows you understand the fundamental mechanism of MLTL formula progression and the role of negation normal form and induction rules in simplifying formulas for progression. A professor would see you grasped the core algorithmic idea and its logical basis.
+
+**Grounded in:** Formalization of MLTL syntax and semantics in Isabelle/HOL with a reusable property library; Development of custom induction rules and negation normal form transformations for MLTL
+
+**Tech stack:** Python 3.11
+
+**Data:** You create synthetic MLTL formulas and finite traces as test inputs based on examples from the paper's formalization description.
+
+**Build it:**
+
+1. Implement MLTL formula syntax as Python classes or data structures supporting core operators (e.g., Next, Until, Boolean connectives).
+2. Implement negation normal form (NNF) transformation for MLTL formulas.
+3. Implement a function to progress an MLTL formula over one step of a finite trace.
+4. Create example finite traces and MLTL formulas to test progression.
+5. Print progression steps and final results for demonstration.
+
+**Ships as:** A Python script repository with README explaining MLTL formula progression, example formulas and traces, and console output showing progression steps.
+
+**Stretch goal:** Add visualization of formula progression steps or implement a small REPL to input formulas and traces interactively.
+
+### Intermediate — Verified MLTL Formula Progression Algorithm Reimplementation
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement the MLTL formula progression algorithm as described in the paper, including the computation length concept and correctness checks, in Python or OCaml. You compare your implementation's output on finite traces against a simple baseline that evaluates formulas directly without progression. You report correctness metrics such as logical equivalence on test traces.
+
+**Why it shows you understood the paper:** This project demonstrates you can faithfully reproduce the paper's core verified algorithm and understand the importance of computation length assumptions for correctness. The professor would see you can translate formal verification results into practical, testable code and validate correctness properties.
+
+**Grounded in:** Verification and correction of MLTL formula progression algorithm and its correctness theorems; Identification and formalization of the computation length concept crucial for correctness proofs; Formal proof of trace extension corollary ensuring satisfaction is preserved by trace extension
+
+**Tech stack:** Python 3.11
+
+**Data:** Synthetic finite traces and MLTL formulas constructed to test correctness; no external dataset needed.
+
+**Build it:**
+
+1. Implement the MLTL formula progression algorithm following the paper's formal description, including computation length checks.
+2. Implement a baseline evaluator that directly checks formula satisfaction on finite traces without progression.
+3. Generate or handcraft test traces and formulas covering various cases.
+4. Run both implementations on the test inputs and compare outputs for logical equivalence.
+5. Document results and discuss the role of computation length in correctness.
+
+**Ships as:** A repository with the progression algorithm, baseline evaluator, test cases, and a report comparing outputs and correctness metrics.
+
+**Stretch goal:** Add code generation support to export the progression algorithm to another language (e.g., OCaml) using a simple code template.
+
+### Advanced — Extending MLTL Formalization to Infinite Traces and Additional Operators
+*Effort: 3+ weeks*
+
+You develop an extension of the MLTL formula progression algorithm and formalization to handle infinite traces or incorporate additional temporal operators beyond the core subset formalized in the paper. You implement prototype code demonstrating progression on infinite traces or with new operators, and you attempt to prove or empirically validate correctness properties under these extensions.
+
+**Why it shows you understood the paper:** This project tackles a stated limitation and future direction of the paper, showing deep engagement with the formalization challenges and practical implications for runtime verification. The professor would recognize your ability to extend formal methods research and apply it to more expressive temporal logics or infinite behaviors.
+
+**Grounded in:** Limitations: The formalization focuses on a core subset of MLTL operators and finite traces; Future directions: Extending the MLTL library with more properties and results related to worst-case propagation delay; Formalizing bridges between MLTL and related temporal logics such as MTL and LTL; Leveraging the verified formula progression to improve runtime verification
+
+**Tech stack:** Isabelle/HOL (optional), Python 3.11, OCaml (optional)
+
+**Data:** Synthetic infinite traces or extended MLTL formulas constructed for testing; no external dataset required.
+
+**Build it:**
+
+1. Study the paper's formalization and limitations regarding finite traces and operator subsets.
+2. Select one extension: either infinite trace support or additional temporal operators (e.g., bounded until).
+3. Implement the extended progression algorithm prototype in Python or OCaml.
+4. Design test cases with infinite or extended operator formulas and simulate progression.
+5. Attempt to prove correctness properties informally or via Isabelle/HOL if familiar.
+6. Document challenges, results, and potential implications for runtime verification.
+
+**Ships as:** A repository with extended progression code, test cases, and a detailed report discussing the extension, correctness considerations, and relation to the original paper.
+
+**Stretch goal:** Collaborate with formal methods researchers to mechanize the extension in Isabelle/HOL or integrate with runtime verification tools like NASA's FRET or OGMA.

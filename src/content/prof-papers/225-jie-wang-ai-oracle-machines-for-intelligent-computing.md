@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-jie-wang"
-source_hash: "9f82350b03c15d77c726cc3840b37adc85e9e357b9baa40344b556116f5c13db"
+source_hash: "a17d6c3351d84a3f5898dfe5832ccbebdb30ddc2b80f38d72891f8985e6f0cbe"
 sequence: 225
 generator: "outreach-garden: managed"
 ---
@@ -115,3 +115,88 @@ Hybrid algorithm AI integration combines traditional algorithmic methods with AI
 - [[1hr Talk] Intro to Large Language Models](https://www.youtube.com/watch?v=zjkBMFhNj_g) — also for: On-demand generation of high-quality software engineering datasets using large language models and ontologies (Suranjan Chakraborty)
 - [Large Language Models explained briefly](https://www.youtube.com/watch?v=LPZh9BOjkQs) — also for: On-demand generation of high-quality software engineering datasets using large language models and ontologies (Suranjan Chakraborty)
 - [How Large Language Models Work](https://www.youtube.com/watch?v=5sLYAQS9sWQ) — also for: Natural-Language to SysMLv2 Translation via Conformance-Driven Iterative Refinement (Levent Burak Kara)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive ladder to demonstrate your understanding of AI-oracle machines as introduced by Jie Wang (2024). The beginner project reproduces a core mechanism of controlled AI query and validation on a simple text summarization task. The intermediate project implements the paper's AI-oracle machine framework to improve readability assessment accuracy on a public dataset, comparing against a baseline. The advanced project extends the framework toward robustness and trustworthiness in a safety-critical domain by prototyping iterative validation for medical treatment planning, addressing a key limitation and future direction of the paper.
+
+### Beginner — Controlled Sentence Selection for Topic Summarization
+*Effort: a weekend, ~8 hours*
+
+You build a small AI-oracle machine that mimics the paper's controlled iterative query approach by selecting relevant sentences from a text before summarization. Using a large language model API, you implement pre-query filtering of sentences, query the LLM for summarization, and post-answer validation to ensure relevance.
+
+**Why it shows you understood the paper:** This project concretely demonstrates the paper's key contribution of improving control over AI-generated content by decomposing tasks and validating AI responses iteratively, showing you grasp the mechanism behind AI-oracle machines.
+
+**Grounded in:** ‘Improved control over AI-generated content demonstrated in topic summarization by selecting and validating relevant sentences before summarization.’
+
+**Tech stack:** Python 3.11, OpenAI GPT-4 API or similar LLM API, Jupyter Notebook
+
+**Data:** Use a small set of publicly available news articles or Wikipedia paragraphs as input texts to summarize; no proprietary dataset required.
+
+**Build it:**
+
+1. Collect or select 5-10 short articles or paragraphs on a common topic.
+2. Implement a pre-query algorithm to filter and select sentences relevant to the topic using keyword matching or simple heuristics.
+3. Query an LLM API to generate a summary based on the selected sentences.
+4. Implement a post-answer validation step to check if the summary covers key points (e.g., via keyword presence or similarity metrics).
+5. Iterate the process to refine sentence selection and summary quality.
+6. Document the process, code, and results in a README.
+
+**Ships as:** A GitHub repo with code and a notebook demonstrating controlled sentence selection and summarization with iterative validation, including example inputs and outputs.
+
+**Stretch goal:** Add a simple UI to interactively select sentences and display summaries.
+
+### Intermediate — AI-Oracle Machine for Readability Assessment
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement the paper's AI-oracle machine framework for improving automated readability assessment (ARA) accuracy. Using a public readability dataset, you build a pipeline combining genre prediction, grade-level assessment, and text comparison as oracles with iterative query processing and validation. You compare your results against a baseline single-model readability classifier.
+
+**Why it shows you understood the paper:** This project applies the core AI-oracle machine method to a concrete task from the paper, demonstrating your ability to integrate multiple AI models algorithmically to improve accuracy and control, as well as to evaluate performance gains.
+
+**Grounded in:** ‘The research constructs an AI-oracle machine to offer a new approach to improving ARA accuracy from 50% to over 65%, representing a 24% improvement.’
+
+**Tech stack:** Python 3.11, scikit-learn, Hugging Face transformers (for LLMs), Jupyter Notebook
+
+**Data:** Use the WeeBit readability dataset or a similar public readability corpus as a substitute for the paper's data.
+
+**Build it:**
+
+1. Download and preprocess the WeeBit readability dataset.
+2. Implement or fine-tune models for genre prediction and grade-level readability classification.
+3. Implement a text comparison module to compare input texts against reference readability samples.
+4. Design an AI-oracle machine pipeline that iteratively queries these models and validates outputs to improve overall readability assessment accuracy.
+5. Evaluate and compare accuracy against a baseline single-model classifier.
+6. Document methodology, code, and evaluation results.
+
+**Ships as:** A GitHub repo with code implementing the AI-oracle machine pipeline for readability assessment, evaluation scripts, and a report showing accuracy improvements.
+
+**Stretch goal:** Incorporate a simple post-answer validation algorithm that flags uncertain cases for manual review.
+
+### Advanced — Iterative Validation Framework for AI-Oracle Neurosurgery Treatment Planning
+*Effort: 3-4 weeks*
+
+You prototype an extension of the AI-oracle machine framework toward robustness and trustworthiness in safety-critical applications by implementing an iterative validation system for neurosurgery treatment planning. Using publicly available medical imaging datasets and pretrained vision and language models, you simulate the iterative query, fine-tuning, and post-answer validation cycles described in the paper, addressing the limitation of black-box AI models and the paper's future direction of improving trustworthiness.
+
+**Why it shows you understood the paper:** This project tackles a key limitation and future direction of the paper by exploring robustness and trustworthiness in a complex domain, demonstrating deep comprehension of the AI-oracle machine framework and its challenges in high-stakes applications.
+
+**Grounded in:** ‘The neurosurgery application is a promising project in development and not yet fully implemented.’ and ‘Given the black-box nature of AI models and the iterative validation approach in AI-oracle machines, how do you envision ensuring robustness and trustworthiness in safety-critical applications like neurosurgery treatment planning?’
+
+**Tech stack:** Python 3.11, PyTorch, Hugging Face transformers, OpenCV, Jupyter Notebook
+
+**Data:** Use publicly available brain MRI datasets such as the BraTS dataset as a substitute for neurosurgery imaging data.
+
+**Build it:**
+
+1. Download and preprocess a public brain MRI dataset (e.g., BraTS).
+2. Fine-tune a vision model (e.g., a CNN or ViT) to identify tumor regions or relevant features.
+3. Fine-tune a language model to interpret neurosurgeon notes and generate treatment plan descriptions.
+4. Implement an iterative AI-oracle machine loop that queries these models, applies pre-query and post-answer validation algorithms to refine treatment plans.
+5. Design and implement validation heuristics to flag uncertain or inconsistent outputs for review.
+6. Document the prototype, challenges faced, and potential improvements.
+
+**Ships as:** A GitHub repo with code and notebooks demonstrating an iterative AI-oracle machine prototype for neurosurgery treatment planning with validation steps, including example data and outputs.
+
+**Stretch goal:** Integrate a user interface for neurosurgeons to interactively review and adjust treatment plans based on AI-oracle outputs.

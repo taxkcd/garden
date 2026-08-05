@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-arpita-biswas"
-source_hash: "2cbac6ea5e384b390426ad714da926fc88fb804b0e39370afd2f53ce2414fb3f"
+source_hash: "eecb4936335826410e95286d707e6f2304d0c90b13b409f3b016bdae3b250d1b"
 sequence: 203
 generator: "outreach-garden: managed"
 ---
@@ -119,3 +119,97 @@ This talk provides direct insight into AgroAskAI’s novel multi-agent AI framew
 *How the paper uses it:* The video offers an overview of AgroAskAI’s architecture and how its specialized agents collaborate to deliver actionable, localized agricultural recommendations.
 
 ▶ [Agentic AI & The Future | Keynote Speaker Shawn Kanungo](https://www.youtube.com/watch?v=pwWx6ePaqyA) — Shawn Kanungo · 3 months ago
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder to demonstrate your understanding of AgroAskAI's multi-agent AI framework for climate adaptation in agriculture. The beginner project reproduces a core mechanism of query parsing and missing information detection. The intermediate project reimplements the multi-agent orchestration and reviewer agent concept on a smaller scale with real weather data and compares it to a simple baseline. The advanced project extends the framework to address a stated limitation by adding offline or low-connectivity support, transferring the multi-agent design to a new domain such as healthcare or energy decision support.
+
+### Beginner — Query Parsing and Missing Info Detection Agent
+*Effort: a weekend, ~8 hours*
+
+You build a simplified Parse Agent that takes farmer queries as input, extracts key parameters like location and timestamp, and detects missing critical information needed for context-aware advice. The agent outputs prompts requesting missing data to improve response quality.
+
+**Why it shows you understood the paper:** This project demonstrates your grasp of AgroAskAI's core mechanism for handling incomplete user queries, a key contribution that ensures localized and relevant recommendations.
+
+**Grounded in:** The Parse Agent is always able to detect missing information related to location and timestamp when those information are relevant for the query.
+
+**Tech stack:** Python 3.11, FastAPI, spaCy or similar NLP library
+
+**Data:** Simulated farmer queries crafted to include complete and incomplete examples; no external dataset required.
+
+**Build it:**
+
+1. Implement a simple API endpoint that accepts text queries from farmers.
+2. Use an NLP library to parse queries and extract entities like location and date/time.
+3. Implement logic to detect if critical parameters are missing based on query type.
+4. Return structured output including extracted info and prompts for missing data.
+5. Write example queries and test the agent's detection accuracy.
+
+**Ships as:** A GitHub repo with a FastAPI service implementing the Parse Agent, example queries, and README explaining the detection logic and its importance.
+
+**Stretch goal:** Add multilingual support for a second language such as Swahili using translation APIs or multilingual NLP models.
+
+### Intermediate — Multi-Agent AI Framework for Localized Agricultural Advice
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement a simplified multi-agent system inspired by AgroAskAI, including a Query Parsing Agent, Weather Data Retrieval Agent, Solution Generation Agent, and Reviewer Agent. The system integrates real-time weather data from a public API and generates localized agricultural advice. You compare your system's advice quality against a baseline that uses only static weather data without internal review.
+
+**Why it shows you understood the paper:** This project shows you can implement the paper's core multi-agent architecture and internal governance mechanism, demonstrating how specialized agents collaborate to produce accurate, context-aware recommendations.
+
+**Grounded in:** Design of a multi-agent AI system with role-specialized agents for agricultural decision support under climate uncertainty. Implementation of an internal Reviewer Agent to evaluate and improve solution accuracy and relevance.
+
+**Tech stack:** Python 3.11, FastAPI, asyncio, OpenWeatherMap API or similar public weather API, pytest
+
+**Data:** Public weather data from OpenWeatherMap API as a substitute for the paper's external weather data sources; simulated farmer queries.
+
+**Build it:**
+
+1. Implement the Query Parsing Agent from the beginner project.
+2. Implement a Weather Data Retrieval Agent that fetches real-time weather data for given locations.
+3. Implement a Solution Generation Agent that produces simple agricultural advice based on parsed query and weather data.
+4. Implement a Reviewer Agent that checks advice for consistency and flags hallucinations or irrelevant info.
+5. Create an Agent Manager to orchestrate the agents in a chain-of-responsibility pattern.
+6. Compare outputs against a baseline system without the Reviewer Agent and report qualitative differences.
+
+**Verified links from the paper:**
+
+- <https://github.com/ncantonjos04/AgroAskAI> — a third-party/baseline artifact the paper cites — not the authors' own code
+
+**Ships as:** A GitHub repo with a modular multi-agent AI system, example queries, test cases, and a README documenting architecture, comparison results, and lessons learned.
+
+**Stretch goal:** Add multilingual interaction support and logging of conversations for transparency.
+
+### Advanced — Offline-Capable Multi-Agent AI Framework for Climate Adaptation
+*Effort: 3-4 weeks*
+
+You extend the multi-agent AI framework by implementing offline or low-connectivity capabilities, addressing the paper's limitation on deployment in rural areas with poor internet. This includes caching weather data, enabling shared-access models, and fallback logic for missing real-time data. Optionally, you transfer the framework to a new socially impactful domain such as healthcare decision support under uncertainty, adapting agents accordingly.
+
+**Why it shows you understood the paper:** This project tackles a key limitation and future direction from the paper, demonstrating your ability to adapt and extend complex multi-agent AI systems for real-world constraints and new domains.
+
+**Grounded in:** Deployment challenges exist in low-connectivity environments, necessitating lightweight or shared-access solutions. Future directions include developing offline capabilities or shared-access models to overcome connectivity barriers.
+
+**Tech stack:** Python 3.11, FastAPI, SQLite or local database for caching, OpenWeatherMap API or similar, Docker, React (optional frontend)
+
+**Data:** Public weather data API for initial data; simulated offline scenarios by disabling network access; optionally healthcare-related public datasets for domain transfer.
+
+**Build it:**
+
+1. Design and implement a caching layer for weather and historical data to enable offline query handling.
+2. Modify the multi-agent orchestration to detect connectivity and switch to cached or fallback data.
+3. Implement shared-access logic allowing multiple users to share cached data in low-connectivity settings.
+4. Optionally, adapt the agents to a new domain (e.g., healthcare) by changing query parsing and solution generation logic.
+5. Test the system under simulated offline conditions and evaluate advice quality degradation.
+6. Document the architecture, challenges, and potential improvements.
+
+**Verified links from the paper:**
+
+- <https://github.com/ncantonjos04/AgroAskAI> — a third-party/baseline artifact the paper cites — not the authors' own code
+
+**Ships as:** A GitHub repo with an offline-capable multi-agent AI framework, example offline usage scenarios, optional domain transfer code, and detailed README.
+
+**Stretch goal:** Integrate participatory design feedback from potential users to improve usability and cultural appropriateness.
+
+_The authors released no official code for AgroAskAI; the third-party GitHub repository is a related implementation by others and can be used as a reference baseline only. Public weather APIs are substitutes for the paper's external data sources._

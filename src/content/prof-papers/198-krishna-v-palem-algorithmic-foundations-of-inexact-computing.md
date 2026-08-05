@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-krishna-v-palem"
-source_hash: "d7b1bfbde46cefeeb5bbaf41924aeb6bbe6d75c66e0b19e0b37f128a5a9768b9"
+source_hash: "58ec3e130d354a4ebafc55dba1faf99e0081bbae7ec3283d232d771ad53e5a93"
 sequence: 198
 generator: "outreach-garden: managed"
 ---
@@ -126,3 +126,87 @@ A direct presentation by the authors can provide an overview of their framework,
 
 - [Probably Approximately Correct (PAC)Learning ( KTU CS467  Machine Learning Module 2)](https://www.youtube.com/watch?v=fTWm2S5tFCo) — also for: Approximate Replicability in Learning (Russell Impagliazzo)
 - [PAC Learning - Georgia Tech - Machine Learning](https://www.youtube.com/watch?v=e37nlms7Zi0) — also for: Approximate Replicability in Learning (Russell Impagliazzo)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive learning path to demonstrate understanding of the paper "Algorithmic Foundations of Inexact Computing." The beginner project reproduces a core concept of probabilistic bit-flip error modeling on Boolean functions using simple simulation. The intermediate project implements influence-aware versus influence-oblivious energy allocation strategies on Boolean function evaluation, comparing solution quality metrics. The advanced project extends the paper's model by exploring practical heuristics for influence and energy allocation computation, addressing the paper's stated computational hardness limitation and moving towards real-world embedded system applicability.
+
+### Beginner — Simulate Probabilistic Bit-Flip Errors on Boolean Functions
+*Effort: a weekend, ~8 hours*
+
+You build a small Python simulation that models the paper's probabilistic bit-flip error model on simple Boolean functions (e.g., AND, OR, Majority). The simulation will allow you to vary energy investment per bit and observe the resulting error probabilities and output correctness rates.
+
+**Why it shows you understood the paper:** This project shows you understand the fundamental abstraction of hardware unreliability as probabilistic bit flips linked to energy investment, a key modeling contribution of the paper.
+
+**Grounded in:** Introduction of a clean, principled model for inexact computing linking energy investment to error probabilities per bit.
+
+**Tech stack:** Python 3.11, Jupyter Notebook, matplotlib
+
+**Data:** No external data needed; Boolean functions are simulated directly.
+
+**Build it:**
+
+1. Implement a function to simulate bit-flip errors on input bits given an energy parameter controlling flip probability.
+2. Implement several Boolean functions (AND, OR, Majority) to evaluate on noisy inputs.
+3. Run simulations varying energy investment per bit and record output correctness rates.
+4. Plot error probability vs. energy investment and output correctness for each function.
+5. Write a README explaining the model and simulation results.
+
+**Ships as:** A GitHub repo with Python code and Jupyter notebook demonstrating the probabilistic bit-flip model and plots showing error vs. energy tradeoffs on Boolean functions.
+
+**Stretch goal:** Add a simple influence calculation for bits in the Boolean functions and show how focusing energy on high-influence bits reduces output error.
+
+### Intermediate — Implement Influence-Aware Energy Allocation for Boolean Function Evaluation
+*Effort: 2 weekends, ~20 hours*
+
+You implement the core method of influence-aware versus influence-oblivious energy allocation strategies for bits in Boolean functions, reproducing the exponential improvement in solution quality shown in the paper. You compare the weighted output error rates under both strategies on simulated Boolean functions with asymmetric bit influences.
+
+**Why it shows you understood the paper:** This project demonstrates you can reimplement the paper's main algorithmic contribution and quantitatively reproduce its key result on influence-aware energy allocation yielding exponential gains.
+
+**Grounded in:** Influence-aware energy allocation can yield exponential improvements in solution quality compared to oblivious allocation for influence-asymmetric Boolean functions.
+
+**Tech stack:** Python 3.11, Jupyter Notebook, numpy, matplotlib
+
+**Data:** Simulated Boolean functions with known influence asymmetry; no external dataset required.
+
+**Build it:**
+
+1. Implement a method to compute or approximate bit influence values for chosen Boolean functions.
+2. Implement influence-oblivious uniform energy allocation and influence-aware energy allocation proportional to bit influence.
+3. Simulate probabilistic bit-flip errors per bit based on allocated energy.
+4. Evaluate and compare output correctness/error metrics (e.g., weighted error impact) under both allocations.
+5. Plot and analyze the exponential improvement in solution quality for influence-aware allocation.
+6. Document the implementation details, results, and connection to the paper.
+
+**Ships as:** A GitHub repo with code, notebooks, and plots comparing influence-aware vs. oblivious energy allocation strategies on Boolean function evaluation, reproducing key paper metrics.
+
+**Stretch goal:** Extend to a small PAC learning task on synthetic data to demonstrate influence ratio β > 1 learnability.
+
+### Advanced — Heuristic Algorithms for Influence and Energy Allocation in Inexact Computing
+*Effort: 3-4 weeks*
+
+You develop and evaluate practical heuristic algorithms to approximate bit influence and compute near-optimal energy allocations for inexact computing on Boolean functions. This addresses the paper's limitation about computational hardness of exact influence and energy allocation. You test heuristics on larger Boolean functions or synthetic workloads and compare solution quality and computational cost against naive uniform allocation.
+
+**Why it shows you understood the paper:** This project tackles a key open challenge identified by the paper, demonstrating deep comprehension and initiative to extend the theoretical framework towards practical applicability in embedded systems.
+
+**Grounded in:** Computing influence values and optimal energy allocations can be computationally hard (co-NP-hard in some cases). Developing efficient algorithms and heuristics for computing influence and optimal energy allocations in practice is a future direction.
+
+**Tech stack:** Python 3.11, numpy, scipy, matplotlib, Jupyter Notebook
+
+**Data:** Synthetic Boolean functions with varying sizes and influence asymmetry; no external dataset required.
+
+**Build it:**
+
+1. Research heuristic methods for influence approximation (e.g., sampling-based, Fourier coefficient truncation).
+2. Implement one or more heuristic algorithms to estimate bit influence efficiently.
+3. Develop heuristic energy allocation algorithms based on approximate influence values.
+4. Simulate probabilistic bit-flip errors and evaluate output correctness under heuristic allocations vs. uniform baseline.
+5. Measure computational time and solution quality tradeoffs.
+6. Write a detailed report linking heuristics to the paper's theoretical results and discussing practical implications.
+
+**Ships as:** A GitHub repo with heuristic implementations, evaluation notebooks, and a comprehensive README discussing methods, results, and relevance to the paper's limitations and future directions.
+
+**Stretch goal:** Prototype integration of heuristic energy allocation in a simple embedded system simulator or hardware abstraction layer.

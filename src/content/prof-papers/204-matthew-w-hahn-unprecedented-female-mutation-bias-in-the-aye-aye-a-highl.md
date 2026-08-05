@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-matthew-w-hahn"
-source_hash: "f3e74c3454e81778afad0b155a1c384c001d9639e78db047d73ec0d3b6355ad3"
+source_hash: "559bb1e3bd40da1bfcfde4cc3abdf299f680ebe900276d98d27548717c626581"
 sequence: 204
 generator: "outreach-garden: managed"
 ---
@@ -120,3 +120,96 @@ Here, we focus on the typical pattern where males contribute more mutations than
 *How the paper uses it:* The paper challenges the near-universal male mutation bias by discovering a strong maternal age effect and female mutation bias in aye-ayes.
 
 ▶ [2B - Mutation rates & natural genetic variation](https://www.youtube.com/watch?v=yMsgn31mAjw) — Useful Genetics · 10 years ago
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder of increasing depth and complexity to demonstrate understanding of the paper's discovery of female mutation bias in aye-ayes. The beginner project reproduces a key figure showing maternal versus paternal age effects on mutation counts using simplified or simulated data. The intermediate project reimplements the core mutation phasing and parent-of-origin assignment method on a public pedigree dataset to compare sex-biased mutation patterns. The advanced project extends the paper by investigating environmental versus genetic contributions to mutation bias, addressing a stated limitation and future direction with a novel analysis approach.
+
+### Beginner — Reproduce maternal and paternal age effect plot for aye-aye mutations
+*Effort: a weekend, ~8 hours*
+
+You build a simple data analysis and visualization script that reproduces the key figure showing the relationship between parental age and number of de novo mutations transmitted in aye-ayes. Using either simulated data modeled after the paper's reported mutation counts or a small subset of data extracted from the paper's supplementary materials, you plot mutation counts against maternal and paternal ages and fit Poisson regression lines.
+
+**Why it shows you understood the paper:** This project shows you understand the core empirical finding of the paper—the unusual maternal age effect and female mutation bias in aye-ayes—and can reproduce the statistical association and visualization that supports it.
+
+**Grounded in:** Fig 2A shows a significant association between maternal age and mutation rate (Poisson regression, P = 0.03) and no significant association with paternal age (P = 0.19).
+
+**Tech stack:** Python 3.11, Jupyter Notebook, pandas, matplotlib, seaborn, statsmodels
+
+**Data:** Simulated mutation count data modeled after the paper's reported statistics for 12 aye-aye trios, or extracted summary data from the paper's figures.
+
+**Build it:**
+
+1. Create or extract a dataset with parental ages and mutation counts per trio mimicking the aye-aye data.
+2. Load the data into a Jupyter Notebook using pandas.
+3. Plot scatterplots of mutation counts versus maternal and paternal ages separately.
+4. Fit Poisson regression models to test the association of mutation counts with maternal and paternal ages.
+5. Visualize regression lines on the scatterplots.
+6. Write a README explaining the biological context and how the plot reproduces the paper's key result.
+
+**Ships as:** A Jupyter Notebook and README showing the recreated maternal and paternal age effect plots with statistical tests, demonstrating the unusual female mutation bias in aye-ayes.
+
+**Stretch goal:** Add confidence intervals or bootstrap estimates for the regression lines to better quantify uncertainty.
+
+### Intermediate — Reimplement parent-of-origin mutation phasing on a public primate pedigree
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement the core method of assigning de novo mutations to their parent of origin using publicly available pedigree sequencing data from a primate species (e.g., baboons or rhesus macaques) as a proxy for aye-aye data. You use or adapt the POOHA software cited in the paper to phase mutations and compare paternal and maternal age effects on mutation counts, reproducing the expected male-biased mutation pattern as a baseline.
+
+**Why it shows you understood the paper:** This project demonstrates your ability to implement the paper's core computational approach for mutation phasing and parent-of-origin assignment, and to interpret sex-biased mutation patterns in a mammalian pedigree, showing grasp of the methodology beyond summary statistics.
+
+**Grounded in:** We used the software POOHA (https://github.com/besenbacher/POOHA) to assign parent of origin to the aye-aye and baboon DNMs identified in this study. Fig 2B-D show baboons, rhesus macaques, and humans all exhibit male bias and paternal age effects, contrasting with aye-ayes.
+
+**Tech stack:** Python 3.11, bash, POOHA software, pandas, matplotlib, snakemake or Makefile for workflow
+
+**Data:** Publicly available baboon or rhesus macaque pedigree whole-genome sequencing data from SRA BioProject PRJNA1156185 or similar, used as a substitute for aye-aye data.
+
+**Build it:**
+
+1. Download and preprocess publicly available primate pedigree sequencing data (e.g., baboons).
+2. Call de novo mutations using standard variant calling pipelines or use provided DNM callsets if available.
+3. Run POOHA software to assign parent of origin for each DNM.
+4. Aggregate mutation counts per trio by parental age and sex.
+5. Plot mutation counts versus parental ages and compute sex bias metrics.
+6. Compare results to the paper's baboon male-biased mutation pattern.
+7. Document methods, results, and biological interpretation in a README.
+
+**Verified links from the paper:**
+
+- <https://github.com/besenbacher/POOHA> — a third-party/baseline artifact the paper cites — not the authors' own code
+- <https://github.com/jbelyeu/unfazed> — a third-party/baseline artifact the paper cites — not the authors' own code
+
+**Ships as:** A reproducible pipeline and analysis showing parent-of-origin mutation phasing on a primate pedigree, with plots and statistics confirming male-biased mutation patterns as a baseline comparison to aye-ayes.
+
+**Stretch goal:** Incorporate Unfazed software (https://github.com/jbelyeu/unfazed) for alternative phasing validation and compare results.
+
+### Advanced — Investigate environmental versus genetic contributions to female mutation bias in aye-ayes
+*Effort: 3-4 weeks*
+
+You design and implement an analysis framework to disentangle genetic and environmental factors influencing the female mutation bias observed in aye-ayes, addressing a key limitation and future direction of the paper. Using available captive aye-aye pedigree data (or simulated data modeled on it), you integrate parental age, mutation counts, and candidate gene variant information (e.g., BLM heterozygosity) with environmental metadata if available. You apply statistical models or machine learning to test hypotheses about genetic versus environmental contributions to mutation rate variation.
+
+**Why it shows you understood the paper:** This project tackles a stated limitation and future direction from the paper, demonstrating deep comprehension of the biological problem and the ability to extend the research with novel computational approaches to separate genetic and environmental effects on mutation bias.
+
+**Grounded in:** Limitations: Environmental factors potentially influencing mutation rates were not fully explored; captive conditions may differ from wild. Future directions: Examine environmental and physiological factors in captive versus wild populations that may influence mutation patterns; Functional studies of candidate DNA repair and replication gene variants.
+
+**Tech stack:** Python 3.11, scikit-learn, pandas, matplotlib, seaborn, Jupyter Notebook
+
+**Data:** Aye-aye pedigree mutation and parental age data from the paper's supplementary materials or simulated data modeled on it; candidate gene variant data as described; environmental metadata if available or simulated.
+
+**Build it:**
+
+1. Compile or simulate a dataset combining parental ages, mutation counts, candidate gene variant status, and environmental metadata for aye-aye trios.
+2. Perform exploratory data analysis to visualize mutation counts by maternal age, paternal age, genotype, and environment.
+3. Develop statistical models (e.g., mixed-effects regression) to partition variance in mutation counts attributable to genetic variants versus environmental factors.
+4. Use machine learning classifiers or regressors to predict mutation counts from genetic and environmental features and assess feature importance.
+5. Interpret results in the context of female mutation bias and discuss implications for captive versus wild populations.
+6. Write a detailed README explaining methods, results, limitations, and potential biological interpretations.
+
+**Ships as:** A comprehensive analysis pipeline and report that quantitatively assesses genetic and environmental contributions to female mutation bias in aye-ayes, addressing a key open question from the paper.
+
+**Stretch goal:** Extend analysis to include longitudinal mutation accumulation modeling across parental ages and generations if additional data become available.
+
+_The paper's authors did not release code or full raw mutation callsets for aye-ayes; intermediate and advanced projects rely on publicly available primate data as proxies or simulated data modeled on reported statistics._

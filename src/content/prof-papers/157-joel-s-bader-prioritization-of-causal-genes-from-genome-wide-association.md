@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-joel-s-bader"
-source_hash: "f0568d26634424c5e10f12b1738ff68ae763ed42c0c3b51287e77ae4539314ea"
+source_hash: "fa96fd0bc15d2fd09600ea59a975a3897d4ac694623b8e9cf1a82ae8a61a3c28"
 sequence: 157
 generator: "outreach-garden: managed"
 ---
@@ -148,3 +148,96 @@ This talk presents the SIGNET method, showing how it integrates multiple data ty
 - [Approaches for using protein protein interaction networks for ...](https://www.youtube.com/watch?v=VLPk1pr4QVo) — also for: Splitpea: quantifying protein interaction network rewiring changes due to alternative splicing in cancer (Vicky Yao)
 - [Protein Protein Interaction Network- PART 1 | History of Graph ...](https://www.youtube.com/watch?v=Ukom7oPwSHk) — also for: Splitpea: quantifying protein interaction network rewiring changes due to alternative splicing in cancer (Vicky Yao)
 - [15. Gene Regulatory Networks](https://www.youtube.com/watch?v=So6MK_FcP4E) — also for: CIMLA: Interpretable AI for inference of differential causal networks (Saurabh Sinha)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progression to demonstrate your understanding of SIGNET, the Bayesian data integration method for causal gene prioritization from GWAS loci. The beginner project focuses on reproducing a key paper insight about functional evidence overlap using simple data analysis. The intermediate project involves running and extending the authors' SIGNET software on a subset of GWAS loci to compare gene prioritization against a baseline. The advanced project tackles a stated limitation by extending SIGNET to allow multiple causal genes per locus, applying it to a small cardiac electrophysiology dataset to explore improvements.
+
+### Beginner — Functional Evidence Overlap Analysis for GWAS Loci
+*Effort: a weekend, ~8 hours*
+
+You build a small Python data analysis pipeline that reproduces the paper's observation about limited overlap among Mendelian, exome, and colocalization evidence supporting the naïve Bayes independence assumption. Using simulated or publicly available gene-locus association data, you compute and visualize the overlap of these evidence categories across genes at GWAS loci.
+
+**Why it shows you understood the paper:** This project shows you understand the importance of the naïve Bayes assumption in SIGNET and how functional evidence categories contribute independently to causal gene prioritization.
+
+**Grounded in:** Functional evidence categories have limited overlap, supporting naïve Bayes independence assumption.
+
+**Tech stack:** Python 3.11, pandas, matplotlib, Jupyter Notebook
+
+**Data:** Simulated gene-locus evidence data reflecting Mendelian, exome, and colocalization categories, inspired by the paper's statistics; no direct dataset released by authors.
+
+**Build it:**
+
+1. Create or simulate a dataset of genes at multiple GWAS loci with binary indicators for Mendelian, exome, and colocalization evidence.
+2. Write Python code to calculate the number and proportion of genes with each evidence type and their overlaps.
+3. Visualize the overlaps using Venn diagrams or bar plots to illustrate limited shared evidence.
+4. Document the analysis and relate findings to the naïve Bayes assumption in SIGNET.
+
+**Ships as:** A Jupyter Notebook with code, plots, and explanation demonstrating limited overlap among functional evidence categories at GWAS loci.
+
+**Stretch goal:** Add analysis of odds ratios for each evidence type's enrichment in causal gene selection, mimicking the paper's parameter estimates.
+
+### Intermediate — Run and Evaluate SIGNET on Cardiac Electrophysiology GWAS Loci
+*Effort: 2 weekends, ~20 hours*
+
+You set up and run the SIGNET Bayesian prioritization software from the authors' GitHub repository on a subset of cardiac electrophysiology GWAS loci. You compare SIGNET's prioritized genes against the minimum distance baseline and reproduce metrics such as the proportion of loci with differing gene selections and convergence behavior.
+
+**Why it shows you understood the paper:** This project demonstrates your ability to work with the authors' code, understand the integration of within- and between-locus data, and evaluate SIGNET's performance metrics as reported in the paper.
+
+**Grounded in:** Development of SIGNET, a Bayesian data integration method combining within- and between-locus information for causal gene prioritization; SIGNET selects different genes than minimum distance in 25% of loci overall; SIGNET converges robustly and reproducibly across multiple runs.
+
+**Tech stack:** Python 3.11, Git, Linux shell, Jupyter Notebook
+
+**Data:** Cardiac electrophysiology GWAS loci data as used in the paper; if unavailable, a small simulated dataset of loci with gene and evidence annotations approximating the paper's data structure.
+
+**Build it:**
+
+1. Clone the SIGNET repository from https://github.com/joelbaderlab/signet_v1 and install dependencies per documentation.
+2. Obtain or simulate a small dataset of GWAS loci with within-locus evidence (Mendelian, exome, colocalization) and network data as input.
+3. Run SIGNET on this dataset, monitoring convergence and gene prioritization outputs.
+4. Implement a simple minimum distance baseline gene prioritization for comparison.
+5. Calculate and report the fraction of loci where SIGNET selects different genes than the baseline.
+6. Visualize convergence behavior and gene selection frequency across multiple runs.
+
+**Verified links from the paper:**
+
+- <https://github.com/joelbaderlab/signet_v1> — released by the paper's authors
+
+**Ships as:** A GitHub repository with scripts to run SIGNET on example data, comparison analysis against baseline, and a README explaining results and interpretation.
+
+**Stretch goal:** Extend the analysis to include pathway enrichment comparison between SIGNET and baseline prioritized genes.
+
+### Advanced — Extending SIGNET to Prioritize Multiple Causal Genes per Locus
+*Effort: 3-4 weeks*
+
+You develop an extension of the SIGNET Bayesian model to allow selection of multiple causal genes per GWAS locus, addressing a key limitation noted in the paper. You implement this extension by modifying the gene selection step and inference procedure, then apply it to a subset of cardiac electrophysiology loci to compare results with the original single-gene model.
+
+**Why it shows you understood the paper:** This project shows deep comprehension of SIGNET's probabilistic framework and limitations, and your ability to innovate methodologically to improve causal gene prioritization in complex loci.
+
+**Grounded in:** The method selects only a single causal gene per locus, though some loci may have multiple causal genes; future direction: extension of SIGNET to allow multiple causal genes per locus.
+
+**Tech stack:** Python 3.11, NumPy, SciPy, Git, Jupyter Notebook
+
+**Data:** Subset of cardiac electrophysiology GWAS loci data with within- and between-locus evidence; simulated data may be used if real data is unavailable.
+
+**Build it:**
+
+1. Study the SIGNET codebase and model to understand the current single-gene selection mechanism per locus.
+2. Design a modification to the Bayesian model and inference algorithm to allow multiple genes to be selected per locus, e.g., by relaxing exclusivity constraints.
+3. Implement the modified model and inference procedure in the SIGNET codebase.
+4. Run the extended SIGNET on example loci and compare gene prioritization results to the original method.
+5. Analyze differences in gene selection, convergence, and biological plausibility.
+6. Document the extension, results, and potential implications for causal gene prioritization.
+
+**Verified links from the paper:**
+
+- <https://github.com/joelbaderlab/signet_v1> — released by the paper's authors
+
+**Ships as:** A forked SIGNET repository with code for multi-gene prioritization, example runs, comparison analyses, and a detailed README describing the extension and findings.
+
+**Stretch goal:** Incorporate additional functional evidence types such as chromatin state or splicing QTL data to further refine multi-gene prioritization.
+
+_The cardiac electrophysiology GWAS data and detailed within- and between-locus evidence used in the paper are not publicly released; simulated or proxy data will be needed for intermediate and advanced projects._

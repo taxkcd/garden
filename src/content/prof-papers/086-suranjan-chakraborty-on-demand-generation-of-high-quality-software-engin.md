@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-suranjan-chakraborty"
-source_hash: "c8d41af24950cad4142c24fcbc8c65e7c41d4a6db5ffb5ef7b897ce4d2a8c782"
+source_hash: "7db971e70d86a8dca0f98171985ac64a0818dec2d9ac6eea0d7a70b987bada7c"
 sequence: 86
 generator: "outreach-garden: managed"
 ---
@@ -120,3 +120,87 @@ Learn how ontologies provide structured domain knowledge that guides the generat
 *How the paper uses it:* The core contribution of the paper is the O3DG approach that combines ontologies with LLMs for dataset generation.
 
 ▶ [Going Meta - S02 Ep01: Using Ontologies to Guide ...](https://www.youtube.com/watch?v=RYuw4oq0G84) — Neo4j · 1:12:30
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive ladder to demonstrate your understanding of the O3DG approach for on-demand generation of software engineering datasets using LLMs and ontologies. The beginner project focuses on reproducing a key validation metric from the paper using your existing ML and Python skills. The intermediate project involves reimplementing the core O3DG pipeline on a small scale with a public dataset substitute, adding prompt engineering and semantic similarity pruning. The advanced project extends the method by exploring automated prompt design to reduce manual effort, directly addressing a stated limitation and future direction of the paper.
+
+### Beginner — Reproduce Semantic Similarity Metrics for Dataset Pruning
+*Effort: a weekend, ~8 hours*
+
+You build a Python notebook that implements semantic similarity metrics such as cosine similarity and Euclidean distance on text embeddings to prune a small sample dataset of software requirements. You use pre-trained sentence transformers to compute embeddings and visualize the similarity distributions to mimic the paper's pruning validation step.
+
+**Why it shows you understood the paper:** This project shows you understand the paper's use of semantic similarity metrics for dataset quality control and pruning, a key mechanism to ensure category cohesion and reduce ambiguity.
+
+**Grounded in:** Manual inspection and semantic similarity metrics are used for dataset pruning and validation.
+
+**Tech stack:** Python 3.11, Jupyter Notebook, sentence-transformers, scikit-learn, matplotlib
+
+**Data:** A small synthetic set of software requirements sentences created by you to simulate ambiguous and non-ambiguous examples, as no public dataset is provided.
+
+**Build it:**
+
+1. Collect or write 20-30 example software requirements sentences with varying ambiguity and categories.
+2. Use a pre-trained sentence transformer model to embed each sentence.
+3. Calculate pairwise cosine similarity and Euclidean distance between embeddings.
+4. Visualize similarity distributions and identify thresholds for pruning.
+5. Write a short report comparing your results to the paper's described metrics.
+
+**Ships as:** A Jupyter notebook with code, visualizations, and a README explaining how semantic similarity metrics help prune datasets in O3DG.
+
+**Stretch goal:** Add manual rubric-based inspection simulation by labeling sentences yourself and comparing with metric-based pruning.
+
+### Intermediate — Reimplement O3DG Pipeline for NFR Classification Dataset Generation
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement the core O3DG pipeline to generate a synthetic, ontology-aligned dataset for non-functional requirements (NFR) classification using a publicly available NFR dataset as a baseline. You design ontology-guided prompts for an LLM (e.g., OpenAI GPT-4), generate synthetic requirements, prune them using semantic similarity metrics, and validate class balance and cohesion compared to the baseline.
+
+**Why it shows you understood the paper:** This project demonstrates your ability to apply the paper's core method end-to-end, including prompt engineering, ontology alignment, iterative generation, and validation, proving you grasp the approach beyond theory.
+
+**Grounded in:** Development of a repeatable approach (O3DG) for on-demand generation of domain-specific datasets using LLMs and contextual ontologies.
+
+**Tech stack:** Python 3.11, OpenAI GPT-4 API, sentence-transformers, scikit-learn, pandas, matplotlib
+
+**Data:** Use a publicly available NFR classification dataset (e.g., the PROMISE repository NFR dataset) as a baseline for comparison and ontology guidance.
+
+**Build it:**
+
+1. Study the PROMISE NFR dataset and identify key NFR categories.
+2. Design ontology-guided prompts to generate synthetic NFR examples using GPT-4.
+3. Generate a synthetic dataset via iterative prompting and collect outputs.
+4. Compute semantic similarity metrics to prune low-quality or duplicate samples.
+5. Analyze class balance and category cohesion compared to the baseline dataset.
+6. Document the pipeline, results, and lessons learned.
+
+**Ships as:** A GitHub repository with scripts for dataset generation, pruning, analysis, and a detailed README explaining the O3DG reimplementation and evaluation.
+
+**Stretch goal:** Add a simple ML classifier trained on both baseline and synthetic datasets to compare performance.
+
+### Advanced — Automate Prompt Engineering for O3DG Dataset Generation
+*Effort: 3-4 weeks*
+
+You build an extension to the O3DG pipeline that automates or semi-automates prompt design using prompt templates, few-shot learning, and prompt optimization techniques. You integrate this with ontology constraints and semantic similarity pruning to generate high-quality datasets with reduced human effort. You evaluate the approach on NFR classification or ambiguity detection tasks.
+
+**Why it shows you understood the paper:** This project tackles a key limitation and future direction from the paper by reducing manual prompt engineering, demonstrating deep comprehension of O3DG and advancing its scalability and reproducibility.
+
+**Grounded in:** Exploring automated or semi-automated prompt design to reduce human effort and improve reproducibility.
+
+**Tech stack:** Python 3.11, OpenAI GPT-4 API, sentence-transformers, scikit-learn, pandas, optuna or other hyperparameter optimization library
+
+**Data:** Use the same public NFR dataset substitute as in the intermediate project for evaluation and ontology guidance.
+
+**Build it:**
+
+1. Research prompt optimization and automated prompt generation techniques.
+2. Implement a prompt template system with parameterized slots guided by ontology terms.
+3. Use few-shot examples and iterative refinement to generate candidate prompts.
+4. Integrate prompt selection with semantic similarity pruning and dataset quality metrics.
+5. Generate datasets with automated prompts and compare quality and class balance to manual prompts.
+6. Document the system design, experiments, and results.
+
+**Ships as:** A GitHub repository with code for automated prompt engineering integrated into O3DG, example datasets, evaluation scripts, and a comprehensive README.
+
+**Stretch goal:** Extend the system to support multiple software engineering domains beyond requirements engineering.

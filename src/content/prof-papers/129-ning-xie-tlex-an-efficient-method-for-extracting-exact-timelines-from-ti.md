@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-ning-xie"
-source_hash: "e2f0bc20a6ab18ec734e73c7e3048eb7148f536d148834ceb9953eae3c9e530b"
+source_hash: "89963920a499905c050af06e1a93fc7f49f06c66206a226d79ab3dff32a0de66"
 sequence: 129
 generator: "outreach-garden: managed"
 ---
@@ -114,3 +114,86 @@ This talk provides direct insight into the TLEX method, explaining how it handle
 *How the paper uses it:* It offers an overview and practical explanation of the novel timeline extraction algorithm introduced in the paper.
 
 ▶ [Toolbelt Basics 5: The Timeline, extracted history plus agent memory](https://www.youtube.com/watch?v=vFOOAp9LtkE) — ToolbeltAI · 5 days ago
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder of engagement with the TLEX paper, starting from a focused small-scale implementation of timeline extraction concepts, progressing to a full reimplementation of the core TLEX algorithm on a subset of TimeML data, and culminating in an extension addressing one of the paper's key limitations around automatic inconsistency correction. Each project leverages your existing software engineering and algorithmic skills while introducing new concepts relevant to temporal reasoning and constraint satisfaction.
+
+### Beginner — Simple Temporal Graph to Timeline Visualization
+*Effort: a weekend, ~8 hours*
+
+You build a small web app that takes a manually created small TimeML-style temporal graph (with events and temporal relations) and visualizes the corresponding timeline as a trunk-and-branch structure. The app highlights indeterminate orderings and separates main and subordinated timelines.
+
+**Why it shows you understood the paper:** This project demonstrates you understand the core idea of TLEX's trunk-and-branch timeline structure and indeterminacy marking, showing you can translate temporal relations into a visual timeline reflecting partial and subordinated orderings.
+
+**Grounded in:** TLEX introduces an indeterminacy-marked trunk-and-branch timeline structure separating real-world and subordinated timelines.
+
+**Tech stack:** TypeScript, React, D3.js
+
+**Data:** You create a small synthetic temporal graph with 5-10 events and TimeML-like relations, simulating examples from the paper's figures.
+
+**Build it:**
+
+1. Define a small JSON format representing events and TimeML temporal relations (including subordinating and aspectual links).
+2. Implement a parser that converts this graph into a partial order and identifies indeterminate sections.
+3. Build a React+D3 visualization that draws the main timeline trunk and branches for subordinated timelines, marking indeterminate orderings visually.
+4. Add UI controls to toggle visibility of subordinated timelines and highlight inconsistent or indeterminate relations.
+5. Write a README explaining the connection to TLEX's timeline structure and indeterminacy concept.
+
+**Ships as:** A GitHub repo with a React app that visualizes a small temporal graph as a trunk-and-branch timeline, with clear README linking to the paper's timeline extraction concept.
+
+**Stretch goal:** Add a simple consistency checker that flags contradictory temporal relations in the input graph.
+
+### Intermediate — Reimplementation of TLEX Timeline Extraction Algorithm
+*Effort: 2 weekends, ~20 hours*
+
+You implement the core TLEX algorithm from the paper: transforming a TimeML annotated temporal graph into a point algebra constraint graph, partitioning into temporally connected subgraphs, checking consistency, performing topological sorting to generate timelines, and identifying indeterminate sections and branches.
+
+**Why it shows you understood the paper:** This project shows you can faithfully reimplement the paper's exact timeline extraction method, demonstrating comprehension of its algorithmic steps and ability to evaluate timeline accuracy and consistency on real annotated data.
+
+**Grounded in:** Development of TLEX, an exact end-to-end timeline extraction method handling all TimeML relations including aspectual and subordinating links.
+
+**Tech stack:** Python 3.11, NetworkX, Jupyter Notebook
+
+**Data:** Use a small subset of publicly available TimeML annotated texts (or simulate similar TimeML graphs based on paper descriptions) since the authors released no code or dataset.
+
+**Build it:**
+
+1. Implement a parser to read or simulate TimeML temporal graphs with all relation types.
+2. Convert temporal relations into point algebra constraints and build the constraint graph using NetworkX.
+3. Partition the graph into temporally connected subgraphs and implement consistency checking.
+4. Perform topological sorting on consistent subgraphs to generate timelines and mark indeterminate sections.
+5. Output timelines in a trunk-and-branch structure separating main and subordinated timelines.
+6. Evaluate your timelines on ordering accuracy and indeterminacy detection on a small sample, comparing to a simple baseline (e.g., naive linear ordering).
+
+**Ships as:** A Jupyter notebook and Python scripts implementing TLEX's core algorithm, with example runs on TimeML-like data and evaluation metrics reported in the README.
+
+**Stretch goal:** Add a module to identify specific temporal relations causing inconsistencies for manual correction, as per the paper.
+
+### Advanced — Automatic Correction Suggestions for Inconsistent Temporal Graphs
+*Effort: 3+ weeks*
+
+You extend the TLEX reimplementation by developing an automatic method to suggest corrections for inconsistent temporal graphs, addressing a stated future direction of the paper. This could be a rule-based or simple machine learning approach that identifies minimal sets of conflicting relations and proposes plausible fixes.
+
+**Why it shows you understood the paper:** This project tackles a key limitation and future direction of TLEX, showing deep engagement with the paper's challenges and the ability to innovate beyond the original method to improve practical usability.
+
+**Grounded in:** Future work includes developing automatic methods (rule-based or machine learning) to suggest corrections for inconsistent temporal graphs identified by TLEX.
+
+**Tech stack:** Python 3.11, NetworkX, scikit-learn, Jupyter Notebook
+
+**Data:** Use the same TimeML-like temporal graphs as in the intermediate project, focusing on those identified as inconsistent by your consistency checker.
+
+**Build it:**
+
+1. Analyze inconsistent temporal graphs to identify minimal conflicting sets of temporal relations causing inconsistency.
+2. Design and implement a rule-based heuristic or train a simple ML model to suggest which relations to modify or remove to restore consistency.
+3. Integrate this correction suggestion module into the TLEX pipeline.
+4. Evaluate the effectiveness of automatic corrections on a sample of inconsistent graphs by measuring restored consistency and timeline accuracy.
+5. Document the approach, limitations, and potential improvements in the README.
+
+**Ships as:** A Python-based extension to the TLEX reimplementation that automatically suggests corrections for inconsistent temporal graphs, with evaluation results and discussion in the README.
+
+**Stretch goal:** Experiment with applying your correction method on noisy or automatically generated TimeML annotations to test robustness.

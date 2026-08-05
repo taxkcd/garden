@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-armando-fox"
-source_hash: "04df991873091a52b3cf1283c55b73a4887b382390f9d97088be7f4c5e42d785"
+source_hash: "e1a13243c4ffa0583e2078756d924950f8bd69252a054429465258f256fb7d03"
 sequence: 210
 generator: "outreach-garden: managed"
 ---
@@ -132,3 +132,87 @@ Learn about hosted prompt template APIs that manage prompt creation, testing, an
 ## Already in your library
 
 - [Prompt Engineering Full Course](https://www.youtube.com/watch?v=2BpCk4d2Cc0) — also for: Improving LLM-Generated Educational Content: A Case Study on Prototyping, Prompt Engineering, and Evaluating a Tool for Generating Programming Problems for Data Science (Sam Lau)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder to demonstrate your understanding of the reagent platform and its role in supporting AI-backed software prototyping in educational settings. The beginner project recreates a core debugging aid from reagent to show prompt input/output visibility. The intermediate project reimplements the core hosted prompt template API concept to support collaborative prompt engineering with usage tracking. The advanced project extends reagent's approach by building a proactive linter-like tool to detect suspect prompt engineering patterns, addressing a key future direction of the paper.
+
+### Beginner — Prompt Debugger UI for AI Integration
+*Effort: a weekend, ~8 hours*
+
+You build a simple web interface that lets users enter prompt templates and test inputs, then displays the AI model's raw input and output for each invocation. This mimics reagent's prompt visibility feature that helps students debug AI integrations by showing prompt inputs and outputs clearly.
+
+**Why it shows you understood the paper:** This project demonstrates you grasp the importance of prompt transparency and debugging support in AI-backed software prototyping, a key contribution of reagent that improved student learning.
+
+**Grounded in:** Reagent helped students debug AI features by providing visibility into prompt inputs and outputs.
+
+**Tech stack:** TypeScript, React, Node.js, Express
+
+**Data:** No external dataset needed; you simulate AI model calls using a public LLM API or mock responses.
+
+**Build it:**
+
+1. Set up a React frontend with a form to input prompt templates and test input variables.
+2. Implement a backend API in Node.js/Express that accepts prompt templates and inputs, calls an LLM API (e.g., OpenAI or Anthropic) or returns mocked outputs.
+3. Display the exact prompt sent to the model and the raw model output in the UI for debugging.
+4. Add basic error handling and loading states.
+5. Write a README explaining how this UI supports prompt debugging as in reagent.
+
+**Ships as:** A GitHub repo with a React+Node app showing prompt input/output pairs for debugging AI prompts, with documentation linking it to reagent's debugging feature.
+
+**Stretch goal:** Add a feature to save and share prompt templates collaboratively among users.
+
+### Intermediate — Hosted Prompt Template API with Usage Tracking
+*Effort: 2 weekends, ~20 hours*
+
+You implement a minimal hosted prompt template API server that allows users to create, edit, and invoke prompt templates with variable substitution. The server tracks usage metrics and supports multiple users collaboratively editing prompts, reproducing reagent's core method of simplifying AI prompt integration and collaborative authoring.
+
+**Why it shows you understood the paper:** This project shows you can reimplement reagent's core platform capabilities, including prompt template hosting, collaborative editing, and usage visibility, demonstrating comprehension of the paper's main technical contribution.
+
+**Grounded in:** Design and implementation of reagent, a platform for AI prompt template authoring and API hosting tailored for educational use.
+
+**Tech stack:** TypeScript, React, Node.js, Express, PostgreSQL or SQLite
+
+**Data:** No external dataset; you simulate prompt invocations with calls to a public LLM API or mock responses.
+
+**Build it:**
+
+1. Design a REST API to create, update, and invoke prompt templates with variable inputs.
+2. Implement user authentication and collaborative editing features for prompt templates.
+3. Add usage tracking to log each prompt invocation with timestamp and user info.
+4. Build a React frontend dashboard to manage prompts and view usage statistics.
+5. Integrate calls to a public LLM API or mock the AI responses for testing.
+6. Document how this system parallels reagent's hosted prompt template API.
+
+**Ships as:** A full-stack app with prompt template hosting, collaborative editing, invocation, and usage tracking, with a README linking it to reagent's platform design.
+
+**Stretch goal:** Add budget and cost management features to control API usage per user or team.
+
+### Advanced — Proactive Linter for AI Prompt Engineering Errors
+*Effort: 3+ weeks, ~80 hours*
+
+You develop a tool that analyzes AI prompt templates to detect common suspect patterns and potential invocation errors, providing proactive feedback to users. This addresses reagent's stated limitation that robustness of AI models can mask invocation errors and the future direction of building linters for AI prompts.
+
+**Why it shows you understood the paper:** This project tackles a key limitation and future direction from the paper, demonstrating deep engagement with reagent's challenges and extending its educational impact by helping students build more accurate conceptual models of AI behavior.
+
+**Grounded in:** Developing tools to provide proactive instructor insights into suspect prompting strategies, akin to 'linters' for AI prompts.
+
+**Tech stack:** TypeScript, Node.js, React, Express, OpenAI API or Anthropic API
+
+**Data:** You use prompt templates created by students or simulated prompts; no external dataset required.
+
+**Build it:**
+
+1. Research common prompt engineering errors and patterns that lead to invocation mistakes or hallucinations.
+2. Implement static analysis rules to detect these patterns in prompt templates (e.g., malformed variables, contradictory instructions).
+3. Build a backend service that accepts prompt templates and returns linter warnings or suggestions.
+4. Create a React frontend to display linter feedback interactively as users edit prompts.
+5. Integrate with a hosted prompt template API (from the intermediate project or simulated) to demonstrate real-time linting.
+6. Write documentation explaining how this tool addresses reagent's limitation and future direction.
+
+**Ships as:** A linter tool for AI prompt templates with a web UI showing detected issues and suggestions, documented as an extension of reagent's platform to improve student learning.
+
+**Stretch goal:** Add instructor dashboards summarizing common student prompt errors and usage patterns.

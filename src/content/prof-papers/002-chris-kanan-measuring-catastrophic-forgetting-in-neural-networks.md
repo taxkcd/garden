@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-www-chriskanan-com"
-source_hash: "00913aa78dac9b6c7eeceef4eb9d365f8c2daf61bdd363fcebb0d40b26d42012"
+source_hash: "9daf6b7616d4ba935a23f16728959eec038e2275600c585dd818939ca7c050cb"
 sequence: 2
 generator: "outreach-garden: managed"
 ---
@@ -153,3 +153,89 @@ Catastrophic forgetting occurs when a neural network loses previously learned in
 - [[Continual Learning Course] Lecture #2: Understanding Catastrophic Forgetting](https://www.youtube.com/watch?v=UnCAdBtvZhc) — also for: Measuring Catastrophic Forgetting in Neural Networks (Chris Kanan)
 - [[Continual Learning Course] Lecture #1: Introduction and ...](https://www.youtube.com/watch?v=z9DDg2CJjeE) — also for: Introduction to open-world AI (Larry B. Holder)
 - [But what is a neural network? | Deep learning chapter 1](https://www.youtube.com/watch?v=aircAruvnKk) — also for: Learning Volumetric Neural Deformable Models to Recover 3D Regional Heart Wall Motion from Multi-Planar Tagged MRI (Meng Ye)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder of increasing depth and complexity to demonstrate understanding of catastrophic forgetting in neural networks as studied in the paper. The beginner project reproduces a core metric on a simple dataset to grasp the problem and evaluation. The intermediate project implements and compares one mitigation method on a small real dataset, reflecting the paper's empirical approach. The advanced project extends the research by exploring a hybrid method addressing memory constraints, directly engaging with the paper's stated limitations and future directions.
+
+### Beginner — Reproduce Forgetting Metric on MNIST Split
+*Effort: a weekend, ~8 hours*
+
+You build a simple incremental learning experiment on MNIST split into multiple tasks and implement the forgetting metric introduced in the paper to measure catastrophic forgetting. This involves training a small MLP sequentially on task splits and tracking performance degradation on previous tasks.
+
+**Why it shows you understood the paper:** This project shows you understand the core problem of catastrophic forgetting and how to quantify it using the paper's new metric, which is foundational to all subsequent evaluations.
+
+**Grounded in:** Introduced new metrics and large-scale benchmarks for measuring catastrophic forgetting beyond small datasets like MNIST.
+
+**Tech stack:** Python 3.11, PyTorch, Jupyter Notebook
+
+**Data:** MNIST dataset, publicly available, used as a baseline in the paper.
+
+**Build it:**
+
+1. Load MNIST dataset and split it into 5 disjoint subsets representing incremental tasks.
+2. Implement a simple MLP classifier in PyTorch.
+3. Train the model sequentially on each task subset without replay or regularization.
+4. After training each task, evaluate and record accuracy on all previous tasks.
+5. Calculate the forgetting metric as defined in the paper (performance drop on previous tasks).
+6. Visualize forgetting over tasks in a plot.
+
+**Ships as:** A Jupyter notebook with code, plots of forgetting metric over tasks, and a README explaining the metric and results.
+
+**Stretch goal:** Add a simple baseline mitigation like fine-tuning with replay of a small buffer and compare forgetting metric.
+
+### Intermediate — Implement EWC on Split MNIST and Compare Forgetting
+*Effort: 2 weekends, ~20 hours*
+
+You implement the Elastic Weight Consolidation (EWC) regularization method from the paper to mitigate catastrophic forgetting on the Split MNIST dataset. You compare the forgetting metric and accuracy against a baseline model trained without EWC.
+
+**Why it shows you understood the paper:** This project demonstrates understanding of one core mitigation mechanism evaluated in the paper, including how to implement it and measure its effect on forgetting, reflecting the paper's empirical comparison approach.
+
+**Grounded in:** The authors systematically compare five mechanisms to mitigate catastrophic forgetting—regularization (EWC), ensembling (PathNet), rehearsal (GeppNet), dual-memory models (GeppNet+STM), and sparse-coding (FEL)—using new evaluation metrics and benchmarks on large-scale, real-world image and audio classification datasets (CUB-200 and AudioSet), as well as MNIST for baseline comparison.
+
+**Tech stack:** Python 3.11, PyTorch, Jupyter Notebook
+
+**Data:** MNIST dataset split into incremental tasks, publicly available and used in the paper as a baseline.
+
+**Build it:**
+
+1. Reproduce the baseline incremental learning experiment on Split MNIST from the beginner project.
+2. Implement the EWC regularization method following the paper's description.
+3. Train the model sequentially on tasks with EWC applied to preserve previous knowledge.
+4. Evaluate and record accuracy and forgetting metric after each task.
+5. Compare results against the baseline without EWC and visualize differences.
+6. Write a README explaining EWC, experimental setup, and results.
+
+**Ships as:** A GitHub repository with code implementing EWC, evaluation scripts, plots comparing forgetting with and without EWC, and documentation.
+
+**Stretch goal:** Extend to a small multi-modal incremental learning experiment combining MNIST and Fashion-MNIST to test EWC's effectiveness on dissimilar tasks.
+
+### Advanced — Hybrid Rehearsal-Regularization Model for Scalable Lifelong Learning
+*Effort: 3-4 weeks*
+
+You design and implement a hybrid incremental learning model combining rehearsal (memory replay) and regularization (EWC) to address catastrophic forgetting while reducing memory usage. You evaluate it on a smaller subset of CUB-200 or a similar publicly available fine-grained image dataset, comparing forgetting and memory efficiency against pure rehearsal and pure EWC baselines.
+
+**Why it shows you understood the paper:** This project tackles a key limitation and future direction from the paper by combining mechanisms to balance memory and performance trade-offs, demonstrating deep comprehension and original application of the paper's insights.
+
+**Grounded in:** Develop hybrid models combining rehearsal, dual-memory, regularization, and ensembling mechanisms. Incorporate memory and computational efficiency constraints into model design and evaluation.
+
+**Tech stack:** Python 3.11, PyTorch, Jupyter Notebook, NumPy, Matplotlib
+
+**Data:** A publicly available subset of CUB-200 or a similar fine-grained image classification dataset used as a proxy for the paper's real-world datasets.
+
+**Build it:**
+
+1. Select and preprocess a subset of CUB-200 or a similar dataset into incremental tasks.
+2. Implement baseline rehearsal-based incremental learning model (e.g., GeppNet style) with limited memory buffer.
+3. Implement baseline EWC regularization model.
+4. Design and implement a hybrid model that applies EWC regularization and rehearses a small memory buffer.
+5. Train and evaluate all models sequentially on incremental tasks, recording forgetting metric, accuracy, and memory usage.
+6. Analyze trade-offs and visualize results comparing the three approaches.
+7. Document methodology, experiments, and findings in a detailed README.
+
+**Ships as:** A comprehensive GitHub repo with code for hybrid and baseline models, evaluation scripts, detailed analysis, and documentation demonstrating a novel approach to scalable lifelong learning.
+
+**Stretch goal:** Incorporate pseudorehearsal techniques to further reduce memory requirements and evaluate impact on forgetting.

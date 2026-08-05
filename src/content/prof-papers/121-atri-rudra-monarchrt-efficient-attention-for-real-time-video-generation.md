@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-atri-rudra"
-source_hash: "7875d11a6c5bb6dd160076fc354acd45399a32e70e18dbe3d5672cc5869d9e34"
+source_hash: "694c7641be5a63b119948f767d6b171e4481ca65c698e8fc4ffc7f63469cbaf0"
 sequence: 121
 generator: "outreach-garden: managed"
 ---
@@ -119,3 +119,87 @@ Matrix factorization decomposes large matrices into products of smaller ones, en
 ## Already in your library
 
 - [Attention in transformers, step-by-step | Deep Learning Chapter 6](https://www.youtube.com/watch?v=eMlx5fFNoYc) — also for: Heterogeneous Graph Attention Network (Yanfang (Fanny) Ye)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progression for understanding and applying the MonarchRT method from the paper. The beginner project focuses on reproducing and visualizing the core idea of block-aligned attention approximation on synthetic video-like data. The intermediate project implements a simplified MonarchRT attention approximation on a small public video dataset and compares it to a baseline sparse attention method. The advanced project extends MonarchRT by exploring adaptive block size alignment strategies to address a key limitation discussed in the paper, demonstrating both algorithmic and empirical work.
+
+### Beginner — Visualizing Block-Aligned Attention Approximation on Synthetic Video Tokens
+*Effort: a weekend, ~8 hours*
+
+You build a small Python notebook that simulates a 3D spatiotemporal attention matrix for a synthetic video token grid and implements a simple Monarch parameterization with block-aligned matrix factorization. You visualize the original dense attention matrix, the block structure aligned with spatiotemporal dimensions, and the approximated attention matrix to demonstrate how block alignment preserves structure.
+
+**Why it shows you understood the paper:** This project shows you understand the core insight of MonarchRT about the importance of block alignment with spatiotemporal video tokens and how structured matrix factorization approximates attention efficiently without losing key properties.
+
+**Grounded in:** Choosing block sizes that group tokens spatially adjacent within the same frame preserves rank-1 structure and high-quality approximation, whereas misaligned block sizes degrade quality sharply.
+
+**Tech stack:** Python 3.11, NumPy, Matplotlib, Jupyter Notebook
+
+**Data:** Synthetic 3D attention matrices generated to mimic spatiotemporal video token layouts as described in the paper.
+
+**Build it:**
+
+1. Generate a synthetic 3D grid of video tokens representing frames and spatial patches.
+2. Compute a dense 3D self-attention matrix with positional periodicity and semantic sparsity patterns.
+3. Implement Monarch parameterization with block-aligned matrix factorization respecting spatiotemporal blocks.
+4. Visualize the original attention matrix, block structure, and approximated attention matrix side-by-side.
+5. Experiment with misaligned block sizes and show degradation in approximation quality visually.
+
+**Ships as:** A Jupyter notebook with code, visualizations, and explanations showing how block-aligned Monarch parameterization approximates 3D video attention matrices.
+
+**Stretch goal:** Add a small interactive widget to let users adjust block sizes and see real-time changes in approximation quality.
+
+### Intermediate — Implementing and Evaluating MonarchRT Attention Approximation on a Public Video Dataset
+*Effort: 2 weekends, ~20 hours*
+
+You implement the core MonarchRT tiled Monarch parameterization method for approximating 3D self-attention in a simplified diffusion transformer model. You apply it to a small public video dataset (e.g., UCF101 or a subset of Kinetics) as a proxy for the paper's video generation tasks. You compare approximation error and sparsity against a simple baseline sparse attention method like top-k attention.
+
+**Why it shows you understood the paper:** This project demonstrates your ability to reimplement the paper's core method from description, apply it to real video data, and quantitatively evaluate its approximation quality and efficiency trade-offs, reflecting a solid grasp of MonarchRT's contributions.
+
+**Grounded in:** Tiled Monarch parameterization enables arbitrarily accurate approximations with controllable computation and outperforms oracle top-k sparse attention methods in approximation error and visual fidelity.
+
+**Tech stack:** Python 3.11, PyTorch, NumPy, Matplotlib
+
+**Data:** A publicly available video dataset such as UCF101 or a small subset of Kinetics, used as a stand-in for the paper's video generation data.
+
+**Build it:**
+
+1. Implement tiled Monarch parameterization for 3D attention approximation as described in the paper.
+2. Load and preprocess a small public video dataset into token sequences suitable for transformer input.
+3. Implement a baseline sparse attention method (e.g., oracle top-k) for comparison.
+4. Compute approximation errors between dense attention and both MonarchRT and baseline methods.
+5. Visualize and report sparsity levels, approximation errors, and runtime metrics.
+6. Write a README explaining the implementation, evaluation, and results.
+
+**Ships as:** A PyTorch codebase with MonarchRT attention approximation, baseline comparison, evaluation scripts, and a report on approximation quality and sparsity trade-offs.
+
+**Stretch goal:** Add a simple video generation or prediction task using the approximated attention to qualitatively assess visual fidelity.
+
+### Advanced — Adaptive Block Size Alignment for MonarchRT to Improve Flexibility and Approximation Quality
+*Effort: 3-4 weeks*
+
+You develop an extension to MonarchRT that implements an adaptive block size alignment mechanism. This method dynamically learns or optimizes block sizes and permutations during training to better align with spatiotemporal video token structures, addressing the paper's limitation on fixed block size alignment. You evaluate this adaptive approach on a public video dataset and compare approximation quality and efficiency to fixed block MonarchRT.
+
+**Why it shows you understood the paper:** This project shows deep comprehension of the paper's limitations and future directions by tackling a core challenge—block alignment flexibility—and contributes a novel algorithmic extension with empirical validation, suitable for research discussion.
+
+**Grounded in:** Monarch parameterization requires careful alignment of block sizes with video spatiotemporal dimensions, limiting flexibility in some settings; future directions include exploring automated or adaptive block size alignment strategies.
+
+**Tech stack:** Python 3.11, PyTorch, NumPy, Matplotlib
+
+**Data:** A public video dataset such as UCF101 or Kinetics subset, used to evaluate adaptive block alignment in MonarchRT.
+
+**Build it:**
+
+1. Review and reimplement tiled Monarch parameterization from the paper as a baseline.
+2. Design and implement an adaptive block size alignment algorithm that learns block sizes or permutations during training.
+3. Integrate the adaptive mechanism into the MonarchRT attention approximation pipeline.
+4. Train and evaluate the adaptive MonarchRT on the chosen video dataset, measuring approximation error, sparsity, and runtime.
+5. Compare results against fixed block size MonarchRT and baseline sparse attention methods.
+6. Document the methodology, experiments, and findings in a detailed README.
+
+**Ships as:** A PyTorch implementation of adaptive block-aligned MonarchRT with evaluation scripts and a comprehensive report demonstrating improved flexibility and approximation quality.
+
+**Stretch goal:** Explore integration of the adaptive MonarchRT with quantization or pruning techniques for further efficiency gains.

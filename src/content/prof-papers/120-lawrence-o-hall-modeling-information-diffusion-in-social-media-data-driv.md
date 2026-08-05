@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-lawrence-o-hall"
-source_hash: "f17e05ce43f9e3358129212606a4680923488915ad7de07badfa8a489be1ccf1"
+source_hash: "3765e437ab0af28d35effde26dc99aaed3409598d24086886e52be4baebcbf03"
 sequence: 120
 generator: "outreach-garden: managed"
 ---
@@ -138,3 +138,92 @@ Information diffusion modeling simulates how information spreads through social 
 ## Already in your library
 
 - [What are Diffusion Models?](https://www.youtube.com/watch?v=fbLgFrlTnGU) — also for: Geometry Preserving Loss Functions Promote Improved Adaptation of Blackbox Generative Models (Pavan K. Turaga)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder of increasing complexity and fidelity in modeling social media information diffusion as presented in the paper. The beginner project focuses on reproducing a core aggregate activity forecasting result using time series methods familiar to the applicant. The intermediate project implements the paper's modular forecasting approach on a public Twitter dataset, comparing specialized per-topic models against a baseline. The advanced project extends the modular simulation framework to incorporate new user engagement dynamics, addressing a key limitation and future direction of the paper.
+
+### Beginner — Aggregate Topic Activity Forecasting with Time Series
+*Effort: a weekend, ~8 hours*
+
+You build a simple time series forecasting pipeline that predicts aggregate social media activity (e.g., retweet counts) on a chosen topic over a short horizon. Using Python and standard libraries, you replicate the paper's finding that aggregate activity can be predicted with reasonable accuracy over one to two weeks.
+
+**Why it shows you understood the paper:** This project demonstrates you understand the core challenge of forecasting aggregate social media activity and the importance of time series modeling as a modular component of the paper's approach.
+
+**Grounded in:** Aggregate social media activity can be predicted accurately over a horizon of one to two weeks.
+
+**Tech stack:** Python 3.11, pandas, scikit-learn, statsmodels, matplotlib
+
+**Data:** Use a publicly available Twitter hashtag time series dataset or simulate aggregate hourly retweet counts for a topic as a substitute for the paper's data.
+
+**Build it:**
+
+1. Collect or simulate hourly aggregate retweet counts for a specific topic over several weeks.
+2. Preprocess the data to handle missing values and normalize counts.
+3. Implement a baseline forecasting model such as ARIMA or exponential smoothing.
+4. Evaluate forecasting accuracy over a one to two week horizon using metrics like RMSE and MAE.
+5. Visualize actual vs predicted aggregate activity time series.
+
+**Ships as:** A GitHub repo with a Jupyter notebook showing data loading, model training, evaluation, and plots of forecasted vs actual aggregate social media activity.
+
+**Stretch goal:** Add exogenous event signals (e.g., news event indicators) as features to improve forecasting accuracy.
+
+### Intermediate — Modular Social Media Activity Simulation on Twitter Data
+*Effort: 2 weekends, ~20 hours*
+
+You implement a modular pipeline inspired by the paper's approach: separate models for time series forecasting of aggregate activity, conversation tree generation, and user assignment. You apply this pipeline to a public Twitter dataset, comparing specialized per-topic models against a single monolithic baseline, and evaluate using volatility-sensitive metrics.
+
+**Why it shows you understood the paper:** This project shows you can reimplement the paper's core modular simulation method and understand the benefits of decomposing the problem, as well as the importance of appropriate evaluation metrics for social media time series.
+
+**Grounded in:** Developed a modular simulation framework decomposing the problem into specialized subproblems for better performance and error correction; Specialized per-topic and per-platform models outperform single monolithic models.
+
+**Tech stack:** Python 3.11, pandas, scikit-learn, networkx, matplotlib, statsmodels
+
+**Data:** Use the Twitter cascade reconstruction scripts from https://github.com/socsim-ta2/socialsim_package as a baseline and public Twitter datasets (e.g., from Twitter API or academic datasets) for simulation input.
+
+**Build it:**
+
+1. Clone and explore the socialsim_package repository to understand Twitter cascade reconstruction.
+2. Extract or collect Twitter data for multiple topics over a defined period.
+3. Build specialized time series forecasting models per topic to predict aggregate activity.
+4. Implement a simple conversation tree generation module using networkx.
+5. Assign users to conversation nodes based on activity patterns.
+6. Compare performance against a single monolithic forecasting model using metrics that capture bursts and volatility.
+7. Document results and insights.
+
+**Verified links from the paper:**
+
+- <https://github.com/socsim-ta2/socialsim_package> — a third-party/baseline artifact the paper cites — not the authors' own code
+
+**Ships as:** A GitHub repo with modular Python scripts/notebooks demonstrating the pipeline, evaluation results comparing modular vs monolithic models, and visualizations of conversation trees and activity forecasts.
+
+**Stretch goal:** Incorporate exogenous real-world event signals to improve forecasting accuracy as per the paper's findings.
+
+### Advanced — Extending Modular Simulation with New User Engagement Modeling
+*Effort: 3+ weeks*
+
+You extend the modular simulation framework by adding an inductive user assignment module that models new user engagement dynamics, addressing the paper's limitation on sparse and bursty user behavior. You evaluate how incorporating new user modeling affects micro-level simulation accuracy and forecasting of conversation structures.
+
+**Why it shows you understood the paper:** This project tackles a key limitation and future direction from the paper, demonstrating deep comprehension of the challenges in fine-grained user-level prediction and the modular approach's extensibility.
+
+**Grounded in:** Fine-grained prediction of individual user actions and timing remains highly challenging due to sparse and bursty user behavior; Developing models that better incorporate new user behavior and inductive capabilities for unseen users.
+
+**Tech stack:** Python 3.11, pandas, scikit-learn, networkx, matplotlib, PyTorch or TensorFlow (optional for advanced modeling)
+
+**Data:** Use public Twitter datasets or simulate social media activity with user-level timestamps and new user arrivals to model sparse and bursty behavior.
+
+**Build it:**
+
+1. Review the modular simulation pipeline and identify where user assignment occurs.
+2. Design and implement a new user engagement model that can inductively assign actions to previously unseen users based on activity patterns.
+3. Integrate this model into the existing modular pipeline.
+4. Simulate social media activity including new user bursts and evaluate micro-level accuracy of conversation trees and user actions.
+5. Compare results against the baseline modular simulation without new user modeling.
+6. Document methodology, challenges, and results.
+
+**Ships as:** A GitHub repo with extended modular simulation code, experiments showing improved micro-level simulation accuracy through new user modeling, and a detailed README explaining the approach and evaluation.
+
+**Stretch goal:** Explore cross-platform diffusion modeling by extending the simulation to multiple social media platforms with platform-specific user behavior modules.

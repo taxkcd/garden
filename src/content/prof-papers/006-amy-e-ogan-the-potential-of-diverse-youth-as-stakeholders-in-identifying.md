@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-amy-ogan"
-source_hash: "3204b347cc0e76148dd9e115dc2e9cfd37e830f253b3a0d2c024ec1a5447c947"
+source_hash: "4c8e1b40b708baf2db1f09b280365d616c64b5959930171a5ad94caf6fc20d05"
 sequence: 6
 generator: "outreach-garden: managed"
 ---
@@ -126,3 +126,86 @@ Algorithmic bias occurs when AI systems produce unfair or discriminatory outcome
 ## Already in your library
 
 - [Introducing Participatory Design](https://www.youtube.com/watch?v=U3Hn-sONiRg) — also for: The Potential of Diverse Youth as Stakeholders in Identifying and Mitigating Algorithmic Bias for a Future of Fairer AI (Amy E. Ogan)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder to demonstrate your understanding of how diverse youth can identify and mitigate algorithmic bias in AI systems, as explored in the paper. The beginner project recreates a simplified interactive activity to surface youth perceptions of AI bias. The intermediate project implements a small participatory design tool for youth to report AI harms and compare simple mitigation strategies. The advanced project extends the paper's future direction by designing a collaborative AI auditing system that incorporates parental and peer support to empower youth autonomy in AI fairness auditing.
+
+### Beginner — Interactive AI Bias Identification Activity
+*Effort: a weekend, ~8 hours*
+
+You build a small React web app that simulates a workshop activity where youth users identify and label examples of algorithmic bias in AI scenarios. The app presents simple AI use cases with potential biases and lets users select types of bias they perceive, then provides feedback on common bias categories.
+
+**Why it shows you understood the paper:** This project shows you grasp the paper's core finding that youth can perceive and articulate complex algorithmic biases, even without technical backgrounds, by recreating a simplified version of the workshop identification activity.
+
+**Grounded in:** Youth can identify and articulate complex algorithmic biases.
+
+**Tech stack:** React, TypeScript, CSS
+
+**Data:** Simulated AI bias examples inspired by the paper's workshop scenarios; no external dataset required.
+
+**Build it:**
+
+1. Design a set of 5-7 AI use case scenarios with embedded potential biases based on descriptions from the paper.
+2. Implement a React UI that presents each scenario and lets users select from a list of bias types (e.g., social bias, cultural bias, gender bias).
+3. Add immediate feedback explaining the bias types after user selection.
+4. Include a summary page showing the user's identified biases and brief explanations.
+5. Style the app for clarity and accessibility.
+
+**Ships as:** A GitHub repo with a React app demonstrating youth-like identification of algorithmic bias examples, with a README explaining the connection to the paper's findings.
+
+**Stretch goal:** Add a peer discussion simulation feature where multiple users' bias identifications can be compared and discussed.
+
+### Intermediate — Youth-Inclusive AI Harm Reporting Prototype
+*Effort: 2 weekends, ~20 hours*
+
+You build a small full-stack web application where youth users can report perceived AI harms and suggest mitigation ideas. The app supports submitting reports, viewing aggregated reports, and includes a simple baseline mitigation mechanism such as user feedback acknowledgement or transparency notes.
+
+**Why it shows you understood the paper:** This project faithfully reproduces the paper's core method of youth ideating diverse designs for surfacing and mitigating AI harms, implementing a participatory reporting system that reflects youth agency and ethical reflection.
+
+**Grounded in:** Youth ideate diverse designs for surfacing and mitigating AI harms.
+
+**Tech stack:** TypeScript, React, Node.js, Express, PostgreSQL
+
+**Data:** User-generated reports simulated by you or test users; no external dataset required.
+
+**Build it:**
+
+1. Design a simple data schema for AI harm reports including fields for description, bias type, and mitigation suggestion.
+2. Implement a React frontend form for youth users to submit AI harm reports.
+3. Build an Express backend API to store and retrieve reports in PostgreSQL.
+4. Create a dashboard to view aggregated reports and display simple mitigation notes or feedback acknowledgements.
+5. Deploy locally or on a free cloud platform and test with sample inputs.
+
+**Ships as:** A GitHub repo with a working participatory AI harm reporting prototype, README linking features to the paper's findings, and instructions to run locally.
+
+**Stretch goal:** Add user authentication and parental/peer roles to simulate support dynamics.
+
+### Advanced — Collaborative Youth-Parent AI Auditing System
+*Effort: 3+ weeks*
+
+You design and implement a collaborative AI auditing web platform that enables youth to produce AI bias audits while involving parents or peers for validation and support. The system includes features for submitting bias observations, sharing emotional reactions, and collaborative discussion, addressing the paper's future direction on youth-inclusive auditing with parental collaboration.
+
+**Why it shows you understood the paper:** This project extends the paper by operationalizing its proposed future direction of asymmetric designs where youth produce audits and adults validate data, incorporating emotional sharing and collaborative dynamics to empower youth autonomy in AI fairness.
+
+**Grounded in:** Designing youth-inclusive AI auditing systems that incorporate parental collaboration and support.
+
+**Tech stack:** TypeScript, React, Node.js, Express, PostgreSQL, Socket.IO
+
+**Data:** Simulated audit reports and user interactions; no external dataset required.
+
+**Build it:**
+
+1. Design a data model supporting audit reports, user roles (youth, parent, peer), and emotional reaction annotations.
+2. Implement a React frontend with interfaces for youth to submit audits and for parents/peers to review and validate them.
+3. Add real-time collaborative discussion features using Socket.IO or similar technology.
+4. Build backend APIs with Express and PostgreSQL to manage data and user roles.
+5. Create user onboarding flows that explain AI fairness concepts to youth and adults.
+6. Test the system with simulated users and document how it supports collaborative auditing.
+
+**Ships as:** A GitHub repo with a collaborative AI auditing platform prototype, comprehensive README linking design decisions to the paper's limitations and future directions, and deployment instructions.
+
+**Stretch goal:** Integrate educational modules that adapt based on user roles to foster AI literacy and ethical awareness.

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-ke-wang"
-source_hash: "39d2178037fa6e68e75e1d609e281c31fa850da55b40d4df77037984e3fceb78"
+source_hash: "e9b918b396c3bcec4dd1200ab1f9f19f7873a29a9aabd2e75a652a83b2f12a90"
 sequence: 219
 generator: "outreach-garden: managed"
 ---
@@ -138,3 +138,86 @@ Runtime prediction algorithms dynamically forecast future events or data needs d
 ## Already in your library
 
 - [Introduction to spatiotemporal modeling and the webinar series](https://www.youtube.com/watch?v=THwdco2_JAk) — also for: Beyond Time Series: Spatial Reasoning for Epidemic Forecasting via Multimodal Learning (Alexander Rodríguez)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder to demonstrate understanding of the ST-MoE framework for efficient MoE-based LLM inference. The beginner project reproduces a core empirical analysis of expert activation correlations using synthetic or simplified data. The intermediate project implements the core ST-MoE prediction algorithm on a small-scale simulated MoE expert activation sequence and compares prediction accuracy against a naive baseline. The advanced project extends the prediction framework to dynamically adapt to changing expert activation patterns, addressing a stated limitation and exploring runtime adaptation strategies.
+
+### Beginner — Empirical Analysis of Expert Activation Correlations
+*Effort: a weekend, ~8 hours*
+
+You build a data analysis script that simulates or uses simplified MoE expert activation sequences across multiple layers and tokens, then computes and visualizes spatial (cross-layer) and temporal (cross-token) correlation matrices. This reproduces the paper's key empirical finding that expert activations are strongly correlated across layers and tokens.
+
+**Why it shows you understood the paper:** This project shows you understand the fundamental motivation behind ST-MoE: the predictability of expert activations. A professor would see you grasp the statistical basis for prefetching and prediction.
+
+**Grounded in:** Comprehensive empirical analysis revealing strong spatial (cross-layer) and temporal (cross-token) correlations in expert activations during MoE-based LLM decoding.
+
+**Tech stack:** Python 3.11, Jupyter Notebook, NumPy, Matplotlib, Pandas
+
+**Data:** Simulated expert activation sequences mimicking MoE layer and token activations, since no public dataset is available.
+
+**Build it:**
+
+1. Simulate a sequence of expert activations for multiple MoE layers and tokens with correlated patterns.
+2. Compute correlation matrices for expert activations across adjacent layers (spatial) and consecutive tokens (temporal).
+3. Visualize these correlations using heatmaps or line plots.
+4. Write a short report interpreting the correlation patterns and their implications for prediction.
+
+**Ships as:** A Jupyter notebook with code, visualizations of correlation matrices, and a brief explanation linking the results to the paper's motivation.
+
+**Stretch goal:** Add analysis of how correlation strength varies with different simulated task types or noise levels.
+
+### Intermediate — Implementation of ST-MoE Expert Prediction Algorithm
+*Effort: 2 weekends, ~20 hours*
+
+You implement the ST-MoE lightweight dynamic expert prediction strategy using Cross-layer Correlation Table (CCT) and History Table (HT) on a small-scale simulated MoE expert activation dataset. You compare prediction accuracy against a naive baseline that predicts experts randomly or always predicts the most recently used expert.
+
+**Why it shows you understood the paper:** This project demonstrates you can reimplement the paper's core method from its description, showing comprehension of the prediction mechanism and its runtime behavior. A professor would see you can translate the paper's algorithmic contributions into working code and evaluate them.
+
+**Grounded in:** A lightweight dynamic expert prediction strategy leveraging CCT and HT to predict future expert requests without modifying the original model or requiring additional training.
+
+**Tech stack:** Python 3.11, Jupyter Notebook, NumPy, Pandas, Matplotlib
+
+**Data:** Simulated sequences of expert activations across MoE layers and tokens, generated to reflect spatial and temporal correlations as described in the paper.
+
+**Build it:**
+
+1. Design data structures for Cross-layer Correlation Table (CCT) and History Table (HT) based on the paper's description.
+2. Implement the prediction algorithm that uses CCT and HT to predict the next expert activations per token and layer.
+3. Implement a naive baseline prediction method for comparison.
+4. Run experiments on simulated activation sequences to measure prediction accuracy of both methods.
+5. Visualize and report the prediction accuracy results.
+
+**Ships as:** A repository with code implementing ST-MoE prediction and baseline, scripts to run experiments on simulated data, and a README reporting accuracy results and analysis.
+
+**Stretch goal:** Extend the implementation to simulate misprediction handling and runtime verification as described in the paper.
+
+### Advanced — Dynamic Adaptation of ST-MoE Prediction to Changing Expert Patterns
+*Effort: 3+ weeks*
+
+You extend the ST-MoE prediction framework to dynamically adapt to evolving or diverse expert activation patterns during inference, addressing the paper's limitation on variable prediction accuracy across application domains. You implement a mechanism to update or weight the CCT and HT tables online based on recent prediction errors, and evaluate the adaptive method on simulated datasets with changing activation distributions.
+
+**Why it shows you understood the paper:** This project tackles a stated limitation and future direction of the paper, showing deep understanding of the framework and its challenges. A professor would see you can critically analyze the method and propose concrete extensions with experimental evaluation.
+
+**Grounded in:** Given the variability in expert prediction accuracy across different application domains, how might the ST-MoE framework adapt dynamically to changing expert activation patterns during inference to maintain high prediction accuracy and efficiency?
+
+**Tech stack:** Python 3.11, Jupyter Notebook, NumPy, Pandas, Matplotlib
+
+**Data:** Simulated expert activation sequences with evolving patterns over time to mimic changing application domains or tasks.
+
+**Build it:**
+
+1. Review the baseline ST-MoE prediction implementation from the intermediate project.
+2. Design and implement an online adaptation mechanism that updates CCT and HT based on recent prediction outcomes.
+3. Simulate expert activation sequences with shifts in activation patterns over time.
+4. Evaluate prediction accuracy and efficiency of the adaptive method versus static prediction.
+5. Document the design, experiments, results, and insights in a detailed report.
+
+**Ships as:** A repository with adaptive ST-MoE prediction code, experiment scripts on evolving simulated data, and a comprehensive README discussing the approach, results, and implications.
+
+**Stretch goal:** Explore integration of lightweight machine learning models to enhance adaptation or combine with other LLM acceleration techniques.
+
+_No authors' code or real expert activation datasets are publicly available; all projects rely on simulated data approximating the paper's described expert activation patterns._

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-lawrence-s-moss"
-source_hash: "5cdf8f9e1200ec6d867a397532e97cdc2ff50779a5561d3b278741ac77c82738"
+source_hash: "8f91e8ed55e0b15fffa819094a31bc601ecf0b16dc314c613f17f09bd1d41d56"
 sequence: 92
 generator: "outreach-garden: managed"
 ---
@@ -118,3 +118,93 @@ This concept covers how explicit commands or annotations can be used to mark dep
 *How the paper uses it:* KnowTeX uses simple LaTeX commands like \uses and \proves embedded in the source to build dependency graphs automatically.
 
 ▶ [Dependency Graph in Compiler Design || Step-by-Step ...](https://www.youtube.com/watch?v=xnQfcZWCvJI) — Sundeep Saradhi Kanthety · 15:35
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a practical learning ladder for KnowTeX, starting from reproducing a basic dependency graph from LaTeX source, moving to implementing the core command-based dependency extraction and visualization pipeline, and culminating in extending KnowTeX with interactive visualization features to address its stated limitations. Each project builds on the previous one and ties directly to key contributions, results, or future directions of the paper, demonstrating a clear understanding of KnowTeX's design and impact.
+
+### Beginner — Render a Simple Mathematical Dependency Graph from LaTeX
+*Effort: a weekend, ~8 hours*
+
+You build a minimal LaTeX document embedding \uses and \proves commands to mark dependencies between a few mathematical statements, then manually generate and render the corresponding DOT graph using Graphviz. This reproduces a simple dependency graph figure similar to those in the paper.
+
+**Why it shows you understood the paper:** This project shows you understand how KnowTeX uses explicit LaTeX commands to encode dependencies and how these can be visualized as graphs, demonstrating grasp of the paper's core mechanism and output format.
+
+**Grounded in:** Demonstrates the paper's key contribution: "Introduction of a simple command-based system (\uses, \proves) to explicitly mark dependencies within mathematical texts." and the key result: "Successful extraction and visualization of dependency graphs from complex mathematical texts."
+
+**Tech stack:** LaTeX, Graphviz (dot)
+
+**Data:** A small synthetic LaTeX source file you create with embedded \uses and \proves commands, inspired by examples in the paper.
+
+**Build it:**
+
+1. Write a minimal LaTeX document with a few definitions, lemmas, and theorems, embedding \uses and \proves commands to mark dependencies.
+2. Manually extract these commands and create a DOT format graph file representing the dependency structure.
+3. Use Graphviz to render the DOT file into a visual graph (e.g., PNG or SVG).
+4. Include the rendered graph image back into the LaTeX document using \includegraphics.
+5. Write a README explaining the process and how the commands correspond to graph edges.
+
+**Ships as:** A GitHub repo containing the LaTeX source, the DOT graph file, the rendered graph image, and a README explaining the dependency markup and visualization.
+
+**Stretch goal:** Automate the extraction of \uses and \proves commands from the LaTeX source using a simple script to generate the DOT file.
+
+### Intermediate — Reimplement KnowTeX Core: Dependency Graph Extraction and Visualization
+*Effort: 2 weekends, ~20 hours*
+
+You implement a standalone tool that parses LaTeX source files with \uses and \proves commands, extracts dependency relations, and generates dependency graphs in DOT and TikZ formats. You apply it to a small public mathematical LaTeX document (or a synthetic substitute) and compare your output to that of the plasTeXdepgraph tool as a baseline.
+
+**Why it shows you understood the paper:** This project demonstrates you can reimplement the core method of KnowTeX independently, understand its command-based approach, and evaluate compatibility and output quality against an existing tool, reflecting deep comprehension of the paper's approach and results.
+
+**Grounded in:** Reimplements the paper's key contribution: "Development of KnowTeX, a standalone, user-friendly tool for generating dependency graphs from LaTeX sources." and validates the key result: "Verification of compatibility with LaTeX documents prepared for other dependency graph tools without modification."
+
+**Tech stack:** Python 3.11, regex or parsing libraries, Graphviz (dot), TikZ (LaTeX)
+
+**Data:** A small LaTeX document with embedded dependency commands, either synthetic or adapted from public domain mathematical notes; plasTeXdepgraph GitHub repository for baseline comparison.
+
+**Build it:**
+
+1. Write a Python script to parse LaTeX source files and extract \uses and \proves commands with their labels.
+2. Build an internal graph representation of the dependencies with nodes and edges (distinguishing conceptual vs. proof dependencies).
+3. Generate output files in DOT and TikZ formats representing the dependency graph.
+4. Apply your tool to a sample LaTeX document and generate visualizations.
+5. Run plasTeXdepgraph on the same document to compare outputs and document differences.
+6. Write a README documenting your implementation, usage instructions, and comparison results.
+
+**Verified links from the paper:**
+
+- <https://github.com/PatrickMassot/plastexdepgraph> — a third-party/baseline artifact the paper cites — not the authors' own code
+
+**Ships as:** A GitHub repo with the Python extraction tool, sample LaTeX input, generated DOT and TikZ outputs, comparison notes with plasTeXdepgraph, and usage documentation.
+
+**Stretch goal:** Add command-line options to customize output formats and edge styles (e.g., dashed vs. solid edges).
+
+### Advanced — Interactive Visualization Extension for KnowTeX Dependency Graphs
+*Effort: 3+ weeks*
+
+You extend the static dependency graph visualization by building an interactive web-based viewer that loads DOT or TikZ-generated graphs and allows users to click nodes to view corresponding LaTeX source snippets. This addresses the paper's limitation of static visualization and explores the future direction of enhancing interactivity and linking back to source text.
+
+**Why it shows you understood the paper:** This project shows you can identify and address a key limitation of KnowTeX, creatively integrate static graph outputs with interactive web technologies, and bridge the gap between visualization and source navigation, demonstrating research-level insight and engineering skill.
+
+**Grounded in:** Targets the paper's stated limitation: "Visualization is currently static with limited interactivity compared to HTML-based or integrated formal proof systems." and future direction: "Enhancing interactivity and customization of visualizations, including clickable nodes linking back to source text."
+
+**Tech stack:** TypeScript, React, D3.js or Viz.js, Node.js, Python (optional for backend)
+
+**Data:** Use dependency graphs generated by your intermediate project or synthetic LaTeX documents with embedded dependency commands; no external dataset required.
+
+**Build it:**
+
+1. Build a React web app that loads DOT or JSON representations of dependency graphs.
+2. Parse the graph data to render nodes and edges interactively using D3.js or Viz.js.
+3. Implement clickable nodes that display the corresponding LaTeX source snippet in a side panel or popup.
+4. Add UI controls to filter or highlight conceptual vs. proof dependencies (dashed vs. solid edges).
+5. Integrate a simple backend or file loader to serve LaTeX source snippets linked to nodes.
+6. Write documentation explaining how to use the interactive viewer and how it improves on static visualization.
+
+**Ships as:** A GitHub repo with a React-based interactive dependency graph viewer, sample graph data and LaTeX snippets, and a README describing installation, usage, and design rationale.
+
+**Stretch goal:** Add search functionality to locate specific statements or dependencies within the graph and source text.
+
+_The paper's authors did not release their own code for KnowTeX, so the intermediate project requires reimplementation from the paper's description; ensure familiarity with plasTeXdepgraph as a baseline tool._

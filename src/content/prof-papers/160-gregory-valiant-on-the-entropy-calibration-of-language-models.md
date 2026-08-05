@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-gregory-valiant"
-source_hash: "7237f96eb276c0e8a0408dd47c01dfeffa3d16fbb46f02a570cb0b5fda0836ba"
+source_hash: "a7f891a910b820c09ba0ace23c74be5fd102c52550347cd17b4b22a6c46cdc98"
 sequence: 160
 generator: "outreach-garden: managed"
 ---
@@ -137,3 +137,93 @@ Entropy calibration asks whether a language model's uncertainty (entropy) matche
 ## Already in your library
 
 - [[1hr Talk] Intro to Large Language Models](https://www.youtube.com/watch?v=zjkBMFhNj_g) — also for: On-demand generation of high-quality software engineering datasets using large language models and ontologies (Suranjan Chakraborty)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder to demonstrate understanding of entropy calibration in language models as studied in the paper. The beginner project reproduces a key empirical metric on entropy miscalibration using a public dataset and simple tools. The intermediate project implements the paper's core future entropy prediction calibration method on a smaller dataset, comparing it against a baseline truncation method. The advanced project extends the paper by exploring practical approximations to future entropy calibration, addressing a stated limitation and future direction.
+
+### Beginner — Entropy Miscalibration Measurement on WikiText-2
+*Effort: a weekend, ~8 hours*
+
+You build a script to measure and plot entropy miscalibration over generation length for a pretrained language model on the WikiText-2 dataset. This reproduces the paper's empirical observation that entropy per generation step increases with length, unlike human text. You use existing pretrained models and compute entropy and log loss metrics to visualize miscalibration.
+
+**Why it shows you understood the paper:** This project shows you understand the core empirical phenomenon of entropy miscalibration and how to measure it quantitatively, replicating a key figure from the paper.
+
+**Grounded in:** Entropy per generation step increases with generation length for all models, unlike human text where entropy remains roughly constant.
+
+**Tech stack:** Python 3.11, PyTorch, transformers, matplotlib, numpy
+
+**Data:** WikiText-2 dataset (public, used as a substitute for the paper's natural language datasets)
+
+**Build it:**
+
+1. Load a pretrained language model (e.g., GPT-2 small) using Hugging Face transformers.
+2. Load the WikiText-2 validation set and preprocess it into sequences.
+3. Compute token-level entropy and log loss for generated sequences of increasing length.
+4. Plot entropy per generation step versus sequence length to observe miscalibration.
+5. Compare entropy trends to human text entropy statistics reported in the paper.
+
+**Ships as:** A GitHub repo with scripts and a README showing plots of entropy miscalibration over generation length on WikiText-2, reproducing a key empirical result.
+
+**Stretch goal:** Add measurement of the effect of temperature scaling on entropy and log loss to observe the calibration-diversity tradeoff.
+
+### Intermediate — Implementing Future Entropy Prediction Calibration
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement the paper's proposed future entropy prediction-based calibration procedure on a smaller language model and dataset (e.g., GPT-2 small on WikiText-2). You train a simple predictor of future entropy and use it to adjust token probabilities to improve entropy calibration without increasing log loss. You compare against a baseline truncation method.
+
+**Why it shows you understood the paper:** This project demonstrates you grasp the paper's core theoretical contribution and can implement its calibration method, validating its effect empirically on real data.
+
+**Grounded in:** Proof that entropy calibration without increasing log loss is theoretically possible via a future entropy prediction-based adjustment, despite practical challenges.
+
+**Tech stack:** Python 3.11, PyTorch, transformers, scikit-learn, numpy, matplotlib
+
+**Data:** WikiText-2 dataset (public, used as a substitute for the paper's natural language datasets)
+
+**Build it:**
+
+1. Reimplement or adapt a pretrained GPT-2 small model for token probability extraction.
+2. Train a regression model to predict future entropy from partial sequences using WikiText-2.
+3. Implement the calibration adjustment to token probabilities based on predicted future entropy.
+4. Evaluate entropy calibration error and log loss before and after calibration.
+5. Compare results against a baseline next-token distribution truncation method.
+
+**Verified links from the paper:**
+
+- <https://github.com/stevenxcao/entropy-calibration> — a third-party/baseline artifact the paper cites — not the authors' own code
+
+**Ships as:** A GitHub repo with code, trained entropy predictors, evaluation scripts, and a README reporting calibration metrics and comparisons.
+
+**Stretch goal:** Experiment with different entropy predictor architectures or features to improve calibration performance.
+
+### Advanced — Practical Approximations for Future Entropy Calibration
+*Effort: 3+ weeks*
+
+You develop and evaluate practical algorithmic approximations to the paper's future entropy calibration procedure to reduce computational complexity and predictor fitting challenges. For example, you explore lightweight entropy predictors, heuristic adjustments, or partial lookahead methods on a medium-scale language model and dataset. You analyze the tradeoffs between calibration quality, log loss, and diversity.
+
+**Why it shows you understood the paper:** This project tackles a key limitation and future direction from the paper, showing deep engagement with the theoretical and practical challenges of entropy calibration and contributing novel engineering solutions.
+
+**Grounded in:** The future entropy calibration procedure is currently impractical due to computational complexity and the need to fit many entropy predictors; develop practical algorithms approximating future entropy calibration to achieve better quality-diversity tradeoffs.
+
+**Tech stack:** Python 3.11, PyTorch, transformers, scikit-learn, numpy, matplotlib, Jupyter Notebook
+
+**Data:** WikiText-2 or a similar public natural language dataset; possibly code datasets with heavier-tailed distributions if available
+
+**Build it:**
+
+1. Review and understand the original future entropy calibration method and its computational bottlenecks.
+2. Design and implement one or more approximation strategies (e.g., reduced predictor complexity, sampling-based lookahead).
+3. Integrate approximations into the calibration pipeline with a pretrained language model.
+4. Evaluate calibration error, log loss, and output diversity metrics compared to the original method and baselines.
+5. Document findings, limitations, and potential improvements.
+
+**Verified links from the paper:**
+
+- <https://github.com/stevenxcao/entropy-calibration> — a third-party/baseline artifact the paper cites — not the authors' own code
+
+**Ships as:** A GitHub repo with code, experiments, and a detailed README discussing practical approximations, empirical results, and open challenges.
+
+**Stretch goal:** Extend experiments to instruction-tuned models or code datasets to analyze calibration scaling differences.

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-haitao-wang"
-source_hash: "16d3987206ea4ef2c912361879258d71f6bceffffb76086629299511e82052e7"
+source_hash: "553a7bbbf993adcc2846b168aa0b3da26f4e0ac1ee6d8c86e36fae2a48bf7119"
 sequence: 105
 generator: "outreach-garden: managed"
 ---
@@ -113,3 +113,85 @@ Polygon decomposition breaks a complex polygon into simpler parts, making geomet
 *How the paper uses it:* The paper introduces a novel polygon decomposition with the gate property, which is central to their improved data structures.
 
 ▶ [Polygon Decomposition Demo](https://www.youtube.com/watch?v=lzQT-z-J-DA) — Hima Bindhu Busireddy · 9 years ago
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progression to demonstrate your understanding of the paper "Visibility Queries in Simple Polygons." The beginner project focuses on implementing a basic visibility polygon computation inside a simple polygon, illustrating the fundamental concept of visibility queries. The intermediate project involves reimplementing the paper's core polygon decomposition with the gate property and building a data structure for efficient visibility queries, comparing query times against a naive baseline. The advanced project extends the paper's approach by exploring dynamic visibility queries where the polygon or query points change over time, addressing one of the paper's stated future directions.
+
+### Beginner — Basic Visibility Polygon Computation in Simple Polygons
+*Effort: a weekend, ~8 hours*
+
+You build a program that takes as input a simple polygon and a query point inside it, then computes and visualizes the visibility polygon of that point using a standard ray-shooting or rotational sweep algorithm. The project includes a simple interactive visualization to show the polygon, query point, and resulting visibility polygon.
+
+**Why it shows you understood the paper:** This project demonstrates your grasp of the fundamental problem the paper addresses: computing visibility polygons inside simple polygons. It shows you understand the geometric definitions and can implement a baseline visibility query.
+
+**Grounded in:** The paper's research problem: Constructing data structures for visibility queries in simple polygons that allow fast computation of the visibility polygon of any query point.
+
+**Tech stack:** C++, Python 3.11, matplotlib (for visualization)
+
+**Data:** You generate or manually specify small simple polygons (e.g., convex and concave polygons with 10-20 vertices) as input data; no external dataset is needed.
+
+**Build it:**
+
+1. Implement a simple polygon data structure and input parser.
+2. Implement a visibility polygon algorithm using ray casting or rotational sweep from the query point.
+3. Create a visualization to display the polygon, query point, and computed visibility polygon.
+4. Test with multiple polygons and query points inside the polygon.
+5. Document the approach and limitations in the README.
+
+**Ships as:** A repository with code to compute and visualize visibility polygons inside simple polygons, demonstrating the baseline visibility query problem.
+
+**Stretch goal:** Add support for query points on the polygon boundary and visualize differences.
+
+### Intermediate — Implementing Polygon Decomposition with Gate Property for Visibility Queries
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement the paper's core polygon decomposition technique that partitions a simple polygon into subpolygons connected by a single diagonal (the gate). You then build a data structure that supports visibility queries using this decomposition, implementing cone stabbing queries or a simplified version thereof. You compare query times against the naive visibility polygon computation from the beginner project.
+
+**Why it shows you understood the paper:** This project shows you understood the paper's key contribution of the polygon decomposition with the gate property and how it enables efficient visibility queries. It also demonstrates your ability to implement and evaluate a novel geometric data structure.
+
+**Grounded in:** Key contribution: New polygon decomposition with the gate property enabling efficient visibility information propagation; Key result: Data structure with O(n log n) space and O(n^{1/2+ε} + k) query time.
+
+**Tech stack:** C++, Python 3.11, matplotlib, optional: Jupyter Notebook for analysis
+
+**Data:** Use synthetic simple polygons generated programmatically or manually created polygons with 50-200 vertices to test scalability and query performance.
+
+**Build it:**
+
+1. Implement the polygon decomposition algorithm with the gate property as described in the paper.
+2. Build a data structure to store visibility information for subpolygons and implement cone stabbing queries or a simplified stabbing approach.
+3. Implement query processing that uses the decomposition to compute visibility polygons faster than naive methods.
+4. Benchmark query times against the baseline visibility polygon computation on multiple polygons and query points.
+5. Document the implementation details, performance results, and comparison in the README.
+
+**Ships as:** A repository with code implementing the polygon decomposition and visibility query data structure, including benchmarks comparing query times to a naive baseline.
+
+**Stretch goal:** Add support for query points on polygon boundaries using the specialized data structures described in the paper.
+
+### Advanced — Dynamic Visibility Queries in Simple Polygons
+*Effort: 3+ weeks*
+
+You extend the static visibility query data structures by implementing a dynamic version that supports updates to the polygon (e.g., vertex insertions/deletions or edge modifications) or moving query points. You adapt the polygon decomposition and data structures to handle changes efficiently and evaluate query performance and update costs.
+
+**Why it shows you understood the paper:** This project tackles one of the paper's future directions, demonstrating deep understanding of the data structures and their limitations. It shows initiative in extending theoretical work toward practical dynamic scenarios relevant in robotics and graphics.
+
+**Grounded in:** Future direction: Investigating dynamic versions of visibility queries where the polygon or query points change over time.
+
+**Tech stack:** C++, Python 3.11, matplotlib, optional: benchmarking tools
+
+**Data:** Use synthetic polygons with 100-500 vertices and sequences of polygon modifications and query points to simulate dynamic scenarios.
+
+**Build it:**
+
+1. Study the static polygon decomposition and visibility query data structures from the intermediate project.
+2. Design and implement algorithms to update the polygon decomposition and data structures efficiently upon polygon modifications.
+3. Implement support for moving query points and incremental updates to visibility polygons.
+4. Benchmark query and update times against static implementations and naive recomputation.
+5. Document challenges, design decisions, and performance results in the README.
+
+**Ships as:** A repository demonstrating dynamic visibility query data structures with code, benchmarks, and documentation of the extension beyond the static case.
+
+**Stretch goal:** Explore extending the approach to polygons with holes or more complex planar domains as another future direction.

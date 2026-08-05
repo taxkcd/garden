@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-fow-sen-choa"
-source_hash: "7aa4ddb21a61600eedec5dbdf1bf023bd3ff4c15a3ea75f4f43cba64a5a51dfe"
+source_hash: "3838eb553aeb56449c9586fd2d19d2f64fa63bb4ba7a0707fd31f8debdfd0d8d"
 sequence: 51
 generator: "outreach-garden: managed"
 ---
@@ -129,3 +129,88 @@ Support vector machines (SVM) find the best boundary separating classes in data,
 *How the paper uses it:* The study uses SVM and ensemble classifiers as key algorithms for bacterial strain identification and contamination detection.
 
 ▶ [Lec-40: Support Vector Machines (SVMs) | Machine Learning](https://www.youtube.com/watch?v=NDqACjz5j8g) — Gate Smashers · 1 year ago
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive ladder to demonstrate your understanding of the paper's integration of fluorescence spectroscopy and machine learning for rapid bacterial detection. The beginner project reproduces a core binary classification result using synthetic fluorescence data and classical ML methods. The intermediate project reimplements the paper's multiclass strain classification using a simulated dataset and compares SVM and ensemble classifiers. The advanced project extends the method to mixed bacterial strain samples, addressing a key limitation noted by the authors, and explores deep learning models for improved classification accuracy.
+
+### Beginner — Binary Bacterial Detection from Fluorescence Time-Series
+*Effort: a weekend, ~8 hours*
+
+You build a simple machine learning pipeline that classifies bacterial contamination presence versus absence using synthetic fluorescence time-series data inspired by the paper's description. You implement feature extraction and normalization steps and train classical classifiers like SVM and Naive Bayes to reproduce the reported ~98% accuracy on binary classification.
+
+**Why it shows you understood the paper:** This project shows you understand the core data modality (fluorescence time-series), the importance of preprocessing, and the application of supervised ML for rapid bacterial detection as demonstrated in the paper.
+
+**Grounded in:** Binary classification of bacterial contamination achieved up to 97.9% accuracy
+
+**Tech stack:** Python 3.11, scikit-learn, numpy, matplotlib, jupyter notebook
+
+**Data:** Synthetic fluorescence time-series data generated to mimic the paper's fluorescence signals for bacterial and non-bacterial samples, as no public dataset or authors' code is available.
+
+**Build it:**
+
+1. Generate synthetic time-series fluorescence data representing bacterial and non-bacterial samples based on typical signal shapes described in the paper.
+2. Extract statistical and temporal features (e.g., mean, variance, slope) from the time-series data and normalize them.
+3. Train and evaluate classical classifiers such as Support Vector Machine and Naive Bayes on the processed features.
+4. Plot classification accuracy and confusion matrix to compare results.
+5. Write a README explaining the data simulation, preprocessing, model training, and results.
+
+**Ships as:** A GitHub repo with Jupyter notebooks showing data simulation, feature extraction, classifier training, and evaluation reproducing binary bacterial detection accuracy.
+
+**Stretch goal:** Add a simple regression model to predict bacterial concentration from the synthetic fluorescence features.
+
+### Intermediate — Multiclass Bacterial Strain Classification Using SVM and Ensemble Methods
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement the paper's multiclass classification task to differentiate five bacterial strains plus negative control using simulated fluorescence time-series data. You apply feature extraction and normalization, then train SVM and ensemble classifiers, comparing their accuracy and reproducing the reported ~86% strain classification accuracy.
+
+**Why it shows you understood the paper:** This project demonstrates your grasp of the paper's core method of multiclass classification from fluorescence features, the importance of preprocessing, and comparative evaluation of ML algorithms on time-series biosensor data.
+
+**Grounded in:** Multiclass strain classification achieved 86% accuracy with SVM
+
+**Tech stack:** Python 3.11, scikit-learn, numpy, pandas, matplotlib, jupyter notebook
+
+**Data:** Simulated multichannel fluorescence time-series data for five bacterial strains and negative control, generated based on the paper's description since no public dataset or authors' code is available.
+
+**Build it:**
+
+1. Design and generate synthetic multichannel fluorescence time-series data for five bacterial strains and negative control samples.
+2. Implement feature extraction and normalization pipelines for the multichannel data.
+3. Train multiclass SVM and ensemble classifiers (e.g., Random Forest) on the extracted features.
+4. Evaluate and compare classification accuracy, precision, recall, and confusion matrices.
+5. Document the methodology, results, and comparison to the paper's reported metrics in a detailed README.
+
+**Ships as:** A GitHub repo with notebooks and scripts that simulate data, extract features, train multiclass classifiers, and report comparative performance metrics aligned with the paper's results.
+
+**Stretch goal:** Incorporate PCA for dimensionality reduction before classification and analyze its impact on accuracy.
+
+### Advanced — Deep Learning for Mixed-Strain Bacterial Identification from Fluorescence Data
+*Effort: 3+ weeks*
+
+You extend the paper's method by developing a deep neural network model to classify mixtures of bacterial strains from simulated fluorescence time-series data, addressing the paper's limitation of only pure strains tested. You design a data simulation framework for mixed samples, implement CNN or RNN architectures, and evaluate classification accuracy compared to classical methods.
+
+**Why it shows you understood the paper:** This project tackles a key limitation and future direction from the paper, demonstrating your ability to extend the methodology to more complex real-world scenarios and apply advanced deep learning models to time-series biosensor data.
+
+**Grounded in:** Current study limited to pure bacterial strains, not mixtures; future direction includes evaluation of strain identification accuracy in unknown mixtures of bacteria
+
+**Tech stack:** Python 3.11, PyTorch, numpy, pandas, matplotlib, jupyter notebook
+
+**Data:** Simulated fluorescence time-series data representing mixtures of bacterial strains, generated by combining synthetic signals of individual strains with noise to mimic real biosensor data.
+
+**Build it:**
+
+1. Develop a simulation pipeline to generate fluorescence time-series data for mixtures of bacterial strains with varying proportions.
+2. Preprocess and normalize the simulated data, optionally applying feature extraction or using raw time-series as input.
+3. Design and implement deep learning models (e.g., CNN, RNN) for multiclass and multilabel classification of mixed strains.
+4. Train and evaluate models, comparing performance to classical ML baselines like SVM and ensemble classifiers.
+5. Analyze model interpretability using techniques such as SHAP values to identify important features or time segments.
+6. Prepare comprehensive documentation explaining data simulation, model design, training, evaluation, and insights.
+
+**Ships as:** A GitHub repository containing code for data simulation, deep learning model training and evaluation, with detailed README discussing the extension to mixed strains and comparison to classical methods.
+
+**Stretch goal:** Integrate real fluorescence data if available or collaborate with experimentalists to validate the model on actual mixed bacterial samples.
+
+_The paper's authors have not released code or datasets, so all projects rely on synthetic data generation based on the paper's descriptions. Careful design of simulated fluorescence signals is necessary to approximate the real data characteristics._

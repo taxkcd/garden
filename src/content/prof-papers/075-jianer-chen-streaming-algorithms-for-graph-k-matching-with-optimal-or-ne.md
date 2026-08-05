@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-jianer-chen"
-source_hash: "0b68980e52fbc1f6a937b002c21abd9ee05d23e6048be93614ade46a2fd0c73d"
+source_hash: "1186b27702a4c8a4ffee327359406ea7541fc78ae020ba3c89323307d4bcd932"
 sequence: 75
 generator: "outreach-garden: managed"
 ---
@@ -120,3 +120,87 @@ Universal hashing is a randomized hashing method that reduces collisions and ens
 *How the paper uses it:* The paper uses ℓ0-sampling to maintain compact subgraphs that contain maximum weighted k-matchings efficiently as edges arrive or are deleted.
 
 ▶ [Algorithms to Sample From Streams - Reservoir Sampling ...](https://www.youtube.com/watch?v=Buzn4tQz-ZY) — PyCon Israel · 16:17
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive ladder to demonstrate understanding of the paper "Streaming Algorithms for Graph k-Matching with Optimal or Near-Optimal Update Time." The beginner project focuses on implementing and visualizing the core concept of universal hashing for streaming k-matching in a simple graph. The intermediate project involves reimplementing the paper's one-pass insert-only streaming algorithm for maximum weighted k-matching and comparing its update time and space usage against a naive baseline on synthetic data. The advanced project extends the hashing scheme or streaming algorithm to a related parameterized streaming problem, addressing one of the paper's future directions on generalizing the hashing scheme beyond k-matching.
+
+### Beginner — Visualizing Universal Hashing for Streaming k-Matching
+*Effort: a weekend, ~8 hours*
+
+You build a small interactive visualization and simulation of the paper's universal hashing scheme that partitions a stream of edges into k disjoint subsets, each containing exactly one element from any k-subset. The tool will simulate edge arrivals in a small graph and show how edges are hashed and maintained in subsets to support efficient streaming updates.
+
+**Why it shows you understood the paper:** This project demonstrates your grasp of the novel hashing scheme central to the paper's streaming algorithms, showing you understand how perfect hashing with high probability is achieved in limited space.
+
+**Grounded in:** The hashing scheme uses O(k · polylog(n)) space and has high success probability.
+
+**Tech stack:** JavaScript, React, D3.js
+
+**Data:** Synthetic small graph data generated within the simulation to demonstrate hashing behavior.
+
+**Build it:**
+
+1. Implement a simple universal hashing function that maps edges to buckets.
+2. Simulate a stream of edge insertions for a small graph with up to 10 vertices.
+3. Partition edges into k disjoint subsets using the hashing function.
+4. Visualize the subsets and highlight how each k-subset is represented.
+5. Add controls to add or remove edges and observe updates in real time.
+
+**Ships as:** An interactive web-based visualization showing the hashing scheme's partitioning of streaming edges into subsets, with explanatory README linking to the paper's hashing contribution.
+
+**Stretch goal:** Add a probabilistic success rate simulation showing how often perfect hashing is achieved over multiple runs.
+
+### Intermediate — Reimplementation of Insert-Only Streaming Algorithm for Maximum Weighted k-Matching
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement the paper's one-pass insert-only streaming algorithm for maximum weighted k-matching from the paper's description, focusing on achieving optimal space O(k^2) and update time O(1). You test it on synthetic weighted graph streams and compare update time and memory usage against a naive baseline that stores all edges.
+
+**Why it shows you understood the paper:** This project proves you can translate the paper's theoretical algorithm into working code, understand the space and time complexity improvements, and empirically verify the update time gains.
+
+**Grounded in:** The insert-only streaming algorithm achieves optimal space O(k^2) and update time O(1).
+
+**Tech stack:** Python 3.11, NumPy
+
+**Data:** Synthetic weighted graph streams generated with random edge insertions; no public dataset is specified in the paper.
+
+**Build it:**
+
+1. Implement the universal hashing scheme and compact subgraph maintenance as described.
+2. Implement the streaming algorithm to maintain maximum weighted k-matching with O(k^2) space.
+3. Implement a naive baseline that stores all edges and recomputes matching after each insertion.
+4. Generate synthetic weighted graph streams with varying sizes and k values.
+5. Measure and compare update times and memory usage between your implementation and the baseline.
+6. Document results and relate them to the paper's theoretical claims.
+
+**Ships as:** A Python repository with the streaming algorithm implementation, scripts for synthetic data generation, benchmarking results, and a README explaining the method and empirical findings.
+
+**Stretch goal:** Add an approximation variant of the algorithm to trade off space and update time, as discussed in the paper.
+
+### Advanced — Extending the Hashing Scheme to Parameterized Streaming for Vertex Cover
+*Effort: 3+ weeks*
+
+You extend the paper's novel hashing scheme to a related parameterized streaming problem, such as vertex cover or edge dominating set, exploring how to maintain compact subgraphs with efficient update times. This addresses the paper's future direction of generalizing the hashing scheme beyond k-matching. You implement the extended streaming algorithm and evaluate its update time and space on synthetic graph streams.
+
+**Why it shows you understood the paper:** This project shows deep comprehension of the hashing scheme's design and its adaptability, as well as your ability to innovate by applying it to a new problem domain, aligning with the paper's suggested research directions.
+
+**Grounded in:** Future directions: Extending the hashing scheme and streaming algorithms to other graph problems or more general streaming models.
+
+**Tech stack:** Python 3.11, NumPy, Matplotlib
+
+**Data:** Synthetic graph streams generated to simulate vertex cover problem instances; no public dataset specified.
+
+**Build it:**
+
+1. Study the paper's hashing scheme and compact subgraph maintenance in detail.
+2. Select a parameterized streaming problem related to k-matching, e.g., vertex cover.
+3. Design a hashing-based streaming algorithm inspired by the paper's scheme for the chosen problem.
+4. Implement the streaming algorithm maintaining compact subgraphs with efficient updates.
+5. Generate synthetic graph streams and benchmark update time and space usage.
+6. Compare results to naive baselines and discuss limitations and potential improvements.
+
+**Ships as:** A Python repository with the extended streaming algorithm, synthetic data generation, benchmarking scripts, and a detailed README discussing the extension, challenges, and results.
+
+**Stretch goal:** Explore deterministic variants or practical heuristics to reduce probabilistic errors in the hashing scheme.

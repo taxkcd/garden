@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-peter-stone"
-source_hash: "94d2023bce6e2198b72f34f432f1430d0b5cdee77266fdbbd791490fb0d53267"
+source_hash: "be494c13de231261f3876783cdb70b7325c2b2deb74d5f8d0f1a21263b52a1c9"
 sequence: 194
 generator: "outreach-garden: managed"
 ---
@@ -143,3 +143,95 @@ Watch a focused presentation on applying deep reinforcement learning to blood gl
 *How the paper uses it:* This talk provides direct insights into the authors’ RL framework for personalized diabetes management, complementing the paper’s contributions.
 
 ▶ [B2 Deep Reinforcement Learning for Closed-Loop Blood Glucose Control](https://www.youtube.com/watch?v=MEccJF90fCw) — Machine Learning for Healthcare · 6 years ago
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder to demonstrate understanding of the GUIDE framework for reinforcement learning-based behavioral action support in Type 1 Diabetes management. The beginner project reproduces a core mechanism of the structured action space and behavioral recommendations. The intermediate project runs and extends the authors' released GUIDE code to evaluate RL algorithms on simulated patient data. The advanced project addresses a key limitation by modeling partial adherence to recommendations, extending GUIDE towards real-world applicability.
+
+### Beginner — Simulate Structured Behavioral Actions for Diabetes Management
+*Effort: a weekend, ~8 hours*
+
+You build a simple Python simulation that models the structured action space described in GUIDE, including action type (insulin injection, carbohydrate intake, or no action), magnitude, and timing within an hour. You implement a basic rule-based agent that generates behavioral recommendations and visualize the timing and distribution of these actions over a day.
+
+**Why it shows you understood the paper:** This project shows you understand how GUIDE models multiple self-management behaviors jointly with timing, a key innovation over insulin-only control. A professor would see you grasp the structured action space and its role in personalized recommendations.
+
+**Grounded in:** The action space models action type, magnitude, and timing jointly.
+
+**Tech stack:** Python 3.11, matplotlib, numpy, pandas
+
+**Data:** You synthesize simple simulated patient behavioral data based on descriptions in the paper, as no raw data is needed for this demonstration.
+
+**Build it:**
+
+1. Implement a Python class representing the structured action space with fields for action type, magnitude, and timing.
+2. Create a rule-based policy that generates daily sequences of actions mimicking insulin and carbohydrate intake events with timing.
+3. Simulate a day's worth of actions and store them in a structured format (e.g., CSV or DataFrame).
+4. Visualize the distribution of action types and timing using matplotlib plots.
+5. Write a README explaining the action space design and how it relates to GUIDE's behavioral recommendations.
+
+**Ships as:** A GitHub repo with Python code simulating structured behavioral actions and visualizations, plus a README linking the simulation to the paper's action space concept.
+
+**Stretch goal:** Add stochastic variability to action timing and magnitudes to better mimic patient behavior patterns.
+
+### Intermediate — Run and Evaluate GUIDE's Offline RL Algorithms on Simulated Patient Data
+*Effort: 1-3 weekends*
+
+You clone and run the GUIDE codebase from the authors' GitHub repository to reproduce the evaluation of offline RL algorithms (e.g., CQL-BC) on the personalized simulation environment. You extend the evaluation by adding a simple baseline (e.g., a heuristic policy) and compare time-in-range (TIR) metrics. You generate plots of TIR and hypoglycemia exposure to replicate key results.
+
+**Why it shows you understood the paper:** This project shows you can operate the authors' code, understand the RL framework integrating behavioral actions, and reproduce core quantitative results. Adding a baseline comparison demonstrates your ability to critically evaluate RL policies.
+
+**Grounded in:** Evaluation of multiple RL algorithms (offline and online) under a unified environment and reward function; CQL-BC algorithm achieved the highest mean time-in-range (85.49%) across 25 individuals.
+
+**Tech stack:** Python 3.11, PyTorch, numpy, matplotlib, pandas
+
+**Data:** Uses the personalized data-driven simulation environment derived from the AZT1D dataset as provided in the GUIDE GitHub repository.
+
+**Build it:**
+
+1. Clone the GUIDE repository from https://github.com/SamanKhamesian/GUIDE and install dependencies.
+2. Run the provided scripts to train and evaluate the CQL-BC offline RL algorithm on the simulation environment.
+3. Implement a simple heuristic baseline policy (e.g., fixed insulin and carb dosing) within the environment.
+4. Evaluate and compare the baseline and CQL-BC policies on metrics like time-in-range and hypoglycemia exposure.
+5. Plot and analyze the results, replicating figures similar to those in the paper.
+6. Document your process and findings in a detailed README.
+
+**Verified links from the paper:**
+
+- <https://github.com/SamanKhamesian/GUIDE> — released by the paper's authors
+
+**Ships as:** A forked GitHub repo with runnable GUIDE code, added baseline policy, evaluation scripts, and plots comparing RL algorithms and baseline performance.
+
+**Stretch goal:** Experiment with modifying the structured action space parameters or reward function to observe effects on policy performance.
+
+### Advanced — Model Partial Adherence in GUIDE to Reflect Real-World Behavioral Variability
+*Effort: a few weeks*
+
+You extend the GUIDE framework by implementing a partial adherence model that probabilistically simulates patient non-compliance with recommended actions. You modify the simulation environment to incorporate adherence variability and retrain RL policies under these conditions. You analyze how partial adherence affects glycemic control metrics and propose adjustments to the RL agent to improve robustness.
+
+**Why it shows you understood the paper:** This project tackles a key limitation and future direction stated in the paper, demonstrating deep comprehension of GUIDE's assumptions and real-world challenges. It shows your ability to innovate on the framework and prepare it for clinical relevance.
+
+**Grounded in:** Assumes full patient adherence to recommended actions, which is rarely achievable in real-world settings; future direction: Modeling partial adherence and user acceptance to better reflect real-world behavior.
+
+**Tech stack:** Python 3.11, PyTorch, numpy, matplotlib, pandas
+
+**Data:** Uses the GUIDE simulation environment and AZT1D-based patient models from the authors' repository, extended with synthetic adherence behavior.
+
+**Build it:**
+
+1. Study the GUIDE codebase to understand how recommended actions are applied in the simulation environment.
+2. Design and implement a probabilistic adherence model that randomly modifies or skips recommended actions based on adherence rates.
+3. Integrate this adherence model into the simulation environment to simulate partial compliance.
+4. Retrain or fine-tune the RL agent (e.g., CQL-BC) under the new environment with partial adherence.
+5. Evaluate the impact on glycemic control metrics (time-in-range, hypoglycemia exposure) compared to full adherence.
+6. Document findings and suggest potential policy adaptations to mitigate adherence variability.
+
+**Verified links from the paper:**
+
+- <https://github.com/SamanKhamesian/GUIDE> — released by the paper's authors
+
+**Ships as:** A GitHub repo with extended GUIDE code supporting partial adherence simulation, retrained RL policies, evaluation scripts, and a comprehensive README discussing results and implications.
+
+**Stretch goal:** Incorporate user acceptance modeling or multi-scale lifestyle factors (e.g., sleep, physical activity) into the adherence framework.

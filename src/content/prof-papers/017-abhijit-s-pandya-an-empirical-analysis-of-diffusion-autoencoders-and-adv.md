@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-dr-pandya-php"
-source_hash: "65f77d6345101fb9d5bcbf1ebce405702a129d7586c4141841113257d8bf952e"
+source_hash: "0bd1ecf6a25797e3379e1f8d40e330097e04b25c0ad2a1e66af59af55ff68de3"
 sequence: 17
 generator: "outreach-garden: managed"
 ---
@@ -133,3 +133,90 @@ Diffusion models are a newer class of generative models that iteratively refine 
 - [Stanford CS236: Deep Generative Models I 2023 I Lecture 18 - Diffusion Models for Discrete Data](https://www.youtube.com/watch?v=mCaRNnEnYwA) — also for: Geometry Preserving Loss Functions Promote Improved Adaptation of Blackbox Generative Models (Pavan K. Turaga)
 - [What are Diffusion Models?](https://www.youtube.com/watch?v=fbLgFrlTnGU) — also for: Geometry Preserving Loss Functions Promote Improved Adaptation of Blackbox Generative Models (Pavan K. Turaga)
 - [Generative Adversarial Networks (GANs) - Computerphile](https://www.youtube.com/watch?v=Sw9r8CL98N0) — also for: Geometry Preserving Loss Functions Promote Improved Adaptation of Blackbox Generative Models (Pavan K. Turaga)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive ladder to demonstrate understanding of the paper's empirical comparison of generative models for synthetic MRI data in dementia detection. The beginner project reproduces a key evaluation metric (FID score) on synthetic MRI images using a simple GAN baseline. The intermediate project implements and compares diffusion models and data-efficient GANs on a substitute public MRI dataset, reporting classification accuracy with DenseNet. The advanced project extends the paper by developing a data-efficient diffusion model variant to address computational efficiency and tests it on a small Parkinson's-like MRI dataset, exploring a stated future direction.
+
+### Beginner — Compute FID Scores for Synthetic MRI Images Using a Simple GAN
+*Effort: a weekend, ~8 hours*
+
+You build a pipeline to train a simple GAN on a small MRI dataset substitute (e.g., OASIS-1 for Alzheimer's-like brain MRI), generate synthetic images, and compute the Frechet Inception Distance (FID) score to evaluate image quality. This reproduces the paper's use of FID as a key metric for generative model quality.
+
+**Why it shows you understood the paper:** This project shows you understand the importance of quantitative metrics like FID in evaluating synthetic medical images and can implement a basic GAN training and evaluation pipeline relevant to dementia MRI data.
+
+**Grounded in:** Demonstrates the use of Frechet Inception Distance (FID) to evaluate synthetic MRI image quality, a key metric used in the paper's comparison of generative models.
+
+**Tech stack:** Python 3.11, PyTorch, scikit-image, numpy, matplotlib
+
+**Data:** Use the OASIS-1 MRI dataset (publicly available) as a substitute for Alzheimer's MRI data to train the GAN and generate synthetic images.
+
+**Build it:**
+
+1. Download and preprocess a subset of the OASIS-1 MRI dataset focusing on healthy and dementia-labeled images.
+2. Implement or adapt a simple GAN architecture in PyTorch to train on the MRI images.
+3. Train the GAN to generate synthetic MRI images over several epochs.
+4. Generate a synthetic image set from the trained GAN.
+5. Compute the FID score between real and synthetic images using a standard FID implementation.
+6. Document the pipeline, results, and interpretation of the FID score in the README.
+
+**Ships as:** A GitHub repo with code to train a GAN on MRI data, generate synthetic images, compute FID scores, and a README explaining the process and results.
+
+**Stretch goal:** Add Inception Score computation or visualize synthetic images alongside real images for qualitative comparison.
+
+### Intermediate — Implement and Compare Diffusion Models and Data-Efficient GANs for Dementia MRI Classification
+*Effort: 2 weekends, ~20 hours*
+
+You implement diffusion models and data-efficient GANs to generate synthetic MRI images from a public Alzheimer's MRI dataset substitute, then train DenseNet classifiers on these synthetic images to detect dementia. You compare classification accuracies and FID scores between the two generative approaches, replicating the paper's core empirical comparison.
+
+**Why it shows you understood the paper:** This project demonstrates your ability to implement advanced generative models, apply them to medical imaging, and validate their utility via downstream classification tasks, directly reflecting the paper's main contributions.
+
+**Grounded in:** Reimplements the paper's core method of comparing diffusion models and data-efficient GANs for synthetic MRI generation and validating with DenseNet classification accuracy.
+
+**Tech stack:** Python 3.11, PyTorch, timm (for DenseNet), numpy, scikit-learn
+
+**Data:** Use the Alzheimer's subset of the OASIS-1 MRI dataset as a substitute for the paper's Alzheimer's MRI data.
+
+**Build it:**
+
+1. Preprocess the Alzheimer's MRI dataset to prepare training and testing splits.
+2. Implement or adapt a diffusion model and a data-efficient GAN architecture for MRI image generation.
+3. Train both generative models separately on the Alzheimer's MRI training data.
+4. Generate synthetic MRI images from each trained model.
+5. Train DenseNet classifiers on the synthetic images from each model to classify dementia vs. non-dementia.
+6. Evaluate and compare classification accuracy and FID scores for both generative approaches.
+7. Write a detailed README documenting methodology, results, and comparison.
+
+**Ships as:** A GitHub repo with implementations of diffusion and data-efficient GAN models, DenseNet classifiers trained on synthetic images, evaluation scripts, and a report comparing results.
+
+**Stretch goal:** Add fine-tuning of generative models on a small Parkinson's MRI subset to explore transfer learning effects as in the paper.
+
+### Advanced — Develop a Data-Efficient Diffusion Model for Parkinson's MRI with Transfer Learning
+*Effort: 3+ weeks*
+
+You develop a novel data-efficient diffusion model variant aimed at reducing training time and computational cost, addressing the paper's limitation of slow diffusion model training. You pretrain on Alzheimer's MRI data (using a public substitute) and fine-tune on a small Parkinson's MRI-like dataset (simulated or public substitute). You evaluate synthetic image quality and downstream classification accuracy, extending the paper's future direction.
+
+**Why it shows you understood the paper:** This project shows deep comprehension of the paper's limitations and future directions by innovating on diffusion model efficiency and applying transfer learning to small Parkinson's datasets, potentially contributing novel insights.
+
+**Grounded in:** Targets the paper's stated limitation of diffusion model training time and the future direction of developing data-efficient diffusion models and fine-tuning on small Parkinson's datasets.
+
+**Tech stack:** Python 3.11, PyTorch, timm, numpy, scikit-learn, optuna (for hyperparameter tuning)
+
+**Data:** Use OASIS-1 Alzheimer's MRI data as pretraining data substitute; simulate or find a small Parkinson's MRI subset from public sources or create synthetic Parkinson's-like images for fine-tuning.
+
+**Build it:**
+
+1. Research and implement a data-efficient diffusion model variant (e.g., fewer diffusion steps, improved noise schedules).
+2. Pretrain the model on Alzheimer's MRI data substitute.
+3. Obtain or simulate a small Parkinson's MRI dataset substitute for fine-tuning.
+4. Fine-tune the pretrained diffusion model on the Parkinson's data.
+5. Generate synthetic Parkinson's MRI images and evaluate image quality with FID and classification accuracy using DenseNet.
+6. Compare results to baseline diffusion models without data efficiency improvements.
+7. Document methodology, experiments, and findings in a comprehensive README.
+
+**Ships as:** A GitHub repo containing the data-efficient diffusion model code, pretrained and fine-tuned weights, evaluation scripts, and a detailed report on efficiency gains and classification performance.
+
+**Stretch goal:** Integrate neural circuitry simulation data or models to explore multimodal generative approaches for personalized therapy as suggested in the paper's thoughtful question.

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-ajiang"
-source_hash: "c15eaeb7ff52892877bca0bb8345179d2c67c6c8425997f96522fce1e8cb1eac"
+source_hash: "30ccd39fbfaac7affef17cc4233fccea4eb5035b7dd2e973d26afd0e832cb609"
 sequence: 33
 generator: "outreach-garden: managed"
 ---
@@ -131,3 +131,89 @@ Stopping sets are problematic structures in LDPC code graphs that prevent succes
 ## Already in your library
 
 - [Lecture 13: LDPC Codes](https://www.youtube.com/watch?v=tB36bi8J0MA) — also for: Machine Learning and Algorithmic Techniques for Error Correction (Anxiao Andrew Jiang)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive learning path to demonstrate your understanding of the stopping set elimination (SSE) problem and collaborative decoding using natural redundancy in LDPC codes, as presented in the paper. Starting with a basic simulation of stopping sets and their elimination on tree-structured Tanner graphs, you then implement and evaluate the paper's core approximation algorithm for SSE1 on small LDPC codes. Finally, you extend the approach by exploring deep learning methods to enhance natural redundancy decoding, addressing one of the paper's key future directions.
+
+### Beginner — Stopping Set Elimination on LDPC Stopping Trees
+*Effort: a weekend, ~8 hours*
+
+You build a small Python simulation that constructs stopping trees derived from LDPC Tanner graphs and implements the exact linear-time algorithm for stopping set elimination (SSE∞) on these trees. The project visualizes the stopping tree, the stopping sets, and the elimination sets computed by the algorithm.
+
+**Why it shows you understood the paper:** This project shows you understand the structure of stopping sets in LDPC codes and the special-case exact algorithm for stopping trees, demonstrating comprehension of the paper's algorithmic contributions and complexity results.
+
+**Grounded in:** Exact linear-time algorithms for SSE∞ and SSEk with stopping trees (Section V.B and V.C)
+
+**Tech stack:** Python 3.11, matplotlib, networkx
+
+**Data:** You synthesize small LDPC Tanner graphs with tree-like stopping sets as input, since no public dataset is provided.
+
+**Build it:**
+
+1. Implement a function to generate small LDPC Tanner graphs with tree-structured stopping sets.
+2. Implement the exact linear-time SSE∞ algorithm for stopping trees as described in the paper.
+3. Visualize the Tanner graph, stopping sets, and the elimination sets using networkx and matplotlib.
+4. Write a README explaining the stopping set concept, the algorithm, and how the code corresponds to the paper.
+5. Test the implementation on multiple synthetic stopping trees and report runtime and correctness.
+
+**Ships as:** A GitHub repo with code to generate stopping trees, run the exact SSE∞ algorithm, visualize results, and a README linking the implementation to the paper's contribution.
+
+**Stretch goal:** Add support for SSEk algorithms with iteration constraints on stopping trees and compare results.
+
+### Intermediate — Approximation Algorithm for SSE1 on Small LDPC Codes
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement the paper's approximation algorithm for the SSE1 problem on small LDPC codes with known parameters (dv, dc). You simulate the stopping graphs from Tanner graphs, run the approximation algorithm, and compare its output size against a naive baseline (e.g., random erasure elimination). You report approximation ratios and runtime metrics.
+
+**Why it shows you understood the paper:** This project demonstrates your ability to translate the paper's core approximation algorithm into code, understand its theoretical guarantees, and empirically evaluate its performance on representative LDPC code structures.
+
+**Grounded in:** Development of an approximation algorithm for SSE1 with approximation ratio dv(dc - 1) (Section IV)
+
+**Tech stack:** Python 3.11, networkx, numpy, matplotlib
+
+**Data:** You synthesize small LDPC Tanner graphs with parameters dv and dc, simulating stopping graphs; no public dataset is available.
+
+**Build it:**
+
+1. Implement code to generate small LDPC Tanner graphs with configurable dv and dc.
+2. Construct the stopping graph from the Tanner graph as defined in the paper.
+3. Implement the approximation algorithm for SSE1 with ratio dv(dc - 1) following the paper's pseudocode.
+4. Implement a naive baseline algorithm for comparison (e.g., random selection of erasures).
+5. Run experiments comparing approximation algorithm vs baseline on multiple graphs, measuring elimination set size and runtime.
+6. Plot results and write a detailed README linking the implementation and results to the paper's claims.
+
+**Ships as:** A GitHub repo with code implementing the SSE1 approximation algorithm, baseline, experiments, plots, and a README explaining the connection to the paper.
+
+**Stretch goal:** Extend the implementation to handle p-cyclic stopping graphs and evaluate approximation ratios as per the paper's Section VI.
+
+### Advanced — Deep Learning Enhanced Natural Redundancy Decoding for SSE
+*Effort: 3+ weeks*
+
+You develop a prototype system that integrates a deep learning model to assist the NR-decoder in the collaborative decoding framework, aiming to reduce the number of erasures needing NR-decoding. You simulate or use small-scale LDPC codes and stopping graphs, and design a neural network to predict which bits to erase or decode to optimize stopping set elimination. You compare your approach against the paper's approximation algorithm baseline.
+
+**Why it shows you understood the paper:** This project tackles a key future direction from the paper by applying deep learning to enhance NR-decoding efficiency and accuracy, demonstrating your ability to extend theoretical algorithms with modern ML techniques and address practical system challenges.
+
+**Grounded in:** Future direction: Applying deep learning techniques to mine useful information from natural redundancy for ECC decoding (Concluding remarks)
+
+**Tech stack:** Python 3.11, PyTorch, numpy, networkx, matplotlib
+
+**Data:** Synthetic LDPC Tanner graphs and stopping graphs are generated; natural redundancy data is simulated or simplified due to lack of real NR datasets.
+
+**Build it:**
+
+1. Implement or reuse code to generate LDPC Tanner graphs and stopping graphs as in previous projects.
+2. Design a neural network model that takes graph features and partial decoding states as input and predicts erasure sets to minimize NR-decoding effort.
+3. Train the model on synthetic data generated from the stopping graphs with labels derived from the approximation algorithm outputs.
+4. Integrate the model into a collaborative decoding simulation combining ECC-decoder and NR-decoder steps.
+5. Evaluate the model's performance in reducing NR-decoded erasures compared to the approximation algorithm baseline.
+6. Document the system design, training procedure, evaluation results, and discuss limitations and future improvements.
+
+**Ships as:** A GitHub repo with code for graph generation, deep learning model, collaborative decoding simulation, evaluation scripts, and a comprehensive README linking the work to the paper's future directions.
+
+**Stretch goal:** Experiment with real natural redundancy data from text or image datasets to improve NR-decoder modeling.
+
+_The paper does not provide released code or datasets; all projects require synthetic data generation based on the paper's descriptions._

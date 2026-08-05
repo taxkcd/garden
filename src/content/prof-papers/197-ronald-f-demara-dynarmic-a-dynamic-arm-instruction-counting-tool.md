@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-ronald-f-demara"
-source_hash: "e7782ef83fb93c15f14a7df4c0454f3b629f2d763bd97c511f19b67735938484"
+source_hash: "2f9a6e4a7a37c620067a405685cb835af045cf8bff0c4c0f5de418670286e9f8"
 sequence: 197
 generator: "outreach-garden: managed"
 ---
@@ -121,3 +121,88 @@ This talk focuses on ARM instruction encoding and related challenges, providing 
 *How the paper uses it:* Understanding ARM instruction encoding is key to grasping how DynARMic categorizes instructions into energy and encoding format panels.
 
 ▶ [021 -  ARM instruction encoding](https://www.youtube.com/watch?v=v25uaUrSPSQ) — Open Teach Project · 4 years ago
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive ladder to demonstrate your understanding of DynARMic's dynamic ARMv7 instruction counting and profiling approach. The beginner project reproduces a core visualization of instruction category counts from assembly code execution, using your existing full-stack and Python skills. The intermediate project implements a simplified dynamic instruction profiler for ARMv7 assembly snippets, comparing instruction category counts to a static baseline, introducing emulation and instrumentation concepts. The advanced project extends the profiler to incorporate a first-order CPI estimation panel and explores integration of hardware-validated energy/timing data, addressing a key limitation and future direction of the paper.
+
+### Beginner — ARMv7 Instruction Category Counter Visualization
+*Effort: a weekend, ~8 hours*
+
+You build a web-based visualization that takes a small ARMv7 assembly code snippet, simulates instruction execution counts per the paper's five energy-related categories, and displays a bar chart of dynamic instruction counts by category. This reproduces the paper's core pedagogical output: dynamic instruction category breakdowns.
+
+**Why it shows you understood the paper:** This project shows you grasp the paper's key contribution of categorizing dynamic ARM instructions by energy-related types and presenting them visually for educational purposes.
+
+**Grounded in:** The tool classifies instructions into five energy-related categories and presents results in a dual-panel web interface.
+
+**Tech stack:** TypeScript, React, D3.js or Chart.js, Node.js
+
+**Data:** You simulate instruction counts from a small ARMv7 assembly snippet inspired by examples in the paper; no external dataset required.
+
+**Build it:**
+
+1. Select or write a small ARMv7 assembly snippet with loops and branches.
+2. Manually categorize each instruction into one of the five energy categories defined in the paper.
+3. Simulate dynamic instruction counts by unrolling loops and counting instructions executed.
+4. Build a React web app that displays a bar chart of instruction counts by category.
+5. Add explanatory text describing the categories and their significance for energy/performance.
+6. Deploy the app on a free platform like Vercel or Netlify.
+
+**Ships as:** A GitHub repo with a React app that visualizes dynamic instruction counts by energy category for a sample ARMv7 assembly snippet, with clear README explaining the categories and simulation approach.
+
+**Stretch goal:** Add interactivity to let users input their own ARMv7 snippets and see updated instruction category counts.
+
+### Intermediate — Simplified Dynamic ARMv7 Instruction Profiler
+*Effort: 1-2 weekends, ~20 hours*
+
+You implement a simplified dynamic instruction profiler for ARMv7 assembly code that uses an open-source ARM emulator (e.g., Unicorn Engine) to execute code snippets and dynamically count instructions by the paper's five energy categories. You compare dynamic counts to static instruction counts as a baseline and report the differences.
+
+**Why it shows you understood the paper:** This project demonstrates your ability to reimplement the paper's core dynamic profiling method using emulation and instruction classification, validating the importance of dynamic counts over static analysis.
+
+**Grounded in:** Develop a cross-platform, web-based dynamic instruction profiling tool using Keystone for assembly, Unicorn for emulation, and Capstone for disassembly. The tool classifies instructions into five energy-related categories.
+
+**Tech stack:** Python 3.11, Unicorn Engine, Capstone, Keystone, Flask or FastAPI, React
+
+**Data:** You use small ARMv7 assembly snippets you write yourself or from public ARMv7 tutorials; no external dataset is required.
+
+**Build it:**
+
+1. Set up Unicorn Engine to emulate ARMv7 code snippets.
+2. Use Keystone to assemble ARMv7 assembly snippets into machine code.
+3. Use Capstone to disassemble instructions during emulation and classify them into the five energy categories.
+4. Count dynamic instructions executed per category during emulation.
+5. Implement a simple web interface to input assembly, run profiling, and display dynamic vs static instruction counts.
+6. Write a README comparing dynamic and static counts and discussing implications for energy/performance.
+
+**Ships as:** A GitHub repo with a Python backend and React frontend that dynamically profiles ARMv7 assembly snippets by instruction category and compares dynamic counts to static counts, with documentation.
+
+**Stretch goal:** Add support for the eight ARMv7 encoding formats panel to estimate CPI as in the paper.
+
+### Advanced — Extended DynARMic Profiler with CPI Estimation and Hardware Validation Interface
+*Effort: 3-4 weeks*
+
+You extend the simplified dynamic ARMv7 profiler to include the paper's second panel classifying instructions by eight ARMv7 encoding formats for CPI estimation. You integrate a configurable interface to input hardware-validated energy and timing measurements (simulated or from literature) to improve accuracy of energy and CPI estimates. This addresses the paper's limitation and future direction of hardware validation and CPI estimation.
+
+**Why it shows you understood the paper:** This project shows deep comprehension of the paper's dual-panel profiling approach, its limitations, and how to bridge the gap toward hardware-validated energy and timing analysis, potentially starting a research conversation.
+
+**Grounded in:** An encoding format panel classifying instructions into eight ARMv7 machine encoding formats to support CPI estimation. Future work includes hardware validation of energy and timing measurements using a Zedboard Cortex-A9 platform.
+
+**Tech stack:** Python 3.11, Unicorn Engine, Capstone, Keystone, FastAPI, React, Docker
+
+**Data:** You use ARMv7 assembly snippets and literature-informed energy/CPI reference values from the paper; hardware measurements are simulated or approximated.
+
+**Build it:**
+
+1. Extend the emulator instrumentation to classify instructions into eight ARMv7 encoding formats using Capstone.
+2. Implement CPI estimation by multiplying instruction counts by reference CPI values per encoding format.
+3. Create a UI panel displaying both energy category counts and CPI estimates side-by-side.
+4. Add a configuration interface to input or upload hardware-validated energy and timing data (initially literature-based).
+5. Containerize the full stack app with Docker for easy deployment.
+6. Document how hardware validation data can be integrated and discuss challenges in extending to NEON/SIMD instructions.
+
+**Ships as:** A full-featured GitHub repo with a dual-panel dynamic ARMv7 profiler supporting energy and CPI estimation, configurable hardware data input, and detailed README discussing limitations and future directions.
+
+**Stretch goal:** Collaborate with hardware lab to incorporate real PMU and power measurement data from a Zedboard Cortex-A9 platform.

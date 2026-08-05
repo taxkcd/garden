@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-xianfeng-david-gu"
-source_hash: "162ae111def7de8bbfee4203d3a7d7bc9e2f61c0069cb2ed06fbd693813ffcb5"
+source_hash: "1a3fc3054866fa5145e7b5be706008d2512c2fe168e6798eedaa0c14d675445f"
 sequence: 56
 generator: "outreach-garden: managed"
 ---
@@ -140,3 +140,85 @@ This concept interprets deep learning as learning the geometry and topology of d
 ## Already in your library
 
 - [A Geometric Understanding of Deep Learning](https://www.youtube.com/watch?v=OEQua1WASyM) — also for: Geometric Understanding of Deep Learning (Xianfeng David Gu)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder to demonstrate understanding of the paper "Geometric Understanding of Deep Learning." The beginner project focuses on visualizing and computing rectified linear complexity for simple ReLU networks and manifolds, the intermediate project implements a simplified Autoencoder-Optimal Mass Transportation (AE-OMT) model on MNIST to reproduce core generative modeling results, and the advanced project extends the framework by exploring architectural or training modifications to overcome topological constraints for encoding complex manifolds, addressing a key limitation and future direction of the paper.
+
+### Beginner — Visualizing Rectified Linear Complexity of ReLU Networks
+*Effort: a weekend, ~8 hours*
+
+You build a small Python notebook that constructs simple ReLU networks with varying architectures and visualizes their piecewise linear function approximations on 2D synthetic manifolds (e.g., curves or surfaces). You compute and plot the upper bound on the number of linear pieces (rectified linear complexity) as a function of network depth and width, illustrating the paper's complexity metric.
+
+**Why it shows you understood the paper:** This project concretely demonstrates the concept of rectified linear complexity and its dependence on network architecture, showing you grasp the paper's key theoretical contribution linking ReLU network capacity to manifold complexity.
+
+**Grounded in:** Introduced rectified linear complexity to measure DNN learning capacity.
+
+**Tech stack:** Python 3.11, NumPy, Matplotlib, Jupyter Notebook
+
+**Data:** Synthetic 2D manifolds such as parametric curves or surfaces generated in code; no external dataset needed.
+
+**Build it:**
+
+1. Implement a simple ReLU network function that partitions input space into linear regions.
+2. Generate synthetic 2D manifold data (e.g., a sine curve or a spiral).
+3. Calculate the theoretical upper bound of linear pieces for given network architectures.
+4. Visualize the piecewise linear approximations of the network on the manifold.
+5. Plot how complexity scales with network depth and width.
+
+**Ships as:** A Jupyter notebook with visualizations and calculations showing rectified linear complexity for simple ReLU networks approximating 2D manifolds.
+
+**Stretch goal:** Add interactive widgets to vary network parameters and see real-time complexity changes.
+
+### Intermediate — Reimplementing AE-OMT Generative Model on MNIST
+*Effort: 2 weekends, ~20 hours*
+
+You implement an autoencoder combined with an optimal mass transportation (OMT) map in the latent space to generate MNIST digit images. You train the autoencoder with ReLU activations, then learn the OMT map to transform a simple latent distribution (e.g., Gaussian) to the encoded data distribution, reproducing the paper's core generative modeling approach and comparing image quality to a vanilla VAE baseline.
+
+**Why it shows you understood the paper:** This project shows you understand the paper's novel application of optimal mass transportation theory to control latent space distributions explicitly, and how this improves generative modeling beyond standard methods.
+
+**Grounded in:** Developed an Autoencoder-Optimal Mass Transportation (AE-OMT) model that generates higher quality images than VAE and WGAN on MNIST and CelebA datasets.
+
+**Tech stack:** Python 3.11, PyTorch, NumPy, Matplotlib, Jupyter Notebook
+
+**Data:** MNIST handwritten digits dataset, a well-known public dataset used as a substitute for the paper's experiments.
+
+**Build it:**
+
+1. Implement a ReLU-based autoencoder architecture and train it on MNIST.
+2. Encode the training data into the latent space using the trained encoder.
+3. Implement an optimal mass transportation algorithm (e.g., Sinkhorn iterations) to learn the transport map from a Gaussian latent prior to the encoded data distribution.
+4. Generate new samples by applying the transport map to Gaussian samples and decoding them.
+5. Compare generated images qualitatively and quantitatively (e.g., reconstruction error, visual fidelity) against a vanilla VAE baseline.
+
+**Ships as:** A PyTorch project with training scripts, generation code, and a report comparing AE-OMT generated images to VAE outputs on MNIST.
+
+**Stretch goal:** Extend the model to CelebA dataset or implement Wasserstein distance metrics for evaluation.
+
+### Advanced — Overcoming Topological Constraints in ReLU Autoencoders
+*Effort: 3+ weeks*
+
+You design and experiment with modified autoencoder architectures or training methods to encode data manifolds with complex topologies beyond genus-zero surfaces, addressing the paper's limitation on topological constraints. This may include incorporating skip connections, multiple latent charts, or topological regularization. You evaluate encoding quality on synthetic manifolds with known complex topology and analyze how architectural changes affect the rectified linear complexity and encoding fidelity.
+
+**Why it shows you understood the paper:** This project tackles a key limitation and future direction from the paper, demonstrating deep comprehension of the geometric and topological challenges in deep learning manifold encoding and proposing concrete engineering solutions.
+
+**Grounded in:** Topological constraints limit the types of manifolds that can be encoded, restricting applicability to complex data topologies.
+
+**Tech stack:** Python 3.11, PyTorch, NumPy, Matplotlib, Jupyter Notebook
+
+**Data:** Synthetic datasets representing manifolds with complex topology (e.g., torus, double torus) generated programmatically.
+
+**Build it:**
+
+1. Generate synthetic datasets representing manifolds with complex topologies (e.g., torus).
+2. Implement baseline ReLU autoencoder and measure encoding quality and topological preservation.
+3. Design architectural modifications (e.g., multi-chart latent spaces, skip connections) or training regularizers to relax topological constraints.
+4. Train modified autoencoders and evaluate improvements in encoding fidelity and topological correctness.
+5. Analyze how changes affect rectified linear complexity and discuss implications.
+
+**Ships as:** A research-style report and codebase demonstrating attempts to overcome topological constraints in ReLU autoencoders with experimental results on synthetic complex manifolds.
+
+**Stretch goal:** Apply the approach to real-world datasets with complex topology or explore integration with optimal mass transportation for latent space control.

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-xinghua-mindy-shi"
-source_hash: "cc0d56154ef8b51fbb5e3dd40dc66b5b527754029fa576f03341e647740919cc"
+source_hash: "c73232711ab89dfb4e46a1a8d55a0cac3164f7c38f762dcb96ad01b6b7468aca"
 sequence: 148
 generator: "outreach-garden: managed"
 ---
@@ -98,3 +98,88 @@ Hyperbolic geometry describes spaces with constant negative curvature, which nat
 *How the paper uses it:* HyperEvoGen uses hyperbolic geometry to embed protein sequences, preserving hierarchical evolutionary relationships in the latent space.
 
 ▶ [Hyperbolic Geometry: The Mind-Bending World of Non-Euclidean Space](https://www.youtube.com/watch?v=K8qv--2l54Q) — eduvids · 4 months ago
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive learning path to demonstrate understanding of HyperEvoGen's key innovations. The beginner project focuses on reproducing a core visualization of hyperbolic embeddings preserving evolutionary hierarchy. The intermediate project involves reimplementing the core hyperbolic variational autoencoder method on a simplified dataset and benchmarking ancestral sequence reconstruction accuracy against a baseline. The advanced project extends the model to incorporate uncertainty in ancestral reconstruction by sampling multiple latent geodesic points, addressing a stated limitation and opening a path for research discussion.
+
+### Beginner — Visualize Hyperbolic Embeddings of Protein Sequences
+*Effort: a weekend, ~8 hours*
+
+You build a small Python notebook that simulates or loads a small set of protein sequences and embeds them into a 2D Poincaré ball using a simple hyperbolic embedding method. Then you visualize the embeddings with matplotlib, showing how hierarchical relationships can be represented in hyperbolic space compared to Euclidean embeddings.
+
+**Why it shows you understood the paper:** This project demonstrates you understand the core idea of using hyperbolic geometry to represent hierarchical evolutionary relationships, a foundational concept of HyperEvoGen.
+
+**Grounded in:** Introduction of a hyperbolic latent space (Poincaré ball) for protein sequence embedding to naturally represent hierarchical evolutionary relationships.
+
+**Tech stack:** Python 3.11, NumPy, matplotlib, scipy
+
+**Data:** Use a small synthetic set of protein sequences or short simulated sequences representing a simple hierarchy; no real dataset required.
+
+**Build it:**
+
+1. Generate or collect a small set (~20) of synthetic protein sequences arranged in a simple hierarchical tree structure.
+2. Implement or use a basic hyperbolic embedding method (e.g., Poincaré embeddings) to embed sequences into 2D hyperbolic space.
+3. Also embed the same sequences into 2D Euclidean space using a simple method like PCA or t-SNE on sequence features.
+4. Visualize both embeddings side-by-side with matplotlib, highlighting hierarchical clusters and distances.
+5. Write a README explaining how hyperbolic embeddings better preserve hierarchy compared to Euclidean embeddings.
+
+**Ships as:** A Jupyter notebook with code and plots comparing hyperbolic vs Euclidean embeddings of synthetic protein sequences, plus a README explaining the biological relevance.
+
+**Stretch goal:** Add interactive visualization (e.g., with Plotly) to explore embedding distances and hierarchical relationships dynamically.
+
+### Intermediate — Reimplement HyperEvoGen Core VAE and Benchmark Ancestral Reconstruction
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement the core hyperbolic variational autoencoder architecture described in the paper, including the Poincaré ball latent space and compound loss terms (reconstruction, adversarial, covariance matching, divergence correlation). You train it on a small simulated protein sequence dataset (e.g., Potts model simulated or a public protein family alignment substitute) and benchmark ancestral sequence reconstruction accuracy against a simple maximum-likelihood baseline.
+
+**Why it shows you understood the paper:** This project shows you can translate the paper's core method into code, understand the compound loss design, and reproduce key results on ancestral reconstruction accuracy, demonstrating deep comprehension of the model and evaluation.
+
+**Grounded in:** Development of a generative ancestral sequence reconstruction method using latent space geodesic interpolation, avoiding explicit substitution models.
+
+**Tech stack:** Python 3.11, PyTorch, NumPy, scikit-learn, matplotlib
+
+**Data:** Use a small synthetic dataset simulated from a Potts model on a single Pfam family or a public protein multiple sequence alignment as a substitute.
+
+**Build it:**
+
+1. Implement a variational autoencoder with a hyperbolic latent space (Poincaré ball) in PyTorch.
+2. Incorporate the compound loss function: reconstruction loss, adversarial loss (using a simple discriminator), covariance matching loss, and divergence correlation loss.
+3. Simulate or obtain a small protein sequence dataset with known phylogeny (e.g., Potts model simulation or a public MSA).
+4. Train the model on the dataset and embed sequences into latent space.
+5. Implement ancestral sequence reconstruction by interpolating along hyperbolic geodesics between latent embeddings of observed sequences.
+6. Compare reconstruction accuracy against a simple maximum-likelihood ancestral reconstruction baseline using standard metrics.
+7. Plot and report results showing improved accuracy at moderate to deep divergences.
+
+**Ships as:** A PyTorch codebase with training scripts, evaluation notebooks comparing ancestral reconstruction accuracy, and a README documenting methods and results.
+
+**Stretch goal:** Add visualization of latent space geodesics and ancestral sequence diversity to better illustrate generative reconstruction.
+
+### Advanced — Bayesian Sampling of Ancestral States Along Hyperbolic Geodesics
+*Effort: 3+ weeks, ~60 hours*
+
+You extend the HyperEvoGen ancestral reconstruction method by implementing a Bayesian approach that samples multiple plausible ancestral latent states along geodesic paths in the hyperbolic latent space instead of using a single midpoint. You quantify uncertainty in ancestral reconstructions and evaluate how sampling affects reconstruction accuracy and biological interpretability.
+
+**Why it shows you understood the paper:** This project addresses a key limitation and future direction of the paper, demonstrating your ability to innovate beyond the original method and engage with open research questions in evolutionary modeling and uncertainty quantification.
+
+**Grounded in:** The ancestral reconstruction uses a single geodesic midpoint without modeling uncertainty or alternative evolutionary paths.
+
+**Tech stack:** Python 3.11, PyTorch, NumPy, Pyro or another probabilistic programming library, matplotlib
+
+**Data:** Use the same synthetic Potts model simulated dataset or a public protein family MSA substitute as in the intermediate project.
+
+**Build it:**
+
+1. Build on your intermediate HyperEvoGen implementation with hyperbolic latent space and ancestral reconstruction.
+2. Implement a Bayesian framework (e.g., using Pyro) to sample multiple latent points along the geodesic path between observed sequence embeddings.
+3. Generate multiple ancestral sequence reconstructions from these sampled latent points using the decoder.
+4. Quantify uncertainty by analyzing sequence diversity and posterior probabilities of sampled ancestors.
+5. Evaluate reconstruction accuracy compared to single-point geodesic midpoint reconstruction and maximum-likelihood methods.
+6. Visualize uncertainty and discuss implications for biological interpretability and evolutionary inference.
+
+**Ships as:** An extended codebase and analysis notebook demonstrating Bayesian ancestral sampling, uncertainty quantification, and comparative accuracy, with a detailed README discussing methodology and biological relevance.
+
+**Stretch goal:** Incorporate this Bayesian ancestral reconstruction into a phylogenetic tree inference pipeline to test impact on tree topology and branch length estimation.

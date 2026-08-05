@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-anne-r-haake"
-source_hash: "7a669ad0370748335885ce3401d7258ee78eafe2c80798d240b3bee129fad438"
+source_hash: "5d6a3347d36071313cec23a77699834b6854be7fb5b83ee28773a2311ad0ad7f"
 sequence: 102
 generator: "outreach-garden: managed"
 ---
@@ -140,3 +140,88 @@ Higher-order graph convolution extends traditional graph convolution by aggregat
 - [An Introduction to Graph Neural Networks](https://www.youtube.com/watch?v=aFnHYEv71U4) — also for: A Survey of AI-Based Anomaly Detection in IoT and Sensor Networks (Marco Álvarez)
 - [MedAI #76: Multimodal learning with graphs for biomedical ...](https://www.youtube.com/watch?v=CWOCDnNvPhg) — also for: Applying Artificial Intelligence and machine learning in precision nutrition (Haym Hirsh)
 - [Knowledge Graph Completion using Embeddings KGC 2023](https://www.youtube.com/watch?v=PZua6Rwtp8I) — also for: Implementing Tensor Logic: Unifying Datalog and Neural Reasoning via Tensor Contraction (Wlodek Zadrozny)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive learning path to demonstrate understanding of the HOGCN paper. The beginner project reproduces a core mechanism of higher-order neighborhood aggregation on a small synthetic graph, the intermediate project implements the HOGCN model from scratch and evaluates it on a public biomedical interaction dataset against a baseline, and the advanced project extends the model by integrating additional biomedical features to address a stated limitation and explores interpretability techniques.
+
+### Beginner — Higher-Order Neighborhood Aggregation on a Small Graph
+*Effort: a weekend, ~8 hours*
+
+You build a simple Python notebook that constructs a small synthetic biomedical interaction graph and implements the higher-order graph convolutional layer concept by aggregating node features from neighbors up to 3 hops away. You visualize how node representations change when including neighbors at increasing distances.
+
+**Why it shows you understood the paper:** This project shows you grasp the core idea of HOGCN's higher-order neighborhood aggregation mechanism and its effect on node embeddings, a key contribution of the paper.
+
+**Grounded in:** Proposed HOGCN model that aggregates features from higher-order neighbors for biomedical interaction prediction.
+
+**Tech stack:** Python 3.11, Jupyter Notebook, NumPy, NetworkX, Matplotlib
+
+**Data:** Synthetic small graph with nodes representing biomedical entities and edges representing interactions, created within the notebook.
+
+**Build it:**
+
+1. Create a small synthetic graph with nodes and edges representing biomedical entities and interactions using NetworkX.
+2. Assign simple one-hot or random initial features to nodes.
+3. Implement a function to aggregate features from neighbors at distances 1 to 3 hops.
+4. Combine aggregated features linearly to produce updated node embeddings.
+5. Visualize node embeddings with and without higher-order neighbor aggregation using dimensionality reduction (e.g., PCA or t-SNE).
+6. Write a README explaining the implementation and how it relates to the HOGCN higher-order convolution.
+
+**Ships as:** A Jupyter notebook and README demonstrating higher-order neighborhood aggregation on a small graph, with visualizations showing embedding changes.
+
+**Stretch goal:** Add a simple bilinear decoder to reconstruct edges from learned embeddings and evaluate reconstruction quality on the synthetic graph.
+
+### Intermediate — Reimplementing HOGCN on a Public Biomedical Interaction Dataset
+*Effort: 2 weekends, ~20 hours*
+
+You implement the HOGCN model from the paper using PyTorch or PyTorch Geometric, including the higher-order graph convolutional layers and bilinear decoder. You train and evaluate it on a publicly available biomedical interaction dataset (e.g., a protein-protein interaction subset from STRING or Drug-Drug Interaction data from DrugBank) and compare performance (AUPRC) against a simple baseline like GCN or node2vec embeddings.
+
+**Why it shows you understood the paper:** This project demonstrates your ability to faithfully reimplement the paper's core method and reproduce its key metric improvements, showing deep comprehension of the model architecture and training procedure.
+
+**Grounded in:** Develop an end-to-end trainable deep learning framework (HOGCN) that uses higher-order graph convolutional layers to aggregate and linearly mix feature representations from neighbors at various distances (up to k-hop neighborhoods). The model employs a bilinear decoder to reconstruct interaction edges and is trained using binary cross-entropy loss on known interaction networks.
+
+**Tech stack:** Python 3.11, PyTorch, PyTorch Geometric, scikit-learn, Jupyter Notebook
+
+**Data:** A publicly available biomedical interaction dataset such as a subset of the STRING PPI network or DrugBank DDI data, used as a substitute for the paper's datasets.
+
+**Build it:**
+
+1. Select and preprocess a public biomedical interaction dataset to create a graph with node features (one-hot encoding) and known edges.
+2. Implement the higher-order graph convolutional layer that aggregates features from neighbors up to k hops and learns linear mixing weights.
+3. Implement the bilinear decoder to reconstruct edges from node embeddings.
+4. Train the HOGCN model with binary cross-entropy loss on the known interactions.
+5. Implement a baseline model (e.g., standard GCN or node2vec embeddings with logistic regression) for comparison.
+6. Evaluate both models using AUPRC and report results in a README with discussion.
+
+**Ships as:** A GitHub repo with code to train and evaluate HOGCN and a baseline on a biomedical interaction dataset, including scripts, notebooks, and a report comparing performance.
+
+**Stretch goal:** Experiment with different neighborhood orders k and analyze their impact on performance and training time.
+
+### Advanced — Extending HOGCN with Biomedical Features and Interpretability
+*Effort: 3+ weeks*
+
+You extend the HOGCN model by integrating additional biomedical features such as physicochemical properties or pre-trained embeddings (e.g., drug molecular fingerprints or protein sequence embeddings) as initial node features. You also implement an interpretability method to identify influential subgraphs or neighbors contributing to specific interaction predictions. You evaluate the extended model on a biomedical interaction dataset and analyze improvements and interpretability insights.
+
+**Why it shows you understood the paper:** This project tackles a stated limitation and future direction of the paper, showing you can innovate beyond the original work by enhancing feature representation and adding interpretability, which are critical for biomedical applications.
+
+**Grounded in:** The model currently uses one-hot encoding as initial features and does not integrate additional biomedical properties or physicochemical data. The interpretability of predictions is limited; explanations for predictions are not provided but suggested as future work.
+
+**Tech stack:** Python 3.11, PyTorch, PyTorch Geometric, RDKit (for chemical features), scikit-learn, Jupyter Notebook
+
+**Data:** A public biomedical interaction dataset with available entity metadata (e.g., DrugBank with drug molecular structures or UniProt with protein sequences) to extract additional features.
+
+**Build it:**
+
+1. Collect or preprocess additional biomedical features for entities in the dataset (e.g., molecular fingerprints for drugs using RDKit, or protein embeddings).
+2. Modify the HOGCN model to accept and integrate these richer initial node features instead of simple one-hot encodings.
+3. Implement or adapt an interpretability method such as GNNExplainer or integrated gradients to identify influential neighbors or subgraphs for specific predictions.
+4. Train and evaluate the extended model on the dataset, comparing performance and calibration to the baseline HOGCN.
+5. Analyze interpretability results and document case studies showing how additional features and explanations improve trustworthiness.
+6. Write a comprehensive README detailing the extension, experiments, and insights.
+
+**Ships as:** A GitHub repository with extended HOGCN code, feature extraction scripts, interpretability tools, evaluation results, and detailed documentation.
+
+**Stretch goal:** Apply the extended model to a different biomedical interaction prediction task (e.g., gene-disease instead of drug-drug) to test generalization.

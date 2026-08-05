@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-anh-nguyen"
-source_hash: "1cd82af48771f8b3f14a3a477357eb34dd485338225b4bca5de9d4624d58e8b7"
+source_hash: "06aeb4380e20a53ca257595548885fc793a2265dc00133651abdab6ed6b9fbe3"
 sequence: 170
 generator: "outreach-garden: managed"
 ---
@@ -120,3 +120,96 @@ Explainable AI interactive interfaces provide users with dynamic, visual, and na
 *How the paper uses it:* The core contribution of the paper is the design and evaluation of three interactive explanation formats that improve interpretability and usability of LLM reasoning.
 
 ▶ [Interactive Explanation Interfaces for Verifying LLM Reasoning](https://www.youtube.com/watch?v=_AVPUMP4jiY) — Aikyam Lab · 9 months ago
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive ladder to demonstrate your understanding of the paper "Improving Human Verification of LLM Reasoning through Interactive Explanation Interfaces." The beginner project reproduces a core user interaction feature from the paper's interactive Chain-of-Thought (iCoT) interface to grasp the basics of interactive explanation design. The intermediate project builds on the authors' released code to replicate and compare verification accuracy metrics between traditional and interactive explanation formats. The advanced project extends the paper by applying interactive explanation interfaces to a new domain, addressing a stated future direction and exploring domain adaptation challenges.
+
+### Beginner — Interactive Chain-of-Thought Explanation Viewer
+*Effort: a weekend, ~8 hours*
+
+You build a simple web-based interactive viewer that presents a chain-of-thought explanation for a math problem with step-by-step navigation controls and color-coded variable highlights. This mimics the iCoT interface's dual-panel layout and interaction style to reduce cognitive load and improve comprehension.
+
+**Why it shows you understood the paper:** This project shows you understand the paper's core design principles for interactive explanations, including stepwise navigation and visual variable cues that help users verify LLM reasoning more effectively than static text.
+
+**Grounded in:** Introduction of three interactive explanation formats (iCoT, iPoT, iGraph) that improve interpretability and usability of LLM reasoning.
+
+**Tech stack:** React, TypeScript, CSS
+
+**Data:** Use a small set of chain-of-thought math problem explanations synthesized from examples in the paper's Appendix A or from GSM8K public dataset as a substitute.
+
+**Build it:**
+
+1. Create a React app with a dual-panel layout: left panel for problem statement, right panel for stepwise explanation.
+2. Implement step navigation controls (Next, Previous) to reveal one reasoning step at a time.
+3. Add color-coded highlights for variables and intermediate results consistent across steps.
+4. Populate the viewer with a few example CoT explanations from GSM8K or paper appendix.
+5. Style the interface for clarity and ease of use.
+
+**Ships as:** A GitHub repo with a React app demonstrating an interactive CoT explanation viewer, README explaining design choices linking to the paper's iCoT format.
+
+**Stretch goal:** Add user interaction logging to track step navigation behavior and visualize it.
+
+### Intermediate — Replication of Interactive Explanation Verification Accuracy
+*Effort: 2 weekends, ~20 hours*
+
+You clone and run the authors' released codebase from https://github.com/Runtaozhou/Interactive-CoT to reproduce the verification accuracy results comparing traditional CoT and interactive formats (iCoT, iPoT, iGraph). You then implement a simple baseline comparison by disabling interactivity in one format and report verification accuracy and error localization metrics.
+
+**Why it shows you understood the paper:** By running and extending the authors' code, you demonstrate comprehension of their experimental setup, metrics, and the impact of interactivity on human verification performance, directly replicating key results from the paper.
+
+**Grounded in:** A large-scale controlled user study demonstrating that interactive explanations significantly improve verification accuracy and error localization compared to traditional CoT.
+
+**Tech stack:** Python 3.11, React, Node.js, TypeScript
+
+**Data:** Use the authors' dataset with GSM8K math problems and injected errors as provided or simulated within the Interactive-CoT repository.
+
+**Build it:**
+
+1. Clone https://github.com/Runtaozhou/Interactive-CoT and set up the environment per the README.
+2. Run the interactive explanation interfaces and baseline traditional CoT to collect verification accuracy and error localization metrics.
+3. Modify one interactive format to disable interactivity (e.g., static display) to create a simple baseline.
+4. Compare metrics between interactive and non-interactive versions and visualize results.
+5. Document findings in a report linking back to the paper's figures (e.g., Fig. 5 and Fig. 6).
+
+**Verified links from the paper:**
+
+- <https://github.com/Runtaozhou/Interactive-CoT> — released by the paper's authors
+
+**Ships as:** A GitHub repo with code modifications, scripts to run experiments, and a README/report reproducing verification accuracy results and baseline comparison.
+
+**Stretch goal:** Add user interaction logging analysis to correlate interaction patterns with verification accuracy.
+
+### Advanced — Interactive Explanation Interfaces for Spreadsheet Formula Verification
+*Effort: 3+ weeks*
+
+You design and implement an interactive explanation interface inspired by iGraph or iCoT formats to help users verify LLM-generated reasoning for spreadsheet formula problems. This addresses the paper's future direction of applying interactive explanation design principles to domains like spreadsheet analysis. You conduct a small user study with peers to evaluate verification accuracy and user preference compared to static explanations.
+
+**Why it shows you understood the paper:** This project extends the paper's methodology to a new domain, demonstrating your ability to adapt interactive explanation designs and evaluate their effectiveness, addressing a stated limitation and future direction in the paper.
+
+**Grounded in:** Applying interactive explanation design principles to other domains requiring human verification of LLM reasoning, such as medical diagnosis or spreadsheet analysis.
+
+**Tech stack:** React, TypeScript, Python 3.11, FastAPI
+
+**Data:** Use a small curated set of spreadsheet formula problems and LLM-generated chain-of-thought explanations, either synthesized or adapted from public spreadsheet formula datasets.
+
+**Build it:**
+
+1. Collect or synthesize a dataset of spreadsheet formula problems with LLM-generated reasoning steps.
+2. Design an interactive explanation interface (e.g., graph-based or stepwise) tailored to spreadsheet formulas, inspired by iGraph or iCoT.
+3. Implement the interface as a React frontend with a Python/FastAPI backend serving explanations.
+4. Recruit a small group of users to perform verification tasks comparing your interactive interface to static text explanations.
+5. Analyze verification accuracy, error localization, and subjective user feedback.
+6. Document the design, evaluation, and insights linking back to the paper's recommendations.
+
+**Verified links from the paper:**
+
+- <https://github.com/Runtaozhou/Interactive-CoT> — released by the paper's authors
+
+**Ships as:** A GitHub repo with full-stack code, a small user study dataset, analysis scripts, and a detailed README/report discussing adaptation challenges and evaluation results.
+
+**Stretch goal:** Incorporate adaptive interaction features to balance cognitive load based on user behavior.
+
+_The authors' released code and dataset at https://github.com/Runtaozhou/Interactive-CoT should be verified for completeness and ease of setup before starting the intermediate and advanced projects._

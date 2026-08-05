@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-krzysztof-j-kochut"
-source_hash: "f2b553cf7cfbdd578991137e515c601f298dafbbf80bdfd4f83e5ab4b428bf01"
+source_hash: "1b798225f8e280832d57f58d2a840978f1033b775ae3f5659e5e4611c5f50505"
 sequence: 84
 generator: "outreach-garden: managed"
 ---
@@ -130,3 +130,88 @@ Benchmarks and evaluation metrics provide standardized ways to measure and compa
 ## Already in your library
 
 - [Knowledge Graph Completion using Embeddings KGC 2023](https://www.youtube.com/watch?v=PZua6Rwtp8I) — also for: Implementing Tensor Logic: Unifying Datalog and Neural Reasoning via Tensor Contraction (Wlodek Zadrozny)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive ladder to demonstrate your understanding of the paper's core method and its limitations. The beginner project replicates the paper's key idea of relation prediction using node names with a simple model and dataset. The intermediate project involves reimplementing the paper's Llama 2 fine-tuning approach on a smaller public knowledge graph dataset, comparing performance to a baseline. The advanced project extends the method by incorporating entity descriptions to address a stated limitation, exploring improved inductive relation prediction with minimal computational overhead.
+
+### Beginner — Simple Relation Prediction Using Node Names
+*Effort: a weekend, ~8 hours*
+
+You build a small-scale relation prediction model that uses only node names as input features to predict relations between node pairs in a toy knowledge graph. This project implements a basic multi-label classifier (e.g., logistic regression or small neural network) on a synthetic or small subset of a public KG dataset, focusing on the inductive setting where some nodes are unseen during training.
+
+**Why it shows you understood the paper:** This project shows you grasp the paper's core insight that relation prediction can be done using minimal textual information (node names) and that inductive relation prediction is feasible without full graph structure or descriptions.
+
+**Grounded in:** The model uses only node names as input enabling inductive relation prediction.
+
+**Tech stack:** Python 3.11, scikit-learn, pandas, Jupyter Notebook
+
+**Data:** Use a small synthetic knowledge graph or a publicly available subset of FreeBase or WordNet with node names only; simulate inductive splits by holding out some nodes.
+
+**Build it:**
+
+1. Prepare a small dataset of node pairs with their node names and known relations.
+2. Split the dataset into training and inductive test sets with unseen nodes in test.
+3. Extract simple text features from node names (e.g., TF-IDF vectors).
+4. Train a multi-label classifier to predict relations from concatenated node name features.
+5. Evaluate using metrics like Hits@1 or mean reciprocal rank on the inductive test set.
+6. Document the setup, results, and limitations in a README.
+
+**Ships as:** A Jupyter notebook and README showing a working relation prediction model using only node names, with evaluation on inductive splits.
+
+**Stretch goal:** Add simple baseline comparisons using random or majority-class predictions to contextualize results.
+
+### Intermediate — Reimplement Llama 2 Fine-Tuning for Relation Prediction
+*Effort: 1-3 weekends, ~20 hours*
+
+You reimplement the paper's core method of fine-tuning a smaller Llama 2 model (7B parameters or smaller open LLM) on node names only for relation prediction on a public knowledge graph benchmark such as a subset of FreeBase or WordNet. You compare your model's performance against a simple baseline like TransE or DistMult embeddings on the same data and report metrics like mean reciprocal rank and Hits@1.
+
+**Why it shows you understood the paper:** This project demonstrates you can reproduce the paper's main approach and evaluation methodology, showing comprehension of fine-tuning LLMs for multi-label classification in inductive KG completion settings.
+
+**Grounded in:** Fine-tune the Llama 2 large language model using only the textual node names as input for a multi-label sequence classification task to predict relations between node pairs.
+
+**Tech stack:** Python 3.11, PyTorch, transformers (Hugging Face), datasets, scikit-learn
+
+**Data:** Use publicly available subsets of FreeBase or WordNet knowledge graphs with node names; simulate inductive splits by holding out nodes unseen during training.
+
+**Build it:**
+
+1. Prepare the dataset with node pairs and their node names, and corresponding relation labels.
+2. Implement data preprocessing to format inputs as sequences of concatenated node names.
+3. Fine-tune a smaller open LLM (e.g., Llama 2 7B or similar) on the multi-label relation prediction task.
+4. Implement a baseline model (e.g., TransE or DistMult) for comparison.
+5. Evaluate both models on inductive test splits using mean reciprocal rank and Hits@1.
+6. Write a detailed report comparing your results to the paper's reported metrics.
+
+**Ships as:** A GitHub repository with code to fine-tune an LLM for relation prediction, baseline implementations, evaluation scripts, and a README documenting results and methodology.
+
+**Stretch goal:** Experiment with different input encodings or prompt templates to improve inductive performance.
+
+### Advanced — Incorporate Entity Descriptions to Improve Inductive Relation Prediction
+*Effort: a few weeks, ~40+ hours*
+
+You extend the paper's method by integrating entity descriptions (textual descriptions of nodes) alongside node names as input to the LLM fine-tuning process. This addresses the paper's stated limitation about not using descriptions and aims to improve inductive relation prediction performance with minimal additional computational cost. You evaluate on the same benchmark datasets and compare results to the original node-name-only model.
+
+**Why it shows you understood the paper:** This project shows you can critically engage with the paper's limitations and future directions, applying your engineering and ML skills to extend the method and empirically test improvements, which is a genuine research contribution.
+
+**Grounded in:** Does not utilize node descriptions or relation text, which could improve performance.
+
+**Tech stack:** Python 3.11, PyTorch, transformers (Hugging Face), datasets, scikit-learn
+
+**Data:** Use FreeBase or WordNet subsets enriched with entity descriptions from public sources or dataset metadata; simulate inductive splits as before.
+
+**Build it:**
+
+1. Collect or extract textual descriptions for entities in the dataset.
+2. Modify data preprocessing to concatenate node names and descriptions as input sequences.
+3. Fine-tune the LLM on this enriched input for relation prediction.
+4. Evaluate the model on inductive test splits and compare metrics to the node-name-only baseline.
+5. Analyze the impact of descriptions on prediction accuracy and inductive capability.
+6. Document your methodology, experiments, and findings in a comprehensive README.
+
+**Ships as:** A GitHub repo with code and experiments showing the effect of adding entity descriptions to LLM-based relation prediction, with evaluation and analysis.
+
+**Stretch goal:** Explore lightweight methods to incorporate relation text or implement negative sampling strategies to further improve performance.

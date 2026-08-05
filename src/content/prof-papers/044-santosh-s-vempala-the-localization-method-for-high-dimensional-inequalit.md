@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-vempala"
-source_hash: "02b5f0a487b4d4850f714283e8ab4b27b48f1baa202ba80cc1eebe6af4357af2"
+source_hash: "b1f39141829dc23f3613b76b13c0f6adfbee6721c8d015c51398539fc447a527"
 sequence: 44
 generator: "outreach-garden: managed"
 ---
@@ -147,3 +147,85 @@ Stochastic localization extends the classical method by defining a continuous-ti
 
 - [The Localization Method for Proving High-Dimensional Inequalities (Lecture 1) by Santosh Vempala](https://www.youtube.com/watch?v=RFMYqmi1hu4) — also for: The Localization Method for High-dimensional Inequalities (Santosh S. Vempala)
 - [Lecture 41](https://www.youtube.com/watch?v=FsmJWmRcRnI) — also for: The Localization Method for High-dimensional Inequalities (Santosh S. Vempala)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder to demonstrate understanding of the localization method for high-dimensional inequalities as surveyed in the paper. The beginner project focuses on implementing a classical localization lemma reduction in one dimension to grasp the core idea. The intermediate project reimplements the stochastic localization method on a simple logconcave distribution and compares variance bounds, reflecting a core technical contribution. The advanced project extends stochastic localization towards algorithmic sampling applications, addressing a future direction and limitation noted in the paper.
+
+### Beginner — Classical Localization Lemma on 2D Convex Sets
+*Effort: a weekend, ~8 hours*
+
+You build a small Python notebook that implements the classical localization lemma to reduce a simple inequality on a 2D convex set to a collection of one-dimensional integrals over needles (line segments). You visualize the decomposition of the convex set into needles and verify the inequality on these one-dimensional cases.
+
+**Why it shows you understood the paper:** This project shows you understand the core mechanism of the classical localization method: reducing high-dimensional inequalities to one-dimensional structured instances, a foundational concept in the paper.
+
+**Grounded in:** The localization method reduces high-dimensional inequalities to one-dimensional structured instances.
+
+**Tech stack:** Python 3.11, Jupyter Notebook, matplotlib, numpy
+
+**Data:** Synthetic 2D convex sets (e.g., ellipses or polygons) generated in code to simulate logconcave distributions.
+
+**Build it:**
+
+1. Implement a function to generate and visualize a 2D convex set (e.g., ellipse).
+2. Implement the classical localization lemma to decompose the set into needles (line segments).
+3. Compute and visualize one-dimensional integrals of a test function over these needles.
+4. Verify that the inequality holds on each needle and aggregate results.
+5. Document the process and results in a Jupyter notebook.
+
+**Ships as:** A Jupyter notebook demonstrating the classical localization lemma on a 2D convex set with visualizations and inequality verification.
+
+**Stretch goal:** Extend the notebook to handle 3D convex sets and visualize needle decompositions in 3D.
+
+### Intermediate — Stochastic Localization on Isotropic Gaussian Mixture
+*Effort: 2 weekends, ~20 hours*
+
+You implement the stochastic localization method as described in the paper to simulate the continuous martingale reweighting of an isotropic Gaussian mixture distribution in moderate dimension (e.g., 10D). You track how the density evolves to become strongly logconcave and compute variance bounds over time, comparing them to baseline concentration inequalities.
+
+**Why it shows you understood the paper:** This project demonstrates comprehension of the stochastic localization method's dynamic density reweighting and its effect on logconcavity and variance, a key technical contribution of the paper.
+
+**Grounded in:** Stochastic localization defines a martingale process that continuously reweights the density, making it strongly logconcave over time.
+
+**Tech stack:** Python 3.11, Jupyter Notebook, numpy, scipy, matplotlib
+
+**Data:** Synthetic isotropic Gaussian mixture data generated in code to simulate logconcave distributions.
+
+**Build it:**
+
+1. Implement sampling and density evaluation for a 10D isotropic Gaussian mixture.
+2. Implement the stochastic localization martingale process to reweight the density over time.
+3. Simulate the process and plot the evolution of density contours and variance bounds.
+4. Compare variance bounds from stochastic localization to classical concentration bounds.
+5. Write a report summarizing the implementation, results, and comparison.
+
+**Ships as:** A Jupyter notebook and report showing stochastic localization simulation on Gaussian mixtures with variance bound comparisons.
+
+**Stretch goal:** Incorporate spectral analysis tools to estimate Poincaré constants during the localization process.
+
+### Advanced — Algorithmic Sampling via Stochastic Localization for Logconcave Distributions
+*Effort: 3-4 weeks*
+
+You develop a prototype sampling algorithm for isotropic logconcave distributions based on the stochastic localization method, inspired by the paper's discussion of connections to Markov chain Monte Carlo and the Proximal sampler. You implement the dynamic reweighting and use it to improve mixing rates in sampling compared to a baseline MCMC sampler.
+
+**Why it shows you understood the paper:** This project tackles a future direction and limitation from the paper by applying stochastic localization to algorithmic sampling, demonstrating deep understanding and creative extension of the surveyed methods.
+
+**Grounded in:** Deeper exploration of connections between stochastic localization and sampling algorithms, particularly Markov chain Monte Carlo methods.
+
+**Tech stack:** Python 3.11, Jupyter Notebook, numpy, scipy, matplotlib, PyTorch (optional for optimization)
+
+**Data:** Synthetic isotropic logconcave distributions generated in code; no external dataset required.
+
+**Build it:**
+
+1. Review stochastic localization and its interpretation as a dynamic backward step in the Proximal sampler.
+2. Implement a prototype sampler that uses stochastic localization to reweight densities dynamically.
+3. Implement a baseline MCMC sampler (e.g., Langevin dynamics) for comparison.
+4. Run experiments comparing mixing rates and sample quality on synthetic logconcave distributions.
+5. Analyze results and document the potential and limitations of the approach.
+
+**Ships as:** A GitHub repository with code, notebooks, and a detailed README demonstrating a stochastic localization-based sampler and its evaluation.
+
+**Stretch goal:** Extend the sampler to real-world high-dimensional datasets or explore integration with log-Sobolev inequality-based convergence guarantees.

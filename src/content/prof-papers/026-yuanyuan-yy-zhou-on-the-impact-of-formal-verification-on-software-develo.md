@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-yyzhou"
-source_hash: "e22b730c050530425f8564285cba4aa31d403fe527637089150a5274bcd6d5d4"
+source_hash: "1f700c3ec9c6cd20b2d1c1f26b84a30783e06f8dfd8cc7b0abfe2573850460f7"
 sequence: 26
 generator: "outreach-garden: managed"
 ---
@@ -118,3 +118,94 @@ Auto-active formal verification automates many proof details but still requires 
 *How the paper uses it:* The paper studies the impact of auto-active verification tools like Dafny on software development practices.
 
 ▶ [Auto-Active Verification of Software with Timers and Clocks (STAC)](https://www.youtube.com/watch?v=BPYIAw9wMe4) — Software Engineering Institute | Carnegie Mellon University · 9:14 · 9 years ago
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder to demonstrate your understanding of how auto-active formal verification impacts software development, based on the paper's insights. The beginner project reproduces a core challenge of proof debugging and brittleness using Dafny code snippets. The intermediate project implements a small-scale incremental proof development and hardening workflow inspired by the paper's findings, using Dafny and verification guidelines. The advanced project extends the paper by prototyping an interactive proof debugging tool that exposes verifier internal state, addressing a key future direction to improve usability and bridge formal-first and engineering-first developers.
+
+### Beginner — Dafny Proof Debugging and Brittleness Demo
+*Effort: a weekend, ~8 hours*
+
+You build a small Dafny project with a few simple verified functions and lemmas that intentionally break after minor code changes. You add auxiliary assertions and formal specifications to debug and fix the proofs, illustrating the brittleness and debugging challenges described in the paper.
+
+**Why it shows you understood the paper:** This project concretely demonstrates the paper's key result that proof debugging is challenging due to unclear error messages and proof brittleness, showing you grasp the practical difficulties developers face when using auto-active verifiers like Dafny.
+
+**Grounded in:** Proof debugging is challenging due to unclear error messages and hidden verifier state (Section 4.3); Proof brittleness causes previously verified proofs to fail after minor changes (Section 4.4).
+
+**Tech stack:** Dafny 3.0 or latest stable, VS Code with Dafny extension or Dafny CLI
+
+**Data:** No external data needed; you write small Dafny code snippets inspired by examples in the paper and Dafny VMC Guidelines.
+
+**Build it:**
+
+1. Install Dafny and set up a development environment with VS Code or CLI.
+2. Write a simple Dafny module with a few verified functions and lemmas using formal specifications and auxiliary assertions.
+3. Introduce minor code changes that cause proofs to break, simulating proof brittleness.
+4. Use Dafny error messages and add assertions to debug and fix the proofs.
+5. Document the debugging steps and challenges encountered in a README.
+
+**Ships as:** A GitHub repo containing Dafny code illustrating proof brittleness and debugging, with a README explaining the challenges and fixes, showing your understanding of the paper's core issues.
+
+**Stretch goal:** Add a small script or notes on how to harden proofs against minor changes, inspired by the paper's proof hardening phase.
+
+### Intermediate — Incremental Proof Development and Hardening Workflow
+*Effort: 2 weekends, ~20 hours*
+
+You implement a small verified Dafny project that applies incremental proof development techniques (top-down and bottom-up proof structuring) and includes a proof hardening phase to reduce brittleness. You compare verification success and stability metrics before and after hardening, inspired by the paper's analysis.
+
+**Why it shows you understood the paper:** This project reproduces the paper's core method of managing verification complexity through incremental proof development and proof hardening, demonstrating your ability to apply and measure these techniques practically.
+
+**Grounded in:** Developers use incremental proof development, top-down and bottom-up proof structuring, and rely on functional specifications to simplify verification (Section 4.2); Proof brittleness causes verified proofs to break, requiring proof hardening (Section 4.4).
+
+**Tech stack:** Dafny 3.0 or latest stable, VS Code with Dafny extension or Dafny CLI, Markdown for documentation
+
+**Data:** No external dataset; you create a small verified module inspired by Dafny VMC Guidelines and Ironclad examples for incremental proof development.
+
+**Build it:**
+
+1. Set up Dafny environment and familiarize yourself with incremental proof techniques from Dafny VMC Guidelines.
+2. Write a verified Dafny module with layered proofs using top-down and bottom-up strategies.
+3. Introduce minor code changes to simulate proof brittleness and measure verification failures.
+4. Implement a proof hardening phase by refactoring proofs and adding style guide-inspired assertions.
+5. Measure and compare verification success rates and brittleness before and after hardening.
+6. Document the workflow, metrics, and lessons learned in a detailed README.
+
+**Verified links from the paper:**
+
+- <https://github.com/dafny-lang/Dafny-VMC> — a third-party/baseline artifact the paper cites — not the authors' own code
+- <https://github.com/microsoft/Ironclad> — a third-party/baseline artifact the paper cites — not the authors' own code
+
+**Ships as:** A GitHub repo with a verified Dafny project demonstrating incremental proof development and hardening, including verification metrics and a README explaining the approach and results.
+
+**Stretch goal:** Integrate simple automated checks or linters to enforce proof style guidelines to improve robustness.
+
+### Advanced — Interactive Proof Debugging Tool Prototype
+*Effort: 3-4 weeks*
+
+You design and implement a prototype interactive proof debugging tool that exposes the internal state of the Dafny verifier, such as proof obligations, solver queries, and intermediate proof states. The tool provides a UI to navigate and incrementally debug proofs, addressing the paper's future direction to improve usability and bridge formal-first and engineering-first developers.
+
+**Why it shows you understood the paper:** This project tackles a key limitation and future direction from the paper by creating tooling that makes proof debugging more transparent and accessible, demonstrating deep comprehension of the challenges and practical solutions for verified software engineering.
+
+**Grounded in:** Developing better interactive debugging tools that expose verifier internal state similar to interactive proof assistants (Future Directions).
+
+**Tech stack:** Dafny 3.0 or latest stable, Node.js and React for UI, TypeScript, Express.js for backend API, Docker for containerization
+
+**Data:** No external dataset; you use Dafny verification tasks from your intermediate project or small Dafny examples to demonstrate the tool.
+
+**Build it:**
+
+1. Study Dafny's verification process and identify points where internal state can be extracted (e.g., proof obligations, SMT solver queries).
+2. Implement a backend service that runs Dafny verification and extracts internal proof state information.
+3. Build a React frontend UI to visualize proof states, error messages, and allow stepwise navigation through proof attempts.
+4. Integrate the backend and frontend to enable interactive proof debugging sessions.
+5. Test the tool on small Dafny projects with known proof brittleness and debugging challenges.
+6. Document the tool design, usage instructions, and how it addresses the paper's usability challenges.
+
+**Ships as:** A GitHub repo with a working interactive proof debugging tool prototype, example Dafny projects, and documentation showing how it improves proof debugging transparency and usability.
+
+**Stretch goal:** Extend the tool to support collaborative proof debugging sessions or integrate with existing IDEs like VS Code.
+
+_No authors' own code artifacts were released for this paper; the intermediate project relies on reimplementing core methods and uses third-party Dafny VMC Guidelines and Ironclad repositories as references._

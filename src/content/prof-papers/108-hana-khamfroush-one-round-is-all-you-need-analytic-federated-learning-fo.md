@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-hana-khamfroush"
-source_hash: "d70204686e20ace1dab2f49add32ed76b77f317c331102441ed871d352b464e5"
+source_hash: "9bd568327f0862eaad46ec57dd1cab8150251a3d389ce6696989e5809fca0a2c"
 sequence: 108
 generator: "outreach-garden: managed"
 ---
@@ -139,3 +139,85 @@ Discover the novel approach of replacing iterative federated optimization with a
 *How the paper uses it:* The core contribution is an analytic federated learning framework that efficiently trains multi-label classifiers with partial client annotations.
 
 ▶ [An Intro to Federated Learning with Flower with Daniel J. Beutel](https://www.youtube.com/watch?v=tdEwGT3QBjU) — Open Data Science and AI Conference · 30:53
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive learning ladder to demonstrate your understanding of the analytic federated learning method for task-heterogeneous multi-label medical image classification presented in the paper. Starting with a focused implementation of the balanced label projection mechanism, you then reimplement the core analytic federated learning approach on a public medical image dataset, and finally extend the method by exploring improved pseudo-label refinement strategies to address a key limitation noted by the authors.
+
+### Beginner — Balanced Label Projection for False-Negative Bias Correction
+*Effort: a weekend, ~8 hours*
+
+You build a standalone Python script or Jupyter notebook that implements the balanced label projection technique described in the paper to correct false-negative bias caused by missing labels in multi-label classification. Using synthetic or publicly available multi-label data with artificially induced missing labels, you demonstrate how the balanced label vector construction normalizes positive and negative contributions to equal total mass.
+
+**Why it shows you understood the paper:** This project shows you grasp the core problem of false-negative bias under task heterogeneity and the paper's novel closed-form correction mechanism, which is foundational to the analytic federated learning framework.
+
+**Grounded in:** The method corrects false-negative bias caused by missing labels through balanced label projection.
+
+**Tech stack:** Python 3.11, Jupyter Notebook, NumPy, Matplotlib
+
+**Data:** Use a small synthetic multi-label dataset or a subset of a public multi-label dataset (e.g., ChestXray14 substitute) with simulated missing labels to mimic task heterogeneity.
+
+**Build it:**
+
+1. Implement a function to simulate missing labels in a multi-label dataset to create false-negative bias.
+2. Implement the balanced label projection formula to reweight label vectors so positive and negative contributions have equal total mass.
+3. Visualize and compare label distributions before and after correction to demonstrate bias mitigation.
+4. Write a short report or notebook markdown explaining the problem and how the correction works.
+
+**Ships as:** A Jupyter notebook or script showing the effect of balanced label projection on label distributions with visualizations and explanations.
+
+**Stretch goal:** Add a simple multi-label classifier trained on original vs. corrected labels to show impact on classification metrics.
+
+### Intermediate — Reimplementation of Analytic Federated Learning on ChestXray14 Subset
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement the core analytic federated learning framework from the paper, including balanced label projection and per-class absolute aggregation, to train a multi-label disease classifier on a publicly available subset of the ChestXray14 dataset. You compare your results against a simple federated baseline (e.g., FedAvg) using balanced accuracy (BACC) and AUC metrics to demonstrate communication efficiency and robustness under task heterogeneity.
+
+**Why it shows you understood the paper:** This project demonstrates your ability to translate the paper's analytic closed-form federated learning method into code and evaluate its advantages over iterative gradient-based baselines, reflecting a deep understanding of the paper's core contributions.
+
+**Grounded in:** First closed-form federated learning framework for multi-label medical image classification with partial per-client annotations; Demonstrated robustness and communication efficiency across varying degrees of task heterogeneity.
+
+**Tech stack:** Python 3.11, PyTorch, NumPy, scikit-learn, Jupyter Notebook
+
+**Data:** Use a publicly available subset of the ChestXray14 dataset or a similar public multi-label medical image dataset, simulating task heterogeneity by partitioning labels across clients.
+
+**Build it:**
+
+1. Download and preprocess the ChestXray14 subset or substitute dataset for multi-label classification.
+2. Simulate task heterogeneity by assigning disjoint subsets of disease labels to different clients.
+3. Implement balanced label projection and per-class absolute aggregation as described in the paper.
+4. Implement a simple federated baseline (FedAvg) for comparison.
+5. Train and evaluate both methods, reporting BACC and AUC metrics and communication rounds required.
+6. Document the implementation details, results, and insights in a README or notebook.
+
+**Ships as:** A GitHub repository with code to run the analytic federated learning method and baseline, plus evaluation scripts and a report comparing performance and communication efficiency.
+
+**Stretch goal:** Add the optional pseudo-label refinement round and analyze its effect on performance under severe label scarcity.
+
+### Advanced — Improved Pseudo-Label Refinement for Analytic Federated Learning
+*Effort: 3-4 weeks*
+
+You extend the analytic federated learning framework by designing and implementing an improved pseudo-label refinement strategy to mitigate noisy pseudo-labels under severe label scarcity, addressing a key limitation noted in the paper. You evaluate your method on the ChestXray14 dataset or a similar public dataset with simulated extreme task heterogeneity and compare performance against the original two-round method.
+
+**Why it shows you understood the paper:** This project shows you can critically engage with the paper's limitations and future directions, proposing and implementing a novel extension that could improve federated learning under challenging real-world conditions.
+
+**Grounded in:** The optional two-round pseudo-label refinement does not improve and may degrade performance on the ChestXray14 dataset, possibly due to noisy pseudo-labels under severe label scarcity; Investigate improved pseudo-label refinement strategies to enhance performance under severe label scarcity.
+
+**Tech stack:** Python 3.11, PyTorch, NumPy, scikit-learn, Jupyter Notebook
+
+**Data:** Use the ChestXray14 dataset or a similar public multi-label medical image dataset with simulated extreme task heterogeneity and label scarcity.
+
+**Build it:**
+
+1. Reimplement the original analytic federated learning method including the two-round pseudo-label refinement.
+2. Research and design an improved pseudo-label refinement strategy, such as adaptive weighting or filtering of pseudo-labels to reduce noise.
+3. Integrate the improved refinement into the analytic federated learning pipeline.
+4. Evaluate and compare the original and improved methods on metrics like BACC and AUC under severe label scarcity.
+5. Analyze results and document findings, including potential trade-offs and future improvements.
+
+**Ships as:** A GitHub repository with the extended analytic federated learning code, evaluation scripts, and a detailed report discussing the improved pseudo-label refinement and its impact.
+
+**Stretch goal:** Explore domain adaptation or backbone fine-tuning to further improve feature quality and classification accuracy.

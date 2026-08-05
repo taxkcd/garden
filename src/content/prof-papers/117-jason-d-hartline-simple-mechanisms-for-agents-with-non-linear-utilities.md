@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-jason-d-hartline"
-source_hash: "5ce5354bd93163a945792f42776c3a4c243e51adcbddf8f2f9d41beef10d5a66"
+source_hash: "8cab3970d3c0c4af07d52f57c41502eb4604b420832623a267e17d4211af6ca2"
 sequence: 117
 generator: "outreach-garden: managed"
 ---
@@ -125,3 +125,88 @@ Sequential posted pricing is a simple auction mechanism where prices are posted 
 ## Already in your library
 
 - [Lecture 22: Auctions, Part 1](https://www.youtube.com/watch?v=-XGDKoWi0Zg) — also for: Efficiently Restructuring Sovereign Debt via Arctic Auctions with Convex Costs (Vijay V. Vazirani)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive learning path to demonstrate understanding of the paper's ζ-resemblance framework and its implications for simple auction mechanisms with non-linear utilities. Starting from a basic numerical reproduction of the ζ-resemblance concept, you advance to implementing the reduction framework for private-budgeted agents and comparing approximation ratios. Finally, you tackle an open problem from the paper by exploring risk-averse agents' revenue maximization and the challenges in establishing ζ-resemblance, extending the framework with new experiments.
+
+### Beginner — Numerical Illustration of ζ-Resemblance for Private-Budgeted Agents
+*Effort: a weekend, ~8 hours*
+
+You build a small Python notebook that numerically computes and plots the ironed price-posting payoff curve and the optimal payoff curve for a single private-budgeted agent with uniform valuation and budget distributions. You then calculate the ζ-resemblance ratio between these curves as defined in the paper and reproduce the approximate 1.02 resemblance result shown in the paper's numerical evaluation.
+
+**Why it shows you understood the paper:** This project shows you understand the core definition of ζ-resemblance and how it quantifies the similarity between non-linear and linear agents' payoff curves, a foundational concept in the paper.
+
+**Grounded in:** Definition of ζ-resemblance to quantify how non-linear agents approximate linear agents in terms of payoff curves; Numerical results show price-posting revenue curve closely approximates optimal revenue curve for uniform private-budgeted agents.
+
+**Tech stack:** Python 3.11, Jupyter Notebook, matplotlib, numpy
+
+**Data:** Synthetic data generated for uniform distributions of valuations and budgets as described in the paper's numerical evaluation section.
+
+**Build it:**
+
+1. Implement functions to generate uniform random samples for valuations and budgets.
+2. Compute the optimal payoff curve R(q) for the private-budgeted agent using the definitions in the paper.
+3. Compute the ironed price-posting payoff curve P̄(q) for the same agent.
+4. Plot both curves on the same graph for q in [0,1].
+5. Calculate the ζ-resemblance ratio by finding the minimal ζ such that P̄(q) ≥ 1/ζ * R(q†) for all q.
+6. Document the results and compare with the paper's reported 1.02 resemblance.
+
+**Ships as:** A Jupyter notebook with code, plots of payoff curves, ζ-resemblance calculations, and a README explaining the methodology and results.
+
+**Stretch goal:** Extend the notebook to handle other distributions (e.g., exponential) and observe how ζ changes.
+
+### Intermediate — Implementing the ζ-Resemblance Reduction Framework for Sequential Posted Pricing
+*Effort: 2 weekends, ~20 hours*
+
+You implement from scratch the reduction framework that transforms a sequential posted pricing mechanism designed for linear agents into one for private-budgeted agents, using the ζ-resemblance concept. You simulate multiple i.i.d. private-budgeted agents with uniform distributions, run both oblivious posted pricing and marginal payoff mechanisms, and compute approximation ratios compared to optimal revenue.
+
+**Why it shows you understood the paper:** This project demonstrates you can operationalize the paper's core reduction framework and verify its theoretical approximation guarantees experimentally, showing grasp of both mechanism design and approximation analysis.
+
+**Grounded in:** The reduction framework applies to deterministic, DSIC, IIR, pricing-based mechanisms; Agents with independent private budgets and regular valuation distributions are 3-resemblant; Numerical results show posted pricing mechanisms achieve approximation ratios close to optimal for multiple agents.
+
+**Tech stack:** Python 3.11, Jupyter Notebook, numpy, matplotlib
+
+**Data:** Synthetic data simulating multiple i.i.d. private-budgeted agents with uniform valuations and budgets, as per the paper's numerical evaluation.
+
+**Build it:**
+
+1. Reimplement the ζ-resemblance definition and verify it for single agents.
+2. Implement sequential posted pricing and marginal payoff mechanisms for linear agents.
+3. Apply the reduction framework to adapt these mechanisms for private-budgeted agents.
+4. Simulate multiple i.i.d. agents and run the mechanisms to collect revenue data.
+5. Calculate approximation ratios compared to an estimated optimal revenue baseline.
+6. Plot and analyze how approximation ratios scale with the number of agents.
+
+**Ships as:** A repository with Python scripts/notebooks implementing the mechanisms, simulation code, plots of approximation ratios, and a README describing the implementation and results.
+
+**Stretch goal:** Add support for other canonical non-linear utility models like endogenous valuations and compare their ζ-resemblance.
+
+### Advanced — Exploring ζ-Resemblance and Approximation Guarantees for Risk-Averse Agents' Revenue Maximization
+*Effort: 3+ weeks*
+
+You extend the reduction framework to investigate the open problem of revenue maximization for risk-averse agents. You model risk-averse utility functions (e.g., CARA or CRRA), attempt to characterize or numerically estimate ζ-resemblance for these agents, and test whether simple posted pricing mechanisms can achieve constant-factor approximations. You implement simulations comparing risk-averse agents to linear agents and analyze the challenges in establishing ζ-resemblance.
+
+**Why it shows you understood the paper:** This project tackles a stated limitation and future direction from the paper, showing deep engagement with the theory and practical challenges of extending the framework beyond its current scope.
+
+**Grounded in:** Risk-averse agents' revenue maximization approximation guarantees remain an open problem; Investigate conditions ensuring constant ζ-resemblance for risk-averse agents in revenue maximization.
+
+**Tech stack:** Python 3.11, Jupyter Notebook, numpy, scipy, matplotlib
+
+**Data:** Synthetic data simulating agents with risk-averse utilities and valuation distributions; no real dataset required.
+
+**Build it:**
+
+1. Implement common risk-averse utility functions (e.g., CARA, CRRA).
+2. Simulate agents' payoff curves under these utilities and compute their optimal payoff curves.
+3. Attempt to numerically estimate ζ-resemblance ratios between risk-averse and linear agents.
+4. Implement posted pricing mechanisms and evaluate their revenue performance for risk-averse agents.
+5. Analyze results to identify technical challenges and conditions affecting ζ-resemblance.
+6. Document findings, including limitations and potential adaptations to the reduction framework.
+
+**Ships as:** A comprehensive repository with code, simulations, plots, and a detailed report discussing the feasibility of extending ζ-resemblance and approximation guarantees to risk-averse agents.
+
+**Stretch goal:** Propose and test modified mechanisms or alternative welfare definitions to improve approximation for risk-averse agents.

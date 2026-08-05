@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-vicky-yao"
-source_hash: "2433050d7d871654b20dc5b268df8b7212684e7018a39c6200f12bd83a61cf9a"
+source_hash: "585a6861e4f84352a7c70f38edfe85b7b8a982c2fe71281d6bfaed536319fee4"
 sequence: 64
 generator: "outreach-garden: managed"
 ---
@@ -119,3 +119,97 @@ Alternative splicing allows a single gene to produce multiple protein isoforms w
 *How the paper uses it:* This is the core biological mechanism that Splitpea models to reveal patient-specific protein interaction network rewiring.
 
 ▶ [The Information Paradox in Biology: Life's Hidden Complexity](https://www.youtube.com/watch?v=2xU8TShkavU) — AI Labs: Exploratory Science and Paradoxes · 9:41
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder to demonstrate your understanding of the Splitpea method and its application to protein interaction network rewiring due to alternative splicing in cancer. Starting from a beginner-level visualization of splicing-induced interaction changes on a small gene set, progressing to an intermediate-level reimplementation and application of Splitpea on a subset of TCGA breast cancer data, and culminating in an advanced project extending Splitpea by integrating somatic mutation data to explore combined effects on network rewiring. Each project builds on your existing software engineering and ML skills while introducing relevant computational biology concepts and tools.
+
+### Beginner — Visualize Splicing-Induced PPI Rewiring for Selected Cancer Genes
+*Effort: a weekend, ~8 hours*
+
+You build a small interactive web app that visualizes protein-protein interaction (PPI) network rewiring caused by alternative splicing for a handful of well-studied cancer-related genes. Using publicly available domain-domain interaction data and simulated exon skipping events, you show gain, loss, or ambiguous changes in PPIs as colored edges in the network graph.
+
+**Why it shows you understood the paper:** This project demonstrates your grasp of the core biological problem—how alternative splicing affects protein interactions—and your ability to represent directionality of rewiring events (gain, loss, chaos) visually, a key contribution of Splitpea.
+
+**Grounded in:** Development of Splitpea, the first general tool to characterize directionality (gain, loss, chaos) of protein interaction rewiring due to alternative splicing at the individual sample level.
+
+**Tech stack:** TypeScript, React, D3.js, Node.js
+
+**Data:** Use domain-domain interaction data from public databases (e.g., DOMINE or 3did) and simulate splicing changes for a small set of cancer driver genes; no TCGA data required.
+
+**Build it:**
+
+1. Select 5-10 well-known cancer driver genes with known PPIs and domain annotations.
+2. Obtain domain-domain interaction data from a public source and map to these genes.
+3. Simulate alternative splicing events that cause domain gains or losses for these genes.
+4. Implement a React+D3.js app to visualize the PPI network with edges colored by rewiring type (gain, loss, chaos).
+5. Add interactivity to toggle between normal and spliced isoform networks and highlight affected interactions.
+
+**Ships as:** An interactive web app repository with README explaining the biological context, data sources, and visualization of splicing-induced PPI rewiring for selected genes.
+
+**Stretch goal:** Add patient-specific simulated splicing profiles to show variability across samples.
+
+### Intermediate — Reimplement and Apply Splitpea on Breast Cancer TCGA Subset
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement the core Splitpea method to integrate protein-protein interaction and domain-domain interaction data with differential exon splicing data from a small subset of TCGA breast cancer samples. You predict rewiring events (gain, loss, chaos) of PPIs and compare your results to a simple baseline that ignores domain information. You report metrics such as proportion of lost vs gained interactions and visualize patient-specific rewiring networks.
+
+**Why it shows you understood the paper:** This project shows you can reproduce the paper's core computational approach and apply it to real cancer splicing data, demonstrating comprehension of the integration of PPI, DDI, and splicing data and the patient-specific rewiring concept.
+
+**Grounded in:** Splitpea integrates known protein-protein interactions (PPIs) and domain-domain interactions (DDIs) with sample-specific differential exon splicing data from TCGA cancer samples and GTEx normal tissues. It predicts rewiring events (gain, loss, chaos) of PPIs mediated by splicing-induced domain changes on a per-sample basis.
+
+**Tech stack:** Python 3.11, Pandas, NetworkX, Matplotlib, Jupyter Notebook
+
+**Data:** Use TCGA breast cancer RNA-seq splicing data (publicly available via GDC or recount2) and domain-domain interaction data from public databases; simulate or subset PPI data as needed.
+
+**Build it:**
+
+1. Download and preprocess a small subset (e.g., 10-20 samples) of TCGA breast cancer splicing data focusing on differential exon usage.
+2. Obtain PPI and DDI datasets from public sources and map to genes in the splicing data.
+3. Implement the Splitpea logic to infer gain, loss, and chaos rewiring events based on domain presence/absence due to splicing.
+4. Implement a simple baseline that predicts rewiring without domain information (e.g., based on gene-level splicing changes only).
+5. Compare the rewiring predictions of your method vs baseline and visualize patient-specific rewiring networks.
+6. Document your code and results in a Jupyter notebook.
+
+**Verified links from the paper:**
+
+- <https://github.com/ylaboratory/splitpea> — released by the paper's authors
+
+**Ships as:** A GitHub repo with Jupyter notebooks showing reimplementation of Splitpea on TCGA breast cancer subset, comparison to baseline, and visualizations of rewired networks.
+
+**Stretch goal:** Add clustering of patient-specific networks to identify subgroups as in the paper.
+
+### Advanced — Integrate Somatic Mutation Data with Splitpea to Explore Combined Network Rewiring
+*Effort: 3-4 weeks*
+
+You extend the Splitpea framework by integrating somatic mutation data from TCGA breast or pancreatic cancer samples alongside splicing data to analyze combined effects on protein interaction network rewiring. You develop methods to incorporate mutation impact scores on protein domains or interactions and assess how mutations and splicing jointly remodel PPIs. You validate your approach by comparing network rewiring patterns with and without mutation integration and explore biological insights.
+
+**Why it shows you understood the paper:** This project tackles a key future direction of the paper, demonstrating your ability to extend a complex computational biology method by integrating multi-omics data, addressing limitations, and generating novel biological hypotheses.
+
+**Grounded in:** Explore integration with somatic mutation data and other omics to better understand combined effects on protein networks.
+
+**Tech stack:** Python 3.11, Pandas, NetworkX, Scikit-learn, Jupyter Notebook, Biopython
+
+**Data:** Use TCGA somatic mutation and splicing data for breast or pancreatic cancer samples (publicly available via GDC), plus PPI and DDI data from public databases.
+
+**Build it:**
+
+1. Download and preprocess matched somatic mutation and splicing data for a cohort of TCGA cancer samples.
+2. Map mutations to protein domains and annotate their potential impact on domain function or interactions.
+3. Extend the Splitpea rewiring inference to incorporate mutation effects alongside splicing-induced domain changes.
+4. Construct combined patient-specific protein interaction rewiring networks reflecting both splicing and mutation impacts.
+5. Perform comparative analyses of network rewiring patterns with and without mutation data integration.
+6. Document findings and biological interpretations in a detailed Jupyter notebook and README.
+
+**Verified links from the paper:**
+
+- <https://github.com/ylaboratory/splitpea> — released by the paper's authors
+
+**Ships as:** A GitHub repository with code and notebooks demonstrating the extended Splitpea method integrating somatic mutation data, with analyses and visualizations of combined network rewiring in cancer.
+
+**Stretch goal:** Develop a web-based interactive visualization tool for combined rewiring networks.
+
+_Accessing and preprocessing TCGA splicing and mutation data requires familiarity with GDC data portals and may require controlled access permissions; public subsets or simulated data can be used for initial development._

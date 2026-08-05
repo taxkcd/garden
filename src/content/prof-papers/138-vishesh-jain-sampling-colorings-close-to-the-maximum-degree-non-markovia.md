@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-vishesh-jain"
-source_hash: "a58d654320515a210a598ec095471cba04e4671a5b067114efcd4068626f7035"
+source_hash: "c2e6699e2e2a1725a2fbae5328d3404a9735234e1a42c630b643ca3283155cc9"
 sequence: 138
 generator: "outreach-garden: managed"
 ---
@@ -124,3 +124,88 @@ Glauber dynamics is a Markov chain used to sample graph colorings by repeatedly 
 ## Already in your library
 
 - [Markov Chain Mixing Times and Applications II](https://www.youtube.com/watch?v=zYObOwEnUzw) — also for: On quantum to classical comparison for Davies generators (Alistair Sinclair)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive ladder to demonstrate your understanding of the paper "Sampling Colorings Close to the Maximum Degree" by Jain et al. The beginner project focuses on simulating and visualizing the Glauber dynamics for graph colorings on small graphs to grasp the basic Markov chain behavior. The intermediate project involves implementing a simplified version of the non-Markovian coupling method from the paper to empirically observe contraction of disagreements on random graphs, thereby reproducing a core theoretical insight. The advanced project extends the coupling framework to graphs with smaller girth, addressing one of the paper's stated limitations and exploring how the coupling and mixing time guarantees degrade or adapt, which could open a research conversation with the professor.
+
+### Beginner — Simulate Glauber Dynamics for Graph Coloring on Small Graphs
+*Effort: a weekend, ~8 hours*
+
+You build a simulation of the Metropolis Glauber dynamics for proper k-colorings on small graphs (e.g., cycles, trees, or small random graphs) with maximum degree ∆. The simulation will visualize the coloring updates over time and track metrics such as the Hamming distance between successive colorings and the distribution of available colors per vertex.
+
+**Why it shows you understood the paper:** This project shows you understand the basic operation of Glauber dynamics and the importance of local uniformity and mixing time concepts by reproducing the coloring update process and observing convergence behavior on small examples.
+
+**Grounded in:** The simulation relates to the paper's foundational use of Metropolis Glauber dynamics and local uniformity results (Theorem 1.4) that underpin their mixing time analysis.
+
+**Tech stack:** Python 3.11, Jupyter Notebook, NetworkX, Matplotlib
+
+**Data:** You use small synthetic graphs generated with NetworkX (e.g., random trees, cycles, or small random regular graphs) as substitutes for the paper's graph inputs.
+
+**Build it:**
+
+1. Implement a function to generate small graphs with specified maximum degree and girth properties using NetworkX.
+2. Implement the Metropolis Glauber dynamics update rule for proper k-colorings on these graphs.
+3. Simulate the dynamics starting from a random proper coloring and visualize the coloring changes over time.
+4. Track and plot metrics such as the number of available colors per vertex and the Hamming distance between successive colorings.
+5. Write a README explaining the connection between the simulation and the paper's local uniformity and mixing time concepts.
+
+**Ships as:** A Jupyter notebook and Python scripts that simulate and visualize Glauber dynamics on small graphs, with plots demonstrating local uniformity and convergence behavior.
+
+**Stretch goal:** Add a simple heat-bath Glauber dynamics variant and compare its behavior to the Metropolis version on the same graphs.
+
+### Intermediate — Implement Non-Markovian Coupling to Contract Disagreements on Random Graphs
+*Effort: 2 weekends, ~20 hours*
+
+You implement a simplified version of the local non-Markovian coupling described in the paper to couple two Glauber dynamics chains starting from neighboring colorings differing at one vertex. You empirically measure the contraction of expected Hamming distance over O(n) steps on random graphs with large girth and maximum degree ∆, reproducing the contraction behavior stated in Theorem 1.6.
+
+**Why it shows you understood the paper:** This project demonstrates you can translate the paper's core coupling construction into code and verify its contraction property experimentally, showing deep comprehension of the coupling method and its role in proving rapid mixing.
+
+**Grounded in:** This project directly implements the refined local non-Markovian coupling and validates Theorem 1.6 (formalized as Theorem 2.4) on contraction of expected Hamming distance.
+
+**Tech stack:** Python 3.11, NetworkX, NumPy, Matplotlib
+
+**Data:** You generate random regular graphs or random graphs with girth ≥ 11 using NetworkX as a proxy for the paper's graph classes.
+
+**Build it:**
+
+1. Implement graph generation for random graphs with large girth and specified maximum degree using NetworkX.
+2. Implement the Metropolis Glauber dynamics update rule for k-colorings with k ≥ (1 + δ)∆.
+3. Implement two coupled Glauber dynamics chains starting from colorings differing at one vertex.
+4. Implement the local non-Markovian coupling that modifies updates at multiple times to prevent disagreement propagation, following the paper's description.
+5. Simulate the coupled chains over O(n) steps and measure the expected Hamming distance contraction.
+6. Plot the contraction over time and compare it to the theoretical factor of 1/3.
+7. Document the implementation details and relate the results to the paper's coupling construction.
+
+**Ships as:** A Python package with scripts to run coupled Glauber dynamics on random graphs, plots showing contraction of disagreements, and a detailed README linking the implementation to the paper's coupling theory.
+
+**Stretch goal:** Compare the non-Markovian coupling contraction to a naive synchronous coupling baseline to highlight the improvement.
+
+### Advanced — Extend Non-Markovian Coupling to Graphs with Smaller Girth
+*Effort: 3+ weeks*
+
+You extend the non-Markovian coupling framework to graphs with girth less than 11, implementing the coupling and bounding chain to track disagreement regions. You empirically investigate how the mixing time and contraction properties degrade as girth decreases, addressing a key limitation of the paper and exploring potential adaptations or heuristics to handle short cycles.
+
+**Why it shows you understood the paper:** This project shows you can engage with open research directions from the paper, adapt complex coupling constructions to new graph classes, and critically analyze the impact of structural assumptions on mixing times, positioning you for research-level discussions.
+
+**Grounded in:** This project addresses the paper's limitation on requiring girth ≥ 11 and explores the future direction of reducing the girth requirement.
+
+**Tech stack:** Python 3.11, NetworkX, NumPy, Matplotlib, Jupyter Notebook
+
+**Data:** You use synthetic graphs generated with NetworkX, including graphs with controlled girth (e.g., random graphs with planted short cycles) to test the coupling under varying girth conditions.
+
+**Build it:**
+
+1. Implement graph generators that produce graphs with varying girth, including graphs with girth < 11.
+2. Implement the full non-Markovian coupling and bounding chain as described in the paper, adapting the logic to handle cycles.
+3. Simulate coupled Glauber dynamics on these graphs and measure disagreement propagation and mixing time proxies.
+4. Analyze how the contraction factor and mixing time estimates change as girth decreases.
+5. Document challenges encountered, potential heuristics to control disagreement growth, and implications for extending the theory.
+6. Prepare a detailed report or notebook discussing the results and connecting them to the paper's stated limitations and future directions.
+
+**Ships as:** A comprehensive codebase and report demonstrating the coupling on graphs with smaller girth, empirical analysis of mixing behavior, and discussion of theoretical and practical implications.
+
+**Stretch goal:** Propose and test modifications to the coupling or bounding chain that mitigate disagreement growth in graphs with short cycles.

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-wli69"
-source_hash: "a1d83aa814ea9f9d8ac84ba11e85a0f2a0fe788170862231a4c9a70f30a95d51"
+source_hash: "fc9e969be54a61c2913c5de39e22d391bfa447d11003821566c16b9485fc45db"
 sequence: 21
 generator: "outreach-garden: managed"
 ---
@@ -136,3 +136,87 @@ Understand the principles of responsible AI use in research, including fairness,
 ## Already in your library
 
 - [Inform the uninformed: Improving Online Informed Consent Reading with an AI-Powered Chatbot](https://www.youtube.com/watch?v=zFZOhvzlkNw) — also for: Inform the uninformed: Improving Online Informed Consent Reading with an AI-Powered Chatbot (Tiffany Li)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive ladder to demonstrate understanding of the paper "Inform the uninformed: Improving Online Informed Consent Reading with an AI-Powered Chatbot." The beginner project reproduces a core interaction mechanism of the chatbot to show comprehension improvement. The intermediate project reimplements the hybrid AI chatbot consent process and compares participant comprehension metrics against a baseline. The advanced project extends the chatbot design to address the paper's limitation of increased time burden by exploring efficiency-interactivity tradeoffs in AI-driven consent.
+
+### Beginner — Consent Form Q&A Chat Simulation
+*Effort: a weekend, ~8 hours*
+
+You build a simple React-based chatbot UI that simulates an interactive Q&A session guiding a user through a short online consent form. The chatbot answers predefined questions about the consent form content using rule-based responses, mimicking the paper's approach of guiding participants through consent information interactively.
+
+**Why it shows you understood the paper:** This project demonstrates your grasp of the paper's core mechanism: using an AI-powered chatbot to improve participant comprehension by interactive guidance rather than passive reading. A professor would see you understand how conversational agents can scaffold informed consent.
+
+**Grounded in:** The chatbot helps participants better understand and recall consent information by guiding them interactively.
+
+**Tech stack:** React, JavaScript, CSS
+
+**Data:** You simulate a short consent form text and a set of common participant questions derived from the paper's description.
+
+**Build it:**
+
+1. Create a React app with a chat interface component.
+2. Write a short consent form text and extract key Q&A pairs.
+3. Implement a rule-based chatbot that answers participant questions from the Q&A pairs.
+4. Add UI elements to display consent text and chatbot responses interactively.
+5. Test the chatbot with sample questions to simulate participant interaction.
+
+**Ships as:** A GitHub repo with a React app demonstrating an interactive consent form chatbot that answers participant questions with rule-based logic.
+
+**Stretch goal:** Add a simple memory feature to track which consent sections the user has seen and tailor chatbot prompts accordingly.
+
+### Intermediate — Hybrid AI Chatbot for Online Consent with Comprehension Evaluation
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement the paper's hybrid AI-powered chatbot consent process combining rule-based and AI modules to simulate participant interaction with an online consent form. You conduct a small user study or simulated evaluation comparing participant recall and comprehension metrics against a baseline traditional form reading interface.
+
+**Why it shows you understood the paper:** This project shows you can implement the paper's core method and empirically evaluate its impact on consent comprehension, replicating the paper's main contribution. It demonstrates understanding of hybrid chatbot design and measurement of informed consent outcomes.
+
+**Grounded in:** Systematic comparison of AI-powered chatbot-driven informed consent with traditional online consent forms, showing improved recall and comprehension.
+
+**Tech stack:** React, TypeScript, Node.js, Express, OpenAI API or similar LLM, Jest or testing framework
+
+**Data:** You use a simulated consent form based on the paper's social media use survey context and generate participant questions; evaluation data is collected from a small user group or simulated via scripted interactions.
+
+**Build it:**
+
+1. Implement a React frontend chatbot UI with hybrid rule-based and AI response modules.
+2. Integrate an LLM API (e.g., OpenAI GPT) for AI-generated answers, combined with fallback rule-based answers for accuracy.
+3. Build a backend Node.js server to handle chatbot logic and logging participant interactions.
+4. Design a simple traditional consent form interface as a baseline.
+5. Recruit a small group of participants or simulate interactions to collect recall and comprehension data via quizzes.
+6. Analyze and compare comprehension scores between chatbot and baseline groups.
+
+**Ships as:** A full-stack GitHub repo with hybrid chatbot consent system, baseline form interface, and evaluation scripts with results showing comprehension improvements.
+
+**Stretch goal:** Add logging and analysis of participant question types and chatbot answer coverage to replicate the paper's 85.97% answer rate metric.
+
+### Advanced — Efficient AI Chatbot Consent: Balancing Engagement and Time Burden
+*Effort: 3+ weeks*
+
+You extend the hybrid AI chatbot consent system to address the paper's limitation of increased time required by designing and testing chatbot interaction strategies that reduce participant burden while maintaining comprehension and engagement. You experiment with adaptive dialogue length, summarization, or personalized assistance to optimize the tradeoff.
+
+**Why it shows you understood the paper:** This project tackles a key limitation and future direction from the paper, showing deep understanding of the ethical and practical challenges in AI-powered consent. It demonstrates ability to innovate on chatbot design for real-world constraints and evaluate impact on participant experience.
+
+**Grounded in:** The chatbot requires more time to complete the consent process compared to traditional forms, which may be a barrier; future directions include balancing interactivity and efficiency to reduce participant burden.
+
+**Tech stack:** React, TypeScript, Node.js, Express, OpenAI API or similar LLM, D3.js or charting library for visualization, Jest or testing framework
+
+**Data:** You use the same simulated consent form and participant interaction data as in the intermediate project, extended with user timing and satisfaction metrics collected via user studies or simulations.
+
+**Build it:**
+
+1. Analyze the intermediate chatbot system to identify time-consuming interaction patterns.
+2. Design and implement adaptive dialogue strategies such as summarization, optional detail expansion, or personalized question prioritization.
+3. Integrate timing and engagement tracking into the chatbot system.
+4. Conduct user studies or simulations comparing the original chatbot, your efficient chatbot, and traditional forms on time spent, comprehension, and satisfaction.
+5. Visualize and analyze tradeoffs between time burden and comprehension gains.
+6. Document design implications and recommendations for AI-powered consent chatbot efficiency.
+
+**Ships as:** A GitHub repo with an enhanced AI chatbot consent system demonstrating reduced time burden with maintained comprehension, plus analysis and visualization of tradeoffs.
+
+**Stretch goal:** Explore personalized chatbot interactions adapting to individual participant preferences and prior knowledge to further optimize consent experience.

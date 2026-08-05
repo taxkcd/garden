@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-julian-togelius"
-source_hash: "1b6d25e24ef4d144691e7e5ab9b044dd98ea4d1b64782f246fe73fe1eb3eea47"
+source_hash: "f868f351f429c232d1fb245d0b58d8d84bd9452db4447f8121c51c040917e171"
 sequence: 135
 generator: "outreach-garden: managed"
 ---
@@ -115,3 +115,97 @@ Procedural content generation (PCG) involves algorithmically creating game conte
 *How the paper uses it:* The paper addresses challenges in generating large-scale, semantically meaningful, and controllable Minecraft worlds, a key PCG problem.
 
 ▶ [PCG: Introduction, Use Cases, and Production Best Practices ...](https://www.youtube.com/watch?v=TbNZ4GKaTow) — Unreal Engine · 39:37
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progression to demonstrate your understanding of the Dream Cubed paper. The beginner project focuses on reproducing a key evaluation metric (the adapted FID) on Minecraft chunk renderings, using your existing Python and ML skills. The intermediate project builds on the authors' released code to run and extend their discrete masked diffusion model on a subset of the Dream-Cubed dataset, reproducing controllable generation modes and FID evaluation. The advanced project tackles a stated limitation by developing a novel evaluation metric that captures 3D structural and gameplay validity aspects beyond FID, using the Dream-Cubed dataset and generated samples.
+
+### Beginner — Adapted FID Metric for Minecraft Chunk Images
+*Effort: a weekend, ~8 hours*
+
+You implement the paper's adaptation of the Fréchet Inception Distance (FID) metric to evaluate semantic differences between real and generated Minecraft chunk renderings. Using Python and existing ML libraries, you compute FID scores on a small set of Minecraft chunk images, reproducing the paper's evaluation approach on a manageable scale.
+
+**Why it shows you understood the paper:** This project shows you understand how the paper quantitatively evaluates generative model quality and the limitations of image-based metrics for 3D voxel data, demonstrating grasp of a core contribution.
+
+**Grounded in:** Adaptation of the Fréchet Inception Distance (FID) metric for evaluating semantic differences between real and generated Minecraft world renderings.
+
+**Tech stack:** Python 3.11, PyTorch, scikit-learn, NumPy, Matplotlib
+
+**Data:** Use a small publicly available set of Minecraft chunk images rendered from Dream-Cubed or substitute with procedurally generated Minecraft chunk screenshots if Dream-Cubed images are unavailable.
+
+**Build it:**
+
+1. Collect or generate a small dataset of Minecraft chunk images representing real and generated samples.
+2. Implement the adapted FID metric as described in the paper, using a pretrained Inception network or similar feature extractor.
+3. Compute and compare FID scores between real and generated chunk images.
+4. Visualize the distribution of scores and document limitations of FID for 3D voxel data.
+5. Write a README explaining the metric, your implementation, and results.
+
+**Ships as:** A GitHub repo with code to compute adapted FID on Minecraft chunk images, example results, and a README explaining the metric and its limitations.
+
+**Stretch goal:** Add a simple baseline metric such as pixel-wise MSE or SSIM for comparison to FID.
+
+### Intermediate — Controllable Minecraft Chunk Generation with Discrete Masked Diffusion
+*Effort: 2 weekends, ~20 hours*
+
+You clone and run the authors' Dream-Cubed repository to train or fine-tune the discrete masked diffusion (MD4) model on a subset of the Dream-Cubed dataset. You reproduce controllable generation modes such as inpainting and biome blending, and evaluate generation quality using the adapted FID metric. You compare results with a simple baseline such as random block sampling or procedural terrain generation.
+
+**Why it shows you understood the paper:** This project demonstrates you can work with the authors' code and dataset, understand the core generative modeling approach, and reproduce key results including controllable generation and quantitative evaluation.
+
+**Grounded in:** Discrete masked diffusion models enable controllable generation modes such as inpainting, outpainting, biome blending, and user-guided block conditioning; both discrete masked diffusion and continuous DDPM models achieve comparable FID scores.
+
+**Tech stack:** Python 3.11, PyTorch, Dream-Cubed codebase, NumPy, Matplotlib
+
+**Data:** Use the Dream-Cubed dataset released by the authors at https://github.com/SakanaAI/DreamCubed, focusing on a manageable subset of Minecraft chunks.
+
+**Build it:**
+
+1. Clone the Dream-Cubed GitHub repository and set up the environment.
+2. Download a subset of the Dream-Cubed dataset focusing on a few biomes or chunk types.
+3. Train or fine-tune the discrete masked diffusion (MD4) model on this subset.
+4. Implement controllable generation modes such as inpainting and biome blending using the model.
+5. Evaluate generated chunks using the adapted FID metric from the beginner project.
+6. Compare results to a simple baseline like random block sampling or procedural generation.
+7. Document your process, results, and insights in a README.
+
+**Verified links from the paper:**
+
+- <https://github.com/SakanaAI/DreamCubed> — released by the paper's authors
+
+**Ships as:** A GitHub repo with code and instructions to reproduce controllable Minecraft chunk generation using discrete masked diffusion, evaluation scripts, and a report on results.
+
+**Stretch goal:** Extend controllable generation to sliding-window outpainting for larger world generation beyond chunk size.
+
+### Advanced — 3D Structural and Gameplay-Aware Evaluation Metric for Minecraft Worlds
+*Effort: 3+ weeks*
+
+You develop a novel evaluation metric that addresses the paper's limitation of FID by capturing 3D structural coherence and gameplay functionality of generated Minecraft worlds. Using the Dream-Cubed dataset and generated samples from discrete masked diffusion models, you design and implement metrics that analyze voxel-level internal structure, subsurface features, and functional validity (e.g., connectivity, biome consistency). You validate your metric by correlating it with human preference data or gameplay simulations.
+
+**Why it shows you understood the paper:** This project tackles a key limitation and future direction from the paper, showing deep understanding of the challenges in evaluating 3D generative models and the ability to extend state-of-the-art methods with novel contributions.
+
+**Grounded in:** FID metric struggles to evaluate internal structure, subsurface features, and functional validity of generated worlds; future direction to develop better evaluation metrics capturing 3D structure and gameplay functionality.
+
+**Tech stack:** Python 3.11, PyTorch, NumPy, SciPy, Dream-Cubed codebase, Minecraft world analysis tools (e.g., Pyubiomes)
+
+**Data:** Use the Dream-Cubed dataset and generated samples from the discrete masked diffusion model (from the intermediate project). Optionally use Pyubiomes (https://github.com/lilyyy411/Pyubiomes) for biome and structure analysis.
+
+**Build it:**
+
+1. Review the limitations of FID for 3D voxel data as described in the paper.
+2. Survey existing Minecraft world analysis tools such as Pyubiomes for biome and structural features.
+3. Design metrics that quantify 3D structural coherence (e.g., block connectivity, hollow regions) and gameplay-relevant features (e.g., biome blending consistency, village structure presence).
+4. Implement these metrics and apply them to real and generated Minecraft chunks from Dream-Cubed.
+5. Correlate metric scores with human preference data if available or with qualitative gameplay assessments.
+6. Document your methodology, experiments, and findings in a detailed README or report.
+
+**Verified links from the paper:**
+
+- <https://github.com/SakanaAI/DreamCubed> — released by the paper's authors
+- <https://github.com/lilyyy411/Pyubiomes> — a third-party/baseline artifact the paper cites — not the authors' own code
+
+**Ships as:** A GitHub repo with code implementing new 3D structural and gameplay-aware evaluation metrics, analysis scripts on Dream-Cubed data, and a report discussing improvements over FID.
+
+**Stretch goal:** Integrate your evaluation metric into a training loop to guide or improve generative model sampling quality.

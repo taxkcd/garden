@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-timroughgarden-org"
-source_hash: "99a7a7fb6537429e9660b217f20a406b1f64b8772d8f9406f021df94771c9f20"
+source_hash: "0494088de80da05e35038d82dbb71c2b7ff0e2fc3bc6459d54ed4ae5cfeed082"
 sequence: 31
 generator: "outreach-garden: managed"
 ---
@@ -123,3 +123,87 @@ The Dutch auction is a descending-price auction where the price drops until a bi
 ## Already in your library
 
 - [29 May 2025, Tim Roughgarden (a16z crypto and Columbia ...](https://www.youtube.com/watch?v=doBWXzbM3L4) — also for: Shill-Proof Auctions (Tim Roughgarden)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive learning path to demonstrate understanding of the "Shill-Proof Auctions" paper. Starting with a beginner-level simulation of the Dutch auction mechanism to illustrate shill-proofness concepts, the intermediate project implements and compares the Dutch auction variants to verify key theoretical results. The advanced project extends the paper's scope by exploring shill-proof auction design in a multi-item setting, addressing one of the paper's stated future directions.
+
+### Beginner — Simulate Dutch Auction with Shill Bidding Scenarios
+*Effort: a weekend, ~8 hours*
+
+You build a simple interactive simulation of a single-item Dutch auction where a seller can optionally place shill bids. The simulation visualizes how the auction price descends and how shill bidding affects seller profit under different reserve price settings.
+
+**Why it shows you understood the paper:** This project concretely demonstrates the core mechanism of the Dutch auction and the concept of strong and weak shill-proofness by showing when shill bidding is profitable or not, reflecting the paper's key contributions.
+
+**Grounded in:** The Dutch auction (with a suitable reserve) is the unique (revenue-)optimal and strongly shill-proof auction.
+
+**Tech stack:** JavaScript, React, CSS
+
+**Data:** No external data required; auction scenarios and bidder valuations are simulated within the app.
+
+**Build it:**
+
+1. Implement a Dutch auction price clock that decreases over time until a bidder accepts the current price.
+2. Model multiple bidders with fixed valuations and a seller who can optionally submit shill bids.
+3. Add a reserve price parameter to the auction and simulate outcomes with and without shill bidding.
+4. Visualize auction progress, final winner, and seller revenue for each scenario.
+5. Add UI controls to toggle shill bidding and reserve price settings.
+
+**Ships as:** An interactive web app demonstrating Dutch auction dynamics and shill bidding effects, with a README explaining the connection to strong shill-proofness.
+
+**Stretch goal:** Add a comparison mode to simulate a sealed-bid second-price auction and show how shill bidding affects it differently.
+
+### Intermediate — Reimplement and Compare Dutch Auction Variants for Shill-Proofness
+*Effort: 1-3 weekends*
+
+You reimplement the Dutch auction with and without reserve price in Python, simulating bidder valuations drawn from standard distributions. You measure seller revenue and efficiency metrics, comparing strong and weak shill-proofness properties as defined in the paper.
+
+**Why it shows you understood the paper:** By reproducing the paper's core theoretical results through simulation and metric evaluation, you demonstrate comprehension of the auction formats' uniqueness and trade-offs between revenue optimality, efficiency, and shill-proofness.
+
+**Grounded in:** The Dutch auction (with a suitable reserve) is the unique (revenue-)optimal and strongly shill-proof auction; the Dutch auction (with no reserve) is the unique prior-independent auction that is both efficient and weakly shill-proof.
+
+**Tech stack:** Python 3.11, NumPy, Matplotlib, Jupyter Notebook
+
+**Data:** Simulated bidder valuations from uniform and exponential distributions as substitutes for theoretical valuation models.
+
+**Build it:**
+
+1. Implement the Dutch auction mechanism with a configurable reserve price in Python.
+2. Simulate bidder valuations from chosen distributions and run multiple auction trials.
+3. Calculate seller revenue and allocative efficiency metrics for each auction variant.
+4. Implement logic to simulate shill bidding attempts and measure seller profit impact.
+5. Compare results to verify strong and weak shill-proofness properties as per the paper.
+6. Document findings and include plots illustrating revenue and efficiency trade-offs.
+
+**Ships as:** A Jupyter notebook with code, simulation results, and visualizations validating the paper's key auction properties.
+
+**Stretch goal:** Incorporate a baseline sealed-bid auction implementation to contrast shill bidding vulnerabilities.
+
+### Advanced — Extend Shill-Proof Auction Design to Multi-Item Settings
+*Effort: a few weeks*
+
+You develop a prototype multi-item auction simulator exploring extensions of shill-proofness concepts beyond single-item auctions. The project investigates how Dutch auction principles might be adapted or combined with combinatorial auction formats to mitigate shill bidding.
+
+**Why it shows you understood the paper:** This project tackles a key limitation and future direction from the paper by attempting to generalize shill-proof auction design to more complex settings, demonstrating deep engagement with the research challenges and potential solutions.
+
+**Grounded in:** Focuses on single-item auctions; results may not directly extend to multi-item or combinatorial auctions. Future direction: Extending shill-proof auction design to multi-item and more complex auction settings.
+
+**Tech stack:** Python 3.11, NumPy, NetworkX, Jupyter Notebook, Matplotlib
+
+**Data:** Synthetic bidder valuations and item bundles generated to simulate combinatorial auction scenarios.
+
+**Build it:**
+
+1. Review the paper's definitions of strong and weak shill-proofness and their applicability to single-item auctions.
+2. Design a multi-item auction model (e.g., combinatorial or simultaneous Dutch auctions) with bidder valuations over bundles.
+3. Implement a simulation framework to run multi-item auctions with and without shill bidding by the seller.
+4. Experiment with reserve prices and pricing rules inspired by the single-item Dutch auction to test shill-proofness.
+5. Analyze seller revenue, efficiency, and shill bidding profitability metrics in this multi-item context.
+6. Document challenges, insights, and potential theoretical extensions or conjectures.
+
+**Ships as:** A research-style Jupyter notebook or small codebase presenting simulation results and analysis on multi-item shill-proof auction design.
+
+**Stretch goal:** Propose a novel auction mechanism or pricing rule inspired by the Dutch auction that improves shill-proofness in multi-item settings.

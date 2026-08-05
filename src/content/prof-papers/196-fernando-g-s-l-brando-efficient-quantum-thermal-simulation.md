@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-fernando-g-s-l-brandao"
-source_hash: "70c99d16d016cfb6ad3c83318ffbe9fd96b7f7056b5d3a690414f6f628e967b6"
+source_hash: "8829bc5bd5efecb6d27a1239259ffbe28b330be6aa7998778f257ff5cf6d1179"
 sequence: 196
 generator: "outreach-garden: managed"
 ---
@@ -141,3 +141,87 @@ Hearing directly from the authors provides insight into the motivation, challeng
 
 - [Anthony (Chi-Fang) Chen - “Quantum” Markov Chain Monte ...](https://www.youtube.com/watch?v=6nRsya5Aaf8) — also for: On quantum to classical comparison for Davies generators (Alistair Sinclair)
 - [Quantum Markov semigroup, logarithmic Sobolev inequality and noncommutative Ricci curvature](https://www.youtube.com/watch?v=5NOq1AFhZp0) — also for: On quantum to classical comparison for Davies generators (Alistair Sinclair)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder of increasing depth and technical challenge focused on the core contributions of the paper "Efficient quantum thermal simulation." Starting with a beginner-level numerical exploration of spectral gaps in small quantum spin chains, progressing to an intermediate-level reimplementation of the Lindbladian evolution with a comparison to a simple baseline, and culminating in an advanced project that extends the method to study spectral gaps and mixing times for noncommuting Hamiltonians, addressing a key future direction of the paper. Each project leverages your existing software engineering skills while introducing relevant quantum simulation concepts and tools.
+
+### Beginner — Numerical Diagonalization of Lindbladians for Small Spin Chains
+*Effort: a weekend, ~8 hours*
+
+You build a Python notebook that numerically diagonalizes the Lindbladian operators for small transverse field Ising and XXZ spin chain models, reproducing the spectral gap behavior at high and low temperatures as shown in the paper's numerical studies. This involves constructing small matrix representations of the Lindbladian and plotting spectral gaps versus inverse temperature.
+
+**Why it shows you understood the paper:** This project demonstrates your grasp of the paper's numerical validation approach, the concept of spectral gaps, and how temperature affects mixing times in quantum thermalization, which are central to the paper's claims about critical slowdowns and spectral properties.
+
+**Grounded in:** Numerical studies demonstrating spectral gaps and mixing behavior in quantum spin chain models.
+
+**Tech stack:** Python 3.11, NumPy, SciPy, Matplotlib, Jupyter Notebook
+
+**Data:** No external dataset is required; you simulate small spin chain Hamiltonians (e.g., 2-4 qubits) and construct Lindbladian matrices based on the paper's formulas.
+
+**Build it:**
+
+1. Implement small transverse field Ising and XXZ Hamiltonians as matrices.
+2. Construct the Lindbladian superoperator matrices numerically using the paper's smooth operator Fourier transform and jump operators for these small systems.
+3. Diagonalize the Lindbladian matrices to find eigenvalues and identify the spectral gap.
+4. Plot spectral gap versus inverse temperature β to observe high-temperature gaps and low-temperature slowdowns.
+5. Document the code and results in a Jupyter Notebook with explanations linking back to the paper.
+
+**Ships as:** A Jupyter Notebook showing numerical diagonalization results, spectral gap plots, and explanations connecting the observations to the paper's findings.
+
+**Stretch goal:** Add visualization of how adding global or two-body jump operators affects the spectral gap to lift critical slowdowns.
+
+### Intermediate — Reimplementation of Lindbladian Evolution for Quantum Thermal Simulation
+*Effort: 2 weekends, ~20 hours*
+
+You implement a simplified version of the paper's Lindbladian quantum thermal simulation algorithm in Python, simulating Lindbladian evolution for small quantum systems using matrix exponentiation or Trotterization. You compare the convergence to the Gibbs state against a baseline method such as the Davies generator or a naive thermalization approach, measuring convergence metrics like trace distance or fidelity.
+
+**Why it shows you understood the paper:** This project shows you can translate the paper's core algorithmic approach into code, understand the role of the coherent correction term and smooth operator Fourier transform, and evaluate convergence properties, directly engaging with the paper's main algorithmic contributions.
+
+**Grounded in:** The Lindbladian evolution can be implemented with Hamiltonian simulation time scaling approximately linearly with inverse temperature and evolution time; introduction of a coherent correction term to ensure exact detailed balance.
+
+**Tech stack:** Python 3.11, NumPy, SciPy, Jupyter Notebook
+
+**Data:** Simulated small quantum systems (2-4 qubits) with known Hamiltonians such as transverse field Ising model; no external dataset needed.
+
+**Build it:**
+
+1. Implement the system Hamiltonian and jump operators for a small quantum system.
+2. Construct the Lindbladian superoperator including the coherent correction term as described in the paper.
+3. Simulate Lindbladian evolution using matrix exponentiation or Trotterization over discrete time steps.
+4. Implement a baseline thermalization method (e.g., Davies generator or simple thermal state preparation).
+5. Compare convergence to the Gibbs state using metrics like trace distance or fidelity over time.
+6. Visualize and document the results, highlighting the effect of the coherent correction and detailed balance.
+
+**Ships as:** A Python project with scripts and notebooks demonstrating Lindbladian evolution simulation, baseline comparison, convergence plots, and detailed explanations.
+
+**Stretch goal:** Incorporate a simple Hamiltonian simulation algorithm to replace matrix exponentiation and analyze scaling with inverse temperature.
+
+### Advanced — Spectral Gap and Mixing Time Analysis for Noncommuting Hamiltonians Using Lindbladian Simulation
+*Effort: 3-4 weeks*
+
+You extend the Lindbladian simulation framework to study spectral gaps and mixing times for noncommuting Hamiltonians, addressing a key future direction of the paper. This involves implementing the Lindbladian with coherent correction terms for noncommuting cases, numerically analyzing spectral gaps, and exploring how jump operator choices affect mixing times. You document findings and propose heuristic jump operator designs to optimize mixing.
+
+**Why it shows you understood the paper:** This project tackles a stated limitation and future direction of the paper, demonstrating deep comprehension of the Lindbladian construction, quantum detailed balance, and the challenges of noncommuting Hamiltonians. It shows initiative in advancing the research beyond the original scope.
+
+**Grounded in:** Systematic study of spectral gaps and mixing times for noncommuting Hamiltonians using the new Lindbladian; the coherent correction term corrects deviations from detailed balance when the decay part does not commute with the Hamiltonian.
+
+**Tech stack:** Python 3.11, NumPy, SciPy, Jupyter Notebook, Matplotlib
+
+**Data:** Simulated small quantum systems with noncommuting Hamiltonians (e.g., XYZ spin chains or perturbed Ising models); no external dataset required.
+
+**Build it:**
+
+1. Implement noncommuting Hamiltonians and corresponding jump operators as per the paper's framework.
+2. Incorporate the coherent correction term in the Lindbladian construction to ensure exact detailed balance.
+3. Numerically diagonalize the Lindbladian to extract spectral gaps for various inverse temperatures.
+4. Experiment with different sets of jump operators, including global and two-body operators, to observe effects on spectral gaps and mixing times.
+5. Analyze and visualize the relationship between jump operator design and mixing behavior.
+6. Document the methodology, results, and insights, relating them to the paper's discussion and open questions.
+
+**Ships as:** A comprehensive Jupyter Notebook or Python project presenting spectral gap analyses, mixing time evaluations, and heuristic jump operator designs for noncommuting Hamiltonians, with detailed commentary.
+
+**Stretch goal:** Develop a heuristic quantum circuit implementation of the Lindbladian evolution for a small noncommuting system and benchmark its performance.

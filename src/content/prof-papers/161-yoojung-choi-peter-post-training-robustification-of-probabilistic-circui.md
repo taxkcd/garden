@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-yoojung-choi"
-source_hash: "b18bd061f8d310fc80b857e42459485ef2e6449008758c8428802faff57a1ac9"
+source_hash: "77149e7cb331058cc7934dd809c83cf2bac0f75d06a6a6565fdfed05c3c02244"
 sequence: 161
 generator: "outreach-garden: managed"
 ---
@@ -132,3 +132,89 @@ Saddle-point optimization methods solve min-max or max-min problems by alternati
 
 - [Lecture 18 | Convex Optimization I (Stanford)](https://www.youtube.com/watch?v=oMRVDILkpUI) — also for: A Unified Framework for High-Dimensional Analysis of M-Estimators with Decomposable Regularizers (Sahand N. Negahban)
 - [The safe gradient flow: a system-theoretic approach to ...](https://www.youtube.com/watch?v=9kZfpsGNQx4) — also for: Hidden Anchors in Multi-Agent LLM Deliberation (R. V. Dantu)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive learning ladder to demonstrate your understanding of PeTeR, the post-training robustification framework for probabilistic circuits. Starting with a beginner-level project reproducing a core concept of the Circuit-Wasserstein distance, you then implement PeTeR's core method on a small dataset at the intermediate level. Finally, the advanced project tackles one of the paper's future directions by extending PeTeR to decomposable but non-structured probabilistic circuits, showing deeper engagement with the paper's limitations and research challenges.
+
+### Beginner — Circuit-Wasserstein Distance Visualization
+*Effort: a weekend, ~8 hours*
+
+You build a small Python notebook that implements a simplified version of the Circuit-Wasserstein (CW) distance calculation for a toy structured-decomposable probabilistic circuit. You visualize how the CW distance changes under small perturbations of the circuit parameters, illustrating the concept of robustness within a Wasserstein ball.
+
+**Why it shows you understood the paper:** This project shows you grasp the core mathematical tool PeTeR uses to measure robustness, and how the CW distance relates to perturbations in probabilistic circuits, a key novelty of the paper.
+
+**Grounded in:** Leveraging the Circuit-Wasserstein distance to efficiently compute and optimize robustness guarantees.
+
+**Tech stack:** Python 3.11, Jupyter Notebook, NumPy, Matplotlib
+
+**Data:** Synthetic toy probabilistic circuit data you create to demonstrate structured-decomposable PCs.
+
+**Build it:**
+
+1. Implement a simple structured-decomposable probabilistic circuit representation in Python.
+2. Code the Circuit-Wasserstein distance calculation for this circuit based on the paper's description.
+3. Create parameter perturbations within a small Wasserstein ball around the baseline distribution.
+4. Visualize the CW distance values as parameters vary to show robustness sensitivity.
+5. Write a README explaining the CW distance and its role in PeTeR.
+
+**Ships as:** A Jupyter notebook with code and plots demonstrating CW distance behavior on a toy PC, plus a README explaining the concept.
+
+**Stretch goal:** Add a small interactive widget (e.g., with ipywidgets) to let users adjust perturbation size and see CW distance update live.
+
+### Intermediate — PeTeR Core Method Reimplementation
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement the core PeTeR post-training robustification method from the paper using Python. Starting from a pre-trained structured-decomposable probabilistic circuit on a small public dataset (e.g., UCI Adult dataset as a substitute), you optimize the circuit parameters against worst-case perturbations within a Wasserstein ball using gradient ascent-descent. You compare robustness improvements against standard MLE training.
+
+**Why it shows you understood the paper:** This project demonstrates your ability to translate the paper's novel unconstrained saddle-point optimization formulation and differentiable CW distance gradients into working code, validating the main contribution empirically.
+
+**Grounded in:** Formulating robust post-training as an unconstrained saddle-point optimization problem solvable by gradient methods.
+
+**Tech stack:** Python 3.11, PyTorch or JAX, NumPy, Jupyter Notebook
+
+**Data:** UCI Adult dataset (public) used as a substitute for benchmark datasets mentioned in the paper.
+
+**Build it:**
+
+1. Implement or adapt a structured-decomposable probabilistic circuit model in Python.
+2. Train the PC on the dataset using standard MLE to get a baseline model.
+3. Implement the Circuit-Wasserstein distance and its differentiable gradients as described.
+4. Formulate and implement the PeTeR saddle-point optimization to robustify the PC post-training.
+5. Evaluate and compare log-likelihoods on clean and perturbed test sets against the baseline.
+6. Document results and methodology in a detailed README.
+
+**Ships as:** A Python codebase with training scripts, evaluation notebooks, and a README showing robustness improvements over baseline MLE.
+
+**Stretch goal:** Add a simple adversarial perturbation generator to test robustness under stronger distribution shifts.
+
+### Advanced — Extending PeTeR to Non-Structured Decomposable PCs
+*Effort: 3+ weeks*
+
+You develop an extension of PeTeR to apply post-training robustification to decomposable but non-structured probabilistic circuits, addressing a key limitation noted in the paper. This involves adapting the Circuit-Wasserstein distance or proposing an alternative metric suitable for this broader class of PCs. You evaluate your method on a small dataset and compare robustness gains to the original PeTeR approach.
+
+**Why it shows you understood the paper:** This project shows deep engagement with the paper's limitations and future directions, demonstrating research-level thinking by extending the method beyond its original scope.
+
+**Grounded in:** The method currently applies to structured-decomposable probabilistic circuits; extension to decomposable but non-structured PCs is future work.
+
+**Tech stack:** Python 3.11, PyTorch or JAX, NumPy, Jupyter Notebook
+
+**Data:** Synthetic or small real dataset suitable for decomposable PCs; no authors' datasets available.
+
+**Build it:**
+
+1. Study the difference between structured-decomposable and decomposable PCs and their implications for CW distance.
+2. Design or adapt a robustness metric applicable to decomposable but non-structured PCs.
+3. Implement the adapted PeTeR optimization framework using this new metric.
+4. Train and robustify PCs on a dataset, comparing results to baseline and original PeTeR where possible.
+5. Analyze stability and robustness trade-offs, documenting challenges and findings.
+6. Write a comprehensive report and README explaining your extension and results.
+
+**Ships as:** A research-style codebase and report demonstrating an extension of PeTeR to a broader class of PCs with empirical evaluation.
+
+**Stretch goal:** Explore smoothing or regularization techniques to handle non-smooth gradients in this new setting, as suggested in the paper's future directions.
+
+_No authors' code or datasets were released for this paper, so all implementations must be done from the paper's descriptions and public or synthetic data._

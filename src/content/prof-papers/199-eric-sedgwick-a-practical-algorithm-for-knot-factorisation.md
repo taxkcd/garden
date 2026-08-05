@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-eric-sedgwick"
-source_hash: "fb3799451784723e7d464112ce468231f3ca992d6fcae42687fb66039028c369"
+source_hash: "421c5fcb3448f072f201fdd3d17ac244f52b0637bc7eaee565617a6158983370"
 sequence: 199
 generator: "outreach-garden: managed"
 ---
@@ -120,3 +120,94 @@ Crushing is an operation that simplifies a triangulation by collapsing along cer
 *How the paper uses it:* The algorithm repeatedly crushes quad vertex normal 2-spheres intersecting the knot to reduce triangulation size and expose prime summands.
 
 ▶ [(GT)^2 - Alex He - Local crushing](https://www.youtube.com/watch?v=4GNTrEkqstc) — Graduate Talks on Geometry and Topology · 3 years ago
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder of engagement with the paper "A Practical Algorithm for Knot Factorisation." The beginner project introduces you to the concept of edge-ideal triangulations and normal surfaces by visualizing and manipulating simple examples. The intermediate project has you run and extend the authors' implementation to factorize knots and compare performance on smaller knots. The advanced project tackles a stated limitation by exploring heuristic methods to convert edge-ideal triangulations back into knot diagrams, potentially opening new practical applications.
+
+### Beginner — Visualize and Explore Edge-Ideal Triangulations
+*Effort: a weekend, ~8 hours*
+
+You build a small interactive visualization tool that loads simple edge-ideal triangulations of knots and highlights normal 2-spheres intersecting the ideal loop twice. The tool allows basic exploration of how crushing these surfaces reduces triangulation size and affects the knot representation.
+
+**Why it shows you understood the paper:** This project demonstrates you understand the core combinatorial representation (edge-ideal triangulations) and the crushing operation on normal surfaces, key concepts introduced in the paper.
+
+**Grounded in:** Introduction of edge-ideal triangulations as a combinatorial representation of knots; Analysis of how crushing affects the ideal loop and triangulation complexity.
+
+**Tech stack:** TypeScript, React, D3.js
+
+**Data:** You create or simulate small example edge-ideal triangulations based on descriptions in the paper, as no public datasets are provided.
+
+**Build it:**
+
+1. Read the paper sections describing edge-ideal triangulations and normal surfaces to understand their structure.
+2. Design a simple JSON format to represent small edge-ideal triangulations and normal 2-spheres intersecting the ideal loop.
+3. Build a React app that visualizes the triangulation as a graph and highlights the ideal loop and normal surfaces.
+4. Implement interactive controls to simulate crushing a selected normal 2-sphere, updating the visualization accordingly.
+5. Document the visualization with explanations linking to the paper's concepts.
+
+**Ships as:** An interactive web app repository with a README explaining edge-ideal triangulations, normal surfaces, and crushing, including example visualizations.
+
+**Stretch goal:** Add animation to show step-by-step crushing sequences and their effect on triangulation size.
+
+### Intermediate — Run and Extend the Regina Implementation for Knot Factorisation
+*Effort: 2 weekends, ~20 hours*
+
+You clone and run the authors' Regina-based implementation of the knot factorisation algorithm on knots up to 19 crossings. You then implement a simple baseline that counts crossings or uses a naive decomposition heuristic and compare runtime and factorisation results.
+
+**Why it shows you understood the paper:** This project shows you can work with the authors' codebase, understand the algorithm's practical performance, and critically evaluate it against a baseline, demonstrating comprehension of the core algorithm and its experimental validation.
+
+**Grounded in:** Implementation of the algorithm in Regina, demonstrating practical performance on knots up to 19 crossings; The algorithm successfully computes prime factorisations of knots represented as edge-ideal triangulations.
+
+**Tech stack:** Python 3.11, Regina software, C++ (optional for extensions)
+
+**Data:** Use prime knots from the census up to 19 crossings as described in the paper; these are publicly known knot datasets substituted for the paper's input.
+
+**Build it:**
+
+1. Clone the authors' repository https://github.com/AlexHe98/idealedge and set up Regina as per instructions.
+2. Run the knot factorisation algorithm on sample knots from the census up to 19 crossings.
+3. Implement a simple baseline heuristic (e.g., crossing number based or naive decomposition) in Python or C++.
+4. Compare the runtime and factorisation outputs between the baseline and the authors' algorithm.
+5. Write a report summarizing the comparison and insights on algorithm efficiency.
+
+**Verified links from the paper:**
+
+- <https://github.com/AlexHe98/idealedge> — released by the paper's authors
+
+**Ships as:** A GitHub repo with scripts to run the authors' implementation, baseline code, comparison results, and a README explaining the experiment.
+
+**Stretch goal:** Add visualization of factorisation steps using Regina's output or export formats.
+
+### Advanced — Heuristic Conversion from Edge-Ideal Triangulations to Knot Diagrams
+*Effort: 3-4 weeks*
+
+You develop heuristic or algorithmic methods to convert edge-ideal triangulations back into knot diagrams, addressing a key limitation noted in the paper. You implement and test your approach on small examples and evaluate its practicality and correctness.
+
+**Why it shows you understood the paper:** This project tackles a stated open problem from the paper, demonstrating deep engagement with the representation and its limitations, and contributes a novel practical tool that could facilitate broader applications of the authors' algorithm.
+
+**Grounded in:** Converting edge-ideal triangulations back into knot diagrams is highly nontrivial and beyond the scope of the paper; future direction includes improving methods to convert edge-ideal triangulations back into knot diagrams.
+
+**Tech stack:** Python 3.11, NetworkX, Regina software (for input/output)
+
+**Data:** Use small edge-ideal triangulations from the authors' code or simulated examples as input for conversion.
+
+**Build it:**
+
+1. Study the paper's description of edge-ideal triangulations and knot diagrams to understand structural differences.
+2. Analyze the Regina output format for edge-ideal triangulations to extract combinatorial data.
+3. Design heuristics to reconstruct planar knot diagrams from triangulation data, possibly using planar graph embedding techniques.
+4. Implement the heuristics in Python using NetworkX for graph operations.
+5. Test the conversion on small knots and validate correctness by comparing known knot invariants or diagrams.
+6. Document limitations, potential improvements, and future work.
+
+**Verified links from the paper:**
+
+- <https://github.com/AlexHe98/idealedge> — released by the paper's authors
+
+**Ships as:** A repository with code implementing the conversion heuristics, test cases, and a detailed README discussing the approach and results.
+
+**Stretch goal:** Integrate the conversion tool with the Regina implementation to provide end-to-end factorisation and visualization.

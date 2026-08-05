@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-patrey"
-source_hash: "eac57d84b9877a30730953f0c7ad5041ea8e5d0be69a0558a92f221cdc849cd2"
+source_hash: "d953631ad1dd20ca48b05ac4396a8abe05e570abf49bcf5ea1554ec75cc58064"
 sequence: 28
 generator: "outreach-garden: managed"
 ---
@@ -133,3 +133,96 @@ Generative Adversarial Networks (GANs) consist of two neural networks competing 
 ## Already in your library
 
 - [Vision Transformer Quick Guide - Theory and Code in (almost) 15 min](https://www.youtube.com/watch?v=j3VNqtJUoz0) — also for: Generating Higher-Quality Anti-Forensics DeepFakes with Adversarial Sharpening Mask (Pradeep K. Atrey)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive learning path to understand and demonstrate the core ideas of the paper "Generating Higher-Quality Anti-Forensics DeepFakes with Adversarial Sharpening Mask." Starting with a beginner-level project to reproduce adversarial sharpening mask visualization, moving to an intermediate-level project that runs and extends the authors' GAN framework on a public DeepFake dataset, and culminating in an advanced project that explores semantic-level anti-forensics attacks as suggested in the paper's future directions.
+
+### Beginner — Visualize Adversarial Sharpening Masks on DeepFake Images
+*Effort: a weekend, ~8 hours*
+
+You build a simple Python notebook that loads a small set of DeepFake images and applies a basic image sharpening filter to simulate the adversarial sharpening mask concept. You then visualize and compare the original DeepFake images, sharpened versions, and real images side-by-side to illustrate how sharpening can disguise DeepFakes.
+
+**Why it shows you understood the paper:** This project demonstrates your grasp of the paper's key idea of adversarial sharpening masks disguising DeepFakes as authentic images, showing you understand the visual enhancement mechanism even without full GAN training.
+
+**Grounded in:** Introduction of adversarial sharpening masks that disguise DeepFakes as sharpened authentic images.
+
+**Tech stack:** Python 3.11, OpenCV, Matplotlib, Jupyter Notebook
+
+**Data:** Use a small publicly available DeepFake image subset such as FaceForensics++ (publicly accessible) as a substitute for the paper's datasets.
+
+**Build it:**
+
+1. Download a small sample of DeepFake and real face images from FaceForensics++.
+2. Implement a basic image sharpening filter using OpenCV.
+3. Apply the sharpening filter to DeepFake images to simulate adversarial sharpening masks.
+4. Visualize original DeepFake, sharpened DeepFake, and real images side-by-side using Matplotlib.
+5. Write a README explaining how sharpening can help disguise DeepFakes as authentic images.
+
+**Ships as:** A Jupyter Notebook with code and visualizations demonstrating adversarial sharpening masks on DeepFake images, plus a README explaining the concept.
+
+**Stretch goal:** Add a simple metric comparison (e.g., PSNR or SSIM) between original and sharpened images to quantify visual quality changes.
+
+### Intermediate — Run and Extend HQ-AF_GAN for Anti-Forensics DeepFake Generation
+*Effort: 2 weekends, ~20 hours*
+
+You clone and run the authors' official HQ-AF_GAN codebase to generate anti-forensics DeepFake images on a public DeepFake dataset (e.g., FaceForensics++). You then implement a simple baseline comparison by disabling the MobileViT2 blocks in the Visual Enhancement Network (VEN) and evaluate undetectability and image quality metrics such as PSNR, SSIM, and FID.
+
+**Why it shows you understood the paper:** This project shows you can operate the paper's core two-module GAN framework, reproduce key results, and understand the importance of MobileViT2 blocks and freezing FDN parameters through ablation-style experiments.
+
+**Grounded in:** Development of a novel two-module GAN framework (FDN and VEN) for DeepFake anti-forensics; Ablation studies demonstrating the importance of freezing parameters in FDN and the role of MobileViT2 blocks.
+
+**Tech stack:** Python 3.11, PyTorch, CUDA (if GPU available), FaceForensics++ dataset
+
+**Data:** Use FaceForensics++ dataset as a substitute for the paper's benchmark DeepFake datasets.
+
+**Build it:**
+
+1. Clone the authors' HQ-AF_GAN repository from https://github.com/fb-reps/HQ-AF_GAN.
+2. Set up the environment and dependencies as per the repository instructions.
+3. Download and prepare the FaceForensics++ dataset for training/testing.
+4. Train or run inference with the full HQ-AF_GAN model to generate anti-forensics DeepFake images.
+5. Modify the VEN to remove MobileViT2 blocks and rerun inference to generate baseline images.
+6. Evaluate and compare undetectability using a simple DeepFake detector and image quality metrics (PSNR, SSIM, FID).
+7. Document the results and insights in a detailed README.
+
+**Verified links from the paper:**
+
+- <https://github.com/fb-reps/HQ-AF_GAN> — released by the paper's authors
+
+**Ships as:** A GitHub repository with scripts to run HQ-AF_GAN on FaceForensics++, baseline ablation code, evaluation scripts, and a report comparing results.
+
+**Stretch goal:** Add a visualization dashboard to interactively compare original, baseline, and enhanced anti-forensics DeepFakes.
+
+### Advanced — Semantic-Level Anti-Forensics for DeepFake Identity Manipulation
+*Effort: 3+ weeks*
+
+You extend the HQ-AF_GAN framework to incorporate semantic-level manipulations targeting identity attributes (e.g., age, gender, expression) to mislead both forensic detectors and human observers. This involves integrating attribute manipulation modules or conditional GAN components and evaluating the impact on detection and recognition metrics.
+
+**Why it shows you understood the paper:** This project tackles a key future direction from the paper, demonstrating deep comprehension of the limitations and the ability to innovate beyond visual enhancement to semantic-level anti-forensics.
+
+**Grounded in:** Exploring semantic-level DeepFake anti-forensics to mislead both algorithms and human perception on identity, age, gender, expression, and emotion.
+
+**Tech stack:** Python 3.11, PyTorch, FaceForensics++ or CelebA dataset, Pretrained attribute classifiers
+
+**Data:** Use FaceForensics++ or CelebA dataset with attribute labels to enable semantic manipulation.
+
+**Build it:**
+
+1. Study the HQ-AF_GAN codebase and identify integration points for semantic attribute manipulation.
+2. Incorporate a conditional GAN or attribute editing module (e.g., based on pretrained attribute classifiers).
+3. Train the extended model to generate DeepFakes with adversarial sharpening masks plus semantic attribute changes.
+4. Evaluate the model's ability to evade forensic detectors and human recognition via face recognition accuracy and attribute classification.
+5. Analyze trade-offs between undetectability, visual quality, and semantic manipulation.
+6. Document methodology, experiments, and findings in a comprehensive report.
+
+**Verified links from the paper:**
+
+- <https://github.com/fb-reps/HQ-AF_GAN> — released by the paper's authors
+
+**Ships as:** A GitHub repository with extended HQ-AF_GAN code, semantic manipulation modules, evaluation scripts, and a detailed report on semantic-level anti-forensics.
+
+**Stretch goal:** Explore user studies or crowdsourced evaluation to assess human perception of semantic manipulations.

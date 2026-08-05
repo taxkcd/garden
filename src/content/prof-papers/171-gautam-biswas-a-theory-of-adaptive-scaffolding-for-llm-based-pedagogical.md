@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-gautam-biswas"
-source_hash: "8e87207e7143862cd55a3d363f122c1d1490ea37d056901a07098162348840f5"
+source_hash: "6c483b2a1935a791b386a2fd8cb3eea888df20f7a2406da884f45611ae346898"
 sequence: 171
 generator: "outreach-garden: managed"
 ---
@@ -135,3 +135,85 @@ Adaptive scaffolding in AI education involves dynamically adjusting support and 
 ## Already in your library
 
 - [Revolutionizing Education: AI Powered ADAPTIVE ...](https://www.youtube.com/watch?v=olNxTaSDIt8) — also for: The promise and challenges of generative AI in education (Roger Azevedo)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progression to demonstrate your understanding of the paper "A Theory of Adaptive Scaffolding for LLM-Based Pedagogical Agents." Starting with a small-scale reproduction of the agent's formative assessment scoring metric, you then implement the core adaptive scaffolding framework on a public dataset, and finally extend the system to improve goal-setting feedback using reinforcement learning techniques, addressing a key limitation identified by the authors.
+
+### Beginner — Formative Assessment Scoring Agreement Calculator
+*Effort: a weekend, ~8 hours*
+
+You build a small tool that calculates weighted kappa agreement scores between human and AI-generated formative assessment scores, replicating the paper's scoring accuracy metric. This tool will accept sample student assessment responses and two sets of scores, then compute and visualize agreement statistics.
+
+**Why it shows you understood the paper:** This project shows you understand the importance of scoring accuracy and agreement metrics in evaluating AI pedagogical agents, a key quantitative result in the paper.
+
+**Grounded in:** Inquizzitor’s scoring accuracy matched or exceeded human expert agreement with weighted kappa scores above 0.80 for all assessments, reaching 'Almost Perfect' agreement for two assessments.
+
+**Tech stack:** Python 3.11, Jupyter Notebook, scikit-learn, matplotlib
+
+**Data:** Simulated or small sample formative assessment score data inspired by the paper's description, as no public dataset is provided.
+
+**Build it:**
+
+1. Implement a function to compute weighted kappa scores between two raters using scikit-learn or custom code.
+2. Create a small dataset of sample student responses with paired human and AI scores (simulated).
+3. Calculate weighted kappa scores for the sample data and visualize the results with matplotlib.
+4. Write a README explaining the metric, its significance in the paper, and how your tool replicates the scoring evaluation.
+
+**Ships as:** A Jupyter notebook or Python script that computes and visualizes weighted kappa agreement scores with a clear README linking it to the paper's scoring accuracy results.
+
+**Stretch goal:** Add functionality to compare multiple assessments and generate a report summarizing agreement levels.
+
+### Intermediate — Adaptive Scaffolding Framework Reimplementation
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement the core adaptive scaffolding framework combining Evidence-Centered Design (ECD), Social Cognitive Theory (SCT), and Zone of Proximal Development (ZPD) to provide formative assessment scoring and personalized feedback. You apply this framework to a publicly available middle school STEM dataset (e.g., OpenStax Earth Science questions or a substitute) and compare your agent's scoring accuracy against a simple baseline such as keyword matching.
+
+**Why it shows you understood the paper:** This project demonstrates your grasp of the paper's theoretical framework and its instantiation in an LLM-based pedagogical agent, including formative assessment scoring and adaptive feedback aligned with cognitive science principles.
+
+**Grounded in:** The authors propose a framework combining Evidence-Centered Design (ECD), Social Cognitive Theory (SCT), and Vygotsky’s Zone of Proximal Development (ZPD) to guide adaptive scaffolding in LLM-based pedagogical agents.
+
+**Tech stack:** Python 3.11, OpenAI or Anthropic LLM API, FastAPI, React (optional for UI), scikit-learn
+
+**Data:** Use a publicly available middle school STEM question dataset or simulate Earth Science formative assessment questions and student responses as a substitute for the paper's classroom data.
+
+**Build it:**
+
+1. Design a simple Evidence-Centered Design assessment module that defines tasks, skills, and evidence.
+2. Implement an adaptive decision module that uses ZPD and SCT principles to select feedback types based on student responses.
+3. Integrate an LLM API to generate chain-of-thought reasoning for scoring and feedback.
+4. Create a baseline scoring method (e.g., keyword matching) for comparison.
+5. Evaluate scoring accuracy using weighted kappa against human-labeled or simulated scores.
+6. Document the framework, evaluation results, and how it aligns with the paper's approach.
+
+**Ships as:** A working prototype of an adaptive scaffolding agent with scoring and feedback on STEM questions, plus evaluation metrics and a README linking to the paper's framework and scoring results.
+
+**Stretch goal:** Add a simple teacher-in-the-loop prompt refinement interface to simulate human-AI hybrid intelligence.
+
+### Advanced — Reinforcement Learning for Goal-Setting Feedback Enhancement
+*Effort: 3+ weeks*
+
+You extend the adaptive scaffolding agent by integrating a reinforcement learning (RL) component to improve explicit, actionable goal-setting feedback, addressing a key limitation noted in the paper. The RL agent learns policies to generate clearer goal-setting prompts that foster metacognitive strategies, using simulated student interaction data or a small user study for training and evaluation.
+
+**Why it shows you understood the paper:** This project tackles a stated limitation and future direction from the paper, demonstrating deep comprehension of the theoretical framework and practical challenges in adaptive scaffolding, while applying advanced AI techniques to improve pedagogical outcomes.
+
+**Grounded in:** The agent struggled with providing explicit, actionable goal-setting feedback, often giving vague suggestions. Future directions include enhancing goal-setting capabilities to provide clearer, actionable steps fostering metacognitive strategies.
+
+**Tech stack:** Python 3.11, PyTorch or TensorFlow, OpenAI or Anthropic LLM API, FastAPI, RL libraries (e.g., Stable Baselines3)
+
+**Data:** Simulated student-agent interaction logs or small-scale user interaction data generated from the intermediate project or synthetic environment.
+
+**Build it:**
+
+1. Design an RL environment modeling student-agent interactions focused on goal-setting feedback.
+2. Define reward functions aligned with clarity, actionability, and metacognitive support based on paper constructs.
+3. Train an RL agent to generate goal-setting feedback prompts using LLMs as the policy network or part of the environment.
+4. Evaluate the RL-enhanced agent against the baseline agent's goal-setting feedback quality using human or simulated metrics.
+5. Document the approach, training process, evaluation, and how it addresses the paper's limitation.
+
+**Ships as:** A research prototype demonstrating improved goal-setting feedback via RL, with evaluation results and a detailed README connecting the work to the paper's limitation and future directions.
+
+**Stretch goal:** Conduct a small user study with middle school students or educators to validate the effectiveness of the RL-enhanced feedback.

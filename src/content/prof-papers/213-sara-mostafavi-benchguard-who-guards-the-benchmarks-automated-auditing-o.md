@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-sara-mostafavi"
-source_hash: "ba25cdf51fcbb3e165c1dd4460d1a5d790e05b34394fffc22dde7849646269ae"
+source_hash: "aee75738bb520cdb25897dfa0ff3e13a140fdd1ff544c46f91df78a1ea5a60b6"
 sequence: 213
 generator: "outreach-garden: managed"
 ---
@@ -116,3 +116,95 @@ Learn the core method of systematically verifying all components of execution-ba
 *How the paper uses it:* BENCHGUARD is the first automated framework to audit complex execution-based AI agent benchmarks end-to-end.
 
 ▶ [ChatGPT for Data Analysis in Excel: Case Study | Course ...](https://www.youtube.com/watch?v=CEmLJ5a5kKY) — Corporate Finance Institute · 9:23
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive ladder to demonstrate understanding of BENCHGUARD's automated auditing framework for execution-based AI agent benchmarks. The beginner project reproduces a simple cross-artifact consistency check using familiar tools. The intermediate project implements a core multi-phase auditing protocol on a small subset of a public scientific benchmark, comparing defect detection against a baseline human review. The advanced project extends BENCHGUARD by integrating richer agent execution traces to improve defect detection, addressing a stated limitation and exploring execution-level auditing improvements.
+
+### Beginner — Cross-Artifact Consistency Checker for Benchmark Tasks
+*Effort: a weekend, ~8 hours*
+
+You build a simple tool that takes as input a small set of benchmark task artifacts—natural language instructions, reference solutions (code snippets), and evaluation scripts—and uses an LLM API (e.g., Anthropic Claude or OpenAI GPT) to verify their consistency. The tool prompts the LLM to identify mismatches or contradictions between instructions and code, outputting a structured report of potential defects.
+
+**Why it shows you understood the paper:** This project demonstrates your grasp of BENCHGUARD's core insight that benchmark defects arise from cross-artifact inconsistencies and that LLMs can be used as systematic auditors. A professor would see you understand the importance of verifying multiple benchmark components together rather than in isolation.
+
+**Grounded in:** The framework uses a structured LLM protocol to cross-verify instructions, ground-truth programs, evaluation scripts, and environment configurations.
+
+**Tech stack:** TypeScript, Node.js, Express.js, OpenAI or Anthropic Claude API
+
+**Data:** You simulate a small benchmark task with 3-5 example artifacts (instructions, code, eval scripts) inspired by the paper's description, since no authors' code is released.
+
+**Build it:**
+
+1. Create a small dataset of benchmark task artifacts including instructions, reference code, and evaluation scripts.
+2. Write prompts that instruct the LLM to check for consistency between these artifacts.
+3. Implement a Node.js backend that sends these prompts to the LLM API and parses the structured response.
+4. Build a simple CLI or web interface to input artifacts and display the LLM's audit report.
+5. Test the tool on your simulated dataset and document example defect findings.
+
+**Ships as:** A GitHub repo with code to run the consistency checker, example inputs, and a README explaining the approach and showing sample audit reports.
+
+**Stretch goal:** Add environment configuration files to the input and extend prompts to cross-verify these as well.
+
+### Intermediate — Reimplementation of BENCHGUARD Auditing on BIXBench Verified-50
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement the core multi-phase LLM auditing protocol described in BENCHGUARD to audit the BIXBench Verified-50 subset, a public scientific benchmark dataset. Your system cross-verifies instructions, reference solutions, evaluation scripts, and environment configs to detect defects. You compare your defect detection results against the expert-identified issues reported in the paper, measuring recall and alignment.
+
+**Why it shows you understood the paper:** This project shows you can faithfully reproduce the paper's main method and evaluation on a real scientific benchmark, demonstrating deep comprehension of the auditing framework and its empirical validation. A professor would see you can implement complex LLM-based auditing pipelines and evaluate them rigorously.
+
+**Grounded in:** Empirically validated BENCHGUARD on two prominent scientific benchmarks (ScienceAgentBench and BIXBench), uncovering author-confirmed defects and matching or exceeding expert review recall.
+
+**Tech stack:** Python 3.11, FastAPI, OpenAI or Anthropic Claude API, Hugging Face datasets, Docker
+
+**Data:** Use the BIXBench-Verified-50 dataset available at https://huggingface.co/datasets/phylobio/BixBench-Verified-50 as the benchmark to audit.
+
+**Build it:**
+
+1. Download and explore the BIXBench-Verified-50 dataset from Hugging Face.
+2. Design prompts and a multi-phase protocol to audit instructions, reference solutions, evaluation scripts, and environment configs using LLM calls.
+3. Implement a Python FastAPI service that runs the auditing pipeline on each task in the dataset.
+4. Aggregate and structure the audit findings with severity and confidence scores.
+5. Compare your detected defects against the expert-identified issues reported in the paper, computing recall and alignment metrics.
+6. Document your methodology, results, and limitations in the README.
+
+**Verified links from the paper:**
+
+- <https://huggingface.co/datasets/phylobio/BixBench-Verified-50> — a third-party/baseline artifact the paper cites — not the authors' own code
+
+**Ships as:** A GitHub repo with the auditing pipeline code, instructions to run audits on BIXBench Verified-50, evaluation scripts comparing to expert labels, and a detailed README.
+
+**Stretch goal:** Incorporate agent-generated solutions or execution traces (if available) to improve defect detection and report the impact.
+
+### Advanced — Extending BENCHGUARD with Execution-Level Auditing Using Agent Traces
+*Effort: 3-4 weeks*
+
+You develop an extension to the BENCHGUARD auditing framework that integrates richer agent-generated execution traces to improve defect detection. This addresses the paper's limitation about execution-level auditing depending on trace richness. You apply this extended auditing to a subset of scientific benchmark tasks (e.g., from ScienceAgentBench or BIXBench) and analyze how execution trace data enhances defect identification compared to artifact-only auditing.
+
+**Why it shows you understood the paper:** This project tackles a stated limitation and future direction from the paper, demonstrating your ability to innovate beyond reproduction. A professor would recognize your initiative to improve automated auditing by leveraging agent execution data, a key challenge in reliable benchmark evaluation.
+
+**Grounded in:** Execution-level auditing benefits depend on the richness of available agent execution traces, which may vary across benchmarks.
+
+**Tech stack:** Python 3.11, FastAPI, OpenAI or Anthropic Claude API, Docker, Jupyter Notebook
+
+**Data:** Use publicly available subsets of ScienceAgentBench or BIXBench with agent execution traces if accessible; otherwise simulate execution traces consistent with benchmark tasks based on paper descriptions.
+
+**Build it:**
+
+1. Research and gather agent execution trace data associated with scientific benchmark tasks, or simulate plausible traces if unavailable.
+2. Extend your existing auditing pipeline to incorporate execution trace analysis, designing prompts that verify consistency between traces and other artifacts.
+3. Implement mechanisms to cross-validate execution traces against instructions, reference solutions, and evaluation scripts.
+4. Run the extended auditing on selected benchmark tasks and compare defect detection rates to artifact-only auditing.
+5. Analyze and document how execution-level data impacts defect identification, including limitations and potential improvements.
+6. Prepare a comprehensive README detailing your extension, methodology, results, and future work.
+
+**Verified links from the paper:**
+
+- <https://huggingface.co/datasets/phylobio/BixBench-Verified-50> — a third-party/baseline artifact the paper cites — not the authors' own code
+
+**Ships as:** A GitHub repo with the extended auditing framework code, example execution trace data or simulacra, evaluation comparing audit results with and without execution traces, and a thorough README.
+
+**Stretch goal:** Develop a user interface dashboard to visualize cross-artifact and execution trace inconsistencies interactively for expert adjudication.

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-thomas-emrys-williams"
-source_hash: "3d481425de8f15bd1fbd284b1a086176d706ba2b3a9d3eb678c101de7ff36c32"
+source_hash: "5ec5ddbf67d292b6cdefefecca6938df779e0e62b56d4630bac8fcf94a62b25f"
 sequence: 201
 generator: "outreach-garden: managed"
 ---
@@ -132,3 +132,92 @@ Hear directly from researchers about their novel hybrid framework that augments 
 ## Already in your library
 
 - [Stanford CS25: V5 I Large Language Model Reasoning ...](https://www.youtube.com/watch?v=ebnX5Ur1hBk) — also for: Argumentative Human-AI Decision-Making: Toward AI Agents That Reason With Us, Not For Us (William Yeoh)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive ladder to demonstrate your understanding of the paper's core idea: augmenting large language model planning with human causal models for decision-making under uncertainty. The beginner project recreates a simplified hybrid reasoning mechanism to show basic integration of causal preferences with LLM outputs. The intermediate project implements the paper's hybrid reasoning framework on a small-scale simulated POMDP assembly task, comparing augmented and baseline LLM planners. The advanced project extends the framework by exploring dynamic, evolving human causal models that adapt based on LLM feedback or observations, addressing a key future direction of the paper.
+
+### Beginner — Simple Hybrid Reasoning Agent for Action Selection
+*Effort: a weekend, ~8 hours*
+
+You build a small interactive script that simulates the paper's hybrid reasoning framework decision step: given a set of candidate actions with LLM scores and human causal model preferences, your agent resolves conflicts by prioritizing human causal preferences as described in the paper. You implement a simple belief state representation and action scoring, then demonstrate how the hybrid agent selects actions differently from a pure LLM-based agent.
+
+**Why it shows you understood the paper:** This project concretely shows you understand the core mechanism of conflict resolution between LLM outputs and human causal models, a key contribution of the paper's hybrid reasoning framework.
+
+**Grounded in:** The hybrid reasoning framework resolves conflicts by weighing LLM outputs against human causal preferences.
+
+**Tech stack:** Python 3.11
+
+**Data:** Simulated small action sets and manually defined human causal preferences; no external dataset needed.
+
+**Build it:**
+
+1. Implement a simple belief state representation for an assembly or troubleshooting scenario.
+2. Define a set of candidate actions with associated LLM-generated scores (simulated).
+3. Define human causal model preferences as a priority ordering or scoring over actions.
+4. Implement the hybrid reasoning conflict resolution: if LLM and human preferences conflict, select human-preferred actions first.
+5. Create a small interactive demo or script showing action selection differences between pure LLM and hybrid agent.
+6. Write a README explaining the mechanism and how it relates to the paper.
+
+**Ships as:** A Python script or Jupyter notebook demonstrating hybrid action selection with example outputs and a README linking it to the paper's hybrid reasoning framework.
+
+**Stretch goal:** Add a simple visualization comparing action selections over multiple belief states.
+
+### Intermediate — Reimplementation of Hybrid LLM Planner on Simulated Assembly POMDP
+*Effort: 2 weekends, ~20 hours*
+
+You implement a simplified version of the paper's hybrid reasoning framework combining LLM outputs with human causal mental models to solve a small-scale object assembly task modeled as a POMDP. You simulate belief states and actions, implement baseline LLM planner and causally augmented planner, and compare their cumulative rewards over multiple runs.
+
+**Why it shows you understood the paper:** This project demonstrates your ability to reimplement the core method of the paper—hybrid reasoning with human causal models in POMDP planning—and reproduce the key result that augmentation improves planning performance.
+
+**Grounded in:** Design of an interactive LLM agent that solves POMDPs for object assembly and troubleshooting tasks; Demonstration through simulations that augmenting LLM planners with human causal models significantly improves task planning rewards.
+
+**Tech stack:** Python 3.11, NumPy, Matplotlib
+
+**Data:** Simulated POMDP environment for a simple object assembly task with manually defined human causal models; no external dataset available.
+
+**Build it:**
+
+1. Implement a simple POMDP simulator for an object assembly task with partial observability.
+2. Implement a baseline LLM planner that selects actions based on belief states (simulate LLM outputs).
+3. Implement a human causal mental model as an external belief distribution influencing action preferences.
+4. Implement the hybrid reasoning framework that integrates LLM outputs with human causal preferences and resolves conflicts.
+5. Run multiple simulation episodes comparing baseline and augmented planners, recording cumulative rewards.
+6. Plot and analyze reward improvements similar to the paper's metrics.
+7. Document the implementation and results in a README linking to the paper's core contributions.
+
+**Ships as:** A Python repository with POMDP simulation, baseline and hybrid planners, reward comparison plots, and a README explaining the method and results.
+
+**Stretch goal:** Add a simple belief update visualization to show how human causal models correct LLM belief errors.
+
+### Advanced — Dynamic Human Causal Models for Adaptive Hybrid LLM Planning
+*Effort: 3+ weeks*
+
+You extend the paper's hybrid reasoning framework by implementing dynamic human causal models that evolve based on LLM feedback and environmental observations during planning. You design a mechanism for updating causal model confidence or structure over time, integrate it with the hybrid planner, and evaluate planning performance improvements over static causal models on a simulated troubleshooting POMDP task.
+
+**Why it shows you understood the paper:** This project tackles a key future direction and limitation of the paper—static human causal models with fixed confidence—demonstrating your ability to innovate beyond the original work and engage deeply with its challenges.
+
+**Grounded in:** The human causal models used are static and expert-generated; dynamic or evolving causal models were not tested; Investigate the effect of varying confidence values assigned to LLM outputs and human causal models on planning performance; Explore the use of evolving or dynamic causal models that adapt based on observations and LLM information.
+
+**Tech stack:** Python 3.11, NumPy, Matplotlib, PyTorch (optional for learning components)
+
+**Data:** Simulated troubleshooting POMDP environment with synthetic observations and actions; human causal models initialized from static expert priors and updated dynamically.
+
+**Build it:**
+
+1. Implement or reuse a troubleshooting POMDP simulator with partial observability and uncertainty.
+2. Implement the baseline hybrid reasoning framework with static human causal models as a starting point.
+3. Design and implement a mechanism for dynamically updating human causal model confidence or structure based on LLM feedback and observation history.
+4. Integrate the dynamic causal model updates into the hybrid reasoning framework's belief and action selection process.
+5. Run comparative experiments evaluating planning rewards and failure modes with static vs dynamic causal models.
+6. Analyze results and document how dynamic models impact planning performance and mitigate LLM failure modes.
+7. Write a detailed README discussing the extension, challenges faced, and connections to the paper's future directions.
+
+**Ships as:** A Python project demonstrating dynamic causal model integration with hybrid LLM planning, experimental results comparing static and dynamic models, and a comprehensive README linking to the paper's limitations and future work.
+
+**Stretch goal:** Incorporate a simple LLM simulation that generates causal model updates to test the interaction between LLM learning and causal model evolution.
+
+_The paper's authors have not released code or datasets; all projects require simulating POMDP tasks and human causal models based on the paper's descriptions._

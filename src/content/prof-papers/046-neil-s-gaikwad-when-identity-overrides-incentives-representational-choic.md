@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-gaikwad"
-source_hash: "e1efc2b63f1317fe564fa02a26ae90a19147d9dcffb965a16e323534c6777f21"
+source_hash: "bedeec49606df18de3f3b66b5dd21373f1d6963e189bb06548827bd053298ae8"
 sequence: 46
 generator: "outreach-garden: managed"
 ---
@@ -118,3 +118,102 @@ This concept covers how assigning identities or roles to agents influences their
 
 - [Identity and Economic Incentives](https://www.youtube.com/watch?v=zfL2ecNwqaw) — also for: When Identity Overrides Incentives: Representational Choices as Governance Decisions in Multi-Agent LLM Systems (Neil S. Gaikwad)
 - [Lecture 5: Nash Equilibrium](https://www.youtube.com/watch?v=ftCXguW2k4o) — also for: When Identity Overrides Incentives: Representational Choices as Governance Decisions in Multi-Agent LLM Systems (Neil S. Gaikwad)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder to demonstrate your understanding of how persona assignment influences strategic behavior in multi-agent LLM systems, as studied in the paper. The beginner project reproduces a key empirical result on equilibrium selection using a simplified setup and familiar tools. The intermediate project reimplements the core experimental method on a smaller scale, comparing persona vs no-persona conditions with one LLM model. The advanced project extends the paper by exploring persona effects in repeated interactions, addressing a stated limitation and requiring new experimental design and analysis.
+
+### Beginner — Reproduce Persona Effect on Equilibrium Selection
+*Effort: a weekend, ~8 hours*
+
+You build a simplified multi-agent strategic game simulation with four agents and binary actions, using prompt templates to condition a single open-source LLM (e.g., Qwen-7B) with and without personas. You replicate the paper’s key finding that persona presence biases agents toward socially preferred Green Transition equilibria, even when payoff-optimal Tragedy equilibria exist.
+
+**Why it shows you understood the paper:** This project shows you grasp the core empirical phenomenon that persona conditioning overrides payoff incentives in multi-agent LLM games, and you can operationalize the experimental setup to measure equilibrium selection rates.
+
+**Grounded in:** Empirical demonstration that a single binary design choice (persona presence) shifts equilibrium attainment by up to 90 percentage points across models and scenarios.
+
+**Tech stack:** Python 3.11, OpenAI-compatible LLM API or HuggingFace transformers, Jupyter Notebook, matplotlib or seaborn for plotting
+
+**Data:** Simulated environmental policy four-agent strategic games with binary actions, inspired by the paper’s scenario descriptions; no public dataset available so you synthesize payoff tables and scenario parameters based on paper examples.
+
+**Build it:**
+
+1. Implement a simplified four-agent strategic game environment with binary actions and payoff tables representing Green Transition and Tragedy equilibria.
+2. Write prompt templates for agent action selection with and without persona descriptions, following the paper’s prompt structure.
+3. Use an open-source LLM (e.g., Qwen-7B from HuggingFace) to generate agent actions under both conditions.
+4. Run multiple trials per condition and record equilibrium outcomes.
+5. Visualize and compare equilibrium selection rates between persona and no-persona conditions.
+
+**Verified links from the paper:**
+
+- <https://huggingface.co/Qwen/Qwen2.5-7B-Instruct> — a third-party/baseline artifact the paper cites — not the authors' own code
+
+**Ships as:** A GitHub repo with code to run the simulation, Jupyter notebook showing equilibrium selection results, and README explaining the reproduction of the persona effect.
+
+**Stretch goal:** Add payoff visibility variation to observe interaction effects as in the paper’s 2×2 factorial design.
+
+### Intermediate — Reimplement Core Experiment on Persona and Payoff Visibility
+*Effort: 1-3 weekends*
+
+You reimplement the paper’s 2×2 factorial experiment varying persona presence and payoff visibility using one LLM model (e.g., Qwen-7B). You run multiple environmental policy scenarios modeled as four-agent strategic games, measure Nash equilibrium attainment and selection, and compare results to a baseline condition without personas and with visible payoffs.
+
+**Why it shows you understood the paper:** This project demonstrates you can reconstruct the paper’s core experimental method and metrics from scratch, including prompt engineering, multi-agent interaction, and equilibrium analysis, showing deeper comprehension of the paper’s approach and results.
+
+**Grounded in:** First controlled study of how persona conditioning and payoff visibility jointly determine equilibrium outcomes in multi-agent LLM systems.
+
+**Tech stack:** Python 3.11, HuggingFace transformers (Qwen-7B), Jupyter Notebook, pandas, matplotlib or seaborn
+
+**Data:** Simulated environmental policy scenarios with four agents and binary actions, synthesized based on the paper’s scenario descriptions; no public dataset available.
+
+**Build it:**
+
+1. Design and implement the 2×2 factorial experiment varying persona presence (with/without) and payoff visibility (visible/hidden).
+2. Create prompt templates for each condition following the paper’s description and persona variants.
+3. Run multiple trials across a balanced set of scenarios, collecting agent actions and equilibrium outcomes.
+4. Implement Nash equilibrium detection logic to classify outcomes as Green Transition or Tragedy equilibria.
+5. Analyze and visualize equilibrium selection rates across conditions, comparing to baseline.
+6. Document methodology, results, and comparison to paper findings in a detailed notebook or report.
+
+**Verified links from the paper:**
+
+- <https://huggingface.co/Qwen/Qwen2.5-7B-Instruct> — a third-party/baseline artifact the paper cites — not the authors' own code
+
+**Ships as:** A GitHub repo with experiment code, analysis notebooks, and a report comparing your results to the paper’s key findings on persona and payoff visibility effects.
+
+**Stretch goal:** Incorporate chain-of-thought reasoning prompts to analyze shifts in agent reasoning patterns as in the paper’s chain-of-thought analysis.
+
+### Advanced — Extend Persona Effects to Repeated Multi-Agent Games
+*Effort: few weeks*
+
+You extend the paper’s single-shot game design by implementing repeated multi-agent strategic games with persona-conditioned LLM agents. You investigate how persona presence influences equilibrium selection and strategic adaptation over multiple rounds, addressing a key limitation and future direction of the paper. You analyze whether persona effects persist, diminish, or evolve with repeated interactions.
+
+**Why it shows you understood the paper:** This project shows you can critically engage with the paper’s limitations and future directions, design and implement a novel experimental setup, and perform meaningful analysis of persona effects beyond the original scope, demonstrating research-level initiative and insight.
+
+**Grounded in:** Study limited to single-shot game design; future direction to investigate effects of repeated interactions on persona effects.
+
+**Tech stack:** Python 3.11, HuggingFace transformers (Qwen-7B or Qwen-32B), Jupyter Notebook, pandas, matplotlib or seaborn, possibly Docker for reproducibility
+
+**Data:** Simulated repeated environmental policy strategic games with four agents and binary actions, synthesized based on the paper’s scenario descriptions; no public dataset available.
+
+**Build it:**
+
+1. Design a repeated game framework allowing multiple rounds of agent interaction with memory of past actions.
+2. Adapt persona and payoff visibility prompt templates to support repeated interaction context.
+3. Implement agent action selection using an LLM model with persona conditioning across rounds.
+4. Run experiments comparing persona vs no-persona conditions over multiple rounds in several scenarios.
+5. Analyze equilibrium selection dynamics, adaptation patterns, and stability over time.
+6. Document findings, limitations, and implications for persona effects in repeated multi-agent LLM systems.
+
+**Verified links from the paper:**
+
+- <https://huggingface.co/Qwen/Qwen2.5-7B-Instruct> — a third-party/baseline artifact the paper cites — not the authors' own code
+- <https://huggingface.co/Qwen/Qwen2.5-32B-Instruct> — a third-party/baseline artifact the paper cites — not the authors' own code
+
+**Ships as:** A GitHub repo with code for repeated multi-agent games, analysis notebooks showing temporal dynamics of persona effects, and a comprehensive README discussing extension beyond the original paper.
+
+**Stretch goal:** Explore alternative payoff formats or action orderings in repeated games to further investigate representational choice effects.
+
+_No authors' own code or datasets are available; all projects require synthesizing scenario data based on the paper's descriptions and using third-party open-source LLM models from HuggingFace._

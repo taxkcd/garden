@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-kaave-hosseini"
-source_hash: "98f925ccaa1229ac558a0f3b6a90f129a9d08c40e23746fb5a94fb4dba23ae5d"
+source_hash: "593ccb213c6685bd20727c59232aab67948f699f137b9a80643818cfe97abee6"
 sequence: 189
 generator: "outreach-garden: managed"
 ---
@@ -146,3 +146,87 @@ A direct presentation by the authors explaining their new lower bound method and
 ## Already in your library
 
 - [What is...additive combinatorics?](https://www.youtube.com/watch?v=2t11L2iT6TE) — also for: Incidence Theorems and Their Applications (Zeev Dvir)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder to demonstrate your understanding of the paper's core contributions on lower bounds for the trace norm of Boolean matrices and complexity separations. The beginner project reproduces a simple example of the trace norm lower bound using Hölder’s inequality on a small Boolean matrix. The intermediate project implements the paper's core Hölder’s inequality method to compute lower bounds on the trace norm for explicit Boolean functions related to Sidon sets, comparing randomized parity decision tree depth and spectral norm. The advanced project extends the method to explore one of the paper's open questions: investigating stronger separations between randomized and deterministic parity decision tree sizes, potentially by experimenting with new combinatorial constructions or parameter choices.
+
+### Beginner — Trace Norm Lower Bound on a Small Boolean Matrix
+*Effort: a weekend, ~6 hours*
+
+You build a small Python script that computes the trace norm (nuclear norm) of a given small Boolean matrix and applies the variant of Hölder’s inequality as described in the paper to establish a lower bound. The project includes a simple example matrix (e.g., a 4x4 point-line incidence matrix) and demonstrates the calculation step-by-step.
+
+**Why it shows you understood the paper:** This project shows you understand the paper's key technical tool—using Hölder’s inequality to lower-bound the trace norm—and can apply it concretely to Boolean matrices, a fundamental step in the paper's proofs.
+
+**Grounded in:** Introduced a simple method based on a variant of Hölder’s inequality to lower-bound the trace norm of Boolean matrices.
+
+**Tech stack:** Python 3.11, NumPy, Matplotlib (optional for visualization)
+
+**Data:** A small synthetic Boolean matrix representing a point-line incidence system, constructed manually as per examples in the paper.
+
+**Build it:**
+
+1. Implement a function to compute the singular values and trace norm of a Boolean matrix using NumPy.
+2. Implement the variant of Hölder’s inequality as described in the paper to compute a lower bound on the trace norm.
+3. Construct a small example Boolean matrix (e.g., 4x4 incidence matrix) manually.
+4. Compute and compare the actual trace norm and the Hölder’s inequality lower bound for this matrix.
+5. Document the process and results in a README with explanations linking back to the paper.
+
+**Ships as:** A GitHub repo with a Python script and README demonstrating the trace norm calculation and Hölder’s inequality lower bound on a small Boolean matrix.
+
+**Stretch goal:** Add visualization of singular values and illustrate how the lower bound compares to the actual trace norm for different small matrices.
+
+### Intermediate — Reimplementing Hölder’s Inequality Lower Bound for Sidon Set Boolean Functions
+*Effort: 2 weekends, ~20 hours*
+
+You implement the paper’s core method of applying Hölder’s inequality to Boolean functions defined by Sidon sets, explicitly constructing these functions and computing their spectral norms and randomized parity decision tree depths. You compare your computed lower bounds on the trace norm with baseline naive bounds, demonstrating the exponential separation between complexity measures.
+
+**Why it shows you understood the paper:** This project shows you can reimplement the paper’s main technical method and apply it to explicit combinatorial constructions (Sidon sets), reproducing key complexity separations and metrics from the paper.
+
+**Grounded in:** Constructed explicit Boolean functions (indicators of Sidon sets) with large spectral norm but small randomized parity decision tree complexity.
+
+**Tech stack:** Python 3.11, NumPy, SciPy, Jupyter Notebook
+
+**Data:** Synthetic Boolean functions constructed from Sidon sets as described in the paper, generated programmatically based on BCH codes or combinatorial definitions.
+
+**Build it:**
+
+1. Implement a generator for Sidon sets or use BCH code constructions to define Boolean functions as indicator functions.
+2. Implement Fourier transform computations to calculate spectral norms (Fourier L1-norm) of these Boolean functions.
+3. Implement or simulate randomized parity decision tree algorithms to estimate their depth or size.
+4. Apply the Hölder’s inequality variant to compute lower bounds on the trace norm of the associated Boolean matrices.
+5. Compare your computed bounds and complexity measures, reproducing the exponential separation results.
+6. Write a detailed report in a Jupyter Notebook linking your implementation steps to the paper’s theorems.
+
+**Ships as:** A Jupyter Notebook repository with code and explanations reproducing the paper’s main complexity separations for Sidon set Boolean functions.
+
+**Stretch goal:** Extend the implementation to approximate spectral norms and demonstrate the exponential separation between approximate and exact spectral norms.
+
+### Advanced — Exploring Stronger Separations in Parity Decision Tree Complexity
+*Effort: 3-4 weeks*
+
+You extend the paper’s Hölder’s inequality framework to experimentally investigate whether stronger separations (e.g., O(1)-vs-Ω(n)) between randomized and deterministic parity decision tree sizes are achievable. This involves designing new combinatorial constructions or parameter variations, implementing complexity measure computations, and analyzing results to identify potential improvements or limitations.
+
+**Why it shows you understood the paper:** This project demonstrates deep engagement with the paper’s open problems and limitations, showing you can extend and experiment with its core methods to contribute new insights or partial progress on open questions.
+
+**Grounded in:** Investigate whether a stronger separation (O(1)-vs-Ω(n)) between randomized and deterministic parity decision tree sizes is achievable.
+
+**Tech stack:** Python 3.11, NumPy, SciPy, Jupyter Notebook, Matplotlib
+
+**Data:** Synthetic Boolean functions generated via new or modified combinatorial constructions inspired by Sidon sets or point-line incidence systems, created programmatically.
+
+**Build it:**
+
+1. Review the paper’s constructions and limitations regarding parity decision tree size separations.
+2. Design or adapt combinatorial constructions (e.g., variants of Sidon sets) to attempt stronger separations.
+3. Implement code to compute or estimate randomized and deterministic parity decision tree sizes for these functions.
+4. Apply the Hölder’s inequality method to compute trace norm lower bounds and analyze complexity separations.
+5. Visualize and document findings, discussing whether stronger separations appear achievable or what barriers exist.
+6. Prepare a comprehensive report or notebook linking your experiments to the paper’s open problems.
+
+**Ships as:** A GitHub repo with code, notebooks, and a detailed report exploring stronger parity decision tree complexity separations, potentially contributing new experimental insights.
+
+**Stretch goal:** Attempt to generalize the Hölder’s inequality framework to other complexity measures or communication models as suggested in the paper’s future directions.

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-yoseph-barash"
-source_hash: "bccac58bcb8983e9cf79ddd61de137f6551c2e70a5eaeb931457f2f13c4a3ae5"
+source_hash: "f413e409e5247df80323330b91bf5fb2c9c4da1c434b6fb0486f71ac0501fd2e"
 sequence: 211
 generator: "outreach-garden: managed"
 ---
@@ -119,3 +119,94 @@ Splice junction detection algorithms identify the boundaries where RNA segments 
 ## Already in your library
 
 - [7 Types of Alternative splicing in 6 minutes](https://www.youtube.com/watch?v=vRCzr-621qg) — also for: Splitpea: quantifying protein interaction network rewiring changes due to alternative splicing in cancer (Vicky Yao)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progression from reproducing a core comparative metric from the paper using existing tools, to applying the authors' MAJIQ-L pipeline on real data for integrated analysis, and finally to extending the work by addressing a stated limitation around isoform quantification with a probabilistic model. Each project is tailored to your software engineering and applied ML skills while grounding tightly in the paper's contributions and future directions.
+
+### Beginner — Reproduce splice junction detection comparison
+*Effort: a weekend, ~8 hours*
+
+You build a small analysis script that compares splice junction counts detected by short-read versus long-read RNA-seq data at matched coverage, reproducing the paper's key metric that short reads detect ~30% more splice junctions. You use simple Python data processing and visualization to replicate one figure or table from the paper.
+
+**Why it shows you understood the paper:** This project shows you understand the fundamental difference in splice junction detection between short and long reads, a central quantitative result of the paper.
+
+**Grounded in:** Short reads detect approximately 30% more splice junctions than long reads at matched coverage.
+
+**Tech stack:** Python 3.11, pandas, matplotlib
+
+**Data:** Use publicly available matched short- and long-read RNA-seq datasets referenced in the paper or simulate small example data reflecting splice junction counts.
+
+**Build it:**
+
+1. Obtain or simulate matched short- and long-read RNA-seq splice junction count data.
+2. Write a Python script to load and aggregate splice junction counts for each technology.
+3. Calculate the percentage difference in detected splice junctions between short and long reads.
+4. Plot a bar chart or table summarizing the comparison.
+5. Write a README explaining the analysis and how it relates to the paper's result.
+
+**Ships as:** A GitHub repo with a Python script and README reproducing the splice junction detection comparison metric and visualization.
+
+**Stretch goal:** Add analysis of coverage effects on junction detection by subsampling reads.
+
+### Intermediate — Run MAJIQ-L pipeline on public RNA-seq data
+*Effort: 2 weekends, ~20 hours*
+
+You install and run the authors' MAJIQ-L pipeline from their Bitbucket repository to integrate short- and long-read RNA-seq data on a publicly available dataset. You reproduce the combined splice graph visualization using VOILA v3 and compare splice junction and intron retention detection between the two technologies.
+
+**Why it shows you understood the paper:** This project demonstrates you can use the authors' core method for integrated analysis, understand its inputs and outputs, and interpret the complementary transcriptome features revealed by combined short- and long-read data.
+
+**Grounded in:** Development of MAJIQ-L pipeline for integrated analysis of short- and long-read RNA-seq data; Creation of VOILA v3 visualization package for unified transcriptome analysis.
+
+**Tech stack:** Python 3.11, MAJIQ-L (Bitbucket), VOILA v3, Linux shell scripting
+
+**Data:** Use publicly available matched short- and long-read RNA-seq datasets referenced in the paper or substitute with publicly available datasets with both data types.
+
+**Build it:**
+
+1. Clone and install the MAJIQ-L pipeline from https://bitbucket.org/biociphers/majiq-l.
+2. Download or identify a suitable matched short- and long-read RNA-seq dataset.
+3. Prepare genome annotation files as required by MAJIQ-L.
+4. Run MAJIQ-L to detect splice junctions and intron retention events.
+5. Use VOILA v3 to visualize combined splice graphs and transcript isoforms.
+6. Compare and report differences in splice junction and intron retention detection between short and long reads.
+7. Document the process and findings in a detailed README.
+
+**Verified links from the paper:**
+
+- <https://bitbucket.org/biociphers/majiq-l> — released by the paper's authors
+
+**Ships as:** A GitHub repo with scripts, commands, and a report reproducing integrated analysis and visualization of transcriptome complexity using MAJIQ-L and VOILA v3.
+
+**Stretch goal:** Experiment with relaxing long-read algorithm parameters and observe effects on junction detection and false positives.
+
+### Advanced — Unified probabilistic isoform quantification model
+*Effort: 3-4 weeks*
+
+You develop a prototype probabilistic model that integrates short- and long-read RNA-seq data for isoform-level quantification, addressing a key limitation noted in the paper. You implement the model in Python, apply it to a matched dataset, and compare isoform abundance estimates to those from separate analyses.
+
+**Why it shows you understood the paper:** This project tackles a stated future direction by extending the paper's integrated analysis beyond splice junction detection to isoform quantification, demonstrating deep comprehension and ability to innovate on the method.
+
+**Grounded in:** No unified probabilistic model combining short- and long-read data for isoform quantification was developed; Future direction: Development of unified probabilistic models for integrated isoform-level quantification from short and long reads.
+
+**Tech stack:** Python 3.11, NumPy, SciPy, PyTorch or TensorFlow (optional), Jupyter Notebook
+
+**Data:** Use publicly available matched short- and long-read RNA-seq datasets referenced in the paper or substitute with publicly available datasets; simulate isoform abundances if necessary.
+
+**Build it:**
+
+1. Review literature on isoform quantification models for short and long reads separately.
+2. Design a probabilistic model framework that integrates splice junction evidence from both data types.
+3. Implement the model in Python, allowing input of splice junction counts and long-read isoform evidence.
+4. Apply the model to a matched dataset to estimate isoform abundances.
+5. Compare results to isoform quantifications from short-read-only and long-read-only methods.
+6. Document methodology, code, and results in a comprehensive README and Jupyter notebook.
+
+**Ships as:** A GitHub repo with code implementing a unified probabilistic isoform quantification model, example data analysis, and detailed documentation linking to the paper's limitation and future direction.
+
+**Stretch goal:** Incorporate allele-specific splicing or variant detection into the model.
+
+_Public matched short- and long-read RNA-seq datasets may not be identical to those used in the paper; substitute datasets should be carefully chosen or simulated to approximate the paper's data characteristics._

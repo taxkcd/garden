@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-glencora-borradaile"
-source_hash: "5bfc56031a2d82993f5f2d6cb4817f13629e0bb2d29b1c75041899523a0f87f8"
+source_hash: "ee69ea63abf5c61c98d5e8c671ac2de86340dd81740ca9d83e5366cb89e347b7"
 sequence: 126
 generator: "outreach-garden: managed"
 ---
@@ -125,3 +125,86 @@ This video provides a direct explanation from experts on how to make any messagi
 *How the paper uses it:* It complements the paper by showing practical PGP encryption usage, reinforcing the study’s focus on real-world adoption.
 
 ▶ [Make ANY Messaging Service E2E Encrypted With PGP](https://www.youtube.com/watch?v=mu2TVYJE5Gc) — Mental Outlaw · 1 year ago
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive ladder to demonstrate understanding of the paper "The Motivated Can Encrypt (Even with PGP)". The beginner project reproduces a key survey result visualization using the applicant's existing web development skills. The intermediate project implements the paper's core Qualitative Comparative Analysis (QCA) method on a simulated activist dataset to analyze factors influencing PGP adoption. The advanced project extends the research by exploring tailored digital security training strategies for high-risk activists, addressing a stated future direction and limitation of the paper.
+
+### Beginner — Visualize Long-Term PGP Use Survey Results
+*Effort: a weekend, ~8 hours*
+
+You build a React web app that visualizes the key survey findings from the paper, such as the proportion of activists continuing PGP use 6 to 40 months after training and the correlation between activism risk and PGP discontinuation. The app includes interactive charts (bar charts or pie charts) summarizing these statistics.
+
+**Why it shows you understood the paper:** This project shows you understand the paper's main empirical findings and can faithfully represent them visually, demonstrating comprehension of the study's outcomes and their significance.
+
+**Grounded in:** More than half of surveyed activists continued using PGP email encryption 6 to 40 months after training; Higher-risk activism negatively correlates with continued PGP use.
+
+**Tech stack:** React, TypeScript, D3.js or Chart.js, CSS
+
+**Data:** Data is synthesized from the paper's reported statistics and claims; no raw dataset is available.
+
+**Build it:**
+
+1. Extract key quantitative results from the paper's text and figures (e.g., % continuing PGP use, correlation with risk).
+2. Design and implement React components to display these results as charts.
+3. Add interactivity such as tooltips or filters to explore different factors (motivation, risk, community use).
+4. Style the app for clarity and accessibility.
+5. Write a README explaining the source of data and how the visualization relates to the paper's findings.
+
+**Ships as:** A GitHub repo with a React app that visually summarizes the paper's main survey results, with clear documentation linking visuals to paper claims.
+
+**Stretch goal:** Add a comparison view showing hypothetical scenarios of PGP use based on combinations of motivation, technical ease, and risk.
+
+### Intermediate — Reimplement QCA Analysis of PGP Adoption Factors
+*Effort: 1-3 weekends*
+
+You implement a Qualitative Comparative Analysis (QCA) pipeline in Python or TypeScript to analyze a small dataset simulating activist profiles with attributes (technical ease, motivation, risk, community use) and PGP adoption outcome. You replicate the paper's core logical formula identifying factor combinations predicting long-term PGP use and discontinuation, comparing results to a simple baseline like logistic regression.
+
+**Why it shows you understood the paper:** This project demonstrates you understand and can apply the paper's core methodological contribution—QCA—to explain complex factor interactions in PGP adoption, not just descriptive statistics.
+
+**Grounded in:** Use of Qualitative Comparative Analysis (QCA) to identify combinations of factors (technical ease, motivation, community use, risk) explaining long-term PGP adoption or discontinuation.
+
+**Tech stack:** Python 3.11, pandas, numpy, scikit-learn, QCA Python package (e.g., 'pyQCA' or implement basic QCA logic)
+
+**Data:** Simulated dataset of 19 activist cases with binary/categorical attributes modeled after the paper's survey variables, since no public dataset is available.
+
+**Build it:**
+
+1. Create a synthetic dataset representing activist profiles with attributes: technical ease, motivation, risk, community use, and PGP use outcome.
+2. Implement or use an existing QCA library to analyze necessary and sufficient conditions for long-term PGP use.
+3. Compare QCA results to a logistic regression baseline predicting PGP use from the same factors.
+4. Visualize and document the logical formulas and coverage/consistency metrics.
+5. Write a README explaining the QCA method, dataset simulation, and how results replicate the paper's findings.
+
+**Ships as:** A GitHub repo with code to perform QCA on activist data, reproducing the paper's factor combination logic and comparing to a baseline, with clear documentation.
+
+**Stretch goal:** Extend the dataset with additional hypothetical cases to explore robustness of factor combinations or test alternative factor codings.
+
+### Advanced — Prototype Tailored Digital Security Training for High-Risk Activists
+*Effort: 3+ weeks*
+
+You design and build a prototype web-based training platform that adapts digital security content based on user motivation and risk profile, addressing the paper's future direction on tailored training. The platform includes modules on PGP usability, motivation boosters, and alternative secure communication tools. You conduct a small user study or heuristic evaluation to assess usability and engagement.
+
+**Why it shows you understood the paper:** This project tackles a key limitation and future direction from the paper by operationalizing tailored training strategies informed by the paper's insights on motivation, risk, and usability barriers, demonstrating deep engagement with the research implications.
+
+**Grounded in:** Future direction: Investigate tailored digital security training that addresses both usability and user motivation; limitation: small sample and need for improved usability solutions for PGP.
+
+**Tech stack:** TypeScript, React, Node.js/Express, PostgreSQL or SQLite, Docker for deployment
+
+**Data:** No real activist data; user profiles and feedback collected from voluntary participants or simulated personas for evaluation.
+
+**Build it:**
+
+1. Design training content modules informed by the paper's findings on motivation, technical ease, and risk.
+2. Implement a React frontend with adaptive navigation based on user input about motivation and risk.
+3. Build a backend API to manage user profiles, progress, and content delivery.
+4. Deploy the platform using Docker for easy sharing.
+5. Conduct a small heuristic evaluation or pilot user testing to gather feedback on usability and motivational impact.
+6. Document design decisions linking back to the paper's insights and limitations.
+
+**Ships as:** A fully functional adaptive digital security training web app prototype with documentation connecting design to the paper's research and future directions.
+
+**Stretch goal:** Integrate real-world activist feedback or partner with a digital security trainer to pilot the platform in a workshop setting.

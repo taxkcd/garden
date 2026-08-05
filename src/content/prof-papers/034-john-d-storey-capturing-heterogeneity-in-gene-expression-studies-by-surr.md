@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-storeylab-org"
-source_hash: "986a63086aa6bde12f787294c2e735b2499a4a114ebbc8d74e3d643d765c931e"
+source_hash: "4a113fedd320df17bead213c82f6fcfe9f97367a6db98ad749f45a7c8b082d33"
 sequence: 34
 generator: "outreach-garden: managed"
 ---
@@ -127,3 +127,86 @@ Surrogate Variable Analysis (SVA) is a method to identify and adjust for unknown
 
 - [Batch Correction and Integration | NBIS Workshop in Single ...](https://www.youtube.com/watch?v=a-vzYSYA9mg) — also for: Capturing Heterogeneity in Gene Expression Studies by Surrogate Variable Analysis (John D. Storey)
 - [CSCI 3151 - M09 - Latent-variable models & the EM algorithm](https://www.youtube.com/watch?v=c0THKJTN-ZQ) — also for: Decomposed Linear Dynamical Systems (dLDS) for learning the latent components of neural dynamics (Adam Charles)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive learning path to demonstrate understanding of Surrogate Variable Analysis (SVA) from the paper. The beginner project reproduces a key diagnostic plot illustrating SVA's effect on p-value distributions using simulated data. The intermediate project implements the core SVA method on a small public gene expression dataset, comparing differential expression results with and without SVA adjustment. The advanced project extends SVA by integrating external biological metadata to interpret surrogate variables, addressing a stated limitation and future direction of the paper.
+
+### Beginner — Reproduce SVA Null P-Value Uniformity Plot
+*Effort: a weekend, ~8 hours*
+
+You build a Jupyter notebook that simulates gene expression data with known primary and unmodeled factors, applies a simple linear model without adjustment, and then applies surrogate variable adjustment by estimating surrogate variables via PCA on residuals. You then plot the null p-value distributions before and after SVA adjustment to reproduce the uniformity correction shown in the paper's Figure 1B.
+
+**Why it shows you understood the paper:** This project shows you understand the core problem of unmodeled variation biasing p-values and how SVA corrects it by estimating hidden factors and adjusting the model accordingly.
+
+**Grounded in:** SVA corrects the null p-value distribution to be uniform, ensuring valid significance testing. Figures 1B and S3 demonstrate that null p-values after SVA adjustment follow the expected Uniform distribution.
+
+**Tech stack:** Python 3, Jupyter Notebook, numpy, scipy, matplotlib, scikit-learn
+
+**Data:** Simulated gene expression data generated within the notebook to mimic primary and unmodeled factors as described in the paper's simulation setup.
+
+**Build it:**
+
+1. Simulate gene expression data with known primary variables and hidden confounders.
+2. Fit a linear model for differential expression ignoring hidden factors and compute p-values.
+3. Estimate surrogate variables by performing PCA on residuals after removing primary effects.
+4. Refit the model including surrogate variables as covariates and recompute p-values.
+5. Plot histograms of null p-values before and after SVA adjustment to show uniformity correction.
+
+**Ships as:** A Jupyter notebook with code, plots, and explanations reproducing the null p-value uniformity correction by SVA.
+
+**Stretch goal:** Add a small interactive widget to vary the strength of hidden confounding and observe its effect on p-value distributions.
+
+### Intermediate — Implement SVA on Public Gene Expression Data
+*Effort: 2 weekends, ~20 hours*
+
+You implement the Surrogate Variable Analysis algorithm from the paper based on its description, applying it to a publicly available small gene expression dataset (e.g., a subset of the GTEx or a cancer microarray dataset). You compare differential expression results with and without SVA adjustment, reporting metrics such as p-value distribution uniformity and number of significant genes detected.
+
+**Why it shows you understood the paper:** This project demonstrates you can reimplement the core SVA method, apply it to real data, and quantitatively evaluate its impact on differential expression analysis, mirroring the paper's core contributions.
+
+**Grounded in:** The authors developed Surrogate Variable Analysis (SVA), a multi-step algorithm that estimates surrogate variables representing unmodeled factors by decomposing residual expression data after removing the effects of primary variables. These surrogate variables are then included as covariates in downstream analyses to adjust for EH.
+
+**Tech stack:** Python 3, Jupyter Notebook, pandas, numpy, scipy, statsmodels, scikit-learn, matplotlib
+
+**Data:** A small public gene expression dataset such as a subset of the GTEx dataset or a publicly available cancer microarray dataset, used as a substitute for the paper's data.
+
+**Build it:**
+
+1. Select and preprocess a small public gene expression dataset with known primary variables (e.g., disease status).
+2. Implement the SVA algorithm: fit a model with primary variables, compute residuals, perform dimension reduction (e.g., PCA) on residuals to estimate surrogate variables.
+3. Include surrogate variables as covariates in the differential expression model and compute adjusted p-values.
+4. Compare p-value distributions and numbers of significant genes before and after SVA adjustment.
+5. Visualize results with plots similar to those in the paper (e.g., p-value histograms, volcano plots).
+
+**Ships as:** A GitHub repository with code implementing SVA, analysis notebooks, and a README reporting quantitative comparisons of differential expression results with and without SVA.
+
+**Stretch goal:** Add a simple baseline adjustment method (e.g., batch correction by ComBat) and compare its performance against your SVA implementation.
+
+### Advanced — Integrate Biological Metadata to Interpret Surrogate Variables
+*Effort: 3+ weeks*
+
+You extend the SVA method by integrating external biological or clinical metadata (e.g., tissue type, batch, patient demographics) to interpret the surrogate variables estimated from gene expression data. You implement correlation analyses and visualization tools to link surrogate variables to known biological factors, addressing the paper's limitation that surrogate variables lack direct biological identity.
+
+**Why it shows you understood the paper:** This project tackles a key limitation and future direction from the paper, showing you can extend SVA beyond statistical adjustment to biological interpretation, which is critical for practical utility in genomic studies.
+
+**Grounded in:** SVA estimates surrogate variables without identifying the biological identity of unmodeled factors. Future directions include further development to interpret biological meaning of surrogate variables and integration with external biological or clinical data.
+
+**Tech stack:** Python 3, Jupyter Notebook, pandas, numpy, scipy, matplotlib, seaborn, statsmodels, scikit-learn
+
+**Data:** A public gene expression dataset with accompanying biological or clinical metadata (e.g., tissue type, batch information) to enable surrogate variable interpretation.
+
+**Build it:**
+
+1. Implement or reuse the SVA method to estimate surrogate variables from gene expression data.
+2. Collect and preprocess relevant biological or clinical metadata associated with samples.
+3. Perform correlation and regression analyses between surrogate variables and metadata variables.
+4. Visualize relationships using heatmaps, scatterplots, and clustering to interpret surrogate variables.
+5. Document findings on which surrogate variables correspond to known biological or technical factors.
+6. Optionally, propose a workflow to incorporate surrogate variable interpretation into downstream analysis.
+
+**Ships as:** A comprehensive GitHub repository with code, notebooks, and documentation demonstrating surrogate variable interpretation via integration with biological metadata.
+
+**Stretch goal:** Develop a simple interactive dashboard to explore surrogate variable relationships with metadata dynamically.

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-mathcancer-org"
-source_hash: "dda180929d6378cd56f37e3c9c1e87e3fa2af5eba280987a9584d8434bfad6cc"
+source_hash: "d2a7c681f588c5f0f85c7850fea77caaae4b54a20ebe18921010edf9b3c68c8f"
 sequence: 3
 generator: "outreach-garden: managed"
 ---
@@ -142,3 +142,90 @@ PhysiBoSS is a platform that uniquely combines agent-based modeling of cell popu
 - [Agent-Based Modeling: What is Agent-Based Modeling?](https://www.youtube.com/watch?v=FVmQbfsOkGc) — also for: PhysiBoSS-Models: A database for multiscale models (Paul Macklin)
 - [Introduction to Boolean Networks in Biology](https://www.youtube.com/watch?v=V9EYs8h0ON0) — also for: PhysiBoSS-Models: A database for multiscale models (Paul Macklin)
 - [PhysiCell ws2021: Special PhysiBoSS Lecture](https://www.youtube.com/watch?v=2w2-Q-gvO4U) — also for: PhysiBoSS-Models: A database for multiscale models (Paul Macklin)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder of increasing complexity and depth to demonstrate understanding of the PhysiBoSS-Models database and its ecosystem. Starting with a beginner-level project that uses the Python API to explore and run a simple PhysiBoSS model, progressing to an intermediate project that reimplements core PhysiBoSS multiscale simulation concepts on a small scale, and culminating in an advanced project that addresses a stated limitation by building an automated workflow to generate and visualize simulation outputs from models in the database. Each project ties directly to specific contributions, results, or future directions from the paper.
+
+### Beginner — Explore and Run a PhysiBoSS Model via Python API
+*Effort: a weekend, ~8 hours*
+
+You build a Python script that uses the PhysiBoSS-Models Python API to search for available models in the database, download a selected tutorial model, and run a simple simulation using the provided cross-platform binaries. You then parse and visualize basic simulation output metrics such as cell population counts over time.
+
+**Why it shows you understood the paper:** This project demonstrates your ability to use the PhysiBoSS-Models database programmatically, showing you understand the standardized model structure, version control, and how the Python API integrates with the simulation binaries and PhysiCell Studio ecosystem.
+
+**Grounded in:** The Python API enables seamless integration of models into computational workflows; cross-platform binaries lower technical barriers; integration with PhysiCell Studio allows easy model runs.
+
+**Tech stack:** Python 3.11, PhysiBoSS-Models Python API, matplotlib or seaborn for plotting
+
+**Data:** Use example PhysiBoSS tutorial models included in the PhysiBoSS-Models database as described in the paper.
+
+**Build it:**
+
+1. Install the PhysiBoSS-Models Python API and download the cross-platform binaries.
+2. Write a Python script to query the database for available models and select a tutorial model.
+3. Download the model files and run a simulation using the API and binaries.
+4. Parse the simulation output files to extract cell population metrics over time.
+5. Plot the results to visualize basic model behavior.
+6. Document the process and results in a README.
+
+**Ships as:** A GitHub repo with a Python script demonstrating search, download, simulation run, and visualization of a PhysiBoSS tutorial model, with clear README instructions.
+
+**Stretch goal:** Add a simple GUI using a Python library (e.g., Tkinter) to select and run models interactively.
+
+### Intermediate — Reimplement Core PhysiBoSS Multiscale Simulation on a Small Scale
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement a simplified version of the PhysiBoSS multiscale simulation approach by combining an agent-based model of a small cell population with stochastic Boolean networks representing intracellular signaling. You simulate a small biological scenario (e.g., cell fate decisions) and compare your results to a baseline deterministic Boolean network simulation.
+
+**Why it shows you understood the paper:** This project shows you understand the core method of integrating agent-based modeling with stochastic Boolean networks for multiscale biological simulation, as described in the paper, and can implement and evaluate it independently.
+
+**Grounded in:** PhysiBoSS integrates agent-based modeling of cell populations with intracellular stochastic Boolean networks, enabling multiscale simulations of complex biological behaviors.
+
+**Tech stack:** Python 3.11, NumPy, matplotlib, networkx (for Boolean networks)
+
+**Data:** Simulate a small synthetic cell population with Boolean network models inspired by examples in the PhysiBoSS tutorial models; no external dataset required.
+
+**Build it:**
+
+1. Implement a simple stochastic Boolean network simulator for intracellular signaling.
+2. Implement an agent-based model representing a small population of cells with states updated based on Boolean network outputs.
+3. Run simulations of cell population dynamics under stochastic signaling.
+4. Implement a baseline deterministic Boolean network simulation for comparison.
+5. Compare and plot differences in cell fate outcomes between stochastic and deterministic models.
+6. Write a report explaining the implementation, results, and relation to PhysiBoSS.
+
+**Ships as:** A GitHub repo with code implementing the simplified multiscale simulation, comparison plots, and a README explaining the approach and results.
+
+**Stretch goal:** Extend the model to include spatial interactions between cells in the agent-based model.
+
+### Advanced — Automate Simulation Output Generation and Visualization for PhysiBoSS-Models
+*Effort: 3+ weeks*
+
+You develop an automated workflow that integrates with the PhysiBoSS-Models database to programmatically download models, run batch simulations using the cross-platform binaries, and automatically generate and store standardized simulation output visualizations. You build a minimal web interface or dashboard to browse models and their simulation results, addressing a key limitation noted in the paper.
+
+**Why it shows you understood the paper:** This project tackles a stated limitation and future direction of the paper by providing automatic simulation output generation and a quality web interface for browsing models and results, demonstrating deep understanding of the database infrastructure, simulation platform, and user accessibility challenges.
+
+**Grounded in:** Limitations: Simulation outputs are not yet automatically produced or accessible via the database; Future directions: Provide simulation outputs through automatic workflows and develop a quality web interface for browsing models and launching simulations.
+
+**Tech stack:** Python 3.11, FastAPI or Flask, React or plain JavaScript for frontend, Docker for containerization, PhysiBoSS-Models Python API
+
+**Data:** Use models from the PhysiBoSS-Models database; simulate outputs programmatically.
+
+**Build it:**
+
+1. Use the Python API to programmatically download multiple PhysiBoSS models.
+2. Develop scripts to run batch simulations automatically using the provided binaries.
+3. Parse simulation outputs and generate standardized visualizations (e.g., cell counts, invasion metrics).
+4. Build a simple web backend API to serve model metadata and simulation results.
+5. Develop a frontend interface to browse models, view metadata, and display simulation visualizations.
+6. Containerize the application with Docker and document deployment instructions.
+
+**Ships as:** A full GitHub repo with automated simulation workflows, a web interface for browsing models and results, and documentation showing how this addresses the paper's limitations.
+
+**Stretch goal:** Integrate machine learning models to predict simulation outcomes based on model parameters, linking to the professor's question on ML integration.
+
+_The paper's authors have not released code or datasets for PhysiBoSS-Models; the intermediate and advanced projects require reimplementation or use of publicly described models from the database as per the paper._

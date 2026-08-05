@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-mark-guzdial"
-source_hash: "790e318e0b90bd5eb34b0d52b831d60d0fecfbec4829c8c7c900b063ec710cd0"
+source_hash: "0b958c42fb840e8551d05b8db52480542fd7b87a2c8b5354d58b2c172ad9473c"
 sequence: 193
 generator: "outreach-garden: managed"
 ---
@@ -115,3 +115,88 @@ Block-based programming languages use visual blocks instead of text code, reduci
 ## Already in your library
 
 - [Cognitive Load Theory (Definition + Examples)](https://www.youtube.com/watch?v=lKyUihBWU_s) — also for: Reducing withdrawal and failure rates in introductory programming with subgoal labeled worked examples (Briana B. Morrison)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder to demonstrate understanding of the paper's core insights on programming education trade-offs for emergent bilingual (EB) students. The beginner project reproduces a key insight about cognitive load reduction using block-based programming visualizations. The intermediate project reimplements the paper's thematic analysis approach to compare teacher preferences for programming languages, applying new skills in qualitative data analysis. The advanced project extends the paper by prototyping an AI-assisted bilingual programming environment that scaffolds transitions from block-based to text-based programming, addressing a stated future direction.
+
+### Beginner — Visualizing Cognitive Load Reduction with Block-Based Programming
+*Effort: a weekend, ~8 hours*
+
+You build a small interactive web demo that visually compares block-based programming language (BBPL) constructs with equivalent text-based programming language (TBPL) code snippets, highlighting syntax complexity and providing immediate visual feedback. The demo includes color coding and simple animations to illustrate how BBPLs reduce extraneous cognitive load for emergent bilingual students.
+
+**Why it shows you understood the paper:** This project concretely demonstrates the paper's finding that visual aids and block-based programming reduce cognitive load and improve engagement for EB students, showing you grasped the accessibility trade-offs teachers consider.
+
+**Grounded in:** Highlighting the importance of visual aids, color coding, and immediate feedback to reduce cognitive load for EB students.
+
+**Tech stack:** JavaScript, React, CSS
+
+**Data:** No external data needed; you create representative code snippets inspired by the paper's examples of block-based and text-based programming languages.
+
+**Build it:**
+
+1. Select simple programming tasks (e.g., basic loops, conditionals) and write equivalent code snippets in a block-based style and a text-based style (e.g., Python).
+2. Build a React app that displays side-by-side views of the block-based and text-based code snippets.
+3. Add color coding and simple animations to highlight syntax elements and immediate feedback cues.
+4. Include explanatory text describing how the block-based representation reduces syntax complexity and cognitive load.
+5. Test the demo for clarity and accessibility.
+
+**Ships as:** An interactive React web demo with side-by-side visualizations of block-based vs. text-based code illustrating cognitive load differences, accompanied by explanatory notes.
+
+**Stretch goal:** Add a toggle to switch between English and Spanish labels on blocks and code to simulate bilingual support.
+
+### Intermediate — Qualitative Analysis of Teacher Preferences for Programming Languages
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement the paper's reflexive thematic analysis method on a small set of simulated interview transcripts from K-12 computing teachers about programming language choices for EB students. You code the transcripts, identify themes, and compare preferences for block-based vs. text-based languages, reporting findings in a structured format.
+
+**Why it shows you understood the paper:** This project shows you understand the paper's core research approach and the nuanced trade-offs teachers make, demonstrating skills in qualitative data analysis and educational research methods.
+
+**Grounded in:** The authors conducted semi-structured interviews with eight K-12 computing teachers... Data was analyzed using reflexive thematic analysis with member-checking for validation.
+
+**Tech stack:** Python 3.11, Jupyter Notebook, pandas, matplotlib
+
+**Data:** Simulated interview transcripts created based on the paper's descriptions of teacher perspectives and trade-offs; no real dataset available.
+
+**Build it:**
+
+1. Create 5-8 simulated interview transcripts reflecting teacher views on programming language selection for EB students, inspired by the paper's findings.
+2. Use Python and Jupyter Notebook to perform reflexive thematic coding on the transcripts.
+3. Identify and categorize themes related to accessibility, engagement, cognitive load, and workforce preparation.
+4. Visualize theme frequencies and relationships using charts.
+5. Write a report summarizing the qualitative findings and comparing them to the paper's results.
+
+**Ships as:** A Jupyter Notebook with thematic coding, visualizations, and a written summary demonstrating qualitative analysis of teacher preferences for programming languages for EB students.
+
+**Stretch goal:** Incorporate a simple sentiment analysis baseline to compare with manual thematic coding results.
+
+### Advanced — Prototype AI-Assisted Bilingual Programming Environment for EB Students
+*Effort: 3+ weeks*
+
+You design and implement a prototype programming environment that supports gradual transition from block-based to text-based programming for emergent bilingual students. The environment integrates AI-assisted code translation and explanation features to scaffold learning and reduce cognitive load, supporting bilingual (English-Spanish) instruction.
+
+**Why it shows you understood the paper:** This project directly addresses the paper's future direction on AI tools and programming environments that scaffold transitions and support multilingual instruction, demonstrating deep comprehension and technical innovation.
+
+**Grounded in:** Investigation of AI tools’ role in programming pedagogy for EB students, including AI-driven code translation and explanation. Development of programming environments that better support gradual transitions and multilingual support.
+
+**Tech stack:** TypeScript, React, Node.js, OpenAI API or similar LLM API
+
+**Data:** No external dataset; you simulate programming exercises and bilingual code snippets based on the paper's examples and common programming tasks.
+
+**Build it:**
+
+1. Design UI components for block-based programming and text-based code editing with bilingual labels (English and Spanish).
+2. Implement a gradual transition workflow allowing users to convert block-based code to text-based code.
+3. Integrate an AI API to provide code translation explanations and bilingual code suggestions.
+4. Add visual aids such as color coding and immediate feedback on code correctness.
+5. Test the environment with sample programming tasks and document how it scaffolds learning for EB students.
+6. Write a README discussing how the prototype addresses the paper's identified trade-offs and future directions.
+
+**Ships as:** A GitHub repository with a working React-based bilingual programming environment prototype featuring AI-assisted code translation and scaffolding, plus documentation linking it to the paper's contributions.
+
+**Stretch goal:** Add support for additional languages beyond Spanish and English or incorporate user feedback mechanisms for adaptive scaffolding.
+
+_The paper's authors released no code or datasets; simulated data must be created based on the paper's qualitative descriptions and examples._

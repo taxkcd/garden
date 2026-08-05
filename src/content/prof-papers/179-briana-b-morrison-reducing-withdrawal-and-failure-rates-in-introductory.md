@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-briana-b-morrison"
-source_hash: "e10b20f3a9690b1a614e7f0c89be4735f135503a2e7e4422b0b98bcb25c172ef"
+source_hash: "20984af63c7f698130ade1e50110b2efcc06a138c5d2f84d08d299fe1ea32534"
 sequence: 179
 generator: "outreach-garden: managed"
 ---
@@ -115,3 +115,86 @@ The SOLO taxonomy categorizes levels of understanding from surface to deep learn
 *How the paper uses it:* The paper uses SOLO taxonomy to analyze students' problem-solving explanations and validate learning improvements.
 
 ▶ [SOLO Taxonomy](https://www.youtube.com/watch?v=k9MBsr-9kCw) — Learn to Lead with Tariq Ali · 10:00
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder to demonstrate your understanding of the paper's core intervention—subgoal labeled worked examples—and its effects on learning outcomes in introductory programming. The beginner project recreates a small-scale quiz performance comparison using subgoal labels. The intermediate project implements the subgoal labeling method on a simplified Java programming learning module and compares quiz results against a baseline. The advanced project extends the intervention to an online interactive learning resource to explore sustained effects beyond initial quizzes, addressing a key future direction of the paper.
+
+### Beginner — Quiz Performance Simulator for Subgoal Labeled Worked Examples
+*Effort: a weekend, ~8 hours*
+
+You build a small web app or script that simulates quiz score distributions for two groups: one using subgoal labeled worked examples and one control group. The simulation uses the paper's reported quiz score means and variances to generate synthetic quiz results and visualize the difference in performance shortly after learning new programming procedures.
+
+**Why it shows you understood the paper:** This project shows you understand the key result that subgoal labels improve initial quiz performance with a medium effect size, and you can interpret and reproduce statistical evidence from the paper.
+
+**Grounded in:** Subgoal labeled worked examples improve initial problem-solving performance on quizzes (medium effect size).
+
+**Tech stack:** JavaScript, React, D3.js or Chart.js
+
+**Data:** Synthetic quiz score data generated based on the paper's reported quiz 1 relational mode scores (51% vs. 33%) and effect sizes.
+
+**Build it:**
+
+1. Extract quiz score statistics (means, variances) from the paper's results section.
+2. Write a script or React component to generate synthetic quiz scores for subgoal and control groups using normal distributions.
+3. Visualize the score distributions side-by-side with histograms or boxplots.
+4. Add summary statistics and effect size calculations to the visualization.
+5. Write a README explaining the simulation and how it reflects the paper's findings.
+
+**Ships as:** A GitHub repo with a small React app or script that visualizes simulated quiz score distributions demonstrating the subgoal effect, with clear explanation linking to the paper's results.
+
+**Stretch goal:** Add an interactive slider to vary effect size and see how quiz score distributions change.
+
+### Intermediate — Reimplementation of Subgoal Labeled Worked Examples in Java Programming
+*Effort: 2 weekends, ~20 hours*
+
+You implement a small instructional module teaching a Java programming concept (e.g., loops or conditionals) with two versions: one using subgoal labeled worked examples and one using conventional worked examples. You recruit a small group of learners or use peers to complete quizzes after studying each version, then compare quiz performance and variance as in the paper.
+
+**Why it shows you understood the paper:** This project demonstrates your ability to faithfully reimplement the paper's core instructional intervention and measure its effect on initial problem-solving performance, replicating the key contribution of improved quiz scores and reduced variance.
+
+**Grounded in:** Implemented subgoal labeled worked examples in a Java programming course and showed improved quiz performance and reduced variance in exam scores.
+
+**Tech stack:** Java, React (for quiz UI), Node.js (optional backend)
+
+**Data:** Quiz results collected from a small user study or peer participants after interacting with the instructional modules.
+
+**Build it:**
+
+1. Design two versions of a Java programming worked example teaching a specific procedure: one with subgoal labels breaking down steps, one conventional.
+2. Build a simple web interface to present the examples and administer quizzes immediately after.
+3. Recruit a small number of participants (e.g., peers) to complete the study.
+4. Collect quiz scores and analyze differences in mean and variance between groups.
+5. Document the implementation, study design, and results in a README.
+
+**Ships as:** A GitHub repo containing the instructional materials, quiz interface, and analysis showing the subgoal labeling effect on quiz performance.
+
+**Stretch goal:** Incorporate SOLO taxonomy scoring for qualitative assessment of problem-solving explanations.
+
+### Advanced — Online Interactive Platform with Subgoal Labeled Worked Examples and Practice Problems
+*Effort: 3-4 weeks*
+
+You develop an online learning platform that delivers subgoal labeled worked examples and interactive practice problems for introductory programming topics. The platform tracks learner progress, quiz performance, and persistence over multiple sessions to explore sustained learning effects and retention beyond initial quizzes, addressing the paper's future direction of long-term effects and online resource development.
+
+**Why it shows you understood the paper:** This project extends the paper's intervention to a full online environment, tackling a stated limitation and future direction. It shows your ability to design, implement, and evaluate a scalable instructional tool grounded in the paper's cognitive load and subgoal learning framework.
+
+**Grounded in:** Future direction: Develop and test online resources with subgoal labeled worked examples and practice problems for easier adoption and explore long-term effects beyond initial learning.
+
+**Tech stack:** React, TypeScript, Node.js/Express, PostgreSQL or SQLite, Docker
+
+**Data:** Learner interaction logs, quiz scores, and persistence data collected from platform users over multiple sessions; simulated or small pilot user base.
+
+**Build it:**
+
+1. Design a modular React frontend to present subgoal labeled worked examples with interactive explanations.
+2. Implement practice problems with immediate feedback and quizzes linked to the examples.
+3. Build a backend to store user progress, quiz results, and session data.
+4. Deploy the platform using Docker for easy sharing and reproducibility.
+5. Conduct a small pilot study or simulate learner data to analyze persistence and performance over time.
+6. Document the platform architecture, instructional design, and evaluation results.
+
+**Ships as:** A full-stack online learning platform repository demonstrating subgoal labeled worked examples with practice and tracking, plus analysis of sustained learning effects.
+
+**Stretch goal:** Integrate adaptive learning paths that adjust subgoal labeling detail based on learner prior knowledge or strategies.

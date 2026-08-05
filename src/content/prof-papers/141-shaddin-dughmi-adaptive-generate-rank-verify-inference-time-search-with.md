@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-shaddin-dughmi"
-source_hash: "e36da6830c76a774be0cafc3ba58390bcc102fda0dcfdf68703bcbeac119730f"
+source_hash: "b119579afce74862611f867645f32e67d182a315c490bedb646480a2c089e994"
 sequence: 141
 generator: "outreach-garden: managed"
 ---
@@ -132,3 +132,93 @@ A direct talk by the authors or closely related presentations can provide insigh
 ## Already in your library
 
 - [Large Language Models explained briefly](https://www.youtube.com/watch?v=LPZh9BOjkQs) — also for: On-demand generation of high-quality software engineering datasets using large language models and ontologies (Suranjan Chakraborty)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progression for understanding and applying the Adaptive Generate-Rank-Verify (ADAP) algorithm from the paper. The beginner project reproduces a core mechanism of the ADAP approach on a synthetic example to grasp the generate-rank-verify cycle and monotonicity assumption. The intermediate project builds on the authors' released implementation to run ADAP on a subset of coding/math problems, comparing cost efficiency against a fixed baseline. The advanced project extends ADAP by addressing one of the paper's limitations—modeling variable verification costs depending on response complexity—to explore practical improvements beyond the original fixed-cost assumption.
+
+### Beginner — Simulate Adaptive Generate-Rank-Verify on Synthetic Data
+*Effort: a weekend, ~8 hours*
+
+You build a simple Python simulation of the generate-rank-verify process with synthetic candidate scores and verification outcomes. The simulation implements the threshold verification rule under the monotonicity assumption and visualizes how adaptive verification reduces total cost compared to naive fixed policies.
+
+**Why it shows you understood the paper:** This project demonstrates you understand the core problem formalization and the threshold-based verification policy central to the paper's theoretical results.
+
+**Grounded in:** Theorem 3.2 characterizes the optimal policy as verifying candidates exactly when h⋆ (r) > τ⋆, where τ⋆ balances verification and generation costs.
+
+**Tech stack:** Python 3.11, matplotlib, numpy
+
+**Data:** Synthetic data generated in code simulating candidate reward scores and verification success probabilities with monotone relationship.
+
+**Build it:**
+
+1. Implement a function to generate candidate reward scores sampled from a distribution.
+2. Define a monotone success probability function mapping scores to verification success probabilities.
+3. Simulate candidate generation and verification under a fixed threshold policy.
+4. Compare total cost of adaptive threshold verification versus naive fixed verification policies.
+5. Plot cost and success rate metrics to visualize efficiency gains.
+
+**Ships as:** A Python notebook or script with simulation code, plots showing cost vs. policy, and a README explaining the threshold verification concept.
+
+**Stretch goal:** Add noise to the monotone success function to explore robustness of threshold policies under imperfect monotonicity.
+
+### Intermediate — Run and Evaluate ADAP on Coding and Math Benchmarks
+*Effort: 2 weekends, ~20 hours*
+
+You clone and run the authors' ADAP implementation from https://github.com/yhkalayci/efficient_query on the provided coding and math problem sets. You reproduce the cost and success rate metrics comparing ADAP against uniform fixed verification policies, and produce a report with visualizations.
+
+**Why it shows you understood the paper:** This project shows you can work with the authors' codebase, understand the experimental setup, and validate the core empirical claims about ADAP's cost-efficiency and reliability.
+
+**Grounded in:** Section 5.3 reports ADAP's mean cost is 1422 on math vs. 4187 for uniform fixed policy, and 745 on coding vs. 4102 for uniform fixed policy.
+
+**Tech stack:** Python 3.11, PyTorch (if required by authors' code), matplotlib, pandas
+
+**Data:** The math and coding problem sets used in the authors' repository at https://github.com/yhkalayci/efficient_query, which include hidden test suites for verification.
+
+**Build it:**
+
+1. Clone the authors' repository and install dependencies as per their README.
+2. Run baseline uniform fixed verification policies on the math and coding benchmarks to collect cost and success metrics.
+3. Run ADAP on the same benchmarks and collect the same metrics.
+4. Generate comparative plots of mean cost and success rate.
+5. Write a report summarizing the results and reflecting on the adaptive policy's advantages.
+
+**Verified links from the paper:**
+
+- <https://github.com/yhkalayci/efficient_query> — released by the paper's authors
+
+**Ships as:** A GitHub repo fork with scripts to run experiments, plots comparing ADAP and fixed policies, and a README documenting findings.
+
+**Stretch goal:** Implement a simple difficulty-adaptive baseline policy and compare it against ADAP to observe differences.
+
+### Advanced — Extend ADAP to Variable Verification Costs Based on Response Complexity
+*Effort: 3+ weeks*
+
+You develop an extension of the ADAP algorithm that models verification costs as variable and dependent on candidate response length or complexity, rather than fixed scalars. You modify the cost model and adaptive policy accordingly, then evaluate on the authors' benchmarks to measure cost savings and success rates.
+
+**Why it shows you understood the paper:** This project tackles a key limitation identified by the authors and demonstrates your ability to innovate on the theoretical framework and practical algorithm to improve real-world applicability.
+
+**Grounded in:** Limitations: Costs are modeled as fixed scalars, ignoring variability with response length or complexity. Future directions include extending the framework to handle variable costs depending on response length or complexity.
+
+**Tech stack:** Python 3.11, PyTorch (if required), matplotlib, pandas
+
+**Data:** The math and coding benchmarks from the authors' repository at https://github.com/yhkalayci/efficient_query, with added metadata on response length or complexity extracted from candidate outputs.
+
+**Build it:**
+
+1. Study the original ADAP implementation and cost model to understand fixed cost assumptions.
+2. Design a variable cost model that estimates verification cost as a function of response length or complexity.
+3. Modify the ADAP algorithm to incorporate variable verification costs in its adaptive thresholding and sampling.
+4. Run experiments comparing the original fixed-cost ADAP and your variable-cost ADAP on the benchmarks.
+5. Analyze cost savings and success rates, and document the impact of variable cost modeling.
+
+**Verified links from the paper:**
+
+- <https://github.com/yhkalayci/efficient_query> — released by the paper's authors
+
+**Ships as:** A GitHub repository with your extended ADAP implementation, experimental scripts, comparative plots, and a detailed README discussing methodology and results.
+
+**Stretch goal:** Explore incorporating response content features directly into verification decisions to further reduce cost, as suggested in future directions.

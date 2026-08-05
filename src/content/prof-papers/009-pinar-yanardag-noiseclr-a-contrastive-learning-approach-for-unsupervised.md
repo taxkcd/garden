@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-pinar-yanardag-html"
-source_hash: "6cc52d972897047a16605a0007bc0d06902850eca92a0e80887c686f3f5b291f"
+source_hash: "0330c18af9c0b6b00b652be074879fd6cb846045e1026d5ea531d0698cff3b1d"
 sequence: 9
 generator: "outreach-garden: managed"
 ---
@@ -111,3 +111,89 @@ Contrastive learning trains models to bring similar data points closer and push 
 
 - [[CVPR2024] NoiseCLR - Teaser Video](https://www.youtube.com/watch?v=RA2KzZ25F5I) — also for: NoiseCLR: A Contrastive Learning Approach for Unsupervised Discovery of Interpretable Directions in Diffusion Models (Pinar Yanardag)
 - [What are Diffusion Models?](https://www.youtube.com/watch?v=fbLgFrlTnGU) — also for: Geometry Preserving Loss Functions Promote Improved Adaptation of Blackbox Generative Models (Pavan K. Turaga)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive learning path to demonstrate your understanding of NoiseCLR's unsupervised discovery of interpretable directions in diffusion models. The beginner project focuses on reproducing a core qualitative edit using existing tools and small data. The intermediate project involves reimplementing the NoiseCLR contrastive learning framework on a small public dataset to quantitatively evaluate disentangled directions. The advanced project extends NoiseCLR by addressing one of its stated limitations, such as bias mitigation or real-time direction discovery, to explore novel research directions.
+
+### Beginner — Reproduce NoiseCLR Face Attribute Edits on Stable Diffusion Outputs
+*Effort: a weekend, ~8 hours*
+
+You build a simple pipeline that uses a pretrained Stable Diffusion model to generate a small set of face images, then manually apply latent space perturbations along a few semantic directions inspired by NoiseCLR's qualitative results (e.g., age, mustache). You visualize before-and-after images to show disentangled edits without retraining the diffusion model.
+
+**Why it shows you understood the paper:** This project shows you grasp the core idea of latent space editing in diffusion models and the concept of semantic directions without supervision, as well as the importance of disentanglement in edits.
+
+**Grounded in:** Qualitative results show effective, disentangled edits such as changing facial features (age, race, mustache).
+
+**Tech stack:** Python 3.11, Stable Diffusion pretrained model (e.g., via diffusers library), PyTorch, Jupyter Notebook, matplotlib
+
+**Data:** Use a small set (~50) of generated face images from Stable Diffusion as a substitute for the unlabeled domain images used in the paper.
+
+**Build it:**
+
+1. Set up a Python environment with PyTorch and the diffusers library to load pretrained Stable Diffusion.
+2. Generate a small batch of face images using Stable Diffusion with fixed seeds for reproducibility.
+3. Identify or approximate a few semantic latent directions manually (e.g., by interpolating noise vectors or latent embeddings).
+4. Apply perturbations along these directions to the latent representations before image decoding.
+5. Visualize and compare original and edited images side-by-side to demonstrate disentangled attribute changes.
+
+**Ships as:** A GitHub repo with a Jupyter notebook that generates face images, applies latent edits along semantic directions, and visualizes the results with explanations.
+
+**Stretch goal:** Add a simple user interface to select and combine multiple semantic directions interactively.
+
+### Intermediate — Reimplement NoiseCLR Contrastive Learning for Unsupervised Direction Discovery
+*Effort: 2 weekends, ~20 hours*
+
+You implement the core NoiseCLR contrastive learning framework from the paper to discover disentangled semantic directions in the latent space of Stable Diffusion. You train on a small unlabeled dataset of real face images (e.g., CelebA subset) and evaluate discovered directions by applying edits and measuring disentanglement with LPIPS and CLIP scores compared to a simple baseline (e.g., random directions).
+
+**Why it shows you understood the paper:** This project demonstrates your ability to translate the paper's novel contrastive learning approach into code, handle latent space manipulations, and quantitatively evaluate semantic disentanglement, reflecting a deep understanding of NoiseCLR's core contributions.
+
+**Grounded in:** NoiseCLR employs a contrastive learning framework that learns K semantic directions from a small set (around 100) of unlabeled images per domain using a pretrained diffusion model (Stable Diffusion).
+
+**Tech stack:** Python 3.11, PyTorch, diffusers library for Stable Diffusion, CLIP model for semantic evaluation, NumPy, matplotlib
+
+**Data:** Use a publicly available subset of the CelebA dataset (~100 images) as the unlabeled domain data for training NoiseCLR.
+
+**Build it:**
+
+1. Set up the environment with PyTorch, diffusers, and CLIP models.
+2. Implement the NoiseCLR contrastive loss as described, contrasting feature divergences in the noise prediction space.
+3. Extract noise prediction features from the pretrained Stable Diffusion model for the unlabeled images.
+4. Train the contrastive model to learn K semantic directions (e.g., K=10) from the dataset.
+5. Apply discovered directions to edit images and compute LPIPS and CLIP re-scoring metrics to evaluate disentanglement and edit quality.
+6. Compare results against a baseline using random latent directions.
+
+**Ships as:** A GitHub repo with code to train NoiseCLR on a small real dataset, scripts to apply discovered directions for editing, and a report notebook showing quantitative and qualitative evaluation.
+
+**Stretch goal:** Extend the implementation to discover directions across two domains (e.g., faces and cats) and demonstrate cross-domain composable edits.
+
+### Advanced — Mitigate Biases in NoiseCLR Direction Discovery Using Data Augmentation
+*Effort: 3+ weeks*
+
+You extend NoiseCLR by integrating data augmentation strategies during contrastive learning to mitigate biases inherited from limited or skewed unlabeled datasets, addressing a key limitation noted in the paper. You evaluate how augmentation affects the diversity and disentanglement of discovered directions and their robustness across demographic attributes in face images.
+
+**Why it shows you understood the paper:** This project shows you can critically engage with the paper's limitations and future directions, designing and implementing a meaningful extension that improves NoiseCLR's fairness and generalization, which could spark research discussions with the professor.
+
+**Grounded in:** Explore methods to mitigate biases inherited from Stable Diffusion and CLIP. Some edits (e.g., 'Child') affect related attributes due to model biases.
+
+**Tech stack:** Python 3.11, PyTorch, diffusers library, CLIP model, Albumentations or torchvision for data augmentation, NumPy, matplotlib
+
+**Data:** Use a real-world face dataset such as CelebA with demographic annotations to analyze bias and augmentation effects.
+
+**Build it:**
+
+1. Reimplement or reuse your NoiseCLR training pipeline from the intermediate project.
+2. Integrate data augmentation techniques (e.g., color jitter, horizontal flip, random crop) into the unlabeled image preprocessing pipeline.
+3. Train NoiseCLR with and without augmentation on the same dataset.
+4. Analyze the discovered directions for diversity and disentanglement using LPIPS and CLIP metrics.
+5. Perform qualitative and quantitative bias analysis by examining edits on demographic subgroups (e.g., age, race).
+6. Document how augmentation impacts bias and direction quality, proposing further improvements.
+
+**Ships as:** A GitHub repo with the extended NoiseCLR training code, evaluation scripts, and a detailed report discussing bias mitigation results and future work.
+
+**Stretch goal:** Develop a real-time or faster training variant of NoiseCLR using lightweight augmentations or model pruning.
+
+_No official code or datasets were released by the authors; all projects rely on publicly available pretrained Stable Diffusion and CLIP models and substitute datasets such as CelebA._

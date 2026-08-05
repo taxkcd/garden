@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-humphrey-html"
-source_hash: "47b5a1df0e60f1dfe5e0fbf8a2757087d0929919ce95e5988e022208351a6fd2"
+source_hash: "cd638c2e4b08ac229965fb4b0a45ae1bd0633132bfa8130ee3bfe2ccc54d7143"
 sequence: 13
 generator: "outreach-garden: managed"
 ---
@@ -158,3 +158,87 @@ Finally, watch a focused talk on cloud technologies applied to healthcare soluti
 ## Already in your library
 
 - [Medical Transcription Analysis with Machine Learning - Doctor/Patient Conversation Demo](https://www.youtube.com/watch?v=f5HVIALG5g4) — also for: Leveraging the Cloud for Intelligent Clinical Data Registries (Marty A. Humphrey)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progression to demonstrate your understanding of the CPOP platform and its core contributions in cloud-based clinical data registries for Chronic Rhinosinusitis (CRS). The beginner project focuses on reproducing a key user interface feature for data visualization, the intermediate project reimplements and evaluates the audio transcription component using Amazon Transcribe, and the advanced project extends the system by addressing a stated limitation around real-time transcription integration with improved accuracy and latency.
+
+### Beginner — CRS Patient Data Visualization Dashboard
+*Effort: a weekend, ~8 hours*
+
+You build a React-based web dashboard that visualizes anonymized CRS patient outcome data using multiple chart types similar to those described in CPOP-CRS. The dashboard supports filtering by patient characteristics and displays charts such as line graphs and bar charts to mimic the paper's visualization features.
+
+**Why it shows you understood the paper:** This project demonstrates your grasp of the paper's emphasis on doctor-facing data visualization interfaces that facilitate clinical insights, showing you can reproduce a core user interaction element of CPOP-CRS.
+
+**Grounded in:** Provided multiple chart types for doctors to analyze patient outcomes based on various patient characteristics.
+
+**Tech stack:** React, TypeScript, D3.js or Chart.js
+
+**Data:** Simulated anonymized CRS patient outcome data modeled after the paper's description of 100 patients, since no public dataset or authors' data is available.
+
+**Build it:**
+
+1. Design a React dashboard with components for different chart types (line, bar, pie).
+2. Generate or simulate a small dataset representing CRS patient outcomes and characteristics.
+3. Implement filtering controls to select patient subgroups by characteristics.
+4. Bind the data to charts and update visualizations dynamically based on filters.
+5. Style the dashboard for clarity and usability, referencing the paper's UI considerations.
+
+**Ships as:** A GitHub repository with a React app showing interactive charts of CRS patient data and a README explaining the data simulation and visualization features.
+
+**Stretch goal:** Add patient survey form components with state management to simulate patient data entry.
+
+### Intermediate — Audio Transcription Evaluation for Clinical Conversations
+*Effort: 1-3 weekends*
+
+You reimplement the audio transcription evaluation pipeline using Amazon Transcribe on a small set of anonymized or publicly available clinical audio recordings. You measure the word error rate (WER) and compare it against a simple baseline such as Google Speech-to-Text or a local open-source speech recognizer.
+
+**Why it shows you understood the paper:** This project shows you understand the paper's core method of integrating and quantitatively evaluating Amazon Transcribe for doctor-patient audio transcription, including the challenges of accuracy and latency.
+
+**Grounded in:** Evaluation of Amazon Transcribe for audio transcription with a measured word error rate of 15.6%.
+
+**Tech stack:** Python 3.11, boto3 (AWS SDK for Python), jiwer (for WER calculation)
+
+**Data:** Use a small set of publicly available clinical or medical conversation audio samples (e.g., from open medical speech datasets) as a substitute for the paper's anonymized CRS audio recordings.
+
+**Build it:**
+
+1. Set up AWS credentials and configure boto3 to access Amazon Transcribe.
+2. Prepare or obtain short clinical audio files and their ground truth transcripts.
+3. Write a Python script to submit audio files to Amazon Transcribe and retrieve transcripts.
+4. Calculate word error rate (WER) between transcripts and ground truth using jiwer.
+5. Implement a baseline transcription using a free or open-source speech-to-text tool and compare WER results.
+6. Document findings and discuss transcription accuracy and latency issues.
+
+**Ships as:** A GitHub repo with scripts to run transcription and WER evaluation, plus a report summarizing results and comparison to baseline.
+
+**Stretch goal:** Experiment with Amazon Transcribe settings or pre/post-processing to reduce WER and improve punctuation.
+
+### Advanced — Real-Time Clinical Audio Transcription with Improved Accuracy
+*Effort: a few weeks*
+
+You develop a prototype extension to the CPOP-CRS transcription feature by integrating streaming real-time transcription using Amazon Transcribe Streaming or an alternative low-latency service. You implement punctuation correction and error reduction techniques to improve transcription accuracy and speed, addressing the paper's limitation of slow processing and punctuation issues.
+
+**Why it shows you understood the paper:** This project tackles a key limitation and future direction from the paper, demonstrating your ability to extend the core system with advanced cloud architectures and improve clinical usability of audio transcription.
+
+**Grounded in:** Limitations: Amazon Transcribe showed slow processing times and punctuation transcription issues; Streaming transcription integration is minimal and not currently part of CPOP-CRS; Future directions: Expand capabilities to leverage emerging public cloud services and improve transcription accuracy and speed.
+
+**Tech stack:** Python 3.11, AWS SDK (boto3), FastAPI, WebSocket, React, Docker
+
+**Data:** Use publicly available clinical audio streams or simulate streaming audio from prerecorded clinical conversations for testing.
+
+**Build it:**
+
+1. Implement a FastAPI backend that connects to Amazon Transcribe Streaming API for real-time transcription.
+2. Build a React frontend that streams audio from microphone or prerecorded files and displays live transcription with punctuation.
+3. Incorporate post-processing modules to correct punctuation and common transcription errors.
+4. Measure latency and word error rate improvements compared to batch transcription.
+5. Containerize the application with Docker for easy deployment.
+6. Write documentation describing architecture, limitations, and potential clinical integration.
+
+**Ships as:** A full-stack prototype demonstrating real-time clinical audio transcription with improved accuracy and latency, with code and usage instructions on GitHub.
+
+**Stretch goal:** Add secure authentication and HIPAA-compliant data handling to simulate clinical deployment readiness.

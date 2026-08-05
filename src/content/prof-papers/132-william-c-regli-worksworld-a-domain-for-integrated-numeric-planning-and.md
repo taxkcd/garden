@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-william-c-regli"
-source_hash: "b2233defa370315170802b6bcc5af8cc672c3b0a7fa738f65937091e5594f499"
+source_hash: "a6396987c3feddac115b328148ce4a9d3c2e0990191e64d1d9d157d371a2fdce"
 sequence: 132
 generator: "outreach-garden: managed"
 ---
@@ -128,3 +128,97 @@ Hearing directly from the authors provides insight into the motivation, design, 
 *How the paper uses it:* This talk offers direct explanation of the novel numeric planning domain and its application to distributed pipelined workflows.
 
 ▶ [A Sound (but Incomplete) Polynomial Translation from Discretised PDDL+ to Numeric Planning](https://www.youtube.com/watch?v=ALbAXNRXvYk) — Mauro Vallati · 4 years ago
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive ladder to demonstrate understanding of WORKSWORLD's integrated numeric planning and scheduling for distributed workflows. The beginner project reproduces a core planning concept using YAML-to-PDDL conversion and a simple numeric planner. The intermediate project reimplements the WORKSWORLD domain and runs ENHSP on a small workflow benchmark to replicate key empirical results. The advanced project extends WORKSWORLD to support non-linear workflows, addressing a stated limitation and exploring scalability improvements. Each project builds on the applicant's existing skills while deepening engagement with the paper's core contributions and challenges.
+
+### Beginner — YAML-to-PDDL Workflow Planning Prototype
+*Effort: a weekend, ~8 hours*
+
+You build a small prototype that takes a simplified YAML configuration describing a linear-chain workflow with a few components and sites, converts it into a PDDL 2.1 problem instance, and runs a numeric planner (e.g., a lightweight open-source planner) to generate a plan. This reproduces the paper's approach of using YAML for human-readable problem specification and PDDL for domain-independent planning.
+
+**Why it shows you understood the paper:** This project demonstrates you understand the core mechanism of WORKSWORLD's problem encoding and integrated planning approach, including numeric resource constraints and workflow component scheduling.
+
+**Grounded in:** A framework converting human-readable YAML configurations into PDDL problem instances for domain-independent planners.
+
+**Tech stack:** Python 3.11, PyYAML, PDDL 2.1 parser or simple planner CLI
+
+**Data:** You create a small synthetic YAML workflow config with 3-5 components and 2-3 sites, inspired by examples in the paper's supplementary materials.
+
+**Build it:**
+
+1. Define a minimal YAML schema for a linear-chain workflow with components, sites, and resource constraints.
+2. Write a Python script to parse the YAML and generate a corresponding PDDL 2.1 problem file encoding numeric resources and actions.
+3. Integrate a numeric planner CLI (e.g., Metric-FF or a simple open-source planner) to run on the generated PDDL.
+4. Run the planner on your generated problem and parse the output plan to verify scheduling correctness.
+5. Document the YAML-to-PDDL conversion logic and show example plans in the README.
+
+**Ships as:** A GitHub repo with the YAML-to-PDDL converter script, example YAML configs, generated PDDL files, planner invocation scripts, and README explaining the workflow and results.
+
+**Stretch goal:** Add support for modeling network link bandwidth and data propagation delays in the YAML and PDDL encoding.
+
+### Intermediate — Reimplementation and Evaluation of WORKSWORLD Numeric Planning Domain
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement the core WORKSWORLD numeric planning domain in PDDL 2.1 based on the paper's domain description and encode a linear-chain workflow problem from the provided benchmarks. You run the Expressive Numeric Heuristic Search Planner (ENHSP) on this problem and compare planning time and memory usage against a baseline numeric planner (e.g., Metric-FF).
+
+**Why it shows you understood the paper:** This project shows you can faithfully reproduce the paper's numeric planning domain and empirically validate its key result that ENHSP can solve workflows with up to 14 components across multiple sites within resource limits.
+
+**Grounded in:** Empirical evaluation demonstrating that ENHSP can solve linear-chain workflows of up to 14 components across eight sites within reasonable time and memory limits.
+
+**Tech stack:** Python 3.11, PDDL 2.1, ENHSP planner, Bash scripting
+
+**Data:** Use the WORKSWORLD benchmarks dataset available at https://gitlab.com/thpaul/worksworld-benchmarks/Data as the problem instances for evaluation.
+
+**Build it:**
+
+1. Study the WORKSWORLD domain PDDL files and understand the numeric resource modeling and actions.
+2. Reimplement or adapt the domain PDDL files and problem instances from the benchmark dataset.
+3. Install and configure ENHSP planner and a baseline numeric planner (e.g., Metric-FF).
+4. Run both planners on selected benchmark problems with varying workflow sizes (e.g., 5, 10, 14 components).
+5. Collect and compare planning times, memory usage, and plan quality metrics.
+6. Write a report summarizing the reproduction results and any discrepancies.
+
+**Verified links from the paper:**
+
+- <https://github.com/taylorpaul/WORKSWORLD> — a third-party/baseline artifact the paper cites — not the authors' own code
+- <https://gitlab.com/thpaul/worksworld-benchmarks/Data> — a third-party/baseline artifact the paper cites — not the authors' own code
+
+**Ships as:** A GitHub repo containing the reimplemented PDDL domain and problem files, scripts to run ENHSP and baseline planners, collected empirical results, and a README with analysis.
+
+**Stretch goal:** Implement pruning heuristics or preprocessing steps to improve ENHSP scalability on larger workflows.
+
+### Advanced — Extending WORKSWORLD to Support Non-Linear Workflow Graphs
+*Effort: 3-4 weeks*
+
+You extend the WORKSWORLD numeric planning domain to support non-linear, series-parallel workflow graphs instead of just linear chains. This involves modifying the PDDL domain and problem encoding to represent branching and merging workflow components and updating the planner invocation to handle these more complex workflows. You evaluate scalability and discuss challenges compared to the original linear-chain assumption.
+
+**Why it shows you understood the paper:** This project tackles a key limitation identified in the paper and demonstrates deep comprehension of the domain modeling, numeric planning challenges, and scalability bottlenecks in distributed workflow scheduling.
+
+**Grounded in:** WORKSWORLD currently supports only linear-chain workflows, limiting realism for complex non-linear workflows.
+
+**Tech stack:** Python 3.11, PDDL 2.1, ENHSP planner, Graph modeling libraries (e.g., NetworkX)
+
+**Data:** You synthesize non-linear workflow graphs with branching and merging components inspired by the paper's resource graph but create smaller-scale examples for tractability.
+
+**Build it:**
+
+1. Analyze the existing WORKSWORLD PDDL domain to identify assumptions enforcing linear-chain workflows.
+2. Design PDDL extensions to represent non-linear workflow topologies with multiple predecessors and successors.
+3. Modify the YAML-to-PDDL conversion or problem generation scripts to encode non-linear workflows.
+4. Generate example non-linear workflow problem instances with resource constraints.
+5. Run ENHSP on these new problems and measure planning time and memory usage.
+6. Document the domain changes, challenges encountered, and performance implications.
+
+**Verified links from the paper:**
+
+- <https://github.com/taylorpaul/WORKSWORLD> — a third-party/baseline artifact the paper cites — not the authors' own code
+- <https://gitlab.com/thpaul/worksworld-benchmarks/Data> — a third-party/baseline artifact the paper cites — not the authors' own code
+
+**Ships as:** A GitHub repo with the extended PDDL domain files, non-linear workflow problem instances, scripts to generate and run plans, empirical evaluation results, and a detailed README discussing the extension and its impact.
+
+**Stretch goal:** Incorporate state-dependent action costs or hierarchical planning to delegate scheduling to site-level planners as suggested in future directions.

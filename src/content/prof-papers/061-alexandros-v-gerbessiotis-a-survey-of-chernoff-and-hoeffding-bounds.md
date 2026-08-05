@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-alexandros-v-gerbessiotis"
-source_hash: "fd3e4cf5ff0c9c84c26c24df42c51fdc758264c167a29dc2f6a7a8871217361a"
+source_hash: "97c36439967bb9eb04b1b968ae9d53d8ae1e475715d1dc914315c2de24b8a8bf"
 sequence: 61
 generator: "outreach-garden: managed"
 ---
@@ -135,3 +135,89 @@ Hearing directly from the author offers insight into the motivation, scope, and 
 ## Already in your library
 
 - [Lecture 17: Moment Generating Functions | Statistics 110](https://www.youtube.com/watch?v=N8O6zd6vTZ8) — also for: A survey of Chernoff and Hoeffding bounds (Alexandros V. Gerbessiotis)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progression to demonstrate your understanding of Chernoff and Hoeffding bounds as surveyed in the paper. Starting with a beginner-level implementation of a basic Chernoff bound calculation and visualization, you then move to an intermediate project that reimplements and compares core Chernoff and Hoeffding bounds on simulated Bernoulli and bounded data. The advanced project extends the paper's scope by exploring concentration bounds for dependent variables, addressing a stated limitation and future direction.
+
+### Beginner — Chernoff Bound Calculator and Visualizer
+*Effort: a weekend, ~8 hours*
+
+You build a simple web app or script that calculates the Chernoff bound for sums of independent Bernoulli random variables using the explicit formula P(Sn ≥ rn) ≤ exp(-D(r||p)n), where D is the Kullback-Leibler divergence. The app will allow input of parameters p, r, and n, and plot the bound as n varies to visualize exponential tail decay.
+
+**Why it shows you understood the paper:** This project shows you understand the core Chernoff bound formula and how the Kullback-Leibler divergence governs tail probabilities, a key result of the paper. The visualization demonstrates grasp of the exponential decay behavior of tail bounds.
+
+**Grounded in:** Explicit Chernoff bounds for right tails: P(Sn ≥ rn) ≤ exp(-D(r||p)n), where D is the Kullback-Leibler divergence.
+
+**Tech stack:** TypeScript, React, D3.js or Chart.js, Node.js (optional)
+
+**Data:** No external data needed; you simulate Bernoulli parameters and compute bounds directly.
+
+**Build it:**
+
+1. Implement a function to compute Kullback-Leibler divergence D(r||p) for Bernoulli parameters.
+2. Implement the Chernoff bound formula for P(Sn ≥ rn) using the divergence and n.
+3. Build a simple UI to input p, r, and n range, and plot the bound as a function of n.
+4. Add explanatory text referencing the paper's formula and interpretation.
+5. Test with example parameters to verify the exponential decay shape.
+
+**Ships as:** A GitHub repo with a README explaining Chernoff bounds, a working app or script that calculates and plots the bound, and sample parameter sets illustrating the bound's behavior.
+
+**Stretch goal:** Add left-tail bound calculations and visualizations to show symmetric concentration inequalities.
+
+### Intermediate — Reimplementation and Comparison of Chernoff and Hoeffding Bounds
+*Effort: 1-3 weekends*
+
+You implement the core Chernoff and Hoeffding bounds for sums of independent Bernoulli and bounded random variables from scratch, following the detailed proofs and formulas in the paper. You simulate datasets of Bernoulli trials and bounded variables, compute empirical tail probabilities, and compare them against the theoretical bounds. You report metrics such as bound tightness and exponential decay rates.
+
+**Why it shows you understood the paper:** This project demonstrates your ability to translate the paper's theoretical results into working code, validate the bounds empirically, and understand their differences and applicability. It reflects comprehension of the paper's key contributions and mathematical rigor.
+
+**Grounded in:** Comprehensive restatement and proof of Chernoff's original bounds for sums of independent Bernoulli random variables; Hoeffding bounds for sums of bounded independent random variables, including generalizations beyond Bernoulli trials.
+
+**Tech stack:** Python 3.11, Jupyter Notebook, NumPy, Matplotlib or Seaborn
+
+**Data:** Simulated Bernoulli trials and bounded random variables generated in code; no external dataset required.
+
+**Build it:**
+
+1. Implement functions to compute Chernoff bounds using Kullback-Leibler divergence for Bernoulli sums.
+2. Implement Hoeffding bounds for sums of bounded independent variables as per the paper's formulas.
+3. Simulate datasets of Bernoulli trials and bounded variables with varying parameters and sample sizes.
+4. Estimate empirical tail probabilities by repeated sampling.
+5. Plot and compare empirical tail probabilities against Chernoff and Hoeffding bounds.
+6. Write a report summarizing observations on bound tightness and applicability.
+
+**Ships as:** A Jupyter notebook with code, plots, and explanations showing empirical validation and comparison of Chernoff and Hoeffding bounds on simulated data.
+
+**Stretch goal:** Incorporate variants and improvements from McDiarmid and Angluin-Valiant as discussed in the paper and compare their performance.
+
+### Advanced — Exploring Concentration Bounds for Dependent Random Variables
+*Effort: a few weeks*
+
+You extend the paper's scope by investigating concentration inequalities for dependent random variables, addressing a stated limitation. You research existing dependent-variable bounds (e.g., Azuma's inequality, Martingale bounds), implement them, and compare their behavior to Chernoff and Hoeffding bounds on synthetic dependent data sequences. You analyze how dependence affects tail probabilities and discuss implications for parallel algorithm analysis.
+
+**Why it shows you understood the paper:** This project shows you can critically engage with the paper's limitations and future directions, apply foundational knowledge to new contexts, and contribute original exploratory work relevant to the professor's research interests in parallel algorithms.
+
+**Grounded in:** Limitations: Focuses primarily on independent random variables; Future directions: Extension of concentration bounds to dependent random variables or more complex distributions.
+
+**Tech stack:** Python 3.11, Jupyter Notebook, NumPy, Matplotlib, SciPy
+
+**Data:** Synthetic data simulating dependent random variables (e.g., Markov chains or Martingales) generated in code.
+
+**Build it:**
+
+1. Review literature on concentration inequalities for dependent variables (e.g., Azuma-Hoeffding inequality).
+2. Implement these dependent-variable concentration bounds based on the literature.
+3. Generate synthetic dependent random variable sequences (e.g., Markov chains with known dependence).
+4. Estimate empirical tail probabilities from simulations.
+5. Compare empirical results with dependent-variable bounds and classical Chernoff/Hoeffding bounds.
+6. Analyze and document how dependence affects concentration and implications for parallel algorithm analysis.
+
+**Ships as:** A comprehensive Jupyter notebook or report demonstrating implementation, empirical evaluation, and analysis of concentration bounds for dependent variables, with discussion linking back to the paper's limitations and future directions.
+
+**Stretch goal:** Propose or experiment with tighter bounds or new inequalities tailored for specific parallel computation models.
+
+_The paper does not provide code or datasets; all data must be simulated based on the paper's theoretical descriptions._

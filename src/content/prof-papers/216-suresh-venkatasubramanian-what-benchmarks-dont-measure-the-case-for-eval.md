@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-suresh-venkatasubramanian"
-source_hash: "0ede3b5dcd50f6bd9e3b70acc014fc04f91908bff5c0ee18795f23ccaaf0a87e"
+source_hash: "5404430ce84bb95754d788e7ab4379dd0dd5ac97469c73590ec132030eb9d62d"
 sequence: 216
 generator: "outreach-garden: managed"
 ---
@@ -151,3 +151,90 @@ Hearing directly from researchers provides insight into the motivation, approach
 ## Already in your library
 
 - [Large Language Models explained briefly](https://www.youtube.com/watch?v=LPZh9BOjkQs) — also for: On-demand generation of high-quality software engineering datasets using large language models and ontologies (Suranjan Chakraborty)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive ladder to demonstrate your understanding of the paper's core ideas about abstention competence in autonomous agents. The beginner project focuses on implementing and visualizing the paper's abstention evaluation metrics on a small synthetic scenario set. The intermediate project involves reimplementing the runtime enforcement checkpoint mechanism and evaluating its impact on safety and usability metrics on a simplified scenario dataset. The advanced project extends the paper's work by designing and testing adaptive enforcement policies to balance safety and usability, addressing a future direction proposed by the authors.
+
+### Beginner — Implement Abstention Metrics on Synthetic Agent Scenarios
+*Effort: a weekend, ~8 hours*
+
+You build a small Python script that simulates a set of autonomous agent decision scenarios with abstention-warranted cases. You implement the paper's three composite metrics—Safety Rate (SR), Usability Rate (UR), and Informed Refusal Rate (IRR)—to evaluate agent decisions on these scenarios and visualize the results.
+
+**Why it shows you understood the paper:** This project shows you understand the paper's key contribution of abstention evaluation metrics and how they quantify agent behavior beyond task completion. A professor would see you grasp the importance of measuring when agents should abstain and how to operationalize those metrics.
+
+**Grounded in:** Introduction of abstention evaluation protocols: Safety Rate (SR), Usability Rate (UR), and Informed Refusal Rate (IRR).
+
+**Tech stack:** Python 3.11, matplotlib, pandas
+
+**Data:** Synthetic scenarios you create to represent specification, verification, and authority gaps as described in the paper's taxonomy.
+
+**Build it:**
+
+1. Define a small set (~20) of synthetic agent decision scenarios including safe proceed, unsafe proceed, and abstention-warranted cases.
+2. Implement functions to simulate agent decisions with varying compliance bias (always proceed, always abstain, mixed).
+3. Code the Safety Rate, Usability Rate, and Informed Refusal Rate metrics following the paper's definitions.
+4. Run simulations of agent decisions on scenarios and compute the metrics.
+5. Visualize the metrics across different simulated agent behaviors using matplotlib.
+6. Write a README explaining the metrics, scenario design, and results.
+
+**Ships as:** A GitHub repo with Python scripts that simulate agent decisions, compute abstention metrics, and visualize results, accompanied by a clear README linking the implementation to the paper's metric definitions.
+
+**Stretch goal:** Add a simple prompt-only safety instruction simulation to show its impact on metrics.
+
+### Intermediate — Reimplement Runtime Enforcement Checkpoint and Evaluate Safety-Usability Tradeoff
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement the paper's runtime enforcement checkpoint mechanism as a wrapper around a simulated autonomous agent decision function. You evaluate its effect on Safety Rate, Usability Rate, and Informed Refusal Rate on a small set of scenarios modeled after the paper's three-gap taxonomy. You compare results against a baseline agent without enforcement.
+
+**Why it shows you understood the paper:** This project demonstrates your ability to reproduce the paper's core method and empirically evaluate its benefits, showing comprehension of both the enforcement mechanism and the abstention-aware evaluation framework. A professor would see you can translate the paper's approach into working code and meaningful metrics.
+
+**Grounded in:** Development of a runtime enforcement checkpoint wrapper that enforces abstention with structured explanations; empirical evaluation showing improved safety and usability.
+
+**Tech stack:** Python 3.11, pytest, matplotlib, pandas
+
+**Data:** A small scenario dataset you construct based on the paper's three-gap taxonomy (specification, verification, authority gaps) with annotated safe/unsafe/abstain labels.
+
+**Build it:**
+
+1. Implement a baseline agent function that decides to proceed or abstain with compliance bias.
+2. Implement the runtime enforcement checkpoint wrapper that intercepts agent decisions, enforces abstention when warranted, and provides structured explanations.
+3. Create a scenario dataset representing the three-gap taxonomy with labels indicating when abstention is required.
+4. Run baseline and checkpoint-wrapped agents on the scenarios, recording decisions.
+5. Compute Safety Rate, Usability Rate, and Informed Refusal Rate for both agents.
+6. Visualize and compare the metrics to demonstrate enforcement benefits.
+7. Write documentation explaining the implementation, evaluation, and results.
+
+**Ships as:** A GitHub repo with code implementing the enforcement checkpoint, scenario dataset, evaluation scripts, metric visualizations, and a README linking the work to the paper's enforcement mechanism and empirical results.
+
+**Stretch goal:** Add a simple prompt-only safety instruction baseline and compare its effects on usability and safety.
+
+### Advanced — Adaptive Enforcement Policies for Balancing Safety and Usability in Autonomous Agents
+*Effort: 3+ weeks*
+
+You design and implement an extension to the runtime enforcement checkpoint that dynamically adjusts enforcement strictness based on scenario context or agent confidence, aiming to optimize the tradeoff between Safety Rate and Usability Rate. You evaluate this adaptive mechanism on an extended scenario set and compare it to the static checkpoint baseline.
+
+**Why it shows you understood the paper:** This project addresses a future direction from the paper about exploring dynamic and adaptive enforcement policies. It shows you can critically engage with the paper's limitations and propose a meaningful extension that could improve practical agent deployment. A professor would recognize your initiative to advance the paper's research agenda.
+
+**Grounded in:** Future direction: Exploring dynamic and adaptive enforcement policies that balance safety and usability across models.
+
+**Tech stack:** Python 3.11, scikit-learn, matplotlib, pandas
+
+**Data:** An extended synthetic scenario dataset simulating diverse abstention-warranted cases with varying difficulty and agent confidence signals.
+
+**Build it:**
+
+1. Review and reimplement the static runtime enforcement checkpoint from the intermediate project.
+2. Design an adaptive enforcement policy that modulates abstention thresholds or enforcement rules based on scenario features or simulated agent confidence scores.
+3. Extend the scenario dataset to include features relevant for adaptive policy decisions.
+4. Implement the adaptive checkpoint mechanism wrapping the agent decision function.
+5. Evaluate baseline, static checkpoint, and adaptive checkpoint agents on the scenario set, computing Safety Rate, Usability Rate, and Informed Refusal Rate.
+6. Analyze and visualize tradeoffs between safety and usability across methods.
+7. Document the design rationale, implementation details, evaluation, and insights in the README.
+
+**Ships as:** A GitHub repo with adaptive enforcement code, extended scenario data, evaluation scripts, metric visualizations, and a detailed README discussing the adaptive approach in the context of the paper's future directions.
+
+**Stretch goal:** Integrate a simple machine learning model to predict abstention necessity from scenario features to inform the adaptive policy.

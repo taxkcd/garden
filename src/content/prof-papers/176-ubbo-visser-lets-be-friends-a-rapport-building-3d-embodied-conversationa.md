@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-ubbo-visser"
-source_hash: "21d929f5ea1845afb19de09be804bbd0749ded274839470e55d590af5c19093b"
+source_hash: "2f98c6e7454bb97a7ae5007df2a6d4ca9bc09a9aa0906816adeed49545dbede7"
 sequence: 176
 generator: "outreach-garden: managed"
 ---
@@ -133,3 +133,87 @@ Embodied Conversational Agents are virtual characters that simulate human-like c
 *How the paper uses it:* The core contribution is integrating a 3D expressive ECA with the Toyota HSR to mirror human nonverbal cues and build rapport.
 
 ▶ [Virtual Humans (Embodied Conversational Agents) - Computerphile](https://www.youtube.com/watch?v=42_lCOayS6s) — Computerphile · 7 years ago
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder of increasing complexity and fidelity to the paper "Let’s be friends! A rapport-building 3D embodied conversational agent for the Human Support Robot." The beginner project reproduces a core mirroring mechanism in a simplified web app to demonstrate understanding of nonverbal mirroring. The intermediate project reimplements the core real-time facial expression mirroring method integrated with a ROS-simulated robot head, comparing user engagement metrics. The advanced project extends the system by addressing latency and robustness limitations through edge computing and improved emotion recognition, exploring a key future direction of the paper.
+
+### Beginner — Web Demo of Facial Expression Mirroring
+*Effort: a weekend, ~8 hours*
+
+You build a simple React web application that uses the webcam to detect the user's facial expressions and head movements in real time and mirrors them on a 3D avatar face rendered with Three.js. This demo reproduces the core idea of nonverbal mirroring by the ECA from the paper but without robot integration.
+
+**Why it shows you understood the paper:** This project shows you understand the paper's key mechanism of real-time facial expression and head movement mirroring to build rapport, as well as the technical challenges of face detection and animation synchronization.
+
+**Grounded in:** Key contribution: Complex integration of a 3D expressive ECA enabling real-time mirroring of facial expressions and head movements.
+
+**Tech stack:** React, TypeScript, Three.js, TensorFlow.js (face-api.js)
+
+**Data:** Live webcam video stream used for real-time face and expression detection; no external dataset required.
+
+**Build it:**
+
+1. Set up a React app with webcam access using getUserMedia API.
+2. Integrate TensorFlow.js face-api.js to detect facial landmarks and classify basic expressions.
+3. Render a simple 3D avatar face using Three.js that can animate expressions and head pose.
+4. Map detected user expressions and head movements to avatar animations in real time.
+5. Add UI controls to toggle mirroring on/off and display detected expressions.
+
+**Ships as:** A GitHub repo with a React app demonstrating live facial expression and head movement mirroring on a 3D avatar, with a README explaining the mapping and limitations.
+
+**Stretch goal:** Add emotion classification with EmoPy or a similar Python backend via WebSocket to improve expression accuracy.
+
+### Intermediate — ROS-Unity Facial Expression Mirroring with User Engagement Logging
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement the core method of the paper by integrating a Unity-based 3D ECA with ROS using Rosbridge. You build ROS nodes for face detection (using DLib) and emotion classification (using EmoPy or a substitute) that send mirroring commands to the Unity ECA. You simulate the robot head movement in ROS and log user engagement metrics during interaction sessions.
+
+**Why it shows you understood the paper:** This project demonstrates you can reproduce the paper’s core technical approach of real-time mirroring via ROS-Unity integration and evaluate the impact on user engagement, showing grasp of the system architecture and experimental design.
+
+**Grounded in:** Key contribution: Development of ROS nodes for face detection (DLib) and emotion classification (EmoPy) to drive ECA behavior; key result: combining posture mimicking and facial expression mirroring leads to longer user interaction times.
+
+**Tech stack:** Python 3.11, ROS Noetic, DLib, EmoPy (or substitute), Unity, Rosbridge, TypeScript (optional for UI)
+
+**Data:** Live webcam video for face detection and emotion classification; simulated user interaction data collected during pilot sessions.
+
+**Build it:**
+
+1. Set up ROS environment with Rosbridge and Unity integration.
+2. Implement ROS nodes for real-time face detection using DLib and emotion classification using EmoPy or a similar Python library.
+3. Develop Unity ECA that receives ROS messages to animate facial expressions and head movements.
+4. Simulate robot head posture mimicking in ROS and synchronize with Unity ECA.
+5. Conduct small user tests (3-5 participants) to log interaction durations and subjective engagement ratings.
+6. Analyze and report engagement metrics comparing mirroring enabled vs disabled.
+
+**Ships as:** A GitHub repo with ROS nodes, Unity project, and scripts to run the mirroring system plus a README documenting setup, usage, and engagement results.
+
+**Stretch goal:** Replace EmoPy with a more accurate emotion recognition model and compare engagement improvements.
+
+### Advanced — Edge-Computing Enhanced ECA for Robust Real-Time Mirroring
+*Effort: 3+ weeks*
+
+You extend the paper’s system by deploying face detection and emotion recognition on an edge device co-located with the robot to reduce latency and improve robustness. You integrate a more accurate emotion recognition model (e.g., a lightweight CNN trained on FER2013) and implement fallback strategies for partial face visibility. You evaluate the system’s responsiveness and user engagement compared to the original WiFi-based setup.
+
+**Why it shows you understood the paper:** This project addresses the paper’s stated limitations and future directions by improving latency and emotion detection accuracy through architectural and model enhancements, demonstrating deep comprehension and innovation beyond replication.
+
+**Grounded in:** Limitation: Latency issues due to WiFi connection and emotion detection inaccuracies; Future direction: Explore alternatives to EmoPy and reduce latency via edge computing.
+
+**Tech stack:** Python 3.11, ROS Noetic, TensorFlow or PyTorch, OpenCV, Unity, Edge device (e.g., NVIDIA Jetson or Raspberry Pi 4)
+
+**Data:** Public facial expression datasets like FER2013 for training improved emotion recognition; live webcam video for real-time testing.
+
+**Build it:**
+
+1. Set up an edge computing device integrated with the robot’s ROS network.
+2. Develop or fine-tune a lightweight CNN emotion recognition model using FER2013 or similar dataset.
+3. Implement face detection and emotion recognition pipelines on the edge device with OpenCV and TensorFlow/PyTorch.
+4. Modify ROS nodes to communicate with the edge device instead of a WiFi backend.
+5. Enhance the system to handle partial face visibility and orientation changes robustly.
+6. Conduct user studies comparing latency, accuracy, and engagement metrics against baseline WiFi system.
+
+**Ships as:** A comprehensive GitHub repo with edge computing code, improved emotion recognition model, ROS integration, Unity ECA updates, and a detailed README with evaluation results and discussion.
+
+**Stretch goal:** Investigate additional nonverbal cues such as gaze or gesture mirroring to further improve rapport.

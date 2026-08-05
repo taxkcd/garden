@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-roger-azevedo"
-source_hash: "bc64b46dbd10e638699e69a9915666e4b46e732d7d02ebc41e17028f30f4054d"
+source_hash: "dbfc14d282fad83139183e5f23409fa5801b643d6bc768814d22cd432f03148a"
 sequence: 63
 generator: "outreach-garden: managed"
 ---
@@ -100,3 +100,91 @@ Understand how generative AI can create inclusive and context-aware learning exp
 *How the paper uses it:* The paper emphasizes the importance of human-centered design and inclusivity in GenAI-powered educational tools.
 
 ▶ [How can AI enhance personalised English learning?](https://www.youtube.com/watch?v=aWGXFrVXIcM) — British Council | TeachingEnglish · 57:47
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a skill ladder that progressively deepens your engagement with the paper's core themes: beginner focuses on demonstrating personalized learning pathways with generative AI feedback, intermediate reimplements and evaluates GenAI feedback mechanisms in a domain-specific context, and advanced extends the work by addressing ethical and pedagogical challenges through a human-in-the-loop AI feedback system. Each project leverages your existing software engineering and AI skills while grounding the work explicitly in the paper's identified opportunities, challenges, and future directions.
+
+### Beginner — Personalized Learning Feedback Demo with LLM
+*Effort: a weekend, ~8 hours*
+
+You build a simple web app that uses an LLM (e.g., OpenAI GPT or Anthropic Claude) to generate personalized feedback on short student-written answers or code snippets. The app will simulate personalized learning pathways by providing tailored hints or explanations based on user input.
+
+**Why it shows you understood the paper:** This project demonstrates your grasp of the paper's claim that GenAI can enhance personalized learning pathways and real-time feedback, showing you can operationalize this concept with existing LLM APIs and a minimal frontend.
+
+**Grounded in:** GenAI can enhance personalized learning pathways and real-time feedback.
+
+**Tech stack:** TypeScript, React, Node.js, Express.js, OpenAI or Anthropic Claude API
+
+**Data:** Simulated short student answers or code snippets entered by users; no external dataset required.
+
+**Build it:**
+
+1. Set up a React frontend with a form to input student answers or code snippets.
+2. Implement a backend API in Node.js/Express that sends the input to an LLM API to generate feedback.
+3. Display the LLM-generated personalized feedback in the frontend.
+4. Add simple logic to tailor feedback style based on user-selected learning goals or difficulty levels.
+5. Test the app with sample inputs to verify personalized feedback generation.
+
+**Ships as:** A GitHub repo with a README demonstrating a working web app that generates personalized AI feedback, illustrating the concept of AI-enhanced personalized learning.
+
+**Stretch goal:** Add a feature to track user progress and adapt feedback over multiple sessions to simulate a learning pathway.
+
+### Intermediate — Reimplementation of AI-Generated Feedback for Programming Education
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement a simplified version of the paper's described use of LLMs to generate feedback on student programming assignments. Using a public programming education dataset or simulated student code snippets, you compare LLM-generated feedback against a baseline static feedback system, measuring correctness and helpfulness.
+
+**Why it shows you understood the paper:** This project shows you can operationalize the paper's core method of using LLMs for domain-specific feedback generation, understand the challenges of imperfect outputs, and evaluate AI feedback quality quantitatively.
+
+**Grounded in:** LLMs have shown early success in computer science education for code generation and feedback.
+
+**Tech stack:** Python 3.11, FastAPI, React, OpenAI API or Anthropic Claude API
+
+**Data:** Use a public dataset of student programming submissions such as the CodeXGLUE dataset or simulate student code snippets with known errors for feedback generation.
+
+**Build it:**
+
+1. Select or simulate a dataset of student programming submissions with errors.
+2. Build a FastAPI backend that sends code snippets to an LLM to generate feedback.
+3. Implement a baseline static feedback system (e.g., rule-based hints) for comparison.
+4. Create a React frontend to display student code, LLM feedback, and baseline feedback side-by-side.
+5. Define simple metrics for feedback correctness (manual spot checks) and helpfulness (user survey or heuristic).
+6. Run experiments comparing LLM feedback to baseline and document results.
+
+**Verified links from the paper:**
+
+- <https://osf.io/372vr> — a third-party/baseline artifact the paper cites — not the authors' own code
+
+**Ships as:** A GitHub repo with code, a demo UI, and a report comparing LLM-generated feedback to baseline feedback on programming tasks.
+
+**Stretch goal:** Incorporate a simple quality assurance step to filter or flag potentially incorrect LLM feedback.
+
+### Advanced — Human-in-the-Loop GenAI Feedback System with Ethical Safeguards
+*Effort: 3+ weeks*
+
+You develop an interactive system that integrates LLM-generated feedback with human instructor review to address the paper's limitations around imperfect AI outputs and ethical concerns. The system supports instructors in validating and editing AI feedback before delivering it to learners, incorporating logging and transparency features.
+
+**Why it shows you understood the paper:** This project tackles the paper's stated limitation of imperfect AI outputs and the future direction of human-centered design by creating a practical tool that augments rather than replaces human expertise, demonstrating deep engagement with ethical and pedagogical challenges.
+
+**Grounded in:** LLMs are imperfect and can produce incorrect outputs, posing challenges in education; Develop theory-guided, human-centered GenAI tools that augment rather than replace human intelligence.
+
+**Tech stack:** TypeScript, React, Node.js, Express.js, PostgreSQL, OpenAI API or Anthropic Claude API
+
+**Data:** Simulated or real student answers or code snippets collected from a small pilot or synthesized for demonstration; no proprietary dataset required.
+
+**Build it:**
+
+1. Design a React frontend for instructors to review, edit, and approve AI-generated feedback.
+2. Implement a backend that generates feedback via LLM API and stores feedback versions and instructor edits in PostgreSQL.
+3. Add user authentication and role-based access control for instructors and learners.
+4. Log all feedback generation and edits for transparency and auditing.
+5. Create a learner interface that only receives instructor-approved feedback.
+6. Test the system with sample inputs and gather informal feedback on usability and ethical considerations.
+
+**Ships as:** A GitHub repo with a full-stack human-in-the-loop feedback system demonstrating ethical safeguards and human-centered AI integration.
+
+**Stretch goal:** Add analytics dashboards to monitor AI feedback accuracy trends and instructor intervention rates over time.

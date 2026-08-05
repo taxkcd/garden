@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-eric-bach"
-source_hash: "f788f3b04da3d52911b2128adf6f684eaef787c7d6965d7b9e50e9ea96ea864c"
+source_hash: "4c18c35a636cabc7af731d9d526c7a032616a49de2c1caec3212a13fbd8cf84a"
 sequence: 115
 generator: "outreach-garden: managed"
 ---
@@ -110,3 +110,90 @@ Hearing directly from the authors provides insight into the motivation, approach
 ## Already in your library
 
 - [Information Theory, Lecture 1: Defining Entropy and Information - Oxford Mathematics 3rd Yr Lecture](https://www.youtube.com/watch?v=ScX2aBFyrVU) — also for: Byte Latent Transformer: Patches Scale Better Than Tokens (Luke S. Zettlemoyer)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive ladder to demonstrate your understanding of the paper's novel information transmission model using Bernoulli trials. The beginner project recreates the core optimal encoding function and visualizes its error reduction compared to naive encoding. The intermediate project implements the asymptotic error criterion and compares the optimal encoding function against the naive baseline on simulated data, introducing measure-theoretic probability concepts practically. The advanced project extends the model to incorporate prior information and weighted error penalties, addressing one of the paper's key generalizations and limitations, and explores practical finite-sample effects.
+
+### Beginner — Visualize Optimal Encoding Function and Error Reduction
+*Effort: a weekend, ~8 hours*
+
+You build a small interactive visualization that plots the optimal encoding function f(x) = (1 - cos(πx))/2 alongside the naive identity function over [0,1]. You also plot the corresponding asymptotic scaled mean squared error curves for both functions, illustrating the approximately 64% error reduction achieved by the optimal function.
+
+**Why it shows you understood the paper:** This project shows you grasp the paper's key result of the unique optimal encoding function and its quantitative advantage over naive encoding, demonstrating comprehension of the core mathematical formula and error metric.
+
+**Grounded in:** The optimal encoding function is f(x) = (1 - cos(πx))/2 minimizing the error criterion, reducing error by about 64% compared to naive encoding.
+
+**Tech stack:** Python 3.11, Jupyter Notebook, matplotlib, numpy
+
+**Data:** No external data needed; you simulate the encoding functions and compute error curves analytically as described in the paper.
+
+**Build it:**
+
+1. Implement the optimal encoding function f(x) = (1 - cos(πx))/2 and the naive identity function over the interval [0,1].
+2. Compute the inverse functions g = f^{-1} and g_naive = identity^{-1} (which is identity).
+3. Calculate the asymptotic scaled mean squared error E[n(g(Ȳ) - x)^2] using the formula (g'(y))^2 y(1 - y) for both functions over a dense grid.
+4. Plot both encoding functions on the same graph.
+5. Plot the corresponding error curves on a separate graph to visualize the error reduction.
+6. Write a README explaining the significance of the plots and how they relate to the paper's main result.
+
+**Ships as:** A Jupyter notebook with plots of the optimal and naive encoding functions and their asymptotic error curves, plus a README explaining the results.
+
+**Stretch goal:** Add an interactive slider to vary the input x and dynamically show encoding and error values.
+
+### Intermediate — Simulate Bernoulli Transmission and Compare Encoding Schemes
+*Effort: 1-2 weekends, ~15 hours*
+
+You implement a simulation of transmitting a real number x ∈ [0,1] by generating n i.i.d. Bernoulli trials with mean given by the encoding function (optimal and naive). You estimate x from the sample mean and compute the scaled mean squared error over multiple trials to empirically verify the asymptotic error criterion and the superiority of the optimal encoding.
+
+**Why it shows you understood the paper:** This project demonstrates your ability to translate the paper's theoretical model into a probabilistic simulation, apply measure-theoretic probability concepts, and empirically validate the key asymptotic error metric and optimality claim.
+
+**Grounded in:** The natural measure for the error is E[n(g(Ȳ) − x)^2], and the optimal encoding function minimizes this error compared to naive encoding.
+
+**Tech stack:** Python 3.11, numpy, scipy, matplotlib, Jupyter Notebook
+
+**Data:** Simulated Bernoulli trial data generated according to the encoding functions; no external dataset required.
+
+**Build it:**
+
+1. Implement the optimal encoding function f(x) and its inverse g(y), and the naive identity encoding and inverse.
+2. For a range of x values in [0,1], simulate n Bernoulli trials with success probability f(x) for both encoding schemes.
+3. Compute the sample mean Ȳ for each simulation and estimate x as g(Ȳ).
+4. Calculate the scaled mean squared error n * (g(Ȳ) - x)^2 over multiple independent trials to approximate the expectation.
+5. Plot the empirical scaled mean squared error versus x for both encoding schemes.
+6. Compare the empirical results to the theoretical asymptotic error curves from the paper.
+7. Document the methodology, results, and interpretation in a README.
+
+**Ships as:** A Jupyter notebook with simulation code, plots comparing empirical scaled mean squared errors for optimal and naive encodings, and a README discussing the results.
+
+**Stretch goal:** Extend the simulation to include finite sample size effects and analyze convergence rates.
+
+### Advanced — Extend Optimal Encoding to Weighted Error Penalties with Prior Information
+*Effort: 3-4 weeks*
+
+You develop a software implementation that generalizes the optimal encoding function to incorporate prior distributions on x and weighted error penalties as described in the paper. You simulate transmissions under these conditions, compute the corresponding optimal transformations involving integrals of the weight function, and analyze how the encoding adapts. You also explore finite sample size effects and discuss practical implications for network protocols.
+
+**Why it shows you understood the paper:** This project tackles one of the paper's main generalizations and limitations by implementing the extended model with prior information and weighted errors, demonstrating deep comprehension of the variational problem and its practical challenges beyond the asymptotic idealization.
+
+**Grounded in:** The model generalizes to include prior information and non-uniform error penalties, yielding explicit optimal transformations involving integrals of the weight function.
+
+**Tech stack:** Python 3.11, numpy, scipy, matplotlib, Jupyter Notebook, SymPy (optional for symbolic integration)
+
+**Data:** Simulated data generated according to chosen prior distributions and weight functions; no external dataset required.
+
+**Build it:**
+
+1. Study the paper's formulas for the generalized optimal encoding involving prior distributions and weighted error penalties.
+2. Implement numerical integration routines to compute the optimal encoding function for given priors and weight functions.
+3. Simulate Bernoulli trial transmissions using these generalized encoding functions for various x sampled from the prior.
+4. Estimate x from sample means and compute weighted scaled mean squared errors.
+5. Analyze and plot how the encoding function and error metrics change with different priors and weights.
+6. Investigate finite sample size effects by varying n and discuss implications for real network conditions.
+7. Write a detailed README explaining the implementation, results, and connections to the paper's future directions and limitations.
+
+**Ships as:** A comprehensive Jupyter notebook or Python package implementing generalized optimal encoding with prior and weighted errors, simulation results, plots, and a detailed README.
+
+**Stretch goal:** Prototype a simple network protocol simulation that uses the generalized encoding to handle dynamic conditions and finite samples.

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-toni-kazic"
-source_hash: "e89f8fe5af1f975dc36a327d4292be7b245f4fa8192197e12c6b0cfbb800e8ab"
+source_hash: "9e475835171ac42fbb9d5444ec33b9f789c6f1da883198890348d023e55007ee"
 sequence: 191
 generator: "outreach-garden: managed"
 ---
@@ -134,3 +134,95 @@ Topology-aware segmentation methods integrate topological constraints into segme
 - [Hyperbolic Geometry in Machine Learning - Inzamam Rahaman](https://www.youtube.com/watch?v=Fbcd31g70ps) — also for: HyperEvoGen: Exploring deep phylogeny using non-Euclidean variational inference (Xinghua Mindy Shi)
 - [Hyperbolic Geometry: The Mind-Bending World of Non-Euclidean Space](https://www.youtube.com/watch?v=K8qv--2l54Q) — also for: HyperEvoGen: Exploring deep phylogeny using non-Euclidean variational inference (Xinghua Mindy Shi)
 - [Topological Data Analysis (TDA) | An introduction](https://www.youtube.com/watch?v=fpL5fMmJHqk) — also for: A Computational Topology-based Spatiotemporal Analysis Technique for Honeybee Aggregation (Elizabeth Bradley)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a practical learning ladder to demonstrate your understanding of the HyperTopo-Adapters paper. The beginner project focuses on reproducing and visualizing the Soft Euler Characteristic topology-aware loss on synthetic lesion masks, the intermediate project implements the core HyperTopo-Adapter architecture and topology-aware training on a publicly available leaf lesion dataset, and the advanced project extends the method by benchmarking different frozen vision encoders to address the paper's stated future direction of backbone universality.
+
+### Beginner — Soft Euler Characteristic Loss Visualization on Synthetic Lesions
+*Effort: a weekend, ~8 hours*
+
+You build a Python notebook that implements the differentiable Soft Euler Characteristic (EC) loss as described in the paper, applying it to synthetic binary masks simulating leaf lesions with holes. You visualize how the loss changes as holes are added or removed, demonstrating its sensitivity to topological features.
+
+**Why it shows you understood the paper:** This project shows you understand the topology-aware loss mechanism central to the paper, including how it approximates Betti number consistency and enforces biologically meaningful lesion topology.
+
+**Grounded in:** Formulation of a topology-aware training objective combining Dice/BCE with hyperbolic contrastive loss and a differentiable Soft Euler Characteristic surrogate enforcing Betti number consistency.
+
+**Tech stack:** Python 3.11, Jupyter Notebook, NumPy, Matplotlib, PyTorch
+
+**Data:** Synthetic binary masks generated in code to simulate leaf lesions with varying numbers of holes.
+
+**Build it:**
+
+1. Implement the Soft Euler Characteristic loss function as a differentiable PyTorch module following the paper's description.
+2. Generate synthetic binary lesion masks with controlled numbers of holes and connected components.
+3. Compute and visualize the Soft EC loss values for these masks, showing how the loss responds to topological changes.
+4. Plot example masks alongside their Soft EC loss values to illustrate the topology sensitivity.
+5. Write a README explaining the Soft EC loss and its role in topology-aware segmentation.
+
+**Ships as:** A Jupyter notebook demonstrating Soft Euler Characteristic loss behavior on synthetic lesion masks, with visualizations and explanations.
+
+**Stretch goal:** Add a small experiment integrating the Soft EC loss with Dice loss on a toy segmentation model trained on synthetic data.
+
+### Intermediate — Reimplementation of HyperTopo-Adapters on Kaggle Leaf Lesion Dataset
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement the core HyperTopo-Adapter architecture using a frozen vision encoder (e.g., DINOv2 ViT) and a lightweight adapter projecting features into a product manifold (hyperbolic, Euclidean, spherical). You train the model on the Kaggle leaf lesion dataset (N=2,940 images) with combined Dice, BCE, hyperbolic contrastive, and Soft Euler Characteristic losses. You compare segmentation performance and topological hole error (∆β1) against a Euclidean baseline.
+
+**Why it shows you understood the paper:** This project demonstrates your ability to reproduce the paper's main method and results, including the product manifold embedding and topology-aware training objective, validating the key contribution of improved topology preservation without sacrificing standard segmentation metrics.
+
+**Grounded in:** Introduction of a product-manifold latent head combining hyperbolic, Euclidean, and spherical geometries to capture biological hierarchy and boundary closure; Empirical validation on a Kaggle leaf-lesion dataset showing a 9% reduction in topological hole errors (∆β1) without sacrificing Dice/IoU accuracy.
+
+**Tech stack:** Python 3.11, PyTorch, scikit-learn, NumPy, Matplotlib
+
+**Data:** Kaggle leaf lesion dataset with 2,940 images as used in the paper (publicly available Kaggle dataset for leaf lesion segmentation).
+
+**Build it:**
+
+1. Download and preprocess the Kaggle leaf lesion dataset for segmentation tasks.
+2. Implement the HyperTopo-Adapter head projecting frozen encoder features into hyperbolic, Euclidean, and spherical latent spaces as described.
+3. Integrate the combined loss function: Dice, BCE, hyperbolic contrastive loss, and Soft Euler Characteristic loss.
+4. Train the model with a frozen DINOv2 encoder baseline and compare against a Euclidean-only latent space baseline.
+5. Evaluate segmentation quality using Dice, IoU, and topological hole error (∆β1) metrics.
+6. Document results and visualize segmentation outputs highlighting topology preservation.
+
+**Verified links from the paper:**
+
+- <https://github.com/ChimdiWalter/HyperTopo-Adapters> — a third-party/baseline artifact the paper cites — not the authors' own code
+
+**Ships as:** A GitHub repository with code to train and evaluate HyperTopo-Adapters on leaf lesion images, including scripts, metrics, and visualizations comparing topology-aware and baseline models.
+
+**Stretch goal:** Experiment with partial unfreezing of encoder blocks and report impact on topology metrics.
+
+### Advanced — Benchmarking HyperTopo-Adapters with Different Frozen Encoders
+*Effort: 3+ weeks*
+
+You extend the HyperTopo-Adapters method by benchmarking its performance using different frozen vision encoders such as DINOv3 and ResNet-101, addressing the paper's future direction on backbone universality. You implement the adapter and topology-aware training objective on these encoders, evaluate on the Kaggle leaf lesion dataset, and analyze differences in topology preservation and segmentation accuracy.
+
+**Why it shows you understood the paper:** This project tackles a stated limitation and future direction of the paper, demonstrating deep comprehension of the method and its adaptability. It also shows your ability to conduct systematic empirical studies and interpret results in the context of biological topology preservation.
+
+**Grounded in:** Benchmarking the manifold adapter with different backbones such as DINOv3 and ResNet-101 to test universality.
+
+**Tech stack:** Python 3.11, PyTorch, scikit-learn, NumPy, Matplotlib
+
+**Data:** Kaggle leaf lesion dataset (N=2,940 images) as in the paper.
+
+**Build it:**
+
+1. Implement adapter heads compatible with multiple frozen encoders: DINOv2 (baseline), DINOv3, and ResNet-101.
+2. Integrate the topology-aware training objective with combined Dice, BCE, hyperbolic contrastive, and Soft Euler Characteristic losses for each encoder.
+3. Train and evaluate models on the Kaggle leaf lesion dataset, ensuring consistent preprocessing and hyperparameters.
+4. Compare segmentation metrics (Dice, IoU) and topological hole error (∆β1) across encoders.
+5. Analyze and document how encoder choice affects topology preservation and segmentation quality.
+6. Prepare a detailed report and README explaining methodology, results, and implications for biological lesion analysis.
+
+**Verified links from the paper:**
+
+- <https://github.com/ChimdiWalter/HyperTopo-Adapters> — a third-party/baseline artifact the paper cites — not the authors' own code
+
+**Ships as:** A comprehensive GitHub repository with code, trained models, evaluation scripts, and a detailed report benchmarking HyperTopo-Adapters across multiple frozen encoders.
+
+**Stretch goal:** Explore partial unfreezing strategies or adapter architecture variants to improve performance on specific encoders.

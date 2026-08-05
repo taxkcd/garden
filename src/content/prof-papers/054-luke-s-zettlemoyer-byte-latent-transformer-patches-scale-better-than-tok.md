@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-luke-s-zettlemoyer"
-source_hash: "f081a625cb51028f0bf16c6b2d716a151123635c4545a1ccfd8772e96aeac5f2"
+source_hash: "8a4ed5f442e3a6da890f1a9c259c3dede42c498456bea5be015085e8ea161422"
 sequence: 54
 generator: "outreach-garden: managed"
 ---
@@ -137,3 +137,95 @@ A detailed presentation by the authors explaining the BLT architecture, its moti
 - [How Cross Attention Powers Translation in Transformers ...](https://www.youtube.com/watch?v=b40PL-sWmSM) — also for: Byte Latent Transformer: Patches Scale Better Than Tokens (Luke S. Zettlemoyer)
 - [Attention in transformers, step-by-step | Deep Learning Chapter 6](https://www.youtube.com/watch?v=eMlx5fFNoYc) — also for: Heterogeneous Graph Attention Network (Yanfang (Fanny) Ye)
 - [Cross Attention | Method Explanation | Math Explained](https://www.youtube.com/watch?v=aw3H-wPuRcw) — also for: Byte Latent Transformer: Patches Scale Better Than Tokens (Luke S. Zettlemoyer)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive ladder to demonstrate your understanding of the Byte Latent Transformer (BLT) paper. The beginner project focuses on reproducing the entropy-based dynamic patching mechanism on byte sequences, the intermediate project implements a simplified BLT-style patching and compares it to fixed tokenization baselines on a public dataset, and the advanced project explores an extension toward end-to-end learnable patching, addressing a key limitation noted by the authors.
+
+### Beginner — Entropy-Based Byte Patching Prototype
+*Effort: a weekend, ~8 hours*
+
+You build a standalone script that takes raw byte sequences from text data and segments them into patches based on the entropy of the next byte predicted by a simple byte-level language model. This reproduces the core entropy-based dynamic patching mechanism described in the paper on a small scale.
+
+**Why it shows you understood the paper:** This project shows you understand the paper's key innovation of entropy-based patching to dynamically group bytes, a fundamental step that enables BLT's efficiency and robustness.
+
+**Grounded in:** Introduction of BLT, a byte-level large language model architecture that dynamically allocates compute via entropy-based patching.
+
+**Tech stack:** Python 3.11, PyTorch, NumPy, Jupyter Notebook
+
+**Data:** Use a small public text dataset such as a subset of WikiText-2 or any plain text file to extract raw byte sequences for patching.
+
+**Build it:**
+
+1. Load raw text data and convert it to byte sequences.
+2. Train or implement a simple byte-level next-byte prediction model (e.g., a small RNN or Transformer) on the byte data.
+3. Compute the entropy of the next byte prediction at each position in the sequence.
+4. Segment the byte sequence into patches where entropy crosses a threshold, mimicking the paper's dynamic patching.
+5. Visualize and report statistics on patch lengths and entropy distributions.
+
+**Ships as:** A Jupyter notebook or Python script demonstrating entropy-based byte patching with plots and explanations in the README.
+
+**Stretch goal:** Add a comparison of fixed-size patching versus entropy-based patching on the same data to highlight efficiency differences.
+
+### Intermediate — Simplified Byte Latent Transformer Patching and Baseline Comparison
+*Effort: 1-3 weekends, ~20 hours*
+
+You implement a simplified version of the BLT's entropy-based patching mechanism integrated with a small Transformer encoder that processes patches instead of tokens. You compare this to a baseline Transformer trained on fixed-size byte patches or standard tokenization on a public dataset, evaluating bits-per-byte or cross-entropy loss.
+
+**Why it shows you understood the paper:** This project demonstrates your ability to reimplement the paper's core method and empirically validate the efficiency and performance benefits of entropy-based patching compared to fixed tokenization.
+
+**Grounded in:** First flop-controlled scaling study of byte-level models up to 8B parameters and 4T training bytes, matching token-based model performance.
+
+**Tech stack:** Python 3.11, PyTorch, Transformers library, NumPy, Jupyter Notebook
+
+**Data:** Use a publicly available text dataset such as WikiText-103 or OpenWebText as a substitute for the paper's training data.
+
+**Build it:**
+
+1. Implement entropy-based dynamic patching as in the beginner project.
+2. Build a small Transformer encoder that takes patch embeddings as input.
+3. Implement a baseline Transformer model trained on fixed-size byte patches or standard tokenization.
+4. Train both models on the chosen dataset under similar compute budgets.
+5. Evaluate and compare bits-per-byte or cross-entropy loss on a validation set.
+6. Document results and discuss efficiency trade-offs.
+
+**Verified links from the paper:**
+
+- <https://github.com/facebookresearch/blt> — a third-party/baseline artifact the paper cites — not the authors' own code
+
+**Ships as:** A GitHub repository with training scripts, evaluation code, and a README reporting comparative results and insights.
+
+**Stretch goal:** Incorporate cross-attention between byte-level and patch-level representations as described in BLT to improve performance.
+
+### Advanced — End-to-End Learnable Patching for Byte Latent Transformer
+*Effort: a few weeks, ~60+ hours*
+
+You design and implement an extension of the BLT architecture that replaces the separately trained entropy model with an end-to-end learnable patching mechanism. This involves integrating patch boundary prediction into the main model training loop and evaluating its impact on efficiency and robustness.
+
+**Why it shows you understood the paper:** This project tackles a key limitation and future direction from the paper, demonstrating deep comprehension of BLT's architecture and the challenges of dynamic patching, while contributing a novel extension.
+
+**Grounded in:** Developing end-to-end learnable patching mechanisms to replace the separately trained entropy model.
+
+**Tech stack:** Python 3.11, PyTorch, Transformers library, NumPy, Jupyter Notebook, Docker (optional)
+
+**Data:** Use a public text dataset like WikiText-103 or OpenWebText for training and evaluation.
+
+**Build it:**
+
+1. Study the BLT architecture and its entropy-based patching implementation.
+2. Design a differentiable patch boundary prediction module (e.g., using a boundary prediction head or reinforcement learning).
+3. Integrate this module into the BLT training pipeline to jointly learn patching and language modeling.
+4. Train the extended model on the dataset under controlled compute budgets.
+5. Evaluate performance, inference efficiency, and robustness to noise compared to the original BLT with fixed entropy patching.
+6. Document challenges, design decisions, and results in detail.
+
+**Verified links from the paper:**
+
+- <https://github.com/facebookresearch/blt> — a third-party/baseline artifact the paper cites — not the authors' own code
+
+**Ships as:** A comprehensive GitHub repository with code, training scripts, evaluation notebooks, and a detailed README discussing the end-to-end patching approach and its empirical effects.
+
+**Stretch goal:** Experiment with different patch boundary learning strategies or apply the method to multilingual or noisy input datasets to test robustness.

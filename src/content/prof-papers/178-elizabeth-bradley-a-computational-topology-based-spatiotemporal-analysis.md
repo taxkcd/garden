@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-elizabeth-bradley"
-source_hash: "eb5fbc85945c42bab98253fbcfe3212b48ae32bf68bb1ff0263ba48b7c5dbd86"
+source_hash: "d61fa6781cb20bc0b1cc414e96d8886759f80866d45f673934e8ef96ede800c3"
 sequence: 178
 generator: "outreach-garden: managed"
 ---
@@ -141,3 +141,99 @@ Persistent homology tracks topological features like connected components across
 ## Already in your library
 
 - [Change Point Detection in Time Series](https://www.youtube.com/watch?v=JrOnOcnkR-8) — also for: Autonomous Hamiltonian certification and changepoint detection (Steven T. Flammia)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progression from reproducing a core visualization from the paper using existing tools, to implementing and extending the paper's topological data analysis method on real data, and finally to addressing a key limitation by improving data quality with machine learning-based tracking. Each project deepens your understanding of the paper's computational topology approach to honeybee aggregation and its challenges.
+
+### Beginner — Visualize CROCKER Matrix ℓ2 Norm Time Series from Honeybee Simulation
+*Effort: a weekend, ~8 hours*
+
+You build a Python script that loads a CROCKER matrix vector time series from the authors' simulation dataset, computes the ℓ2 norm of the topological feature vectors over time, and plots the resulting time series to reproduce the key figure showing phase change detection. This reproduces the paper's dimensionality reduction step and visualizes the phase transition after donor introduction.
+
+**Why it shows you understood the paper:** This project shows you understand how the CROCKER matrix encodes multi-scale topological features over time and how the ℓ2 norm reduction reveals phase changes in aggregation behavior, a central mechanism in the paper.
+
+**Grounded in:** Dimensionality reduction via ℓ2 norm of CROCKER vectors enables effective phase change detection.
+
+**Tech stack:** Python 3.11, NumPy, Matplotlib, Jupyter Notebook
+
+**Data:** Use the synthetic agent-based simulation data available in the authors' GitHub repository https://github.com/vrd1243/tda_bees_datasets.
+
+**Build it:**
+
+1. Clone and explore the authors' GitHub repository to locate the simulation CROCKER matrix data files.
+2. Write a Python script to load the CROCKER matrix vectors for each time step.
+3. Compute the ℓ2 norm of each vector to produce a scalar time series.
+4. Plot the ℓ2 norm time series using Matplotlib, highlighting the donor introduction time.
+5. Add comments explaining how this visualization relates to phase change detection in the paper.
+
+**Verified links from the paper:**
+
+- <https://github.com/vrd1243/tda_bees_datasets> — released by the paper's authors
+
+**Ships as:** A Jupyter notebook or Python script with plots reproducing the ℓ2 norm time series figure from simulation data, with explanatory comments.
+
+**Stretch goal:** Add PCA dimensionality reduction and compare its time series to the ℓ2 norm plot.
+
+### Intermediate — Implement Change-Point Detection on Experimental Honeybee Aggregation Data
+*Effort: 1-3 weekends, ~20 hours*
+
+You implement the paper's core TDA pipeline: load experimental bee position data from the authors' datasets, compute persistent homology and CROCKER matrices, reduce dimensionality via ℓ2 norm, and apply a change-point detection algorithm to identify phase changes. You compare your detected change points to the donor introduction time and report timing lag metrics.
+
+**Why it shows you understood the paper:** This project demonstrates your ability to reimplement the paper's main computational topology method end-to-end on real data, including topological feature extraction and temporal change detection, validating the approach's effectiveness.
+
+**Grounded in:** Change-point detection and clustering algorithms successfully detect phase changes in both simulated and experimental data.
+
+**Tech stack:** Python 3.11, GUDHI or Ripser (persistent homology), NumPy, scikit-learn, ruptures (change-point detection), Matplotlib
+
+**Data:** Use the raw image files for dataset C0128 available at https://github.com/vrd1243/tda_bees_datasets; process to extract bee positions as point clouds.
+
+**Build it:**
+
+1. Download and preprocess the experimental dataset C0128 to extract bee position point clouds per time frame.
+2. Compute persistent homology and build CROCKER matrices summarizing connected components over multiple scales and times.
+3. Reduce the CROCKER matrix vectors to scalar time series using the ℓ2 norm.
+4. Apply a change-point detection algorithm (e.g., Pelt from ruptures) to the time series to identify phase changes.
+5. Compare detected change points to the known donor introduction time and report lag statistics.
+6. Visualize the time series and detected change points with annotations.
+
+**Verified links from the paper:**
+
+- <https://github.com/vrd1243/tda_bees_datasets> — released by the paper's authors
+
+**Ships as:** A Python project with scripts/notebooks that process experimental data, compute TDA summaries, detect phase changes, and visualize results with timing comparisons.
+
+**Stretch goal:** Implement clustering algorithms with time-annotated features and compare their phase change detection performance to change-point detection.
+
+### Advanced — Enhance Bee Position Extraction Using ML Tracking to Improve Topological Analysis
+*Effort: few weeks, ~40+ hours*
+
+You develop a machine learning-based tracking pipeline to improve the quality of bee position extraction from dense video frames, addressing occlusion and touching bees. You then feed the improved point clouds into the paper's TDA pipeline to assess whether enhanced data quality leads to more sensitive and accurate phase change detection in aggregation behavior.
+
+**Why it shows you understood the paper:** This project tackles a key limitation identified by the authors—noisy segmentation and occlusion in video data—and extends their method by integrating advanced ML tracking, demonstrating a deep grasp of both biological data challenges and computational topology analysis.
+
+**Grounded in:** Limitations: Video data segmentation is challenging due to occlusions and touching bees, leading to noisy point clouds.
+
+**Tech stack:** Python 3.11, OpenCV, PyTorch or TensorFlow, Deep SORT or similar multi-object tracking, GUDHI or Ripser, ruptures, NumPy, Matplotlib
+
+**Data:** Use the raw image files for dataset C0128 from https://github.com/vrd1243/tda_bees_datasets as input video frames for tracking.
+
+**Build it:**
+
+1. Implement or adapt a state-of-the-art multi-object tracking algorithm (e.g., Deep SORT) to track individual bees in dense video frames.
+2. Process the video frames to generate improved, temporally consistent bee position point clouds with reduced occlusion errors.
+3. Apply the paper's persistent homology and CROCKER matrix pipeline to the improved point clouds.
+4. Perform dimensionality reduction and change-point detection to identify aggregation phase changes.
+5. Compare the sensitivity and timing accuracy of phase change detection using improved tracking data versus the original point cloud data.
+6. Document the impact of enhanced data quality on topological analysis results.
+
+**Verified links from the paper:**
+
+- <https://github.com/vrd1243/tda_bees_datasets> — released by the paper's authors
+
+**Ships as:** A comprehensive codebase and report demonstrating improved bee tracking, enhanced TDA analysis, and quantitative comparison of phase change detection accuracy.
+
+**Stretch goal:** Explore alternative dimension reduction techniques or clustering algorithms on the improved data to further refine phase detection.

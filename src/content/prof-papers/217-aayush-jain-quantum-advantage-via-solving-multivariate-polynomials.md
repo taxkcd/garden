@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-aayush-jain"
-source_hash: "0b395653beef73cac1a227a02b74bdc350081c1da95f9f978115298f6a59a303"
+source_hash: "02245bb346a252e4fc33f83d7102df7804cb451c49c97b4d0250c7c00da226cc"
 sequence: 217
 generator: "outreach-garden: managed"
 ---
@@ -141,3 +141,87 @@ Hearing directly from the authors or related quantum advantage explainers provid
 - [Lecture 20: Reed-Solomon Codes](https://www.youtube.com/watch?v=OapnQzIDBM0) — also for: List Decoding and Property Testing of Error Correcting Codes (Atri Rudra)
 - [Lecture 4, Video 4: Reed-Solomon Codes!](https://www.youtube.com/watch?v=yQkEnde2lNg) — also for: List Decoding and Property Testing of Error Correcting Codes (Atri Rudra)
 - [Introduction to Analysis of Boolean Functions 1](https://www.youtube.com/watch?v=GR5gugFdDa4) — also for: Algorithmic Foundations of Inexact Computing (Krishna V. Palem)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder to demonstrate your understanding of the paper "Quantum Advantage via Solving Multivariate Polynomials." Starting with a beginner project that simulates and visualizes key polynomial distribution properties, you then implement a core classical baseline solver and a simplified quantum-inspired decoding step at intermediate level. Finally, the advanced project explores extending the quantum algorithm framework to polynomial systems with relaxed distributional assumptions, addressing a stated limitation and opening a path for research discussion.
+
+### Beginner — Simulate and Visualize 2-Wise Independence and Shift-Invariance of Degree-3 Polynomials over F2
+*Effort: a weekend, ~8 hours*
+
+You build a Python Jupyter notebook that generates random degree-3 multivariate polynomials over the finite field F2 on small variable sets, then empirically verifies and visualizes their 2-wise independence and shift-invariance properties as described in the paper. You implement simple tests and plots to show these distributional properties hold, reproducing key lemmas from the paper.
+
+**Why it shows you understood the paper:** This project demonstrates you understand the crucial distributional assumptions (2-wise independence and shift-invariance) that enable the quantum algorithm's correctness, by faithfully reproducing the paper's analytic claims with concrete simulations and visualizations.
+
+**Grounded in:** Section 4.5 and Lemma 1.2 prove uniform random degree-d polynomials have these properties, which are crucial for the quantum algorithm's correctness.
+
+**Tech stack:** Python 3.11, Jupyter Notebook, NumPy, Matplotlib
+
+**Data:** Synthetic data: random degree-3 polynomials over F2 generated in code, no external dataset required.
+
+**Build it:**
+
+1. Implement a function to generate random degree-3 multivariate polynomials over F2 with a small number of variables (e.g., 5-10).
+2. Implement functions to sample from the polynomial distribution and compute pairwise correlations to test 2-wise independence.
+3. Implement tests to verify shift-invariance by checking distribution invariance under shifts in input vectors.
+4. Visualize the empirical distributions and correlation matrices using plots to illustrate the properties.
+5. Write a README explaining the connection to the paper's Lemma 1.2 and Section 4.5.
+
+**Ships as:** A Jupyter notebook with code, tests, and plots demonstrating 2-wise independence and shift-invariance of random degree-3 polynomials over F2, with explanations linking to the paper.
+
+**Stretch goal:** Add simulations for degree-4 or higher polynomials and compare how the properties change.
+
+### Intermediate — Classical Gröbner Basis Solver and Quantum-Inspired Reed-Solomon Decoding for Small Polynomial Systems
+*Effort: 2 weekends, ~20 hours*
+
+You implement a classical Gröbner basis solver for small systems of degree-3 multivariate polynomial equations over F2 combined with linear constraints from Reed-Solomon codes, simulating the problem setting of the paper. You then implement a simplified quantum-inspired decoding step based on Fourier analysis and Reed-Solomon list decoding techniques described in the paper. You compare classical solver runtime and success rate against the decoding approach on synthetic instances.
+
+**Why it shows you understood the paper:** This project shows you can reimplement the core classical baseline and the paper's quantum algorithmic decoding approach on a small scale, reproducing the paper's key result that classical solvers struggle while decoding can efficiently recover solutions under the paper's assumptions.
+
+**Grounded in:** Theorem 1.1 and Theorem 4.3 establish an expected polynomial-time quantum algorithm that outputs solutions satisfying the polynomial and Reed-Solomon constraints; experimental Gröbner basis computations show classical hardness.
+
+**Tech stack:** Python 3.11, SageMath or SymPy for Gröbner basis, NumPy, Matplotlib
+
+**Data:** Synthetic polynomial systems generated according to the paper's description: random degree-3 polynomials over F2 combined with Reed-Solomon code constraints simulated in code.
+
+**Build it:**
+
+1. Implement or use existing libraries to solve small polynomial systems over F2 via Gröbner basis methods.
+2. Generate synthetic polynomial systems with Reed-Solomon linear constraints as per the paper's construction.
+3. Implement a simplified version of the quantum-inspired decoding step using Fourier transforms and Reed-Solomon list decoding algorithms.
+4. Run experiments comparing classical Gröbner basis solver runtime and success rate versus the decoding approach on multiple instances.
+5. Plot and analyze results, showing classical solver exponential growth and decoding success.
+6. Document the implementation details and relate results to the paper's classical hardness conjecture and quantum algorithm correctness.
+
+**Ships as:** A code repository with scripts/notebooks implementing classical Gröbner basis solving and quantum-inspired decoding on synthetic polynomial systems, with experimental results and analysis.
+
+**Stretch goal:** Add noise or perturbations to polynomial systems to test robustness of decoding versus classical solvers.
+
+### Advanced — Extending Quantum Algorithmic Framework to Polynomial Systems with Relaxed Distributional Assumptions
+*Effort: 3-4 weeks*
+
+You design and implement an extension of the quantum algorithmic framework from the paper to handle multivariate polynomial systems over F2 that deviate from strict 2-wise independence and shift-invariance, addressing a key limitation noted by the authors. You simulate polynomial systems with controlled deviations from these properties, adapt the Fourier analytic decoding techniques, and evaluate the impact on solution recovery success. This project explores the sensitivity of the quantum algorithm to more structured or practical polynomial systems encountered in cryptography.
+
+**Why it shows you understood the paper:** This project demonstrates deep comprehension of the paper's core quantum algorithm and its assumptions, and contributes original exploration aligned with the paper's stated future directions and limitations, potentially opening research dialogue with the professor.
+
+**Grounded in:** The approach relies on certain distributional assumptions (2-wise independence and shift-invariance) that may not hold for all polynomial systems; future directions include investigating algorithm performance under such deviations.
+
+**Tech stack:** Python 3.11, Qiskit or other quantum simulation frameworks (optional), NumPy, Matplotlib, SageMath or SymPy
+
+**Data:** Synthetic polynomial systems generated with varying degrees of deviation from 2-wise independence and shift-invariance, constructed in code.
+
+**Build it:**
+
+1. Review the paper's Fourier analytic techniques and quantum decoding framework in detail.
+2. Implement code to generate polynomial systems with controlled deviations from 2-wise independence and shift-invariance.
+3. Adapt the decoding algorithm to handle these deviations, possibly by modifying Fourier analysis or decoding thresholds.
+4. Simulate the quantum algorithm's decoding step (classical simulation or quantum simulator) on these systems.
+5. Evaluate and plot the success probability and runtime as a function of deviation magnitude.
+6. Write a detailed report discussing findings, limitations, and implications for cryptographic applications.
+
+**Ships as:** A research-style codebase and report demonstrating extended quantum decoding on polynomial systems with relaxed assumptions, including experimental evaluation and discussion.
+
+**Stretch goal:** Implement a prototype quantum circuit simulation of the adapted algorithm using Qiskit to validate feasibility.

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-greg-kuperberg"
-source_hash: "f1fe59bb6174d7d44945600ef236c8f70d1372396f5f43a36f758ddfdff243d8"
+source_hash: "62984fb56340b531125c02ad5a00741899614fa264f3f8d02c76d62579e74408"
 sequence: 169
 generator: "outreach-garden: managed"
 ---
@@ -135,3 +135,88 @@ Finally, watch the author's own presentation to see a direct explanation of the 
 *How the paper uses it:* Greg Kuperberg presents the hidden subgroup problem for infinite groups, directly discussing the paper's main results and techniques.
 
 ▶ [The hidden subgroup problem for ℤ for infinite-index subgroups](https://www.youtube.com/watch?v=kDTAsTixR9I) — Fields Institute · 50:59
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive learning path to demonstrate understanding of Kuperberg's 2025 paper on the hidden subgroup problem (HSP) for infinite groups. Starting with a beginner-level simulation of NP-hardness in a simplified infinite abelian group setting, progressing to an intermediate-level reimplementation of the quantum polynomial-time algorithm for HSP in Z^k, and culminating in an advanced project that explores optimizing the outlined quantum algorithm for the abelian hidden shift problem (AHShP) to address the paper's stated limitations.
+
+### Beginner — Simulate NP-Completeness of HSEP in Q/Z with Factoring Oracle
+*Effort: a weekend, ~8 hours*
+
+You build a Python simulation that models the hidden subgroup existence problem (HSEP) in the additive group of rationals modulo integers (Q/Z) and demonstrates its NP-completeness assuming access to an integer factoring oracle. The project includes a simple implementation of the reduction from integer factoring to HSEP and a basic oracle simulator to illustrate the hardness result.
+
+**Why it shows you understood the paper:** This project concretely shows you understand the paper's key hardness result (Theorem 1.1) and the role of number theory oracles in proving NP-completeness for infinite abelian groups, which is a central theoretical contribution.
+
+**Grounded in:** Theorem 1.1: HSEP in Q/Z is NP-complete with factoring oracle or under Conjecture 3.5.
+
+**Tech stack:** Python 3.11
+
+**Data:** No external data needed; you simulate group elements and oracle queries as described in the paper.
+
+**Build it:**
+
+1. Implement a representation of elements in Q/Z and the hidden subgroup existence problem.
+2. Implement a simple integer factoring oracle simulator (e.g., trial division for small integers).
+3. Code the reduction from integer factoring to HSEP in Q/Z as described in the paper.
+4. Demonstrate example inputs where solving HSEP corresponds to factoring integers.
+5. Write a README explaining the reduction and how the simulation illustrates NP-completeness.
+
+**Ships as:** A Python repository with scripts simulating the reduction and oracle, plus documentation explaining the NP-completeness of HSEP in Q/Z.
+
+**Stretch goal:** Extend the simulation to illustrate the conjecture-based hardness alternative (Conjecture 3.5) if time permits.
+
+### Intermediate — Reimplement Quantum Polynomial-Time Algorithm for HSP in Z^k
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement the core quantum polynomial-time algorithm for solving the hidden subgroup problem in the integer lattice group Z^k as described in Theorem 1.5. Since actual quantum hardware is unavailable, you simulate the quantum Fourier transform and lattice reduction steps classically for small k and compare your results against a naive classical baseline that enumerates subgroup candidates.
+
+**Why it shows you understood the paper:** This project demonstrates your grasp of the paper's main algorithmic contribution, including the generalization of Shor-Kitaev algorithms to infinite groups and the connection to lattice problems, by faithfully reproducing the method and comparing its efficiency to classical approaches.
+
+**Grounded in:** Theorem 1.5: Quantum polynomial-time algorithm for HSP in Z^k with arbitrary hidden subgroups and polynomial query cost.
+
+**Tech stack:** Python 3.11, NumPy, SciPy
+
+**Data:** Synthetic data: randomly generated hidden subgroups of Z^k with small dimension (e.g., k=2 or 3) and known generators.
+
+**Build it:**
+
+1. Implement a representation of Z^k group elements and subgroups with generators.
+2. Implement classical simulation of the quantum Fourier transform over Z^k.
+3. Implement lattice reduction techniques (e.g., LLL algorithm) to process subgroup generators.
+4. Simulate the quantum algorithm steps to identify hidden subgroups.
+5. Implement a naive classical baseline that enumerates subgroup candidates.
+6. Compare runtime and correctness between the simulated quantum algorithm and classical baseline.
+7. Document the implementation, results, and connection to the paper.
+
+**Ships as:** A Python project with scripts simulating the quantum algorithm and classical baseline, including performance comparisons and explanations.
+
+**Stretch goal:** Extend the simulation to handle infinite index subgroups or higher dimensions k.
+
+### Advanced — Optimize Collimation Sieve for Abelian Hidden Shift Problem
+*Effort: 3-4 weeks*
+
+You develop an improved implementation of the collimation sieve algorithm outlined in Theorem 1.8 for the abelian hidden shift problem (AHShP) in finitely generated virtually abelian groups. Your work focuses on optimizing constants and heuristics in the sieve to reduce the stretched exponential runtime, addressing one of the paper's stated future directions. You benchmark your implementation on synthetic instances and analyze performance improvements.
+
+**Why it shows you understood the paper:** This project tackles a key limitation and future direction from the paper by engaging deeply with the outlined quantum algorithm for AHShP, demonstrating your ability to extend and optimize complex quantum-inspired algorithms in infinite group settings.
+
+**Grounded in:** Future direction: Optimizing the collimation sieve algorithm for AHShP to reduce constants and improve efficiency; Theorem 1.8 (outlined): Stretched exponential time quantum algorithm for AHShP.
+
+**Tech stack:** Python 3.11, NumPy, SciPy, C++ (optional for performance-critical parts)
+
+**Data:** Synthetic data: generated instances of the abelian hidden shift problem in finitely generated virtually abelian groups, constructed according to the paper's description.
+
+**Build it:**
+
+1. Study the collimation sieve algorithm as outlined in the paper and related lattice sieve literature.
+2. Implement a baseline version of the collimation sieve algorithm in Python.
+3. Profile the implementation to identify bottlenecks and heuristic parameters.
+4. Experiment with heuristic improvements and parameter tuning to reduce runtime constants.
+5. Benchmark the optimized implementation on synthetic AHShP instances.
+6. Document the optimization process, results, and implications for the paper's future directions.
+
+**Ships as:** A repository with an optimized collimation sieve implementation, benchmarks, and a detailed report linking improvements to the paper's outlined algorithm and limitations.
+
+**Stretch goal:** Explore adapting the optimized sieve to other classes of infinite groups beyond virtually abelian ones.

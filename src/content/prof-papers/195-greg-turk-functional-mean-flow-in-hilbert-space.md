@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-greg-turk"
-source_hash: "087caeecc3dd8281429905991b813598019753b4322b3a0b87b6f8e517841d52"
+source_hash: "ce8a21782fb71bfc078551f86448d85d728c9f7a0663b08d5e89187a058a8c10"
 sequence: 195
 generator: "outreach-garden: managed"
 ---
@@ -126,3 +126,87 @@ A direct presentation by the authors or closely related talks provide deep insig
 
 - [Anima Anandkumar - Neural operator: A new paradigm for ...](https://www.youtube.com/watch?v=Bd4KvlmGbY4) — also for: Learning bias corrections for climate models using deep neural operators (Aniruddha Bora)
 - [PyTorch Expert Exchange: Efficient Generative Models: From ...](https://www.youtube.com/watch?v=Eqg0VIiWrgM) — also for: LongSight: Compute-Enabled Memory to Accelerate Large-Context LLMs via Sparse Attention (José F. Martínez)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a practical learning ladder for Functional Mean Flow (FMF) in infinite-dimensional Hilbert spaces. Starting from a small-scale reproduction of the x1-prediction variant's stability advantage, you progress to implementing the core FMF method on a functional dataset with quantitative evaluation. The advanced project extends FMF to a new domain, addressing a stated future direction by applying the method to a robotics simulation task involving dynamic functional data.
+
+### Beginner — Reproduce x1-Prediction Stability on 3D Shape SDF Data
+*Effort: a weekend, ~8 hours*
+
+You build a minimal Python notebook that simulates the training stability difference between the u-prediction and x1-prediction variants of FMF on a small synthetic 3D signed distance function (SDF) dataset. The notebook visualizes training loss curves and collapse behavior to illustrate the stability advantage of x1-prediction.
+
+**Why it shows you understood the paper:** This project demonstrates you understand the key stability limitation of u-prediction FMF and the proposed x1-prediction solution, a core contribution of the paper, by faithfully reproducing its qualitative behavior on a simplified dataset.
+
+**Grounded in:** x1-prediction FMF exhibits superior stability and avoids collapse in challenging 3D signed distance field shape generation tasks compared to u-prediction.
+
+**Tech stack:** Python 3.11, Jupyter Notebook, NumPy, Matplotlib, PyTorch
+
+**Data:** Synthetic 3D signed distance function shapes generated procedurally in the notebook, simulating the paper's 3D shape generation task.
+
+**Build it:**
+
+1. Implement a simple synthetic 3D SDF dataset generator (e.g., spheres, cubes) in Python.
+2. Implement minimal versions of u-prediction and x1-prediction FMF training loops using PyTorch, focusing on the velocity field and prediction variants.
+3. Train both variants on the synthetic dataset and record training losses and collapse indicators.
+4. Plot and compare training stability curves to visualize the collapse of u-prediction and stability of x1-prediction.
+5. Write a README explaining the setup, the FMF variants, and the observed stability difference.
+
+**Ships as:** A Jupyter notebook with code, plots comparing training stability of u-prediction vs x1-prediction FMF on synthetic 3D SDF data, and a README explaining the results.
+
+**Stretch goal:** Add a simple 3D shape reconstruction visualization from the learned model to qualitatively show generation quality differences.
+
+### Intermediate — Implement FMF with x1-Prediction on 1D Time Series Data
+*Effort: 2 weekends, ~20 hours*
+
+You implement the core Functional Mean Flow method with the x1-prediction variant from the paper, training it on a publicly available 1D time series dataset (e.g., synthetic sine waves or a small real-world dataset). You compare FMF's one-step generation performance against a simple baseline such as a multi-step flow matching or a naive neural operator, reporting metrics like MSE or likelihood.
+
+**Why it shows you understood the paper:** This project shows you can reimplement the paper's infinite-dimensional mean-velocity formulation and training algorithm, apply the x1-prediction variant, and quantitatively evaluate FMF's performance on functional data, demonstrating grasp of the core method and its benefits.
+
+**Grounded in:** Derived an infinite-dimensional mean-velocity formulation enabling one-step generation in Hilbert spaces; introduced the x1-prediction variant with improved training stability; demonstrated FMF's effectiveness on 1D time series datasets.
+
+**Tech stack:** Python 3.11, PyTorch, Jupyter Notebook, NumPy, Matplotlib
+
+**Data:** Synthetic or publicly available 1D time series data (e.g., sine waves or a small real-world dataset like ECG or stock prices) to simulate the paper's 1D time series experiments.
+
+**Build it:**
+
+1. Implement or obtain a simple 1D time series dataset for training and evaluation.
+2. Implement the infinite-dimensional mean-velocity FMF formulation with x1-prediction in PyTorch, including the conditional loss and stop-gradient approximations.
+3. Train the FMF model on the dataset and generate samples in one step.
+4. Implement a simple baseline model (e.g., multi-step flow matching or a neural operator) for comparison.
+5. Evaluate and compare generation quality using MSE or likelihood metrics, and plot sample trajectories.
+6. Document the implementation details, training procedure, and quantitative results in a README.
+
+**Ships as:** A GitHub repository with FMF x1-prediction implementation on 1D time series, baseline comparison, evaluation metrics, sample plots, and a detailed README.
+
+**Stretch goal:** Extend the implementation to handle partial observation conditioning or irregularly sampled time series, demonstrating FMF's flexibility.
+
+### Advanced — Apply FMF x1-Prediction to Dynamic Functional Data in Robotic Simulation
+*Effort: 3-4 weeks*
+
+You extend the FMF framework by applying the x1-prediction variant to a new domain: dynamic, high-dimensional functional data from a robotics simulation environment (e.g., joint angle trajectories or force fields over time). You implement neural operators to model this data, train FMF for one-step generation, and evaluate robustness and sample quality, addressing the paper's future direction about robotic simulation applications.
+
+**Why it shows you understood the paper:** This project demonstrates deep comprehension of FMF's theoretical and practical aspects by adapting it to a novel, complex functional data domain relevant to robotics, directly engaging with the paper's proposed future research avenues and limitations.
+
+**Grounded in:** Future directions include applying FMF to real-world robotics and biological simulation tasks involving dynamic, high-dimensional functional data; the x1-prediction variant improves stability in such challenging settings.
+
+**Tech stack:** Python 3.11, PyTorch, Jupyter Notebook, NumPy, Matplotlib, Robotics simulation environment (e.g., PyBullet or MuJoCo)
+
+**Data:** Functional data generated from a robotics simulation environment, such as time series of joint angles or force fields, synthesized or recorded from open-source simulators.
+
+**Build it:**
+
+1. Set up a robotics simulation environment (e.g., PyBullet) and generate dynamic functional data representing robot joint trajectories or force fields.
+2. Implement neural operator architectures suitable for modeling this functional data.
+3. Implement the FMF framework with the x1-prediction variant adapted to this data domain.
+4. Train FMF on the simulated robotics functional data for one-step generation.
+5. Evaluate generation quality and stability, comparing against a baseline multi-step generative model or naive interpolation.
+6. Document the methodology, challenges, results, and potential improvements in a comprehensive README.
+
+**Ships as:** A GitHub repository demonstrating FMF x1-prediction applied to robotics simulation functional data, with code, evaluation, visualizations, and a detailed report linking to the paper's future directions.
+
+**Stretch goal:** Investigate distillation or consistency model techniques to further improve sampling speed and stability in this robotics context.

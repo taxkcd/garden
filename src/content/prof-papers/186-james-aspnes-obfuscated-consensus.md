@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-james-aspnes"
-source_hash: "ff3536aed1adaf1beab669e0df1a842343f8ebd40ef0c8b7fc7b09b82cdc3ab2"
+source_hash: "e46944a98d54c71b4019ece6ba3ef4e6f4cbab22a38853b8bdd61a2c1c59afd7"
 sequence: 186
 generator: "outreach-garden: managed"
 ---
@@ -120,3 +120,87 @@ The random oracle model is a theoretical abstraction of ideal hash functions use
 *How the paper uses it:* The paper’s security proofs rely on the random oracle hypothesis to argue that adversaries must expend significant computational effort to find agreement violations.
 
 ▶ [Random Oracle model, Security of hash functions](https://www.youtube.com/watch?v=L9YnO_bIdnk) — Introduction to Cryptology · 29:17 · 10 years ago
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder for understanding and demonstrating the core ideas of the "Obfuscated Consensus" paper. The beginner project focuses on implementing and visualizing the approximate agreement protocol that underpins the obfuscated consensus approach. The intermediate project involves reimplementing the obfuscated threshold function construction and integrating it with the approximate agreement protocol to simulate obfuscated consensus, measuring adversary cost. The advanced project extends the paper by exploring more efficient obfuscation techniques to reduce preprocessing overhead, addressing a key limitation noted by the authors.
+
+### Beginner — Approximate Agreement Protocol Simulation
+*Effort: a weekend, ~8 hours*
+
+You build a simulation of the approximate agreement protocol described in the paper, demonstrating how process outputs converge to values differing by at most one. The simulation visualizes multiple asynchronous processes reaching approximate agreement under random scheduling.
+
+**Why it shows you understood the paper:** This project shows you understand the approximate agreement protocol's role in enabling consensus despite asynchrony, a foundational mechanism in the paper's obfuscated consensus construction.
+
+**Grounded in:** Lemma 5.1 shows the approximate agreement protocol outputs values within one unit, enabling threshold-based consensus.
+
+**Tech stack:** Python 3.11, matplotlib, asyncio
+
+**Data:** No external data required; you simulate asynchronous process steps and message passing.
+
+**Build it:**
+
+1. Implement a simple asynchronous process model with state variables representing process outputs.
+2. Implement the approximate agreement protocol logic ensuring outputs differ by at most one.
+3. Simulate multiple processes running asynchronously with random scheduling.
+4. Visualize the convergence of process outputs over time using matplotlib.
+5. Write a README explaining the protocol and how the simulation demonstrates approximate agreement.
+
+**Ships as:** A Python repository with simulation code, visualization scripts, and a README explaining the approximate agreement protocol and its significance.
+
+**Stretch goal:** Add noise or faults to the simulation to observe robustness of approximate agreement under adversarial scheduling.
+
+### Intermediate — Obfuscated Threshold Function and Consensus Simulation
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement the obfuscated threshold function construction using cryptographic hash functions modeled as random oracles and time-lock puzzles, then integrate it with the approximate agreement protocol to simulate the obfuscated consensus protocol. You measure and compare adversary computational effort to find agreement-violating executions versus process effort.
+
+**Why it shows you understood the paper:** This project demonstrates comprehension of the paper's core method: reducing consensus agreement violations to finding thresholds in obfuscated functions, and the computational hardness that protects agreement.
+
+**Grounded in:** Section 6 provides a construction using random oracles and time-lock puzzles, with security proofs bounding adversary runtime.
+
+**Tech stack:** Python 3.11, hashlib, asyncio, matplotlib
+
+**Data:** No external dataset; you simulate process inputs and adversary attempts to find bad executions.
+
+**Build it:**
+
+1. Implement a cryptographic hash-based obfuscated threshold function with tunable hardness parameters.
+2. Implement a time-lock puzzle simulation to model computational cost for adversaries.
+3. Integrate the obfuscated threshold function with the approximate agreement protocol simulation.
+4. Simulate adversary attempts to find agreement-violating schedules and measure computational effort.
+5. Visualize and compare adversary cost versus process cost in finding bad executions.
+6. Document the implementation and results in a detailed README.
+
+**Ships as:** A Python repository with code for obfuscated threshold functions, consensus simulation, adversary modeling, visualizations, and explanatory documentation.
+
+**Stretch goal:** Add parameter tuning to explore trade-offs between obfuscation hardness and protocol efficiency.
+
+### Advanced — Efficient Obfuscation Techniques for Obfuscated Consensus
+*Effort: 3-4 weeks*
+
+You design and implement an improved obfuscated threshold function construction that reduces preprocessing overhead compared to the paper's truth table-based approach. You explore alternative cryptographic primitives or optimizations to lower setup cost while maintaining computational hardness assumptions. You evaluate your construction's efficiency and security trade-offs.
+
+**Why it shows you understood the paper:** This project addresses a key limitation and future direction from the paper, demonstrating deep understanding of the obfuscated consensus framework and cryptographic obfuscation challenges, and contributes a practical extension.
+
+**Grounded in:** Section 7 discusses the limitations of the current truth table-based obfuscation and the expensive setup phase; future directions include more efficient obfuscation techniques.
+
+**Tech stack:** Python 3.11, hashlib, asyncio, matplotlib
+
+**Data:** No external data; you simulate threshold function inputs and adversary computations.
+
+**Build it:**
+
+1. Study the paper's obfuscated threshold function construction and identify preprocessing bottlenecks.
+2. Research alternative cryptographic primitives or obfuscation techniques that reduce setup overhead.
+3. Design a new or optimized obfuscated threshold function construction with tunable hardness.
+4. Implement the new construction and integrate it with the approximate agreement protocol simulation.
+5. Benchmark preprocessing time and adversary computational effort compared to the original approach.
+6. Document your design decisions, implementation details, benchmarks, and security considerations.
+
+**Ships as:** A Python repository with code for the improved obfuscated threshold function, integration with consensus simulation, benchmark results, and a comprehensive README discussing trade-offs and future work.
+
+**Stretch goal:** Explore relaxing cryptographic assumptions by replacing random oracles with standard hash functions and evaluate security implications.

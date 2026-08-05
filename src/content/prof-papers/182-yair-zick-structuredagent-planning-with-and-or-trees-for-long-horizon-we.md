@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-yair-zick"
-source_hash: "0104e47590c72fd472ceac6e26df7cefa52393db872d593d0ffe04266015a250"
+source_hash: "3683acf93b28936fa694ff1aaae2e637ddf5a3cbe9fabe024c96794268e4d5b5"
 sequence: 182
 generator: "outreach-garden: managed"
 ---
@@ -118,3 +118,87 @@ Hearing directly from the authors provides insights into the motivation, design 
 - [How Large Language Models Work](https://www.youtube.com/watch?v=5sLYAQS9sWQ) — also for: Natural-Language to SysMLv2 Translation via Conformance-Driven Iterative Refinement (Levent Burak Kara)
 - [Large Language Models explained briefly](https://www.youtube.com/watch?v=LPZh9BOjkQs) — also for: On-demand generation of high-quality software engineering datasets using large language models and ontologies (Suranjan Chakraborty)
 - [[1hr Talk] Intro to Large Language Models](https://www.youtube.com/watch?v=zjkBMFhNj_g) — also for: On-demand generation of high-quality software engineering datasets using large language models and ontologies (Suranjan Chakraborty)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive ladder to demonstrate understanding of STRUCTUREDAGENT's hierarchical AND/OR tree planning and structured memory for long-horizon web tasks. The beginner project recreates a core mechanism of AND/OR tree task decomposition using familiar programming tools. The intermediate project implements a simplified version of the hierarchical planning framework on a public web navigation task, comparing it against a baseline greedy planner. The advanced project extends the framework by improving planning efficiency via heuristic pruning, addressing a stated future direction in the paper.
+
+### Beginner — AND/OR Tree Task Decomposition Simulator
+*Effort: a weekend, ~8 hours*
+
+You build a command-line simulator in Python that models a hierarchical AND/OR tree representing a simplified web task. The simulator allows defining tasks as AND nodes (subgoals) and OR nodes (alternative strategies) and simulates a depth-first traversal with node expansion and repair operations.
+
+**Why it shows you understood the paper:** This project demonstrates your grasp of the paper's core planning structure—how complex tasks are decomposed into subgoals and alternatives using AND/OR trees, a fundamental contribution of STRUCTUREDAGENT.
+
+**Grounded in:** Introduction of a hierarchical planning framework using ordered AND/OR trees for adaptive, interpretable decision-making in web tasks.
+
+**Tech stack:** Python 3.11
+
+**Data:** No external data needed; you simulate task trees with synthetic examples representing simple web tasks.
+
+**Build it:**
+
+1. Implement data structures for AND nodes, OR nodes, and atomic actions.
+2. Create a sample hierarchical task tree with at least two levels of AND and OR nodes.
+3. Implement a modified greedy depth-first search to traverse and expand nodes.
+4. Add simple repair logic to backtrack and try alternative OR nodes upon failure.
+5. Add console output to visualize traversal steps and decisions.
+
+**Ships as:** A Python script with example task trees and console logs showing hierarchical planning traversal and error recovery.
+
+**Stretch goal:** Add a simple structured memory module to track candidate solutions and constraints during traversal.
+
+### Intermediate — Simplified STRUCTUREDAGENT Planner on Web Navigation Tasks
+*Effort: 2 weekends, ~20 hours*
+
+You implement a simplified hierarchical planner using AND/OR trees in Python that plans and executes multi-step web navigation tasks on a public dataset or simulated environment. You compare its success rate and trajectory length against a baseline greedy planner that does not use hierarchical planning.
+
+**Why it shows you understood the paper:** This project shows you can reimplement the paper's core method of hierarchical AND/OR tree planning and demonstrate its advantage over greedy approaches, reflecting the paper's key experimental claims.
+
+**Grounded in:** STRUCTUREDAGENT constructs and maintains a dynamic hierarchical AND/OR planning tree during task execution, interleaving planning and action. It uses a modified greedy depth-first search to expand and execute nodes representing subgoals (AND nodes), alternative strategies (OR nodes), and atomic actions.
+
+**Tech stack:** Python 3.11, FastAPI (optional for simulation), Jupyter Notebook
+
+**Data:** Use a small simulated web navigation environment or a public web navigation task dataset (e.g., MiniWoB or a synthetic task environment) as a substitute for the paper's Amazon shopping and WebArena benchmarks.
+
+**Build it:**
+
+1. Design data structures for AND/OR trees and atomic web actions.
+2. Implement the modified greedy depth-first search planner with node expansion and repair.
+3. Create or adapt a simple web navigation task environment with multi-step goals and constraints.
+4. Implement a baseline greedy planner that selects actions without hierarchical planning.
+5. Run experiments comparing success rates and average trajectory lengths between planners.
+6. Document results and visualize example hierarchical plans.
+
+**Ships as:** A Jupyter notebook or Python project demonstrating hierarchical planning on web navigation tasks with comparative metrics and interpretable plan outputs.
+
+**Stretch goal:** Incorporate a basic structured memory module to track candidate entities and constraints, improving constraint satisfaction.
+
+### Advanced — Heuristic-Enhanced AND/OR Tree Planner for Efficient Long-Horizon Web Tasks
+*Effort: 3+ weeks*
+
+You extend the intermediate hierarchical planner by implementing admissible heuristics to guide AND/OR tree exploration, aiming to reduce trajectory length and runtime on complex tasks. You evaluate the efficiency gains and robustness compared to the baseline hierarchical planner without heuristics.
+
+**Why it shows you understood the paper:** This project tackles a stated future direction from the paper—improving planning efficiency via heuristics—demonstrating deep comprehension and the ability to innovate beyond the original framework.
+
+**Grounded in:** Improving admissible heuristics for AND/OR tree planning to enhance efficiency.
+
+**Tech stack:** Python 3.11, Jupyter Notebook, NumPy, Matplotlib
+
+**Data:** Use the same simulated or public web navigation tasks as in the intermediate project to evaluate efficiency improvements.
+
+**Build it:**
+
+1. Research admissible heuristics applicable to AND/OR tree search (e.g., cost estimates for subgoals).
+2. Implement heuristic functions integrated with the existing modified greedy depth-first search planner.
+3. Modify the planner to use heuristics for node expansion ordering and pruning.
+4. Run comparative experiments measuring trajectory length, runtime, and success rates.
+5. Analyze and visualize the impact of heuristics on planning efficiency.
+6. Write detailed documentation explaining heuristic design and experimental results.
+
+**Ships as:** A documented Python project showing heuristic-guided hierarchical planning with quantitative analysis of efficiency improvements.
+
+**Stretch goal:** Explore integrating structured memory noise reduction techniques to balance constraint tracking and performance.

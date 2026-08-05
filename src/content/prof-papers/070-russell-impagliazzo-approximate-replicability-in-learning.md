@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-russell-impagliazzo"
-source_hash: "a58f787b2aee9eb55bc674388f68e6448df11601243123f97b3e0975d551e5a3"
+source_hash: "a75c7dc602951bcf7e8fa7cb3d0ee137ce23f4d332458557defd9f84ddf69740"
 sequence: 70
 generator: "outreach-garden: managed"
 ---
@@ -134,3 +134,87 @@ A concise talk by the paper's authors provides direct insights into the motivati
 *How the paper uses it:* This talk covers the main ideas and results of the paper, complementing the foundational concepts.
 
 ▶ [FOCS 2024 7C Replicability in High Dimensional Statistics](https://www.youtube.com/watch?v=5VY_pOsesUw) — FOCS 2024 · 14:16 · 1 year ago
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder to demonstrate your understanding of the relaxed replicability notions introduced in the paper "Approximate Replicability in Learning." Starting with a simple simulation of approximate replicability on threshold learning, you progress to implementing the core approximate replicability transformation on a public dataset, and finally tackle an advanced extension addressing one of the paper's open questions on sample complexity improvements. Each project uses your existing software engineering and ML skills while deepening your grasp of replicability relaxations and their algorithmic implications.
+
+### Beginner — Simulate Approximate Replicability for 1D Threshold Learning
+*Effort: a weekend, ~8 hours*
+
+You build a small Python notebook that simulates the approximate replicability notion for the 1D threshold learning problem. Using synthetic data sampled from a simple distribution, you implement a basic threshold learner and then demonstrate approximate replicability by showing stability of outputs across different training samples with controlled randomness.
+
+**Why it shows you understood the paper:** This project shows you understand the core challenge that strict replicability is impossible for threshold learning and how approximate replicability relaxes this. The professor would see you grasp the fundamental definitions and can reproduce the key insight with a concrete example.
+
+**Grounded in:** Proper approximately replicable learner for 1D thresholds with sample complexity Õ(ρ^{-2} α^{-2}), overcoming impossibility of strict replicability.
+
+**Tech stack:** Python 3.11, Jupyter Notebook, NumPy, Matplotlib
+
+**Data:** Synthetic 1D threshold data generated on the fly, simulating the paper's threshold learning setting.
+
+**Build it:**
+
+1. Generate synthetic 1D data points labeled by a threshold function with noise.
+2. Implement a simple threshold learner that finds the best threshold on training data.
+3. Add controlled randomness to the learner to simulate approximate replicability.
+4. Train the learner multiple times on different samples and measure output stability.
+5. Visualize the distribution of learned thresholds and quantify approximate replicability.
+
+**Ships as:** A Jupyter notebook demonstrating approximate replicability on 1D thresholds with plots and stability metrics.
+
+**Stretch goal:** Add a comparison to a strictly replicable learner (deterministic) to highlight the impossibility result.
+
+### Intermediate — Implement Approximate Replicability Transformation on Iris Dataset
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement the paper's generic transformation that converts any standard PAC learner into an approximately replicable learner. Using the Iris dataset as a substitute for a standard classification task, you apply a baseline classifier (e.g., logistic regression) and then implement the approximate replicability transformation. You compare the stability of outputs and sample complexity against the baseline.
+
+**Why it shows you understood the paper:** This project demonstrates you can translate the paper's core algorithmic contribution into practice on a real dataset, understand the sample complexity trade-offs, and measure approximate replicability metrics. The professor would see you grasp the transformation method and its practical implications.
+
+**Grounded in:** Generic algorithms transforming any PAC learner into approximately replicable learners with near-optimal sample complexity.
+
+**Tech stack:** Python 3.11, scikit-learn, NumPy, Jupyter Notebook, Matplotlib
+
+**Data:** UCI Iris dataset, a well-known public dataset used here as a substitute for classification tasks discussed in the paper.
+
+**Build it:**
+
+1. Load and preprocess the Iris dataset for classification.
+2. Implement a baseline PAC learner (e.g., logistic regression) and evaluate accuracy.
+3. Implement the approximate replicability transformation as described in the paper.
+4. Train the transformed learner multiple times on different samples and measure output stability.
+5. Compare sample complexity and replicability metrics against the baseline learner.
+6. Document results and visualize replicability trade-offs.
+
+**Ships as:** A Jupyter notebook with code and analysis showing approximate replicability transformation applied to Iris classification.
+
+**Stretch goal:** Experiment with different replicability parameters (ρ, α) and analyze their effect on sample complexity and stability.
+
+### Advanced — Explore Sample Complexity Improvements for Approximate Replicability
+*Effort: 3+ weeks*
+
+You develop an experimental framework to investigate whether the additive terms in the sample complexity bounds for approximate replicability can be improved, addressing an open limitation stated in the paper. Using synthetic and real datasets, you implement variants of the approximate replicability transformation, propose heuristics or modifications to reduce sample overhead, and empirically evaluate their impact on replicability and accuracy.
+
+**Why it shows you understood the paper:** This project shows you can engage with open research questions from the paper, extend its methods, and critically analyze theoretical bounds through empirical study. The professor would recognize your initiative to contribute beyond reproduction and your ability to bridge theory and practice.
+
+**Grounded in:** Additive terms in sample complexity for approximate replicability may be improvable; it remains open whether these are necessary.
+
+**Tech stack:** Python 3.11, scikit-learn, NumPy, Jupyter Notebook, Matplotlib, PyTorch (optional for custom models)
+
+**Data:** Synthetic datasets simulating classification tasks and possibly UCI datasets (e.g., Iris, Wine) as substitutes for standard benchmarks.
+
+**Build it:**
+
+1. Review the paper's sample complexity bounds and identify additive terms to target.
+2. Implement the baseline approximate replicability transformation.
+3. Design and implement heuristic modifications aimed at reducing sample complexity overhead.
+4. Run experiments on synthetic and real datasets to compare sample complexity, accuracy, and replicability.
+5. Analyze results to identify trends and potential improvements.
+6. Document findings, limitations, and propose future directions.
+
+**Ships as:** A comprehensive GitHub repository with code, experimental results, and a detailed README discussing sample complexity improvements.
+
+**Stretch goal:** Attempt to formalize any empirical findings into conjectures or theoretical insights for future research.

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-laurent-d-michel"
-source_hash: "7c3d98af0bb3e50f92625d8394ad3a711f1e0766672c3e3908db2f3aa9c1e50a"
+source_hash: "5bda5db76f9070be4db0c6d40d2854b73378cdb1475811a3afa10294d1add6e4"
 sequence: 209
 generator: "outreach-garden: managed"
 ---
@@ -146,3 +146,94 @@ Physical adversarial attacks involve creating real-world perturbations (e.g., on
 ## Already in your library
 
 - [Generalizable Adversarial Robustness to Unforeseen Attacks - Soheil Feizi](https://www.youtube.com/watch?v=RGgDQumPOU8) — also for: SmoothLLM: Defending Large Language Models Against Jailbreaking Attacks (Hamed Hassani)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a practical learning ladder grounded in the paper "Busting the Paper Ballot: Voting Meets Adversarial Machine Learning." The beginner project familiarizes you with the concept of gradient masking and adversarial attacks on ballot classifiers using simplified models and synthetic data. The intermediate project involves reimplementing the core adversarial attack method with the modified difference of logits ratio loss on a smaller dataset, demonstrating attack success and gradient masking mitigation. The advanced project extends the paper by exploring a future direction: applying alternative adversarial attacks (e.g., PGD or MIM) with different loss functions on ballot classification models, addressing a stated limitation and deepening understanding of defenses.
+
+### Beginner — Visualize Gradient Masking on a Simple Ballot Classifier
+*Effort: a weekend, ~8 hours*
+
+You build a small convolutional neural network to classify synthetic bubble images as marked or unmarked, then implement a basic white-box adversarial attack (e.g., FGSM) to observe gradient masking effects. You visualize gradients during attack iterations to confirm numerical instability causing zero gradients.
+
+**Why it shows you understood the paper:** This project demonstrates your grasp of the paper's key finding about gradient masking due to numerical instability in ballot classifiers, a subtle but critical vulnerability that can falsely indicate model robustness.
+
+**Grounded in:** Identification and analysis of gradient masking caused by numerical instability in standard white-box attacks on voting datasets.
+
+**Tech stack:** Python 3.11, PyTorch, Jupyter Notebook, matplotlib
+
+**Data:** Synthetic bubble images generated programmatically to simulate marked and unmarked bubbles, as the paper's datasets are not publicly released.
+
+**Build it:**
+
+1. Generate a small synthetic dataset of binary images representing marked and unmarked ballot bubbles.
+2. Train a simple CNN binary classifier on this dataset to achieve >90% accuracy.
+3. Implement a basic FGSM adversarial attack and attempt to generate adversarial examples.
+4. Visualize gradients during attack iterations to detect gradient masking (zero or near-zero gradients).
+5. Document observations and explain how numerical instability causes gradient masking.
+
+**Ships as:** A GitHub repo with code, Jupyter notebooks showing training, attack attempts, gradient visualizations, and a README explaining gradient masking in ballot classifiers.
+
+**Stretch goal:** Add a visualization comparing gradient masking effects on different model architectures (e.g., CNN vs. MLP).
+
+### Intermediate — Reimplement Modified DLR Adversarial Attack on Ballot Classification
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement the core adversarial attack method from the paper using the modified difference of logits ratio (DLR) loss to overcome gradient masking on a ballot classification model trained on a substitute dataset. You compare attack success rates with and without the modified loss.
+
+**Why it shows you understood the paper:** This project proves you can faithfully reproduce the paper's main technical contribution—overcoming gradient masking with a modified loss—and quantitatively evaluate attack effectiveness on ballot classifiers.
+
+**Grounded in:** Modification of the difference of logits ratio (DLR) loss function to overcome gradient masking in binary classification.
+
+**Tech stack:** Python 3.11, PyTorch, Jupyter Notebook, numpy, matplotlib
+
+**Data:** Use the publicly available REGAIN baseline's reference implementation dataset from https://github.com/VoterCenter/Busting-the-Ballot as a substitute for the paper's ballot datasets, or alternatively synthetic bubble images if unavailable.
+
+**Build it:**
+
+1. Obtain or generate a dataset of ballot bubble images labeled as marked or unmarked.
+2. Train a convolutional neural network classifier (e.g., SimpleCNN or ResNet-20) on this dataset.
+3. Implement the standard DLR loss-based adversarial attack and measure attack success rate.
+4. Modify the DLR loss as described in the paper to mitigate gradient masking.
+5. Run the modified DLR loss attack and compare attack success rates and gradient behavior.
+6. Document results, including accuracy, attack success, and gradient masking analysis.
+
+**Verified links from the paper:**
+
+- <https://github.com/VoterCenter/Busting-the-Ballot> — a third-party/baseline artifact the paper cites — not the authors' own code
+
+**Ships as:** A GitHub repo with training and attack code, notebooks or scripts comparing standard vs. modified DLR loss attacks, and a detailed README linking results to the paper's findings.
+
+**Stretch goal:** Extend the attack implementation to include another white-box attack method like PGD and compare its effectiveness.
+
+### Advanced — Evaluate Alternative Adversarial Attacks on Ballot Classifiers with Domain-Specific Optimization
+*Effort: 3+ weeks*
+
+You extend the paper by implementing alternative adversarial attacks such as PGD, MIM, or FGSM with different loss functions on ballot classifiers, addressing the paper's future direction. You explore how domain-specific optimization or domain-specific languages could improve robustness or verifiability of models against these attacks.
+
+**Why it shows you understood the paper:** This project shows deep engagement with the paper's limitations and future directions, applying advanced adversarial methods and connecting them to domain-specific optimization techniques relevant to Professor Michel's research interests.
+
+**Grounded in:** Extending adversarial attack methods beyond APGD to other attacks like PGD, MIM, and FGSM with alternative loss functions; investigating defenses and robustness via domain-specific optimization.
+
+**Tech stack:** Python 3.11, PyTorch, Jupyter Notebook, numpy, matplotlib, possibly a DSL or optimization framework if feasible
+
+**Data:** Use synthetic ballot bubble datasets or substitute datasets from the third-party codebase at https://github.com/VoterCenter/Busting-the-Ballot if available.
+
+**Build it:**
+
+1. Train ballot bubble classifiers (e.g., ResNet-20) on available or synthetic datasets.
+2. Implement alternative adversarial attacks (PGD, MIM, FGSM) with various loss functions.
+3. Evaluate and compare attack success rates and gradient masking effects.
+4. Investigate how domain-specific optimization techniques or DSLs could formalize model constraints or verification to improve robustness.
+5. Document findings, including code, experiments, and a conceptual proposal for integrating domain-specific languages or optimization in election tabulation security.
+
+**Verified links from the paper:**
+
+- <https://github.com/VoterCenter/Busting-the-Ballot> — a third-party/baseline artifact the paper cites — not the authors' own code
+
+**Ships as:** A comprehensive GitHub repo with attack implementations, evaluation scripts, and a detailed report/README discussing results and proposing domain-specific optimization approaches for robust ballot classifiers.
+
+**Stretch goal:** Prototype a minimal domain-specific language or optimization model to specify constraints on classifier behavior relevant to election security.

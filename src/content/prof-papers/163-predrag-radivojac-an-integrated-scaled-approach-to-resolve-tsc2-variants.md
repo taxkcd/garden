@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-predrag-radivojac"
-source_hash: "056e216991690c35fe8500a2137758618096e7a688b8ee3a5bec7782c39e53ad"
+source_hash: "6ffa41100b9fd4ebdfb42b147d725b21d82c36c42bd8a8a7abf2cf50b366a73b"
 sequence: 163
 generator: "outreach-garden: managed"
 ---
@@ -113,3 +113,88 @@ Gain direct insight from experts on the challenges of classifying variants of un
 *How the paper uses it:* The paper addresses the clinical challenge of TSC2 VUS classification and presents a scalable functional solution.
 
 ▶ [What is a Variant of Uncertain Significance (VUS)? | Dana-Farber Cancer Institute](https://www.youtube.com/watch?v=hogQTrqgPnE) — Dana-Farber Cancer Institute · 8 years ago
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder to demonstrate understanding of the paper "An integrated, scaled approach to resolve TSC2 variants of uncertain significance." The beginner project reproduces a key visualization of variant abundance effects using the VAMP-seq data. The intermediate project uses the authors' released code to analyze and classify TSC2 missense variants by integrating abundance and activity scores, reproducing the core variant classification method. The advanced project extends the paper's approach by developing a computational model to predict partial loss-of-function variants, addressing a stated limitation and future direction of the study.
+
+### Beginner — Visualize TSC2 Variant Abundance from VAMP-seq Data
+*Effort: a weekend, ~8 hours*
+
+You build a data processing and visualization pipeline that reproduces the distribution and key statistics of TSC2 missense variant protein abundance scores measured by VAMP-seq. This includes plotting the abundance score distribution and highlighting the fraction of variants with reduced abundance.
+
+**Why it shows you understood the paper:** This project shows you understand the core experimental assay (VAMP-seq) measuring protein abundance and how to interpret its quantitative output, a foundational contribution of the paper.
+
+**Grounded in:** Developed high-throughput VAMP-seq assay measuring steady-state abundance of 8,864 TSC2 missense variants; 14.17% of variants showed reduced protein abundance.
+
+**Tech stack:** Python 3.11, pandas, matplotlib, seaborn, Jupyter Notebook
+
+**Data:** Use Supplementary Data 4 and 5 from the paper repository (link removed — unverified) which contain VAMP-seq abundance scores for TSC2 variants.
+
+**Build it:**
+
+1. Download the VAMP-seq abundance score data files from the authors' GitHub repository.
+2. Load the data into a pandas DataFrame and clean/filter as needed.
+3. Calculate summary statistics such as mean, median, and fraction of variants with reduced abundance.
+4. Plot the distribution of abundance scores using histograms or density plots.
+5. Highlight the subset of variants classified as reduced abundance (e.g., below a threshold).
+6. Write a README explaining the assay, data source, and interpretation of the plots.
+
+**Ships as:** A Jupyter Notebook and scripts that produce clear visualizations of TSC2 variant abundance distributions with explanatory text.
+
+**Stretch goal:** Add interactive plots using Plotly or Dash to explore abundance scores by variant position or amino acid change.
+
+### Intermediate — Reproduce TSC2 Variant Classification Using Integrated Functional Scores
+*Effort: 1-3 weekends, ~20 hours*
+
+You use the authors' released code and data to reproduce the integrated decision tree classification of TSC2 missense variants by combining VAMP-seq abundance and genome editing-based activity scores. You implement the OddsPath calibration framework and classify a subset of variants, comparing your results to the paper's reported putative reclassifications.
+
+**Why it shows you understood the paper:** This project demonstrates comprehension of the paper's core methodological advance: integrating multiplexed functional assays with statistical calibration to classify variants under ACMG/AMP guidelines.
+
+**Grounded in:** Created a decision tree combining abundance and activity data to guide ACMG/AMP variant classification; putatively reclassified 212 of 276 TSC2 missense VUS in a clinical cohort.
+
+**Tech stack:** Python 3.11, pandas, numpy, scikit-learn, matplotlib, Jupyter Notebook
+
+**Data:** Use the variant abundance and activity scores from Supplementary Data 4 and 5 and the code from (link removed — unverified) to reproduce classification.
+
+**Build it:**
+
+1. Clone and set up the authors' TSC2_analysis repository and review the data files.
+2. Load and preprocess the abundance and activity score datasets.
+3. Implement the decision tree logic as described in the paper to combine abundance and activity scores.
+4. Implement the OddsPath calibration to assign evidence strength for pathogenicity or benignity.
+5. Classify a subset of TSC2 missense variants and compare your classifications to those reported in the paper.
+6. Visualize classification results and write a report summarizing your reproduction and any discrepancies.
+
+**Ships as:** A reproducible analysis pipeline with code and notebook that classifies TSC2 variants using integrated functional data and documents the process.
+
+**Stretch goal:** Add a simple baseline classifier using only abundance or only activity scores and compare performance to the integrated method.
+
+### Advanced — Computational Model for Predicting Partial Loss-of-Function TSC2 Variants
+*Effort: a few weeks, ~40+ hours*
+
+You develop a machine learning model that predicts partial loss-of-function effects of TSC2 missense variants, addressing a limitation noted in the paper that current assays primarily detect complete loss-of-function. You integrate functional assay data with variant features (e.g., sequence conservation, structural context) to train and evaluate your model.
+
+**Why it shows you understood the paper:** This project extends the paper's approach by tackling a known limitation and applying computational biology and machine learning skills to improve variant effect prediction, aligning with the professor's research interests.
+
+**Grounded in:** Assays primarily detect complete loss-of-function variants; partial loss-of-function or dominant negative effects require further study; future direction includes developing assays calibrated for partial loss-of-function.
+
+**Tech stack:** Python 3.11, pandas, numpy, scikit-learn, biopython, matplotlib, Jupyter Notebook
+
+**Data:** Use the authors' functional assay data from https://github.com/FowlerLab/TSC2_analysis and public variant annotation databases (e.g., ClinVar) for features; simulate partial loss-of-function labels based on intermediate assay scores or literature.
+
+**Build it:**
+
+1. Gather and preprocess TSC2 variant functional data and annotate variants with sequence and structural features.
+2. Define a labeling scheme to identify partial loss-of-function variants using intermediate activity or abundance scores.
+3. Engineer features relevant to variant impact prediction, such as evolutionary conservation and proximity to functional domains.
+4. Train and evaluate machine learning models (e.g., random forest, gradient boosting) to predict partial loss-of-function status.
+5. Validate model predictions against known variant classifications and analyze feature importance.
+6. Document methodology, results, and limitations in a comprehensive README.
+
+**Ships as:** A machine learning pipeline and report demonstrating improved prediction of partial loss-of-function TSC2 variants with code and data processing scripts.
+
+**Stretch goal:** Incorporate structural modeling or molecular dynamics data to enhance feature representation and prediction accuracy.

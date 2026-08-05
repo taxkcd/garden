@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-yasser-shoukry"
-source_hash: "0040fc2ee7fe0d0ea729146857f946ad0b568c7deabc6233f2ccd5fccb90ec6a"
+source_hash: "f66705c4c37aa8279e88f4964c16b38707180861b7095937e7c2caffbae38538"
 sequence: 174
 generator: "outreach-garden: managed"
 ---
@@ -135,3 +135,87 @@ This talk provides direct insights from authors about the motivation, theory, an
 *How the paper uses it:* The authors explain their novel DeepBern-Nets approach, theoretical proofs, and experimental validations in this talk.
 
 ▶ [Learnable Polynomial, Trigonometric, and Tropical Activations – I. Khalfaoui Hassani, FZJ | HAICON25](https://www.youtube.com/watch?v=VSJQWQj7HXI) — Helmholtz AI · 1 year ago
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a practical learning ladder for understanding and applying the core ideas of the DeepBern-Nets paper. Starting with a beginner-level implementation of Bernstein polynomial activations in a simple neural network, you then progress to an intermediate project reimplementing the core DeepBern-Net method on a public dataset with baseline comparison. Finally, the advanced project extends the method to convolutional architectures, addressing a key limitation noted by the authors and exploring new application domains.
+
+### Beginner — Implement Bernstein Polynomial Activation in a Simple Feedforward Network
+*Effort: a weekend, ~8 hours*
+
+You build a small feedforward neural network in Python using PyTorch that replaces the standard ReLU activation with a learnable Bernstein polynomial activation function of fixed degree. You train this network on a simple regression or classification task (e.g., synthetic 1D function approximation or MNIST subset) and visualize training loss and output function approximation.
+
+**Why it shows you understood the paper:** This project demonstrates you understand how Bernstein polynomial activations are constructed, parameterized, and integrated into a differentiable network, reflecting the paper’s key contribution of learnable Bernstein activations and their differentiability.
+
+**Grounded in:** Key contribution: Demonstration that DBNs remain fully differentiable and trainable with standard backpropagation, unlike other super-approximation architectures relying on non-differentiable operators.
+
+**Tech stack:** Python 3.11, PyTorch
+
+**Data:** Use a small synthetic dataset (e.g., noisy sine wave regression) or a subset of MNIST for classification as a stand-in for analytic tasks.
+
+**Build it:**
+
+1. Implement a Bernstein polynomial activation module with learnable coefficients in PyTorch.
+2. Build a simple feedforward network replacing ReLU with this activation.
+3. Train the network on synthetic regression or small classification data.
+4. Plot training loss curves and compare output function approximation to ground truth.
+5. Document the activation function design and training behavior in README.
+
+**Ships as:** A GitHub repo with code for Bernstein activation, training scripts, plots of training loss and function approximation, and a README explaining the implementation and results.
+
+**Stretch goal:** Add support for varying polynomial degree and visualize its effect on approximation quality.
+
+### Intermediate — Reimplement DeepBern-Net on UCI Wine Dataset with ReLU Baseline
+*Effort: 1-2 weekends, ~20 hours*
+
+You reimplement the core DeepBern-Net method by building a feedforward neural network with learnable Bernstein polynomial activations and train it on the UCI Wine classification dataset. You compare performance (accuracy, parameter count, convergence speed) against a baseline ReLU network of similar architecture. You report metrics analogous to those in the paper.
+
+**Why it shows you understood the paper:** This project shows you can translate the paper’s theoretical and empirical contributions into a practical implementation, reproducing the key claims of parameter efficiency and faster convergence on a real dataset, even without the authors’ released code.
+
+**Grounded in:** Key results: DBNs achieve over 70% parameter reduction and faster convergence compared to ReLU; experimental validation on analytic classification tasks.
+
+**Tech stack:** Python 3.11, PyTorch, scikit-learn
+
+**Data:** Use the UCI Wine dataset (publicly available) as a smaller substitute for the paper’s analytic classification tasks.
+
+**Build it:**
+
+1. Implement a modular DeepBern-Net feedforward architecture with learnable Bernstein activations.
+2. Prepare the UCI Wine dataset with train/test splits and preprocessing.
+3. Train the DeepBern-Net and a ReLU baseline network with matched depth and width.
+4. Evaluate and compare accuracy, parameter counts, and training epochs to convergence.
+5. Plot training loss and accuracy curves for both models.
+6. Write a detailed README discussing the implementation, results, and comparison to the paper.
+
+**Ships as:** A GitHub repo containing DeepBern-Net and ReLU baseline implementations, training scripts, evaluation metrics, plots, and a README analyzing the results in the context of the paper.
+
+**Stretch goal:** Experiment with varying polynomial degrees and network depths to observe their impact on performance and parameter efficiency.
+
+### Advanced — Extend DeepBern-Nets to Convolutional Architectures for CIFAR-10
+*Effort: 3-4 weeks*
+
+You extend the DeepBern-Net approach by integrating learnable Bernstein polynomial activations into a convolutional neural network architecture and train it on the CIFAR-10 image classification dataset. This addresses the paper’s limitation regarding applicability beyond feed-forward networks. You compare performance and parameter efficiency against a standard CNN with ReLU activations and analyze training stability and convergence.
+
+**Why it shows you understood the paper:** This project demonstrates deep comprehension of the paper’s method and limitations by adapting it to a new domain and architecture, contributing a genuine extension that could spark research discussions with the professor.
+
+**Grounded in:** Limitation: Experiments focus on feed-forward networks; applicability to other architectures (e.g., convolutional or recurrent networks) is not explored.
+
+**Tech stack:** Python 3.11, PyTorch, torchvision
+
+**Data:** Use the CIFAR-10 dataset (publicly available) as a standard benchmark for image classification.
+
+**Build it:**
+
+1. Design and implement a convolutional neural network with Bernstein polynomial activations replacing ReLU.
+2. Integrate polynomial evaluation and gradient computation efficiently within convolutional layers.
+3. Train the Bernstein-activated CNN and a ReLU baseline on CIFAR-10 with identical architectures.
+4. Measure and compare classification accuracy, parameter counts, training epochs, and training stability.
+5. Analyze computational overhead and memory usage implications.
+6. Document the methodology, experiments, results, and discussion in a comprehensive README.
+
+**Ships as:** A GitHub repo with convolutional DeepBern-Net implementation, training and evaluation scripts, comparative results, and an in-depth README discussing the extension and its implications.
+
+**Stretch goal:** Implement adaptive polynomial degree selection during training to optimize efficiency and accuracy.

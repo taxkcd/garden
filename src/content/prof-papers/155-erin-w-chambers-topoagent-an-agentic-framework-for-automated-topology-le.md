@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-erin-w-chambers"
-source_hash: "73a99fafa249290499b26a9c29ef6a23cc1b31c65322515f448227e4fc60bbe6"
+source_hash: "c22b9810b7bd3235fb9688dd3ea1a3d720cce55c097d7a979ec10a608b2da4a2"
 sequence: 155
 generator: "outreach-garden: managed"
 ---
@@ -132,3 +132,99 @@ See a direct presentation of the TopoAgent framework, illustrating how the LLM a
 
 - [[1hr Talk] Intro to Large Language Models](https://www.youtube.com/watch?v=zjkBMFhNj_g) — also for: On-demand generation of high-quality software engineering datasets using large language models and ontologies (Suranjan Chakraborty)
 - [How Large Language Models Work](https://www.youtube.com/watch?v=5sLYAQS9sWQ) — also for: Natural-Language to SysMLv2 Translation via Conformance-Driven Iterative Refinement (Levent Burak Kara)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive learning path to demonstrate your understanding of TopoAgent's approach to automated topology learning in medical imaging. The beginner project focuses on reproducing a core concept of topological descriptor extraction using existing tools. The intermediate project builds on the authors' released code to replicate and evaluate the adaptive descriptor selection mechanism on a smaller scale. The advanced project extends the framework to address a stated limitation by exploring multi-descriptor fusion for 2D medical images, opening a path for research discussion.
+
+### Beginner — Persistent Homology Descriptor Extraction on Sample Medical Images
+*Effort: a weekend, ~8 hours*
+
+You build a simple Python script that extracts persistent homology (PH) topological descriptors from a small set of 2D medical images using a public TDA library. You visualize the persistence diagrams and compute a basic classification metric (e.g., balanced accuracy) on a binary classification task using these descriptors as features with a simple classifier.
+
+**Why it shows you understood the paper:** This project shows you understand the fundamental topological descriptor (persistent homology) used in the paper and how it captures geometric features from medical images, a key step in TopoAgent's pipeline.
+
+**Grounded in:** The project demonstrates understanding of the paper's use of topological descriptors (Section 2.1 Topological Descriptors and the importance of PH in medical images).
+
+**Tech stack:** Python 3.11, scikit-learn, GUDHI or Ripser (TDA library), matplotlib
+
+**Data:** Use a small subset of the APTOS 2019 blindness detection dataset from Kaggle (https://www.kaggle.com/c/aptos2019-blindness-detection) as a substitute for medical images.
+
+**Build it:**
+
+1. Download and preprocess a small subset of the APTOS 2019 dataset (e.g., 100 images, binary labels).
+2. Use a TDA library like GUDHI or Ripser to compute persistent homology diagrams from each image's grayscale intensity filtration.
+3. Extract vectorized features from persistence diagrams (e.g., persistence landscapes or persistence images).
+4. Train a simple classifier (e.g., Random Forest) on these features and evaluate balanced accuracy.
+5. Visualize persistence diagrams for a few sample images to illustrate topological features.
+
+**Verified links from the paper:**
+
+- <https://www.kaggle.com/c/aptos2019-blindness-detection> — a third-party/baseline artifact the paper cites — not the authors' own code
+
+**Ships as:** A GitHub repo with a Jupyter notebook or Python script that extracts PH descriptors, trains a classifier, reports balanced accuracy, and visualizes persistence diagrams.
+
+**Stretch goal:** Add a simple parameter tuning step to explore how filtration parameters affect descriptor quality.
+
+### Intermediate — Reproducing TopoAgent's Adaptive Descriptor Selection on TopoBenchmark Subset
+*Effort: 2 weekends, ~20 hours*
+
+You clone and run the authors' TopoAgent codebase to reproduce its adaptive descriptor selection on a smaller subset of the TopoBenchmark datasets. You compare TopoAgent's per-image descriptor choice against a fixed-descriptor baseline and report balanced accuracy, replicating the paper's core evaluation metric.
+
+**Why it shows you understood the paper:** This project shows you can operate the full TopoAgent framework, understand its PRAR loop, skill set, and dual memory, and verify its adaptive descriptor selection advantage quantitatively.
+
+**Grounded in:** This project directly engages with the paper's key contribution and results: adaptive per-image descriptor determination outperforms fixed baselines by 9.32% balanced accuracy (Key Contributions and Key Results).
+
+**Tech stack:** Python 3.11, PyTorch, TopoAgent codebase dependencies
+
+**Data:** Use the TopoBenchmark subset included or referenced in the TopoAgent GitHub repository (https://github.com/gm3g11/TopoAgent). If full TopoBenchmark is unavailable, use the included sample datasets or simulate a small subset based on the repo instructions.
+
+**Build it:**
+
+1. Clone the TopoAgent repository from https://github.com/gm3g11/TopoAgent and install dependencies.
+2. Familiarize yourself with the code structure, especially the PRAR loop and skill set modules.
+3. Run the agent on a small subset of the TopoBenchmark datasets provided or simulated.
+4. Run a fixed-descriptor baseline on the same data for comparison.
+5. Evaluate and report balanced accuracy for both methods, comparing results.
+6. Document the reasoning traces and reflection outputs to illustrate the agent's interpretability.
+
+**Verified links from the paper:**
+
+- <https://github.com/gm3g11/TopoAgent> — released by the paper's authors
+
+**Ships as:** A GitHub repo fork or branch with scripts/notebooks to run TopoAgent on a subset, baseline comparison, evaluation metrics, and a README explaining the reproduction and results.
+
+**Stretch goal:** Modify the skill set or reasoning parameters to observe their effect on descriptor selection and accuracy.
+
+### Advanced — Extending TopoAgent for Multi-Descriptor Fusion in 2D Medical Images
+*Effort: 3+ weeks*
+
+You extend the TopoAgent framework to select and fuse multiple complementary topological descriptors per image instead of a single descriptor. You implement a fusion strategy (e.g., feature concatenation or weighted ensemble) guided by the agent's reasoning. You evaluate this extension on a subset of TopoBenchmark or similar data and compare performance against single-descriptor TopoAgent.
+
+**Why it shows you understood the paper:** This project tackles a stated limitation and future direction from the paper, demonstrating deep comprehension of the framework's architecture and the challenges of multi-descriptor fusion in topology learning.
+
+**Grounded in:** Addresses the paper's limitation that the agent currently determines a single descriptor per image and the future direction to explore multi-descriptor fusion guided by the agent's reasoning.
+
+**Tech stack:** Python 3.11, PyTorch, TopoAgent codebase, NumPy, scikit-learn
+
+**Data:** Use TopoBenchmark subset or substitute with publicly available 2D medical image datasets such as APTOS 2019 or simulated data if needed.
+
+**Build it:**
+
+1. Study the TopoAgent codebase to understand how descriptor selection and execution are implemented.
+2. Design and implement a mechanism for the agent to propose multiple descriptors per image based on its reasoning outputs.
+3. Implement a fusion method to combine features from multiple descriptors (e.g., concatenation, weighted averaging).
+4. Modify the evaluation pipeline to handle fused features and retrain classifiers accordingly.
+5. Run experiments comparing single-descriptor vs multi-descriptor fusion on the chosen dataset.
+6. Analyze results and document the impact of multi-descriptor fusion on balanced accuracy and reasoning complexity.
+
+**Verified links from the paper:**
+
+- <https://github.com/gm3g11/TopoAgent> — released by the paper's authors
+
+**Ships as:** A GitHub repo with the extended TopoAgent code, experimental results comparing single vs multi-descriptor approaches, and a detailed README discussing design decisions and findings.
+
+**Stretch goal:** Explore extending the skill set to include descriptor complementarity metrics to guide fusion decisions.

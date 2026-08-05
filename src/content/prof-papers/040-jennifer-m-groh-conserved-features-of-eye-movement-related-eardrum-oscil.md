@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-jmgroh"
-source_hash: "d03b57aa50a7ca660849cf2cc9cece0f0ce0b5a39cf3d8381075c1ec7b0ccb5d"
+source_hash: "f0bddfb5f34377bdc9b088d6dfa0f58fb78579f8c7111397d4f339744560c81f"
 sequence: 40
 generator: "outreach-garden: managed"
 ---
@@ -133,3 +133,85 @@ EMREOs are oscillations of the eardrum triggered by eye movements, possibly help
 ## Already in your library
 
 - [Lecture 31: Auditory System](https://www.youtube.com/watch?v=G9k_SnJH__c) — also for: Conserved features of eye movement related eardrum oscillations (EMREOs) across humans and monkeys (Jennifer M. Groh)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progression from reproducing a core empirical observation of the paper to reimplementing its main analytical method, and finally to extending the work by addressing a stated limitation. The beginner project focuses on visualizing the dependence of EMREOs on horizontal eye displacement in humans, the intermediate project involves reimplementing the regression analysis framework on synthetic or simulated data to quantify EMREO dependence on eye movement parameters, and the advanced project explores the functional impact of EMREOs on auditory localization cues, addressing a key future direction of the paper.
+
+### Beginner — Visualize EMREO Dependence on Horizontal Eye Displacement
+*Effort: a weekend, ~8 hours*
+
+You build a simple interactive data visualization that reproduces the key finding that EMREOs depend strongly on horizontal eye displacement. Using simulated or publicly available eye movement and eardrum oscillation data, you plot EMREO waveforms time-locked to saccade onset and show how waveform amplitude varies with horizontal eye displacement.
+
+**Why it shows you understood the paper:** This project demonstrates you understand the core empirical observation of the paper and how EMREOs relate parametrically to eye movement, a foundational concept in the study.
+
+**Grounded in:** Demonstrated that EMREOs depend strongly and consistently on horizontal eye displacement in both humans and monkeys.
+
+**Tech stack:** JavaScript, React, D3.js
+
+**Data:** Simulated EMREO waveform data parametrized by horizontal eye displacement, as no public dataset is available from the paper.
+
+**Build it:**
+
+1. Research the typical shape and timing of EMREO waveforms relative to saccade onset from the paper's figures and description.
+2. Generate synthetic EMREO waveform data varying with horizontal eye displacement using simple oscillatory functions modulated by displacement amplitude.
+3. Build a React app that plots EMREO waveforms time-locked to saccade onset for different horizontal displacements using D3.js.
+4. Add interactive controls to vary horizontal eye displacement and observe corresponding changes in waveform amplitude and shape.
+5. Document the visualization and explain how it reproduces the paper's key empirical finding.
+
+**Ships as:** An interactive React web app with plots showing EMREO waveforms modulated by horizontal eye displacement, accompanied by a README explaining the connection to the paper.
+
+**Stretch goal:** Add vertical eye displacement as a secondary parameter and visualize its weaker effect on EMREOs.
+
+### Intermediate — Reimplement EMREO Regression Analysis Framework
+*Effort: 1-3 weekends*
+
+You reimplement the linear regression analysis framework from the paper that quantifies EMREO dependence on eye movement parameters (horizontal and vertical displacements, initial positions). Using simulated data modeled after the paper's descriptions, you fit regression models and reproduce key metrics such as regression coefficients and waveform timing differences.
+
+**Why it shows you understood the paper:** This project shows you can implement the paper's core analytical method, understand the parametric relationships it reveals, and interpret regression outputs in the context of EMREOs.
+
+**Grounded in:** Introduced a regression analysis framework to quantify EMREO dependence on eye movement parameters.
+
+**Tech stack:** Python 3.11, Jupyter Notebook, NumPy, SciPy, Matplotlib, scikit-learn
+
+**Data:** Simulated EMREO and eye movement parameter data generated based on the paper's reported waveform shapes and parameter dependencies.
+
+**Build it:**
+
+1. Study the paper's regression model setup and parameters (horizontal/vertical displacement, initial eye position).
+2. Generate synthetic datasets of EMREO waveforms and corresponding eye movement parameters reflecting the paper's findings.
+3. Implement linear regression models to predict EMREO waveform components from eye movement parameters using scikit-learn.
+4. Analyze regression coefficients and waveform timing to replicate key results such as stronger horizontal displacement dependence and species differences in waveform frequency.
+5. Visualize regression fits and residuals, and write a report comparing your results to the paper's findings.
+
+**Ships as:** A Jupyter Notebook demonstrating the regression analysis on synthetic EMREO data, with plots and commentary linking results to the paper's core contributions.
+
+**Stretch goal:** Incorporate noise and individual variability into the synthetic data to explore robustness of regression results.
+
+### Advanced — Model EMREO Influence on Auditory Localization Cues
+*Effort: several weeks*
+
+You extend the paper by modeling how EMREOs might influence auditory localization cues such as interaural timing differences (ITD) and interaural level differences (ILD). Using simulated EMREO waveforms and auditory signal processing models, you analyze potential modulation of these cues by EMREOs during eye movements, addressing a key future direction of the paper.
+
+**Why it shows you understood the paper:** This project demonstrates deep comprehension of the paper's limitations and future directions, applying engineering and computational modeling skills to explore the functional impact of EMREOs on multisensory integration.
+
+**Grounded in:** Investigate how EMREOs influence auditory localization cues such as interaural timing and level differences.
+
+**Tech stack:** Python 3.11, NumPy, SciPy, Jupyter Notebook, Matplotlib, PyAudioAnalysis or similar audio processing libraries
+
+**Data:** Simulated EMREO waveforms combined with standard auditory localization cue models; no direct experimental data available.
+
+**Build it:**
+
+1. Review auditory localization cues (ITD, ILD) and how they are computed from ear canal signals.
+2. Simulate EMREO waveforms time-locked to eye movements based on the paper's descriptions.
+3. Integrate EMREO signals into auditory cue models to simulate their effect on ITD and ILD during saccades.
+4. Analyze and visualize how EMREO-induced oscillations could modulate localization cues over time.
+5. Write a detailed report discussing implications for multisensory spatial integration and propose experimental validations.
+
+**Ships as:** A comprehensive Jupyter Notebook modeling EMREO effects on auditory localization cues, with plots, analysis, and a discussion connecting to the paper's future directions.
+
+**Stretch goal:** Propose and simulate interventional manipulations of EMREOs to predict perceptual consequences, guiding future animal model experiments.

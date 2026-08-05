@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-bruce-w-char"
-source_hash: "0bbe1fa3d4a62e368eb070d53776fc321d7cd91ac92e9b613608b900309c2c94"
+source_hash: "f73979120f9a5aa363fcfa6a2857720b911051d0b898847ad12515600f382a28"
 sequence: 130
 generator: "outreach-garden: managed"
 ---
@@ -126,3 +126,87 @@ Visual puzzle games present programming challenges as interactive puzzles, helpi
 *How the paper uses it:* Parallel is a 2D puzzle game that visually represents CPP concepts, enabling students to connect gameplay mechanics to programming ideas without explicit coding.
 
 ▶ [The Art of Puzzle Design | How Game Designers Explore Ideas and Themes with Puzzles and Problems](https://www.youtube.com/watch?v=hCOHjTX4GYE) — The Game Overanalyser · 6 years ago
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive ladder to demonstrate understanding of the paper "Understanding Learners’ Problem-Solving Strategies in Concurrent and Parallel Programming: A Game-Based Approach." Starting with a beginner-level project that reproduces a key survey result on self-efficacy increase, moving to an intermediate project that reimplements the core game-based learning approach and analyzes problem-solving strategies, and culminating in an advanced project that extends the paper by exploring automated detection of problem-solving strategies to infer self-efficacy.
+
+### Beginner — Reproduce Self-Efficacy Survey Analysis
+*Effort: a weekend, ~8 hours*
+
+You build a small web app or Jupyter notebook that simulates the pre- and post-survey self-efficacy data reported in the paper and reproduces the statistical analysis showing significant increases in self-efficacy after gameplay. You visualize the increase with charts and compute p-values for significance.
+
+**Why it shows you understood the paper:** This project shows you understand the key quantitative result that playing Parallel increases students' confidence in CPP concepts, and you can replicate the statistical validation of this claim.
+
+**Grounded in:** Table 3 shows statistically significant increases in self-efficacy scores from pre- to post-surveys (p < 0.05 for most questions). The average self-efficacy increased from 2.45 to 3.71.
+
+**Tech stack:** Python 3.11, Jupyter Notebook, pandas, matplotlib, scipy.stats
+
+**Data:** Simulated survey data based on the paper's reported averages and significance levels, as no raw data is publicly available.
+
+**Build it:**
+
+1. Create a synthetic dataset mimicking pre- and post-survey self-efficacy scores for 44 students based on reported means and standard deviations.
+2. Write code to compute paired t-tests or Wilcoxon signed-rank tests to assess significance of score increases.
+3. Visualize pre- and post-survey scores using boxplots or bar charts with error bars.
+4. Document the analysis steps and results in a Jupyter notebook or simple web app.
+5. Explain how the results replicate the paper's key finding on self-efficacy improvement.
+
+**Ships as:** A Jupyter notebook or small web app repository with code, visualizations, and explanation reproducing the self-efficacy increase analysis.
+
+**Stretch goal:** Add interactive sliders to explore how different effect sizes or sample sizes affect statistical significance.
+
+### Intermediate — Reimplement Parallel Game Puzzle and Analyze Strategies
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement a simplified version of the Parallel game puzzle environment focusing on visualizing threads and synchronization challenges. You instrument the game to log player actions and classify problem-solving strategies into trial-and-error, single-threaded, and multithreaded approaches. You run a small user study or simulation to collect data and analyze time spent in each strategy, correlating with a self-efficacy proxy.
+
+**Why it shows you understood the paper:** This project demonstrates you grasp the core educational approach of the paper—using a visual puzzle game to teach CPP concepts and identify distinct problem-solving strategies—and can replicate the strategy classification and correlation analysis.
+
+**Grounded in:** Identified three distinct problem-solving strategies students use in the game: trial-and-error, single-threaded, and multithreaded problem solving. Found a positive correlation between higher self-efficacy and time spent in multithreaded problem-solving.
+
+**Tech stack:** JavaScript, React, Node.js, Express.js, SQLite or JSON for logging
+
+**Data:** User interaction logs collected from a small group of players (simulated or recruited) playing the simplified puzzle game.
+
+**Build it:**
+
+1. Design and implement a simplified 2D puzzle game that visually represents threads and synchronization challenges similar to Parallel.
+2. Implement logging of player actions and annotate them to classify problem-solving strategies.
+3. Recruit a few users or simulate gameplay sessions to generate interaction data.
+4. Analyze the logged data to compute time spent in each problem-solving strategy per user.
+5. Correlate strategy usage with a simple self-efficacy proxy (e.g., a confidence rating collected via a form).
+6. Document the game design, data collection, analysis, and findings.
+
+**Ships as:** A GitHub repository with the simplified game code, data collection scripts, analysis notebooks, and a report linking strategy usage to self-efficacy proxies.
+
+**Stretch goal:** Add visualization dashboards to show real-time strategy classification during gameplay.
+
+### Advanced — Automated Detection of Problem-Solving Strategies from Gameplay Logs
+*Effort: 3-4 weeks*
+
+You develop a machine learning pipeline that takes detailed gameplay logs from a Parallel-like puzzle game and automatically classifies player problem-solving strategies (trial-and-error, single-threaded, multithreaded). You then use these classifications to predict players' self-efficacy scores, addressing the paper's future direction of automated strategy detection to infer self-efficacy.
+
+**Why it shows you understood the paper:** This project tackles a stated future direction of the paper, showing deep comprehension of the problem-solving strategies and their relation to self-efficacy, and applies ML methods to automate their detection, which could enhance educational feedback systems.
+
+**Grounded in:** Explore automated detection of problem-solving strategies during gameplay to infer student self-efficacy.
+
+**Tech stack:** Python 3.11, scikit-learn, pandas, numpy, matplotlib, Jupyter Notebook
+
+**Data:** Simulated or collected gameplay logs with annotated problem-solving strategies and self-efficacy scores; no official dataset is available, so synthetic data generation or small-scale user data collection is required.
+
+**Build it:**
+
+1. Define features from gameplay logs that capture player actions relevant to problem-solving strategies (e.g., action sequences, timing, thread usage).
+2. Label a dataset of gameplay sessions with problem-solving strategies based on heuristic rules or manual annotation.
+3. Train and evaluate classification models (e.g., random forests, SVMs) to predict strategies from features.
+4. Use the predicted strategy distributions to build regression or classification models predicting self-efficacy scores.
+5. Evaluate model performance and analyze feature importance.
+6. Document methodology, results, and implications for educational technology.
+
+**Ships as:** A repository with data processing scripts, ML models, evaluation notebooks, and a detailed README explaining the automated strategy detection pipeline and its relation to self-efficacy prediction.
+
+**Stretch goal:** Integrate the pipeline into a live game prototype that provides real-time feedback on player strategies and confidence.

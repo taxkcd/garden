@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-sesh"
-source_hash: "4ff286bc3b9187638823a871e1c35d85d5a38f68916b469a71eacaa8e0f14114"
+source_hash: "7641a8225a9cd270579e2f930db032389e4d2590fc031b1d9005562ab6b62c65"
 sequence: 1
 generator: "outreach-garden: managed"
 ---
@@ -136,3 +136,87 @@ Hearing the authors explain their own work provides direct insight into the moti
 - [Counting Subgraphs in Sublinear Time](https://www.youtube.com/watch?v=4p2cq6Vy_9g) — also for: Approximately Counting Triangles in Sublinear Time (C. Seshadhri)
 - [Counting and Sampling Subgraphs in Sublinear Time](https://www.youtube.com/watch?v=nbB_0ED6tX8) — also for: Approximately Counting Triangles in Sublinear Time (C. Seshadhri)
 - [Sketching, Sampling and Sublinear Time Algorithms](https://www.youtube.com/watch?v=bUhE7rwtH5k) — also for: Approximately Counting Triangles in Sublinear Time (C. Seshadhri)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive ladder to demonstrate your understanding of the paper "Approximately Counting Triangles in Sublinear Time." The beginner project familiarizes you with the core concept of vertex classification and weighted triangle sampling on small graphs. The intermediate project involves implementing the paper's core sublinear-time triangle counting algorithm on a public graph dataset and comparing it against a baseline full enumeration method. The advanced project extends the algorithm to dynamic graph streams, addressing one of the paper's future directions and exploring challenges in adapting sublinear triangle counting to edge insertions and deletions.
+
+### Beginner — Triangle Counting with Heavy-Light Vertex Classification
+*Effort: a weekend, ~8 hours*
+
+You build a small Python script that implements the vertex classification procedure (heavy vs. light) and a weighted sampling scheme to estimate the number of triangles in a small synthetic graph. The script uses degree and neighbor queries simulated on an adjacency list and demonstrates how weighting triangles by the number of light endpoints reduces variance.
+
+**Why it shows you understood the paper:** This project shows you grasp the key mechanism of vertex classification and weighted sampling from the paper, which is central to reducing variance and enabling sublinear estimation.
+
+**Grounded in:** Key contribution: "A novel weighting scheme for triangles based on the number of light endpoints to reduce variance." and "An efficient procedure to classify vertices as heavy or light to improve estimation accuracy."
+
+**Tech stack:** Python 3.11
+
+**Data:** A small synthetic graph you generate in code (e.g., 100 vertices with random edges) to simulate query access.
+
+**Build it:**
+
+1. Implement a graph data structure with adjacency lists and functions to simulate degree, neighbor, and vertex-pair queries.
+2. Implement the Heavy(v) procedure to classify vertices as heavy or light based on degree thresholds.
+3. Implement weighted triangle counting by sampling vertices and edges, weighting triangles according to the number of light endpoints.
+4. Run the estimator on the synthetic graph and compare the estimate to the exact triangle count computed by full enumeration.
+5. Write a README explaining the vertex classification, weighting scheme, and how variance is reduced.
+
+**Ships as:** A Python script with clear functions for vertex classification and weighted triangle sampling, plus a README explaining the approach and results on the synthetic graph.
+
+**Stretch goal:** Visualize the variance reduction effect by plotting estimates with and without weighting over multiple runs.
+
+### Intermediate — Sublinear-Time Triangle Counting on Real Graphs
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement the core sublinear-time triangle counting algorithm from the paper in Python, including vertex classification, weighted sampling, and geometric search to remove prior knowledge of graph parameters. You apply it to a publicly available medium-sized graph dataset (e.g., a SNAP social network graph) and compare the approximate triangle count to the exact count computed by a baseline full enumeration method.
+
+**Why it shows you understood the paper:** This project demonstrates your ability to faithfully implement the paper's main algorithm and validate its accuracy and query efficiency on real data, showing you understand both the theory and practical application.
+
+**Grounded in:** Key result: "The algorithm outputs an estimate tb such that with high constant probability, (1 - ε)·t ≤ tb ≤ (1 + ε)·t." and "The algorithm requires no prior knowledge of m or t, using geometric search and average degree approximation to remove this assumption."
+
+**Tech stack:** Python 3.11, NetworkX (for graph handling), Matplotlib (optional for plotting)
+
+**Data:** Use a publicly available SNAP dataset such as the 'ego-Facebook' graph from SNAP ((link removed — unverified)) as a substitute for the paper's data.
+
+**Build it:**
+
+1. Load the SNAP graph dataset and implement query functions to simulate degree, neighbor, and vertex-pair queries.
+2. Implement the Heavy(v) vertex classification procedure and the weighted triangle counting estimator as described in the paper.
+3. Implement geometric search and average degree approximation to remove the need for prior knowledge of m and t.
+4. Implement a baseline triangle counting method using full enumeration for comparison.
+5. Run experiments comparing the approximate triangle count and query complexity against the baseline on the dataset.
+6. Document the implementation details, experimental setup, and results in a README.
+
+**Ships as:** A Python repository with the sublinear triangle counting implementation, baseline method, experimental results comparing accuracy and query counts, and a detailed README.
+
+**Stretch goal:** Add variance analysis by running multiple trials and plotting confidence intervals of the estimates.
+
+### Advanced — Adapting Sublinear Triangle Counting to Dynamic Graph Streams
+*Effort: 3+ weeks*
+
+You extend the sublinear-time triangle counting algorithm to handle dynamic graph streams where edges can be inserted or deleted. You design and implement a streaming variant that maintains an approximate triangle count with sublinear query complexity under edge updates. You evaluate your approach on synthetic dynamic graph streams and analyze challenges such as maintaining vertex classification and weighted sampling under updates.
+
+**Why it shows you understood the paper:** This project tackles a future direction explicitly mentioned in the paper, showing deep comprehension of the algorithm's assumptions and limitations, and your ability to innovate by adapting it to a challenging new setting.
+
+**Grounded in:** Future direction: "Adapting the approach to dynamic or streaming graph settings."
+
+**Tech stack:** Python 3.11, NetworkX, NumPy
+
+**Data:** Synthetic dynamic graph streams generated by applying random edge insertions and deletions on a base graph (e.g., a small SNAP graph or synthetic graph).
+
+**Build it:**
+
+1. Design a data structure to maintain vertex classification (heavy/light) dynamically as edges are inserted or deleted.
+2. Adapt the weighted triangle sampling estimator to update estimates incrementally in the dynamic setting.
+3. Implement a streaming simulation applying a sequence of edge insertions and deletions to the graph.
+4. Evaluate the accuracy and update/query complexity of your dynamic estimator compared to recomputing from scratch.
+5. Analyze and document challenges encountered, such as maintaining classification thresholds and variance control.
+6. Write a comprehensive README detailing your design, implementation, experiments, and insights.
+
+**Ships as:** A Python codebase implementing a dynamic sublinear triangle counting estimator, with experiments on synthetic dynamic streams and a detailed report on methodology and findings.
+
+**Stretch goal:** Explore heuristics to reduce update costs or extend to real-world dynamic graph datasets if available.

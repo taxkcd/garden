@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-sina-fazelpour"
-source_hash: "1980e902eeec2511bcdf6209c46954b09177f5356b85482b20ad1827df1abbbd"
+source_hash: "75cdd0c4d8b70493c143058fd25bd0de5c279313da8f7bebd01a7f18869ac9ca"
 sequence: 106
 generator: "outreach-garden: managed"
 ---
@@ -128,3 +128,85 @@ This talk directly addresses how AI-generated cultural resources influence educa
 *How the paper uses it:* This video offers a focused presentation on the paper's main topic, illustrating aspirational affordances and harms in AI contexts.
 
 ▶ [The Algorithm of Aspiration: Education and Careers in a Post-AI World | Vibha Kagzi | TEDxIIT Kanpur](https://www.youtube.com/watch?v=Y8_ULqCkQu8) — TEDx Talks · 2 months ago
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder to demonstrate understanding of the paper "Aspirational Affordances of AI" by Fazelpour and Magnani (2025). The beginner project recreates a small-scale interactive demonstration of aspirational affordances shaping imagination. The intermediate project implements a computational model inspired by the paper's concept of aspirational affordances to analyze AI-generated cultural content's influence on aspirations. The advanced project extends the paper by empirically auditing AI-generated aspirational affordances in a real-world domain, addressing the paper's call for systematic evaluation and normative characterization.
+
+### Beginner — Interactive Aspirational Affordance Demo
+*Effort: a weekend, ~8 hours*
+
+You build a small React web app that simulates how AI-generated cultural artifacts (images and narratives) can shape a user's aspirational imagination. The app presents users with AI-generated prompts representing different aspirational archetypes and lets users explore how these prompts influence their imagined futures.
+
+**Why it shows you understood the paper:** This project concretely demonstrates the paper's concept of aspirational affordances by making the abstract idea interactive and visible, showing how AI-generated content can subtly influence aspirations.
+
+**Grounded in:** Introduction of the concept of aspirational affordances to describe how shared interpretive resources shape practical imagination and aspirations.
+
+**Tech stack:** React, TypeScript, CSS
+
+**Data:** Simulated AI-generated aspirational prompts created manually to reflect examples from the paper's case studies (e.g., narrow professional archetypes, social-political aspirations).
+
+**Build it:**
+
+1. Design a simple UI with a set of AI-generated aspirational prompts representing different futures or identities.
+2. Implement interactive elements allowing users to select prompts and see how their imagined aspirations shift.
+3. Add explanatory text linking each prompt to the concept of aspirational affordances and potential aspirational harms.
+4. Deploy the app on GitHub Pages or similar for easy sharing.
+
+**Ships as:** A public GitHub repository with a React app and README explaining how the demo illustrates aspirational affordances and their influence on imagination.
+
+**Stretch goal:** Add user input to collect feedback on how prompts affect their aspirations and visualize aggregate effects.
+
+### Intermediate — Computational Model of Aspirational Affordances
+*Effort: 2 weekends, ~20 hours*
+
+You implement a computational pipeline that analyzes a small corpus of AI-generated cultural texts (e.g., career advice snippets or future narratives) to identify patterns that may narrow aspirational affordances. You compare these patterns against a baseline corpus of human-generated texts to measure conceptual diversity and presence of dominant narratives.
+
+**Why it shows you understood the paper:** This project operationalizes the paper's core method of analyzing how AI-generated content shapes aspirational affordances and demonstrates the distinctness of aspirational harms by quantifying narrowing of interpretive resources.
+
+**Grounded in:** Introduction of the novel concept of aspirational harm, distinct from representational and allocative harms, capturing how AI can distort or diminish interpretive resources that enable imagining alternative futures.
+
+**Tech stack:** Python 3.11, Jupyter Notebook, NLTK or spaCy, scikit-learn
+
+**Data:** Publicly available AI-generated text samples (e.g., GPT-generated career advice) and a comparable human-written corpus (e.g., career advice blog posts) as a substitute for the paper's illustrative examples.
+
+**Build it:**
+
+1. Collect or generate a small dataset of AI-generated aspirational texts and a baseline human-generated dataset.
+2. Preprocess texts (tokenization, stopword removal, lemmatization) using NLP libraries.
+3. Extract features representing conceptual diversity (e.g., topic modeling, lexical variety).
+4. Compare diversity metrics between AI-generated and human-generated corpora to identify narrowing patterns.
+5. Document findings and relate them to aspirational harms as described in the paper.
+
+**Ships as:** A Jupyter Notebook with code, analysis, and visualizations demonstrating how AI-generated texts may narrow aspirational affordances compared to human texts.
+
+**Stretch goal:** Incorporate sentiment or framing analysis to detect dominant narratives reinforcing social injustices.
+
+### Advanced — Empirical Audit of Aspirational Affordances in AI Career Guidance
+*Effort: 3-4 weeks*
+
+You conduct an empirical audit of popular AI career guidance tools or datasets to systematically evaluate their aspirational affordances. Using a mixed-methods approach, you analyze how these tools represent professional identities and futures, identify aspirational harms such as narrow success archetypes, and propose design recommendations to foster inclusive aspirational affordances.
+
+**Why it shows you understood the paper:** This project addresses the paper's limitation on empirical validation and future direction for systematic audits, demonstrating deep engagement with the concept of aspirational harms and contributing to responsible AI evaluation.
+
+**Grounded in:** Empirical validation and systematic audits of AI systems regarding aspirational affordances are limited; some examples are informal or illustrative. Future directions include systematic mapping and interdisciplinary research to measure and create beneficial aspirational affordances.
+
+**Tech stack:** Python 3.11, Jupyter Notebook, TypeScript, React, GitHub Actions
+
+**Data:** Publicly accessible AI career guidance outputs or datasets (e.g., open prompts to GPT or similar models) and publicly available career advice corpora for comparison; no paper-provided dataset exists.
+
+**Build it:**
+
+1. Identify and select AI career guidance tools or generate outputs using public LLM APIs.
+2. Collect and preprocess career guidance texts for analysis.
+3. Develop metrics and qualitative coding schemes to evaluate aspirational affordances and harms (e.g., diversity of success archetypes, representation of marginalized groups).
+4. Analyze data quantitatively and qualitatively to identify aspirational harms.
+5. Draft design recommendations to mitigate harms and promote inclusive aspirational affordances.
+6. Publish code, analysis, and a detailed README discussing findings and connections to the paper.
+
+**Ships as:** A comprehensive GitHub repository with audit code, analysis notebooks, and a report linking empirical findings to the paper's conceptual framework and future directions.
+
+**Stretch goal:** Develop a prototype AI career guidance interface that incorporates positive aspirational affordances based on audit findings.

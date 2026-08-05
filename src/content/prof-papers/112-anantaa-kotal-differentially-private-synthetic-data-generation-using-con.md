@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-anantaa-kotal"
-source_hash: "228c6b15af942304b966f026f2e514d38fcac853405fb6245069c0577fc9705f"
+source_hash: "8feee933cc1f46590a333b3494c7aed65423eee6845aa0506bba9423bee542eb"
 sequence: 112
 generator: "outreach-garden: managed"
 ---
@@ -123,3 +123,90 @@ A constraint matrix is a structured way to encode explicit and implicit rules or
 
 - [VAPS58:"Generative Adversarial Networks: Dynamics and ...](https://www.youtube.com/watch?v=aPyA65XvWro) — also for: Generating Higher-Quality Anti-Forensics DeepFakes with Adversarial Sharpening Mask (Pradeep K. Atrey)
 - [Generative Adversarial Networks (GANs) - Computerphile](https://www.youtube.com/watch?v=Sw9r8CL98N0) — also for: Geometry Preserving Loss Functions Promote Improved Adaptation of Blackbox Generative Models (Pavan K. Turaga)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive ladder to demonstrate your understanding of the ContextGAN paper. The beginner project focuses on implementing and visualizing the constraint matrix concept in a simple GAN setting, using your existing Python and ML skills. The intermediate project involves reimplementing the core ContextGAN method with differential privacy on a public tabular dataset, comparing fidelity and privacy metrics against a baseline GAN. The advanced project tackles a future direction from the paper by extending the constraint matrix to handle interdependent domain rules, exploring automation of constraint extraction, and evaluating the impact on synthetic data quality and privacy.
+
+### Beginner — Constraint Matrix Integration in GAN Discriminator
+*Effort: a weekend, ~8 hours*
+
+You build a simple GAN on a small tabular dataset (e.g., UCI Adult dataset) and implement a constraint matrix that encodes a few explicit domain rules (e.g., age ranges, income brackets). You integrate this constraint matrix into the discriminator's loss function to penalize synthetic samples violating these rules and visualize the effect on generated data.
+
+**Why it shows you understood the paper:** This project demonstrates you understand how ContextGAN encodes domain knowledge explicitly via a constraint matrix and integrates it into GAN training to enforce domain compliance.
+
+**Grounded in:** Introduction of a constraint matrix to explicitly encode domain-specific rules (both explicit and implicit) guiding synthetic data generation.
+
+**Tech stack:** Python 3.11, PyTorch, Jupyter Notebook, scikit-learn, matplotlib
+
+**Data:** UCI Adult dataset (publicly available) used as a proxy for a tabular dataset with domain rules.
+
+**Build it:**
+
+1. Load and preprocess the UCI Adult dataset for GAN training.
+2. Define a simple GAN architecture using PyTorch.
+3. Create a constraint matrix encoding simple domain rules (e.g., age must be between 18 and 90).
+4. Modify the discriminator loss to add penalties for synthetic samples violating constraints.
+5. Train the GAN with and without the constraint matrix and compare generated data distributions.
+6. Visualize and report how the constraint matrix affects rule compliance in synthetic data.
+
+**Ships as:** A Jupyter notebook showing GAN training with constraint matrix integration, visualizations of synthetic data distributions, and a README explaining the constraint matrix role.
+
+**Stretch goal:** Add implicit domain rules (e.g., conditional constraints) to the constraint matrix and observe effects.
+
+### Intermediate — Reimplementation of ContextGAN with Differential Privacy on Tabular Data
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement the core ContextGAN method from the paper: a GAN with a constraint matrix integrated into the discriminator loss and differential privacy applied via DP-SGD to the discriminator. You train this on a public healthcare or finance tabular dataset (e.g., UCI Heart Disease or Credit Card Default dataset) and compare fidelity metrics (e.g., Earth Mover's Distance) and privacy attack resilience against a baseline CTGAN model.
+
+**Why it shows you understood the paper:** This project proves you can faithfully reproduce the paper's main technical contributions—constraint matrix integration and differential privacy in GAN training—and evaluate their impact on synthetic data quality and privacy.
+
+**Grounded in:** Integration of the constraint matrix into the GAN discriminator's loss function to enforce domain compliance; Application of differential privacy mechanisms (DP-SGD) to the discriminator to protect sensitive data during training.
+
+**Tech stack:** Python 3.11, PyTorch, Opacus (for DP-SGD), scikit-learn, numpy, matplotlib
+
+**Data:** UCI Heart Disease dataset or UCI Credit Card Default dataset as publicly available proxies for healthcare and finance data.
+
+**Build it:**
+
+1. Preprocess the chosen tabular dataset for GAN training.
+2. Implement a constraint matrix encoding domain rules relevant to the dataset (e.g., medical thresholds or financial constraints).
+3. Build a GAN with discriminator loss augmented by constraint penalties.
+4. Integrate DP-SGD using Opacus to make the discriminator differentially private.
+5. Train ContextGAN and a baseline CTGAN on the dataset.
+6. Evaluate and compare synthetic data fidelity using Earth Mover's Distance and privacy attack resilience (e.g., membership inference attack).
+7. Document results and insights in a detailed README.
+
+**Ships as:** A GitHub repo with code to train ContextGAN with DP, evaluation scripts comparing to CTGAN, and a report on fidelity and privacy metrics.
+
+**Stretch goal:** Add a simple membership inference attack implementation to empirically test privacy robustness.
+
+### Advanced — Extending Constraint Matrix for Complex Interdependent Domain Rules
+*Effort: 3+ weeks*
+
+You extend the ContextGAN framework by designing and implementing an enhanced constraint matrix capable of encoding complex, interdependent domain rules, addressing a key limitation noted in the paper. You explore automating constraint extraction from domain knowledge sources (e.g., simple rule templates or knowledge graphs). You evaluate the impact of this extension on synthetic data quality and privacy on a public dataset with complex domain rules (e.g., MIMIC-III subset or a finance dataset with regulatory constraints).
+
+**Why it shows you understood the paper:** This project tackles a stated future direction and limitation of the paper, demonstrating deep comprehension of the constraint matrix concept and practical challenges in scaling it to complex domains, while contributing a novel extension.
+
+**Grounded in:** Refinement of the constraint matrix to handle complex rule interdependencies in domains with intricate domain knowledge.
+
+**Tech stack:** Python 3.11, PyTorch, Opacus, networkx (for rule dependency graphs), rdflib or owlready2 (optional for knowledge graph parsing), scikit-learn, matplotlib
+
+**Data:** A public healthcare dataset with complex domain rules (e.g., a subset of MIMIC-III or a finance dataset with regulatory constraints) or a simulated dataset with interdependent constraints.
+
+**Build it:**
+
+1. Review the original constraint matrix implementation and identify limitations in handling interdependent rules.
+2. Design a data structure (e.g., graph-based) to represent interdependencies among domain rules.
+3. Implement an extended constraint matrix that incorporates these interdependencies into the discriminator loss.
+4. Experiment with simple automation methods to extract or update constraints from structured domain knowledge sources.
+5. Train the extended ContextGAN on the chosen dataset and evaluate synthetic data fidelity, domain compliance, and privacy metrics.
+6. Compare results with the original constraint matrix implementation and document findings.
+7. Prepare a comprehensive report discussing challenges, solutions, and potential for further automation.
+
+**Ships as:** A GitHub repository with extended ContextGAN code, scripts for constraint extraction, evaluation results, and a detailed README explaining the approach and findings.
+
+**Stretch goal:** Integrate a real knowledge graph (e.g., SNOMED CT for healthcare) to automate constraint extraction and evaluate impact.

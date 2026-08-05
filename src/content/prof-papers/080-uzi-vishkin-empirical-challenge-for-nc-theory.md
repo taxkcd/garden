@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-uzi-vishkin"
-source_hash: "549105a7b924c2da975c7ca5c4e7369e76facc00203323157678701535da5698"
+source_hash: "a74c6d784cc438fdd59ff8a5f3176d97b47b791787ef2c597c653907e61f083a"
 sequence: 80
 generator: "outreach-garden: managed"
 ---
@@ -138,3 +138,87 @@ Understand the Parallel Positive Unit Resolution (PPUR) algorithm, a simplified 
 ## Already in your library
 
 - [Lecture 23: Computational Complexity](https://www.youtube.com/watch?v=moPtwq_cVH8) — also for: Learning-assisted schedulability analysis: opportunities and limitations (Sanjoy K. Baruah)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder to demonstrate your understanding of the paper "Empirical Challenge for NC Theory" by Ananth Hari and Uzi Vishkin. Starting with a beginner project that reproduces a key empirical observation on parallel rounds growth, you then implement the core PPUR algorithm and compare its parallel depth to a baseline. Finally, the advanced project extends the paper by exploring adaptive detection and handling of pathological high-depth instances, addressing a stated future direction.
+
+### Beginner — Reproduce Parallel Rounds Growth on Random 1-3-Horn-SAT
+*Effort: a weekend, ~8 hours*
+
+You build a small simulation that generates random 1-3-Horn-SAT formulas according to the paper's described random model and implement a simplified version of the PPUR algorithm to measure the number of parallel rounds (depth) needed for convergence. You then plot the average parallel rounds h versus input size n for parameter values d3 < 2 and verify the logarithmic growth trend.
+
+**Why it shows you understood the paper:** This project shows you understand the paper's core empirical claim that the parallel depth grows polylogarithmically for most random instances, and you can faithfully reproduce one of the key figures illustrating this behavior.
+
+**Grounded in:** Claim 5.1 and Observations 5.1.1 and 5.1.2 show empirical data and figures illustrating logarithmic growth of h with input size n.
+
+**Tech stack:** Python 3.11, matplotlib, numpy
+
+**Data:** Random 1-3-Horn-SAT formulas generated synthetically using the random model described in Section 4 of the paper.
+
+**Build it:**
+
+1. Implement a random 1-3-Horn-SAT formula generator following the parameters d1 and d3 as described in the paper.
+2. Implement the Parallel Positive Unit Resolution (PPUR) algorithm in a simplified form to simulate parallel rounds until convergence.
+3. Run experiments varying input size n and parameters d1, d3 with d3 < 2, recording the number of parallel rounds h.
+4. Plot h versus log n to observe the polylogarithmic growth trend.
+5. Write a README explaining the setup, results, and how they relate to the paper's findings.
+
+**Ships as:** A GitHub repo with code to generate formulas, run PPUR, produce plots showing logarithmic growth of parallel rounds, and a README linking the results to the paper's empirical claims.
+
+**Stretch goal:** Add measurements for parameter values d3 ≥ 2 and observe the behavior outside the critical region.
+
+### Intermediate — Implement and Compare PPUR and GP Algorithms on Random Horn-SAT
+*Effort: 1-3 weekends, ~20 hours*
+
+You implement both the PPUR algorithm (as described in the paper) and the original Greedy Parallel (GP) algorithm for Horn-SAT. Using the same random 1-3-Horn-SAT formula generator, you empirically measure and compare the parallel depths (number of rounds) of both algorithms across various parameter settings, including satisfiable and unsatisfiable instances.
+
+**Why it shows you understood the paper:** This project demonstrates your ability to reimplement the paper's core parallel algorithms, understand their relationship, and empirically validate the claim that PPUR's depth is at most twice that of GP on unsatisfiable instances, deepening your grasp of the paper's algorithmic contributions.
+
+**Grounded in:** Section D explains the relationship between PPUR and GP algorithms and provides informal proof that PPUR depth is upper bounded by twice the GP depth on unsatisfiable instances.
+
+**Tech stack:** Python 3.11, matplotlib, numpy
+
+**Data:** Synthetic random 1-3-Horn-SAT formulas generated as per the paper's random model.
+
+**Build it:**
+
+1. Implement the Greedy Parallel (GP) algorithm for Horn-SAT as described in the paper or related literature.
+2. Implement the Parallel Positive Unit Resolution (PPUR) algorithm as a simplified variant.
+3. Generate random 1-3-Horn-SAT formulas with varying parameters and input sizes.
+4. Run both algorithms on the same instances, recording the number of parallel rounds until convergence or unsatisfiability detection.
+5. Plot and compare the parallel depths of PPUR and GP, highlighting cases where PPUR takes up to twice as many rounds.
+6. Document the implementation details, experimental setup, and analysis in a README.
+
+**Ships as:** A GitHub repo containing implementations of PPUR and GP, experimental scripts comparing their parallel depths on random Horn-SAT instances, plots illustrating their relationship, and a detailed README.
+
+**Stretch goal:** Add a simple baseline sequential Horn-SAT solver to compare parallel speedups and discuss practical implications.
+
+### Advanced — Adaptive Parallel Algorithm for Detecting and Handling High-Depth Horn-SAT Instances
+*Effort: a few weeks, ~40+ hours*
+
+You design and implement an adaptive parallel Horn-SAT solver that monitors the parallel depth during execution and dynamically switches strategies or heuristics when detecting instances with potentially high depth (pathological cases near the critical parameter region). You evaluate your approach on synthetic random 1-3-Horn-SAT formulas, measuring improvements in handling rare hard instances while maintaining efficiency on typical cases.
+
+**Why it shows you understood the paper:** This project addresses a key future direction from the paper by tackling the challenge of pathological high-depth instances. It shows your ability to extend the paper's empirical insights into practical algorithm design, bridging theory and application in parallel algorithms.
+
+**Grounded in:** Future direction: Investigate how to identify and handle pathological cases with high parallel depth.
+
+**Tech stack:** Python 3.11, matplotlib, numpy
+
+**Data:** Synthetic random 1-3-Horn-SAT formulas generated as per the paper's random model, focusing on parameter regions near the critical point d1 = d1*.
+
+**Build it:**
+
+1. Implement the PPUR algorithm with instrumentation to monitor parallel rounds and convergence progress.
+2. Develop heuristics or criteria to detect when the algorithm is entering a high-depth (pathological) regime, e.g., based on round counts or lack of progress.
+3. Design adaptive strategies such as switching to alternative parallel heuristics, early termination, or fallback sequential methods.
+4. Generate random Horn-SAT instances focusing on critical parameter regions known to cause high depth.
+5. Evaluate the adaptive algorithm's performance compared to standard PPUR on these instances, measuring parallel rounds and runtime.
+6. Document the design decisions, experimental results, and implications for practical parallel Horn-SAT solving.
+
+**Ships as:** A GitHub repo with the adaptive parallel Horn-SAT solver implementation, experimental evaluation scripts, plots showing improved handling of pathological cases, and a comprehensive README discussing the approach and results.
+
+**Stretch goal:** Extend the adaptive approach to other P-complete problems or real-world Horn-SAT instances if available.

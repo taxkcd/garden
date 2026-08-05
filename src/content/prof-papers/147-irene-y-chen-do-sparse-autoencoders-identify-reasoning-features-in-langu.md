@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-irene-y-chen"
-source_hash: "84113331a657a768ad0e7fd17cb8b58a4d97bab40a60fa52fe5b71a675879bf8"
+source_hash: "d3ff1ee8a10bd630a401635c3c09cd8c1c491960ba252523da4615a398b5d8eb"
 sequence: 147
 generator: "outreach-garden: managed"
 ---
@@ -132,3 +132,99 @@ Hearing directly from the authors provides insights into their motivations, meth
 ## Already in your library
 
 - [A Friendly Introduction to Generative Adversarial Networks (GANs)](https://www.youtube.com/watch?v=8L11aMN5KY8) — also for: CCS‑GAN: COVID‑19 CT Scan Generation and Classification with Very Few Positive Training Images (Yaacov Yesha)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder to demonstrate your understanding of the paper's core findings and methods on sparse autoencoders (SAEs) and reasoning feature interpretability in language models. The beginner project reproduces a key token-injection activation analysis using the authors' released code. The intermediate project extends the falsification framework by applying it to a public reasoning dataset and comparing lexical confound effects. The advanced project tackles a future direction by exploring distributed, nonlinear feature representations beyond monosemantic SAE features, addressing a key limitation of the paper.
+
+### Beginner — Reproduce Token Injection Activation Analysis
+*Effort: a weekend, ~8 hours*
+
+You build a minimal pipeline that uses the authors' released code to reproduce the token injection experiment showing that many candidate reasoning features are strongly activated by inserting associated tokens into non-reasoning text. You will run the provided sparse autoencoder models on sample inputs, perform token injection, and plot activation changes.
+
+**Why it shows you understood the paper:** This project shows you understand the paper's key empirical finding that lexical cues drive many SAE features attributed to reasoning, and you can use the authors' codebase to replicate their falsification method.
+
+**Grounded in:** Between 45% and 90% of candidate reasoning features are strongly activated by inserting a few associated tokens into non-reasoning text, indicating token-driven confounds.
+
+**Tech stack:** Python 3.11, PyTorch, matplotlib, Jupyter Notebook
+
+**Data:** Use the example inputs and pretrained SAE models provided in the authors' GitHub repository https://github.com/GeorgeMLP/reasoning-probing.
+
+**Build it:**
+
+1. Clone the authors' repository https://github.com/GeorgeMLP/reasoning-probing and install dependencies.
+2. Load the pretrained sparse autoencoder models and sample reasoning and non-reasoning text inputs.
+3. Implement token injection by inserting activating tokens into non-reasoning inputs as described in the paper.
+4. Compute and plot the activation changes of candidate SAE features before and after token injection.
+5. Compare your plots to the paper's figures demonstrating token-driven feature activation.
+
+**Verified links from the paper:**
+
+- <https://github.com/GeorgeMLP/reasoning-probing> — released by the paper's authors
+
+**Ships as:** A Jupyter notebook with code and plots reproducing token injection activation results, plus a README explaining the experiment and findings.
+
+**Stretch goal:** Add a simple CLI interface to run token injection experiments on arbitrary input texts.
+
+### Intermediate — Apply Falsification Framework on Public Reasoning Dataset
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement the paper's falsification framework combining causal token injection and LLM-guided adversarial counterexample generation, applying it to a public reasoning benchmark such as the GSM8K dataset (a widely used math reasoning dataset). You compare the activation patterns of SAE features on original vs. token-injected and adversarially perturbed inputs, quantifying lexical confound effects.
+
+**Why it shows you understood the paper:** This project demonstrates you can implement the core falsification methodology from the paper, adapt it to a new dataset, and critically evaluate whether SAE features truly represent reasoning or lexical cues.
+
+**Grounded in:** Development of a falsification-oriented evaluation framework combining causal token injection and LLM-guided counterexample generation; comprehensive empirical evaluation across multiple models, layers, and reasoning datasets.
+
+**Tech stack:** Python 3.11, PyTorch, OpenAI API or HuggingFace transformers for LLM-guided counterexample generation, matplotlib, Jupyter Notebook
+
+**Data:** Use the GSM8K dataset (public math word problem dataset) as a substitute for the paper's reasoning datasets.
+
+**Build it:**
+
+1. Reimplement the sparse autoencoder training or use pretrained SAE models from the authors' codebase if compatible.
+2. Load the GSM8K dataset and preprocess it for input to the SAE models.
+3. Implement causal token injection by inserting activating tokens into non-reasoning or unrelated GSM8K problems.
+4. Use an LLM (e.g., OpenAI GPT or HuggingFace model) to generate adversarial counterexamples that produce false positives and false negatives for candidate SAE features.
+5. Measure and plot feature activations across original, token-injected, and adversarial inputs to evaluate lexical confound effects.
+6. Compare your results to the paper's reported metrics and discuss similarities or differences.
+
+**Verified links from the paper:**
+
+- <https://github.com/GeorgeMLP/reasoning-probing> — released by the paper's authors
+
+**Ships as:** A Jupyter notebook and report demonstrating the falsification framework applied to GSM8K, with quantitative and qualitative analyses of SAE feature activations.
+
+**Stretch goal:** Add a simple dashboard to visualize feature activations and adversarial examples interactively.
+
+### Advanced — Explore Distributed and Nonlinear Reasoning Representations
+*Effort: 3+ weeks*
+
+You extend the paper's work by investigating distributed or nonlinear representations of reasoning in language models that go beyond monosemantic SAE features. You design and implement methods to analyze combinations of multiple SAE features or nonlinear transformations thereof, testing whether these better capture genuine reasoning signals. You apply an extended falsification framework to evaluate these representations.
+
+**Why it shows you understood the paper:** This project addresses a key limitation and future direction from the paper, showing deep comprehension of the challenges in mechanistic interpretability and the ability to innovate beyond the original methods.
+
+**Grounded in:** The study does not address nonlinear or multi-feature representations of reasoning that resist single-feature attribution; future direction to investigate distributed representations across multiple features or nonlinear combinations.
+
+**Tech stack:** Python 3.11, PyTorch, scikit-learn, OpenAI API or HuggingFace transformers, matplotlib, Jupyter Notebook
+
+**Data:** Use the same reasoning datasets as the paper or public datasets like GSM8K; pretrained SAE models from the authors' codebase as a starting point.
+
+**Build it:**
+
+1. Review the authors' SAE feature extraction and contrastive activation methods.
+2. Develop methods to combine multiple SAE features linearly and nonlinearly (e.g., via PCA, clustering, or small neural networks) to form composite reasoning feature representations.
+3. Extend the falsification framework to test these composite features using token injection and LLM-guided adversarial counterexamples.
+4. Evaluate whether composite features show more robust correlation with reasoning presence than individual features.
+5. Document qualitative and quantitative results, comparing to the original single-feature analysis.
+6. Discuss implications for interpretability methods and propose further improvements.
+
+**Verified links from the paper:**
+
+- <https://github.com/GeorgeMLP/reasoning-probing> — released by the paper's authors
+
+**Ships as:** A comprehensive GitHub repository with code, notebooks, and a detailed report presenting the exploration of distributed reasoning representations and their falsification evaluation.
+
+**Stretch goal:** Implement a visualization tool to explore feature combinations and their activations interactively.

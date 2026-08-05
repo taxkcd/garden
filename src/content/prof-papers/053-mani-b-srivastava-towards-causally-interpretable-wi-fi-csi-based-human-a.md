@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-mani-b-srivastava"
-source_hash: "af6d15f85a60934818efd42f8e0d535b3d42724c83614137939a3b08c6e8ebac"
+source_hash: "5ab16def5deee3a1fe2c96151d53024f60267489e86ee906350e58ce1319af1f"
 sequence: 53
 generator: "outreach-garden: managed"
 ---
@@ -140,3 +140,96 @@ Finally, watch a talk focused on Wi-Fi based human activity recognition systems 
 
 - [ICCKE 2021 - CSI-Based Human Activity Recognition using ...](https://www.youtube.com/watch?v=SnGlVwdVwsk) — also for: Towards Causally Interpretable Wi-Fi CSI-Based Human Activity Recognition with Discrete Latent Compression and LTL Rule Extraction (Mani B. Srivastava)
 - [Categorical Reparameterization with Gumbel-Softmax & The Concrete Distribution](https://www.youtube.com/watch?v=JFgXEbgcT7g) — also for: Towards Causally Interpretable Wi-Fi CSI-Based Human Activity Recognition with Discrete Latent Compression and LTL Rule Extraction (Mani B. Srivastava)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder to demonstrate your understanding of the CHARL-TRE pipeline for causally interpretable Wi-Fi CSI-based human activity recognition. The beginner project focuses on reproducing the discrete latent compression step using categorical variational autoencoders with Gumbel-Softmax, the core technical novelty of the paper. The intermediate project implements the full CHARL-TRE pipeline on a public Wi-Fi CSI dataset, including causal discovery and LTL rule extraction, to reproduce classification accuracy and interpretability results. The advanced project extends the pipeline by exploring non-linear causal discovery methods or longer temporal horizons, addressing a key limitation and future direction of the paper.
+
+### Beginner — Discrete Latent Compression of Wi-Fi CSI Using Categorical VAE
+*Effort: a weekend, ~8 hours*
+
+You build a categorical variational autoencoder (VAE) with Gumbel-Softmax latent variables to compress raw Wi-Fi CSI magnitude windows into discrete latent codes. You train the VAE on a small subset of a public Wi-Fi CSI dataset and freeze the encoder to produce deterministic one-hot latent representations.
+
+**Why it shows you understood the paper:** This project demonstrates your grasp of the paper's key representation learning step, showing you can implement discrete latent compression that enables symbolic reasoning downstream.
+
+**Grounded in:** Use of categorical variational autoencoders with Gumbel-Softmax to obtain discrete latent representations amenable to symbolic reasoning.
+
+**Tech stack:** Python 3.11, PyTorch, NumPy, Matplotlib, Jupyter Notebook
+
+**Data:** Use a publicly available Wi-Fi CSI dataset with raw magnitude windows (e.g., the dataset referenced in the paper or a substitute public CSI dataset).
+
+**Build it:**
+
+1. Download and preprocess raw Wi-Fi CSI magnitude windows from the public dataset.
+2. Implement a categorical VAE with Gumbel-Softmax latent variables in PyTorch.
+3. Train the VAE to reconstruct CSI windows, monitoring reconstruction loss.
+4. Freeze the encoder and generate deterministic one-hot latent codes for test samples.
+5. Visualize latent codes over time to inspect discrete latent trajectories.
+
+**Ships as:** A GitHub repo with code, a Jupyter notebook showing training and latent code extraction, and visualizations of discrete latent trajectories.
+
+**Stretch goal:** Add a simple baseline using continuous latent variables (standard VAE) and compare reconstruction quality and latent code discreteness.
+
+### Intermediate — Reimplementation of CHARL-TRE Pipeline for Wi-Fi CSI Human Activity Recognition
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement the full CHARL-TRE pipeline: discrete latent compression with categorical VAE, causal discovery on latent trajectories using LPCMCI with partial correlation tests, and extraction of Linear Temporal Logic (LTL) rules for symbolic classification. You evaluate classification accuracy on a public Wi-Fi CSI dataset with multiple activities and compare against a simple baseline such as a neural network classifier.
+
+**Why it shows you understood the paper:** This project shows you can integrate representation learning, causal discovery, and symbolic reasoning as in the paper, reproducing key results like >70% accuracy and interpretable LTL rules.
+
+**Grounded in:** Development of CHARL-TRE, a pipeline combining unsupervised discrete latent compression of Wi-Fi CSI with causal discovery and symbolic LTL rule extraction for HAR; CHARL-TRE achieves competitive deterministic classification accuracy exceeding 70%.
+
+**Tech stack:** Python 3.11, PyTorch, NumPy, pandas, matplotlib, networkx, ltl3tools or custom LTL parser, Jupyter Notebook
+
+**Data:** Use the public Wi-Fi CSI dataset referenced in the paper or a substitute public dataset with labeled human activities.
+
+**Build it:**
+
+1. Implement or reuse the categorical VAE from the beginner project to encode CSI windows into discrete latent codes.
+2. Implement LPCMCI causal discovery with partial correlation tests on latent time series (using or adapting code from https://github.com/ansresearch/exposing-the-csi).
+3. Translate inferred causal temporal dependencies into LTL rules representing temporal patterns for each activity class.
+4. Implement a symbolic classifier that applies these LTL rules to classify latent trajectories deterministically.
+5. Evaluate classification accuracy and precision/recall metrics on the dataset, comparing against a simple neural network baseline.
+6. Visualize example LTL rules and their empirical support to demonstrate interpretability.
+
+**Verified links from the paper:**
+
+- <https://github.com/ansresearch/exposing-the-csi> — a third-party/baseline artifact the paper cites — not the authors' own code
+
+**Ships as:** A GitHub repo with code for the full pipeline, evaluation scripts, and a detailed README explaining the pipeline steps, results, and example LTL rules.
+
+**Stretch goal:** Add multi-antenna fusion by logically combining antenna-specific rule sets at the symbolic level without retraining the encoder.
+
+### Advanced — Extending CHARL-TRE with Non-Linear Causal Discovery and Longer Temporal Horizons
+*Effort: 3+ weeks*
+
+You extend the CHARL-TRE pipeline by integrating non-linear causal discovery methods (e.g., kernel-based or mutual information tests) and/or increasing the temporal lag horizon beyond τ ≤ 5 to capture richer temporal dependencies in the latent space. You evaluate the impact on classification accuracy and interpretability on the Wi-Fi CSI dataset, addressing a key limitation and future direction of the paper.
+
+**Why it shows you understood the paper:** This project demonstrates deep comprehension of the paper's limitations and advances the state of the art by improving causal discovery while preserving symbolic interpretability, potentially opening new research directions.
+
+**Grounded in:** Explore non-linear causal tests and extend temporal horizons beyond τ ≤ 5 to capture richer temporal dependencies.
+
+**Tech stack:** Python 3.11, PyTorch, NumPy, pandas, scikit-learn, networkx, Jupyter Notebook, causal discovery libraries supporting non-linear tests (e.g., tigramite extensions or custom implementations)
+
+**Data:** Use the same public Wi-Fi CSI dataset as in the intermediate project.
+
+**Build it:**
+
+1. Review and understand the LPCMCI causal discovery implementation and its linear partial correlation tests.
+2. Research and implement or integrate non-linear causal discovery tests suitable for time series (e.g., kernel-based conditional independence tests or mutual information-based tests).
+3. Modify the causal discovery step to allow temporal lags greater than 5 and evaluate computational feasibility.
+4. Apply the extended causal discovery to the discrete latent trajectories from the categorical VAE encoder.
+5. Translate the richer causal graphs into LTL rules and update the symbolic classifier accordingly.
+6. Evaluate classification accuracy, interpretability (rule complexity), and computational cost compared to the original pipeline.
+7. Document findings and discuss trade-offs between richer causal discovery and interpretability.
+
+**Verified links from the paper:**
+
+- <https://github.com/ansresearch/exposing-the-csi> — a third-party/baseline artifact the paper cites — not the authors' own code
+
+**Ships as:** A GitHub repo with extended causal discovery code, updated symbolic classifier, evaluation scripts, and a comprehensive report comparing original and extended methods.
+
+**Stretch goal:** Investigate semantic interpretability of latent variables by correlating latent propositions with physical CSI phenomena using domain knowledge or visualization.

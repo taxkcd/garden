@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-souyoungjin-github-io"
-source_hash: "278502ffe2f991678f3a2f4b79d010dc30bf3c9a3d53d68fa84bf80686172f92"
+source_hash: "abab9655cf87ceef577fd2e766c14272f1437b1ec8f75915576ba178bce08419"
 sequence: 47
 generator: "outreach-garden: managed"
 ---
@@ -121,3 +121,87 @@ Dive into the challenges and methods for evaluating reasoning in multimodal AI s
 - [LLaMA-Adapter - 5-Minute Student Presentation by Wayner Barrios and Baris Yildirim @dartmouth](https://www.youtube.com/watch?v=go-oWBTi90M) — also for: Beyond Final Answers: CRYSTAL Benchmark for Transparent Multimodal Reasoning Evaluation (Sou-Young Jin)
 - [Stanford CS25: Transformers United V6 I From Language ...](https://www.youtube.com/watch?v=NDdc39KYqDU) — also for: Beyond Final Answers: CRYSTAL Benchmark for Transparent Multimodal Reasoning Evaluation (Sou-Young Jin)
 - [LLM Reasoning @ DLCT](https://www.youtube.com/watch?v=x7kg0JR8dTg) — also for: Beyond Final Answers: CRYSTAL Benchmark for Transparent Multimodal Reasoning Evaluation (Sou-Young Jin)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive ladder to demonstrate understanding of the CRYSTAL benchmark paper. The beginner project reproduces and visualizes the paper's novel step-level reasoning metrics on a small synthetic example, grounding you in the core evaluation concepts. The intermediate project reimplements the Causal Process Reward (CPR) training method on a smaller multimodal reasoning dataset, showing practical application of the paper's reinforcement learning approach. The advanced project extends the Ordered Match F1 metric to model causal dependencies between reasoning steps, addressing a key limitation and exploring new evaluation methods.
+
+### Beginner — Visualize Step-Level Reasoning Metrics on Synthetic Data
+*Effort: a weekend, ~8 hours*
+
+You build a small Python script that simulates simple multimodal reasoning chains and computes the Match F1 and Ordered Match F1 metrics as defined in the paper. You create visualizations to illustrate how these metrics capture reasoning quality and order, reproducing the intuition behind the paper's evaluation approach.
+
+**Why it shows you understood the paper:** This project demonstrates you grasp the paper's core contribution of step-level reasoning evaluation metrics and their importance in diagnosing reasoning quality beyond final answers.
+
+**Grounded in:** Novel evaluation metrics (Match F1 and Ordered Match F1) that assess reasoning quality and order
+
+**Tech stack:** Python 3.11, matplotlib, numpy, Jupyter Notebook
+
+**Data:** Synthetic reasoning step sequences you create to simulate partial matches, missing steps, and order variations, inspired by examples in the paper.
+
+**Build it:**
+
+1. Implement functions to compute Match F1 and Ordered Match F1 between two sequences of reasoning steps.
+2. Generate synthetic pairs of reasoning chains with varying degrees of overlap and order correctness.
+3. Compute metrics on these pairs and tabulate results.
+4. Visualize metric values against different reasoning error types using plots.
+5. Write a README explaining the metrics, your synthetic data design, and interpretation of results.
+
+**Ships as:** A Jupyter Notebook or Python script with metric implementations, synthetic data generation, plots illustrating metric behavior, and a README explaining the evaluation concepts.
+
+**Stretch goal:** Add a simple web UI using React to allow interactive input of reasoning chains and live metric computation.
+
+### Intermediate — Reimplement CPR Training on a Small Multimodal Reasoning Dataset
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement the Causal Process Reward (CPR) training method described in the paper to improve reasoning quality of a multimodal model on a smaller public vision-language reasoning dataset (e.g., VQA or NLVR2 as a substitute). You compare baseline training with CPR-based reinforcement learning and report Match F1 and accuracy improvements.
+
+**Why it shows you understood the paper:** This project shows you understand the paper's core method of coupling answer correctness with reasoning alignment via CPR and can apply reinforcement learning to improve multimodal reasoning quality.
+
+**Grounded in:** Causal Process Reward (CPR) and CPR-Curriculum training methods that improve reasoning quality
+
+**Tech stack:** Python 3.11, PyTorch, transformers, Jupyter Notebook
+
+**Data:** A publicly available vision-language reasoning dataset such as VQA or NLVR2, used as a substitute for CRYSTAL data since the authors released no code or dataset.
+
+**Build it:**
+
+1. Implement Match F1 metric for step-level reasoning alignment based on paper description.
+2. Set up a baseline multimodal model training pipeline on the chosen dataset.
+3. Implement CPR as a multiplicative reward combining answer correctness and reasoning alignment.
+4. Train the model with and without CPR-based reinforcement learning.
+5. Evaluate and compare Match F1 and accuracy metrics between baseline and CPR-trained models.
+6. Document your implementation details, results, and analysis in a README.
+
+**Ships as:** A GitHub repo with code to train and evaluate a multimodal model using CPR, scripts to compute Match F1, and a report comparing baseline and CPR training results.
+
+**Stretch goal:** Implement the CPR-Curriculum progressive training strategy and evaluate its impact on reasoning quality.
+
+### Advanced — Extend Ordered Match F1 to Model Causal Dependencies in Reasoning Steps
+*Effort: 3+ weeks*
+
+You develop an extension of the Ordered Match F1 metric that incorporates modeling of causal dependencies between reasoning steps, addressing a key limitation noted in the paper. You design and implement a method to evaluate causal coherence in reasoning chains and test it on synthetic or publicly available multimodal reasoning data.
+
+**Why it shows you understood the paper:** This project demonstrates deep comprehension of the paper's limitations and advances the evaluation of multimodal reasoning by integrating causal structure into step-level metrics, potentially opening new research directions.
+
+**Grounded in:** Ordered Match F1 metric does not yet model causal dependencies between reasoning steps
+
+**Tech stack:** Python 3.11, networkx, numpy, matplotlib, Jupyter Notebook
+
+**Data:** Synthetic reasoning chains annotated with causal dependency graphs you create, or adapted from public multimodal reasoning datasets with step annotations.
+
+**Build it:**
+
+1. Review the Ordered Match F1 metric and identify how to incorporate causal dependency modeling.
+2. Design a representation for causal dependencies between reasoning steps (e.g., directed acyclic graphs).
+3. Implement an extended metric that evaluates both order and causal coherence between predicted and reference reasoning chains.
+4. Generate synthetic reasoning chains with known causal structures to validate your metric.
+5. Compare your extended metric against Ordered Match F1 on these examples.
+6. Write a detailed README explaining your metric design, implementation, and experimental validation.
+
+**Ships as:** A GitHub repo with code implementing the causal-aware reasoning metric, synthetic data generation scripts, evaluation results, and a comprehensive README.
+
+**Stretch goal:** Apply your causal reasoning metric to evaluate outputs from existing multimodal models and analyze their causal reasoning quality.

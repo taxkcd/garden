@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-vijay-ganesh"
-source_hash: "c5da6604c8279924c57883b6a9680184c449e297da0728d64b806f42611615ee"
+source_hash: "0dbe8aea17234599670dce2ac41b50e1399b46aa8b82bfbd6faa6e5a35932df9"
 sequence: 82
 generator: "outreach-garden: managed"
 ---
@@ -133,3 +133,95 @@ Proofdoors are a novel semantic structural parameter introduced to explain why C
 *How the paper uses it:* The paper introduces and empirically validates proofdoors as the key parameter explaining CDCL solver scalability on BMC instances.
 
 ▶ [Algorithmic utilization of structure in SAT instances](https://www.youtube.com/watch?v=WhyS2ONbvsU) — Simons Institute for the Theory of Computing · 5 years ago
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder to demonstrate understanding of the paper "Understanding CDCL Solvers via Scalability Studies and Proofdoors." Starting from a beginner-level reproduction of solver runtime scaling on a small BMC instance set, progressing to an intermediate project that runs and extends the authors' proofdoor computation tools on public or synthetic BMC CNF formulas, and culminating in an advanced project that explores machine learning approximations of proofdoor structures to address the paper's NP-hardness limitation.
+
+### Beginner — CDCL Solver Runtime Scaling on Small BMC Instances
+*Effort: a weekend, ~8 hours*
+
+You build a small-scale experiment to reproduce the paper's core observation that CDCL solver runtimes on BMC CNF instances exhibit linear, polynomial, or exponential scaling. Using a modern CDCL solver (e.g., CaDiCaL or MiniSat) with preprocessing disabled, you generate or obtain a small set of BMC CNF formulas (synthetic or public) with increasing sizes and measure solver runtimes. You then fit simple models (linear, polynomial, exponential) to the runtime data and classify the scaling behavior.
+
+**Why it shows you understood the paper:** This project shows you understand the paper's foundational scalability study methodology and the importance of classifying solver runtime scaling regimes on BMC instances, a key empirical contribution.
+
+**Grounded in:** Conducted a large-scale scalability study of 766 BMC families (76,600+ instances), revealing a spectrum of CDCL solver scaling behaviors: linear, polynomial, and exponential.
+
+**Tech stack:** Python 3.11, CaDiCaL or MiniSat SAT solver, NumPy, Matplotlib, scipy
+
+**Data:** A small set (10-20) of publicly available or synthetically generated BMC CNF formulas with increasing sizes, as a substitute for the paper's large BMC dataset.
+
+**Build it:**
+
+1. Obtain or generate a small set of BMC CNF formulas with increasing problem sizes.
+2. Run a CDCL SAT solver (CaDiCaL or MiniSat) on each formula with preprocessing disabled, recording runtimes.
+3. Fit linear, polynomial, and exponential models to the runtime data using Python.
+4. Classify each instance's scaling behavior based on the best-fitting model.
+5. Plot runtime vs. instance size with fitted curves to visualize scaling regimes.
+6. Write a README explaining the experiment, results, and connection to the paper.
+
+**Ships as:** A GitHub repo with scripts to run solver experiments, runtime fitting code, plots showing scaling regimes, and a README linking the results to the paper's scalability study.
+
+**Stretch goal:** Add runtime experiments with scrambled versions of the CNF formulas to observe solver slowdown effects.
+
+### Intermediate — Proofdoor Computation and Absorption Analysis on BMC Instances
+*Effort: 2 weekends, ~20 hours*
+
+You clone and run the authors' ProofDoorTools repository to compute proofdoors on a manageable subset of BMC CNF instances (either from the paper's released data or synthetic substitutes). You extend the toolchain to analyze clause absorption by the CDCL solver on these instances, reproducing the paper's key metric that small proofdoors are incrementally absorbed on linear scaling instances. You compare proofdoor sizes and absorption heatmaps between linear and exponential scaling instances.
+
+**Why it shows you understood the paper:** This project demonstrates you can operate the authors' core method, understand proofdoor computation and absorption proxies, and reproduce the semantic structural parameter that explains solver efficiency.
+
+**Grounded in:** Introduced and empirically validated the proofdoor parameter as a semantic structural measure that explains CDCL solver efficiency by capturing localized reasoning and memoization.
+
+**Tech stack:** Python 3.11, Git, Linux shell, CaDiCaL SAT solver, matplotlib, numpy
+
+**Data:** Use the authors' released ProofDoorTools code and either their small example BMC CNF instances or synthetically generated BMC CNFs for proofdoor computation.
+
+**Build it:**
+
+1. Clone https://github.com/ShiminZhang/ProofDoorTools and set up the environment.
+2. Run the proofdoor computation on a small set of BMC CNF instances (linear and exponential scaling).
+3. Run CDCL solver absorption analysis on computed proofdoor clauses to generate absorption heatmaps.
+4. Visualize and compare proofdoor sizes and absorption patterns between instance classes.
+5. Document the process, results, and how they relate to the paper's findings.
+
+**Verified links from the paper:**
+
+- <https://github.com/ShiminZhang/ProofDoorTools> — released by the paper's authors
+
+**Ships as:** A GitHub repo with scripts to run proofdoor computations and absorption analysis, visualizations of proofdoor sizes and absorption heatmaps, and a README explaining the reproduction and insights.
+
+**Stretch goal:** Add a simple baseline comparison using classical structural parameters (clause-variable ratio, treewidth) to show their failure to discriminate scaling regimes.
+
+### Advanced — Machine Learning Approximation of Proofdoor Structures to Guide CDCL Heuristics
+*Effort: 3+ weeks*
+
+You develop a machine learning model to predict or approximate proofdoor structures from BMC CNF instance features, addressing the paper's limitation that exact proofdoor computation is NP-hard and often infeasible on large industrial instances. Using features such as variable incidence graphs, clause statistics, and partial interpolants, you train a model on small instances with known proofdoors (from ProofDoorTools) and test its generalization. You then integrate the predicted proofdoor information to guide branching heuristics in a CDCL solver (e.g., prioritize interface variables), evaluating solver runtime improvements on held-out instances.
+
+**Why it shows you understood the paper:** This project tackles a key limitation and future direction from the paper by combining empirical solver analysis with machine learning to approximate semantic structural parameters, demonstrating deep comprehension and innovation based on the paper.
+
+**Grounded in:** Given that proofdoor computation is NP-hard and challenging on large instances, have you considered integrating machine learning techniques to predict or approximate proofdoor structures to guide solver heuristics more efficiently?
+
+**Tech stack:** Python 3.11, scikit-learn or PyTorch, CaDiCaL SAT solver, networkx, numpy, matplotlib
+
+**Data:** Small BMC CNF instances with computed proofdoors from ProofDoorTools for training; synthetic or public BMC CNFs for testing and evaluation.
+
+**Build it:**
+
+1. Extract graph and clause features from BMC CNF instances with known proofdoors.
+2. Train a machine learning model (e.g., random forest or GNN) to predict proofdoor-related metrics or clause importance.
+3. Validate model predictions on held-out instances and analyze accuracy.
+4. Modify a CDCL solver's branching heuristic to prioritize variables predicted to be in the proofdoor.
+5. Evaluate solver runtime on test instances with and without ML-guided heuristics.
+6. Document methodology, results, limitations, and relation to the paper's future directions.
+
+**Verified links from the paper:**
+
+- <https://github.com/ShiminZhang/ProofDoorTools> — released by the paper's authors
+
+**Ships as:** A GitHub repo containing ML training and evaluation code, modified solver heuristics scripts, performance comparison plots, and a detailed README discussing the approach and its connection to the paper's limitations and future work.
+
+**Stretch goal:** Extend the ML model to predict proofdoor sizes or absorption likelihood to further refine solver guidance.

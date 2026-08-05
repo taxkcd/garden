@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-mark-a-horowitz"
-source_hash: "562cdd55deae7da4a7587d11937db2c47b9589f920b64b2906386172601a51c5"
+source_hash: "5f25423bbe1e54c030a784b22ae51c4578651ba8e9cc3f93850f51205295b47b"
 sequence: 58
 generator: "outreach-garden: managed"
 ---
@@ -149,3 +149,90 @@ This video provides a direct explanation of the extended GCD algorithm and its a
 
 - [Silicon Salon III: Kavya Sreedhar Presentation](https://www.youtube.com/watch?v=liMA-8zmu1E) — also for: A Fast Large-Integer Extended GCD Algorithm and Hardware Design for Verifiable Delay Functions and Modular Inversion (Mark A. Horowitz)
 - [Verifiable Delay Functions](https://www.youtube.com/watch?v=_-feyaZZjEw) — also for: A Fast Large-Integer Extended GCD Algorithm and Hardware Design for Verifiable Delay Functions and Modular Inversion (Mark A. Horowitz)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a practical learning ladder to demonstrate understanding of the paper's novel hardware-accelerated extended GCD (XGCD) algorithm using Stein's subtraction-based method with carry-save adders. The beginner project reproduces the core Stein's algorithm in software to grasp the algorithmic foundation. The intermediate project implements a simplified hardware simulation of the two-bit PM Stein algorithm to compare iteration counts and execution time against Euclid's algorithm, reflecting the paper's key hardware acceleration insight. The advanced project extends the design toward one of the paper's future directions by exploring polynomial GCD computations in software-hardware co-design, showing ability to innovate beyond the paper's current scope.
+
+### Beginner — Software Implementation of Stein's Extended GCD Algorithm
+*Effort: a weekend, ~8 hours*
+
+You build a clean, well-documented software implementation of the extended Stein's GCD algorithm (two-bit PM variant) for large integers in C++ or Python. You then verify correctness by comparing outputs to the classical extended Euclidean algorithm on sample inputs.
+
+**Why it shows you understood the paper:** This project shows you understand the core algorithmic innovation of the paper—using Stein's subtraction-based approach for XGCD—and can implement it faithfully, which is foundational before hardware acceleration.
+
+**Grounded in:** Development of a complete extended two-bit PM algorithm with efficient updates for Bézout coefficients.
+
+**Tech stack:** C++17 or Python 3.11
+
+**Data:** Randomly generated large integer pairs (e.g., 256-bit) synthesized in code to test correctness and performance.
+
+**Build it:**
+
+1. Implement the classical extended Euclidean algorithm for baseline comparison.
+2. Implement Stein's two-bit PM extended GCD algorithm following the paper's pseudocode.
+3. Write test cases comparing outputs of both algorithms on random large integer inputs.
+4. Measure and report iteration counts and runtime for both algorithms on sample inputs.
+5. Document the algorithm steps and differences in a README.
+
+**Ships as:** A GitHub repo with source code, test scripts, performance comparison, and README explaining the algorithm and results.
+
+**Stretch goal:** Add visualization of the iteration steps and Bézout coefficient updates to illustrate the algorithm flow.
+
+### Intermediate — Simulated Hardware Accelerator for Two-Bit PM Stein XGCD
+*Effort: 2 weekends, ~20 hours*
+
+You build a cycle-accurate software simulation of the two-bit PM Stein extended GCD algorithm hardware accelerator, modeling carry-save adder delays and iteration timing. You compare iteration time and total execution cycles against a simulated Euclid division-based XGCD accelerator baseline.
+
+**Why it shows you understood the paper:** This project demonstrates understanding of the paper's key hardware insight that Stein's algorithm with carry-save adders yields faster iteration times despite more iterations, reflecting the paper's design space exploration and performance claims.
+
+**Grounded in:** Demonstration that Stein’s subtraction-based algorithm with carry-save adders outperforms Euclid’s algorithm in hardware despite higher iteration counts.
+
+**Tech stack:** C++17, Python 3.11 (for scripting/plotting), GitHub Actions for CI
+
+**Data:** Synthetic large integer inputs (e.g., 255-bit and 1024-bit) generated in code to simulate cryptographic bitwidths.
+
+**Build it:**
+
+1. Implement a cycle-accurate simulator modeling carry-save adder delays and iteration timing for Stein's two-bit PM algorithm.
+2. Implement a similar simulator for Euclid's division-based XGCD algorithm with modeled delays.
+3. Run both simulators on identical large integer inputs and record iteration counts and total simulated execution time.
+4. Plot and compare performance metrics to replicate the paper's key result graphs.
+5. Write a report summarizing the simulation approach, assumptions, and results.
+
+**Verified links from the paper:**
+
+- <https://github.com/kavyasreedhar/sreedhar-xgcd-hardware-ches2022> — a third-party/baseline artifact the paper cites — not the authors' own code
+
+**Ships as:** A GitHub repo containing simulators, scripts to run benchmarks, performance plots, and a detailed README explaining the hardware timing model and comparison.
+
+**Stretch goal:** Extend the simulator to model constant-time execution modes and analyze latency trade-offs.
+
+### Advanced — Polynomial GCD Computation with Stein's Algorithm: Software-Hardware Co-Design Exploration
+*Effort: 3+ weeks*
+
+You develop a software prototype implementing Stein's subtraction-based algorithm adapted for polynomial GCD computations over finite fields, inspired by the paper's future direction. You then design a simple hardware accelerator model (e.g., in Verilog or SystemVerilog) for key polynomial operations using carry-save adders and simulate its performance.
+
+**Why it shows you understood the paper:** This project tackles a stated future direction of the paper—extending the hardware design to polynomial GCD—demonstrating deep comprehension of the algorithmic principles and hardware design challenges, and the ability to innovate beyond the original work.
+
+**Grounded in:** Extending the hardware design to support polynomial GCD computations.
+
+**Tech stack:** Python 3.11 (for polynomial algorithm prototype), Verilog or SystemVerilog, ModelSim or open-source HDL simulator, C++ for performance-critical components
+
+**Data:** Synthetic polynomial pairs over finite fields generated in code to test correctness and performance.
+
+**Build it:**
+
+1. Implement Stein's subtraction-based GCD algorithm adapted for polynomials in Python.
+2. Validate correctness against classical polynomial Euclidean GCD implementations.
+3. Design a hardware module in Verilog for polynomial subtraction and carry-save addition operations.
+4. Simulate the hardware module to measure cycle counts and resource usage.
+5. Integrate software and hardware simulation results to analyze potential speedups and bottlenecks.
+6. Document design decisions, challenges, and future improvement ideas in a comprehensive README.
+
+**Ships as:** A GitHub repo with software polynomial GCD code, hardware HDL modules, simulation scripts, performance analysis, and detailed documentation.
+
+**Stretch goal:** Prototype a parameterizable hardware design supporting variable polynomial degrees and bitwidths, exploring trade-offs in area and speed.

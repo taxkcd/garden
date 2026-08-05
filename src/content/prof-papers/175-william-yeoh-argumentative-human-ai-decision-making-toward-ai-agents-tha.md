@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-william-yeoh"
-source_hash: "69f77b4aa5e5fbf7216a5223fd0579f0c250e7de292fcf0f36d21fb5cf0cb707"
+source_hash: "5693b07b814050f7ff51b3b989b91c6d5cdef9f68ae835f6effc51c94b5fc12e"
 sequence: 175
 generator: "outreach-garden: managed"
 ---
@@ -126,3 +126,87 @@ Argumentation mining extracts argumentative components from text, synthesis comb
 
 - [LLM Reasoning @ DLCT](https://www.youtube.com/watch?v=x7kg0JR8dTg) — also for: Beyond Final Answers: CRYSTAL Benchmark for Transparent Multimodal Reasoning Evaluation (Sou-Young Jin)
 - [Large Language Models explained briefly](https://www.youtube.com/watch?v=LPZh9BOjkQs) — also for: On-demand generation of high-quality software engineering datasets using large language models and ontologies (Suranjan Chakraborty)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive ladder to demonstrate your understanding of argumentative human-AI decision-making as proposed in the paper. The beginner project focuses on implementing a simple argument mining and visualization pipeline from unstructured text, reflecting the paper's core idea of argumentation mining with LLMs. The intermediate project reimplements the hybrid architecture combining LLM-based argument generation with a formal argumentation solver to produce contestable reasoning on a small dataset, showing the integration of probabilistic generation and deterministic evaluation. The advanced project extends the paradigm by designing and evaluating a multi-turn interactive argumentative AI agent prototype, addressing the paper's limitation on evaluation of multi-turn human-AI interactions and exploring new evaluation metrics and UI design.
+
+### Beginner — Argument Mining and Visualization from Text
+*Effort: a weekend, ~8 hours*
+
+You build a pipeline that uses a large language model (via API or open-source LLM) to extract argumentative components (claims, premises) and relations from a short unstructured text (e.g., a medical recommendation paragraph). Then you visualize the extracted argumentation framework as a directed graph in a web page.
+
+**Why it shows you understood the paper:** This project demonstrates your grasp of the paper's first core task: argumentation mining enhanced by LLMs, showing how unstructured text can be converted into structured argument graphs without extensive feature engineering.
+
+**Grounded in:** Key contribution: A taxonomy of three core argumentation tasks enhanced by LLMs: mining, synthesis, and reasoning.
+
+**Tech stack:** Python 3.11, OpenAI API or HuggingFace transformers, React.js, D3.js or Vis.js for graph visualization
+
+**Data:** Use publicly available short argumentative texts such as medical guidelines excerpts or scientific abstracts as input; no proprietary dataset required.
+
+**Build it:**
+
+1. Select or write a few short paragraphs containing argumentative text (e.g., medical decision recommendations).
+2. Use an LLM prompt to extract claims and premises and their relations in a structured JSON format.
+3. Parse the JSON output to build an argumentation graph data structure.
+4. Build a React frontend that visualizes the argument graph with nodes and edges.
+5. Deploy the app locally or on GitHub Pages with instructions.
+
+**Ships as:** A GitHub repo with code and README showing the pipeline from text input to argument graph visualization, including example inputs and screenshots.
+
+**Stretch goal:** Add simple interactive editing of argument nodes and edges to simulate human revision of the argumentation framework.
+
+### Intermediate — Hybrid Argument Generation and Formal Evaluation
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement the paper's core method of combining LLM-based probabilistic argument generation with a formal argumentation solver that deterministically evaluates argument acceptability. You apply this on a small set of argumentative texts (e.g., scientific peer review comments) and compare the solver's acceptability labels with a simple baseline that uses only LLM output without formal evaluation.
+
+**Why it shows you understood the paper:** This project shows you understand the paper's key contribution of separating argument generation and evaluation to enable transparent, contestable reasoning, and you can implement and evaluate this hybrid architecture practically.
+
+**Grounded in:** Key result: Hybrid systems combining LLMs with formal argumentation solvers produce transparent, verifiable, and contestable reasoning.
+
+**Tech stack:** Python 3.11, OpenAI API or HuggingFace transformers, A Python-based formal argumentation solver (e.g., ArguePy or a simple custom implementation), Jupyter Notebook or Streamlit for demonstration
+
+**Data:** Use publicly available scientific peer review comments or simulated argumentative text; no proprietary dataset is provided by the paper.
+
+**Build it:**
+
+1. Collect or simulate a small dataset of argumentative texts with claims and premises.
+2. Use an LLM to generate candidate arguments and relations in structured form.
+3. Implement or integrate a formal argumentation solver that takes the generated framework and computes acceptability labels.
+4. Implement a baseline that uses only LLM-generated arguments without formal evaluation.
+5. Compare and report the differences in argument acceptability and discuss transparency and contestability.
+6. Document the pipeline and results in a notebook or web app.
+
+**Ships as:** A GitHub repo with code and documentation demonstrating the hybrid architecture, baseline comparison, and evaluation metrics.
+
+**Stretch goal:** Add a simple user interface to allow manual revision of argument strengths and recomputation of acceptability labels.
+
+### Advanced — Interactive Multi-turn Argumentative AI Agent Prototype
+*Effort: 3-4 weeks*
+
+You design and implement a prototype of an interactive argumentative AI agent that supports multi-turn human-AI dialogue for revising and contesting argumentation frameworks. You develop evaluation metrics and a simple user interface to assess the effectiveness and usability of the system in a simulated high-stakes domain (e.g., clinical decision support).
+
+**Why it shows you understood the paper:** This project tackles the paper's stated limitation and future direction on evaluating multi-turn human-AI argumentative interactions, demonstrating your ability to extend the paradigm toward practical, usable systems with novel evaluation methodologies.
+
+**Grounded in:** Limitation and future direction: Current benchmarks do not capture multi-turn human-AI interactions; developing new evaluation frameworks for human-AI collaborative decision-making effectiveness and efficiency.
+
+**Tech stack:** Python 3.11, FastAPI or Flask for backend, React.js for frontend, OpenAI API or HuggingFace transformers, A formal argumentation solver library or custom implementation, Jest or Cypress for UI testing
+
+**Data:** Simulated multi-turn dialogues based on publicly available clinical decision scenarios or scientific peer review cases; no proprietary data required.
+
+**Build it:**
+
+1. Design a multi-turn dialogue flow where the AI agent proposes arguments and the user can contest or revise them.
+2. Implement the backend integrating LLM-based argument generation and formal argumentation evaluation.
+3. Build a React frontend that visualizes the argumentation framework and supports user edits and dialogue turns.
+4. Develop evaluation metrics for interaction effectiveness (e.g., number of revisions, convergence of argument acceptability) and usability (e.g., user satisfaction surveys).
+5. Conduct small-scale user testing with peers or simulated users and collect evaluation data.
+6. Document the system architecture, evaluation methodology, and results.
+
+**Ships as:** A fully functional interactive argumentative AI agent prototype with evaluation results and a detailed README explaining the system and findings.
+
+**Stretch goal:** Extend the system to support domain-specific ethical norms or privacy constraints as per the paper's future directions.

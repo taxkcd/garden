@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-dwang"
-source_hash: "703c8e49375c414b2cde79b66b14537665b36583292f5aab7ce7052b24a02b91"
+source_hash: "7ce31a8f6804bc76ae07f8a1c9cdf6a7ac49be7789327f3a8d150c77cb6e87f9"
 sequence: 11
 generator: "outreach-garden: managed"
 ---
@@ -127,3 +127,91 @@ The Ideal Binary Mask (IBM) is a target representation that labels time-frequenc
 *How the paper uses it:* The paper's system estimates the IBM to perform speech separation, using learned features and linear SVM classification.
 
 ▶ [Speech Separation](https://www.youtube.com/watch?v=blRBrvBWIzA) — HamadaLab · 4:11 · 14 years ago
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder of increasing depth and complexity to demonstrate understanding of the 2013 paper "Towards Scaling Up Classification-Based Speech Separation" by Wang and Wang. The beginner project focuses on reproducing a key metric from the paper using simple baseline features and linear SVM classification. The intermediate project implements the core DNN-SVM feature learning and classification pipeline on a public speech dataset, comparing performance to a baseline kernel SVM. The advanced project extends the system by exploring a future direction from the paper: replacing binary mask estimation with ratio mask estimation to improve speech separation quality.
+
+### Beginner — Linear SVM Classification of Ideal Binary Mask on TIMIT Features
+*Effort: a weekend, ~8 hours*
+
+You build a simple pipeline that extracts standard acoustic features (e.g., MFCCs or log-mel filterbanks) from clean and noisy speech from the TIMIT dataset, generates ideal binary masks (IBM) as labels, and trains a linear SVM classifier to predict the IBM frame-wise. You then compute the HIT-FA rate metric to evaluate classification performance, reproducing a key baseline metric from the paper.
+
+**Why it shows you understood the paper:** This project shows you understand the fundamental classification task of IBM estimation and the HIT-FA metric used in the paper, as well as the limitations of linear classification on raw acoustic features.
+
+**Grounded in:** Demonstration that training on a large variety of acoustic conditions improves generalization in speech separation; HIT-FA metric evaluation (Section II-B, Table I, Fig. 7).
+
+**Tech stack:** Python 3.11, scikit-learn, librosa, numpy, matplotlib
+
+**Data:** Use the TIMIT corpus for speech and simulate noisy mixtures at 0 dB SNR with a small set of noise types (e.g., white noise, babble). Ideal binary masks are computed from clean and noisy signals as in the paper.
+
+**Build it:**
+
+1. Extract acoustic features (e.g., MFCCs or log-mel filterbanks) from clean and noisy TIMIT speech.
+2. Compute ideal binary masks (IBM) from clean and noisy signals as target labels.
+3. Train a linear SVM classifier on a subset of the data to predict IBM labels frame-wise.
+4. Evaluate the classifier on a test set and compute HIT-FA rates.
+5. Plot HIT-FA results and compare to reported baseline values in the paper.
+
+**Ships as:** A GitHub repo with scripts to extract features, train linear SVM, compute HIT-FA, and a README explaining the pipeline and results compared to the paper baseline.
+
+**Stretch goal:** Add pitch-based features and observe their impact on HIT-FA, reflecting the paper's use of pitch features.
+
+### Intermediate — DNN-SVM Feature Learning and Classification for Speech Separation
+*Effort: 2-3 weekends, ~20 hours*
+
+You implement the core method of the paper: pretrain a deep neural network (DNN) with restricted Boltzmann machines (RBMs) on raw acoustic features to learn discriminative features, then train a linear SVM on these learned features to classify the ideal binary mask for speech separation. You evaluate HIT-FA rates on TIMIT with multiple noise types and compare performance against a Gaussian-kernel SVM baseline.
+
+**Why it shows you understood the paper:** This project demonstrates you can reimplement the paper's main contribution of combining RBM-pretrained DNN feature learning with scalable linear SVM classification, reproducing the improved HIT-FA rates and scalability claims.
+
+**Grounded in:** Proposal of a DNN-SVM system that learns discriminative features enabling efficient large-scale training with linear SVMs; RBM pretraining improves classification (Section IV, Table II, Fig. 5 and 6).
+
+**Tech stack:** Python 3.11, PyTorch, scikit-learn, librosa, numpy, matplotlib
+
+**Data:** Use TIMIT corpus with simulated noisy mixtures at 0 dB SNR, covering a variety of noise types (e.g., 10-20 different noises) as in the paper's training setup.
+
+**Build it:**
+
+1. Extract raw acoustic features (e.g., spectrogram or log-mel) from noisy speech.
+2. Pretrain a DNN with RBMs layer-wise on these features to learn a deep feature representation.
+3. Fine-tune the DNN with supervised training to optimize feature discriminability for IBM classification.
+4. Extract learned features from the DNN's bottleneck or last hidden layer.
+5. Train a linear SVM on the learned features to classify IBM labels.
+6. Train a Gaussian-kernel SVM baseline on raw features for comparison.
+7. Evaluate HIT-FA rates on test sets with matched and unmatched noises and speakers.
+8. Plot and analyze results comparing DNN-SVM to kernel SVM.
+
+**Ships as:** A GitHub repo with code for RBM pretraining, DNN feature extraction, SVM training, evaluation scripts, and a detailed README documenting the pipeline, results, and comparison to the paper.
+
+**Stretch goal:** Add auditory segmentation (DNN-SVM-SEG) as in the paper to further improve HIT-FA rates.
+
+### Advanced — Extending DNN-SVM Speech Separation to Ratio Mask Estimation
+*Effort: 3-4 weeks*
+
+You extend the DNN-SVM system to estimate soft ratio masks (e.g., ideal ratio mask or Wiener filter) instead of binary masks, addressing a limitation and future direction noted in the paper. You modify the classification framework to regression or multi-level classification, retrain on TIMIT noisy mixtures, and evaluate improvements in speech separation quality using SNR gain and HIT-FA metrics.
+
+**Why it shows you understood the paper:** This project shows you can critically engage with the paper's limitations and future directions by implementing a genuine extension that could improve performance and generalization, demonstrating research-level initiative.
+
+**Grounded in:** The system currently estimates binary masks; extension to ratio masks or Wiener filters is suggested but not explored (Limitations and Future Directions).
+
+**Tech stack:** Python 3.11, PyTorch, scikit-learn, librosa, numpy, matplotlib
+
+**Data:** Use TIMIT corpus with simulated noisy mixtures at 0 dB SNR and multiple noise types, consistent with the paper's experimental setup.
+
+**Build it:**
+
+1. Modify the DNN-SVM pipeline to predict soft ratio mask values instead of binary labels, using regression or multi-class classification.
+2. Adjust loss functions and training procedures accordingly.
+3. Retrain the DNN feature extractor and SVM or replace SVM with a regression model if needed.
+4. Evaluate speech separation quality using SNR gain and HIT-FA metrics on test sets with matched and unmatched noises.
+5. Compare results against the original binary mask DNN-SVM system.
+6. Document challenges, performance trade-offs, and potential improvements.
+
+**Ships as:** A GitHub repo with extended DNN-SVM code for ratio mask estimation, evaluation scripts, and a comprehensive README discussing methodology, results, and relation to the original paper's limitations.
+
+**Stretch goal:** Experiment with incorporating improved pitch tracking features or context information to further enhance ratio mask estimation.
+
+_The paper's authors did not release code or datasets; TIMIT is a substitute dataset mentioned in the paper and widely used but requires license access; noisy mixtures must be simulated following the paper's methodology._

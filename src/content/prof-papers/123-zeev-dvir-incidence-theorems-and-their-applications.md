@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-zeev-dvir"
-source_hash: "e46eea5a2c3d1ff4061ccf2404e40a4e72bec26313443cac85d1438bd9b94b2f"
+source_hash: "1cdae7be76f03475b1951fe0103cdfba198b0c66fa7fea395111298c75e435f4"
 sequence: 123
 generator: "outreach-garden: managed"
 ---
@@ -120,3 +120,85 @@ The polynomial method uses algebraic polynomials to encode geometric configurati
 *How the paper uses it:* The paper highlights the polynomial method as a key technique for proving incidence theorems and the Kakeya conjecture.
 
 ▶ [Algebra Basics: What Are Polynomials? - Math Antics](https://www.youtube.com/watch?v=ffLLmV4mZwU) — mathantics · 10 years ago
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive ladder to demonstrate your understanding of key incidence theorems and their applications as surveyed in Dvir's paper. The beginner project focuses on visualizing and reproducing the Szemeredi-Trotter theorem's incidence bounds in the plane, using your existing JavaScript and React skills. The intermediate project involves reimplementing the polynomial method proof of the finite field Kakeya conjecture, requiring you to learn some algebraic geometry concepts and apply Python programming. The advanced project tackles a future direction from the paper by attempting to improve incidence bounds over finite fields under subfield assumptions, combining combinatorics and coding theory insights with your algorithmic and ML background.
+
+### Beginner — Visualizing the Szemeredi-Trotter Theorem in the Plane
+*Effort: a weekend (~8 hours)*
+
+You build an interactive web app that generates random sets of points and lines in the plane and computes the number of incidences (point-line intersections). The app visualizes these points and lines and plots the incidence count against the theoretical Szemeredi-Trotter bound O((|P||L|)^{2/3} + |P| + |L|).
+
+**Why it shows you understood the paper:** This project shows you understand the core statement and combinatorial nature of the Szemeredi-Trotter theorem, how incidences scale with point and line counts, and can concretely reproduce and visualize the theorem's bounds.
+
+**Grounded in:** Szemeredi-Trotter theorem bounds incidences between points and lines in R2 by O((|P||L|)^{2/3} + |P| + |L|).
+
+**Tech stack:** JavaScript, React, D3.js or Canvas API
+
+**Data:** Synthetic random points and lines generated in-browser; no external dataset needed.
+
+**Build it:**
+
+1. Implement a function to generate random points and random lines in the 2D plane.
+2. Write an algorithm to count incidences between the generated points and lines.
+3. Visualize the points and lines on a 2D canvas or SVG using React and D3.js or Canvas API.
+4. Plot the incidence counts against the Szemeredi-Trotter theoretical bound for varying sizes of points and lines.
+5. Add UI controls to vary the number of points and lines and observe the incidence behavior.
+
+**Ships as:** A GitHub repo with a React web app that visualizes points, lines, and their incidences, demonstrating the Szemeredi-Trotter bound with interactive plots and explanations.
+
+**Stretch goal:** Add support for special configurations (e.g., grid points, concurrent lines) to observe how incidences deviate from the bound.
+
+### Intermediate — Reimplementing the Polynomial Method Proof of the Finite Field Kakeya Conjecture
+*Effort: 1-3 weekends (~20 hours)*
+
+You implement the polynomial method approach to prove the finite field Kakeya conjecture as described in the paper. This involves coding algebraic routines to construct low-degree polynomials vanishing on Kakeya sets over finite fields and verifying the lower bound on their size. You compare your results against naive bounds and visualize the polynomial zero sets.
+
+**Why it shows you understood the paper:** This project demonstrates you can translate a core algebraic combinatorics proof technique from the paper into code, understand the polynomial method's role in incidence geometry, and reproduce a key finite field result.
+
+**Grounded in:** Proof of the finite field Kakeya conjecture using the polynomial method.
+
+**Tech stack:** Python 3.11, NumPy, SymPy or SageMath (if available)
+
+**Data:** Synthetic finite field data constructed programmatically; no external dataset needed.
+
+**Build it:**
+
+1. Implement finite field arithmetic for a chosen small finite field (e.g., GF(7) or GF(11)).
+2. Generate Kakeya sets in the finite field plane by enumerating lines in all directions.
+3. Construct polynomials of bounded degree that vanish on the Kakeya set using symbolic algebra.
+4. Verify the lower bound on the size of Kakeya sets by analyzing the polynomial zero sets.
+5. Compare the polynomial method bound to naive combinatorial bounds and plot results.
+
+**Ships as:** A Python repo with scripts demonstrating the polynomial method proof on finite fields, including visualizations and comparison of bounds.
+
+**Stretch goal:** Extend the implementation to higher-dimensional finite fields or experiment with different field sizes.
+
+### Advanced — Exploring Improved Incidence Bounds over Finite Fields with Subfield Assumptions
+*Effort: a few weeks (~40+ hours)*
+
+You research and implement incidence counting algorithms over finite fields incorporating subfield structure assumptions as discussed in the paper's limitations and future directions. You attempt to improve or experimentally verify incidence bounds beyond the known finite field Szemeredi-Trotter theorem by leveraging additive combinatorics and algebraic techniques. You analyze how subfield presence affects incidence counts and relate this to coding theory applications.
+
+**Why it shows you understood the paper:** This project shows deep engagement with open problems and limitations from the paper, applying advanced combinatorial and algebraic methods to extend known results. It signals readiness for research-level work and potential collaboration.
+
+**Grounded in:** Tight incidence bounds over finite fields are not fully known; current results are not tight. Improving incidence bounds over finite fields and extending them to broader settings is a future direction.
+
+**Tech stack:** Python 3.11, NumPy, Matplotlib, Jupyter Notebook
+
+**Data:** Synthetic finite field point and line sets generated programmatically; no external dataset needed.
+
+**Build it:**
+
+1. Review the finite field Szemeredi-Trotter theorem and known improvements under subfield assumptions from the paper.
+2. Implement incidence counting algorithms over finite fields with and without subfield structure.
+3. Experimentally measure incidence counts on synthetic data sets constructed to highlight subfield effects.
+4. Analyze and visualize how incidence bounds vary with subfield presence and parameters.
+5. Explore connections to dimension bounds in locally correctable codes and document findings.
+
+**Ships as:** A Jupyter notebook and Python scripts demonstrating experimental incidence bounds over finite fields with subfield assumptions, including analysis and visualizations.
+
+**Stretch goal:** Attempt to formalize conjectures or heuristics for improved incidence bounds and propose coding-theoretic applications.

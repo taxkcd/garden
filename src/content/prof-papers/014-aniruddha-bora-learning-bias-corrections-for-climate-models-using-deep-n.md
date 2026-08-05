@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-aniruddhabora-github-io"
-source_hash: "ea5923c6686e3375a854fe9acb021924b630967f45886af0a3745d58d4fe303c"
+source_hash: "0ae0ebe6ecf5fd2c41ac6e047dffb9235dd46f1b8d884a9d4ad2bd58e3da8303"
 sequence: 14
 generator: "outreach-garden: managed"
 ---
@@ -136,3 +136,87 @@ DeepONet is a neural operator architecture designed to learn mappings between in
 - [Anima Anandkumar - Neural operator: A new paradigm for ...](https://www.youtube.com/watch?v=Bd4KvlmGbY4) — also for: Learning bias corrections for climate models using deep neural operators (Aniruddha Bora)
 - [Lecture 31 : Convolutional Autoencoder and Deep CNN](https://www.youtube.com/watch?v=seovCoRejN8) — also for: Learning bias corrections for climate models using deep neural operators (Aniruddha Bora)
 - [Deep Operator Networks (DeepONet) [Physics Informed ...](https://www.youtube.com/watch?v=CDCyOHXDRcI) — also for: Learning bias corrections for climate models using deep neural operators (Aniruddha Bora)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder to demonstrate your understanding of the paper's approach to climate model bias correction using Deep Operator Networks combined with autoencoders. The beginner project focuses on reproducing a core concept of dimensionality reduction of nudging tendencies with autoencoders. The intermediate project implements a simplified DeepONet surrogate model to predict nudging tendencies on a small-scale or substitute dataset, comparing against a baseline. The advanced project extends the method to additional climate variables or broader spatial domains, addressing a stated limitation and exploring integration challenges.
+
+### Beginner — Autoencoder for Dimensionality Reduction of Climate Nudging Tendencies
+*Effort: a weekend, ~8 hours*
+
+You build a convolutional autoencoder to compress and reconstruct high-dimensional nudging tendency data similar to the paper's approach. Using a publicly available or synthetically generated dataset mimicking spatial-temporal climate fields, you demonstrate the autoencoder's ability to reduce dimensionality while preserving key features.
+
+**Why it shows you understood the paper:** This project shows you understand the paper's key technique of using convolutional autoencoders to represent high-dimensional nudging tendencies in a latent space, a foundational step before applying DeepONet.
+
+**Grounded in:** Integration of convolutional autoencoders to represent high-dimensional nudging tendencies in a latent space.
+
+**Tech stack:** Python 3.11, PyTorch, NumPy, Matplotlib, Jupyter Notebook
+
+**Data:** Use a small synthetic dataset simulating spatial-temporal nudging tendencies or publicly available climate reanalysis data subsets (e.g., ERA5 variables U and V winds) as a proxy for nudging tendencies.
+
+**Build it:**
+
+1. Collect or generate a small dataset representing spatial-temporal climate nudging tendencies (e.g., 2D wind fields over time).
+2. Design and implement a convolutional autoencoder architecture in PyTorch to compress and reconstruct the data.
+3. Train the autoencoder on the dataset and evaluate reconstruction accuracy using metrics like MSE.
+4. Visualize original vs reconstructed fields to qualitatively assess performance.
+5. Document the architecture, training process, and results in a README.
+
+**Ships as:** A GitHub repo with code for the convolutional autoencoder, training scripts, example data or data generation code, and a README showing reconstruction results and explaining the connection to the paper's latent space representation.
+
+**Stretch goal:** Add a variational autoencoder (VAE) variant to explore probabilistic latent representations.
+
+### Intermediate — DeepONet Surrogate Model for Nudging Tendency Prediction
+*Effort: 2 weekends, ~20 hours*
+
+You implement a simplified Deep Operator Network (DeepONet) surrogate model to learn the mapping from low-resolution climate model states to nudging tendencies in a latent space. You train and evaluate the model on a small-scale or substitute dataset, comparing its prediction correlation against a simple baseline like linear regression.
+
+**Why it shows you understood the paper:** This project demonstrates your grasp of the paper's core method—using DeepONet combined with autoencoders to predict nudging tendencies efficiently—and your ability to implement neural operators for scientific surrogate modeling.
+
+**Grounded in:** Development of a DeepONet-based surrogate model for bias correction in climate models and training/validation on E3SMv2 nudging data.
+
+**Tech stack:** Python 3.11, PyTorch, NumPy, Matplotlib, Jupyter Notebook
+
+**Data:** Use a small subset of ERA5 reanalysis data or synthetically generated data representing climate states and nudging tendencies as a proxy, since the authors released no code or dataset.
+
+**Build it:**
+
+1. Prepare paired input-output data representing climate states and corresponding nudging tendencies in latent space (from autoencoder).
+2. Implement a DeepONet architecture in PyTorch following the paper's description.
+3. Train the DeepONet model on the dataset to predict nudging tendencies from climate states.
+4. Implement a simple baseline model (e.g., linear regression) for comparison.
+5. Evaluate and compare models using correlation metrics similar to the paper (e.g., Pearson correlation).
+6. Document the implementation details, results, and comparison in a README.
+
+**Ships as:** A GitHub repo containing DeepONet implementation, training and evaluation scripts, baseline comparison, and a README reporting correlation metrics and discussing the surrogate model's effectiveness.
+
+**Stretch goal:** Incorporate convolutional autoencoder latent space encoding/decoding end-to-end with DeepONet training.
+
+### Advanced — Extending DeepONet Bias Correction to Additional Climate Variables and Larger Domains
+*Effort: 3+ weeks*
+
+You extend the DeepONet surrogate model approach to predict bias corrections for additional climate state variables beyond zonal and meridional winds (e.g., temperature or humidity) and/or expand the spatial domain from the paper's sub-region to a larger or global scale. You evaluate model performance and discuss computational trade-offs.
+
+**Why it shows you understood the paper:** This project tackles a key limitation and future direction from the paper, demonstrating your ability to adapt and scale the DeepONet surrogate modeling approach to more complex, realistic climate bias correction scenarios.
+
+**Grounded in:** Extension to other state variables and broader spatial and temporal domains; addressing current model limitations.
+
+**Tech stack:** Python 3.11, PyTorch, NumPy, Matplotlib, Jupyter Notebook, Docker (optional for environment)
+
+**Data:** Use publicly available ERA5 reanalysis data for multiple variables over a larger spatial domain as a substitute for the paper's nudging tendency data.
+
+**Build it:**
+
+1. Collect and preprocess ERA5 data for additional climate variables (e.g., temperature, humidity) over an extended spatial domain.
+2. Train convolutional autoencoders to encode/decode nudging tendencies for these variables.
+3. Adapt and train the DeepONet surrogate model to predict nudging tendencies for the new variables and domain.
+4. Evaluate model accuracy using correlation metrics and compare with baseline methods.
+5. Analyze computational efficiency and discuss challenges in scaling the approach.
+6. Prepare a detailed README documenting methodology, results, limitations, and potential integration paths.
+
+**Ships as:** A comprehensive GitHub repo with code, data preprocessing scripts, trained models, evaluation results, and a README discussing the extension's impact and challenges.
+
+**Stretch goal:** Prototype integration of the surrogate model into a simple climate simulation loop for online bias correction demonstration.

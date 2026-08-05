@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-mats-per-erik-heimdahl"
-source_hash: "d7d490c9ecd7c7a1657e6974e31cae677a291ab4c07937df28a3b493b3ed26de"
+source_hash: "d7d1fa5f1bfd3f426d17e4745a8fb0b84a6b957f8721543370760e4cdec494a7"
 sequence: 85
 generator: "outreach-garden: managed"
 ---
@@ -137,3 +137,95 @@ The Safety Annex is an extension to AADL that enables integrated modeling of fau
 *How the paper uses it:* The Safety Annex is the paper's main contribution enabling unified fault and safety modeling in AADL.
 
 ▶ [AADL/ACVIP 2021: Overview of AADL and Toolsets to Support the Engineering of Safety-critical System](https://www.youtube.com/watch?v=xyY2MmZQiPo) — Software Engineering Institute | Carnegie Mellon University · 5 years ago
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive ladder to demonstrate understanding of the Safety Annex extension to AADL for model-based safety analysis. The beginner project focuses on modeling and simulating simple fault propagation in a small system to grasp the core concept. The intermediate project involves reimplementing the core model checking approach on a simplified avionics-like system to identify minimal fault sets, gaining experience with formal verification tools. The advanced project extends the approach by addressing a stated limitation—automating behavioral contract generation—to reduce modeling effort, which aligns with the paper's future directions and invites research-level exploration.
+
+### Beginner — Simple Fault Propagation Model in AADL Safety Annex
+*Effort: a weekend, ~8 hours*
+
+You build a small AADL model of a simple system with a few components and define faults using the Safety Annex concepts. Then you simulate fault propagation through the system behavior using a basic script or tool to visualize how faults affect system outputs.
+
+**Why it shows you understood the paper:** This project shows you understand the Safety Annex's core idea of integrating fault behavior into system architecture and how faults propagate implicitly through component contracts.
+
+**Grounded in:** The Safety Annex enables independent modeling of component failures and integrates fault behaviors into the nominal system model.
+
+**Tech stack:** AADL modeling environment (e.g., OSATE), Python 3.x for scripting, Graphviz or similar for visualization
+
+**Data:** You create a synthetic small system model (3-5 components) with manually defined faults and contracts, simulating a minimal example inspired by the paper's approach.
+
+**Build it:**
+
+1. Install and set up OSATE or another AADL modeling tool supporting the Safety Annex.
+2. Create a small system architecture with 3-5 components and define nominal behaviors.
+3. Extend the model with Safety Annex fault definitions for components (e.g., stuck-at faults).
+4. Write simple Python scripts to parse the model and simulate fault propagation based on contracts.
+5. Visualize fault propagation paths and affected outputs using Graphviz.
+6. Document the model, fault definitions, and simulation results in the README.
+
+**Ships as:** A GitHub repo containing the AADL model files, simulation scripts, visualizations of fault propagation, and a README explaining the Safety Annex concepts demonstrated.
+
+**Stretch goal:** Add asymmetric fault modeling where faults manifest differently to different observers in the system.
+
+### Intermediate — Model Checking Safety Properties on a Simplified Wheel Brake System
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement the core model checking approach described in the paper to verify safety properties under fault conditions on a simplified version of the Wheel Brake System example. You encode component faults, behavioral contracts, and safety properties, then use a model checker to find minimal fault sets violating safety.
+
+**Why it shows you understood the paper:** This project demonstrates you can apply the Safety Annex's compositional verification and minimal cut set generation methods, reproducing key results on fault combinations that violate safety properties.
+
+**Grounded in:** Model checking identifies minimal fault combinations that violate safety properties, such as inadvertent braking.
+
+**Tech stack:** AADL modeling environment (OSATE), AGREE annex for behavioral contracts, Python 3.x, NuSMV or another model checker compatible with AGREE
+
+**Data:** You create a simplified Wheel Brake System model inspired by the paper's example, with fewer components and fault types to keep verification tractable.
+
+**Build it:**
+
+1. Model a simplified Wheel Brake System architecture in AADL with key components and interfaces.
+2. Define behavioral contracts for components using the AGREE annex.
+3. Specify faults using the Safety Annex, including symmetric and asymmetric faults.
+4. Formally specify safety properties to verify (e.g., no inadvertent braking).
+5. Translate the model and contracts into the input format for the chosen model checker.
+6. Run model checking to identify minimal fault sets violating safety properties.
+7. Analyze and document the results, comparing with expected minimal cut sets.
+
+**Verified links from the paper:**
+
+- <https://github.com/loonwerks/AMASE> — a third-party/baseline artifact the paper cites — not the authors' own code
+
+**Ships as:** A GitHub repo with the AADL and AGREE models, model checker input files, verification results, and a README explaining the modeling and verification process.
+
+**Stretch goal:** Integrate explicit error propagation for dependent faults and compare verification results with and without this modeling.
+
+### Advanced — Automating Behavioral Contract Generation for Safety Annex Models
+*Effort: 3+ weeks*
+
+You develop a tool or framework that assists in automatically generating behavioral contracts for components in AADL Safety Annex models, aiming to reduce the manual effort required. This addresses a key limitation noted in the paper about the complexity of detailed contract and fault definition development.
+
+**Why it shows you understood the paper:** This project tackles a stated limitation and future direction of the paper by exploring automation in contract generation, demonstrating deep comprehension of the Safety Annex modeling challenges and potential improvements.
+
+**Grounded in:** The approach requires detailed behavioral contracts and fault definitions which may be complex to develop. Future directions include enhanced automation for fault definition and behavioral contract generation.
+
+**Tech stack:** Python 3.x, AADL parsing libraries (e.g., OSATE APIs if accessible), Machine learning or rule-based heuristics for contract inference, Docker for environment reproducibility
+
+**Data:** You use synthetic or publicly available small AADL models as input to your tool, simulating contract generation; no proprietary data is required.
+
+**Build it:**
+
+1. Study the structure of behavioral contracts in AADL Safety Annex and how they are manually defined.
+2. Implement a parser to read AADL component interfaces and nominal behaviors.
+3. Develop heuristics or simple ML models to infer behavioral contracts from component interface and nominal behavior descriptions.
+4. Integrate the tool to output contracts in AGREE annex format compatible with Safety Annex models.
+5. Validate the generated contracts on small example models by comparing with manually written contracts.
+6. Document the tool design, usage instructions, and evaluation results.
+
+**Ships as:** A GitHub repo with the contract generation tool, example input models, generated contracts, and a detailed README describing the approach and evaluation.
+
+**Stretch goal:** Extend the tool to suggest fault definitions and propagate them automatically in the model.
+
+_The paper's authors have not released their own code for the Safety Annex; the intermediate project uses the third-party AMASE tool as a baseline reference but requires reimplementation of core methods._

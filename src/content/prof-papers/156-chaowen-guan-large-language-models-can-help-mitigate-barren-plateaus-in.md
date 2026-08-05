@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-chaowen-guan"
-source_hash: "1a5dba5210cdd6386807a4b7c23c90d84aad4e67abd988d8d296c8c3f8cb8ef9"
+source_hash: "945e40e5904940cb09220fc5dc8eba80ea33813a3b13bc8678ad965c91140b10"
 sequence: 156
 generator: "outreach-garden: managed"
 ---
@@ -134,3 +134,97 @@ Submartingale theory provides a mathematical framework to analyze iterative proc
 - [How Large Language Models Work](https://www.youtube.com/watch?v=5sLYAQS9sWQ) — also for: Natural-Language to SysMLv2 Translation via Conformance-Driven Iterative Refinement (Levent Burak Kara)
 - [Stanford CS25: V4 I From Large Language Models to Large ...](https://www.youtube.com/watch?v=cYfKQ6YG9Qo) — also for: Automated Grading of Handwritten Mathematics Using Vision-Capable LLMs (Craig B. Zilles)
 - [[1hr Talk] Intro to Large Language Models](https://www.youtube.com/watch?v=zjkBMFhNj_g) — also for: On-demand generation of high-quality software engineering datasets using large language models and ontologies (Suranjan Chakraborty)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive learning path to demonstrate understanding of the AdaInit framework for mitigating barren plateaus in quantum neural networks using large language models. The beginner project reproduces a core metric from the paper using classical ML tools and a public dataset. The intermediate project reimplements the AdaInit iterative initialization method on a small QNN simulation and compares it against a baseline initialization. The advanced project extends the AdaInit approach to address one of the paper's stated limitations by incorporating noise-aware initialization for simulated NISQ device conditions.
+
+### Beginner — Gradient Variance Analysis of QNN Initialization on Iris Dataset
+*Effort: a weekend, ~8 hours*
+
+You build a simple simulation of a small quantum neural network training process using classical approximations and measure gradient variance under different static initialization distributions (uniform, normal, beta). You use the Iris dataset as input features and compute gradient variance metrics analogous to those reported in the paper.
+
+**Why it shows you understood the paper:** This project shows you understand the barren plateau problem as characterized by vanishing gradient variance and how different initializations affect it. It reproduces a key metric from the paper, demonstrating comprehension of the problem and baseline methods.
+
+**Grounded in:** AdaInit consistently outperforms classic uniform, normal, and beta distribution initializations in maintaining higher gradient variance as the number of qubits or layers increases.
+
+**Tech stack:** Python 3.11, Jupyter Notebook, NumPy, scikit-learn
+
+**Data:** Iris dataset from UCI Machine Learning Repository (publicly available)
+
+**Build it:**
+
+1. Load and preprocess the Iris dataset for input to a simulated QNN model.
+2. Implement a small QNN simulation that supports parameter initialization and gradient computation (classical approximation).
+3. Initialize QNN parameters using uniform, normal, and beta distributions.
+4. Compute and record gradient variance for each initialization method over multiple runs.
+5. Visualize and compare gradient variance results across initializations.
+6. Write a README explaining the barren plateau problem and how your results relate to the paper's findings.
+
+**Ships as:** A Jupyter notebook with code and plots showing gradient variance comparisons for different static initializations on Iris dataset, plus a README explaining the connection to barren plateaus.
+
+**Stretch goal:** Add a simple prompt-based parameter generator that mimics adaptive initialization by adjusting parameters based on gradient feedback heuristics.
+
+### Intermediate — Reimplementation of AdaInit Iterative Initialization for QNNs
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement the core AdaInit iterative initialization framework from the paper using Python. You simulate a small QNN (up to 10 qubits) and use an open-source LLM API (e.g., OpenAI GPT) to generate initial parameters iteratively based on dataset description and gradient feedback. You compare AdaInit against a classic uniform initialization baseline by measuring gradient variance.
+
+**Why it shows you understood the paper:** This project demonstrates your ability to translate the paper's core method into working code, including the iterative LLM-driven parameter generation and submartingale convergence concept. Comparing against a baseline shows you grasp the empirical evaluation approach.
+
+**Grounded in:** The authors propose AdaInit, an iterative framework that uses LLMs as generative models to synthesize QNN initial parameters. AdaInit adaptively refines parameter generation by incorporating dataset descriptions and gradient feedback from previous iterations.
+
+**Tech stack:** Python 3.11, PyTorch, OpenAI API (or similar LLM API), NumPy, Matplotlib
+
+**Data:** Use the Wine dataset from UCI Machine Learning Repository as a substitute for datasets used in the paper.
+
+**Build it:**
+
+1. Implement a small QNN simulation environment supporting parameter initialization and gradient computation.
+2. Design prompt templates that include dataset description and gradient feedback for LLM parameter generation.
+3. Integrate an LLM API to generate QNN initial parameters iteratively based on prompts.
+4. Run the AdaInit iterative process for a fixed number of iterations, recording gradient variance at each step.
+5. Implement a baseline static initialization method (e.g., uniform distribution) for comparison.
+6. Visualize and compare gradient variance over iterations between AdaInit and baseline.
+7. Document the implementation details, challenges, and how results relate to the paper.
+
+**Verified links from the paper:**
+
+- <https://github.com/junzhuang-code/AdaInit> — a third-party/baseline artifact the paper cites — not the authors' own code
+
+**Ships as:** A Python repository with scripts to run AdaInit iterative initialization on a small QNN simulation, comparison plots against baseline, and a detailed README.
+
+**Stretch goal:** Experiment with prompt variations to analyze the impact of removing dataset description or gradient feedback on initialization quality.
+
+### Advanced — Noise-Aware AdaInit Extension for NISQ Quantum Neural Networks
+*Effort: 3+ weeks*
+
+You extend the AdaInit framework to incorporate noise models simulating realistic NISQ device measurement noise during gradient estimation. You modify the iterative LLM-driven initialization to be noise-aware by including noise statistics in the prompt and parameter refinement. You evaluate the impact on gradient variance and convergence compared to noise-free AdaInit.
+
+**Why it shows you understood the paper:** This project tackles a key limitation and future direction from the paper by integrating noise-aware strategies into AdaInit. It shows deep understanding of both the theoretical framework and practical challenges of deploying QNNs on real hardware.
+
+**Grounded in:** Explore integration with practical quantum hardware and noisy measurement scenarios.
+
+**Tech stack:** Python 3.11, PyTorch, OpenAI API (or similar LLM API), NumPy, Matplotlib, Qiskit (for noise simulation)
+
+**Data:** Use the MNIST dataset (publicly available) as input data for QNN training simulations with noise.
+
+**Build it:**
+
+1. Implement or extend a QNN simulation environment that models realistic NISQ noise during gradient computation using Qiskit noise models.
+2. Modify the AdaInit iterative initialization process to include noise statistics as part of the LLM prompt for parameter generation.
+3. Run experiments comparing noise-aware AdaInit initialization against noise-agnostic AdaInit and classic initialization methods.
+4. Measure and analyze gradient variance and convergence behavior under noisy conditions.
+5. Document the methodology, results, and implications for practical QNN training on NISQ devices.
+6. Prepare a comprehensive README explaining the extension, challenges, and how it addresses the paper's limitations.
+
+**Verified links from the paper:**
+
+- <https://www.kaggle.com/c/titanic> — a third-party/baseline artifact the paper cites — not the authors' own code
+
+**Ships as:** A full-featured repository demonstrating noise-aware AdaInit initialization with experimental results on noisy QNN simulations, accompanied by detailed documentation.
+
+**Stretch goal:** Investigate architectural modifications to the QNN ansatz to further mitigate ansatz-induced barren plateaus in conjunction with noise-aware AdaInit.

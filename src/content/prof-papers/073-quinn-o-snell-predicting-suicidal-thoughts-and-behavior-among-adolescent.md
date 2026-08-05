@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-quinn-o-snell"
-source_hash: "734bffd56e8c2243d5ea709f62804138052ca14aca3c26c6bad3db10190fcaf3"
+source_hash: "05de6289a71144b2bc1e767325062a418346df5c3a5d739c4ee4bcd06b0bd4e3"
 sequence: 73
 generator: "outreach-garden: managed"
 ---
@@ -141,3 +141,87 @@ This concept covers how machine learning models can be applied to predict suicid
 *How the paper uses it:* The paper presents a large-scale machine learning approach specifically predicting adolescent suicidal thoughts and behaviors using survey and demographic data.
 
 ▶ [Machine Learning-Based Prediction Models For Suicide Prevention](https://www.youtube.com/watch?v=CrJIyE9qcmM) — Center for Suicide Research and Prevention (CSRP) · 1 year ago
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder of increasing complexity and depth around the paper's core contribution: predicting adolescent suicidal thoughts and behaviors (STB) using machine learning on risk and protective factors. The beginner project reproduces a key interpretability visualization from the paper using synthetic or substitute data. The intermediate project reimplements the core LightGBM prediction model on a smaller public dataset with similar features, comparing performance to a baseline. The advanced project extends the approach by integrating natural language data (e.g., social media text) with structured survey data to explore improved prediction and interpretability, addressing a future direction suggested by the authors.
+
+### Beginner — SHAP Feature Importance Visualization for STB Prediction
+*Effort: a weekend, ~8 hours*
+
+You build a small Python notebook that trains a gradient boosting model (LightGBM) on a synthetic or publicly available adolescent mental health dataset with risk/protective factors, then generates SHAP value plots showing feature importance similar to the paper's key figure. This reproduces the explainability approach used to identify top predictors like online harassment and family arguments.
+
+**Why it shows you understood the paper:** This project demonstrates you understand the paper's use of interpretable machine learning (SHAP) to reveal which factors most influence STB predictions, a core contribution. A professor would see you grasp how to connect model outputs to actionable insights.
+
+**Grounded in:** Provided interpretable machine learning insights using SHAP for feature importance.
+
+**Tech stack:** Python 3.11, LightGBM, SHAP, Jupyter Notebook, pandas, matplotlib
+
+**Data:** Use a publicly available adolescent mental health survey dataset with risk/protective factors (e.g., CDC Youth Risk Behavior Survey) or simulate a dataset with similar features described in the paper.
+
+**Build it:**
+
+1. Find or simulate a dataset with adolescent risk and protective factors relevant to STB.
+2. Preprocess data and train a LightGBM classifier to predict a binary STB outcome.
+3. Use SHAP to compute feature importance values for the trained model.
+4. Plot SHAP summary plots highlighting top predictive features.
+5. Write a README explaining how the visualization relates to the paper's findings.
+
+**Ships as:** A Jupyter notebook and README showing SHAP plots of feature importance for STB prediction, with commentary linking to the paper's key predictors.
+
+**Stretch goal:** Add subgroup SHAP analyses by gender or age to mimic the paper's fine-grained interpretability.
+
+### Intermediate — Reimplementing STB Prediction with LightGBM on Public Adolescent Survey Data
+*Effort: 1-3 weekends, ~20 hours*
+
+You reimplement the core LightGBM machine learning pipeline from the paper to predict suicidal thoughts and behaviors using a smaller public adolescent health dataset (e.g., CDC Youth Risk Behavior Survey). You engineer features analogous to the paper's risk/protective factors, train the model, and compare its accuracy to a logistic regression baseline. You also generate SHAP explanations for interpretability.
+
+**Why it shows you understood the paper:** This project shows you can faithfully reproduce the paper's core method—gradient boosting prediction of STB—and validate its superior performance and interpretability on real data. A professor would see you grasp the modeling approach and evaluation metrics central to the paper.
+
+**Grounded in:** Developed a highly accurate (91%) machine learning model predicting adolescent STB; LightGBM outperformed logistic regression; used SHAP for explainability.
+
+**Tech stack:** Python 3.11, LightGBM, scikit-learn, SHAP, pandas, Jupyter Notebook
+
+**Data:** Use the CDC Youth Risk Behavior Survey (YRBS) public dataset as a substitute for the Utah CTC Youth Survey data, focusing on similar risk/protective factors and STB outcomes.
+
+**Build it:**
+
+1. Download and preprocess the CDC YRBS dataset to extract relevant features and binary STB labels.
+2. Train a LightGBM classifier to predict STB and evaluate accuracy on a held-out test set.
+3. Train a logistic regression baseline for comparison.
+4. Compute SHAP values for the LightGBM model and plot feature importance.
+5. Document results and compare to the paper's reported accuracy and top predictors.
+
+**Ships as:** A Jupyter notebook and README demonstrating LightGBM STB prediction with accuracy metrics, baseline comparison, and SHAP interpretability plots.
+
+**Stretch goal:** Implement a short-question subset model to approximate full model accuracy, mimicking the paper's 10-20 question survey result.
+
+### Advanced — Integrating Social Media Text with Survey Data for Enhanced STB Prediction
+*Effort: a few weeks, ~40+ hours*
+
+You develop a multimodal machine learning pipeline that combines structured survey data (risk/protective factors) with natural language data from adolescent social media posts to predict suicidal thoughts and behaviors. You extract text features using NLP techniques (e.g., TF-IDF or pretrained embeddings), fuse them with survey features, and train a gradient boosting model. You analyze whether adding text improves prediction and interpretability, addressing the paper's future direction on integrating natural language data.
+
+**Why it shows you understood the paper:** This project tackles a stated future direction of the paper by extending the prediction framework to include unstructured natural language data, demonstrating your ability to innovate beyond the original study. A professor would recognize your grasp of both the paper's core method and how to advance it using NLP and multimodal data integration.
+
+**Grounded in:** Future direction: Given your expertise in big data and machine learning, how do you envision integrating natural language data sources, such as social media text, with structured survey data to further improve prediction and understanding of adolescent suicidal thoughts and behaviors?
+
+**Tech stack:** Python 3.11, LightGBM, scikit-learn, transformers (Hugging Face), pandas, Jupyter Notebook
+
+**Data:** Use a public adolescent survey dataset (e.g., CDC YRBS) combined with a publicly available adolescent social media dataset (e.g., Reddit posts from mental health subreddits) as a proxy for natural language data.
+
+**Build it:**
+
+1. Collect and preprocess structured survey data and adolescent social media text data.
+2. Extract text features using pretrained language models or TF-IDF vectorization.
+3. Combine text features with survey features into a single dataset.
+4. Train a LightGBM model on the combined features to predict STB.
+5. Evaluate model performance against survey-only and text-only baselines.
+6. Use SHAP or other explainability tools to interpret feature contributions from both modalities.
+7. Write a detailed report discussing improvements, challenges, and connections to the paper's future directions.
+
+**Ships as:** A comprehensive repository with code and documentation demonstrating multimodal STB prediction, performance comparisons, and interpretability analyses integrating natural language and survey data.
+
+**Stretch goal:** Explore causal inference methods or longitudinal modeling if temporal data is available to address the paper's limitation on causation and anonymity.

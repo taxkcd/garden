@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-jonathan-zittrain"
-source_hash: "c88e6594a79b2f01acef64e471583918088aceecb0d5ed67824a8fee90ce4a3b"
+source_hash: "1f100c2c91692575ce6c43ad7c9e4e2ddc7d163b192b8aecd1c8ca163ed0cc86"
 sequence: 91
 generator: "outreach-garden: managed"
 ---
@@ -136,3 +136,86 @@ Finally, learn about the emerging field of legal alignment, which integrates leg
 *How the paper uses it:* This is the central concept of the paper, defining legal alignment and its research pathways.
 
 ▶ [Legal Alignments for a Safe and Ethical AI: Jonathan Zittrain in ...](https://www.youtube.com/watch?v=cmlaShsyA6A) — The Philosopher · 53:12
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progression from a foundational understanding of legal alignment concepts to an applied implementation and finally to an advanced exploration addressing a key limitation of the paper. The beginner project grounds you in the core taxonomy of legal alignment pathways. The intermediate project involves implementing a simplified AI decision-making system guided by legal reasoning methods, demonstrating practical application. The advanced project tackles the challenge of adapting human-centric legal concepts, specifically intent, into AI reasoning, aligning with the paper's future research directions.
+
+### Beginner — Legal Alignment Pathways Visualization
+*Effort: a weekend, ~8 hours*
+
+You build an interactive web-based visualization that explains and illustrates the paper’s three core legal alignment pathways: legal rules as alignment targets, legal reasoning methods for AI decision-making, and legal concepts as structural blueprints. The app uses simple diagrams and textual explanations to help users explore these pathways and their relationships.
+
+**Why it shows you understood the paper:** This project demonstrates that you have internalized the paper’s taxonomy and can clearly communicate its core conceptual framework, a foundation for any further work in legal alignment.
+
+**Grounded in:** The taxonomy of three core research pathways for integrating law into AI alignment.
+
+**Tech stack:** TypeScript, React, CSS
+
+**Data:** No external data needed; content is derived directly from the paper's taxonomy and descriptions.
+
+**Build it:**
+
+1. Extract and summarize the three core legal alignment pathways from the paper.
+2. Design simple diagrams or flowcharts illustrating each pathway and their interconnections.
+3. Implement a React app with interactive components that display pathway descriptions and visuals.
+4. Add navigation and explanatory text to guide users through the pathways.
+5. Test the app locally and prepare a README explaining the project and its relation to the paper.
+
+**Ships as:** A GitHub repository hosting a React app that visually and interactively explains the three legal alignment pathways with accompanying textual summaries.
+
+**Stretch goal:** Add quiz questions or flashcards to test users’ understanding of the pathways.
+
+### Intermediate — Prototype AI Decision System with Legal Reasoning
+*Effort: 2 weekends, ~20 hours*
+
+You implement a simplified AI decision-making prototype that uses a rule-based system inspired by legal interpretive methods (e.g., analogical reasoning or purposivism) to resolve ambiguous scenarios. You compare this system against a baseline that applies fixed rules without interpretation, measuring decision consistency or correctness on a small set of simulated legal scenarios.
+
+**Why it shows you understood the paper:** This project shows you can operationalize one of the paper’s core pathways—applying legal reasoning methods to AI decision-making—and evaluate its impact, demonstrating grasp of both normative and technical aspects.
+
+**Grounded in:** Legal alignment’s use of legal interpretation methods to guide AI decision-making in ambiguous or novel scenarios.
+
+**Tech stack:** Python 3.11, FastAPI, Jupyter Notebook
+
+**Data:** Simulated dataset of ambiguous legal scenarios created based on examples from the paper’s discussion of legal reasoning methods; no external dataset available.
+
+**Build it:**
+
+1. Design a small set of ambiguous decision scenarios inspired by legal cases or principles described in the paper.
+2. Implement a baseline AI decision system applying fixed legal rules to these scenarios.
+3. Implement an enhanced AI decision system that applies a simple legal interpretive method (e.g., analogical reasoning) to resolve ambiguities.
+4. Evaluate and compare the two systems on decision consistency or alignment with normative expectations.
+5. Document the methodology, results, and relation to the paper’s legal reasoning pathway.
+
+**Ships as:** A GitHub repo with code for both baseline and legal reasoning AI decision systems, evaluation scripts, and a Jupyter Notebook reporting results and analysis.
+
+**Stretch goal:** Extend the system to incorporate multiple interpretive methods and compare their effects.
+
+### Advanced — Adapting Legal Intent for AI: A Prototype Framework
+*Effort: 3+ weeks, ~60+ hours*
+
+You develop a prototype framework that attempts to operationalize the human-centric legal concept of intent for AI systems. This involves designing a model or module that infers or represents AI intent in decision-making, integrating it into an AI agent architecture, and evaluating how this affects legal alignment in example scenarios. The project addresses a key limitation noted in the paper about adapting legal concepts to AI while maintaining legitimacy and enforceability.
+
+**Why it shows you understood the paper:** This project tackles a core open research question from the paper, demonstrating deep engagement with its limitations and future directions, and the ability to extend legal alignment concepts into practical AI system design.
+
+**Grounded in:** Challenges remain in adapting human-centric legal concepts (e.g., intent) to AI systems; future directions include advancing AI reasoning capabilities to incorporate such concepts.
+
+**Tech stack:** Python 3.11, FastAPI, TypeScript, React, Docker
+
+**Data:** Simulated decision-making scenarios requiring intent inference, designed based on legal theory and examples from the paper; no external dataset available.
+
+**Build it:**
+
+1. Research legal definitions and interpretations of intent as described in the paper and normative legal theory.
+2. Design a computational model or representation of AI intent suitable for integration into an AI decision system.
+3. Implement the model within a prototype AI agent framework, enabling the agent to represent and reason about its own intent.
+4. Create test scenarios where intent affects legal alignment outcomes and evaluate the prototype’s behavior.
+5. Develop a governance or transparency module that explains inferred intent to users or auditors.
+6. Document the framework, implementation details, evaluation results, and implications for legal alignment.
+
+**Ships as:** A comprehensive GitHub repository with code for the AI agent prototype, intent modeling, evaluation scripts, and a detailed README linking the work to the paper’s limitations and future research agenda.
+
+**Stretch goal:** Integrate the framework with existing AI governance tools or explore multi-jurisdictional intent reasoning.

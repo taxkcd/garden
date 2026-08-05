@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-piotr-krysta"
-source_hash: "aa3ca5a79d6b44c3601e54b68bbc62c69edce860049f7cfac198cd6525788dfc"
+source_hash: "9a914e9de209be46f210acd9386a6cbc3f5d130715129c8e5d5236546f108c33"
 sequence: 146
 generator: "outreach-garden: managed"
 ---
@@ -142,3 +142,90 @@ Understand how combining greedy selection with adaptive local improvements can e
 ## Already in your library
 
 - [2.11.7 Bipartite Matching](https://www.youtube.com/watch?v=HZLKDC9OSaQ) — also for: Speeding-up Graph Algorithms via Clique Partitioning (Daniel Grosu)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive learning path to demonstrate understanding of the paper "Position Auctions with a Capacity Constraint." The beginner project reproduces a key algorithmic idea on a small synthetic example, the intermediate project implements the core randomized truthful mechanism and compares it to a simple baseline, and the advanced project explores a future direction by extending the model to handle ad-dependent CTRs, addressing a stated limitation.
+
+### Beginner — Capacity-Constrained Greedy Matching Simulator
+*Effort: a weekend, ~8 hours*
+
+You build a small simulator that implements the paper's novel greedy algorithm combining density-based ordering with capacity-aware local improvements for capacity-constrained bipartite matching. The simulator runs on a small synthetic dataset of ads with heterogeneous sizes and values, fitting them into a fixed capacity, and outputs the selected ads and total value.
+
+**Why it shows you understood the paper:** This project shows you understand the core algorithmic challenge of capacity-constrained matching with heterogeneous ad sizes and the paper's approach to approximate it beyond naive greedy heuristics.
+
+**Grounded in:** Key contribution: "A novel algorithm that achieves a 6-approximation for the general capacity-constrained matching problem by combining greedy selection with adaptive reassignment."
+
+**Tech stack:** Python 3.11
+
+**Data:** Synthetic dataset generated in code simulating ads with random sizes and values, and a fixed global capacity constraint.
+
+**Build it:**
+
+1. Implement a data structure to represent ads with size and value attributes.
+2. Implement the density-based greedy selection algorithm that orders ads by value-to-size ratio.
+3. Add capacity-aware local improvement steps to reassign ads for better total value.
+4. Create a small synthetic dataset of 10-20 ads with varying sizes and values.
+5. Run the algorithm on the dataset and output the selected ads and total value.
+6. Write a README explaining the algorithm and how it relates to the paper.
+
+**Ships as:** A Python script that runs the capacity-constrained greedy matching algorithm on synthetic data with output showing selected ads and total value, plus a README linking it to the paper's algorithm.
+
+**Stretch goal:** Add a visualization of the capacity usage and selected ads to better illustrate the algorithm's behavior.
+
+### Intermediate — Implementation and Evaluation of Mechanism 2 for Position Auctions
+*Effort: 2 weekends, ~20 hours*
+
+You implement Mechanism 2 from the paper, which randomizes between the novel capacity-constrained matching algorithm and selecting the single highest-value feasible ad-position pair. You evaluate its performance on a synthetic dataset simulating position auctions with heterogeneous ad sizes and capacity constraints, comparing it against a natural greedy baseline. You report approximation ratios and expected social welfare.
+
+**Why it shows you understood the paper:** This project demonstrates your ability to reimplement the paper's core truthful mechanism and experimentally verify its approximation guarantees compared to simpler heuristics, showing grasp of both algorithm design and mechanism truthfulness.
+
+**Grounded in:** Key result: "Mechanism 2 (randomizing between the novel algorithm and a single highest-value feasible pair) achieves a 6-approximation in expectation."
+
+**Tech stack:** Python 3.11, NumPy, Matplotlib
+
+**Data:** Synthetic datasets generated in code simulating ads with heterogeneous sizes, values, and a global capacity constraint; no public dataset available.
+
+**Build it:**
+
+1. Reimplement the novel capacity-constrained matching algorithm from the paper.
+2. Implement the single highest-value feasible ad-position pair selection algorithm.
+3. Implement Mechanism 2 that randomizes between the two algorithms.
+4. Generate multiple synthetic datasets simulating position auctions with capacity constraints.
+5. Implement a natural greedy baseline algorithm for comparison.
+6. Run experiments comparing Mechanism 2 against the baseline, measuring total social welfare and approximation ratios.
+7. Plot results and write a report linking findings to the paper's theoretical guarantees.
+
+**Ships as:** A Python repository with implementations of Mechanism 2 and baseline, scripts to run experiments on synthetic data, plots of approximation performance, and a README explaining the connection to the paper.
+
+**Stretch goal:** Add code to verify monotonicity properties of Mechanism 2 outputs on synthetic data to explore truthfulness aspects.
+
+### Advanced — Extending Capacity-Constrained Position Auctions to Ad-Dependent CTRs
+*Effort: 3-4 weeks*
+
+You extend the paper's model and mechanism to handle click-through rates (CTRs) that depend on both the position and the assigned ad, addressing a key limitation noted by the authors. You modify the capacity-constrained matching formulation and adapt the randomized truthful mechanism accordingly. You evaluate your extension on synthetic data with ad-position dependent CTRs and compare social welfare to the original model.
+
+**Why it shows you understood the paper:** This project tackles an open future direction from the paper, demonstrating deep comprehension of the model's assumptions and the challenges in extending truthful mechanisms to more general CTR models.
+
+**Grounded in:** Limitation and future direction: "The approach does not extend directly to more general CTR models where CTR depends on the ad assigned." and "Extending the model to settings where CTRs depend on both position and the assigned ad."
+
+**Tech stack:** Python 3.11, NumPy, SciPy, Matplotlib
+
+**Data:** Synthetic datasets generated in code simulating ads with heterogeneous sizes, values, and ad-position dependent CTRs; no public dataset available.
+
+**Build it:**
+
+1. Review the paper's model and mechanism assumptions regarding CTRs.
+2. Formulate an extended capacity-constrained matching problem incorporating ad-position dependent CTRs.
+3. Adapt the randomized truthful mechanism (Mechanism 4) to the new model, ensuring monotonicity if possible.
+4. Generate synthetic datasets with ad-position dependent CTR values.
+5. Implement the extended mechanism and baseline algorithms.
+6. Run experiments comparing social welfare and approximation ratios between the original and extended models.
+7. Document challenges, limitations, and potential improvements in a detailed README.
+
+**Ships as:** A Python repository implementing the extended mechanism, experimental scripts, results comparing original and extended models, and a comprehensive README discussing the extension and its relation to the paper.
+
+**Stretch goal:** Explore heuristic or approximation algorithms that could yield deterministic truthful mechanisms under the extended CTR model.

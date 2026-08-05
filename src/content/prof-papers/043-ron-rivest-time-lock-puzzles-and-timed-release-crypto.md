@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-rivest"
-source_hash: "b05ac2346152d23002240792b39e0f2e590947691c44ce137beae1c9257028ad"
+source_hash: "0f9461fc571653d747710953afaf9d45631d13258afc852087d8c2c4221d9a1b"
 sequence: 43
 generator: "outreach-garden: managed"
 ---
@@ -119,3 +119,88 @@ Hearing from experts and researchers provides insight into the motivations, chal
 ## Already in your library
 
 - [Rachit Garg: Time-Lock Puzzles with Efficient Batch Solving](https://www.youtube.com/watch?v=G4yriZDo17c) — also for: Time-lock puzzles and timed-release Crypto (Ron Rivest)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder to demonstrate your understanding of the 1996 paper on time-lock puzzles by Rivest, Shamir, and Wagner. The beginner project reproduces the core repeated squaring time-lock puzzle mechanism in a simple form. The intermediate project implements and benchmarks the puzzle's sequential nature and resistance to parallel speedup. The advanced project addresses a key limitation by exploring adaptive puzzle difficulty to maintain timing guarantees despite hardware variability, directly engaging with the paper's future directions.
+
+### Beginner — Basic Repeated Squaring Time-Lock Puzzle
+*Effort: a weekend, ~8 hours*
+
+You build a simple command-line tool that encrypts a short secret using the repeated squaring time-lock puzzle method described in the paper, and then decrypts it by performing the required sequential squarings modulo a composite number. The tool demonstrates the core puzzle construction with configurable parameters.
+
+**Why it shows you understood the paper:** This project shows you understand the fundamental cryptographic construction of the time-lock puzzle based on repeated squaring modulo n = pq, and how the puzzle enforces a time delay via sequential computation.
+
+**Grounded in:** The paper's key contribution: 'A novel time-lock puzzle construction based on repeated squaring modulo a composite number.'
+
+**Tech stack:** Python 3.11
+
+**Data:** No external data needed; you generate random secrets and composite numbers for puzzle creation.
+
+**Build it:**
+
+1. Implement modular exponentiation by repeated squaring modulo a composite number n = pq.
+2. Generate a random composite number n by multiplying two primes (for simplicity, small primes).
+3. Encrypt a secret by adding it to a^{2^t} mod n as per the paper's method.
+4. Implement the puzzle solver that performs t repeated squarings sequentially to recover the secret.
+5. Create a CLI interface to input parameters (secret, t) and show encryption and decryption steps.
+6. Write a README explaining the puzzle construction and how the code maps to the paper.
+
+**Ships as:** A GitHub repo with the Python script and README demonstrating the time-lock puzzle encryption and decryption with example runs.
+
+**Stretch goal:** Add a simple timing benchmark to show how increasing t increases solve time approximately linearly.
+
+### Intermediate — Benchmarking Sequentiality and Parallel Resistance of Time-Lock Puzzle
+*Effort: 1-3 weekends*
+
+You implement the repeated squaring time-lock puzzle from the paper and experimentally verify its intrinsic sequential nature by benchmarking puzzle solving time with varying numbers of parallel threads or processes. You compare single-threaded vs. multi-threaded performance to confirm the lack of parallel speedup.
+
+**Why it shows you understood the paper:** This project demonstrates you grasp the paper's key result that the puzzle is intrinsically sequential and resistant to parallel speedup, by reproducing the experimental evidence and metrics supporting this claim.
+
+**Grounded in:** The paper's key result: 'Parallelization does not significantly speed up solving the puzzle, making it reliable for timed-release.'
+
+**Tech stack:** Python 3.11, multiprocessing or threading library, matplotlib for plotting
+
+**Data:** No external data; you generate puzzles with varying t values and measure solve times under different parallelization settings.
+
+**Build it:**
+
+1. Reimplement the repeated squaring puzzle solver from the beginner project.
+2. Implement a parallelized version attempting to split the squaring computations across multiple threads or processes.
+3. Design and run benchmarks measuring solve time for single-threaded and multi-threaded runs over a range of t values.
+4. Plot and analyze the results to show minimal speedup from parallelization.
+5. Write a report in the README comparing your results to the paper's claims.
+6. Optionally, include code to simulate hardware speed variability by adding artificial delays.
+
+**Ships as:** A GitHub repo with code, benchmark scripts, plots, and a detailed README analyzing the puzzle's sequentiality and parallel resistance.
+
+**Stretch goal:** Add a simple secret-sharing scheme simulation with trusted agents as described in the paper to contrast computational and trusted-agent approaches.
+
+### Advanced — Adaptive Time-Lock Puzzle with Dynamic Difficulty Adjustment
+*Effort: a few weeks*
+
+You extend the repeated squaring time-lock puzzle by implementing an adaptive difficulty mechanism that adjusts the puzzle parameter t dynamically based on observed hardware speed or elapsed time, aiming to maintain a target solve time despite hardware variability. This addresses the paper's limitation on precise timing control.
+
+**Why it shows you understood the paper:** This project tackles a stated limitation and future direction from the paper, showing deep comprehension by proposing and implementing a practical enhancement to improve timing precision and robustness of time-lock puzzles.
+
+**Grounded in:** The paper's limitation and future direction: 'Precise timing control is difficult due to hardware speed variations.' and 'Improving precision and control over puzzle solution timing despite hardware variability.'
+
+**Tech stack:** Python 3.11, multiprocessing, matplotlib, possibly Docker for environment control
+
+**Data:** No external data; you simulate hardware speed variability by running on different machines or artificially varying compute speed in code.
+
+**Build it:**
+
+1. Build on the intermediate project’s puzzle implementation and benchmarking framework.
+2. Design a method to estimate current hardware speed by timing a small calibration puzzle.
+3. Implement a controller that adjusts the puzzle parameter t dynamically to target a desired solve time.
+4. Test the adaptive puzzle on machines or simulated environments with different speeds.
+5. Evaluate how well the adaptive mechanism maintains timing guarantees compared to fixed t puzzles.
+6. Document the design, implementation, and evaluation results in a comprehensive README.
+
+**Ships as:** A GitHub repo with adaptive time-lock puzzle code, calibration and adjustment logic, evaluation scripts, and a detailed report discussing improvements over the original scheme.
+
+**Stretch goal:** Explore hybrid schemes combining adaptive puzzles with secret-sharing trusted agents to improve robustness.

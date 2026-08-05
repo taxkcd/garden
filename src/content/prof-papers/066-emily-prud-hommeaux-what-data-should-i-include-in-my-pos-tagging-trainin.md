@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-emily-prud-hommeaux"
-source_hash: "39afe9ee7fbf695afc23e1fd99ac5a22373deb77a960df16eb75da3840000a81"
+source_hash: "bb27b7b7eecadb41c280b6d98e67e46dacfe6e48690e5032630d1ad86e1ca81e"
 sequence: 66
 generator: "outreach-garden: managed"
 ---
@@ -112,3 +112,96 @@ Explore how different strategies like random sampling and active learning select
 *How the paper uses it:* The paper compares active learning, random sampling, and in-context learning for building POS tagging datasets.
 
 ▶ [Machine Learning | Uncertainty Sampling | Active Learning](https://www.youtube.com/watch?v=DsdBe0-4-30) — RANJI RAJ · 6 years ago
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive ladder to demonstrate understanding of the paper's investigation into data selection methods for POS tagging in under-resourced languages. The beginner project reproduces a simple analysis of active learning versus random sampling on a small dataset, the intermediate project reimplements the core active learning method using the authors' released code and compares it to random sampling on a Universal Dependencies treebank, and the advanced project extends the paper by exploring diversity sampling integrated with active learning, addressing a stated future direction. Each project uses the applicant's existing software engineering and ML skills while introducing progressively deeper engagement with the paper's methods and ethical considerations.
+
+### Beginner — Compare Active Learning and Random Sampling on a Small POS Dataset
+*Effort: a weekend, ~8 hours*
+
+You build a simple Python script that simulates active learning with uncertainty sampling and random sampling for POS tagging on a small publicly available Universal Dependencies treebank (e.g., English or Irish). You plot learning curves of weighted F1 score versus number of tokens annotated, reproducing the qualitative pattern that active learning reaches performance faster than random sampling.
+
+**Why it shows you understood the paper:** This project shows you understand the core data selection methods compared in the paper and how active learning can improve annotation efficiency for POS tagging, a key contribution of the study.
+
+**Grounded in:** Shows that active learning models reached their maximum F1 scores faster than random sampling but with similar upper asymptotes.
+
+**Tech stack:** Python 3.11, scikit-learn, matplotlib, pandas
+
+**Data:** A small Universal Dependencies treebank such as UD_English-EWT or UD_Irish-IDT, publicly available from Universal Dependencies repository.
+
+**Build it:**
+
+1. Download a small Universal Dependencies treebank and preprocess it to extract tokens and POS tags.
+2. Implement or adapt uncertainty sampling active learning for POS tagging using a simple CRF or logistic regression model.
+3. Implement random sampling baseline for selecting training tokens.
+4. Train models incrementally with increasing token counts selected by each method and evaluate weighted F1 on a fixed test set.
+5. Plot learning curves comparing active learning and random sampling performance.
+6. Write a README explaining the methods, results, and connection to the paper.
+
+**Ships as:** A GitHub repo with scripts, plots of learning curves, and a README that explains the comparison of active learning and random sampling for POS tagging.
+
+**Stretch goal:** Add a simple uncertainty metric visualization to better explain active learning selection.
+
+### Intermediate — Reimplement Active Learning for POS Tagging Using Authors' Code
+*Effort: 1-3 weekends*
+
+You clone and run the authors' released code from https://github.com/ufcompling/unlabeled_pos to reproduce their active learning experiments on a selected Universal Dependencies treebank. You then extend the code to compare active learning with random sampling on that treebank, reporting weighted F1 scores and plotting growth curves similar to the paper's figures.
+
+**Why it shows you understood the paper:** By working directly with the authors' implementation and reproducing their core experiments, you demonstrate comprehension of the paper's methodology, evaluation metrics, and statistical modeling of learning efficiency.
+
+**Grounded in:** The authors' code implements active learning with uncertainty sampling using CRFs and growth curve modeling to compare data selection methods for POS tagging.
+
+**Tech stack:** Python 3.11, PyTorch or CRF library as per authors' code, matplotlib, pandas, Jupyter Notebook
+
+**Data:** Universal Dependencies treebanks as used in the paper, selecting one with sufficient size and diversity (e.g., UD_Irish-IDT).
+
+**Build it:**
+
+1. Clone the authors' repository https://github.com/ufcompling/unlabeled_pos and set up the environment.
+2. Run the provided scripts to reproduce active learning experiments on the chosen treebank.
+3. Implement a random sampling baseline within the same framework.
+4. Collect weighted F1 scores at various token counts for both methods.
+5. Plot learning curves and apply simple growth curve modeling to compare methods.
+6. Document the process, results, and insights in a detailed README.
+
+**Verified links from the paper:**
+
+- <https://github.com/ufcompling/unlabeled_pos> — released by the paper's authors
+
+**Ships as:** A GitHub repo forked from the authors' code with added random sampling baseline, plots comparing methods, and a README explaining the reproduction and extension.
+
+**Stretch goal:** Experiment with varying the initial seed size or token batch sizes to observe effects on learning curves.
+
+### Advanced — Integrate Diversity Sampling with Active Learning for POS Tagging
+*Effort: a few weeks*
+
+You develop an extension of the active learning framework by integrating diversity sampling strategies (e.g., clustering-based or embedding-based selection) alongside uncertainty sampling to improve training set construction for POS tagging. You evaluate this hybrid method on a Universal Dependencies treebank and compare it against pure uncertainty sampling and random sampling baselines, reporting weighted F1 scores and analyzing data distribution metrics like KL divergence.
+
+**Why it shows you understood the paper:** This project addresses a stated future direction of the paper by exploring diversity sampling integrated with active learning, demonstrating deep engagement with the paper's limitations and potential improvements. It also shows ability to innovate beyond reproduction.
+
+**Grounded in:** Future directions include exploring diversity sampling methods integrated with active learning to potentially improve data selection.
+
+**Tech stack:** Python 3.11, PyTorch or CRF library, scikit-learn, transformers (for embeddings), matplotlib, pandas, Jupyter Notebook
+
+**Data:** Universal Dependencies treebanks as in the paper, preferably one with typological diversity and sufficient size (e.g., UD_Irish-IDT or UD_English-EWT).
+
+**Build it:**
+
+1. Set up the active learning framework based on the authors' code or your intermediate project.
+2. Implement a diversity sampling method, such as clustering token embeddings or using sentence embeddings to select diverse examples.
+3. Combine diversity sampling with uncertainty sampling in a hybrid selection strategy.
+4. Run experiments comparing hybrid, pure uncertainty, and random sampling on POS tagging performance.
+5. Analyze training set distributions using KL divergence and other metrics to relate to model performance.
+6. Write a comprehensive report and README documenting methodology, results, and implications for ethical data selection.
+
+**Verified links from the paper:**
+
+- <https://github.com/ufcompling/unlabeled_pos> — released by the paper's authors
+
+**Ships as:** A GitHub repo with code implementing hybrid active learning, experimental results comparing methods, analysis of data distributions, and a detailed README discussing findings and ethical considerations.
+
+**Stretch goal:** Extend the approach to simulate privacy-preserving active learning scenarios respecting Indigenous data sovereignty constraints.

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-yuan-luo"
-source_hash: "c4b2779fc75f2c9aad5781e44d610382cc74c742abca3ceac41e089d7e172614"
+source_hash: "c717d71cab4777ac21280297df3cd7d929f1a5e708518f2e1be9f990eb3279ed"
 sequence: 206
 generator: "outreach-garden: managed"
 ---
@@ -150,3 +150,96 @@ This presentation provides a detailed overview of the A MANDA framework, explain
 - [Stanford CS25: V4 I From Large Language Models to Large ...](https://www.youtube.com/watch?v=cYfKQ6YG9Qo) — also for: Automated Grading of Handwritten Mathematics Using Vision-Capable LLMs (Craig B. Zilles)
 - [Stanford CS25: Transformers United V6 I From Language ...](https://www.youtube.com/watch?v=NDdc39KYqDU) — also for: Beyond Final Answers: CRYSTAL Benchmark for Transparent Multimodal Reasoning Evaluation (Sou-Young Jin)
 - [What is Multimodal AI? How LLMs Process Text, Images, and More](https://www.youtube.com/watch?v=J51oZYcNvP8) — also for: Automated Grading of Handwritten Mathematics Using Vision-Capable LLMs (Craig B. Zilles)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive learning path to demonstrate your understanding of the A MANDA framework for medical visual question answering (Med-VQA). The beginner project focuses on reproducing the intrinsic question decomposition mechanism on a small scale, the intermediate project uses the authors' released code to run and extend A MANDA on a public Med-VQA dataset with baseline comparison, and the advanced project explores extending the framework by integrating additional external medical knowledge sources, addressing a key future direction from the paper.
+
+### Beginner — Intrinsic Question Decomposition for Medical VQA
+*Effort: a weekend, ~8 hours*
+
+You build a simplified prototype of the Explorer agent's intrinsic medical knowledge augmentation by implementing a coarse-to-fine question decomposition pipeline. Using a small set of example medical images and complex questions (which you simulate or extract from public Med-VQA samples), you write code that decomposes complex questions into simpler sub-questions and generates detailed answers for each.
+
+**Why it shows you understood the paper:** This project demonstrates your grasp of the core intrinsic reasoning bottleneck addressed by A MANDA and how hierarchical question decomposition improves visual reasoning depth, a key contribution of the paper.
+
+**Grounded in:** Intrinsic Med-KA uses coarse-to-fine question decomposition for comprehensive diagnosis.
+
+**Tech stack:** Python 3.11, Jupyter Notebook, OpenAI API or HuggingFace transformers for LLM calls
+
+**Data:** Use a small subset of publicly available medical images with associated questions from a public Med-VQA dataset such as VQA-RAD or PathVQA, or simulate a few examples based on paper descriptions.
+
+**Build it:**
+
+1. Select or simulate 5-10 complex medical visual questions with corresponding images.
+2. Implement a function that uses an LLM to decompose each complex question into simpler sub-questions.
+3. Implement a function that answers each sub-question using either LLM or heuristic rules.
+4. Aggregate sub-question answers to form a final detailed answer.
+5. Evaluate and document examples showing how decomposition improves answer detail and reasoning.
+
+**Ships as:** A GitHub repo with Jupyter notebooks demonstrating question decomposition and answering on sample medical images, with README explaining the approach and examples.
+
+**Stretch goal:** Add a simple confidence scoring mechanism to decide when to stop decomposing further sub-questions.
+
+### Intermediate — Run and Extend A MANDA on Public Med-VQA Dataset
+*Effort: 1-3 weekends, ~20 hours*
+
+You clone and run the authors' released A MANDA codebase on a publicly available Med-VQA dataset (e.g., VQA-RAD) to reproduce zero-shot or few-shot performance improvements. Then, you implement a simple baseline Med-MLLM inference pipeline without knowledge augmentation to compare accuracy and hallucination rates. You report metrics similar to those in the paper.
+
+**Why it shows you understood the paper:** This project shows you can operate the full A MANDA framework, understand its multi-agent architecture, and quantitatively evaluate its impact on Med-VQA benchmarks, directly engaging with the authors' core contributions and results.
+
+**Grounded in:** Proposed a training-free agentic framework addressing intrinsic and extrinsic reasoning bottlenecks in Med-MLLMs for data-efficient Med-VQA; Achieved average zero-shot accuracy improvements of up to 19.36% over baseline Med-MLLMs.
+
+**Tech stack:** Python 3.11, PyTorch, OpenAI API or local LLMs, Docker (optional)
+
+**Data:** Use the VQA-RAD dataset or another publicly available Med-VQA dataset as a substitute for the paper's benchmarks.
+
+**Build it:**
+
+1. Clone the A MANDA repository from https://github.com/REAL-Lab-NU/AMANDA and set up the environment.
+2. Download and preprocess the chosen Med-VQA dataset (e.g., VQA-RAD).
+3. Run the A MANDA pipeline in zero-shot and few-shot modes on the dataset and record accuracy and hallucination metrics.
+4. Implement a baseline Med-MLLM inference pipeline without knowledge augmentation on the same dataset.
+5. Compare and visualize performance differences between A MANDA and baseline.
+6. Write a report summarizing findings and insights.
+
+**Verified links from the paper:**
+
+- <https://github.com/REAL-Lab-NU/AMANDA> — released by the paper's authors
+
+**Ships as:** A GitHub repo with scripts to run A MANDA and baseline on a public Med-VQA dataset, evaluation metrics, and a README with results and analysis.
+
+**Stretch goal:** Experiment with swapping the underlying LLM engine (e.g., GPT-4o vs. an open-source model) to observe performance changes.
+
+### Advanced — Integrate Clinical Guidelines into A MANDA for Enhanced Knowledge Retrieval
+*Effort: few weeks, ~40+ hours*
+
+You extend the A MANDA framework by incorporating an additional extrinsic knowledge source: a curated set of clinical guidelines or medical textbook excerpts (publicly available). You modify the Retriever agent to query this new knowledge base alongside the SPOKE biomedical knowledge graph, integrating retrieved facts into the reasoning process. You evaluate the impact on Med-VQA accuracy and hallucination reduction compared to the original framework.
+
+**Why it shows you understood the paper:** This project tackles a stated future direction and limitation of the paper by broadening extrinsic knowledge retrieval beyond biomedical graphs, demonstrating your ability to extend and adapt the framework for real-world clinical knowledge integration.
+
+**Grounded in:** Current extrinsic knowledge retrieval relies mainly on biomedical knowledge graphs; incorporating diverse sources like textbooks or clinical guidelines is future work.
+
+**Tech stack:** Python 3.11, PyTorch, OpenAI API or local LLMs, SQLite or JSON for clinical guideline storage
+
+**Data:** Use publicly available clinical guideline documents or medical textbook excerpts (e.g., NIH guidelines, WHO protocols) as the additional knowledge source.
+
+**Build it:**
+
+1. Collect and preprocess a small corpus of clinical guidelines or textbook excerpts relevant to the Med-VQA domain.
+2. Extend the Retriever agent in the A MANDA codebase to query this corpus alongside SPOKE.
+3. Modify the reasoning pipeline to incorporate retrieved guideline facts into answer generation.
+4. Run experiments on a Med-VQA dataset to compare performance and hallucination rates with and without guideline integration.
+5. Analyze results and document the impact of multi-source knowledge augmentation.
+
+**Verified links from the paper:**
+
+- <https://github.com/REAL-Lab-NU/AMANDA> — released by the paper's authors
+
+**Ships as:** A GitHub repo fork of A MANDA with extended Retriever agent, scripts for knowledge integration, evaluation results, and a detailed README explaining the extension and findings.
+
+**Stretch goal:** Implement a dynamic weighting mechanism for the Retriever to prioritize knowledge sources based on question type or confidence.
+
+_The public Med-VQA datasets used as substitutes may differ in scale and complexity from the paper's eight benchmarks; results may vary accordingly._

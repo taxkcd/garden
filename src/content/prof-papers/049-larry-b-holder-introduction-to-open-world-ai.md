@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-holder"
-source_hash: "9e806aa76d8753420008cfd9adce60586dc4159c3c4e79418f948dc39f8632b4"
+source_hash: "665851676ff67879739377b60f8cf18059120c8128b652c820b694a5b1b7d6a7"
 sequence: 49
 generator: "outreach-garden: managed"
 ---
@@ -140,3 +140,95 @@ This keynote by a leading researcher provides direct insight into open-world AI,
 ## Already in your library
 
 - [MIT 6.S191 (2020): Neurosymbolic AI](https://www.youtube.com/watch?v=4PuuziOgSU4) — also for: Introduction to open-world AI (Larry B. Holder)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder to demonstrate your understanding of open-world AI as introduced by Holder et al. (2025). The beginner project focuses on implementing a basic novelty detection metric inspired by the paper's discussion of novelty detection challenges. The intermediate project reimplements a core novelty detection and adaptation method, applying it to a visual reinforcement learning environment from the DARPA SAIL-ON program's VizDoom novelty generator. The advanced project extends the state-of-the-art by addressing a key limitation identified in the paper: improving novelty characterization to enhance adaptation, using hybrid neuro-symbolic methods and meta-learning on interactive environments.
+
+### Beginner — Basic Novelty Detection Metric Implementation
+*Effort: a weekend, ~8 hours*
+
+You build a simple Python script that simulates a stream of data points with injected novel events and implements a basic novelty detection metric such as detection accuracy or false positive rate. The novelty events are synthetic but inspired by the paper's novelty hierarchy concept. You visualize detection results over time to illustrate detection performance.
+
+**Why it shows you understood the paper:** This project shows you understand the fundamental challenge of novelty detection in open-world AI and how detection performance can be measured and visualized, directly reflecting the paper's emphasis on novelty detection metrics.
+
+**Grounded in:** Open-world AI is characterized by sudden novel changes in a domain that are outside the scope of the training data... the AI system must detect the novelty and adapt in a short time frame.
+
+**Tech stack:** Python 3.11, matplotlib, numpy
+
+**Data:** Synthetic time series data with injected novelty events simulating sudden domain changes as described in the paper's novelty hierarchy.
+
+**Build it:**
+
+1. Implement a data generator that produces a stream of normal data points and injects novel events at random intervals.
+2. Implement a simple novelty detection algorithm (e.g., threshold-based anomaly detection).
+3. Calculate detection metrics such as true positive rate and false positive rate.
+4. Visualize the data stream and detection results over time using matplotlib.
+5. Write a README explaining the novelty detection concept and how the metric relates to open-world AI challenges.
+
+**Ships as:** A GitHub repository containing the Python script, visualization outputs, and a README explaining novelty detection metrics in open-world AI.
+
+**Stretch goal:** Add a simple adaptation mechanism that modifies detection thresholds based on recent novelty frequency.
+
+### Intermediate — Reimplementing Novelty Detection and Adaptation in VizDoom
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement a core novelty detection and adaptation method inspired by the DARPA SAIL-ON program's approach using the VizDoom novelty generator environment (from https://github.com/holderlb/WSU-SAILON-NG). You run experiments comparing a baseline agent without novelty adaptation to a novelty-aware agent, measuring performance recovery after novelty injection.
+
+**Why it shows you understood the paper:** This project demonstrates your ability to work with a real open-world AI benchmark environment and replicate the paper's core experimental methodology, showing comprehension of novelty detection, adaptation, and evaluation metrics from the SAIL-ON program.
+
+**Grounded in:** The SAIL-ON program developed an experiment methodology and set of metrics to assess different aspects of an agent’s ability to detect and adapt to novelty.
+
+**Tech stack:** Python 3.11, PyTorch, OpenAI Gym, VizDoom, matplotlib
+
+**Data:** VizDoom novelty generator environment from the third_party_artifacts repository https://github.com/holderlb/WSU-SAILON-NG, which simulates visual reinforcement learning tasks with novelty injection.
+
+**Build it:**
+
+1. Clone and set up the WSU-SAILON-NG repository and its dependencies.
+2. Study the novelty injection mechanisms and baseline agent implementations provided.
+3. Implement a novelty-aware agent that detects novelty events and adapts its policy (e.g., via fine-tuning or meta-learning).
+4. Run experiments comparing baseline and novelty-aware agents on VizDoom tasks with injected novelty.
+5. Measure and plot performance recovery metrics post-novelty to replicate key results.
+6. Document the methodology, results, and relation to the paper's findings.
+
+**Verified links from the paper:**
+
+- <https://github.com/holderlb/WSU-SAILON-NG> — a third-party/baseline artifact the paper cites — not the authors' own code
+
+**Ships as:** A GitHub repository with your novelty-aware agent code, experiment scripts, performance plots, and a detailed README linking your results to the paper's SAIL-ON evaluation metrics.
+
+**Stretch goal:** Incorporate a simple meta-cognitive module that triggers adaptation only when novelty is detected to optimize resource use.
+
+### Advanced — Hybrid Neuro-Symbolic Novelty Characterization to Improve Adaptation
+*Effort: 3-4 weeks*
+
+You develop a hybrid neuro-symbolic AI architecture that integrates symbolic reasoning with deep learning to improve novelty characterization and thereby enhance adaptation in an open-world interactive environment. You implement meta-learning techniques to enable few-shot adaptation to novel situations. Experiments compare your approach to a baseline novelty-aware agent, focusing on whether improved characterization leads to better adaptation performance.
+
+**Why it shows you understood the paper:** This project tackles a key limitation and future direction identified in the paper: the limited impact of novelty characterization on adaptation and the need for integrated hybrid architectures. It shows your ability to extend state-of-the-art methods and engage with open research challenges.
+
+**Grounded in:** Although agent teams developed methods for novelty characterization, this capability did not significantly enhance an agent’s ability to adapt to the novelty. Future open-world AI research should integrate multiple learning paradigms and improve few-shot adaptation.
+
+**Tech stack:** Python 3.11, PyTorch, scikit-learn, Z3 SMT solver (for symbolic reasoning), OpenAI Gym or VizDoom for environment, matplotlib
+
+**Data:** Use the VizDoom novelty generator environment (https://github.com/holderlb/WSU-SAILON-NG) as the interactive domain for experiments, substituting for the paper's evaluation environments.
+
+**Build it:**
+
+1. Design a neuro-symbolic architecture combining a neural novelty detector with a symbolic reasoning module for novelty characterization.
+2. Implement meta-learning algorithms (e.g., MAML or Reptile) to enable few-shot adaptation to novel events.
+3. Integrate the modules to enable the agent to explain and characterize novelty, then adapt its policy accordingly.
+4. Run experiments comparing your hybrid agent to a baseline novelty-aware agent on VizDoom tasks with novelty injection.
+5. Analyze whether improved novelty characterization leads to statistically significant adaptation performance gains.
+6. Write a comprehensive report discussing how your approach addresses the paper's identified limitations and future directions.
+
+**Verified links from the paper:**
+
+- <https://github.com/holderlb/WSU-SAILON-NG> — a third-party/baseline artifact the paper cites — not the authors' own code
+
+**Ships as:** A GitHub repository containing your hybrid neuro-symbolic agent code, experiment scripts, evaluation results, and a detailed README discussing the impact of novelty characterization on adaptation.
+
+**Stretch goal:** Extend the architecture to incorporate causal reasoning for transparency and further improve adaptation.

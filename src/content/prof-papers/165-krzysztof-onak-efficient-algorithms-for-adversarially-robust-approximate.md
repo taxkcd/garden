@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-krzysztof-onak"
-source_hash: "aa121bcc80f835fa4198723567fc299d50d79a858d825762d0693475dd6ae997"
+source_hash: "b47b42036df604f9c1777fc9545592523e02314cd216c235a0626310d40aadd4"
 sequence: 165
 generator: "outreach-garden: managed"
 ---
@@ -137,3 +137,86 @@ This section focuses on approximate nearest neighbor search algorithms that rema
 ## Already in your library
 
 - [04. Privacy II: Differential Privacy for Machine Learning ...](https://www.youtube.com/watch?v=0wbN0CFP6UY) — also for: Differentially Private Synthetic Data Generation Using Context-Aware GANs (Anantaa Kotal)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progression from a simple demonstration of fairness-based robustness in ANN algorithms to a full reimplementation of the paper's core robust ANN method, culminating in an advanced extension addressing one of the paper's key limitations on adaptive dataset updates. Each project is designed to fit your existing software engineering and algorithmic skills while deepening your understanding of adversarial robustness, differential privacy, and locality-sensitive hashing in ANN search.
+
+### Beginner — Fairness-Based Robust ANN Demo
+*Effort: a weekend, ~8 hours*
+
+You build a small-scale Approximate Nearest Neighbor (ANN) search simulation that implements a fairness-inspired randomized algorithm ensuring uniform output distribution over neighbors. The demo will visualize how fairness in output distribution implies robustness against adaptive queries in a simple synthetic metric space.
+
+**Why it shows you understood the paper:** This project concretely demonstrates the paper's Claim 4.3 that fairness implies adversarial robustness, showing you grasp the connection between fairness and robustness in ANN algorithms.
+
+**Grounded in:** Claim 4.3 (Fairness Implies Robustness). The algorithm Afair is n^{1}-adversarially robust for Q adaptive queries.
+
+**Tech stack:** Python 3.11, Jupyter Notebook, matplotlib, numpy
+
+**Data:** Synthetic low-dimensional Euclidean points generated randomly to simulate a small dataset for ANN queries.
+
+**Build it:**
+
+1. Generate a small synthetic dataset of points in 2D Euclidean space.
+2. Implement a simple randomized ANN query algorithm that returns neighbors with a uniform probability distribution (fairness).
+3. Simulate adaptive queries where each query depends on previous outputs.
+4. Visualize the distribution of returned neighbors over multiple adaptive queries to show fairness and robustness.
+5. Write a README explaining the fairness-robustness connection demonstrated.
+
+**Ships as:** A Jupyter notebook with code, visualizations, and explanations showing fairness-based robustness in a toy ANN setting.
+
+**Stretch goal:** Add a comparison with a classical randomized ANN algorithm that is not fairness-aware to highlight robustness differences.
+
+### Intermediate — Robust ANN via Differential Privacy Reimplementation
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement the paper's core robust ANN algorithm based on the search-to-decision reduction combined with differential privacy techniques. Using a publicly available low-dimensional dataset (e.g., MNIST embeddings or a small UCI dataset as a proxy), you implement the bucketing-based ANN with private aggregation of decision queries and compare query accuracy and robustness against a baseline classical ANN method.
+
+**Why it shows you understood the paper:** This project shows you can translate the paper's main algorithmic framework into working code, understand the role of differential privacy in robustness, and evaluate performance metrics similar to those in the paper.
+
+**Grounded in:** Theorem 1.3. There exists an adversarially robust algorithm for the (c, r)-ANN problem ... The algorithm uses O(n^{1/(2−ρ)}) time per-query and differential privacy to robustify the decision process.
+
+**Tech stack:** Python 3.11, numpy, scipy, scikit-learn, matplotlib
+
+**Data:** Use a publicly available dataset such as MNIST embeddings or UCI datasets as a substitute for the paper's data; synthetic data generation is also acceptable.
+
+**Build it:**
+
+1. Implement a classical bucketing-based ANN algorithm for approximate nearest neighbor search.
+2. Implement the search-to-decision reduction framework to convert ANN queries into decision queries.
+3. Apply a simple differential privacy mechanism (e.g., Laplace noise addition) to aggregate decision query results privately.
+4. Evaluate query time, accuracy, and robustness against adaptive query sequences.
+5. Compare results with the classical ANN baseline and document findings in a report.
+
+**Ships as:** A Python project with scripts and a report comparing robust and classical ANN algorithms on a real or synthetic dataset.
+
+**Stretch goal:** Experiment with tuning privacy parameters and analyze their impact on query time and robustness.
+
+### Advanced — Extending Robust ANN to Fully Adaptive Dataset Updates
+*Effort: 3+ weeks*
+
+You develop an extension of the paper's robust ANN algorithms to handle fully adaptive dataset modifications, addressing one of the paper's stated limitations. This involves designing and implementing an update-efficient robust ANN data structure that maintains adversarial robustness under adaptive insertions and deletions. You evaluate your method on a synthetic dynamic dataset simulating adversarial updates and compare robustness and update efficiency with a baseline static robust ANN.
+
+**Why it shows you understood the paper:** This project demonstrates deep comprehension of the paper's limitations and future directions, your ability to innovate beyond the original work, and your skills in algorithm design and evaluation under adversarial models.
+
+**Grounded in:** Limitation: The approach assumes oblivious updates and does not address fully adaptive dataset modifications. Future direction: Improving update efficiency and handling fully adaptive dataset changes.
+
+**Tech stack:** Python 3.11, numpy, scipy, matplotlib, pytest
+
+**Data:** Synthetic dynamic datasets generated to simulate adversarial adaptive updates in a metric space.
+
+**Build it:**
+
+1. Study the paper's robust ANN algorithms and identify update mechanisms and limitations.
+2. Design a data structure and algorithm to support fully adaptive dataset updates while preserving robustness.
+3. Implement the extended robust ANN algorithm with update support.
+4. Create synthetic dynamic datasets with adversarial update patterns.
+5. Evaluate query robustness, update time, and space complexity compared to the original static robust ANN.
+6. Document the design, implementation, and evaluation results in a detailed README.
+
+**Ships as:** A Python codebase implementing the extended robust ANN with adaptive updates and an evaluation report demonstrating improvements and trade-offs.
+
+**Stretch goal:** Explore applying the extended method to other metric spaces or integrate differential privacy techniques for stronger guarantees.

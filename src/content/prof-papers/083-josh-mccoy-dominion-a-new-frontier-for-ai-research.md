@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-josh-mccoy"
-source_hash: "d3df149a0986a796c053a14745b5cdb52e4ad9c6fb6f2f63f8629abddd6efe93"
+source_hash: "870afa6126022456fadf11e9fa90f56c09f0098b65f7ae5ad9f5be51b804c910"
 sequence: 83
 generator: "outreach-garden: managed"
 ---
@@ -126,3 +126,88 @@ Gain direct insight from the authors about why Dominion is a promising new front
 *How the paper uses it:* This talk provides an overview of the paper's main contributions and the significance of Dominion as an AI benchmark.
 
 ▶ [Episode 13 - What Is Frontier AI?](https://www.youtube.com/watch?v=EJ79sQvE1lI) — Beyond The Breach · 2 weeks ago
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder to demonstrate your understanding of the Dominion AI benchmark paper. The beginner project reproduces a simple analysis of Dominion game complexity using the paper's insights. The intermediate project implements a baseline RL agent inspired by the paper's Rainbow DQN bot on a simplified Dominion environment, comparing it to a heuristic baseline. The advanced project extends the RL bot to improve exploration or representation, addressing a stated limitation and exploring generalization to complex strategies or expansions.
+
+### Beginner — Dominion Card Set Complexity Analysis
+*Effort: a weekend, ~8 hours*
+
+You build a script to analyze Dominion's combinatorial complexity by enumerating possible kingdom card sets and visualizing their distribution, inspired by the paper's claim about over 6·10^18 possible setups. You also create a simple dashboard showing how random card sets vary in strategic complexity based on card types.
+
+**Why it shows you understood the paper:** This project shows you grasp the core motivation of the paper: Dominion's vast and variable game setups create a challenging AI benchmark. It demonstrates your ability to translate the paper's combinatorial claims into concrete data analysis.
+
+**Grounded in:** Dominion's unique mechanic of randomly selecting 10 kingdom cards from over 350 creates over 6·10^18 possible game setups, requiring adaptive strategies.
+
+**Tech stack:** Python 3.11, Jupyter Notebook, matplotlib, pandas
+
+**Data:** No external dataset needed; you simulate card set combinations based on the paper's description of Dominion's card pool.
+
+**Build it:**
+
+1. Extract the number of kingdom cards (350+) and the selection size (10) from the paper.
+2. Write a Python script to compute the number of possible 10-card combinations from the card pool.
+3. Classify cards into types (e.g., action, treasure, victory) based on paper descriptions or public Dominion card data.
+4. Generate random samples of card sets and analyze the distribution of card types per set.
+5. Visualize the combinatorial counts and card type distributions using matplotlib.
+6. Write a README explaining how this analysis relates to the paper's motivation for using Dominion as a benchmark.
+
+**Ships as:** A Jupyter Notebook and Python scripts with plots showing Dominion card set combinatorial complexity and variability, with explanations linking to the paper's motivation.
+
+**Stretch goal:** Add a simple heuristic metric estimating strategic complexity per card set based on card types and compare distributions.
+
+### Intermediate — Baseline RL Bot for Simplified Dominion Environment
+*Effort: 2 weekends, ~20 hours*
+
+You implement a simplified Dominion environment focusing on buying decisions and train a Rainbow DQN agent to learn buying policies. You compare its performance against a heuristic baseline bot on a small set of fixed card sets, reporting win rates similar to the paper's metrics.
+
+**Why it shows you understood the paper:** This project faithfully reproduces the paper's core method—training an RL bot with Rainbow DQN on Dominion buying decisions—and evaluates it against heuristics, demonstrating your grasp of the RL approach and benchmarking methodology.
+
+**Grounded in:** Development of a baseline RL bot that outperforms heuristic bots and competes with the strongest existing AI, Provincial.
+
+**Tech stack:** Python 3.11, PyTorch, OpenAI Gym (custom environment), numpy, matplotlib
+
+**Data:** No official Dominion Online Dataset available; you simulate a small fixed set of Dominion card sets and game states based on the paper's base game description.
+
+**Build it:**
+
+1. Design a simplified Dominion environment focusing on buying decisions with fixed card sets and simplified game states.
+2. Implement heuristic baseline buying strategies based on paper heuristics.
+3. Implement a Rainbow DQN agent using PyTorch to learn buying policies in this environment.
+4. Train the RL agent and evaluate its win rate against the heuristic baseline over multiple episodes.
+5. Plot learning curves and win rate comparisons similar to the paper's Table 2.
+6. Document the environment design, training procedure, and evaluation results in a README.
+
+**Ships as:** A GitHub repo with a simplified Dominion environment, heuristic baseline, Rainbow DQN agent code, training scripts, evaluation results, and plots comparing RL and heuristic performance.
+
+**Stretch goal:** Extend the environment to include action card decisions or add random card sets per episode to increase variability.
+
+### Advanced — Improved RL Bot with Enhanced Exploration for Complex Dominion Strategies
+*Effort: 3+ weeks*
+
+You extend the baseline RL bot by incorporating advanced exploration techniques (e.g., curiosity-driven exploration or improved state representations) to better handle complex engine strategies that the original RL bot struggled with. You evaluate improvements on a set of challenging card sets and analyze generalization to unseen card combinations.
+
+**Why it shows you understood the paper:** This project tackles a key limitation and future direction from the paper, demonstrating deep comprehension of the RL challenges in Dominion and the ability to innovate on the baseline method to improve adaptability and generalization.
+
+**Grounded in:** The RL bot struggles against certain complex strategies (e.g., engine combos) due to limited exploration during training; future directions include improving exploration and state representations.
+
+**Tech stack:** Python 3.11, PyTorch, OpenAI Gym (custom environment), numpy, matplotlib, scikit-learn
+
+**Data:** Simulated Dominion base game states with focus on complex engine strategy card sets derived from paper descriptions; no official dataset available.
+
+**Build it:**
+
+1. Review the baseline RL bot implementation and identify exploration limitations.
+2. Implement advanced exploration strategies such as intrinsic motivation or curiosity-driven rewards.
+3. Enhance game state representation using feature engineering or autoencoder-based embeddings for card effects.
+4. Retrain the RL agent with these improvements on challenging card sets involving engine strategies.
+5. Evaluate performance gains against the baseline RL bot and heuristic bots, reporting win rates and qualitative behavior.
+6. Document methodology, experiments, and analysis in a detailed README.
+
+**Ships as:** A GitHub repo with improved RL agent code, training and evaluation scripts, and a comprehensive report on handling complex Dominion strategies with enhanced exploration and representation.
+
+**Stretch goal:** Experiment with transfer learning to Dominion expansions or multi-player settings as suggested in the paper's future directions.

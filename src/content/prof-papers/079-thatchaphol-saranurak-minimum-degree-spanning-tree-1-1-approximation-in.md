@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-thatchaphol-saranurak"
-source_hash: "4c4d833dfc6de3db4f3fb2177b9ba21cf47e6b27e24bc5aad12c1c369398384a"
+source_hash: "f2168c252794250f736ebea974c63767d5542b5005a5b4b6247ce1b4a1cfba63"
 sequence: 79
 generator: "outreach-garden: managed"
 ---
@@ -113,3 +113,87 @@ Understand dynamic graph algorithms and graph traversal techniques like BFS and 
 *How the paper uses it:* The paper's find-chain subroutine uses dynamic, level-based search to efficiently find augmenting chains while maintaining near-linear runtime.
 
 ▶ [L-4.15: BFS & DFS | Breadth First Search | Depth First Search | Graph Traversing | DAA](https://www.youtube.com/watch?v=N2P7w22tN9c) — Gate Smashers · 11:16 · 3 years ago
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progression to demonstrate your understanding of the paper's core contributions and techniques. The beginner project focuses on implementing and visualizing the augmenting chains concept on small graphs, the intermediate project reimplements the paper's near-linear-time MDST algorithm on public graph data and compares it to a simple baseline, and the advanced project extends the framework to a related degree-constrained network design problem, addressing one of the paper's future directions.
+
+### Beginner — Visualizing Augmenting Chains on Small Graphs
+*Effort: a weekend, ~8 hours*
+
+You build a small interactive visualization tool that demonstrates the concept of augmenting chains on small undirected graphs. The tool allows users to input or generate a small graph, run a simplified version of the augmenting chain search, and see how these chains help reduce the number of forest components in a spanning forest.
+
+**Why it shows you understood the paper:** This project shows you grasp the key novel concept of augmenting chains and their role in the algorithm's progress, which is central to the paper's approach.
+
+**Grounded in:** Augmenting chains are a key novel concept enabling the algorithm's efficiency (Definitions 4.3 and 5.1, Lemma 4.4).
+
+**Tech stack:** JavaScript, React, D3.js
+
+**Data:** Synthetic small undirected graphs generated within the tool or user-provided examples.
+
+**Build it:**
+
+1. Implement a graph data structure supporting undirected edges and forest components.
+2. Implement a simplified augmenting chain finder that identifies short chains connecting forest components.
+3. Build a React+D3.js UI to visualize the graph, forest components, and highlight augmenting chains.
+4. Allow users to add/remove edges and run the augmenting chain procedure step-by-step.
+5. Display metrics such as number of components before and after applying chains.
+
+**Ships as:** An interactive web app repository with a README explaining augmenting chains and how the visualization illustrates their effect on spanning forests.
+
+**Stretch goal:** Add animation of the dynamic level-based search (find-chain) process to show runtime control.
+
+### Intermediate — Near-Linear-Time Approximate MDST Algorithm Implementation
+*Effort: 2 weekends, ~20 hours*
+
+You implement the paper's core near-linear-time algorithm for computing a minimum degree spanning tree with (1 + ε, 1)-approximation on publicly available undirected graphs (e.g., SNAP datasets). You compare your implementation's maximum degree and runtime against a simple baseline like a standard MST algorithm (e.g., Kruskal's).
+
+**Why it shows you understood the paper:** Reimplementing the main algorithm from the paper and evaluating it on real graphs demonstrates deep comprehension of the algorithmic framework, augmenting chains, and the dynamic find-chain subroutine.
+
+**Grounded in:** Theorem 1.1: Deterministic algorithm computing a spanning tree with max degree ≤ ⌈(1 + ε)∆⋆⌉ + 1 in near-linear time Õ(m/ε²).
+
+**Tech stack:** C++, Python 3.11, NetworkX (for graph I/O and baseline MST)
+
+**Data:** Publicly available undirected graph datasets from SNAP (Stanford Large Network Dataset Collection) as a substitute for the paper's input graphs.
+
+**Build it:**
+
+1. Implement graph input/output using NetworkX in Python or C++ graph libraries.
+2. Implement the augmenting chain framework and the dynamic find-chain subroutine as described in the paper.
+3. Implement the main iterative algorithm to reduce forest components and build the spanning tree.
+4. Implement a baseline MST algorithm (e.g., Kruskal's) for comparison.
+5. Run experiments on SNAP graphs, measuring maximum degree of spanning tree and runtime.
+6. Write a report comparing your results to the baseline and discussing approximation quality.
+
+**Ships as:** A GitHub repo with code, scripts to run experiments on public graphs, and a detailed README reporting results and explaining the implementation.
+
+**Stretch goal:** Add a visualization module to show augmenting chains found during execution on sample graphs.
+
+### Advanced — Extending Augmenting Chains to Bounded-Degree Steiner Trees
+*Effort: 3+ weeks*
+
+You extend the paper's augmenting chain framework to the bounded-degree Steiner tree problem, a related degree-constrained network design problem mentioned as a future direction. You adapt the algorithm to handle Steiner nodes and terminals, implement the modified algorithm, and evaluate it on synthetic or small real-world graphs.
+
+**Why it shows you understood the paper:** This project demonstrates your ability to transfer and extend the paper's novel framework to a new problem domain, addressing one of the paper's stated future directions and showing research-level initiative.
+
+**Grounded in:** Future direction: Extending the framework to other degree-constrained network design problems such as bounded-degree Steiner trees.
+
+**Tech stack:** C++, Python 3.11, NetworkX
+
+**Data:** Synthetic graphs with designated terminal and Steiner nodes generated programmatically, as no public benchmark for bounded-degree Steiner trees is specified.
+
+**Build it:**
+
+1. Study the bounded-degree Steiner tree problem formulation and constraints.
+2. Adapt the augmenting chain definitions and find-chain subroutine to handle Steiner nodes and terminal constraints.
+3. Implement the extended algorithm incorporating these adaptations.
+4. Generate synthetic graphs with terminal and Steiner nodes for testing.
+5. Evaluate the algorithm's performance and maximum degree guarantees compared to a baseline Steiner tree heuristic.
+6. Document the approach, challenges, and results in a comprehensive README.
+
+**Ships as:** A repository with the extended algorithm implementation, test scripts on synthetic data, and a detailed report discussing the extension and empirical findings.
+
+**Stretch goal:** Explore parallel or distributed implementations of the extended algorithm for scalability.

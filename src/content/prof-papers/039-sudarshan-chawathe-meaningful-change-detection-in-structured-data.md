@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-sudarshan-s-chawathe"
-source_hash: "361a5f336818f9f550d70d16b390e15826cc259014873ced7b0d30094c9bacc5"
+source_hash: "da92afe7dd10341b1fcd5f4224e9498ab007166651343491da5e1bcb9c4923fa"
 sequence: 39
 generator: "outreach-garden: managed"
 ---
@@ -140,3 +140,88 @@ Explore a focused talk introducing change detection concepts, including semantic
 - [Tree Edit Distance (and Levenshtein Distance)](https://www.youtube.com/watch?v=6Ur8B35xCj8) — also for: Meaningful Change Detection in Structured Data (Sudarshan Chawathe)
 - [17. Complexity: Approximation Algorithms](https://www.youtube.com/watch?v=MEz1J9wY2iM) — also for: Machine Learning and Algorithmic Techniques for Error Correction (Anxiao Andrew Jiang)
 - [Richard Karp: Effective Heuristics for NP-Hard Problems](https://www.youtube.com/watch?v=0p5NilbKETI) — also for: Meaningful Change Detection in Structured Data (Sudarshan Chawathe)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder to demonstrate your understanding of the mh-diff algorithm for meaningful change detection in structured data. The beginner project recreates a core mechanism of the algorithm on small example trees to grasp the concept of semantic edit operations. The intermediate project implements the core heuristic on small hierarchical data and compares it to a baseline, showing practical algorithmic skills. The advanced project extends the method to address a stated limitation by incorporating additional edit operations or improving pruning strategies, potentially opening research discussions.
+
+### Beginner — Visualizing Move and Copy Operations in Tree Diff
+*Effort: a weekend, ~8 hours*
+
+You build a small interactive web tool that takes two small example trees (hardcoded or JSON input) and visualizes the edit script including insert, delete, update, move, and copy operations as described in the paper. The tool highlights how subtree moves and copies differ from traditional edit operations.
+
+**Why it shows you understood the paper:** This project shows you understand the semantic richness of the edit operations introduced by mh-diff and can concretely demonstrate their effect on tree change descriptions.
+
+**Grounded in:** Introduction of move and copy operations in change detection for structured data.
+
+**Tech stack:** TypeScript, React, CSS
+
+**Data:** Small synthetic example trees defined in JSON within the project.
+
+**Build it:**
+
+1. Define two small example rooted labeled trees in JSON format representing hierarchical data snapshots.
+2. Implement a simple tree differencing visualization that shows node correspondences and edit operations.
+3. Manually encode or implement a basic heuristic to detect move and copy operations between the trees.
+4. Visualize the detected edit script with distinct colors/icons for insert, delete, update, move, and copy.
+5. Add UI controls to toggle visibility of different edit operations and to load different example trees.
+
+**Ships as:** A GitHub repo with a React app demonstrating semantic tree differencing with move and copy operations on small examples, documented with explanations referencing the paper.
+
+**Stretch goal:** Add support for user-defined cost parameters and show how changing costs affects the detected edit script.
+
+### Intermediate — Reimplementing mh-diff Heuristic for Meaningful Tree Change Detection
+*Effort: 1-3 weekends*
+
+You implement the core mh-diff heuristic algorithm from the paper to detect meaningful changes between two unordered rooted labeled trees, including move and copy operations. You apply it to small synthetic or publicly available hierarchical datasets (e.g., XML or JSON trees) and compare the edit script cost against a baseline that only uses insert, delete, and update operations.
+
+**Why it shows you understood the paper:** This project demonstrates your ability to translate the paper's core algorithmic contribution into working code, understand the minimum-cost edge cover transformation, pruning, and annotation steps, and evaluate solution quality.
+
+**Grounded in:** Development of mh-diff, an efficient heuristic algorithm for computing near-minimal cost edit scripts.
+
+**Tech stack:** Python 3.11, networkx (for graph algorithms), pytest (for testing)
+
+**Data:** Synthetic hierarchical tree pairs generated programmatically or small public XML/JSON tree snapshots as substitutes for the paper's data.
+
+**Build it:**
+
+1. Parse or generate two unordered rooted labeled trees as input.
+2. Construct the bipartite graph induced by the two trees with edges representing possible node correspondences.
+3. Implement pruning rules to reduce the bipartite graph size as described in the paper.
+4. Compute a minimum-cost edge cover on the pruned bipartite graph using a suitable algorithm (e.g., Hungarian or approximate matching).
+5. Annotate the edges to generate an edit script including move and copy operations.
+6. Implement a baseline tree differencing method using only insert, delete, and update operations.
+7. Compare the cost of edit scripts from mh-diff and the baseline on several tree pairs and report results.
+
+**Ships as:** A Python package with scripts to run mh-diff and baseline on example trees, a report comparing edit script costs, and code documented with references to the paper's algorithmic steps.
+
+**Stretch goal:** Add a flexible cost model allowing user-defined fixed costs and update cost functions as in the paper.
+
+### Advanced — Extending mh-diff with Subtree Merge Operations and Enhanced Pruning
+*Effort: a few weeks*
+
+You extend the mh-diff heuristic by incorporating subtree merge operations, addressing one of the paper's stated limitations. You also experiment with more nuanced pruning strategies to balance efficiency and solution quality, especially for trees with duplicated or complex structures. You evaluate your extension on synthetic or real hierarchical data and analyze trade-offs.
+
+**Why it shows you understood the paper:** This project shows deep comprehension of the paper's limitations and future directions, your ability to innovate on the core algorithm, and readiness to engage in research-level problem solving.
+
+**Grounded in:** Extending the model to include more complex edit operations such as subtree merges or deletes explicitly, and exploring pruning trade-offs.
+
+**Tech stack:** Python 3.11, networkx, matplotlib (for visualization), pytest
+
+**Data:** Synthetic hierarchical trees with known subtree merges or complex duplicated structures, generated or adapted from public hierarchical datasets.
+
+**Build it:**
+
+1. Review the mh-diff algorithm and implement the baseline heuristic if not already done.
+2. Design and implement subtree merge edit operations within the mh-diff framework, defining cost and annotation rules.
+3. Develop enhanced pruning strategies that consider subtree merges and duplication to reduce graph size without losing important edges.
+4. Run experiments comparing the extended mh-diff with the original on various tree pairs, measuring edit script cost and runtime.
+5. Visualize edit scripts and pruning effects to analyze semantic meaningfulness and efficiency.
+6. Document findings, limitations, and possible further improvements.
+
+**Ships as:** A GitHub repo with the extended mh-diff implementation, experimental results, visualizations, and a detailed README discussing the extension and its impact.
+
+**Stretch goal:** Incorporate node identifiers or tags when available to improve matching accuracy as suggested in future directions.

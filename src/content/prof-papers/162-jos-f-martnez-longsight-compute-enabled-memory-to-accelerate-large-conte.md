@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-jose-f-martinez"
-source_hash: "3c4b366f2c206a84cd1dcc2404c2e98c45655bd2340968aa5ae035cf000e0424"
+source_hash: "232fd084f8c6651f56c60ae1ddce2c0b069861f481f3fb147354e3115858b487"
 sequence: 162
 generator: "outreach-garden: managed"
 ---
@@ -123,3 +123,86 @@ Sparse attention algorithms reduce computation by focusing only on a subset of r
 - [Attention for Neural Networks, Clearly Explained!!!](https://www.youtube.com/watch?v=PSs6nxngL6k) — also for: A Survey of AI-Based Anomaly Detection in IoT and Sensor Networks (Marco Álvarez)
 - [Transformers, the tech behind LLMs | Deep Learning Chapter 5](https://www.youtube.com/watch?v=wjZofJX0v4M) — also for: Learning Volumetric Neural Deformable Models to Recover 3D Regional Heart Wall Motion from Multi-Planar Tagged MRI (Meng Ye)
 - [Stanford CS224N NLP with Deep Learning | 2023 | Lecture 8 - Self-Attention and Transformers](https://www.youtube.com/watch?v=LWMzyfvuehA) — also for: MonarchRT: Efficient Attention for Real-Time Video Generation (Atri Rudra)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder to demonstrate your understanding of LongSight's approach to accelerating large-context LLM attention via hybrid dense-sparse attention and compute-enabled memory offloading. The beginner project focuses on implementing and visualizing the core sparse attention filtering mechanism in software. The intermediate project reimplements the hybrid dense-sparse attention algorithm on a smaller scale and compares throughput and accuracy to a dense baseline. The advanced project extends the system by exploring adaptive parameter tuning to address a key limitation noted in the paper, using your software engineering and ML skills.
+
+### Beginner — Sparse Attention Filtering Visualization
+*Effort: a weekend, ~8 hours*
+
+You build a Python script that simulates the sign-concordance filtering (SCF) and iterative quantization (ITQ) steps used in LongSight to filter key-value pairs for sparse attention. The project visualizes how SCF and ITQ reduce the candidate key set size while preserving relevant keys, using synthetic dot-product similarity data.
+
+**Why it shows you understood the paper:** This project demonstrates your grasp of LongSight's key filtering techniques that enable efficient sparse attention by drastically reducing memory and compute overhead, a core contribution of the paper.
+
+**Grounded in:** Sign-Concordance Filtering (SCF) and Iterative Quantization (ITQ) enable efficient multi-stage filtering and top-k retrieval.
+
+**Tech stack:** Python 3.11, matplotlib, numpy, jupyter notebook
+
+**Data:** Synthetic dot-product similarity scores generated to mimic attention scores between query and past tokens.
+
+**Build it:**
+
+1. Implement a function to generate synthetic dot-product similarity scores between a query vector and a large set of key vectors.
+2. Implement sign-concordance filtering (SCF) by quantizing vectors to 1-bit signs and filtering keys based on sign agreement with the query.
+3. Implement iterative quantization (ITQ) to improve the balance of sign-bit distributions and enhance filtering effectiveness.
+4. Visualize the reduction in candidate keys after each filtering stage and plot the trade-off between filter ratio and recall of top-k keys.
+5. Write a README explaining the filtering process and how it relates to LongSight's sparse attention acceleration.
+
+**Ships as:** A Jupyter notebook or Python script with visualizations showing SCF and ITQ filtering stages, demonstrating how sparse attention filtering reduces candidate keys efficiently.
+
+**Stretch goal:** Add a simple simulation of top-k retrieval after filtering and compare recall against full dense attention on synthetic data.
+
+### Intermediate — Hybrid Dense-Sparse Attention Reimplementation
+*Effort: 2 weekends, ~20 hours*
+
+You implement a simplified version of LongSight's hybrid dense-sparse attention algorithm in Python using PyTorch. The model processes sequences with a short dense attention window and offloads sparse attention over a longer context simulated in CPU memory. You compare throughput and perplexity against a baseline full dense attention on a public small-scale language modeling dataset.
+
+**Why it shows you understood the paper:** This project shows you can reimplement the core hybrid attention mechanism, demonstrating understanding of how LongSight balances dense and sparse attention to scale context length efficiently while maintaining accuracy.
+
+**Grounded in:** LongSight implements a hybrid dense-sparse attention algorithm combining local dense attention and offloaded sparse attention.
+
+**Tech stack:** Python 3.11, PyTorch, numpy
+
+**Data:** Use the WikiText-2 dataset as a public substitute for language modeling data to evaluate attention mechanisms.
+
+**Build it:**
+
+1. Set up a PyTorch transformer model that supports variable-length input sequences.
+2. Implement a sliding window dense attention mechanism over the most recent tokens (e.g., last 512 tokens) in GPU memory.
+3. Implement a sparse attention mechanism that filters keys from a longer context stored in CPU memory using a simple dot-product similarity threshold.
+4. Combine the dense and sparse attention outputs to produce the final attention output.
+5. Train or evaluate the model on WikiText-2 and measure perplexity and throughput compared to a baseline full dense attention model.
+6. Document the implementation details, results, and how this relates to LongSight's hybrid attention design.
+
+**Ships as:** A PyTorch codebase with scripts to run hybrid dense-sparse attention and baseline dense attention, with evaluation metrics and a README explaining the approach and results.
+
+**Stretch goal:** Incorporate a basic sign-concordance filtering step in the sparse attention phase to improve filtering efficiency.
+
+### Advanced — Adaptive Parameter Tuning for Hybrid Attention
+*Effort: 3+ weeks*
+
+You develop an extension to the hybrid dense-sparse attention implementation that automatically tunes key parameters such as dense window size, top-k selection, and filtering thresholds based on input context characteristics. Using a combination of heuristic rules and lightweight ML models, your system adapts these parameters dynamically to optimize throughput and accuracy trade-offs.
+
+**Why it shows you understood the paper:** This project addresses a key limitation identified in LongSight about context-dependent parameter tuning, demonstrating your ability to extend the system to improve usability and generalization, a future direction suggested by the authors.
+
+**Grounded in:** Optimal parameters for window size, top-k, and filtering thresholds are heavily context-dependent and require tuning.
+
+**Tech stack:** Python 3.11, PyTorch, scikit-learn, numpy
+
+**Data:** Use WikiText-2 or similar public language modeling datasets to evaluate adaptive tuning strategies.
+
+**Build it:**
+
+1. Build upon the intermediate hybrid attention implementation as a base.
+2. Implement parameter tuning modules that adjust dense window size, top-k, and filtering thresholds based on runtime metrics such as token similarity distributions and latency.
+3. Experiment with heuristic rules and simple ML models (e.g., regression or decision trees) trained on small validation sets to predict optimal parameters.
+4. Evaluate the adaptive system's throughput and perplexity compared to fixed-parameter baselines.
+5. Write detailed documentation and analysis discussing how adaptive tuning improves performance and usability, relating back to LongSight's limitations and future directions.
+
+**Ships as:** An extended hybrid attention codebase with adaptive parameter tuning, evaluation scripts, and a comprehensive README analyzing the benefits and challenges of adaptive tuning.
+
+**Stretch goal:** Explore integration of adaptive tuning with other transformer architectures or larger datasets to test generalization.

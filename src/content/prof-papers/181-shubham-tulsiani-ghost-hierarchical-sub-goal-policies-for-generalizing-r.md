@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-shubham-tulsiani"
-source_hash: "ec1854a08cfd5d535b5c4fc7be09f3eeb311daf47812f6e0b013b2b6445735b0"
+source_hash: "9f4c80ae9a782a8af5437b4d27c9db7c8b4c55f724de8b16cc4a01ba0a51d5ff"
 sequence: 181
 generator: "outreach-garden: managed"
 ---
@@ -135,3 +135,87 @@ This talk by the authors provides a focused overview of the GHOST framework, exp
 *How the paper uses it:* Direct presentation of the GHOST method and its innovations by the authors themselves.
 
 ▶ [CoRL 2020, Spotlight Talk 108: Learning hierarchical relationships for object-goal navigation](https://www.youtube.com/watch?v=eCxWwohbOd8) — Conference on Robot Learning · 5 years ago
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder of increasing complexity and depth to demonstrate understanding of the GHOST paper. The beginner project focuses on reproducing the core idea of 3D sub-goal heatmap representation and conditioning a simple goal-conditioned policy. The intermediate project implements a simplified hierarchical policy with high-level sub-goal prediction and low-level action execution on a small-scale or simulated dataset, comparing against a flat baseline. The advanced project extends the method by addressing a key limitation—reducing the visual domain gap for better out-of-distribution generalization—by integrating domain adaptation or embodiment-invariant visual representations.
+
+### Beginner — 3D Sub-Goal Heatmap Conditioning for Goal-Conditioned Policy
+*Effort: a weekend, ~8 hours*
+
+You build a simple image-based goal-conditioned policy that takes as input an RGB-D image and a 3D sub-goal represented as a heatmap projected into the image plane. You implement the projection of a 3D end-effector pose into a 2D heatmap and condition a small neural network policy on this heatmap to predict a simple action (e.g., end-effector velocity) in a simulated or synthetic environment.
+
+**Why it shows you understood the paper:** This project demonstrates your grasp of the key contribution of GHOST's spatial interface—projecting 3D sub-goals into image-plane heatmaps to condition policies effectively. A professor would see you understand the core mechanism that enables hierarchical visuomotor control.
+
+**Grounded in:** A spatial interface that projects 3D goals into image-plane heatmaps enabling effective conditioning of image-based policies.
+
+**Tech stack:** Python 3.11, PyTorch, OpenCV, NumPy, Matplotlib
+
+**Data:** Synthetic RGB-D images and 3D end-effector poses generated in a simple simulated environment or from random samples, as no public dataset is provided.
+
+**Build it:**
+
+1. Implement a function to project 3D end-effector poses into 2D image-plane heatmaps given camera intrinsics and extrinsics.
+2. Create a small dataset of RGB-D images paired with 3D sub-goals and corresponding actions (e.g., velocity vectors).
+3. Build a simple convolutional neural network policy that takes the RGB-D image and heatmap as input and predicts the next action.
+4. Train the policy on the synthetic dataset to minimize action prediction error.
+5. Visualize the projected heatmaps and policy outputs to verify correct conditioning.
+
+**Ships as:** A GitHub repo with code to generate heatmaps from 3D goals, train a goal-conditioned policy, and visualize results, documented in a README explaining the projection and conditioning mechanism.
+
+**Stretch goal:** Add multi-view RGB-D input and fuse heatmaps from multiple views to improve policy conditioning.
+
+### Intermediate — Hierarchical Sub-Goal Policy with Heatmap Conditioning on Simulated Manipulation
+*Effort: 2 weekends, ~20 hours*
+
+You implement a simplified version of GHOST's hierarchical framework: a high-level policy predicts 3D sub-goal end-effector poses from RGB-D images, and a low-level goal-conditioned policy executes actions to reach these sub-goals. You train both policies on a small simulated robot manipulation dataset and compare performance against a flat goal-conditioned policy baseline.
+
+**Why it shows you understood the paper:** This project shows you can reimplement the core hierarchical factorization of GHOST and validate its advantage over flat policies, demonstrating comprehension of the paper's main method and empirical claims.
+
+**Grounded in:** GHOST factorizes control into a high-level policy predicting 3D end-effector sub-goals and a low-level goal-conditioned policy; hierarchical factorization improves in-distribution performance over flat policies.
+
+**Tech stack:** Python 3.11, PyTorch, OpenAI Gym or PyBullet for simulation, NumPy, Matplotlib
+
+**Data:** Simulated robot manipulation episodes generated in PyBullet or a similar simulator, with RGB-D observations, 3D sub-goal annotations, and robot actions.
+
+**Build it:**
+
+1. Set up a simple simulated manipulation environment (e.g., reaching or pick-and-place) with RGB-D camera views.
+2. Implement a high-level policy network that inputs RGB-D images and outputs 3D sub-goal poses represented as heatmaps.
+3. Implement a low-level goal-conditioned policy that takes the current observation and sub-goal heatmap to predict robot actions.
+4. Train the hierarchical policies end-to-end or sequentially on the simulated dataset.
+5. Implement a flat baseline policy that directly maps observations to actions without sub-goals.
+6. Evaluate and compare success rates or action prediction errors between hierarchical and flat policies.
+
+**Ships as:** A GitHub repo with code for the hierarchical and flat policies, training scripts, evaluation metrics, and a README describing the hierarchical factorization and empirical comparison.
+
+**Stretch goal:** Incorporate a pretrained visual backbone (e.g., DINOv3) for feature extraction to improve policy performance.
+
+### Advanced — Domain Adaptation for High-Level Policy to Reduce Visual Domain Gap
+*Effort: 3+ weeks*
+
+You extend the hierarchical GHOST framework by integrating domain adaptation techniques to reduce the visual domain gap between human and robot observations in the high-level policy. You implement an embodiment-invariant visual representation or adversarial domain adaptation module to improve out-of-distribution generalization on a simulated or small real dataset with domain shifts.
+
+**Why it shows you understood the paper:** This project tackles a key limitation identified by the paper—the visual domain gap bottleneck—and explores a future direction, demonstrating deep understanding and ability to innovate beyond the original work.
+
+**Grounded in:** Oracle experiments reveal that the main bottleneck for out-of-distribution generalization is the visual domain gap in the high-level policy rather than the low-level controller; future direction includes improving embodiment-invariant visual representations.
+
+**Tech stack:** Python 3.11, PyTorch, OpenAI Gym or PyBullet, Domain adaptation libraries (e.g., PyTorch Lightning Bolts), NumPy, Matplotlib
+
+**Data:** Simulated robot and human-like observation datasets with domain differences, or synthetic domain-shifted RGB-D images generated to mimic human and robot views.
+
+**Build it:**
+
+1. Reimplement or reuse the hierarchical policy framework from the intermediate project.
+2. Create or simulate paired datasets representing robot and human observation domains with domain shift.
+3. Implement a domain adaptation method such as adversarial domain adaptation or contrastive learning to learn domain-invariant visual features for the high-level policy.
+4. Train the high-level policy with domain adaptation to predict sub-goals robustly across domains.
+5. Evaluate out-of-distribution generalization performance compared to a baseline without domain adaptation.
+6. Analyze and visualize the learned visual embeddings to confirm reduced domain gap.
+
+**Ships as:** A GitHub repo with code for hierarchical policies augmented with domain adaptation, training and evaluation scripts, and a detailed README discussing the domain gap problem, method, and results.
+
+**Stretch goal:** Experiment with automatic sub-goal discovery methods to further reduce annotation effort alongside domain adaptation.

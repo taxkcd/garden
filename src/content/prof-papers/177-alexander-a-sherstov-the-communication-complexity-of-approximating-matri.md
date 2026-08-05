@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-alexander-a-sherstov"
-source_hash: "2a0381bfef9e913590d861ebbee22cceccd67ffedadffa5c456a3238a1d97397"
+source_hash: "80c83f96a33db2abf042efc0b8a44579ae9303f753885cd25251d0a66f077986"
 sequence: 177
 generator: "outreach-garden: managed"
 ---
@@ -132,3 +132,87 @@ Finally, explore the key novel technique of the paper: analyzing approximate tra
 
 - [Lower Bounds in Complexity Theory, Communication ...](https://www.youtube.com/watch?v=w3kq7vTta7c) — also for: Query Lower Bounds for Correlation Clustering under Memory Constraints (Periklis A. Papakonstantinou)
 - [Basics of Communication Complexity || @ CMU || Lecture 23a ...](https://www.youtube.com/watch?v=mQQ36cDnmR8) — also for: Query Lower Bounds for Correlation Clustering under Memory Constraints (Periklis A. Papakonstantinou)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a practical learning ladder to demonstrate understanding of the paper "The Communication Complexity of Approximating Matrix Rank." The beginner project focuses on simulating and visualizing the randomized communication complexity lower bound for rank approximation over finite fields. The intermediate project involves reimplementing the core method of constructing symmetric witness matrices with hyperpolynomial structure to analyze approximate trace norms, reproducing a key theoretical bound on communication complexity. The advanced project extends the paper's results by exploring communication complexity bounds for matrix rank approximation over infinite fields, addressing one of the paper's stated limitations.
+
+### Beginner — Simulate Communication Complexity Lower Bound for Rank Approximation
+*Effort: a weekend, ~8 hours*
+
+You build a Python simulation that models the randomized communication complexity lower bound Ω(1 + r^2 log |F|) for approximating matrix rank with rank gap r over a small finite field (e.g., GF(2) or GF(3)). The simulation will generate random matrices of specified ranks, simulate a simple communication protocol distinguishing them, and plot communication cost versus rank gap.
+
+**Why it shows you understood the paper:** This project concretely demonstrates the fundamental lower bound on communication complexity for rank approximation, showing you understand the relationship between rank gap, field size, and communication cost as established in the paper.
+
+**Grounded in:** Randomized and quantum communication complexity of approximating matrix rank with rank gap r is Ω(1 + r^2 log|F|), tight up to constants.
+
+**Tech stack:** Python 3.11, NumPy, Matplotlib
+
+**Data:** Randomly generated matrices over small finite fields GF(2) or GF(3), synthesized within the project.
+
+**Build it:**
+
+1. Implement functions to generate random matrices over GF(2) or GF(3) with specified ranks.
+2. Simulate a simple randomized communication protocol that attempts to distinguish matrices differing in rank by r.
+3. Calculate and record the communication cost (in bits) required for various rank gaps r.
+4. Plot communication cost against rank gap to visualize the Ω(1 + r^2 log|F|) lower bound.
+5. Write a README explaining the simulation, the theoretical bound, and how the results illustrate the paper's claim.
+
+**Ships as:** A GitHub repository with Python scripts that simulate and plot communication complexity lower bounds for matrix rank approximation, accompanied by a clear README explaining the connection to the paper.
+
+**Stretch goal:** Add a comparison plot showing communication costs for different finite field sizes to illustrate the log|F| factor.
+
+### Intermediate — Reimplement Symmetric Witness Construction for Communication Matrix Analysis
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement the paper's core method of constructing symmetric witness matrices with algebraic structure described by hyperpolynomials to analyze the approximate trace norm of communication matrices for rank approximation. You will implement the construction for small matrix sizes and finite fields, compute spectra, and verify the lower bound on communication complexity numerically. You will compare your results against a naive baseline that does not use symmetric witnesses.
+
+**Why it shows you understood the paper:** This project shows you grasp the paper's novel technical approach—using symmetric witnesses and hyperpolynomials to tightly characterize communication complexity—and can translate it into code that reproduces key theoretical insights.
+
+**Grounded in:** The authors develop a novel approach using symmetric witnesses and hyperpolynomials to analyze approximate trace norms.
+
+**Tech stack:** Python 3.11, NumPy, SciPy, Jupyter Notebook
+
+**Data:** Synthetic small-size matrices over finite fields (e.g., GF(2), GF(3)) generated within the project; no external dataset required.
+
+**Build it:**
+
+1. Study the paper's description of symmetric witness matrices and hyperpolynomial structure.
+2. Implement code to construct symmetric witness matrices Φ with n+1 degrees of freedom for small n.
+3. Compute the spectrum of the associated matrices E_ϕ and analyze their algebraic structure numerically.
+4. Calculate approximate trace norms and verify the communication complexity lower bounds for rank approximation.
+5. Implement a baseline method without symmetric witnesses for comparison.
+6. Document the implementation, results, and comparison in a Jupyter Notebook with explanatory text.
+
+**Ships as:** A Jupyter Notebook repository demonstrating the construction and spectral analysis of symmetric witness matrices, numerical verification of communication complexity bounds, and comparison to a baseline.
+
+**Stretch goal:** Extend the implementation to include randomized communication protocols and simulate their communication costs to compare with theoretical bounds.
+
+### Advanced — Extend Communication Complexity Analysis to Infinite Fields
+*Effort: 3+ weeks*
+
+You build a research prototype that explores extending the communication complexity results for matrix rank approximation from finite fields to infinite fields (e.g., real or complex numbers). This involves adapting the symmetric witness and hyperpolynomial techniques or developing analogous constructions, implementing numerical experiments on real-valued matrices, and analyzing communication complexity bounds in this new setting.
+
+**Why it shows you understood the paper:** This project tackles a key limitation and future direction stated in the paper, demonstrating deep comprehension of the theoretical framework and the ability to innovate beyond the original scope, potentially opening new research avenues.
+
+**Grounded in:** The paper focuses on finite fields; extensions to infinite fields or other algebraic structures are not addressed.
+
+**Tech stack:** Python 3.11, NumPy, SciPy, Jupyter Notebook, Matplotlib
+
+**Data:** Synthetic real-valued matrices generated within the project to simulate infinite field scenarios.
+
+**Build it:**
+
+1. Review the paper's methods and limitations regarding finite fields.
+2. Research existing communication complexity results over infinite fields for matrix problems.
+3. Adapt or generalize the symmetric witness and hyperpolynomial constructions to infinite fields, or propose analogous structures.
+4. Implement numerical experiments on real-valued matrices to estimate communication complexity bounds.
+5. Analyze and visualize the results, comparing them to finite field cases.
+6. Write a detailed report discussing the methodology, challenges, results, and potential implications.
+
+**Ships as:** A GitHub repository containing code, notebooks, and a comprehensive report exploring communication complexity bounds for matrix rank approximation over infinite fields.
+
+**Stretch goal:** Investigate practical quantum communication protocols inspired by the hyperpolynomial structure in the infinite field setting.

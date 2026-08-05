@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-kent-quanrud"
-source_hash: "aeebf73cc8028b849d4114a600314345dc6a02755623f2495236058a7505deb7"
+source_hash: "db19df77de68ef1c8963efcb64fb50dce8dd37af65e4ee510628bbb2ae2cb3c8"
 sequence: 87
 generator: "outreach-garden: managed"
 ---
@@ -121,3 +121,87 @@ Divide and conquer breaks a complex problem into smaller subproblems, solves the
 *How the paper uses it:* The shrink-wrap technique is a novel divide-and-conquer approach critical to the paper's method for approximating connectivity.
 
 ▶ [Divide and Conquer: The Art of Breaking Down Problems ...](https://www.youtube.com/watch?v=ib4BHvr5-Ao) — WilliamFiset · 11:22
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive ladder to demonstrate understanding of Kent Quanrud's 2025 paper on almost-linear time approximation algorithms for directed graph connectivity. The beginner project focuses on implementing and visualizing the core shrink-wrap divide-and-conquer idea on small graphs using familiar tools. The intermediate project involves reimplementing the paper's randomized approximation algorithm for minimum global edge cuts on a public directed graph dataset, comparing it to a simple baseline. The advanced project extends the shrink-wrap technique toward dynamic graph connectivity, addressing one of the paper's future directions and limitations, and exploring challenges in adapting the method to dynamic settings.
+
+### Beginner — Shrink-Wrap Divide-and-Conquer Visualization on Small Directed Graphs
+*Effort: a weekend, ~8 hours*
+
+You build a small interactive tool that implements the shrink-wrap divide-and-conquer approach on toy weighted directed graphs. The tool visualizes the process of identifying minimum (r, t)-cuts, contracting the graph parts, and reducing the problem size proportional to uncertified terminals. This helps concretely understand the core recursive contraction mechanism.
+
+**Why it shows you understood the paper:** A professor would see that you grasp the key shrink-wrap technique by reproducing its core recursive contraction and cut certification steps visually, demonstrating comprehension of the divide-and-conquer approach and its effect on graph size.
+
+**Grounded in:** Shrink-wrap is a divide-and-conquer technique that contracts parts of the graph to reduce problem size proportional to uncertified terminals.
+
+**Tech stack:** Python 3.11, NetworkX, Matplotlib, Jupyter Notebook
+
+**Data:** Synthetic small weighted directed graphs generated within the notebook to illustrate the algorithm steps.
+
+**Build it:**
+
+1. Implement a function to compute minimum (r, t)-cuts using single-commodity max flow on small directed graphs with NetworkX.
+2. Implement the shrink-wrap contraction step: identify the cut (A, B) and contract A to reduce graph size.
+3. Build a recursive divide-and-conquer routine applying shrink-wrap until all terminals are certified.
+4. Visualize each recursion step and graph contraction using Matplotlib to show graph changes and cuts.
+5. Test the tool on several small synthetic graphs with varying terminal sets and weights.
+
+**Ships as:** A Jupyter notebook with code and visualizations demonstrating the shrink-wrap divide-and-conquer process on example graphs, with explanatory comments.
+
+**Stretch goal:** Add interactive widgets (e.g., with ipywidgets) to allow users to select root and terminals and see the algorithm progress dynamically.
+
+### Intermediate — Approximate Minimum Global Edge Cuts in Directed Graphs Using Shrink-Wrap
+*Effort: 1-3 weekends, ~20 hours*
+
+You reimplement the paper's randomized almost-linear time approximation algorithm for minimum global edge cuts in weighted directed graphs using the shrink-wrap technique. You apply it to a publicly available directed graph dataset (e.g., a small web graph or citation network) as a substitute for the paper's data. You compare your approximate cut values and runtime to a simple baseline such as the classical Stoer-Wagner algorithm adapted for directed graphs or a naive min-cut approach.
+
+**Why it shows you understood the paper:** This project shows you can translate the paper's core algorithmic contributions into working code and evaluate its performance and approximation quality on real data, demonstrating deeper understanding beyond toy examples.
+
+**Grounded in:** A (1 + ε)-approximate minimum global edge cut can be computed with high probability in randomized time O(m^{1+o(1)}/ε), using O(log^4(n)/ε) single-commodity flow computations.
+
+**Tech stack:** Python 3.11, NetworkX, NumPy, SciPy
+
+**Data:** Use a publicly available small directed graph dataset such as the SNAP directed web graph or citation network as a substitute for the paper's weighted directed graphs.
+
+**Build it:**
+
+1. Implement or adapt a single-commodity max flow algorithm suitable for weighted directed graphs.
+2. Implement the shrink-wrap divide-and-conquer algorithm for approximate minimum global edge cuts following the paper's description.
+3. Precondition the graph by adding auxiliary arcs as described to ensure well-conditioned cuts.
+4. Run your algorithm on the chosen public directed graph dataset to compute approximate minimum global edge cuts.
+5. Implement a simple baseline min-cut algorithm for directed graphs for comparison.
+6. Compare the approximation quality and runtime of your implementation against the baseline and report results.
+
+**Ships as:** A GitHub repository with code, scripts to run experiments on the chosen dataset, and a README reporting approximation results, runtime comparisons, and explanations of the implementation.
+
+**Stretch goal:** Extend the implementation to approximate minimum global vertex cuts using the reduction to auxiliary edge-capacitated graphs as described in the paper.
+
+### Advanced — Extending Shrink-Wrap to Dynamic Directed Graph Connectivity Approximation
+*Effort: a few weeks, ~60+ hours*
+
+You develop an extension of the shrink-wrap divide-and-conquer technique to handle dynamic updates (edge insertions and deletions) in directed graphs, approximating minimum global edge connectivity efficiently over time. You design and implement data structures to maintain contracted graphs and preconditioning under dynamic changes, addressing challenges in adapting the static algorithm. You evaluate your approach on synthetic dynamic graph streams and analyze trade-offs in update time and approximation quality.
+
+**Why it shows you understood the paper:** This project tackles a stated future direction and limitation of the paper by adapting the novel shrink-wrap method to dynamic graph connectivity problems, demonstrating research-level insight and technical skill in algorithm design and implementation.
+
+**Grounded in:** Future directions: Developing deterministic versions of the algorithms; Extending the shrink-wrap technique and preconditioning to other graph connectivity and cut problems, including dynamic graph connectivity.
+
+**Tech stack:** C++17, Boost Graph Library, Google Benchmark, Python 3.11 (for scripting and visualization)
+
+**Data:** Synthetic dynamic weighted directed graphs generated by scripted edge insertions and deletions to simulate evolving networks.
+
+**Build it:**
+
+1. Study the static shrink-wrap algorithm and identify components sensitive to graph changes.
+2. Design data structures to maintain contracted graphs and auxiliary arcs under dynamic updates.
+3. Implement dynamic updates for edge insertions and deletions, updating preconditioning and contracted graphs incrementally.
+4. Implement an approximate minimum global edge cut query on the dynamic graph using the maintained structures.
+5. Generate synthetic dynamic graph streams and benchmark update times and approximation quality against recomputing from scratch.
+6. Analyze limitations, overheads, and propose optimizations or heuristics to improve practical performance.
+
+**Ships as:** A GitHub repository with C++ implementation of the dynamic shrink-wrap algorithm, benchmarking scripts, and a detailed README discussing design decisions, experimental results, and challenges encountered.
+
+**Stretch goal:** Explore randomized sampling and pruning techniques from the paper to reduce overhead in the dynamic setting and improve update efficiency.

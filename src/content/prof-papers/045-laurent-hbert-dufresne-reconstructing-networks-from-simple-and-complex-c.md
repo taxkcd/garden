@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-laurent-hebert-dufresne"
-source_hash: "6e8234e23b98b3c552febf49a5430925cfca4592439b084c1c824a68c6fd7938"
+source_hash: "4f3420bbd857ea89efc7f1bb7836ddb44b9f121f944d37faba08e2960d44842f"
 sequence: 45
 generator: "outreach-garden: managed"
 ---
@@ -131,3 +131,87 @@ A direct presentation by the paper's lead author explaining the motivation, meth
 
 - [Reconstructing networks from simple and complex contagions - ArXiv:2405.00129](https://www.youtube.com/watch?v=DqtUw0--9pE) — also for: Reconstructing networks from simple and complex contagions (Laurent Hébert-Dufresne)
 - [Mathematical Modeling of Epidemics. Lecture 1: basic SI/SIS ...](https://www.youtube.com/watch?v=IXkr0AsEh1w) — also for: Reconstructing networks from simple and complex contagions (Laurent Hébert-Dufresne)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive ladder to demonstrate understanding of the paper's novel Bayesian network reconstruction method from contagion data. The beginner project reproduces a key simulation metric from the paper using synthetic contagion data and simple MCMC sampling. The intermediate project implements the core nonparametric Bayesian inference method described in the paper on synthetic data, comparing simple versus complex contagion models. The advanced project extends the method to incorporate a more realistic structured network prior, addressing a stated limitation and exploring its impact on reconstruction accuracy.
+
+### Beginner — Simulate Simple and Complex Contagions and Measure Reconstruction Accuracy
+*Effort: a weekend, ~8 hours*
+
+You build a Python script to simulate contagion spreading on small synthetic networks (e.g., Erdős-Rényi graphs) under both simple and complex contagion rules. Then you implement a basic MCMC edge-flip sampler to reconstruct the network adjacency matrix from the simulated binary infection time series and compute AUROC as the reconstruction accuracy metric.
+
+**Why it shows you understood the paper:** This project shows you understand the contagion dynamics and the evaluation metric (AUROC) used in the paper, as well as the basic idea of Bayesian network reconstruction via MCMC sampling.
+
+**Grounded in:** ‘Network reconstruction accuracy (measured by AUROC) improves with more data and saturates near perfect recovery for both simple and complex contagions.’
+
+**Tech stack:** Python 3.11, NumPy, NetworkX, Matplotlib
+
+**Data:** Synthetic contagion time series generated on Erdős-Rényi networks as described in the paper's simulation studies.
+
+**Build it:**
+
+1. Generate Erdős-Rényi random graphs with fixed node count and edge probability.
+2. Simulate binary node infection time series under simple contagion (infection probability depends on any infected neighbor) and complex contagion (infection probability depends on multiple infected neighbors).
+3. Implement a simple MCMC edge-flip sampler to propose network adjacency changes and accept/reject based on likelihood of observed contagion data.
+4. Compute AUROC comparing inferred adjacency to true network edges.
+5. Plot reconstruction accuracy versus data length or contagion parameters for both contagion types.
+
+**Ships as:** A GitHub repo with scripts to simulate contagions, run MCMC reconstruction, and plot AUROC results replicating key trends from the paper.
+
+**Stretch goal:** Add visualization of sampled posterior distributions over network edges to illustrate uncertainty.
+
+### Intermediate — Reimplement Nonparametric Bayesian Network Reconstruction from Contagion Time Series
+*Effort: 2 weekends, ~20 hours*
+
+You implement the core nonparametric Bayesian framework from the paper to jointly infer network structure and contagion dynamics from binary node state time series. You apply it to synthetic contagion data on small networks and compare reconstruction accuracy of simple versus complex contagion models, reporting AUROC as in the paper.
+
+**Why it shows you understood the paper:** This project demonstrates you can reimplement the paper's main methodological contribution, including the flexible contagion function and MCMC sampling, and reproduce the key comparative results between contagion types.
+
+**Grounded in:** ‘Developed a nonparametric Bayesian method to reconstruct networks and contagion dynamics simultaneously from binary node state time series.’ and ‘Complex contagions outperform simple contagions in reconstructing dense networks or when infection saturates.’
+
+**Tech stack:** Python 3.11, NumPy, SciPy, NetworkX, Matplotlib
+
+**Data:** Synthetic binary infection time series generated on Erdős-Rényi and small dense networks, simulating both simple and complex contagions as per paper descriptions.
+
+**Build it:**
+
+1. Implement the neighborhood-based SIS contagion model allowing arbitrary contagion functions dependent on number of infected neighbors.
+2. Define beta priors for contagion parameters and Erdős-Rényi prior for network edges.
+3. Implement MCMC sampling with edge-flip proposals to jointly sample network adjacency and contagion parameters.
+4. Run inference on synthetic contagion time series data generated for both simple and complex contagions.
+5. Calculate AUROC for inferred networks compared to ground truth and compare performance between contagion types.
+6. Visualize posterior distributions and reconstruction accuracy metrics replicating paper figures.
+
+**Ships as:** A GitHub repo with a documented implementation of the paper's Bayesian reconstruction method and scripts reproducing key comparative results on synthetic data.
+
+**Stretch goal:** Extend the method to run on a small real-world social network contagion dataset (e.g., publicly available SIS epidemic data) to test practical applicability.
+
+### Advanced — Incorporate Structured Network Priors into Bayesian Reconstruction to Improve Accuracy
+*Effort: 3+ weeks, ~60+ hours*
+
+You extend the paper's Bayesian reconstruction framework by replacing the simplistic Erdős-Rényi network prior with a more realistic structured prior, such as a stochastic block model or power-law degree prior. You evaluate how this affects reconstruction accuracy on synthetic contagion data, addressing a key limitation noted by the authors.
+
+**Why it shows you understood the paper:** This project tackles a stated limitation and future direction of the paper, demonstrating deep comprehension of the Bayesian framework and network modeling, and the ability to innovate beyond the original method.
+
+**Grounded in:** ‘Network priors are simplistic (Erdős-Rényi), which may limit inference accuracy on highly structured networks.’ and ‘Incorporate more realistic and structured network priors beyond Erdős-Rényi models.’
+
+**Tech stack:** Python 3.11, NumPy, SciPy, NetworkX, Matplotlib, PyMC3 or Pyro (optional for advanced Bayesian modeling)
+
+**Data:** Synthetic contagion time series generated on networks with community structure or power-law degree distributions, as described in the paper's simulation studies.
+
+**Build it:**
+
+1. Implement or integrate a structured network prior such as a stochastic block model or power-law degree prior into the Bayesian framework.
+2. Modify the MCMC sampler to incorporate the new prior in edge proposal acceptance probabilities.
+3. Generate synthetic contagion data on networks with corresponding structure (e.g., stochastic block networks).
+4. Run joint inference of network and contagion parameters using the extended model.
+5. Compare reconstruction accuracy (AUROC) against the original Erdős-Rényi prior baseline.
+6. Analyze and visualize how structured priors improve recovery of network features and contagion dynamics.
+
+**Ships as:** A GitHub repo with an extended Bayesian reconstruction implementation including structured network priors, evaluation scripts, and detailed README discussing improvements and limitations.
+
+**Stretch goal:** Experiment with improved MCMC sampling algorithms (e.g., parallel tempering) to address multimodality and rugged likelihood landscapes.

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-tom-silver"
-source_hash: "ad0a3b428f6acaeb5468dc876ea527fb31f4f9bd9cd20378a3b7941f1c31c281"
+source_hash: "a0d85e618829c0567e9b1df28e06111d3cc1230eb54fb47b1fc5756d5b87f391"
 sequence: 218
 generator: "outreach-garden: managed"
 ---
@@ -141,3 +141,86 @@ Hearing directly from the authors provides a concise overview of the ExoPredicat
 ## Already in your library
 
 - [Causal Inference with Machine Learning - EXPLAINED!](https://www.youtube.com/watch?v=MFnOYNU5sbk) — also for: CIMLA: Interpretable AI for inference of differential causal networks (Saurabh Sinha)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive ladder to demonstrate understanding of ExoPredicator's approach to learning abstract symbolic models of dynamic worlds for robot planning. The beginner project focuses on implementing a core symbolic state abstraction mechanism inspired by the paper's predicate invention. The intermediate project reimplements the core variational Bayesian inference method combined with LLM proposals to learn causal processes from limited data in a simplified simulated environment. The advanced project extends the framework to handle partial observability and noisy predicate detection, addressing a key limitation noted in the paper and moving towards real-world applicability.
+
+### Beginner — Symbolic Predicate Invention for Dynamic States
+*Effort: a weekend, ~8 hours*
+
+You build a small symbolic state abstraction module that invents predicates from raw state features in a toy dynamic environment (e.g., a simplified domino cascade or boiling water simulation). The module uses simple clustering or rule-based heuristics to group states into symbolic predicates, mimicking the paper's predicate invention step guided by foundation models.
+
+**Why it shows you understood the paper:** This project shows you grasp the importance of abstract symbolic predicates as state abstractions that enable efficient planning over dynamic worlds, a core contribution of ExoPredicator.
+
+**Grounded in:** Key contribution: A state abstraction learner leveraging foundation models for predicate invention.
+
+**Tech stack:** Python 3.11, scikit-learn, Jupyter Notebook
+
+**Data:** Simulated toy environment states synthesized to mimic simple dynamic processes like domino cascades or boiling water states, as described in the paper's Coffee and Domino environments.
+
+**Build it:**
+
+1. Simulate or generate a small dataset of raw state features representing dynamic environment states over time.
+2. Implement a clustering or rule-based method to group raw states into symbolic predicates.
+3. Visualize and validate the invented predicates against known state properties.
+4. Document how these predicates abstract the raw states and enable reasoning about dynamics.
+
+**Ships as:** A Jupyter notebook demonstrating predicate invention from raw states with visualizations and explanations.
+
+**Stretch goal:** Integrate a simple LLM prompt or template to guide predicate naming or grouping heuristics.
+
+### Intermediate — Variational Bayesian Learning of Causal Processes
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement the core variational Bayesian inference method combined with LLM proposals to learn parameters and structure of causal processes (both endogenous and exogenous) from limited interaction data in a simplified simulated environment (e.g., a small-scale domino cascade). You compare your learned model's planning success rate against a baseline that ignores exogenous processes.
+
+**Why it shows you understood the paper:** This project demonstrates your ability to implement the paper's core learning algorithm and shows you understand how Bayesian inference and LLM guidance jointly enable efficient learning of abstract world models for planning.
+
+**Grounded in:** Key contribution: An efficient Bayesian inference method for learning causal process parameters and structures; Key result: Bayesian model selection and LLM guidance are critical for efficient model learning.
+
+**Tech stack:** Python 3.11, PyTorch, transformers (for LLM proposals), NumPy, matplotlib
+
+**Data:** Synthetic interaction data generated from a small simulated environment with known endogenous and exogenous causal processes, inspired by the paper's Domino environment.
+
+**Build it:**
+
+1. Implement a simplified symbolic representation of states and causal processes.
+2. Implement variational Bayesian inference to learn process parameters and structure from interaction data.
+3. Integrate a small pretrained LLM (e.g., GPT-2) to propose candidate predicates or causal structures.
+4. Run experiments comparing planning success rates with and without exogenous process modeling.
+5. Visualize learned causal models and report sample efficiency metrics.
+
+**Ships as:** A Python project with scripts and notebooks showing learned causal models, planning results, and comparison to baseline.
+
+**Stretch goal:** Add support for modeling process delays probabilistically using discrete Gaussian distributions as in the paper.
+
+### Advanced — Extending ExoPredicator for Partial Observability and Noisy Predicates
+*Effort: 3+ weeks*
+
+You extend the ExoPredicator framework by incorporating mechanisms to handle real-world sensory noise and partial observability, where predicates cannot be perfectly detected. This involves integrating probabilistic predicate detection models and belief state tracking into the symbolic world model and planner. You evaluate the extended system in a noisy simulated environment and analyze robustness.
+
+**Why it shows you understood the paper:** This project tackles a key limitation and future direction of the paper, demonstrating deep understanding of the framework and the challenges of real-world deployment beyond simulation.
+
+**Grounded in:** Limitation: The approach currently demonstrated only in simulated tabletop robotics environments and assumes availability of some initial predicates; Future direction: Extending to real-world robotic systems beyond simulation.
+
+**Tech stack:** Python 3.11, PyTorch, NumPy, scikit-learn, Jupyter Notebook, transformers
+
+**Data:** Simulated environment data augmented with synthetic sensory noise and partial observability, based on the paper's Domino or Coffee environments.
+
+**Build it:**
+
+1. Implement a probabilistic predicate detection model that outputs confidence scores for predicates given noisy observations.
+2. Incorporate belief state tracking (e.g., particle filter or Bayesian filter) to maintain distributions over symbolic states.
+3. Modify the planner to operate over belief states rather than fully observed states.
+4. Evaluate planning success and robustness under varying noise levels compared to the original framework.
+5. Document challenges and potential improvements for real-world sensory integration.
+
+**Ships as:** A comprehensive codebase and report demonstrating robust planning under noisy, partially observable conditions with extended ExoPredicator.
+
+**Stretch goal:** Explore joint learning of motor skills and world models to reduce reliance on predefined skills.
+
+_The paper's authors have not released code or datasets, so all data must be simulated or synthesized based on environment descriptions in the paper._

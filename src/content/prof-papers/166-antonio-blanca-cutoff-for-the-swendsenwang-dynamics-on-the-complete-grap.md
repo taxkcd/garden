@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-antonio-blanca"
-source_hash: "4ca8fb8fcdf548ef7a566421036ddea809b8c0d1c65ae0a4a37f8f18d9a2c962"
+source_hash: "195846a1ca5eb5daeae73eec56e7b387f7a6f31c86b20610c29fc2138f3ff562"
 sequence: 166
 generator: "outreach-garden: managed"
 ---
@@ -138,3 +138,87 @@ Gain direct insight from experts on the novel cutoff results and coupling techni
 
 - [Class 15 , Video 3: Couplings](https://www.youtube.com/watch?v=d3Oydmr87gs) — also for: Sampling Colorings Close to the Maximum Degree: Non-Markovian Coupling and Local Uniformity (Vishesh Jain)
 - [Markov Chain Mixing Times and Applications I](https://www.youtube.com/watch?v=svi1j799i0A) — also for: Sampling Colorings Close to the Maximum Degree: Non-Markovian Coupling and Local Uniformity (Vishesh Jain)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder to demonstrate your understanding of the Swendsen–Wang dynamics cutoff phenomenon on the complete graph as studied in the paper. The beginner project recreates a key conceptual mechanism using your existing programming skills. The intermediate project implements the core multi-phase coupling method to empirically observe mixing time behavior and cutoff, gaining new skills in Markov chain simulation and statistical analysis. The advanced project tackles an open problem from the paper by exploring cutoff behavior at critical inverse temperature thresholds, extending the original analysis with new simulations and visualizations.
+
+### Beginner — Simulate Swendsen–Wang Dynamics on Small Complete Graphs
+*Effort: a weekend, ~8 hours*
+
+You build a Python simulation of the Swendsen–Wang Markov chain for the q-state Potts model on small complete graphs (e.g., n=20 vertices). The simulation visualizes the evolution of spin proportions over time for β > q and β ≤ q, illustrating the presence or absence of a dominant spin class.
+
+**Why it shows you understood the paper:** This project shows you understand the SW dynamics mechanism, the role of inverse temperature β relative to q, and the concept of dominant spin classes that complicate mixing time analysis in the low-temperature regime.
+
+**Grounded in:** The presence of a dominant spin class complicates the analysis compared to high-temperature regimes.
+
+**Tech stack:** Python 3.11, matplotlib, numpy, Jupyter Notebook
+
+**Data:** No external data needed; you simulate the Potts model configurations on complete graphs as described in the paper.
+
+**Build it:**
+
+1. Implement the q-state Potts model configuration on a complete graph with n=20 vertices.
+2. Implement the Swendsen–Wang update step: form clusters via percolation and reassign spins.
+3. Run the Markov chain for different β values above and below q, recording spin proportions over time.
+4. Plot the evolution of spin proportions to visualize the emergence of a dominant spin for β > q.
+5. Write a README explaining the connection to the paper's discussion of dominant spins and mixing behavior.
+
+**Ships as:** A Jupyter Notebook with simulation code, plots showing spin proportion evolution, and explanatory notes linking to the paper's analysis of dominant spin effects.
+
+**Stretch goal:** Add animation of cluster formation and spin updates to better visualize the SW dynamics steps.
+
+### Intermediate — Reimplement Multi-Phase Coupling to Empirically Observe Cutoff
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement the paper's core multi-phase coupling method for the Swendsen–Wang dynamics on the complete graph with moderate n (e.g., n=500). You simulate the Markov chain from different initial states and measure total variation distance or a proxy metric to empirically observe the sharp cutoff in mixing time for β > q.
+
+**Why it shows you understood the paper:** This project demonstrates your ability to translate the paper's novel coupling technique into code, reproduce its key result of cutoff at mixing time c(β, q) log n, and understand the contraction phases that reduce distance to stationarity.
+
+**Grounded in:** Proved that the SW dynamics on the complete graph exhibits cutoff for all β > q with mixing time c(β, q) log n + Θ(1). The coupling phases progressively reduce distance to stationarity from arbitrary initial states to O(1/√n) neighborhoods.
+
+**Tech stack:** Python 3.11, numpy, scipy, matplotlib, Jupyter Notebook
+
+**Data:** No external data; you simulate the Potts model and SW dynamics on complete graphs as per the paper's setting.
+
+**Build it:**
+
+1. Implement the Swendsen–Wang dynamics for the q-state Potts model on a complete graph with n=500 vertices.
+2. Implement the multi-phase coupling strategy: simulate two chains from different initial states and couple their updates as described.
+3. Define and compute a distance metric (e.g., difference in spin proportions) to track convergence.
+4. Run multiple simulations for β > q, record the distance metric over time, and plot to observe the sharp cutoff.
+5. Compare mixing time estimates to the theoretical c(β, q) log n formula from the paper.
+6. Document the implementation details, results, and how they connect to the paper's main theorem.
+
+**Ships as:** A Jupyter Notebook or Python scripts with simulation code, plots showing cutoff behavior, and a report linking empirical findings to the paper's theoretical results.
+
+**Stretch goal:** Add a simple baseline simulation of single-site Glauber dynamics to contrast mixing times with SW dynamics.
+
+### Advanced — Explore Cutoff Behavior at Critical Inverse Temperatures β = β_l and β = β_r
+*Effort: 3+ weeks*
+
+You extend the paper's analysis by simulating the Swendsen–Wang dynamics near the critical inverse temperature thresholds β = β_l and β = β_r on the complete graph. You investigate empirical mixing times, variance effects, and cluster size distributions to provide insight into the open question of cutoff presence or absence at these points.
+
+**Why it shows you understood the paper:** This project shows deep engagement with the paper's limitations and future directions, applying your coding and analytical skills to a challenging open problem. It demonstrates your ability to extend theoretical work with computational experiments and critical analysis.
+
+**Grounded in:** The cutoff behavior at the critical points β = β_l or β = β_r remains an open question.
+
+**Tech stack:** Python 3.11, numpy, scipy, matplotlib, Jupyter Notebook, pandas
+
+**Data:** No external data; simulations of the Potts model and SW dynamics on complete graphs with parameter sweeps near critical β values.
+
+**Build it:**
+
+1. Study the definitions and approximate values of β_l and β_r from the paper or related literature.
+2. Implement the Swendsen–Wang dynamics simulation on complete graphs with n=500 or larger.
+3. Run simulations for β values approaching β_l and β_r from below and above, recording mixing time proxies and cluster statistics.
+4. Analyze variance and fluctuations in mixing behavior to detect signs of cutoff or slow mixing.
+5. Visualize cluster size distributions and spin proportion trajectories near critical points.
+6. Write a detailed report discussing findings, challenges, and how they relate to the paper's open questions.
+
+**Ships as:** A comprehensive GitHub repository with simulation code, data analysis scripts, visualizations, and a well-documented report exploring cutoff phenomena at critical β values.
+
+**Stretch goal:** Attempt to implement or adapt coupling arguments from the paper to provide heuristic explanations for observed behaviors at critical points.

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-ferdinando-fioretto"
-source_hash: "984af6a79d6a8dad6e11e5d435f81a67af7d7eba2e442ebf798a82b074c6c118"
+source_hash: "144d738772cd66fc2a03ad9a3100a473ee05f801ea4afd52919410d09cf57445"
 sequence: 90
 generator: "outreach-garden: managed"
 ---
@@ -156,3 +156,89 @@ A direct presentation from the authors explaining NeuroFilter’s design, method
 ## Already in your library
 
 - [[1hr Talk] Intro to Large Language Models](https://www.youtube.com/watch?v=zjkBMFhNj_g) — also for: On-demand generation of high-quality software engineering datasets using large language models and ontologies (Suranjan Chakraborty)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive ladder to demonstrate understanding of NeuroFilter's core ideas and contributions. The beginner project reproduces a fundamental mechanism—linear probing of LLM activations for privacy intent detection—using familiar tools and synthetic data. The intermediate project implements NeuroFilter's activation velocity concept to detect multi-turn privacy attacks on a small-scale conversational dataset, comparing against a simple text-based baseline. The advanced project extends NeuroFilter by exploring dynamic probe recalibration to address the limitation of reduced accuracy on fine-tuned models, aligning with the paper's future directions and requiring new skills in continual learning and transfer learning.
+
+### Beginner — Linear Probe for Privacy Intent Detection in LLM Activations
+*Effort: a weekend, ~8 hours*
+
+You build a simple linear probe classifier trained on intermediate activations extracted from a small pretrained decoder-only LLM (e.g., GPT-2 small) to detect privacy-violating prompts versus benign prompts. You simulate a small dataset of prompts labeled as privacy-violating or benign based on crafted examples. The project focuses on extracting activations at a specific transformer layer and training a logistic regression model to classify privacy intent.
+
+**Why it shows you understood the paper:** This project demonstrates you understand the paper's key contribution that privacy-violating intent is linearly detectable in intermediate-layer activations, and you can operationalize activation extraction and linear probing on LLM internals.
+
+**Grounded in:** Demonstration that privacy-violating intent is linearly detectable in intermediate-layer activations of LLMs.
+
+**Tech stack:** Python 3.11, PyTorch, transformers (Hugging Face), scikit-learn, Jupyter Notebook
+
+**Data:** Synthetic prompt dataset created by you with labeled privacy-violating and benign prompts, as no public dataset is provided by the paper.
+
+**Build it:**
+
+1. Select a small pretrained decoder-only LLM (e.g., GPT-2 small) from Hugging Face.
+2. Create a small labeled dataset of prompts with privacy-violating and benign examples.
+3. Write code to run prompts through the model and cache intermediate activations at a chosen transformer layer.
+4. Train a logistic regression classifier on the cached activations to distinguish privacy-violating from benign prompts.
+5. Evaluate classification accuracy and visualize decision boundaries or feature importance.
+6. Document the process and results in a README.
+
+**Ships as:** A GitHub repo with code to extract activations, train and evaluate a linear probe, and a README explaining the connection to NeuroFilter's linear detectability claim.
+
+**Stretch goal:** Add visualization of activation distributions for privacy-violating vs benign prompts to better illustrate linear separability.
+
+### Intermediate — Activation Velocity for Multi-Turn Privacy Attack Detection
+*Effort: 2 weekends, ~20 hours*
+
+You implement the activation velocity concept from NeuroFilter to detect multi-turn privacy attacks by tracking activation trajectories over conversation turns. Using a small public conversational dataset (e.g., a subset of MultiWOZ or a synthetic multi-turn dialogue dataset), you simulate privacy-violating multi-turn prompts and benign conversations. You train linear probes on activations per turn and compute activation velocity features to classify conversations as safe or adversarial. You compare your method against a simple text-based semantic classifier baseline.
+
+**Why it shows you understood the paper:** This project shows you grasp the novel trajectory-level signal NeuroFilter introduces to detect gradual adversarial steering in multi-turn conversations, and you can implement and evaluate it on real conversational data.
+
+**Grounded in:** Introduction of activation velocity as a trajectory-level signal to detect multi-turn conversational manipulation and mosaic attacks.
+
+**Tech stack:** Python 3.11, PyTorch, transformers (Hugging Face), scikit-learn, pandas, Jupyter Notebook
+
+**Data:** A small subset of a public multi-turn conversational dataset (e.g., MultiWOZ) with synthetic privacy-violating multi-turn prompts crafted by you to simulate adversarial steering.
+
+**Build it:**
+
+1. Select a pretrained decoder-only LLM and a multi-turn conversational dataset.
+2. Simulate multi-turn privacy-violating conversations by injecting adversarial prompts across turns.
+3. Extract intermediate activations for each turn and compute activation velocity (difference vectors between consecutive activations).
+4. Train linear probes on activation velocity features to classify conversations as privacy-violating or benign.
+5. Implement a simple text-based semantic classifier baseline for comparison.
+6. Evaluate and compare detection accuracy, false positive rates, and latency.
+7. Write a detailed README explaining activation velocity and your evaluation results.
+
+**Ships as:** A GitHub repo demonstrating activation velocity-based multi-turn privacy attack detection with baseline comparison and evaluation metrics.
+
+**Stretch goal:** Extend to detect mosaic attacks by distributing adversarial intent across more turns and evaluate detection robustness.
+
+### Advanced — Dynamic Probe Recalibration for Fine-Tuned LLM Variants
+*Effort: 3-4 weeks*
+
+You develop a system to dynamically recalibrate or adapt NeuroFilter's activation probes after fine-tuning an LLM, addressing the paper's limitation of reduced probe accuracy on fine-tuned models. Starting from your intermediate project code, you fine-tune the base LLM on a small domain-specific corpus, then implement transfer learning or continual learning methods to update the linear probes without full retraining. You evaluate probe accuracy before and after recalibration on privacy-violating and benign prompts, demonstrating improved robustness.
+
+**Why it shows you understood the paper:** This project tackles a stated limitation and future direction of NeuroFilter, showing you can extend the method to real-world deployment challenges involving model updates and probe lifecycle management.
+
+**Grounded in:** Limitations include reduced confidence and accuracy when applied to fine-tuned model variants, requiring recalibration or transfer learning; future direction includes developing lifecycle management approaches for probe recalibration after model updates.
+
+**Tech stack:** Python 3.11, PyTorch, transformers (Hugging Face), scikit-learn, Jupyter Notebook
+
+**Data:** Synthetic privacy-violating and benign prompts as before, plus a small domain-specific corpus for fine-tuning the LLM (e.g., a subset of legal or healthcare text publicly available).
+
+**Build it:**
+
+1. Fine-tune the base pretrained LLM on a small domain-specific corpus.
+2. Evaluate baseline linear probe accuracy on the fine-tuned model without recalibration.
+3. Implement transfer learning or continual learning methods to adapt the linear probes to the fine-tuned model activations.
+4. Retrain or update probes with limited labeled data from the fine-tuned domain.
+5. Evaluate probe accuracy improvements and false positive rates after recalibration.
+6. Document the recalibration approach, challenges, and results in a comprehensive README.
+
+**Ships as:** A GitHub repo showing dynamic probe recalibration workflows with before/after accuracy metrics and discussion of practical deployment implications.
+
+**Stretch goal:** Integrate a probe ensemble to cover heterogeneous attack goals and evaluate multi-head detection performance.

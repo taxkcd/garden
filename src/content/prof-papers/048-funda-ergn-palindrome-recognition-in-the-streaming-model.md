@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-fergun"
-source_hash: "1b23918f4a91c5d7b02a418f71c86ca08ec2f837ec5dd6a9e3bcbdce7a6a235d"
+source_hash: "8f6c000d8edee25dbe2bd5be3ad6d8d6d7b831ff4cf5f6738d85c4362dc9fb79"
 sequence: 48
 generator: "outreach-garden: managed"
 ---
@@ -140,3 +140,89 @@ Approximate palindrome detection in streaming settings balances accuracy and mem
 
 - [DIMACS Sublinear Workshop: Funda Ergun - Palindrome Recognition In The Streaming Model](https://www.youtube.com/watch?v=7SgA6ZeaRUU) — also for: Palindrome Recognition In The Streaming Model (Funda Ergün)
 - [Sublinear Algorithms, by Prof. Michael Kapralov](https://www.youtube.com/watch?v=4m9MJu1sZmM) — also for: Palindrome Recognition In The Streaming Model (Funda Ergün)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder to demonstrate your understanding of the streaming palindrome recognition paper. The beginner project reproduces a core mechanism of the ApproxSqrt algorithm using your existing skills. The intermediate project implements the ApproxSqrt algorithm from the paper and compares it against a naive baseline on synthetic streaming data. The advanced project extends the ApproxLog algorithm to explore deterministic variants or applies the streaming palindrome detection to biological sequence data, addressing the paper's stated limitations and future directions.
+
+### Beginner — Streaming Palindrome Length Estimator with Karp-Rabin Fingerprinting
+*Effort: a weekend, ~8 hours*
+
+You build a simple one-pass streaming palindrome length estimator using Karp-Rabin fingerprinting to approximate palindrome lengths with additive error on small synthetic strings. The implementation focuses on the core fingerprinting technique and sliding window substring comparisons in a streaming fashion.
+
+**Why it shows you understood the paper:** This project shows you grasp the fundamental randomized fingerprinting approach used in ApproxSqrt and can implement a streaming algorithm that approximates palindrome lengths with sublinear space.
+
+**Grounded in:** Theorem 1 (ApproxSqrt): one-pass randomized algorithm with additive error using O(√n) space and Karp-Rabin fingerprinting.
+
+**Tech stack:** Python 3.11, Jupyter Notebook
+
+**Data:** Synthetic strings generated on the fly to simulate streaming input; no external dataset needed.
+
+**Build it:**
+
+1. Implement Karp-Rabin fingerprinting for substring hashing.
+2. Simulate a streaming input of a string character-by-character.
+3. Use fingerprints to compare substrings around midpoints to estimate palindrome lengths with additive error.
+4. Store and update fingerprints using O(√n) space heuristics.
+5. Output estimated palindrome lengths for each midpoint in the stream.
+
+**Ships as:** A Jupyter notebook demonstrating streaming palindrome length estimation with plots comparing estimated vs actual palindrome lengths on synthetic data.
+
+**Stretch goal:** Add visualization of error bounds and experiment with different additive error parameters ε.
+
+### Intermediate — Reimplementation of ApproxSqrt Streaming Palindrome Algorithm
+*Effort: 1-3 weekends*
+
+You reimplement the ApproxSqrt algorithm from the paper to detect palindromes with additive error in a streaming model using O(√n) space. You compare its performance and accuracy against a naive offline palindrome detection baseline on synthetic streaming strings.
+
+**Why it shows you understood the paper:** This project demonstrates your ability to faithfully reimplement the paper's core algorithm, understand its space/time tradeoffs, and evaluate its approximation guarantees in practice.
+
+**Grounded in:** Theorem 1 (ApproxSqrt): reports palindrome lengths with additive error ε√n in one pass using O(√n/ε) space.
+
+**Tech stack:** Python 3.11, Jupyter Notebook, matplotlib
+
+**Data:** Synthetic streaming strings generated to include palindromes of varying lengths; no external dataset used.
+
+**Build it:**
+
+1. Implement the ApproxSqrt algorithm as described, including Karp-Rabin fingerprinting and compression of overlapping palindromes.
+2. Implement a naive offline palindrome detection algorithm for baseline comparison.
+3. Generate synthetic streaming strings with known palindromes.
+4. Run both algorithms on the streaming input and record palindrome length estimates.
+5. Compare accuracy, space usage, and runtime between ApproxSqrt and baseline.
+6. Visualize results and error bounds.
+
+**Ships as:** A GitHub repository with code, tests, and a detailed README reporting ApproxSqrt's approximation accuracy and space/time performance compared to baseline.
+
+**Stretch goal:** Experiment with different ε values and analyze the trade-off between space and approximation error.
+
+### Advanced — Deterministic Streaming Palindrome Detection or Biological Sequence Application
+*Effort: a few weeks*
+
+You extend the ApproxLog algorithm or design a deterministic variant to reduce randomness while maintaining sublinear space, or you adapt the ApproxSqrt or ApproxLog algorithms to detect complementary palindromes in real biological DNA sequences, evaluating practical performance.
+
+**Why it shows you understood the paper:** This project tackles a key limitation or future direction from the paper, showing deep comprehension and initiative to push the research boundary or apply it to real-world biological data.
+
+**Grounded in:** Limitations: randomized fingerprinting with failure probability; future directions: deterministic variants and biological data application; Observation 22: adaptation to complementary palindromes.
+
+**Tech stack:** Python 3.11, Jupyter Notebook, Biopython, matplotlib
+
+**Data:** Publicly available DNA sequences from NCBI GenBank or simulated DNA sequences; used as a proxy for biological data mentioned in the paper.
+
+**Build it:**
+
+1. Research deterministic fingerprinting or hashing alternatives suitable for streaming palindrome detection.
+2. Implement a deterministic or low-randomness variant of ApproxLog or ApproxSqrt.
+3. Alternatively, implement complementary palindrome detection adapting the algorithms to DNA base pairing rules.
+4. Obtain biological DNA sequence data from public repositories or simulate sequences.
+5. Run your algorithm on these sequences to detect palindromic or complementary palindromic substrings.
+6. Evaluate accuracy, space usage, and runtime; compare with baseline methods if available.
+
+**Ships as:** A GitHub repository with code, documentation, and experimental results demonstrating deterministic or biological palindrome detection in streaming with sublinear space.
+
+**Stretch goal:** Integrate your implementation into a small web app or visualization tool to explore palindromic structures interactively.
+
+_The paper authors released no code; all implementations must be reimplemented from the paper's descriptions. Biological data must be sourced from public repositories or simulated, as the paper does not provide datasets._

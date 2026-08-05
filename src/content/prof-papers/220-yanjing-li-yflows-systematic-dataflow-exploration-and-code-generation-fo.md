@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-yanjing-li"
-source_hash: "a0b44fa74e5793e578f0cddb1469b5d4e14d58f15f1721a8a03b85fe526d2389"
+source_hash: "01e36d8e04200837d350743645bf4380ccb4ed2fd87cbe06cd1ba0e517e9105f"
 sequence: 220
 generator: "outreach-garden: managed"
 ---
@@ -132,3 +132,91 @@ Code generation translates optimized dataflows and register allocations into act
 *How the paper uses it:* YFlows includes a code generator that automatically produces SIMD code for the optimized dataflows on CPUs.
 
 ▶ [Talk on VeGen, The Vectorizer Generator for SIMD and Beyond](https://www.youtube.com/watch?v=uwNAnC2y8ds) — Saman Amarasinghe · 17:16
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive ladder to demonstrate your understanding of the YFlows paper. Starting with a beginner-level project that reproduces a core SIMD dataflow concept using familiar tools, you then move to an intermediate project that implements the paper's core dataflow optimization heuristics and compares performance against a baseline library. Finally, the advanced project extends the paper's approach by exploring dataflow optimization for transformer architectures, addressing a stated limitation and future direction.
+
+### Beginner — SIMD Dataflow Visualization and Simple Benchmark
+*Effort: a weekend, ~8 hours*
+
+You build a small Python script that simulates and visualizes the three basic neural network dataflows (input stationary, weight stationary, output stationary) focusing on how data is reused in SIMD vector registers. You also implement a simple microbenchmark to measure and compare the runtime of these dataflows on a small convolution operation using NumPy and Python's time module.
+
+**Why it shows you understood the paper:** This project shows you grasp the fundamental dataflow concepts and their impact on data reuse and runtime performance, which are central to the paper's contributions.
+
+**Grounded in:** Extension of basic neural network dataflows to enable reuse of all data types in SIMD registers; Output stationary dataflows outperform input and weight stationary dataflows.
+
+**Tech stack:** Python 3.11, NumPy, Matplotlib
+
+**Data:** Synthetic small convolution input, weights, and output tensors generated in code to simulate convolution layers as described in the paper.
+
+**Build it:**
+
+1. Implement Python functions that simulate input stationary, weight stationary, and output stationary dataflows showing data reuse in vector registers.
+2. Visualize the data reuse patterns for each dataflow using Matplotlib diagrams.
+3. Create a small synthetic convolution input and weight tensors.
+4. Write a microbenchmark to measure runtime of each dataflow simulation using Python's time module.
+5. Compare and report the runtime differences and relate them to data reuse visualizations.
+
+**Ships as:** A GitHub repo with Python scripts that visualize SIMD dataflows, run microbenchmarks, and a README explaining the relationship between data reuse and runtime performance.
+
+**Stretch goal:** Add a simple heuristic to suggest the best dataflow for given tensor sizes based on the microbenchmark results.
+
+### Intermediate — Reimplement YFlows Dataflow Heuristics and Benchmark on ARM CPU
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement the core dataflow exploration and vector register allocation heuristics from the paper in C++ or Python with SIMD intrinsics (e.g., ARM NEON) to generate optimized convolution kernels. You benchmark your implementation against the oneDNN library's CPU convolution implementation on a publicly available convolution dataset or synthetic data, measuring inference runtime speedups.
+
+**Why it shows you understood the paper:** This project demonstrates your ability to translate the paper's heuristics into working SIMD-optimized code and empirically validate performance improvements, showing deep comprehension of the core method.
+
+**Grounded in:** Development of heuristics based on data movement costs to optimize vector register allocation; Comprehensive experimental evaluation demonstrating significant speedups over state-of-the-art CPU neural network implementations.
+
+**Tech stack:** C++17, ARM NEON intrinsics, Linux ARM CPU environment, oneDNN library
+
+**Data:** Synthetic convolution layer inputs and weights generated in code, or publicly available convolution benchmarks used by oneDNN as a substitute for the paper's data.
+
+**Build it:**
+
+1. Study the paper's heuristics for vector register allocation and dataflow exploration.
+2. Implement the heuristics in C++ using ARM NEON SIMD intrinsics to generate convolution kernels.
+3. Set up benchmarking code to run your kernels and oneDNN's convolution implementations on the same inputs.
+4. Measure and compare inference runtimes for 8-bit convolution layers.
+5. Document the implementation details, heuristics used, and benchmark results in a README.
+
+**Verified links from the paper:**
+
+- <https://github.com/oneapi-src/oneDNN> — a third-party/baseline artifact the paper cites — not the authors' own code
+- <https://github.com/larq/larq> — a third-party/baseline artifact the paper cites — not the authors' own code
+
+**Ships as:** A GitHub repo with SIMD-optimized convolution kernel code, benchmarking scripts comparing against oneDNN, and a report summarizing speedups and insights.
+
+**Stretch goal:** Extend the implementation to support binary neural network convolutions and benchmark against Larq's SIMD implementations.
+
+### Advanced — Extending SIMD Dataflow Optimization to Transformer Attention Layers
+*Effort: 3-4 weeks*
+
+You develop a prototype code generator and heuristic exploration framework to apply SIMD dataflow optimization techniques from YFlows to transformer attention layers, addressing the paper's limitation of focusing only on convolution layers. You implement vector register allocation heuristics tailored to the attention computation pattern and benchmark inference speed on a small transformer model.
+
+**Why it shows you understood the paper:** This project shows you can critically extend the paper's approach to a new neural network architecture with different computational and data reuse characteristics, demonstrating research-level insight and initiative.
+
+**Grounded in:** Limitations: Focuses primarily on convolution layers; Future directions: Extending dataflow exploration and code generation techniques to other neural network architectures such as transformers.
+
+**Tech stack:** Python 3.11, C++17, SIMD intrinsics (ARM NEON or x86 AVX2), PyTorch (for transformer model and data)
+
+**Data:** Small transformer model and input sequences from publicly available datasets (e.g., WMT or synthetic data) used to simulate attention layer inference.
+
+**Build it:**
+
+1. Analyze the computational pattern and data reuse opportunities in transformer attention layers.
+2. Design SIMD dataflow heuristics and vector register allocation strategies adapted from YFlows for attention computations.
+3. Implement a code generator or kernel prototype that produces SIMD-optimized attention layer code.
+4. Integrate with a small transformer model inference pipeline (e.g., PyTorch) to replace the attention layer with your optimized kernel.
+5. Benchmark inference runtime improvements compared to baseline transformer implementation.
+6. Document the approach, challenges, and performance results.
+
+**Ships as:** A GitHub repo with code generator/kernel for SIMD-optimized transformer attention, integration scripts, benchmarks, and a detailed README discussing the extension and results.
+
+**Stretch goal:** Explore combining dataflow optimization with quantization or pruning techniques for transformer inference acceleration.

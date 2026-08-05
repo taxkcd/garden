@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-lorenzo-orecchia"
-source_hash: "1017f84c561e3def6ad788de70411cfea39d4522afeb503be099f7aa9f20665c"
+source_hash: "e214a1f532fbfce2b09923636f495baf9ca2f5fc168cdfa8b42f24957dc558ae"
 sequence: 212
 generator: "outreach-garden: managed"
 ---
@@ -116,3 +116,90 @@ Atlases and coordinate charts provide a way to cover a manifold with overlapping
 ## Already in your library
 
 - [Riemannian Manifolds in 12 Minutes](https://www.youtube.com/watch?v=jpjt08HkOzA) — also for: HyperTopo-Adapters: Geometry- and Topology-Aware Segmentation of Leaf Lesions on Frozen Encoders (Toni Kazic)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive learning ladder to demonstrate understanding of the atlas graph framework and quasi-Euclidean updates introduced in the paper. Starting with a small-scale implementation of quasi-Euclidean updates on a known manifold, you then reimplement the core atlas graph method on a standard manifold dataset comparing it to a baseline. Finally, you extend the framework to address a stated limitation by experimenting with noisy or higher-dimensional point cloud data, showing practical skills and research potential.
+
+### Beginner — Quasi-Euclidean Updates on the Grassmann Manifold
+*Effort: a weekend, ~8 hours*
+
+You build a simple Python implementation of quasi-Euclidean updates approximating the exponential map on the Grassmann manifold. You simulate a small Grassmann manifold example (e.g., subspaces of R^5 with dimension k=2), implement the update step, and visualize convergence compared to a naive Euclidean gradient step.
+
+**Why it shows you understood the paper:** This project shows you grasp the core concept of quasi-Euclidean updates as a computationally efficient approximation of the exponential map, a key contribution of the paper.
+
+**Grounded in:** Claim 3.1. Quasi-Euclidean updates approximate the exponential map up to O(∥τ⃗∥²_g). Further, restriction of quasi-Euclidean updates to a single coordinate chart comprises a retraction.
+
+**Tech stack:** Python 3.11, NumPy, Matplotlib, Jupyter Notebook
+
+**Data:** Synthetic data representing points on the Grassmann manifold (e.g., random orthonormal subspaces in R^5).
+
+**Build it:**
+
+1. Implement a function to generate random points on the Grassmann manifold Gr(k, n) with n=5, k=2.
+2. Implement the quasi-Euclidean update formula as described in the paper for a single coordinate chart.
+3. Implement a naive Euclidean gradient descent step for comparison.
+4. Run optimization iterations starting from a random point and plot convergence of geodesic distance to a target point for both methods.
+5. Document the approximation behavior and runtime differences in a README.
+
+**Ships as:** A Jupyter notebook and Python scripts showing quasi-Euclidean updates on Grassmann manifold points, with plots comparing convergence and a README explaining the implementation and results.
+
+**Stretch goal:** Add a visualization of coordinate charts and transition boundaries for a small atlas graph on the Grassmann manifold.
+
+### Intermediate — Atlas Graph Construction and Optimization on a Sample Manifold
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement the atlas graph framework from the paper to learn approximate coordinate charts from a point cloud sampled from a known manifold (e.g., Swiss roll or S-curve). You build local quadratic approximations and use SVMs with quadratic kernels to define transition boundaries. Then you implement quasi-Euclidean updates for optimization on this learned manifold and compare geodesic distance approximations against PCA embedding baselines.
+
+**Why it shows you understood the paper:** This project demonstrates you can reconstruct the atlas graph method for manifolds learned from point clouds, including chart learning and transition boundaries, and apply the optimization scheme, directly reflecting the paper's core approach and results.
+
+**Grounded in:** An atlas graph representation of the Grassmann manifold enabling faster online Fréchet mean estimation compared to state-of-the-art methods. A method to learn approximate coordinate charts from point cloud data using local quadratic approximations and SVM-based transition boundaries.
+
+**Tech stack:** Python 3.11, scikit-learn, NumPy, Matplotlib, Jupyter Notebook
+
+**Data:** Synthetic Swiss roll or S-curve point cloud data generated with scikit-learn, serving as a substitute for the paper's point cloud manifold data.
+
+**Build it:**
+
+1. Generate a synthetic 3D Swiss roll or S-curve point cloud dataset using scikit-learn.
+2. Implement local quadratic approximations to define approximate coordinate charts around sampled points.
+3. Train soft-margin SVMs with quadratic kernels to learn transition boundaries between overlapping charts.
+4. Construct the atlas graph as a graph of charts connected by transition maps.
+5. Implement quasi-Euclidean updates within charts to approximate exponential maps for optimization.
+6. Compare approximate geodesic distances computed via the atlas graph to those from PCA embeddings.
+7. Document the methodology, results, and comparison in a README.
+
+**Ships as:** A Python project with scripts and notebooks that build an atlas graph from synthetic point cloud data, perform optimization with quasi-Euclidean updates, and compare geodesic distance approximations, with clear documentation.
+
+**Stretch goal:** Extend the project to preserve persistent homology and show topological invariants of the learned manifold.
+
+### Advanced — Robust Atlas Graph Learning on Noisy High-Dimensional Data
+*Effort: 3+ weeks*
+
+You extend the atlas graph framework to handle noisy and higher ambient dimension point cloud data, addressing a key limitation noted in the paper. You experiment with parameter tuning for chart radii and SVM boundaries to maintain geometric fidelity and computational efficiency. You evaluate the learned atlas graph's ability to preserve intrinsic dimensionality and approximate geodesic distances under noise, using a real or synthetic high-dimensional dataset.
+
+**Why it shows you understood the paper:** This project tackles a stated limitation and future direction of the paper, demonstrating deep comprehension and research potential by improving robustness and scalability of the atlas graph method.
+
+**Grounded in:** Limitations: The approach requires careful tuning of parameters like chart radii and SVM boundaries for transition detection. Future directions: Extending atlas graph learning to handle higher ambient dimensions and noisy data more robustly.
+
+**Tech stack:** Python 3.11, scikit-learn, NumPy, Matplotlib, Jupyter Notebook
+
+**Data:** High-dimensional synthetic manifold data with added Gaussian noise, or a publicly available high-dimensional dataset (e.g., MNIST digits as a proxy for manifold data).
+
+**Build it:**
+
+1. Generate or obtain a high-dimensional point cloud dataset with controlled noise levels.
+2. Implement the atlas graph learning pipeline with adjustable parameters for chart radii and SVM transition boundaries.
+3. Develop heuristics or automated tuning methods to select parameters balancing coverage and approximation accuracy.
+4. Evaluate the learned atlas graph's preservation of intrinsic dimensionality and approximate geodesic distances under varying noise and dimension.
+5. Compare results to baseline manifold learning methods like PCA or t-SNE for distance preservation.
+6. Document findings, parameter effects, and recommendations in a detailed README.
+
+**Ships as:** A comprehensive Python project demonstrating robust atlas graph learning on noisy, high-dimensional data, with parameter tuning experiments, quantitative evaluations, and thorough documentation.
+
+**Stretch goal:** Integrate the atlas graph with a Riemannian optimization algorithm (e.g., principal boundary) on the noisy learned manifold and report optimization performance.
+
+_No code artifacts were released by the paper's authors; all implementations must be built from the paper's descriptions and standard synthetic or public datasets._

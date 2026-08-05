@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-ribeirob"
-source_hash: "0ac19d3fe7977311959671b3eb34d7425877325380e7ad226d4c53a4be13c718"
+source_hash: "566a896015d657989eff4c64daf28cd85622687ec86c38bbc4c00e01160f467b"
 sequence: 20
 generator: "outreach-garden: managed"
 ---
@@ -131,3 +131,85 @@ Inductive link prediction involves predicting missing links in knowledge graphs,
 ## Already in your library
 
 - [Equivariant Networks and Natural Graph Networks - Taco Cohen](https://www.youtube.com/watch?v=_8P8cLC9a14) — also for: Double Equivariance for Inductive Link Prediction for Both New Nodes and New Relation Types (Bruno F. M. Ribeiro)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive learning path to demonstrate your understanding of the paper's core ideas on double permutation-equivariant representations for fully inductive link prediction in knowledge graphs. Starting with a beginner-level implementation of the DEq-InGram Monte Carlo sampling mechanism, you then advance to reimplementing and evaluating the ISDEA+ framework on a substitute knowledge graph dataset. Finally, the advanced project tackles one of the paper's key limitations by experimenting with methods to mitigate negative transfer in multi-domain training, directly engaging with future research directions.
+
+### Beginner — Monte Carlo Sampling for DEq-InGram Inference
+*Effort: a weekend, ~8 hours*
+
+You build a standalone Python script that implements the Monte Carlo sampling procedure described for DEq-InGram to estimate double equivariant representations at inference time. The script will take a small synthetic knowledge graph with nodes and relation types, apply random permutations, and compute averaged embeddings to demonstrate improved stability over naive embeddings.
+
+**Why it shows you understood the paper:** This project shows you grasp the key mechanism by which DEq-InGram improves robustness without retraining, concretely implementing the Monte Carlo sampling to approximate double equivariance in positional embeddings.
+
+**Grounded in:** DEq-InGram improves performance over InGram without retraining (Section 3.3, Section 5).
+
+**Tech stack:** Python 3.11, NumPy
+
+**Data:** A small synthetic knowledge graph with a few nodes and relation types created programmatically to simulate permutations.
+
+**Build it:**
+
+1. Implement a simple knowledge graph data structure with nodes and relation types.
+2. Implement the InGram positional embedding computation for nodes and relations.
+3. Implement Monte Carlo sampling by applying random permutations to nodes and relations multiple times.
+4. Average the embeddings over samples to approximate double equivariant positional embeddings.
+5. Compare the variance of embeddings with and without Monte Carlo sampling to demonstrate improved stability.
+
+**Ships as:** A Python script with clear README explaining the Monte Carlo sampling procedure, showing numerical results and plots of embedding variance reduction.
+
+**Stretch goal:** Add a visualization of how embeddings change under permutations and how Monte Carlo sampling stabilizes them.
+
+### Intermediate — Reimplementing ISDEA+ for Fully Inductive Link Prediction
+*Effort: 2 weekends, ~20 hours*
+
+You implement the ISDEA+ framework from the paper, converting a simple homogeneous GNN into a double permutation-equivariant model. You train and evaluate it on a publicly available knowledge graph dataset (e.g., FB15k-237 as a substitute) adapted for fully inductive link prediction by holding out nodes and relation types. You compare ISDEA+ performance against a baseline GNN without double equivariance, reporting Hits@10 or similar metrics.
+
+**Why it shows you understood the paper:** This project demonstrates your ability to reimplement the paper's core theoretical contribution (ISDEA+) and empirically validate its advantage on a fully inductive link prediction task, showing comprehension of double equivariance and its practical benefits.
+
+**Grounded in:** ISDEA+ can convert any homogeneous GNN into a double equivariant model (Lemma 3.3); ISDEA+ achieves competitive or superior performance compared to Ultra (Tables 1a and 1b).
+
+**Tech stack:** Python 3.11, PyTorch, PyTorch Geometric, NumPy
+
+**Data:** FB15k-237 knowledge graph dataset adapted for fully inductive link prediction by removing overlapping nodes and relation types between train and test splits.
+
+**Build it:**
+
+1. Prepare the FB15k-237 dataset for fully inductive link prediction by splitting nodes and relation types so test sets contain unseen entities and relations.
+2. Implement a baseline homogeneous GNN model for link prediction using PyTorch Geometric.
+3. Implement the ISDEA+ framework by adding double permutation-equivariant set aggregation layers as described.
+4. Train both models on the training split and evaluate Hits@10 on the fully inductive test split.
+5. Analyze and report the performance difference and variance between ISDEA+ and the baseline.
+
+**Ships as:** A GitHub repo with code, training scripts, evaluation metrics, and a README explaining the ISDEA+ implementation and experimental results.
+
+**Stretch goal:** Extend the evaluation to include DEq-InGram inference sampling and compare its effect on ISDEA+ performance.
+
+### Advanced — Mitigating Negative Transfer in Multi-Domain Double Equivariant Models
+*Effort: 3+ weeks*
+
+You extend the ISDEA+ model to experiment with techniques aimed at reducing negative transfer when training on multiple knowledge graph domains jointly. For example, you implement domain-specific adapters, multi-task loss weighting, or gradient surgery methods. You evaluate on a multi-domain knowledge graph dataset synthesized from public sources or by combining subsets of FB15k-237 with other datasets, measuring zero-shot link prediction performance and comparing to vanilla ISDEA+.
+
+**Why it shows you understood the paper:** This project tackles a key limitation and future direction identified by the paper, demonstrating deep understanding of double equivariance models and the challenges of multi-domain learning, while applying advanced ML techniques to improve robustness and scalability.
+
+**Grounded in:** Current double equivariant models suffer from negative transfer effects when learning jointly from multiple domains; future direction to develop methods to mitigate negative transfer in multi-domain knowledge graph learning.
+
+**Tech stack:** Python 3.11, PyTorch, PyTorch Geometric, NumPy, Matplotlib
+
+**Data:** A synthesized multi-domain knowledge graph dataset created by combining subsets of FB15k-237 and other public knowledge graphs (e.g., WN18RR) with domain labels.
+
+**Build it:**
+
+1. Create a multi-domain knowledge graph dataset by combining multiple public datasets with domain annotations.
+2. Implement the baseline ISDEA+ model for multi-domain training.
+3. Implement one or more negative transfer mitigation techniques (e.g., domain-specific adapters, multi-task loss weighting, or gradient surgery).
+4. Train and evaluate models on zero-shot fully inductive link prediction tasks across domains.
+5. Analyze performance improvements and document findings on negative transfer mitigation.
+
+**Ships as:** A comprehensive GitHub repo with code, experiments, analysis, and a detailed README discussing the negative transfer problem and your mitigation approach.
+
+**Stretch goal:** Explore integrating additional context modalities (e.g., textual descriptions) into the double equivariant framework to further improve cross-domain generalization.

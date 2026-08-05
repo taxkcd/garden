@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-alva-l-couch"
-source_hash: "c189b8682a2f151edaa421211b16939fcfe5e6d436b3437439581d8a2b61f97a"
+source_hash: "6d26539ed2f28673d9568d85e4f45aabab1d3b2556404bed0304c3225026dc07"
 sequence: 113
 generator: "outreach-garden: managed"
 ---
@@ -126,3 +126,88 @@ The Language Server Protocol (LSP) standardizes communication between code edito
 *How the paper uses it:* The improved MEDFORD VS Code extension uses LSP to offer syntax highlighting, validation, and tab completions for easier metadata authoring.
 
 ▶ [LSP Explained (in 5 Minutes)](https://www.youtube.com/watch?v=LaS32vctfOY) — TJ DeVries · 5:06 · 2 years ago
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progression to demonstrate your understanding of the MEDFORD-in-a-Box (MIAB) improvements. The beginner project focuses on reproducing and validating MEDFORD syntax highlighting and validation in a VS Code extension context, leveraging your frontend and TypeScript skills. The intermediate project involves reimplementing the MEDFORD parser's enhanced validation and BagIt packaging capabilities in Python, applying them to a small synthetic metadata dataset to show correctness and packaging integrity. The advanced project tackles a future direction from the paper by developing a prototype import plugin to extract metadata from image EXIF data into MEDFORD format, addressing the paper's limitation on metadata import plugins and extending MEDFORD usability to a new domain.
+
+### Beginner — MEDFORD Syntax Highlighting and Validation in VS Code
+*Effort: a weekend, ~8 hours*
+
+You build a Visual Studio Code extension that provides syntax highlighting, tab completions, and background validation for MEDFORD metadata files (.mfd). This reproduces the paper's improvements to the VS Code extension, focusing on user-friendly feedback for non-programmers writing MEDFORD metadata.
+
+**Why it shows you understood the paper:** This project shows you understand the MEDFORD language's syntax and token validation improvements, and how editor tooling can improve metadata usability, a core contribution of the paper.
+
+**Grounded in:** VS Code extension provides syntax highlighting, tab completions, and background validation improving user experience
+
+**Tech stack:** TypeScript, Visual Studio Code Extension API, JSON, Node.js
+
+**Data:** You create small example MEDFORD metadata files based on the paper's syntax examples to test highlighting and validation.
+
+**Build it:**
+
+1. Study the MEDFORD language syntax and token types as described in the paper.
+2. Set up a VS Code extension project using TypeScript and the VS Code Extension API.
+3. Implement syntax highlighting rules for MEDFORD keywords, tokens, and comments.
+4. Add a language server or background validation that checks token types and reports errors inline.
+5. Implement tab completions for common MEDFORD tokens and metadata fields.
+6. Test the extension on example MEDFORD files and document usage in the README.
+
+**Ships as:** A VS Code extension repository with installation instructions, example MEDFORD files demonstrating syntax highlighting and validation, and a README explaining how the extension improves metadata authoring.
+
+**Stretch goal:** Add interactive hover tooltips explaining MEDFORD tokens and validation errors to further assist non-programmers.
+
+### Intermediate — Reimplement MEDFORD Parser with Validation and BagIt Packaging
+*Effort: 2 weekends, ~20 hours*
+
+You build a Python tool that parses MEDFORD metadata files, validates token data types including user-defined tokens via YAML rules, and packages metadata with referenced data files into a BagIt archive. You apply this to a small synthetic dataset simulating scientific metadata and data files.
+
+**Why it shows you understood the paper:** This project demonstrates your grasp of the paper's core method: enhanced validation routines and BagIt export for metadata integrity and transport, showing you can implement and test these improvements from the paper's descriptions.
+
+**Grounded in:** Updated MEDFORD parser with enhanced validation routines and BagIt packaging for data transport
+
+**Tech stack:** Python 3.11, PyYAML, bagit-python, pytest
+
+**Data:** Synthetic MEDFORD metadata files and dummy data files you create to simulate a research dataset with metadata references.
+
+**Build it:**
+
+1. Design a MEDFORD parser that reads metadata files and tokenizes lines according to the paper's syntax.
+2. Implement validation routines for major token data types (e.g., dates, strings, numbers) and support user-defined tokens and validation rules loaded from YAML files.
+3. Integrate BagIt packaging to bundle the validated MEDFORD metadata files with referenced data files into a BagIt archive with checksums.
+4. Create a small synthetic dataset of MEDFORD metadata files and dummy data files to test parsing, validation, and packaging.
+5. Write tests to verify correct parsing, validation error detection, and BagIt archive integrity.
+6. Document usage and how this tool improves metadata correctness and data transport.
+
+**Ships as:** A Python package repository with a command-line tool to parse, validate, and package MEDFORD metadata and data files, including tests and example datasets.
+
+**Stretch goal:** Add support for cross-file referencing of metadata objects as per the paper's new MEDFORD language features.
+
+### Advanced — Prototype MEDFORD Import Plugin for EXIF Metadata Extraction
+*Effort: 3-4 weeks*
+
+You develop a MEDFORD import plugin that extracts metadata from image EXIF data and converts it into MEDFORD metadata format, integrating with the MEDFORD parser tool. This addresses the paper's limitation that import plugins for metadata extraction from native file formats are under development.
+
+**Why it shows you understood the paper:** This project tackles a stated limitation and future direction by extending MEDFORD's usability to a new domain (image metadata), demonstrating your ability to apply and extend the paper's ecosystem practically.
+
+**Grounded in:** Development of tools to import metadata from native file formats like EXIF in images; limitation that import plugins are still under development
+
+**Tech stack:** Python 3.11, exifread or Pillow, PyYAML, bagit-python, pytest
+
+**Data:** A collection of sample images with EXIF metadata (public domain or your own photos) used to extract metadata for conversion.
+
+**Build it:**
+
+1. Research EXIF metadata structure and extraction libraries in Python (e.g., exifread, Pillow).
+2. Design a mapping from EXIF tags to MEDFORD metadata tokens based on MEDFORD language extensions.
+3. Implement a plugin that reads EXIF data from images and generates corresponding MEDFORD metadata files.
+4. Integrate this plugin with the MEDFORD parser and BagIt packaging tool from the intermediate project.
+5. Test the plugin on a variety of sample images, verifying correct metadata extraction and packaging.
+6. Document the plugin usage, limitations, and how it extends MEDFORD's metadata import capabilities.
+
+**Ships as:** A Python plugin repository that extracts EXIF metadata into MEDFORD format and packages it with images, with tests and documentation.
+
+**Stretch goal:** Extend the plugin to support other file types such as genomic data or PDF metadata, as envisioned in the paper's future directions.

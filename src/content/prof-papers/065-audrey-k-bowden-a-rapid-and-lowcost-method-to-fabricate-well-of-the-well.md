@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-audrey-k-bowden"
-source_hash: "08ce78bd079c37e563bc61b66006021e25fe2d0c39716fa8e8fdac59cfd32293"
+source_hash: "487b087c5d02eeab85adac20636105b5da0a1727a128385a20062f249ae5846c"
 sequence: 65
 generator: "outreach-garden: managed"
 ---
@@ -140,3 +140,86 @@ Learn about the importance of microwell shape and size customization in cell cul
 *How the paper uses it:* The paper demonstrates that hemispherical microwells fabricated via their method yield superior embryo quality compared to other shapes and commercial dishes.
 
 ▶ [Cell Culture Taster Lecture](https://www.youtube.com/watch?v=uV1bcc_jr9Y) — Swansea University Medical School · 40:23 · 5 years ago
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a practical learning ladder to demonstrate understanding of the paper's novel fabrication method and its impact on embryo culture quality. The beginner project reproduces a simple microwell shape design and visualization, the intermediate project implements the core fabrication method in software and compares microwell shapes on embryo culture metrics, and the advanced project extends the method to address a stated limitation by improving microwell shape accuracy or exploring real-time imaging integration.
+
+### Beginner — Visualize and Compare Microwell Shapes in 3D
+*Effort: a weekend, ~8 hours*
+
+You build a small web app or script that renders 3D models of the microwell shapes used in the paper (hemispherical, pyramidal, truncated cone) and allows interactive comparison of their dimensions and surface profiles. This reproduces the paper's demonstration of customizable microwell shapes and their geometry.
+
+**Why it shows you understood the paper:** This project shows you understand the importance of microwell shape customization and the geometric differences that the paper claims affect embryo quality. It also demonstrates familiarity with 3D modeling concepts relevant to the fabrication method.
+
+**Grounded in:** Demonstrated ability to produce multiple microwell designs (hemispherical, pyramidal, truncated cone) in a single dish for parallel testing.
+
+**Tech stack:** JavaScript, Three.js or similar 3D library, HTML, CSS
+
+**Data:** Microwell shape dimensions and profiles as described in the paper's figures and methods section; no experimental data needed.
+
+**Build it:**
+
+1. Extract microwell shape parameters (dimensions, curvature) from the paper's figures and text.
+2. Use a 3D graphics library (e.g., Three.js) to model each microwell shape in 3D.
+3. Create an interactive UI to toggle between shapes and display their dimensions.
+4. Add annotations or measurements to highlight key geometric differences.
+5. Test the visualization in a browser and document how shapes differ.
+
+**Ships as:** A GitHub repo with a web-based 3D visualization of microwell shapes and a README explaining the shapes and their relevance to embryo culture.
+
+**Stretch goal:** Add a feature to simulate PDMS shrinkage effects on microwell dimensions to reflect fabrication accuracy.
+
+### Intermediate — Software Simulation of PDMS WOW Dish Fabrication and Embryo Culture Outcome Comparison
+*Effort: 1-3 weekends, ~20 hours*
+
+You implement a software pipeline that simulates the fabrication of PDMS WOW dish inserts with customizable microwell shapes using parametric 3D modeling. Then, you simulate embryo culture outcomes by comparing blastocyst quality scores across hemispherical, pyramidal, and truncated cone microwells using synthetic or literature-based data. You report metrics analogous to the paper's blastocyst quality scores and blastocyst rates.
+
+**Why it shows you understood the paper:** This project shows you grasp the core fabrication method's flexibility and its biological impact on embryo quality. It also demonstrates ability to model and analyze experimental outcomes quantitatively, reflecting the paper's key results.
+
+**Grounded in:** Introduced a versatile, low-cost, and rapid method to fabricate WOW dishes with customizable 3D microwell shapes; conducted embryo culture experiments showing hemispherical microwells yield superior blastocyst quality.
+
+**Tech stack:** Python 3.11, numpy, matplotlib, scipy, Jupyter Notebook
+
+**Data:** Synthetic embryo culture outcome data modeled after the paper's reported blastocyst quality scores and rates; no real embryo data available.
+
+**Build it:**
+
+1. Implement parametric 3D models of hemispherical, pyramidal, and truncated cone microwells in Python.
+2. Simulate PDMS shrinkage effects on microwell dimensions based on paper's shrinkage rates.
+3. Generate synthetic embryo culture outcome data reflecting blastocyst quality scores and rates for each microwell shape.
+4. Analyze and plot comparative metrics (mean blastocyst quality score, blastocyst rate) across shapes.
+5. Write a report comparing simulated results to the paper's findings and discussing implications.
+
+**Ships as:** A Jupyter Notebook repository demonstrating microwell shape modeling, synthetic embryo culture outcome simulation, and comparative analysis with plots and discussion.
+
+**Stretch goal:** Incorporate a simple machine learning model to predict embryo quality scores from microwell shape parameters.
+
+### Advanced — Improving Microwell Shape Accuracy via Enhanced 3D Printing Simulation and OCT Image Analysis
+*Effort: few weeks, ~80+ hours*
+
+You develop a software toolchain that simulates the DLP 3D printing process limitations affecting microwell shape accuracy and surface roughness, addressing the paper's limitation on axial resolution. You integrate OCT image analysis algorithms to quantify microwell shape deviations and propose optimized printing parameters or post-processing steps. This extends the paper's fabrication method by improving microwell shape fidelity.
+
+**Why it shows you understood the paper:** This project tackles a key limitation identified by the authors and combines microfabrication knowledge with biophotonic imaging techniques (OCT) mentioned in the paper. It demonstrates ability to extend the method toward clinical translation and improved embryo culture outcomes.
+
+**Grounded in:** Limited axial resolution of the DLP 3D printer affects accuracy of round microwell shapes and edge roughness; validated fabrication accuracy and mold reusability with OCT imaging.
+
+**Tech stack:** Python 3.11, OpenCV, scikit-image, numpy, matplotlib, Jupyter Notebook
+
+**Data:** Simulated microwell 3D models and synthetic OCT image data representing microwell cross-sections; no real OCT data available.
+
+**Build it:**
+
+1. Research and model DLP 3D printing axial resolution limitations affecting microwell shape.
+2. Simulate microwell shape distortions due to printing resolution and PDMS shrinkage.
+3. Implement OCT image processing algorithms to analyze microwell cross-sectional profiles from synthetic OCT images.
+4. Quantify shape deviations and surface roughness metrics from OCT analysis.
+5. Propose and simulate printing parameter adjustments or post-processing to improve shape accuracy.
+6. Document findings and potential impact on embryo culture quality.
+
+**Ships as:** A GitHub repo with simulation code, OCT image analysis scripts, and a detailed report on improving microwell shape accuracy addressing the paper's fabrication limitations.
+
+**Stretch goal:** Collaborate with a lab to apply the toolchain to real OCT data from fabricated WOW dishes and validate improvements experimentally.

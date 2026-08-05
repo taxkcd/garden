@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-greengar"
-source_hash: "c4a2bfb800b693fea6286ec26d987d874ad00bb021babd24fe4a7f3a1747ca93"
+source_hash: "ff12afe0bd2790cf2848dc20c230b5f4365e5cf95c172edcffa968417ddd38a9"
 sequence: 23
 generator: "outreach-garden: managed"
 ---
@@ -133,3 +133,87 @@ The fast multipole method (FMM) is an algorithm that combines multipole expansio
 
 - [The Fast Multipole Method](https://www.youtube.com/watch?v=qMLIyZi8Sz0) — also for: A Fast Adaptive Multipole Algorithm for Particle Simulations (Leslie F. Greengard)
 - [Alex Townsend: Fast Transforms Based on Asymptotic ...](https://www.youtube.com/watch?v=3dfn0yHrbv4) — also for: A Fast Adaptive Multipole Algorithm for Particle Simulations (Leslie F. Greengard)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive ladder to demonstrate understanding of the 1988 paper "A Fast Adaptive Multipole Algorithm for Particle Simulations." Starting with a beginner-level implementation of the core multipole expansion concept in 2D, advancing to an intermediate adaptive multipole algorithm reimplementation and performance comparison, and culminating in an advanced project extending the method to address the paper's noted limitation of 3D extension. Each project builds on the previous, increasing in complexity and depth of engagement with the paper's key contributions.
+
+### Beginner — 2D Multipole Expansion Visualization
+*Effort: a weekend, ~8 hours*
+
+You build a small interactive 2D visualization that demonstrates the concept of multipole expansions for a cluster of particles. The app will compute and display the approximate potential field using a truncated multipole expansion and compare it visually to the direct computation for a small number of particles.
+
+**Why it shows you understood the paper:** This project shows you understand the fundamental mathematical idea of multipole expansions and their approximation quality, which is central to the paper's approach.
+
+**Grounded in:** The algorithm uses multipole expansions to approximate distant interactions (Section 3).
+
+**Tech stack:** JavaScript, React, D3.js
+
+**Data:** Synthetic 2D particle positions generated randomly or in small clusters within the app.
+
+**Build it:**
+
+1. Implement direct Coulomb potential calculation for a small set of 2D particles.
+2. Implement multipole expansion terms up to a fixed order for the same particles.
+3. Visualize both direct and multipole-approximated potential fields on a 2D grid.
+4. Add UI controls to vary the number of expansion terms and particle configurations.
+5. Compare and highlight approximation errors visually.
+
+**Ships as:** An interactive web app repository with README explaining multipole expansions and showing visual comparisons of direct vs. multipole potentials.
+
+**Stretch goal:** Add error bound calculations and display numerical error metrics as the expansion order changes.
+
+### Intermediate — Adaptive 2D Fast Multipole Algorithm Reimplementation
+*Effort: 2 weekends, ~20 hours*
+
+You implement the core adaptive multipole algorithm described in the paper for 2D particle simulations. Your code will hierarchically subdivide the domain, cluster particles adaptively, compute multipole expansions for well-separated clusters, and compute direct interactions for nearby particles. You will benchmark your implementation against a naive direct O(N²) method on synthetic uniform and clustered particle distributions, reporting CPU time scaling and accuracy.
+
+**Why it shows you understood the paper:** This project demonstrates you can faithfully reimplement the paper's main algorithm and reproduce its key claims about linear scaling and accuracy, showing deep comprehension of the adaptive hierarchical approach.
+
+**Grounded in:** Introduction of an adaptive multipole algorithm with O(N) complexity for 2D particle simulations and numerical experiments demonstrating accuracy and efficiency on uniform and clustered distributions.
+
+**Tech stack:** Python 3.11, NumPy, Matplotlib
+
+**Data:** Synthetic 2D particle sets generated with uniform and clustered spatial distributions to mimic the paper's test cases.
+
+**Build it:**
+
+1. Implement a quadtree spatial subdivision to cluster particles adaptively based on maximum particles per box.
+2. Implement multipole expansions and translations for well-separated clusters.
+3. Implement direct computation for nearby particle interactions.
+4. Combine the above into a full adaptive multipole algorithm.
+5. Benchmark runtime and accuracy against direct O(N²) computation on synthetic datasets.
+6. Plot CPU time scaling and error metrics similar to the paper's figures.
+
+**Ships as:** A Python repository with scripts to run adaptive multipole simulations, benchmark results, and a detailed README comparing performance and accuracy to direct computation.
+
+**Stretch goal:** Add parameter tuning for expansion order and maximum particles per box, analyzing their impact on performance and accuracy.
+
+### Advanced — Extension of Adaptive Multipole Algorithm to 3D Particle Simulations
+*Effort: 3+ weeks*
+
+You extend your 2D adaptive multipole implementation to three dimensions, addressing the paper's stated limitation that only 2D was implemented. You will implement octree subdivision, 3D multipole expansions, and translation operators. You will test your 3D algorithm on synthetic 3D particle distributions, measure computational scaling, and compare accuracy to direct 3D computations.
+
+**Why it shows you understood the paper:** This project tackles a key limitation and future direction from the paper, demonstrating your ability to generalize and extend the core algorithm to a more complex and practically relevant setting.
+
+**Grounded in:** The paper describes only the two-dimensional version; extension to three dimensions is noted as straightforward but not included (Limitations and Future Directions).
+
+**Tech stack:** Python 3.11, NumPy, SciPy, Matplotlib, PyOpenGL (optional for 3D visualization)
+
+**Data:** Synthetic 3D particle sets generated with uniform and clustered spatial distributions to simulate realistic 3D particle systems.
+
+**Build it:**
+
+1. Implement an octree spatial subdivision for adaptive clustering in 3D.
+2. Derive and implement 3D multipole expansions and translation operators based on the 2D formulas.
+3. Implement direct 3D Coulomb interaction computations for benchmarking.
+4. Integrate the components into a full 3D adaptive multipole algorithm.
+5. Benchmark runtime scaling and accuracy against direct 3D computations.
+6. Document challenges encountered and solutions in extending from 2D to 3D.
+
+**Ships as:** A comprehensive Python repository with 3D adaptive multipole code, benchmarks, visualizations, and a README discussing the extension challenges and performance results.
+
+**Stretch goal:** Apply the 3D algorithm to a simple molecular dynamics simulation or plasma physics scenario to demonstrate practical utility.

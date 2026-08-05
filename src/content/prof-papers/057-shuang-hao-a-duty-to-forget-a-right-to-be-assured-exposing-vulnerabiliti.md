@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-shuang-hao"
-source_hash: "cfdcaa0761823f3b04a87ebfb53035f91ecb1dd37148fb73745de026fafe2094"
+source_hash: "5af016acf7d589489b2af0440c99bb7bbe897164c5a103c88907d410f6af7c14"
 sequence: 57
 generator: "outreach-garden: managed"
 ---
@@ -114,3 +114,96 @@ Machine unlearning allows models to forget specific data, but attackers can expl
 *How the paper uses it:* The core contribution of the paper is identifying and demonstrating over-unlearning attacks on machine unlearning services.
 
 ▶ [What is Machine Unlearning?](https://www.youtube.com/watch?v=0_ciCzHaM4o) — Probably Private · 10 months ago
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a practical learning ladder to understand and demonstrate the core ideas of the paper on over-unlearning attacks in machine unlearning services. Starting with a beginner-level reproduction of the blending attack effect on CIFAR-10 using the authors' released code, you then move to an intermediate project implementing and comparing the pushing attack under black-box constraints. Finally, the advanced project extends the paper by exploring over-unlearning attacks beyond image classification, applying the pushing method to a simple NLP classification task, addressing a key limitation and future direction of the paper.
+
+### Beginner — Reproduce Blending Attack Impact on CIFAR-10 Unlearning
+*Effort: a weekend, ~8 hours*
+
+You build a small experiment to reproduce the blending attack's effect on model accuracy when unlearning 50% of a class on CIFAR-10. Using the authors' released code, you run the blending method and measure accuracy degradation compared to normal unlearning.
+
+**Why it shows you understood the paper:** This project shows you understand the over-unlearning threat and the blending attack mechanism by faithfully reproducing a key quantitative result from the paper.
+
+**Grounded in:** Blending method causes up to 8.1% accuracy degradation on CIFAR-10 with 50% unlearning.
+
+**Tech stack:** Python 3.8+, PyTorch, NumPy, Matplotlib
+
+**Data:** CIFAR-10 dataset, publicly available, used as in the paper.
+
+**Build it:**
+
+1. Clone the authors' repository from https://github.com/TASI-LAB/Over-unlearning.
+2. Set up the environment with required dependencies (PyTorch, etc.).
+3. Run the baseline normal unlearning experiment on CIFAR-10 for a chosen class.
+4. Run the blending attack unlearning experiment unlearning 50% of that class.
+5. Measure and plot the model accuracy degradation compared to normal unlearning.
+6. Write a README explaining the experiment and results.
+
+**Verified links from the paper:**
+
+- <https://github.com/TASI-LAB/Over-unlearning> — released by the paper's authors
+
+**Ships as:** A GitHub repo with code and README showing the blending attack reproduction and accuracy degradation plot on CIFAR-10.
+
+**Stretch goal:** Add a simple visualization of blended samples to illustrate how blending modifies data.
+
+### Intermediate — Implement and Evaluate Pushing Attack under Black-Box Constraints
+*Effort: 1-3 weekends, ~20 hours*
+
+You implement the pushing attack strategy described in the paper to cause over-unlearning on CIFAR-10 using black-box model access. You compare its effectiveness against normal unlearning and the blending baseline by measuring model accuracy after unlearning.
+
+**Why it shows you understood the paper:** This project demonstrates deeper comprehension of the paper's core novel attack method (pushing) and black-box adversarial techniques, replicating the paper's key empirical findings.
+
+**Grounded in:** Pushing methods are more effective and stealthy for over-unlearning.
+
+**Tech stack:** Python 3.8+, PyTorch, NumPy, scikit-image, Matplotlib
+
+**Data:** CIFAR-10 dataset, publicly available, used as in the paper.
+
+**Build it:**
+
+1. Review the pushing attack algorithm as described in the paper.
+2. Extend or adapt the authors' codebase to implement the pushing attack under black-box constraints.
+3. Run experiments unlearning 10-50% of a class on CIFAR-10 with pushing attack.
+4. Compare model accuracy after pushing attack unlearning vs normal unlearning and blending attack.
+5. Calculate perceptual similarity metrics (SSIM, LPIPS) to verify stealthiness.
+6. Document the implementation details, results, and comparisons in a README.
+
+**Verified links from the paper:**
+
+- <https://github.com/TASI-LAB/Over-unlearning> — released by the paper's authors
+
+**Ships as:** A GitHub repo with pushing attack implementation, experimental results comparing accuracy and stealthiness, and analysis.
+
+**Stretch goal:** Add a simple black-box query simulation to mimic MLaaS constraints more realistically.
+
+### Advanced — Explore Over-Unlearning Attacks on NLP Classification Models
+*Effort: few weeks, ~40+ hours*
+
+You extend the paper's over-unlearning attack methods by applying the pushing attack to a simple NLP classification task (e.g., sentiment analysis) to test if over-unlearning threats exist beyond image classification. You adapt the attack to text data and evaluate model degradation after unlearning manipulated samples.
+
+**Why it shows you understood the paper:** This project tackles a key limitation and future direction from the paper by transferring the attack methodology to a new domain, demonstrating critical thinking and research potential.
+
+**Grounded in:** The study focuses primarily on image classification tasks and may not generalize directly to other domains or modalities; future direction to investigate over-unlearning in other ML domains.
+
+**Tech stack:** Python 3.8+, PyTorch, Transformers (HuggingFace), NumPy, scikit-learn
+
+**Data:** Use a publicly available small NLP dataset such as SST-2 (Stanford Sentiment Treebank) as a substitute for image data.
+
+**Build it:**
+
+1. Select a simple NLP classification dataset (e.g., SST-2) and train a baseline text classification model (e.g., BERT fine-tuned).
+2. Design an adaptation of the pushing attack for text data, e.g., adversarial perturbations on embeddings or token substitutions.
+3. Implement the adapted pushing attack to generate manipulated samples for unlearning requests.
+4. Perform unlearning on the model using normal and manipulated samples, measuring accuracy degradation.
+5. Analyze the stealthiness of manipulated samples (e.g., semantic similarity metrics).
+6. Write a detailed report comparing results and discussing challenges and implications.
+
+**Ships as:** A GitHub repo with code, experiments, and a comprehensive README/report demonstrating over-unlearning attacks on NLP models.
+
+**Stretch goal:** Explore simple defense mechanisms or detection heuristics for malicious unlearning requests in NLP.

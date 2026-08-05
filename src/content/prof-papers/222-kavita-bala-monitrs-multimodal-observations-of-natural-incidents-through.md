@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-kavita-bala"
-source_hash: "5280db1ef64bf0f32a0e8b738779c1c43734ec8327cf529ca282e58919fdeaf7"
+source_hash: "ded66d1a0400416c38af2cf0583df176e3b1201965451455da43d7d9f61cac5a"
 sequence: 222
 generator: "outreach-garden: managed"
 ---
@@ -127,3 +127,88 @@ Finally, watch a direct presentation related to the MONITRS dataset and its nove
 - [Stanford CS25: Transformers United V6 I From Language ...](https://www.youtube.com/watch?v=NDdc39KYqDU) — also for: Beyond Final Answers: CRYSTAL Benchmark for Transparent Multimodal Reasoning Evaluation (Sou-Young Jin)
 - [What is Multimodal AI? How LLMs Process Text, Images, and More](https://www.youtube.com/watch?v=J51oZYcNvP8) — also for: Automated Grading of Handwritten Mathematics Using Vision-Capable LLMs (Craig B. Zilles)
 - [Multimodal Large Language Model Intro By Google Engineer ...](https://www.youtube.com/watch?v=jjdKfk89yAM) — also for: MLLM-based Speech Recognition: When and How is Multimodality Beneficial? (Jacob Whitehill)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive ladder to demonstrate understanding of the MONITRS paper. The beginner project reproduces a simple disaster event classification baseline using publicly available satellite imagery and news data, reflecting the paper's initial performance challenges. The intermediate project implements a core method of fine-tuning a multimodal large language model on a small-scale multimodal disaster dataset, showing improved event classification and temporal grounding metrics. The advanced project extends MONITRS by incorporating an additional data modality (e.g., segmentation masks or location embeddings) to address the paper's noted limitation in location grounding, thus exploring a future research direction.
+
+### Beginner — Disaster Event Classification Baseline with Satellite Imagery and News Text
+*Effort: a weekend, ~8 hours*
+
+You build a simple classifier that predicts disaster event types from paired satellite RGB images and short news text descriptions. Using a small public dataset substituting for MONITRS (e.g., Sentinel-2 RGB images from a known US disaster event and corresponding news snippets you collect manually), you extract basic image features and text embeddings, then train a simple multimodal classifier.
+
+**Why it shows you understood the paper:** This project shows you understand the core challenge MONITRS addresses: multimodal disaster event classification with limited annotated data and baseline model performance around 50%. It demonstrates your ability to combine satellite imagery and natural language inputs for classification.
+
+**Grounded in:** Baseline multimodal models perform poorly on disaster monitoring tasks (event classification ~50%)
+
+**Tech stack:** Python 3.11, PyTorch, scikit-learn, transformers (HuggingFace)
+
+**Data:** Use publicly available Sentinel-2 RGB satellite images for a small set of US disaster events (e.g., wildfires or floods) and manually collected short news text snippets describing those events as a substitute for MONITRS data.
+
+**Build it:**
+
+1. Collect a small set (50-100) of Sentinel-2 RGB satellite images for known US disaster events from public sources.
+2. Manually gather short news text snippets describing these disaster events with timestamps and locations.
+3. Preprocess images (resize, normalize) and tokenize text using a pretrained language model tokenizer.
+4. Extract image features using a pretrained CNN backbone (e.g., ResNet18) and text embeddings using a pretrained transformer (e.g., DistilBERT).
+5. Concatenate image and text features and train a simple classifier (e.g., MLP) to predict disaster event types.
+6. Evaluate classification accuracy and compare to the ~50% baseline reported in the paper.
+
+**Ships as:** A GitHub repo with code, a README explaining the dataset substitution, model architecture, training procedure, and baseline classification accuracy results.
+
+**Stretch goal:** Add temporal context by including image sequences over time and evaluate if classification improves.
+
+### Intermediate — Fine-tuning a Multimodal LLM for Disaster Event Classification and Temporal Grounding
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement the paper's core method of fine-tuning a multimodal large language model on a small-scale multimodal disaster dataset. Using a publicly available satellite imagery dataset combined with synthetic or publicly sourced disaster-related text annotations, you fine-tune an open-source multimodal LLM to perform event classification and temporal grounding, reporting accuracy improvements over a baseline.
+
+**Why it shows you understood the paper:** This project demonstrates your ability to implement the paper's main technical contribution: fine-tuning multimodal LLMs on combined satellite imagery and natural language annotations to improve disaster monitoring tasks, replicating the significant accuracy gains reported.
+
+**Grounded in:** Fine-tuning on MONITRS significantly improves model performance on event classification and temporal grounding.
+
+**Tech stack:** Python 3.11, PyTorch, transformers (HuggingFace), OpenAI CLIP or similar multimodal model
+
+**Data:** Use a small public dataset of satellite image sequences (e.g., Sentinel-2) for US disaster events combined with synthetic or publicly sourced natural language annotations simulating MONITRS data.
+
+**Build it:**
+
+1. Prepare a small multimodal dataset pairing satellite image sequences with natural language annotations describing disaster events and timestamps.
+2. Select a pretrained multimodal LLM or vision-language model (e.g., CLIP or BLIP) as the base model.
+3. Fine-tune the model on the dataset for event classification and temporal grounding tasks.
+4. Implement evaluation metrics matching the paper (accuracy for event classification and temporal grounding).
+5. Compare fine-tuned model performance against a baseline unimodal or non-fine-tuned model.
+6. Document the training setup, hyperparameters, and results.
+
+**Ships as:** A GitHub repo with code to fine-tune and evaluate a multimodal LLM on disaster event classification and temporal grounding, with a report showing improved accuracy consistent with the paper's findings.
+
+**Stretch goal:** Add a simple visual question answering (VQA) task on disaster images and evaluate model performance.
+
+### Advanced — Improving Location Grounding in Disaster Monitoring by Integrating Segmentation Masks
+*Effort: 3-4 weeks*
+
+You extend the MONITRS approach by incorporating an additional data modality—segmentation masks derived from satellite imagery—to improve location grounding accuracy. Using publicly available satellite images and disaster annotations, you generate or obtain segmentation masks highlighting disaster-affected areas, integrate them into a multimodal model, and evaluate improvements in location grounding metrics.
+
+**Why it shows you understood the paper:** This project tackles a key limitation and future direction identified in the paper: the challenge of location grounding and the need for additional data modalities. It shows your ability to innovate beyond the original work by integrating spatial segmentation to enhance disaster localization.
+
+**Grounded in:** Location grounding remains challenging for all models, indicating need for additional data modalities.
+
+**Tech stack:** Python 3.11, PyTorch, transformers (HuggingFace), OpenCV, segmentation model (e.g., U-Net)
+
+**Data:** Use publicly available Sentinel-2 RGB satellite images for US disaster events, manually or automatically generate segmentation masks for disaster-affected regions, and pair with disaster event annotations.
+
+**Build it:**
+
+1. Collect satellite images and corresponding disaster event annotations with geolocations.
+2. Train or apply a pretrained segmentation model (e.g., U-Net) to generate masks of disaster-affected areas in satellite images.
+3. Integrate segmentation masks as an additional input channel or modality into a multimodal disaster monitoring model.
+4. Fine-tune the model on event classification, temporal grounding, and location grounding tasks.
+5. Evaluate improvements in location grounding accuracy compared to models without segmentation masks.
+6. Document methodology, challenges, and results.
+
+**Ships as:** A GitHub repo with code and documentation demonstrating improved location grounding in disaster monitoring by integrating segmentation masks, including quantitative evaluation and discussion.
+
+**Stretch goal:** Experiment with incorporating additional geospatial embeddings or SAR data if available to further improve location grounding.

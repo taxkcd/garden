@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-robert-h-sloan"
-source_hash: "0e9710faed4b7b516e478f5537b4864d2036da78d6fb7d5d22722cafecd45933"
+source_hash: "f6b868a55464299fbaae51b64e62cf72905324366f0fc1c0eb5d6ba6e83cb6ed"
 sequence: 223
 generator: "outreach-garden: managed"
 ---
@@ -132,3 +132,88 @@ Hearing directly from the authors offers insights into their motivations, method
 ## Already in your library
 
 - [Stanford CME295 Transformers & LLMs | Autumn 2025 ...](https://www.youtube.com/watch?v=8fNP4N46RRo) — also for: BENCHGUARD: Who Guards the Benchmarks? Automated Auditing of LLM Agent Benchmarks (Sara Mostafavi)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a practical learning ladder to demonstrate understanding of the paper's approach to evaluating AI verbal intelligence using psychometric tests. The beginner project recreates a simple scoring simulation of ConceptNet 4's verbal IQ subtest results. The intermediate project reimplements the core method of translating verbal IQ test questions into ConceptNet queries and scoring answers on a small sample of public commonsense questions. The advanced project extends the paper by improving natural language processing and knowledge representation to better handle Comprehension and Word Reasoning questions, addressing a key limitation identified by the authors.
+
+### Beginner — Simulate Verbal IQ Subtest Scoring for ConceptNet 4
+*Effort: a weekend, ~8 hours*
+
+You build a Python script that simulates scoring ConceptNet 4's performance on the Vocabulary and Similarities subtests of the WPPSI-III verbal IQ test using the paper's reported average scores. The project visualizes the subtest scores and overall verbal IQ equivalent at ages 4 to 7.
+
+**Why it shows you understood the paper:** This project shows you understand how the paper quantifies AI verbal intelligence by mapping ConceptNet's answers to standardized WPPSI-III scoring norms and how performance varies by subtest and age.
+
+**Grounded in:** Demonstrated strengths in Vocabulary and Similarities subtests and overall verbal IQ equivalent to an average four-year-old child.
+
+**Tech stack:** Python 3.11, matplotlib, pandas
+
+**Data:** Simulated data based on the paper's reported subtest scores and verbal IQ equivalents; no proprietary WPPSI-III questions are used.
+
+**Build it:**
+
+1. Extract the reported subtest scores (Vocabulary, Similarities, Information, Comprehension, Word Reasoning) and verbal IQ equivalents at ages 4 to 7 from the paper summary.
+2. Implement a Python script to represent these scores and calculate overall verbal IQ equivalents.
+3. Create visualizations (bar charts or line plots) showing subtest scores and verbal IQ across ages.
+4. Write a README explaining the scoring interpretation and limitations due to simulated data.
+
+**Ships as:** A GitHub repo with a Python script and plots illustrating ConceptNet 4's verbal IQ subtest performance and overall verbal IQ equivalence, with clear documentation linking to the paper's findings.
+
+**Stretch goal:** Add interactive visualization allowing users to adjust subtest scores and see resulting verbal IQ changes.
+
+### Intermediate — Reimplement ConceptNet 4 Verbal IQ Question Answering Pipeline
+*Effort: 2 weekends, ~20 hours*
+
+You build a Python pipeline that takes a small set of publicly available commonsense verbal questions (e.g., from ConceptNet or similar datasets) and translates them into ConceptNet 4 queries using simple NLP preprocessing. You then score the AI's answers using a simplified WPPSI-III-like scoring rubric to approximate verbal IQ subtest performance.
+
+**Why it shows you understood the paper:** This project demonstrates your grasp of the paper's core method: translating verbal IQ test questions into AI knowledge base queries, scoring answers, and benchmarking AI verbal intelligence. It also shows your ability to implement NLP preprocessing and scoring pipelines.
+
+**Grounded in:** The approach of translating WPPSI-III verbal test questions into ConceptNet inputs using NLP tools and scoring answers with WPPSI-III norms.
+
+**Tech stack:** Python 3.11, NLTK or spaCy, requests, pandas
+
+**Data:** A small curated set of publicly available commonsense questions (e.g., from ConceptNet or similar open datasets) used as a proxy for WPPSI-III verbal questions, since the original test is proprietary.
+
+**Build it:**
+
+1. Collect or curate a small set (~20) of verbal commonsense questions suitable for Vocabulary and Similarities subtests from public sources.
+2. Implement NLP preprocessing to parse and normalize questions into ConceptNet query formats.
+3. Query ConceptNet 4 (or a local dump if available) to retrieve answers or related concepts.
+4. Design a simplified scoring rubric inspired by WPPSI-III norms to score the AI's answers.
+5. Calculate aggregate subtest scores and estimate verbal IQ equivalence.
+6. Document the pipeline, assumptions, and limitations due to dataset substitution.
+
+**Ships as:** A GitHub repo containing the question-to-ConceptNet query pipeline, scoring scripts, and a report comparing AI performance to expected child verbal IQ levels.
+
+**Stretch goal:** Incorporate a baseline method such as random or keyword matching answers to compare against ConceptNet querying.
+
+### Advanced — Enhance AI Verbal IQ Performance via NLP and Knowledge Base Improvements
+*Effort: 3+ weeks*
+
+You develop an enhanced AI verbal IQ evaluation system that addresses the paper's limitations by integrating improved natural language processing (e.g., word-sense disambiguation, syntactic parsing) and expanding the knowledge base with additional commonsense facts. You focus on improving performance on Comprehension and Word Reasoning subtests by implementing specialized inference routines and explanation generation.
+
+**Why it shows you understood the paper:** This project tackles the paper's stated future directions and limitations, demonstrating deep comprehension of the challenges in AI verbal IQ testing, and applying advanced NLP and knowledge representation techniques to improve AI commonsense reasoning and natural language understanding.
+
+**Grounded in:** Future directions including improving NLP tools for parsing and disambiguation, expanding knowledge base coverage, and developing specialized inference routines for Comprehension and Word Reasoning subtests.
+
+**Tech stack:** Python 3.11, spaCy or AllenNLP, networkx, PyTorch or TensorFlow (optional for inference models), ConceptNet data dumps or similar knowledge bases
+
+**Data:** Public ConceptNet knowledge base dumps and publicly available commonsense reasoning datasets; no proprietary WPPSI-III data used.
+
+**Build it:**
+
+1. Implement or integrate advanced NLP preprocessing including word-sense disambiguation and syntactic parsing for input questions.
+2. Augment the knowledge base with additional commonsense facts from public sources or ConceptNet expansions.
+3. Develop inference routines that combine multiple clues from the knowledge base to generate explanations and reasoned answers.
+4. Evaluate the enhanced system on a set of Comprehension and Word Reasoning style questions derived from public commonsense datasets.
+5. Compare performance to baseline ConceptNet 4 style querying and analyze improvements.
+6. Document the system architecture, methods, and evaluation results with respect to the paper's findings.
+
+**Ships as:** A comprehensive GitHub repository with code for enhanced NLP and inference modules, evaluation scripts, and a detailed report showing improved AI verbal IQ subtest performance and addressing key paper limitations.
+
+**Stretch goal:** Explore hybrid AI approaches combining symbolic knowledge and neural language models for further performance gains.
+
+_The paper's WPPSI-III verbal IQ test items are proprietary and not publicly available; all projects must use simulated or proxy datasets for questions and scoring._

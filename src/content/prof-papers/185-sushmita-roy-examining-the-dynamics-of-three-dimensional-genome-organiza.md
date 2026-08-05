@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-sushmita-roy"
-source_hash: "428575ab400c9998ce50314bca09fd7122b6c3c08789f5298694c5ede57603d4"
+source_hash: "4d3c8234d4b5a5e4968eccf65637f14e564fc97c1ae4acc983e543c9c9cecb58"
 sequence: 185
 generator: "outreach-garden: managed"
 ---
@@ -136,3 +136,101 @@ This talk by the paper's author presents TGIF, explaining how multitask NMF is a
 *How the paper uses it:* Direct presentation of the TGIF method developed in the paper.
 
 ▶ [Detecting dynamic 3D genome organization with multi-task... - Da-Inn Lee - RSG - RSGDREAM 2022](https://www.youtube.com/watch?v=AgCHN_NZYMQ) — ISCB · 3 years ago
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive learning path to demonstrate your understanding of the TGIF method for analyzing 3D genome organization dynamics. The beginner project focuses on reproducing a key metric from the paper using existing tools you know, the intermediate project involves running and extending the authors' TGIF code on a small dataset to replicate core results, and the advanced project tackles a stated limitation by implementing a contrastive multitask NMF extension to improve differential boundary detection.
+
+### Beginner — Reproduce TGIF-DB Boundary Precision Metric
+*Effort: a weekend, ~8 hours*
+
+You build a script to compute and visualize the precision of TAD boundary detection using a simple metric such as fold enrichment of CTCF binding sites near boundaries, reproducing the key figure 2B from the paper. You use publicly available CTCF ChIP-seq data and simulated or small Hi-C contact matrices to identify boundaries with a simple peak-calling or segmentation method.
+
+**Why it shows you understood the paper:** This project shows you understand how TGIF-DB boundaries are biologically validated and the importance of CTCF enrichment as a precision metric, demonstrating grasp of the paper's evaluation approach.
+
+**Grounded in:** TGIF-DB boundaries have the highest fold enrichment of CTCF peaks (Fig. 2B).
+
+**Tech stack:** Python 3.11, Jupyter Notebook, numpy, matplotlib, pandas
+
+**Data:** Use publicly available CTCF ChIP-seq peak data from ENCODE as a proxy; simulate or download a small Hi-C contact matrix from a public source as a substitute for the paper's data.
+
+**Build it:**
+
+1. Download CTCF ChIP-seq peak data for a human cell line from ENCODE.
+2. Obtain or simulate a small Hi-C contact matrix representing genomic interactions.
+3. Implement a simple method to call TAD boundaries from the contact matrix (e.g., insulation score or directionality index).
+4. Calculate fold enrichment of CTCF peaks near the called boundaries compared to random genomic regions.
+5. Visualize the fold enrichment as a bar plot or heatmap similar to Fig. 2B.
+6. Write a README explaining the metric and how it relates to TGIF-DB's evaluation.
+
+**Ships as:** A Jupyter notebook and scripts that compute and plot CTCF enrichment near TAD boundaries, with a README linking this metric to TGIF-DB's precision evaluation.
+
+**Stretch goal:** Add comparison of enrichment for boundaries called by two different simple methods to mimic the paper's comparison of TGIF-DB to other methods.
+
+### Intermediate — Run and Extend TGIF-DB on Public Hi-C Data
+*Effort: 2 weekends, ~20 hours*
+
+You download the authors' TGIF code from their GitHub repository and run TGIF-DB on a small publicly available Hi-C dataset (e.g., from a few cell types or time points). You replicate the boundary detection and compute precision and reproducibility metrics, then compare TGIF-DB results to a simple baseline method like TopDom. You add a visualization of boundary overlaps and CTCF enrichment.
+
+**Why it shows you understood the paper:** This project shows you can operate the authors' multitask matrix factorization framework, understand its core boundary detection method, and critically evaluate its performance against a baseline, demonstrating practical mastery of the paper's main contribution.
+
+**Grounded in:** Development of TGIF-DB and demonstration that TGIF-DB outperforms existing methods in precision, reproducibility, and biological relevance of boundary detection.
+
+**Tech stack:** Python 3.11, numpy, scipy, matplotlib, pandas, Git, bash
+
+**Data:** Use a small public Hi-C dataset from GEO or 4DN Data Portal representing multiple related cell types or conditions as a substitute for the paper's mammalian differentiation data.
+
+**Build it:**
+
+1. Clone the TGIF GitHub repository from https://github.com/Roy-lab/tgif.
+2. Install required dependencies and set up the environment.
+3. Download a small public Hi-C dataset with multiple related conditions.
+4. Run TGIF-DB on the dataset to detect TAD boundaries.
+5. Run a simple baseline method like TopDom on the same data.
+6. Compute precision and reproducibility metrics for both methods.
+7. Visualize boundary overlaps and CTCF enrichment near boundaries.
+8. Write a report comparing TGIF-DB and baseline results, referencing the paper's metrics.
+
+**Verified links from the paper:**
+
+- <https://github.com/Roy-lab/tgif> — released by the paper's authors
+
+**Ships as:** A GitHub repository with scripts to run TGIF-DB and baseline, metric computations, visualizations, and a README discussing results and comparison to the paper.
+
+**Stretch goal:** Implement a simple noise robustness test by subsampling Hi-C data and evaluating boundary detection stability.
+
+### Advanced — Contrastive Multitask NMF Extension for TGIF to Reduce False Positives
+*Effort: 3+ weeks*
+
+You develop an extension of the TGIF multitask NMF framework by incorporating a contrastive loss term to explicitly model differences between related biological conditions, addressing the paper's limitation of false-positive differential boundaries. You implement this in Python, apply it to a small multi-condition Hi-C dataset, and compare differential boundary detection performance to the original TGIF-DB.
+
+**Why it shows you understood the paper:** This project demonstrates deep comprehension of the paper's methodology and limitations, ability to extend complex matrix factorization models, and capacity to evaluate improvements quantitatively, positioning you for research-level discussion with the professor.
+
+**Grounded in:** Incorporate a contrastive term in the loss function to better capture differences between related conditions and reduce false positives (future direction).
+
+**Tech stack:** Python 3.11, numpy, scipy, PyTorch or TensorFlow, matplotlib, pandas, Git
+
+**Data:** Use a small public multi-condition Hi-C dataset or simulate hierarchical related Hi-C matrices to test the contrastive multitask NMF extension.
+
+**Build it:**
+
+1. Study the TGIF multitask NMF framework and its regularization scheme from the paper and code.
+2. Design and implement a contrastive loss term that penalizes similarity of factors for conditions expected to differ.
+3. Integrate the contrastive loss into the TGIF multitask NMF optimization.
+4. Run the extended model on a small multi-condition Hi-C dataset.
+5. Evaluate differential boundary detection precision and false positive rate compared to original TGIF-DB.
+6. Visualize results and write a detailed README explaining the method, implementation, and evaluation.
+7. Optionally, prepare a short report discussing potential biological implications and next steps.
+
+**Verified links from the paper:**
+
+- <https://github.com/Roy-lab/tgif> — released by the paper's authors
+
+**Ships as:** A GitHub repo with the contrastive multitask NMF implementation, evaluation scripts, visualizations, and documentation demonstrating improved differential boundary detection.
+
+**Stretch goal:** Incorporate auxiliary data such as gene expression similarity to inform hierarchical tree weighting in the model.
+
+_Public Hi-C datasets with multiple related conditions suitable for TGIF analysis exist but may require preprocessing; simulated data can be used if needed._

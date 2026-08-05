@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-jonathan-gryak"
-source_hash: "2191e45a5f4e18b973cc832f6fc9c55dd5deca1d89b3d9f57644a3f2caffe4b9"
+source_hash: "2fea28f36c9db4c349326baa05eec7a0721f782ab3bba812935bb79bad8b2a77"
 sequence: 153
 generator: "outreach-garden: managed"
 ---
@@ -134,3 +134,97 @@ This hybrid method combines the evolutionary search of genetic programming with 
 *How the paper uses it:* LLM-ODE's core innovation is using LLMs as evolutionary operators within genetic programming to discover dynamical system equations.
 
 ▶ [Swarat Chaudhuri - Abstraction and Evolution with Large ...](https://www.youtube.com/watch?v=AKoKVSFUxSg) — Institute for Pure & Applied Mathematics (IPAM) · 51:14
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive learning path to demonstrate understanding of the LLM-ODE paper. The beginner project focuses on reproducing a core metric from the paper using familiar tools and a simple dynamical system dataset. The intermediate project involves reimplementing the core LLM-guided genetic programming method on a small benchmark and comparing it to a baseline, introducing new skills in symbolic regression and multi-objective optimization. The advanced project extends the method by incorporating domain-specific physical constraints into the LLM prompts, addressing a stated future direction and limitation of the paper, and applying the approach to a novel scientific problem.
+
+### Beginner — Reproduce LLM-ODE Discovery Rate on a Simple Dynamical System
+*Effort: a weekend, ~8 hours*
+
+You build a small Python notebook that simulates a low-dimensional dynamical system (e.g., a 1D logistic growth ODE), then implement a simple symbolic regression using genetic programming (e.g., with PySR or a basic GP library). You measure the discovery rate metric (success in recovering the true equation within an error threshold) similar to the paper's Table 1 for low-dimensional systems.
+
+**Why it shows you understood the paper:** This project shows you understand the core problem of discovering governing equations from data and the evaluation metric of discovery rate used in the paper. It also demonstrates familiarity with symbolic regression and the challenge of recovering equations from noisy data.
+
+**Grounded in:** LLM-ODE achieves higher discovery rates than PySR and SINDy for low-dimensional systems (D=1), demonstrating improved accuracy and efficiency.
+
+**Tech stack:** Python 3.11, Jupyter Notebook, PySR (symbolic regression)
+
+**Data:** Simulated trajectory data from a simple 1D dynamical system such as logistic growth, generated in the notebook.
+
+**Build it:**
+
+1. Simulate time-series data from a known 1D ODE (e.g., logistic growth) with noise.
+2. Use PySR to perform symbolic regression on the simulated data to discover the governing equation.
+3. Calculate the normalized mean squared error between discovered and true equations.
+4. Compute the discovery rate metric by repeating the experiment multiple times with different noise seeds.
+5. Document results and compare to the paper's reported discovery rates for low-dimensional systems.
+
+**Ships as:** A Jupyter notebook with code, plots of discovered equations vs true, discovery rate statistics, and a README explaining the experiment and its relation to the paper.
+
+**Stretch goal:** Add a simple baseline method like SINDy for comparison and plot Pareto fronts of accuracy vs complexity.
+
+### Intermediate — Reimplement LLM-Guided Genetic Programming for Equation Discovery
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement the core LLM-ODE method described in the paper: integrate a large language model as an evolutionary operator within a genetic programming framework to discover symbolic ODEs from data. You apply it to a small subset of benchmark dynamical systems (e.g., 2-3 systems) and compare performance to classical GP (PySR) on discovery rate and convergence speed.
+
+**Why it shows you understood the paper:** This project demonstrates you grasp the novel hybrid approach of using LLMs to guide symbolic regression search, the multi-objective optimization balancing accuracy and complexity, and the empirical evaluation methodology of the paper.
+
+**Grounded in:** LLM-ODE integrates LLMs as intelligent evolutionary operators within genetic programming, outperforming classical GP in discovery rate and convergence speed on benchmark systems.
+
+**Tech stack:** Python 3.11, OpenAI or Anthropic API for LLM calls, PySR or custom GP framework, Jupyter Notebook or Python scripts
+
+**Data:** Use simulated or publicly available time-series data from 2-3 known dynamical systems (e.g., Lotka-Volterra, Van der Pol oscillator) as a substitute for the paper's benchmark.
+
+**Build it:**
+
+1. Implement a genetic programming framework that evolves symbolic equations for ODEs.
+2. Integrate calls to a large language model API to generate candidate mutations/crossovers informed by high-performing solutions.
+3. Run experiments on 2-3 benchmark dynamical systems, recording discovery rate and convergence speed.
+4. Implement a baseline classical GP method (e.g., PySR) on the same data for comparison.
+5. Plot and analyze Pareto fronts of accuracy vs complexity for both methods.
+6. Write a report comparing your results to the paper's findings.
+
+**Verified links from the paper:**
+
+- <https://github.com/gryaklab/llm-ode> — a third-party/baseline artifact the paper cites — not the authors' own code
+
+**Ships as:** A GitHub repo with code implementing LLM-guided GP, experiment scripts, comparison plots, and a README explaining the method, results, and relation to the paper.
+
+**Stretch goal:** Add multi-island evolution or problem decomposition by state variables as described in the paper to improve scalability.
+
+### Advanced — Incorporate Physical Constraints into LLM Prompts for Equation Discovery
+*Effort: 3+ weeks*
+
+You extend the LLM-ODE framework by designing prompt engineering strategies that incorporate domain-specific physical constraints or system-level metadata into the LLM's candidate generation process. You test this on a novel or less-understood dynamical system dataset and evaluate improvements in discovery accuracy and convergence speed.
+
+**Why it shows you understood the paper:** This project tackles a key limitation and future direction from the paper: leveraging domain knowledge to improve LLM-guided discovery. It shows deep comprehension of the method, its bottlenecks, and how to enhance it scientifically.
+
+**Grounded in:** Future direction: Incorporate system-level metadata and physical domain knowledge into LLM prompts to accelerate convergence and discover novel scientific models.
+
+**Tech stack:** Python 3.11, OpenAI or Anthropic API for LLM calls, Custom genetic programming codebase, Jupyter Notebook or Python scripts
+
+**Data:** Use a publicly available or simulated dynamical system dataset with known physical constraints (e.g., pendulum with energy conservation), or a novel system without ground truth to demonstrate exploratory discovery.
+
+**Build it:**
+
+1. Review the original LLM-ODE method and implement a baseline LLM-guided GP framework if not already done.
+2. Design prompt templates that encode physical constraints (e.g., conservation laws, boundary conditions) and system metadata.
+3. Modify the LLM candidate generation to incorporate these enhanced prompts.
+4. Run comparative experiments on selected dynamical systems with and without physical constraint prompts.
+5. Analyze improvements in convergence speed, discovery rate, and Pareto front diversity.
+6. Document challenges, results, and potential for applying to novel scientific problems.
+
+**Verified links from the paper:**
+
+- <https://github.com/gryaklab/llm-ode> — a third-party/baseline artifact the paper cites — not the authors' own code
+
+**Ships as:** A GitHub repo with extended LLM-ODE code, prompt engineering scripts, experimental results, and a detailed README discussing the impact of physical constraints on discovery.
+
+**Stretch goal:** Explore quantized or low-rank approximation LLMs to reduce inference latency as another future direction from the paper.
+
+_The authors have not released official code for LLM-ODE; the linked GitHub repository is from the paper text but not confirmed as the authors' official release. Data for the paper's 91 dynamical systems benchmark is not publicly provided, so substitute datasets or simulations are needed._

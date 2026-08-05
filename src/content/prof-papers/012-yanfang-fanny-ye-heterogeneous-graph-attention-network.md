@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-yanfang-fanny-ye"
-source_hash: "fcec7ff06efd0ecf4bb26ee0d24f0840a6f431dcf1cdd00603f973a970d3921f"
+source_hash: "90e0763482d01c3c0506b5a1cf028433a7cc98899aec661218acf8e386ea8159"
 sequence: 12
 generator: "outreach-garden: managed"
 ---
@@ -127,3 +127,92 @@ Meta-paths are sequences of node and edge types that capture semantic relationsh
 
 - [2021 | Lecture 6.1 - Introduction to Graph Neural Networks](https://www.youtube.com/watch?v=F3PgltDzllc) — also for: Heterogeneous Graph Attention Network (Yanfang (Fanny) Ye)
 - [Stanford CS224W: ML with Graphs | 2021 | Lecture 10.1-Heterogeneous & Knowledge Graph Embedding](https://www.youtube.com/watch?v=Rfkntma6ZUI) — also for: Heterogeneous Graph Attention Network (Yanfang (Fanny) Ye)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive ladder to demonstrate your understanding of the HAN paper. The beginner project focuses on reproducing the core hierarchical attention mechanism on a small synthetic heterogeneous graph, helping you grasp the fundamental idea. The intermediate project involves reimplementing the HAN model from the paper's description and applying it on a real heterogeneous graph dataset, comparing it against a baseline method. The advanced project extends HAN by exploring dynamic meta-path learning, addressing a key limitation and future direction proposed by the authors, and applying it to a domain with evolving heterogeneous graphs.
+
+### Beginner — Hierarchical Attention on a Toy Heterogeneous Graph
+*Effort: a weekend, ~8 hours*
+
+You build a small Python notebook that implements the core hierarchical attention mechanism of HAN on a tiny synthetic heterogeneous graph with two node types and two edge types. You manually define a couple of simple meta-paths and compute node embeddings using node-level and semantic-level attention. Visualization of attention weights and embeddings will illustrate the mechanism.
+
+**Why it shows you understood the paper:** This project shows you understand the hierarchical attention structure combining node-level and semantic-level attentions, a key novelty of HAN. A professor would see you grasped how HAN learns importance weights for neighbors and meta-paths in heterogeneous graphs.
+
+**Grounded in:** Proposed hierarchical attention structure combining node-level and semantic-level attentions to capture importance of neighbors and meta-paths simultaneously.
+
+**Tech stack:** Python 3.11, NumPy, Matplotlib, Jupyter Notebook
+
+**Data:** Synthetic heterogeneous graph data created manually in the notebook with two node types and two edge types.
+
+**Build it:**
+
+1. Create a small heterogeneous graph with two node types and two edge types represented as adjacency matrices.
+2. Define two simple meta-paths manually (e.g., A-B-A and A-B-C).
+3. Implement node-level attention to compute neighbor importance within each meta-path.
+4. Implement semantic-level attention to combine embeddings from different meta-paths.
+5. Visualize the learned attention weights and resulting node embeddings using 2D plots.
+6. Write a README explaining the hierarchical attention mechanism and how the code reproduces it.
+
+**Ships as:** A Jupyter notebook with code and visualizations demonstrating hierarchical attention on a toy heterogeneous graph, plus a README explaining the mechanism.
+
+**Stretch goal:** Add a simple node classification task on the toy graph to show how embeddings improve classification accuracy.
+
+### Intermediate — Reimplement HAN on DBLP Dataset with Baseline Comparison
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement the HAN model from the paper's description in Python using PyTorch or TensorFlow. You apply it to the DBLP heterogeneous graph dataset (a standard academic network with authors, papers, venues) for semi-supervised node classification. You compare HAN's performance against a simple baseline like GCN or metapath2vec embeddings and report classification accuracy.
+
+**Why it shows you understood the paper:** This project demonstrates you can implement the full HAN model including hierarchical attention and apply it to a real heterogeneous graph dataset. Comparing with a baseline shows you understand the model's advantages and evaluation metrics used in the paper.
+
+**Grounded in:** HAN outperforms baselines including DeepWalk, ESim, metapath2vec, HERec, GCN, and GAT on multiple datasets (DBLP, ACM, IMDB) for node classification and clustering.
+
+**Tech stack:** Python 3.11, PyTorch or TensorFlow, scikit-learn, Jupyter Notebook
+
+**Data:** DBLP dataset as described in the paper, publicly available citation network with heterogeneous node and edge types. Substitute with a public DBLP heterogeneous graph dataset if needed.
+
+**Build it:**
+
+1. Download and preprocess the DBLP heterogeneous graph dataset with node features and labels.
+2. Implement the HAN model with node-level and semantic-level attention as described in the paper.
+3. Train HAN in a semi-supervised setting for node classification using the provided labels.
+4. Implement a baseline method such as GCN or metapath2vec embeddings for comparison.
+5. Evaluate and compare node classification accuracy of HAN and the baseline.
+6. Document the implementation details, results, and insights in a README.
+
+**Verified links from the paper:**
+
+- <https://github.com/Jhy1993/HAN> — a third-party/baseline artifact the paper cites — not the authors' own code
+
+**Ships as:** A GitHub repo with HAN implementation, training scripts, evaluation results on DBLP, and comparison with baseline, plus a detailed README.
+
+**Stretch goal:** Add visualization of learned attention weights to interpret which meta-paths and neighbors are most important.
+
+### Advanced — Dynamic Meta-path Learning Extension of HAN for Evolving Heterogeneous Graphs
+*Effort: 3-4 weeks*
+
+You extend the HAN framework by implementing a mechanism to dynamically learn or adapt meta-paths instead of relying on predefined ones. You apply this extended model to a domain with evolving heterogeneous graphs, such as a temporal citation network or a social network with changing relations. You evaluate the model on node classification or link prediction, showing how dynamic meta-path learning improves adaptability.
+
+**Why it shows you understood the paper:** This project tackles a key limitation and future direction from the paper: automating meta-path selection and handling dynamic graphs. It shows you deeply understand HAN's architecture and can innovate on it to address real-world challenges in heterogeneous graph learning.
+
+**Grounded in:** Automating meta-path selection or learning meta-paths dynamically.
+
+**Tech stack:** Python 3.11, PyTorch, NetworkX, scikit-learn, Jupyter Notebook
+
+**Data:** A temporal heterogeneous graph dataset such as a temporal citation network or social network with multiple node and edge types. If unavailable, simulate evolving heterogeneous graph data with timestamps and node/edge type changes.
+
+**Build it:**
+
+1. Research existing approaches for dynamic or automated meta-path learning in heterogeneous graphs.
+2. Design and implement an extension of HAN that learns meta-path importance dynamically, e.g., via reinforcement learning or attention over candidate meta-paths.
+3. Prepare or simulate an evolving heterogeneous graph dataset with temporal information.
+4. Train and evaluate the extended HAN model on node classification or link prediction tasks.
+5. Compare performance and adaptability against the original HAN with fixed meta-paths.
+6. Document the design, implementation, experiments, and results in a comprehensive README.
+
+**Ships as:** A GitHub repo with the extended HAN implementation supporting dynamic meta-path learning, experiments on evolving heterogeneous graphs, and detailed documentation.
+
+**Stretch goal:** Incorporate additional modalities such as text or temporal features into the model to further improve performance.

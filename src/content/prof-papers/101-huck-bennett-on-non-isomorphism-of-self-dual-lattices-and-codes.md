@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-huck-bennett"
-source_hash: "5791f90769db99bef54527cf0c739e7120dff56d486e25afeb65cba54ab42c6f"
+source_hash: "63291942157e3475c444ea15a1823aa4acfbca4d5ebedd88073cfde87e071dbe"
 sequence: 101
 generator: "outreach-garden: managed"
 ---
@@ -96,3 +96,87 @@ Understand the concept of NP ∩ coNP complexity class and interactive proof pro
 *How the paper uses it:* The paper develops NP ∩ coNP protocols for deciding isomorphism on self-dual lattices with bounded parameters.
 
 ▶ [Lecture 1: Complexity classes and the graph isomorphism problem by Prof JACOBO TORÁN](https://www.youtube.com/watch?v=CATWFr3Qnv8) — IIT Gandhinagar · 9 years ago
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder of increasing depth and technical challenge around the paper's core contributions on self-dual lattice and code isomorphism. The beginner project focuses on implementing and visualizing the structural decomposition of self-dual lattices, a fundamental concept in the paper. The intermediate project reimplements the paper's randomized algorithm for the search Lattice Isomorphism Problem (LIP) on small self-dual lattices, demonstrating algorithmic understanding and complexity analysis. The advanced project extends the paper's work by exploring the computational use of shortest characteristic vectors for isomorphism testing, addressing one of the paper's stated future directions.
+
+### Beginner — Visualizing Decomposition of Self-Dual Lattices
+*Effort: a weekend, ~8 hours*
+
+You build a small interactive web app that takes a simple self-dual lattice (represented as a basis matrix) and computes its unique decomposition into a reduced lattice plus a standard lattice component, then visualizes these components. The app also highlights characteristic vectors and their modular inner product properties as defined in the paper.
+
+**Why it shows you understood the paper:** This project demonstrates you understand the fundamental structural decomposition (Fact 2.5) and characteristic vectors (Fact 2.2) that underpin the paper's algorithms. A professor would see you grasp the algebraic structure and modular properties crucial for the paper's complexity results.
+
+**Grounded in:** Fact 2.5: Every self-dual lattice decomposes uniquely into a reduced lattice plus a standard lattice component; Fact 2.2: Characteristic vectors exist for every self-dual lattice and have modular inner product properties.
+
+**Tech stack:** JavaScript, React, D3.js or similar visualization library
+
+**Data:** You simulate small self-dual lattices using integer basis matrices of dimension up to 4, constructed manually or randomly with constraints to ensure self-duality.
+
+**Build it:**
+
+1. Implement a function to check self-duality of a lattice given its basis matrix.
+2. Implement the decomposition algorithm to find the reduced lattice and standard lattice components.
+3. Compute characteristic vectors and verify their modular inner product properties.
+4. Build a React UI to input lattice bases and display the decomposition and characteristic vectors visually.
+5. Add explanatory text linking the visualization to the paper's definitions.
+
+**Ships as:** A GitHub repo with a React app that visualizes decomposition of self-dual lattices and characteristic vectors, with a README explaining the connection to the paper's structural facts.
+
+**Stretch goal:** Add support for visualizing the modular inner product relations between characteristic vectors and lattice vectors interactively.
+
+### Intermediate — Randomized Algorithm for Search LIP on Small Self-Dual Lattices
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement the paper's 2^{n/2 + o(n)}-time randomized algorithm for the search Lattice Isomorphism Problem restricted to self-dual lattices with small reduced rank. You generate or simulate small self-dual lattices, run your implementation to decide isomorphism, and compare runtime against a naive brute-force baseline.
+
+**Why it shows you understood the paper:** This project shows you can translate the paper's core algorithmic contribution (Theorem 1.1) into working code and understand the complexity improvements from structural decomposition. A professor would see you can handle lattice representations, reductions, and randomized search algorithms.
+
+**Grounded in:** Theorem 1.1: Search LIP on self-dual lattices with reduced rank n0 runs in 2^{n/2 + o(n)} + n0^{O(1)} time.
+
+**Tech stack:** Python 3.11, NumPy, SciPy (for linear algebra)
+
+**Data:** You simulate small self-dual lattices by generating integer basis matrices of dimension up to 10 with known reduced rank ≤ 4, ensuring self-duality via Gram matrix checks.
+
+**Build it:**
+
+1. Implement lattice data structures and basic operations (basis, Gram matrix, orthogonal transformations).
+2. Implement the decomposition into reduced lattice plus standard lattice component.
+3. Implement the randomized search algorithm for LIP as described in the paper.
+4. Implement a naive brute-force isomorphism check as a baseline.
+5. Generate test lattices and benchmark your algorithm against the baseline, reporting runtimes and correctness.
+6. Write a README explaining the algorithm, complexity, and experimental results.
+
+**Ships as:** A GitHub repo with a Python implementation of the randomized search LIP algorithm on small self-dual lattices, benchmark results, and documentation linking to the paper's Theorem 1.1.
+
+**Stretch goal:** Extend the implementation to output certificates of non-isomorphism under the paper's coNP protocol assumptions.
+
+### Advanced — Computational Exploration of Shortest Characteristic Vectors for Isomorphism Testing
+*Effort: 3+ weeks*
+
+You develop software to compute shortest characteristic vectors of self-dual lattices and experimentally evaluate their effectiveness as invariants for isomorphism testing. This addresses the paper's limitation that characteristic vectors alone do not distinguish all non-isomorphic lattices. You analyze how often shortest characteristic vectors can certify non-isomorphism and explore heuristics to improve this.
+
+**Why it shows you understood the paper:** This project tackles a stated future direction and limitation of the paper, showing deep engagement with the structural properties and complexity implications of characteristic vectors. A professor would see your ability to extend foundational theory into computational experiments and complexity analysis.
+
+**Grounded in:** Limitation: Characteristic vectors alone cannot distinguish all non-isomorphic lattices, limiting their use as invariants; Future direction: Study the computational use of shortest characteristic vectors for isomorphism testing.
+
+**Tech stack:** Python 3.11, NumPy, SciPy, Matplotlib or Plotly for visualization
+
+**Data:** You simulate or generate families of self-dual lattices with varying reduced rank and known isomorphism properties, using small dimensions (up to 12) for tractability.
+
+**Build it:**
+
+1. Implement computation of characteristic vectors and identify shortest characteristic vectors for given self-dual lattices.
+2. Build a database of test lattices with known isomorphism/non-isomorphism status.
+3. Develop algorithms to compare lattices based on their shortest characteristic vectors as invariants.
+4. Run experiments to measure the discriminative power of shortest characteristic vectors in isomorphism testing.
+5. Visualize and analyze results, identifying cases where characteristic vectors fail or succeed.
+6. Document findings and propose heuristics or combined invariants to improve isomorphism testing.
+
+**Ships as:** A GitHub repo with code to compute and analyze shortest characteristic vectors, experimental results on their effectiveness as invariants, and a detailed README discussing implications for lattice isomorphism complexity.
+
+**Stretch goal:** Integrate your heuristics into an improved isomorphism testing pipeline and compare against the baseline randomized algorithm from the intermediate project.

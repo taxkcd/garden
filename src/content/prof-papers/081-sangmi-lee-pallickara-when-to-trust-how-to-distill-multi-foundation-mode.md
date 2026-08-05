@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-sangmi-lee-pallickara"
-source_hash: "9dbb84115efa502a4503d615f1bccf571abaa11a45a2460534120f94c653cb84"
+source_hash: "dcf6819f36725776b69ddfb2246059cea697e5ebe6fc1a86d5dce63b44b441d2"
 sequence: 81
 generator: "outreach-garden: managed"
 ---
@@ -146,3 +146,97 @@ This talk presents the Guard framework itself, explaining how it combines adapti
 
 - [Transformers, the tech behind LLMs | Deep Learning Chapter 5](https://www.youtube.com/watch?v=wjZofJX0v4M) — also for: Learning Volumetric Neural Deformable Models to Recover 3D Regional Heart Wall Motion from Multi-Planar Tagged MRI (Meng Ye)
 - [Transformers, explained: Understand the model behind GPT, BERT, and T5](https://www.youtube.com/watch?v=SZorAJ4I-sA) — also for: Byte Latent Transformer: Patches Scale Better Than Tokens (Luke S. Zettlemoyer)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive learning path to demonstrate understanding of the Guard framework from the paper. Starting with a beginner-level reproduction of the Contextual Router's adaptive teacher weighting on a small synthetic time series, moving to an intermediate-level reimplementation and evaluation of Guard's multi-teacher distillation on a public scientific time series dataset using the authors' released code, and culminating in an advanced project that extends Guard by integrating physics-informed constraints to improve interpretability and accuracy, addressing a future direction stated by the authors.
+
+### Beginner — Adaptive Teacher Weighting Visualization
+*Effort: a weekend, ~8 hours*
+
+You build a small Python notebook that simulates multiple simple teacher models producing forecasts on synthetic time series data with varying volatility and trend. Implement a simplified version of the Contextual Router that dynamically weights teacher contributions based on local input statistics (e.g., volatility). Visualize how the router adjusts weights over time and how this affects the combined forecast.
+
+**Why it shows you understood the paper:** This project demonstrates you understand the core idea of instance-wise adaptive routing of teacher models based on input context, a key mechanism in Guard. A professor would see you grasp how local data features influence teacher selection.
+
+**Grounded in:** Introduced Guard, a multi-teacher knowledge distillation framework with instance-wise adaptive routing based on local input statistics.
+
+**Tech stack:** Python 3.11, Jupyter Notebook, NumPy, Matplotlib, Pandas
+
+**Data:** Synthetic univariate time series data generated with controlled volatility and trend patterns to simulate scientific time series characteristics.
+
+**Build it:**
+
+1. Generate synthetic time series data with segments of varying volatility and trend.
+2. Simulate predictions from multiple simple teacher models with different error characteristics.
+3. Implement a Contextual Router that computes local statistics and assigns dynamic weights to each teacher.
+4. Combine teacher predictions weighted by the router and visualize the weights and combined forecast over time.
+5. Document the relationship between input statistics and routing decisions in the README.
+
+**Ships as:** A Jupyter Notebook with code, plots showing adaptive teacher weights over time, and a README explaining the routing mechanism and its effect on combined forecasts.
+
+**Stretch goal:** Add uncertainty estimates to teacher predictions and implement a simple uncertainty gating mechanism to modulate weights.
+
+### Intermediate — Reimplement Guard Distillation on Soil Moisture Dataset
+*Effort: 2 weekends, ~20 hours*
+
+You clone and run the authors' Guard codebase from https://github.com/RupasreeDey/GUARD-KDD2026, then adapt it to train a lightweight student model on a publicly available soil moisture time series dataset (e.g., from the UCI Machine Learning Repository or NASA Earthdata). You compare Guard's adaptive multi-teacher distillation against a fixed-weight baseline and report RMSE metrics similar to the paper.
+
+**Why it shows you understood the paper:** This project shows you can work with the authors' implementation, apply the core Guard method to new data, and reproduce the key result of improved forecasting accuracy via adaptive routing and uncertainty gating. It evidences comprehension of the full pipeline and evaluation.
+
+**Grounded in:** Demonstrated that Guard can distill complementary knowledge from misaligned foundation models, improving forecasting accuracy even when teachers perform poorly zero-shot.
+
+**Tech stack:** Python 3.11, PyTorch, Jupyter Notebook, NumPy, Pandas, Matplotlib
+
+**Data:** Public soil moisture time series dataset from a scientific repository (e.g., NASA Earthdata or UCI ML Repository) used as a substitute for the paper's soil moisture dataset.
+
+**Build it:**
+
+1. Clone and set up the Guard codebase from the authors' GitHub repository.
+2. Obtain and preprocess a public soil moisture time series dataset to match input requirements.
+3. Run the Guard training pipeline with multiple pretrained teacher models (or simulated teachers if pretrained models unavailable).
+4. Implement a fixed-weight distillation baseline for comparison.
+5. Evaluate and compare RMSE of Guard vs baseline on test data.
+6. Document the setup, results, and insights in a detailed README.
+
+**Verified links from the paper:**
+
+- <https://github.com/RupasreeDey/GUARD-KDD2026> — released by the paper's authors
+
+**Ships as:** A GitHub repository with code to run Guard on soil moisture data, scripts for baseline comparison, evaluation metrics, and a README reporting results and analysis.
+
+**Stretch goal:** Experiment with varying the number of teachers or adjusting the uncertainty gating parameters to observe effects on performance.
+
+### Advanced — Physics-Informed Guard for Ecosystem Carbon Flux Forecasting
+*Effort: 3-4 weeks*
+
+You extend the Guard framework by integrating physics-informed constraints relevant to ecosystem carbon flux forecasting, such as conservation laws or known seasonal patterns, into the student model training or the routing mechanism. You apply this extended Guard to a public ecosystem carbon flux dataset (e.g., FLUXNET data) and evaluate whether physics-informed Guard improves forecasting accuracy and interpretability compared to the original Guard.
+
+**Why it shows you understood the paper:** This project tackles a stated future direction of the paper, demonstrating deep comprehension of Guard's architecture and limitations. It shows initiative in research-level extension and practical application to a complex scientific domain, potentially opening dialogue with the professor.
+
+**Grounded in:** Integrate physics-informed constraints into Guard to further improve scientific forecasting accuracy and interpretability.
+
+**Tech stack:** Python 3.11, PyTorch, Jupyter Notebook, NumPy, Pandas, Matplotlib
+
+**Data:** Public ecosystem carbon flux time series data from FLUXNET or similar scientific repositories, used as a proxy for the paper's ecosystem carbon flux dataset.
+
+**Build it:**
+
+1. Review Guard's architecture and identify integration points for physics-informed constraints.
+2. Select relevant physics-informed constraints for ecosystem carbon flux (e.g., seasonal cycles, mass balance).
+3. Modify the student model training loss or routing mechanism to incorporate these constraints.
+4. Preprocess and prepare the ecosystem carbon flux dataset for training and evaluation.
+5. Train the extended Guard model and compare forecasting accuracy and routing interpretability against the original Guard.
+6. Document methodology, experiments, results, and insights in a comprehensive README.
+
+**Verified links from the paper:**
+
+- <https://github.com/RupasreeDey/GUARD-KDD2026> — released by the paper's authors
+
+**Ships as:** A GitHub repository with the extended Guard code, training scripts, evaluation results, and a README explaining the physics-informed integration and its impact.
+
+**Stretch goal:** Explore extending the framework to multivariate or spatiotemporal forecasting tasks as a further research step.
+
+_Public scientific datasets used as substitutes for the paper's proprietary datasets may differ in characteristics; verify data suitability and preprocessing requirements before starting._

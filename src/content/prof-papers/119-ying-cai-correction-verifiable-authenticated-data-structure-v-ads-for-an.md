@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-ying-cai"
-source_hash: "7b75008ac1687a29d29d26e5609819c34889fc74d29cc6378a6381cf1c1e855a"
+source_hash: "ecd02ee340df810f82064ebd98f0bca4bfc73ce9005ea4091152e7b7d8bd51f3"
 sequence: 119
 generator: "outreach-garden: managed"
 ---
@@ -131,3 +131,89 @@ Secure query verification ensures that results returned from untrusted servers a
 ## Already in your library
 
 - [Merkle Tree with real world examples](https://www.youtube.com/watch?v=qHMLy5JjbjQ) — also for: Correction: Verifiable Authenticated Data Structure (V-ADS) for Analytic Queries (Ying Cai)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive learning path to demonstrate your understanding of the IFMH-tree verification framework from the paper "Verifying the Correctness of Analytic Query Results." Starting with a small-scale implementation of Merkle hash trees for query verification, you then reimplement the core IFMH-tree method on a synthetic dataset to compare verification costs, and finally extend the framework to explore verification of nonlinear utility functions, addressing a key limitation noted by the authors.
+
+### Beginner — Merkle Tree Verification for Simple Range Queries
+*Effort: a weekend, ~8 hours*
+
+You build a basic Merkle hash tree over a small synthetic dataset and implement a verification mechanism for range queries. This includes constructing the tree, generating verification objects for query results, and verifying correctness on the client side.
+
+**Why it shows you understood the paper:** This project shows you understand the fundamental cryptographic data structure (Merkle tree) that underpins the IFMH-tree and how verification objects enable soundness and completeness checks for query results.
+
+**Grounded in:** Key contribution: The IFMH-tree integrates Merkle hash trees for efficient verification; key result: user verification time is improved due to fewer signature decryptions.
+
+**Tech stack:** Python 3.11, Jupyter Notebook, hashlib
+
+**Data:** Synthetic dataset of 100 records with numeric attributes generated in code to simulate a small database.
+
+**Build it:**
+
+1. Generate a synthetic dataset of 100 numeric records.
+2. Implement a Merkle hash tree construction over the dataset sorted by a key attribute.
+3. Implement a function to generate verification objects for range queries.
+4. Implement client-side verification that reconstructs the Merkle root from the verification object and compares it to the signed root.
+5. Test the verification with correct and tampered query results to demonstrate soundness and completeness.
+
+**Ships as:** A GitHub repo with Python code and a README explaining Merkle tree construction, verification object generation, and verification process, including example runs.
+
+**Stretch goal:** Add support for top-k queries verification using the Merkle tree structure.
+
+### Intermediate — Reimplementing IFMH-tree Verification for Linear Ranking Queries
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement the core IFMH-tree data structure and verification algorithms described in the paper for linear ranking functions on a synthetic dataset of up to 10,000 records. You compare verification costs and signature overhead against a naive signature mesh baseline.
+
+**Why it shows you understood the paper:** This project demonstrates you can faithfully reproduce the paper's main method and quantitatively evaluate its efficiency gains, showing deep comprehension of the IFMH-tree construction, signature schemes, and verification algorithms.
+
+**Grounded in:** Key contributions: generic IFMH-tree data structure and two signature schemes; key results: reduced signatures and logarithmic server query processing cost.
+
+**Tech stack:** Python 3.11, NumPy, Jupyter Notebook, hashlib, matplotlib
+
+**Data:** Synthetic dataset generated in code simulating up to 10,000 records with numeric attributes and linear ranking functions, as the paper uses no public dataset.
+
+**Build it:**
+
+1. Implement the Intersection-tree (I-tree) indexing of function intersections for linear ranking functions.
+2. Implement the Merkle hash tree (MH-tree) for sorted function lists within subdomains.
+3. Combine these into the IFMH-tree data structure with one-signature and multi-signature schemes.
+4. Implement query processing to locate subdomains and construct verification objects.
+5. Implement user-side verification reconstructing IFMH-tree parts and verifying signatures.
+6. Compare signature counts, server query time, and user verification time against a naive signature mesh baseline.
+7. Visualize and report results similar to the paper's performance evaluation.
+
+**Ships as:** A GitHub repo with code, a Jupyter notebook demonstrating IFMH-tree construction, query verification, baseline comparison, and a detailed README explaining the implementation and results.
+
+**Stretch goal:** Add support for range queries and top-k queries verification using the IFMH-tree.
+
+### Advanced — Extending IFMH-tree Verification to Nonlinear Utility Functions
+*Effort: 3-4 weeks*
+
+You extend the IFMH-tree framework to support verification of analytic queries involving nonlinear utility functions, addressing a key limitation of the paper. This involves adapting the intersection-tree indexing and verification algorithms to handle nonlinear ranking functions and evaluating the impact on verification cost and scalability.
+
+**Why it shows you understood the paper:** This project shows you can critically engage with the paper's limitations and contribute a genuine extension, demonstrating research potential and the ability to innovate on complex secure query verification methods.
+
+**Grounded in:** Limitation: The approach is primarily evaluated on linear ranking functions; future direction: extending the framework to support more complex and nonlinear analytic queries.
+
+**Tech stack:** Python 3.11, NumPy, SciPy, Jupyter Notebook, hashlib, matplotlib
+
+**Data:** Synthetic dataset generated in code with numeric attributes; nonlinear utility functions (e.g., quadratic or polynomial ranking) defined programmatically.
+
+**Build it:**
+
+1. Review the IFMH-tree construction and verification algorithms for linear functions.
+2. Design an extension of the intersection-tree indexing to handle nonlinear utility functions (e.g., piecewise approximations or polynomial intersections).
+3. Modify the IFMH-tree construction to incorporate nonlinear function indexing and Merkle hash tree integration.
+4. Implement query processing and verification object construction for nonlinear ranking queries.
+5. Implement user-side verification adapted to nonlinear function verification.
+6. Evaluate verification cost, signature overhead, and scalability compared to the linear baseline.
+7. Document challenges, trade-offs, and potential optimizations.
+
+**Ships as:** A GitHub repo with code, notebooks demonstrating nonlinear IFMH-tree construction and verification, performance evaluation, and a comprehensive README discussing methodology, results, and future work.
+
+**Stretch goal:** Explore hybrid signature schemes to optimize verification efficiency for nonlinear queries.

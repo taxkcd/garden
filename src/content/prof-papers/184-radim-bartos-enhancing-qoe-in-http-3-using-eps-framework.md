@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-radim-bartos"
-source_hash: "9069f9b5614f3daa8b698f1482105e86d75be49f058e092ace22f2e9c69b9d27"
+source_hash: "bd4c11536816ff1cd9f5cc3d89cf0f5ff9de4df64cb5b528698b899fc51aec59"
 sequence: 184
 generator: "outreach-garden: managed"
 ---
@@ -111,3 +111,91 @@ Incremental delivery sends data in chunks as it becomes available, improving per
 *How the paper uses it:* The paper’s mixed scheduling mechanism combines incremental and non-incremental delivery modes based on EPS urgencies.
 
 ▶ [HTTP 3 Explained](https://www.youtube.com/watch?v=ai8cf0hZ9cQ) — Code with Lucian · 8:57 · 4 years ago
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive ladder to demonstrate understanding of the paper "Enhancing QoE in HTTP/3 using EPS Framework." The beginner project reproduces a core concept of EPS urgency-based scheduling in a simplified simulation. The intermediate project implements the paper's mixed scheduling algorithm and compares its performance to baseline methods on a small-scale simulated HTTP/3 resource delivery workload. The advanced project extends the paper by exploring dynamic EPS priority adjustment to address limitations and future directions mentioned by the authors.
+
+### Beginner — Simulate EPS Urgency-Based Scheduling for HTTP/3 Resources
+*Effort: a weekend, ~8 hours*
+
+You build a simplified discrete-event simulator in Python that models HTTP/3 resource delivery with incremental and non-incremental transfers scheduled according to EPS urgency levels. The simulator will allow you to configure resource types, urgencies, and delivery methods, then output basic timing metrics like simulated First Contentful Paint (FCP).
+
+**Why it shows you understood the paper:** This project shows you understand the core mechanism of EPS urgency-based mixed scheduling and how it affects resource delivery timing, reflecting the paper's key contribution of combining incremental and non-incremental delivery based on urgency.
+
+**Grounded in:** A mixed scheduling algorithm that manages incremental and non-incremental HTTP/3 requests based on EPS urgency levels.
+
+**Tech stack:** Python 3.11
+
+**Data:** Simulated HTTP/3 resource delivery workload synthesized based on typical web resource types and urgencies described in the paper.
+
+**Build it:**
+
+1. Implement a basic discrete-event simulation framework in Python for HTTP/3 resource requests.
+2. Define resource types with associated EPS urgency levels and delivery methods (incremental or non-incremental) based on the paper's EPS priority mapping.
+3. Simulate scheduling and delivery of resources according to urgency, tracking timing metrics like FCP.
+4. Visualize or log the timing results to show how mixed scheduling affects delivery order and timing.
+5. Write a README explaining the EPS urgency concept and how your simulation models it.
+
+**Ships as:** A Python simulation repo with code, example configurations, timing output logs, and a README explaining EPS urgency-based scheduling.
+
+**Stretch goal:** Add a simple visualization of resource delivery timelines comparing mixed scheduling to incremental-only or non-incremental-only approaches.
+
+### Intermediate — Implement and Evaluate Mixed EPS Scheduling on Simulated HTTP/3 Workload
+*Effort: 2 weekends, ~20 hours*
+
+You implement the paper's mixed scheduling algorithm combining incremental and non-incremental HTTP/3 resource delivery based on EPS urgencies. Using a simulated dataset of web resource requests modeled after Chromium priorities, you compare your implementation's performance on metrics like FCP, LCP, and TBT against baseline incremental-only and non-incremental-only scheduling.
+
+**Why it shows you understood the paper:** This project demonstrates you can faithfully reimplement the paper's core method and experimentally evaluate its benefits, replicating the paper's key results on web performance metrics and showing comprehension of EPS priority mapping and mixed scheduling.
+
+**Grounded in:** Experimental evaluation demonstrating improved web performance metrics over standard, incremental, and non-incremental HTTP/3 delivery methods.
+
+**Tech stack:** Python 3.11, Matplotlib or Plotly for visualization
+
+**Data:** Simulated HTTP/3 resource request traces based on Chromium browser resource priorities and types as described in the paper; no authors' code released, so simulation is based on paper descriptions.
+
+**Build it:**
+
+1. Reimplement the mixed scheduling algorithm managing incremental and non-incremental requests based on EPS urgencies.
+2. Create or synthesize a dataset of HTTP/3 resource requests with Chromium-like priority and resource type distributions.
+3. Implement baseline scheduling methods: incremental-only and non-incremental-only prioritized delivery.
+4. Run experiments comparing mixed scheduling to baselines, measuring simulated FCP, LCP, TBT, and CLS metrics.
+5. Visualize and analyze the results, highlighting improvements and any metric trade-offs.
+6. Document your implementation details, experiment setup, and findings in a detailed README.
+
+**Verified links from the paper:**
+
+- <https://github.com/andydavies/http2-prioritization-issues> — a third-party/baseline artifact the paper cites — not the authors' own code
+
+**Ships as:** A Python repo with the mixed scheduling implementation, baseline methods, experiment scripts, metric calculations, visualizations, and a comprehensive README.
+
+**Stretch goal:** Incorporate the third-party artifact https://github.com/andydavies/http2-prioritization-issues as a baseline for HTTP/2 prioritization issues and compare results to your HTTP/3 EPS mixed scheduler.
+
+### Advanced — Dynamic EPS Priority Adjustment for HTTP/3 Scheduling Optimization
+*Effort: 3+ weeks*
+
+You extend the paper's mixed scheduling mechanism by implementing a dynamic EPS priority adjustment system that adapts urgencies based on real-time network conditions or resource load. This addresses the paper's future direction of exploring dynamic EPS priority tuning to optimize resource delivery further. You evaluate your extension on simulated workloads and analyze improvements or trade-offs in web performance metrics.
+
+**Why it shows you understood the paper:** This project shows deep comprehension of the paper's limitations and future directions by advancing the scheduling framework with dynamic priority adaptation, potentially improving inconsistent Speed Index results and addressing real-world network variability.
+
+**Grounded in:** Exploring dynamic adjustment of EPS priorities to further optimize resource delivery.
+
+**Tech stack:** Python 3.11, Matplotlib or Plotly, Docker (optional for environment reproducibility)
+
+**Data:** Simulated HTTP/3 resource delivery workloads with configurable network latency and load parameters to test dynamic priority adjustments.
+
+**Build it:**
+
+1. Design a dynamic EPS priority adjustment algorithm that modifies urgency levels based on simulated network latency, resource size, or delivery progress.
+2. Integrate this dynamic adjustment into the existing mixed scheduling implementation from the intermediate project.
+3. Simulate varying network conditions and resource loads to test the dynamic scheduler.
+4. Measure and compare web performance metrics (FCP, LCP, TBT, SI, CLS) against static EPS priority scheduling.
+5. Analyze whether dynamic adjustment mitigates Speed Index inconsistencies and improves overall QoE metrics.
+6. Document your design decisions, implementation details, experimental results, and insights in a comprehensive report.
+
+**Ships as:** A Python repo with dynamic EPS priority adjustment code, experiment scripts, metric evaluation, visualizations, and a detailed README discussing improvements and limitations.
+
+**Stretch goal:** Explore integration of precision clock synchronization concepts (from Professor Bartos' research) to enhance timing accuracy in scheduling decisions under high-latency conditions.

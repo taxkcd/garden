@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-eric-torng"
-source_hash: "ab192860e0867ba72c67264307e56ae621b88ddda8bf0e564874601b440b228f"
+source_hash: "74fbb6ae4060414f041c57e74743f1ce61763a435816ef72a30de9d0f0661fa2"
 sequence: 214
 generator: "outreach-garden: managed"
 ---
@@ -126,3 +126,87 @@ Hearing directly from the authors provides insight into their motivations, probl
 ## Already in your library
 
 - [Lec-29 Vehicle Routeing Problem](https://www.youtube.com/watch?v=A1wsIFDKqBk) — also for: Quantum Annealing Approaches to Solving the Shipment Rerouting Problems (Fei Li)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive learning path grounded in the paper "Perimeter Defense using a Turret with Finite Range and Service Times." The beginner project recreates a key visualization of the parameter space showing algorithm effectiveness, the intermediate project implements the core offline algorithm for the special case r = ρ and compares it to a simple baseline, and the advanced project extends the model to incorporate limited look-ahead in the online setting, addressing a future direction suggested by the authors.
+
+### Beginner — Visualize Parameter Regimes for Turret Defense Algorithms
+*Effort: a weekend, ~8 hours*
+
+You build a visualization of the (ρ, v) parameter space illustrating where the Sweeping Turret (SiT) and Dynamically Project and Capture (DPaC) algorithms are 1-competitive and 2-competitive respectively, reproducing the style of Figure 4 in the paper. This involves implementing the mathematical inequalities defining the regimes and plotting them using a suitable graphing library.
+
+**Why it shows you understood the paper:** This project demonstrates your grasp of the paper's key analytical results on algorithm effectiveness and competitive ratios, as well as your ability to translate theoretical parameter bounds into clear visualizations.
+
+**Grounded in:** Numerical visualization of parameter spaces illustrating algorithm effectiveness (Figure 4 and related text).
+
+**Tech stack:** Python 3.11, matplotlib, numpy, Jupyter Notebook
+
+**Data:** No external dataset is needed; you simulate parameter values (ρ, v) within ranges described in the paper to plot the algorithm performance regions.
+
+**Build it:**
+
+1. Extract the mathematical conditions defining the parameter regimes for SiT and DPaC algorithms from Theorems 4.3 and 4.7 and the paper's description of Figure 4.
+2. Write Python functions that evaluate these conditions over a grid of (ρ, v) values within the feasible parameter space.
+3. Use matplotlib to plot the parameter space with colored regions indicating where each algorithm is effective (1-competitive or 2-competitive).
+4. Annotate the plot with legends and axis labels matching the paper's style.
+5. Write a README explaining the significance of the parameter regimes and how the visualization relates to the paper's theoretical results.
+
+**Ships as:** A Jupyter Notebook and Python script that generate a parameter space plot showing algorithm competitive ratio regions, with a README explaining the connection to the paper.
+
+**Stretch goal:** Add interactive sliders using ipywidgets to dynamically explore how changing turret parameters affects algorithm effectiveness regions.
+
+### Intermediate — Implement Offline Turret Defense Algorithm for r = ρ
+*Effort: 2 weekends, ~20 hours*
+
+You implement the polynomial-time offline algorithm that maximizes intruder captures when turret range equals perimeter radius (r = ρ), based on computing the longest path on the reachability graph as described in Theorem 3.5. You simulate intruder arrival times and positions in a conical environment and compare your algorithm's performance to a naive greedy baseline that captures intruders in order of arrival.
+
+**Why it shows you understood the paper:** This project shows you can translate the paper's core offline algorithm from theory into code, handle the problem's geometric and temporal constraints, and evaluate algorithmic performance metrics similar to those in the paper.
+
+**Grounded in:** A polynomial-time optimal algorithm exists in the special parameter regime where turret range equals perimeter radius (r = ρ) (Theorem 3.5).
+
+**Tech stack:** Python 3.11, networkx, numpy, matplotlib
+
+**Data:** You generate synthetic intruder arrival data simulating radial inward movement in a conical environment, consistent with the paper's model assumptions.
+
+**Build it:**
+
+1. Implement data structures to represent the conical environment, turret parameters (r, ρ, θ), and intruder arrival times and positions.
+2. Construct the reachability graph as defined in the paper, where nodes represent intruder interception opportunities and edges represent feasible turret movements respecting service times.
+3. Implement an algorithm to find the longest path in this directed acyclic graph to maximize intruder captures.
+4. Implement a baseline greedy algorithm that captures intruders in order of arrival without optimization.
+5. Run experiments comparing the offline algorithm to the baseline on multiple synthetic intruder scenarios, measuring number of intruders captured.
+6. Visualize results and write a README explaining the implementation, evaluation, and relation to the paper.
+
+**Ships as:** A Python repository with scripts to run the offline turret defense algorithm and baseline, synthetic data generation, performance comparison plots, and documentation.
+
+**Stretch goal:** Extend the implementation to handle parameter regimes where r ≠ ρ approximately, exploring heuristic adaptations of the algorithm.
+
+### Advanced — Extend Online Turret Defense with Limited Look-Ahead
+*Effort: 3+ weeks*
+
+You develop an extension of the online turret defense algorithms (SiT or DPaC) incorporating limited look-ahead or probabilistic information about intruder arrivals, addressing the paper's future direction on improving online algorithms with look-ahead. You simulate intruder arrivals under this model, implement the extended algorithm, and analyze its performance compared to the original algorithms under worst-case and probabilistic scenarios.
+
+**Why it shows you understood the paper:** This project demonstrates deep comprehension of the paper's online defense problem, competitive analysis limitations, and the ability to innovate by relaxing adversarial assumptions to improve algorithmic performance, potentially opening research conversations.
+
+**Grounded in:** Future direction: Studying the problem under turrets with look-ahead capabilities and improving online algorithms given probabilistic information about intruder arrivals.
+
+**Tech stack:** Python 3.11, numpy, matplotlib, networkx, Jupyter Notebook
+
+**Data:** Synthetic intruder arrival sequences generated with probabilistic models or limited look-ahead information, simulating the online setting described in the paper.
+
+**Build it:**
+
+1. Review the original online algorithms SiT and DPaC and their competitive ratio analyses from the paper.
+2. Design a model for limited look-ahead or probabilistic intruder arrival information (e.g., intruders known a few time steps ahead or arrival distributions).
+3. Modify the online algorithms to incorporate this look-ahead information in turret scheduling decisions.
+4. Implement simulation environments to generate intruder arrival sequences under adversarial and probabilistic models.
+5. Evaluate and compare the extended algorithm's performance against original SiT and DPaC algorithms in terms of intruders captured and competitive ratios.
+6. Document the methodology, results, and discuss implications for closing the gap between theoretical bounds and practical performance.
+
+**Ships as:** A comprehensive Python project with implementations of original and extended online algorithms, simulation scripts, performance analyses, and a detailed README discussing the extension and its significance.
+
+**Stretch goal:** Explore multi-turret extensions or stochastic intruder movement patterns to further generalize the defense model.

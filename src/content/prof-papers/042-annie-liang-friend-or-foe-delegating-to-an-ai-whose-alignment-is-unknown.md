@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-www-anniehliang-com"
-source_hash: "492d57c90f9566dac265246dd2eb24e8039aacdb0d023f5ec30f0456d608dd2e"
+source_hash: "246afb8c31d144bbf198572d837f31dd8fd31c8c5e4329eda827a403a3aa6ac7"
 sequence: 42
 generator: "outreach-garden: managed"
 ---
@@ -120,3 +120,88 @@ This concept focuses on how to delegate decisions to AI systems when their goals
 *How the paper uses it:* This is the core concept of the paper, which develops a framework for optimal delegation under uncertain AI alignment.
 
 ▶ [Lesson 4: A closer look at Delegation | AI Fluency: Framework & Foundations Course](https://www.youtube.com/watch?v=EljzyfdYkrc) — Anthropic · 1 year ago
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder of increasing complexity and depth to demonstrate understanding of the paper "Friend or Foe: Delegating to an AI whose Alignment is Unknown." The beginner project recreates a key theoretical visualization from the paper to grasp the risk-reward frontier concept. The intermediate project implements the core delegation model with asymmetric input restrictions on simulated data, comparing delegation strategies. The advanced project extends the model by incorporating dynamic or adaptive input restrictions to address a stated future direction, exploring improved delegation outcomes under evolving treatment success distributions.
+
+### Beginner — Visualizing the Risk-Reward Frontier
+*Effort: a weekend, ~8 hours*
+
+You build a small interactive web app or script that plots the piecewise-linear risk-reward frontier described in the paper, showing the tradeoff between best-case and worst-case payoffs under fixed information environments. The visualization will illustrate distrust points (no AI reliance) and reliance points (full AI reliance) across groups ordered by their baseline treatment success rates.
+
+**Why it shows you understood the paper:** This project demonstrates you understand the fundamental tradeoff the paper characterizes and can translate the theoretical piecewise-linear frontier into a concrete visualization, a key conceptual contribution.
+
+**Grounded in:** The risk-reward frontier for fixed information environments is piecewise-linear, connecting distrust points (no AI reliance) to reliance points (full AI reliance) across groups ordered by tradeoff slopes.
+
+**Tech stack:** JavaScript, React, D3.js
+
+**Data:** Simulated group baseline treatment success rates and corresponding payoff points generated according to the paper's model description.
+
+**Build it:**
+
+1. Read the paper section describing the risk-reward frontier and distrust/reliance points.
+2. Simulate a small set of groups with baseline treatment success rates spanning below and above the treatment threshold (0.5).
+3. Calculate best- and worst-case payoffs for distrust and reliance points per group using the paper's formulas.
+4. Use D3.js or React+D3 to plot these points and connect them piecewise linearly to form the frontier.
+5. Add interactive features to highlight groups and show payoff values on hover.
+6. Write a README explaining the visualization and how it relates to the paper's theory.
+
+**Ships as:** A GitHub repo with a React+D3 app visualizing the risk-reward frontier and a README linking the visualization to the paper's theoretical result.
+
+**Stretch goal:** Add sliders to vary the designer's preference weight on worst-case outcomes and dynamically update the frontier visualization.
+
+### Intermediate — Implementing Asymmetric Input Restrictions in AI Delegation
+*Effort: 2 weekends, ~20 hours*
+
+You implement the paper's core delegation model where a designer sets asymmetric input restrictions and treatment-rate constraints for multiple groups. Using simulated binary treatment and outcome data, you compute the risk-reward frontier under different delegation strategies, including full reliance, full distrust, and optimal asymmetric restrictions. You compare outcomes and visualize the frontier.
+
+**Why it shows you understood the paper:** This project shows you can translate the paper's theoretical model into a computational framework, reproduce key results on asymmetric input restrictions, and evaluate delegation tradeoffs quantitatively.
+
+**Grounded in:** Optimal input restrictions are asymmetric: for groups where treatment is unlikely to help, the AI is allowed to be fully informative about treatment success but restricted about treatment harm, and vice versa for groups where treatment is likely to help.
+
+**Tech stack:** Python 3.11, Jupyter Notebook, NumPy, Matplotlib, Pandas
+
+**Data:** Simulated binary treatment and outcome data for multiple groups, generated to reflect varying baseline success rates around the treatment threshold (0.5).
+
+**Build it:**
+
+1. Review the paper's formal model of input restrictions and treatment-rate constraints.
+2. Write code to simulate group-level binary treatment and outcome data with specified baseline success probabilities.
+3. Implement functions to calculate best- and worst-case payoffs under full distrust, full reliance, and asymmetric input restrictions.
+4. Compute the risk-reward frontier by aggregating group-level frontiers weighted by group sizes.
+5. Visualize the piecewise-linear frontier and compare delegation strategies.
+6. Document the implementation and results in a Jupyter Notebook.
+
+**Ships as:** A Jupyter Notebook repository implementing the delegation model with asymmetric input restrictions, showing computed risk-reward frontiers and comparisons.
+
+**Stretch goal:** Add a simple baseline that uses symmetric input restrictions and compare its performance to the asymmetric optimal strategy.
+
+### Advanced — Adaptive Input Restrictions for AI Delegation under Evolving Treatment Success
+*Effort: 3+ weeks*
+
+You extend the paper's static delegation model by implementing an adaptive input restriction mechanism that updates based on observed outcomes or evolving beliefs about treatment success rates. This addresses the paper's future direction on incorporating learning dynamics and adaptive delegation strategies. You simulate a dynamic environment where group success rates change over time and evaluate how adaptive restrictions improve the risk-reward tradeoff compared to static policies.
+
+**Why it shows you understood the paper:** This project tackles a stated limitation and future direction of the paper, demonstrating deep comprehension of the model and the ability to innovate by integrating learning and adaptation into delegation under alignment uncertainty.
+
+**Grounded in:** Incorporating learning dynamics where the designer updates beliefs about AI alignment over time. The framework focuses on ex-ante design of information and treatment rates, not on dynamic or adaptive delegation strategies.
+
+**Tech stack:** Python 3.11, Jupyter Notebook, NumPy, Matplotlib, Pandas, scikit-learn
+
+**Data:** Simulated time-series binary treatment and outcome data for multiple groups with evolving baseline success probabilities to mimic changing environments.
+
+**Build it:**
+
+1. Review the paper's static delegation model and its assumptions about fixed input restrictions and treatment rates.
+2. Design a simulation environment where group baseline success rates evolve over discrete time steps.
+3. Implement a Bayesian or frequentist updating mechanism for the designer to revise beliefs about success probabilities based on observed outcomes.
+4. Develop an adaptive input restriction policy that adjusts informativeness bounds and treatment quotas dynamically according to updated beliefs.
+5. Compare the risk-reward frontier and delegation outcomes of the adaptive policy versus static policies over multiple simulation runs.
+6. Write a detailed report and README explaining the adaptive model, simulation setup, results, and implications for AI governance.
+
+**Ships as:** A comprehensive GitHub repo with code and documentation demonstrating adaptive input restrictions improving delegation outcomes in a dynamic setting.
+
+**Stretch goal:** Incorporate partial observability or noisy verification of AI decisions into the adaptive framework to further approach real-world complexity.

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-jacob-whitehill"
-source_hash: "1d843d9d91d89c9ec5456d77de2d83223d0f1ba6769cc27418a43ba8decf0cc6"
+source_hash: "7b9c38cc0aa48ce520dea5838aa88310c1489f6be3bd74833726edf318aa1665"
 sequence: 172
 generator: "outreach-garden: managed"
 ---
@@ -134,3 +134,88 @@ Hear directly from experts about speech recognition technologies and their evolu
 - [What is Multimodal AI? How LLMs Process Text, Images, and More](https://www.youtube.com/watch?v=J51oZYcNvP8) — also for: Automated Grading of Handwritten Mathematics Using Vision-Capable LLMs (Craig B. Zilles)
 - [Stanford CS231N | Spring 2025 | Lecture 8: Attention and Transformers](https://www.youtube.com/watch?v=RQowiOF_FvQ) — also for: GRU-AUNet: A Domain Adaptation Framework for Contactless Fingerprint Presentation Attack Detection (Nima Karimian)
 - [Transformers, explained: Understand the model behind GPT, BERT, and T5](https://www.youtube.com/watch?v=SZorAJ4I-sA) — also for: Byte Latent Transformer: Patches Scale Better Than Tokens (Luke S. Zettlemoyer)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder of increasing complexity and depth to demonstrate understanding of the paper "MLLM-based Speech Recognition: When and How is Multimodality Beneficial?". The beginner project reproduces a key experimental insight on modality benefits under noise using simple tools. The intermediate project implements a core multimodal ASR model architecture and compares modalities on a public dataset. The advanced project extends the paper by exploring improved positional encodings for 2-D visual data, addressing a stated limitation and future direction.
+
+### Beginner — Multimodal ASR Accuracy vs Noise Visualization
+*Effort: a weekend, ~8 hours*
+
+You build a simple Python notebook that simulates or uses synthetic data to plot how adding synchronized (lip movement) and unsynchronized (images) modalities affects ASR accuracy at different noise levels. The project visualizes the conditional accuracy benefits described in the paper.
+
+**Why it shows you understood the paper:** This project shows you grasp the core experimental finding that modality benefits depend on noise level and synchronization, demonstrating comprehension of the paper's key result through data visualization.
+
+**Grounded in:** Systematic analysis of multi-modal inputs' conditional accuracy benefits as a function of auditory noise.
+
+**Tech stack:** Python 3.11, Jupyter Notebook, matplotlib, numpy, pandas
+
+**Data:** Synthetic or publicly available noisy speech data with simulated modality accuracy scores, as the paper's datasets are not publicly released.
+
+**Build it:**
+
+1. Create or simulate ASR accuracy data for audio-only, audio+lip, and audio+image modalities at multiple noise levels.
+2. Use matplotlib to plot accuracy curves for each modality combination against noise level.
+3. Annotate the plot to highlight the 'sweet spot' where unsynchronized modalities help most and high noise where synchronized modalities dominate.
+4. Write a README explaining the plot and how it relates to the paper's findings.
+
+**Ships as:** A Jupyter notebook and README showing plots of ASR accuracy vs noise for different modality combinations, illustrating the paper's conditional modality benefits.
+
+**Stretch goal:** Add a small interactive widget (e.g., using ipywidgets) to toggle modality combinations and noise levels dynamically.
+
+### Intermediate — Multimodal ASR with Transformer on Public Dataset
+*Effort: 2 weekends, ~20 hours*
+
+You implement a simplified multimodal ASR model using a Transformer backbone that integrates audio and lip movement inputs. You train and evaluate it on a public audiovisual speech dataset (e.g., GRID corpus as a substitute) under varying noise levels, comparing audio-only vs multimodal accuracy.
+
+**Why it shows you understood the paper:** This project demonstrates you can reimplement the paper's core method of multimodal integration and reproduce the key metric of accuracy improvement from adding synchronized visual modalities, showing practical grasp of model architecture and training.
+
+**Grounded in:** Comparison of Transformer and Mamba backbones regarding speed, accuracy, and training stability; systematic evaluation of multiple modalities on ASR accuracy.
+
+**Tech stack:** Python 3.11, PyTorch, Jupyter Notebook, numpy, torchaudio, opencv-python
+
+**Data:** Use the GRID audiovisual speech corpus (publicly available) as a substitute for the paper's datasets to provide synchronized audio and lip movement data.
+
+**Build it:**
+
+1. Download and preprocess the GRID corpus to extract audio and lip video frames.
+2. Implement a Transformer-based multimodal ASR model that takes audio features and lip movement embeddings as inputs.
+3. Add noise augmentation to audio inputs at different SNR levels.
+4. Train the model on audio-only and audio+lip inputs, evaluate word error rate (WER) or accuracy.
+5. Plot and compare ASR accuracy across noise levels and modalities.
+6. Document the implementation, results, and comparison to the paper's reported trends.
+
+**Ships as:** A GitHub repo with code to train and evaluate a Transformer multimodal ASR model on GRID, showing accuracy improvements from lip modality under noise.
+
+**Stretch goal:** Add a simple modality loss weighting scheme to observe its effect on training stability and accuracy.
+
+### Advanced — Positional Encoding for 2-D Visual Data in Multimodal ASR
+*Effort: 3+ weeks*
+
+You develop and integrate a novel positional encoding scheme designed to better capture spatial and temporal relationships in 2-D visual inputs (e.g., lip movement video frames) for multimodal ASR. You implement this in a Transformer-based ASR model and evaluate its impact on accuracy and training stability compared to absolute positional encodings.
+
+**Why it shows you understood the paper:** This project directly addresses a key limitation and future direction from the paper, showing deep engagement with the challenges of multimodal integration and model architecture innovation, potentially opening a conversation with the professor.
+
+**Grounded in:** Limitations: Absolute positional encodings struggle with 2-D visual representations like raster images; Future directions: Develop more powerful positional encodings to better integrate multi-modal and 2-D visual data.
+
+**Tech stack:** Python 3.11, PyTorch, Jupyter Notebook, numpy, opencv-python
+
+**Data:** Use the GRID corpus or a similar public audiovisual speech dataset for training and evaluation.
+
+**Build it:**
+
+1. Research existing positional encoding methods for 2-D and spatiotemporal data (e.g., relative positional encodings, learned embeddings).
+2. Design and implement a positional encoding scheme that encodes spatial and temporal positions of visual frames.
+3. Integrate this encoding into a Transformer-based multimodal ASR model replacing absolute positional encodings.
+4. Train and evaluate the model on audiovisual speech data with noise augmentation.
+5. Compare ASR accuracy, training stability, and convergence speed against a baseline model using absolute positional encodings.
+6. Document the design decisions, experimental results, and discuss implications relative to the paper.
+
+**Ships as:** A GitHub repository with code and experiments demonstrating improved positional encoding for 2-D visual data in multimodal ASR, with detailed analysis and comparison.
+
+**Stretch goal:** Explore combining this positional encoding with stronger visual encoders as suggested in the paper's future directions.
+
+_The paper's authors released no code or datasets; intermediate and advanced projects rely on substituting public audiovisual speech datasets like GRID corpus._

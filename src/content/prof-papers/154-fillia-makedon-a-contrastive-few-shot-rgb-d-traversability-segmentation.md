@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-fillia-makedon"
-source_hash: "6d6c8235d63b3faed925470381915561b80b9efe0c6410e626f8f53db37e76cf"
+source_hash: "c617e189ca577f566474780cfec91deab647fe60dd06bb636f1e16c33613cb71"
 sequence: 154
 generator: "outreach-garden: managed"
 ---
@@ -141,3 +141,97 @@ This concept combines all previous ideas into a framework that uses contrastive 
 - [Attention in transformers, step-by-step | Deep Learning Chapter 6](https://www.youtube.com/watch?v=eMlx5fFNoYc) — also for: Heterogeneous Graph Attention Network (Yanfang (Fanny) Ye)
 - [Attention mechanism: Overview](https://www.youtube.com/watch?v=fjJOgb-E41w) — also for: Learning to Optimize Job Shop Scheduling Under Structural Uncertainty (Jing Yuan)
 - [How Attention Mechanism Works in Transformer Architecture](https://www.youtube.com/watch?v=KMHkbXzHn7s) — also for: Beyond Time Series: Spatial Reasoning for Epidemic Forecasting via Multimodal Learning (Alexander Rodríguez)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive ladder to demonstrate understanding of the paper's novel approach to indoor robotic traversability segmentation using RGB images and sparse 1D laser depth data. The beginner project focuses on reproducing a core mechanism (the two-stage attention depth module) on a small scale using familiar tools. The intermediate project involves running and extending the authors' released code to replicate key results and compare against a baseline. The advanced project tackles a stated limitation by refining the height attention mechanism to reduce hallucinations, showing initiative in improving the method.
+
+### Beginner — Implement Two-Stage Attention Depth Module on Synthetic RGB and 1D Depth Data
+*Effort: a weekend, ~8 hours*
+
+You build a simplified version of the two-stage attention depth module that aligns sparse 1D depth vectors with RGB images along horizontal and vertical dimensions. Using synthetic or small-scale RGB images and simulated 1D depth vectors, you implement the attention mechanism to fuse these modalities and visualize the aligned features.
+
+**Why it shows you understood the paper:** This project demonstrates grasp of the paper's key contribution of multi-modal feature alignment via attention, showing you understand how sparse depth data can be integrated with RGB images for traversability segmentation.
+
+**Grounded in:** Design of a two-stage attention depth module that dynamically aligns 1D depth vectors with RGB images horizontally and vertically.
+
+**Tech stack:** Python 3.11, PyTorch, NumPy, Matplotlib
+
+**Data:** Synthetic RGB images and simulated sparse 1D depth vectors generated programmatically to mimic the paper's input modalities.
+
+**Build it:**
+
+1. Generate or select a small set of RGB images (e.g., from public indoor scenes or create synthetic images).
+2. Simulate corresponding sparse 1D depth vectors representing laser scan lines aligned with the images.
+3. Implement the two-stage attention depth module as described: first horizontal attention, then vertical attention to align depth with RGB features.
+4. Fuse the aligned features and visualize the attention maps and fused outputs to verify alignment.
+5. Document the implementation with comments and a README explaining the module's function and visualization results.
+
+**Ships as:** A GitHub repo containing the implemented two-stage attention module code, synthetic data generation scripts, visualization outputs, and a README explaining the approach and results.
+
+**Stretch goal:** Add a simple segmentation head to predict freespace masks from the fused features on synthetic data.
+
+### Intermediate — Run and Extend Authors' NCL Code on Indoor RGB-D Traversability Dataset
+*Effort: 2 weekends, ~20 hours*
+
+You clone and run the authors' released code from https://github.com/qiyuan53/NCL to reproduce their few-shot RGB-D traversability segmentation results. Then, you implement a simple baseline (e.g., RGB-only segmentation) and compare mIoU metrics under 1-shot and 5-shot settings, reporting quantitative results.
+
+**Why it shows you understood the paper:** This project shows you can operate the authors' multi-modal framework, understand the few-shot and negative contrastive learning components, and critically evaluate performance gains, demonstrating practical mastery of the paper's core method.
+
+**Grounded in:** The proposed method outperforms state-of-the-art few-shot segmentation baselines by up to 9% mIoU under 1-shot and 5-shot settings.
+
+**Tech stack:** Python 3.11, PyTorch, CUDA (if available), Git
+
+**Data:** The authors' large-scale indoor RGB-D traversability dataset with sparse 1D depth annotations, available via the authors' GitHub repository.
+
+**Build it:**
+
+1. Clone the repository https://github.com/qiyuan53/NCL and set up the environment as per instructions.
+2. Download or access the indoor RGB-D traversability dataset as provided by the authors.
+3. Run the baseline RGB-only segmentation model and record mIoU metrics for 1-shot and 5-shot settings.
+4. Run the full proposed method with multi-modal fusion and negative contrastive learning branch, reproducing reported results.
+5. Implement a simple ablation by disabling the negative contrastive learning branch and compare metrics.
+6. Write a report summarizing the results, including quantitative comparisons and qualitative observations.
+
+**Verified links from the paper:**
+
+- <https://github.com/qiyuan53/NCL> — released by the paper's authors
+
+**Ships as:** A GitHub repo fork or new repo with scripts to run experiments, metric logs, and a detailed README/report comparing baseline and proposed method results.
+
+**Stretch goal:** Experiment with tuning the few-shot adaptation by unfreezing additional model components and observe effects on generalization.
+
+### Advanced — Refine Height Attention to Reduce Hallucinations in Sparse Depth Fusion
+*Effort: 3-4 weeks*
+
+You extend the authors' two-stage attention depth module by designing and implementing a refinement to the height attention mechanism to mitigate hallucinations in regions with insufficient cues. You evaluate your modification on the authors' dataset, comparing segmentation quality and hallucination artifacts against the original method.
+
+**Why it shows you understood the paper:** This project addresses a stated limitation of the paper, showing deep comprehension of the model's internals and the ability to innovate on its architecture to improve robustness, a key skill for research-level work.
+
+**Grounded in:** The height attention in the two-stage depth module can introduce hallucinations in regions with insufficient cues.
+
+**Tech stack:** Python 3.11, PyTorch, CUDA (if available), Git, Jupyter Notebook
+
+**Data:** The authors' indoor RGB-D traversability dataset with sparse 1D depth annotations from their GitHub repository.
+
+**Build it:**
+
+1. Study the original two-stage attention depth module implementation from the authors' codebase.
+2. Analyze failure cases where height attention causes hallucinations using qualitative visualizations.
+3. Design a modification, such as adding confidence weighting, gating mechanisms, or auxiliary supervision to reduce hallucinations.
+4. Implement the refinement in the codebase and retrain/adapt the model on the dataset.
+5. Evaluate the modified model quantitatively (mIoU, obstacle segmentation accuracy) and qualitatively (visual inspection of hallucination reduction).
+6. Document the design decisions, experiments, and results in a detailed report.
+
+**Verified links from the paper:**
+
+- <https://github.com/qiyuan53/NCL> — released by the paper's authors
+
+**Ships as:** A GitHub repo with the refined model code, training scripts, evaluation results, and a comprehensive README/report discussing the improvement over the original method.
+
+**Stretch goal:** Explore extending the framework to incorporate additional sensor modalities (e.g., IMU data) or dynamic environment adaptation as future work.
+
+_The authors' dataset is custom and large; ensure access and sufficient compute resources before starting intermediate or advanced projects._

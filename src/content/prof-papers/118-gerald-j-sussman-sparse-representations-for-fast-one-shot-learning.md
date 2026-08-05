@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-gerald-j-sussman"
-source_hash: "66462210e16d02d4bf13e70b5b3478c6414a4290733a5b088e011050c0e102f6"
+source_hash: "fc1a1766b311c6ccdd964e85c853cb46102aae81f4616ec89d0e2115888a9461"
 sequence: 118
 generator: "outreach-garden: managed"
 ---
@@ -129,3 +129,87 @@ Phonological rule learning involves discovering patterns and generalizations in 
 *How the paper uses it:* The model is tested on English morphophonology, learning plural and past-tense formation rules.
 
 ▶ [[Introduction to Linguistics] Phonological Rules and Derivation](https://www.youtube.com/watch?v=McO4Bcfk3zc) — TrevTutor · 19:56 · 10 years ago
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive ladder to demonstrate understanding of the 1997 paper "Sparse Representations for Fast, One-Shot Learning" by Kenneth Yip and Gerald Jay Sussman. Starting with a beginner-level implementation of the core sparse boolean feature representation and constraint propagation mechanism, you then move to an intermediate-level reimplementation of the one-shot phonological rule learning algorithm on English pluralization data. Finally, the advanced project extends the model to address one of the paper's limitations by incorporating a more continuous or asynchronous representation of phonological features, exploring a biologically plausible adaptation.
+
+### Beginner — Sparse Boolean Feature Representation and Constraint Propagation Simulator
+*Effort: a weekend, ~8 hours*
+
+You build a small simulator that encodes phonemes as sparse boolean feature vectors and implements a simple bidirectional boolean constraint propagation mechanism inspired by the paper's hardware-like approach. The simulator will demonstrate how constraints propagate through sparse representations to enforce phonological rules on a small set of example phonemes.
+
+**Why it shows you understood the paper:** This project shows you grasp the core representational and mechanistic ideas of the paper: sparse boolean features and constraint propagation as a fast, hardware-inspired learning mechanism.
+
+**Grounded in:** Key contribution: "A novel model of one-shot learning exploiting sparse representations and hardware-inspired constraint propagation."
+
+**Tech stack:** Python 3.11
+
+**Data:** A small synthetic set of English phonemes with manually defined boolean distinctive features, created based on descriptions in the paper.
+
+**Build it:**
+
+1. Define a set of phonemes with sparse boolean feature vectors representing distinctive features.
+2. Implement a bidirectional boolean constraint propagation mechanism that enforces constraints between features.
+3. Create a small test set of phoneme pairs illustrating pluralization or voicing assimilation constraints.
+4. Run the simulator to show how constraints propagate and restrict possible feature assignments.
+5. Document the mechanism and illustrate with console outputs or simple visualizations.
+
+**Ships as:** A Python repository with code and README demonstrating sparse boolean feature encoding and constraint propagation on example phonemes.
+
+**Stretch goal:** Add a simple visualization of constraint propagation steps using a graph or matrix display.
+
+### Intermediate — One-Shot Learning of English Pluralization Rules Using Sparse Representations
+*Effort: 1-3 weekends, ~20 hours*
+
+You reimplement the paper's core one-shot learning algorithm that induces phonological pluralization rules from a small set of examples. Using sparse boolean feature representations and constraint propagation, your program learns to classify plural forms and generalizes to unseen words, replicating the paper's reported learning behavior.
+
+**Why it shows you understood the paper:** This project demonstrates you can implement the paper's main learning algorithm faithfully, reproduce its key result of rapid acquisition of pluralization rules, and evaluate performance on noisy or exception-containing data.
+
+**Grounded in:** Key result: "The learner acquires English pluralization rules after seeing about a dozen examples, matching linguistic descriptions."
+
+**Tech stack:** Python 3.11, Jupyter Notebook
+
+**Data:** A small dataset of English singular-plural word pairs synthesized from the paper's examples and linguistic descriptions, including regular and irregular plurals.
+
+**Build it:**
+
+1. Implement sparse boolean feature encoding for phonemes in the dataset.
+2. Implement the incremental, greedy learning algorithm to induce rule-classifiers from rote-classifiers.
+3. Incorporate the constraint propagation mechanism to enforce phonological constraints during learning.
+4. Train the model on a small set (~12) of plural examples, including some noisy or irregular forms.
+5. Evaluate the model's ability to generalize to unseen plural forms and reproduce intermediate child-like errors.
+6. Document results with accuracy metrics and example outputs comparing learned plurals to expected forms.
+
+**Ships as:** A Jupyter Notebook and Python codebase demonstrating one-shot learning of English pluralization rules with evaluation and discussion.
+
+**Stretch goal:** Add a simple baseline comparison using a memorization-only model to highlight the advantage of constraint-based generalization.
+
+### Advanced — Extending Sparse Constraint Propagation to Continuous and Asynchronous Phonological Features
+*Effort: a few weeks, ~40+ hours*
+
+You extend the original model by adapting the sparse boolean feature and constraint propagation framework to handle continuous-valued and asynchronous phonological feature inputs, addressing a key limitation noted in the paper. This involves designing a representation and propagation mechanism that can process more realistic speech feature dynamics while preserving fast, one-shot learning capabilities.
+
+**Why it shows you understood the paper:** This project shows deep comprehension of the paper's limitations and future directions, and the ability to innovate on the original model to increase biological and practical plausibility, potentially opening new research avenues.
+
+**Grounded in:** Limitation and future direction: "The model abstracts away from acoustic waveform processing... Idealizations such as discretized and synchronous distinctive features may not fully capture speech dynamics." and "Exploring implementations in neural or physical hardware to test biological plausibility."
+
+**Tech stack:** Python 3.11, NumPy, Matplotlib, Jupyter Notebook
+
+**Data:** Simulated continuous phonological feature trajectories derived from phoneme-level feature descriptions, created to mimic asynchronous speech feature dynamics.
+
+**Build it:**
+
+1. Design a continuous-valued feature representation extending the original sparse boolean vectors.
+2. Adapt the constraint propagation mechanism to operate on continuous and possibly asynchronous inputs, e.g., via thresholding or fuzzy logic.
+3. Implement a learning algorithm that can perform fast generalization from few examples under this new representation.
+4. Create or simulate a dataset of phoneme feature trajectories reflecting continuous/asynchronous properties.
+5. Evaluate the extended model's ability to learn pluralization or past-tense rules and compare behavior to the original discrete model.
+6. Document the design decisions, implementation details, and experimental results.
+
+**Ships as:** A comprehensive codebase and report demonstrating an extended sparse constraint propagation model handling continuous/asynchronous phonological features with experimental evaluation.
+
+**Stretch goal:** Explore a simple neural network or hardware-inspired implementation of the constraint propagation mechanism to test biological plausibility.

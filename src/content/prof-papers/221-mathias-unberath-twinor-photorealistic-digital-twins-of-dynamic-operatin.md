@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-mathias-unberath"
-source_hash: "a541fc9e50b1a6893039264f33ab58bc9ebbdd5bedb7c9e24caa68a1ff59aff2"
+source_hash: "3ee3014f5ad4ad1d108a6a749ccffa4cc7f43a5da197e0ff0ea9f3a921c6a69c"
 sequence: 221
 generator: "outreach-garden: managed"
 ---
@@ -128,3 +128,88 @@ A direct presentation or overview from the authors helps consolidate understandi
 *How the paper uses it:* This video introduces the concept of digital twins, foundational to understanding TwinOR’s approach to creating virtual replicas of operating rooms.
 
 ▶ [What is a Digital Twin? Technology, Types, & How it Works](https://www.youtube.com/watch?v=taSbwarjGGw) — Automatedo · 8:47
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder to demonstrate understanding of TwinOR's approach to creating photorealistic and dynamic digital twins of operating rooms for embodied AI research. The beginner project focuses on reproducing a core visual fidelity metric using familiar tools and public data. The intermediate project involves reimplementing a simplified dynamic 3D human pose estimation pipeline inspired by TwinOR's methods, applying it to a public multi-view dataset and comparing accuracy metrics. The advanced project tackles a stated limitation by extending dynamic modeling to include deformable objects, simulating fine-grained interactions, thus exploring a future direction of TwinOR.
+
+### Beginner — Static 3D Reconstruction Visual Fidelity Evaluation
+*Effort: a weekend, ~8 hours*
+
+You build a pipeline to evaluate visual fidelity metrics (SSIM and PSNR) on static 3D reconstructions of an indoor scene using multi-view stereo images. Using open-source multi-view stereo tools and a public dataset of indoor scenes, you compute SSIM and PSNR between rendered views of the reconstructed mesh and original images, reproducing the type of visual fidelity evaluation TwinOR reports.
+
+**Why it shows you understood the paper:** This project shows you understand TwinOR's emphasis on high visual fidelity in static reconstruction, and how to quantitatively evaluate it using image similarity metrics, a key contribution of the paper.
+
+**Grounded in:** TwinOR achieved mean SSIM scores of 0.90 and 0.92 and PSNR of 27.7 and 25.4 dB for two ORs, indicating high visual fidelity.
+
+**Tech stack:** Python 3.11, OpenCV, NumPy, Open3D, Matplotlib
+
+**Data:** Use the DTU Robot Image Dataset (a well-known public multi-view stereo dataset of indoor scenes) as a substitute for TwinOR's OR scans.
+
+**Build it:**
+
+1. Download and preprocess the DTU Robot Image Dataset images.
+2. Use Open3D or a similar library to perform multi-view stereo reconstruction to generate a 3D mesh.
+3. Render the reconstructed mesh from the original camera viewpoints.
+4. Compute SSIM and PSNR between the rendered images and the original images using OpenCV.
+5. Visualize and report the computed SSIM and PSNR scores in a README.
+
+**Ships as:** A GitHub repo with code to perform static 3D reconstruction and compute SSIM/PSNR metrics, plus a README showing results and discussion comparing to TwinOR's reported visual fidelity scores.
+
+**Stretch goal:** Add a simple baseline comparison by evaluating SSIM/PSNR on a naive mesh reconstruction (e.g., Poisson reconstruction) to show improvement.
+
+### Intermediate — 3D Human Pose Estimation from Multi-View Video
+*Effort: 2 weekends, ~20 hours*
+
+You implement a simplified 3D human pose estimation pipeline inspired by TwinOR's use of SMPL models and multi-view pose estimation. Using a public multi-view human motion capture dataset, you estimate 3D joint locations from synchronized camera views and evaluate accuracy using PCP3D and MPJPE metrics, comparing against a baseline single-view pose estimation.
+
+**Why it shows you understood the paper:** This project demonstrates your grasp of TwinOR's dynamic modeling of human motion and quantitative evaluation of pose accuracy, a core technical contribution enabling embodied AI in surgical environments.
+
+**Grounded in:** 3D human pose estimation achieved 98.34% PCP3D@0.5 and 3.52 cm MPJPE, showing accurate dynamic perception.
+
+**Tech stack:** Python 3.11, PyTorch, OpenCV, NumPy, SMPL model implementation (e.g., smplx)
+
+**Data:** Use the Human3.6M dataset, a public multi-view human motion capture dataset, as a substitute for TwinOR's OR human motion data.
+
+**Build it:**
+
+1. Download and preprocess Human3.6M multi-view video frames and ground truth 3D poses.
+2. Implement or adapt a multi-view 2D keypoint detector (e.g., OpenPose) to extract 2D joint locations from each camera view.
+3. Triangulate 3D joint positions from multi-view 2D detections.
+4. Fit an SMPL model to the triangulated joints to obtain a full 3D body mesh.
+5. Compute PCP3D and MPJPE metrics comparing estimated 3D joints to ground truth.
+6. Compare results to a baseline single-view 3D pose estimation method.
+7. Document the pipeline, results, and insights in a README.
+
+**Ships as:** A GitHub repo with code for multi-view 3D human pose estimation, evaluation scripts, and a detailed README reporting accuracy metrics and comparison to baseline.
+
+**Stretch goal:** Incorporate temporal smoothing or filtering to improve pose estimation stability over sequences.
+
+### Advanced — Dynamic Modeling of Deformable Surgical Tools in a Digital Twin
+*Effort: 3+ weeks*
+
+You extend the TwinOR approach by developing a pipeline to model and simulate deformable surgical instruments within a photorealistic digital twin environment. Using a combination of neural implicit surface reconstruction and physics-based deformation models, you create dynamic 3D representations of articulated and deformable tools, addressing a key limitation of TwinOR. You validate the system on synthetic or publicly available surgical tool datasets and demonstrate interactive manipulation.
+
+**Why it shows you understood the paper:** This project tackles a stated limitation and future direction of TwinOR by incorporating fine-grained deformable object modeling, showing your ability to extend the core method to more complex, realistic surgical scenarios relevant for embodied AI.
+
+**Grounded in:** TwinOR does not model small instruments, articulated tools, or deformable tissues; extending modeling to include these is a future direction.
+
+**Tech stack:** Python 3.11, PyTorch, Blender (for rendering and simulation), Neural implicit surface libraries (e.g., PyTorch3D), Physics simulation library (e.g., PyBullet or Blender physics)
+
+**Data:** Use synthetic datasets of deformable surgical tools or publicly available articulated object datasets; if unavailable, simulate deformable tool shapes procedurally.
+
+**Build it:**
+
+1. Research and select a neural implicit surface reconstruction method suitable for deformable objects.
+2. Implement a pipeline to reconstruct deformable surgical tool geometry from multi-view images or synthetic data.
+3. Integrate a physics-based deformation model to simulate tool articulation and bending.
+4. Import the reconstructed and deformable models into Blender for photorealistic rendering and interactive manipulation.
+5. Demonstrate dynamic updates of the digital twin with deformable tool motion.
+6. Document the system architecture, implementation details, and qualitative results in a comprehensive README.
+
+**Ships as:** A GitHub repo containing code for deformable tool reconstruction and simulation, Blender scenes demonstrating dynamic deformable tools, and documentation explaining the extension and its relevance to TwinOR.
+
+**Stretch goal:** Incorporate real-time updates or sensor fusion to enable online deformable object tracking within the digital twin.

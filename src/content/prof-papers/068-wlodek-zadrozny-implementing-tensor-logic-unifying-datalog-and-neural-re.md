@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-wlodek-zadrozny"
-source_hash: "c646c2a35cf62ccae6926747a95a67bcecb6d928184c9fcc7276df48c83b475c"
+source_hash: "d03df5cf21f1966550e3a34f04a6c5d54ab56b94a624cc4c95937ba716c36389"
 sequence: 68
 generator: "outreach-garden: managed"
 ---
@@ -132,3 +132,100 @@ This is the authors' own presentation of the Tensor Logic framework, explaining 
 *How the paper uses it:* This talk directly presents the Tensor Logic framework and the empirical validation experiments from the paper.
 
 ▶ [Tensor Logic: The Language of AI (Oct 2025)](https://www.youtube.com/watch?v=Stirdy-PMXY) — AI Paper Slop · 19:01 · 9 months ago
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder of increasing depth and complexity to demonstrate your understanding of the Tensor Logic paper. The beginner project reproduces the symbolic transitive closure experiment using Boolean tensor contractions, the intermediate project runs and extends the authors' Tensor Logic implementation on the FB15k-237 knowledge graph for link prediction, and the advanced project explores extending Tensor Logic to handle negation or aggregation in symbolic reasoning, addressing a key limitation noted by the authors. Each project builds on your existing software engineering and ML skills while introducing new concepts relevant to the paper.
+
+### Beginner — Transitive Closure with Boolean Tensor Contractions
+*Effort: a weekend, ~8 hours*
+
+You build a Python script that computes the transitive closure of a small directed graph using Boolean adjacency matrices and iterative tensor contractions with Einstein summation notation, replicating the core mechanism from Experiment 1 in the paper. You implement the Heaviside step function thresholding to update the closure matrix until convergence.
+
+**Why it shows you understood the paper:** This project shows you understand the equivalence between recursive Datalog rules and tensor operations, a foundational contribution of the paper, by faithfully reproducing the symbolic reasoning experiment on a manageable dataset.
+
+**Grounded in:** Empirical validation that recursive Datalog rules can be exactly implemented as iterative tensor contractions with Boolean tensors.
+
+**Tech stack:** Python 3.11, NumPy
+
+**Data:** Use the biblical genealogy dataset from https://github.com/BradyStephenson/bible-data as in the paper's Experiment 1.
+
+**Build it:**
+
+1. Clone and inspect the biblical genealogy dataset to extract parent-child relationships as a Boolean adjacency matrix.
+2. Implement a Python function that performs iterative tensor contractions using np.einsum('xy,yz->xz', A, P) to compute transitive closure.
+3. Apply a Heaviside step function threshold to update the closure matrix after each iteration.
+4. Run the iteration until convergence and verify the number of ancestor relationships matches the paper's reported 33,945.
+5. Document the code and results in a README explaining the tensor logic equivalence.
+
+**Verified links from the paper:**
+
+- <https://github.com/BradyStephenson/bible-data> — a third-party/baseline artifact the paper cites — not the authors' own code
+
+**Ships as:** A GitHub repo with a Python script computing transitive closure via tensor contractions on biblical genealogy data, with README explaining the method and results.
+
+**Stretch goal:** Add visualization of the graph and its transitive closure using a network graph library like NetworkX and matplotlib.
+
+### Intermediate — Link Prediction with Tensor Logic on FB15k-237
+*Effort: 2 weekends, ~20 hours*
+
+You run and extend the authors' open-source Tensor Logic implementation to perform link prediction on the FB15k-237 knowledge graph dataset. You reproduce the mean reciprocal rank (MRR) metric reported in Experiment 3 and implement a simple baseline (e.g., DistMult or TransE from a known library) for comparison.
+
+**Why it shows you understood the paper:** This project demonstrates you can apply the core Tensor Logic superposition construction to a large-scale knowledge graph and understand how learned relation matrices compose for multi-hop reasoning, validating the paper's scaling claims.
+
+**Grounded in:** Scaling the Tensor Logic superposition construction to a large knowledge graph (FB15k-237) achieving competitive link prediction and compositional reasoning performance.
+
+**Tech stack:** Python 3.11, PyTorch, NumPy
+
+**Data:** Use FB15k-237 dataset from https://github.com/DeepGraphLearning/KnowledgeGraphEmbedding as in the paper's Experiment 3.
+
+**Build it:**
+
+1. Clone the authors' Tensor Logic implementation from https://github.com/sshah100-clt/tensor_logic_implementation.
+2. Set up the environment and download the FB15k-237 dataset.
+3. Run the Tensor Logic link prediction training and evaluation pipeline to reproduce the reported MRR scores.
+4. Implement a simple baseline link prediction model (e.g., DistMult) using a standard library and evaluate on the same dataset.
+5. Compare the Tensor Logic results with the baseline and document findings.
+6. Write a detailed README explaining the Tensor Logic method, baseline, and evaluation metrics.
+
+**Verified links from the paper:**
+
+- <https://github.com/sshah100-clt/tensor_logic_implementation> — released by the paper's authors
+- <https://github.com/DeepGraphLearning/KnowledgeGraphEmbedding> — a third-party/baseline artifact the paper cites — not the authors' own code
+
+**Ships as:** A GitHub repo with runnable code reproducing Tensor Logic link prediction on FB15k-237, baseline comparison, and analysis in README.
+
+**Stretch goal:** Experiment with modifying the learned relation matrices to test compositional reasoning on multi-hop queries beyond two hops.
+
+### Advanced — Extending Tensor Logic for Negation and Aggregation in Symbolic Reasoning
+*Effort: 3+ weeks*
+
+You design and implement an extension of the Tensor Logic framework to handle symbolic reasoning tasks involving negation and aggregation, addressing a key limitation noted in the paper. You prototype tensor operations or approximations that represent negation (e.g., complement of Boolean tensors) and aggregation (e.g., sum or max pooling) within the tensor contraction framework. You evaluate your extension on synthetic or small real datasets to demonstrate correctness.
+
+**Why it shows you understood the paper:** This project shows you deeply understand the paper's mathematical framework and limitations, and can creatively extend it toward richer symbolic reasoning tasks relevant to natural language understanding, potentially opening new research directions.
+
+**Grounded in:** Current experiments focus on two-hop chains; more complex queries involving branching, negation, or aggregation remain untested.
+
+**Tech stack:** Python 3.11, NumPy, PyTorch
+
+**Data:** Use synthetic datasets simulating small knowledge graphs with negation and aggregation queries, or adapt biblical genealogy or geographic data with added negation/aggregation tasks.
+
+**Build it:**
+
+1. Review the Tensor Logic framework and its Boolean tensor contraction implementation.
+2. Design tensor operations to represent negation (e.g., Boolean complement) and aggregation (e.g., sum, max) compatible with tensor contractions.
+3. Implement these operations in Python using NumPy or PyTorch.
+4. Create synthetic datasets or modify existing datasets to include negation and aggregation queries.
+5. Evaluate the extended Tensor Logic implementation on these queries, verifying correctness and convergence.
+6. Document the design decisions, implementation details, and evaluation results in a comprehensive README.
+
+**Verified links from the paper:**
+
+- <https://github.com/sshah100-clt/tensor_logic_implementation> — released by the paper's authors
+
+**Ships as:** A GitHub repo with extended Tensor Logic code supporting negation and aggregation, example datasets, and detailed documentation of methods and results.
+
+**Stretch goal:** Explore integrating differentiable approximations of negation to enable gradient-based learning within Tensor Logic.

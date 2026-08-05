@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-kyla"
-source_hash: "ef1bb1034b037cbab9307c74b0ee5fb9d2cb11f23a8babcaaf92428adfd1c67e"
+source_hash: "467caa8531bcaa4e56649f6a016e643a343693225fdcb78ae50590906d5e9930"
 sequence: 7
 generator: "outreach-garden: managed"
 ---
@@ -122,3 +122,85 @@ The Corsi Block-Tapping Test is a widely used spatial memory test involving reca
 ## Already in your library
 
 - [PEBL Corsi Block Task: Extended Description](https://www.youtube.com/watch?v=gRxf2axNtsc) — also for: The Corsi Block-Tapping Test: Evaluating methodological practices with an eye towards modern digital frameworks (Kyla A. McMullen)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder of increasing complexity and research depth around the Corsi Block-Tapping Test (CBT) methodological issues highlighted in the paper. The beginner project focuses on reproducing and visualizing key CBT parameters variability from the literature review. The intermediate project implements a simplified digital CBT test with configurable parameters to explore their effects on performance metrics, addressing the core methodological inconsistency problem. The advanced project extends this by integrating 3D audio cues into a digital CBT prototype to investigate their impact on ecological validity and participant engagement, directly tackling a future direction proposed by the authors.
+
+### Beginner — CBT Parameter Variability Visualization
+*Effort: a weekend, ~8 hours*
+
+You build a web-based interactive dashboard that visualizes the variability and reporting frequency of key CBT parameters (block size, color, shape, board properties, timing) as summarized in the paper's systematic review. The dashboard uses charts and tables to show how often parameters are reported or varied across the 39 reviewed studies.
+
+**Why it shows you understood the paper:** This project demonstrates your grasp of the paper's core finding about widespread methodological inconsistency and poor reporting in CBT studies by faithfully reproducing and communicating the review's quantitative insights.
+
+**Grounded in:** Identification of widespread variability and poor reporting in CBT methodologies.
+
+**Tech stack:** TypeScript, React, D3.js, CSS
+
+**Data:** Data synthesized from the paper's reported statistics on CBT parameter usage and reporting frequency across 39 studies; no external dataset needed.
+
+**Build it:**
+
+1. Extract key CBT parameter statistics from the paper's results section (e.g., block size reporting frequency, block shape usage).
+2. Design and implement React components to display bar charts and tables summarizing parameter variability.
+3. Use D3.js or a React charting library to create interactive visualizations (e.g., filter by parameter type).
+4. Add explanatory text referencing the paper's findings to contextualize each visualization.
+5. Test the dashboard locally and prepare a README explaining the source and significance of the data.
+
+**Ships as:** A GitHub repository with a React web app that visualizes CBT methodological variability, accompanied by a README linking each visualization to the paper's findings.
+
+**Stretch goal:** Add a timeline view showing how reporting standards evolved over the 20 years covered by the review.
+
+### Intermediate — Configurable Digital CBT Prototype
+*Effort: 2 weekends, ~20 hours*
+
+You implement a simplified digital version of the Corsi Block-Tapping Test as a web app where key parameters (number of blocks, block size, inter-block tap rate, spatial path complexity) can be configured. You run simulated or pilot human trials to collect performance data (e.g., accuracy, response time) and compare results across parameter settings to explore their effects.
+
+**Why it shows you understood the paper:** This project shows you can operationalize the paper's core methodological problem by building a flexible digital CBT framework prototype and empirically investigating how parameter variations influence test performance, mirroring the paper's call for standardization and empirical study.
+
+**Grounded in:** Proposal for a standardized, open-source digital CBT framework supporting flexibility and reproducibility; Effects of block size, timing, and spatial paths on performance remain understudied.
+
+**Tech stack:** TypeScript, React, Node.js, Express, CSS
+
+**Data:** Performance data collected from pilot users or simulated participants interacting with the digital CBT prototype; no external dataset available.
+
+**Build it:**
+
+1. Design a digital CBT interface with 9 blocks arranged in a grid, allowing configuration of block size, color, and shape.
+2. Implement administration procedures including configurable inter-block tap rate and spatial path generation with adjustable complexity.
+3. Develop a backend to record participant responses and compute performance metrics like sequence recall accuracy and response time.
+4. Conduct pilot tests with a small number of users or simulate user responses to generate performance data across parameter variations.
+5. Analyze and visualize how parameter changes affect performance metrics, documenting findings in the README.
+
+**Ships as:** A GitHub repo containing a configurable digital CBT web app, sample performance data, and analysis demonstrating parameter effects on test outcomes.
+
+**Stretch goal:** Add a simple normative data calculator that adjusts scoring based on parameter settings to illustrate standardization challenges.
+
+### Advanced — Digital CBT with 3D Audio Integration
+*Effort: 3+ weeks, ~60+ hours*
+
+You extend the digital CBT prototype by integrating 3D spatial audio cues for block tapping events, leveraging Web Audio API or a 3D audio library. You design experiments to test whether adding 3D audio improves ecological validity and participant engagement without compromising reliability. You document the implementation and preliminary findings.
+
+**Why it shows you understood the paper:** This project directly addresses a future direction from the paper and leverages the professor's expertise in 3D audio, demonstrating your ability to extend CBT digital frameworks innovatively while considering methodological rigor and test standardization.
+
+**Grounded in:** Future direction: Explore integration of spatial audio cues to enhance CBT realism and assessment; Challenge of improving ecological validity without compromising reliability.
+
+**Tech stack:** TypeScript, React, Node.js, Express, Web Audio API, CSS
+
+**Data:** User performance and engagement data collected from controlled experiments using the enhanced digital CBT with and without 3D audio cues; no external dataset available.
+
+**Build it:**
+
+1. Enhance the existing digital CBT prototype to include 3D audio cues spatially mapped to block locations using Web Audio API or a suitable 3D audio library.
+2. Implement controls to toggle audio cues on/off and log participant interactions and performance metrics.
+3. Design and conduct a small user study comparing CBT performance and engagement with and without 3D audio cues.
+4. Analyze data to assess whether 3D audio affects recall accuracy, response time, or subjective engagement.
+5. Document the technical implementation, experimental design, and results in a detailed README.
+
+**Ships as:** A GitHub repository with a digital CBT app featuring 3D audio integration, experimental data, and a comprehensive report discussing the impact of audio cues on test validity and engagement.
+
+**Stretch goal:** Incorporate AR/VR device support for immersive CBT testing environments as a further extension.

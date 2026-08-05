@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-zilin-jiang"
-source_hash: "30ba115bca97c2ef92892c3ad89ad6646fd7d592dc1c011b4ce29396271595b3"
+source_hash: "ee2500630a1e066b2c4766e6c3bbe637187c65c21f114a418eef8751cef88a45"
 sequence: 77
 generator: "outreach-garden: managed"
 ---
@@ -128,3 +128,88 @@ Forbidden subgraph characterization classifies graphs by identifying subgraphs t
 *How the paper uses it:* The paper uses forbidden subgraph characterizations to confirm eigenvalue bounds and classify graphs.
 
 ▶ [Zilin Jiang - "Forbidden subgraphs and spherical two-distance sets"](https://www.youtube.com/watch?v=QG6_aMr3aXs) — Combgeo Lab · 39:34
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progression from understanding the basic spectral properties of small graphs in the paper's classification range, to implementing the core classification method for augmented path extensions, and finally to extending the classification beyond the eigenvalue threshold -λ* or exploring signed graphs as suggested by the paper's future directions. Each project leverages your existing software engineering and applied ML skills while introducing spectral graph theory concepts and enumeration algorithms relevant to the paper.
+
+### Beginner — Visualize Small Graphs with Eigenvalues in (-λ*, -2)
+*Effort: a weekend, ~8 hours*
+
+You build a small interactive web app that visualizes connected graphs with up to 10 vertices whose smallest eigenvalue lies in the interval (-λ*, -2). The app computes eigenvalues of adjacency matrices and highlights graphs classified as augmented path extensions or maverick graphs based on simple structural checks.
+
+**Why it shows you understood the paper:** This project demonstrates your grasp of the paper's eigenvalue interval classification and the distinction between augmented path extensions and maverick graphs, showing you can compute and interpret spectral graph properties and relate them to the paper's taxonomy.
+
+**Grounded in:** Theorem 1.4 and Theorem 1.5 on classification of graphs with smallest eigenvalue in (-λ*, -2) and the distinction between augmented path extensions and maverick graphs.
+
+**Tech stack:** JavaScript, React, D3.js, mathjs (for linear algebra)
+
+**Data:** Synthetic small connected graphs generated programmatically; eigenvalue computations done on adjacency matrices constructed in code.
+
+**Build it:**
+
+1. Implement a graph generator that enumerates all connected graphs up to 10 vertices.
+2. Compute the smallest eigenvalue of each graph's adjacency matrix using a linear algebra library.
+3. Filter graphs whose smallest eigenvalue lies in (-2.0198, -2).
+4. Implement simple structural checks to identify augmented path extensions and maverick graphs based on paper descriptions.
+5. Visualize these graphs with D3.js, color-coded by classification.
+6. Write a README explaining the spectral properties and classification criteria.
+
+**Ships as:** An interactive web app repository with code to generate, classify, and visualize small graphs by their smallest eigenvalue and classification type, plus a README explaining the connection to the paper.
+
+**Stretch goal:** Add user input to upload or draw custom small graphs and classify them live.
+
+### Intermediate — Reimplement Augmented Path Extension Classification
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement the core classification method for augmented path extensions from the paper, including the linear-algebraic lemma that reduces eigenvalue computations. You enumerate augmented path extensions for rooted graphs up to a moderate size and compare eigenvalue bounds against a baseline naive eigenvalue computation.
+
+**Why it shows you understood the paper:** This project shows you can translate the paper's core spectral and combinatorial classification method into code, reproduce enumeration results on smaller graphs, and validate eigenvalue bounds, demonstrating deep comprehension of the paper's main technical contributions.
+
+**Grounded in:** Key contributions 1, 3, 5: classification of augmented path extensions, linear-algebraic lemma simplifying eigenvalue computations, and enumeration of maximal connected bipartite single-rooted graphs.
+
+**Tech stack:** Python 3.11, NumPy, SciPy (for eigenvalue computations), NetworkX (for graph representations)
+
+**Data:** Synthetic rooted graphs generated programmatically up to 12 vertices; no external dataset used.
+
+**Build it:**
+
+1. Implement data structures for rooted graphs and their augmented path extensions.
+2. Code the linear-algebraic lemma to reduce eigenvalue computations for augmented path extensions.
+3. Enumerate all maximal connected bipartite single-rooted graphs up to 12 vertices.
+4. Compute smallest eigenvalues using both naive and lemma-based methods and compare results.
+5. Validate that enumerated graphs' eigenvalues lie in (-λ*, -2) as per the classification.
+6. Document the implementation and results in a detailed README.
+
+**Ships as:** A Python repository that enumerates augmented path extensions, computes eigenvalues efficiently using the paper's lemma, and validates classification results with explanations.
+
+**Stretch goal:** Extend enumeration to include twisted maverick graphs and compare their eigenvalues.
+
+### Advanced — Explore Classification Beyond -λ* or for Signed Graphs
+*Effort: 3+ weeks*
+
+You develop an exploratory computational framework to investigate connected graphs with smallest eigenvalue in (-λ, -λ*) for λ > λ* or extend classification methods to signed graphs as suggested by the paper's future directions. This includes implementing enumeration heuristics, eigenvalue computations, and structural checks to identify new graph families or phenomena beyond the current classification.
+
+**Why it shows you understood the paper:** This project tackles an open problem and limitation stated by the paper, demonstrating your ability to extend spectral graph classification methods, handle complex eigenvalue intervals, and potentially discover new structural phenomena, positioning you as a serious research collaborator.
+
+**Grounded in:** Limitations and future directions: classification beyond -λ* and extension to signed graphs.
+
+**Tech stack:** Python 3.11, NumPy, SciPy, NetworkX, Jupyter Notebook for exploratory analysis
+
+**Data:** Synthetic graphs generated programmatically with parameters to explore eigenvalue intervals beyond -λ*; no external dataset.
+
+**Build it:**
+
+1. Review the paper's discussion on classification limitations beyond -λ* and signed graphs.
+2. Implement graph generators for connected graphs and signed graphs with controlled parameters.
+3. Develop eigenvalue computation pipelines to identify graphs with smallest eigenvalue in (-λ, -λ*) for λ > λ*.
+4. Analyze structural properties of these graphs to detect patterns or forbidden subgraphs.
+5. Document findings, challenges, and potential new conjectures in a research-style report.
+6. Optionally, prepare code and data for sharing with the professor for feedback.
+
+**Ships as:** A research exploration repository with code, notebooks, and a detailed report on attempts to extend classification beyond -λ* or to signed graphs, including preliminary results and open questions.
+
+**Stretch goal:** Incorporate machine learning clustering methods to classify newly found graphs by structural features and eigenvalue spectra.

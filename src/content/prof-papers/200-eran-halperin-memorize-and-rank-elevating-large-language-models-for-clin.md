@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-eran-halperin"
-source_hash: "b1130d1d23586de2d2ab17c09c25ebde5d6a4c0a931dc3c0c017c6abcfe446b8"
+source_hash: "c2512e4708882ace84a119a7ae2aeb8f811f2c1c3740d54903961fa5bf8a0393"
 sequence: 200
 generator: "outreach-garden: managed"
 ---
@@ -113,3 +113,88 @@ Hierarchical contrastive learning trains models to distinguish between similar a
 - [Fine Tuning LLM Explained Simply](https://www.youtube.com/watch?v=ezdIOLbUSWg) — also for: Relations Prediction for Knowledge Graph Completion using Large Language Models (Krzysztof J. Kochut)
 - [Large Language Models explained briefly](https://www.youtube.com/watch?v=LPZh9BOjkQs) — also for: On-demand generation of high-quality software engineering datasets using large language models and ontologies (Suranjan Chakraborty)
 - [How Large Language Models Work](https://www.youtube.com/watch?v=5sLYAQS9sWQ) — also for: Natural-Language to SysMLv2 Translation via Conformance-Driven Iterative Refinement (Levent Burak Kara)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progression to demonstrate your understanding of the MERA paper's core ideas and contributions. The beginner project focuses on reproducing the dynamic confidence threshold mechanism in a simplified setting using familiar tools. The intermediate project involves reimplementing the hierarchical contrastive learning approach for diagnosis prediction on a public clinical dataset, adding new skills in contrastive learning and LLM fine-tuning. The advanced project extends MERA by exploring multimodal clinical data integration, addressing a key future direction from the paper and showcasing your ability to innovate beyond the original work.
+
+### Beginner — Dynamic Confidence Threshold Simulation for Diagnosis Ranking
+*Effort: a weekend, ~8 hours*
+
+You build a small Python script that simulates the dynamic confidence threshold mechanism (EOV token) described in MERA. Using a toy dataset of diagnosis candidates with confidence scores, you implement a simple ranking and thresholding method that dynamically selects confident diagnoses until the EOV token is reached. You visualize how this dynamic thresholding differs from fixed thresholding.
+
+**Why it shows you understood the paper:** This project shows you grasp the novel dynamic confidence threshold concept and its role in flexible diagnosis prediction, a key contribution of the paper.
+
+**Grounded in:** Dynamic confidence threshold improves diagnosis prediction flexibility and accuracy.
+
+**Tech stack:** Python 3.11, matplotlib, numpy
+
+**Data:** Simulated toy data representing diagnosis confidence scores for a small set of candidate ICD codes.
+
+**Build it:**
+
+1. Create a small synthetic dataset of diagnosis candidates with associated confidence scores.
+2. Implement a function that iterates through candidates and selects diagnoses until a learned EOV threshold is reached.
+3. Compare this dynamic thresholding with a fixed confidence threshold approach.
+4. Plot and analyze the number of diagnoses selected and confidence distributions for both methods.
+5. Write a README explaining the dynamic threshold concept and your implementation.
+
+**Ships as:** A Python script with plots demonstrating dynamic vs fixed confidence thresholding and a README explaining the mechanism.
+
+**Stretch goal:** Add a simple UI with React to allow interactive adjustment of confidence scores and visualize thresholding behavior.
+
+### Intermediate — Hierarchical Contrastive Learning for Clinical Diagnosis Prediction
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement the core hierarchical contrastive learning method from MERA to improve diagnosis prediction on a public clinical dataset such as MIMIC-III (publicly available). You fine-tune a smaller pretrained language model to memorize mappings between ICD codes and their natural language definitions. Then you implement hierarchical contrastive loss aligned with the ICD ontology to distinguish true diagnoses from similar candidates. Finally, you evaluate your model against a simple baseline like a standard classification model and report weighted F1 and recall@20 metrics.
+
+**Why it shows you understood the paper:** This project demonstrates your ability to implement MERA's core methodological innovation—hierarchical contrastive learning—and to apply it to clinical diagnosis prediction, showing you understand the paper's main technical contribution and evaluation.
+
+**Grounded in:** Introduced hierarchical contrastive learning aligned with the ICD code ontology to distinguish true diagnoses from similar candidates.
+
+**Tech stack:** Python 3.11, PyTorch, transformers, scikit-learn, pandas
+
+**Data:** Use the publicly available MIMIC-III dataset as a substitute for the paper's data, focusing on patient diagnosis codes and clinical notes.
+
+**Build it:**
+
+1. Download and preprocess MIMIC-III data to extract patient visits with ICD codes and clinical notes.
+2. Prepare natural language definitions for ICD codes from publicly available ICD code descriptions.
+3. Fine-tune a pretrained transformer-based language model to memorize ICD code-definition mappings.
+4. Implement hierarchical contrastive loss using the ICD ontology hierarchy to train the model on diagnosis prediction.
+5. Train a baseline classification model (e.g., simple multi-label classifier) for comparison.
+6. Evaluate both models on weighted F1 and recall@20 metrics and document results.
+
+**Ships as:** A GitHub repo with code for data preprocessing, model training with hierarchical contrastive learning, baseline comparison, evaluation scripts, and a detailed README.
+
+**Stretch goal:** Incorporate the dynamic confidence threshold mechanism to improve prediction ranking and compare results.
+
+### Advanced — Extending MERA for Multimodal Clinical Data Integration
+*Effort: 3+ weeks*
+
+You develop an extension of the MERA framework to incorporate multimodal clinical data, such as medical imaging metadata or physiological waveform summaries, alongside textual patient histories and ICD codes. This project addresses a key future direction from the paper. You design a pipeline to combine embeddings from a fine-tuned language model with features extracted from a secondary modality (e.g., ECG waveform features or chest X-ray metadata). You adapt hierarchical contrastive learning and dynamic confidence thresholding to this multimodal setting and evaluate improvements on a clinical prediction task.
+
+**Why it shows you understood the paper:** This project shows deep comprehension of MERA's architecture and limitations, and your ability to innovate by extending it to a challenging, clinically relevant multimodal setting as suggested by the authors.
+
+**Grounded in:** Extending MERA to incorporate multimodal clinical data such as medical imaging and physiological waveforms.
+
+**Tech stack:** Python 3.11, PyTorch, transformers, scikit-learn, numpy, pandas, matplotlib
+
+**Data:** Use MIMIC-CXR (public chest X-ray dataset linked to MIMIC-III) or MIMIC-III waveform subset as a proxy for multimodal data integration; combine with MIMIC-III clinical notes and ICD codes.
+
+**Build it:**
+
+1. Obtain and preprocess MIMIC-CXR or MIMIC-III waveform data alongside clinical notes and ICD codes.
+2. Extract feature embeddings from imaging or waveform data using pretrained models or signal processing techniques.
+3. Fine-tune a language model on ICD code-definition memorization and clinical notes as in MERA.
+4. Design a multimodal fusion architecture combining LLM embeddings with imaging/waveform features.
+5. Adapt hierarchical contrastive learning and dynamic confidence thresholding to the multimodal embeddings.
+6. Train and evaluate the multimodal model on diagnosis prediction or heart failure prediction tasks, comparing to unimodal baselines.
+7. Document methodology, challenges, and results in a comprehensive README.
+
+**Ships as:** A full codebase demonstrating multimodal data integration with MERA extensions, training and evaluation scripts, and a detailed report README.
+
+**Stretch goal:** Experiment with parameter-efficient fine-tuning methods (e.g., LoRA, adapters) to reduce computational cost.

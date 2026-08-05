@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-erik-brunvand"
-source_hash: "516e067af38d1f0051704c85effe84c69547b0e9d175b5a13f2ecafe2e3007a4"
+source_hash: "4db5dc7609d51de1043877b2410abb7b077e991d84676f7fe41bc17d5ce3237e"
 sequence: 183
 generator: "outreach-garden: managed"
 ---
@@ -125,3 +125,88 @@ Hearing directly from the authors provides a clear and authoritative explanation
 ## Already in your library
 
 - [Ray Tracing with Bounding Volume Hierarchies](https://www.youtube.com/watch?v=BmbfjHoqKUs) — also for: SPITE: Simple Polyhedral Intersection Techniques for modified Environments (Sariel Har-Peled)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive ladder to demonstrate understanding of the paper "Memory-Efficient Bounding Volume Hierarchies with Merged Nodes for Hardware Ray Tracing." The beginner project focuses on reproducing and visualizing the concept of node merging and its effect on node fullness. The intermediate project implements the memory-based surface area heuristic (MSAH) and compares it against traditional SAH on a small synthetic BVH dataset. The advanced project extends the paper by exploring a GPU-friendly greedy builder implementation, addressing a key future direction mentioned by the authors.
+
+### Beginner — Visualize Node Merging Effects on BVH Node Fullness
+*Effort: a weekend, ~8 hours*
+
+You build a small interactive visualization tool that simulates a simple BVH with nodes and primitives, then applies the paper's node merging technique to show how node fullness improves without degrading bounding volumes. The tool will display before-and-after statistics on node fullness and memory footprint reduction.
+
+**Why it shows you understood the paper:** This project demonstrates you grasp the node merging technique's purpose and effect, a key contribution of the paper, by faithfully reproducing its impact on node fullness and memory efficiency.
+
+**Grounded in:** Node merging improves node fullness and reduces wasted space without degrading tree quality.
+
+**Tech stack:** JavaScript, React, D3.js
+
+**Data:** Synthetic BVH node and primitive data generated within the tool to simulate typical BVH structures.
+
+**Build it:**
+
+1. Implement a simple BVH node data structure with bounding boxes and primitive counts.
+2. Create a visualization of the BVH tree showing node fullness and bounding volumes.
+3. Implement the node merging algorithm as described in the paper, merging internal and leaf nodes.
+4. Update the visualization to show the BVH before and after node merging.
+5. Calculate and display metrics such as node fullness percentage and estimated memory footprint.
+6. Write a README explaining the node merging technique and its benefits as per the paper.
+
+**Ships as:** An interactive web-based visualization with a README that explains node merging and shows its effect on node fullness and memory footprint.
+
+**Stretch goal:** Add a comparison view showing traversal quality metrics to verify that merging does not degrade tree quality.
+
+### Intermediate — Implement and Compare Memory-Based SAH vs Traditional SAH
+*Effort: 2 weekends, ~20 hours*
+
+You implement the memory-based surface area heuristic (MSAH) from the paper and a traditional SAH for BVH construction on a synthetic or publicly available small 3D scene dataset. You build BVHs using both heuristics and compare metrics such as estimated memory traffic, BVH size, and traversal cost proxies.
+
+**Why it shows you understood the paper:** This project proves you understand the core methodological innovation of the paper—MSAH—and can implement and evaluate it against the traditional SAH, replicating the paper's approach to modeling traversal cost in terms of memory traffic.
+
+**Grounded in:** A memory-based surface area heuristic (MSAH) that better predicts hardware ray tracing performance by focusing on memory access cost.
+
+**Tech stack:** C++, Python, Jupyter Notebook
+
+**Data:** Synthetic 3D scenes generated programmatically or a small public 3D model dataset (e.g., Stanford Bunny or Cornell Box) used as a substitute for the paper's data.
+
+**Build it:**
+
+1. Implement a basic BVH builder using traditional SAH in C++.
+2. Implement the memory-based surface area heuristic (MSAH) as described in the paper.
+3. Build BVHs on the same dataset using both SAH and MSAH.
+4. Measure and compare metrics such as BVH size, estimated memory traffic, and traversal cost proxies.
+5. Visualize and report the comparison results in a Jupyter Notebook.
+6. Document the implementation details and analysis in the README.
+
+**Ships as:** A repository with BVH builder implementations, scripts to run comparisons, and a Jupyter Notebook reporting results and analysis.
+
+**Stretch goal:** Extend the implementation to include the greedy builder algorithm and compare build times and quality.
+
+### Advanced — GPU-Friendly Greedy BVH Builder with Node Merging
+*Effort: 3+ weeks*
+
+You develop a GPU-accelerated implementation of the paper's greedy BVH builder combined with the node merging technique. This project addresses the paper's stated limitation and future direction of developing efficient GPU builders. You evaluate build time and traversal quality on synthetic or public 3D scenes and compare against a CPU baseline implementation.
+
+**Why it shows you understood the paper:** This project demonstrates deep comprehension of the paper's algorithms and limitations by extending the work into a GPU context, tackling a future direction the authors highlight as important but unaddressed.
+
+**Grounded in:** Developing efficient GPU implementations of the proposed greedy build method, potentially combined with H-PLOC.
+
+**Tech stack:** C++, CUDA, Python, Jupyter Notebook
+
+**Data:** Synthetic or public 3D scene datasets (e.g., Stanford Bunny, Cornell Box) used as substitutes for the paper's data.
+
+**Build it:**
+
+1. Implement a baseline CPU version of the greedy BVH builder with node merging in C++.
+2. Design and implement a GPU-accelerated version of the greedy builder using CUDA.
+3. Integrate node merging into the GPU builder pipeline.
+4. Benchmark build times and traversal quality metrics on test datasets comparing CPU and GPU implementations.
+5. Analyze results and document performance trade-offs and challenges.
+6. Write a detailed README explaining the implementation, evaluation, and how this addresses the paper's future direction.
+
+**Ships as:** A GPU-accelerated BVH builder repository with benchmarking scripts and a comprehensive report on performance and quality.
+
+**Stretch goal:** Explore integration of spatial splits into the GPU builder to further improve BVH quality without increasing primitive duplication.

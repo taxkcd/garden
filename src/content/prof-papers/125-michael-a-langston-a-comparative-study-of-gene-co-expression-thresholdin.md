@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-michael-a-langston"
-source_hash: "7f40c6b6b7da5945655bf30587b1a16eba4e88fcdb8a0613a19efd9d4084c91b"
+source_hash: "24a46eca2969e7d29d37f33a590d446a4abf5679d5fbec7ed700bce0eac83d8f"
 sequence: 125
 generator: "outreach-garden: managed"
 ---
@@ -133,3 +133,94 @@ Thresholding methods decide which edges to keep in biological networks based on 
 *How the paper uses it:* The paper compares 15 thresholding algorithms to identify the best approaches for gene co-expression networks.
 
 ▶ [Introduction to Connectome Thresholding](https://www.youtube.com/watch?v=MZEQR7gKfNE) — Systems Group · 5 years ago
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder to demonstrate understanding of the paper's core contributions on gene co-expression network thresholding. The beginner project reproduces a key metric calculation on a small example to grasp threshold evaluation. The intermediate project implements and compares core thresholding methods on a subset of real biological graphs from the authors' benchmark, reproducing the paper's evaluation approach. The advanced project extends the paper by applying thresholding methods to a new omics data type, addressing a stated limitation and exploring method adaptation.
+
+### Beginner — Compute Total Significant Clusters Ratio (TSCR) on Sample Gene Co-Expression Graph
+*Effort: a weekend, ~6 hours*
+
+You build a Python script that takes a small gene co-expression network (graph) with weighted edges and applies a simple threshold to filter edges. Then you run a clustering algorithm (e.g., paraclique or maximal clique finder) on the thresholded graph and compute the total significant clusters ratio (TSCR) metric as defined in the paper. This reproduces the paper's novel metric on a toy example.
+
+**Why it shows you understood the paper:** This project shows you understand the paper's key evaluation metric TSCR and how thresholding affects cluster quality. It demonstrates your grasp of the relationship between threshold selection, graph clustering, and biological significance evaluation.
+
+**Grounded in:** Introduction of a novel performance metric, the total significant clusters ratio (TSCR), to evaluate thresholding quality.
+
+**Tech stack:** Python 3.11, NetworkX, Jupyter Notebook
+
+**Data:** A small synthetic or publicly available gene co-expression graph with weighted edges, e.g., a toy example you create or a small subset from the paper's benchmark (if accessible).
+
+**Build it:**
+
+1. Implement a function to apply a fixed threshold to edge weights in the graph.
+2. Implement or use a maximal clique or paraclique clustering algorithm on the thresholded graph.
+3. Implement TSCR calculation based on cluster counts and significance as described in the paper.
+4. Run the pipeline on the small graph and output the TSCR value.
+5. Document the process and explain how TSCR reflects thresholding quality.
+
+**Ships as:** A GitHub repository with a Python script or notebook that computes TSCR on a small gene co-expression graph, with clear README explaining the metric and thresholding impact.
+
+**Stretch goal:** Add visualization of how TSCR changes with varying threshold values on the same graph.
+
+### Intermediate — Implement and Compare MCR-Based and Spectral Thresholding on Benchmark Gene Co-Expression Graphs
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement the core maximal clique ratio (MCR)-based and spectral thresholding algorithms described in the paper. Using the publicly available benchmark suite of 83 biological graphs from https://zenodo.org/records/10532019, you apply these thresholding methods to a subset of graphs (e.g., 5-10 transcriptomic graphs). You then run paraclique clustering and compute TSCR to compare the thresholding methods' performance, reproducing the paper's key results.
+
+**Why it shows you understood the paper:** This project shows you can implement the paper's novel thresholding algorithms and evaluation pipeline on real biological data, demonstrating comprehension of the methods and their comparative performance. It also shows you can work with large biological graph data and reproduce scientific evaluation metrics.
+
+**Grounded in:** Comprehensive implementation and systematic comparison of 15 thresholding algorithms for gene co-expression networks; Algorithms proposed specifically for transcriptomic data performed admirably, with the three MCR-based strategies and Spectral-Methods among the best.
+
+**Tech stack:** Python 3.11, NetworkX, NumPy, SciPy, Jupyter Notebook
+
+**Data:** Subset of the benchmark suite of 83 biological graphs from https://zenodo.org/records/10532019, focusing on transcriptomic data graphs.
+
+**Build it:**
+
+1. Download and preprocess a subset of graphs from the benchmark dataset.
+2. Implement the MCR-based thresholding algorithm as described in the paper.
+3. Implement the spectral thresholding method as described.
+4. Apply both thresholding methods to each graph to determine thresholds.
+5. Run paraclique clustering on the thresholded graphs.
+6. Compute TSCR for each method and graph, and compare results.
+7. Document findings and compare to paper's reported performance.
+
+**Verified links from the paper:**
+
+- <https://zenodo.org/records/10532019> — a third-party/baseline artifact the paper cites — not the authors' own code
+
+**Ships as:** A GitHub repository with implementations of MCR and spectral thresholding, scripts to run on benchmark graphs, TSCR evaluation, and a report comparing methods with plots.
+
+**Stretch goal:** Add a baseline thresholding method (e.g., median threshold) for comparison and analyze differences.
+
+### Advanced — Extend Thresholding Methods to Proteomics Data and Evaluate Adaptation of MCR and Spectral Methods
+*Effort: 3-4 weeks*
+
+You extend the paper's thresholding methods by applying MCR-based and spectral thresholding algorithms to proteomics co-expression networks, addressing the paper's limitation of focus on transcriptomic and methylation data. You obtain or construct proteomics co-expression graphs from public proteomics datasets (e.g., from PRIDE or other repositories). You adapt the thresholding algorithms as needed for different network topologies, run clustering and TSCR or analogous evaluation metrics, and analyze performance and challenges.
+
+**Why it shows you understood the paper:** This project demonstrates deep understanding of the paper's methods and limitations by applying them to a new omics domain, requiring adaptation and critical evaluation. It shows ability to extend research methods beyond the original scope and engage with open research questions.
+
+**Grounded in:** Limitations: The study focused primarily on transcriptomic and DNA methylation data, limiting generalizability to other omics data types; Future directions: Extending the comparative analysis to other omics data such as proteomics, genomics, and metabolomics.
+
+**Tech stack:** Python 3.11, NetworkX, NumPy, SciPy, Jupyter Notebook
+
+**Data:** Publicly available proteomics co-expression data from a recognized repository such as PRIDE or similar, or constructed from proteomics expression datasets; no direct paper dataset available for proteomics.
+
+**Build it:**
+
+1. Identify and obtain proteomics expression data suitable for co-expression network construction.
+2. Construct weighted gene/protein co-expression graphs from the data.
+3. Adapt and implement MCR-based and spectral thresholding algorithms for these graphs.
+4. Apply thresholding, run clustering (paraclique or maximal clique), and compute TSCR or a proxy metric.
+5. Analyze threshold values, cluster quality, and compare to transcriptomic results.
+6. Document challenges, adaptations, and insights on method generalizability.
+
+**Ships as:** A GitHub repository with code to construct proteomics co-expression graphs, apply thresholding methods, evaluate clusters, and a detailed report discussing method adaptation and results.
+
+**Stretch goal:** Develop or integrate an alternative evaluation metric analogous to Gene Ontology enrichment suitable for proteomics clusters.
+
+_The paper's authors did not release their own code, so the intermediate project requires reimplementation of core methods from the paper's descriptions; proteomics data must be sourced externally as the paper's benchmark is limited to transcriptomic and methylation data._

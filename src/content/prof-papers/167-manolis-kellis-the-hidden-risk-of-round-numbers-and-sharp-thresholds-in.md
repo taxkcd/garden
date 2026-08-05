@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-manolis-kellis"
-source_hash: "492322f68b9f52e8f3a73be4af02db12df734eeaac00b3de4137acb4451ef17d"
+source_hash: "0998347f20764b4ebb4393f435855051308c86c14849ceeb3c23659a00370e26"
 sequence: 167
 generator: "outreach-garden: managed"
 ---
@@ -136,3 +136,99 @@ Hearing directly from the authors provides insight into their motivation, method
 *How the paper uses it:* This talk presents the authors’ perspective on the hidden risks of round-number thresholds and their interpretable ML approach.
 
 ▶ [Rounding Up or Down Number Talk](https://www.youtube.com/watch?v=LRn4W-aYlns) — Jennifer Kelley · 5 years ago
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder for understanding and applying the core insights of the paper on risks of round-number clinical thresholds. The beginner project reproduces a key risk curve visualization using the authors' code and a public dataset, demonstrating the presence of threshold-induced discontinuities. The intermediate project reimplements the paper's glass-box ML approach on a smaller public ICU dataset to detect and quantify threshold artifacts, comparing to a simple baseline. The advanced project extends the method to incorporate treatment confounding effects dynamically, addressing a key limitation and future direction of the paper, aiming to improve real-time clinical decision support.
+
+### Beginner — Visualize Mortality Risk Discontinuities at Clinical Thresholds
+*Effort: a weekend, ~8 hours*
+
+You build a Jupyter notebook that reproduces mortality risk curves for a clinical variable (e.g., serum creatinine) using the authors' provided Python notebooks and a public ICU dataset substitute. You generate plots showing discontinuities and paradoxical risk patterns at round-number thresholds, similar to figures in the paper.
+
+**Why it shows you understood the paper:** This project shows you understand the core phenomenon of threshold-induced artifacts by reproducing the key visual evidence using real data and the authors' codebase.
+
+**Grounded in:** Observed mortality risk curves often show discontinuities and counter-causal non-monotonicities at round-number thresholds (e.g., serum creatinine at 3.5 mg/dL).
+
+**Tech stack:** Python 3.11, Jupyter Notebook, matplotlib, pandas, scikit-learn
+
+**Data:** Use the MIMIC ICU dataset as a substitute for the paper's clinical data, accessed via publicly available MIMIC-III or MIMIC-IV repositories.
+
+**Build it:**
+
+1. Clone the authors' repository at https://github.com/AdaptInfer/DeathByRoundNumbers and explore the provided notebooks.
+2. Download and preprocess a public MIMIC dataset focusing on pneumonia or ICU patient lab values including serum creatinine.
+3. Run the authors' notebook to generate mortality risk curves for serum creatinine and identify discontinuities at round-number thresholds.
+4. Modify the notebook to produce clear plots highlighting the threshold effects and add explanatory comments.
+5. Write a README summarizing the findings and linking them to the paper's key results.
+
+**Verified links from the paper:**
+
+- <https://github.com/AdaptInfer/DeathByRoundNumbers> — released by the paper's authors
+
+**Ships as:** A GitHub repo with a Jupyter notebook reproducing mortality risk curve plots showing threshold discontinuities, plus a README explaining the connection to the paper.
+
+**Stretch goal:** Add automated statistical tests from the authors' utilities to detect discontinuities in the plotted risk curves.
+
+### Intermediate — Detect Threshold-Induced Risk Artifacts Using Glass-Box ML
+*Effort: 1-3 weekends, ~20 hours*
+
+You implement the paper's core glass-box ML method using generalized additive models (GAMs) with boosted decision trees on a public ICU dataset. You detect and quantify discontinuities and paradoxical risk patterns caused by round-number clinical thresholds. You compare your results to a simple baseline model like logistic regression without GAM components.
+
+**Why it shows you understood the paper:** This project demonstrates your ability to reimplement the paper's main methodological contribution and apply it to real data, validating the presence of threshold artifacts and understanding their statistical signatures.
+
+**Grounded in:** The authors developed a glass-box machine learning model using generalized additive models (GAMs) trained with boosted decision trees to detect discontinuities and non-monotonicities in mortality risk curves caused by threshold-based clinical decisions.
+
+**Tech stack:** Python 3.11, Jupyter Notebook, pandas, scikit-learn, interpretML or pygam for GAMs, xgboost or lightgbm
+
+**Data:** Use the MIMIC ICU dataset (MIMIC-III or MIMIC-IV) as a public substitute for the paper's clinical datasets.
+
+**Build it:**
+
+1. Preprocess the MIMIC dataset to extract relevant clinical variables and mortality outcomes.
+2. Implement a GAM model with boosted decision trees to model mortality risk as a function of continuous predictors.
+3. Apply automated tests or visualizations to identify discontinuities and paradoxical risk patterns at round-number thresholds.
+4. Train a baseline logistic regression model and compare its risk curve smoothness and artifact detection to the GAM model.
+5. Document the methodology, results, and interpretation in a Jupyter notebook and README.
+
+**Verified links from the paper:**
+
+- <https://github.com/AdaptInfer/DeathByRoundNumbers> — released by the paper's authors
+
+**Ships as:** A GitHub repo containing code and notebooks that implement the glass-box ML approach, detect threshold artifacts, compare to baseline, and report findings.
+
+**Stretch goal:** Incorporate longitudinal data slices to observe changes in threshold effects over time, mimicking the paper's longitudinal analysis.
+
+### Advanced — Model Treatment Confounding to Improve Threshold Bias Detection
+*Effort: a few weeks, ~40+ hours*
+
+You extend the glass-box ML model to explicitly incorporate treatment variables and their dose-dependent effects, addressing the paper's limitation about unmodeled patient-specific treatments. Using public ICU data augmented with treatment proxies or simulated treatment variables, you analyze how treatment confounding affects risk estimates and threshold artifact detection. You propose a method to adjust risk curves dynamically to better reflect true patient risk.
+
+**Why it shows you understood the paper:** This project tackles a key limitation and future direction of the paper by integrating treatment confounding into interpretable risk models, demonstrating deep comprehension and original extension of the research.
+
+**Grounded in:** Extension of models to incorporate ongoing, dose-dependent treatments into risk assessments; AI models trained on observational data can underestimate true patient risk due to confounding from effective treatments.
+
+**Tech stack:** Python 3.11, Jupyter Notebook, pandas, scikit-learn, interpretML or pygam, xgboost or lightgbm, causal inference libraries like DoWhy or EconML (optional)
+
+**Data:** Use MIMIC ICU dataset with available treatment records or simulate treatment variables based on clinical thresholds to model confounding effects.
+
+**Build it:**
+
+1. Extract or simulate treatment variables from the ICU dataset aligned with clinical thresholds.
+2. Extend the GAM boosted tree model to include treatment variables and model their dose-dependent effects on mortality risk.
+3. Analyze how including treatment confounding changes the detection and interpretation of threshold-induced risk artifacts.
+4. Implement visualization and statistical tests to compare risk curves with and without treatment adjustment.
+5. Write a detailed report and notebook documenting methodology, results, and implications for clinical decision support.
+
+**Verified links from the paper:**
+
+- <https://github.com/AdaptInfer/DeathByRoundNumbers> — released by the paper's authors
+
+**Ships as:** A GitHub repo with extended glass-box ML code modeling treatment confounding, analysis notebooks, and a report discussing improved risk artifact detection and clinical implications.
+
+**Stretch goal:** Prototype a simple real-time clinical decision support dashboard that dynamically adjusts thresholds based on model outputs.
+
+_The MIMIC dataset is used as a public substitute for the paper's ICU datasets; access requires credentialing and data use agreements. Treatment variables may be incomplete or require simulation for the advanced project._

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-periklis-a-papakonstantinou"
-source_hash: "a678eeffb3aaa4d3c15aa8e320548b1458bd1d6e2230d7b1d15e02479eb60590"
+source_hash: "cdefe799cde5f0cd52c3cde38e7e0b89d87e072ee9b10f437a2efbc1715a8e6d"
 sequence: 104
 generator: "outreach-garden: managed"
 ---
@@ -141,3 +141,87 @@ A direct presentation by the authors provides a concise overview of their novel 
 
 - [Information Theory, Lecture 1: Defining Entropy and Information - Oxford Mathematics 3rd Yr Lecture](https://www.youtube.com/watch?v=ScX2aBFyrVU) — also for: Byte Latent Transformer: Patches Scale Better Than Tokens (Luke S. Zettlemoyer)
 - [Sublinear Algorithms, by Prof. Michael Kapralov](https://www.youtube.com/watch?v=4m9MJu1sZmM) — also for: Palindrome Recognition In The Streaming Model (Funda Ergün)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder to demonstrate your understanding of the paper "Query Lower Bounds for Correlation Clustering under Memory Constraints." The beginner project recreates a core theoretical lower bound result via simulation and visualization using familiar tools. The intermediate project implements and empirically verifies the memory-query tradeoff lower bound in the random query model on synthetic graphs, requiring new skills in algorithm design and statistical estimation. The advanced project extends the paper's framework by exploring tighter lower bounds in the general graph model using adaptive neighbor queries, addressing a stated limitation and involving deeper algorithmic experimentation and analysis.
+
+### Beginner — Simulate and Visualize Query Lower Bound in Adjacency-Matrix Model
+*Effort: a weekend, ~8 hours*
+
+You build a simulation that models the adjacency-matrix query process for correlation clustering on small synthetic graphs and empirically demonstrate the Ω(n/ε²) query lower bound by plotting query counts versus approximation error. You visualize how query complexity grows as the additive error ε decreases, reproducing the core intuition behind Theorem 1.
+
+**Why it shows you understood the paper:** This project shows you grasp the fundamental query complexity tradeoff in the adjacency-matrix model and can translate the theoretical lower bound into an empirical demonstration using simulation and visualization.
+
+**Grounded in:** Proved a tight Ω(n/ε²) query lower bound for approximating correlation clustering cost within additive error εn² in the adjacency-matrix query model.
+
+**Tech stack:** Python 3.11, Jupyter Notebook, matplotlib, numpy
+
+**Data:** Synthetic complete graphs generated with random edge signs to simulate correlation clustering instances.
+
+**Build it:**
+
+1. Generate small complete graphs with n nodes and random ±1 edge labels representing similarity/dissimilarity.
+2. Implement a simple query simulator that counts adjacency-matrix queries made to estimate clustering cost within additive error εn².
+3. Vary ε and measure the minimum number of queries needed to achieve the error bound using repeated trials.
+4. Plot query counts against 1/ε² to visualize the Ω(n/ε²) lower bound scaling.
+5. Write a README explaining the connection between the simulation and the paper's Theorem 1.
+
+**Ships as:** A Jupyter notebook with simulation code, plots showing query complexity scaling, and a README linking the results to the paper's adjacency-matrix query lower bound.
+
+**Stretch goal:** Add a comparison plot showing query complexity if memory constraints are introduced, hinting at the memory-query tradeoff.
+
+### Intermediate — Empirical Study of Memory-Query Tradeoff in Random Query Model
+*Effort: 2 weekends, ~20 hours*
+
+You implement an algorithm that estimates correlation clustering cost on synthetic graphs using random queries under varying memory constraints. You empirically verify the memory-query tradeoff lower bound q = Ω(min{n/ε², n^(3/2)/γ^(1/2)}) for γ < 1 and q = Ω(n/ε²) for γ ≥ 1, comparing query counts and memory usage. This requires designing a memory-limited estimator and measuring its performance.
+
+**Why it shows you understood the paper:** This project demonstrates your ability to reimplement the paper's core memory-query tradeoff result (Theorem 2) from scratch, applying theoretical bounds to algorithm design and empirical validation on synthetic data.
+
+**Grounded in:** Established the first non-trivial memory-query tradeoff lower bound in the random query model, showing that limited memory algorithms require significantly more queries.
+
+**Tech stack:** Python 3.11, Jupyter Notebook, numpy, matplotlib
+
+**Data:** Synthetic complete graphs with random ±1 edge labels, generated on the fly to simulate correlation clustering instances.
+
+**Build it:**
+
+1. Implement a random query sampling procedure that queries random vertex pairs and stores limited memory summaries.
+2. Design a memory-constrained estimator for correlation clustering cost that uses γ n bits of memory.
+3. Run experiments varying memory parameter γ and additive error ε, recording the number of queries q needed to achieve the error bound.
+4. Plot q versus γ and ε to empirically observe the tradeoff q = Ω(min{n/ε², n^(3/2)/γ^(1/2)}) for γ < 1 and q = Ω(n/ε²) for γ ≥ 1.
+5. Document the methodology, results, and how they relate to Theorem 2 in the paper.
+
+**Ships as:** A Jupyter notebook with code implementing the memory-limited estimator, experimental results, plots illustrating the memory-query tradeoff, and a detailed README.
+
+**Stretch goal:** Extend the estimator to handle noisy queries simulating the PD-BHP problem variant introduced in the paper.
+
+### Advanced — Exploring Tighter Lower Bounds in the General Graph Model with Adaptive Neighbor Queries
+*Effort: 3-4 weeks*
+
+You develop and experimentally evaluate algorithms and query strategies for correlation clustering cost approximation in the general graph model, focusing on adaptive neighbor queries. You attempt to empirically approach tighter lower bounds beyond the paper's Ω(n/ε) baseline, addressing the paper's stated limitation about non-tight bounds in this model. This involves implementing adaptive query strategies, analyzing their query complexity under memory constraints, and comparing to baseline random or adjacency-matrix queries.
+
+**Why it shows you understood the paper:** This project tackles a key open problem and limitation from the paper, showing deep engagement with the theoretical challenges and the ability to extend the paper's framework through algorithmic innovation and empirical analysis.
+
+**Grounded in:** The lower bound in the general graph model is not tight and leaves room for sharper results; some technical challenges remain in fully characterizing tight bounds under adaptive neighbor queries.
+
+**Tech stack:** Python 3.11, Jupyter Notebook, numpy, matplotlib, networkx
+
+**Data:** Synthetic sparse and dense graphs generated with controllable degree distributions to simulate general graph model scenarios.
+
+**Build it:**
+
+1. Implement graph generators to create synthetic graphs with varying density and degree distributions.
+2. Implement adaptive neighbor query algorithms that select queries based on previous responses to approximate correlation clustering cost.
+3. Measure query complexity and approximation error under different memory constraints and compare to baseline random and adjacency-matrix query algorithms.
+4. Analyze how adaptive strategies impact query complexity and whether tighter lower bounds can be empirically observed.
+5. Document findings, challenges, and potential theoretical implications in a comprehensive report.
+
+**Ships as:** A GitHub repository with code for adaptive query algorithms, experimental results, plots comparing query complexities, and a detailed technical report discussing the extension of lower bounds in the general graph model.
+
+**Stretch goal:** Incorporate Fourier-analytic techniques or reductions inspired by the PD-BHP problem to theoretically justify observed empirical trends.
+
+_No code or datasets were released by the paper's authors; synthetic graph data must be generated to simulate the query models and clustering instances._

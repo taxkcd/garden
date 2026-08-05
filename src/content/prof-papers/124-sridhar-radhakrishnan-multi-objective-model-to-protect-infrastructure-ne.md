@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-sridhar-radhakrishnan"
-source_hash: "256eac8530c9944674e99243e59ed31b2fa66d6350e7bd9323173792d3f60828"
+source_hash: "da2ca99dec0de18ae2db5098c7ef8f29efb0424a03a057bab7abcfe398e022cf"
 sequence: 124
 generator: "outreach-garden: managed"
 ---
@@ -127,3 +127,87 @@ Understanding the broader context and motivation behind the paper’s approach t
 *How the paper uses it:* These talks provide background on disinformation spread, a key element modeled in the paper.
 
 ▶ ['Fake News' explained: How disinformation spreads](https://www.youtube.com/watch?v=8fQdzVbQlaU) — Global News · 7 years ago
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive learning path to demonstrate understanding of the paper's multilayer network model for disinformation-driven infrastructure disruption. The beginner project recreates a core simulation mechanism (SIR disinformation spread via cellular automata) on a small synthetic network. The intermediate project implements the tri-objective optimization model using NSGA-II on a simplified multilayer network with public or synthetic data, comparing disruption metrics. The advanced project extends the model by incorporating asynchronous update schemes in the SIR simulation to address a stated limitation, evaluating effects on optimization outcomes.
+
+### Beginner — SIR Disinformation Spread Simulation on a Small Multilayer Network
+*Effort: a weekend, ~8 hours*
+
+You build a discrete-time cellular automata simulation of the SIR model for disinformation spread on a small synthetic social network layer connected to a simple physical infrastructure layer. The simulation visualizes infection states over time and tracks cascading effects on the physical layer via inter-layer links.
+
+**Why it shows you understood the paper:** This project demonstrates you understand the paper's core mechanism of modeling disinformation diffusion with a cellular automaton SIR model and its cascading impact on infrastructure nodes.
+
+**Grounded in:** Implementation of a discrete-time SIR model using cellular automata to simulate disinformation diffusion.
+
+**Tech stack:** Python 3.11, NetworkX, Matplotlib, Jupyter Notebook
+
+**Data:** Synthetic small multilayer network generated programmatically to mimic social and physical layers with inter-layer links.
+
+**Build it:**
+
+1. Generate a small synthetic multilayer network with a social layer and a physical layer using NetworkX.
+2. Implement the discrete-time SIR cellular automata model on the social layer with probabilistic infection and recovery.
+3. Define inter-layer links connecting social nodes to physical nodes and model cascading disruption effects.
+4. Visualize the infection states over time and the resulting impact on the physical layer's node states.
+5. Document the simulation parameters and how they relate to the paper's model.
+
+**Ships as:** A Jupyter Notebook with code and visualizations showing SIR disinformation spread and cascading physical disruptions on a small multilayer network.
+
+**Stretch goal:** Add parameter controls to experiment with infection and recovery probabilities and observe effects on spread dynamics.
+
+### Intermediate — Tri-objective Optimization of Disinformation Attacks Using NSGA-II
+*Effort: 2 weekends, ~20 hours*
+
+You implement the tri-objective optimization model from the paper to select nodes for disinformation injection and inter-layer links to add, minimizing attack cost, physical network maximum flow, and time to disruption. You apply NSGA-II to find Pareto-optimal solutions on a smaller multilayer network synthesized to approximate the Facebook social network and a simplified power grid.
+
+**Why it shows you understood the paper:** This project shows you can translate the paper's multi-objective optimization formulation into code, apply evolutionary algorithms, and evaluate trade-offs between cost, disruption, and speed as the paper does.
+
+**Grounded in:** Formulation of a tri-objective optimization model balancing attack cost, network flow disruption, and time to disruption; Use of NSGA-II evolutionary algorithm to identify Pareto-optimal attack strategies.
+
+**Tech stack:** Python 3.11, NetworkX, DEAP (Distributed Evolutionary Algorithms in Python), NumPy, Matplotlib
+
+**Data:** Synthetic multilayer network data approximating the paper's Facebook social network and Italian power grid layers, generated programmatically due to lack of released datasets.
+
+**Build it:**
+
+1. Generate or load a synthetic multilayer network with social and physical layers and inter-layer links.
+2. Implement the tri-objective optimization problem: define objectives for attack cost, max flow reduction, and time to disruption.
+3. Integrate the NSGA-II algorithm using DEAP to optimize node selection and inter-layer link additions.
+4. Run the optimization and analyze the Pareto front, plotting trade-offs between objectives.
+5. Compare results against a simple baseline such as random node selection.
+6. Write a README explaining the model, optimization approach, and interpretation of results.
+
+**Ships as:** A Python project repository with code to run NSGA-II optimization on a multilayer network and visualizations of Pareto-optimal trade-offs.
+
+**Stretch goal:** Incorporate a simple defensive strategy baseline that protects certain nodes and compare optimization outcomes.
+
+### Advanced — Asynchronous SIR Simulation and Its Impact on Disinformation Attack Optimization
+*Effort: 3-4 weeks*
+
+You extend the paper's synchronous cellular automata SIR model by implementing an asynchronous update scheme for disinformation spread in the social layer. You then integrate this asynchronous simulation into the tri-objective NSGA-II optimization framework to study how asynchronous updates affect the timing and effectiveness of attack strategies.
+
+**Why it shows you understood the paper:** This project addresses a key limitation and future direction from the paper by modifying the core diffusion model and analyzing its impact on optimization results, demonstrating deep comprehension and ability to extend the research.
+
+**Grounded in:** The study's limitation of synchronous updates in the cellular automata possibly overestimating spread speed; future direction to incorporate asynchronous or event-driven update mechanisms.
+
+**Tech stack:** Python 3.11, NetworkX, DEAP, NumPy, Matplotlib, Jupyter Notebook
+
+**Data:** Synthetic multilayer network data as in the intermediate project, reused for consistency.
+
+**Build it:**
+
+1. Review and understand the synchronous cellular automata SIR implementation from the intermediate project.
+2. Implement an asynchronous update mechanism where nodes update infection states in a randomized or event-driven order each time step.
+3. Validate the asynchronous model by comparing spread dynamics against the synchronous version on the same network.
+4. Integrate the asynchronous SIR simulation into the tri-objective NSGA-II optimization framework.
+5. Run optimization experiments to compare Pareto fronts and disruption timing between synchronous and asynchronous models.
+6. Document findings on how asynchronous updates influence optimization outcomes and discuss implications.
+
+**Ships as:** A comprehensive codebase and report comparing synchronous vs asynchronous SIR models within the tri-objective optimization framework, with visualizations and analysis.
+
+**Stretch goal:** Incorporate real-time data integration or stochastic parameter variability to further enhance realism.

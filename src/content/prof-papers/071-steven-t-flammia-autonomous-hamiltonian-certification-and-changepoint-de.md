@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-steven-t-flammia"
-source_hash: "b41976dd3b787dcc04d48b22105270b8a50ff0d0631d6904b3afa315666b012b"
+source_hash: "6a9c0b512df7d18a3b3a80630400477332df73df9169e8dbecd939b1457b73c1"
 sequence: 71
 generator: "outreach-garden: managed"
 ---
@@ -123,3 +123,87 @@ Quantum Hamiltonian certification verifies whether a quantum device's Hamiltonia
 *How the paper uses it:* This is the core method developed in the paper to autonomously certify quantum device Hamiltonians with efficient resource scaling.
 
 ▶ [Cambyse Rouze - Heisenberg-limited Hamiltonian learning ...](https://www.youtube.com/watch?v=YkS4i0IHOpA) — Institute for Pure & Applied Mathematics (IPAM) · 42:41
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a learning ladder to demonstrate understanding of the autonomous Hamiltonian certification and changepoint detection protocols from the paper. The beginner project reproduces a core numerical experiment using familiar tools to grasp the certification concept. The intermediate project implements the online changepoint detection algorithm on simulated Hamiltonian data, introducing adaptive measurement logic and classical CUSUM statistics. The advanced project extends the protocol to address a stated limitation by exploring robustness to SPAM errors via noise modeling and mitigation techniques, pushing toward practical applicability.
+
+### Beginner — Simulate and Visualize Hamiltonian Certification Protocol
+*Effort: a weekend, ~8 hours*
+
+You build a Python notebook that simulates the autonomous Hamiltonian certification protocol on a small synthetic single-qubit Hamiltonian system. You reproduce the certification test distinguishing whether the unknown Hamiltonian is close or far from a target by computing the Frobenius norm difference and plotting acceptance/rejection probabilities similar to the paper's numerical experiments.
+
+**Why it shows you understood the paper:** This project shows you understand the core certification problem, the role of single-qubit adaptive measurements, and how the protocol uses statistical tests to certify closeness of Hamiltonians with efficient resource scaling.
+
+**Grounded in:** Certification protocol distinguishes whether ∥H − H0∥_F ≥ ϵ or ≤ O(ϵ/√n) with high probability and efficient resource scaling.
+
+**Tech stack:** Python 3.11, Jupyter Notebook, NumPy, Matplotlib
+
+**Data:** Synthetic single-qubit Hamiltonians generated in code to simulate small perturbations around a target Hamiltonian.
+
+**Build it:**
+
+1. Implement code to generate random single-qubit Hamiltonians and compute their Frobenius norm difference from a fixed target Hamiltonian.
+2. Simulate single-qubit stabilizer product state preparations and measurement outcomes based on the Hamiltonian evolution.
+3. Implement the certification statistical test to decide if the unknown Hamiltonian is close or far from the target.
+4. Plot acceptance and rejection probabilities as a function of perturbation size, reproducing a figure analogous to the paper's numerical results.
+5. Write a README explaining the certification protocol and how the simulation validates its performance.
+
+**Ships as:** A Jupyter notebook with simulation code, plots demonstrating certification accuracy, and a README explaining the protocol and results.
+
+**Stretch goal:** Add simple noise models to simulate imperfect single-qubit gates and observe their effect on certification accuracy.
+
+### Intermediate — Implement Online Changepoint Detection for Hamiltonian Drift
+*Effort: 2 weekends, ~20 hours*
+
+You implement the online changepoint detection algorithm based on the classical CUSUM procedure adapted to Hamiltonian certification. Using simulated time-series data of single-qubit measurement outcomes under drifting Hamiltonians, you detect changepoints where the Hamiltonian parameters shift beyond a threshold. You compare detection delay and false alarm rates against a naive thresholding baseline.
+
+**Why it shows you understood the paper:** This project demonstrates comprehension of the paper's core online changepoint detection contribution, including how adaptive single-qubit measurements feed into classical statistical inference to monitor Hamiltonian calibration in real time.
+
+**Grounded in:** An online changepoint detection algorithm based on CUSUM that detects Hamiltonian drifts with asymptotically optimal delay scaling.
+
+**Tech stack:** Python 3.11, Jupyter Notebook, NumPy, SciPy, Matplotlib
+
+**Data:** Simulated sequential single-qubit measurement data generated from time-evolving Hamiltonians with controlled changepoints in parameters.
+
+**Build it:**
+
+1. Simulate time-series data of single-qubit measurement outcomes under a Hamiltonian that changes at unknown times.
+2. Implement the CUSUM algorithm to process measurement statistics and detect changepoints online.
+3. Implement a baseline changepoint detection method using simple thresholding for comparison.
+4. Evaluate detection delay and false alarm rates for both methods across multiple simulation runs.
+5. Plot performance metrics and write a README explaining the changepoint detection algorithm and results.
+
+**Ships as:** A Jupyter notebook implementing online changepoint detection with plots comparing CUSUM and baseline performance, plus a README detailing methodology and findings.
+
+**Stretch goal:** Incorporate adaptive measurement selection strategies to optimize detection speed and robustness.
+
+### Advanced — Robust Hamiltonian Certification under SPAM Errors
+*Effort: 3-4 weeks*
+
+You extend the autonomous Hamiltonian certification protocol by modeling state preparation and measurement (SPAM) errors and developing mitigation techniques to improve robustness. You simulate certification under noisy single-qubit gates and imperfect measurements, implement noise-aware statistical tests or error mitigation, and evaluate detection sensitivity improvements. This addresses a key limitation noted in the paper.
+
+**Why it shows you understood the paper:** This project shows deep engagement with the paper's limitations and future directions, applying practical noise modeling and mitigation to enhance protocol applicability on near-term quantum devices.
+
+**Grounded in:** Protocols require precise single-qubit gate calibration and are not resistant to SPAM errors, which is left for future work.
+
+**Tech stack:** Python 3.11, Jupyter Notebook, NumPy, SciPy, Matplotlib
+
+**Data:** Simulated single-qubit measurement data with injected SPAM noise models reflecting realistic gate and measurement imperfections.
+
+**Build it:**
+
+1. Research common SPAM error models relevant to single-qubit gates and measurements.
+2. Extend the certification simulation to include SPAM noise in state preparation and measurement outcomes.
+3. Develop and implement noise-aware statistical tests or error mitigation techniques to compensate for SPAM errors.
+4. Evaluate and compare certification accuracy and detection sensitivity with and without SPAM mitigation.
+5. Document the methodology, results, and implications for practical quantum device calibration in a detailed README.
+
+**Ships as:** A comprehensive Jupyter notebook and report demonstrating improved certification robustness under SPAM errors, with code, plots, and analysis.
+
+**Stretch goal:** Explore integration of direct fidelity estimation techniques as an alternative measurement scheme to further improve scaling and robustness.
+
+_No authors' own code or datasets are publicly available for this paper; all data must be simulated based on the paper's descriptions and standard quantum Hamiltonian models._

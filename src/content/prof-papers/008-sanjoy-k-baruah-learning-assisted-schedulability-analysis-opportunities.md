@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-baruah"
-source_hash: "0d56e6d4cf2f09db007cb075185a5c4682fc65af20765854af615c0804a004ad"
+source_hash: "8d8e32a81f1efe36a0d43c91760bfdc2d43a9b86b153c69ea090211efbd89c19"
 sequence: 8
 generator: "outreach-garden: managed"
 ---
@@ -116,3 +116,87 @@ This concept explains how to determine whether a set of real-time tasks can meet
 ## Already in your library
 
 - [Lecture 23: Computational Complexity](https://www.youtube.com/watch?v=moPtwq_cVH8) — also for: Learning-assisted schedulability analysis: opportunities and limitations (Sanjoy K. Baruah)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive learning path to demonstrate your understanding of the paper "Learning-assisted schedulability analysis: opportunities and limitations." Starting with a beginner-level reproduction of the certificate-based verification method for Fixed-Priority schedulability, you then implement the core deep learning classification framework and compare it to a baseline at the intermediate level. Finally, the advanced project extends the framework to multiprocessor Fixed-Priority scheduling, addressing one of the paper's stated future directions and requiring new skills in scheduling theory and neural network design.
+
+### Beginner — Certificate Verification for Fixed-Priority Schedulability
+*Effort: a weekend, ~8 hours*
+
+You build a small Python tool that implements the certificate-based verification method described in the paper to eliminate false positives in Fixed-Priority schedulability analysis. The tool takes as input a task set and a candidate certificate (e.g., response time values) and verifies schedulability using polynomial-time algorithms.
+
+**Why it shows you understood the paper:** This project shows you understand the key safety guarantee mechanism of the paper: how certificates can be used to verify deep learning predictions and eliminate unsafe false positives, a critical contribution for safety-critical systems.
+
+**Grounded in:** Proposal and demonstration of a certificate-based verification method to eliminate unsafe false positives in Fixed-Priority schedulability analysis.
+
+**Tech stack:** Python 3.11
+
+**Data:** Synthetic sporadic task sets generated according to the paper's description of constrained-deadline sporadic tasks on uniprocessors.
+
+**Build it:**
+
+1. Implement a generator for synthetic constrained-deadline sporadic task sets with parameters similar to those in the paper.
+2. Implement the polynomial-time response time analysis algorithm for Fixed-Priority scheduling to verify schedulability certificates.
+3. Create a command-line interface that accepts a task set and a certificate (response times) and outputs whether the certificate verifies schedulability.
+4. Test the verifier on known schedulable and unschedulable task sets with and without correct certificates.
+5. Document the verification method and its role in eliminating false positives as per the paper.
+
+**Ships as:** A Python repository with code and README demonstrating certificate verification for Fixed-Priority schedulability, including example task sets and certificates.
+
+**Stretch goal:** Add a simple visualization of task response times and deadlines to illustrate why a certificate is valid or invalid.
+
+### Intermediate — Deep Learning Classifier for Fixed-Priority Schedulability
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement the core deep learning framework from the paper to classify Fixed-Priority schedulability of sporadic task systems. You train a multilayer perceptron on synthetic task sets and evaluate classification accuracy and false positive rates. You then implement the certificate-based verification step to eliminate false positives and report verified accuracy.
+
+**Why it shows you understood the paper:** This project demonstrates your ability to reproduce the paper's main method and results, including the critical step of certificate generation and verification to guarantee safety, showing comprehension of both ML and real-time scheduling aspects.
+
+**Grounded in:** Deep learning classifiers achieve over 92% accuracy for Fixed-Priority schedulability analysis; certificate-based verification eliminates all false positives.
+
+**Tech stack:** Python 3.11, PyTorch, scikit-learn, NumPy, Matplotlib
+
+**Data:** Synthetic constrained-deadline sporadic task sets generated programmatically as per the paper's workload description; no public dataset available.
+
+**Build it:**
+
+1. Implement a synthetic task set generator matching the paper's constrained-deadline sporadic task model.
+2. Build a multilayer perceptron classifier in PyTorch to predict schedulability from task parameters.
+3. Train and validate the classifier on generated datasets, measuring accuracy and false positive rate.
+4. Implement certificate generation logic for positive predictions and the polynomial-time verification algorithm from the beginner project.
+5. Evaluate the verified classifier accuracy after applying certificate verification.
+6. Plot and report metrics comparable to those in the paper (accuracy, verified accuracy, false positives).
+
+**Ships as:** A Python repository with code, training scripts, evaluation metrics, and a README explaining the deep learning framework and certificate verification for Fixed-Priority schedulability.
+
+**Stretch goal:** Experiment with a more advanced neural network architecture (e.g., deeper MLP or simple attention layer) to see if accuracy improves.
+
+### Advanced — Extending Learning-Assisted Schedulability Analysis to Multiprocessor Fixed-Priority Scheduling
+*Effort: 3-4 weeks*
+
+You extend the paper's framework to multiprocessor Fixed-Priority scheduling, a future direction noted by the authors. You implement a deep learning classifier for partitioned Fixed-Priority schedulability on synthetic multiprocessor task sets, develop or adapt certificate-based verification methods, and evaluate accuracy and verification performance.
+
+**Why it shows you understood the paper:** This project tackles a stated limitation and future direction of the paper, requiring you to understand the theoretical framework, adapt it to a more complex scheduling paradigm, and integrate advanced ML techniques, demonstrating research-level comprehension and initiative.
+
+**Grounded in:** Extending the framework to multiprocessor scheduling problems that are in NP, such as partitioned Fixed-Priority scheduling.
+
+**Tech stack:** Python 3.11, PyTorch, NumPy, scikit-learn, Matplotlib
+
+**Data:** Synthetic multiprocessor constrained-deadline sporadic task sets generated according to multiprocessor Fixed-Priority scheduling models; no public dataset available.
+
+**Build it:**
+
+1. Research and implement a synthetic task set generator for multiprocessor partitioned Fixed-Priority scheduling.
+2. Adapt or design a certificate-based verification method suitable for multiprocessor Fixed-Priority schedulability.
+3. Build and train a deep learning classifier (e.g., MLP or Graph Attention Network) to predict schedulability on multiprocessor task sets.
+4. Integrate certificate generation and verification to eliminate false positives.
+5. Evaluate classifier accuracy, verified accuracy, and runtime performance compared to exact analysis.
+6. Document challenges, methodology, and results in a detailed README.
+
+**Ships as:** A comprehensive Python repository demonstrating an extended learning-assisted schedulability analysis framework for multiprocessor Fixed-Priority scheduling, including data generation, model training, verification, and evaluation.
+
+**Stretch goal:** Explore hybrid verification methods combining approximate verification with deep learning for improved scalability or accuracy.

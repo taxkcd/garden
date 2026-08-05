@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-daniel-grosu"
-source_hash: "a3f46e091f94876bf7097bcf4363f06e62efb59402f0430831847f97c9678cb3"
+source_hash: "c59a6d28ec8dee50073eac11297b11c7ba0a9d47cc7a2692eccac5ec75e3641c"
 sequence: 122
 generator: "outreach-garden: managed"
 ---
@@ -143,3 +143,93 @@ Clique partitioning divides a graph into cliques (fully connected subgraphs), wh
 ## Already in your library
 
 - [What is a Bipartite Graph? | Graph Theory](https://www.youtube.com/watch?v=HqlUbSA9cEY) — also for: Beyond the classification theorem of Cameron, Goethals, Seidel, and Shult (Zilin Jiang)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progression from a small-scale demonstration of the CPGR algorithm's core mechanism to a full implementation and evaluation on real graphs, culminating in an extension addressing one of the paper's key limitations. The beginner project familiarizes you with bipartite clique partitioning and graph restructuring on synthetic data. The intermediate project uses the authors' released code to apply CPGR on real-world graphs and compare edge reduction and runtime against a baseline. The advanced project explores adapting CPGR to dynamic graphs, a future direction proposed by the paper, demonstrating your ability to extend the method beyond static settings.
+
+### Beginner — CPGR Bipartite Clique Partitioning Demo
+*Effort: a weekend, ~8 hours*
+
+You build a small Python script that constructs a synthetic bipartite graph, identifies bipartite cliques of size δ=2, and applies the CPGR restructuring step by replacing each clique with a tripartite graph by adding a new vertex. You visualize the original and restructured graphs and report the edge count before and after restructuring.
+
+**Why it shows you understood the paper:** This project demonstrates you understand the core CPGR mechanism of extracting bipartite cliques and restructuring the graph to reduce edges while preserving reachability, as well as the key idea of adding new vertices to replace cliques.
+
+**Grounded in:** The approach section describing CPGR's bipartite clique partitioning and tripartite graph replacement, and the key contribution of extracting multiple δ-cliques per iteration.
+
+**Tech stack:** Python 3.11, NetworkX, Matplotlib
+
+**Data:** Synthetic bipartite graphs generated in code with controlled size and density to illustrate clique extraction.
+
+**Build it:**
+
+1. Implement a function to generate a small bipartite graph with known bipartite cliques.
+2. Implement a function to identify bipartite cliques of size δ=2 in the graph.
+3. Implement the CPGR restructuring step: for each clique, add a new vertex and replace edges accordingly.
+4. Visualize the original and restructured graphs side-by-side using NetworkX and Matplotlib.
+5. Calculate and print the number of edges before and after restructuring.
+
+**Ships as:** A GitHub repo with a Python script and README showing the synthetic graph, clique extraction, restructuring steps, visualizations, and edge reduction metrics.
+
+**Stretch goal:** Add support for extracting multiple δ-cliques per iteration and demonstrate cumulative edge reduction.
+
+### Intermediate — CPGR Implementation and Evaluation on Real Graphs
+*Effort: 2 weekends, ~20 hours*
+
+You clone and run the authors' CPGR implementation from https://github.com/srabin1/CPGR-Paper, apply it to publicly available real-world bipartite graphs (e.g., from SNAP or KONECT datasets as substitutes), and compare edge reduction and runtime against a simple baseline such as the original graph or a naive edge pruning method. You reproduce metrics similar to the paper's key results on edge reduction and speedup for maximum bipartite matching.
+
+**Why it shows you understood the paper:** This project shows you can work with the authors' code, apply CPGR to real data, and quantitatively evaluate its benefits, demonstrating comprehension of the algorithm's practical impact and limitations.
+
+**Grounded in:** Key results showing up to 46.8% edge reduction on real graphs and up to 2.07× speedup for maximum bipartite matching using CPGR preprocessing.
+
+**Tech stack:** Python 3.11, C++ (if required by authors' code), NetworkX, Pandas, Matplotlib
+
+**Data:** Publicly available real-world bipartite graphs from SNAP or KONECT datasets used as substitutes for the paper's real-world graphs.
+
+**Build it:**
+
+1. Clone and set up the CPGR implementation from https://github.com/srabin1/CPGR-Paper according to its instructions.
+2. Download one or more publicly available bipartite graph datasets (e.g., from SNAP or KONECT).
+3. Run CPGR on these graphs and record edge counts and runtime.
+4. Implement or use an existing simple baseline (e.g., original graph or naive edge pruning) and measure the same metrics.
+5. Run a maximum bipartite matching algorithm (e.g., Dinitz's algorithm) on original and CPGR-restructured graphs, measuring runtime.
+6. Plot and report edge reduction percentages and speedups, comparing to the baseline.
+
+**Verified links from the paper:**
+
+- <https://github.com/srabin1/CPGR-Paper> — released by the paper's authors
+
+**Ships as:** A GitHub repo with scripts to run CPGR on real graphs, baseline comparisons, runtime and edge reduction plots, and a README explaining the evaluation.
+
+**Stretch goal:** Add evaluation of all-pairs shortest path speedup on CPGR-restructured graphs.
+
+### Advanced — Extending CPGR to Dynamic Graphs
+*Effort: 3+ weeks*
+
+You design and implement an extension of CPGR to handle dynamic bipartite graphs where edges and vertices can be added or removed over time. You develop an incremental update mechanism to maintain the clique partitioning and restructured graph efficiently without full recomputation. You evaluate your dynamic CPGR on synthetic dynamic graph streams and measure edge reduction and update time compared to static recomputation.
+
+**Why it shows you understood the paper:** This project tackles a key future direction from the paper, demonstrating deep understanding of CPGR's algorithmic structure and the challenges of dynamic graph processing, as well as ability to innovate beyond the original static setting.
+
+**Grounded in:** Future directions section proposing extension of CPGR to dynamic and streaming graph settings.
+
+**Tech stack:** Python 3.11, NetworkX, C++ (optional for performance), Matplotlib
+
+**Data:** Synthetic dynamic bipartite graphs generated by simulating edge/vertex insertions and deletions over time.
+
+**Build it:**
+
+1. Study the static CPGR algorithm and identify components that can be incrementally updated.
+2. Design data structures to maintain bipartite clique partitions and the restructured graph under dynamic updates.
+3. Implement incremental update functions for edge/vertex insertions and deletions.
+4. Generate synthetic dynamic bipartite graphs simulating realistic update patterns.
+5. Evaluate edge reduction, update runtime, and correctness compared to full static recomputation after each update.
+6. Document limitations and potential improvements.
+
+**Ships as:** A GitHub repo with code implementing dynamic CPGR, evaluation scripts, plots of update times and edge reductions over dynamic streams, and a detailed README discussing design and results.
+
+**Stretch goal:** Explore distributed or parallel implementations of dynamic CPGR leveraging the professor's expertise in distributed algorithms.
+
+_The authors' implementation is available only for the static CPGR algorithm; no code for dynamic extensions exists, so the advanced project requires original design and implementation. Public real-world bipartite graph datasets must be sourced externally as substitutes for the paper's real-world graphs._

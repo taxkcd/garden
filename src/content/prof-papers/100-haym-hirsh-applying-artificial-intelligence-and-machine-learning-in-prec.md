@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-haym-hirsh"
-source_hash: "fac7de3414e9bff42cf455025fb31ac3b7f6da158b99c4cd8cdbc173ca99eab5"
+source_hash: "565a665a42063bf663b3fab486d170510fe51afcb720f94314c9718f5639def9"
 sequence: 100
 generator: "outreach-garden: managed"
 ---
@@ -135,3 +135,89 @@ This concept covers the specific AI and machine learning approaches tailored to 
 *How the paper uses it:* The paper provides a comprehensive review of AI/ML methods applied to precision nutrition and their suitability for different PN tasks.
 
 ▶ [Applying Big Data, Machine Learning, and AI to Improve ...](https://www.youtube.com/watch?v=ilh2WyzNuw0) — Purina Institute · 1:04:43
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder to demonstrate your understanding of AI and machine learning applications in precision nutrition as discussed in the paper. The beginner project focuses on interpretability techniques for traditional ML models on nutritional data, the intermediate project involves reimplementing a core AI method for dietary response prediction using public microbiome data, and the advanced project extends the paper by integrating causal inference with graph neural networks to model diet-microbiome-host interactions, addressing a key future direction.
+
+### Beginner — Explainable ML on Nutritional Data with SHAP
+*Effort: a weekend, ~8 hours*
+
+You build a small pipeline that trains a tree-based model (e.g., Random Forest or XGBoost) to predict a simple dietary response or nutrient intake outcome from a synthetic or publicly available nutritional dataset. Then you apply SHAP (SHapley Additive exPlanations) to interpret feature contributions and visualize them.
+
+**Why it shows you understood the paper:** This project shows you understand the importance of model interpretability in precision nutrition AI, a key challenge highlighted in the paper, and can apply explainable AI techniques to complex dietary data.
+
+**Grounded in:** Mitigation strategies for model interpretability including SHAP and LIME for post-hoc explanation.
+
+**Tech stack:** Python 3.11, scikit-learn, XGBoost, SHAP, matplotlib, pandas, Jupyter Notebook
+
+**Data:** Use a small public nutritional dataset such as the NHANES dietary data subset or simulate compositional dietary intake data with realistic features as a substitute for the paper's data.
+
+**Build it:**
+
+1. Obtain or simulate a small nutritional dataset with features representing nutrient intake or food groups and a target dietary response variable.
+2. Preprocess the data including normalization and handling missing values.
+3. Train a tree-based model (Random Forest or XGBoost) to predict the dietary response.
+4. Apply SHAP to compute feature importance and generate summary plots.
+5. Write a README explaining the model, interpretability results, and their relevance to precision nutrition.
+
+**Ships as:** A Jupyter notebook and README demonstrating training, SHAP interpretability plots, and discussion of interpretability challenges in nutritional AI.
+
+**Stretch goal:** Add LIME explanations and compare with SHAP to deepen interpretability insights.
+
+### Intermediate — Predicting Individualized Dietary Responses with Tree Ensembles
+*Effort: 1-3 weekends, ~20 hours*
+
+You reimplement the paper's core approach of using tree-based ensemble methods to predict individualized dietary responses, leveraging gut microbiome features. You apply this to a public microbiome and dietary response dataset (e.g., the American Gut Project or a similar open microbiome dataset) and compare prediction accuracy against a simple baseline like linear regression.
+
+**Why it shows you understood the paper:** This project demonstrates your ability to implement and evaluate AI methods central to the paper's findings, including handling multimodal data and improving prediction accuracy with ensemble methods, reflecting the paper's key results.
+
+**Grounded in:** Tree-based methods and ensemble learning improve prediction accuracy for complex, non-linear relationships in PN data; gut microbiome features improve prediction of individualized dietary responses.
+
+**Tech stack:** Python 3.11, scikit-learn, XGBoost, pandas, numpy, matplotlib, Jupyter Notebook
+
+**Data:** Use publicly available gut microbiome and dietary response data such as from the American Gut Project or similar open datasets as a substitute for the paper's biobank data.
+
+**Build it:**
+
+1. Download and preprocess a public microbiome dataset with associated dietary response labels.
+2. Engineer features from microbiome data (e.g., taxa abundances) and combine with dietary intake features if available.
+3. Train a tree-based ensemble model (e.g., XGBoost) to predict dietary response outcomes.
+4. Train a baseline linear regression model for comparison.
+5. Evaluate and compare models using appropriate metrics (e.g., RMSE, R2).
+6. Document the pipeline, results, and relate findings to the paper's discussion on model suitability and microbiome integration.
+
+**Ships as:** A Jupyter notebook and README showing data preprocessing, model training, evaluation metrics, and discussion of ensemble methods' advantages in PN.
+
+**Stretch goal:** Incorporate SHAP explanations to interpret the ensemble model's predictions on microbiome features.
+
+### Advanced — Integrating Causal Inference and Graph Neural Networks for Diet-Microbiome Modeling
+*Effort: a few weeks, ~40+ hours*
+
+You develop a prototype that integrates causal inference frameworks with graph neural networks (GNNs) to model complex interactions between diet, gut microbiome, and host factors. This addresses the paper's limitation of lacking causal mechanistic understanding and underutilization of GNNs. You apply this approach to a synthesized multimodal dataset simulating diet-microbiome-host interactions or adapt a public dataset with graph structure approximations.
+
+**Why it shows you understood the paper:** This project tackles a key future direction from the paper by combining advanced AI methods (GNNs) with causal inference to improve mechanistic insights and predictive power in precision nutrition, demonstrating deep comprehension and research potential.
+
+**Grounded in:** Integration of causal inference frameworks with predictive AI models; increased use of graph neural networks for modeling complex diet-microbiome-host interactions; addressing limitations of data heterogeneity and interpretability.
+
+**Tech stack:** Python 3.11, PyTorch, PyTorch Geometric, causal inference libraries (DoWhy or CausalNex), pandas, numpy, Jupyter Notebook
+
+**Data:** No direct public dataset available; simulate a multimodal dataset representing diet, microbiome taxa as graph nodes, and host phenotypes with known causal relationships to demonstrate the method.
+
+**Build it:**
+
+1. Design and simulate a multimodal dataset with graph structure representing diet-microbiome-host interactions and known causal links.
+2. Implement a graph neural network model to predict dietary response or health outcomes from the graph data.
+3. Incorporate causal inference techniques (e.g., DoWhy) to identify and validate causal relationships within the model.
+4. Evaluate model performance and interpretability compared to non-causal baselines.
+5. Write detailed documentation explaining the integration of GNNs and causal inference, challenges addressed, and relevance to precision nutrition.
+6. Optionally, prepare a presentation or report to communicate the approach and findings.
+
+**Ships as:** A code repository with notebooks implementing GNN + causal inference on simulated data, comprehensive README explaining methodology, and discussion linking to the paper's future directions.
+
+**Stretch goal:** Apply the framework to a real multimodal dataset if accessible, or extend to retrieval-augmented generation for literature-informed causal priors.
+
+_No authors' own code or datasets were released for this paper; public microbiome datasets or synthetic data must be used as substitutes._

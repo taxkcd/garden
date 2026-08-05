@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-baruch-schieber"
-source_hash: "1d1a1bc1b36d4ab33f4b72f41083304b8591c03a8ce40516a1bfbc9242068a9b"
+source_hash: "923962566d4f0fa9d6d730fe82a02eb5ac778174d0e2dba3fd7a730a845c0357"
 sequence: 164
 generator: "outreach-garden: managed"
 ---
@@ -123,3 +123,86 @@ Energy-aware scheduling algorithms schedule jobs considering energy constraints,
 *How the paper uses it:* The paper proposes algorithms to schedule jobs under intermittent energy harvesting to maximize total job weight.
 
 ▶ [Energy-Aware Scheduling - Ali Zahir (University of Leicester)](https://www.youtube.com/watch?v=-b-rk7QGh9k) — hpcaiadvisorycouncil · 20:55
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progression for you to demonstrate understanding of the paper's core scheduling problem and algorithms. The beginner project reproduces the polynomial-time optimal algorithm for unweighted jobs with identical release times and due dates, using your existing programming skills. The intermediate project implements the greedy 1/2-approximation algorithm for arbitrary release times and due dates, adding algorithmic complexity and comparison against a baseline. The advanced project tackles a stated future direction by extending the model to handle online scheduling with unpredictable energy harvesting, exploring practical algorithm design beyond the paper's offline assumptions.
+
+### Beginner — Optimal Scheduling for Identical Release and Due Dates
+*Effort: a weekend, ~8 hours*
+
+You build a command-line program that implements the polynomial-time dynamic programming algorithm for scheduling unweighted unit-time jobs with identical release times and due dates under energy harvesting constraints. The program takes a small synthetic job set and energy harvesting profile as input and outputs an optimal schedule maximizing throughput.
+
+**Why it shows you understood the paper:** This project shows you understood the core problem formulation and the optimal dynamic programming approach for the simplest variant, demonstrating ability to translate the paper's algorithm into working code.
+
+**Grounded in:** Sect. 2 gives an optimal polynomial time dynamic programming algorithm for EAS when all jobs have identical release times and due dates.
+
+**Tech stack:** Python 3.11
+
+**Data:** Synthetic data you generate: a small set of unit-time jobs with identical release times and due dates, and an energy harvesting profile specifying energy availability in idle slots.
+
+**Build it:**
+
+1. Implement data structures to represent jobs (with release time, due date, energy need, weight) and energy harvesting profile.
+2. Implement the dynamic programming algorithm described in Sect. 2 to compute the optimal schedule for unweighted jobs with identical release times and due dates.
+3. Create a small synthetic dataset of jobs and energy harvesting slots to test the algorithm.
+4. Run the algorithm on the dataset and output the scheduled jobs and total throughput.
+5. Write a README explaining the problem, the algorithm, and instructions to run the code.
+
+**Ships as:** A Python script with example input and output demonstrating the optimal schedule and throughput, plus a README explaining the implementation and problem context.
+
+**Stretch goal:** Add visualization of the schedule timeline showing job execution and energy harvesting slots.
+
+### Intermediate — Greedy 1/2-Approximation Scheduling with Arbitrary Release and Due Dates
+*Effort: 1-2 weekends, ~15 hours*
+
+You implement the greedy 1/2-approximation algorithm for scheduling unweighted unit-time jobs with arbitrary release times and due dates under energy harvesting constraints. You generate or simulate a dataset of jobs with varying release/due dates and compare your greedy solution's throughput against a naive baseline (e.g., earliest deadline first without energy awareness).
+
+**Why it shows you understood the paper:** This project demonstrates your grasp of the paper's approximation algorithm for the more complex, NP-hard variant, and your ability to evaluate algorithmic performance against a baseline metric.
+
+**Grounded in:** Sect. 4 presents a greedy 1/2-approximation algorithm for EAS with arbitrary release times and due dates.
+
+**Tech stack:** Python 3.11
+
+**Data:** Synthetic dataset simulating jobs with arbitrary release times and due dates, unit processing times, and an energy harvesting profile; no public dataset available so you simulate data consistent with the paper's problem setting.
+
+**Build it:**
+
+1. Implement data structures for jobs with arbitrary release times, due dates, energy needs, and weights (unweighted in this case).
+2. Implement the greedy 1/2-approximation algorithm as described in Sect. 4.
+3. Implement a baseline scheduling algorithm (e.g., earliest deadline first ignoring energy constraints).
+4. Generate synthetic datasets with varying job parameters and energy harvesting profiles.
+5. Run both algorithms on the datasets, compute and compare total throughput achieved.
+6. Document the implementation, comparison results, and insights in a README.
+
+**Ships as:** A Python project with scripts to run the greedy and baseline algorithms on synthetic data, output throughput comparisons, and a README discussing the approximation guarantee and empirical performance.
+
+**Stretch goal:** Add parameterized experiments varying job density and energy availability to analyze approximation quality.
+
+### Advanced — Online Energy-Aware Scheduling with Unpredictable Harvesting
+*Effort: 3-4 weeks*
+
+You design and implement an online scheduling algorithm that adapts to dynamically arriving jobs and unpredictable energy harvesting profiles, addressing a key limitation and future direction of the paper. You simulate an online environment where jobs and energy arrivals are revealed over time, and evaluate your algorithm's throughput compared to offline greedy scheduling.
+
+**Why it shows you understood the paper:** This project tackles a stated open problem from the paper, showing your ability to extend the model beyond offline assumptions and design practical algorithms for real-world batteryless IoT scenarios.
+
+**Grounded in:** Future direction: Study online versions where energy harvesting profile or jobs arrive dynamically.
+
+**Tech stack:** Python 3.11
+
+**Data:** Synthetic online job streams and stochastic energy harvesting profiles simulated to mimic intermittent energy availability and job arrivals over time.
+
+**Build it:**
+
+1. Design an online scheduling algorithm that makes decisions based only on current and past information about jobs and energy harvesting.
+2. Implement a simulator that generates jobs and energy harvesting events over time, revealing them incrementally.
+3. Implement the online scheduling algorithm and an offline greedy baseline for comparison.
+4. Run simulations to evaluate throughput and analyze performance trade-offs.
+5. Write a detailed README explaining the online model, algorithm design, simulation setup, and results.
+
+**Ships as:** A Python simulation framework with online scheduling implementation, comparative results against offline baselines, and a comprehensive README discussing challenges and insights.
+
+**Stretch goal:** Incorporate simple machine learning prediction of energy harvesting patterns to improve online scheduling decisions.

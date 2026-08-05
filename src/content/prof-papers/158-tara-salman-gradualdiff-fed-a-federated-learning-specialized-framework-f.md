@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-tara-salman"
-source_hash: "83d013116186d0697ef7f51e3a70e5f6d23dfcecd2942531b079ac3b17ab8e1a"
+source_hash: "22df0ea3bc687f9c8aa163d93ef73e4ae0ff62983afb341442032afbc5337b6b"
 sequence: 158
 generator: "outreach-garden: managed"
 ---
@@ -129,3 +129,87 @@ Federated learning for large language models allows multiple clients to collabor
 ## Already in your library
 
 - [Stanford MLSys Seminar Episode 3: Virginia Smith](https://www.youtube.com/watch?v=laCyJICLyWg) — also for: One Round Is All You Need: Analytic Federated Learning for Task-Heterogeneous Multi-Label Medical Image Classification (Hana Khamfroush)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive ladder to demonstrate your understanding of GradualDiff-Fed. The beginner project reproduces a core mechanism of the paper—transmitting model weight differences—to show communication cost reduction. The intermediate project implements the core GradualDiff-Fed method with LoRA fine-tuning on a publicly available dataset, comparing federated vs local training performance. The advanced project extends the framework to handle non-IID data distributions, addressing a key limitation and future direction from the paper.
+
+### Beginner — Simulate Delta Parameterization for Model Weight Updates
+*Effort: a weekend, ~8 hours*
+
+You build a simple simulation that demonstrates transmitting only the difference (delta) between model weights instead of full weights during federated learning rounds. Using a small pretrained language model or a simple neural network, you show how delta updates reduce communication payload size compared to full model updates.
+
+**Why it shows you understood the paper:** This project concretely demonstrates the paper's key communication efficiency contribution by implementing and measuring delta parameterization, showing you grasp the mechanism behind reduced communication overhead.
+
+**Grounded in:** Use of delta parameterization to transmit only model weight differences, significantly reducing communication costs.
+
+**Tech stack:** Python 3.11, PyTorch, NumPy, Matplotlib
+
+**Data:** Use a small pretrained language model checkpoint from Hugging Face (e.g., DistilGPT-2) as a substitute for the paper's medical chatbot model.
+
+**Build it:**
+
+1. Load a pretrained small language model and save its initial weights.
+2. Simulate a local client update by applying a small random perturbation to the model weights.
+3. Compute the delta between the updated weights and the initial weights.
+4. Calculate and compare the size (in bytes) of transmitting full weights vs delta weights.
+5. Visualize the communication size reduction using a bar chart.
+
+**Ships as:** A GitHub repo with a Jupyter notebook or Python script showing delta computation, communication size comparison, and visualization.
+
+**Stretch goal:** Add a simple aggregation simulation that applies multiple delta updates from clients to a global model.
+
+### Intermediate — Reimplement GradualDiff-Fed with LoRA on Public Text Dataset
+*Effort: 2 weekends, ~20 hours*
+
+You implement the GradualDiff-Fed framework from the paper by fine-tuning a large language model with Low-Rank Adaptation (LoRA) in a federated learning setup. You simulate multiple clients using a public text dataset split into partitions, transmit only delta updates, and compare federated training performance against local client training using metrics like training loss and perplexity.
+
+**Why it shows you understood the paper:** This project faithfully reproduces the paper's core method and evaluation approach, demonstrating your ability to implement federated learning with delta parameterization and LoRA fine-tuning, and to measure key metrics reported in the paper.
+
+**Grounded in:** GradualDiff-Fed builds on federated learning by transmitting only the difference between local updated model weights and the global model weights, rather than the full model. It uses Low-Rank Adaptation (LoRA) for parameter-efficient fine-tuning and synchronous aggregation of updates from clients to maintain model quality and reduce communication overhead.
+
+**Tech stack:** Python 3.11, PyTorch, transformers, PEFT (LoRA) library, NumPy
+
+**Data:** Use a publicly available text dataset such as the WikiText-2 dataset as a substitute for the paper's medical chatbot dataset.
+
+**Build it:**
+
+1. Partition the WikiText-2 dataset into 5 simulated clients with IID splits.
+2. Set up a pretrained language model (e.g., GPT-2 small) with LoRA fine-tuning enabled.
+3. Implement federated training rounds where each client fine-tunes locally and sends delta weight updates to a central server.
+4. Aggregate delta updates synchronously to update the global model.
+5. Compare training loss and perplexity of federated training vs local client-only training.
+6. Visualize and report the results in a README.
+
+**Ships as:** A GitHub repo with code to run federated LoRA fine-tuning on a public dataset, scripts to reproduce experiments, and a report comparing federated vs local training metrics.
+
+**Stretch goal:** Add communication cost measurement comparing delta updates vs full model updates.
+
+### Advanced — Extend GradualDiff-Fed to Non-IID Data and Asynchronous Clients
+*Effort: 3+ weeks*
+
+You extend the GradualDiff-Fed framework to handle non-IID data distributions across clients and asynchronous client participation, addressing two key limitations noted in the paper. You simulate heterogeneous data partitions and asynchronous update schedules, implement aggregation strategies to maintain model quality, and evaluate performance degradation or improvements compared to synchronous IID federated training.
+
+**Why it shows you understood the paper:** This project tackles open challenges and future directions from the paper, showing deep comprehension of federated learning constraints and the ability to innovate beyond the original framework to approach real-world deployment scenarios.
+
+**Grounded in:** Performance under non-IID data settings remains to be explored. The framework currently assumes synchronous client participation, which may not reflect real-world federated environments.
+
+**Tech stack:** Python 3.11, PyTorch, transformers, PEFT (LoRA) library, NumPy, Asyncio or Ray for asynchronous simulation
+
+**Data:** Use the WikiText-2 dataset partitioned non-IID by topic or sequence to simulate heterogeneous client data.
+
+**Build it:**
+
+1. Partition the dataset into non-IID splits by grouping related text segments per client.
+2. Modify the federated training loop to allow asynchronous client updates with delayed or missing rounds.
+3. Implement aggregation strategies robust to stale or missing updates.
+4. Evaluate training loss, perplexity, and BLEU scores compared to synchronous IID federated training.
+5. Analyze communication overhead and training time under asynchronous conditions.
+6. Document findings and limitations in the README.
+
+**Ships as:** A GitHub repo with extended GradualDiff-Fed code supporting non-IID and asynchronous clients, experimental results, and a detailed report discussing challenges and outcomes.
+
+**Stretch goal:** Incorporate privacy leakage analysis on delta updates and propose mitigation strategies.

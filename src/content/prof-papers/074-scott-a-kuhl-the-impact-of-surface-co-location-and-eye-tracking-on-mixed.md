@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-scott-a-kuhl"
-source_hash: "870f483c2fb13cb52a5ec3705b1408001d270a0ff36a79b815bd01dfaba828a7"
+source_hash: "75780eddf00b64d0b25fd3f7c76bd733328313a833dafb0ccab343bb9f955c4d"
 sequence: 74
 generator: "outreach-garden: managed"
 ---
@@ -127,3 +127,89 @@ Gain direct insight from experts about the challenges and findings of MR typing 
 *How the paper uses it:* Hearing from the authors themselves provides context and deeper understanding of the study's motivation, methods, and implications.
 
 ▶ [An Eye-tracked Swipe Keyboard for Hands-free Typing in Augmented and Virtual Reality](https://www.youtube.com/watch?v=I4Oj4WavKO8) — Jason Orlosky · 2 years ago
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder that helps you demonstrate understanding of the paper "The Impact of Surface Co-location and Eye-tracking on Mixed Reality Typing." The beginner project reproduces a core experimental comparison of typing speeds on different keyboard placements using a simple web simulation. The intermediate project implements the paper's eye-tracking filtering method to reduce accidental key presses in a midair typing simulation and compares error rates with and without filtering. The advanced project extends the paper by exploring probabilistic fusion of hand-tracking and eye-tracking signals to improve key press detection accuracy, addressing a stated future direction and limitation.
+
+### Beginner — Simulate Midair vs Surface Keyboard Typing Speeds
+*Effort: a weekend, ~8 hours*
+
+You build a simple interactive web app that simulates typing on three virtual keyboard placements: midair, table, and wall. The app measures typing speed (WPM) and error rate based on user input timing and simulated hand-tracking noise for surface keyboards. You replicate the paper's key result that midair typing is faster and preferred.
+
+**Why it shows you understood the paper:** This project shows you understand the core experimental design and results comparing keyboard placements and the impact of hand-tracking inaccuracies on typing speed and preference.
+
+**Grounded in:** In Experiment 1, midair keyboard typing was significantly faster (12.2 WPM) and preferred by most participants compared to table (9.1 WPM) and wall (7.8 WPM) keyboards.
+
+**Tech stack:** JavaScript, React, CSS
+
+**Data:** Simulated typing timing and error data based on the paper's reported means and standard deviations; no real dataset is needed.
+
+**Build it:**
+
+1. Create a React app with three keyboard placement modes: midair, table, and wall.
+2. Simulate hand-tracking noise for table and wall modes by adding random delays and occasional missed key presses.
+3. Capture user typing input and compute words per minute (WPM) and error rate in each mode.
+4. Display results and allow users to switch modes and compare performance.
+5. Write a README explaining the simulation and how it relates to the paper's Experiment 1 results.
+
+**Ships as:** A GitHub repo with a React app simulating typing on different keyboard placements, showing WPM and error rates consistent with the paper's findings, plus a README linking the simulation to the paper's Experiment 1.
+
+**Stretch goal:** Add a simple preference survey UI to collect user keyboard placement preference and compare with the paper's participant preferences.
+
+### Intermediate — Implement Eye-Tracking Filter for Midair Ten-Finger Typing
+*Effort: 2 weekends, ~20 hours*
+
+You build a midair virtual keyboard typing simulation that supports ten-finger typing with and without an eye-tracking-based filter to reduce accidental key presses. You implement the paper's eye-tracking filter logic to block key presses when gaze is not on the key. You measure and compare error rates and backspace usage between filtered and unfiltered modes.
+
+**Why it shows you understood the paper:** This project demonstrates you can reimplement the paper's novel eye-tracking filtering method and reproduce its key result that eye-tracking reduces errors without reducing typing speed.
+
+**Grounded in:** Developed a novel eye-tracking based filter to reduce accidental key presses in ten-finger midair typing, which significantly reduced error corrections.
+
+**Tech stack:** JavaScript, React, TypeScript
+
+**Data:** Simulated typing sessions with synthetic gaze and finger press events based on the paper's description; no public dataset is available, so you generate synthetic data to mimic the paper's conditions.
+
+**Build it:**
+
+1. Build a React app with a midair keyboard UI supporting ten-finger typing input.
+2. Simulate gaze tracking data aligned with key positions and finger press events.
+3. Implement the eye-tracking filter that blocks key presses unless gaze is on the target key.
+4. Run typing sessions with and without the filter, logging errors and backspace usage.
+5. Analyze and visualize the difference in error rates and backspace counts between modes.
+6. Document the implementation and relate results to the paper's Experiment 2 findings.
+
+**Ships as:** A GitHub repo with a React+TypeScript midair typing simulation implementing eye-tracking filtering, analysis scripts showing error reduction, and a README linking to the paper's Experiment 2 results.
+
+**Stretch goal:** Integrate a simple language model or auto-correct to explore effects on error rates and typing speed.
+
+### Advanced — Probabilistic Fusion of Hand and Eye-Tracking for MR Typing
+*Effort: 3-4 weeks*
+
+You develop a prototype system that fuses simulated hand-tracking and eye-tracking signals probabilistically to improve key press detection accuracy in midair MR typing. You model uncertainties in both signals and combine them to decide key presses more robustly. You evaluate the system against a baseline using only hand-tracking or eye-tracking filtering, measuring error rates and typing speed.
+
+**Why it shows you understood the paper:** This project tackles a stated future direction and limitation of the paper by implementing and evaluating a fusion approach to overcome hand-tracking inaccuracies and improve typing reliability.
+
+**Grounded in:** Investigating probabilistic fusion of hand and eye-tracking signals for more accurate key press detection.
+
+**Tech stack:** Python 3.11, React, TypeScript, NumPy, Matplotlib
+
+**Data:** Synthetic datasets simulating hand-tracking and eye-tracking signals with noise profiles inspired by the paper's reported tracking inaccuracies; no public dataset is available.
+
+**Build it:**
+
+1. Design a probabilistic model to fuse hand-tracking finger position data and eye-tracking gaze data for key press detection.
+2. Implement a simulation environment generating noisy hand and eye-tracking signals for midair typing.
+3. Build a React frontend to visualize typing input and fusion decisions in real time.
+4. Compare typing accuracy and speed metrics of the fusion method against hand-only and eye-only baselines.
+5. Analyze results and write a detailed report discussing improvements and limitations relative to the paper.
+6. Prepare a README explaining the fusion approach, its relation to the paper's future directions, and instructions to run the prototype.
+
+**Ships as:** A GitHub repo with a Python+React prototype demonstrating probabilistic fusion of hand and eye-tracking for MR typing, evaluation scripts, visualizations, and a comprehensive README linking to the paper's future directions.
+
+**Stretch goal:** Extend the fusion model to adaptively calibrate keyboard height or incorporate tactile feedback simulation.
+
+_The paper's authors did not release code or datasets for this work, so all data must be simulated based on the paper's reported statistics and descriptions._

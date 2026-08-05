@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-alberto-cano"
-source_hash: "ed82dd66588dee1ba01eeb2d0b39f0491da28ebf39f7c7f6299b869b9b744422"
+source_hash: "b68e700230d528e3d76ce2e2cb5e5f298c1179eda248f4101240b12fb20dcae6"
 sequence: 140
 generator: "outreach-garden: managed"
 ---
@@ -110,3 +110,94 @@ Reactive adaptation waits until a model's performance degrades before making cha
 *How the paper uses it:* The paper formally defines and contrasts reactive and proactive adaptation paradigms for concept drift.
 
 ▶ [https://www.youtube.com › watch?v=p_c7emXGmck](https://www.youtube.com/watch?v=p_c7emXGmck) — YouTube result via DuckDuckGo
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a practical learning ladder to demonstrate understanding of proactive adaptation for concept drift in data streams as presented in the paper. The beginner project reproduces a core proactive mechanism on a small scale using familiar tools. The intermediate project reimplements the core proactive VFDT adaptation strategies and compares them against a reactive baseline on a public streaming dataset. The advanced project extends the paper's approach by implementing a hybrid proactive-reactive adaptation model to address abrupt drifts, directly tackling a stated limitation and future direction.
+
+### Beginner — Simulate Proactive Threshold Adjustment in VFDT
+*Effort: a weekend, ~8 hours*
+
+You build a simplified Python simulation of the proactive threshold adjustment mechanism inspired by the Proactive Hoeffding Tree Move (PHT-M) strategy. Using synthetic incremental drift data generated on the fly, you implement a sliding window to monitor recent data statistics and adjust decision thresholds proactively before performance degrades.
+
+**Why it shows you understood the paper:** This project shows you grasp the core idea of proactive adaptation—anticipating drift and adjusting model parameters before outdatedness—by implementing a key proactive mechanism described in the paper on a small scale.
+
+**Grounded in:** Proactive Hoeffding Tree Move (PHT-M) adjusts decision boundaries proactively.
+
+**Tech stack:** Python 3.11, Jupyter Notebook, NumPy, Matplotlib
+
+**Data:** Synthetic incremental drift data generated in code to simulate gradual concept drift.
+
+**Build it:**
+
+1. Implement a simple VFDT-like decision threshold mechanism in Python.
+2. Generate a synthetic data stream with gradual incremental drift.
+3. Implement a sliding window to track recent data statistics.
+4. Add proactive threshold adjustment logic that updates thresholds based on sliding window statistics before drift fully manifests.
+5. Visualize threshold changes and classification accuracy over time.
+
+**Ships as:** A Jupyter Notebook demonstrating proactive threshold adjustment on synthetic data with plots showing improved stability over naive thresholds.
+
+**Stretch goal:** Add a reactive adaptation baseline to compare how proactive adjustment anticipates drift better.
+
+### Intermediate — Reimplement Proactive VFDT Adaptations and Compare to Reactive VFDT
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement the paper’s four proactive adaptation strategies based on VFDT in Python, following the paper’s formal definitions and algorithmic descriptions. You run experiments on a public streaming dataset with known gradual drift (e.g., SEA Concepts or a similar synthetic stream) and compare proactive strategies against a reactive VFDT baseline, reporting classification accuracy over time.
+
+**Why it shows you understood the paper:** This project demonstrates your ability to translate the paper’s core proactive adaptation methods into working code and empirically validate their benefits over reactive adaptation, mirroring the paper’s key experimental results.
+
+**Grounded in:** Development of proactive versions of VFDT with four distinct adaptation strategies; Proactive adaptation strategies consistently reduce performance degradation caused by concept drift.
+
+**Tech stack:** Python 3.11, scikit-multiflow (for VFDT baseline), NumPy, Matplotlib, Jupyter Notebook
+
+**Data:** Public synthetic data stream with gradual drift such as SEA Concepts dataset or similar, used as a substitute for the paper’s synthetic streams.
+
+**Build it:**
+
+1. Study the VFDT algorithm and implement a baseline reactive VFDT using scikit-multiflow or from scratch.
+2. Implement the four proactive adaptation strategies described in the paper, including sliding window management and threshold/feature adjustments.
+3. Set up a synthetic data stream with gradual drift (e.g., SEA Concepts).
+4. Run experiments comparing proactive strategies against the reactive baseline, tracking classification accuracy over time.
+5. Plot and analyze results to confirm proactive methods reduce performance degradation.
+
+**Verified links from the paper:**
+
+- <https://github.com/Vgueca/ProactiveHT> — a third-party/baseline artifact the paper cites — not the authors' own code
+
+**Ships as:** A GitHub repo with code implementing proactive VFDT variants, experimental scripts, and a README reporting comparative accuracy plots and analysis.
+
+**Stretch goal:** Add hyperparameter tuning for sliding window size to explore sensitivity as noted in the paper’s limitations.
+
+### Advanced — Hybrid Proactive-Reactive VFDT Model for Abrupt and Gradual Drift
+*Effort: 3+ weeks*
+
+You develop a hybrid VFDT model that combines the paper’s proactive adaptation strategies with reactive drift detection and adaptation mechanisms to handle both gradual and abrupt drifts robustly. You implement adaptive window sizing and self-tuning parameters to improve robustness in high-speed streams. Experiments run on mixed drift synthetic streams and a real-world dataset with uncertain drift patterns.
+
+**Why it shows you understood the paper:** This project tackles a key limitation and future direction from the paper by integrating proactive and reactive paradigms, demonstrating deep comprehension of the challenges in concept drift adaptation and the ability to extend the paper’s methods to new scenarios.
+
+**Grounded in:** Future work includes hybrid proactive-reactive models and adaptive parameter tuning; limitations include less effectiveness on abrupt or erratic drifts.
+
+**Tech stack:** Python 3.11, scikit-multiflow, NumPy, Matplotlib, Jupyter Notebook, Hyperopt or Optuna for tuning
+
+**Data:** Synthetic data streams with mixed gradual and abrupt drifts generated in code; optionally, real-world datasets with uncertain drift patterns (e.g., electricity pricing or sensor data streams).
+
+**Build it:**
+
+1. Implement or reuse the proactive VFDT strategies from the intermediate project.
+2. Integrate a reactive drift detection method (e.g., DDM or EDDM) to trigger reactive adaptations.
+3. Design a hybrid adaptation controller that switches or combines proactive and reactive adaptations based on drift type and detection.
+4. Implement adaptive sliding window sizing and parameter self-tuning using hyperparameter optimization.
+5. Generate synthetic streams with mixed drift types and run experiments comparing hybrid model against purely proactive and purely reactive baselines.
+6. Analyze results and document how hybrid approach improves robustness across drift scenarios.
+
+**Verified links from the paper:**
+
+- <https://github.com/Vgueca/ProactiveHT> — a third-party/baseline artifact the paper cites — not the authors' own code
+
+**Ships as:** A comprehensive GitHub repository with hybrid VFDT implementation, experimental scripts, tuning utilities, and a detailed README discussing methodology, results, and limitations.
+
+**Stretch goal:** Explore meta-learning approaches to predict drift type and dynamically select adaptation mode.

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-fei-li"
-source_hash: "f24d4942e0acc418499b5e831b67a1224309ad7e685c9acd50db319ead7a21d4"
+source_hash: "cf351158586076c0e0763ab947c3dd4ae2478d2ddaa471fa935a383450d73af2"
 sequence: 131
 generator: "outreach-garden: managed"
 ---
@@ -131,3 +131,86 @@ Quantum annealing is a quantum computing technique designed to solve optimizatio
 ## Already in your library
 
 - [16. Complexity: P, NP, NP-completeness, Reductions](https://www.youtube.com/watch?v=eHZifpgyH_4) — also for: Empirical Challenge for NC Theory (Uzi Vishkin)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder to demonstrate understanding of the quantum annealing approaches to the shipment rerouting problem (SRP) from the paper. The beginner project reproduces a small-scale classical MIP formulation and solver to grasp the problem structure. The intermediate project implements a simplified quantum annealing CQM formulation and compares it to the classical baseline on a small network. The advanced project extends the quantum annealing approach to explore scalability improvements by reducing variables or adding constraints, addressing a key limitation and future direction from the paper.
+
+### Beginner — Classical MIP Model for Small Shipment Rerouting
+*Effort: a weekend, ~8 hours*
+
+You build a classical mixed integer programming (MIP) model for the shipment rerouting problem with up to 3 shipments on a small transportation network. You implement the model using Python and a solver like CPLEX or CBC via PuLP or Pyomo, and solve for minimum cost routing and scheduling. You reproduce a key metric such as total cost and solver runtime for this small instance.
+
+**Why it shows you understood the paper:** This project shows you understand the SRP formulation, constraints, and classical solution approach described in the paper. It demonstrates your ability to translate the problem into a MIP and interpret solver results, foundational to grasping the paper's classical baseline.
+
+**Grounded in:** Two mixed integer programming formulations for exact classical solutions to SRP.
+
+**Tech stack:** Python 3.11, PuLP or Pyomo, CBC or CPLEX solver
+
+**Data:** Simulated small transportation network with 3 shipments, inspired by the paper's experimental setup; no public dataset available so you create a synthetic example with hubs and trucks.
+
+**Build it:**
+
+1. Define a small network graph with hubs and trucks, and specify 3 shipments with source, destination, and demand.
+2. Implement the classical MIP formulation constraints ensuring no fractional shipment division and hub loading/unloading rules.
+3. Use PuLP or Pyomo to encode the model and solve it with CBC or CPLEX.
+4. Extract and report the total cost and solver runtime.
+5. Document the model, constraints, and results in a README.
+
+**Ships as:** A GitHub repo with Python code implementing the classical MIP for SRP on a small example, solver output showing optimal shipment routing and cost, and a README explaining the model and results.
+
+**Stretch goal:** Add visualization of shipment routes on the network graph to illustrate the solution.
+
+### Intermediate — Quantum Annealing CQM Model for Shipment Rerouting
+*Effort: 1-2 weekends, ~20 hours*
+
+You reimplement the core quantum annealing approach using constrained quadratic models (CQM) for SRP with up to 5 shipments on a small network. You encode the problem constraints and objective as a CQM and solve it using D-Wave's LeapHybridCQMSampler or its Python SDK. You compare solution quality and runtime against your classical MIP baseline from the beginner project.
+
+**Why it shows you understood the paper:** This project demonstrates your ability to translate the paper's quantum annealing formulation into code and understand the constrained quadratic modeling approach. Comparing quantum and classical results shows comprehension of the paper's key experimental findings.
+
+**Grounded in:** Two quantum annealing algorithms based on constrained quadratic models for SRP. Quantum annealing algorithms achieve near-optimal solutions much faster than classical solvers.
+
+**Tech stack:** Python 3.11, D-Wave Ocean SDK (LeapHybridCQMSampler)
+
+**Data:** Use the same synthetic small transportation network with up to 5 shipments as in the beginner project, extended to test quantum annealing scalability.
+
+**Build it:**
+
+1. Study the paper's CQM formulation and constraints for SRP.
+2. Implement the CQM model encoding the shipment rerouting problem using D-Wave Ocean SDK.
+3. Run the LeapHybridCQMSampler to solve the problem on the synthetic network.
+4. Compare the quantum annealing solution cost and runtime to the classical MIP baseline.
+5. Document the implementation details, comparison results, and insights.
+
+**Ships as:** A GitHub repo with Python code implementing the quantum annealing CQM model for SRP, scripts to run and compare against classical MIP, and a README reporting solution quality and runtime comparisons.
+
+**Stretch goal:** Experiment with adding a dispatch center constraint to the CQM model and observe effects on runtime and solution quality.
+
+### Advanced — Scalability Improvements for Quantum Annealing on SRP
+*Effort: 3+ weeks*
+
+You develop and test new constrained quadratic model formulations for SRP that reduce the number of variables and constraints, aiming to improve scalability beyond 5 shipments. You explore adding additional constraints to narrow the search space or design problem decompositions inspired by the paper's future directions. You benchmark your improved quantum annealing models against the baseline CQM on synthetic larger shipment sets.
+
+**Why it shows you understood the paper:** This project tackles a key limitation and future direction from the paper, showing deep understanding of the quantum annealing approach and its bottlenecks. It demonstrates your ability to innovate on the formulation and evaluate improvements quantitatively.
+
+**Grounded in:** Limitations: Formulations still have large numbers of variables and constraints, limiting scalability. Future directions: Design formulations with fewer variables and constraints to improve scalability. Explore narrowing the search space further by introducing additional constraints.
+
+**Tech stack:** Python 3.11, D-Wave Ocean SDK, Optimization libraries (e.g., NetworkX for graph processing)
+
+**Data:** Synthetic transportation networks with 6-10 shipments generated to test scalability improvements; no public dataset available.
+
+**Build it:**
+
+1. Analyze the original CQM formulation to identify variables and constraints contributing most to scaling issues.
+2. Design alternative formulations or add constraints to reduce variable count or prune the search space.
+3. Implement the improved CQM models using D-Wave Ocean SDK.
+4. Generate synthetic larger shipment problem instances for testing.
+5. Benchmark solution quality and runtime against the baseline quantum annealing model.
+6. Document methodology, results, and discuss scalability implications.
+
+**Ships as:** A GitHub repo containing improved quantum annealing formulations for SRP, benchmarking scripts, synthetic datasets, and a detailed README discussing scalability improvements and limitations.
+
+**Stretch goal:** Investigate hybrid classical-quantum branch-and-price frameworks or variational quantum optimization methods as alternative solution approaches.

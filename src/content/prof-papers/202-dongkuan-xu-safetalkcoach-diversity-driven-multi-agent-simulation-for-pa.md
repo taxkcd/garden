@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-dongkuan-xu"
-source_hash: "1587519ab1ab998ac020f8d08cc6ff0475de5dc0bcd54e815f8a7737995c184b"
+source_hash: "daa35ac0c79bbf5aed261691cf4711f8a6bc71d84d39755d86ddb3cfe33b3ffd"
 sequence: 202
 generator: "outreach-garden: managed"
 ---
@@ -109,3 +109,87 @@ Explore how multiple AI agents can interact in simulated conversations, each wit
 - [Large Language Models explained briefly](https://www.youtube.com/watch?v=LPZh9BOjkQs) — also for: On-demand generation of high-quality software engineering datasets using large language models and ontologies (Suranjan Chakraborty)
 - [[1hr Talk] Intro to Large Language Models](https://www.youtube.com/watch?v=zjkBMFhNj_g) — also for: On-demand generation of high-quality software engineering datasets using large language models and ontologies (Suranjan Chakraborty)
 - [How Large Language Models Work](https://www.youtube.com/watch?v=5sLYAQS9sWQ) — also for: Natural-Language to SysMLv2 Translation via Conformance-Driven Iterative Refinement (Levent Burak Kara)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder to demonstrate your understanding of SafeTalkCoach by progressively engaging with its core multi-agent dialogue simulation framework and its evaluation. The beginner project recreates a simplified parent-teen dialogue simulation with persona and engagement controls. The intermediate project implements the multi-agent architecture with hierarchical diversification on a small synthetic dataset, comparing diversity metrics against a baseline. The advanced project extends SafeTalkCoach by incorporating richer emotional and relational dynamics into agent personas, addressing a key limitation noted in the paper.
+
+### Beginner — Simplified Parent-Teen Dialogue Simulator
+*Effort: a weekend, ~8 hours*
+
+You build a small multi-agent dialogue simulator with two agents: a Parent Agent and a Child Agent. The Parent Agent follows a simple persona with role and attitude parameters, and the Child Agent has a dynamic engagement score that modulates its responsiveness. The conversation flow is controlled to produce short, guideline-adherent dialogues on a single sexual health topic.
+
+**Why it shows you understood the paper:** This project demonstrates your grasp of the paper's core multi-agent design and adaptive engagement mechanism, showing you can implement controlled dialogue generation with persona and engagement factors.
+
+**Grounded in:** Design and implementation of SafeTalkCoach, a multi-agent dialogue generation framework with agent-level control and hierarchical diversification for parent-child sexual health conversations.
+
+**Tech stack:** Python 3.11, OpenAI GPT-4 API or similar LLM API, FastAPI (optional for serving)
+
+**Data:** Synthetic dialogue prompts and scenario seeds inspired by the paper's three topics (safe sex, abstinence, consent), manually created for simulation.
+
+**Build it:**
+
+1. Define simple persona parameters for Parent Agent (role: e.g., authoritative, supportive; attitude: e.g., warm, neutral).
+2. Implement Child Agent with a numeric engagement score that influences response length and detail.
+3. Create a turn-based dialogue loop where Parent Agent generates prompts guided by persona and guidelines, and Child Agent responds based on engagement.
+4. Add simple rules to terminate conversation after a fixed number of turns or when engagement drops below a threshold.
+5. Test the simulator with example scenarios and log dialogues.
+
+**Ships as:** A Python script or small app that runs simulated parent-teen dialogues with adjustable persona and engagement, with example dialogues in the README.
+
+**Stretch goal:** Add a simple Moderator Agent that decides when to end the conversation based on engagement and dialogue content.
+
+### Intermediate — Multi-Agent Dialogue Generation with Diversity Metrics
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement the SafeTalkCoach multi-agent framework core with three agents (Parent, Child, Moderator) using LLMs, and implement hierarchical diversification at the prompting level to generate diverse dialogues on sexual health topics. You generate a small dataset of simulated dialogues and compare diversity metrics (e.g., situational coverage, dialogue trajectory diversity) against a baseline method such as direct prompting.
+
+**Why it shows you understood the paper:** This project shows you can implement the paper's core multi-agent architecture and hierarchical diversification approach, and quantitatively evaluate dialogue diversity, demonstrating comprehension of the paper's main technical contributions and evaluation methodology.
+
+**Grounded in:** Design and implementation of SafeTalkCoach, a multi-agent dialogue generation framework with agent-level control and hierarchical diversification for parent-child sexual health conversations; SafeTalkCoach outperforms baselines in dialogue-level diversity.
+
+**Tech stack:** Python 3.11, OpenAI GPT-4 API or similar LLM API, Jupyter Notebook for analysis, scikit-learn or numpy for metrics
+
+**Data:** Synthetic scenario seeds inspired by the paper's three sexual health topics, generated manually or via LLM prompting to simulate the paper's hybrid data pipeline.
+
+**Build it:**
+
+1. Implement Parent, Child, and Moderator agents as separate LLM prompt templates with persona and engagement controls.
+2. Incorporate hierarchical diversification by varying data inputs, prompt templates, and agent parameters to generate diverse dialogues.
+3. Generate a dataset of ~100 dialogues covering the three topics.
+4. Implement simple diversity metrics such as n-gram diversity, situational coverage, and dialogue trajectory diversity.
+5. Compare your multi-agent framework's dialogue diversity against a baseline direct prompting method.
+6. Document results and example dialogues.
+
+**Ships as:** A Jupyter Notebook and Python scripts that generate and evaluate multi-agent dialogues with diversity metrics, including plots and example dialogues in the README.
+
+**Stretch goal:** Add a basic naturalness and coherence scoring module using LLM-based evaluation to compare dialogue quality.
+
+### Advanced — Extending SafeTalkCoach with Emotional and Relational Dynamics
+*Effort: 3+ weeks*
+
+You extend the SafeTalkCoach multi-agent framework by incorporating richer emotional and relational dynamics into the Parent and Child agents. This includes modeling family communication habits, emotional stakes, and relationship closeness as additional persona dimensions influencing dialogue generation and engagement. You implement stronger termination criteria via an enhanced Moderator Agent. You evaluate the impact on dialogue realism and controllability.
+
+**Why it shows you understood the paper:** This project tackles a key limitation and future direction from the paper, demonstrating deep understanding of the SafeTalkCoach architecture and its challenges. It shows your ability to innovate on multi-agent dialogue simulation by integrating complex interaction factors while maintaining control and realism.
+
+**Grounded in:** Limitations: Simplified persona and control modules omit complex factors like relationship closeness and emotional stakes; Multi-agent architecture sometimes misses natural conversation stopping points; Future directions: Incorporate richer interaction factors, stronger termination criteria, and deeper personalization in agent models.
+
+**Tech stack:** Python 3.11, OpenAI GPT-4 API or similar LLM API, FastAPI or Flask for serving (optional), Jupyter Notebook for evaluation, scikit-learn or numpy
+
+**Data:** Synthetic dialogues extended with emotional and relational context, created by augmenting scenario seeds with emotional state and relationship closeness parameters.
+
+**Build it:**
+
+1. Design extended persona models for Parent and Child agents including emotional state, relationship closeness, and communication habits.
+2. Modify agent prompt templates to incorporate these new persona dimensions influencing dialogue style and engagement.
+3. Enhance the Moderator Agent with stronger termination criteria based on emotional cues and dialogue completeness.
+4. Generate a new set of dialogues with the extended framework.
+5. Evaluate dialogue realism, coherence, and controllability compared to the baseline multi-agent framework.
+6. Document methodology, results, and limitations.
+
+**Ships as:** A GitHub repository with code for the extended multi-agent framework, example dialogues demonstrating emotional and relational dynamics, evaluation scripts, and a detailed README explaining the extension and findings.
+
+**Stretch goal:** Conduct a small user study or expert feedback session to assess ecological validity of the extended dialogues.

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-rkiyer"
-source_hash: "1411782d52eb11a8b92535ef3bdc6ee97f94551dba2698cfe1bc417443da973e"
+source_hash: "fe08193ddb1b47eb067c89f43c5351bc26412d85af182cf63d8c9c03cbf21601"
 sequence: 16
 generator: "outreach-garden: managed"
 ---
@@ -118,3 +118,86 @@ Explore the concept of encoding computations as circuit propagation delays, a no
 ## Already in your library
 
 - [Stanford Seminar - Computing with FPGAs - Oskar Mencer](https://www.youtube.com/watch?v=AHJZKoAh8wE) — also for: Seeking Solutions in Configurable Computing (David Andrews)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a practical learning ladder to demonstrate understanding of ASAP's FPGA-accelerated Levenshtein distance computation for short-read alignment. Starting with a basic software simulation of the delay-based computation model, you then implement and benchmark a simplified FPGA-inspired accelerator for short-read alignment. Finally, you extend the approach to address a key limitation by supporting affine gap penalties, showing capability to innovate beyond the original ASAP design.
+
+### Beginner — Simulate Delay-Based Levenshtein Distance Computation
+*Effort: a weekend, ~8 hours*
+
+You build a Python program that simulates the core idea of ASAP's delay-based Levenshtein distance (LD) computation by modeling circuit propagation delays as incremental costs in a dynamic programming matrix. The simulation will implement the zero-delay match penalty approximation and demonstrate how total ordering of LD values is preserved.
+
+**Why it shows you understood the paper:** This project shows you grasp the fundamental ASAP concept of encoding LD computation as delay propagation and the approximation that preserves ordering, which is central to ASAP's speedup and accuracy claims.
+
+**Grounded in:** Proposed an approximation algorithm for LD computation that preserves total ordering of distances, enabling accelerated alignment without loss of accuracy.
+
+**Tech stack:** Python 3.11, Jupyter Notebook
+
+**Data:** Use synthetic short DNA sequence pairs (e.g., 20-30 base pairs) generated randomly or manually crafted to illustrate matches, mismatches, and gaps.
+
+**Build it:**
+
+1. Implement a standard Levenshtein distance dynamic programming algorithm in Python.
+2. Modify the algorithm to simulate delay-based computation by assigning zero delay to matches and positive delays to mismatches and gaps.
+3. Demonstrate that the computed approximate distances preserve the total ordering compared to exact LD on several test pairs.
+4. Visualize the delay matrix and resulting distances using plots or tables.
+5. Write a README explaining the approximation and its implications.
+
+**Ships as:** A Python notebook or script with code, example runs on sample sequences, visualizations of delay matrices, and a README explaining the delay-based approximation and ordering preservation.
+
+**Stretch goal:** Add a simple command-line interface to input sequence pairs and output approximate LD with delay simulation.
+
+### Intermediate — FPGA-Inspired Software Accelerator for Short-Read Alignment
+*Effort: 2 weekends, ~20 hours*
+
+You implement a software prototype of the ASAP delay-based LD accelerator algorithm, simulating the FPGA delay elements and zero-delay match optimization, and integrate it with a simple short-read alignment pipeline. You benchmark your accelerator against a baseline exact LD implementation on a public short-read dataset.
+
+**Why it shows you understood the paper:** This project demonstrates your ability to reimplement ASAP's core method from the paper's description, including the zero-delay match optimization and total ordering preservation, and to evaluate its speed and accuracy benefits in a genomic alignment context.
+
+**Grounded in:** ASAP computes LD approximately 200× faster than CPU software implementations and uses zero-delay circuit elements to accelerate processing of matches.
+
+**Tech stack:** Python 3.11, NumPy, Biopython (for sequence handling)
+
+**Data:** Use a publicly available short-read dataset such as a small subset of Illumina reads from NCBI SRA or simulate short reads from a reference genome; no authors' artifacts are available.
+
+**Build it:**
+
+1. Implement the delay-based LD computation algorithm in Python, simulating FPGA delay elements and zero-delay match penalty.
+2. Build a simple short-read aligner that uses your delay-based LD to score candidate alignments.
+3. Implement a baseline exact LD aligner for comparison.
+4. Run both aligners on a small short-read dataset and compare runtime and alignment accuracy metrics.
+5. Document your implementation details, benchmarks, and analysis in a README.
+
+**Ships as:** A Python package or scripts implementing the delay-based LD accelerator and baseline, with benchmarking results and a detailed README explaining the approach, results, and limitations.
+
+**Stretch goal:** Add visualization of alignment score distributions and explore parameter tuning of gap penalties mapped to delays.
+
+### Advanced — Extend Delay-Based LD Accelerator to Affine Gap Penalties
+*Effort: 3+ weeks*
+
+You design and implement an extension of the delay-based Levenshtein distance accelerator to support affine gap penalties, addressing a key limitation noted in ASAP. This involves modifying the delay encoding and computation model to handle separate gap open and gap extension costs, and evaluating the impact on alignment accuracy and computational efficiency.
+
+**Why it shows you understood the paper:** This project shows deep understanding of ASAP's delay-based computation model and its limitations, and your ability to innovate by extending the method to a biologically more accurate gap penalty model, which is a stated future direction of the paper.
+
+**Grounded in:** Current implementation supports only constant gap penalties; more complex gap penalty models are not yet supported. Future direction: Extend ASAP to support linear, affine, and convex gap penalty models for more accurate biological alignment.
+
+**Tech stack:** Python 3.11, NumPy, Biopython, Matplotlib
+
+**Data:** Use public short-read datasets or simulated reads; optionally use small reference sequences for alignment testing.
+
+**Build it:**
+
+1. Study affine gap penalty models and how they modify LD computation.
+2. Design a delay encoding scheme that can represent affine gap penalties in the delay-based computation framework.
+3. Implement the extended delay-based LD computation supporting affine gaps in Python.
+4. Integrate the extended accelerator into a short-read alignment pipeline.
+5. Benchmark alignment accuracy and runtime against the constant gap penalty version and a standard affine gap penalty aligner.
+6. Document design decisions, implementation, and evaluation results in a comprehensive README.
+
+**Ships as:** A Python implementation of an affine gap penalty delay-based LD accelerator, integrated with a short-read aligner, with benchmark results and detailed documentation.
+
+**Stretch goal:** Explore partial FPGA reconfiguration simulation to dynamically adjust gap penalties without full recompilation, as suggested in the paper's future directions.

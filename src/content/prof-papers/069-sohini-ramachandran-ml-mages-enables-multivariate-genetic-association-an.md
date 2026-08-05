@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-sohini-ramachandran"
-source_hash: "3b6a1ae5e88820b768b4b498ea8b0f5e45f75f895e50522d4a926c57eacf844e"
+source_hash: "95bca7c309ea1c004b48bffa4acb15579825beb45368e43e21b31c96c4a34044"
 sequence: 69
 generator: "outreach-garden: managed"
 ---
@@ -126,3 +126,91 @@ Hearing directly from the authors provides insight into the motivation, methodol
 *How the paper uses it:* Authors explain ML-MAGES's novel approach to multitrait genetic association analysis and effect size shrinkage.
 
 ▶ [https://www.youtube.com › watch?v=9Glu_XRgW4k](https://www.youtube.com/watch?v=9Glu_XRgW4k) — YouTube result via DuckDuckGo
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a ladder to demonstrate your understanding of ML-MAGES, from reproducing a core mechanism on synthetic data, to implementing the main neural network shrinkage method and clustering on multitrait genetic data, and finally extending the approach to address a key limitation around simulated training data generalizability. Each project builds on your existing software engineering and ML skills while progressively introducing domain-specific concepts and challenges from the paper.
+
+### Beginner — Simulate and Visualize Effect Size Shrinkage on Synthetic GWAS Data
+*Effort: a weekend, ~8 hours*
+
+You build a small Python notebook that simulates a simple genetic dataset with linkage disequilibrium (LD) and multiple traits, generates inflated effect sizes, then applies a basic feed-forward neural network to shrink these effect sizes. You visualize before-and-after effect size distributions and compare to unregularized estimates.
+
+**Why it shows you understood the paper:** This project shows you understand the core problem ML-MAGES addresses—effect size inflation due to LD—and the neural network shrinkage mechanism as a solution, even on simplified data.
+
+**Grounded in:** Development of a neural network-based effect size shrinkage method that outperforms regularized regression and fine-mapping in accuracy and computational efficiency.
+
+**Tech stack:** Python 3.11, Jupyter Notebook, PyTorch or TensorFlow, matplotlib, numpy, scipy
+
+**Data:** Synthetic GWAS summary statistics simulated in notebook with simple LD structure and multitrait effect sizes.
+
+**Build it:**
+
+1. Simulate genotype correlation matrix mimicking LD for a small set of SNPs.
+2. Generate true multitrait effect sizes and simulate inflated GWAS effect sizes with noise and LD-induced inflation.
+3. Implement a small feed-forward neural network to learn shrinkage mapping from inflated to true effect sizes using simulated training pairs.
+4. Train the network and apply it to shrink effect sizes on a test set.
+5. Visualize and compare distributions of true, inflated, and shrunken effect sizes.
+6. Write a README explaining the simulation, shrinkage concept, and results.
+
+**Ships as:** A Jupyter notebook with code, plots showing shrinkage effect, and a README explaining the problem and method.
+
+**Stretch goal:** Add a comparison to elastic net shrinkage on the same data to highlight ML-MAGES neural network advantage.
+
+### Intermediate — Reimplement ML-MAGES Neural Network Shrinkage and Clustering on Public Multitrait GWAS Data
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement the core ML-MAGES neural network shrinkage method and infinite mixture model clustering from the paper using Python. You apply it to a publicly available multitrait GWAS summary statistics dataset (e.g., lipid traits from UK Biobank or a similar public dataset) to estimate shrunken effect sizes and cluster variants by multitrait association patterns. You compare shrinkage accuracy and clustering quality against a simple baseline like elastic net and k-means clustering.
+
+**Why it shows you understood the paper:** This project demonstrates your ability to faithfully reimplement the paper’s core methods and apply them to real data, reproducing key metrics like effect size estimation accuracy and clustering precision/recall, proving deep comprehension of ML-MAGES.
+
+**Grounded in:** ML-MAGES uses supervised learning with feed-forward neural networks to shrink inflated GWA effect sizes by incorporating LD information and summary statistics. It then applies an infinite mixture model with variational inference to cluster variants based on their multitrait association patterns.
+
+**Tech stack:** Python 3.11, PyTorch, scikit-learn, numpy, pandas, matplotlib, seaborn
+
+**Data:** Publicly available multitrait GWAS summary statistics dataset (e.g., lipid traits from UK Biobank or a similar public dataset). If unavailable, simulate multitrait GWAS summary statistics with LD structure.
+
+**Build it:**
+
+1. Acquire or simulate multitrait GWAS summary statistics with LD information for a moderate number of SNPs.
+2. Implement the ML-MAGES neural network shrinkage model based on the paper’s description.
+3. Train the neural network on simulated or held-out data to learn shrinkage mapping.
+4. Implement the infinite mixture model clustering with variational inference to cluster shrunken effect sizes.
+5. Apply the pipeline to the multitrait GWAS data to obtain shrunken effect sizes and variant clusters.
+6. Compare shrinkage accuracy to elastic net regression and clustering quality to k-means using precision and recall metrics.
+7. Document the implementation, results, and comparison in a detailed README.
+
+**Ships as:** A Python package or notebook implementing ML-MAGES shrinkage and clustering, applied to multitrait GWAS data, with evaluation plots and a README.
+
+**Stretch goal:** Add gene-level aggregation of variant effects and cluster assignments to identify trait-specific and shared gene associations.
+
+### Advanced — Adapt ML-MAGES Neural Network Shrinkage for Diverse Populations with Realistic Simulations
+*Effort: 3+ weeks*
+
+You extend the ML-MAGES neural network shrinkage method by developing improved simulation strategies to generate more realistic synthetic training data that better reflect diverse population genetic architectures and LD patterns. You retrain the neural network on this enhanced data and evaluate its performance on multitrait GWAS data from a population with distinct LD structure or allele frequencies (simulated or public). You analyze how this adaptation improves shrinkage accuracy and discuss implications for generalizability.
+
+**Why it shows you understood the paper:** This project tackles a key limitation and future direction from the paper, demonstrating your ability to critically engage with the method’s weaknesses and propose concrete improvements, a hallmark of research-level understanding.
+
+**Grounded in:** Reliance on simulated data for supervised learning training limits generalizability, especially across diverse populations with different genetic architectures. Develop improved simulation strategies to generate more realistic synthetic training data for diverse populations and traits.
+
+**Tech stack:** Python 3.11, PyTorch, numpy, scipy, pandas, matplotlib, scikit-learn
+
+**Data:** Simulated multitrait GWAS summary statistics with LD patterns modeled after diverse populations; optionally use public GWAS data from a non-European ancestry cohort if available.
+
+**Build it:**
+
+1. Research population-specific LD patterns and allele frequency distributions from literature or public resources.
+2. Develop or adapt a simulation pipeline to generate synthetic multitrait GWAS summary statistics reflecting these diverse genetic architectures.
+3. Retrain the ML-MAGES neural network shrinkage model on this improved synthetic training data.
+4. Evaluate shrinkage accuracy on test data simulated from the target population’s genetic architecture or on real multitrait GWAS data if accessible.
+5. Compare results to the original ML-MAGES model trained on generic simulations to quantify improvement.
+6. Write a comprehensive report discussing simulation design, retraining process, evaluation, and implications for applying ML-MAGES to underrepresented populations.
+
+**Ships as:** A repository with simulation code, retrained ML-MAGES shrinkage model, evaluation scripts, and a detailed report on improved generalizability to diverse populations.
+
+**Stretch goal:** Implement visualization tools to intuitively summarize and interpret high-dimensional multitrait clustering results from the adapted model.
+
+_No authors' code or data artifacts were released for this paper; all implementations must be based on the paper's methodological descriptions and publicly available or simulated data._

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-jing-yuan"
-source_hash: "25c05e507abec90f1c64ad1efb8deaa524a41507861897e3e79fac430aab6afa"
+source_hash: "c3d06eb856f2448ffa150e9acb0bb9f5cb4e20e81e4a9a16811a4f376f0cec4b"
 sequence: 128
 generator: "outreach-garden: managed"
 ---
@@ -133,3 +133,89 @@ Explore the novel asymmetric actor-critic design where the actor and critic have
 *How the paper uses it:* This is the core innovation of the paper’s UP-AAC framework to stabilize learning under structural uncertainty in job shop scheduling.
 
 ▶ [Learning to Fly in Seconds](https://www.youtube.com/watch?v=NRD43ZA1D-4) — ARPL UC Berkeley · 4:49
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive learning ladder to demonstrate your understanding of the UP-AAC framework for job shop scheduling under structural uncertainty. The beginner project focuses on reproducing a core mechanism of the paper—the asymmetric actor-critic architecture—on a small synthetic example using familiar tools. The intermediate project involves reimplementing the full UP-AAC method on a simplified scheduling environment, comparing it against a baseline heuristic, and reporting makespan metrics. The advanced project extends the paper by exploring one of its future directions: adapting the asymmetric actor-critic and hindsight reconstruction approach to a social computing domain with structural uncertainty, showcasing your ability to transfer and innovate beyond the original manufacturing context.
+
+### Beginner — Simulate Asymmetric Actor-Critic on a Small Job Shop Example
+*Effort: a weekend, ~8 hours*
+
+You build a minimal Python simulation of a small job shop scheduling problem with structural uncertainty, implementing the asymmetric actor-critic (AAC) architecture described in the paper. The actor learns from stochastic states, while the critic learns from hindsight-reconstructed deterministic states. You visualize training curves showing variance reduction compared to a symmetric baseline.
+
+**Why it shows you understood the paper:** This project demonstrates you understand the core innovation of the paper—the AAC architecture and hindsight reconstruction—and can implement it faithfully on a toy problem, showing the mechanism that stabilizes learning under uncertainty.
+
+**Grounded in:** Introduction of UP-AAC, a novel DRL framework for JSSP with structural uncertainty featuring an asymmetric actor-critic architecture.
+
+**Tech stack:** Python 3.11, PyTorch, Jupyter Notebook, matplotlib
+
+**Data:** Synthetic small-scale job shop scheduling environment with probabilistic routing simulated according to the paper's description of structural uncertainty.
+
+**Build it:**
+
+1. Implement a small job shop environment with 3 jobs and 3 machines, where job routes are probabilistic and revealed only after decisions.
+2. Implement a standard actor-critic reinforcement learning agent as a baseline.
+3. Implement the asymmetric actor-critic architecture where the actor receives stochastic states and the critic receives hindsight-reconstructed deterministic states.
+4. Train both agents and plot training curves comparing variance and learning stability.
+5. Write a README explaining the AAC mechanism and how your results illustrate variance reduction.
+
+**Ships as:** A GitHub repo with code, training plots, and a README explaining the AAC architecture and its effect on variance in a toy JSSP under uncertainty.
+
+**Stretch goal:** Add a simple uncertainty perception model (UPM) that embeds heuristic risk features to guide the actor's decisions.
+
+### Intermediate — Reimplement UP-AAC on a Simplified Job Shop Scheduling Benchmark
+*Effort: 2-3 weekends, ~20 hours*
+
+You reimplement the full UP-AAC framework from the paper, including the asymmetric actor-critic architecture and uncertainty perception model, applied to a simplified job shop scheduling benchmark with structural uncertainty. You compare your method against a simple priority dispatching heuristic baseline and report average makespan and CVaR metrics similar to the paper.
+
+**Why it shows you understood the paper:** This project shows you can faithfully reproduce the paper's core method and evaluation on a smaller scale, demonstrating comprehension of both the algorithmic innovations and the evaluation metrics used to measure robustness and performance.
+
+**Grounded in:** Extensive experiments demonstrating state-of-the-art performance and robustness compared to traditional heuristics and standard AC methods.
+
+**Tech stack:** Python 3.11, PyTorch, NumPy, Jupyter Notebook, matplotlib
+
+**Data:** Synthetic job shop scheduling instances with probabilistic routing generated according to the paper's structural uncertainty model; no official dataset released, so you simulate data based on paper descriptions.
+
+**Build it:**
+
+1. Implement or reuse the small job shop environment with structural uncertainty and probabilistic job routes.
+2. Implement the UP-AAC framework: asymmetric actor-critic architecture with hindsight reconstruction and the uncertainty perception model using heuristic risk priors and attention.
+3. Implement a baseline priority dispatching rule (e.g., shortest processing time first).
+4. Train UP-AAC and baseline on multiple instances and uncertainty levels.
+5. Evaluate and compare average makespan and CVaR metrics, plotting results.
+6. Document your implementation details, experimental setup, and results in a detailed README.
+
+**Ships as:** A GitHub repo with a full UP-AAC implementation on a simplified benchmark, comparison plots against a heuristic baseline, and a README explaining the method and results.
+
+**Stretch goal:** Add ablation studies removing either the AAC or UPM components to show their impact on performance.
+
+### Advanced — Adapt UP-AAC to Social Computing Scheduling with Structural Uncertainty
+*Effort: 3-4 weeks*
+
+You extend the UP-AAC framework to a social computing domain where scheduling decisions under structural uncertainty affect social welfare outcomes (e.g., task assignment in volunteer coordination with uncertain task sequences). You adapt the asymmetric actor-critic and hindsight reconstruction approach to this new domain, implement a domain-specific uncertainty perception model, and evaluate robustness and fairness metrics.
+
+**Why it shows you understood the paper:** This project demonstrates deep understanding by transferring the paper's novel algorithmic approach beyond manufacturing to a new domain aligned with Professor Yuan's research interests, addressing a stated future direction and showing creativity and research potential.
+
+**Grounded in:** Exploring more generalizable models that can handle varying instance sizes without retraining; Extending the hindsight reconstruction principle to other combinatorial optimization problems with uncertainty.
+
+**Tech stack:** Python 3.11, PyTorch, NetworkX, Jupyter Notebook, matplotlib
+
+**Data:** Synthetic social computing scheduling data simulating uncertain task sequences in volunteer or resource allocation scenarios, created based on domain knowledge and structural uncertainty principles from the paper.
+
+**Build it:**
+
+1. Research a social computing scheduling problem with structural uncertainty, such as volunteer task assignment with uncertain task sequences.
+2. Design a synthetic environment simulating this problem with probabilistic task routes.
+3. Adapt the UP-AAC framework's asymmetric actor-critic architecture and hindsight reconstruction to this environment.
+4. Develop a domain-specific uncertainty perception model incorporating social risk heuristics.
+5. Train and evaluate your model against a baseline heuristic and a standard actor-critic method, measuring robustness and fairness metrics.
+6. Write a comprehensive report linking your adaptation to the paper's methods and discussing challenges and results.
+
+**Ships as:** A GitHub repo with code and documentation showing UP-AAC adapted to a social computing scheduling problem, evaluation results, and a discussion of the method's generalizability.
+
+**Stretch goal:** Incorporate historical data or online learning to continuously improve the uncertainty perception model as suggested in the paper's future directions.
+
+_The paper's authors did not release code or datasets, so all data must be simulated based on the paper's descriptions of structural uncertainty in job shop scheduling._
