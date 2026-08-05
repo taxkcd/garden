@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/227-thomas-f-stahovich-using-a-lexical-and-temporal-analysis-of-students-sel|227 · Using a Lexical and Temporal Analysis of Students’ Self-Explanation to Predict Understanding — Thomas F. Stahovich]] · 2026-08-05
 - [[prof-papers/226-sujoy-sikdar-favoring-eagerness-for-remaining-items-designing-efficient|226 · Favoring Eagerness for Remaining Items: Designing Efficient, Fair, and Strategyproof Mechanisms — Sujoy Sikdar]] · 2026-08-05
 - [[prof-papers/225-jie-wang-ai-oracle-machines-for-intelligent-computing|225 · AI-Oracle Machines for Intelligent Computing — Jie Wang]] · 2026-08-05
 - [[prof-papers/224-juan-e-gilbert-a-stateless-transparent-voting-machine|224 · A Stateless Transparent Voting Machine — Juan E. Gilbert]] · 2026-08-05
