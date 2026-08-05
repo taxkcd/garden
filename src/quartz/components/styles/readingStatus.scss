@@ -1,0 +1,359 @@
+@use "../../styles/variables.scss" as *;
+
+// shared status colors
+:root {
+  --reading-reading: #d99a2b;
+  --reading-read: #4ea672;
+}
+
+// ── mark button (top right of a paper) ───────────────────────────────────────
+
+.reading-status {
+  float: right;
+  position: relative;
+  z-index: 5;
+  margin: 0 0 0.4rem 1rem;
+  font-family: var(--bodyFont);
+  user-select: none;
+
+  & .reading-status-trigger {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.3rem 0.55rem;
+    font-family: inherit;
+    font-size: 0.8rem;
+    line-height: 1.2;
+    color: var(--darkgray);
+    background-color: var(--light);
+    border: 1px solid var(--lightgray);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.1s ease, border-color 0.1s ease;
+
+    &:hover {
+      background-color: var(--lightgray);
+    }
+
+    & .reading-status-icon {
+      width: 13px;
+      height: 13px;
+      flex-shrink: 0;
+    }
+
+    & .reading-status-chevron {
+      width: 9px;
+      height: 9px;
+      opacity: 0.6;
+      flex-shrink: 0;
+    }
+  }
+
+  &[data-status="reading"] .reading-status-trigger {
+    color: var(--reading-reading);
+    border-color: var(--reading-reading);
+
+    & .reading-status-icon {
+      fill: var(--reading-reading);
+    }
+  }
+
+  &[data-status="read"] .reading-status-trigger {
+    color: var(--reading-read);
+    border-color: var(--reading-read);
+
+    & .reading-status-icon {
+      fill: var(--reading-read);
+    }
+  }
+
+  &[data-status="none"] .reading-status-clear {
+    display: none;
+  }
+
+  & .reading-status-menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 4px);
+    right: 0;
+    min-width: 9.5rem;
+    padding: 0.2rem;
+    background-color: var(--light);
+    border: 1px solid var(--lightgray);
+    border-radius: 6px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+  }
+
+  &.open .reading-status-menu {
+    display: block;
+  }
+
+  & .reading-status-option {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    width: 100%;
+    padding: 0.35rem 0.5rem;
+    font-family: inherit;
+    font-size: 0.8rem;
+    text-align: left;
+    color: var(--darkgray);
+    background-color: transparent;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--lightgray);
+    }
+
+    &.current {
+      color: var(--dark);
+      font-weight: 600;
+    }
+
+    &::before {
+      content: "";
+      width: 0.5rem;
+      height: 0.5rem;
+      border-radius: 50%;
+      flex-shrink: 0;
+      background-color: var(--gray);
+    }
+
+    &[data-status="reading"]::before {
+      background-color: var(--reading-reading);
+    }
+
+    &[data-status="read"]::before {
+      background-color: var(--reading-read);
+    }
+
+    &[data-status=""]::before {
+      background-color: transparent;
+      border: 1px solid var(--gray);
+    }
+  }
+}
+
+// ── status dot in front of any paper list item ───────────────────────────────
+
+.reading-dot {
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  margin-right: 0.4rem;
+  border-radius: 50%;
+  vertical-align: 0.05rem;
+  background-color: transparent;
+  border: 1px solid var(--lightgray);
+
+  &[data-status="reading"] {
+    background-color: var(--reading-reading);
+    border-color: var(--reading-reading);
+  }
+
+  &[data-status="read"] {
+    background-color: var(--reading-read);
+    border-color: var(--reading-read);
+  }
+}
+
+li[data-reading-status="read"] > a.internal {
+  opacity: 0.6;
+}
+
+// filter chips on the index hide non-matching rows
+body[data-reading-filter="unread"] li[data-reading-status]:not([data-reading-status="unread"]),
+body[data-reading-filter="reading"] li[data-reading-status]:not([data-reading-status="reading"]),
+body[data-reading-filter="read"] li[data-reading-status]:not([data-reading-status="read"]) {
+  display: none;
+}
+
+// ── explorer markers ────────────────────────────────────────────────────────
+
+.explorer a.reading-mark-reading,
+.explorer a.reading-mark-read {
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 0.4rem;
+    height: 0.4rem;
+    margin-right: 0.3rem;
+    border-radius: 50%;
+    vertical-align: 0.08rem;
+  }
+}
+
+.explorer a.reading-mark-reading::before {
+  background-color: var(--reading-reading);
+}
+
+.explorer a.reading-mark-read {
+  opacity: 0.55;
+
+  &::before {
+    background-color: var(--reading-read);
+  }
+}
+
+// ── Reading / Read panel on the index page ──────────────────────────────────
+
+.reading-panel {
+  margin: 1rem 0 1.5rem;
+  font-family: var(--bodyFont);
+
+  & .reading-panel-section {
+    margin-bottom: 0.8rem;
+    padding: 0.6rem 0.8rem;
+    background-color: var(--light);
+    border: 1px solid var(--lightgray);
+    border-radius: 6px;
+
+    &.is-empty .reading-panel-list {
+      display: none;
+    }
+
+    &:not(.is-empty) .reading-panel-empty {
+      display: none;
+    }
+  }
+
+  & .reading-panel-heading {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin: 0;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--dark);
+
+    &::before {
+      content: "";
+      width: 0.55rem;
+      height: 0.55rem;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+  }
+
+  & .reading-panel-section[data-section="reading"] .reading-panel-heading::before {
+    background-color: var(--reading-reading);
+  }
+
+  & .reading-panel-section[data-section="read"] .reading-panel-heading::before {
+    background-color: var(--reading-read);
+  }
+
+  & .reading-panel-count {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--gray);
+  }
+
+  & .reading-panel-empty {
+    margin: 0.35rem 0 0;
+    font-size: 0.8rem;
+    color: var(--gray);
+  }
+
+  & .reading-panel-list {
+    margin: 0.45rem 0 0;
+    padding: 0;
+    list-style: none;
+    max-height: 22rem;
+    overflow-y: auto;
+  }
+
+  & .reading-panel-item {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.6rem;
+    padding: 0.15rem 0;
+    font-size: 0.85rem;
+
+    & > a {
+      flex: 1;
+      min-width: 0;
+    }
+  }
+
+  & .reading-panel-actions {
+    display: flex;
+    gap: 0.3rem;
+    flex-shrink: 0;
+    opacity: 0;
+    transition: opacity 0.1s ease;
+
+    & button {
+      padding: 0.1rem 0.35rem;
+      font-family: inherit;
+      font-size: 0.7rem;
+      color: var(--gray);
+      background-color: transparent;
+      border: 1px solid var(--lightgray);
+      border-radius: 4px;
+      cursor: pointer;
+
+      &:hover {
+        color: var(--dark);
+        border-color: var(--gray);
+      }
+    }
+  }
+
+  & .reading-panel-item:hover .reading-panel-actions,
+  & .reading-panel-item:focus-within .reading-panel-actions {
+    opacity: 1;
+  }
+
+  & .reading-chips {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin-top: 0.6rem;
+  }
+
+  & .reading-chips-label {
+    font-size: 0.78rem;
+    color: var(--gray);
+    margin-right: 0.15rem;
+  }
+
+  & .reading-chip {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.25rem;
+    padding: 0.2rem 0.5rem;
+    font-family: inherit;
+    font-size: 0.78rem;
+    color: var(--darkgray);
+    background-color: var(--light);
+    border: 1px solid var(--lightgray);
+    border-radius: 999px;
+    cursor: pointer;
+
+    &:hover {
+      border-color: var(--gray);
+    }
+
+    &.active {
+      color: var(--light);
+      background-color: var(--secondary);
+      border-color: var(--secondary);
+    }
+
+    & .reading-chip-count {
+      font-size: 0.7rem;
+      opacity: 0.75;
+    }
+  }
+}
+
+@media all and ($mobile) {
+  .reading-panel .reading-panel-actions {
+    opacity: 1;
+  }
+}

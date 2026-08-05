@@ -23,6 +23,8 @@ import Breadcrumbs from "./Breadcrumbs"
 // Custom
 import ConditionalRender from "./ConditionalRender";
 import SidebarToggle from "./SidebarToggle";
+import ReadingStatus from "./ReadingStatus";
+import ReadingList from "./ReadingList";
 
 export {
   ArticleTitle,
@@ -48,4 +50,6 @@ export {
   Breadcrumbs,
   ConditionalRender,
   SidebarToggle,
+  ReadingStatus,
+  ReadingList,
 }

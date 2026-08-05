@@ -1,6 +1,12 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
 
+// folder whose pages get the Reading/Read bookmark treatment
+const PAPERS_FOLDER = "prof-papers"
+const isPaper = (slug?: string) =>
+  !!slug && slug.startsWith(`${PAPERS_FOLDER}/`) && slug !== `${PAPERS_FOLDER}/index`
+const isPapersIndex = (slug?: string) => slug === `${PAPERS_FOLDER}/index`
+
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
@@ -16,9 +22,19 @@ export const sharedPageComponents: SharedLayout = {
 export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
     Component.SidebarToggle(),
+    // bookmark button (Reading / Read) on each paper
+    Component.ConditionalRender({
+      component: Component.ReadingStatus(),
+      condition: (page) => isPaper(page.fileData.slug),
+    }),
     Component.Breadcrumbs(),
     Component.ArticleTitle(),
     Component.ContentMeta(),
+    // Reading / Read sections + filters on the papers index
+    Component.ConditionalRender({
+      component: Component.ReadingList({ folder: PAPERS_FOLDER }),
+      condition: (page) => isPapersIndex(page.fileData.slug),
+    }),
     // Component.TagList(),
     // Component.MobileOnly(Component.TableOfContents()),
   ],
