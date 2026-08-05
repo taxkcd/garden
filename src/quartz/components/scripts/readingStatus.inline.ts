@@ -138,7 +138,7 @@ function updateExplorer(store: Store) {
 // ── status dots on any rendered list of papers (the index page's list) ───────
 
 function updateArticleList(store: Store) {
-  document.querySelectorAll<HTMLLIElement>("article li").forEach((item) => {
+  document.querySelectorAll<HTMLLIElement>("article li, li.section-li").forEach((item) => {
     const link = item.querySelector<HTMLAnchorElement>("a[data-slug], a.internal")
     if (!link) return
     const slug = paperSlugOf(link)
@@ -147,12 +147,14 @@ function updateArticleList(store: Store) {
     const status = store[slug]?.status
     item.dataset.readingStatus = status ?? "unread"
 
-    let dot = item.querySelector<HTMLElement>(":scope > .reading-dot")
+    // plain <li> lines get the dot up front; folder-listing cards get it on the title
+    const host = link.closest("h3") ?? item
+    let dot = host.querySelector<HTMLElement>(":scope > .reading-dot")
     if (!dot) {
       dot = document.createElement("span")
       dot.className = "reading-dot"
       dot.setAttribute("aria-hidden", "true")
-      item.insertBefore(dot, item.firstChild)
+      host.insertBefore(dot, host.firstChild)
     }
     dot.dataset.status = status ?? "unread"
     dot.title = status ? LABELS[status] : "Not marked"

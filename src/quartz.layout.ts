@@ -153,7 +153,15 @@ export const defaultContentPageLayout: PageLayout = {
 
 // components for pages that display lists of pages  (e.g. tags or folders)
 export const defaultListPageLayout: PageLayout = {
-  beforeBody: [Component.SidebarToggle(), Component.ArticleTitle()],
+  beforeBody: [
+    Component.SidebarToggle(),
+    Component.ArticleTitle(),
+    // Reading / Read sections + filters on the papers folder page
+    Component.ConditionalRender({
+      component: Component.ReadingList({ folder: PAPERS_FOLDER }),
+      condition: (page) => isPapersIndex(page.fileData.slug),
+    }),
+  ],
   left: [
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
