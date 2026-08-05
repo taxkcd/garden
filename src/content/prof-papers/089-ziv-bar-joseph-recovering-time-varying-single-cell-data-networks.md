@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-ziv-bar-joseph"
-source_hash: "e8540e16537bcc084b67169cab4706c317873d270efbd5460db2d12118392dd5"
+source_hash: "08e49d316453886602cf66a555b4ba0c93563b5c90eda362e33e72bb55a2d79b"
 sequence: 89
 generator: "outreach-garden: managed"
 ---
@@ -134,3 +134,90 @@ This talk by the paper's author provides a focused overview of Marlene, explaini
 - [Stanford CS231N | Spring 2025 | Lecture 8: Attention and Transformers](https://www.youtube.com/watch?v=RQowiOF_FvQ) — also for: GRU-AUNet: A Domain Adaptation Framework for Contactless Fingerprint Presentation Attack Detection (Nima Karimian)
 - [Attention in transformers, step-by-step | Deep Learning Chapter 6](https://www.youtube.com/watch?v=eMlx5fFNoYc) — also for: Heterogeneous Graph Attention Network (Yanfang (Fanny) Ye)
 - [Attention for Neural Networks, Clearly Explained!!!](https://www.youtube.com/watch?v=PSs6nxngL6k) — also for: A Survey of AI-Based Anomaly Detection in IoT and Sensor Networks (Marco Álvarez)
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a skill ladder to demonstrate your understanding of the Marlene method for recovering time-varying gene regulatory networks from single-cell RNA-seq data. The beginner project focuses on implementing a core mechanism of the paper (self-attention for gene feature aggregation) on a small scale using familiar tools. The intermediate project involves reimplementing the core dynamic graph construction and meta-learning adaptation on a public single-cell dataset, comparing against a baseline. The advanced project extends Marlene by addressing a stated limitation: improving long-term temporal modeling using an alternative recurrent architecture, demonstrating deeper engagement with the paper's future directions.
+
+### Beginner — Gene Feature Pooling with Multihead Self-Attention
+*Effort: a weekend, ~8 hours*
+
+You build a small Python notebook that implements the paper's gene featurization step using multihead self-attention pooling (PMA) on a synthetic or small real single-cell RNA-seq dataset. The goal is to produce gene feature matrices invariant to cell order, mimicking the first step of Marlene.
+
+**Why it shows you understood the paper:** This project shows you understand the key innovation of set-based gene featurization via attention, a foundational step enabling temporal graph learning in the paper.
+
+**Grounded in:** Adaptation of temporal graph structure learning methods to single-cell RNA-seq data using set-based gene featurization.
+
+**Tech stack:** Python 3.11, PyTorch, Jupyter Notebook, numpy, matplotlib
+
+**Data:** Use a small synthetic single-cell RNA-seq dataset simulated with random gene expression values for ~100 cells and ~50 genes to demonstrate the pooling mechanism.
+
+**Build it:**
+
+1. Simulate or load a small single-cell gene expression matrix (cells × genes).
+2. Implement multihead self-attention pooling (PMA) to aggregate cell features into gene features invariant to cell order.
+3. Visualize the resulting gene feature embeddings using dimensionality reduction (e.g., PCA or t-SNE).
+4. Write a README explaining how this step relates to Marlene's gene featurization.
+
+**Ships as:** A Jupyter notebook demonstrating PMA-based gene feature pooling with visualizations and a README linking it to the paper's method.
+
+**Stretch goal:** Add a comparison to simple mean or max pooling to show the advantage of attention-based pooling.
+
+### Intermediate — Reimplement Marlene's Dynamic GRN Inference on Public Single-Cell Data
+*Effort: 2 weekends, ~20 hours*
+
+You reimplement the core Marlene model: gene featurization with PMA, dynamic graph construction with evolving self-attention weights via GRUs, and meta-learning adaptation (MAML) for cell type tasks. You apply it to a publicly available time series single-cell RNA-seq dataset (e.g., a COVID-19 vaccination dataset substitute) and compare performance against a simple static GRN inference baseline like GENIE3.
+
+**Why it shows you understood the paper:** This project demonstrates your ability to implement the paper's main architecture and training procedure, reproduce key metrics like intersection-over-union (IoU) between consecutive time points, and understand meta-learning for rare cell types.
+
+**Grounded in:** Marlene uses a three-step deep learning framework including PMA, evolving self-attention with GRUs, and MAML meta-learning to reconstruct dynamic GRNs; outperforms existing methods on COVID-19 vaccination and lung datasets.
+
+**Tech stack:** Python 3.11, PyTorch, scikit-learn, Jupyter Notebook, numpy, matplotlib
+
+**Data:** Use a publicly available time series single-cell RNA-seq dataset with annotated cell types and multiple time points, such as a COVID-19 vaccination dataset substitute from public repositories (e.g., 10x Genomics or GEO).
+
+**Build it:**
+
+1. Preprocess the single-cell RNA-seq data to select a subset of genes and cells with time point and cell type annotations.
+2. Implement PMA gene featurization to create gene feature matrices invariant to cell order.
+3. Implement a self-attention mechanism whose weights evolve over time using GRUs to construct dynamic gene regulatory networks.
+4. Implement a MAML meta-learning loop treating each cell type as a task to enable adaptation to rare cell types.
+5. Train the model to predict cell type labels from TF expression and inferred networks using cross-entropy loss.
+6. Compare the inferred networks' temporal smoothness using IoU metrics against a static baseline like GENIE3.
+7. Document the results and relate them to the paper's reported improvements.
+
+**Verified links from the paper:**
+
+- <https://github.com/fdtomasi/regain> — a third-party/baseline artifact the paper cites — not the authors' own code
+
+**Ships as:** A GitHub repository with code, a notebook demonstrating dynamic GRN inference on real data, baseline comparison, evaluation metrics, and a detailed README explaining the implementation and results.
+
+**Stretch goal:** Add biological pathway enrichment analysis on genes added between time points to mimic the paper's biological validation.
+
+### Advanced — Extending Marlene with S4 Modules for Long-Term Temporal Modeling
+*Effort: 3+ weeks*
+
+You extend the Marlene model by replacing the GRU-based weight evolution with S4 (Structured State Space) modules to address the vanishing gradient limitation for longer time series. You evaluate this extended model on a synthetic or extended time series single-cell dataset to test improved long-term temporal dynamics modeling.
+
+**Why it shows you understood the paper:** This project tackles a key limitation and future direction stated in the paper, demonstrating deep comprehension of the model's architecture and temporal modeling challenges, as well as ability to integrate advanced sequence models.
+
+**Grounded in:** For longer sequences, the GRU operation may suffer from vanishing gradient problems; alternative modules like S4 may be needed.
+
+**Tech stack:** Python 3.11, PyTorch, Jupyter Notebook, numpy, matplotlib, s4seq (if available)
+
+**Data:** Use a synthetic time series single-cell RNA-seq dataset with more time points than in the original paper to test long-term modeling, or extend a public dataset by interpolation or simulation.
+
+**Build it:**
+
+1. Reimplement or adapt the Marlene dynamic graph construction pipeline with PMA and self-attention.
+2. Replace the GRU module evolving self-attention weights with an S4 module implementation for sequence modeling.
+3. Train and evaluate the extended model on a longer time series dataset, monitoring metrics like IoU and temporal smoothness.
+4. Compare performance and gradient stability against the original GRU-based model.
+5. Document the architectural changes, training procedure, and results in detail.
+
+**Ships as:** A GitHub repository with code implementing the S4-extended Marlene model, evaluation notebooks, and a comprehensive README discussing improvements and limitations.
+
+**Stretch goal:** Integrate multi-omics data (e.g., ATAC-seq) as additional input features to test the model's adaptability, addressing another future direction.
