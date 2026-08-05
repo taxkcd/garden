@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-sargur-n-srihari"
-source_hash: "0ea22f91a66f0688e4bfe3a2179d512c7015ba6c6a0ae928e0906e1831d80e96"
+source_hash: "294474e6a4fc59b7e7396b1576ecc94b7eeded15b1675857938e1e3fe729ade3"
 sequence: 237
 generator: "outreach-garden: managed"
 ---

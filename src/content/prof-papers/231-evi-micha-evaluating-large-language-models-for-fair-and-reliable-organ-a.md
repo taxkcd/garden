@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-evi-micha"
-source_hash: "3a54d9fe888ddc3812112ea7b52fb14fe7d888a87b2ba76abf46bd3292aed672"
+source_hash: "71d7e718a3ca6c65ddfc7ebebe3ab08b77e3a89561c1a7aa9f63746bfb2f00cf"
 sequence: 231
 generator: "outreach-garden: managed"
 ---

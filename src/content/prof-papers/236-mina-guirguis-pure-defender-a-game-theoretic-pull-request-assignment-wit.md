@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-mina-guirguis"
-source_hash: "89ccf796b0f4bdc551afeeea71bf953e570139120b1f2015d43616b7e1d4eeca"
+source_hash: "73b297dc16f283acbf08eb64511d0383388a15694ded4bcfdb5a3e96f11e3c24"
 sequence: 236
 generator: "outreach-garden: managed"
 ---

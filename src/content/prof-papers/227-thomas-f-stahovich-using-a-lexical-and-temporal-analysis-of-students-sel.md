@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-thomas-f-stahovich"
-source_hash: "f197b934ab15cfb5299a8ca4315d2a3d1edab2b7609c93313a39717f69016d21"
+source_hash: "35df892165c3dc06fe165d179428e8c19d77a6a636ae267a76cb17a5070a83fb"
 sequence: 227
 generator: "outreach-garden: managed"
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Professor papers and learning paths"
-date: 2026-08-05
+date: 2026-08-06
 tags:
   - research-paper
   - learning-path
@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/238-wayne-goddard-all-k-isolation-in-trees|238 · All-k-Isolation in Trees — Wayne Goddard]] · 2026-08-05
 - [[prof-papers/237-sargur-n-srihari-vision-language-model-based-handwriting-verification|237 · Vision-Language Model Based Handwriting Verification — Sargur N. Srihari]] · 2026-08-05
 - [[prof-papers/236-mina-guirguis-pure-defender-a-game-theoretic-pull-request-assignment-wit|236 · PuRe Defender: A Game-Theoretic Pull Request Assignment with Deep RL — Mina Guirguis]] · 2026-08-05
 - [[prof-papers/235-gopal-gupta-symbolic-rule-extraction-from-attention-guided-sparse-repres|235 · Symbolic Rule Extraction From Attention-Guided Sparse Representations in Vision Transformers — Gopal Gupta]] · 2026-08-05
