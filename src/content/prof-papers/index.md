@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/230-rebecca-a-hutchinson-data-augmentation-approaches-for-satellite-imagery|230 · Data Augmentation Approaches for Satellite Imagery — Rebecca A. Hutchinson]] · 2026-08-05
 - [[prof-papers/229-chao-peng-usability-and-engagement-study-for-a-serious-virtual-reality-g|229 · Usability and Engagement Study for a Serious Virtual Reality Game of Lunar Exploration Missions — Chao Peng]] · 2026-08-05
 - [[prof-papers/228-rachit-nigam-parameterized-hardware-design-with-latency-abstract-interfa|228 · Parameterized Hardware Design with Latency-Abstract Interfaces — Rachit Nigam]] · 2026-08-05
 - [[prof-papers/227-thomas-f-stahovich-using-a-lexical-and-temporal-analysis-of-students-sel|227 · Using a Lexical and Temporal Analysis of Students’ Self-Explanation to Predict Understanding — Thomas F. Stahovich]] · 2026-08-05
