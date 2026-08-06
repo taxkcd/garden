@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/261-michael-r-genesereth-a-community-driven-vision-for-a-new-knowledge-resou|261 · A Community-driven vision for a new Knowledge Resource for AI — Michael R. Genesereth]] · 2026-08-06
 - [[prof-papers/260-wenbin-zhang-fairness-aware-graph-representation-learning-with-limited-d|260 · Fairness-Aware Graph Representation Learning with Limited Demographic Information — Wenbin Zhang]] · 2026-08-06
 - [[prof-papers/259-michael-m-swift-oqueue-observable-communication-in-learning-directed-ope|259 · OQueue: Observable Communication in Learning Directed Operating Systems — Michael M. Swift]] · 2026-08-06
 - [[prof-papers/258-andrew-lukefahr-library-attack-reverse-engineering-approach-for-evaluati|258 · Library-Attack: Reverse Engineering Approach for Evaluating Hardware IP Protection — Andrew Lukefahr]] · 2026-08-06
