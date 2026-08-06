@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/265-sumanta-n-pattanaik-efficient-neural-representation-of-volumetric-data-u|265 · Efficient Neural Representation of Volumetric Data using Coordinate-Based Networks — Sumanta N. Pattanaik]] · 2026-08-06
 - [[prof-papers/264-aron-laszka-adversarial-reinforcement-learning-for-detecting-false-data|264 · Adversarial Reinforcement Learning for Detecting False Data Injection Attacks in Vehicular Routing — Aron Laszka]] · 2026-08-06
 - [[prof-papers/263-saeed-mehraban-energy-bosons-and-computational-complexity|263 · Energy, Bosons and Computational Complexity — Saeed Mehraban]] · 2026-08-06
 - [[prof-papers/262-rajeev-balasubramonian-pathfinder-practical-real-time-learning-for-data|262 · Pathfinder: Practical Real-Time Learning for Data Prefetching — Rajeev Balasubramonian]] · 2026-08-06
