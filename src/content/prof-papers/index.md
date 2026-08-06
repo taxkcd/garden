@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/243-madhu-sudan-expanders-meet-reed-muller-easy-instances-of-noisy-k-xor|243 · Expanders Meet Reed-Muller: Easy Instances of Noisy k-XOR — Madhu Sudan]] · 2026-08-06
 - [[prof-papers/242-andrew-perrault-optimizing-resource-constrained-non-pharmaceutical-inter|242 · Optimizing Resource-Constrained Non-Pharmaceutical Interventions for Multi-Cluster Outbreak Control Using Hierarchical Reinforcement Learning — Andrew Perrault]] · 2026-08-06
 - [[prof-papers/241-yingcheng-sun-a-fraud-detection-inspired-framework-for-llm-agents-securi|241 · A Fraud-Detection-Inspired Framework for LLM Agents Security — Yingcheng Sun]] · 2026-08-06
 - [[prof-papers/240-alessio-gaspar-a-neutral-rewrite-mutation-operator-for-genetic-programmi|240 · A Neutral Rewrite Mutation Operator for Genetic Programming applied to Boolean Domain Problems — Alessio Gaspar]] · 2026-08-06
