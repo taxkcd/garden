@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/241-yingcheng-sun-a-fraud-detection-inspired-framework-for-llm-agents-securi|241 · A Fraud-Detection-Inspired Framework for LLM Agents Security — Yingcheng Sun]] · 2026-08-06
 - [[prof-papers/240-alessio-gaspar-a-neutral-rewrite-mutation-operator-for-genetic-programmi|240 · A Neutral Rewrite Mutation Operator for Genetic Programming applied to Boolean Domain Problems — Alessio Gaspar]] · 2026-08-06
 - [[prof-papers/239-jianping-zeng-anchoring-whole-system-persistence-and-resilience-in-cxl|239 · Anchoring Whole-System Persistence and Resilience in CXL — Jianping Zeng]] · 2026-08-06
 - [[prof-papers/238-wayne-goddard-all-k-isolation-in-trees|238 · All-k-Isolation in Trees — Wayne Goddard]] · 2026-08-05
