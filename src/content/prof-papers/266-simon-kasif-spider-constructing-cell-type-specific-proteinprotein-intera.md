@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-simon-kasif"
-source_hash: "87bb81317299d17ebf3c656e54a68dacf53ea42b468ef588fe58567a4c68ea65"
+source_hash: "bf52b2f2142990497c2ef6cf182023da2eaca144ae6b423a073778d9b8d5a992"
 sequence: 266
 generator: "outreach-garden: managed"
 ---
