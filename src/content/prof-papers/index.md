@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/245-michael-gribskov-bibliometric-review-of-atac-seq-and-its-application-in|245 · Bibliometric review of ATAC-Seq and its application in gene expression — Michael Gribskov]] · 2026-08-06
 - [[prof-papers/244-in-kee-kim-covariance-guided-resource-adaptive-learning-for-efficient-ed|244 · Covariance-Guided Resource Adaptive Learning for Efficient Edge Inference — In Kee Kim]] · 2026-08-06
 - [[prof-papers/243-madhu-sudan-expanders-meet-reed-muller-easy-instances-of-noisy-k-xor|243 · Expanders Meet Reed-Muller: Easy Instances of Noisy k-XOR — Madhu Sudan]] · 2026-08-06
 - [[prof-papers/242-andrew-perrault-optimizing-resource-constrained-non-pharmaceutical-inter|242 · Optimizing Resource-Constrained Non-Pharmaceutical Interventions for Multi-Cluster Outbreak Control Using Hierarchical Reinforcement Learning — Andrew Perrault]] · 2026-08-06
