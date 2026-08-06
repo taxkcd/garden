@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/258-andrew-lukefahr-library-attack-reverse-engineering-approach-for-evaluati|258 · Library-Attack: Reverse Engineering Approach for Evaluating Hardware IP Protection — Andrew Lukefahr]] · 2026-08-06
 - [[prof-papers/257-scott-a-mahlke-strata-hierarchical-context-caching-for-long-context-lang|257 · Strata: Hierarchical Context Caching for Long Context Language Model Serving — Scott A. Mahlke]] · 2026-08-06
 - [[prof-papers/256-alexander-j-hartemink-comprehensive-profiling-of-chromatin-occupancy-dyn|256 · Comprehensive profiling of chromatin occupancy dynamics through the cell cycle — Alexander J. Hartemink]] · 2026-08-06
 - [[prof-papers/255-thomas-y-yeh-be-like-water-adaptive-floating-point-for-machine-learning|255 · Be Like Water: Adaptive Floating Point for Machine Learning — Thomas Y. Yeh]] · 2026-08-06
