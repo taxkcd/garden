@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/260-wenbin-zhang-fairness-aware-graph-representation-learning-with-limited-d|260 · Fairness-Aware Graph Representation Learning with Limited Demographic Information — Wenbin Zhang]] · 2026-08-06
 - [[prof-papers/259-michael-m-swift-oqueue-observable-communication-in-learning-directed-ope|259 · OQueue: Observable Communication in Learning Directed Operating Systems — Michael M. Swift]] · 2026-08-06
 - [[prof-papers/258-andrew-lukefahr-library-attack-reverse-engineering-approach-for-evaluati|258 · Library-Attack: Reverse Engineering Approach for Evaluating Hardware IP Protection — Andrew Lukefahr]] · 2026-08-06
 - [[prof-papers/257-scott-a-mahlke-strata-hierarchical-context-caching-for-long-context-lang|257 · Strata: Hierarchical Context Caching for Long Context Language Model Serving — Scott A. Mahlke]] · 2026-08-06
