@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-andrew-perrault"
-source_hash: "943e3d09efa899dcdf14fb32ce7f055d5e30b8061d1c2ab24c66a80535630d4c"
+source_hash: "7178ba4f3e3c33b3d790cc5ebca3b263d4f2b69466e2423ceb1fd3c74d5d674e"
 sequence: 242
 generator: "outreach-garden: managed"
 ---

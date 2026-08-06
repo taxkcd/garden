@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-itsik-pe-er"
-source_hash: "accd5c6f77a77f58e19f8d8a1da5a93fd5b325f3ae20683eafa09d0cd99f7b40"
+source_hash: "b7cc908b0f976c3097b5599b39f14407c7dcfa9b260749986df7238e59512b76"
 sequence: 249
 generator: "outreach-garden: managed"
 ---

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-andrew-lukefahr"
-source_hash: "a30b1e86ab4af98dbd0cddfe8fdd06d3d293830d9cd71a29bcece0d704971697"
+source_hash: "3baa58f18c14a2dbc0d5713c25b2d11ffc83d995661ca4b2be058636afac839c"
 sequence: 258
 generator: "outreach-garden: managed"
 ---

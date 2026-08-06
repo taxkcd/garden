@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-casey-fiesler"
-source_hash: "af807f08dcdc9292c84d5ab0b2f7bcb9c26167345569d6037ef0658e701f9f9d"
+source_hash: "68ad69a21594c13e03b078f0b64ba11eb8406f7921cc725f491d427c43a63459"
 sequence: 253
 generator: "outreach-garden: managed"
 ---

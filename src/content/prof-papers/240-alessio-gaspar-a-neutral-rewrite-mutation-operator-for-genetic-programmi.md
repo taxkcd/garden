@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-alessio-gaspar"
-source_hash: "6dd72fcf52866ab743a6b8ebfced21dd4e119403a805acb4c3b4f8b11ad9d8e1"
+source_hash: "f5c19775bc2f1cf3115bde4b853fd9d7f28c7bf7022ddfbbdf134f5f343b097f"
 sequence: 240
 generator: "outreach-garden: managed"
 ---

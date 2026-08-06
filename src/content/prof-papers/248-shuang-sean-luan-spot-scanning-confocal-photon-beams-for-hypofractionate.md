@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-shuang-sean-luan"
-source_hash: "c97da47063cfae3857a85547b6048614a6d5ca257c13bf29e9c812c9594485d5"
+source_hash: "8b273e8b3e96ae0af8637a577360e54bd4c1210812985c2ffa1498018e1c2a0c"
 sequence: 248
 generator: "outreach-garden: managed"
 ---

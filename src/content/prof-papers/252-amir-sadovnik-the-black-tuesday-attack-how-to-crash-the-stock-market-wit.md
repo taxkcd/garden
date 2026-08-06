@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-amir-sadovnik"
-source_hash: "22abea34733a78786aeb3afe56b080616d3472b763e376b8fb1f76dfd35a1917"
+source_hash: "44e0f306fdf9dbdb798cc30ad1fd00eaedca6959fd7606c0a2cd5d9e38e9a031"
 sequence: 252
 generator: "outreach-garden: managed"
 ---

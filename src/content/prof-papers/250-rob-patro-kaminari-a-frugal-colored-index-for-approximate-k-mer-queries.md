@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-rob-patro"
-source_hash: "f3517155ba54aa4d4d1ffd655996c5d885bc3ce3a281306e05820f00a9477d01"
+source_hash: "07872ef49011ebaa5c8fdf8c8b7a6b35fbe16ee3b17d5ed0fe3b22fe3aea9937"
 sequence: 250
 generator: "outreach-garden: managed"
 ---

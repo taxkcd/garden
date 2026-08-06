@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-scott-a-mahlke"
-source_hash: "1ad7d7278b8b934f114fc3437a58f7e96d7a3eed3da73d054266c5adc2813fc8"
+source_hash: "824e6c6e6a06aff0b21004f42f77274f22cfa5570eb71a7fdb8fd04adc319c22"
 sequence: 257
 generator: "outreach-garden: managed"
 ---

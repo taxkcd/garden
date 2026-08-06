@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-wayne-goddard"
-source_hash: "06e93dcd8272a3ec1eb7f4c3c0ff52721f5f045b4c9209edefac3a6bad9b070b"
+source_hash: "391074884660b6db13449c14abfab906164781f67bcdee7ad01746be945409ee"
 sequence: 238
 generator: "outreach-garden: managed"
 ---
