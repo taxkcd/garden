@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/251-brent-e-harrison-the-goofus-gallant-story-corpus-for-practical-value-ali|251 · The Goofus & Gallant Story Corpus for Practical Value Alignment — Brent E. Harrison]] · 2026-08-06
 - [[prof-papers/250-rob-patro-kaminari-a-frugal-colored-index-for-approximate-k-mer-queries|250 · Kaminari: a frugal colored index for approximate k-mer queries — Rob Patro]] · 2026-08-06
 - [[prof-papers/249-itsik-pe-er-objective-specific-privileged-bases-via-full-prefix-matryosh|249 · Objective-Specific Privileged Bases via Full-Prefix Matryoshka Learning — Itsik Pe'er]] · 2026-08-06
 - [[prof-papers/248-shuang-sean-luan-spot-scanning-confocal-photon-beams-for-hypofractionate|248 · Spot-Scanning Confocal Photon Beams for Hypofractionated Brain Radiosurgery — Shuang (Sean) Luan]] · 2026-08-06
