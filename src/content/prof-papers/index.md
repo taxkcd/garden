@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/270-roman-v-yampolskiy-on-monitorability-of-ai|270 · On Monitorability of AI — Roman V. Yampolskiy]] · 2026-08-06
 - [[prof-papers/269-stephanie-ludi-an-extension-based-accessibility-framework-for-making-blo|269 · An Extension-Based Accessibility Framework for Making Blockly Accessible to Blind and Low-Vision Users — Stephanie Ludi]] · 2026-08-06
 - [[prof-papers/268-ronak-etemadpour-inter-annotator-agreement-and-its-reflection-in-llms-an|268 · Inter-Annotator Agreement and Its Reflection in LLMs and Responsible AI — Ronak Etemadpour]] · 2026-08-06
 - [[prof-papers/267-sandhya-dwarkadas-jspim-a-skew-aware-pim-accelerator-for-high-performanc|267 · JSPIM: A Skew-Aware PIM Accelerator for High-Performance Databases Join and Select Operations — Sandhya Dwarkadas]] · 2026-08-06
