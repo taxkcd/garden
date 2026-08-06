@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/249-itsik-pe-er-objective-specific-privileged-bases-via-full-prefix-matryosh|249 · Objective-Specific Privileged Bases via Full-Prefix Matryoshka Learning — Itsik Pe'er]] · 2026-08-06
 - [[prof-papers/248-shuang-sean-luan-spot-scanning-confocal-photon-beams-for-hypofractionate|248 · Spot-Scanning Confocal Photon Beams for Hypofractionated Brain Radiosurgery — Shuang (Sean) Luan]] · 2026-08-06
 - [[prof-papers/247-tengfei-ma-dual-pathway-fusion-of-ehrs-and-knowledge-graphs-for-predicti|247 · Dual-Pathway Fusion of EHRs and Knowledge Graphs for Predicting Unseen Drug-Drug Interactions — Tengfei Ma]] · 2026-08-06
 - [[prof-papers/246-phillip-b-gibbons-adadino-context-adaptive-dino-distilled-vision-foundat|246 · AdaDINO: Context-Adaptive DINO-Distilled Vision Foundation Models for Efficient Open-Vocabulary Edge Inference — Phillip B. Gibbons]] · 2026-08-06
