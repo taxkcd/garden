@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/255-thomas-y-yeh-be-like-water-adaptive-floating-point-for-machine-learning|255 · Be Like Water: Adaptive Floating Point for Machine Learning — Thomas Y. Yeh]] · 2026-08-06
 - [[prof-papers/254-rathish-das-almost-tight-approximation-hardness-and-online-algorithms-fo|254 · Almost Tight Approximation Hardness and Online Algorithms for Resource Scheduling — Rathish Das]] · 2026-08-06
 - [[prof-papers/253-casey-fiesler-validation-of-the-critical-reflection-and-agency-in-comput|253 · Validation of the Critical Reflection and Agency in Computing Index: Do Computing Ethics Courses Make a Difference? — Casey Fiesler]] · 2026-08-06
 - [[prof-papers/252-amir-sadovnik-the-black-tuesday-attack-how-to-crash-the-stock-market-wit|252 · The Black Tuesday Attack: How to Crash the Stock Market with Adversarial Examples to Financial Forecasting Models — Amir Sadovnik]] · 2026-08-06
