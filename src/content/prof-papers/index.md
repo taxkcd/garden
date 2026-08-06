@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/247-tengfei-ma-dual-pathway-fusion-of-ehrs-and-knowledge-graphs-for-predicti|247 · Dual-Pathway Fusion of EHRs and Knowledge Graphs for Predicting Unseen Drug-Drug Interactions — Tengfei Ma]] · 2026-08-06
 - [[prof-papers/246-phillip-b-gibbons-adadino-context-adaptive-dino-distilled-vision-foundat|246 · AdaDINO: Context-Adaptive DINO-Distilled Vision Foundation Models for Efficient Open-Vocabulary Edge Inference — Phillip B. Gibbons]] · 2026-08-06
 - [[prof-papers/245-michael-gribskov-bibliometric-review-of-atac-seq-and-its-application-in|245 · Bibliometric review of ATAC-Seq and its application in gene expression — Michael Gribskov]] · 2026-08-06
 - [[prof-papers/244-in-kee-kim-covariance-guided-resource-adaptive-learning-for-efficient-ed|244 · Covariance-Guided Resource Adaptive Learning for Efficient Edge Inference — In Kee Kim]] · 2026-08-06
