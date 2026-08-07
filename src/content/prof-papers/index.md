@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/282-debswapna-bhattacharya-origami-orientation-aware-graph-neural-network-fo|282 · ORIGAMI: Orientation-Aware Graph Neural Network for Assessing Multimeric Interfaces of Protein Complex Structures — Debswapna Bhattacharya]] · 2026-08-07
 - [[prof-papers/281-haipeng-chen-culturevlm-characterizing-and-improving-cultural-understand|281 · CultureVLM: Characterizing and Improving Cultural Understanding of Vision-Language Models for over 100 Countries — Haipeng Chen]] · 2026-08-07
 - [[prof-papers/280-tiffany-barnes-merryquery-a-trustworthy-llm-powered-tool-providing-perso|280 · MerryQuery: A Trustworthy LLM-Powered Tool Providing Personalized Support for Educators and Students — Tiffany Barnes]] · 2026-08-07
 - [[prof-papers/279-ramesh-raskar-imaging-hidden-objects-with-consumer-lidar-via-motion-indu|279 · Imaging Hidden Objects with Consumer LiDAR via Motion Induced Sampling — Ramesh Raskar]] · 2026-08-07
