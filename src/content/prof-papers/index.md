@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/271-gursimran-singh-walia-insights-from-an-industry-survey-on-software-desig|271 · Insights from an Industry Survey on Software Design Errors — Gursimran Singh Walia]] · 2026-08-07
 - [[prof-papers/270-roman-v-yampolskiy-on-monitorability-of-ai|270 · On Monitorability of AI — Roman V. Yampolskiy]] · 2026-08-06
 - [[prof-papers/269-stephanie-ludi-an-extension-based-accessibility-framework-for-making-blo|269 · An Extension-Based Accessibility Framework for Making Blockly Accessible to Blind and Low-Vision Users — Stephanie Ludi]] · 2026-08-06
 - [[prof-papers/268-ronak-etemadpour-inter-annotator-agreement-and-its-reflection-in-llms-an|268 · Inter-Annotator Agreement and Its Reflection in LLMs and Responsible AI — Ronak Etemadpour]] · 2026-08-06
