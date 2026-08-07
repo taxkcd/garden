@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/290-benjamin-c-lee-prometheus-toward-resilient-data-centers-through-optimize|290 · Prometheus: Toward Resilient Data Centers through Optimized Cooling Infrastructure — Benjamin C. Lee]] · 2026-08-07
 - [[prof-papers/289-aryan-deshwal-aligning-language-models-with-selective-prediction|289 · Aligning Language Models with Selective Prediction — Aryan Deshwal]] · 2026-08-07
 - [[prof-papers/288-minesh-patel-discord-an-experimental-methodology-for-quickly-discovering|288 · DiscoRD: An Experimental Methodology for Quickly Discovering the Reliable Read Disturbance Threshold of Real DRAM Chips — Minesh Patel]] · 2026-08-07
 - [[prof-papers/287-sing-hoi-sze-widespread-epistasis-shapes-rna-polymerase-ii-active-site-f|287 · Widespread epistasis shapes RNA polymerase II active site function and evolution — Sing-Hoi Sze]] · 2026-08-07
