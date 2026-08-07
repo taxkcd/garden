@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/273-nancy-fulda-neuron-level-language-tag-injection-improves-zero-shot-trans|273 · Neuron-Level Language Tag Injection Improves Zero-Shot Translation Performance — Nancy Fulda]] · 2026-08-07
 - [[prof-papers/272-david-fernndez-baca-exact-algorithms-for-no-rainbow-coloring-and-phyloge|272 · Exact Algorithms for No-Rainbow Coloring and Phylogenetic Decisiveness — David Fernández-Baca]] · 2026-08-07
 - [[prof-papers/271-gursimran-singh-walia-insights-from-an-industry-survey-on-software-desig|271 · Insights from an Industry Survey on Software Design Errors — Gursimran Singh Walia]] · 2026-08-07
 - [[prof-papers/270-roman-v-yampolskiy-on-monitorability-of-ai|270 · On Monitorability of AI — Roman V. Yampolskiy]] · 2026-08-06
