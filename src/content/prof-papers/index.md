@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/280-tiffany-barnes-merryquery-a-trustworthy-llm-powered-tool-providing-perso|280 · MerryQuery: A Trustworthy LLM-Powered Tool Providing Personalized Support for Educators and Students — Tiffany Barnes]] · 2026-08-07
 - [[prof-papers/279-ramesh-raskar-imaging-hidden-objects-with-consumer-lidar-via-motion-indu|279 · Imaging Hidden Objects with Consumer LiDAR via Motion Induced Sampling — Ramesh Raskar]] · 2026-08-07
 - [[prof-papers/278-alexander-tropsha-one-size-does-not-fit-all-revising-traditional-paradig|278 · One size does not fit all: revising traditional paradigms for assessing accuracy of QSAR models used for virtual screening — Alexander Tropsha]] · 2026-08-07
 - [[prof-papers/277-hadar-averbuch-elor-cross-image-attention-for-zero-shot-appearance-trans|277 · Cross-Image Attention for Zero-Shot Appearance Transfer — Hadar Averbuch-Elor]] · 2026-08-07
