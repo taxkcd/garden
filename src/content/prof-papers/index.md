@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/286-steven-l-tanimoto-codetations-intelligent-persistent-notes-and-uis-for-p|286 · Codetations: Intelligent, Persistent Notes and UIs for Programs and Other Documents — Steven L. Tanimoto]] · 2026-08-07
 - [[prof-papers/285-nathan-d-cahill-near-real-time-learning-and-extraction-of-attack-models|285 · Near Real-time Learning and Extraction of Attack Models from Intrusion Alerts — Nathan D. Cahill]] · 2026-08-07
 - [[prof-papers/284-uri-wilensky-mutation-without-variation-convergence-dynamics-in-llm-driv|284 · Mutation Without Variation: Convergence Dynamics in LLM-Driven Program Evolution — Uri Wilensky]] · 2026-08-07
 - [[prof-papers/283-ewan-davies-degree-sequence-bounds-for-independent-sets-via-multivariate|283 · Degree-sequence bounds for independent sets via multivariate local occupancy — Ewan Davies]] · 2026-08-07
