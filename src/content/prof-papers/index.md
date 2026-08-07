@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/278-alexander-tropsha-one-size-does-not-fit-all-revising-traditional-paradig|278 · One size does not fit all: revising traditional paradigms for assessing accuracy of QSAR models used for virtual screening — Alexander Tropsha]] · 2026-08-07
 - [[prof-papers/277-hadar-averbuch-elor-cross-image-attention-for-zero-shot-appearance-trans|277 · Cross-Image Attention for Zero-Shot Appearance Transfer — Hadar Averbuch-Elor]] · 2026-08-07
 - [[prof-papers/276-joseph-jaeger-nonadaptive-one-way-to-hiding-implies-adaptive-quantum-rep|276 · Nonadaptive One-Way to Hiding Implies Adaptive Quantum Reprogramming — Joseph Jaeger]] · 2026-08-07
 - [[prof-papers/275-jiawei-zhang-rpn-2-on-interdependence-function-learning-towards-unifying|275 · RPN 2: On Interdependence Function Learning Towards Unifying and Advancing CNN, RNN, GNN, and Transformer — Jiawei Zhang]] · 2026-08-07
