@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/275-jiawei-zhang-rpn-2-on-interdependence-function-learning-towards-unifying|275 · RPN 2: On Interdependence Function Learning Towards Unifying and Advancing CNN, RNN, GNN, and Transformer — Jiawei Zhang]] · 2026-08-07
 - [[prof-papers/274-david-bau-in-context-algebra|274 · In-Context Algebra — David Bau]] · 2026-08-07
 - [[prof-papers/273-nancy-fulda-neuron-level-language-tag-injection-improves-zero-shot-trans|273 · Neuron-Level Language Tag Injection Improves Zero-Shot Translation Performance — Nancy Fulda]] · 2026-08-07
 - [[prof-papers/272-david-fernndez-baca-exact-algorithms-for-no-rainbow-coloring-and-phyloge|272 · Exact Algorithms for No-Rainbow Coloring and Phylogenetic Decisiveness — David Fernández-Baca]] · 2026-08-07
