@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/320-daniel-wichs-improved-pseudorandom-codes-from-permuted-puzzles|320 · Improved Pseudorandom Codes from Permuted Puzzles — Daniel Wichs]] · 2026-08-08
 - [[prof-papers/319-patricia-ordez-information-needs-and-priority-use-cases-of-population-he|319 · Information needs and priority use cases of population health researchers to improve preparedness for future hurricanes and floods — Patricia Ordóñez]] · 2026-08-08
 - [[prof-papers/318-eftychios-sifakis-vdb-a-deep-learning-framework-for-sparse-large-scale-a|318 · 𝑓 VDB: A Deep-Learning Framework for Sparse, Large-Scale, and High-Performance Spatial Intelligence — Eftychios Sifakis]] · 2026-08-08
 - [[prof-papers/317-yizong-cheng-mean-shift-mode-seeking-and-clustering|317 · Mean Shift, Mode Seeking, and Clustering — Yizong Cheng]] · 2026-08-08
