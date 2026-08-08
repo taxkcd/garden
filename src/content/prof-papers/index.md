@@ -1,6 +1,6 @@
 ---
 title: "Professor papers and learning paths"
-date: 2026-08-08
+date: 2026-08-09
 tags:
   - research-paper
   - learning-path
@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/321-tesca-fitzgerald-recall-recovery-experience-collection-for-active-lifelo|321 · RECALL: Recovery Experience Collection for Active Lifelong Learning in Vision-Language-Action Models — Tesca Fitzgerald]] · 2026-08-08
 - [[prof-papers/320-daniel-wichs-improved-pseudorandom-codes-from-permuted-puzzles|320 · Improved Pseudorandom Codes from Permuted Puzzles — Daniel Wichs]] · 2026-08-08
 - [[prof-papers/319-patricia-ordez-information-needs-and-priority-use-cases-of-population-he|319 · Information needs and priority use cases of population health researchers to improve preparedness for future hurricanes and floods — Patricia Ordóñez]] · 2026-08-08
 - [[prof-papers/318-eftychios-sifakis-vdb-a-deep-learning-framework-for-sparse-large-scale-a|318 · 𝑓 VDB: A Deep-Learning Framework for Sparse, Large-Scale, and High-Performance Spatial Intelligence — Eftychios Sifakis]] · 2026-08-08
