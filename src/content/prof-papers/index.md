@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/307-kasturi-r-varadarajan-a-near-linear-constant-factor-approximation-for-eu|307 · A Near-Linear Constant-Factor Approximation for Euclidean Bipartite Matching — Kasturi R. Varadarajan]] · 2026-08-08
 - [[prof-papers/306-xiaowei-jia-knowledge-guided-machine-learning-a-paradigm-shift-in-ai-for|306 · Knowledge-Guided Machine Learning: A Paradigm Shift in AI for Science — Xiaowei Jia]] · 2026-08-08
 - [[prof-papers/305-safwan-wshah-object-tracking-and-geo-localization-from-street-images|305 · Object Tracking and Geo-localization from Street Images — Safwan Wshah]] · 2026-08-08
 - [[prof-papers/304-calton-pu-fedhft-efficient-federated-fine-tuning-with-heterogeneous-edge|304 · FedHFT: Efficient Federated Fine-tuning with Heterogeneous Edge Clients — Calton Pu]] · 2026-08-08
