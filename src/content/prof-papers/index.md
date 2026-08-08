@@ -12,6 +12,8 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/313-bingzhe-li-a-survey-of-blockchain-data-management-systems|313 · A Survey of Blockchain Data Management Systems — Bingzhe Li]] · 2026-08-08
+- [[prof-papers/312-yi-jen-chiang-soft-subdivision-motion-planning-for-complex-planar-robots|312 · Soft Subdivision Motion Planning for Complex Planar Robots — Yi-Jen Chiang]] · 2026-08-08
 - [[prof-papers/311-yixuan-he-learning-to-fuse-temporal-proximity-networks-a-case-study-in-c|311 · Learning to Fuse Temporal Proximity Networks: A Case Study in Chimpanzee Social Interactions — Yixuan He]] · 2026-08-08
 - [[prof-papers/310-t-n-vijaykumar-litetm-reducing-transactional-state-overhead|310 · LiteTM: Reducing Transactional State Overhead — T. N. Vijaykumar]] · 2026-08-08
 - [[prof-papers/309-gillian-smith-little-procedural-people-playing-politics-with-generators|309 · Little Procedural People: Playing politics with generators — Gillian Smith]] · 2026-08-08
