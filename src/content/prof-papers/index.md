@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/333-kunpeng-liu-distilling-closed-source-llms-knowledge-for-locally-stable-a|333 · Distilling Closed-Source LLM’s Knowledge for Locally Stable and Economic Biomedical Entity Linking — Kunpeng Liu]] · 2026-08-08
 - [[prof-papers/332-steven-skiena-reducing-tokenization-premiums-for-low-resource-languages|332 · Reducing Tokenization Premiums for Low-Resource Languages — Steven Skiena]] · 2026-08-08
 - [[prof-papers/331-nodari-sitchinava-efficient-parallel-algorithms-for-hypergraph-matching|331 · Efficient Parallel Algorithms for Hypergraph Matching — Nodari Sitchinava]] · 2026-08-08
 - [[prof-papers/330-frank-pfenning-proof-theoretic-adjoint-compilation|330 · Proof-Theoretic Adjoint Compilation — Frank Pfenning]] · 2026-08-08
