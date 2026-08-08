@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/311-yixuan-he-learning-to-fuse-temporal-proximity-networks-a-case-study-in-c|311 · Learning to Fuse Temporal Proximity Networks: A Case Study in Chimpanzee Social Interactions — Yixuan He]] · 2026-08-08
 - [[prof-papers/310-t-n-vijaykumar-litetm-reducing-transactional-state-overhead|310 · LiteTM: Reducing Transactional State Overhead — T. N. Vijaykumar]] · 2026-08-08
 - [[prof-papers/309-gillian-smith-little-procedural-people-playing-politics-with-generators|309 · Little Procedural People: Playing politics with generators — Gillian Smith]] · 2026-08-08
 - [[prof-papers/308-ling-wang-unveiling-influencer-driven-pii-disclosures-in-social-media-di|308 · Unveiling Influencer-Driven PII Disclosures in Social Media Discourse — Ling Wang]] · 2026-08-08
