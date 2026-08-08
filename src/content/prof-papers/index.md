@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/335-weijie-zhao-hive-hidden-evidence-verification-for-hallucination-detectio|335 · HIVE: Hidden-Evidence Verification for Hallucination Detection in Diffusion Large Language Models — Weijie Zhao]] · 2026-08-08
 - [[prof-papers/334-zhijian-liu-dflash-block-diffusion-for-flash-speculative-decoding|334 · DFlash: Block Diffusion for Flash Speculative Decoding — Zhijian Liu]] · 2026-08-08
 - [[prof-papers/333-kunpeng-liu-distilling-closed-source-llms-knowledge-for-locally-stable-a|333 · Distilling Closed-Source LLM’s Knowledge for Locally Stable and Economic Biomedical Entity Linking — Kunpeng Liu]] · 2026-08-08
 - [[prof-papers/332-steven-skiena-reducing-tokenization-premiums-for-low-resource-languages|332 · Reducing Tokenization Premiums for Low-Resource Languages — Steven Skiena]] · 2026-08-08
