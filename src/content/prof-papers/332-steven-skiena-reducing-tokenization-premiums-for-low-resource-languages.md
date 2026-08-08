@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-steven-skiena"
-source_hash: "2ab6495d1a7e5345e2d29c8f040095f45cadbb41d418efa2dca74b168ef4a3c9"
+source_hash: "08b81f7788c2fff3e80027fce96d9ee9cab2b5695531c1afd17e88662898b7f3"
 sequence: 332
 generator: "outreach-garden: managed"
 ---

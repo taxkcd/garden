@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-clark-elliott"
-source_hash: "66192c9b548abd146a9876bfcf1a90e919947608f6a7b279ad22bf960d1bfa71"
+source_hash: "eef1a9a6a5ca67178c828ded360b38cf5c1b3e6f3cff5cd32395415cf05982df"
 sequence: 324
 generator: "outreach-garden: managed"
 ---

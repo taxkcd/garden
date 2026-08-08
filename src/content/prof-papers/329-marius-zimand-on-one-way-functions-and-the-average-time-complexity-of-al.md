@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-marius-zimand"
-source_hash: "cae4121157cf6b48aded0539a4d23b1e515de3651f98d93bfb217dee75234e27"
+source_hash: "30e3e6ce83659143a50bfaa674ee0e7eaf6a65f5edb58fa890e9f7255f94dea5"
 sequence: 329
 generator: "outreach-garden: managed"
 ---

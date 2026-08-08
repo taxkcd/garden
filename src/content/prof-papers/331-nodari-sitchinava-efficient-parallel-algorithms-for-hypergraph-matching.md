@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-nodari-sitchinava"
-source_hash: "8d6fe91a6a1e30216351d8d86275de45c48f6cd45cd4ab4a98ea5c76f44cf446"
+source_hash: "5bc17e7fad623d1dee49998a6427afb5024f17114c4bce540db4c2886a60d8ca"
 sequence: 331
 generator: "outreach-garden: managed"
 ---

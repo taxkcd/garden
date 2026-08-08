@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-david-heath"
-source_hash: "e6c90e6c672b346cdfd050344bc6727bd35569ce8ef7b0200e4d8e904e688f59"
+source_hash: "2c91af2f73b275e6b565d820f0aaf573f34690eb8411194217f4243bc043dfeb"
 sequence: 323
 generator: "outreach-garden: managed"
 ---
