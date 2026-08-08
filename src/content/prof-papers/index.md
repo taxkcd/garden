@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/323-david-heath-parallel-ram-from-cyclic-circuits|323 · Parallel RAM from Cyclic Circuits — David Heath]] · 2026-08-08
 - [[prof-papers/322-sarah-sebo-designing-robots-for-families-in-situ-prototyping-for-context|322 · Designing Robots for Families: In-Situ Prototyping for Contextual Reminders on Family Routines — Sarah Sebo]] · 2026-08-08
 - [[prof-papers/321-tesca-fitzgerald-recall-recovery-experience-collection-for-active-lifelo|321 · RECALL: Recovery Experience Collection for Active Lifelong Learning in Vision-Language-Action Models — Tesca Fitzgerald]] · 2026-08-08
 - [[prof-papers/320-daniel-wichs-improved-pseudorandom-codes-from-permuted-puzzles|320 · Improved Pseudorandom Codes from Permuted Puzzles — Daniel Wichs]] · 2026-08-08
