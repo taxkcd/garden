@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/293-tzu-mao-li-differentiable-visual-computing-for-inverse-problems-and-mach|293 · Differentiable Visual Computing for Inverse Problems and Machine Learning — Tzu-Mao Li]] · 2026-08-08
 - [[prof-papers/292-azhar-ilyas-nanoengineering-systems-for-gene-therapy-mechanisms-modaliti|292 · Nanoengineering Systems for Gene Therapy: Mechanisms, Modalities, and Future Directions — Azhar Ilyas]] · 2026-08-08
 - [[prof-papers/291-zachary-wartell-hyfinball-a-hybrid-user-interface-for-coordinated-2d-3d|291 · HyFinBall: a Hybrid User Interface for Coordinated 2D+3D Visualization in Semi-Immersive VR — Zachary Wartell]] · 2026-08-07
 - [[prof-papers/290-benjamin-c-lee-prometheus-toward-resilient-data-centers-through-optimize|290 · Prometheus: Toward Resilient Data Centers through Optimized Cooling Infrastructure — Benjamin C. Lee]] · 2026-08-07
