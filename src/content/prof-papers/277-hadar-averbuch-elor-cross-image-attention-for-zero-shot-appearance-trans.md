@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-hadar-averbuch-elor"
-source_hash: "86df5699e4db00dd46fd97ce5f8da65301c96c170971857b66da1b5d91bce590"
+source_hash: "25b84d0f79914c876385ef110bfca84c44a6d60ecaf2b10a5e4ef9fb64d0b7d5"
 sequence: 277
 generator: "outreach-garden: managed"
 ---

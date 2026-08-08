@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-george-traian-amariucai"
-source_hash: "ea08eba733bb713f3492f7d77aa613c06e178e535bc7cfd97af0cb7b4f3eed32"
+source_hash: "12904385077fb69ecf6cec8003ccaea495977611a2ebe380cbd01771ec4bc78d"
 sequence: 301
 generator: "outreach-garden: managed"
 ---

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-sing-hoi-sze"
-source_hash: "f0ac2b0616b5da0ba20dc952f2969f035b77d7f1d243946fc991d4905eaa16c5"
+source_hash: "81b54033ba360ffb03418872b13a36a71abf44d6dc893a475098643af3da435b"
 sequence: 287
 generator: "outreach-garden: managed"
 ---

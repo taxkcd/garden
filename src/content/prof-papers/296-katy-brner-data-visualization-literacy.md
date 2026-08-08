@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-katy-borner"
-source_hash: "4b4a27b2b3ba31f82988778e50561144d3a10b3a4c3576db3a235febcaa6d134"
+source_hash: "2e6ce2eae25b13ea48bd6e6db435f0bb5c4b88d7d8f09a2be1fe7484210bc46b"
 sequence: 296
 generator: "outreach-garden: managed"
 ---

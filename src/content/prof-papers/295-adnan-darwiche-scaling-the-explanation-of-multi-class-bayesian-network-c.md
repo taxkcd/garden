@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-adnan-darwiche"
-source_hash: "6076244230eabb8708c115ab319bc4a1440f2bc290395b0a60b0cf55ac202da8"
+source_hash: "82a9794102e38c0767f28322ca7869ce4a02b2dd65940e9a171fb66999cce361"
 sequence: 295
 generator: "outreach-garden: managed"
 ---

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-nancy-fulda"
-source_hash: "08c33c08ac39b0c8f68173e60379278fd0c44dbd3354978635db1e578622917b"
+source_hash: "8e4d9d4d98f37591b2ddd0968f9086acf7c15323bb2d23d1deafe92efd8a67f5"
 sequence: 273
 generator: "outreach-garden: managed"
 ---

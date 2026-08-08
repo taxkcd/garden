@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-alexander-tropsha"
-source_hash: "5061486cbe85bacfe9e15a20c3b284917fd0b2f986541b5105ef1c5fcdd7e98c"
+source_hash: "5f3d23b2a7b4c4d227f635fcbd961323ab93c1d42f34287b150cdc3796a52004"
 sequence: 278
 generator: "outreach-garden: managed"
 ---

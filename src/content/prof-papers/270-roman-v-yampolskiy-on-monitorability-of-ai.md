@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-roman-v-yampolskiy"
-source_hash: "7fcf400b2153fc6ac3706189ab477ad8d3e40d14ae11d325d7460c041390d8bd"
+source_hash: "cc0db1934d63123e7cc2fa5a8a5c7d38a459c49b75a11761e5f7505beac6aa9d"
 sequence: 270
 generator: "outreach-garden: managed"
 ---

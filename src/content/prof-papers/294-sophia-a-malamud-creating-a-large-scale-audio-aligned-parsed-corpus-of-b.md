@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-sophia-a-malamud"
-source_hash: "bedae0068817c43cca43312977bbca7992d2e7916ee67f0e12a255e3dbe9a6b8"
+source_hash: "9525a9a8ce433fdf5e6a998acbda489f335307afd93ba007109809420c0fbbc2"
 sequence: 294
 generator: "outreach-garden: managed"
 ---

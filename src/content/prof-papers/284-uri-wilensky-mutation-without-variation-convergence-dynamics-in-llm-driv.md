@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-uri-wilensky"
-source_hash: "5aa9ccae7ec4cfb6ba40d8ecd1530b793ae541beda5a6f5bee6288587819a6ae"
+source_hash: "43c129bf4c86b35876e51629ca7d3dcb77b8402939e7c69ec30008b3ddf3d477"
 sequence: 284
 generator: "outreach-garden: managed"
 ---

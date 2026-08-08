@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-benjamin-c-lee"
-source_hash: "8b931129850169449441805d1066e7779a17f9e1ba232a77760c41c13499b094"
+source_hash: "44b49354896f1fc970bb9b3947a608242742c3c4e111ca08c5eb4f62ceca6811"
 sequence: 290
 generator: "outreach-garden: managed"
 ---

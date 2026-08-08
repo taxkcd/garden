@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-gillian-smith"
-source_hash: "46576ed1d52a78390ef24bc0d7302504f5a9c68fceb5f28f48c336c9566fc47a"
+source_hash: "cf228d04dcd1ef10f394178d48906b7f0f9a7f6dd89ab42531c13627b35bb8f1"
 sequence: 309
 generator: "outreach-garden: managed"
 ---

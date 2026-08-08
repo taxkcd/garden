@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-haipeng-chen"
-source_hash: "c6c32bf37cd4ff872d29caa82f1a9cd60eea322e22dc38be91cf04ae0d91a932"
+source_hash: "67be8fe4090981d6f03153952b3c88122df7a5421116f93d22502550712d231e"
 sequence: 281
 generator: "outreach-garden: managed"
 ---

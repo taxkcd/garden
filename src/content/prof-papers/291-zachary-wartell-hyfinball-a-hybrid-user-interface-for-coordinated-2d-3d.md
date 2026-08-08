@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-zachary-wartell"
-source_hash: "58b8d6b07de88800cafabb0ec949ec6b3de9e8180539de3378ecdba4fdebe393"
+source_hash: "946302415183164d8aac7e5ed4708183905a8eb69b8ca18cf8cf9389fcd4b2f6"
 sequence: 291
 generator: "outreach-garden: managed"
 ---

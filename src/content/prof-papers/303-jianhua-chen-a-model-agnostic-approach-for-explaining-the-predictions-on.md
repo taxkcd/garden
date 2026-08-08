@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-jianhua-chen"
-source_hash: "0c64f0d912ba876b20c23c6921f1b4f80609d3539de43bf68689643e9757192b"
+source_hash: "42c0d4c8d973787a7092b8eca4902ec5ec79048831b2b5f02ec46146dac10b6c"
 sequence: 303
 generator: "outreach-garden: managed"
 ---

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-david-fernandez-baca"
-source_hash: "3e99511e8df80875e958a5165241d2792a5aff2278dfea87cfd3cf1899de36f9"
+source_hash: "62ea63ab29da3e44e5550bd0edcb4b60737fef01f1ac2088313354ce68b8eaea"
 sequence: 272
 generator: "outreach-garden: managed"
 ---

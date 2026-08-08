@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-dale-reed"
-source_hash: "7471c4d3386fde8920e3245016a00f1c3dda1559814bce275497257a22a5ce1f"
+source_hash: "027d37e534b5c143a038dfe257cf95c4596212e2350acd97f672ce9cbccffa1b"
 sequence: 300
 generator: "outreach-garden: managed"
 ---

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-jason-j-corso"
-source_hash: "d600a7902b22a87cac3d605e532525237ec4c1fc706fd418031879d18e02536b"
+source_hash: "6a5a637b61cdec1bd1abb156cd401e2c27a28d017125584bd36c20b0abcc3c30"
 sequence: 299
 generator: "outreach-garden: managed"
 ---

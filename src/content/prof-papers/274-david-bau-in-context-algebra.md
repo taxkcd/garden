@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-david-bau"
-source_hash: "099a9d1e18f9db0b90a51466c96c4d3a2476b6b6351e7cd955b932f3b178d147"
+source_hash: "11bacbd43226da1393065a0a8bccbd946909de87fb5a14b86e20c7fa9129bf17"
 sequence: 274
 generator: "outreach-garden: managed"
 ---

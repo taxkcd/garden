@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-joseph-jaeger"
-source_hash: "783a5e17f339ec6d5c40bf20f22328f15c7b673906e94adae618bb5b93b83cdd"
+source_hash: "e060ed0588c1b2336e5ffaccd5de93b13eefd4d71a70da00d6bb434f000984a6"
 sequence: 276
 generator: "outreach-garden: managed"
 ---

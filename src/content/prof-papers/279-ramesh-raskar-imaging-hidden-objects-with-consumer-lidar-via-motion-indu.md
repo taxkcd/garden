@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-ramesh-raskar"
-source_hash: "87067da9ee15535b1e9c35c3c67ad88d8049bcd1d70a5396fca5b8f0fcd526ae"
+source_hash: "d8266addea1e0498b7379f6911839cf1673bda0060c3aba339431745a85712e9"
 sequence: 279
 generator: "outreach-garden: managed"
 ---

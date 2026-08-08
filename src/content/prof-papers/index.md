@@ -12,6 +12,8 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/316-qi-cheng-domain-informed-representation-for-evolutionary-sieving-in-inte|316 · Domain-Informed Representation for Evolutionary Sieving in Integral and Module Lattices — Qi Cheng]] · 2026-08-08
+- [[prof-papers/315-saurabh-gupta-alphaone-reasoning-models-thinking-slow-and-fast-at-test-t|315 · AlphaOne: Reasoning Models Thinking Slow and Fast at Test Time — Saurabh Gupta]] · 2026-08-07
 - [[prof-papers/314-ramgopal-mettu-tcr-eml-explainable-model-layers-for-tcr-pmhc-prediction|314 · TCR-EML: Explainable Model Layers for TCR-pMHC Prediction — Ramgopal Mettu]] · 2026-08-08
 - [[prof-papers/313-bingzhe-li-a-survey-of-blockchain-data-management-systems|313 · A Survey of Blockchain Data Management Systems — Bingzhe Li]] · 2026-08-08
 - [[prof-papers/312-yi-jen-chiang-soft-subdivision-motion-planning-for-complex-planar-robots|312 · Soft Subdivision Motion Planning for Complex Planar Robots — Yi-Jen Chiang]] · 2026-08-08

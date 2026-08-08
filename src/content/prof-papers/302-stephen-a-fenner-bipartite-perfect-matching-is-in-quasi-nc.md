@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-stephen-a-fenner"
-source_hash: "e9b8b251bbb8ea951a2b638b5e20a2b0f15edae57a7db9e107659269eb3f15e0"
+source_hash: "2f77d58d616157f48c5aa00f18f07f6540da6944c87e09d876b05886538db315"
 sequence: 302
 generator: "outreach-garden: managed"
 ---

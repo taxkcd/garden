@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-stephanie-ludi"
-source_hash: "0e97a110c0f6648c4105f68e83bd49d2b67a48219064b3606a9148864bac6312"
+source_hash: "ea6b3b05c654051b2a6f3499fce7c3fdf316594e791bbe2d2ea06762e7a42758"
 sequence: 269
 generator: "outreach-garden: managed"
 ---
