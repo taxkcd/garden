@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/330-frank-pfenning-proof-theoretic-adjoint-compilation|330 · Proof-Theoretic Adjoint Compilation — Frank Pfenning]] · 2026-08-08
 - [[prof-papers/329-marius-zimand-on-one-way-functions-and-the-average-time-complexity-of-al|329 · On one-way functions and the average time complexity of almost-optimal compression — Marius Zimand]] · 2026-08-08
 - [[prof-papers/328-vaibhav-v-unhelkar-hierarchical-reward-design-from-language-enhancing-al|328 · Hierarchical Reward Design from Language: Enhancing Alignment of Agent Behavior with Human Specifications — Vaibhav V. Unhelkar]] · 2026-08-08
 - [[prof-papers/327-yuzhang-shang-adatooler-v-adaptive-tool-use-for-images-and-videos|327 · AdaTooler-V: Adaptive Tool-Use for Images and Videos — Yuzhang Shang]] · 2026-08-08
