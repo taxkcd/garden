@@ -12,6 +12,8 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/302-stephen-a-fenner-bipartite-perfect-matching-is-in-quasi-nc|302 · Bipartite Perfect Matching is in quasi-NC — Stephen A. Fenner]] · 2026-08-08
+- [[prof-papers/301-george-traian-amariucai-initial-exploration-of-zero-shot-privacy-utility|301 · Initial Exploration of Zero-Shot Privacy Utility Tradeoffs in Tabular Data Using GPT-4 — George Traian Amariucai]] · 2026-08-08
 - [[prof-papers/300-dale-reed-using-magic-to-teach-computer-programming|300 · Using Magic to Teach Computer Programming — Dale Reed]] · 2026-08-08
 - [[prof-papers/299-jason-j-corso-grounded-video-description|299 · Grounded Video Description — Jason J. Corso]] · 2026-08-08
 - [[prof-papers/298-rui-hu-fed-pilot-optimizing-lora-allocation-for-efficient-federated-fine|298 · Fed-pilot: Optimizing LoRA Allocation for Efficient Federated Fine-Tuning with Heterogeneous Clients — Rui Hu]] · 2026-08-08
