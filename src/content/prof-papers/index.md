@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/318-eftychios-sifakis-vdb-a-deep-learning-framework-for-sparse-large-scale-a|318 · 𝑓 VDB: A Deep-Learning Framework for Sparse, Large-Scale, and High-Performance Spatial Intelligence — Eftychios Sifakis]] · 2026-08-08
 - [[prof-papers/317-yizong-cheng-mean-shift-mode-seeking-and-clustering|317 · Mean Shift, Mode Seeking, and Clustering — Yizong Cheng]] · 2026-08-08
 - [[prof-papers/316-qi-cheng-domain-informed-representation-for-evolutionary-sieving-in-inte|316 · Domain-Informed Representation for Evolutionary Sieving in Integral and Module Lattices — Qi Cheng]] · 2026-08-08
 - [[prof-papers/315-saurabh-gupta-alphaone-reasoning-models-thinking-slow-and-fast-at-test-t|315 · AlphaOne: Reasoning Models Thinking Slow and Fast at Test Time — Saurabh Gupta]] · 2026-08-07
