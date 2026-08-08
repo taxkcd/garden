@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/305-safwan-wshah-object-tracking-and-geo-localization-from-street-images|305 · Object Tracking and Geo-localization from Street Images — Safwan Wshah]] · 2026-08-08
 - [[prof-papers/304-calton-pu-fedhft-efficient-federated-fine-tuning-with-heterogeneous-edge|304 · FedHFT: Efficient Federated Fine-tuning with Heterogeneous Edge Clients — Calton Pu]] · 2026-08-08
 - [[prof-papers/303-jianhua-chen-a-model-agnostic-approach-for-explaining-the-predictions-on|303 · A Model-Agnostic Approach for Explaining the Predictions on Clustered Data — Jianhua Chen]] · 2026-08-08
 - [[prof-papers/302-stephen-a-fenner-bipartite-perfect-matching-is-in-quasi-nc|302 · Bipartite Perfect Matching is in quasi-NC — Stephen A. Fenner]] · 2026-08-08
