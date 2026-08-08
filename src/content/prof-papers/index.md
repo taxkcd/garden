@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/297-mona-singh-a-benchmarked-high-efficiency-prime-editing-platform-for-mult|297 · A benchmarked, high-efficiency prime editing platform for multiplexed dropout screening — Mona Singh]] · 2026-08-08
 - [[prof-papers/296-katy-brner-data-visualization-literacy|296 · Data Visualization Literacy — Katy Börner]] · 2026-08-08
 - [[prof-papers/295-adnan-darwiche-scaling-the-explanation-of-multi-class-bayesian-network-c|295 · Scaling the Explanation of Multi-Class Bayesian Network Classifiers — Adnan Darwiche]] · 2026-08-08
 - [[prof-papers/294-sophia-a-malamud-creating-a-large-scale-audio-aligned-parsed-corpus-of-b|294 · Creating a Large-Scale Audio-Aligned Parsed Corpus of Bilingual Russian Child and Child-Directed Speech (BiRCh): Challenges, Solutions, and Implications for Research — Sophia A. Malamud]] · 2026-08-08
