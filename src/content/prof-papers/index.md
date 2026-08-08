@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/314-ramgopal-mettu-tcr-eml-explainable-model-layers-for-tcr-pmhc-prediction|314 · TCR-EML: Explainable Model Layers for TCR-pMHC Prediction — Ramgopal Mettu]] · 2026-08-08
 - [[prof-papers/313-bingzhe-li-a-survey-of-blockchain-data-management-systems|313 · A Survey of Blockchain Data Management Systems — Bingzhe Li]] · 2026-08-08
 - [[prof-papers/312-yi-jen-chiang-soft-subdivision-motion-planning-for-complex-planar-robots|312 · Soft Subdivision Motion Planning for Complex Planar Robots — Yi-Jen Chiang]] · 2026-08-08
 - [[prof-papers/311-yixuan-he-learning-to-fuse-temporal-proximity-networks-a-case-study-in-c|311 · Learning to Fuse Temporal Proximity Networks: A Case Study in Chimpanzee Social Interactions — Yixuan He]] · 2026-08-08
