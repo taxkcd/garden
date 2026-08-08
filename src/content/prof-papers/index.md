@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/303-jianhua-chen-a-model-agnostic-approach-for-explaining-the-predictions-on|303 · A Model-Agnostic Approach for Explaining the Predictions on Clustered Data — Jianhua Chen]] · 2026-08-08
 - [[prof-papers/302-stephen-a-fenner-bipartite-perfect-matching-is-in-quasi-nc|302 · Bipartite Perfect Matching is in quasi-NC — Stephen A. Fenner]] · 2026-08-08
 - [[prof-papers/301-george-traian-amariucai-initial-exploration-of-zero-shot-privacy-utility|301 · Initial Exploration of Zero-Shot Privacy Utility Tradeoffs in Tabular Data Using GPT-4 — George Traian Amariucai]] · 2026-08-08
 - [[prof-papers/300-dale-reed-using-magic-to-teach-computer-programming|300 · Using Magic to Teach Computer Programming — Dale Reed]] · 2026-08-08
