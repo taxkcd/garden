@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/325-matt-gibson-optimal-bounds-for-weak-consistent-digital-rays-in-2d|325 · Optimal Bounds for Weak Consistent Digital Rays in 2D — Matt Gibson]] · 2026-08-08
 - [[prof-papers/324-clark-elliott-the-brain-is-primarily-a-visual-spatial-processing-device|324 · The brain is primarily a visual-spatial processing device: altering visual-spatial cognitive processing via retinal stimulation can treat movement disorders — Clark Elliott]] · 2026-08-08
 - [[prof-papers/323-david-heath-parallel-ram-from-cyclic-circuits|323 · Parallel RAM from Cyclic Circuits — David Heath]] · 2026-08-08
 - [[prof-papers/322-sarah-sebo-designing-robots-for-families-in-situ-prototyping-for-context|322 · Designing Robots for Families: In-Situ Prototyping for Contextual Reminders on Family Routines — Sarah Sebo]] · 2026-08-08
