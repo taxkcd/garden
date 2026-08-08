@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/317-yizong-cheng-mean-shift-mode-seeking-and-clustering|317 · Mean Shift, Mode Seeking, and Clustering — Yizong Cheng]] · 2026-08-08
 - [[prof-papers/316-qi-cheng-domain-informed-representation-for-evolutionary-sieving-in-inte|316 · Domain-Informed Representation for Evolutionary Sieving in Integral and Module Lattices — Qi Cheng]] · 2026-08-08
 - [[prof-papers/315-saurabh-gupta-alphaone-reasoning-models-thinking-slow-and-fast-at-test-t|315 · AlphaOne: Reasoning Models Thinking Slow and Fast at Test Time — Saurabh Gupta]] · 2026-08-07
 - [[prof-papers/314-ramgopal-mettu-tcr-eml-explainable-model-layers-for-tcr-pmhc-prediction|314 · TCR-EML: Explainable Model Layers for TCR-pMHC Prediction — Ramgopal Mettu]] · 2026-08-08
@@ -19,7 +20,7 @@ Research papers encountered through professor outreach, paired with practical le
 - [[prof-papers/312-yi-jen-chiang-soft-subdivision-motion-planning-for-complex-planar-robots|312 · Soft Subdivision Motion Planning for Complex Planar Robots — Yi-Jen Chiang]] · 2026-08-08
 - [[prof-papers/311-yixuan-he-learning-to-fuse-temporal-proximity-networks-a-case-study-in-c|311 · Learning to Fuse Temporal Proximity Networks: A Case Study in Chimpanzee Social Interactions — Yixuan He]] · 2026-08-08
 - [[prof-papers/310-t-n-vijaykumar-litetm-reducing-transactional-state-overhead|310 · LiteTM: Reducing Transactional State Overhead — T. N. Vijaykumar]] · 2026-08-08
-- [[prof-papers/309-gillian-smith-little-procedural-people-playing-politics-with-generators|309 · Little Procedural People: Playing politics with generators — Gillian Smith]] · 2026-08-08
+- [[prof-papers/309-gillian-smith-little-procedural-people-playing-politics-with-generators|309 · Feminism and procedural content generation: toward a collaborative politics of computational creativity — Gillian Smith]] · 2026-08-08
 - [[prof-papers/308-ling-wang-unveiling-influencer-driven-pii-disclosures-in-social-media-di|308 · Unveiling Influencer-Driven PII Disclosures in Social Media Discourse — Ling Wang]] · 2026-08-08
 - [[prof-papers/307-kasturi-r-varadarajan-a-near-linear-constant-factor-approximation-for-eu|307 · A Near-Linear Constant-Factor Approximation for Euclidean Bipartite Matching — Kasturi R. Varadarajan]] · 2026-08-08
 - [[prof-papers/306-xiaowei-jia-knowledge-guided-machine-learning-a-paradigm-shift-in-ai-for|306 · Knowledge-Guided Machine Learning: A Paradigm Shift in AI for Science — Xiaowei Jia]] · 2026-08-08
