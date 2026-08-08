@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/327-yuzhang-shang-adatooler-v-adaptive-tool-use-for-images-and-videos|327 · AdaTooler-V: Adaptive Tool-Use for Images and Videos — Yuzhang Shang]] · 2026-08-08
 - [[prof-papers/326-sainyam-galhotra-harp-efficient-data-selection-for-finetuning-large-lang|326 · HARP: Efficient Data Selection for Finetuning Large Language Models — Sainyam Galhotra]] · 2026-08-08
 - [[prof-papers/325-matt-gibson-optimal-bounds-for-weak-consistent-digital-rays-in-2d|325 · Optimal Bounds for Weak Consistent Digital Rays in 2D — Matt Gibson]] · 2026-08-08
 - [[prof-papers/324-clark-elliott-the-brain-is-primarily-a-visual-spatial-processing-device|324 · The brain is primarily a visual-spatial processing device: altering visual-spatial cognitive processing via retinal stimulation can treat movement disorders — Clark Elliott]] · 2026-08-08
