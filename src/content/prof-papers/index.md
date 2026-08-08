@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/309-gillian-smith-little-procedural-people-playing-politics-with-generators|309 · Little Procedural People: Playing politics with generators — Gillian Smith]] · 2026-08-08
 - [[prof-papers/308-ling-wang-unveiling-influencer-driven-pii-disclosures-in-social-media-di|308 · Unveiling Influencer-Driven PII Disclosures in Social Media Discourse — Ling Wang]] · 2026-08-08
 - [[prof-papers/307-kasturi-r-varadarajan-a-near-linear-constant-factor-approximation-for-eu|307 · A Near-Linear Constant-Factor Approximation for Euclidean Bipartite Matching — Kasturi R. Varadarajan]] · 2026-08-08
 - [[prof-papers/306-xiaowei-jia-knowledge-guided-machine-learning-a-paradigm-shift-in-ai-for|306 · Knowledge-Guided Machine Learning: A Paradigm Shift in AI for Science — Xiaowei Jia]] · 2026-08-08
