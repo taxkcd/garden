@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/356-yanni-sun-gophage-protein-function-annotation-for-bacteriophages-by-inte|356 · GOPhage: protein function annotation for bacteriophages by integrating the genomic context — Yanni Sun]] · 2026-08-09
 - [[prof-papers/355-stephanie-wang-dynaflow-transparent-and-flexible-intra-device-parallelis|355 · DynaFlow: Transparent and Flexible Intra-Device Parallelism via Programmable Operator Scheduling — Stephanie Wang]] · 2026-08-09
 - [[prof-papers/354-simone-campanoni-automatic-data-enumeration-for-fast-collections|354 · Automatic Data Enumeration for Fast Collections — Simone Campanoni]] · 2026-08-09
 - [[prof-papers/353-nohpill-park-a-nft-non-fungible-token-chain-model-and-performance-study|353 · A NFT (Non-Fungible Token) Chain Model and Performance Study — Nohpill Park]] · 2026-08-09
