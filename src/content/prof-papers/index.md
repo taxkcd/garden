@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/337-tams-budavri-bayesian-functional-data-analysis-in-astronomy|337 · Bayesian functional data analysis in astronomy — Tamás Budavári]] · 2026-08-09
 - [[prof-papers/336-murphy-yuezhen-niu-scaling-and-logic-in-the-colour-code-on-a-superconduc|336 · Scaling and logic in the colour code on a superconducting quantum processor — Murphy Yuezhen Niu]] · 2026-08-09
 - [[prof-papers/335-weijie-zhao-hive-hidden-evidence-verification-for-hallucination-detectio|335 · HIVE: Hidden-Evidence Verification for Hallucination Detection in Diffusion Large Language Models — Weijie Zhao]] · 2026-08-08
 - [[prof-papers/334-zhijian-liu-dflash-block-diffusion-for-flash-speculative-decoding|334 · DFlash: Block Diffusion for Flash Speculative Decoding — Zhijian Liu]] · 2026-08-08
