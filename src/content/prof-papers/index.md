@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/361-chris-peikert-list-decoding-reedsolomon-codes-in-the-lee-euclidean-and-o|361 · List Decoding Reed–Solomon Codes in the Lee, Euclidean, and Other Metrics — Chris Peikert]] · 2026-08-09
 - [[prof-papers/360-minwoo-lee-bamm-bidirectional-autoregressive-motion-model|360 · BAMM: Bidirectional Autoregressive Motion Model — Minwoo Lee]] · 2026-08-09
 - [[prof-papers/359-ahmedullah-aziz-reverse-designing-ferroelectric-capacitors-with-machine|359 · Reverse Designing Ferroelectric Capacitors with Machine Learning-based Compact Modeling — Ahmedullah Aziz]] · 2026-08-09
 - [[prof-papers/358-victor-s-sheng-controlling-chat-style-in-language-models-via-single-dire|358 · Controlling Chat Style in Language Models via Single-Direction Editing — Victor S. Sheng]] · 2026-08-09
