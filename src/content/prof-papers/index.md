@@ -1,6 +1,6 @@
 ---
 title: "Professor papers and learning paths"
-date: 2026-08-09
+date: 2026-08-10
 tags:
   - research-paper
   - learning-path
@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/358-victor-s-sheng-controlling-chat-style-in-language-models-via-single-dire|358 · Controlling Chat Style in Language Models via Single-Direction Editing — Victor S. Sheng]] · 2026-08-09
 - [[prof-papers/357-saibal-mukhopadhyay-adacred-adaptive-causal-decision-transformers-with-f|357 · AdaCred: Adaptive Causal Decision Transformers with Feature Crediting — Saibal Mukhopadhyay]] · 2026-08-09
 - [[prof-papers/356-yanni-sun-gophage-protein-function-annotation-for-bacteriophages-by-inte|356 · GOPhage: protein function annotation for bacteriophages by integrating the genomic context — Yanni Sun]] · 2026-08-09
 - [[prof-papers/355-stephanie-wang-dynaflow-transparent-and-flexible-intra-device-parallelis|355 · DynaFlow: Transparent and Flexible Intra-Device Parallelism via Programmable Operator Scheduling — Stephanie Wang]] · 2026-08-09
