@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/348-ritambhara-singh-mechanisms-of-prompt-induced-hallucination-in-visionlan|348 · Mechanisms of Prompt-Induced Hallucination in Vision–Language Models — Ritambhara Singh]] · 2026-08-09
 - [[prof-papers/347-behrooz-a-shirazi-inter-beat-interval-estimation-with-tiramisu-model-a-n|347 · Inter-beat Interval Estimation with Tiramisu Model: A Novel Approach with Reduced Error — Behrooz A. Shirazi]] · 2026-08-09
 - [[prof-papers/346-daniel-j-sorin-rigorous-evaluation-of-microarchitectural-side-channels-w|346 · Rigorous Evaluation of Microarchitectural Side-Channels with Statistical Model Checking — Daniel J. Sorin]] · 2026-08-09
 - [[prof-papers/345-steffen-heber-ribostreamr-a-web-application-for-quality-control-analysis|345 · RiboStreamR: a web application for quality control, analysis, and visualization of Riboseq data — Steffen Heber]] · 2026-08-09
