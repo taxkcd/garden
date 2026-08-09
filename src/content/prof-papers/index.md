@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/344-david-koslicki-kgml-xdtd-a-knowledge-graph-based-machine-learning-framew|344 · KGML-xDTD: A Knowledge Graph-based Machine Learning Framework for Drug Treatment Prediction and Mechanism Description — David Koslicki]] · 2026-08-09
 - [[prof-papers/343-yuanchao-xu-efficient-security-support-for-cxl-memory-through-adaptive-i|343 · Efficient Security Support for CXL Memory through Adaptive Incremental Offloaded (Re-)Encryption — Yuanchao Xu]] · 2026-08-09
 - [[prof-papers/342-mohammad-al-olaimat-ta-rnn-an-attention-based-time-aware-recurrent-neura|342 · TA-RNN: an Attention-based Time-aware Recurrent Neural Network Architecture for Electronic Health Records — Mohammad Al Olaimat]] · 2026-08-09
 - [[prof-papers/341-mukul-s-bansal-sistem-simulation-of-tumor-evolution-metastasis-and-dna-s|341 · SISTEM: simulation of tumor evolution, metastasis, and DNA-seq data under genotype-driven selection — Mukul S. Bansal]] · 2026-08-09
