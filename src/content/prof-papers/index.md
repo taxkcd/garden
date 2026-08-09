@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/339-martha-a-kim-automated-power-domain-insertion-and-control-in-dataflow-ci|339 · Automated Power Domain Insertion and Control in Dataflow Circuits — Martha A. Kim]] · 2026-08-09
 - [[prof-papers/338-matthew-hicks-sram-has-no-chill-exploiting-power-domain-separation-to-st|338 · SRAM Has No Chill: Exploiting Power Domain Separation to Steal On-Chip Secrets — Matthew Hicks]] · 2026-08-09
 - [[prof-papers/337-tams-budavri-bayesian-functional-data-analysis-in-astronomy|337 · Bayesian functional data analysis in astronomy — Tamás Budavári]] · 2026-08-09
 - [[prof-papers/336-murphy-yuezhen-niu-scaling-and-logic-in-the-colour-code-on-a-superconduc|336 · Scaling and logic in the colour code on a superconducting quantum processor — Murphy Yuezhen Niu]] · 2026-08-09
