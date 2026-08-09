@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/345-steffen-heber-ribostreamr-a-web-application-for-quality-control-analysis|345 · RiboStreamR: a web application for quality control, analysis, and visualization of Riboseq data — Steffen Heber]] · 2026-08-09
 - [[prof-papers/344-david-koslicki-kgml-xdtd-a-knowledge-graph-based-machine-learning-framew|344 · KGML-xDTD: A Knowledge Graph-based Machine Learning Framework for Drug Treatment Prediction and Mechanism Description — David Koslicki]] · 2026-08-09
 - [[prof-papers/343-yuanchao-xu-efficient-security-support-for-cxl-memory-through-adaptive-i|343 · Efficient Security Support for CXL Memory through Adaptive Incremental Offloaded (Re-)Encryption — Yuanchao Xu]] · 2026-08-09
 - [[prof-papers/342-mohammad-al-olaimat-ta-rnn-an-attention-based-time-aware-recurrent-neura|342 · TA-RNN: an Attention-based Time-aware Recurrent Neural Network Architecture for Electronic Health Records — Mohammad Al Olaimat]] · 2026-08-09
