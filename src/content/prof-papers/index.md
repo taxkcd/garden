@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/342-mohammad-al-olaimat-ta-rnn-an-attention-based-time-aware-recurrent-neura|342 · TA-RNN: an Attention-based Time-aware Recurrent Neural Network Architecture for Electronic Health Records — Mohammad Al Olaimat]] · 2026-08-09
 - [[prof-papers/341-mukul-s-bansal-sistem-simulation-of-tumor-evolution-metastasis-and-dna-s|341 · SISTEM: simulation of tumor evolution, metastasis, and DNA-seq data under genotype-driven selection — Mukul S. Bansal]] · 2026-08-09
 - [[prof-papers/340-jeremy-buhler-coordinating-instruments-for-multi-messenger-astrophysics|340 · Coordinating Instruments for Multi-Messenger Astrophysics — Jeremy Buhler]] · 2026-08-09
 - [[prof-papers/339-martha-a-kim-automated-power-domain-insertion-and-control-in-dataflow-ci|339 · Automated Power Domain Insertion and Control in Dataflow Circuits — Martha A. Kim]] · 2026-08-09
