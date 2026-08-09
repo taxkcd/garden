@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/354-simone-campanoni-automatic-data-enumeration-for-fast-collections|354 · Automatic Data Enumeration for Fast Collections — Simone Campanoni]] · 2026-08-09
 - [[prof-papers/353-nohpill-park-a-nft-non-fungible-token-chain-model-and-performance-study|353 · A NFT (Non-Fungible Token) Chain Model and Performance Study — Nohpill Park]] · 2026-08-09
 - [[prof-papers/352-leila-de-floriani-topology-based-individual-tree-segmentation-for-automa|352 · Topology-based individual tree segmentation for automated processing of terrestrial laser scanning point clouds — Leila De Floriani]] · 2026-08-09
 - [[prof-papers/351-grant-van-horn-generate-transduct-adapt-iterative-transduction-with-vlms|351 · Generate, Transduct, Adapt: Iterative Transduction with VLMs — Grant Van Horn]] · 2026-08-09
