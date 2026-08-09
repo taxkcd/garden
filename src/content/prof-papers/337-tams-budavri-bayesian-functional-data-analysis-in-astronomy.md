@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-tamas-budavari"
-source_hash: "c138e8614dd225f8cdd85c17d82860ed27fa295c6399ec4b8ed01424a1e1155c"
+source_hash: "2d07c8e36e6c69097e118494383ce420efcfd44660556d181e993ba6a59e71b8"
 sequence: 337
 generator: "outreach-garden: managed"
 ---
