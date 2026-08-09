@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/350-radu-teodorescu-microsampler-a-framework-for-microarchitecture-level-lea|350 · MicroSampler: A Framework for Microarchitecture-Level Leakage Detection in Constant Time Execution — Radu Teodorescu]] · 2026-08-09
 - [[prof-papers/349-raj-acharya-a-computational-framework-to-assess-genome-wide-distribution|349 · A computational framework to assess genome-wide distribution of polymorphic human endogenous retrovirus-K In human populations — Raj Acharya]] · 2026-08-09
 - [[prof-papers/348-ritambhara-singh-mechanisms-of-prompt-induced-hallucination-in-visionlan|348 · Mechanisms of Prompt-Induced Hallucination in Vision–Language Models — Ritambhara Singh]] · 2026-08-09
 - [[prof-papers/347-behrooz-a-shirazi-inter-beat-interval-estimation-with-tiramisu-model-a-n|347 · Inter-beat Interval Estimation with Tiramisu Model: A Novel Approach with Reduced Error — Behrooz A. Shirazi]] · 2026-08-09
