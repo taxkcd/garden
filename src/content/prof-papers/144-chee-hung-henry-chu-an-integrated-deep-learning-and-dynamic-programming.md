@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-chee-hung-henry-chu"
-source_hash: "7c12832c1a38c018e8570361aeb7ae46cf8edeef7e1ff181634b9904416971e9"
+source_hash: "85b2bd2af11c61807c1fef5ccf1dfeb931f4a283250e9ae90c1f0414f06b45c4"
 sequence: 144
 generator: "outreach-garden: managed"
 ---
@@ -58,32 +58,32 @@ Research interests: machine learning and data science
 _The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
 
 **What you're missing:** Deep learning for bioinformatics
-**The paper assumes:** deep learning architectures, convolutional neural networks, bioinformatics data representation, protein structure analysis with machine learning
-**Already in this field?** Skip this entirely if you already understand convolutional neural networks and their application to biological sequence or structure data.
+**The paper assumes:** deep learning, convolutional neural networks, bioinformatics data representation, protein structure analysis
+**Already in this field?** Skip this entirely if you already understand convolutional neural networks and their application to biological sequence and structure data.
 
-To understand the deep convolutional neural network (DCNN) approach used in this paper for classifying cancer-related genes from 3D protein structures, background in deep learning applied to bioinformatics is essential. The rigorous course option provides a comprehensive, project-based deep dive into bioinformatics and machine learning techniques, while the fast track offers a concise, beginner-friendly introduction to machine learning in bioinformatics with Python. Choose the course for in-depth understanding and practical skills; choose the fast track for a quick conceptual overview and foundational knowledge.
+This background focuses on deep learning applications in bioinformatics, specifically understanding convolutional neural networks (CNNs) and their use in processing biological data such as protein structures. The rigorous course provides a comprehensive, project-based deep dive into bioinformatics and machine learning methods, while the fast track offers a concise introduction to machine learning in bioinformatics with Python, ideal for quickly grasping core concepts relevant to the paper's methods.
 
 ### The course
 _Rigorous, and the one to pick if you want to hold this material properly._
 
 ▶ [Bioinformatics Project](https://www.youtube.com/playlist?list=PLtqF5YXg7GLlQJUv9XJ3RWdd5VYGwBHrP) — Data Professor · 32 videos · 17.9h across 32 episodes
 
-**Watch only this:** Episodes 1-5: 'Bioinformatics Project from Scratch - Drug Discovery Part 1 (Data Collection and Pre-Processing)' through 'Bioinformatics Project from Scratch - Drug Discovery Part 5 (Compare Models)', about 2.75 hours total — these cover data preparation, exploratory analysis, dataset preparation, model building, and comparison, providing a solid foundation for understanding the paper's methods.
+**Watch only this:** Episodes 1-5 (Bioinformatics Project from Scratch - Drug Discovery Parts 1 to 5), about 2.75 hours — covering data collection, preprocessing, exploratory data analysis, dataset preparation, and model building, which provide the essential foundation for understanding the paper's DCNN modeling and data pipeline.
 
-*Why it unblocks this paper:* This playlist covers applying data science and machine learning techniques specifically to bioinformatics projects, including data preprocessing, model building, and evaluation, which aligns directly with the paper's approach of using DCNNs on protein structure data.
+*Why it unblocks this paper:* This Data Professor playlist covers applying data science and machine learning to bioinformatics projects, including data preprocessing, model building, and evaluation, directly relevant to the paper's deep learning approach on protein data.
 
-*If you want all of it:* All 32 episodes, about 17.9 hours total.
+*If you want all of it:* All 32 episodes, about 17.9 hours
 
 ### The fast track
 _Same ground, a fraction of the time — for when you just need to read the paper._
 
 ▶ [A Beginner's guide to Machine Learning in Bioinformatics with Python](https://www.youtube.com/playlist?list=PLsSUJubNtkrCESp-eEiWayFa3vQ2VN3kK) — Bioinformatics Guy · 7 videos · 0.6h across 7 episodes
 
-**Watch only this:** Episodes 1-5: 'MACHINE LEARNING IN BIOINFORMATICS WITH PYTHON: A Beginner's guide to Artificial Intelligence (1/7)' through 'TRAINING & TESTING of the MODELS | A Beginner's Guide to AI in Bioinformatics with Python (5/7)', about 25 minutes total — these episodes cover the essential pipeline from data to model training and evaluation.
+**Watch only this:** Episodes 1-5, about 0.45 hours — these cover the basics of machine learning in bioinformatics, data downloading, preprocessing, feature and label selection, and training/testing models, sufficient for a quick understanding of the core ML workflow used in the paper.
 
-*Why it unblocks this paper:* This short series provides a beginner-friendly, concise introduction to machine learning concepts in bioinformatics with Python, covering data downloading, preprocessing, feature selection, model training, and prediction, which quickly orients the reader to the core ideas behind the paper's computational approach.
+*Why it unblocks this paper:* This beginner's guide series by Bioinformatics Guy offers a succinct introduction to machine learning in bioinformatics with Python, covering key concepts like data preprocessing, feature selection, and model training, providing a quick but solid overview aligned with the paper's computational approach.
 
-*If you want all of it:* All 7 episodes, about 36 minutes total.
+*If you want all of it:* All 7 episodes, about 0.6 hours
 
 ## Track 1 — Academic deep-dives (long-form)
 
