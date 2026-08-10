@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-grant-van-horn"
-source_hash: "6834f858e9e7cb2c34b2008f372e9864503825b8de4a316254b3442722080417"
+source_hash: "25d1582bf7abc17ab53b6d874892eb79a93051981c40b71aaa2e4678afcbdf3f"
 sequence: 351
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: Machine Learning, Artificial Intelligence, Robotics, Compute
 - [Identity evidence](https://gvh.codes)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Transductive Learning and Vision-Language Models
+**The paper assumes:** transductive learning, vision-language model architectures, zero-shot and few-shot classification, embedding space adaptation
+**Already in this field?** Skip this entirely if you already understand transductive learning methods and the fundamentals of vision-language models like CLIP, including their embedding spaces and fine-tuning strategies.
+
+To deeply understand the iterative transductive learning framework with vision-language models like CLIP in the GTA-CLIP paper, it is essential to grasp both transductive learning concepts and the workings of vision-language models and their adaptation. The rigorous course offers a comprehensive, structured deep dive into deep learning for computer vision, including vision-language topics, while the fast track provides a concise, intuition-focused introduction to sequence models and attention mechanisms relevant to language and vision model integration. Choose the rigorous course for thorough mastery and the fast track for a quick but solid conceptual foundation.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS231N Deep Learning for Computer Vision I 2025](https://www.youtube.com/playlist?list=PLoROMvodv4rOmsNzYBMe0gJY2XS8AQg16) — Stanford Online · 18 videos
+
+**Watch only this:** Lectures 1 through 6 (Introduction, Linear Classifiers, Regularization, Neural Networks, CNNs, CNN Architectures), about 7 hours — these provide the core deep learning and vision foundations needed before tackling vision-language and transductive learning specifics.
+
+*Why it unblocks this paper:* Stanford CS231N Deep Learning for Computer Vision I 2025 covers foundational and advanced topics in deep learning for vision, including vision-language models and transductive inference concepts, directly supporting understanding of GTA-CLIP's iterative attribute generation, transductive inference, and adaptation.
+
+*If you want all of it:* All 18 episodes, about 21.2 hours
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Sequence Models (Course 5 of the Deep Learning Specialization)](https://www.youtube.com/playlist?list=PLkDaE6sCZn6F6wUI9tvS_Gw1vaFAx6rd6) — DeepLearningAI · 6 videos · 1.0h across 6 episodes
+
+**Watch only this:** Episodes 1, 4, and 5 (Basic Models, Attention Model Intuition, Attention Model), about 30 minutes total — these cover the essential concepts of sequence modeling and attention relevant to LLM-driven attribute generation.
+
+*Why it unblocks this paper:* The Sequence Models series by DeepLearningAI offers a concise, clear introduction to sequence models and attention mechanisms, which are key to understanding large language models and their integration with vision models in GTA-CLIP's attribute generation and adaptation steps.
+
+*If you want all of it:* All 6 episodes, about 1 hour
 
 ## Track 1 — Academic deep-dives (long-form)
 

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-tamas-budavari"
-source_hash: "2d07c8e36e6c69097e118494383ce420efcfd44660556d181e993ba6a59e71b8"
+source_hash: "a98fe104d61fdabe130a464d77d4d1adcf8a85882852b4e158068beb4289f9e6"
 sequence: 337
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: Computational statistics, Bayesian inference, Low-dimensiona
 - [Google Scholar](https://scholar.google.com/citations?user=VoyeryMAAAAJ&hl=en)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Bayesian functional data analysis
+**The paper assumes:** Bayesian hierarchical modeling, Gaussian processes for functional data, and statistical inference for irregularly sampled noisy functions
+**Already in this field?** Skip this entirely if you already understand Bayesian functional data analysis including Gaussian process modeling of functions and hierarchical Bayesian inference.
+
+To understand the Bayesian functional data analysis methods used in the paper, especially hierarchical Bayesian modeling and Gaussian processes for irregular, noisy astronomical functional data, two background options are provided. The rigorous course offers a deep, structured university-level introduction to Bayesian data analysis fundamentals, while the fast track provides a concise, intuition-focused overview of Bayesian statistics to quickly grasp core concepts relevant to the paper's modeling framework.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Bayesian Data Analysis for the Behavioral Sciences](https://www.youtube.com/playlist?list=PLFW6lRTa1g814GrwAAoc410B5BOwG3Qnz) — IIT KANPUR-NPTEL · 60 videos · 33.0h across 60 episodes
+
+**Watch only this:** Lectures 1 through 24 (all episodes listed), about 13 hours — covering probability basics, Bayesian inference, hierarchical models, and Bayesian modeling workflow to build a solid foundation for Bayesian FDA.
+
+*Why it unblocks this paper:* This IIT Kanpur NPTEL course covers Bayesian data analysis comprehensively, including probability foundations, Bayesian inference, hierarchical modeling, and model building, which are essential to understand the paper's Bayesian FDA framework and hierarchical Gaussian process models.
+
+*If you want all of it:* 33.0 hours across 60 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Bayesian Statistics](https://www.youtube.com/playlist?list=PLXWZHrUe5TaWKaGUf4ES8ON-a3tM_Ma4y) — Jeremy Haynes · 7 videos · 6.9h across 7 episodes
+
+**Watch only this:** Episodes 1 through 4, about 4 hours — focusing on introduction to Bayesian data analysis, modeling techniques, and linking model and data to quickly grasp core Bayesian concepts.
+
+*Why it unblocks this paper:* Jeremy Haynes' Bayesian Statistics playlist provides clear, visual, and concise explanations of Bayesian data analysis fundamentals, including key concepts like Bayesian inference and multivariate normal distributions, which underpin the paper's statistical modeling approach.
+
+*If you want all of it:* 6.9 hours across 7 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

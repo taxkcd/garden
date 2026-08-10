@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-steven-skiena"
-source_hash: "08b81f7788c2fff3e80027fce96d9ee9cab2b5695531c1afd17e88662898b7f3"
+source_hash: "d5b06ff948abbf2deb82b9b59f2c86696c4121cb3a4c2a5ea7a977348128d5a5"
 sequence: 332
 generator: "outreach-garden: managed"
 ---
@@ -55,6 +55,38 @@ Research interests: algorithm design, data science and their applications to bio
 - [Social profile](https://twitter.com/StevenSkiena)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** tokenization and subword embeddings
+**The paper assumes:** tokenization methods, subword embeddings, and embedding derivation techniques
+**Already in this field?** Skip this entirely if you already understand how tokenizers segment text and how token embeddings are constructed and used in language models.
+
+To understand the paper's focus on tokenization premiums and embedding augmentation for low-resource languages, background knowledge on tokenization mechanisms and subword embeddings is essential. The rigorous course option offers a deep, structured university-level exploration of transformers, embeddings, and tokenization in NLP, while the fast track provides a concise, focused introduction to tokenization and embeddings suitable for a quicker but still solid grasp of the core concepts.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS224N: Natural Language Processing with Deep Learning | 2023](https://www.youtube.com/playlist?list=PLoROMvodv4rMFqRtEuo6SGjY4XbRIVRd4) — Stanford Online · 23 videos · 29.2h across 23 episodes
+
+**Watch only this:** Lectures 1 (Intro & Word Vectors), 7 (Translation, Seq2Seq, Attention), 8 (Self-Attention and Transformers), 9 (Pretraining), 11 (Natural Language Generation), and 17 (Model Analysis and Explanation), about 7.5 hours total — these cover tokenization, embeddings, transformers, and evaluation metrics essential for the paper.
+
+*Why it unblocks this paper:* Stanford CS224N is a top-tier university course that thoroughly covers natural language processing with deep learning, including detailed lectures on word vectors, embeddings, transformers, and tokenization, directly relevant to understanding tokenization premiums and embedding derivation strategies in the paper.
+
+*If you want all of it:* All 23 lectures, about 29.2 hours total.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [AI and Machine Learning](https://www.youtube.com/playlist?list=PLdrDZVbkZDznmCjg3uarnaS4BAPP-XcFG) — Outcome School · 11 videos · 4.1h across 11 episodes
+
+**Watch only this:** Episodes 4 (Tokenization in Large Language Models), 7 (Embeddings in Machine Learning), and 8 (One-hot Encoding in Machine Learning), about 1.1 hours total — these episodes focus tightly on tokenization and embedding basics needed to understand the paper.
+
+*Why it unblocks this paper:* Outcome School's 'AI and Machine Learning' playlist includes a dedicated episode on 'Tokenization in Large Language Models (LLMs)' and related foundational topics like embeddings, providing a clear, concise introduction to tokenization and embeddings relevant to the paper's methods.
+
+*If you want all of it:* All 11 episodes, about 4.1 hours total.
 
 ## Track 1 — Academic deep-dives (long-form)
 

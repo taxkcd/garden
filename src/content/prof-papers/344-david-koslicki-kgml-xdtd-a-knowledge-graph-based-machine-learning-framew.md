@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-david-koslicki"
-source_hash: "2426570af6bcd092a4ba4ca46a0b8c9d6570fe4468d4f3f9a851cc87dd97b732"
+source_hash: "99220e006c59dd4ecbc4f32678112e6435519fb4f0d471bd02d4796dba2adeba"
 sequence: 344
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: developing efficient, mathematically sound approaches to ext
 - [Resolved homepage](https://koslickilab.github.io/Koslicki-lab-PSU/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Graph Representation Learning
+**The paper assumes:** graph representation learning, graph neural networks, inductive node embedding methods
+**Already in this field?** Skip this entirely if you already understand graph neural networks and how graph embeddings are learned and used in machine learning.
+
+This background focuses on graph representation learning, essential for understanding how KGML-xDTD generates graph embeddings (especially via GraphSAGE) to predict drug-disease treatment relationships. The rigorous course option offers a comprehensive, university-level deep dive into graph machine learning concepts, while the fast track provides a shorter, more accessible series of focused explainers on graph neural networks and embeddings. Choose the course for thorough mastery and the fast track for a concise, intuition-driven overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS224W: Machine Learning with Graphs](https://www.youtube.com/playlist?list=PLoROMvodv4rPLKxIpqhjhPgdQy7imNkDn) — Stanford Online · 60 videos · 22.4h across 60 episodes
+
+**Watch only this:** Lectures 1.1 - Why Graphs (22 min), 1.2 - Applications of Graph ML (22 min), 3.1 - Node Embeddings (22 min), 3.2 - Random Walk Approaches for Node Embeddings (22 min), 6.1 - Introduction to Graph Neural Networks (22 min), 6.3 - Deep Learning for Graphs (22 min), about 2.5 hours total. These cover the foundational concepts and embedding methods needed to understand the paper's prediction module.
+
+*Why it unblocks this paper:* Stanford CS224W: Machine Learning with Graphs is a top-tier university course that covers graph representation learning in depth, including node embeddings and Graph Neural Networks, directly relevant to the paper's use of GraphSAGE embeddings and graph-based prediction.
+
+*If you want all of it:* 22.4 hours across 60 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [GraphNeuralNetwork](https://www.youtube.com/playlist?list=PLMG3GDjf5V4JInK8zc2EFba4G7elD_wfF) — Shengjie Min · 13 videos · 9.2h across 13 episodes
+
+**Watch only this:** Episodes 1 - Graph Node Embedding Algorithms (Stanford - Fall 2019) (42 min), 2 - Graph Representation Learning (Stanford university) (42 min), 3 - Jure Leskovec "Deep Learning on Graphs" (42 min), about 2.1 hours total. These episodes focus on embedding algorithms and deep learning on graphs, directly relevant to the paper's methods.
+
+*Why it unblocks this paper:* The GraphNeuralNetwork playlist by Shengjie Min provides concise, clear explanations on graph embeddings and graph neural networks, including GraphSAGE-related concepts, suitable for quickly grasping the core ideas behind the paper's embedding and learning approach.
+
+*If you want all of it:* 9.2 hours across 13 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

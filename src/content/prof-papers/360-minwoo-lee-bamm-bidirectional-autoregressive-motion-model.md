@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-minwoo-lee"
-source_hash: "0292486defa800d16e4c27d276a5f733171c3c9024fc9183286c59177d535798"
+source_hash: "b43eb29b910c2d8470845399449784224ba7911eface8daebb47eaa49a8f5250"
 sequence: 360
 generator: "outreach-garden: managed"
 ---
@@ -55,6 +55,38 @@ Research interests: machine learning algorithms for reinforcement learning, inte
 - [LinkedIn](https://www.linkedin.com/in/minwoojakelee)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** transformer models in machine learning
+**The paper assumes:** transformer architecture, self-attention mechanisms, autoregressive and bidirectional sequence modeling, masked language modeling
+**Already in this field?** Skip this entirely if you already understand transformer models and their application to sequence generation tasks in machine learning.
+
+To fully understand the BAMM paper's core method involving a masked self-attention transformer with hybrid attention masking, a solid grasp of transformer models in machine learning is essential. The rigorous course option provides a deep, structured university-level exploration of transformers and large language models, ideal for readers seeking comprehensive mastery. The fast track offers a concise, clear, and well-explained short series focusing on the fundamentals of transformers, suitable for readers who want a solid conceptual foundation in less time.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CME295: Transformers and Large Language Models I Autumn 2025](https://www.youtube.com/playlist?list=PLoROMvodv4rOCXd21gf0CF4xr35yINeOy) — Stanford Online · 9 videos · 16.2h across 9 episodes
+
+**Watch only this:** Lectures 1-3, about 5.3 hours — covering Transformer basics, transformer-based models and tricks, and large language models to build foundational understanding of transformer architectures and autoregressive vs bidirectional modeling.
+
+*Why it unblocks this paper:* This Stanford CME295 course is a rigorous university lecture series that covers the evolution, architecture, and training of transformers and large language models, directly relevant to understanding BAMM's hybrid masked and autoregressive transformer model.
+
+*If you want all of it:* 16.2 hours across 9 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Transformers in Deep Learning Course](https://www.youtube.com/playlist?list=PLuhqtP7jdD8CQTxwVsuiFYGvHtFpNhlR3) — Learn With Jay · 11 videos · 4.3h across 11 episodes
+
+**Watch only this:** Episodes 1-7, about 2.7 hours — covering introduction, self-attention, linear transformations in attention, query/key/value concepts, scaling, multi-head attention, and positional encoding to understand core transformer components.
+
+*Why it unblocks this paper:* This 'Transformers in Deep Learning' playlist by Learn With Jay offers clear, concise explanations of self-attention, multi-head attention, positional encoding, and transformer encoder/decoder architectures, providing a quick yet solid conceptual grasp of transformers relevant to BAMM's model.
+
+*If you want all of it:* 4.3 hours across 11 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

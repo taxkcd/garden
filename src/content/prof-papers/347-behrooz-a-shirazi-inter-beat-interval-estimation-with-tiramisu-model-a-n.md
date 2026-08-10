@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-behrooz-a-shirazi"
-source_hash: "86ef6756ffa545aec88fee1c209e6df4a794fd9cf7165fc6f0d9f2c195b2c921"
+source_hash: "c9aa46078a9c71d5039c393999db2d36b713f5e0f2ff7449cd845db0f0f03537"
 sequence: 347
 generator: "outreach-garden: managed"
 ---
@@ -49,6 +49,38 @@ This paper presents a deep learning method using a modified Tiramisu autoencoder
 - [Identity evidence](https://orcid.org/0000-0001-6504-4651)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Deep Learning for Time Series
+**The paper assumes:** deep learning architectures, convolutional neural networks, autoencoders, time series signal processing
+**Already in this field?** Skip this entirely if you already understand convolutional autoencoders and their application to time series data.
+
+This background is designed to provide foundational understanding of deep learning techniques applied to time series data, specifically convolutional neural networks and autoencoders, which are central to the Tiramisu model used for ECG denoising and inter-beat interval estimation in the paper. The rigorous course offers a deep dive into convolutional neural networks and related architectures, while the fast track provides concise, intuition-driven explanations of neural networks and deep learning concepts relevant to this application. Readers can choose the rigorous lane for comprehensive mastery or the fast track for a focused, time-efficient overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Lecture Collection | Convolutional Neural Networks for Visual Recognition (Spring 2017)](https://www.youtube.com/playlist?list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv) — Stanford University School of Engineering · 16 videos · 19.5h across 16 episodes
+
+**Watch only this:** Lectures 4 (Introduction to Neural Networks), 5 (Convolutional Neural Networks), 6 (Training Neural Networks I), 7 (Training Neural Networks II), 10 (Recurrent Neural Networks), and 9 (CNN Architectures), about 7.3 hours total — these cover the core deep learning concepts and CNN architectures needed to grasp the paper's methodology.
+
+*Why it unblocks this paper:* This Stanford University playlist covers convolutional neural networks, recurrent neural networks, and deep learning fundamentals with detailed lectures on architectures and training, directly relevant to understanding the Tiramisu model's design and application to time series ECG data.
+
+*If you want all of it:* 19.5 hours across 16 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Neural Networks / Deep Learning](https://www.youtube.com/playlist?list=PLblh5JKOoLUIxGDQs4LFFD--41Vzf-ME1) — StatQuest with Josh Starmer · 33 videos · 10.9h across 33 episodes
+
+**Watch only this:** Episodes: 'The Essential Main Ideas of Neural Networks', 'Neural Networks Pt. 2: Backpropagation Main Ideas', 'Neural Networks Pt. 3: ReLU In Action!!!', 'Neural Networks Part 8: Image Classification with Convolutional Neural Networks (CNNs)', and 'Recurrent Neural Networks (RNNs), Clearly Explained!!!', about 1.5 hours total — these episodes cover the essential concepts of neural networks, CNNs, and RNNs relevant to the paper.
+
+*Why it unblocks this paper:* StatQuest's Neural Networks / Deep Learning playlist offers clear, visual, and intuitive explanations of neural networks, backpropagation, CNNs, and recurrent networks, providing a concise yet solid foundation for understanding the deep learning techniques used in the paper.
+
+*If you want all of it:* 10.9 hours across 33 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

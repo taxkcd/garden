@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-kunpeng-liu"
-source_hash: "0c94b40377f283a3bc72282a7bff350a1401cb396cfe403237ed113f3e4b31e3"
+source_hash: "91d41eea701b2c0150620ab527dad457fb131b602755aab52e3e8463cfb4140d"
 sequence: 333
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: Reinforcement Learning (RL), Large Language Models (LLMs), D
 - [Google Scholar](https://scholar.google.com/citations?user=wfF30KMAAAAJ&hl=en)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Large Language Models and Prompting
+**The paper assumes:** large language model architectures, prompt engineering, knowledge distillation in NLP
+**Already in this field?** Skip this entirely if you already understand how large language models work, how prompting is used to elicit outputs, and the basics of knowledge distillation in natural language processing.
+
+This background playlist selection focuses on Large Language Models (LLMs) and prompting, which are central to understanding the RPDR framework in the paper. The rigorous course offers a deep, structured dive into LLM architectures, prompting, and fine-tuning techniques, while the fast track provides a concise, clear introduction to the same concepts for quicker comprehension. Choose the rigorous course for thorough mastery and the fast track for a time-efficient conceptual overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS224N: Natural Language Processing with Deep Learning | 2023](https://www.youtube.com/playlist?list=PLoROMvodv4rMFqRtEuo6SGjY4XbRIVRd4) — Stanford Online · 23 videos · 29.2h across 23 episodes
+
+**Watch only this:** Lectures 7-11 (Recurrent Neural Networks, Simple and LSTM RNNs, Translation and Seq2Seq, Self-Attention and Transformers, Pretraining, Prompting and Reinforcement Learning from Human Feedback), about 6.3 hours — these cover the core LLM architectures, prompting techniques, and fine-tuning relevant to RPDR.
+
+*Why it unblocks this paper:* Stanford CS224N: Natural Language Processing with Deep Learning (2023) is a highly authoritative and comprehensive course that covers foundational NLP concepts, transformer architectures, prompting, and reinforcement learning from human feedback, directly relevant to the paper's use of LLMs and prompt engineering.
+
+*If you want all of it:* 29.2 hours across 23 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Introduction to Large Language Models (LLMs)](https://www.youtube.com/playlist?list=PLp6ek2hDcoNDDRINFiWGDlPKUwW-g1Hjk) — NPTEL IIT Delhi · 38 videos · 29.0h across 38 episodes
+
+**Watch only this:** Lectures 15-23 (Introduction to Transformer: Self & Multi-Head Attention, Positional Encoding, Implementation, Pre-Training Strategies, HuggingFace, Instruction Tuning, Prompt-based Learning, Advanced Prompting and Prompt Sensitivity), about 7.5 hours — these focus on transformers and prompting, key to the paper's approach.
+
+*Why it unblocks this paper:* The NPTEL IIT Delhi 'Introduction to Large Language Models (LLMs)' playlist offers a clear, well-structured introduction to LLM fundamentals, transformer architecture, prompting, and fine-tuning strategies, providing a concise yet solid conceptual foundation for understanding the paper's methodology.
+
+*If you want all of it:* 29.0 hours across 38 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

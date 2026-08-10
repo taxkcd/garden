@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-steffen-heber"
-source_hash: "c89fc60a0525354a1703feb9d9bab7da33d27f7fb99fd217759956cdfba0de5f"
+source_hash: "3d4e6bce768503838f59e5c4f52a68b2b9c82d6ce1f994ba4ac208932a373b8f"
 sequence: 345
 generator: "outreach-garden: managed"
 ---
@@ -51,6 +51,38 @@ This paper presents riboStreamR, a user-friendly web application designed to fac
 - [Professor website](https://statgen.ncsu.edu/~sheber)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Ribosome profiling data analysis
+**The paper assumes:** ribosome profiling experimental design and computational data analysis
+**Already in this field?** Skip this entirely if you already understand ribosome profiling experiments and the computational workflows for analyzing Ribo-seq data.
+
+This background is designed to provide foundational knowledge on ribosome profiling and its data analysis, which is essential to fully understand the riboStreamR platform's capabilities and challenges. The rigorous course offers a detailed, structured introduction to cell biology and ribosomes, suitable for deep comprehension, while the fast track playlist delivers concise, focused explanations on ribosome profiling and related translational biology concepts, ideal for a quicker but still substantive overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Introduction and the cell histology 2025](https://www.youtube.com/playlist?list=PLdpgDJFR39ylIYsYlbgPfGAR9MqYavNSt) — Prof.Dr.khaled Elmosalamy - Histology & pathology · 53 videos · 14.5h across 53 episodes
+
+**Watch only this:** Watch episodes 8 (Smooth Endoplasmic Reticulum 1st Y), 9 (Ribosomes- 1sty), and 18 (Nucleus & protein synthesis compressed), about 48 minutes total — these cover ribosome structure, function, and protein synthesis relevant to Ribo-seq data.
+
+*Why it unblocks this paper:* This university-level histology and cell biology series by Prof.Dr.khaled Elmosalamy includes dedicated episodes on ribosomes and related organelles, providing a rigorous biological foundation necessary to understand ribosome profiling data and its biological context.
+
+*If you want all of it:* Approximately 14.5 hours across all 53 episodes.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Translatome](https://www.youtube.com/playlist?list=PLrCD5eplHTbL5QzMwG-ZtsRWHn5GMgYNw) — Informative · 8 videos · 1.0h across 8 episodes
+
+**Watch only this:** Watch episodes 1 (Translatome: Polysome Profiling #Code: 266), 2 (Translatome Methods: Basics Overview #Code: 265), and 7 (Translatome: Ribosome Profiling #Code: 267), about 21 minutes total — these cover key concepts and methods of ribosome profiling.
+
+*Why it unblocks this paper:* This short playlist titled 'Translatome' provides concise, clear explanations focused specifically on ribosome profiling methods and applications, directly aligned with the paper's subject of Ribo-seq data analysis.
+
+*If you want all of it:* Approximately 1.0 hour across all 8 episodes.
 
 ## Track 1 — Academic deep-dives (long-form)
 

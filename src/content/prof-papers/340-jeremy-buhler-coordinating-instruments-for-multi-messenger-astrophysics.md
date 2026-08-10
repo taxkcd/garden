@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-jeremy-buhler"
-source_hash: "b338eff4353afc10269bf4dc26d8bd575f479bdf05ef85b7883e5d155f2154f1"
+source_hash: "ca1ccff5864af66649cb5c889ead79a6b7201822a113947223f162910fbf96ee"
 sequence: 340
 generator: "outreach-garden: managed"
 ---
@@ -55,6 +55,38 @@ Research interests: analysis of scientific datasets; computing architectures; pa
 - [Curriculum Vitae](https://www.cse.wustl.edu/~jbuhler/vitae.html)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Compton Imaging and Reconstruction
+**The paper assumes:** Compton scattering physics, gamma-ray detector event reconstruction, and Compton imaging algorithms
+**Already in this field?** Skip this entirely if you already understand the physics and computational methods of Compton scattering-based gamma-ray imaging and reconstruction.
+
+To understand the computational methods and algorithms for gamma-ray burst localization and reconstruction in this paper, a solid grasp of Compton imaging and reconstruction principles is essential. The rigorous option offers a deep dive into plasma diagnostics including radiation and imaging techniques relevant to Compton scattering, while the fast track provides a concise, accessible introduction to nuclear medicine physics covering gamma interactions and detector basics that underpin Compton imaging concepts. Choose the course for comprehensive foundational knowledge and the fast track for a quicker, intuitive grasp of key principles.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [MIT 22.67J Principles of Plasma Diagnostics, Fall 2023](https://www.youtube.com/playlist?list=PLUl4u3cNGP61wK-NwYKZMuABl_eHBmhu4) — MIT OpenCourseWare · 23 videos · 29.7h across 23 episodes
+
+**Watch only this:** Lectures 11 (Radiation), 15 (Equilibria and Imaging), and 19 (Nuclear Diagnostics), about 3.5 hours total — these cover the core physics of radiation interactions and imaging relevant to Compton reconstruction.
+
+*Why it unblocks this paper:* MIT's Principles of Plasma Diagnostics course includes detailed lectures on radiation, imaging, and nuclear diagnostics that cover the physics and instrumentation principles underlying Compton reconstruction used in the paper's signal processing and localization pipeline.
+
+*If you want all of it:* 29.7 hours across all 23 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Nuclear Medicine Physics Lecture Series](https://www.youtube.com/playlist?list=PL0FpKQ-EgTObAsB7r1bGbdBdOkt5f1W-z) — Molecular Imaging & Therapy · 49 videos · 24.4h across 49 episodes
+
+**Watch only this:** Episodes 14 (The Various Interactions of Charged Particles with Matter), 15 (The Various Interactions of Photons with Matter), 17 (Radiation Detectors), 20 (What are Gamma Cameras, Counters, and Probes?), and 21 (Signal Processing & Measured Energy Spectrum in a Scintillation Detector), about 2.5 hours total — these cover the essential physics and detector principles for Compton imaging.
+
+*Why it unblocks this paper:* The Nuclear Medicine Physics Lecture Series provides a concise and clear overview of gamma interactions, radiation detectors, and signal processing, which are foundational to understanding Compton imaging and event reconstruction in a practical context.
+
+*If you want all of it:* 24.4 hours across all 49 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

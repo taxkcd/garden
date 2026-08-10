@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-mukul-s-bansal"
-source_hash: "ffe1a306c39011daae8b296755096ad51d202a2bd9a8f26be2accd5b7b4cc9a4"
+source_hash: "8d9bd44398d785d92f8299688a1593e1a3b2d4264d2163b43b3852b3fb2f98cf"
 sequence: 341
 generator: "outreach-garden: managed"
 ---
@@ -55,6 +55,38 @@ SISTEM is a new software tool that simulates how tumors grow, evolve, and spread
 - [Identity evidence](https://compbio.engr.uconn.edu/people/bansal)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** agent-based modeling in computational biology
+**The paper assumes:** agent-based modeling, computational modeling of biological systems, tumor evolution simulation
+**Already in this field?** Skip this entirely if you already understand agent-based modeling approaches applied to biological and evolutionary systems.
+
+To understand the core simulation framework of SISTEM, which relies on agent-based modeling (ABM) to simulate tumor evolution, metastasis, and genotype-driven selection, it is essential to grasp the principles of ABM in computational biology. The rigorous course option provides a structured, in-depth university-level introduction to ABM concepts and estimation methods, while the fast track offers a concise, intuition-focused series on ABM fundamentals suitable for quickly gaining practical understanding.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Agent-Based Models in Economics](https://www.youtube.com/playlist?list=PLhYWrjQSgW9nzeXk8iRQ-WqoDPqYVej-K) — CCSS School on Computational Social Science · 7 videos · 4.2h across 7 episodes
+
+**Watch only this:** Episodes 1-4: 'Introduction to ABM/Corrado DI GUILMI', 'Agent Based Model on Actual Supply-chain Network/Hiroyasu INOUE', 'Deep Neural Networks in an ABM Virtual Experiment/David GOLDBAUM', and 'Approximate Bayesian Inference for Agent-Based Models in Economics: A Case Study/Thomas LUX', totaling about 2.3 hours — these cover the basics of ABM, practical applications, and inference methods essential for grasping the simulation and parameter estimation aspects of SISTEM.
+
+*Why it unblocks this paper:* This university-level playlist from CCSS School on Computational Social Science covers foundational and advanced topics in agent-based modeling, including model introduction, experiments, and inference approaches, which are directly relevant to understanding the agent-based simulation framework used in SISTEM.
+
+*If you want all of it:* All 7 episodes, about 4.2 hours.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Agent-based modeling - All you wanted to know](https://www.youtube.com/playlist?list=PLsv8cj_Tu8Ks_JKH9ZshfA6C6DO3MAG_q) — Social Complexity / Computational Social Science · 11 videos · 1.9h across 11 episodes
+
+**Watch only this:** Episodes 1-5: 'Agent Based Modelling - Simply explained', 'Why Agent-Based models are Social Sciences' future🟩', 'Social influence is a real phenomenon (and anti-vaxxers learned how to use it)', '🟩This videogame is about Game Theory and Agent-based Modeling!🟩', and 'Why are minorities segregated? - A simulation', totaling about 50 minutes — these episodes cover fundamental ABM concepts and examples that build intuition for the agent-based simulation in SISTEM.
+
+*Why it unblocks this paper:* This short-form playlist by Social Complexity / Computational Social Science offers clear, concise explainers on agent-based modeling concepts, social influence, and modeling complex systems, providing an accessible and intuition-driven introduction to ABM relevant for understanding SISTEM's modeling approach.
+
+*If you want all of it:* All 11 episodes, about 1.9 hours.
 
 ## Track 1 — Academic deep-dives (long-form)
 

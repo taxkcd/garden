@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-martha-a-kim"
-source_hash: "b44c5c775c39903379db785d2d676f6f9d190e052766855423054d35a3a1f450"
+source_hash: "1036bf223aed0c66003688774ff60b97581b1b3654c63b3997581d56bd9c63d6"
 sequence: 339
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,38 @@ Research interests: computer architecture, parallel programming, compilers, low-
 - [Google Scholar](http://scholar.google.com/citations?user=gFb9vegAAAAJ)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Dataflow Circuit Design
+**The paper assumes:** digital circuit design with dataflow architectures and token-based communication
+**Already in this field?** Skip this entirely if you already understand the principles and operation of dataflow circuits and their role in hardware design.
+
+To understand the automated power domain insertion and control in dataflow circuits presented in the paper, it is essential to grasp the fundamentals of dataflow circuit design, including concepts like actors, token sequences, and control/data planes. The rigorous course option provides a deep, structured university-level introduction to digital design and synthesis, covering foundational topics that underpin dataflow circuit design. The fast track offers a shorter, more focused series that covers the core concepts efficiently for readers who want a quicker but still solid grounding.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [CSE320 Digital Design and Synthesis](https://www.youtube.com/playlist?list=PL2QVJTyww325GtAM2FuGF24BfBFxy_t6R) — Ahbiya H · 34 videos · 24.9h across 34 episodes
+
+**Watch only this:** lectures 4 through 7 (Combinational and Iterative Circuits) plus lectures 9 through 12 (Sequential Circuits and State Machine Synthesis), and lecture 27 (Data Flow and Behavioral Modeling), about 7.5 hours total — these cover core digital design concepts and dataflow modeling relevant to the paper's approach.
+
+*Why it unblocks this paper:* This university-level course on digital design and synthesis by Ahbiya H covers combinational and sequential circuits, state machines, and dataflow and behavioral modeling, providing the rigorous foundation needed to understand the partitioning of actors and token-based control in dataflow circuits.
+
+*If you want all of it:* 24.9 hours across 34 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Design of Digital Circuits - ETH Zürich - Spring 2019](https://www.youtube.com/playlist?list=PL5Q2soXY2Zi8J58xLKBNFQFHRO3GrXxA9) — Onur Mutlu Lectures · 35 videos · 43.3h across 35 episodes
+
+**Watch only this:** Lectures 4 (Combinational Logic I), 6 (Sequential Logic Design), 16 (OoO, DataFlow, Loads/Stores), and 27 (Systolic Arrays and Beyond), about 5.5 hours total — these provide a focused overview of digital and dataflow circuit design principles relevant to the paper.
+
+*Why it unblocks this paper:* Onur Mutlu's 'Design of Digital Circuits' lecture series from ETH Zürich offers clear, well-structured explanations of digital circuit design, including dataflow concepts, in a concise format suitable for quick background preparation.
+
+*If you want all of it:* 43.3 hours across 35 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-radu-teodorescu"
-source_hash: "5c9d62fbf18cab298aef17249ba814cb0675c43e7ae077c1d911f8f53370a0c3"
+source_hash: "d5dcb8b61689b6fb55fb6ad68d1a0a2e3bc1a6239b9b44ceed60d975060826d2"
 sequence: 350
 generator: "outreach-garden: managed"
 ---
@@ -54,6 +54,38 @@ Research interests: computer architecture, energy efficient computing, security 
 - [Lab website](https://archlab.us/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** statistical hypothesis testing
+**The paper assumes:** statistical hypothesis testing, categorical data analysis, and statistical significance
+**Already in this field?** Skip this entirely if you already understand hypothesis testing and how to interpret p-values and association measures in categorical data.
+
+This background focuses on statistical hypothesis testing, which is central to understanding MicroSampler's method of detecting microarchitectural leakage via statistical correlations and significance testing. The rigorous course option offers a deep, structured university-level treatment of statistical inference, ideal for readers seeking comprehensive mastery. The fast track provides a concise, visual introduction to hypothesis testing concepts, suitable for readers who want a quick, intuitive grasp of the key ideas underpinning the paper's statistical analysis.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Statistical Inference](https://www.youtube.com/playlist?list=PLp6ek2hDcoNCp9o8aLQrbY15a-o0weoTd) — NPTEL IIT Delhi · 20 videos · 17.0h across 20 episodes
+
+**Watch only this:** Episodes 1 through 6 (Intro Video, Statistical Inference-1 to Statistical Inference-5), about 5 hours — these cover the basics of statistical inference and hypothesis testing necessary to grasp the paper's core methods.
+
+*Why it unblocks this paper:* This NPTEL IIT Delhi course on Statistical Inference covers hypothesis testing in a rigorous, university-level format, matching the paper's reliance on statistical tests like Cramér’s V and chi-squared p-values. It provides the theoretical foundation needed to fully understand the statistical methods used in MicroSampler.
+
+*If you want all of it:* All 20 episodes, about 17 hours total.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Intro to Hypothesis Testing](https://www.youtube.com/playlist?list=PLD3fYc0bAjC_7ChLJ2Jy9cWgGf3xk-BO4) — Joshua Emmanuel · 35 videos · 3.2h across 35 episodes
+
+**Watch only this:** Episodes 1 through 6 (Hypothesis Testing - Introduction to Type I & Type II errors in statistics), about 30 minutes — these episodes cover the fundamental concepts of hypothesis testing and error types critical to understanding the paper’s statistical significance testing.
+
+*Why it unblocks this paper:* Joshua Emmanuel’s 'Intro to Hypothesis Testing' playlist offers a clear, concise, and well-structured introduction to hypothesis testing concepts including p-values and chi-square tests, directly relevant to the paper’s statistical analysis approach. Its short episodes make it ideal for quickly gaining intuition.
+
+*If you want all of it:* All 35 episodes, about 3.2 hours total.
 
 ## Track 1 — Academic deep-dives (long-form)
 

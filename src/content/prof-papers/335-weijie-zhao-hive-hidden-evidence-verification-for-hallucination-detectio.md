@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-weijie-zhao"
-source_hash: "231c83fdc6083625a4e4b88e31ed33455dd6ac7a546bf4732b4716e94df0a4dc"
+source_hash: "c97a02558533447f4db739a199b6fb6e0781e5b2bc47f3b0de6d3d99c22db372"
 sequence: 335
 generator: "outreach-garden: managed"
 ---
@@ -54,6 +54,38 @@ Research interests: generative AI, AI security, scalable machine learning system
 - [DBLP](https://dblp.org/pid/135/6597-1.html)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Diffusion Models for Language Generation
+**The paper assumes:** diffusion probabilistic models, denoising score matching, latent variable generative models, diffusion-based text generation
+**Already in this field?** Skip this entirely if you already understand diffusion models for generative language modeling and their multi-step denoising processes.
+
+To understand the HIVE framework for hallucination detection in diffusion large language models, it is crucial to grasp the fundamentals of diffusion models applied to language generation, especially the multi-step denoising process and hidden state dynamics. The rigorous course option provides a deep, structured academic foundation on diffusion models and related generative techniques, while the fast track offers a concise, mathematically grounded lecture series focused specifically on diffusion generative AI models. Choose the course for a comprehensive, broad understanding; choose the fast track for a focused, efficient introduction.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS236: Deep Generative Models I 2023 I Stefano Ermon](https://www.youtube.com/playlist?list=PLoROMvodv4rPOWA-omMM6STXaWW4FvJT8) — Stanford Online · 18 videos · 23.6h across 18 episodes
+
+**Watch only this:** Lectures 13 (Score Based Models), 16 (Score Based Diffusion Models), and 18 (Diffusion Models for Discrete Data), about 3.9 hours total — these focus specifically on diffusion and score-based generative models relevant to diffusion LLMs.
+
+*Why it unblocks this paper:* Stanford CS236: Deep Generative Models I 2023 by Stefano Ermon covers foundational and advanced topics in generative models including score-based and diffusion models, providing the theoretical and practical background necessary to understand diffusion LLMs and their denoising trajectories, which are central to the HIVE paper.
+
+*If you want all of it:* All 18 lectures, about 23.6 hours total.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Course on Diffusion Models for Generative AI](https://www.youtube.com/playlist?list=PL8lIiiIWuabLxhJreBRZwNW-d02dJwbMb) — IFML · 25 videos · 28.8h across 25 episodes
+
+**Watch only this:** Lectures 23 (Diffusion language models), 10 (DDIM + Discrete-time Denoising through ELBO), and 9 (DDPM and Tweedie’s Formula), about 3.6 hours total — these directly address diffusion models and denoising relevant to the paper.
+
+*Why it unblocks this paper:* The 'Course on Diffusion Models for Generative AI' by IFML offers a concise and mathematically rigorous overview of diffusion generative AI models, including lectures specifically on diffusion language models and denoising processes, making it an efficient primer aligned with the paper's focus on diffusion LLMs.
+
+*If you want all of it:* All 25 lectures, about 28.8 hours total.
 
 ## Track 1 — Academic deep-dives (long-form)
 

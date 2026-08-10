@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-stephanie-wang"
-source_hash: "1973a10716854e9232df5c5729c56bef3c53330a79e1358670344844a4a4152b"
+source_hash: "4b2c9405a7b60b723e15968c3bf6a0e490be32091059202694f0652c418406a0"
 sequence: 355
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: distributed systems, systems for machine learning and data p
 - [Identity evidence](https://stephanie-wang.github.io/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Parallel Computing and Scheduling
+**The paper assumes:** parallel computing concepts, task scheduling algorithms, data and control flow dependencies, asynchronous execution models
+**Already in this field?** Skip this entirely if you already have a solid understanding of parallel computing principles and scheduling techniques in computer systems.
+
+This background playlist selection focuses on parallel computing and scheduling, essential for understanding the dynamic, programmable intra-device parallelism introduced by DynaFlow. The rigorous course option provides a deep, structured university-level foundation on parallel computing concepts, architectures, and scheduling strategies, while the fast track offers a concise, accessible introduction to the same core ideas for readers with limited time. Choose the course for comprehensive mastery or the fast track for a focused, efficient overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS149 I Parallel Computing I 2023 I Kayvon Fatahalian and Kunle Olukotun](https://www.youtube.com/playlist?list=PLoROMvodv4rMp7MTFr4hQsDEcX7Bx6Odp) — Stanford Online · 19 videos · 24.3h across 19 episodes
+
+**Watch only this:** Lectures 1-8, about 10 hours — covering why parallelism matters, multi-core architectures, parallel programming basics, and performance optimization including work distribution and scheduling, plus GPU architecture and data-parallel thinking.
+
+*Why it unblocks this paper:* Stanford CS149 is a comprehensive, authoritative university course on parallel computing covering fundamental concepts such as scheduling, data dependencies, GPU architectures, and performance optimization, directly relevant to understanding DynaFlow's programmable scheduling and backend execution management.
+
+*If you want all of it:* 24.3 hours across all 19 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [NPTEL: Introduction to Parallel Programming in OpenMP - Prof. Yogish Sabharwal](https://www.youtube.com/playlist?list=PLjzjdo8qdH01OxjkI2BdtZ8TUfUMMrxvS) — Suraj Donthi · 40 videos · 8.1h across 40 episodes
+
+**Watch only this:** Episodes 1-12, about 2.5 hours — covering course intro, parallel programming basics, architectures, pipelining, memory latency, cache locality, shared and distributed memory architectures, and basic OpenMP parallel programming constructs.
+
+*Why it unblocks this paper:* The NPTEL Introduction to Parallel Programming in OpenMP series provides a concise, clear introduction to parallel programming models, scheduling basics, and shared memory concepts, offering a practical and accessible overview of parallelism and scheduling relevant to intra-device parallelism.
+
+*If you want all of it:* 8.1 hours across all 40 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

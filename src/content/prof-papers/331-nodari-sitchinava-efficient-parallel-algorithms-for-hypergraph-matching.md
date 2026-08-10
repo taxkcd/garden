@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-nodari-sitchinava"
-source_hash: "5bc17e7fad623d1dee49998a6427afb5024f17114c4bce540db4c2886a60d8ca"
+source_hash: "88d5bdc0b219e52aab2a7a0ddb64dc1e65184a10c0788b6b171d16fdeb312e02"
 sequence: 331
 generator: "outreach-garden: managed"
 ---
@@ -57,6 +57,38 @@ Research interests: algorithms for modern parallel systems, cache-efficient para
 - [DBLP](http://www.informatik.uni-trier.de/~ley/pers/hd/s/Sitchinava:Nodari.html)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Parallel Algorithms and PRAM Models
+**The paper assumes:** parallel algorithms, PRAM computational models, parallel complexity analysis
+**Already in this field?** Skip this entirely if you already understand parallel algorithm design and the PRAM model of computation including CRCW and CREW variants.
+
+To fully understand the parallel algorithms and PRAM models used in the paper on efficient parallel hypergraph matching, it is essential to grasp the theoretical foundations of parallel computation, especially CRCW and CREW PRAM models, and parallel algorithm design techniques. The rigorous course provides a deep, structured university-level treatment, while the fast track offers a concise, accessible introduction to the core concepts for quicker comprehension. Readers should choose based on their available time and depth of background needed.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Parallel Algorithms - Sajith Gopalan | IIT Guwahati - NPTEL](https://www.youtube.com/playlist?list=PLEAYkSg4uSQ1fy3Nd-fctFerbGC5Q2piB) — Rahul Madhavan · 38 videos · 30.7h across 38 episodes
+
+**Watch only this:** Lectures 1-9 (Shared Memory Models 1 & 2, Interconnection Networks, Cost and Optimality, Basic Techniques 1-5), about 7.2 hours — these cover the PRAM models, parallel algorithm design principles, and foundational techniques necessary to understand the paper's algorithms and complexity bounds.
+
+*Why it unblocks this paper:* This graduate-level NPTEL course by Sajith Gopalan covers parallel algorithms comprehensively, including shared memory models, PRAM variants, cost and optimality, and detailed algorithmic techniques that directly underpin the paper's theoretical framework and complexity analysis.
+
+*If you want all of it:* All 38 lectures, about 30.7 hours
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [PARALLEL ALGORITHM](https://www.youtube.com/playlist?list=PLqHN1x5hDj3WfPz4N4Hee3dP0WfcfXj-p) — NET Forum · 7 videos · 1.9h across 7 episodes
+
+**Watch only this:** Episodes 1-5 (Introduction to Parallel Algorithms, parallel sum and search concepts, parallel merging, greedy algorithm for parallel processing, PRAM Models), about 1.3 hours — these episodes cover the essential concepts and PRAM models needed to grasp the paper's parallel algorithmic approach.
+
+*Why it unblocks this paper:* This NET Forum playlist offers a concise and clear introduction to parallel algorithms and PRAM models, including a dedicated episode on PRAM models and shared memory systems, providing a quick but solid conceptual foundation relevant to the paper.
+
+*If you want all of it:* All 7 episodes, about 1.9 hours
 
 ## Track 1 — Academic deep-dives (long-form)
 

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-simone-campanoni"
-source_hash: "e181ac7342fc393bcddad76d08b6908fb32cbd3125984e8e8c6fbb3c457ec19f"
+source_hash: "31428d24845107cd48c0480fd7aef4654e945276f653a1fbafbb400502e84cee"
 sequence: 354
 generator: "outreach-garden: managed"
 ---
@@ -54,6 +54,38 @@ Research interests: understanding how abstractions used within and around compil
 - [GitHub](https://github.com/google/xls)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Compiler optimizations
+**The paper assumes:** compiler optimization techniques, intermediate representations, data structure specialization
+**Already in this field?** Skip this entirely if you already understand compiler optimization methods and how compilers transform and optimize data structures.
+
+To understand the Automatic Data Enumeration (ADE) technique presented in the paper, a solid grasp of compiler optimizations is essential, especially how compilers transform and optimize data structures and intermediate representations. The rigorous course option offers a deep, structured university-level lecture series on compiler optimization, ideal for comprehensive understanding. The fast track provides a concise, focused playlist of compiler optimization explainers that quickly cover key concepts relevant to ADE, suitable for readers pressed for time.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Q&A on Compiler Optimization Lecture Modules](https://www.youtube.com/playlist?list=PLf3ZkSCyj1tc2BMULS4PQt6BUCWIyHvbd) — compilerai · 16 videos · 8.1h across 16 episodes
+
+**Watch only this:** Episodes: 'COL729 Meeting 2', 'COL729 Meeting 3', 'COL729/2021 Meeting 5', 'COL729/2021Meeting 4', and '3rd April 2021 Meeting Summary till Module 103' — about 2.5 hours total. These cover foundational compiler optimization concepts and dataflow analyses critical for grasping ADE.
+
+*Why it unblocks this paper:* This university-level Q&A lecture series on compiler optimization covers detailed modules on dataflow analysis, local optimizations, and intermediate representations, directly relevant to understanding ADE's compiler transformations and optimizations.
+
+*If you want all of it:* 8.1 hours across all 16 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Code Optimization Compiler Design](https://www.youtube.com/playlist?list=PLpTB4eenNxrqDSgWTXgAWXfjY0pYLgZvR) — All About Analysis · 7 videos · 0.3h across 7 episodes
+
+**Watch only this:** All 7 episodes, about 18 minutes total, as each episode is roughly 3 minutes and collectively they cover key optimization phases relevant to ADE.
+
+*Why it unblocks this paper:* This short playlist provides concise, clear explainers on core compiler optimization techniques such as loop invariant code motion, loop unrolling, and copy propagation, which underpin many compiler transformations like those used in ADE.
+
+*If you want all of it:* 0.3 hours across all 7 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

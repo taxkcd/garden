@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-yuanchao-xu"
-source_hash: "7b586e6fd3ad1459574a17309b0bf778957cdb3844f4cd349938ecca04c04b85"
+source_hash: "e069a925b93abdb3b892896e3659ad007f9afc3be11c80071f17d7d5406f60d2"
 sequence: 343
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: computer architecture, security, and ML systems and architec
 - [Resolved homepage](https://yuanchaoxu6.github.io/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Memory Encryption and Security
+**The paper assumes:** memory encryption modes, counter mode encryption, XTS encryption, trusted execution environments, memory system security
+**Already in this field?** Skip this entirely if you already understand memory encryption techniques and their application in secure memory architectures.
+
+To understand the core concepts behind the paper on efficient security support for CXL memory, it is essential to grasp memory encryption modes like CTR and XTS, their performance trade-offs, and how encryption integrates with memory systems. The rigorous course offers a deep dive into secure systems engineering with a focus on vulnerabilities and hardware security, while the fast track provides a concise, focused introduction to foundational security concepts relevant to encryption and memory protection. Choose the rigorous course for comprehensive understanding and the fast track for a quicker, yet solid, conceptual foundation.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Information Security 5 Secure Systems Engineering | IIT Madras](https://www.youtube.com/playlist?list=PLyqSpQzTE6M-q0Xgn0icEHvUS7WQxvenv) — NPTEL-NOC IITM · 59 videos · 19.6h across 59 episodes
+
+**Watch only this:** Episodes #1 Introduction to Secure Systems Engineering, #2 Program Binaries, #17 Buffer Overreads, #23 Heap, and #24 Heap Exploits — about 1.5 hours total. These cover core concepts of memory security and vulnerabilities that relate directly to memory encryption and protection.
+
+*Why it unblocks this paper:* This NPTEL course on Secure Systems Engineering covers detailed security vulnerabilities and hardware-related attacks, providing a rigorous foundation in memory management and security mechanisms that underpin memory encryption and trusted execution environments relevant to the paper.
+
+*If you want all of it:* All 59 episodes, approximately 19.6 hours, for a comprehensive understanding of secure systems engineering including hardware and software security aspects.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [CompTIA SY0-701 Security+ Training Course](https://www.youtube.com/playlist?list=PLG49S3nxzAnl4QDVqK-hOnoqcSKEIDDuv) — Professor Messer · 121 videos · 7.4h across the first 60 episodes
+
+**Watch only this:** Episodes 'Encrypting Data - CompTIA Security+ SY0-701 - 1.4', 'Key Exchange - CompTIA Security+ SY0-701 - 1.4', and 'Encryption Technologies - CompTIA Security+ SY0-701 - 1.4' — about 21 minutes total. These episodes focus specifically on encryption principles and technologies relevant to memory encryption.
+
+*Why it unblocks this paper:* Professor Messer's CompTIA SY0-701 Security+ course offers clear, concise explanations of encryption technologies and security fundamentals, including encryption modes and key concepts like authentication and authorization, which are essential for quickly grasping the encryption and security trade-offs discussed in the paper.
+
+*If you want all of it:* The first 60 episodes, approximately 7.4 hours, covering a broad range of security topics including encryption, authentication, and threat models.
 
 ## Track 1 — Academic deep-dives (long-form)
 

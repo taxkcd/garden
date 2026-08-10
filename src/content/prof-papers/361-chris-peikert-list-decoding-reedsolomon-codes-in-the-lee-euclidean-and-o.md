@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-chris-peikert"
-source_hash: "cfe194d6957aca9b3034a21dc71c5c9533043e93c8452e5346b6d779fa952d66"
+source_hash: "a8611cfc54968e1bea3f2c5d034a2d511ddf035ba7002a262b927a60e97e6da3"
 sequence: 361
 generator: "outreach-garden: managed"
 ---
@@ -54,6 +54,38 @@ Research interests: cryptography, lattices, coding theory, algorithms, and compu
 - [Social profile](https://twitter.com/ChrisPeikert)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Fourier analysis and lattice theory
+**The paper assumes:** Fourier analysis on finite groups and Euclidean spaces, lattice theory and geometry of numbers, Poisson summation formula
+**Already in this field?** Skip this entirely if you already have a solid undergraduate or beginning graduate-level understanding of Fourier analysis and lattice theory in the context of coding and cryptography.
+
+This background focuses on Fourier analysis and lattice theory, which are foundational to understanding the paper's approach to list decoding Reed–Solomon codes in ℓp metrics. The rigorous course option provides a deep, structured university-level treatment of Fourier transforms and their applications, ideal for readers seeking comprehensive mastery. The fast track offers a concise, well-structured introduction to Fourier series, suitable for quickly grasping key concepts and intuition without extensive time investment.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Lecture Collection | The Fourier Transforms and Its Applications](https://www.youtube.com/playlist?list=PLB24BC7956EE040CD) — Stanford · 30 videos · 25.6h across 30 episodes
+
+**Watch only this:** Lectures 1-12, about 10.3 hours — covering the fundamentals of Fourier transforms, properties, convolution, and Poisson summation, which are essential for understanding the paper's analytic methods.
+
+*Why it unblocks this paper:* This Stanford lecture series by Professor Brad Osgood thoroughly covers Fourier transforms and their applications, including the theoretical foundations and techniques like Poisson summation that are central to the paper's Fourier-analytic framework.
+
+*If you want all of it:* 25.6 hours across 30 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [FOURIER SERIES - BY TIKLE'S ACADEMY](https://www.youtube.com/playlist?list=PLNKD1qB9pptvLY76pTUOr5iorMU7m1yPo) — TIKLE'S ACADEMY OF MATHS · 22 videos · 8.7h across 22 episodes
+
+**Watch only this:** Lectures 1-8, about 3 hours — covering the definition, formulas, even/odd functions, expansions, and basic sums, which give a solid quick foundation in Fourier series.
+
+*Why it unblocks this paper:* This 8.7-hour series from TIKLE'S ACADEMY offers a clear, focused introduction to Fourier series, including definitions, expansions, and problem-solving, providing a practical and intuitive grasp of Fourier analysis relevant to the paper's use of Fourier transforms.
+
+*If you want all of it:* 8.7 hours across 22 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

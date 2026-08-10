@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-daniel-j-sorin"
-source_hash: "1e029a746c8e708aee9ed36ae685feaa786bd44d7fe3cbde87394ed542e43d11"
+source_hash: "8d8888694739a1efef31628ed2c6898c848ac5f366e1f4c81e71db4f744d3e7b"
 sequence: 346
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: Computer architecture, Multicore memory systems, Fault-toler
 - [Lab website](https://athena.duke.edu/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Statistical Model Checking
+**The paper assumes:** statistical model checking, probabilistic model verification, temporal logic properties
+**Already in this field?** Skip this entirely if you already understand statistical model checking and its application to probabilistic systems verification.
+
+To rigorously understand the Statistical Model Checking (SMC) methodology used in the paper, it is essential to grasp the statistical foundations of sampling, inference, and hypothesis testing that underpin SMC. The two options below provide complementary learning paths: the course offers a deep, structured university-level foundation in statistical data analysis and sampling distributions, while the fast track provides a concise, focused introduction to key statistical concepts like confidence intervals and hypothesis testing relevant to SMC. Choose the course for thorough mastery or the fast track for a quicker, practical overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Planning Data Analysis | Complete University Course | Lecture Series 📊](https://www.youtube.com/playlist?list=PLJ2sdJpZ0upDi1BSvQdGhfMnhLmbaYFSf) — Maths With Hanif · 15 videos · 2.5h across 15 episodes
+
+**Watch only this:** Episodes 9 to 14 (Sampling distribution of means with replacement, Sampling distribution of means without replacement, Sampling distribution of means with replacement, Estimating the variance of a population, Estimating the difference between two population means, Estimating the mean from small samples), about 1 hour total — these episodes cover sampling distributions and estimation critical to SMC.
+
+*Why it unblocks this paper:* This university lecture series on Planning Data Analysis covers core statistical concepts such as sampling distributions, estimation, and confidence intervals, which are fundamental to understanding the statistical inference techniques used in Statistical Model Checking.
+
+*If you want all of it:* 2.5 hours across 15 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Introduction to Statistics and Data Analysis](https://www.youtube.com/playlist?list=PLMrJAkhIeNNT14qn1c5qdL29A1UaHamjx) — Steve Brunton · 35 videos · 9.9h across 35 episodes
+
+**Watch only this:** Episodes 6 (Normal Approximation to Sample Mean), 7 (Confidence Intervals), 8 (Central Limit Theorem Example & Hypothesis Testing), and 9 (Hypothesis Testing in Statistics), about 1 hour total — these episodes focus on the statistical inference methods used in SMC.
+
+*Why it unblocks this paper:* This concise series by Steve Brunton provides clear, visual explanations of statistics and data analysis concepts including confidence intervals and hypothesis testing, which directly support understanding the statistical guarantees and inference in SMC.
+
+*If you want all of it:* 9.9 hours across 35 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

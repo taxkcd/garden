@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-zhijian-liu"
-source_hash: "430c845d34e20fa4a622d727b76ea6d22c88407a5f3d6c30cd26592ff4c9dace"
+source_hash: "8cca886a7713f56c16f8515b4384eab1257e2e1f4d15c283851cdb1f8c577966"
 sequence: 334
 generator: "outreach-garden: managed"
 ---
@@ -57,6 +57,38 @@ Research interests: making AI smaller, faster, and more efficient through full-s
 - [Social profile](https://x.com/zhijianliu_)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Diffusion Models in Machine Learning
+**The paper assumes:** probabilistic diffusion models, denoising score matching, latent variable generative models, and conditional generation techniques
+**Already in this field?** Skip this entirely if you already understand the fundamentals of diffusion models and their application in sequence generation.
+
+To understand the core method of DFlash, which relies on block diffusion models for parallel token generation in speculative decoding, it is essential to grasp diffusion models' fundamentals, including denoising steps and conditioning mechanisms. The rigorous course option offers a deep, structured university-level exploration of diffusion models, ideal for readers seeking comprehensive mastery. The fast track provides a shorter, intuition-driven series that covers the key principles efficiently, suitable for readers who want a solid conceptual foundation without investing extensive time.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CME296: Diffusion & Large Vision Models](https://www.youtube.com/playlist?list=PLoROMvodv4rNdy8rt2rZ4T2xM0OjADnfu) — Stanford Online · 8 videos · 14.0h across 8 episodes
+
+**Watch only this:** Lectures 1-4 (Diffusion, Score matching, Flow matching, Latent Space & Guidance), about 7 hours — these cover the fundamental diffusion concepts, score matching, flow matching, and conditioning mechanisms essential for grasping DFlash's approach.
+
+*Why it unblocks this paper:* Stanford CME296 is a university-level course focused on diffusion-based generative models, covering foundational theory, architectures, training, and evaluation, directly relevant to understanding the diffusion drafting and KV injection conditioning in DFlash.
+
+*If you want all of it:* All 8 lectures, about 14 hours — for a complete understanding including architectures, training, evaluation, and trending topics.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [The Principles of Diffusion Models](https://www.youtube.com/playlist?list=PLPTV0NXA_ZShSUHKLhdHAdAw5oM9vM1Yf) — Vizuara · 11 videos · 10.7h across 11 episodes
+
+**Watch only this:** Episodes 3-8 (Introduction to Diffusion Models (DDPM), Diffusion Models Practical | DDPM, Energy Based Models | Score Function, Denoising Score Matching, Noise Conditional Score Networks, Diffusion Models: A Physical Intuition), about 5.8 hours — these episodes cover core diffusion model concepts, denoising, score matching, and conditioning relevant to the paper.
+
+*Why it unblocks this paper:* The Principles of Diffusion Models by Vizuara offers a concise, well-structured series that explains diffusion models from basic intuition to practical aspects, providing a clear conceptual foundation suitable for quickly understanding the key ideas behind DFlash's diffusion drafting.
+
+*If you want all of it:* All 11 episodes, about 10.7 hours — for a broader and deeper overview including related generative modeling concepts.
 
 ## Track 1 — Academic deep-dives (long-form)
 

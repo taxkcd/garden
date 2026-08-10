@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-mohammad-al-olaimat"
-source_hash: "053ec6a8e87a4eb9171cbd753113beed5e9e4ca147f845a7775e61c3b9812710"
+source_hash: "4608811e5ca7136c253a1c6d67b25eaddbd72d4c812da13b5094f47cee256720"
 sequence: 342
 generator: "outreach-garden: managed"
 ---
@@ -50,6 +50,27 @@ Research interests: development of artificial intelligence and deep learning mod
 - [Faculty/profile page](https://www.usf.edu/ai-cybersecurity-computing/people/faculty/mohammad_al_olaimat.aspx)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Recurrent Neural Networks and Attention Mechanisms
+**The paper assumes:** recurrent neural networks, attention mechanisms in deep learning, sequence modeling
+**Already in this field?** Skip this entirely if you already understand recurrent neural networks and attention mechanisms in machine learning.
+
+To understand the core methodology of the TA-RNN paper, which centers on recurrent neural networks (RNNs) enhanced with dual-level attention mechanisms for irregular time series in EHR data, this background provides two viewing options. The rigorous course offers a deep, structured university-level treatment of RNNs and attention mechanisms, ideal for thorough comprehension. The fast track is a concise, well-visualized explainer series focused specifically on RNNs and attention, suitable for quickly grasping the essential concepts without extensive time investment.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Attention Mechanism in Deep Learning.](https://www.youtube.com/playlist?list=PL23RutZ7d6NpL7HvvxDxwhAXIg53z7B_K) — Datum Learning · 6 videos · 1.2h across 6 episodes
+
+**Watch only this:** Episodes 1 to 4, about 48 minutes — covering introduction, background, working of attention, and self-attention mechanism, sufficient to understand the attention components in the paper.
+
+*Why it unblocks this paper:* This Datum Learning playlist offers a concise, code-oriented introduction to attention mechanisms, explaining their motivation, working principles including query-key-value vectors, self-attention, multi-head attention, and cross-attention, which are essential to grasp the dual-level attention mechanism used in TA-RNN.
+
+*If you want all of it:* 1.2 hours across 6 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

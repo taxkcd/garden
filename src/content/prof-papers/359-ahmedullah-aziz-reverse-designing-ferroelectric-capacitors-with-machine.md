@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-ahmedullah-aziz"
-source_hash: "4b0e5ddc678e4038ea0caa959de5c044676abbf54054eafe676d1e0691937b14"
+source_hash: "63c3681450fed53dbebbce4b44598daa84284127c49eb1b17531989e391cafe4"
 sequence: 359
 generator: "outreach-garden: managed"
 ---
@@ -51,6 +51,38 @@ This paper presents two algorithms that use machine learning models to quickly a
 - [Identity evidence](https://scholar.google.com/citations?user=T57WOKEAAAAJ&hl=en)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Machine Learning for Device Modeling
+**The paper assumes:** machine learning for physical device modeling, neural network regression, gradient-based optimization in engineering
+**Already in this field?** Skip this entirely if you already understand how machine learning models are trained and applied to simulate and optimize physical electronic devices.
+
+This background focuses on machine learning fundamentals essential for understanding neural network-based compact modeling and optimization algorithms used in device parameter extraction for ferroelectric capacitors. The rigorous course option offers a comprehensive university-level introduction to machine learning concepts, while the fast track provides a concise, intuition-driven explanation of neural networks and backpropagation, enabling efficient grasp of core ideas without extensive time commitment.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS229: Machine Learning led by Andrew Ng | Autumn 2018](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU) — Stanford Online · 21 videos · 27.9h across 21 episodes
+
+**Watch only this:** Lectures 1-2 and 10-11, about 4.3 hours — covering linear regression, gradient descent, introduction to neural networks, and backpropagation to understand model training and gradient-based optimization.
+
+*Why it unblocks this paper:* Stanford CS229 by Andrew Ng is a highly authoritative, broad introduction to machine learning covering supervised learning, neural networks, gradient descent, and optimization techniques, directly relevant to the ML-based compact modeling and reverse-design algorithms in the paper.
+
+*If you want all of it:* 27.9 hours across 21 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Neural networks](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi) — 3Blue1Brown · 10 videos · 3.6h across 10 episodes
+
+**Watch only this:** Episodes 1-4, about 1.4 hours — covering what neural networks are, gradient descent, and backpropagation intuitively and mathematically.
+
+*Why it unblocks this paper:* 3Blue1Brown's Neural Networks series provides clear, visual, and intuitive explanations of neural networks and backpropagation, the core algorithms behind the paper's ML models and gradient-based optimization, making it ideal for a quick yet deep conceptual understanding.
+
+*If you want all of it:* 3.6 hours across 10 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

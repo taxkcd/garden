@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-leila-de-floriani"
-source_hash: "30f247b5a84e00ef1718b9b95e39a9502c20765d3827c8976489ad78fe8697fd"
+source_hash: "981eda42fb2bad994a4492e5bbaf309ab73bcee7f5061a1d1165f5824dc4ef13"
 sequence: 352
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,27 @@ Research interests: geometric modeling and processing, topology-based data visua
 - [Lab website](https://geovis.umiacs.io/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Discrete Morse Theory
+**The paper assumes:** discrete Morse theory, Forman gradient, simplicial complexes, topological data analysis
+**Already in this field?** Skip this entirely if you already understand discrete Morse theory and its application to computational topology.
+
+This background focuses on discrete Morse theory, the core mathematical framework underlying the Topology-based Tree Segmentation (TTS) method in the paper. Understanding discrete Morse theory is essential to grasp how critical points are identified and how topological features are extracted from TLS point clouds for tree segmentation. The rigorous course option offers a deep, structured university-level introduction, while the fast track provides a concise, computation-focused overview suitable for quickly gaining intuition and practical understanding.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Topological Data Analysis](https://www.youtube.com/playlist?list=PL8MAmqMDID4w_Rv2m2-lhrLQYrOz9iYMP) — AlgoTales · 9 videos · 2.3h across 9 episodes
+
+**Watch only this:** Watch episodes 3-6 (Simplicial Complex, Oriented Simplicial Complex, Face of a Simplex, Boundary of a simplex), about 1 hour total — these episodes cover the simplicial complex structures and boundary operators foundational to discrete Morse theory.
+
+*Why it unblocks this paper:* This short playlist offers clear, visual, and intuitive explanations of topological data analysis concepts including simplicial complexes and boundary operators, providing a quick but solid foundation for understanding discrete Morse theory's role in topological segmentation.
+
+*If you want all of it:* All 9 episodes, about 2 hours 15 minutes total.
 
 ## Track 1 — Academic deep-dives (long-form)
 

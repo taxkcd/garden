@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-yanni-sun"
-source_hash: "4f2dbbcd5fde4a02c1729f0430556c00b943143e44178e5e4c55138cd8ca0541"
+source_hash: "dad2e3cbda73e494c3722f3dfad56bf2e07d3a68df065f09513c71b33bb93bb9"
 sequence: 356
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,27 @@ Research interests: Computational biology and Bioinformatics, deep learning-base
 - [Identity evidence](https://yannisun.github.io/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** deep learning for protein sequences
+**The paper assumes:** deep learning applied to protein sequences, protein language models, Transformer neural networks, protein embeddings
+**Already in this field?** Skip this entirely if you already understand how deep learning models like Transformers are used to represent and analyze protein sequences.
+
+This background is designed to help you understand the deep learning methodologies applied to protein sequences, which are central to the GOPhage paper's approach using protein language models and Transformer architectures. The rigorous course offers a structured, university-level introduction to sequence models and attention mechanisms, while the fast track provides a concise, focused set of explainers on sequence models from a reputable educational channel. Choose the course for depth and foundational understanding, or the fast track for a quicker, intuition-driven overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Sequence Models (Course 5 of the Deep Learning Specialization)](https://www.youtube.com/playlist?list=PLkDaE6sCZn6F6wUI9tvS_Gw1vaFAx6rd6) — DeepLearningAI · 6 videos · 1.0h across 6 episodes
+
+**Watch only this:** Episodes C5W3L01 Basic Models, C5W3L07 Attention Model Intuition, and C5W3L08 Attention Model, about 30 minutes total — these cover the core sequence modeling and attention mechanisms used in protein language models.
+
+*Why it unblocks this paper:* This DeepLearningAI playlist on Sequence Models covers foundational concepts of attention and Transformer models, which are directly relevant to understanding how GOPhage models protein sequences and genomic context.
+
+*If you want all of it:* All 6 episodes, about 1.0 hour total.
 
 ## Track 1 — Academic deep-dives (long-form)
 

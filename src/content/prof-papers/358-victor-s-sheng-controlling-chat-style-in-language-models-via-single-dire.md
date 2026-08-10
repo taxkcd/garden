@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-victor-s-sheng"
-source_hash: "558347a39f9014fc98f55824f9cbdb992467c5d46e36c2cdd213be0c8d5ceaf7"
+source_hash: "5e97b88793fb1c7d3ae3863aba0c255e916ea661bbd3e3ba3212a4b6c886d1e8"
 sequence: 358
 generator: "outreach-garden: managed"
 ---
@@ -54,6 +54,38 @@ Research interests: Crowdsourcing, Data Mining and Machine Learning, Spatial Inf
 - [DBLP](http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/s/Sheng:Victor_S=.html)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Representation learning in neural networks
+**The paper assumes:** representation learning, neural network activations, linear subspaces in deep models
+**Already in this field?** Skip this entirely if you already understand how neural networks internally represent features and how these representations can be interpreted or manipulated.
+
+This background focuses on representation learning in neural networks, a foundational concept for understanding how stylistic attributes can be encoded and manipulated as linear directions in large language models' activation spaces. The rigorous course offers a deep, structured university-level treatment of neural network representation learning, while the fast track provides a concise, intuition-driven introduction suitable for quickly grasping the core ideas without extensive time investment.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [MIT 6.7960 Deep Learning, Fall 2024](https://www.youtube.com/playlist?list=PLUl4u3cNGP63URZnh5iqBzDTDYPUTQT-8) — MIT OpenCourseWare · 24 videos · 29.5h across 24 episodes
+
+**Watch only this:** Lectures 11, 12, and 13 (Representation Learning: Reconstruction-Based, Similarity-Based, and Theory), about 3.6 hours total — these focus specifically on representation learning concepts crucial for grasping the paper's methodology.
+
+*Why it unblocks this paper:* MIT 6.7960 Deep Learning, Fall 2024 covers representation learning comprehensively, including theory and practical aspects of neural networks and their internal representations, directly relevant to understanding linear directions in activation space and style vector extraction.
+
+*If you want all of it:* All 24 lectures, about 29.5 hours total.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Neural networks](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi) — 3Blue1Brown · 10 videos · 3.6h across 10 episodes
+
+**Watch only this:** Episodes 1 through 4 (But what is a neural network?, Gradient descent, how neural networks learn, Backpropagation intuitively, Backpropagation calculus), about 1.4 hours total — these cover the essential concepts of neural network learning and representation.
+
+*Why it unblocks this paper:* 3Blue1Brown's 'Neural networks' playlist offers clear, visual, and intuitive explanations of neural networks and backpropagation, providing a quick yet solid foundation on how neural networks learn and represent information, which underpins the paper's approach to style vector editing.
+
+*If you want all of it:* All 10 episodes, about 3.6 hours total.
 
 ## Track 1 — Academic deep-dives (long-form)
 

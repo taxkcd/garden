@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-frank-pfenning"
-source_hash: "c76d6cc1694c1ef26f5a23596502931f7d79bc494db4d46b9cdbc60ddb16fb25"
+source_hash: "31cfb3a3f68a007b01be36ad1625e2d50841631ece6a4dceca8c9aa8e59027d1"
 sequence: 330
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,38 @@ Research interests: Programming Languages, Logic and Type Theory, Logical Framew
 - [DBLP](https://dblp.uni-trier.de/pid/p/FPfenning.html?view=by-year)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Proof Theory and Sequent Calculus
+**The paper assumes:** proof theory, natural deduction, sequent calculus, and structural proof theory
+**Already in this field?** Skip this entirely if you already have a solid understanding of proof theory and sequent calculus, including natural deduction systems and cut-elimination.
+
+To fully grasp the technical contributions of 'Proof-Theoretic Adjoint Compilation,' especially the translation between adjoint natural deduction and semi-axiomatic sequent calculus (Sax), a solid understanding of proof theory, sequent calculus, and natural deduction is essential. The rigorous course option offers a structured, university-level deep dive into discrete structures and logic fundamentals, while the fast track provides a concise, focused introduction to proof theory and sequent calculus concepts. Choose the rigorous course for comprehensive foundational knowledge or the fast track for a quicker, intuition-driven overview that still covers the core ideas relevant to the paper.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [DISCRETE STRUCTURES AND THEORY OF LOGIC MODULE-1| KSC303 | MKSC303 | DISCRETE MATHEMATICS | SET THEORY, RELATIONS, FUNCTIONS AND NATURAL NUMBERES](https://www.youtube.com/playlist?list=PL5Dqs90qDljVzjOD7o69P-lmSmGLSxpN3) — FEARLESS INNOCENT MATH · 26 videos · 11.8h across the first 25 episodes
+
+**Watch only this:** Episodes 1-12, about 5.7 hours — covering number systems, set theory basics, relations, properties of relations, and equivalence relations, which are essential for understanding the logical frameworks and structural properties discussed in the paper.
+
+*Why it unblocks this paper:* This discrete structures and theory of logic course covers foundational topics in set theory, relations, functions, and mathematical induction, which underpin the formal proof systems and logical frameworks used in the paper. It provides a broad and rigorous background necessary to understand the structural and proof-theoretic aspects of adjoint logic and sequent calculus.
+
+*If you want all of it:* Approximately 11.8 hours across the first 25 episodes.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Basics](https://www.youtube.com/playlist?list=PL8YuygkaGcFZjR-zKASAXLU24R5pg4bjQ) — Proof Theorist · 7 videos · 4.8h across 7 episodes
+
+**Watch only this:** Episodes 1-3, about 2 hours and 3 minutes — including the formal proof in a Hilbert system, introduction to proof theory and sequent calculus, and short proofs in strong proof systems, which provide a solid conceptual foundation for understanding the paper's technical content.
+
+*Why it unblocks this paper:* This short series by Proof Theorist focuses specifically on proof theory and sequent calculus, directly addressing the core proof-theoretic concepts and systems that the paper builds upon. It offers a clear, focused introduction to sequent calculus and related proof theory topics in a compact format.
+
+*If you want all of it:* Approximately 4.8 hours across all 7 episodes.
 
 ## Track 1 — Academic deep-dives (long-form)
 

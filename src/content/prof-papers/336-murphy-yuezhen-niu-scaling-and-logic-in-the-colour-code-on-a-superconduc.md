@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-murphy-yuezhen-niu"
-source_hash: "6e1cbd30ad1ad90446c98cb4e2a20eba4454054c542b82d68a30d79710f38ad9"
+source_hash: "9868dfbe1b6f453f16754943fee9c5283ea20a8c97dc0f26a380f3af226236e6"
 sequence: 336
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: Algorithms and Theory, Computer Architecture, Machine Learni
 - [Google Scholar](https://scholar.google.com/citations?hl=en&user=0wJPxfkAAAAJ&view_op=list_works&sortby=pubdate)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Quantum error correction
+**The paper assumes:** quantum error correction codes, stabilizer formalism, topological quantum codes, fault-tolerant quantum computing
+**Already in this field?** Skip this entirely if you already understand the theory and practice of quantum error correction, including stabilizer codes and topological codes like the surface and colour codes.
+
+This background focuses on quantum error correction, essential for understanding the implementation and scaling of the colour code on superconducting quantum processors as presented in the paper. The rigorous course option provides a deep, structured university-level treatment of quantum error correction concepts, while the fast track offers a concise, accessible introduction to the same topic for quicker comprehension. Choose the course for thorough mastery or the fast track for a focused, time-efficient overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Yale Quantum Institute Course on Quantum Error Correction](https://www.youtube.com/playlist?list=PLh9mgdi4rNewrbMExcT-dzW-tH2mjkagq) — YaleCourses · 7 videos · 11.6h across 7 episodes
+
+**Watch only this:** Lectures 1 through 3, about 5 hours — covering introduction to quantum errors, quantum codes and stabilizers, and bosonic modes which provide foundational understanding for topological codes and error correction circuits.
+
+*Why it unblocks this paper:* This Yale Quantum Institute course is a recent, authoritative university-level lecture series dedicated specifically to quantum error correction, covering stabilizers, decoding, and measurement techniques directly relevant to the colour code implementation and decoding strategies used in the paper.
+
+*If you want all of it:* All 7 lectures, about 11.6 hours total.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Quantum Error Correction Series](https://www.youtube.com/playlist?list=PLD9iE8dbH_2VT2mgoeEXfswH52QN3Y2cf) — Quantumgrad · 6 videos · 5.3h across 6 episodes
+
+**Watch only this:** Episodes 1 through 3, about 2.7 hours — sufficient to grasp the basics of quantum error correction, stabilizers, and logical qubits.
+
+*Why it unblocks this paper:* This Quantumgrad series offers a concise and clear tutorial on quantum error correction, covering the core concepts and mechanisms in about 5 hours total, making it an efficient introduction that aligns well with the paper's focus on error correction codes and decoding.
+
+*If you want all of it:* All 6 episodes, about 5.3 hours total.
 
 ## Track 1 — Academic deep-dives (long-form)
 

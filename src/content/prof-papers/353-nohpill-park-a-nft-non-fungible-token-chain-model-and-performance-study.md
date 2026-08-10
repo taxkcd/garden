@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-nohpill-park"
-source_hash: "6a0c00fc3ac3a71316b134ee8e25008948da497d5aa18ab563f96bea42d37a4d"
+source_hash: "502e6e11e8529bfb4f093962c8df7f463a3df306a3a42ff622e64fbfb5dd3b07"
 sequence: 353
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,38 @@ Research interests: Fuustack design and implementation for NFT (Non-fungible Tok
 - [Lab website](https://cas.okstate.edu/computer_science/about_us/dr_thomas_lab)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Markovian queueing theory
+**The paper assumes:** Markovian queueing theory, stochastic processes, Poisson processes, exponential service time distributions
+**Already in this field?** Skip this entirely if you already understand Markovian queueing models and their application to performance evaluation in computer systems.
+
+This background focuses on Markovian queueing theory, which is essential to understand the embedded Markovian queueing model used in the NFT chain performance paper. The rigorous course option provides a deep, structured university-level treatment of queueing theory, while the fast track offers a shorter, focused introduction to key concepts like Poisson processes and Markov chains. Choose the lane that fits your available time and depth needs; the fast track covers the core essentials efficiently, whereas the course offers comprehensive coverage for thorough mastery.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Introduction to Queueing Theory](https://www.youtube.com/playlist?list=PLwdnzlV3ogoX2OHyZz3QbEYFhbqM7x275) — NPTEL IIT Guwahati · 49 videos · 35.4h across 49 episodes
+
+**Watch only this:** Lectures 1 through 14, about 10 hours — covering queueing systems, Kendall's notation, Little's Law, stochastic processes, Markov chains, Poisson process properties, and M/M/1 queue performance measures.
+
+*Why it unblocks this paper:* This NPTEL IIT Guwahati course is a comprehensive university lecture series on queueing theory, covering Markov chains, Poisson processes, and embedded Markovian models, directly supporting the paper's core methodology.
+
+*If you want all of it:* 35.4 hours across 49 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Queueing Theory Lectures](https://www.youtube.com/playlist?list=PLE-nD0DL6trGIjtwj2dTLxBk61ZmTbcNo) — Dr. Richard Li · 13 videos · 6.8h across 13 episodes
+
+**Watch only this:** Lectures 1 through 7, about 3.5 hours — covering introduction, classification of models, Little's formula, and sample problems on queueing models.
+
+*Why it unblocks this paper:* Dr. Richard Li's Queueing Theory Lectures provide a concise, well-structured introduction to queueing models and key concepts like Little's formula and finite queue models, suitable for quickly grasping the essentials behind the paper's model.
+
+*If you want all of it:* 6.8 hours across 13 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-saibal-mukhopadhyay"
-source_hash: "cb96fbf849f65e86205d8871cb4696b8119d1a06cf460196b325e11bc21a2813"
+source_hash: "9f62ee7fcb06f91446a7e8b8a86745d9ecf9fc8731e8768c7f41f926d8b60bbd"
 sequence: 357
 generator: "outreach-garden: managed"
 ---
@@ -51,6 +51,27 @@ Research interests: design of energy-efficient, intelligent, and secure systems 
 - [Professor website](http://sites.gatech.edu/ece-green/wp-content/uploads/sites/499/2017/05/CV_Mukhopadhyay_March2018.pdf)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Causal Inference and Graphical Models
+**The paper assumes:** causal inference, graphical models, structural identifiability, minimal sufficient representations
+**Already in this field?** Skip this entirely if you already understand causal graphical models and the basics of causal inference in machine learning.
+
+Understanding causal inference and graphical models is essential for grasping how AdaCred constructs and prunes latent state components using causal graphs to improve credit assignment in reinforcement learning. The rigorous course option offers a deep, structured university-level introduction to causal inference concepts, while the fast track provides a concise, intuition-focused series that covers key causal inference methods more quickly. Choose the course for a thorough foundation and the fast track for a practical, time-efficient overview.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Causal inference, DiD, RDD, Regression Discontinuity](https://www.youtube.com/playlist?list=PLUDMcP5sxlHKiyxmw-I4W_DQIQ-Jmntmn) — Rizky Luthfianto · 11 videos · 8.8h across 11 episodes
+
+**Watch only this:** Episodes 2 (An intuitive introduction to Regression Discontinuity), 4 (Graphical Analysis of the Common Trend Assumption and Diff-in-Diffs), and 9 (Instrumental Variables - an introduction), totaling about 2.5 hours — these episodes succinctly cover the main causal inference techniques relevant to the paper.
+
+*Why it unblocks this paper:* This 11-episode playlist by Rizky Luthfianto offers clear, intuitive explanations of causal inference concepts such as regression discontinuity, difference-in-differences, and instrumental variables, providing a practical and accessible overview that aligns well with the causal inference foundations used in AdaCred.
+
+*If you want all of it:* 8.8 hours across all 11 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

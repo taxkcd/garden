@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-raj-acharya"
-source_hash: "19a27b42514dabe0c447f748686d5e5fefd4c2727eb32090843c69dfa1de3bf6"
+source_hash: "377e0a1a0ae29b43fa91d8d0ba3419691f6894dc3bf118190e51590118a7717f"
 sequence: 349
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: AI/ML and Data Science
 - [Identity evidence](http://www.cse.psu.edu/~rua1)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** statistical mixture models
+**The paper assumes:** statistical mixture models and clustering methods
+**Already in this field?** Skip this entirely if you already understand statistical mixture models and their use in clustering biological sequence data.
+
+This background focuses on statistical mixture models, which are central to the paper's method for classifying polymorphic HERV-K states from noisy genomic data. The rigorous course provides a deep, university-level introduction to mixture models within a broader machine learning context, ideal for readers seeking thorough understanding. The fast track offers a concise, intuition-driven introduction to mixture modeling techniques, suitable for readers who want a quick but solid grasp without extensive time investment.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [CS480/680 Intro to Machine Learning - Spring 2019 - University of Waterloo](https://www.youtube.com/playlist?list=PLdAoL1zKcqTW-uzoSVBNEecKHsnug_M0k) — Pascal Poupart · 31 videos · 28.4h across 31 episodes
+
+**Watch only this:** Watch episodes 11 (CS480/680 Lecture 6: EM and mixture models (Guojun Zhang)) and 13 (CS480/680 Lecture 7: Mixture of Gaussians), about 1 hour 50 minutes total — these cover the EM algorithm and Gaussian mixture models critical to the paper's method.
+
+*Why it unblocks this paper:* This University of Waterloo course includes dedicated lectures on mixture models and the EM algorithm, providing rigorous statistical foundations essential to understanding the paper's mixture model clustering approach under low sequencing depth.
+
+*If you want all of it:* 28.4 hours across 31 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Gaussian Mixture Models and EM](https://www.youtube.com/playlist?list=PLBS1zk819Sf8TrzbgaJBwywrEGbwXHS05) — Fernando Hadad · 7 videos · 2.0h across 7 episodes
+
+**Watch only this:** Watch episodes 1 (Clustering (4): Gaussian Mixture Models and EM), 2 (Gaussian Mixture Model), and 5 (EM algorithm: how it works), about 50 minutes total — these provide a quick yet solid introduction to mixture models and EM.
+
+*Why it unblocks this paper:* Fernando Hadad's playlist offers clear, concise explanations of Gaussian mixture models and the EM algorithm, directly relevant to the paper's statistical clustering technique, with a focus on intuition and practical understanding.
+
+*If you want all of it:* 2.0 hours across 7 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

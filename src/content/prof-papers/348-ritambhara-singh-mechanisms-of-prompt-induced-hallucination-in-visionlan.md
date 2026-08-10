@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-ritambhara-singh"
-source_hash: "3998da5d9fab10580f244dd9f42ed5410ecb20bf2e1ee464b5f57359c609d1d4"
+source_hash: "b58e4fc48a5a233f2be7b49b134108d43a35cc3fefcb5304d447da559433be46"
 sequence: 348
 generator: "outreach-garden: managed"
 ---
@@ -54,6 +54,38 @@ Research interests: Machine Learning, Data Mining, Computational Biology, Health
 - [Google Scholar](https://scholar.google.com/citations?user=V6lRMxoAAAAJ&hl=en&oi=ao)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Transformer attention mechanisms
+**The paper assumes:** transformer architectures, self-attention mechanisms, and attention head functionality
+**Already in this field?** Skip this entirely if you already understand transformer models and how attention heads operate within them.
+
+Understanding transformer attention mechanisms is crucial for grasping how specific attention heads in vision-language models cause hallucinations, as analyzed in this paper. The rigorous course option offers a deep, structured university-level exploration of transformers, ideal for readers seeking comprehensive technical mastery. The fast track provides a concise, intuition-driven series of explainers that cover the core concepts efficiently, suitable for readers who want a solid grasp without investing extensive time.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CME295: Transformers and Large Language Models I Autumn 2025](https://www.youtube.com/playlist?list=PLoROMvodv4rOCXd21gf0CF4xr35yINeOy) — Stanford Online · 9 videos · 16.2h across 9 episodes
+
+**Watch only this:** Lectures 1-4, about 7 hours — covering Transformer basics, transformer-based models, large language models, and training, which provide the foundational understanding of attention mechanisms and transformer internals necessary for this paper.
+
+*Why it unblocks this paper:* Stanford CME295: Transformers and Large Language Models I Autumn 2025 is a university-level course that thoroughly covers transformer architectures and attention mechanisms, directly relevant to understanding the mechanistic interpretability and attention head ablation in vision-language models studied in the paper.
+
+*If you want all of it:* 16.2 hours across 9 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Attention Mechanism and Transformer Network - Simply explained !](https://www.youtube.com/playlist?list=PLomd548gCSqBkFB3RtDEDSxEj1ao7VjrK) — phong vu · 16 videos · 6.7h across 16 episodes
+
+**Watch only this:** Episodes 4-7, about 1.7 hours — focusing on self-attention mechanism, multi-head attention, and their visualization, which directly support understanding the paper's analysis of attention heads.
+
+*Why it unblocks this paper:* The 'Attention Mechanism and Transformer Network - Simply explained !' playlist by phong vu offers clear, visual, and intuition-first explanations of attention and transformers, including multi-head attention, which aligns well with the paper's focus on attention head roles in hallucinations.
+
+*If you want all of it:* 6.7 hours across 16 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 
