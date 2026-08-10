@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-gregory-b-white"
-source_hash: "fb60992d916a3e4eca0f9f168bd71ab04ccd8f05d3edd2d9f0ce258bb907ef9b"
+source_hash: "b79a9ef8d16366f4fb53b92edd70a157d5d5e6e0331e241905a7d80003bd0c9a"
 sequence: 139
 generator: "outreach-garden: managed"
 ---
@@ -58,33 +58,33 @@ Research interests: Automated information sharing, Detection of intrusive cyber 
 
 _The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
 
-**What you're missing:** Fundamentals of Cybersecurity
-**The paper assumes:** basic cybersecurity principles, threat modeling, cybersecurity frameworks, and security best practices
-**Already in this field?** Skip this entirely if you already have a foundational understanding of cybersecurity concepts and common security practices.
+**What you're missing:** Introduction to Cybersecurity
+**The paper assumes:** basic cybersecurity concepts and principles
+**Already in this field?** Skip this entirely if you already understand fundamental cybersecurity concepts including common threats, security controls, and basic cyber hygiene.
 
-This background provides foundational knowledge in cybersecurity principles essential for understanding the educational games and their impact described in the paper. The rigorous course offers a deep, structured university-level introduction to cybersecurity concepts, suitable for readers seeking comprehensive technical grounding. The fast track is a concise, well-produced explainer series that covers core ideas quickly and accessibly, ideal for readers needing a solid overview without extensive time investment.
+To understand the foundational cybersecurity principles underlying the educational games presented in the paper, readers need a solid grasp of basic cybersecurity concepts such as threats, defenses, and security best practices. The rigorous course option offers a deep, university-level introduction to cybersecurity topics suitable for readers seeking comprehensive knowledge, while the fast track provides a concise, beginner-friendly overview that covers essential concepts quickly and clearly. Choose the rigorous course for detailed understanding and the fast track for a time-efficient primer.
 
 ### The course
 _Rigorous, and the one to pick if you want to hold this material properly._
 
-▶ [Harvard university's CS50 (Cyber security course) 2024/2025](https://www.youtube.com/playlist?list=PLqkQbEY7o5XYn9my1CcJxtTgR6pgKCBoy) — {Fabian Codes HQ} · 15 videos · 28.4h across 15 episodes
+▶ [Official Part Ib Cybersecurity course at the University of Cambridge](https://www.youtube.com/playlist?list=PLbyW0t9gkXg01V21C9QJe9vacExhO_m9p) — Frank Stajano Explains · 16 videos · 10.2h across 16 episodes
 
-**Watch only this:** Episodes 0 through 4 ("CS50 Cybersecurity - Lecture 0 - Securing Accounts" to "CS50 Cybersecurity - Lecture 4 - Preserving Privacy"), about 9.4 hours total — these cover core cybersecurity concepts relevant to the educational games' content and learning goals.
+**Watch only this:** Lectures 1-11, about 7 hours — covering adversarial thinking, Unix access control, privilege escalation, buffer overflow, SQL injection, password issues, session manipulation, and XSS, which form the core cybersecurity principles relevant to the paper.
 
-*Why it unblocks this paper:* Harvard university's CS50 Cybersecurity course is a thorough, university-level series that covers fundamental cybersecurity topics such as securing accounts, data, systems, software, and privacy, directly aligning with the paper's focus on foundational cybersecurity principles.
+*Why it unblocks this paper:* This is a university-level cybersecurity course taught by Professor Frank Stajano at Cambridge, covering fundamental principles such as adversarial thinking, password security, and common vulnerabilities, directly relevant to understanding the cybersecurity concepts taught through the educational games in the paper.
 
-*If you want all of it:* All 15 episodes, about 28.4 hours total.
+*If you want all of it:* 10.2 hours across 16 episodes
 
 ### The fast track
 _Same ground, a fraction of the time — for when you just need to read the paper._
 
-▶ [Intro to Cybersecurity](https://www.youtube.com/playlist?list=PLQVJk9oC5JKq15cieChuOU9zFdf-FlnMi) — CBT Nuggets · 7 videos · 0.9h across 7 episodes
+▶ [Cybersecurity Basics Explained (Animated)](https://www.youtube.com/playlist?list=PLNfNVGoURSs6OEp7zHlpkxfDJMCTj2BGP) — Lindsey Explains · 6 videos · 0.5h across 6 episodes
 
-**Watch only this:** All 7 episodes, about 0.9 hours total — the entire playlist is short and covers the basics efficiently.
+**Watch only this:** All 6 episodes, about 30 minutes — covering risk management, social engineering, digital security basics, antivirus role, cybersecurity awareness, and fundamentals.
 
-*Why it unblocks this paper:* The CBT Nuggets "Intro to Cybersecurity" playlist is a concise, clear, and well-structured series that introduces essential cybersecurity concepts and career context in under an hour, providing a quick yet solid foundation for readers new to the subject.
+*Why it unblocks this paper:* This short animated series breaks down essential cybersecurity concepts in an accessible and engaging way, ideal for quickly grasping the basics of cybersecurity awareness and principles that underpin the educational games discussed in the paper.
 
-*If you want all of it:* Same as minimum watch, 0.9 hours.
+*If you want all of it:* 0.5 hours across 6 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 
