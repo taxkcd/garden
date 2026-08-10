@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-gopal-gupta"
-source_hash: "dda77f090f47a382b60cfb610aa3b9254bf81c2b1fbbca01aaf845e9a6645eeb"
+source_hash: "56cf5eaee4d35286fb9a318e62ce924c95e3664f51684a0432c69a8a79b23568"
 sequence: 235
 generator: "outreach-garden: managed"
 ---
@@ -59,21 +59,32 @@ Research interests: Artificial Intelligence: Knowledge Representation, Common Se
 _The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
 
 **What you're missing:** Neuro-Symbolic AI and Logic Programming
-**The paper assumes:** neuro-symbolic AI, logic programming, answer set programming, symbolic rule learning
-**Already in this field?** Skip this entirely if you already understand neuro-symbolic AI frameworks and logic programming concepts including Answer Set Programming.
+**The paper assumes:** neuro-symbolic artificial intelligence, logic programming, answer set programming, symbolic rule learning
+**Already in this field?** Skip this entirely if you already understand neuro-symbolic AI frameworks and have experience with logic programming and answer set programming.
 
-To understand this paper's core methodology of extracting symbolic rules from Vision Transformers using logic programming and neuro-symbolic AI, background in neuro-symbolic AI and logic programming is essential. The rigorous course option provides a comprehensive university-level introduction to neuro-symbolic AI concepts, while the fast track offers a concise, visual introduction to Prolog programming, a foundational logic programming language relevant to the symbolic reasoning used in the paper. Choose the course for depth and breadth, or the fast track for a quick, focused primer on logic programming fundamentals.
+To deeply understand the neuro-symbolic AI framework and logic programming techniques used in this paper, especially the extraction of symbolic rules from Vision Transformers via FOLD-SE-M and Answer Set Programming, the rigorous course provides a structured, foundational approach. The fast track offers a concise, focused introduction to neuro-symbolic AI concepts, suitable for quickly grasping the core ideas without the full depth of formal logic and knowledge representation.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [NPTEL: Artificial Intelligence: Course 2 - Knowledge Representation and Learning by Prof. Deepak Khemani](https://www.youtube.com/playlist?list=PLjzjdo8qdH03pdpQF0qBSeG1pooNhFyM8) — Suraj Donthi · 70 videos · 32.2h across the first 60 episodes
+
+**Watch only this:** Episodes 1-16 (Introduction through Forward Chaining Rule Based Systems), about 8.5 hours — these cover the basics of knowledge representation, formal logics, proof systems, and rule-based programming essential for grasping FOLD-SE-M and symbolic reasoning.
+
+*Why it unblocks this paper:* This NPTEL course on Knowledge Representation and Learning by Prof. Deepak Khemani covers formal logics, rule-based systems, and reasoning methods foundational to understanding symbolic rule extraction and logic programming, directly relevant to the paper's core techniques.
+
+*If you want all of it:* About 32.2 hours across the first 60 episodes
 
 ### The fast track
 _Same ground, a fraction of the time — for when you just need to read the paper._
 
-▶ [Java Math & Physics Animation – Visual Logic Series](https://www.youtube.com/playlist?list=PLzYds4uKbUDXLjg559bqFJ7MUF_iWAx-c) — Programming of Life · 19 videos · 5.1h across 19 episodes
+▶ [Neurosymbolic Programming](https://www.youtube.com/playlist?list=PLvp1Riqm5kiNhoB3EDMTYWAFTTXmLBJv2) — SickAndTired · 11 videos · 7.8h across 11 episodes
 
-**Watch only this:** Episodes 4-6, about 45 minutes — focusing on visual logic animations and smart traffic light optimization that illustrate logic programming concepts and reasoning.
+**Watch only this:** Tutorial 1a: Basics of Neurosymbolic Architectures and Discovering Symbolic Models from Deep Learning with Inductive Biases (Paper Explained), about 1.5 hours total — these two videos provide a quick yet substantive overview of neuro-symbolic AI principles and symbolic rule extraction.
 
-*Why it unblocks this paper:* The 'Java Math & Physics Animation – Visual Logic Series' provides visually intuitive explanations of logic and programming concepts, supporting quick understanding of symbolic reasoning and logic programming principles relevant to the paper's neuro-symbolic framework.
+*Why it unblocks this paper:* The Neurosymbolic Programming playlist by SickAndTired offers a concise, targeted introduction to neuro-symbolic architectures and symbolic model discovery from deep learning, directly aligned with the paper's focus on neuro-symbolic AI and rule extraction.
 
-*If you want all of it:* All 19 episodes, about 5.1 hours
+*If you want all of it:* About 7.8 hours across 11 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 
