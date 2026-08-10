@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-adnan-darwiche"
-source_hash: "9013e7b3ae40ad807ab6c57d30f15e30419381a6196419c84f04b0992b4e8b41"
+source_hash: "6a680b5975c552dbfdcdefd117c58bab8fb488dda8e6f752fecabfe711eb771c"
 sequence: 295
 generator: "outreach-garden: managed"
 ---
@@ -56,69 +56,35 @@ Research interests: probabilistic reasoning, symbolic reasoning and machine lear
 
 ## Foundations playlist — start here
 
-_Everything the paper assumes you already know, in the order you should learn it. Some stages have no visible connection to the paper's title — that is the point: this is the background the paper never explains._
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
 
-This playlist provides foundational and advanced knowledge essential for understanding the paper on scaling explanations of multi-class Bayesian network classifiers. It covers probability theory basics, graphical models and Bayesian networks, logical circuit representations including negation normal form, algorithmic complexity concepts, Bayesian network classifiers and explanation methods, and jointree algorithms with feature trees. Work through these stages in order to build the necessary background before engaging with the paper's novel contributions.
+**What you're missing:** Bayesian Networks and Probabilistic Graphical Models
+**The paper assumes:** Bayesian networks, probabilistic graphical models, jointree algorithm, conditional independence, probabilistic inference
+**Already in this field?** Skip this entirely if you already have a solid understanding of Bayesian networks and probabilistic graphical models including inference techniques.
 
-**The paper assumes:** probability theory, Bayesian networks, graphical models, logical circuits (especially negation normal form), algorithmic complexity, and explanation methods for classifiers
-**Time to work through:** roughly 45-55 hours if you watch all recommended content, about 25-30 hours if you follow the skip guidance
-**Already in this field?** Skip stages 1-3 if you already have a solid background in probability theory, Bayesian networks, and logical circuit representations.
+To understand the paper's approach to efficiently compiling multi-class Bayesian network classifiers using jointrees and feature trees, a solid grasp of Bayesian networks, their structure, and inference algorithms is essential. The rigorous course option offers a deep, comprehensive university lecture series by Professor Adnan Darwiche himself, covering foundational concepts and advanced inference techniques. The fast track provides a concise, focused playlist of selected lectures from the same course, giving a quicker but still authoritative overview of the key topics relevant to this paper.
 
-### Stage 1 · Probability Theory Fundamentals *(foundational)*
-The paper builds on Bayesian networks, which are probabilistic graphical models requiring a solid understanding of probability concepts like conditional probability, independence, and Bayes' theorem.
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
 
-▶ **Course:** [6.041 Probabilistic Systems Analysis and Applied Probability](https://www.youtube.com/playlist?list=PLUl4u3cNGP61MdtwGTqZA0MreSaDybji8) — MIT OpenCourseWare · 25 videos · 21.1h across 25 episodes
+▶ [Learning and Reasoning with Bayesian Networks](https://www.youtube.com/playlist?list=PLlDG_zCuBub6ywAIrM1DfJp8xaeVjyvwx) — UCLA Automated Reasoning Group · 36 videos · 22.2h across 36 episodes
 
-*What to watch:* Watch the first 12 episodes of the '6.041 Probabilistic Systems Analysis and Applied Probability' playlist by MIT OpenCourseWare, covering probability models, conditioning, Bayes' rule, independence, and discrete random variables. These episodes provide a rigorous and structured introduction to probability theory relevant to Bayesian networks.
+**Watch only this:** Episodes 3a. Bayesian Networks: Syntax and Semantics (Chapter 4), 3b. Bayesian Networks: Independence and d-Separation (Chapter 4), 7a. The Jointree Algorithm (Chapter 7), and 7b. Inference by Conditioning (Chapter 8), about 2.5 hours total — these cover the core Bayesian network concepts and jointree inference crucial for understanding the paper's method.
 
-*Move on when you can:* Explain and compute conditional probabilities and Bayes' rule for simple events and random variables.
+*Why it unblocks this paper:* This UCLA course by Adnan Darwiche covers Bayesian networks in depth, including syntax, semantics, independence, jointree algorithms, and inference methods, directly underpinning the paper's algorithmic approach and complexity analysis.
 
-### Stage 2 · Graphical Models and Bayesian Networks *(core)*
-Understanding Bayesian networks, their structure, semantics, and inference algorithms is essential since the paper compiles classifiers based on these models.
+*If you want all of it:* 22.2 hours across 36 episodes
 
-▶ **Course:** [Probabilistic Graphical Model by Daphne Koller [Full Course]](https://www.youtube.com/playlist?list=PLBAGcD3siRDjiQ5VZQ8t0C7jkHQ8fhuq8) — Deep Learning Boston · 83 videos · 14.8h across the first 60 episodes
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
 
-*What to watch:* Focus on the first 24 episodes of the 'Probabilistic Graphical Model by Daphne Koller [Full Course]' playlist by Deep Learning Boston, which cover Bayesian network semantics, factorization, reasoning patterns, and inference techniques. This series offers a comprehensive and authoritative introduction to Bayesian networks.
+▶ [Bayesian Networks: Selected Lectures](https://www.youtube.com/playlist?list=PLlDG_zCuBub7dmIBwDQMhwaMNBaeHZuEw) — UCLA Automated Reasoning Group · 12 videos · 7.5h across 12 episodes
 
-*Move on when you can:* Construct a Bayesian network for a given problem and perform exact inference using variable elimination or belief propagation.
+**Watch only this:** Episodes 3a. Bayesian Networks: Syntax and Semantics (Chapter 4), 3b. Bayesian Networks: Independence and d-Separation (Chapter 4), and 6a. Inference by Variable Elimination I (Chapter 6), about 1.9 hours total — these give a concise introduction to Bayesian networks and inference techniques needed to grasp the paper's contributions.
 
-### Stage 3 · Logical Circuits and Negation Normal Form *(core)*
-The paper compiles class formulas into OR-decomposable negation normal form (NNF) circuits, so understanding logical circuit representations and NNF is critical.
+*Why it unblocks this paper:* This selected lecture playlist from the same UCLA course by Adnan Darwiche distills key foundational topics on Bayesian networks, independence, and inference, providing a quicker but still authoritative overview relevant to the paper's focus.
 
-▶ [Lecture 06-2 Negation normal form (NNF)](https://www.youtube.com/watch?v=CWMqv78H9i4) — Automated Reasoning · 4:16
-
-*What to watch:* Watch the 'Lecture 06-2 Negation normal form (NNF)' video by Automated Reasoning. This concise lecture explains how to convert propositional formulas into negation normal form and introduces the concept of OR-decomposability, directly relevant to the paper's circuit compilation approach.
-
-*Move on when you can:* Convert propositional logic formulas into negation normal form and explain OR-decomposability in circuit representations.
-
-### Stage 4 · Algorithmic Complexity and Tractability *(core)*
-The paper analyzes and improves the complexity of compilation algorithms, so understanding complexity classes, exponential growth, and tractability notions is necessary.
-
-▶ **Course:** [MIT 6.006 Introduction to Algorithms, Spring 2020](https://www.youtube.com/playlist?list=PLUl4u3cNGP63EdVPNLG3ToM6LaEUuStEY) — MIT OpenCourseWare · 32 videos · 35.3h across 32 episodes
-
-*What to watch:* Watch the first 10 episodes of the 'MIT 6.006 Introduction to Algorithms, Spring 2020' playlist by MIT OpenCourseWare, focusing on algorithm basics, data structures, and asymptotic analysis. These lectures provide a solid foundation in algorithmic complexity essential for understanding the paper's complexity improvements.
-
-*Move on when you can:* Explain the difference between polynomial and exponential time complexity and analyze the complexity of a given algorithm.
-
-### Stage 5 · Bayesian Network Classifiers and Explanation Methods *(advanced)*
-The paper extends prior work on binary Bayesian network classifiers and their explanation methods, so familiarity with these classifiers and existing explanation techniques is required.
-
-▶ [Lecture 15A: Compiling Bayesian Network Classifiers](https://www.youtube.com/watch?v=TsxmXBNl8eU) — UCLA Automated Reasoning Group · 44:56
-
-*What to watch:* Watch the 'Lecture 15A: Compiling Bayesian Network Classifiers' video by UCLA Automated Reasoning Group. This focused lecture discusses compiling machine learning systems into symbolic representations, directly related to the paper's approach to Bayesian network classifier explanations.
-
-*Move on when you can:* Describe how a Bayesian network classifier works for binary classification and summarize methods for explaining classifier decisions.
-
-### Stage 6 · Jointree Algorithms and Feature Trees *(advanced)*
-The paper’s novel compilation algorithm uses jointree representations and feature trees to exploit conditional independencies, so understanding these data structures and algorithms is essential.
-
-▶ **Course:** [Learning and Reasoning with Bayesian Networks](https://www.youtube.com/playlist?list=PLlDG_zCuBub6ywAIrM1DfJp8xaeVjyvwx) — UCLA Automated Reasoning Group · 36 videos · 22.2h across 36 episodes
-
-*What to watch:* Watch the first 20 episodes of the 'Learning and Reasoning with Bayesian Networks' playlist by UCLA Automated Reasoning Group, focusing on jointree construction, inference algorithms, and feature tree concepts. These lectures are by the paper's co-author and provide deep insight into the data structures used.
-
-*Move on when you can:* Explain the construction and use of jointrees for Bayesian network inference and describe how feature trees partition features.
-
-_Work through the stages in order. Once the last one lands, the paper — and the two tracks below — should read cleanly._
+*If you want all of it:* 7.5 hours across 12 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 
