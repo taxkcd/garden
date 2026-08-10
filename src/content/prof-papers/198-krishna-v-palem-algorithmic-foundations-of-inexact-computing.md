@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-krishna-v-palem"
-source_hash: "1be3fc891e9f50656df4e7a5275d47e92bc9866eb1d8c21bfd3ba22512f87cb1"
+source_hash: "54657835e13ae281d58eef08865060f9a2c95656f4d16b813693878d33589fea"
 sequence: 198
 generator: "outreach-garden: managed"
 ---
@@ -59,32 +59,32 @@ Research interests: all aspects of embedded computing, include adaptive architec
 _The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
 
 **What you're missing:** Boolean function analysis
-**The paper assumes:** Fourier analysis of Boolean functions, influence of variables on Boolean functions, PAC learning theory
-**Already in this field?** Skip this entirely if you already have a solid understanding of Boolean function analysis and influence concepts from theoretical computer science or discrete mathematics.
+**The paper assumes:** Fourier analysis of Boolean functions, influence of variables in Boolean functions, PAC learning theory
+**Already in this field?** Skip this entirely if you already understand Boolean function analysis and influence concepts from theoretical computer science or advanced discrete mathematics.
 
-Understanding the influence of variables on Boolean functions and their Fourier analysis is crucial for grasping the algorithmic foundations of inexact computing presented in this paper. The rigorous course offers a deep, graduate-level treatment suitable for readers seeking comprehensive mastery, while the fast track provides a more accessible, concise introduction to Boolean algebra and logic concepts that underpin the paper's key ideas.
+This background focuses on Boolean function analysis, a foundational topic for understanding the influence of bits in Boolean functions, which is central to the paper's model of inexact computing and energy allocation strategies. The rigorous course option provides a deep, structured graduate-level treatment suitable for thorough mastery, while the fast track offers a concise, visual introduction to Boolean algebra and logic gates, enabling quicker grasp of essential concepts without the full depth.
 
 ### The course
 _Rigorous, and the one to pick if you want to hold this material properly._
 
 ▶ [Analysis of Boolean Functions at CMU](https://www.youtube.com/playlist?list=PLm3J0oaFux3YypJNaF6sRAf2zC1QzMuTA) — Ryan O'Donnell · 23 videos · 29.8h across 23 episodes
 
-**Watch only this:** Lectures 1-6 (The Fourier expansion and basic formulas; Probability densities and BLR linearity testing; Social choice and influences; Noise stability and Arrow's Theorem; Spectral concentration and learning; Restrictions and the Goldreich--Levin Theorem), about 4.7 hours — these cover the core concepts of influence and Fourier analysis essential for the paper.
+**Watch only this:** Lectures 1-6 (The Fourier expansion and basic formulas; Probability densities and BLR linearity testing; Social choice and influences; Noise stability and Arrow's Theorem; Spectral concentration and learning; Restrictions and the Goldreich--Levin Theorem), about 7.7 hours total — these cover the core concepts of Fourier analysis, influence, and learning relevant to the paper.
 
-*Why it unblocks this paper:* This is a graduate-level course by Ryan O'Donnell, a leading expert in analysis of Boolean functions, covering Fourier expansions, influences, noise stability, and learning theory, directly matching the paper's theoretical foundations.
+*Why it unblocks this paper:* This is a full graduate course on Analysis of Boolean Functions by Ryan O'Donnell, the leading expert in the field and author of the canonical textbook. It covers Fourier expansions, influences, noise stability, and learning theory, directly underpinning the paper's theoretical framework and proofs.
 
-*If you want all of it:* All 23 lectures, about 29.8 hours.
+*If you want all of it:* All 23 lectures, about 29.8 hours total.
 
 ### The fast track
 _Same ground, a fraction of the time — for when you just need to read the paper._
 
-▶ [DSTL UNIT-2 (2026-27) | BCS303 | DISCRETE STRUCTURES & THEORY OF LOGIC | UNIT-2 | FUNCTIONS | BOOLEAN ALGEBRA | DISCRETE MATHEMATICS](https://www.youtube.com/playlist?list=PL5Dqs90qDljVREVoe_fHxPiPtEfXu73F2) — FEARLESS INNOCENT MATH · 13 videos · 7.7h across 13 episodes
+▶ [Logic Gates, Truth Tables, Boolean Algebra   AND, OR, NOT, NAND & NOR by The Organic Chemistry Tutor](https://www.youtube.com/playlist?list=PLRvbt2kZiDZTb0Th01Mvm1KpaRx0u1P3-) — duvetray · 11 videos · 3.2h across 11 episodes
 
-**Watch only this:** Episodes 5-9 (Boolean Algebra; Theorems of Boolean Algebra; De Morgan's Law in Boolean Algebra; Disjunctive Normal Form; Conjunctive Normal Form), about 3 hours — these episodes cover the essential Boolean algebra and function forms needed to understand influence and error models.
+**Watch only this:** Episodes 1-3 (Logic Gates, Truth Tables, Boolean Algebra AND, OR, NOT, NAND & NOR; Example Problems Boolean Expression Simplification; Understand Calculus in 10 Minutes), about 50 minutes total — these introduce Boolean operations and simplification essential for grasping the basics quickly.
 
-*Why it unblocks this paper:* This playlist provides a clear, structured introduction to Boolean algebra and functions with well-titled episodes that build foundational knowledge quickly, suitable for readers needing a practical and intuitive grasp of Boolean concepts relevant to the paper.
+*Why it unblocks this paper:* This short playlist from The Organic Chemistry Tutor provides clear, visual, and intuitive explanations of Boolean algebra, logic gates, and truth tables, which are the foundational building blocks for understanding Boolean functions and their influences in a practical, accessible way.
 
-*If you want all of it:* All 13 episodes, about 7.7 hours.
+*If you want all of it:* All 11 episodes, about 3.2 hours total.
 
 ## Track 1 — Academic deep-dives (long-form)
 
