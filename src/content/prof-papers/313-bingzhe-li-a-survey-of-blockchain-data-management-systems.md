@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-bingzhe-li"
-source_hash: "35da1d58c33b1d0561147b1ac1d6f9072e683585ebe66725f9fd3e5535bc2dcb"
+source_hash: "7561591991023ce25b0f1fe923ae6d5ac15d5f71c05c43344d44f87391295d1a"
 sequence: 313
 generator: "outreach-garden: managed"
 ---
@@ -56,33 +56,33 @@ Research interests: Efficient computing infrastructure for data-intensive and AI
 
 _The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
 
-**What you're missing:** blockchain data structures
+**What you're missing:** Blockchain data structures
 **The paper assumes:** blockchain data structures and their properties
-**Already in this field?** Skip this entirely if you already understand blockchain data structures including blocks, Merkle trees, and DAG-based ledgers.
+**Already in this field?** Skip this entirely if you already understand blockchain data structures including blocks, chains, DAGs, and authenticated data structures.
 
-To fully understand the blockchain data management systems surveyed in the paper, a solid grasp of blockchain data structures such as blocks, Merkle trees, and DAGs is essential. The rigorous course option offers a structured university lecture series that covers these foundational concepts in detail, suitable for deep study. The fast track option provides a concise, well-paced playlist that covers the core blockchain concepts quickly and clearly, ideal for readers who want a focused introduction without a large time commitment.
+To understand the blockchain data management systems surveyed in the paper, it is essential to grasp the underlying blockchain data structures such as blocks, chains, DAGs, and authenticated data structures. The rigorous course option offers a structured university lecture series that builds foundational knowledge in blockchain concepts and data structures, while the fast track provides a shorter, more concise playlist for a quicker but still solid understanding. Choose the course for depth and completeness, or the fast track for a focused, time-efficient overview.
 
 ### The course
 _Rigorous, and the one to pick if you want to hold this material properly._
 
 ▶ [Blockchain by Mrs.G.Sowmya](https://www.youtube.com/playlist?list=PLJxcBJ9ifFLZ2w8T-sW2rqte7LUGNN5VB) — MLID - MLR Institute of Technology · 33 videos · 8.2h across 33 episodes
 
-**Watch only this:** Watch lectures 5 to 12 (LEC05 to LEC12), about 1.75 hours — these cover the block structure, blockchain transactions, cryptographic hash functions, hash pointers, and Merkle trees, which are critical to the paper's focus on blockchain data structures and storage.
+**Watch only this:** Watch episodes LEC01 to LEC12 (Overview of Blockchain, Public Ledgers, Bitcoin, Smart Contracts, Block in Blockchain, Blockchain Transactions, Distributed Consensus, Public vs Private Blockchain, Understanding Cryptocurrency to Blockchain, Permissioned Model of Blockchain, Cryptographic Hash Function & Properties, Hash Pointer & Merkle Tree) for about 3 hours (12 episodes × ~14 minutes each). This subset covers the core blockchain data structures and concepts needed to follow the paper's technical discussions.
 
-*Why it unblocks this paper:* This university lecture series by Mrs. G. Sowmya covers blockchain fundamentals including blocks, transactions, cryptographic hash functions, Merkle trees, and types of blockchains, which directly supports understanding the paper's categorization of blockchain data management layers and data structures.
+*Why it unblocks this paper:* This university lecture series by Mrs. G. Sowmya covers blockchain fundamentals including blocks, chains, cryptographic hash functions, Merkle trees, and types of blockchains, which directly supports understanding the paper's focus on blockchain data structures and storage engines.
 
-*If you want all of it:* 8.2 hours across all 33 episodes
+*If you want all of it:* The full playlist has 33 episodes totaling about 8.2 hours.
 
 ### The fast track
 _Same ground, a fraction of the time — for when you just need to read the paper._
 
-▶ [Complete Blockchain Course | Beginner to Expert | EduTube](https://www.youtube.com/playlist?list=PLTgj1ytGKarX7RRbMvN2hUuwOqzZeLSSG) — EduTube · 40 videos · 5.6h across the first 39 episodes
+▶ [BLockChain](https://www.youtube.com/playlist?list=PLrmaP5r-SiqKJILvFcl5eONUAZkutA-Rf) — Logan Freeman · 16 videos · 35.3h across the first 15 episodes
 
-**Watch only this:** Watch lectures 4 to 6 (Lecture 4 to Lecture 6), about 24 minutes — these explain how blockchain works with blocks and hashing, and cover types of blockchain, directly supporting the paper’s focus on blockchain architecture and data structures.
+**Watch only this:** Watch the first 3 episodes (Solidity, Blockchain, and Smart Contract Course – Beginner to Expert Python Tutorial; What is DeFi? (Decentralized Finance Animated); SHOUT 2021 (GLOBAL IMPACT)) for about 7 hours total. These cover blockchain basics and data structures at a high level, enough to understand the paper's context without deep technical detail.
 
-*Why it unblocks this paper:* EduTube’s Complete Blockchain Course is a concise, well-structured playlist that covers blockchain basics including blocks, hashing, consensus, and types of blockchain in short, accessible lectures, providing a quick but solid foundation for understanding blockchain data structures relevant to the paper.
+*Why it unblocks this paper:* Logan Freeman's 'BLockChain' playlist provides clear, concise explanations of blockchain and related data structures, including smart contracts and DeFi, suitable for quickly grasping the essentials relevant to blockchain data management systems.
 
-*If you want all of it:* 5.6 hours across 40 episodes
+*If you want all of it:* The first 15 episodes total about 35.3 hours, but only the first few are directly relevant for foundational blockchain data structure knowledge.
 
 ## Track 1 — Academic deep-dives (long-form)
 
