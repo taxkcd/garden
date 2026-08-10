@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-matthew-w-hahn"
-source_hash: "559bb1e3bd40da1bfcfde4cc3abdf299f680ebe900276d98d27548717c626581"
+source_hash: "b5678b613cdc924d20e8f5b26ad889508cd08b7df4dcb6b6363dbf6078b9e394"
 sequence: 204
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,27 @@ This study reveals that unlike all other mammals studied so far, the aye-aye lem
 - [Identity evidence](https://hahnlab.github.io/publications/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Molecular Evolution and Mutation Processes
+**The paper assumes:** molecular evolution, mutation rate variation, sex-biased mutation, phylogenetic substitution analysis, DNA repair mechanisms
+**Already in this field?** Skip this entirely if you already have a solid undergraduate-level understanding of molecular evolution and mutation processes in genetics.
+
+This background focuses on molecular evolution and mutation processes, essential for understanding sex-biased mutation rates, de novo mutation identification, and evolutionary substitution patterns discussed in the aye-aye mutation bias paper. The rigorous course provides a deep, structured university-level foundation, while the fast track offers a concise, targeted overview suitable for quick comprehension without sacrificing core concepts.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Computational Molecular Evolution Course](https://www.youtube.com/playlist?list=PLXwjzs_mabFrlRF7uALEomfGGckG0sG5y) — Anders Gorm Pedersen · 24 videos · 6.0h across 24 episodes
+
+**Watch only this:** Episodes 1-10 (Common Descent through Maximum Parsimony), about 2.5 hours — these cover evolutionary theory, genetic drift, and key phylogenetic inference methods essential for interpreting mutation bias and substitution patterns.
+
+*Why it unblocks this paper:* The Computational Molecular Evolution Course offers concise, focused lectures on natural selection, neutral theory, genetic drift, phylogenetic methods, and model selection, providing a quick but rigorous overview of molecular evolution principles and phylogenetic analysis relevant to mutation rate studies.
+
+*If you want all of it:* About 6.0 hours across 24 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

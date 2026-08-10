@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-thomas-f-stahovich"
-source_hash: "35df892165c3dc06fe165d179428e8c19d77a6a636ae267a76cb17a5070a83fb"
+source_hash: "e2977ccd9abb6ba04dda745f7bd7b4dd07bccd8b6f09c8528b782eb0cc245b18"
 sequence: 227
 generator: "outreach-garden: managed"
 ---
@@ -50,6 +50,38 @@ This study analyzes how students' handwritten self-explanations during homework 
 - [Identity evidence](https://smarttools.engr.ucr.edu)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** machine learning regression
+**The paper assumes:** machine learning regression models, feature selection techniques, and model evaluation metrics
+**Already in this field?** Skip this entirely if you already understand supervised machine learning regression methods and basic feature selection.
+
+To understand the machine learning regression methods used in the paper, especially linear regression and feature selection, these two background options provide complementary learning paths. The rigorous course offers a deep, university-level treatment of machine learning concepts including linear regression, while the fast track provides a concise, intuition-driven introduction to linear regression and related concepts. Choose the rigorous course for a thorough foundation or the fast track for a quick, focused overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS229: Machine Learning led by Andrew Ng | Autumn 2018](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU) — Stanford Online · 21 videos · 27.9h across 21 episodes
+
+**Watch only this:** Lectures 2 and 8, about 2.7 hours total — covering 'Machine Learning - Linear Regression and Gradient Descent' and 'Data Splits, Models & Cross-Validation' to understand linear regression basics and model evaluation.
+
+*Why it unblocks this paper:* Stanford CS229 by Andrew Ng is a comprehensive, authoritative university course covering machine learning fundamentals including linear regression, feature selection, and model evaluation, directly relevant to the paper's modeling approach.
+
+*If you want all of it:* 27.9 hours across 21 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Linear Regression and Linear Models](https://www.youtube.com/playlist?list=PLblh5JKOoLUIzaEkCLIUxQFjPIlapw8nU) — StatQuest with Josh Starmer · 9 videos · 2.1h across 9 episodes
+
+**Watch only this:** Episodes 1-4, about 52 minutes total — covering 'The Essence of Linear Regression!!!', 'R-squared, Clearly Explained!!!', 'The Main Ideas of Fitting a Line to Data', and 'Linear Regression, Clearly Explained!!!' for a solid conceptual foundation.
+
+*Why it unblocks this paper:* StatQuest with Josh Starmer offers clear, visual explanations of linear regression and related statistical concepts, ideal for quickly grasping the core ideas behind the paper's regression modeling and interpretation of R-squared.
+
+*If you want all of it:* 2.1 hours across 9 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-mathias-unberath"
-source_hash: "3ee3014f5ad4ad1d108a6a749ccffa4cc7f43a5da197e0ff0ea9f3a921c6a69c"
+source_hash: "2391b2f6ffb7205a2979c13a6d3a832e035cf2db057cfc951100a2406098553b"
 sequence: 221
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,38 @@ Research interests: medical computer vision, machine learning, human–computer 
 - [Lab website](https://arcade.cs.jhu.edu/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** 3D Computer Vision and Reconstruction
+**The paper assumes:** multi-view stereo reconstruction, neural implicit surface modeling, 3D human pose estimation, photogrammetry, 3D geometry processing
+**Already in this field?** Skip this entirely if you already understand the fundamentals of 3D computer vision, including multi-view reconstruction and neural surface modeling.
+
+This background focuses on 3D computer vision and reconstruction, essential for understanding the core methodologies behind TwinOR's photorealistic and dynamic digital twins of operating rooms. The rigorous course provides a deep, structured university-level foundation in deep learning for computer vision, including 3D vision techniques, while the fast track offers a concise, intuition-driven introduction to key 3D computer vision concepts and practical reconstruction workflows. Choose the rigorous course for comprehensive mastery or the fast track for a focused, time-efficient overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS231N Deep Learning for Computer Vision I 2025](https://www.youtube.com/playlist?list=PLoROMvodv4rOmsNzYBMe0gJY2XS8AQg16) — Stanford Online · 18 videos · 21.2h across 18 episodes
+
+**Watch only this:** Lectures 1, 4, 5, 6, 9, 10, and 15, about 8.5 hours total — covering introduction, CNNs, architectures, segmentation, video understanding, and specifically 3D vision.
+
+*Why it unblocks this paper:* Stanford CS231N Deep Learning for Computer Vision I 2025 is a highly authoritative, university-level course that covers foundational and advanced topics in computer vision, including a dedicated lecture on 3D vision (Lecture 15). This course aligns well with the paper's reliance on deep learning methods for 3D reconstruction and perception.
+
+*If you want all of it:* 21.2 hours across all 18 episodes.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [3D Computer Vision](https://www.youtube.com/playlist?list=PLjZmPymxz1tCG_D3SemCEoAL_7FWvb7y8) — PardesLine · 16 videos · 2.3h across 16 episodes
+
+**Watch only this:** Episodes 00, 01, 02, 05, 07, and 11, about 45 minutes total — covering introduction, point cloud processing, mesh and PCD processing, surface reconstruction, stereo vision pipeline, and mesh to voxel grid.
+
+*Why it unblocks this paper:* PardesLine's 3D Computer Vision playlist offers a concise, well-structured series of short videos that explain key concepts and practical techniques in 3D computer vision and reconstruction, suitable for quickly grasping the essentials needed to understand the paper's methods.
+
+*If you want all of it:* 2.3 hours across all 16 episodes.
 
 ## Track 1 — Academic deep-dives (long-form)
 

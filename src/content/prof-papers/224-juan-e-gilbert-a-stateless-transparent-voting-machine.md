@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-juan-e-gilbert"
-source_hash: "69860a93db9400c79ebad6b995866c17c68c4fa90f60294346374b03cd6736dd"
+source_hash: "518db8d048701f06017160b6847fbba57d106a1b011dfa7dcf5940fbb7f0dd39"
 sequence: 224
 generator: "outreach-garden: managed"
 ---
@@ -51,6 +51,38 @@ This paper presents a new design for a voting machine called the Stateless Trans
 - [Identity evidence](https://cise.ufl.edu/people/faculty/name/juan-gilbert/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Secure Voting Systems
+**The paper assumes:** fundamental concepts of secure voting systems, election security threats, and ballot marking device vulnerabilities
+**Already in this field?** Skip this entirely if you already understand the security principles and common vulnerabilities in electronic and paper-based voting systems.
+
+This background provides foundational knowledge on secure voting systems, focusing on the security vulnerabilities of traditional ballot marking devices and hand-marked paper ballots, and the principles behind designing secure, stateless voting machines like the STVM. Choose the rigorous course for a deep, structured understanding of AI and reasoning techniques that underpin trustworthy systems, or opt for the fast track for a concise, accessible introduction to election security basics. Both lanes prepare you to appreciate the innovations and security claims of the STVM paper.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [MIT 6.034 Artificial Intelligence, Fall 2010](https://www.youtube.com/playlist?list=PLUl4u3cNGP63gFHB6xb-kVBiQHYe_4hSi) — MIT OpenCourseWare · 30 videos · 24.3h across 30 episodes
+
+**Watch only this:** Episodes 1 through 7, about 5.6 hours — covering Introduction and Scope, Reasoning (Goal Trees and Problem Solving, Rule-Based Expert Systems), Search methods, and Constraints including Visual Object Recognition, which are foundational for AI-based tamper detection and secure system design.
+
+*Why it unblocks this paper:* MIT 6.034 Artificial Intelligence, Fall 2010 covers fundamental AI concepts including reasoning, search, and probabilistic inference that are essential to understanding trustworthy AI systems and security mechanisms relevant to secure voting machines like the STVM.
+
+*If you want all of it:* 24.3 hours across 30 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Ever Wondered About Election Security?](https://www.youtube.com/playlist?list=PLwk7IuIKtO8bdkqbqCPJP3ivMqOqYCjev) — U.S. Election Assistance Commission · 6 videos · 0.2h across 6 episodes
+
+**Watch only this:** All 6 episodes, about 12 minutes total — a quick, well-produced introduction to election security fundamentals from voter registration to voting equipment and results.
+
+*Why it unblocks this paper:* The U.S. Election Assistance Commission's 'Ever Wondered About Election Security?' series provides a clear, concise overview of election security stages and measures, directly relevant to understanding the context and importance of innovations like the STVM.
+
+*If you want all of it:* 0.2 hours across 6 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-mina-guirguis"
-source_hash: "73b297dc16f283acbf08eb64511d0383388a15694ded4bcfdb5a3e96f11e3c24"
+source_hash: "d1781c8f4cb6a65eae4fde35263d6b09ae4cf1bc85ae01b920ec6a251a7868fe"
 sequence: 236
 generator: "outreach-garden: managed"
 ---
@@ -51,6 +51,38 @@ Research interests: AI/ML in Cybersecurity Decision Making, Space Cyber, Securit
 - [Resolved homepage](https://userweb.cs.txstate.edu/~mg65/research.html)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** game theory and reinforcement learning
+**The paper assumes:** extensive-form game theory, multi-agent reinforcement learning, Proximal Policy Optimization, Policy-Space Response Oracle framework
+**Already in this field?** Skip this entirely if you already have a solid understanding of game theory concepts and deep reinforcement learning algorithms applied to multi-agent settings.
+
+This background prepares the reader to understand the game-theoretic modeling and deep reinforcement learning methods used in the paper, including extensive-form games, Nash equilibria, the PSRO framework, and PPO algorithms. The rigorous course option offers a deep, structured university-level treatment of reinforcement learning fundamentals and multi-agent game playing, ideal for thorough comprehension. The fast track provides a concise, intuition-focused introduction to game theory concepts relevant to adversarial interactions and strategic decision-making, suitable for a quicker conceptual grasp.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS234 I Reinforcement Learning I Spring 2024 I Emma Brunskill](https://www.youtube.com/playlist?list=PLoROMvodv4rN4wG6Nk6sNpTEbuOSosZdX) — Stanford Online · 16 videos · 20.2h across 16 episodes
+
+**Watch only this:** Lectures 1-7 and Lecture 14 (Multi-Agent Game Playing), about 9.25 hours total — covering RL basics, policy search, and multi-agent games to grasp the core methods used in the paper.
+
+*Why it unblocks this paper:* Stanford CS234 Reinforcement Learning covers foundational RL concepts and culminates with multi-agent game playing, directly relevant to understanding the paper's use of deep RL and game-theoretic frameworks like PSRO.
+
+*If you want all of it:* 20.2 hours across all 16 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Game Theory](https://www.youtube.com/playlist?list=PLvpkCwvIILINmr1KL7-e4558DIZ_6F7Vt) — Richard A · 12 videos · 2.7h across 12 episodes
+
+**Watch only this:** Episodes 1-6, about 1.3 hours total — focusing on decision making, Nash equilibria, and classic game theory examples to quickly build relevant conceptual foundations.
+
+*Why it unblocks this paper:* This short-form playlist offers clear, accessible explanations of game theory fundamentals such as Nash equilibria and strategic decision-making, providing essential intuition for the paper's game-theoretic modeling of attacker-defender interactions.
+
+*If you want all of it:* 2.7 hours across all 12 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

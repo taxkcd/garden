@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-dongkuan-xu"
-source_hash: "daa35ac0c79bbf5aed261691cf4711f8a6bc71d84d39755d86ddb3cfe33b3ffd"
+source_hash: "8873da6494898605aaa01681884c7b133070bc56e13efc2ec82e6d40e57ce482"
 sequence: 202
 generator: "outreach-garden: managed"
 ---
@@ -48,6 +48,38 @@ This paper presents SafeTalkCoach, a multi-agent AI framework that simulates rea
 - [Identity evidence](http://personal.psu.edu/dux19)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Multi-Agent Reinforcement Learning
+**The paper assumes:** foundations of multi-agent reinforcement learning, agent coordination, and control in AI systems
+**Already in this field?** Skip this entirely if you already understand multi-agent reinforcement learning fundamentals and agent-based AI control architectures.
+
+This background focuses on Multi-Agent Reinforcement Learning (MARL), which is essential to understand the multi-agent AI framework used in SafeTalkCoach for simulating adaptive, controlled parent-teen dialogues. The rigorous course provides a deep, structured foundation in reinforcement learning concepts including multi-agent settings, while the fast track offers a concise, intuition-driven introduction to deep MARL methods. Choose the rigorous course for comprehensive mastery and the fast track for a quick but solid conceptual grasp.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS234 I Reinforcement Learning I Spring 2024 I Emma Brunskill](https://www.youtube.com/playlist?list=PLoROMvodv4rN4wG6Nk6sNpTEbuOSosZdX) — Stanford Online · 16 videos · 20.2h across 16 episodes
+
+**Watch only this:** Lectures 1-3 for foundational RL concepts (about 3.75 hours), plus Lecture 14 'Multi-Agent Game Playing' (about 1.25 hours), totaling approximately 5 hours — this subset covers core RL and the multi-agent perspective relevant to the paper.
+
+*Why it unblocks this paper:* Stanford CS234 Reinforcement Learning I by Emma Brunskill is a top-tier university course covering foundational and advanced RL topics, including multi-agent game playing, which directly supports understanding the agent coordination and control mechanisms in SafeTalkCoach.
+
+*If you want all of it:* 20.2 hours across 16 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Introduction to Deep Multi-Agent Reinforcement Learning](https://www.youtube.com/playlist?list=PLFihX_3MLxS9iS3Hz8VDWAyU4QCdjQUKr) — The Agent Whisperer · 5 videos · 0.8h across 5 episodes
+
+**Watch only this:** All 5 episodes, about 0.8 hours total — this covers the problem formulation, actor-critic methods, and centralized training with decentralized execution, providing a compact yet comprehensive overview.
+
+*Why it unblocks this paper:* The Agent Whisperer's 'Introduction to Deep Multi-Agent Reinforcement Learning' playlist offers a clear, concise, and well-structured introduction to MARL concepts, focusing on problem formulation and key algorithms, ideal for quickly grasping the essentials behind SafeTalkCoach's multi-agent design.
+
+*If you want all of it:* 0.8 hours across 5 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

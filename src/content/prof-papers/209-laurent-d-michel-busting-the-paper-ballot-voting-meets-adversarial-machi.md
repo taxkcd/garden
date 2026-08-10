@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-laurent-d-michel"
-source_hash: "5bda5db76f9070be4db0c6d40d2854b73378cdb1475811a3afa10294d1add6e4"
+source_hash: "35541932fc64c891c1926df725fc0dfe1354640eaa9d2293f252d6085fc9dc09"
 sequence: 209
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,38 @@ Research interests: design and implementation of domain specific languages for c
 - [Lab website](https://cacc.engr.uconn.edu/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Adversarial Machine Learning
+**The paper assumes:** machine learning classifiers, adversarial examples, gradient-based attacks, loss functions in neural networks
+**Already in this field?** Skip this entirely if you already understand adversarial machine learning concepts including attack methods and defenses.
+
+To understand the vulnerabilities of machine learning classifiers to adversarial examples in election tabulators, this background focuses on adversarial machine learning concepts, attacks, defenses, and the phenomenon of gradient masking. The rigorous course option provides a deep, structured university-level introduction to adversarial robustness within a broader deep learning context, while the fast track offers a concise, focused explainer series on adversarial machine learning to quickly grasp the core ideas and terminology relevant to the paper.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS230: Deep Learning I Autumn 2025](https://www.youtube.com/playlist?list=PLoROMvodv4rNRRGdS0rBbXOUGA0wjdh1X) — Stanford Online · 9 videos · 13.9h across 9 episodes
+
+**Watch only this:** Watch Lecture 4: Adversarial Robustness and Generative Models (about 92 minutes) to get a focused, rigorous introduction to adversarial attacks and defenses in deep learning.
+
+*Why it unblocks this paper:* Stanford CS230: Deep Learning I Autumn 2025 includes a dedicated lecture on adversarial robustness and generative models, providing rigorous coverage of adversarial attacks and defenses relevant to the paper's focus on gradient masking and modified loss functions.
+
+*If you want all of it:* The full course is about 13.9 hours across 9 episodes if a broader deep learning foundation is desired.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Adversarial Machine learning](https://www.youtube.com/playlist?list=PLqY9uEMecYPXC4sCrNRJ5uHwmTr3FpTui) — Hugh Medal · 16 videos · 11.9h across 16 episodes
+
+**Watch only this:** Watch the first 5 episodes (about 3.7 hours total) covering adversarial examples, adversarial training, and key defenses to quickly grasp the core concepts and challenges addressed in the paper.
+
+*Why it unblocks this paper:* The 'Adversarial Machine learning' playlist by Hugh Medal offers a clear, well-structured series of 16 episodes focused specifically on adversarial examples, attacks, and defenses, matching the paper's subject closely and providing an accessible yet thorough overview.
+
+*If you want all of it:* The entire playlist is about 11.9 hours across 16 episodes for a comprehensive understanding.
 
 ## Track 1 — Academic deep-dives (long-form)
 

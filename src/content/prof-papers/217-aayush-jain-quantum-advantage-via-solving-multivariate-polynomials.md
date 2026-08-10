@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-aayush-jain"
-source_hash: "02245bb346a252e4fc33f83d7102df7804cb451c49c97b4d0250c7c00da226cc"
+source_hash: "2025b64d88e79d4824ad38d12140e9852195fac8752a6f0ddb1f06e183d439e4"
 sequence: 217
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: theoretical and applied cryptography, and its connections wi
 - [Google Scholar](https://scholar.google.com/citations?hl=en&authuser=1&user=VZ6S70MAAAAJ)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Quantum algorithms for algebraic problems
+**The paper assumes:** quantum computing, quantum algorithms for algebraic problems, quantum Fourier transforms, Reed-Solomon codes, and quantum complexity theory
+**Already in this field?** Skip this entirely if you already understand quantum algorithms applied to algebraic problems, including quantum Fourier transforms and quantum decoding techniques.
+
+To understand the quantum algorithmic techniques for solving multivariate polynomial systems over finite fields as presented in the paper, it is essential to grasp quantum algorithms tailored to algebraic and coding-theoretic problems, including quantum Fourier transforms and decoding methods. The rigorous course offers a deep, structured university-level treatment, while the fast track provides a concise, intuition-focused introduction to the core quantum computing concepts relevant to the paper. Choose the rigorous course for comprehensive mastery or the fast track for a quicker conceptual overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Quantum Algorithms and Cryptography | IIT Madras](https://www.youtube.com/playlist?list=PLyqSpQzTE6M8Pp2Z8kOAVyoSbw1UOPWQY) — NPTEL-NOC IITM · 59 videos · 23.1h across 59 episodes
+
+**Watch only this:** Episodes #1 to #13 ("Quantum Algorithms & Cryptography" through "Simon's & Bernstein's Vazirani Algorithm | Part 2"), about 5.1 hours — these cover quantum information basics, key quantum algorithms, and foundational cryptographic concepts essential for the paper's quantum algorithmic framework.
+
+*Why it unblocks this paper:* This NPTEL IIT Madras course on Quantum Algorithms and Cryptography covers quantum algorithms including Fourier transforms, quantum cryptography, and algorithmic frameworks relevant to the paper's approach extending the Yamakawa-Zhandry framework. It provides detailed lectures on quantum information basics, quantum algorithms, and cryptographic constructions, directly supporting understanding of the paper's methods and results.
+
+*If you want all of it:* All 59 episodes, about 23.1 hours.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [quantum intuition](https://www.youtube.com/playlist?list=PLTseuTABTMmEwvoh1o5rsTI4EY7go0bNe) — Abhishek Chowdhury · 37 videos · 9.8h across 37 episodes
+
+**Watch only this:** Episodes 1 to 9 ("Quantum Wave Function Visualization" through "Fourier Transform, Fourier Series, and frequency spectrum"), about 2.4 hours — these provide essential quantum mechanics intuition, measurement concepts, and Fourier analysis needed to follow the quantum algorithmic techniques.
+
+*Why it unblocks this paper:* This playlist by Abhishek Chowdhury offers clear, visual, and intuition-first explanations of quantum mechanics, quantum measurements, Fourier transforms, and linear algebra concepts foundational to understanding quantum algorithms for algebraic problems. It is well-suited for quickly grasping the quantum computational principles underlying the paper's approach.
+
+*If you want all of it:* All 37 episodes, about 9.8 hours.
 
 ## Track 1 — Academic deep-dives (long-form)
 

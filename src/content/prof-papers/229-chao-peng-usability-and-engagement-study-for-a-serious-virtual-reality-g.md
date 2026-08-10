@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-chao-peng"
-source_hash: "2e309dbe9ed375ef689b9d4fc1d1554cf11dd236c5286749efc1b06dd8c38447"
+source_hash: "99c6f6c317d27e52b43edd0eb9cbf3db517d9135046c2e7d2351ebca1ef343f9"
 sequence: 229
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,38 @@ Research interests: high-performance graphics, game technology, virtual and mixe
 - [Google Scholar](https://scholar.google.com/citations?user=s7tWVegAAAAJ&hl=en)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Virtual Reality Interaction Design
+**The paper assumes:** human-computer interaction principles for virtual reality, VR input device design, and VR user experience evaluation
+**Already in this field?** Skip this entirely if you have prior coursework or experience in designing and evaluating user interactions specifically for virtual reality environments.
+
+This background focuses on Virtual Reality Interaction Design, essential for understanding the usability, engagement, and user experience challenges highlighted in the lunar exploration VR game study. The rigorous course offers a deep, structured dive into VR system design and optimization, while the fast track provides a concise, accessible introduction to VR UX principles and common pitfalls. Choose the course for comprehensive technical grounding or the fast track for a quick conceptual overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Foundation for Virtual and Augmented Reality Systems](https://www.youtube.com/playlist?list=PLwdnzlV3ogoVHdoJZk7CgKOPe-eM27er6) — NPTEL IIT Guwahati · 64 videos · 29.8h across the first 60 episodes
+
+**Watch only this:** Lectures 40 to 53 (14 lectures, about 6.7 hours) covering System Design, System Implementation, and VR experience optimisation — these provide a focused understanding of VR interaction design, system challenges, and user experience optimization.
+
+*Why it unblocks this paper:* This NPTEL IIT Guwahati course covers foundational and advanced topics in virtual and augmented reality systems, including system design, implementation, and experience optimization, directly relevant to understanding VR usability and engagement issues in serious games.
+
+*If you want all of it:* About 29.8 hours across the first 60 episodes.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [UX Design for Virtual Reality (VR)](https://www.youtube.com/playlist?list=PLlgPXNRcnX3FqRVs8_PhbJCwomt1JYhfZ) — IxDF - Interaction Design Foundation · 8 videos · 0.5h across 8 episodes
+
+**Watch only this:** Episodes 2, 3, and 6 (about 9 minutes total) — covering 'How to Create The Best VR Experience. UX Design Principles for VR', 'What is Wrong with VR Experience? Why Can VR Ruin User Experience?', and 'UX Design for Virtual Reality Course' for a compact insight into VR interaction challenges and design strategies.
+
+*Why it unblocks this paper:* This Interaction Design Foundation playlist offers concise, clear explainers on VR UX design principles, common user experience issues like motion sickness, and storytelling in VR, providing a quick but comprehensive conceptual overview aligned with the paper's focus on usability and engagement.
+
+*If you want all of it:* About 30 minutes across all 8 episodes.
 
 ## Track 1 — Academic deep-dives (long-form)
 

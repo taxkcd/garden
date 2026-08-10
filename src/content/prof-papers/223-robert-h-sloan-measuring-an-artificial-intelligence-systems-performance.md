@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-robert-h-sloan"
-source_hash: "f6b868a55464299fbaae51b64e62cf72905324366f0fc1c0eb5d6ba6e83cb6ed"
+source_hash: "e660548730aadbd2610af19700199d8ca8a1eb778582256ed3cfbb768171346e"
 sequence: 223
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,38 @@ Research interests: Privacy, cybersecurity, and technology law and policy; AI, s
 - [Professor website](https://sloan.cs.uic.edu/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** psychometric testing and IQ measurement
+**The paper assumes:** psychometric test theory, IQ test design and interpretation, standardized verbal intelligence assessments
+**Already in this field?** Skip this entirely if you already understand the principles of psychometric testing and how IQ tests like the WPPSI-III are constructed and scored.
+
+To understand the psychometric testing and IQ measurement background necessary for the paper on evaluating AI verbal IQ using the WPPSI-III, two viewing options are provided. The rigorous course offers a deep, university-level exploration of psychological testing principles, including IQ test construction, reliability, validity, and interpretation. The fast track provides a concise, accessible series of short videos focused on intelligence and testing fundamentals, ideal for quickly grasping key concepts relevant to verbal IQ testing in young children.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [PSYC 770 (Psychological Testing and Assessment)](https://www.youtube.com/playlist?list=PLfJYfW-oDYY3j-jM4r6L2KX_q_QGKvj-W) — Keith Donohue · 22 videos · 22.9h across 22 episodes
+
+**Watch only this:** Lectures 1c (ethical guidelines for testing), 2c and 2d (norms and test standardization), 3a and 3b (reliability), 4a and 4b (validity), 6a and 6b (introduction to mental ability and ability testing), and 8b (interpreting the WAIS IV), about 7 hours total — these cover the core psychometric principles and intelligence test interpretation needed for the paper.
+
+*Why it unblocks this paper:* This is a university-level course on Psychological Testing and Assessment by Keith Donohue, covering foundational concepts such as test standardization, reliability, validity, and intelligence testing, directly relevant to understanding the WPPSI-III and psychometric evaluation of AI.
+
+*If you want all of it:* 22.9 hours across 22 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Psychology - Intelligence and Testing](https://www.youtube.com/playlist?list=PLkKvotUGCyLcSy18w02l17eOnVFy80v3H) — PsychExamReview · 17 videos · 3.4h across 17 episodes
+
+**Watch only this:** Episodes 1 (What is Intelligence?), 3 (Assessing Intelligence), 6 (History of Intelligence Testing), 7 (IQ Variation & Distribution), and 11 (Overview of Wechsler Intelligence Tests), about 1 hour total — these give a focused introduction to intelligence testing relevant to the paper.
+
+*Why it unblocks this paper:* This short-form playlist by PsychExamReview offers clear, concise videos on intelligence and testing, including intelligence definitions, assessment methods, IQ variation, and history of intelligence testing, providing a quick but solid overview of concepts underpinning verbal IQ tests like the WPPSI-III.
+
+*If you want all of it:* 3.4 hours across 17 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

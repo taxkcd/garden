@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-ke-wang"
-source_hash: "e9b918b396c3bcec4dd1200ab1f9f19f7873a29a9aabd2e75a652a83b2f12a90"
+source_hash: "19c7f3b846ebc282fa29b86106635e51522cdeee0b58ed0d90e755084038d644"
 sequence: 219
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: Computer Architecture, Interconnection Networks, Machine-Lea
 - [Professor website](https://www.icaslab.info/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Mixture-of-Experts models
+**The paper assumes:** neural network architectures, Mixture-of-Experts models, dynamic routing in deep learning
+**Already in this field?** Skip this entirely if you already understand the architecture and routing mechanisms of Mixture-of-Experts neural networks.
+
+To understand the core concepts behind Mixture-of-Experts (MoE) models, which are central to this paper's approach to efficient LLM inference, it is essential to grasp how MoE architectures activate subsets of experts dynamically. The rigorous course option offers a deep, structured university lecture series on language modeling including a dedicated lecture on MoE, while the fast track provides a concise, intuition-driven explainer series on neural networks and transformers that builds foundational understanding quickly. Choose the course for comprehensive depth or the fast track for a focused, visual introduction.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS336 Language Modeling from Scratch I 2025](https://www.youtube.com/playlist?list=PLoROMvodv4rOY23Y0BoGoBGgQ1zmU_MT_) — Stanford Online · 17 videos · 22.3h across 17 episodes
+
+**Watch only this:** Lecture 4: Mixture of experts (about 78 minutes) — this single lecture covers the core MoE concepts needed to understand expert activation and routing mechanisms.
+
+*Why it unblocks this paper:* This Stanford CS336 Language Modeling from Scratch course includes a dedicated lecture on Mixture of Experts (Lecture 4), providing a rigorous and detailed foundation on MoE models and their role in language modeling, directly relevant to the paper's focus on expert activation and prediction.
+
+*If you want all of it:* All 17 lectures, approximately 22.3 hours — for a comprehensive understanding of language modeling and related architectures.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Neural networks](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi) — 3Blue1Brown · 10 videos · 3.6h across 10 episodes
+
+**Watch only this:** Episodes 1-7 ("But what is a neural network?" through "Attention in transformers, step-by-step"), about 2.5 hours total — these episodes build intuition on neural networks, backpropagation, transformers, and attention, essential for understanding MoE-based LLMs.
+
+*Why it unblocks this paper:* The 3Blue1Brown Neural Networks series offers clear, visual explanations of neural networks and transformers, including attention mechanisms and large language models, providing an accessible introduction to the foundational concepts underlying MoE models and LLM inference.
+
+*If you want all of it:* All 10 episodes, about 3.6 hours total — for a broader overview including related deep learning concepts.
 
 ## Track 1 — Academic deep-dives (long-form)
 

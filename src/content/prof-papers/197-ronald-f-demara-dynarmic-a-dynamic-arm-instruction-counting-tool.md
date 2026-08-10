@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-ronald-f-demara"
-source_hash: "2f9a6e4a7a37c620067a405685cb835af045cf8bff0c4c0f5de418670286e9f8"
+source_hash: "4bfab9ad421430ea1a6ec6db65c8a78823b43a1a5c155ec71c934b84046b7fd1"
 sequence: 197
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,38 @@ Research interests: adaptive and resilient computing architectures with emphasis
 - [Google Scholar](http://orcid.org/0000-0001-6864-7255)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** ARMv7 Assembly Programming
+**The paper assumes:** ARMv7 assembly language programming and instruction set architecture
+**Already in this field?** Skip this entirely if you already understand ARMv7 assembly language and its instruction set architecture.
+
+To understand the DynARMic tool's approach to dynamic ARMv7 instruction counting and profiling, foundational knowledge of ARMv7 assembly programming is essential. The rigorous course option offers a deep, university-level embedded systems perspective on ARM architecture and programming, while the fast track provides a concise, focused introduction to ARM assembly programming concepts suitable for quick comprehension. Choose the course for thorough understanding or the fast track for a time-efficient overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [NOC Jan 2019: Embedded System Design with ARM](https://www.youtube.com/playlist?list=PLbRMhDVUMngcJu5oUhgpgYqtOn7DmSfuU) — NPTEL IIT Kharagpur · 43 videos · 18.4h across 43 episodes
+
+**Watch only this:** Lectures 4 to 9 (Architecture of ARM Microcontroller Part I-III and ARM Instruction Set Parts I-III), about 2.5 hours — these cover ARM architecture fundamentals and detailed ARM instruction set knowledge necessary for grasping instruction classification and encoding.
+
+*Why it unblocks this paper:* This NPTEL IIT Kharagpur course covers ARM microcontroller architecture and ARM instruction sets in detail, providing a rigorous foundation on ARM assembly programming and embedded system design relevant to understanding ARMv7 instruction profiling.
+
+*If you want all of it:* All 43 episodes, approximately 18.4 hours.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Introduction to Assembly Programming with ARM](https://www.youtube.com/playlist?list=PL2EF13wm-hWAlQe87UB2HV0SVhBXFpXbn) — OliveStem · 16 videos · 2.4h across 16 episodes
+
+**Watch only this:** Episodes 1 to 10 (Introduction to Assembly Programming in ARM through Conditional Instruction Execution), about 1.5 hours — covers essential ARM assembly concepts and instruction behaviors relevant to dynamic instruction counting.
+
+*Why it unblocks this paper:* This OliveStem playlist provides a clear, concise introduction to ARM assembly programming with focused episodes on instruction types, addressing modes, branches, and loops, directly supporting understanding of ARMv7 instruction execution and profiling.
+
+*If you want all of it:* All 16 episodes, approximately 2.4 hours.
 
 ## Track 1 — Academic deep-dives (long-form)
 

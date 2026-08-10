@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-sargur-n-srihari"
-source_hash: "294474e6a4fc59b7e7396b1576ecc94b7eeded15b1675857938e1e3fe729ade3"
+source_hash: "3f753c7cc1bdfc3b8152d8a155f0931ad733bf3784654ef47cf649c47a12761e"
 sequence: 237
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,38 @@ Research interests: artificial intelligence and machine learning
 - [Lab website](http://www.cedar.buffalo.edu/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Vision-Language Models
+**The paper assumes:** multimodal deep learning, transformer architectures, vision-language model design and training
+**Already in this field?** Skip this entirely if you already understand how vision-language models work, including their architecture and multimodal training methods.
+
+This background focuses on Vision-Language Models (VLMs), essential for understanding the integration of visual and textual modalities, prompt engineering, and fine-tuning strategies used in the paper on handwriting verification. The rigorous course offers a deep, structured dive into deep learning for computer vision including vision-language topics, while the fast track provides a concise, intuition-driven overview of recent VLM architectures and competitive models. Choose the course for comprehensive foundational knowledge and the fast track for a quicker, practical grasp of current VLM approaches.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS231N Deep Learning for Computer Vision I 2025](https://www.youtube.com/playlist?list=PLoROMvodv4rOmsNzYBMe0gJY2XS8AQg16) — Stanford Online · 18 videos
+
+**Watch only this:** Lectures 5-6 (Image Classification with CNNs and CNN Architectures) plus Lecture 8 (Attention and Transformers) and Lecture 16 (Vision and Language), about 4.5 hours total — this subset covers CNNs, transformers, and vision-language models essential for this paper.
+
+*Why it unblocks this paper:* Stanford CS231N Deep Learning for Computer Vision I 2025 covers core concepts of CNNs, Transformers, and vision-language integration (Lecture 16: Vision and Language), directly relevant to understanding the architectures and methods used in VLM-based handwriting verification.
+
+*If you want all of it:* About 21.2 hours across 18 episodes.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Vision-Language Model Competition: DeepSeek-VL and Rivals](https://www.youtube.com/playlist?list=PLXKyJu0coDeXFGNeId8wRs-5vdC0DJKqS) — Byte Goose AI. · 13 videos · 4.7h across 13 episodes
+
+**Watch only this:** Episodes 7 (CLIP: Contrastive Language–Image Pretraining model) and 9 (V-JEPA Learns Intuitive Physics Through Representation Prediction), about 45 minutes total — these episodes cover foundational VLM architectures and reasoning relevant to the paper's approach.
+
+*Why it unblocks this paper:* The Vision-Language Model Competition: DeepSeek-VL and Rivals playlist offers a concise, up-to-date overview of state-of-the-art vision-language models, including architectures and reasoning approaches, which aligns well with the paper's focus on VLMs and prompt engineering for interpretability.
+
+*If you want all of it:* About 4.7 hours across 13 episodes.
 
 ## Track 1 — Academic deep-dives (long-form)
 

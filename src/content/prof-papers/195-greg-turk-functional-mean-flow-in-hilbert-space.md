@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-greg-turk"
-source_hash: "ce8a21782fb71bfc078551f86448d85d728c9f7a0663b08d5e89187a058a8c10"
+source_hash: "341a5fbd3e597d5d9281c4955789479af18fe6d8559bf91aa891012a0f4ba664"
 sequence: 195
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,27 @@ Research interests: Computer graphics, robotics, machine learning, simulation fo
 - [Google Scholar](http://scholar.google.com/citations?user=Q_4d9N0AAAAJ)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Infinite-Dimensional Hilbert Spaces
+**The paper assumes:** functional analysis of infinite-dimensional Hilbert spaces, operator theory, Gaussian measures on Hilbert spaces
+**Already in this field?** Skip this entirely if you already have a solid understanding of functional analysis focused on infinite-dimensional Hilbert spaces and their measure-theoretic properties.
+
+This background focuses on Infinite-Dimensional Hilbert Spaces, which are fundamental to understanding the theoretical and numerical aspects of the Functional Mean Flow paper. The rigorous course option offers a deep, structured university-level lecture series on Hilbert spaces and functional analysis, ideal for readers seeking comprehensive mastery. The fast track provides a concise, well-structured explainer series that covers core concepts efficiently, suitable for readers needing a solid but time-efficient conceptual foundation.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Hilbert Spaces](https://www.youtube.com/playlist?list=PLBh2i93oe2qvgRA0eh_jN8NTPg4K6SwHS) — The Bright Side of Mathematics · 26 videos · 5.4h across 26 episodes
+
+**Watch only this:** Episodes 1 through 10, about 2 hours — including introductions, examples, key identities, orthogonal complements, projection theorems, and orthonormal bases, giving a solid conceptual foundation for infinite-dimensional Hilbert spaces.
+
+*Why it unblocks this paper:* This playlist from The Bright Side of Mathematics provides a clear, intuition-driven introduction to Hilbert spaces, covering key properties, orthonormal bases, projection theorems, and operator theory, which are essential for grasping the paper's mathematical framework in a concise format.
+
+*If you want all of it:* 5.4 hours across 26 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

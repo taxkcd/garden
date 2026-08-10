@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-krishna-v-palem"
-source_hash: "58ec3e130d354a4ebafc55dba1faf99e0081bbae7ec3283d232d771ad53e5a93"
+source_hash: "1be3fc891e9f50656df4e7a5275d47e92bc9866eb1d8c21bfd3ba22512f87cb1"
 sequence: 198
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,38 @@ Research interests: all aspects of embedded computing, include adaptive architec
 - [Lab website](http://visen.rice.edu)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Boolean function analysis
+**The paper assumes:** Fourier analysis of Boolean functions, influence of variables on Boolean functions, PAC learning theory
+**Already in this field?** Skip this entirely if you already have a solid understanding of Boolean function analysis and influence concepts from theoretical computer science or discrete mathematics.
+
+Understanding the influence of variables on Boolean functions and their Fourier analysis is crucial for grasping the algorithmic foundations of inexact computing presented in this paper. The rigorous course offers a deep, graduate-level treatment suitable for readers seeking comprehensive mastery, while the fast track provides a more accessible, concise introduction to Boolean algebra and logic concepts that underpin the paper's key ideas.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Analysis of Boolean Functions at CMU](https://www.youtube.com/playlist?list=PLm3J0oaFux3YypJNaF6sRAf2zC1QzMuTA) — Ryan O'Donnell · 23 videos · 29.8h across 23 episodes
+
+**Watch only this:** Lectures 1-6 (The Fourier expansion and basic formulas; Probability densities and BLR linearity testing; Social choice and influences; Noise stability and Arrow's Theorem; Spectral concentration and learning; Restrictions and the Goldreich--Levin Theorem), about 4.7 hours — these cover the core concepts of influence and Fourier analysis essential for the paper.
+
+*Why it unblocks this paper:* This is a graduate-level course by Ryan O'Donnell, a leading expert in analysis of Boolean functions, covering Fourier expansions, influences, noise stability, and learning theory, directly matching the paper's theoretical foundations.
+
+*If you want all of it:* All 23 lectures, about 29.8 hours.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [DSTL UNIT-2 (2026-27) | BCS303 | DISCRETE STRUCTURES & THEORY OF LOGIC | UNIT-2 | FUNCTIONS | BOOLEAN ALGEBRA | DISCRETE MATHEMATICS](https://www.youtube.com/playlist?list=PL5Dqs90qDljVREVoe_fHxPiPtEfXu73F2) — FEARLESS INNOCENT MATH · 13 videos · 7.7h across 13 episodes
+
+**Watch only this:** Episodes 5-9 (Boolean Algebra; Theorems of Boolean Algebra; De Morgan's Law in Boolean Algebra; Disjunctive Normal Form; Conjunctive Normal Form), about 3 hours — these episodes cover the essential Boolean algebra and function forms needed to understand influence and error models.
+
+*Why it unblocks this paper:* This playlist provides a clear, structured introduction to Boolean algebra and functions with well-titled episodes that build foundational knowledge quickly, suitable for readers needing a practical and intuitive grasp of Boolean concepts relevant to the paper.
+
+*If you want all of it:* All 13 episodes, about 7.7 hours.
 
 ## Track 1 — Academic deep-dives (long-form)
 

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-wayne-goddard"
-source_hash: "391074884660b6db13449c14abfab906164781f67bcdee7ad01746be945409ee"
+source_hash: "b59305ee48ae96bb2efec409ce80f15d1fa6d870652425c93856811f4ccd1ffb"
 sequence: 238
 generator: "outreach-garden: managed"
 ---
@@ -55,6 +55,38 @@ Research interests: Graph Theory; Discrete Mathematics
 - [GitHub](https://goddardgraph.github.io/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Graph Theory
+**The paper assumes:** undergraduate graph theory including trees, domination, independent sets, and graph colorings
+**Already in this field?** Skip this entirely if you already have a solid undergraduate-level understanding of graph theory focused on trees and domination concepts.
+
+This background selection is designed to prepare readers to understand the combinatorial and graph-theoretic concepts underlying the paper on all-k-isolation in trees. The rigorous course offers a deep and structured university-level treatment of graph theory and additive combinatorics, ideal for readers seeking comprehensive mastery. The fast track provides a concise, clear introduction to core graph theory topics including trees and coloring, suitable for readers who want a solid conceptual foundation quickly without extensive time investment.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [MIT 18.217 Graph Theory and Additive Combinatorics, Fall 2019](https://www.youtube.com/playlist?list=PLUl4u3cNGP62qauV_CpT1zKaGG_Vj5igX) — MIT OpenCourseWare · 26 videos · 33.9h across 26 episodes
+
+**Watch only this:** Lectures 1 through 5 (about 4 hours) cover foundational graph theory concepts, forbidden subgraphs, and structural tools relevant to domination and isolation in trees. Stop after Lecture 5 for a solid basis.
+
+*Why it unblocks this paper:* MIT's 18.217 Graph Theory and Additive Combinatorics course covers fundamental graph theory concepts with rigorous proofs and structural insights, including trees and coloring, which are central to understanding the paper's combinatorial arguments and theorems.
+
+*If you want all of it:* Approximately 33.9 hours across all 26 episodes.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Graph Theory](https://www.youtube.com/playlist?list=PLOROtRhtegr6eSjw4_iRCjgQSYS8fpJM3) — Math at Andrews University · 15 videos · 2.1h across the first 13 episodes
+
+**Watch only this:** Episodes 1 through 13 (about 2.1 hours) cover essential graph theory topics including trees and coloring necessary to grasp the paper's main ideas.
+
+*Why it unblocks this paper:* This concise 15-episode playlist by Math at Andrews University provides clear, focused explanations of graph theory fundamentals including trees, spanning trees, and graph coloring, directly supporting understanding of the paper's key concepts in a short time.
+
+*If you want all of it:* About 2.1 hours across the first 13 episodes.
 
 ## Track 1 — Academic deep-dives (long-form)
 

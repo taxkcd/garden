@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-siavash-mirarab"
-source_hash: "dff5963b8365551e348defc73ae76bfd6fb962a40d0282298c4503e244894780"
+source_hash: "506e10695e05c15fe15c680a9c399b80d0cf6ad97c14d4737a5d754e827b1de5"
 sequence: 208
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: computational biology, evolutionary analyses on large-scale 
 - [Resolved homepage](http://eceweb.ucsd.edu/~smirarab/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** probabilistic graphical models
+**The paper assumes:** probabilistic graphical models, maximum likelihood estimation, pseudo-likelihood methods, and statistical inference
+**Already in this field?** Skip this entirely if you already understand probabilistic graphical models and likelihood-based inference methods in computational biology or machine learning.
+
+This background focuses on probabilistic graphical models (PGMs), which are essential to understanding the maximum pseudo-likelihood framework used in krepp for estimating read-to-genome distances. The rigorous course provides a deep, structured university-level introduction to PGMs, covering foundational concepts and inference methods. The fast track offers a concise, intuition-driven series on directed graphical models and related probabilistic concepts, suitable for quickly grasping the key ideas relevant to the paper's statistical modeling assumptions.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [CMU 10-708 PGM — Spring 2020](https://www.youtube.com/playlist?list=PLoZgVqqHOumTqxIhcdcpOAJOOimrRCGZn) — CMU 10-708 PGM · 28 videos · 35.8h across 28 episodes
+
+**Watch only this:** Lectures 1-7 (Introduction, Undirected and Directed GMs, Exact Inference, Parameter Estimation, and Case Studies on HMM and CRF), about 9 hours — this subset covers core PGM concepts and inference needed to understand independence assumptions and likelihood calculations.
+
+*Why it unblocks this paper:* This is a comprehensive university course on probabilistic graphical models from CMU, covering undirected and directed graphical models, exact inference, parameter estimation, variational inference, and advanced topics. It directly addresses the statistical foundations and inference techniques underlying maximum pseudo-likelihood methods, making it highly relevant for understanding krepp's modeling assumptions and likelihood ratio tests.
+
+*If you want all of it:* All 28 lectures, about 35.8 hours
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [🎲 Probabilistic Machine Learning](https://www.youtube.com/playlist?list=PLISXH-iEM4JlFsAp7trKCWyxeO3M70QyJ) — Machine Learning & Simulation · 28 videos · 12.4h across 28 episodes
+
+**Watch only this:** Episodes 1-7 (Introduction to Directed Graphical Models, Ancestral Sampling & Likelihood Calculation, Latent Variables, Maximum Likelihood, Plate Notation, Conditional Independence, and d-separation), about 3 hours — these episodes cover the essential PGM concepts and independence assumptions relevant to krepp.
+
+*Why it unblocks this paper:* This concise series on probabilistic machine learning uses directed graphical models to explain key concepts such as conditional independence, d-separation, latent variables, and maximum likelihood estimation. It provides a clear, visual introduction to the core ideas behind the pseudo-likelihood framework in a fraction of the time of a full course.
+
+*If you want all of it:* All 28 episodes, about 12.4 hours
 
 ## Track 1 — Academic deep-dives (long-form)
 

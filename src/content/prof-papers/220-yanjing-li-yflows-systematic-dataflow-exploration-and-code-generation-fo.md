@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-yanjing-li"
-source_hash: "01e36d8e04200837d350743645bf4380ccb4ed2fd87cbe06cd1ba0e517e9105f"
+source_hash: "8a723aca634e876fc387f32a75ecc409b10a5a455ebd9c97bd7abe74a9dec2e4"
 sequence: 220
 generator: "outreach-garden: managed"
 ---
@@ -50,6 +50,38 @@ Research interests: AI and optimization for secure IoT and cyber-physical system
 - [Faculty/profile page](https://coe.northeastern.edu/people/li-yanjing)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** SIMD vectorization and CPU dataflows
+**The paper assumes:** SIMD vectorization, CPU microarchitecture, dataflow optimization for neural networks
+**Already in this field?** Skip this entirely if you already understand SIMD CPU architectures and how dataflows impact vectorized neural network inference performance.
+
+This background focuses on understanding SIMD vectorization and CPU dataflows, which are central to the paper's contributions on optimizing neural network inference using SIMD architectures on CPUs. The rigorous course option provides a deep, structured university-level introduction to parallel computing and SIMD concepts, ideal for readers seeking a thorough foundation. The fast track offers a concise, focused playlist on dataflow concepts to quickly grasp the essentials relevant to SIMD and data reuse in CPU contexts.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Parallel computing BCS702](https://www.youtube.com/playlist?list=PLhINCOs3vZGgzx3FNwZSwbrn7AptRD-x3) — Prof Vishwaraj B Patil · 13 videos · 7.9h across 13 episodes
+
+**Watch only this:** Episodes 1 and 2: 'Parallel computing BCS702, what is Parallel computing, Flynn's Taxonomy, SIMD, MIMD' and 'Parallel Computing BCS702, What is SIMD Vector Processor & MIMD shared Memory & Distributed Memory?' totaling about 1 hour 12 minutes. These two episodes introduce SIMD architectures and vector processors foundational to the paper's SIMD code generation and dataflow optimizations.
+
+*Why it unblocks this paper:* This university lecture series by Prof Vishwaraj B Patil covers SIMD vector processors and related parallel computing concepts in detail, directly addressing the hardware and architectural foundations needed to understand SIMD dataflows and vector register reuse in CPUs, which are key to the paper's approach.
+
+*If you want all of it:* The full playlist has 13 episodes totaling about 7.9 hours.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Best Buy API's Dataflow](https://www.youtube.com/playlist?list=PLpe6CiYAs7vTglPQ6IpvddxH45pS7zLS2) — Steven Koon · 8 videos · 2.5h across 8 episodes
+
+**Watch only this:** Episodes 1-3: 'Using InvokeHTTP with the BestBuy Categories API', 'Creating a loop with Nifi processors', and 'Splitting JSON and Handling null flowfile content' totaling about 54 minutes. These episodes cover core dataflow concepts and control structures relevant to understanding data reuse and flow optimization.
+
+*Why it unblocks this paper:* This concise playlist on 'Best Buy API's Dataflow' by Steven Koon, while focused on dataflows in a software API context, provides clear, practical explanations of dataflow concepts and processing pipelines that help build intuition about data movement and reuse, which parallels the dataflow optimization ideas in SIMD CPU contexts.
+
+*If you want all of it:* The full playlist has 8 episodes totaling about 2.5 hours.
 
 ## Track 1 — Academic deep-dives (long-form)
 

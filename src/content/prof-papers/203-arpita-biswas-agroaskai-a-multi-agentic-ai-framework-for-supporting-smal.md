@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-arpita-biswas"
-source_hash: "eecb4936335826410e95286d707e6f2304d0c90b13b409f3b016bdae3b250d1b"
+source_hash: "5db69498dd301b35f7cbebbd318ea50f55598d0abe687192d8f48a1830a1bf78"
 sequence: 203
 generator: "outreach-garden: managed"
 ---
@@ -51,6 +51,38 @@ Research interests: Algorithmic Game Theory, Optimization, and Machine Learning
 - [Faculty/profile page](https://sites.google.com/view/arpitabiswas)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** multi-agent systems
+**The paper assumes:** foundations of multi-agent systems, agent coordination, and autonomous agent architectures
+**Already in this field?** Skip this entirely if you already understand the principles and design patterns of multi-agent AI systems and their coordination mechanisms.
+
+This background focuses on multi-agent systems, which are central to understanding the design and coordination of specialized autonomous agents in AgroAskAI. The rigorous course option provides a deep, structured university-level introduction to multi-agent systems, ideal for readers seeking comprehensive theoretical and practical foundations. The fast track offers a concise, hands-on masterclass on building multi-agent AI systems with modern tools, suitable for readers who want a practical, intuition-driven overview in a fraction of the time.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Introduction to Multi-Agent Systems](https://www.youtube.com/playlist?list=PLFW6lRTa1g81K7Ar6OT5YyK8p3sQ0B5bB) — IIT KANPUR-NPTEL · 56 videos · 31.3h across 56 episodes
+
+**Watch only this:** Lectures 1 through 22, about 12 hours — covering fundamental concepts, agent architectures, coordination, communication, and decision-making in multi-agent systems, which directly relate to the paper's multi-agent framework.
+
+*Why it unblocks this paper:* This IIT Kanpur-NPTEL course is a thorough university lecture series on multi-agent systems, covering foundational concepts and architectures essential to understanding the modular, role-specialized agent design and coordination in AgroAskAI.
+
+*If you want all of it:* 31.3 hours across all 56 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Agentic AI Masterclass: Building Multi-Agent Systems with AutoGen, LangGraph & CrewAI](https://www.youtube.com/playlist?list=PLdKd-j64gDcDjZgJw6bECfdcTx0YrrSVF) — Analytics Vidhya · 29 videos · 5.7h across the first 28 episodes
+
+**Watch only this:** First 12 episodes, about 2.5 hours — covering agentic AI basics, AutoGen architecture, building AI agents, message flow, and introductory LangGraph concepts, providing a practical foundation for understanding the paper's system design.
+
+*Why it unblocks this paper:* This Analytics Vidhya Agentic AI Masterclass offers a concise, practical introduction to building multi-agent systems with modern frameworks like AutoGen and LangGraph, aligning well with the paper's focus on multi-agent AI frameworks and internal governance.
+
+*If you want all of it:* About 5.7 hours across the first 28 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-armando-fox"
-source_hash: "e1a13243c4ffa0583e2078756d924950f8bd69252a054429465258f256fb7d03"
+source_hash: "8be3aa11b0fbd70325a72703e470834a0bb33a8c76b6caed31e2d76dfe3c6676"
 sequence: 210
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,38 @@ Research interests: digital learning, programming systems, software engineering
 - [Resolved homepage](https://www.armandofox.com)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Prompt Engineering for AI Models
+**The paper assumes:** prompt engineering techniques for large language models and AI APIs
+**Already in this field?** Skip this entirely if you already understand how to design, test, and debug prompts for AI language and image generation models.
+
+To understand the challenges and solutions in authoring, testing, and debugging AI prompt templates as discussed in the paper, background knowledge in prompt engineering and large language models (LLMs) is essential. The rigorous course option provides a deep, structured university-level introduction to LLMs and prompting, ideal for readers seeking comprehensive technical grounding. The fast track offers a concise, focused explainer series on popular prompting techniques, suitable for readers who want a quick yet clear conceptual grasp without investing many hours.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Introduction to Large Language Models (LLMs)](https://www.youtube.com/playlist?list=PLp6ek2hDcoNDDRINFiWGDlPKUwW-g1Hjk) — NPTEL IIT Delhi · 38 videos · 29.0h across 38 episodes
+
+**Watch only this:** Lectures 1 through 23, about 17 hours — covering from introduction to LLMs through advanced prompting and prompt sensitivity, which are crucial for grasping prompt template authoring and debugging.
+
+*Why it unblocks this paper:* This NPTEL IIT Delhi course covers foundational concepts of large language models, including detailed lectures on prompt-based learning and advanced prompting techniques, directly relevant to understanding the prompt engineering challenges and solutions presented in the paper.
+
+*If you want all of it:* 29.0 hours across 38 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Prompting Techniques Explained](https://www.youtube.com/playlist?list=PLhRXULtLjLtfQ9COvoZg8Zg6ejTI3UPTG) — Kalyan KS · 7 videos · 0.4h across 7 episodes
+
+**Watch only this:** All 7 episodes, about 0.4 hours — covering the main prompting techniques needed to understand how prompts influence AI model behavior.
+
+*Why it unblocks this paper:* This concise playlist by Kalyan KS explains key prompting techniques such as zero-shot, few-shot, chain-of-thought, and emotion prompting, providing a clear and practical introduction to prompt engineering concepts relevant to the paper's focus on prompt template design and debugging.
+
+*If you want all of it:* 0.4 hours across 7 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

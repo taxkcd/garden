@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-tim-oates"
-source_hash: "30b4d4525e4bd2134aec1d5dba75212a3b45714b0b2f5c7f6a0851d0b73e69e9"
+source_hash: "44c8d7df657aee7a0644710a6e43447ab4d7394f8e1373043c9d203806cd6741"
 sequence: 234
 generator: "outreach-garden: managed"
 ---
@@ -51,6 +51,38 @@ This paper introduces MDToC, a novel prompting technique for large language mode
 - [Professor website](https://orcid.org/0000-0002-8655-747X)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Metacognition in Artificial Intelligence
+**The paper assumes:** metacognition in artificial intelligence, cognitive architectures, and metareasoning frameworks
+**Already in this field?** Skip this entirely if you already understand metacognitive reasoning frameworks and their application in AI systems.
+
+This background focuses on metacognition in artificial intelligence, which is central to understanding the MDToC framework's planning, monitoring, and reviewing phases for improving mathematical reasoning in large language models. The rigorous course option offers a deep, foundational mathematical perspective on machine learning concepts relevant to metacognition, while the fast track provides a concise, accessible introduction to metacognitive concepts and their importance, suitable for readers seeking a quicker conceptual grasp.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Mathematical Foundations of Machine Learning](https://www.youtube.com/playlist?list=PLgMDNELGJ1Cay-Q9Cn8KcpUcC58NDWuiu) — NPTEL - Indian Institute of Science, Bengaluru · 89 videos · 30.9h across the first 60 episodes
+
+**Watch only this:** Episodes 1 through 20, about 10.3 hours — covering foundational probability theory, function approximation, entropy, KL divergence, and latent variable models to build a solid mathematical foundation for metacognitive AI reasoning.
+
+*Why it unblocks this paper:* This NPTEL course from the Indian Institute of Science, Bengaluru, covers foundational mathematical concepts underpinning machine learning, which are essential for rigorously understanding the theoretical basis of metacognitive frameworks like MDToC in AI reasoning.
+
+*If you want all of it:* About 30.9 hours across the first 60 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Metacognitive IQ](https://www.youtube.com/playlist?list=PL1aqy1JVkDJaBwzCqL6CevR-G4QjDHfCs) — The Voice Of A.I. Academy Radio · 14 videos · 4.8h across 14 episodes
+
+**Watch only this:** Episodes 1 through 6, about 2 hours — including '5 Signs You Have "Metacognitive IQ"', 'The Secrets of Metacognition', and 'Metacognition: An Important Skill for Modern Times' to quickly grasp core metacognitive concepts relevant to AI.
+
+*Why it unblocks this paper:* This playlist from The Voice Of A.I. Academy Radio provides clear, concise explainers on metacognition, focusing on its definition, importance, and application, which aligns well with the metacognitive processes used in MDToC for AI reasoning.
+
+*If you want all of it:* About 4.8 hours across all 14 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

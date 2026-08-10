@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-clayton-thomas"
-source_hash: "89a611b94cefc5c994deaa1fcdc5b48f5e0fb04a7e87bb7cf0e99cc8594f20f0"
+source_hash: "9a12df2494d79e1a31b85e6693465c1cf7f75c5d67ec3f1f6559564a97156812"
 sequence: 207
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,38 @@ Research interests: design of collective decision-making algorithms for settings
 - [Resolved homepage](https://clathomasprime.github.io)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Algorithmic Mechanism Design
+**The paper assumes:** incentive-compatible mechanism design, Bayesian auction theory, virtual valuations, multi-dimensional auction theory
+**Already in this field?** Skip this entirely if you already understand the basics of incentive-compatible auctions and Bayesian mechanism design, including virtual value functions and posted-price mechanisms.
+
+This background covers algorithmic mechanism design, which is essential for understanding the incentive compatibility, truthful auctions, and characterization of allocation and payment rules foundational to the paper's study of transaction fee mechanisms in blockchains. The rigorous course option offers a deep, university-level treatment of mechanism design and auction theory, while the fast track provides a concise, clear introduction to the core concepts in a shorter time. Choose the rigorous course for a thorough theoretical foundation or the fast track for a quicker, intuition-focused overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Algorithmic Game Theory (Stanford CS364A, Fall 2013)](https://www.youtube.com/playlist?list=PLEGCF-WLh2RJBqmxvZ0_ie-mleCFhi2N4) — Tim Roughgarden Lectures · 20 videos · 25.2h across 20 episodes
+
+**Watch only this:** Lectures 2 through 7, about 7 hours — covering Mechanism Design Basics, Myerson's Lemma, Algorithmic Mechanism Design, Revenue-Maximizing Auctions, Simple Near-Optimal Auctions, and Multi-Parameter Mechanism Design and the VCG Mechanism.
+
+*Why it unblocks this paper:* Tim Roughgarden's Stanford course 'Algorithmic Game Theory (CS364A, Fall 2013)' covers mechanism design basics, Myerson's Lemma, revenue-maximizing auctions, and multi-parameter mechanism design, directly underpinning the paper's theoretical framework and proofs about OffC-IP TFMs.
+
+*If you want all of it:* 25.2 hours across 20 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Game Theory and Algorithmic Mechanism Design](https://www.youtube.com/playlist?list=PLeyWfpm2PI_ek2mCJJhjX3G6QRS7LaW9c) — Swaprava Nath, IIT Bombay · 63 videos · 18.6h across the first 60 episodes
+
+**Watch only this:** Modules 01 through 03 and 06 through 08, about 3.5 hours — covering Introduction to Game Theory, Introduction to Mechanism Design, The Game of Chess (for conceptual grounding), Dominance, Nash Equilibrium, and Elimination of Dominated Strategies.
+
+*Why it unblocks this paper:* Swaprava Nath's 'Game Theory and Algorithmic Mechanism Design' series provides a concise and clear introduction to game theory and mechanism design fundamentals, including incentive compatibility and Nash equilibria, suitable for quickly grasping the core concepts relevant to the paper.
+
+*If you want all of it:* 18.6 hours across the first 60 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

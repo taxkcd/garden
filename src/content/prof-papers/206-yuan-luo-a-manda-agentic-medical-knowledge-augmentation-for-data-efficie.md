@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-yuan-luo"
-source_hash: "c717d71cab4777ac21280297df3cd7d929f1a5e708518f2e1be9f990eb3279ed"
+source_hash: "ab081742cfcbe11e910a0d981c67eb138a76dc127fa9a64d9fd415481f30e0a7"
 sequence: 206
 generator: "outreach-garden: managed"
 ---
@@ -55,6 +55,38 @@ Research interests: multi-modal machine learning, deep learning, vision/image pr
 - [Social profile](https://twitter.com/yuanhypnosluo)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Multimodal Machine Learning
+**The paper assumes:** multimodal machine learning, visual question answering, large language models, biomedical knowledge integration
+**Already in this field?** Skip this entirely if you already understand how machine learning models combine and reason over multiple data modalities such as images and text.
+
+To understand the A MANDA framework for medical visual question answering, a solid grasp of multimodal machine learning is essential, as it underpins the integration and reasoning over visual and textual medical data. The rigorous course option offers a deep, structured dive into multimodal machine learning concepts, while the fast track provides a concise, intuition-driven introduction suitable for quickly building foundational knowledge. Choose the lane that fits your available time and depth needs; both prepare you to follow the paper's agentic architecture and knowledge augmentation strategies.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [CMU Fall 2023 Multimodal Machine Learning course (11-777)](https://www.youtube.com/playlist?list=PL-Fhd_vrvisMYs8A5j7sj8YW1wHhoJSmW) — LP Morency · 18 videos · 20.1h across the first 17 episodes
+
+**Watch only this:** Lectures 1.1 - Introduction, 1.2 - Multimodal Research Task, 3.1 - Multimodal Representation Fusion, 4.1 - Multimodal Alignment, 5.1 - Multimodal Transformers - Part1, 5.2 - Structured Representations and Reasoning, 7.2 - Multimodal Inference and Knowledge; about 8 hours total — this subset covers foundational concepts, fusion methods, alignment, transformers, and reasoning crucial for understanding A MANDA.
+
+*Why it unblocks this paper:* This is the 2023 Fall Carnegie Mellon University Multimodal Machine Learning course taught by LP Morency, offering a comprehensive and up-to-date treatment of multimodal representations, fusion, alignment, and reasoning, directly relevant to the paper's core techniques.
+
+*If you want all of it:* About 20.1 hours across the first 17 episodes.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Ms. Coffee Bean's Multimodalities](https://www.youtube.com/playlist?list=PLpZBeKTZRGPNKxoNaeMD9GViU_aH_HJab) — AI Coffee Break with Letitia · 15 videos · 2.7h across 15 episodes
+
+**Watch only this:** Episodes 1 - What nobody tells you about MULTIMODAL Machine Learning! 🙊 THE definition, 2 - Transformer combining Vision and Language? ViLBERT - NLP meets Computer Vision, 3 - Pre-training of BERT-based Transformer architectures explained – language and vision!, 4 and 5 - Why Multimodal Machine Learning models do not work (Parts 1 and 2), 7 - OpenAI’s CLIP explained!; about 1 hour total — these episodes cover definitions, key architectures, challenges, and examples foundational to understanding multimodal ML in the paper.
+
+*Why it unblocks this paper:* Ms. Coffee Bean's Multimodalities series offers clear, concise explainers on multimodal machine learning fundamentals and challenges, providing an accessible overview that quickly builds intuition about vision-language models and multimodal fusion relevant to the paper.
+
+*If you want all of it:* About 2.7 hours across all 15 episodes.
 
 ## Track 1 — Academic deep-dives (long-form)
 

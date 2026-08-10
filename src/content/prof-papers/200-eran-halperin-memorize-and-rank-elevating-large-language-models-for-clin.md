@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-eran-halperin"
-source_hash: "c2512e4708882ace84a119a7ae2aeb8f811f2c1c3740d54903961fa5bf8a0393"
+source_hash: "117022b96f2cb233a183944b036e6925f09d8161dd41ff5c1fd4f1f792ec237b"
 sequence: 200
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,38 @@ Research interests: Computational Genomics, Machine Learning in Medicine, Deep L
 - [Google Scholar](https://scholar.google.com/citations?hl=en&user=bpDPt1QAAAAJ)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** contrastive learning in machine learning
+**The paper assumes:** contrastive learning, representation learning, and metric learning in machine learning
+**Already in this field?** Skip this entirely if you already understand contrastive learning methods and their use in deep learning for representation and ranking tasks.
+
+This background focuses on contrastive learning in machine learning, a core methodological innovation in the paper for improving clinical diagnosis prediction by distinguishing true diagnoses from similar candidates. The rigorous course provides a deep, structured understanding of contrastive learning and related meta-learning concepts, while the fast track offers a concise, intuition-driven introduction to contrastive learning suitable for quick comprehension. Choose the rigorous course for a thorough foundation or the fast track for a rapid, clear overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS330: Deep Multi-Task and Meta Learning I Autumn 2022](https://www.youtube.com/playlist?list=PLoROMvodv4rNjRoawgt72BBNwL2V7doGI) — Stanford Online · 17 videos · 21.5h across 17 episodes
+
+**Watch only this:** Lectures 7 and 8, about 2.5 hours — these cover 'Unsupervised Pre-Training: Contrastive Learning' and 'Unsupervised Pre-training for Few-shot Learning', providing the essential concepts and techniques relevant to the paper's approach.
+
+*Why it unblocks this paper:* Stanford CS330 covers unsupervised pre-training and contrastive learning in depth within a broader context of multi-task and meta learning, directly addressing the principles behind hierarchical contrastive learning used in the paper.
+
+*If you want all of it:* 21.5 hours across 17 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Deep Learning Animated](https://www.youtube.com/playlist?list=PLmkOM-kwIYM72cGYD2ofVIrp6xoe9LVps) — Deepia · 8 videos · 2.0h across 8 episodes
+
+**Watch only this:** Episodes 6 only, about 15 minutes — 'Contrastive Learning with SimCLR' covers the core ideas of contrastive learning in an accessible format.
+
+*Why it unblocks this paper:* Deep Learning Animated offers clear, visual explanations of contrastive learning concepts, including a dedicated episode on 'Contrastive Learning with SimCLR', which succinctly introduces the key ideas needed to understand the paper's methodology.
+
+*If you want all of it:* 2.0 hours across 8 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

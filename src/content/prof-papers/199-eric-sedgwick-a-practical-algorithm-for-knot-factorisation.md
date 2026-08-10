@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-eric-sedgwick"
-source_hash: "421c5fcb3448f072f201fdd3d17ac244f52b0637bc7eaee565617a6158983370"
+source_hash: "9f2a70dee68fe5a4299201e0eb48a762c01dbef219441e5fb669ddf5d5737f41"
 sequence: 199
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: Computational Topology
 - [Identity evidence](https://www.cdm.depaul.edu/about/Pages/People/facultyinfo.aspx?fid=121)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Normal Surface Theory
+**The paper assumes:** normal surface theory in 3-manifold topology, combinatorial triangulations, crushing operations on normal surfaces
+**Already in this field?** Skip this entirely if you already understand normal surface theory and its applications in 3-manifold triangulations.
+
+This background focuses on Normal Surface Theory, which is essential for understanding the core algorithm in the paper on knot factorisation. The rigorous course option offers a deep, university-level treatment of the subject, while the fast track provides a concise and accessible introduction to key concepts in differential geometry related to surfaces. Choose the course for thorough foundational knowledge or the fast track for a quicker conceptual grasp.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Differential Geometry](https://www.youtube.com/playlist?list=PLU6SqdYcYsfIOXS-rDdFNWQAYZ9C3H2hC) — Dr.Gajendra Purohit · 4 videos · 1.5h across 4 episodes
+
+**Watch only this:** Episodes 1-4, about 1.5 hours — covering curves in space, tangent lines, normal planes, and osculating planes, which provide the geometric intuition needed for normal surface theory.
+
+*Why it unblocks this paper:* This Differential Geometry course by Dr. Gajendra Purohit covers fundamental concepts about curves and surfaces in space, which underpin the combinatorial and topological understanding of normal surfaces used in the paper's algorithm.
+
+*If you want all of it:* 1.5 hours across 4 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [curves on surface(differential Geometry)](https://www.youtube.com/playlist?list=PLaxx3aWWiVjaAum5HU5F9L9IEJcFMYo9f) — SHIKSHA CLASSES · 8 videos · 1.7h across the first 7 episodes
+
+**Watch only this:** Episodes 1-7, about 1.7 hours — covering introduction, parametric transformations, tangent and normal planes, and fundamental forms of curves on surfaces.
+
+*Why it unblocks this paper:* This short series by SHIKSHA CLASSES offers a clear and concise introduction to curves on surfaces and differential geometry basics, providing a quick conceptual foundation relevant to understanding normal surfaces and their role in 3-manifold topology.
+
+*If you want all of it:* 1.7 hours across 7 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

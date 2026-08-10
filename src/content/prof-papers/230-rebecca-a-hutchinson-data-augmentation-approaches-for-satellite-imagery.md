@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-rebecca-a-hutchinson"
-source_hash: "e9fa73837216af1bd14699729c0b68aefa94ea564f3ad6e025d7be8f10c58b5f"
+source_hash: "46bfea7e5e03a3368e83186f731e2ce934b7867a903f3c496cef65c3e972664d"
 sequence: 230
 generator: "outreach-garden: managed"
 ---
@@ -51,6 +51,38 @@ Research interests: My research is at the intersection of machine learning and e
 - [Google Scholar](https://scholar.google.com/citations?user=1pnbx9QAAAAJ&hl=en)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Deep learning for computer vision
+**The paper assumes:** convolutional neural networks, transfer learning, image data augmentation, supervised learning for image classification and regression
+**Already in this field?** Skip this entirely if you already understand convolutional neural networks and their application to image tasks including transfer learning and augmentation.
+
+This background focuses on deep learning for computer vision, essential for understanding convolutional neural networks, transfer learning, and data augmentation techniques used in the paper on satellite imagery. The rigorous course option provides a comprehensive, structured university-level lecture series, while the fast track offers a shorter, more concise lecture series covering core concepts efficiently. Choose the rigorous course for deep mastery or the fast track for a quicker, yet solid, grounding.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS231N Deep Learning for Computer Vision I 2025](https://www.youtube.com/playlist?list=PLoROMvodv4rOmsNzYBMe0gJY2XS8AQg16) — Stanford Online · 18 videos · 21.2h across 18 episodes
+
+**Watch only this:** Lectures 1 through 6 (Introduction, Image Classification with Linear Classifiers, Regularization and Optimization, Neural Networks and Backpropagation, Image Classification with CNNs, CNN Architectures), about 7 hours — these cover the fundamentals of CNNs, transfer learning, and augmentation necessary to understand the paper's approach.
+
+*Why it unblocks this paper:* Stanford CS231N Deep Learning for Computer Vision I 2025 is a top-tier university course that thoroughly covers CNN architectures, image classification, transfer learning, and augmentation strategies, directly relevant to the paper's methodology and experimental design.
+
+*If you want all of it:* About 21.2 hours across all 18 episodes.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Deep Learning for Computer Vision](https://www.youtube.com/playlist?list=PL5-TkQAfAZFbzxjBHtzdVCWE0Zbhomg7r) — Michigan Online · 22 videos · 25.7h across 22 episodes
+
+**Watch only this:** Lectures 1 through 8 (Introduction to Deep Learning for Computer Vision, Image Classification, Linear Classifiers, Optimization, Neural Networks, Backpropagation, Convolutional Networks, CNN Architectures), about 9.3 hours — these cover the core deep learning and CNN concepts relevant to the paper.
+
+*Why it unblocks this paper:* Michigan Online's Deep Learning for Computer Vision playlist offers clear, concise lectures on CNNs, image classification, and training strategies, providing a solid and efficient overview of the key concepts needed to grasp the paper's use of ResNet18 and augmentation.
+
+*If you want all of it:* About 25.7 hours across all 22 episodes.
 
 ## Track 1 — Academic deep-dives (long-form)
 

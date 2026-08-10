@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-tom-silver"
-source_hash: "a0d85e618829c0567e9b1df28e06111d3cc1230eb54fb47b1fc5756d5b87f391"
+source_hash: "429b19029e9e4f29f7a3a2884107173a79291fe25ddce3cc1f5696e5c2885572"
 sequence: 218
 generator: "outreach-garden: managed"
 ---
@@ -55,6 +55,38 @@ Research interests: automated planning, machine learning, robot caregiving
 - [GitHub](https://github.com/tomsilver/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Probabilistic Graphical Models
+**The paper assumes:** probabilistic graphical models, Bayesian inference, causal modeling, variational inference
+**Already in this field?** Skip this entirely if you already understand probabilistic graphical models and Bayesian inference methods for causal process learning.
+
+This background focuses on probabilistic graphical models, which are essential for understanding the paper's approach to learning and reasoning with abstract symbolic world models involving causal processes and temporal dynamics. The rigorous course option provides a deep, structured university-level treatment of Bayesian networks and inference techniques, while the fast track offers a concise, intuition-driven explainer series to quickly grasp the core concepts. Choose the lane that fits your available time and depth needs; the fast track is a focused introduction, not a watered-down version.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Learning and Reasoning with Bayesian Networks](https://www.youtube.com/playlist?list=PLlDG_zCuBub6ywAIrM1DfJp8xaeVjyvwx) — UCLA Automated Reasoning Group · 36 videos · 22.2h across 36 episodes
+
+**Watch only this:** Episodes 2a, 2b, 3a, 3b, 4a, 4b, 6a, 6b, 11a, 11b, 12a, 12b — about 8.5 hours total. This subset covers probability calculus, Bayesian network fundamentals, inference methods, and learning parameters and structure, which are critical for understanding the paper's methodology.
+
+*Why it unblocks this paper:* This UCLA course by Adnan Darwiche covers Bayesian networks comprehensively, including syntax, semantics, independence, inference algorithms, and learning parameters and structure, directly supporting the paper's use of variational Bayesian inference and model structure learning.
+
+*If you want all of it:* 22.2 hours across 36 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [probabilistic graphical models](https://www.youtube.com/playlist?list=PLQl7D2xuMMNq5lj52YpCjGvgOrjvX4h5G) — Danai Triantafyllidou · 10 videos · 2.4h across 10 episodes
+
+**Watch only this:** Episodes 1 through 6 — about 1.5 hours total. These episodes cover foundational models and reasoning patterns needed to grasp the basics of probabilistic graphical models used in the paper.
+
+*Why it unblocks this paper:* This short series by Danai Triantafyllidou provides clear, Stanford-based explanations of key probabilistic graphical model concepts such as CRFs, Markov networks, HMMs, and reasoning patterns, offering a quick yet solid foundation relevant to the paper's focus on symbolic state representations and causal processes.
+
+*If you want all of it:* 2.4 hours across 10 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

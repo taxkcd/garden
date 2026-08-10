@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-hank-korth"
-source_hash: "ff6bf6a8b5f32067d2539619229c72b4f2c3af4a4e4aba5bed5e79b5cd899374"
+source_hash: "90a86c97c45d1372b2d1e2f09ad2090422766d21826db5e22cdd7f55a1017379"
 sequence: 232
 generator: "outreach-garden: managed"
 ---
@@ -49,6 +49,38 @@ This paper presents CroCoDai, a novel stablecoin system designed to facilitate e
 - [Faculty/profile page](http://www.cse.lehigh.edu/~korth)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** blockchain systems and cross-chain protocols
+**The paper assumes:** blockchain architecture, consensus protocols, cross-chain communication mechanisms, and decentralized finance primitives
+**Already in this field?** Skip this entirely if you already understand blockchain system design, consensus algorithms, and cross-chain interoperability protocols.
+
+To understand CroCoDai's design and analysis of a multi-chain stablecoin system, it is essential to grasp blockchain architecture, consensus mechanisms, and cross-chain communication protocols. The rigorous course provides a deep, structured foundation suitable for thorough comprehension, while the fast track offers a concise, accessible introduction to core blockchain concepts and decentralized finance essentials. Choose the rigorous lane for detailed technical depth and the fast track for a quick, intuitive overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [MIT MAS.S62 Cryptocurrency Engineering and Design, Spring 2018](https://www.youtube.com/playlist?list=PLUl4u3cNGP61KHzhg3JIJdK08JLSlcLId) — MIT OpenCourseWare · 20 videos · 24.8h across 20 episodes
+
+**Watch only this:** Lectures 1 through 14, about 17.3 hours — covering signatures, proof of work, transactions, synchronization, wallets, forks, fees, transaction malleability, payment channels, and cross-chain swaps to build a solid foundation for cross-chain protocols.
+
+*Why it unblocks this paper:* MIT's MAS.S62 Cryptocurrency Engineering and Design course covers blockchain fundamentals, consensus, cross-chain swaps, and advanced topics like payment channels and discreet log contracts, directly relevant to understanding CroCoDai's relay chain design and cross-chain stablecoin mechanisms.
+
+*If you want all of it:* All 20 episodes, about 24.8 hours.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Complete Blockchain Course | Beginner to Expert | EduTube](https://www.youtube.com/playlist?list=PLTgj1ytGKarX7RRbMvN2hUuwOqzZeLSSG) — EduTube · 40 videos · 5.6h across the first 39 episodes
+
+**Watch only this:** Episodes 1 through 22, about 3 hours — covering blockchain basics, consensus mechanisms, smart contracts, decentralized applications, and DeFi essentials to quickly grasp the ecosystem CroCoDai operates in.
+
+*Why it unblocks this paper:* EduTube's Complete Blockchain Course offers a clear, beginner-friendly series that explains blockchain basics, consensus, smart contracts, and decentralized finance concepts, providing a quick yet comprehensive overview relevant to CroCoDai's context.
+
+*If you want all of it:* All 39 episodes, about 5.6 hours.
 
 ## Track 1 — Academic deep-dives (long-form)
 

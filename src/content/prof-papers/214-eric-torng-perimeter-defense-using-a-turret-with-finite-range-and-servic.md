@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-eric-torng"
-source_hash: "74fbb6ae4060414f041c57e74743f1ce61763a435816ef72a30de9d0f0661fa2"
+source_hash: "98893a9b1ca7585c8fd679c5ee9127b2aa93702db1f5089e7d96ba643e1e1d1e"
 sequence: 214
 generator: "outreach-garden: managed"
 ---
@@ -54,6 +54,27 @@ Research interests: Algorithms, On-Line Algorithms, Scheduling, Perimeter Defens
 - [Identity evidence](http://www.cse.msu.edu/~torng/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Online algorithms and competitive analysis
+**The paper assumes:** online algorithms, competitive analysis, approximation algorithms, algorithmic game theory
+**Already in this field?** Skip this entirely if you already understand the basics of online algorithms and how competitive ratios measure their performance.
+
+This background focuses on online algorithms and competitive analysis, which are central to understanding the design and evaluation of turret defense strategies against intruders arriving over time in the paper. The rigorous course option offers a deep, university-level treatment of online algorithms with formal proofs and broad coverage, while the fast track provides a concise, intuition-driven series that covers key concepts and classic problems efficiently. Choose the course for a thorough foundation or the fast track for a quicker, concept-focused introduction.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Online algorithms](https://www.youtube.com/playlist?list=PLn83WpoA-HnY2n3Ao9RCywj8T7vMDHX_j) — Szabolcs Iván · 27 videos · 17.2h across 27 episodes
+
+**Watch only this:** Episodes 1 to 3 (Online algorithms intro, the Ski Rental Problem, competitive ratio and A_B; The optimality of the algorithm A_B; The paging problem - deterministic algorithms), about 1 hour 55 minutes — these provide a quick yet solid grasp of core concepts and classic examples.
+
+*Why it unblocks this paper:* This concise playlist by Szabolcs Iván offers clear, visual explanations of online algorithms and competitive analysis, including classic problems like ski rental and paging, which are directly relevant to the paper's online algorithmic techniques and competitive ratio results.
+
+*If you want all of it:* All 27 episodes, about 17.2 hours
 
 ## Track 1 — Academic deep-dives (long-form)
 

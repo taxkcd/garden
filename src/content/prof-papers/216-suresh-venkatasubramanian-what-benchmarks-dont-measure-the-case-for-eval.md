@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-suresh-venkatasubramanian"
-source_hash: "5404430ce84bb95754d788e7ab4379dd0dd5ac97469c73590ec132030eb9d62d"
+source_hash: "e911bba0f8e7f5244f83f144c40e8eabc50483dc715b2ada9f3f7af27661b5d2"
 sequence: 216
 generator: "outreach-garden: managed"
 ---
@@ -51,6 +51,38 @@ Research interests: algorithmic fairness, the impact of automated decision-makin
 - [Faculty/profile page](https://vivo.brown.edu/display/suresh)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Reinforcement Learning with Human Feedback
+**The paper assumes:** reinforcement learning with human feedback, reward modeling, policy optimization
+**Already in this field?** Skip this entirely if you already understand reinforcement learning frameworks that incorporate human feedback and reward modeling.
+
+This background focuses on Reinforcement Learning with Human Feedback (RLHF), which is central to understanding the compliance bias in autonomous agents discussed in the paper. The rigorous course option provides a deep, structured university-level introduction to deep reinforcement learning and reward learning, including RLHF. The fast track offers a concise, clear explainer series specifically on RLHF and related methods for fine-tuning large language models, suitable for quickly grasping the core concepts without extensive time investment.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS224R Deep Reinforcement Learning](https://www.youtube.com/playlist?list=PLoROMvodv4rPwxE0ONYRa_itZFdaKCylL) — Stanford Online · 19 videos · 20.6h across 19 episodes
+
+**Watch only this:** Lectures 8 (Reward Learning), 9 (RL for LLMs), and 10 (RL for LLM Reasoning), about 3.25 hours total — these focus on reward models and RLHF relevant to compliance bias and abstention competence.
+
+*Why it unblocks this paper:* Stanford CS224R Deep Reinforcement Learning covers foundational and advanced RL topics including reward learning and RL for LLMs, directly supporting understanding of RLHF and compliance bias mechanisms in the paper.
+
+*If you want all of it:* 20.6 hours across all 19 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Reinforcement Learning for LLMs](https://www.youtube.com/playlist?list=PLs8w1Cdi-zvbUan-KlgwKN2CycndyKXXS) — Luis Serrano Academy · 6 videos · 2.5h across 6 episodes
+
+**Watch only this:** Episodes 1 (Reinforcement Learning with Human Feedback) and 2 (Proximal Policy Optimization), about 50 minutes total — these cover the essentials of RLHF and training methods relevant to the paper's focus.
+
+*Why it unblocks this paper:* Luis Serrano Academy's 'Reinforcement Learning for LLMs' playlist offers a concise, well-structured introduction to RLHF and related fine-tuning techniques, providing a quick yet clear understanding of the core concepts behind human-feedback reward models.
+
+*If you want all of it:* 2.5 hours across all 6 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-deeparnab-chakrabarty"
-source_hash: "7f6e5fc4309b118f691f38a936fe4847fe467212de58946c862be5500c62dbf1"
+source_hash: "83b16beb35f600c5c96686b24467e75de36c1b6a1eb7180074edcbe46253dd30"
 sequence: 233
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,38 @@ Research interests: understanding the efficiency and limitations of algorithms, 
 - [Resolved homepage](http://web.cs.dartmouth.edu/~deepc/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Parameterized Complexity Theory
+**The paper assumes:** parameterized complexity theory, fixed-parameter tractability, W-hierarchy, parameterized reductions, approximation algorithms in parameterized complexity
+**Already in this field?** Skip this entirely if you already understand the basics of parameterized complexity theory and fixed-parameter tractability.
+
+This background focuses on Parameterized Complexity Theory, which is crucial for understanding the hardness results, fixed-parameter tractability, and approximation schemes presented in the paper on clustering with varying metrics. The rigorous course provides a deep and structured exploration of parameterized algorithms and complexity, while the fast track offers a concise, intuition-driven introduction to computational complexity concepts relevant to the paper's hardness proofs and reductions. Choose the course for a thorough theoretical foundation or the fast track for a quicker conceptual overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Parameterized Algorithms](https://www.youtube.com/playlist?list=PLyqSpQzTE6M_0KLR2_FVBN4Rnvq_PlcrA) — NPTEL-NOC IITM · 51 videos · 35.9h across 51 episodes
+
+**Watch only this:** mod01lec01 - Invitation to FPT, mod01lec02 - Formalizing FPT, mod01lec03 - Kernelization: High Degree Rule, mod01lec04 - Kernelization: d-Hitting Set, mod01lec05 - Kernelization: Crown Reduciton, mod01lec06 - Kernelization: Nemhauser-Trotter and Expansion Lemma, mod05lec22 - Towards Defining Treewidth, mod05lec23 - Treewidth and Constructing Treedecomposition of Few Graph Classes; about 6 hours total
+
+*Why it unblocks this paper:* This NPTEL-NOC IITM course on Parameterized Algorithms covers foundational concepts such as FPT, kernelization, branching, and treewidth, directly relevant to the paper's parameterized hardness and algorithmic results.
+
+*If you want all of it:* 35.9 hours across 51 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Computational Complexity Lectures](https://www.youtube.com/playlist?list=PLdUzuimxVcC0DENcdT8mfhI3iRRJLVjqH) — Computer Science Theory Explained · 90 videos · 7.9h across the first 60 episodes
+
+**Watch only this:** Episodes 1-20 covering Complexity Theory Introduction through NP-Completeness and Reductions; about 2.5 hours total
+
+*Why it unblocks this paper:* This playlist by Computer Science Theory Explained provides clear, concise videos on computational complexity theory, including NP-completeness and reductions, which underpin the paper's hardness proofs and complexity-theoretic context.
+
+*If you want all of it:* 7.9 hours across the first 60 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

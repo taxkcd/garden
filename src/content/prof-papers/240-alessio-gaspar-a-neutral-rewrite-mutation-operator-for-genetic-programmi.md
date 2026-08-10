@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-alessio-gaspar"
-source_hash: "f5c19775bc2f1cf3115bde4b853fd9d7f28c7bf7022ddfbbdf134f5f343b097f"
+source_hash: "f7805249fa7f0a4799f380b52175940363dff2608b79e0bc8b75394a607fa583"
 sequence: 240
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: Computing Education & Evolutionary Algorithms
 - [Resolved homepage](https://cereal-lab.github.io/#AlessioGaspar)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Boolean algebra and logic
+**The paper assumes:** Boolean algebra laws, logical equivalences, Boolean functions and expressions
+**Already in this field?** Skip this entirely if you already understand Boolean algebra laws and how logical expressions can be equivalently transformed.
+
+To understand the Neutral Rewrite Operator in genetic programming applied to Boolean domain problems, a solid grasp of Boolean algebra laws and logical equivalences is essential. The rigorous course option offers a deep, structured introduction to algorithms including foundational concepts relevant to Boolean logic, while the fast track provides concise, focused explanations of Boolean algebra and its laws, ideal for quickly grasping the core concepts needed to follow the paper's methods.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [MIT 6.006 Introduction to Algorithms, Spring 2020](https://www.youtube.com/playlist?list=PLUl4u3cNGP63EdVPNLG3ToM6LaEUuStEY) — MIT OpenCourseWare · 32 videos · 35.3h across 32 episodes
+
+**Watch only this:** Episodes 1 to 4 ("Algorithms and Computation", "Data Structures and Dynamic Arrays", "Introduction to Algorithms - Problem Session 1", "Sets and Sorting"), about 4.5 hours — these cover foundational concepts of sets and computation relevant to Boolean algebra and algorithmic manipulation.
+
+*Why it unblocks this paper:* MIT 6.006 Introduction to Algorithms covers fundamental algorithmic concepts including sets and sorting, binary trees, and dynamic programming, which underpin understanding of Boolean functions and their manipulation in genetic programming. This rigorous course provides a strong theoretical foundation relevant to the paper's use of Boolean algebra in mutation operators.
+
+*If you want all of it:* 35.3 hours across 32 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Logic Gates, Truth Tables, Boolean Algebra   AND, OR, NOT, NAND & NOR by The Organic Chemistry Tutor](https://www.youtube.com/playlist?list=PLRvbt2kZiDZTb0Th01Mvm1KpaRx0u1P3-) — duvetray · 11 videos · 3.2h across 11 episodes
+
+**Watch only this:** Episodes 1, 5, 6, and 7 ("Logic Gates, Truth Tables, Boolean Algebra   AND, OR, NOT, NAND & NOR", "Boolean Algebra Basics and Example Problem", "Boolean Algebra in 13 Minutes", "The Laws of Boolean Algebra Explained"), about 1 hour total — these episodes focus on the core Boolean algebra laws and examples needed to understand neutral rewrites.
+
+*Why it unblocks this paper:* This playlist by The Organic Chemistry Tutor provides clear, concise explanations of Boolean algebra laws, logic gates, and simplification techniques, directly covering the Boolean algebra axioms and transformations that the Neutral Rewrite Operator relies on.
+
+*If you want all of it:* 3.2 hours across 11 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

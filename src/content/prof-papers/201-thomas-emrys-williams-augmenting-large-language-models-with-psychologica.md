@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-thomas-emrys-williams"
-source_hash: "5ec5ddbf67d292b6cdefefecca6938df779e0e62b56d4630bac8fcf94a62b25f"
+source_hash: "4f56d00032ed4769c3ff8a54bee86555795ca7cbe595a7f69070f60c7c020199"
 sequence: 201
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,38 @@ Research interests: Human-Robot Interaction, Natural Language Understanding and 
 - [Social profile](https://twitter.com/williamstome)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Partially Observable Markov Decision Processes
+**The paper assumes:** Markov decision processes, partial observability, belief state updates, and sequential decision-making under uncertainty
+**Already in this field?** Skip this entirely if you already understand POMDP theory, belief state representations, and planning algorithms for partially observable environments.
+
+This background focuses on Partially Observable Markov Decision Processes (POMDPs), which are central to understanding how the paper models planning under uncertainty and integrates human causal reasoning with LLMs. The rigorous course option offers a detailed university lecture series on decision-making under uncertainty, including POMDPs, suitable for deep technical understanding. The fast track provides a concise, focused introduction to POMDPs and related concepts using a well-structured short playlist, ideal for quickly grasping the essentials without extensive time investment.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Decision-making under Uncertainty (Spring 2026), Technical University of Denmark (DTU)](https://www.youtube.com/playlist?list=PLwngpBwa_6_IGlQ3v00Qm1YZXfODHpJHf) — Georgios (George) Tsaousoglou · 21 videos · 12.0h across 21 episodes
+
+**Watch only this:** Lectures 2a (Decision Making under Uncertainty - Markov Decision Processes), 3a (Agent, Environment & Model Predictive Control), and 3b (Model Predictive Control), totaling about 1.7 hours — these cover MDPs, POMDPs, and planning under uncertainty relevant to the paper's approach.
+
+*Why it unblocks this paper:* This Technical University of Denmark course covers decision-making under uncertainty comprehensively, including Markov Decision Processes and POMDPs, providing the rigorous mathematical and conceptual foundation needed to understand the paper's formulation of planning tasks as POMDPs.
+
+*If you want all of it:* All 21 lectures, approximately 12 hours, for a comprehensive understanding of decision-making under uncertainty and related optimization techniques.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Decision Making Under Uncertainty using POMDPs.jl](https://www.youtube.com/playlist?list=PLP8iPy9hna6QPqk4N8eBk0oXzLrLbOtTA) — The Julia Programming Language · 8 videos · 2.1h across 8 episodes
+
+**Watch only this:** Episodes 1 to 3 (Introduction to Decision Making Under Uncertainty using POMDPs.jl, MDPs: Markov Decision Processes, and POMDPs: Partially Observable Markov Decision Processes), about 45 minutes total — these episodes cover the foundational concepts needed to understand the paper's modeling framework.
+
+*Why it unblocks this paper:* This short-form series from The Julia Programming Language channel provides a clear and concise introduction to POMDPs and related decision-making concepts, ideal for quickly grasping the core ideas behind the paper's use of POMDPs in planning under uncertainty.
+
+*If you want all of it:* All 8 episodes, about 2.1 hours, for a broader overview including approximate methods and reinforcement learning.
 
 ## Track 1 — Academic deep-dives (long-form)
 

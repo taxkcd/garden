@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-sujoy-sikdar"
-source_hash: "def18b1ade7c5e1d29f370cbce4de2387ac5e8e22c364a476be97bf1244ad256"
+source_hash: "1c05e26b98f544f6b6c6901361529c553b070c2e586a7eb0410532c3ec513ed1"
 sequence: 226
 generator: "outreach-garden: managed"
 ---
@@ -59,6 +59,38 @@ Research interests: Artificial Intelligence, Computational Social Choice, Mechan
 - [LinkedIn](https://www.linkedin.com/pub/sujoy-sikdar/20/465/651)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Mechanism Design and Social Choice
+**The paper assumes:** mechanism design, social choice theory, strategyproofness, fairness in allocation, Pareto-efficiency
+**Already in this field?** Skip this entirely if you already have a solid understanding of mechanism design and social choice theory, including key fairness and efficiency concepts in resource allocation.
+
+To understand the key concepts in this paper on mechanism design and social choice, especially the new efficiency property FERI and the design of fair and strategyproof allocation mechanisms, foundational knowledge in mechanism design, fairness, and strategyproofness is essential. The rigorous course option offers a deep, university-level treatment of these topics, while the fast track provides a concise, accessible introduction to the core ideas for quicker preparation. Choose the rigorous course if you want a thorough theoretical grounding; choose the fast track if you need a focused overview that covers the essentials efficiently.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Advanced Mechanism Design (Stanford CS364B, Winter 2014)](https://www.youtube.com/playlist?list=PLEGCF-WLh2RI77PL4gwLld_OU9Zh3TCX9) — Tim Roughgarden Lectures · 21 videos · 25.1h across 21 episodes
+
+**Watch only this:** Lectures 1-5, about 6 hours — covering incentive compatible mechanisms, unit-demand bidders, and foundational auction theory to grasp strategyproofness and efficiency concepts.
+
+*Why it unblocks this paper:* This Stanford course by Tim Roughgarden covers advanced topics in mechanism design including incentive compatibility, efficiency, and fairness notions, which are directly relevant to understanding the theoretical foundations and proofs in the paper.
+
+*If you want all of it:* All 21 lectures, about 25.1 hours — for a comprehensive understanding of advanced mechanism design.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Social Network Analysis](https://www.youtube.com/playlist?list=PLY_5Saa90gdp73VxK4Y8K8IO6pQacXEUE) — Leaders' Decision-Making Lab · 37 videos · 8.7h across 37 episodes
+
+**Watch only this:** Episodes 1-5, about 1.2 hours — covering introduction, random networks, graph theory, and decision making to quickly grasp relevant social choice concepts.
+
+*Why it unblocks this paper:* This Social Network Analysis playlist provides clear, concise explanations of social choice and decision-making concepts, including fairness and collective behavior, which help build intuition about fairness and efficiency in allocation mechanisms.
+
+*If you want all of it:* All 37 episodes, about 8.7 hours — for a broader understanding of social network influences on decision making and fairness.
 
 ## Track 1 — Academic deep-dives (long-form)
 

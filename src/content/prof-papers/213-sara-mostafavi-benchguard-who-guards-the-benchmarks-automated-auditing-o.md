@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-sara-mostafavi"
-source_hash: "aee75738bb520cdb25897dfa0ff3e13a140fdd1ff544c46f91df78a1ea5a60b6"
+source_hash: "5d9fd200b190f11152b8021ccb412a8bf818d03df0aab93e6c6f9f70a07bea7d"
 sequence: 213
 generator: "outreach-garden: managed"
 ---
@@ -55,6 +55,38 @@ Research interests: machine learning, statistical methods, biology, human health
 - [Google Scholar](https://scholar.google.ca/citations?user=nBL0J6kAAAAJ&hl=en)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Benchmarking and Evaluation of AI Agents
+**The paper assumes:** AI agent benchmarking methodologies, execution-based evaluation frameworks, and benchmark validation techniques
+**Already in this field?** Skip this entirely if you already understand how AI agent benchmarks are designed, executed, and evaluated in research settings.
+
+To understand BENCHGUARD's approach to auditing execution-based AI agent benchmarks, it is crucial to grasp how AI agents are designed, evaluated, and benchmarked. The rigorous course offers a deep dive into agentic AI concepts, safety, evaluation, and multi-agent systems, providing a comprehensive foundation. The fast track playlist distills key ideas about generative AI, LLM engineering, and agent evaluation into concise, accessible episodes, ideal for quickly building relevant intuition without extensive time investment.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Agentic AI MOOC Fall 2025](https://www.youtube.com/playlist?list=PLS01nW3RtgoqGkm4UeqNeZLccW-OGc1fJ) — Berkeley RDI · 11 videos · 12.9h across 11 episodes
+
+**Watch only this:** Episodes 1-6, about 7 hours — covering Agentic AI Safety & Security, Autonomous Agents, Multi-Agent Systems in the Era of LLMs, Practical Lessons from Deploying Agents, AI Agents to Automate Science, and Predictable Noise in LLM Benchmarks. These provide a solid understanding of AI agent design, evaluation challenges, and benchmark noise.
+
+*Why it unblocks this paper:* This UC Berkeley Agentic AI MOOC covers foundational and advanced topics on autonomous AI agents, their evaluation, safety, and deployment, directly aligning with BENCHGUARD's focus on auditing AI agent benchmarks and ensuring reliable evaluation.
+
+*If you want all of it:* All 11 episodes, about 12.9 hours
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Complete Generative AI & LLM Engineering Roadmap | RAG, Agents, Prompting & Evaluation](https://www.youtube.com/playlist?list=PLmrFPCs2deci6UyaaPUn3k5oS1QjTZqsn) — SmartSkale · 15 videos · 1.8h across 15 episodes
+
+**Watch only this:** Episodes 9-11, about 21 minutes — covering GenAI Evaluation & LLM Benchmarking for Production, AI Agents Explained, and Agent Evaluation & Observability in Production AI. These episodes provide a quick but focused overview of evaluation and auditing concepts relevant to BENCHGUARD.
+
+*Why it unblocks this paper:* This playlist from SmartSkale offers a concise, well-structured introduction to generative AI, LLM architectures, prompt engineering, hallucination mitigation, and crucially, evaluation and benchmarking of AI agents, matching the paper's focus on automated auditing and defect detection.
+
+*If you want all of it:* All 15 episodes, about 1.8 hours
 
 ## Track 1 — Academic deep-dives (long-form)
 

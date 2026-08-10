@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-lorenzo-orecchia"
-source_hash: "e214a1f532fbfce2b09923636f495baf9ca2f5fc168cdfa8b42f24957dc558ae"
+source_hash: "9c7f4ccf08ab68559f47c62dc33de3ff7fe67afe89880947f825ec123cd8ae34"
 sequence: 212
 generator: "outreach-garden: managed"
 ---
@@ -51,6 +51,27 @@ Research interests: Theoretical Computer Science, Machine Learning and Mathemati
 - [Faculty/profile page](https://orecchia.net)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Riemannian geometry
+**The paper assumes:** differential geometry of smooth manifolds, Riemannian metrics, geodesics, exponential maps, parallel transport, and coordinate charts
+**Already in this field?** Skip this entirely if you already have a solid undergraduate or beginning graduate-level understanding of Riemannian geometry and differential geometry of manifolds.
+
+This background focuses on Riemannian geometry, which is essential for understanding the manifold representations, differential-geometric primitives, and optimization techniques introduced in the paper. The rigorous course option offers a detailed, university-level treatment of Riemannian geometry, suitable for deep theoretical grounding. The fast track provides a concise, intuition-driven introduction to the key concepts, ideal for quickly gaining the necessary background without extensive time investment.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Riemannian geometry](https://www.youtube.com/playlist?list=PLXo8Tdaw0czMUXXjezMP98FlwpG4LAThj) — What is Math? · 9 videos · 2.0h across 9 episodes
+
+**Watch only this:** Episodes 0-5, about 1.3 hours — covering overview, Riemannian metrics, unit sphere and hyperbolic space, connections, and geodesics, sufficient for grasping the key geometric concepts used in the paper.
+
+*Why it unblocks this paper:* This short-form series provides clear, visual explanations of Riemannian geometry concepts such as metrics, manifolds, geodesics, and curvature, offering an accessible yet rigorous overview that aligns well with the paper's focus on Riemannian optimization.
+
+*If you want all of it:* 2.0 hours across 9 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-kavita-bala"
-source_hash: "ded66d1a0400416c38af2cf0583df176e3b1201965451455da43d7d9f61cac5a"
+source_hash: "88e1f5751ca406c37157ab11bdfbcfc06bee8d7c7cd938a2a0e98e6e999ee596"
 sequence: 222
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: My research interests span computer vision, computer graphic
 - [Resolved homepage](http://www.cs.cornell.edu/~kb/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Multimodal Machine Learning
+**The paper assumes:** multimodal machine learning, visual question answering, large language model fine-tuning
+**Already in this field?** Skip this entirely if you already understand how machine learning models jointly process and learn from multiple data modalities like images and text.
+
+This background focuses on multimodal machine learning, essential for understanding how the MONITRS paper integrates satellite imagery and natural language for disaster monitoring. The rigorous course option offers a deep, structured dive into multimodal learning concepts and techniques, while the fast track provides a concise, accessible introduction to the core ideas and challenges in multimodal machine learning. Choose the course for comprehensive mastery or the fast track for a quick yet solid grounding.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [CMU Fall 2023 Multimodal Machine Learning course (11-777)](https://www.youtube.com/playlist?list=PL-Fhd_vrvisMYs8A5j7sj8YW1wHhoJSmW) — LP Morency · 18 videos · 20.1h across the first 17 episodes
+
+**Watch only this:** Lectures 1.1 - Introduction, 1.2 - Multimodal Research Task, 3.1 - Multimodal Representation Fusion, 4.1 - Multimodal Alignment, 5.1 - Multimodal Transformers - Part1, and 7.1 - Multimodal Interaction; about 7 hours total. This subset covers the core multimodal concepts, fusion methods, alignment, and transformer architectures critical to understanding the paper's methodology.
+
+*Why it unblocks this paper:* This is a recent, authoritative Carnegie Mellon University course on multimodal machine learning taught by LP Morency, covering foundational concepts, representations, alignment, transformers, and reasoning—directly relevant to the multimodal fusion and fine-tuning techniques used in MONITRS.
+
+*If you want all of it:* About 20.1 hours across the first 17 episodes.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Ms. Coffee Bean's Multimodalities](https://www.youtube.com/playlist?list=PLpZBeKTZRGPNKxoNaeMD9GViU_aH_HJab) — AI Coffee Break with Letitia · 15 videos · 2.7h across 15 episodes
+
+**Watch only this:** Episodes 1 - What nobody tells you about MULTIMODAL Machine Learning! 🙊 THE definition, 2 - Transformer combining Vision and Language? ViLBERT - NLP meets Computer Vision, 3 - Pre-training of BERT-based Transformer architectures explained – language and vision!, and 4 & 5 - Multimodal Machine Learning models do not work. Here is why. Parts 1 and 2; about 50 minutes total. This selection covers definitions, key model architectures, and challenges relevant to MONITRS.
+
+*Why it unblocks this paper:* This concise series by AI Coffee Break with Letitia provides clear, focused explainers on multimodal machine learning fundamentals, transformer-based vision and language models, and challenges in the field, offering a quick yet insightful overview aligned with the paper's multimodal approach.
+
+*If you want all of it:* About 2.7 hours across all 15 episodes.
 
 ## Track 1 — Academic deep-dives (long-form)
 

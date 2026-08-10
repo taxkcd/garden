@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-gopal-gupta"
-source_hash: "60bd1aa323af0a08872ccecc76262efe05cbf0a9bd485c934cd0b0cd8d602194"
+source_hash: "dda77f090f47a382b60cfb610aa3b9254bf81c2b1fbbca01aaf845e9a6645eeb"
 sequence: 235
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,27 @@ Research interests: Artificial Intelligence: Knowledge Representation, Common Se
 - [Lab website](http://www.utdallas.edu/%7Egupta/labpage/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Neuro-Symbolic AI and Logic Programming
+**The paper assumes:** neuro-symbolic AI, logic programming, answer set programming, symbolic rule learning
+**Already in this field?** Skip this entirely if you already understand neuro-symbolic AI frameworks and logic programming concepts including Answer Set Programming.
+
+To understand this paper's core methodology of extracting symbolic rules from Vision Transformers using logic programming and neuro-symbolic AI, background in neuro-symbolic AI and logic programming is essential. The rigorous course option provides a comprehensive university-level introduction to neuro-symbolic AI concepts, while the fast track offers a concise, visual introduction to Prolog programming, a foundational logic programming language relevant to the symbolic reasoning used in the paper. Choose the course for depth and breadth, or the fast track for a quick, focused primer on logic programming fundamentals.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Java Math & Physics Animation – Visual Logic Series](https://www.youtube.com/playlist?list=PLzYds4uKbUDXLjg559bqFJ7MUF_iWAx-c) — Programming of Life · 19 videos · 5.1h across 19 episodes
+
+**Watch only this:** Episodes 4-6, about 45 minutes — focusing on visual logic animations and smart traffic light optimization that illustrate logic programming concepts and reasoning.
+
+*Why it unblocks this paper:* The 'Java Math & Physics Animation – Visual Logic Series' provides visually intuitive explanations of logic and programming concepts, supporting quick understanding of symbolic reasoning and logic programming principles relevant to the paper's neuro-symbolic framework.
+
+*If you want all of it:* All 19 episodes, about 5.1 hours
 
 ## Track 1 — Academic deep-dives (long-form)
 

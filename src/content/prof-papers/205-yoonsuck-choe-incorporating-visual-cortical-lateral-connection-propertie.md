@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-yoonsuck-choe"
-source_hash: "809b7d31e6cc1e923f8183f006b2af384ed3c7467f75c81120aa1e57d7fccb71"
+source_hash: "a2429c688dbd723280789d5ad34389965c9275c70b4fc6576076ec01dc01f5ff"
 sequence: 205
 generator: "outreach-garden: managed"
 ---
@@ -55,6 +55,38 @@ Research interests: computational neuroscience, brain imaging and analysis, neur
 - [GitHub](https://github.com/yschoe)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Neural Networks and Deep Learning
+**The paper assumes:** convolutional neural networks, recurrent neural networks, excitatory and inhibitory neural mechanisms, backpropagation, and neural network training
+**Already in this field?** Skip this entirely if you already have a solid understanding of convolutional neural networks and their training dynamics.
+
+To understand the paper's contributions on incorporating biologically inspired lateral connections into CNNs, a solid grasp of convolutional neural networks, recurrent activations, and excitatory/inhibitory dynamics is essential. The rigorous course option offers a comprehensive, in-depth university lecture series on CNNs and related neural network concepts, while the fast track provides a concise, well-structured specialization series that covers neural networks and CNN fundamentals efficiently. Choose the rigorous course for deep mastery and the fast track for a focused, time-efficient overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Lecture Collection | Convolutional Neural Networks for Visual Recognition (Spring 2017)](https://www.youtube.com/playlist?list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv) — Stanford University School of Engineering · 16 videos · 19.5h across 16 episodes
+
+**Watch only this:** Lectures 1 through 10, about 12.2 hours — covering Introduction to CNNs, Image Classification, Loss Functions, Neural Networks basics, CNNs, Training Neural Networks, and Recurrent Neural Networks to grasp both CNN fundamentals and recurrent activation concepts.
+
+*Why it unblocks this paper:* This Stanford University course covers convolutional neural networks in detail, including recurrent neural networks and CNN architectures, which directly relate to the paper's focus on lateral connections and recurrent activation in CNNs. The lectures provide foundational knowledge and advanced insights necessary to understand the model design and biological inspirations.
+
+*If you want all of it:* 19.5 hours across all 16 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Convolutional Neural Networks (Course 4 of the Deep Learning Specialization)](https://www.youtube.com/playlist?list=PLkDaE6sCZn6Gl29AoE31iwdVwSG-KnDzF) — DeepLearningAI · 42 videos · 6.0h across 42 episodes
+
+**Watch only this:** Episodes C4W1L01 through C4W1L08, about 1.1 hours — covering Computer Vision introduction, Edge Detection, Padding, Strided Convolutions, Convolutions Over Volumes, One Layer of a Conv Net, and a Simple CNN example.
+
+*Why it unblocks this paper:* This DeepLearningAI specialization course on Convolutional Neural Networks offers a concise and clear explanation of CNN fundamentals, including convolution operations, architectures, and practical examples. It efficiently covers the core concepts needed to understand the paper's CNN-based models with lateral connections.
+
+*If you want all of it:* 6.0 hours across all 42 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 
