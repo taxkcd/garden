@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-tzu-mao-li"
-source_hash: "abcf65841bbcfdccd3b5feed71df1a8865707682b2a553fbdb3c2aabbfe7b53d"
+source_hash: "c661f15a5772e1208a788bbb2ec086bbe85e424d74fba8a94b05f2f636942736"
 sequence: 293
 generator: "outreach-garden: managed"
 ---
@@ -54,6 +54,38 @@ Research interests: classical visual computing algorithms, modern data-driven me
 - [Lab website](http://visualcomputing.ucsd.edu/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** differentiable programming and optimization
+**The paper assumes:** differentiable programming, gradient-based optimization, automatic differentiation
+**Already in this field?** Skip this entirely if you already understand automatic differentiation and gradient-based optimization methods in machine learning or computer graphics.
+
+To understand the core concepts behind differentiable visual computing as presented in the paper, a solid grasp of differentiable programming and optimization is essential. The rigorous course option offers a deep dive into linear optimization theory, which underpins many gradient-based methods, while the fast track provides a focused, intuition-driven introduction to automatic differentiation and differentiable programming, ideal for quickly grasping the fundamentals needed to follow the paper's methodology.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Linear Optimization - ISyE/Math/CS/Stat 525 - Fall 2021](https://www.youtube.com/playlist?list=PLeO_PhASIA0Ot69TqANAnNxoykHGOQp2Y) — Optimization Nation · 34 videos · 16.4h across 34 episodes
+
+**Watch only this:** Lectures 1-14, about 6.5 hours — covering linear programming problem variants, convex functions, polyhedra, extreme points, optimality conditions, and the simplex method development and algorithms, which provide the mathematical foundation for gradient-based optimization.
+
+*Why it unblocks this paper:* This university-level course on Linear Optimization covers foundational optimization concepts, including convexity, polyhedra, and the simplex method, which are critical for understanding gradient-based optimization techniques used in differentiable visual computing.
+
+*If you want all of it:* 16.4 hours across 34 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Automatic Differentiation | Differential Programming](https://www.youtube.com/playlist?list=PLyNPU4Q94mR-zv1e5zLWHI0t9SmWstHto) — Sebastian Wiesendahl · 15 videos · 11.2h across 15 episodes
+
+**Watch only this:** Episodes 1-6, about 4.4 hours — including foundational talks on differentiable programs, Julia-based differentiable programming, and differentiable rendering applications, which provide practical insights into differentiable programming concepts.
+
+*Why it unblocks this paper:* This playlist offers a concise and well-structured introduction to automatic differentiation and differentiable programming, directly relevant to the paper's focus on differentiable visual computing pipelines and gradient computation.
+
+*If you want all of it:* 11.2 hours across 15 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 
