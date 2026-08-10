@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-nikhil-muralidhar"
-source_hash: "cab72d07256976d416b7cb1c372ad17c07ba6790b037dafa05e3a708f0250ef2"
+source_hash: "8d770a3571640851b2bab10f36dd880e2448cc042b81e029aa27b59b731bb7f0"
 sequence: 188
 generator: "outreach-garden: managed"
 ---
@@ -54,6 +54,38 @@ Research interests: Developing machine learning models incorporating scientific 
 - [GitHub](https://github.com/nmuralid1/phydnn)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Natural Language Processing
+**The paper assumes:** natural language processing, language model architectures, information extraction, text representation, evaluation metrics in NLP
+**Already in this field?** Skip this entirely if you already have a solid understanding of natural language processing concepts and large language model fundamentals.
+
+To understand the core methods and challenges in claim-evidence reasoning with large language models in scientific papers, a solid grasp of natural language processing (NLP) fundamentals is essential. The rigorous course option offers a deep, structured university-level introduction to NLP with a focus on language models, attention, and reasoning, while the fast track provides a concise, intuition-driven entry into NLP concepts suitable for quick background preparation.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS224N Natural Language Processing with Deep Learning I Spring 2024 I Professor Christopher Manning](https://www.youtube.com/playlist?list=PLoROMvodv4rOaMFbaqxPDoLWjDaRAdP9D) — Stanford Online · 23 videos · 27.5h across 23 episodes
+
+**Watch only this:** Lectures 1-3 (Intro and Word Vectors, Language Models, Backpropagation and Neural Networks), Lecture 7 (Attention, Final Projects and LLM Intro), Lecture 8 (Self-Attention and Transformers), Lecture 9 (Pretraining), and Lecture 14 (Reasoning and Agents) — about 8.5 hours total. This subset covers core NLP concepts, LLM architectures, and reasoning relevant to claim-evidence tasks.
+
+*Why it unblocks this paper:* Stanford CS224N Spring 2024 is a top-tier, up-to-date university course on NLP with deep learning, covering foundational topics like word vectors, transformers, attention, and reasoning that directly underpin the paper's focus on LLMs and claim-evidence extraction.
+
+*If you want all of it:* 27.5 hours across 23 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Natural Language Processing (NLP) Zero to Hero](https://www.youtube.com/playlist?list=PLQY2H8rRoyvzDbLUZkbudP-MFQZwNmU4S) — TensorFlow · 6 videos · 0.6h across 6 episodes
+
+**Watch only this:** All 6 episodes, about 0.6 hours total. This covers tokenization, sequence data, RNNs, LSTMs, and a simple NLP model training example, sufficient for a quick conceptual grasp.
+
+*Why it unblocks this paper:* TensorFlow's NLP Zero to Hero series is a well-produced, concise explainer playlist that introduces key NLP concepts such as tokenization, sequence modeling, and LSTM, providing a quick but solid foundation for understanding language model behavior relevant to the paper.
+
+*If you want all of it:* 0.6 hours across 6 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

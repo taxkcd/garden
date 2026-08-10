@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-shayok-chakraborty"
-source_hash: "ce888bd9e875257b886676674d7461b278d2647462525e3d8173eb428cec61aa"
+source_hash: "cbc373b099a0e122f24e349e7c0769a55bb5abbfaf07a93f4af287bff0c09678"
 sequence: 192
 generator: "outreach-garden: managed"
 ---
@@ -51,6 +51,38 @@ Research interests: Machine Learning, Computer Vision, AI for Healthcare
 - [Resolved homepage](https://www.cs.fsu.edu/~shayok/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Vision-language deep learning
+**The paper assumes:** deep learning for vision-language models, transformer architectures, contrastive learning, multimodal embedding alignment
+**Already in this field?** Skip this entirely if you already understand transformer-based vision-language models and their training methods.
+
+To understand the MediVLM paper, a solid grasp of vision-language deep learning is essential, including how visual and textual embeddings are aligned and fused, and how transformers generate text from image features. The rigorous course offers a deep dive into foundational and advanced concepts in vision and language models, while the fast track provides a concise, intuition-focused introduction to neural networks and transformers relevant to vision-language modeling. Choose the course for comprehensive mastery or the fast track for a quicker, concept-driven overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS231N Deep Learning for Computer Vision I 2025](https://www.youtube.com/playlist?list=PLoROMvodv4rOmsNzYBMe0gJY2XS8AQg16) — Stanford Online · 18 videos · 21.2h across 18 episodes
+
+**Watch only this:** Lectures 1, 4, 5, 6, 8, 9, and 16, about 8 hours total — covering introduction, neural networks, CNNs, transformer attention, object detection, and vision-language fusion.
+
+*Why it unblocks this paper:* Stanford CS231N Deep Learning for Computer Vision I 2025 covers core vision techniques including CNNs, attention, transformers, and vision-language topics, directly supporting understanding of MediVLM's architecture and training.
+
+*If you want all of it:* 21.2 hours across all 18 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Neural networks](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi) — 3Blue1Brown · 10 videos · 3.6h across 10 episodes
+
+**Watch only this:** Episodes 1, 2, 3, 5, and 6, about 1.8 hours total — covering neural networks basics, backpropagation, and transformers relevant to vision-language modeling.
+
+*Why it unblocks this paper:* 3Blue1Brown's Neural Networks series provides clear, visual explanations of neural networks, backpropagation, and transformers, giving an accessible foundation for understanding the components of vision-language models like MediVLM.
+
+*If you want all of it:* 3.6 hours across all 10 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

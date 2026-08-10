@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-anh-nguyen"
-source_hash: "06aeb4380e20a53ca257595548885fc793a2265dc00133651abdab6ed6b9fbe3"
+source_hash: "aff517456f849a661c4030e64f21858521ca17988c2984924d3340e74e594e1a"
 sequence: 170
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: understanding the weaknesses, behaviors, and inner-workings 
 - [Google Scholar](https://scholar.google.com/citations?user=EQw8d9AAAAAJ)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Explainable AI and Human-AI Interaction
+**The paper assumes:** foundations of explainable AI, human-AI interaction principles, and evaluation of AI explanations
+**Already in this field?** Skip this entirely if you already understand core concepts of explainable AI and how humans interact with AI explanations in interactive systems.
+
+To understand the design and evaluation of interactive explanation interfaces for improving human verification of LLM reasoning, foundational knowledge in explainable AI (XAI) and human-AI interaction is essential. The rigorous course option offers a deep, structured university-level introduction to AI concepts that underpin explainability and interaction design, while the fast track provides concise, accessible explainers focused on human-AI interaction principles and relevant AI technologies. Choose the course for comprehensive depth and the fast track for a focused, time-efficient overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [An Introduction to Artificial Intelligence](https://www.youtube.com/playlist?list=PLp6ek2hDcoNB_YJCruBFjhF79f5ZHyBuz) — NPTEL IIT Delhi · 99 videos · 20.3h across the first 60 episodes
+
+**Watch only this:** Episodes 1-10 ("An Introduction to Artificial Intelligence | Prof. Mausam" through "Introduction: Examples Tasks, Phases of AI & Course Plan"), about 3.5 hours — these cover AI basics, reasoning, and agent concepts relevant to explainability and human-AI interaction.
+
+*Why it unblocks this paper:* This NPTEL IIT Delhi course provides a thorough introduction to artificial intelligence concepts, including foundational knowledge about AI reasoning and agent design, which are crucial for understanding the motivation and mechanisms behind explainable AI and interactive interfaces in the paper.
+
+*If you want all of it:* About 20.3 hours across the first 60 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Human-AI Interaction](https://www.youtube.com/playlist?list=PLrP4pPp4AwxOxwevZWlBvSNz-F5wFHGdx) — Infinitivity Design Labs · 12 videos · 3.7h across 12 episodes
+
+**Watch only this:** Episodes 1-4 ("Generative Model That Won 2024 Nobel Prize" through "How a Brain Implant and AI Gave a Woman with Paralysis Her Voice Back"), about 1.2 hours — these episodes introduce AI capabilities and human-AI interaction context relevant to understanding explanation interfaces.
+
+*Why it unblocks this paper:* This concise series by Infinitivity Design Labs focuses on human-AI interaction and foundational AI concepts, providing clear, intuition-driven explanations that align well with the paper's focus on interactive explanation interfaces and human verification.
+
+*If you want all of it:* About 3.7 hours across 12 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

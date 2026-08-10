@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-james-aspnes"
-source_hash: "e46944a98d54c71b4019ece6ba3ef4e6f4cbab22a38853b8bdd61a2c1c59afd7"
+source_hash: "f09a320468871ae9f2b15da6e146f3a0ba9613cca1228fe090b7b460130cfd1e"
 sequence: 186
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: distributed algorithms
 - [Professor website](https://cs.yale.edu/homes/aspnes/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Cryptographic Obfuscation
+**The paper assumes:** cryptographic obfuscation, random oracle model, time-lock puzzles, cryptographic hash functions, computational hardness assumptions
+**Already in this field?** Skip this entirely if you already have a solid understanding of cryptographic obfuscation techniques and their security models.
+
+To understand the cryptographic obfuscation techniques central to the 'Obfuscated Consensus' paper, this background provides two viewing options. The rigorous course offers a deep, structured university-level foundation in cryptography, including cryptographic hash functions and security models relevant to obfuscation. The fast track is a concise, clear explainer series that covers the essential cryptographic concepts quickly, suitable for readers who want a solid overview without extensive time commitment.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Foundations of Cryptography](https://www.youtube.com/playlist?list=PLgMDNELGJ1CbdGLyn7OrVAP-IKg-0q2U2) — NPTEL - Indian Institute of Science, Bengaluru · 59 videos · 32.9h across 59 episodes
+
+**Watch only this:** lectures 6 to 24 (noc20 cs02 lec06 Introduction to Computational Security through noc20 cs02 lec24 Message Authentication for Long Messages Part II), about 9.9 hours — these cover computational security models, pseudorandomness, cryptographic hash functions, and message authentication relevant to obfuscation.
+
+*Why it unblocks this paper:* This NPTEL course from the Indian Institute of Science, Bengaluru, covers foundational cryptography topics including computational security, pseudorandom generators, message authentication, and cryptographic hash functions, which are essential to understanding the obfuscation and security proofs in the paper.
+
+*If you want all of it:* 32.9 hours across 59 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Cryptography](https://www.youtube.com/playlist?list=PL5KkMZvBpo5CdoOxa3dqll2n6KsXqerYO) — Eddie Woo · 17 videos · 2.6h across 17 episodes
+
+**Watch only this:** episodes 1 to 8 (Introduction to Cryptography parts 1 and 2 through The RSA Encryption Algorithm parts 1 and 2), about 1.2 hours — these give a solid overview of cryptographic basics and public-key cryptography relevant to understanding the paper's cryptographic assumptions.
+
+*Why it unblocks this paper:* Eddie Woo's 'Cryptography' playlist provides a concise and intuitive introduction to key cryptographic concepts such as symmetric and asymmetric cryptography, RSA, and random numbers, which help build intuition about cryptographic primitives used in obfuscation.
+
+*If you want all of it:* 2.6 hours across 17 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

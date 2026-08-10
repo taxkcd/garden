@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-peter-stone"
-source_hash: "be494c13de231261f3876783cdb70b7325c2b2deb74d5f8d0f1a21263b52a1c9"
+source_hash: "ac2b4861cc23054545f379681ebbeb68a97678ddb3794de5476e479c7f65ee88"
 sequence: 194
 generator: "outreach-garden: managed"
 ---
@@ -54,6 +54,38 @@ Research interests: machine learning, multiagent systems, and robotics
 - [Social profile](https://twitter.com/utlarg)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Reinforcement Learning
+**The paper assumes:** foundations of reinforcement learning, Markov decision processes, policy optimization algorithms
+**Already in this field?** Skip this entirely if you already understand reinforcement learning fundamentals including MDPs and policy learning algorithms.
+
+This background is designed to provide a solid understanding of reinforcement learning (RL), which is central to the GUIDE framework's methodology for personalized diabetes management. The rigorous course option offers a deep dive into RL algorithms, including offline RL methods like CQL-BC used in the paper, while the fast track provides a concise, intuition-driven introduction to core RL concepts and learning dynamics. Choose the rigorous course if you want comprehensive technical mastery; choose the fast track if you want a quick, clear conceptual grasp to understand the paper's main ideas efficiently.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS224R Deep Reinforcement Learning](https://www.youtube.com/playlist?list=PLoROMvodv4rPwxE0ONYRa_itZFdaKCylL) — Stanford Online · 19 videos · 20.6h across 19 episodes
+
+**Watch only this:** Lectures 1-7, about 7.5 hours — covering introduction, imitation learning, policy gradients, actor-critic methods, off-policy actor-critic, Q-learning, and offline RL (CQL). Stop after Lecture 7 to grasp the core RL algorithms and offline RL techniques used in GUIDE.
+
+*Why it unblocks this paper:* Stanford CS224R Deep Reinforcement Learning is a recent, authoritative university course that covers practical deep RL algorithms, including offline RL (Lecture 7) and policy gradient methods relevant to GUIDE's approach. It provides a rigorous foundation to understand the paper's use of CQL-BC, PPO, SAC, and structured action spaces.
+
+*If you want all of it:* 20.6 hours across all 19 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Reinforcement Learning Explained – Animated Examples](https://www.youtube.com/playlist?list=PLgcKMlJueAM5OK104-hP_wBpOjZCHGfTf) — Reinforcement Learning Explained–Animated Learning · 9 videos
+
+**Watch only this:** Episodes 1-5, about 25-30 minutes — covering basic RL intuition, learning from delayed rewards, bandit problems, and policy learning through engaging animations. This subset provides a fast, conceptual overview of RL principles relevant to the paper.
+
+*Why it unblocks this paper:* Reinforcement Learning Explained – Animated Examples offers clear, visual explanations of RL concepts and learning dynamics, making it ideal for quickly building intuition about how RL agents learn from delayed rewards and optimize behavior, which underpins GUIDE's methodology.
+
+*If you want all of it:* About 45-50 minutes across all 9 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

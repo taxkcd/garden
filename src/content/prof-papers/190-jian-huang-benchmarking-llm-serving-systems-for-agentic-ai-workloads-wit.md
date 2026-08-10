@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-jian-huang"
-source_hash: "3ca109bab67d957d94eb3098a165539424e0ba96388a3c637764d910e33b656b"
+source_hash: "1bde2e6c32a19844c9047079c48fb4d113244620fb9ac95df288a81fa5fe1cb2"
 sequence: 190
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,38 @@ Research interests: sustainable AI infrastructures and platforms, computer archi
 - [Lab website](https://platformxlab.github.io/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Performance Profiling and Benchmarking
+**The paper assumes:** performance profiling techniques, benchmarking methodologies, system tracing and instrumentation, execution graph modeling, workload replay strategies
+**Already in this field?** Skip this entirely if you already understand system performance profiling and benchmarking methods for complex software systems.
+
+This background playlist selection is focused on performance profiling and benchmarking, essential for understanding the detailed trace collection, execution graph construction, workload synthesis, and reproducible replay techniques used in the XPerf framework for LLM serving systems. The rigorous course option provides a deep and structured university-level foundation in performance engineering of software systems, while the fast track offers a concise, practical introduction to performance debugging concepts suitable for quickly grasping the core ideas relevant to system profiling and bottleneck analysis.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [MIT 6.172 Performance Engineering of Software Systems, Fall 2018](https://www.youtube.com/playlist?list=PLUl4u3cNGP63VIBQVWguXxZZi0566y7Wf) — MIT OpenCourseWare · 23 videos · 29.8h across 23 episodes
+
+**Watch only this:** Lectures 1 through 10 (Introduction and Matrix Multiplication through Measurement and Timing), about 12.8 hours — these cover foundational performance engineering concepts, measurement techniques, and timing critical for benchmarking and profiling.
+
+*Why it unblocks this paper:* MIT 6.172 Performance Engineering of Software Systems is a comprehensive university course that covers key concepts in performance measurement, timing, caching, parallelism, and profiling, directly relevant to understanding the detailed system and GPU metrics profiling and workload replay techniques in XPerf.
+
+*If you want all of it:* 29.8 hours across 23 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Performance Debugging - MAD Skills](https://www.youtube.com/playlist?list=PLWz5rJ2EKKc-xjSI-rWn9SViXivBhQUnp) — Android Developers · 7 videos · 1.3h across 7 episodes
+
+**Watch only this:** Episodes 1 through 4 (Introduction to Performance Debugging, System tracing basics, Using Systrace in Android Studio, Using sampling profiling with Systrace), about 44 minutes — these episodes cover essential profiling and tracing concepts with practical demonstrations.
+
+*Why it unblocks this paper:* The Performance Debugging - MAD Skills series by Android Developers offers a concise and practical introduction to system tracing and profiling tools, providing a quick, applied understanding of performance debugging that complements the rigorous course by focusing on trace collection and analysis relevant to XPerf's methodology.
+
+*If you want all of it:* 1.3 hours across 7 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

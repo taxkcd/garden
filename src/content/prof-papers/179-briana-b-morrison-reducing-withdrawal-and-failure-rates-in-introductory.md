@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-briana-b-morrison"
-source_hash: "20984af63c7f698130ade1e50110b2efcc06a138c5d2f84d08d299fe1ea32534"
+source_hash: "046b01386781e03e9b6ff5b17d1f02eb360343bce9204812d2ca170b2d29ca65"
 sequence: 179
 generator: "outreach-garden: managed"
 ---
@@ -54,6 +54,38 @@ Research interests: Computer Science Education, Broadening Participation in Comp
 - [Google Scholar](https://scholar.google.com/citations?user=XXLOcBcAAAAJ&hl=en)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Cognitive Load Theory
+**The paper assumes:** cognitive load theory and instructional design principles
+**Already in this field?** Skip this entirely if you already understand cognitive load theory and how it informs instructional design for novice learners.
+
+To understand the core intervention of this paper—subgoal labeled worked examples designed to reduce cognitive load in programming education—it's essential to grasp Cognitive Load Theory (CLT). The rigorous course option offers a comprehensive university-level lecture series that covers CLT principles and applications in depth, suitable for readers seeking a thorough foundation. The fast track provides a concise, focused explainer series that quickly introduces the key concepts of CLT, ideal for readers who want a solid but time-efficient overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Learning](https://www.youtube.com/playlist?list=PL7lAnSfttps5miq9kImhq5LZxk4VLNOg4) — Berkeley LTC · 24 videos · 5.4h across 24 episodes
+
+**Watch only this:** Episodes 6 to 8: "Cognitive Load Theory, How Do I Apply It?" (approx. 13 min), "Rosenshine Masterclass I Intro and Research" (approx. 13 min), and "Dylan William: What do we Mean by Assessment for Learning?" (approx. 13 min), totaling about 40 minutes. These episodes focus on CLT fundamentals and instructional application, sufficient to grasp the theory underpinning the paper's intervention.
+
+*Why it unblocks this paper:* This Berkeley LTC series is a university-level course with 24 episodes covering cognitive load theory and related learning principles in detail, directly relevant to understanding the instructional design and cognitive rationale behind subgoal labeled worked examples.
+
+*If you want all of it:* 5.4 hours across 24 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [COGNITIVE LOAD THEORY FOR TVET TEACHING](https://www.youtube.com/playlist?list=PL5ESit0xzN_wBILnDpnToRp-kZ62i6bYf) — wayne hugo · 8 videos · 0.8h across 8 episodes
+
+**Watch only this:** Episodes 1 to 3: "3 types of working memory (intrinsic load, extraneous load, germane load)" (6 min), "Optimizing cognitive load and avoiding cognitive overload" (6 min), and "8 senses and how they work as sensory memory in cognitive load theory" (6 min), totaling about 18 minutes. These episodes cover the core CLT concepts needed to appreciate the paper's approach.
+
+*Why it unblocks this paper:* This short-form series by Wayne Hugo provides a clear, concise introduction to Cognitive Load Theory, breaking down its types and optimization strategies in short episodes, ideal for quickly understanding the key concepts relevant to reducing cognitive overload in learning programming.
+
+*If you want all of it:* 0.8 hours across 8 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-sushmita-roy"
-source_hash: "4d3c8234d4b5a5e4968eccf65637f14e564fc97c1ae4acc983e543c9c9cecb58"
+source_hash: "9e831ff136e3e1baf0e8bdcd270e387de057ec3121aed9c2c08dbdd231397c05"
 sequence: 185
 generator: "outreach-garden: managed"
 ---
@@ -54,6 +54,38 @@ Research interests: Computational methods to model cellular networks
 - [Social profile](https://sroyyors.bsky.social)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** multitask nonnegative matrix factorization
+**The paper assumes:** nonnegative matrix factorization, multitask learning, matrix factorization optimization
+**Already in this field?** Skip this entirely if you already understand the theory and application of multitask nonnegative matrix factorization methods.
+
+To understand the multitask nonnegative matrix factorization (NMF) framework used in the TGIF method for analyzing 3D genome organization, it is essential to grasp matrix factorization concepts, especially NMF, and how multitask learning integrates multiple related data sets. The rigorous course option offers a deep, mathematically thorough foundation in matrix methods relevant to data analysis and machine learning, while the fast track provides a focused, intuitive introduction to matrix factorization and NMF concepts tailored for quick comprehension.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [MIT 18.065 Matrix Methods in Data Analysis, Signal Processing, and Machine Learning, Spring 2018](https://www.youtube.com/playlist?list=PLUl4u3cNGP63oMNUHXqIUcrkS2PivhN3k) — MIT OpenCourseWare · 36 videos · 28.2h across 36 episodes
+
+**Watch only this:** Lectures 2, 4, 5, 6, 7, 9, 11, 12, 13, 21, and 22, about 8.5 hours total — focusing on matrix multiplication and factorization, eigenvalues and eigenvectors, positive definite matrices, singular value decomposition, Eckart-Young theorem, least squares problems, computing eigenvalues, randomized matrix multiplication, and gradient descent optimization.
+
+*Why it unblocks this paper:* MIT 18.065 by Professor Gilbert Strang is a comprehensive university-level course on matrix methods in data analysis and machine learning, covering foundational topics such as matrix factorization, singular value decomposition, and optimization techniques that underpin multitask NMF frameworks like TGIF.
+
+*If you want all of it:* 28.2 hours across 36 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Recommendation System & Matrix Factorization](https://www.youtube.com/playlist?list=PLKR38d5oOkclOo6k-cvATTR7yurkN4j9A) — Mathematics behind Data Science · 13 videos · 8.5h across 13 episodes
+
+**Watch only this:** Episodes 4 and 5, about 1.3 hours total — covering matrix factorization for PCA/SVD and nonnegative matrix factorization specifically.
+
+*Why it unblocks this paper:* The 'Recommendation System & Matrix Factorization' series by Mathematics behind Data Science offers a concise and clear introduction to matrix factorization techniques including nonnegative matrix factorization, with episodes that build intuition and practical understanding relevant to multitask NMF in a fraction of the time.
+
+*If you want all of it:* 8.5 hours across 13 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

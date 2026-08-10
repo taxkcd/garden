@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-joel-s-bader"
-source_hash: "fa96fd0bc15d2fd09600ea59a975a3897d4ac694623b8e9cf1a82ae8a61a3c28"
+source_hash: "f46cc24a7420a1b33dd3f83add8117f29cafda7d3fa2eef2d824e5a3164f0058"
 sequence: 157
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: relationship between genotype and phenotype, applications to
 - [Professor website](https://baderzone.org/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Bayesian network inference
+**The paper assumes:** Bayesian network inference, probabilistic graphical models, and naïve Bayes modeling
+**Already in this field?** Skip this entirely if you already understand Bayesian networks and probabilistic inference methods used in computational biology.
+
+This background focuses on Bayesian network inference, which is central to understanding the SIGNET method's probabilistic modeling and data integration approach in the paper. The rigorous course provides a deep and structured foundation in Bayesian networks, covering syntax, semantics, independence, inference algorithms, and learning. The fast track offers a concise, intuition-driven introduction to the same topics, suitable for readers who want a solid grasp quickly without the full depth.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Learning and Reasoning with Bayesian Networks](https://www.youtube.com/playlist?list=PLlDG_zCuBub6ywAIrM1DfJp8xaeVjyvwx) — UCLA Automated Reasoning Group · 36 videos · 22.2h across 36 episodes
+
+**Watch only this:** Lectures 1a, 2a, 2b, 3a, 3b, 4a, 4b, 5a, 5b, 6a, 6b — about 6.5 hours total. This subset covers the basics of probability, Bayesian network syntax and semantics, independence, and key inference algorithms necessary to understand the paper's model and inference approach.
+
+*Why it unblocks this paper:* This UCLA course by Adnan Darwiche is a comprehensive university-level lecture series focused specifically on Bayesian networks, covering foundational concepts, independence, inference methods, and parameter learning, all directly relevant to the Bayesian modeling in SIGNET.
+
+*If you want all of it:* 22.2 hours across 36 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Bayesian](https://www.youtube.com/playlist?list=PLAQje4L5NVW7g6moHxjPiXcAqTcHwVaDI) — LASTMINBOOST · 13 videos · 1.5h across 13 episodes
+
+**Watch only this:** Episodes 1, 2, 3, 4, 5, 6 — about 36 minutes total. These six episodes cover the core ideas and examples of Bayesian belief networks needed for a quick but solid understanding of the paper's Bayesian integration approach.
+
+*Why it unblocks this paper:* This short-form playlist by LASTMINBOOST provides clear, example-driven explanations of Bayesian belief networks and solved numerical examples, giving an accessible and intuitive overview of Bayesian network concepts relevant to the paper's method.
+
+*If you want all of it:* 1.5 hours across 13 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

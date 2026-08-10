@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-supartha-podder"
-source_hash: "bdd1084c7ae55c9649e2e095d88190fd7a7f4d41ce1d9cd75d8180395b8d736c"
+source_hash: "3c2316d42a924022a794e64cf70035a6d0d52b025e5207d9009dc7186fa801f2"
 sequence: 149
 generator: "outreach-garden: managed"
 ---
@@ -56,6 +56,38 @@ Research interests: Quantum computing, complexity theory, quantum cryptography, 
 - [Social profile](https://twitter.com/suparthapodder)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Quantum query complexity
+**The paper assumes:** quantum query complexity, Boolean function analysis, combinatorial complexity measures, polynomial approximations of Boolean functions
+**Already in this field?** Skip this entirely if you already have a solid understanding of quantum query complexity and Boolean function complexity measures.
+
+This background focuses on quantum query complexity, a fundamental topic for understanding the complexity measures and frameworks used in the paper "From Promises to Totality: A Framework for Ruling Out Quantum Speedups." The rigorous course option provides a deep, structured university-level treatment of quantum query complexity and related methods, while the fast track offers a shorter, more accessible introduction to the same core concepts, suitable for quickly gaining the necessary intuition and technical grounding.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Quantum Query and Communication Complexity (Shalev Ben-David, University of Waterloo, 2021)](https://www.youtube.com/playlist?list=PLidiQIHRzpXKyAet0bnBVJFwRFUlJPUhI) — Theoretical Computer Science School (TCSS) · 19 videos · 21.7h across 19 episodes
+
+**Watch only this:** Watch episodes 1-7: 'Week 1: query complexity basics' through 'CS867 / QIC 890 third class meeting' (about 7.9 hours total) to cover the fundamentals of quantum query complexity, block sensitivity, certificate complexity, and the polynomial method relevant to the paper.
+
+*Why it unblocks this paper:* This University of Waterloo course by Theoretical Computer Science School (TCSS) is explicitly on quantum query and communication complexity, covering foundational topics such as query complexity basics, the polynomial method, adversary bounds, and quantum walks. These topics align closely with the paper's technical approach and complexity measures.
+
+*If you want all of it:* 21.7 hours across 19 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Quantum Computing: Algorithms and limitations through the Query Model by Prof. Rajat Mittal IIT Kanpur](https://www.youtube.com/playlist?list=PLHO2NKv71TvtyWrrblHg5-fd9HsmOhWr-) — Venky · 21 videos · 13.3h across 21 episodes
+
+**Watch only this:** Watch lectures 1-6: 'Lecture 01: Introduction to Quantum Algorithms' through 'Lecture 06: States of Probabilistic Computation - Part 1' (about 3.8 hours total) to gain a quick but solid foundation in quantum query complexity and related concepts.
+
+*Why it unblocks this paper:* This lecture series by Prof. Rajat Mittal from IIT Kanpur offers a concise introduction to quantum algorithms and the query model, covering key concepts such as quantum states, operations, and the basics of quantum query complexity in a shorter format. It provides a practical and accessible overview that complements the rigorous course.
+
+*If you want all of it:* 13.3 hours across 21 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

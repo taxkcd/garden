@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-baruch-schieber"
-source_hash: "923962566d4f0fa9d6d730fe82a02eb5ac778174d0e2dba3fd7a730a845c0357"
+source_hash: "44a32aaa54b9ec5691268c6fb518b9ee3c5a357616926ac8861a0b73d0009592"
 sequence: 164
 generator: "outreach-garden: managed"
 ---
@@ -55,6 +55,38 @@ Research interests: Algorithm design; Combinatorial optimization
 - [LinkedIn](https://www.linkedin.com/in/baruch-schieber-0b3b9214b/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Scheduling Theory and Approximation Algorithms
+**The paper assumes:** combinatorial scheduling theory, approximation algorithms, NP-hardness proofs, dynamic programming for scheduling
+**Already in this field?** Skip this entirely if you already have a solid understanding of combinatorial scheduling problems and approximation algorithms in theoretical computer science.
+
+This background focuses on scheduling theory and approximation algorithms, essential for understanding the paper's models, algorithms, and hardness results in energy-aware scheduling. The rigorous course option offers a deep, structured university-level treatment of approximation algorithms and scheduling concepts, while the fast track provides a concise, accessible introduction to key algorithm design and complexity topics for quicker preparation.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [MIT 6.046J Design and Analysis of Algorithms, Spring 2015](https://www.youtube.com/playlist?list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp) — MIT OpenCourseWare · 34 videos · 39.5h across 34 episodes
+
+**Watch only this:** Episodes 1 (Course Overview, Interval Scheduling), 12 (Greedy Algorithms), 15 (Linear Programming: LP, reductions, Simplex), 16 (Complexity: P, NP, NP-completeness, Reductions), 17 (Complexity: Approximation Algorithms); about 5.75 hours total
+
+*Why it unblocks this paper:* MIT 6.046J Design and Analysis of Algorithms covers interval scheduling, greedy algorithms, dynamic programming, NP-completeness, and approximation algorithms, directly relevant to the paper's scheduling problems and algorithmic techniques.
+
+*If you want all of it:* All 34 episodes, about 39.5 hours
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Analysis of Algorithms](https://www.youtube.com/playlist?list=PLgPbN3w-ia_MzatWGASfuPg9hon_Fsz1V) — Professor Bryce · 25 videos · 10.7h across 25 episodes
+
+**Watch only this:** Episodes 8 (Greedy Stays Ahead), 9 (Greedy Exchange Arguments), 14 (Dynamic Programming), 22 (Verifiers and the Class NP), 23 (NP Completeness), 24 (Hamiltonian Cycle is NP-Complete); about 2.5 hours total
+
+*Why it unblocks this paper:* Professor Bryce's Analysis of Algorithms playlist offers clear, focused explanations on greedy algorithms, dynamic programming, NP-completeness, and approximation algorithms, providing a concise yet solid foundation for the paper's key algorithmic concepts.
+
+*If you want all of it:* All 25 episodes, about 10.7 hours
 
 ## Track 1 — Academic deep-dives (long-form)
 

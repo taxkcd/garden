@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-mark-guzdial"
-source_hash: "0b958c42fb840e8551d05b8db52480542fd7b87a2c8b5354d58b2c172ad9473c"
+source_hash: "37328151ed1bb0bba843fa22db81ab354070507efea51154f45d1150e301d4f5"
 sequence: 193
 generator: "outreach-garden: managed"
 ---
@@ -50,6 +50,38 @@ This paper studies how K-12 computing teachers select programming languages and 
 - [Identity evidence](http://www.cc.gatech.edu/home/guzdial)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Educational Technology and Learning Analytics
+**The paper assumes:** educational technology principles, learning analytics methods, cognitive load theory, scaffolding in education
+**Already in this field?** Skip this entirely if you already understand foundational concepts in educational technology, learning analytics, and cognitive load theory as applied to instructional design.
+
+This background selection supports understanding the educational technology and learning analytics foundations crucial for grasping the trade-offs in programming education for emergent bilingual students. The rigorous course offers a deep dive into learning, media, and technology concepts, including cognitive load theory and scaffolding, while the fast track provides a concise, accessible introduction to educational technology principles. Choose the course for comprehensive academic depth or the fast track for a focused, time-efficient overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [MIT CMS.595 Learning, Media, and Technology, Spring 2024](https://www.youtube.com/playlist?list=PLUl4u3cNGP62o50fmQKmfbn8HKPvdx9hK) — MIT OpenCourseWare · 10 videos · 11.5h across 10 episodes
+
+**Watch only this:** Episodes 02 (How People Learn: Cognitive Load Theory) and 16 (Start-Up and the Curse of the Familiar), about 2.3 hours total — these cover cognitive load and educational technology context critical to the paper's themes.
+
+*Why it unblocks this paper:* This MIT OpenCourseWare series, taught by Justin Reich, covers cognitive load theory, scaffolding, and educational technology fundamentals directly relevant to understanding programming education challenges for emergent bilingual students.
+
+*If you want all of it:* All 10 episodes, about 11.5 hours total.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [ICT // Educational technology](https://www.youtube.com/playlist?list=PLwYNH4ItnuZvjs9h8dhM_MGGMkiFK3XKK) — Study Point For Govt Job · 12 videos · 3.3h across 12 episodes
+
+**Watch only this:** Episodes 1 (Educational technology-meaning,nature,scope, significance) and 6 (Forms of educational technology / behavioural technology /instructional design), about 32 minutes total — these give a focused introduction to educational technology and instructional design.
+
+*Why it unblocks this paper:* This short-form playlist provides clear, concise explanations of educational technology concepts, including instructional design and teaching modalities, suitable for quickly grasping foundational ideas relevant to the paper.
+
+*If you want all of it:* All 12 episodes, about 3.3 hours total.
 
 ## Track 1 — Academic deep-dives (long-form)
 

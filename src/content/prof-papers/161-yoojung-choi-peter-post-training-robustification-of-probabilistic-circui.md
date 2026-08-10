@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-yoojung-choi"
-source_hash: "77149e7cb331058cc7934dd809c83cf2bac0f75d06a6a6565fdfed05c3c02244"
+source_hash: "a4c8dcd04455dac42751cc603a6fe12fe95ce13d700fa192578ca1212ba5ecad"
 sequence: 161
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: probabilistic reasoning and learning (tractable probabilisti
 - [Resolved homepage](https://yoojungchoi.github.io/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Optimal Transport and Wasserstein Distance
+**The paper assumes:** optimal transport theory, Wasserstein distance, distributional robustness, gradient-based optimization in probabilistic models
+**Already in this field?** Skip this entirely if you already have a solid understanding of optimal transport theory and Wasserstein metrics in machine learning contexts.
+
+Understanding Optimal Transport and Wasserstein Distance is crucial for grasping the PeTeR method's core robustness optimization framework, which relies on the Circuit-Wasserstein distance. The rigorous course option offers a deep mathematical and theoretical foundation suitable for readers seeking comprehensive mastery, while the fast track provides a more accessible, intuition-driven introduction to the key concepts in a shorter time. Choose the lane that fits your current time and depth needs; both will prepare you to understand the paper's methodology effectively.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Probabilistic Mass Transport - from Schrödinger to Stochastic Analysis](https://www.youtube.com/playlist?list=PLjvY6sC_0lhJjuaN0Uwl1GfMaMhJMvM5V) — Erwin Schrödinger International Institute for Mathematics and Physics (ESI) · 15 videos
+
+**Watch only this:** Episodes 1-7, about 3.7 hours — covering foundational concepts, Schrödinger bridge, diffusion transport maps, and regularity of Wasserstein projections, which provide the necessary theoretical background for understanding Wasserstein distances and their computation.
+
+*Why it unblocks this paper:* This university-level lecture series from the Erwin Schrödinger International Institute for Mathematics and Physics covers Optimal Transport theory with a strong mathematical and analytical focus, including topics on Wasserstein gradient flows and entropic optimal transport, directly relevant to the Circuit-Wasserstein distance used in PeTeR.
+
+*If you want all of it:* All 15 episodes, approximately 8.1 hours
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Optimal Transport](https://www.youtube.com/playlist?list=PLdIeSOAGKlMc) — Mayukh Mukhopadhyay · 34 videos · 37.9h across 34 episodes
+
+**Watch only this:** Episodes 1-6, about 6.6 hours — covering introduction, Wasserstein distance, dual problem, and gradient flows, which provide a concise yet thorough overview of the key concepts.
+
+*Why it unblocks this paper:* This playlist by Mayukh Mukhopadhyay offers clear, visual, and intuition-first explanations of Optimal Transport and Wasserstein Distance, including the dual problem and applications, making it ideal for quickly building conceptual understanding relevant to the PeTeR paper.
+
+*If you want all of it:* All 34 episodes, approximately 37.9 hours
 
 ## Track 1 — Academic deep-dives (long-form)
 

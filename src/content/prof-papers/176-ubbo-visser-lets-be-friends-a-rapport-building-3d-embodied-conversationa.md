@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-ubbo-visser"
-source_hash: "2f98c6e7454bb97a7ae5007df2a6d4ca9bc09a9aa0906816adeed49545dbede7"
+source_hash: "38f603df0b32f5a2521b6a31b39e00a64ca8d2394c1a607680ee620c600a5100"
 sequence: 176
 generator: "outreach-garden: managed"
 ---
@@ -51,6 +51,38 @@ Research interests: Artificial Intelligence and Robotics with the focus on knowl
 - [Resolved homepage](https://www.cs.miami.edu/home/visser/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Embodied Conversational Agents
+**The paper assumes:** embodied conversational agents, nonverbal communication in HCI, real-time agent behavior modeling
+**Already in this field?** Skip this entirely if you already understand the design and function of embodied conversational agents and their role in human-computer interaction.
+
+To understand the integration and impact of embodied conversational agents (ECAs) in human-support robots, especially focusing on real-time facial expression mirroring and nonverbal communication, this background provides two viewing options. The rigorous course offers a deep dive into machine learning foundations that underpin emotion recognition and agent behavior, while the fast track delivers a concise, practical introduction to AI agents including embodied and physical world agents relevant to ECAs. Choose the rigorous course for foundational depth and the fast track for a focused, application-oriented overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS229: Machine Learning led by Andrew Ng | Autumn 2018](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU) — Stanford Online · 21 videos · 27.9h across 21 episodes
+
+**Watch only this:** Lectures 1-3 and 10-12, about 6.5 hours — covering supervised learning basics, neural networks, backpropagation, and debugging ML models, which are key to understanding the machine learning components of the ECA system.
+
+*Why it unblocks this paper:* Stanford CS229 by Andrew Ng covers core machine learning techniques essential for understanding the algorithms behind face detection, emotion classification, and agent behavior frameworks used in ECAs. This foundational knowledge is critical for grasping how the ECA mirrors expressions and adapts in real-time.
+
+*If you want all of it:* 27.9 hours across 21 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [30 Agents Every Developer Should Build - Complete AI Agent Engineering Series (LangChain, LangGraph & More)](https://www.youtube.com/playlist?list=PLGZL5qA7O9-M) — onepagecode · 17 videos · 8.2h across 17 episodes
+
+**Watch only this:** Episode 9: 'Embodied and Physical World Agents - Robotics & Real-World AI', about 28 minutes — this episode succinctly covers the embodied agent concepts crucial for understanding the paper's ECA integration.
+
+*Why it unblocks this paper:* The '30 Agents Every Developer Should Build' series includes a focused episode on 'Embodied and Physical World Agents - Robotics & Real-World AI' that directly relates to embodied conversational agents integrated with robots, providing a practical and concise overview of agent engineering relevant to this paper.
+
+*If you want all of it:* 8.2 hours across 17 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

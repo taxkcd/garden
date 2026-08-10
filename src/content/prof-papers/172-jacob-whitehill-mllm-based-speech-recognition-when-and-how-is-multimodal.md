@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-jacob-whitehill"
-source_hash: "7b9c38cc0aa48ce520dea5838aa88310c1489f6be3bd74833726edf318aa1665"
+source_hash: "a830f7145e3c6fead8e1ee5324d8ce5fa24235bb53dc2f16b7468e8f40d3cb56"
 sequence: 172
 generator: "outreach-garden: managed"
 ---
@@ -49,6 +49,38 @@ This paper investigates how multi-modal large language models (MLLMs) can improv
 - [Identity evidence](https://www.wpi.edu/academics/facultydir/200331.htm)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** transformer neural networks
+**The paper assumes:** deep learning architectures, attention mechanisms, sequence modeling, and positional encoding methods
+**Already in this field?** Skip this entirely if you already understand the Transformer architecture and its role in multi-modal sequence modeling.
+
+To understand the Transformer architectures and attention mechanisms central to this paper on multi-modal speech recognition, two background options are provided. The rigorous course offers a deep dive into Transformers and related neural network concepts from a top university, ideal for thorough comprehension. The fast track provides a concise, intuition-focused explainer series that covers the essentials efficiently, suitable for a quicker but solid grasp of the subject.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS231N Deep Learning for Computer Vision I 2025](https://www.youtube.com/playlist?list=PLoROMvodv4rOmsNzYBMe0gJY2XS8AQg16) — Stanford Online · 18 videos · 21.2h across 18 episodes
+
+**Watch only this:** Lectures 7 and 8: 'Recurrent Neural Networks' and 'Attention and Transformers' (~140 minutes total) — these provide the core understanding of sequence models and Transformer attention mechanisms needed to grasp the paper's methodology.
+
+*Why it unblocks this paper:* Stanford CS231N Deep Learning for Computer Vision I 2025 covers attention and Transformers in the context of deep learning architectures, including sequence processing and visual data integration, directly relevant to the paper's focus on Transformer and Mamba backbones for multi-modal inputs.
+
+*If you want all of it:* About 21.2 hours across 18 episodes.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Neural networks](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi) — 3Blue1Brown · 10 videos · 3.6h across 10 episodes
+
+**Watch only this:** Episodes 6 and 7: 'Transformers, the tech behind LLMs' and 'Attention in transformers, step-by-step' (~42 minutes total) — these two episodes cover the essential intuition and mechanics of Transformers and attention.
+
+*Why it unblocks this paper:* 3Blue1Brown's 'Neural networks' series includes clear, visual explanations of Transformers and attention mechanisms, making it a great quick introduction to the core concepts underlying the paper's model architectures.
+
+*If you want all of it:* About 3.6 hours across 10 episodes.
 
 ## Track 1 — Academic deep-dives (long-form)
 

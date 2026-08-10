@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-yasser-shoukry"
-source_hash: "f66705c4c37aa8279e88f4964c16b38707180861b7095937e7c2caffbae38538"
+source_hash: "0269e75ee8871ace997ac349366759bf457c09856ec0fe949c7154eb75038493"
 sequence: 174
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,38 @@ Research interests: develop algorithms and tools to reason about the resilience,
 - [Resolved homepage](https://rcpsl.eng.uci.edu/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Approximation Theory for Machine Learning
+**The paper assumes:** approximation theory, polynomial approximation, function smoothness, uniform convergence, neural network approximation
+**Already in this field?** Skip this entirely if you already have a solid understanding of approximation theory as applied to machine learning and neural networks.
+
+This background focuses on approximation theory as it applies to machine learning, specifically polynomial approximation and Bernstein polynomials, which are central to understanding the theoretical contributions of the paper on DeepBern-Nets. The rigorous course option offers a deep dive into structured representations and approximation in data science, suitable for those seeking a thorough mathematical foundation. The fast track provides a concise, focused introduction to Bernstein polynomials and the Weierstrass approximation theorem, ideal for readers who want a quick but solid grasp of the key concepts relevant to the paper.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Mathematics of data: Structured representations for sensing, approximation and learning](https://www.youtube.com/playlist?list=PLuD_SqLtxSdX_w1Ztexpzl_EJgFQSkWez) — The Alan Turing Institute · 11 videos · 7.9h across 11 episodes
+
+**Watch only this:** Episodes 1 and 2: 'Nonlinear approximation by deep ReLU networks - Ron DeVore, Texas A&M' and 'Approximation with deep networks - Remi Gribonval, Inria', about 1.5 hours total — these provide the core theoretical background on approximation rates and neural network function approximation.
+
+*Why it unblocks this paper:* This workshop series from The Alan Turing Institute covers approximation theory in machine learning with lectures by leading experts, including nonlinear approximation by deep ReLU networks and approximation with deep networks, directly relating to the paper's theoretical analysis of neural network approximation rates.
+
+*If you want all of it:* All 11 episodes, about 7.9 hours total.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Real Analysis I](https://www.youtube.com/playlist?list=PLhWyf911na-UTfr92l7VfS6iHvWEScz0R) — Ch-35: IIT Madras: Metallurgical and Others · 10 videos · 2.1h across 10 episodes
+
+**Watch only this:** Episodes 35.1 'Weierstrass approximation theorem', 35.2 'Bernstein Polynomials', and 35.3 'Properties of Bernstein polynomials', about 36 minutes total — these three episodes cover the essential approximation theory and Bernstein polynomial properties.
+
+*Why it unblocks this paper:* This concise playlist from IIT Madras covers Bernstein polynomials and the Weierstrass approximation theorem in a clear, focused manner, directly addressing the mathematical foundations needed to understand the paper's use of Bernstein polynomial activations.
+
+*If you want all of it:* All 10 episodes, about 2.1 hours total.
 
 ## Track 1 — Academic deep-dives (long-form)
 

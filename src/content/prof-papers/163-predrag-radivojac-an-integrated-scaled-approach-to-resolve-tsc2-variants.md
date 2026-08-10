@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-predrag-radivojac"
-source_hash: "6ffa41100b9fd4ebdfb42b147d725b21d82c36c42bd8a8a7abf2cf50b366a73b"
+source_hash: "5e51d344598ccccaf49b908452d9ada88b65835ddccdd745c44ad668cc5ba469"
 sequence: 163
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: Computational biology, Machine learning
 - [Identity evidence](https://www.ccis.northeastern.edu/people/predrag-radivojac)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** functional genomics and variant effect assays
+**The paper assumes:** functional genomics, multiplexed variant effect assays, high-throughput sequencing-based protein assays
+**Already in this field?** Skip this entirely if you already understand the principles and applications of multiplexed functional assays for genetic variant characterization.
+
+This background provides foundational knowledge on functional genomics and variant effect assays, crucial for understanding the high-throughput experimental methods used in the paper to classify TSC2 gene variants. The rigorous course offers a deep dive into genomics concepts and functional assays, suitable for readers seeking comprehensive understanding, while the fast track provides a concise, visual introduction to key functional genomics techniques for quicker familiarization.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [MCB 182: Introduction to Genomics lecture videos](https://www.youtube.com/playlist?list=PLpzXFzEHUCQdveBWm63MbUdGK_t0Nt23F) — Gerald Quon · 10 videos · 13.9h across 10 episodes
+
+**Watch only this:** Lecture 2 - Functional genomics (~83 minutes) — this lecture specifically introduces functional genomics concepts essential to grasp the assays and data integration in the paper.
+
+*Why it unblocks this paper:* This university lecture series by Gerald Quon covers functional genomics in a structured, detailed manner, including a dedicated lecture on functional genomics and related genomic technologies, directly relevant to understanding multiplexed assays of variant effect like those used in the paper.
+
+*If you want all of it:* All 10 lectures, approximately 13.9 hours — for a comprehensive understanding of genomics and related functional assays.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [functional genomics](https://www.youtube.com/playlist?list=PLrCEgbSstSIRgRwP1YCLnJh3Axc5eez2b) — Sahil Saxena · 14 videos · 2.2h across 14 episodes
+
+**Watch only this:** Episodes 1-7 (But what is CRISPR-Cas9?, RNA World Hypothesis, RNA interference, Restriction Enzymes, Southern Blotting, Western Blotting, PCR) — about 63 minutes total, covering key functional genomics methods relevant to variant effect assays.
+
+*Why it unblocks this paper:* This short-form playlist by Sahil Saxena offers concise, clear animated videos on functional genomics techniques including CRISPR, RNAi, PCR, and sequencing methods, providing a quick yet solid foundation on the experimental tools underpinning the paper's assays.
+
+*If you want all of it:* All 14 episodes, approximately 2.2 hours — for a broader but still concise overview of functional genomics techniques.
 
 ## Track 1 — Academic deep-dives (long-form)
 

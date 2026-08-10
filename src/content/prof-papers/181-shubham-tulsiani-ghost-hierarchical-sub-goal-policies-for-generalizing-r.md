@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-shubham-tulsiani"
-source_hash: "9f4c80ae9a782a8af5437b4d27c9db7c8b4c55f724de8b16cc4a01ba0a51d5ff"
+source_hash: "dc8810da851d524b35363b044871ddbae4bd8ea4ad0b22a000643bc51d6493ab"
 sequence: 181
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,27 @@ Research interests: building perception systems that can infer the spatial and p
 - [Social profile](https://twitter.com/shubhtuls)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** robot visuomotor control
+**The paper assumes:** robot visuomotor control, hierarchical policy learning, 3D perception for manipulation
+**Already in this field?** Skip this entirely if you already understand how robots use visual inputs to generate motor commands for manipulation tasks.
+
+To deeply understand the hierarchical visuomotor control approach in the GHOST paper, it is essential to grasp how robots perceive visual inputs and translate them into motor actions, including imitation learning and goal-conditioned policies. The rigorous course provides a structured, in-depth foundation on robot learning principles, while the fast track offers a concise, focused overview suitable for quickly building intuition on core concepts.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Main Lectures - ETHZ Robot Learning Course 2026](https://www.youtube.com/playlist?list=PLPU18BnWYUZJx3_d901-GD6BGpeWwE2vx) — Oier Mees · 11 videos · 10.4h across 11 episodes
+
+**Watch only this:** Lectures 1-3 (Introduction to Robot Learning, Robot Control & Markov Decision Processes, Imitation Learning), plus Lecture 9 (Generalist Robot Policies), about 4.5 hours total — these cover the fundamentals of robot learning, control, imitation, and hierarchical policies relevant to GHOST.
+
+*Why it unblocks this paper:* This ETH Zürich Robot Learning 2026 course by Oier Mees covers foundational topics directly relevant to the paper, including imitation learning, reinforcement learning, generative models, and hierarchical policy design, providing a comprehensive understanding of visuomotor control and robot learning.
+
+*If you want all of it:* Approximately 10.4 hours across all 11 episodes.
 
 ## Track 1 — Academic deep-dives (long-form)
 

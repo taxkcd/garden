@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-manolis-kellis"
-source_hash: "0998347f20764b4ebb4393f435855051308c86c14849ceeb3c23659a00370e26"
+source_hash: "111e52f51f0957552fb307706c6480349591fe983664c7d9de2874053e2a0e81"
 sequence: 167
 generator: "outreach-garden: managed"
 ---
@@ -54,6 +54,38 @@ Research interests: computational integration of large-scale functional and comp
 - [Google Scholar](https://scholar.google.com/citations?user=lsYXBx8AAAAJ)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** interpretable machine learning
+**The paper assumes:** interpretable machine learning models, generalized additive models, boosted decision trees, and model interpretability techniques
+**Already in this field?** Skip this entirely if you already understand interpretable machine learning methods and how generalized additive models and boosted trees are used to analyze clinical data.
+
+To understand the interpretable machine learning techniques central to this paper, especially generalized additive models and boosted decision trees for detecting threshold-induced biases in clinical risk data, two background options are provided. The rigorous course offers a deep, structured foundation in machine learning principles including ensemble methods and decision trees, while the fast track provides a concise, focused introduction to interpretable ML concepts and key explainability tools. Choose the rigorous course for comprehensive mastery or the fast track for a quick, practical grasp of interpretable ML relevant to biomedical applications.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS229: Machine Learning led by Andrew Ng | Autumn 2018](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU) — Stanford Online · 21 videos · 27.9h across 21 episodes
+
+**Watch only this:** Lectures 9 (Decision Trees and Ensemble Methods) and 8 (Data Splits, Models & Cross-Validation), plus Lectures 1-4 for foundational context, about 6.5 hours total — this subset covers core ML methods and model evaluation relevant to interpretable ML models in the paper.
+
+*Why it unblocks this paper:* Stanford CS229 by Andrew Ng is a rigorous, authoritative machine learning course covering decision trees, ensemble methods, and foundational ML concepts necessary to understand the glass-box ML models used in the paper.
+
+*If you want all of it:* 27.9 hours across all 21 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Interpretable Machine Learning - Kaggle Course](https://www.youtube.com/playlist?list=PLpdmBGJ6ELUJaQDlOzg3tCoGc4ouyE55_) — 1littlecoder · 5 videos · 2.1h across 5 episodes
+
+**Watch only this:** All 5 episodes, about 2.1 hours total — this covers key interpretable ML tools and use-cases needed to grasp the paper's methodology.
+
+*Why it unblocks this paper:* The Kaggle Interpretable Machine Learning course offers a concise, well-structured introduction to interpretable ML concepts including feature importance, partial dependence plots, and SHAP values, directly relevant to understanding the paper's glass-box ML approach.
+
+*If you want all of it:* 2.1 hours across 5 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

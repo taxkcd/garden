@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-tara-salman"
-source_hash: "22df0ea3bc687f9c8aa163d93ef73e4ae0ff62983afb341442032afbc5337b6b"
+source_hash: "1feb91d38a17cb22988ad24ce5f94b06e51a422b2e5b1bd09bbee76890feebc1"
 sequence: 158
 generator: "outreach-garden: managed"
 ---
@@ -57,6 +57,38 @@ Research interests: Distrubuted Intelligence Security and Privacy, Cybersecurity
 - [LinkedIn](https://www.linkedin.com/in/tara-salman-73a74065/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Federated Learning for NLP
+**The paper assumes:** federated learning, distributed machine learning, and parameter-efficient fine-tuning
+**Already in this field?** Skip this entirely if you already understand federated learning frameworks and their application to large language models.
+
+This background selection focuses on federated learning principles applied to large language models (LLMs), crucial for understanding the GradualDiff-Fed framework's methodology and communication efficiency. The rigorous course provides a deep, structured university-level exploration of transformers and LLMs, including fine-tuning techniques relevant to federated settings. The fast track offers a concise, accessible series of clear explainers on federated learning fundamentals, ideal for quickly grasping the core concepts without extensive time investment.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CME295: Transformers and Large Language Models I Autumn 2025](https://www.youtube.com/playlist?list=PLoROMvodv4rOCXd21gf0CF4xr35yINeOy) — Stanford Online · 9 videos · 16.2h across 9 episodes
+
+**Watch only this:** Lectures 1-5 ("Transformer" through "LLM tuning"), about 9 hours — these cover the Transformer architecture, LLM fundamentals, training, and tuning, which are essential to understand the model and fine-tuning aspects of GradualDiff-Fed.
+
+*Why it unblocks this paper:* Stanford CME295 is a comprehensive university course covering transformers, large language models, and fine-tuning techniques, directly relevant to the GradualDiff-Fed paper's focus on efficient LLM fine-tuning and federated learning.
+
+*If you want all of it:* 16.2 hours across all 9 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Federated Learning](https://www.youtube.com/playlist?list=PLbkIkxwQmHJS-5sIhlzSuICoA9deqe3t6) — Katai Noi · 14 videos · 4.0h across the first 13 episodes
+
+**Watch only this:** First 7 episodes ("NVIDIA Research: First Privacy-Preserving Federated Learning System for Medical Imaging" through "Brendan McMahan - Guarding user Privacy with Federated Learning and Differential Privacy"), about 2 hours — these cover core federated learning principles, privacy, and practical implementations relevant to the paper.
+
+*Why it unblocks this paper:* Katai Noi's "Federated Learning" playlist offers a clear, well-paced introduction to federated learning concepts, privacy, and decentralized training, which are foundational to understanding the federated learning framework and communication efficiency in GradualDiff-Fed.
+
+*If you want all of it:* 4.0 hours across the first 13 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-william-yeoh"
-source_hash: "5693b07b814050f7ff51b3b989b91c6d5cdef9f68ae835f6effc51c94b5fc12e"
+source_hash: "4d3861a892b2a20a2f2f3e4d4e4e5590ee011634a16469e23e4209be3108f0ad"
 sequence: 175
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,38 @@ Research interests: interdisciplinary approaches to enable human-AI collaboratio
 - [Resolved homepage](https://yeoh-lab.wustl.edu/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Computational Argumentation
+**The paper assumes:** formal argumentation theory, argumentation frameworks, acceptability semantics, computational argumentation solvers
+**Already in this field?** Skip this entirely if you already understand formal argumentation theory and how computational argumentation frameworks are constructed and evaluated.
+
+This background playlist selection is designed to provide foundational knowledge in computational argumentation, the core formalism underpinning the paper's approach to human-AI collaborative reasoning. The rigorous course option offers a structured, in-depth university-level lecture series on logic and argumentation, ideal for readers seeking comprehensive understanding. The fast track option is a concise, focused playlist on abstract argumentation semantics and reasoning interfaces, suitable for readers who want a quick yet solid grasp of the essential concepts without extensive time investment.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Logic in Philosophy: Complete Lecture Series for PMS/CSS](https://www.youtube.com/playlist?list=PLUhsC3QwBQk8) — Indus Institute of Competitive Exams · 18 videos · 3.7h across 18 episodes
+
+**Watch only this:** Lectures 1 (Introduction to Logic), 3 (Deductive and inductive Arguments | Part I), 4 (Deductive and Inductive arguments | Part II), 5 (Syllogism by Aristotle), 6 (Syllogism and standard form in Logic), 7 (Validity and Truth in Logic), 8 (Informal Fallacies: Fallacies of Relevance Part I), 9 (Informal Fallacies: Fallacies of Relevance Part II), about 1.5 hours total — these cover the core logical foundations and argument evaluation necessary for computational argumentation.
+
+*Why it unblocks this paper:* This Logic in Philosophy lecture series by Indus Institute covers foundational topics in logic, argument forms, and fallacies, which are essential for understanding formal argumentation frameworks and reasoning engines used in the paper.
+
+*If you want all of it:* 3.7 hours across all 18 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Course: Abstract Argumentation and Interfaces to Argumentative Reasoning](https://www.youtube.com/playlist?list=PLE4FIflP-ciusucDgSlwQzUXrGHP6_Uw9) — DrCerutti · 7 videos · 1.9h across 7 episodes
+
+**Watch only this:** Episodes 1 (Course introduction and motivation), 2 (Abstract Argumentation Semantics Part 1), 3 (Abstract Argumentation Semantics Part 2), and 5 (Algorithms, Techniques and Implementations), about 1.1 hours total — these provide a concise yet thorough introduction to abstract argumentation relevant to the paper.
+
+*Why it unblocks this paper:* This short course on Abstract Argumentation and Interfaces to Argumentative Reasoning directly addresses abstract argumentation semantics and reasoning algorithms, closely aligned with the paper's focus on argumentation frameworks and formal reasoning engines.
+
+*If you want all of it:* 1.9 hours across all 7 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-chaowen-guan"
-source_hash: "945e40e5904940cb09220fc5dc8eba80ea33813a3b13bc8678ad965c91140b10"
+source_hash: "8b49bad6e35c1ff3d4d8ea463b4a05e95957d9d1addf400417b9a85d0b6ac705"
 sequence: 156
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: theoretical computer science, security, cryptography, comput
 - [Professor website](https://chaoweng.github.io/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Probability Theory and Martingales
+**The paper assumes:** undergraduate-level probability theory, martingale theory, stochastic processes
+**Already in this field?** Skip this entirely if you already have a solid understanding of probability theory including martingales and their convergence properties.
+
+This background focuses on probability theory with an emphasis on martingales and submartingales, which are central to understanding the theoretical convergence guarantees in the AdaInit framework for mitigating barren plateaus in quantum neural networks. The rigorous course option provides a comprehensive university-level introduction to probability theory and stochastic processes, including foundational concepts needed to grasp martingale theory. The fast track offers a concise, intuition-driven series on probability concepts including martingales, suitable for quickly building the necessary intuition without deep technical detail.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Introduction to Probability Theory and Stochastic Processes](https://www.youtube.com/playlist?list=PLp6ek2hDcoNBtK-hVSSPlbBzfxXwWON4x) — NPTEL IIT Delhi · 93 videos · 18.7h across the first 60 episodes
+
+**Watch only this:** Episodes 1 through 30, about 9 hours — covering probability axioms, random variables, distributions, expectation, variance, and introduction to stochastic processes, which build the foundation for martingale theory.
+
+*Why it unblocks this paper:* This NPTEL IIT Delhi course covers foundational probability theory and stochastic processes in depth, including random variables, distributions, expectation, and convergence concepts that underpin martingale theory. It provides the rigorous mathematical background necessary to understand the submartingale property and convergence proofs in the paper.
+
+*If you want all of it:* About 18.7 hours across the first 60 episodes.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Probability](https://www.youtube.com/playlist?list=PLSlNlrUazlXJ7eRz6RzKschxiULMD-PsF) — Michael Francis · 10 videos · 1.5h across 10 episodes
+
+**Watch only this:** Episodes 1, 2, 3, and 10, about 36 minutes total — focusing on expectation, Markov chains, sigma fields, and martingale betting system intuition.
+
+*Why it unblocks this paper:* Michael Francis's 'Probability' playlist offers clear, visual, and intuition-first explanations of key probability concepts including expectation, Markov chains, and martingales, which are directly relevant to understanding the iterative submartingale process in AdaInit. It is concise and accessible for quick background.
+
+*If you want all of it:* About 1.5 hours across all 10 episodes.
 
 ## Track 1 — Academic deep-dives (long-form)
 

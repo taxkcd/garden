@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-alexander-a-sherstov"
-source_hash: "80c83f96a33db2abf042efc0b8a44579ae9303f753885cd25251d0a66f077986"
+source_hash: "f46a1d412cefdb05d3f98ca57dd7f2159c012288505e981fc3cbe0340cee910f"
 sequence: 177
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: theoretical computer science, computational complexity theor
 - [Professor website](http://web.cs.ucla.edu/~sherstov)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** communication complexity theory
+**The paper assumes:** communication complexity, randomized protocols, quantum communication complexity, lower bound techniques, multiparty communication models
+**Already in this field?** Skip this entirely if you have already studied graduate-level communication complexity theory including randomized and quantum models.
+
+To deeply understand the communication complexity aspects of approximating matrix rank and related linear algebraic problems in this paper, a solid grasp of communication complexity theory is essential. The rigorous course option provides a comprehensive university-level lecture series covering foundational and advanced topics, while the fast track offers a shorter, focused series of concise explainers on lower bounds and communication complexity techniques. Choose the rigorous course for a thorough theoretical foundation, or the fast track for a quicker, intuition-driven overview that still covers the core concepts.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Graduate Complexity Theory at CMU](https://www.youtube.com/playlist?list=PLm3J0oaFux3b8Gg1DdaJOzYNsaXYLAOKH) — Ryan O'Donnell · 29 videos · 35.8h across 29 episodes
+
+**Watch only this:** Lectures 11 (Communication Complexity I) and 13 (Communication Complexity II), about 2.5 hours total — these cover the core communication complexity concepts and techniques relevant to the paper.
+
+*Why it unblocks this paper:* This is a graduate-level complexity theory course by Ryan O'Donnell at CMU that includes detailed lectures on communication complexity and related lower bound techniques, matching the paper's focus on rigorous theoretical foundations and advanced methods.
+
+*If you want all of it:* All 29 lectures, about 35.8 hours total.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Lower Bounds in Computational Complexity Boot Camp](https://www.youtube.com/playlist?list=PLgKuh-lKre11cI7OzCL_xPas2Lir9i8nA) — Simons Institute for the Theory of Computing · 20 videos · 19.8h across 20 episodes
+
+**Watch only this:** Episodes 13 (Communication Complexity I) and 14 (Communication Complexity II), about 2 hours total — these episodes provide a focused and intuitive overview of communication complexity lower bound methods.
+
+*Why it unblocks this paper:* This Simons Institute series offers a concise, well-structured boot camp on lower bounds in computational complexity, including two focused lectures on communication complexity that provide a clear, accessible introduction to the key ideas and techniques used in the paper.
+
+*If you want all of it:* All 20 episodes, about 19.8 hours total.
 
 ## Track 1 — Academic deep-dives (long-form)
 

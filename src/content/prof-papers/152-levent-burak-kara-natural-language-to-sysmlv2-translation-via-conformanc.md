@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-levent-burak-kara"
-source_hash: "0624089d8289861ab6042ce9b4111b35beae9658517c699f545e3d0bdab19bae"
+source_hash: "d9af0871c124b618d4964ea589d9aab0c650751e2866413e12311b32bea1d1f1"
 sequence: 152
 generator: "outreach-garden: managed"
 ---
@@ -50,6 +50,38 @@ Research interests: AI and machine learning approaches for engineering design, s
 - [Resolved homepage](https://levburkara.github.io/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Model-Based Systems Engineering
+**The paper assumes:** model-based systems engineering, SysMLv2 modeling language, formal system modeling and conformance checking
+**Already in this field?** Skip this entirely if you already understand the basics of MBSE and SysMLv2 modeling languages and their role in engineering workflows.
+
+To understand the core concepts behind this paper's approach to generating production-conformant SysMLv2 models from natural language, a solid grasp of Model-Based Systems Engineering (MBSE) principles and SysML modeling is essential. The rigorous course option offers a deep, structured university-level introduction to systems engineering fundamentals, while the fast track provides a concise, accessible overview of MBSE concepts suitable for quick grounding or review.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [MIT 16.842 Fundamentals of Systems Engineering, Fall 2015](https://www.youtube.com/playlist?list=PLUl4u3cNGP60jIMmB53zl6awCKMnABhYx) — MIT OpenCourseWare · 21 videos · 15.5h across 21 episodes
+
+**Watch only this:** Lectures 11 to 13 ("2. Requirements Definition", "3. Systems Modeling Languages", "4. System Architecture and Concept Generation"), about 2 hours 15 minutes — these cover the essentials of requirements, modeling languages including SysML, and system architecture relevant to MBSE workflows.
+
+*Why it unblocks this paper:* MIT's Fundamentals of Systems Engineering course covers foundational systems engineering topics including requirements, modeling languages, architecture, and verification, providing the rigorous background needed to appreciate the challenges and methods in MBSE and SysMLv2 modeling addressed by the paper.
+
+*If you want all of it:* All 21 lectures, approximately 15.5 hours
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [MBSE (Model-based Systems Engineering)](https://www.youtube.com/playlist?list=PLGhpWUrh0wFv6o33ZEXOt-PfJzWP2vOCR) — Antemia · 7 videos · 1.0h across 7 episodes
+
+**Watch only this:** Episodes 1 to 4 ("ELEMENTS of Model-based Systems Engineering (MBSE)", "The Value of Model-based Systems Engineering (MBSE)", "Overview of MBSE Methods", "The MBSE Triangle of Methods, Languages, and Tools"), about 32 minutes — these episodes cover the fundamental elements and methods of MBSE necessary to understand the paper's context.
+
+*Why it unblocks this paper:* This short-form series by Antemia provides a clear, concise introduction to MBSE concepts, methods, and benefits in about one hour, ideal for quickly grasping the key ideas behind model-based engineering and SysML without deep technical detail.
+
+*If you want all of it:* All 7 episodes, approximately 1 hour
 
 ## Track 1 — Academic deep-dives (long-form)
 

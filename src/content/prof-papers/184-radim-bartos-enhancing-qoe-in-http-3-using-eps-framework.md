@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-radim-bartos"
-source_hash: "bd4c11536816ff1cd9f5cc3d89cf0f5ff9de4df64cb5b528698b899fc51aec59"
+source_hash: "81164bed48244f7c4f3b1983406f1174204216d12692da8f9ac70d181b6c2499"
 sequence: 184
 generator: "outreach-garden: managed"
 ---
@@ -50,6 +50,38 @@ Research interests: communication protocol design, networked computing, precisio
 - [Resolved homepage](http://www.cs.unh.edu/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Computer Networking and HTTP/3 Protocols
+**The paper assumes:** modern computer networking protocols, HTTP/3 and QUIC architecture, resource prioritization in web protocols
+**Already in this field?** Skip this entirely if you already understand HTTP/3 and QUIC protocols, including their resource prioritization and scheduling mechanisms.
+
+To fully understand the paper on enhancing QoE in HTTP/3 using the EPS framework, a solid grasp of HTTP/3, QUIC, and resource prioritization in networking protocols is essential. The rigorous course option provides a deep, structured university-level foundation in computer networking, including HTTP and transport protocols, while the fast track offers a concise, focused series on HTTP versions culminating in HTTP/3, ideal for quickly grasping the key concepts relevant to this paper.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Computer Networking CSE 311 Full Course | Networking Fundamentals, Protocols, and Technologies](https://www.youtube.com/playlist?list=PLwmkgSt3xgJqBlMQ-BUDA8BeGI_4fOolw) — StudyHelp CSE · 23 videos · 21.6h across 23 episodes
+
+**Watch only this:** Episodes 5, 6, and 8 ("HTTP & Application Layer Explained", "HTTP/2, FTP, SMTP, DNS Explained", and "Transport Layer Explained") totaling about 2 hours 50 minutes — these cover HTTP fundamentals, HTTP/2 improvements, and transport layer basics essential for HTTP/3 understanding.
+
+*Why it unblocks this paper:* This comprehensive university-level course covers fundamental and advanced networking concepts including HTTP, transport protocols, and multiplexing, providing the rigorous background needed to understand HTTP/3, QUIC, and prioritization mechanisms like EPS.
+
+*If you want all of it:* 21.6 hours across 23 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Every HTTP Version from HTTP/0.9 to HTTP/3.0 Explained — What Most Developers Never Learn — System Design Fundamentals](https://www.youtube.com/playlist?list=PLEWDK_MfQW_NksDp62SaA6zjI2mJb2RXO) — CodeWithShrish · 6 videos · 1.3h across 6 episodes
+
+**Watch only this:** Episodes 14 and 15 ("HTTP/2.0 Deep Dive: Multiplexing, Header Compaction and more" and "HTTP/3.0 Deep Dive: Why HTTP/3 Uses UDP Instead of TCP") totaling about 24 minutes — these provide a concise explanation of HTTP/3’s key protocol features and multiplexing relevant to the paper.
+
+*Why it unblocks this paper:* This short series specifically explains every HTTP version up to HTTP/3, focusing on multiplexing, header compression, and the switch to UDP in HTTP/3, directly relevant to the paper's focus on HTTP/3 and EPS prioritization.
+
+*If you want all of it:* 1.3 hours across 6 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

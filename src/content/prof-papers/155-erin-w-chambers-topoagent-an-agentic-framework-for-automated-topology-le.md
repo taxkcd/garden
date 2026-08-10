@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-erin-w-chambers"
-source_hash: "c22b9810b7bd3235fb9688dd3ea1a3d720cce55c097d7a979ec10a608b2da4a2"
+source_hash: "8c66f7c02380ffc201aa1703329d2fabd28a17dcf44e0ee1d64c1be6fe74bcb0"
 sequence: 155
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: Computational Topology and Geometry, Shape analysis, Topolog
 - [ORCID](https://orcid.org/0000-0001-8333-3676)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Topological Data Analysis
+**The paper assumes:** topological data analysis, persistent homology, topological descriptors, computational topology
+**Already in this field?** Skip this entirely if you already have a solid understanding of topological data analysis and its computational methods.
+
+This background is designed to provide foundational knowledge in Topological Data Analysis (TDA), which is essential for understanding the TopoAgent framework's use of topological descriptors in medical imaging. The rigorous course option offers a deep, university-level treatment of computational algebraic topology, while the fast track provides a concise, intuition-driven introduction to TDA concepts. Choose the rigorous course for thorough theoretical grounding, or the fast track for a quicker, visual overview that covers the core ideas efficiently.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Computational Algebraic Topology Lecture Videos](https://www.youtube.com/playlist?list=PLnLAqsCN_2ke8_EUd_KoJsLkPO0BKrrc6) — Vidit Nanda · 37 videos · 13.4h across 37 episodes
+
+**Watch only this:** Watch Week 1 Lectures 1A through 1E (Simplicial Complexes, Subcomplexes and Filtrations, Geometric Realization, Simplicial Maps, Filtrations and Data), and Week 3 Lectures 3A through 3D (Euler Characteristic, Chain Complexes, Homology, Smith Normal Form), about 3.5 hours total. This subset covers the core mathematical structures and homology theory necessary to grasp TDA in the paper.
+
+*Why it unblocks this paper:* Vidit Nanda's Computational Algebraic Topology lecture series is a structured university-level course that covers key concepts such as simplicial complexes, filtrations, homology, and chain complexes, all fundamental to understanding topological descriptors and persistent homology used in TopoAgent.
+
+*If you want all of it:* About 13.4 hours across all 37 episodes.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Topological Data Analysis](https://www.youtube.com/playlist?list=PL8MAmqMDID4w_Rv2m2-lhrLQYrOz9iYMP) — AlgoTales · 9 videos · 2.3h across 9 episodes
+
+**Watch only this:** Watch episodes 1 through 5 (Introduction to Topological Data Analysis, Applications and Motivation, Simplicial Complex and Dimensions, Oriented Simplicial Complex, Face of a Simplex), about 1.25 hours total. This subset provides a solid conceptual foundation without deep algebraic detail.
+
+*Why it unblocks this paper:* The AlgoTales Topological Data Analysis playlist offers a clear, visual, and concise introduction to TDA concepts such as simplicial complexes, chain groups, and homology, making it ideal for quickly building intuition about the topological descriptors and data analysis methods used in TopoAgent.
+
+*If you want all of it:* About 2.3 hours across all 9 episodes.
 
 ## Track 1 — Academic deep-dives (long-form)
 

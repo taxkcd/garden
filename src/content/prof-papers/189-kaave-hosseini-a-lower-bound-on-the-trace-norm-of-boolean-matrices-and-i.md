@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-kaave-hosseini"
-source_hash: "593ccb213c6685bd20727c59232aab67948f699f137b9a80643818cfe97abee6"
+source_hash: "6286aae6816f144de01aad2e3264603a51b46e50f86647ca79b0a60aa51367f2"
 sequence: 189
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,38 @@ Research interests: Theoretical computer science, Additive combinatorics, Pseudo
 - [Resolved homepage](https://www.cs.rochester.edu/people/faculty/hosseini_s.kaave/index.html#main)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Fourier analysis of Boolean functions
+**The paper assumes:** discrete Fourier analysis of Boolean functions, spectral norm of Boolean functions, parity decision trees
+**Already in this field?** Skip this entirely if you already understand the basics of Fourier analysis on the Boolean cube and its applications to complexity theory.
+
+This background focuses on Fourier analysis of Boolean functions, a core mathematical tool used in the paper to analyze spectral norms and complexity measures of Boolean matrices and functions. The rigorous course provides a deep, structured understanding suitable for graduate-level study, while the fast track offers a more concise introduction to the key concepts for quicker comprehension. Choose the course for thorough mastery or the fast track for an efficient overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Analysis of Boolean Functions at CMU](https://www.youtube.com/playlist?list=PLm3J0oaFux3YypJNaF6sRAf2zC1QzMuTA) — Ryan O'Donnell · 23 videos · 29.8h across 23 episodes
+
+**Watch only this:** Lectures 1-6 (The Fourier expansion and basic formulas; Probability densities and BLR linearity testing; Social choice and influences; Noise stability and Arrow's Theorem; Spectral concentration and learning; Restrictions and the Goldreich--Levin Theorem), about 7.7 hours — these cover the foundational Fourier analysis and spectral norm concepts needed for the paper.
+
+*Why it unblocks this paper:* Ryan O'Donnell's 'Analysis of Boolean Functions at CMU' is a graduate-level course directly covering Fourier analysis of Boolean functions, including spectral norms, influences, and additive combinatorics, all central to the paper's methods and results.
+
+*If you want all of it:* All 23 lectures, about 29.8 hours.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Fourier Analysis](https://www.youtube.com/playlist?list=PL54nvfF_f4-dacWCEmA-jCNsDkitEg1I4) — Professor Anwer Explains · 8 videos · 4.9h across 8 episodes
+
+**Watch only this:** Lectures 1-4 (Fourier Series Part 1 & 2; Fourier Transform Part 1 & 2), about 2.4 hours — these provide the essential Fourier series and transform background needed to understand the paper's analytic techniques.
+
+*Why it unblocks this paper:* Professor Anwer Explains' 'Fourier Analysis' playlist offers a concise, clear introduction to Fourier series and transforms with well-structured episodes, suitable for quickly grasping the Fourier analytic tools relevant to Boolean function analysis.
+
+*If you want all of it:* All 8 lectures, about 4.9 hours.
 
 ## Track 1 — Academic deep-dives (long-form)
 

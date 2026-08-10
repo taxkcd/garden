@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-antonio-blanca"
-source_hash: "195846a1ca5eb5daeae73eec56e7b387f7a6f31c86b20610c29fc2138f3ff562"
+source_hash: "f8413c30cfda816cfbb30e7f156a2c3e6455b55ff5eaed2bf6f54dc6ad8de592"
 sequence: 166
 generator: "outreach-garden: managed"
 ---
@@ -51,6 +51,38 @@ Research interests: randomized algorithms, Markov chain Monte Carlo, spin system
 - [Resolved homepage](http://www.cse.psu.edu/~fhs/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Markov chain mixing times
+**The paper assumes:** Markov chain mixing times, coupling methods, cutoff phenomena in Markov chains
+**Already in this field?** Skip this entirely if you already understand Markov chain convergence, mixing time bounds, and coupling techniques.
+
+To understand the mixing time and cutoff phenomena of the Swendsen–Wang dynamics studied in this paper, a solid grasp of Markov chain mixing times and convergence theory is essential. The rigorous course option offers a deep, structured university-level introduction to stochastic processes and Markov chains, suitable for thorough foundational learning. The fast track provides a focused, shorter series specifically on discrete Markov chains and mixing times, ideal for quickly gaining the key concepts and intuition needed to follow the paper's arguments.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [JAN 2020 - Introduction to Stochastic Processes](https://www.youtube.com/playlist?list=PLOzRYVm0a65dFqcSScAAtAjOMGrG7luhz) — NPTEL IIT Bombay · 50 videos · 31.8h across 50 episodes
+
+**Watch only this:** Watch Week 5: Lecture 16 to Lecture 20 (Poisson Process and its properties) and Week 6: Lecture 21 to Lecture 23 (Convergence of sequence of random variables and relations between notions of convergence), about 3.5 hours total — these lectures cover convergence concepts and stochastic process properties relevant to mixing time analysis.
+
+*Why it unblocks this paper:* This NPTEL IIT Bombay course on stochastic processes covers foundational probability and Markov chain concepts, including convergence and mixing, which underpin the paper's analysis of Swendsen–Wang dynamics mixing times.
+
+*If you want all of it:* 31.8 hours across 50 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Discrete Markov Chains: mixing times and beyond (2014)](https://www.youtube.com/playlist?list=PLo4jXE-LdDTT5GR1CJSLoOsTyf1ZbrM8w) — Instituto de Matemática Pura e Aplicada · 16 videos · 15.4h across 16 episodes
+
+**Watch only this:** Watch episodes 1 to 5 (Discrete Markov Chains: mixing times and beyond - MINICOURSE - Johel Beltrán 01 to 05), about 4.75 hours total — these cover the fundamental theory of mixing times and coupling techniques essential for understanding the paper's methods.
+
+*Why it unblocks this paper:* This minicourse on discrete Markov chains and mixing times by Instituto de Matemática Pura e Aplicada focuses directly on mixing times and cutoff phenomena, matching the paper's core topic with clear, targeted lectures.
+
+*If you want all of it:* 15.4 hours across 16 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

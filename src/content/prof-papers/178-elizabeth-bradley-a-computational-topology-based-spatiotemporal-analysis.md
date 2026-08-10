@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-elizabeth-bradley"
-source_hash: "d61fa6781cb20bc0b1cc414e96d8886759f80866d45f673934e8ef96ede800c3"
+source_hash: "6f8d89051ce9ff33e608cb54c5783c115d93011e48744c60207f45112bb609af"
 sequence: 178
 generator: "outreach-garden: managed"
 ---
@@ -55,6 +55,38 @@ Research interests: nonlinear dynamics and chaos, scientific computation and AI,
 - [Lab website](https://www.colorado.edu/cs/research/complex-systems)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Topological Data Analysis
+**The paper assumes:** topological data analysis, persistent homology, computational topology, multi-scale shape analysis
+**Already in this field?** Skip this entirely if you already understand the basics of topological data analysis and persistent homology.
+
+This background focuses on Topological Data Analysis (TDA), which is central to understanding the paper's methodology involving persistent homology and CROCKER matrices for analyzing honeybee aggregation patterns. The rigorous course option provides a deep, structured university-level introduction to computational algebraic topology concepts essential for grasping the mathematical foundations of TDA. The fast track offers a concise, intuition-driven explainer series that covers the core TDA concepts quickly, ideal for readers needing a practical overview without extensive time commitment.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Computational Algebraic Topology Lecture Videos](https://www.youtube.com/playlist?list=PLnLAqsCN_2ke8_EUd_KoJsLkPO0BKrrc6) — Vidit Nanda · 37 videos · 13.4h across 37 episodes
+
+**Watch only this:** Watch Week 1 Lectures 1A to 1E (Simplicial Complexes, Subcomplexes, Geometric Realization, Simplicial Maps, Filtrations and Data), and Week 3 Lectures 3A to 3C (Euler Characteristic, Chain Complexes, Homology), about 3.5 hours total — this subset covers the core topological and homological concepts needed to understand persistent homology and CROCKER matrices.
+
+*Why it unblocks this paper:* Vidit Nanda's Computational Algebraic Topology lecture series is a rigorous university-level course that systematically covers simplicial complexes, filtrations, homology, and related algebraic topology concepts foundational to persistent homology and TDA methods used in the paper.
+
+*If you want all of it:* All 37 episodes, about 13.4 hours total.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Topological Data Analysis](https://www.youtube.com/playlist?list=PL8MAmqMDID4w_Rv2m2-lhrLQYrOz9iYMP) — AlgoTales · 9 videos · 2.3h across 9 episodes
+
+**Watch only this:** Watch episodes 1 through 6 (Introduction to TDA, Applications, Simplicial Complex, Oriented Simplicial Complex, Face of a Simplex, Boundary of a Simplex), about 1.5 hours total — these cover the essential concepts to grasp the paper's topological data analysis approach.
+
+*Why it unblocks this paper:* AlgoTales' Topological Data Analysis series provides clear, visual, and concise explanations of TDA fundamentals including simplicial complexes, homology, and boundary operators, making it an excellent quick introduction aligned with the paper's use of persistent homology.
+
+*If you want all of it:* All 9 episodes, about 2.3 hours total.
 
 ## Track 1 — Academic deep-dives (long-form)
 

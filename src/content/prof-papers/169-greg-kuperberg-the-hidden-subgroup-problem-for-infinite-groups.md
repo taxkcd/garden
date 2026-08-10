@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-greg-kuperberg"
-source_hash: "62984fb56340b531125c02ad5a00741899614fa264f3f8d02c76d62579e74408"
+source_hash: "83249fa837a388645d55ae3475368ca5ac1c625c2becb60c479db2919969f9f8"
 sequence: 169
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,38 @@ Research interests: Quantum algebra, geometric topology, quantum information the
 - [Google Scholar](https://scholar.google.com/citations?user=OrKdXCgAAAAJ&hl=en)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Quantum algorithms and group theory
+**The paper assumes:** quantum computing algorithms, finite and infinite group theory, hidden subgroup problem, lattice theory in quantum algorithms
+**Already in this field?** Skip this entirely if you already understand quantum algorithms for group problems including Shor's algorithm and the hidden subgroup problem in finite groups.
+
+To understand the hidden subgroup problem for infinite groups and the quantum algorithms and complexity results in this paper, a solid grasp of quantum algorithms in the query model and their application to group-theoretic problems is essential. The rigorous course offers a deep, structured university-level treatment of quantum algorithms and their limitations, ideal for thorough preparation. The fast track provides a concise, intuition-driven introduction to quantum algorithms, including key algorithms like Shor's and Simon's, suitable for quickly gaining the necessary conceptual background.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Quantum Computing: Algorithms and Limitations Through the Query Model](https://www.youtube.com/playlist?list=PLFW6lRTa1g80Zenx6Iz3tbNW93T2AhCKh) — IIT KANPUR-NPTEL · 48 videos · 30.9h across 48 episodes
+
+**Watch only this:** Lectures 1-24 (Introduction to Quantum Algorithms through Randomized Algorithms - Part 1), about 15.2 hours — these cover the fundamentals of quantum computation, query complexity, and key quantum algorithms including Shor's algorithm and the hidden subgroup problem framework.
+
+*Why it unblocks this paper:* This IIT Kanpur NPTEL course covers quantum algorithms comprehensively through the query model, including foundational linear algebra, quantum states, and key algorithms like Deutsch, Simon, and Shor, which are directly relevant to understanding the paper's quantum algorithmic techniques and complexity results.
+
+*If you want all of it:* All 48 lectures, about 30.9 hours
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Quantum Algorithms](https://www.youtube.com/playlist?list=PLqnedHmObuWGWkwhBaUobaBtMR4eEDuUR) — MH1200 · 28 videos · 9.3h across 28 episodes
+
+**Watch only this:** Episodes 1-14 (Qalgo 1.1: Quantum circuit model through Qalgo 3.4: Shor's algorithm: from period finding to integer factorization), about 4.5 hours — these cover the quantum circuit model, key quantum algorithms, and the hidden subgroup problem essentials.
+
+*Why it unblocks this paper:* This playlist by MH1200 offers a concise and clear explanation of quantum algorithms, including detailed episodes on Shor's algorithm, Simon's algorithm, and the hidden subgroup problem, providing a quick but solid conceptual grounding for the paper's topics.
+
+*If you want all of it:* All 28 episodes, about 9.3 hours
 
 ## Track 1 — Academic deep-dives (long-form)
 

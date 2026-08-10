@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-trong-nghia-hoang"
-source_hash: "2e362a93544bffa9b2122da270adc496c48efc779b6465815054b5c277367dba"
+source_hash: "78dde2a9e0a55ebb65b4fedd9a760de92ffb9edf8bf1865006cdd6b859350eb6"
 sequence: 150
 generator: "outreach-garden: managed"
 ---
@@ -51,6 +51,27 @@ This paper proposes a novel method to improve how transformer models estimate un
 - [Resolved homepage](https://htnghia87.github.io/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Probabilistic Machine Learning
+**The paper assumes:** probabilistic modeling, Gaussian processes, variational inference, uncertainty quantification in machine learning
+**Already in this field?** Skip this entirely if you already understand probabilistic machine learning concepts including Gaussian processes and variational inference.
+
+To understand the core methodology of this paper, which models transformer feature transformations as probabilistic diffusion processes for uncertainty calibration, a solid grasp of probabilistic machine learning concepts—especially Gaussian processes and variational inference—is essential. The rigorous course offers a deep, structured dive into these topics, while the fast track provides a concise, focused introduction to the foundational probabilistic concepts needed to follow the paper's approach.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ ["17. Bayesian Statistics" (MIT OpenCourseWare), ...](https://www.youtube.com/playlist?list=PLcd9tgLrnYmgvxsS-1MdUZH71vvZeMEb5) — elizabethx0 · 8 videos · 3.7h across 8 episodes
+
+**Watch only this:** Episodes 1 (17. Bayesian Statistics), 5 (Gaussian Processes), and 6 (Bayesian Linear Regression : Data Science Concepts), totaling about 1.3 hours — enough to grasp the key probabilistic concepts relevant to the paper.
+
+*Why it unblocks this paper:* This concise Bayesian statistics playlist includes a focused episode on Gaussian processes and covers foundational Bayesian inference concepts, providing a quick yet solid introduction to the probabilistic modeling and inference techniques critical for understanding the paper.
+
+*If you want all of it:* All 8 episodes, about 3.7 hours.
 
 ## Track 1 — Academic deep-dives (long-form)
 

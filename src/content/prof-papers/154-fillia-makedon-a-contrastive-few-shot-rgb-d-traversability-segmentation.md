@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-fillia-makedon"
-source_hash: "c617e189ca577f566474780cfec91deab647fe60dd06bb636f1e16c33613cb71"
+source_hash: "4e3eee42a98f11afb8dfc2e614eaf0b0afac08e184aaa72187de4724cc26ef8a"
 sequence: 154
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,38 @@ Research interests: Human Computer Interaction (HCI), Human Robot Interaction (H
 - [DBLP](http://dblp.uni-trier.de/pers/hd/m/Makedon:Fillia)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Contrastive Learning in Computer Vision
+**The paper assumes:** contrastive learning, few-shot learning, and multi-modal segmentation in computer vision
+**Already in this field?** Skip this entirely if you already understand contrastive learning techniques and their application in few-shot computer vision tasks.
+
+To understand the novel negative contrastive learning approach and few-shot segmentation techniques in this paper, background in contrastive learning within computer vision is essential. The rigorous course option offers a deep, structured university-level lecture series on deep learning for computer vision, covering foundational and advanced topics including self-supervised and contrastive learning. The fast track provides a concise, visual explainer playlist that quickly introduces key concepts in computer vision and contrastive loss, suitable for readers who want a focused overview without the full depth.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS231N Deep Learning for Computer Vision I 2025](https://www.youtube.com/playlist?list=PLoROMvodv4rOmsNzYBMe0gJY2XS8AQg16) — Stanford Online · 18 videos · 21.2h across 18 episodes
+
+**Watch only this:** Lectures 1 through 12, about 14 hours — covering introduction, CNNs, attention, object detection, video understanding, large scale training, and especially self-supervised learning (Lecture 12) which includes contrastive learning principles.
+
+*Why it unblocks this paper:* This is the official Stanford CS231N Deep Learning for Computer Vision I 2025 course, a highly authoritative and comprehensive university lecture series that covers core topics including self-supervised learning and contrastive learning relevant to the paper's methodology.
+
+*If you want all of it:* 21.2 hours across all 18 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Computer Vision](https://www.youtube.com/playlist?list=PLb_NXvYj82cxVqP-Np6HqgdG7_odwnq_g) — Bits Of Deep Learning · 6 videos · 1.3h across 6 episodes
+
+**Watch only this:** All 6 episodes, about 1.3 hours — especially the episode 'MulCon: Contrastive Loss for Multi-Label Images | Paper Explained' for direct relevance to contrastive learning.
+
+*Why it unblocks this paper:* This Bits Of Deep Learning playlist offers a concise and clear introduction to computer vision topics including a dedicated episode on contrastive loss for multi-label images, providing a quick and intuitive understanding of contrastive learning relevant to the paper.
+
+*If you want all of it:* 1.3 hours across all 6 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

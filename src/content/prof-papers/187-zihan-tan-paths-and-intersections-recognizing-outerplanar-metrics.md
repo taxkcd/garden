@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-zihan-tan"
-source_hash: "fd8c71c2510ceeef615b34bd35867e1f2239121397317eb5fe7077da65db41df"
+source_hash: "738b3a46609569ecdb1a479656ec0a1f42c11e8ccc6436035bf42d9527f8d352"
 sequence: 187
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,38 @@ Research interests: theoretical computer science, with a focus on graph algorith
 - [Google Scholar](https://scholar.google.com/citations?user=1Z0cFgMAAAAJ&hl=zh-CN)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Graph Theory and Shortest Paths
+**The paper assumes:** graph theory, shortest path algorithms, planar and outerplanar graph properties
+**Already in this field?** Skip this entirely if you are comfortable with graph theory fundamentals, shortest path computations, and basic planar graph concepts.
+
+This background focuses on graph theory fundamentals essential for understanding shortest-path metrics, outerplanar graphs, and path intersection concepts critical to the paper's algorithmic and structural results. The rigorous course provides a deep, university-level foundation in graph theory and additive combinatorics, while the fast track offers a concise, practical introduction to graph algorithms and shortest paths, suitable for quickly gaining the necessary intuition and technical tools.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [MIT 18.217 Graph Theory and Additive Combinatorics, Fall 2019](https://www.youtube.com/playlist?list=PLUl4u3cNGP62qauV_CpT1zKaGG_Vj5igX) — MIT OpenCourseWare · 26 videos · 33.9h across 26 episodes
+
+**Watch only this:** Lectures 1-5 (A bridge between graph theory and additive combinatorics through Forbidding a subgraph III), about 6.5 hours — these cover foundational graph theory concepts, paths, cycles, and structural properties relevant to shortest path metrics and outerplanar graphs.
+
+*Why it unblocks this paper:* MIT 18.217 is a comprehensive, rigorous university course covering graph theory topics including connectivity, paths, cycles, and advanced structural results, providing the theoretical depth needed to fully grasp the paper's novel graph metric realizability results and path intersection framework.
+
+*If you want all of it:* 33.9 hours across 26 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Graph Algorithms Roadmap: BFS → DFS → A* → Flow Algorithms](https://www.youtube.com/playlist?list=PL0TTjZzXXI78EJFmAAjdbnCTiIzLHQvpV) — Arun Tyagi · 14 videos · 7.4h across 14 episodes
+
+**Watch only this:** Episodes 1-7 (Find Eventual Safe States through Shortest Path in Directed Acyclic Graph), about 3.5 hours — these cover shortest paths, topological sorting, and graph connectivity essential for the paper's algorithmic techniques.
+
+*Why it unblocks this paper:* Arun Tyagi's Graph Algorithms Roadmap playlist offers clear, focused explanations of shortest path algorithms, graph connectivity, and related graph concepts, providing a practical and intuitive foundation for understanding shortest path structures and algorithmic approaches used in the paper.
+
+*If you want all of it:* 7.4 hours across 14 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

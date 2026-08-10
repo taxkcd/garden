@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-yair-zick"
-source_hash: "3683acf93b28936fa694ff1aaae2e637ddf5a3cbe9fabe024c96794268e4d5b5"
+source_hash: "8e5bf37f424bfaea4546417ec47e3c814a71795b60bba5de9f8e46d2e650b974"
 sequence: 182
 generator: "outreach-garden: managed"
 ---
@@ -51,6 +51,38 @@ Research interests: Computational aspects of game theory and fair division, fair
 - [Identity evidence](https://people.cs.umass.edu/~yzick/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Hierarchical Task Planning AND/OR Trees
+**The paper assumes:** hierarchical task planning, AND/OR tree search algorithms, and symbolic AI planning
+**Already in this field?** Skip this entirely if you already understand hierarchical planning methods and AND/OR tree representations in AI task decomposition.
+
+To understand STRUCTUREDAGENT's core hierarchical planning framework using AND/OR trees, it is essential to grasp hierarchical task planning concepts and tree-based decomposition of tasks. The rigorous course option offers a deep, university-level treatment of planning and learning, ideal for readers seeking comprehensive understanding and theoretical foundations. The fast track provides a concise, focused introduction to hierarchical task network planning and related planning concepts, suitable for readers who want a quick yet solid grasp of the key ideas without investing many hours.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [CSE574 Planning & Learning (Fall 2022 ASU)](https://www.youtube.com/playlist?list=PLNONVE5W8PCRvVliwpI5PGcRBI5xdywha) — Subbarao Kambhampati · 15 videos · 36.6h across 15 episodes
+
+**Watch only this:** Lectures 1-4 plus Lectures 8-9, about 12 hours total — covering introduction to planning, atomic transition systems, refinement planning strategies, planning heuristics, and hierarchical task networks.
+
+*Why it unblocks this paper:* This ASU course by Subbarao Kambhampati covers hierarchical planning and task networks in depth, including abstraction, hierarchy, and planning heuristics, directly relevant to understanding AND/OR tree-based hierarchical planning frameworks like STRUCTUREDAGENT.
+
+*If you want all of it:* 36.6 hours across all 15 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [ai unit 6 planning](https://www.youtube.com/playlist?list=PL_xGuJKqvelB_Hniz9Ivoqjt6j8l30tng) — SPPU CS & IT Solutions · 11 videos · 2.0h across 11 episodes
+
+**Watch only this:** Episodes 1-3, about 30 minutes total — covering hierarchical task network planning, planning graphs, and state space search planning.
+
+*Why it unblocks this paper:* This short-form playlist provides a clear, concise introduction to hierarchical task network planning and classical AI planning algorithms, giving a quick but relevant overview of hierarchical planning concepts needed to understand the paper's approach.
+
+*If you want all of it:* 2.0 hours across 11 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

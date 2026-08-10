@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-ramyaa-ramyaa"
-source_hash: "698d0448df674c0c361969bb7ba4bf80e5417e08ebc81f807ad15669274f0971"
+source_hash: "064d4a49b957fa17acea6f5545cedc52cf4f2b568e397bd610521f192ae334f1"
 sequence: 180
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,38 @@ Research interests: Theory of Computation (and Complexity) and Logic, focusing o
 - [Professor website](https://www.cs.nmt.edu/~ramyaa/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Reinforcement Learning
+**The paper assumes:** basic reinforcement learning concepts, Markov decision processes, Q-learning algorithm, action-value functions
+**Already in this field?** Skip this entirely if you already understand reinforcement learning fundamentals including Q-learning and Markov decision processes.
+
+This background focuses on reinforcement learning (RL), specifically Q-learning, which is the core method used in the paper to automate decision-making in radio interferometric data workflows. The rigorous course option offers a deep, structured university-level understanding of RL algorithms and theory, while the fast track provides a concise, intuition-driven introduction suitable for quickly grasping the essentials of RL and Q-learning. Readers should pick the lane that fits their available time and depth needs; the fast track is a solid standalone primer, not a watered-down version.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS224R Deep Reinforcement Learning](https://www.youtube.com/playlist?list=PLoROMvodv4rPwxE0ONYRa_itZFdaKCylL) — Stanford Online · 19 videos · 20.6h across 19 episodes
+
+**Watch only this:** Lectures 1 through 6, about 6.5 hours — covering class intro, imitation learning, policy gradients, actor-critic methods, off-policy actor critic, and specifically Q-learning.
+
+*Why it unblocks this paper:* This is a comprehensive, authoritative Stanford course on deep reinforcement learning including a dedicated lecture on Q-learning, the exact method used in the paper. It covers foundational concepts and advanced topics, providing the rigorous background needed to fully understand the paper's RL approach.
+
+*If you want all of it:* All 19 lectures, about 20.6 hours.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Reinforcement Learning - Developing Intelligent Agents](https://www.youtube.com/playlist?list=PLZbbT5o_s2xoWNVdDudn51XM8lOuZ_Njv) — deeplizard · 15 videos · 1.8h across 15 episodes
+
+**Watch only this:** Episodes 1 through 6, about 42 minutes — covering syllabus overview, MDPs, expected return, policies and value functions, what RL algorithms learn, and Q-learning explained.
+
+*Why it unblocks this paper:* This concise series by deeplizard provides clear, visual explanations of reinforcement learning fundamentals including Markov Decision Processes and Q-learning, matching the paper's focus on Q-learning-based decision making. It is well-suited for quickly gaining intuition and practical understanding.
+
+*If you want all of it:* All 15 episodes, about 1.8 hours.
 
 ## Track 1 — Academic deep-dives (long-form)
 

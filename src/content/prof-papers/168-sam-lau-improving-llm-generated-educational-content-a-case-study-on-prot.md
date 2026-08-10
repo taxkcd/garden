@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-sam-lau"
-source_hash: "6cb83a52dbaa493ee08d90e4237406f60f2cc0035bf078ac62f7fa4fef0f4b10"
+source_hash: "6474be0f1c541a6980013a8a57840a5acf187b345762efb1cfb73c34f8ba7109"
 sequence: 168
 generator: "outreach-garden: managed"
 ---
@@ -56,6 +56,38 @@ Research interests: novel interfaces for learning and teaching data science
 - [Social profile](https://twitter.com/samlau95)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Prompt Engineering for Large Language Models
+**The paper assumes:** prompt engineering techniques for large language models, context curation strategies, and LLM interaction principles
+**Already in this field?** Skip this entirely if you already understand how to design and optimize prompts for large language models and the role of context in LLM outputs.
+
+This background playlist selection focuses on prompt engineering and foundational knowledge of large language models (LLMs), which are central to understanding the iterative prompt design and context curation methods used in the paper. The rigorous course provides a deep, structured university-level foundation on LLMs and prompting, ideal for readers seeking comprehensive technical depth. The fast track offers a concise, focused introduction to prompt engineering concepts, suitable for readers who want a quick yet authoritative overview to grasp the core ideas efficiently.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Introduction to Large Language Models (LLMs)](https://www.youtube.com/playlist?list=PLp6ek2hDcoNDDRINFiWGDlPKUwW-g1Hjk) — NPTEL IIT Delhi · 38 videos · 29.0h across 38 episodes
+
+**Watch only this:** Lectures 21-23 (Prompt-based Learning, Advanced Prompting and Prompt Sensitivity), about 2.25 hours — these episodes specifically address prompt engineering concepts critical to understanding the paper's methodology.
+
+*Why it unblocks this paper:* This NPTEL IIT Delhi course thoroughly covers large language models, including foundational NLP concepts, transformer architectures, and detailed prompt-based learning and advanced prompting techniques, directly relevant to the paper's focus on prompt engineering and LLM behavior.
+
+*If you want all of it:* 29.0 hours across 38 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Badge 3: AI Prompt Designer](https://www.youtube.com/playlist?list=PL-rBWcduK19aEDgEYJcNeAH3oxCpq1NNB) — Dr. Rachid Jabbouri · 18 videos · 1.1h across 18 episodes
+
+**Watch only this:** Episodes 12-16 (Lessons 12-14 and related tutorials), about 15 minutes — these cover the art and key components of effective prompting essential for grasping the paper's prompt engineering approach.
+
+*Why it unblocks this paper:* This short-form series by Dr. Rachid Jabbouri offers a concise, practical introduction to AI prompt design and effective prompting strategies, providing a quick, focused overview of prompt engineering principles that underpin the paper's iterative prompt improvements.
+
+*If you want all of it:* 1.1 hours across 18 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

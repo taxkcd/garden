@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-jose-f-martinez"
-source_hash: "232fd084f8c6651f56c60ae1ddce2c0b069861f481f3fb147354e3115858b487"
+source_hash: "24ea4cd688c1193ca1c1cf6a39a0a14c1392e560f731566652d4d85bf9bd5bba"
 sequence: 162
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: computer architecture: Microprocessors and computer systems;
 - [Resolved homepage](https://martinez.csl.cornell.edu/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Transformer Attention Mechanisms
+**The paper assumes:** transformer architecture, attention mechanisms, key-value caching in transformers
+**Already in this field?** Skip this entirely if you already understand the transformer model's attention mechanism, including dense and sparse attention and key-value caching.
+
+Understanding transformer attention mechanisms is crucial for grasping the LongSight paper, which innovates on hybrid dense-sparse attention and memory offloading for large-context LLMs. The rigorous course option offers a deep, structured university-level exploration of transformers and attention, ideal for readers seeking comprehensive foundational knowledge. The fast track provides a concise, clear series of explainers focused specifically on attention mechanisms in transformers, suitable for readers who want a focused, intuition-driven overview in less time.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CME295: Transformers and Large Language Models I Autumn 2025](https://www.youtube.com/playlist?list=PLoROMvodv4rOCXd21gf0CF4xr35yINeOy) — Stanford Online · 9 videos · 16.2h across 9 episodes
+
+**Watch only this:** Lectures 1-3 (Transformer, Transformer-Based Models & Tricks, Transformers & Large Language Models), about 5.3 hours — these cover the fundamentals of transformer architecture, attention mechanisms, and LLMs necessary to understand LongSight's algorithmic innovations.
+
+*Why it unblocks this paper:* This Stanford CME295 course is a recent, in-depth university lecture series dedicated to Transformers and Large Language Models, covering the core components of the transformer architecture and attention mechanisms relevant to LongSight's hybrid dense-sparse attention approach.
+
+*If you want all of it:* All 9 episodes, about 16.2 hours — for a complete understanding of transformers, LLM training, tuning, reasoning, and evaluation.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Attention mechanism of Transformer in LLM](https://www.youtube.com/playlist?list=PLDZcNZfxTIGkH6Duj4uhCblaiJ8Htndf2) — Dipan Chowdhury Barua · 19 videos · 17.3h across 19 episodes
+
+**Watch only this:** Episodes 1-4 (Keys, Queries, and Values: The celestial mechanics of attention; The Attention Mechanism in Large Language Models; The math behind Attention: Keys, Queries, and Values matrices; Attention is all you need (Transformer) - Model explanation), about 3.5 hours — these provide a solid, intuitive understanding of attention mechanisms and their math.
+
+*Why it unblocks this paper:* This playlist by Dipan Chowdhury Barua offers a focused, clear, and well-structured series on the attention mechanism in transformers, including key concepts like keys, queries, values, and KV caching, directly relevant to LongSight's hybrid attention and memory offloading.
+
+*If you want all of it:* All 19 episodes, about 17.3 hours — for a thorough exploration of attention and related transformer concepts.
 
 ## Track 1 — Academic deep-dives (long-form)
 

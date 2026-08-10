@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-gautam-biswas"
-source_hash: "6c483b2a1935a791b386a2fd8cb3eea888df20f7a2406da884f45611ae346898"
+source_hash: "034e4f5aea80d33a2f152c72c6f637970c94ea768292b9b755bb241413a0a053"
 sequence: 171
 generator: "outreach-garden: managed"
 ---
@@ -56,6 +56,27 @@ Research interests: biomedical optics, microfluidics, and point of care diagnost
 - [Google Scholar](https://scholar.google.com/citations?user=hdkdN6oAAAAJ&hl=en)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Cognitive Science and Learning Theories
+**The paper assumes:** cognitive science theories of learning, educational psychology, formative assessment frameworks, scaffolding in education
+**Already in this field?** Skip this entirely if you already have a solid understanding of cognitive and educational psychology theories related to learning and scaffolding.
+
+To understand the theoretical framework of adaptive scaffolding in LLM-based pedagogical agents, it is essential to grasp foundational cognitive science and learning theories such as Evidence-Centered Design, Social Cognitive Theory, and Vygotsky’s Zone of Proximal Development. The rigorous course option offers a structured, university-level lecture series covering cognitive science comprehensively, while the fast track provides a concise, focused series on cognitive science fundamentals suitable for quick grounding without deep time investment.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Cognitive Science - Memory](https://www.youtube.com/playlist?list=PLfKl_7ysUk507sosowTGV-J17oW0epAAt) — Leng Yuen Sia · 16 videos · 4.9h across the first 15 episodes
+
+**Watch only this:** Episodes 1-5: 'The Neuroscience of Memory - Eleanor Maguire', 'AP Psychology - Memory - Part 1 - The Basics', 'AP Psychology - Memory - Part 2 - Types of Processing', 'AP Psychology - Memory - Part 3 - Long-Term Potentiation (LTP)', and 'AP Psychology - Memory - Unit Review - 10 Toughest Terms', about 1.5 hours total — these provide a focused overview of memory and learning relevant to the paper’s cognitive science foundation.
+
+*Why it unblocks this paper:* This concise series by Leng Yuen Sia offers clear, visual explanations of cognitive science topics including memory and learning processes, which are central to understanding how the pedagogical agent scaffolds learning. It is a well-produced, intuition-first series that quickly builds relevant background.
+
+*If you want all of it:* Approximately 4.9 hours across 15 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

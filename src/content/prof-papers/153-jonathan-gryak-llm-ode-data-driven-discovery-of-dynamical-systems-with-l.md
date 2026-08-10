@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-jonathan-gryak"
-source_hash: "2fea28f36c9db4c349326baa05eec7a0721f782ab3bba812935bb79bad8b2a77"
+source_hash: "f06bf8376d4c0d6ea25aec816cea937133a02b5c640e04ae618b0512f39200fd"
 sequence: 153
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: Artificial Intelligence / Machine Learning, Applied Algebra,
 - [Professor website](https://idsl.gryak.org/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Symbolic Regression and Genetic Programming
+**The paper assumes:** symbolic regression, genetic programming, evolutionary algorithms for symbolic model discovery
+**Already in this field?** Skip this entirely if you already understand symbolic regression methods and genetic programming algorithms for discovering mathematical models from data.
+
+This background focuses on symbolic regression and genetic programming, which are central to the LLM-ODE paper's method for discovering dynamical systems equations. The rigorous course provides a structured, university-level introduction to genetic programming concepts and workflow, while the fast track offers a concise, focused set of expert talks on symbolic regression and genetic programming techniques. Choose the course for a deep foundational understanding; choose the fast track for a quicker, research-informed overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Genetic Programming](https://www.youtube.com/playlist?list=PLTlh-8I__FNYQArhy2emM5gwJET03cd9v) — Gilad James Mystery School · 10 videos · 0.8h across 10 episodes
+
+**Watch only this:** Episodes 1-5, about 20 minutes — covers introduction, linear regression background, the proposed approach, and representation of genetic individuals, which are essential to understanding the paper's method.
+
+*Why it unblocks this paper:* This Genetic Programming course from Gilad James Mystery School is a concise, well-structured university-level introduction that covers key concepts such as representation of solutions, population generation, selection, and evaluation, directly relevant to the genetic programming core of LLM-ODE.
+
+*If you want all of it:* All 10 episodes, about 48 minutes total.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [genetic programming & symbolic regression](https://www.youtube.com/playlist?list=PLISEtDmihMo3YtzlZgMqCiB1M3qYBUboa) — arisbe, a guess at the riddle (curation) · 6 videos · 4.6h across 6 episodes
+
+**Watch only this:** Episodes 1-3, about 2.3 hours — includes foundational concepts in symbolic regression and model discovery, giving a solid overview of the techniques used in the paper.
+
+*Why it unblocks this paper:* This curated playlist by arisbe provides focused, expert-level talks on symbolic regression and genetic programming, including recent advances and applications, which align well with the paper's hybrid LLM and genetic programming approach.
+
+*If you want all of it:* All 6 episodes, about 4.6 hours total.
 
 ## Track 1 — Academic deep-dives (long-form)
 

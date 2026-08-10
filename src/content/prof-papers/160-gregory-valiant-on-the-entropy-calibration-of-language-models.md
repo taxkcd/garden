@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-gregory-valiant"
-source_hash: "a7f891a910b820c09ba0ace23c74be5fd102c52550347cd17b4b22a6c46cdc98"
+source_hash: "dcc4651e3f08b8c561deb6b1036972ae26e07a6d23798437bae58b79bcd2a9f4"
 sequence: 160
 generator: "outreach-garden: managed"
 ---
@@ -51,6 +51,38 @@ Research interests: Algorithms, Machine Learning, Statistics, Information Theory
 - [Resolved homepage](http://theory.stanford.edu/~valiant/index.html)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Information Theory
+**The paper assumes:** entropy, cross-entropy, log loss, calibration of probabilistic models, power law distributions, and information-theoretic measures
+**Already in this field?** Skip this entirely if you already understand entropy, log loss, and probabilistic model calibration from an information theory perspective.
+
+This background focuses on Information Theory, essential for understanding entropy, log loss, and calibration concepts central to the paper on entropy calibration of language models. The rigorous course option offers a deep, structured university-level lecture series, while the fast track provides a concise, intuition-driven explainer series for quicker comprehension. Choose the course for thorough mastery or the fast track for a focused, time-efficient overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Student Lectures - Information Theory](https://www.youtube.com/playlist?list=PL4d5ZtfQonW3iAhXvTYCnoGEeRhxhKHMc) — Oxford Mathematics · 8 videos · 6.9h across 8 episodes
+
+**Watch only this:** Lectures 1-4, about 3.4 hours — covering entropy definition, basic properties, codes introduction, and typical sequences to build a solid foundation for understanding entropy calibration.
+
+*Why it unblocks this paper:* This Oxford Mathematics 3rd year student lecture series covers fundamental concepts of information theory including entropy, codes, and typical sequences, directly relevant to the paper's theoretical analysis and calibration methods.
+
+*If you want all of it:* 6.9 hours across all 8 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Information Theory](https://www.youtube.com/playlist?list=PLbg3ZX2pWlgKDVFNwn9B63UhYJVIerzHL) — Art of the Problem · 16 videos · 2.0h across 16 episodes
+
+**Watch only this:** Episodes 1-6, about 42 minutes — covering the language of coins, birth of writing, introduction to coding, long distance communication, and the concept of a bit, sufficient for grasping entropy basics.
+
+*Why it unblocks this paper:* This 'Art of the Problem' series offers clear, visual, and concise explanations of key information theory concepts including entropy and coding, providing an accessible overview that supports understanding the paper's core ideas without extensive time commitment.
+
+*If you want all of it:* 2.0 hours across all 16 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

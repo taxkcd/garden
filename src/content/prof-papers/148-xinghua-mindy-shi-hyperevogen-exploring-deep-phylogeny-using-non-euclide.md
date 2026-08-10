@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-xinghua-mindy-shi"
-source_hash: "c73232711ab89dfb4e46a1a8d55a0cac3164f7c38f762dcb96ad01b6b7468aca"
+source_hash: "62c8f4a2f1c81636a52b206e700819dc63464fb4e16d1043b0dda13bce2be2ce"
 sequence: 148
 generator: "outreach-garden: managed"
 ---
@@ -51,6 +51,27 @@ Research interests: We work at the intersection of computer science, data scienc
 - [Faculty/profile page](https://cis.temple.edu/~mindyshi)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** hyperbolic geometry for machine learning
+**The paper assumes:** hyperbolic geometry, differential geometry, and geometric deep learning
+**Already in this field?** Skip this entirely if you already understand hyperbolic geometry concepts and their use in machine learning embeddings and variational autoencoders.
+
+This background focuses on hyperbolic geometry for machine learning, essential for understanding how HyperEvoGen embeds protein sequences into a hyperbolic latent space to capture hierarchical evolutionary relationships. The rigorous course offers a deep, structured mathematical foundation, while the fast track provides a concise, intuition-driven introduction to hyperbolic geometry and its applications, suitable for quickly grasping the core concepts.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Riemannian geometry](https://www.youtube.com/playlist?list=PLXo8Tdaw0czMUXXjezMP98FlwpG4LAThj) — What is Math? · 9 videos · 2.0h across 9 episodes
+
+**Watch only this:** Episodes 0 through 3, about 55 minutes — covering overview, Riemannian metrics, hyperbolic space, and connections, which give a concise but solid grounding in the geometry relevant to the paper.
+
+*Why it unblocks this paper:* This short-form series by 'What is Math?' offers clear, visual explanations of Riemannian geometry including hyperbolic space and geodesics, providing an accessible introduction to the geometric concepts critical for understanding HyperEvoGen's use of hyperbolic embeddings.
+
+*If you want all of it:* 2.0 hours across 9 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

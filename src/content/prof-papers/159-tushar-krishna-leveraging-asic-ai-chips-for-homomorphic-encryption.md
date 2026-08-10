@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-tushar-krishna"
-source_hash: "2535d63b9945b965aae8b4e2c78449c6cc40c8166b0d19fc18bd2dc7416cb724"
+source_hash: "5bbee7b400bb17ddf1e55e5255e3ec254f4c2a137a5560ce4ec79486f619b985"
 sequence: 159
 generator: "outreach-garden: managed"
 ---
@@ -51,6 +51,38 @@ Research interests: AI/ML Accelerators, Compositional & Cognitive AI, Distribute
 - [Professor website](https://tushar-krishna.github.io/#)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Homomorphic Encryption
+**The paper assumes:** homomorphic encryption schemes, modular arithmetic, Number Theoretic Transform, and encrypted computation principles
+**Already in this field?** Skip this entirely if you already understand the basics of homomorphic encryption and its core arithmetic operations.
+
+To understand the core cryptographic concepts and algorithms underlying homomorphic encryption (HE) as used in the paper, these two background options provide complementary learning paths. The rigorous course offers a deep, structured university-level introduction to modern cryptography, including modular arithmetic and encryption schemes foundational to HE. The fast track playlist delivers a concise, practical introduction to homomorphic encryption concepts and implementations in Python, ideal for quickly grasping the key ideas and applications relevant to the paper.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Invitation to Modern Cryptography: CSE207, UCSD Computer Science](https://www.youtube.com/playlist?list=PL-SStBoAJuw0vj8MgTFhY5y9wSFnjGbOB) — Mihir Bellare · 28 videos · 24.1h across 28 episodes
+
+**Watch only this:** Episodes 1-20 (Introduction through Computational Number Theory Part 2 and Public-key Encryption Part 1), about 17 hours — these cover the essential cryptographic primitives, number theory, and public-key encryption concepts foundational to homomorphic encryption.
+
+*Why it unblocks this paper:* This UCSD Computer Science course by Mihir Bellare is a well-regarded, comprehensive introduction to modern cryptography, covering block ciphers, pseudorandom functions, symmetric and public-key encryption, and computational number theory. It provides the theoretical foundation necessary to understand homomorphic encryption schemes and modular arithmetic used in the paper.
+
+*If you want all of it:* All 28 episodes, about 24.1 hours
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Homomorphic Encryption In Python From Scratch](https://www.youtube.com/playlist?list=PLsS_1RYmYQQHy-Hhr3WELOXiEa5vF-UN9) — Sefik Ilkin Serengil · 11 videos · 2.6h across 11 episodes
+
+**Watch only this:** Episodes 1-6 (LightPHE through Partially Homomorphic Encryption with ElGamal in Python From Scratch), about 1.3 hours — these episodes introduce the main partially homomorphic encryption schemes and their Python implementations, sufficient to grasp the HE basics.
+
+*Why it unblocks this paper:* This playlist by Sefik Ilkin Serengil offers a concise, implementation-focused introduction to partially and fully homomorphic encryption in Python. It covers key HE schemes and practical examples, providing an accessible overview of the concepts and algorithms relevant to the paper's HE workloads and transformations.
+
+*If you want all of it:* All 11 episodes, about 2.6 hours
 
 ## Track 1 — Academic deep-dives (long-form)
 
