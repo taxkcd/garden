@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-mona-singh"
-source_hash: "a0291d5ca32adb89cf51817f0acfb8ada7f0b1ec529e735e16742a6370d86df5"
+source_hash: "7b41bfd5751568bacffae4835d35a10981ec8043790165956c663857a9501552"
 sequence: 297
 generator: "outreach-garden: managed"
 ---
@@ -58,32 +58,32 @@ Research interests: computational molecular biology, machine learning, algorithm
 _The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
 
 **What you're missing:** Genome editing and CRISPR technology
-**The paper assumes:** molecular biology of genome editing, CRISPR-Cas9 mechanisms, DNA repair pathways, and guide RNA design
-**Already in this field?** Skip this entirely if you already understand CRISPR-based genome editing methods and DNA repair mechanisms relevant to editing outcomes.
+**The paper assumes:** molecular biology of genome editing, CRISPR-Cas9 mechanisms, guide RNA design, and genome engineering techniques
+**Already in this field?** Skip this entirely if you already understand CRISPR-Cas9 genome editing mechanisms and prime editing basics.
 
-This background focuses on genome editing and CRISPR technology, essential for understanding the prime editing platform and multiplexed dropout screening described in the paper. The rigorous course offers a deep, structured university-level foundation on genome editing mechanisms, while the fast track provides a concise, clear introduction to CRISPR/Cas9 genome editing for quicker comprehension. Choose the lane that fits your available time and depth needs; both prepare you to grasp the experimental design, guide RNA strategies, and DNA repair concepts critical to the paper.
+This background focuses on genome editing and CRISPR technology, essential for understanding the prime editing platform and multiplexed screening described in the paper. The rigorous course option provides a comprehensive university-level lecture series on genome editing principles and methods, while the fast track offers a concise, well-structured explainer playlist that covers the core concepts more quickly. Choose the course for deep foundational knowledge and the fast track for a focused, time-efficient introduction.
 
 ### The course
 _Rigorous, and the one to pick if you want to hold this material properly._
 
 ▶ [Genome Editing and Engineering](https://www.youtube.com/playlist?list=PLwdnzlV3ogoUBJbSmvuye6knzAqXKT9k6) — NPTEL IIT Guwahati · 51 videos · 32.0h across 51 episodes
 
-**Watch only this:** Lectures 1-10 (Introduction to genome organization, genetic engineering basics, DNA breakage and repair, homologous and non-homologous recombination, site-specific recombination, and targeted genetic modification) totaling about 6 hours 10 minutes — this subset covers foundational mechanisms and editing strategies essential for the paper.
+**Watch only this:** Lectures 1 through 23 (Introduction to CRISPR/Cas9 in Genome Editing - Part B), about 14.2 hours — these cover foundational genome editing concepts, DNA repair mechanisms, and CRISPR/Cas9 technology essential for grasping prime editing.
 
-*Why it unblocks this paper:* This NPTEL IIT Guwahati series is a comprehensive university-level course on genome editing and engineering, covering DNA repair, recombination, and CRISPR/Cas9 in detail, directly relevant to understanding prime editing and multiplexed screening.
+*Why it unblocks this paper:* This NPTEL IIT Guwahati series is a thorough university-level course on genome editing and engineering, covering the history, mechanisms, and applications of CRISPR and related technologies, directly relevant to understanding prime editing and multiplexed screening.
 
 *If you want all of it:* 32.0 hours across 51 episodes
 
 ### The fast track
 _Same ground, a fraction of the time — for when you just need to read the paper._
 
-▶ [CRISPR/Cas9 Genome Editing](https://www.youtube.com/playlist?list=PL4_fJegcjcJ_doqefkW1hoIee_sgivMr2) — OriGene Technologies Inc. · 11 videos · 5.7h across 11 episodes
+▶ [Genome Editing](https://www.youtube.com/playlist?list=PL6zPYyLgW5OVikmxwlHzXLSOKe99sreoc) — Giobbe Forni · 16 videos · 4.8h across 16 episodes
 
-**Watch only this:** Episodes 1-4 (CRISPR Cas9 Explained, Gene Knockout using CRISPR, CRISPR gene knockout webinar to get high biallelic knockout, Webinar: Gene Knockout with CRISPR) totaling about 2 hours — these cover the core CRISPR concepts and knockout approaches foundational to understanding prime editing.
+**Watch only this:** Episodes 5 (Method of the Year 2011: Gene-editing nucleases - by Nature Video), 7 (CRISPR Cas9 Explained), 8 (Genome Editing with CRISPR-Cas9), and 9 (Jennifer Doudna (UC Berkeley / HHMI): Genome Engineering with CRISPR-Cas9), about 1.2 hours total — these focus on CRISPR mechanisms and genome editing tools relevant to prime editing.
 
-*Why it unblocks this paper:* This OriGene Technologies Inc. playlist offers clear, concise explainers on CRISPR/Cas9 genome editing, including knockout strategies and molecular mechanisms, providing a quick yet solid conceptual grasp of CRISPR relevant to prime editing.
+*Why it unblocks this paper:* Giobbe Forni's 'Genome Editing' playlist is a concise, well-produced explainer series that covers CRISPR, TALENs, zinc finger nucleases, and prime editing, providing a clear and accessible overview suitable for quickly grasping the key concepts behind the paper's methods.
 
-*If you want all of it:* 5.7 hours across 11 episodes
+*If you want all of it:* 4.8 hours across 16 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 
