@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-william-yeoh"
-source_hash: "4d3861a892b2a20a2f2f3e4d4e4e5590ee011634a16469e23e4209be3108f0ad"
+source_hash: "018e4b31ce4d3c61b87cb836d1702b4fedf93ea8f3c8d509ce894967937ee0c6"
 sequence: 175
 generator: "outreach-garden: managed"
 ---
@@ -59,32 +59,32 @@ Research interests: interdisciplinary approaches to enable human-AI collaboratio
 _The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
 
 **What you're missing:** Computational Argumentation
-**The paper assumes:** formal argumentation theory, argumentation frameworks, acceptability semantics, computational argumentation solvers
-**Already in this field?** Skip this entirely if you already understand formal argumentation theory and how computational argumentation frameworks are constructed and evaluated.
+**The paper assumes:** formal argumentation theory, argumentation frameworks, argument acceptability semantics, dialectical reasoning
+**Already in this field?** Skip this entirely if you already understand formal computational argumentation frameworks and their semantics.
 
-This background playlist selection is designed to provide foundational knowledge in computational argumentation, the core formalism underpinning the paper's approach to human-AI collaborative reasoning. The rigorous course option offers a structured, in-depth university-level lecture series on logic and argumentation, ideal for readers seeking comprehensive understanding. The fast track option is a concise, focused playlist on abstract argumentation semantics and reasoning interfaces, suitable for readers who want a quick yet solid grasp of the essential concepts without extensive time investment.
+This background focuses on computational argumentation, the formal framework essential for understanding how AI agents represent, evaluate, and revise argumentation frameworks in collaborative human-AI decision-making. The rigorous course offers a deep dive into AI principles including logic and reasoning foundations relevant to argumentation, while the fast track provides a concise, targeted introduction to abstract argumentation semantics and interfaces, ideal for quickly grasping core concepts.
 
 ### The course
 _Rigorous, and the one to pick if you want to hold this material properly._
 
-▶ [Logic in Philosophy: Complete Lecture Series for PMS/CSS](https://www.youtube.com/playlist?list=PLUhsC3QwBQk8) — Indus Institute of Competitive Exams · 18 videos · 3.7h across 18 episodes
+▶ [Stanford CS221: Artificial Intelligence: Principles and Techniques | Autumn 2019](https://www.youtube.com/playlist?list=PLoROMvodv4rO1NB9TD4iUZ3qghGEGtqNX) — Stanford Online · 19 videos · 25.1h across 19 episodes
 
-**Watch only this:** Lectures 1 (Introduction to Logic), 3 (Deductive and inductive Arguments | Part I), 4 (Deductive and Inductive arguments | Part II), 5 (Syllogism by Aristotle), 6 (Syllogism and standard form in Logic), 7 (Validity and Truth in Logic), 8 (Informal Fallacies: Fallacies of Relevance Part I), 9 (Informal Fallacies: Fallacies of Relevance Part II), about 1.5 hours total — these cover the core logical foundations and argument evaluation necessary for computational argumentation.
+**Watch only this:** Watch episodes 16 and 17: "Logic 1 - Propositional Logic" and "Logic 2 - First-order Logic", about 2.6 hours total, to grasp the formal logical foundations critical for computational argumentation.
 
-*Why it unblocks this paper:* This Logic in Philosophy lecture series by Indus Institute covers foundational topics in logic, argument forms, and fallacies, which are essential for understanding formal argumentation frameworks and reasoning engines used in the paper.
+*Why it unblocks this paper:* Stanford CS221 is a comprehensive university-level AI course covering foundational topics including propositional and first-order logic, which underpin computational argumentation frameworks. It provides the rigorous theoretical background necessary to understand formal semantics and deterministic evaluation in argumentative AI agents.
 
-*If you want all of it:* 3.7 hours across all 18 episodes
+*If you want all of it:* The full playlist contains 19 episodes totaling about 25.1 hours, covering broad AI principles beyond argumentation.
 
 ### The fast track
 _Same ground, a fraction of the time — for when you just need to read the paper._
 
 ▶ [Course: Abstract Argumentation and Interfaces to Argumentative Reasoning](https://www.youtube.com/playlist?list=PLE4FIflP-ciusucDgSlwQzUXrGHP6_Uw9) — DrCerutti · 7 videos · 1.9h across 7 episodes
 
-**Watch only this:** Episodes 1 (Course introduction and motivation), 2 (Abstract Argumentation Semantics Part 1), 3 (Abstract Argumentation Semantics Part 2), and 5 (Algorithms, Techniques and Implementations), about 1.1 hours total — these provide a concise yet thorough introduction to abstract argumentation relevant to the paper.
+**Watch only this:** Watch episodes 2, 3, and 4: "Abstract Argumentation Semantics Part 1", "Abstract Argumentation Semantics Part 2", and "Abstract Argumentation Semantics Advanced Topics", about 48 minutes total, to understand the formal semantics and advanced topics in argumentation.
 
-*Why it unblocks this paper:* This short course on Abstract Argumentation and Interfaces to Argumentative Reasoning directly addresses abstract argumentation semantics and reasoning algorithms, closely aligned with the paper's focus on argumentation frameworks and formal reasoning engines.
+*Why it unblocks this paper:* This short course on Abstract Argumentation and Interfaces directly addresses the core concepts of abstract argumentation semantics and their computational interfaces, aligning closely with the paper's focus on argumentation frameworks and reasoning engines.
 
-*If you want all of it:* 1.9 hours across all 7 episodes
+*If you want all of it:* The full playlist has 7 episodes totaling about 1.9 hours.
 
 ## Track 1 — Academic deep-dives (long-form)
 
