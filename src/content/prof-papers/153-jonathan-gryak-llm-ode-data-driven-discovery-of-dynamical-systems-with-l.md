@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-jonathan-gryak"
-source_hash: "f06bf8376d4c0d6ea25aec816cea937133a02b5c640e04ae618b0512f39200fd"
+source_hash: "95edb4a293c5f5ae2d134d38c4bbcce0399f8b91389389c1878975be9b1793ed"
 sequence: 153
 generator: "outreach-garden: managed"
 ---
@@ -57,33 +57,33 @@ Research interests: Artificial Intelligence / Machine Learning, Applied Algebra,
 
 _The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
 
-**What you're missing:** Symbolic Regression and Genetic Programming
-**The paper assumes:** symbolic regression, genetic programming, evolutionary algorithms for symbolic model discovery
-**Already in this field?** Skip this entirely if you already understand symbolic regression methods and genetic programming algorithms for discovering mathematical models from data.
+**What you're missing:** symbolic regression and genetic programming
+**The paper assumes:** symbolic regression, genetic programming, evolutionary algorithms, and differential equation modeling
+**Already in this field?** Skip this entirely if you already understand symbolic regression and genetic programming methods for discovering mathematical models from data.
 
-This background focuses on symbolic regression and genetic programming, which are central to the LLM-ODE paper's method for discovering dynamical systems equations. The rigorous course provides a structured, university-level introduction to genetic programming concepts and workflow, while the fast track offers a concise, focused set of expert talks on symbolic regression and genetic programming techniques. Choose the course for a deep foundational understanding; choose the fast track for a quicker, research-informed overview.
+To understand the core methodology of LLM-ODE, which innovatively combines large language models with genetic programming for symbolic regression of dynamical systems, it is essential to grasp how genetic programming evolves symbolic expressions and how symbolic regression fits models to data. The rigorous course offers a deep dive into evolutionary computation and multi-objective optimization, foundational for appreciating the paper's approach, while the fast track provides a focused, visually intuitive introduction to symbolic regression and genetic programming, ideal for quickly building relevant intuition.
 
 ### The course
 _Rigorous, and the one to pick if you want to hold this material properly._
 
-▶ [Genetic Programming](https://www.youtube.com/playlist?list=PLTlh-8I__FNYQArhy2emM5gwJET03cd9v) — Gilad James Mystery School · 10 videos · 0.8h across 10 episodes
+▶ [Evolutionary Computation for Single and Multi-Objective Optimization](https://www.youtube.com/playlist?list=PLwdnzlV3ogoWyi7exLIe26JhueiVQXq_S) — NPTEL IIT Guwahati · 27 videos · 23.4h across 27 episodes
 
-**Watch only this:** Episodes 1-5, about 20 minutes — covers introduction, linear regression background, the proposed approach, and representation of genetic individuals, which are essential to understanding the paper's method.
+**Watch only this:** Lectures 1 through 7 (Introduction to Optimization, Evolutionary Computation, Binary-Coded and Real-Coded Genetic Algorithms, and their operators), plus Lectures 17 through 23 (Multi-Objective Optimization concepts and NSGA-II, SPEA2 algorithms), about 9.5 hours total — this subset covers the core genetic programming and multi-objective optimization concepts relevant to the paper.
 
-*Why it unblocks this paper:* This Genetic Programming course from Gilad James Mystery School is a concise, well-structured university-level introduction that covers key concepts such as representation of solutions, population generation, selection, and evaluation, directly relevant to the genetic programming core of LLM-ODE.
+*Why it unblocks this paper:* This NPTEL IIT Guwahati course on Evolutionary Computation for Single and Multi-Objective Optimization covers genetic algorithms, evolutionary operators, and multi-objective optimization methods like Pareto fronts, directly underpinning the genetic programming framework and evaluation metrics used in LLM-ODE.
 
-*If you want all of it:* All 10 episodes, about 48 minutes total.
+*If you want all of it:* All 27 episodes, about 23.4 hours.
 
 ### The fast track
 _Same ground, a fraction of the time — for when you just need to read the paper._
 
-▶ [genetic programming & symbolic regression](https://www.youtube.com/playlist?list=PLISEtDmihMo3YtzlZgMqCiB1M3qYBUboa) — arisbe, a guess at the riddle (curation) · 6 videos · 4.6h across 6 episodes
+▶ [Symbolic Regression and Genetic Engineering in Science](https://www.youtube.com/playlist?list=PLcuIQH38MFQE) — Anaxandra Curie · 17 videos · 11.5h across 17 episodes
 
-**Watch only this:** Episodes 1-3, about 2.3 hours — includes foundational concepts in symbolic regression and model discovery, giving a solid overview of the techniques used in the paper.
+**Watch only this:** Episodes 1 through 6 (Python Symbolic Regression (PySR), ETH Zürich AISE: Symbolic Regression and Model Discovery, Symbolic Regression for Model Discovery in Python and Julia, Deep Symbolic Regression, Symbolic Regression with PySR, Exhaustive Symbolic Regression), about 4 hours total — these cover the essentials of symbolic regression and genetic programming relevant to understanding the paper's approach.
 
-*Why it unblocks this paper:* This curated playlist by arisbe provides focused, expert-level talks on symbolic regression and genetic programming, including recent advances and applications, which align well with the paper's hybrid LLM and genetic programming approach.
+*Why it unblocks this paper:* This playlist by Anaxandra Curie focuses specifically on symbolic regression and genetic programming with practical examples including PySR, which is a baseline method compared against in the paper, providing a concise and applied introduction to the key techniques LLM-ODE builds upon.
 
-*If you want all of it:* All 6 episodes, about 4.6 hours total.
+*If you want all of it:* All 17 episodes, about 11.5 hours.
 
 ## Track 1 — Academic deep-dives (long-form)
 
