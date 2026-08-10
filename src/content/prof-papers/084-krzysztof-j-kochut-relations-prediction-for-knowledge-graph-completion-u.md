@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-krzysztof-j-kochut"
-source_hash: "5df9acad4dffe22c37896a6df8d6116de826e87c5284f6b1a4d21bf907a32cc3"
+source_hash: "fe2f0f3d40265dc1b2fcb7eebf42936891299c7e26ed16b84636b973506c463a"
 sequence: 84
 generator: "outreach-garden: managed"
 ---
@@ -57,32 +57,32 @@ This paper presents a method to complete knowledge graphs by predicting relation
 _The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
 
 **What you're missing:** Knowledge Graph Embeddings
-**The paper assumes:** knowledge graph embeddings, link prediction methods, and evaluation metrics for knowledge graph completion
-**Already in this field?** Skip this entirely if you already understand how knowledge graphs are embedded into vector spaces and how relation prediction tasks are formulated and evaluated.
+**The paper assumes:** knowledge graph embeddings, relation prediction in knowledge graphs, inductive and transductive learning in graphs
+**Already in this field?** Skip this entirely if you already understand knowledge graph embeddings and relation prediction tasks in knowledge graphs.
 
-This background focuses on knowledge graph embeddings and machine learning with graphs, which are foundational to understanding relation prediction in knowledge graphs using large language models as presented in the paper. The rigorous course option offers a deep, structured university-level treatment of graph machine learning concepts, while the fast track provides a concise, visual introduction to knowledge graphs and related embedding techniques. Choose the course for comprehensive mastery or the fast track for a quicker, intuition-driven overview.
+This background focuses on knowledge graph embeddings, essential for understanding relation prediction in knowledge graph completion using large language models as presented in the paper. The rigorous course option provides a deep, structured university-level foundation on graph machine learning and embeddings, while the fast track offers a shorter, more accessible series of explainers on graph embeddings and neural networks, suitable for quickly grasping key concepts.
 
 ### The course
 _Rigorous, and the one to pick if you want to hold this material properly._
 
 ▶ [Stanford CS224W: Machine Learning with Graphs](https://www.youtube.com/playlist?list=PLoROMvodv4rPLKxIpqhjhPgdQy7imNkDn) — Stanford Online · 60 videos · 22.4h across 60 episodes
 
-**Watch only this:** Lectures 3.1 - Node Embeddings, 3.2 - Random Walk Approaches for Node Embeddings, 3.3 - Embedding Entire Graphs, and 5.1 - Message passing and Node Classification, about 1.5 hours total — these cover core embedding methods and message passing relevant to relation prediction.
+**Watch only this:** Lectures 1.1 to 3.3 (episodes 1-9), about 3.3 hours — covering graph basics, node embeddings, and embedding entire graphs to understand the foundational concepts needed for knowledge graph embeddings.
 
-*Why it unblocks this paper:* Stanford CS224W: Machine Learning with Graphs is a well-established university course that covers node embeddings, link prediction, and graph neural networks in detail, directly relevant to knowledge graph embeddings and relation prediction tasks in the paper.
+*Why it unblocks this paper:* Stanford CS224W: Machine Learning with Graphs is a comprehensive, authoritative university course covering graph representations, node embeddings, and graph neural networks, directly relevant to knowledge graph embeddings and relation prediction tasks in the paper.
 
 *If you want all of it:* 22.4 hours across 60 episodes
 
 ### The fast track
 _Same ground, a fraction of the time — for when you just need to read the paper._
 
-▶ [Knowledge graphs](https://www.youtube.com/playlist?list=PLU5LS6Dtxy3bcMElUF223Nr_ScOgUMRoE) — OpenSource · 23 videos · 10.5h across 23 episodes
+▶ [AI_  Deep Learning on Graphs -     GNN   -  Graph Embeddings](https://www.youtube.com/playlist?list=PLfUzQZVAoOvheK6aA0BtnS-ji_wMZc_ap) — F · 38 videos · 33.6h across 38 episodes
 
-**Watch only this:** Episodes 1 - OpenAI Embeddings and Vector Databases Crash Course, 2 - Vector Databases simply explained! (Embeddings & Indexes), and 13 - How to Build a Knowledge Graph [Ft. Graphiti], about 1.3 hours total — these cover embeddings and knowledge graph basics efficiently.
+**Watch only this:** Episodes 1 to 5, about 4.5 hours — including foundational talks on convolutional neural networks on graphs, geometric deep learning, and large-scale graph representation learning to quickly grasp key embedding concepts.
 
-*Why it unblocks this paper:* The 'Knowledge graphs' playlist by OpenSource offers concise, clear explainers on knowledge graphs, embeddings, and vector databases, providing a quick but solid conceptual grounding for understanding the paper's use of node name embeddings and relation prediction.
+*Why it unblocks this paper:* This playlist offers a concise and well-produced series of explainers on deep learning on graphs, graph neural networks, and graph embeddings, providing an intuition-first approach that complements the rigorous course and quickly builds relevant background.
 
-*If you want all of it:* 10.5 hours across 23 episodes
+*If you want all of it:* 33.6 hours across 38 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 
