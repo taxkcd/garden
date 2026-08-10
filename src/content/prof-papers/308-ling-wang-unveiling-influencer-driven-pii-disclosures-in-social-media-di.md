@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-ling-wang"
-source_hash: "624529cab55cc31dc4230323cc2b2dfb5d2e7831a8b7c8047e143bf37c5d95c0"
+source_hash: "67415bae309062287c269b0e99144763df71b71876e68474e00b53483571b34d"
 sequence: 308
 generator: "outreach-garden: managed"
 ---
@@ -54,6 +54,38 @@ Research interests: information privacy, learning systems and technologies, info
 - [Resolved homepage](https://sites.nova.edu/lingwang/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Social Network Analysis
+**The paper assumes:** graph theory, social network analysis, eigenvector centrality, community detection, network metrics
+**Already in this field?** Skip this entirely if you already understand social network analysis concepts including centrality measures and community structure in networks.
+
+This background focuses on Social Network Analysis, essential for understanding how influencer power is measured via eigenvector centrality and how social media conversation clusters are analyzed in the paper. The rigorous course offers a deep, structured university-level treatment, while the fast track provides a concise, beginner-friendly introduction to core concepts and practical labs in R. Choose the course for comprehensive mastery; choose the fast track for a quick, practical grasp of key ideas.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Social Network Analysis - Prof Tanmoy Chakraborty](https://www.youtube.com/playlist?list=PLyqSpQzTE6M_bqqS9VmsoFNtcS72EDhUV) — NPTEL-NOC IITM · 70 videos · 27.0h across the first 60 episodes
+
+**Watch only this:** Episodes 1-3 (SNA Chapter 1 Lecture 1, SNA Chapter 2 Lecture 2, SNA Chapter 1 Lecture 2), Episodes 6-9 (Tutorial 2: Introduction to NetworkX - Part I, SNA Chapter 2 Lecture 1, Tutorial 3: Introduction to NetworkX - Part II, SNA Chapter 3 Lecture 1), and Episodes 15-17 (SNA Chapter 3 Lecture 6, SNA Chapter 3 Lecture 7, SNA Chapter 4 Lecture 1), about 7.5 hours total — covering core concepts, eigenvector centrality, and network analysis tools.
+
+*Why it unblocks this paper:* This NPTEL-NOC IITM course by Prof Tanmoy Chakraborty covers social network analysis comprehensively, including eigenvector centrality and network clustering, directly supporting the paper's methodology and interpretation of influencer power in social media clusters.
+
+*If you want all of it:* About 27.0 hours across the first 60 episodes.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Social Network Analysis: A Beginner's Lab in R](https://www.youtube.com/playlist?list=PL1M5TsfDV6VsyfMHfkDcUW71ADKcUNCUI) — Mod•U: Powerful Concepts in Social Science · 15 videos · 2.2h across 15 episodes
+
+**Watch only this:** Episodes 1-3 (The Basics of Social Network Analysis: A Social Network Lab in R for Beginners, Network Layouts and Data Structures, R Lab.1 - Let's Draw a Social Network Graph), and Episodes 8-9 (Closeness Centrality & Betweenness Centrality, Eigenvector Centrality), about 1.5 hours total — focusing on foundational concepts and eigenvector centrality.
+
+*Why it unblocks this paper:* This concise series from Mod•U offers a practical, beginner-friendly introduction to social network analysis concepts and labs in R, including eigenvector centrality, which is central to the paper's influencer power measurement.
+
+*If you want all of it:* About 2.2 hours across all 15 episodes.
 
 ## Track 1 — Academic deep-dives (long-form)
 

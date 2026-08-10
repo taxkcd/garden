@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-katy-borner"
-source_hash: "2e6ce2eae25b13ea48bd6e6db435f0bb5c4b88d7d8f09a2be1fe7484210bc46b"
+source_hash: "7e9af94b41791ebec34e74b6c5f344d1964c2089383b0ba53ca079157c33ab6e"
 sequence: 296
 generator: "outreach-garden: managed"
 ---
@@ -56,6 +56,38 @@ Research interests: Artificial Intelligence, Bioengineering, Bioinformatics and 
 - [Google Scholar](http://scholar.google.com/citations?user=YirSp_cAAAAJ&hl=en)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Data Visualization Fundamentals
+**The paper assumes:** fundamental principles of data visualization and visual encoding
+**Already in this field?** Skip this entirely if you already understand basic data visualization concepts, common chart types, and how visual variables encode data.
+
+To understand the Data Visualization Literacy Framework presented in the paper, it is essential to grasp foundational concepts in data visualization, including visualization types, design principles, and human perception. The rigorous course offers a deep dive into these fundamentals through a structured university lecture series, while the fast track provides a concise, practical introduction to key visualization concepts and techniques. Choose the rigorous course for comprehensive theoretical grounding and the fast track for a quick, applied overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Data Visualization Design](https://www.youtube.com/playlist?list=PLZ2ps__7DhBZ12NClTmMLsnU0mF9ZUSG_) — IIT Madras - B.S. Degree Programme · 26 videos · 10.9h across 26 episodes
+
+**Watch only this:** Watch episodes 1 through 13 (Introduction to Data Visualization parts 1-7, Visualization typology parts 1-4, and Geo visualization parts 1-3), about 6.5 hours — these cover foundational visualization concepts, types, and spatial visualization essential for understanding the framework.
+
+*Why it unblocks this paper:* This IIT Madras course on Data Visualization Design covers a broad and detailed range of topics including visualization typologies, design principles, and data analysis workflows, closely aligning with the paper's emphasis on systematic construction and interpretation of visualizations and integration of human perception.
+
+*If you want all of it:* 10.9 hours across all 26 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Visualize the Data: Mastering Python Data Visualization](https://www.youtube.com/playlist?list=PLQJy5cc31nxnlq1_ALWRtWLiEdQJPsU06) — study with ismail · 6 videos · 0.8h across 6 episodes
+
+**Watch only this:** Watch all 6 episodes, about 0.8 hours — covers styling, scatter plots, and basics of data visualization with clear, practical examples.
+
+*Why it unblocks this paper:* This short series 'Visualize the Data: Mastering Python Data Visualization' provides a concise, visually engaging introduction to core data visualization concepts and practical plotting techniques, suitable for quickly grasping the basics of creating and interpreting visualizations.
+
+*If you want all of it:* 0.8 hours across all 6 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

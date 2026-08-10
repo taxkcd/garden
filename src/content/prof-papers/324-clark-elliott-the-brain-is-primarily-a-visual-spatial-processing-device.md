@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-clark-elliott"
-source_hash: "eef1a9a6a5ca67178c828ded360b38cf5c1b3e6f3cff5cd32395415cf05982df"
+source_hash: "a59bba5e12985dc66ac47b4325cfdd7ce0bb01caa0f08d226b7a0b33ebaeec22"
 sequence: 324
 generator: "outreach-garden: managed"
 ---
@@ -56,6 +56,38 @@ Research interests: Artificial Intelligence models of human emotion. Computation
 - [Resolved homepage](http://depaul.edu/~elliott)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Visual Neuroscience and Visual-Spatial Cognition
+**The paper assumes:** neural mechanisms of visual processing, visual-spatial cognition, retinal stimulation effects on brain function
+**Already in this field?** Skip this entirely if you already have a solid understanding of visual neuroscience and the neural basis of spatial cognition.
+
+This background prepares readers to understand the visual-spatial cognitive neuroscience and retinal stimulation principles central to the paper's treatment approach and findings. The rigorous course option offers a deep, university-level foundation in cognitive psychology and neuroscience relevant to visual perception and spatial cognition. The fast track provides a concise, accessible introduction to key concepts in psychology and cognition, suitable for readers seeking a quicker but still substantive overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Cognitive Psychology - University Course](https://www.youtube.com/playlist?list=PLz-pxsFiarvKU2cNJfasOsNbI8LGtnZ77) — The Cognitive Psychologist · 38 videos · 21.3h across 38 episodes
+
+**Watch only this:** Watch episodes 4-15 (Cognitive Psychology - Overview Pt4 through Cognitive Psychology - Attention Pt5), about 6 hours total — these cover the cognitive revolution, neuroscience basics, visual perception, and attention mechanisms essential to grasping visual-spatial cognition and its role in movement and decision-making.
+
+*Why it unblocks this paper:* This Cognitive Psychology university course covers foundational topics in cognitive neuroscience, visual perception, attention, and memory, directly relevant to understanding visual-spatial processing deficits and rehabilitation in brain injury.
+
+*If you want all of it:* 21.3 hours across 38 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Psychology, Cognition & the Mind](https://www.youtube.com/playlist?list=PLuGHfVNSITJeHypLjUyfPh-NVqNu1Afwp) — UChicago Social Sciences · 16 videos · 5.3h across the first 15 episodes
+
+**Watch only this:** Watch episodes 6 and 12 (Children's Spatial Thinking: Does Talk About the Spatial World Matter? and The Science of Visual Memory: How the Eye and Brain Work Together to get Things Done), about 42 minutes total — these two episodes succinctly introduce spatial cognition and visual memory, key to understanding the paper's focus on visual-spatial processing.
+
+*Why it unblocks this paper:* This short-form series from UChicago Social Sciences offers clear, well-produced explainers on psychology, cognition, and the mind, including episodes on spatial thinking and visual memory that provide an intuitive grasp of visual-spatial cognition relevant to the paper.
+
+*If you want all of it:* 5.3 hours across the first 15 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

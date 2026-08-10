@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-gillian-smith"
-source_hash: "daf79ead0a6302bee94ec0ef2deb1c74897564a9f9e0be35a86144f66c9219c8"
+source_hash: "5b84c876161fba3a1e19900321b86be5483d567346363ffa323d272fe20f4a30"
 sequence: 309
 generator: "outreach-garden: managed"
 ---
@@ -54,6 +54,38 @@ Research interests: Computational Creativity, Computational Craft, Procedural Co
 - [Google Scholar](https://scholar.google.com/citations?user=4bHar00AAAAJ&hl=en&oi=sra)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** procedural content generation
+**The paper assumes:** procedural content generation in computer games, algorithmic content creation methods, and computational creativity frameworks
+**Already in this field?** Skip this entirely if you already understand how procedural content generation algorithms work in game design and computational creativity contexts.
+
+This background provides foundational understanding of procedural content generation (PCG) as a computational creativity technique, essential for grasping how PCG systems in games can embed social biases and political messages, as discussed in the paper. The rigorous course offers a deep dive into computational principles relevant to PCG, while the fast track playlist delivers a focused, practical introduction to PCG techniques in game development, suitable for readers seeking a quicker but still substantive overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [MIT 6.001 Structure and Interpretation, 1986](https://www.youtube.com/playlist?list=PLE18841CABEA24090) — MIT OpenCourseWare · 40 videos · 43.6h across 40 episodes
+
+**Watch only this:** Lectures 1A: Overview and Introduction to Lisp, 1B: Procedures and Processes; Substitution Model, 2A: Higher-order Procedures, 2B: Compound Data, 3A: Henderson Escher Example, and 3B: Symbolic Differentiation; Quotation — about 6.5 hours total. These cover core programming concepts and abstraction techniques crucial for understanding PCG design.
+
+*Why it unblocks this paper:* MIT 6.001 Structure and Interpretation of Computer Programs covers fundamental computational concepts and programming paradigms that underpin procedural content generation algorithms, providing the rigorous theoretical foundation needed to understand how PCG systems operate and how biases might be encoded.
+
+*If you want all of it:* 43.6 hours across 40 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Mastering Procedural Content Generation (PCG) in Unreal Engine](https://www.youtube.com/playlist?list=PLWjyT8uXuDk3pOeeLkhnL4wjP-curGBkJ) — Aziel Arts · 19 videos · 5.8h across 19 episodes
+
+**Watch only this:** Episodes 1: 'Unreal Engine Procedural Content Optimization: Boost Performance with These 3 Tips!', 2: 'Where Is The PCG Density Noise Node in Unreal Engine? Procedural Content Generation Guide', 3: '15 Minute Photoreal Warzone! Procedural Content Generation PCG in Unreal Engine', and 4: '7 Minute Photoreal Forest! Procedural Content Generation PCG in Unreal Engine' — about 1 hour total. These cover core PCG concepts and practical examples.
+
+*Why it unblocks this paper:* The 'Mastering Procedural Content Generation (PCG) in Unreal Engine' playlist provides a concise, practical introduction to PCG techniques directly applied in game development, making it ideal for quickly understanding how PCG systems generate content and the kinds of design decisions that can embed biases.
+
+*If you want all of it:* 5.8 hours across 19 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

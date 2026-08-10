@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-benjamin-c-lee"
-source_hash: "44b49354896f1fc970bb9b3947a608242742c3c4e111ca08c5eb4f62ceca6811"
+source_hash: "e5303b1b99f30f1b00a6c5c4f5e62698cff1da52cf8b49962fdf47ac124b81c5"
 sequence: 290
 generator: "outreach-garden: managed"
 ---
@@ -59,6 +59,38 @@ Research interests: computer architecture (e.g., microprocessors, memories, data
 - [Lab website](https://dsl.cis.upenn.edu/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Machine Learning Regression Models
+**The paper assumes:** supervised machine learning regression, support vector machines, random forest algorithms, neural network regression models
+**Already in this field?** Skip this entirely if you already understand supervised regression models in machine learning, including SVMs, random forests, and neural networks.
+
+This background focuses on machine learning regression models, specifically support vector machines, random forests, and neural networks, which are central to the Prometheus framework's predictive capabilities. The rigorous course provides a deep, structured understanding of these models and their integration, while the fast track offers a concise, intuition-driven introduction to linear regression concepts foundational to regression modeling. Choose the course for comprehensive mastery and the fast track for a quick, clear overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS229: Machine Learning led by Andrew Ng | Autumn 2018](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU) — Stanford Online · 21 videos · 27.9h across 21 episodes
+
+**Watch only this:** Lectures 2 (Linear Regression and Gradient Descent), 6 (Support Vector Machines), 9 (Decision Trees and Ensemble Methods), 10 (Introduction to Neural Networks), and 11 (Backprop & Improving Neural Networks), about 6.5 hours total — these cover the core regression models used in the paper.
+
+*Why it unblocks this paper:* Stanford CS229 (Autumn 2018) by Andrew Ng covers supervised learning methods including support vector machines, random forests (ensemble methods), and neural networks in detail, matching the paper's use of a multi-stage regression ensemble. It provides the theoretical foundations and practical insights needed to understand Prometheus's machine learning approach.
+
+*If you want all of it:* 27.9 hours across 21 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Linear Regression in Machine Learning](https://www.youtube.com/playlist?list=PLH9w37SrQ3wu6D_WmylHUDYLENnnOs937) — AnSh Chaudhary · 12 videos · 1.6h across 12 episodes
+
+**Watch only this:** Episodes 1 (Types of Regression Models), 2 (Simple Linear Regression Model – Solved Numerical Example), and 7 (Polynomial Regression Algorithm and Solved Numerical Example), about 20 minutes total — enough to grasp regression basics and extensions.
+
+*Why it unblocks this paper:* This short playlist by AnSh Chaudhary offers clear, concise explanations of various regression models including linear, multiple, polynomial, and logistic regression, providing a solid foundation in regression concepts relevant to understanding the paper's machine learning ensemble approach.
+
+*If you want all of it:* 1.6 hours across 12 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-t-n-vijaykumar"
-source_hash: "7be7fd8adad810eba6e82aa46e1dcf46ce99cf2d63ab4d77948d69e05db99757"
+source_hash: "1a040b99c16419487d6974afb059b28158cccb7446644f021206e1f6029fdeef"
 sequence: 310
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,27 @@ Research interests: Computer architecture
 - [Resolved homepage](http://www.ece.purdue.edu/~vijay)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Hardware Transactional Memory
+**The paper assumes:** hardware transactional memory concepts and mechanisms
+**Already in this field?** Skip this entirely if you already understand the fundamentals of hardware transactional memory, including conflict detection, transactional state tracking, and transactional logs.
+
+To understand the LiteTM paper on reducing transactional state overhead in hardware transactional memory (HTM), foundational knowledge of HTM concepts such as transactional state tracking, conflict detection, and transactional logs is essential. The rigorous course option offers a deep, structured university-level lecture series covering parallel computing and transactional memory in detail, while the fast track provides a shorter, more focused introduction suitable for quickly grasping the core ideas without extensive time commitment.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS149 I Parallel Computing I 2023 I Kayvon Fatahalian and Kunle Olukotun](https://www.youtube.com/playlist?list=PLoROMvodv4rMp7MTFr4hQsDEcX7Bx6Odp) — Stanford Online · 19 videos · 24.3h across 19 episodes
+
+**Watch only this:** Lectures 16 and 17 - 'Transactional Memory 1' and 'Transactional Memory 2', about 2.5 hours total — these two lectures focus specifically on transactional memory concepts and hardware implementations relevant to LiteTM.
+
+*Why it unblocks this paper:* This Stanford CS149 Parallel Computing 2023 course is authoritative and comprehensive, covering hardware transactional memory explicitly in lectures 16 and 17, which directly relate to the paper's subject of HTM design and state overhead.
+
+*If you want all of it:* All 19 lectures, about 24.3 hours total — for a complete understanding of parallel computing and hardware architecture context.
 
 ## Track 1 — Academic deep-dives (long-form)
 

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-dale-reed"
-source_hash: "027d37e534b5c143a038dfe257cf95c4596212e2350acd97f672ce9cbccffa1b"
+source_hash: "4db3fd35f5aadc7c3147a2585df6714cdeeecc6892aa6667e3a34dc3c7cc4f73"
 sequence: 300
 generator: "outreach-garden: managed"
 ---
@@ -57,6 +57,38 @@ Research interests: Uses of technology in education, artificial intelligence
 - [DBLP](http://dblp.uni-trier.de/pers/hd/r/Reed:Dale)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Introduction to Computer Programming
+**The paper assumes:** basic computer programming concepts including variables, loops, conditionals, input/output, and binary number representation
+**Already in this field?** Skip this entirely if you already understand fundamental programming constructs and basic binary number concepts.
+
+To understand the foundational programming concepts illustrated by the magic-based teaching methods in the paper, this background provides two viewing options. The rigorous course offers a comprehensive university-level introduction to programming fundamentals, while the fast track provides a concise, focused series covering the same core topics more quickly. Choose the lane that fits your available time and depth of study; both will prepare you to appreciate the programming concepts used in the magic assignments.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [6.0001 Introduction to Computer Science and Programming in Python. Fall 2016](https://www.youtube.com/playlist?list=PLUl4u3cNGP63WbdFxL8giv4yhgdMGaZNA) — MIT OpenCourseWare · 38 videos · 10.0h across 38 episodes
+
+**Watch only this:** Episodes 1 through 10, about 2.5 hours — covering computation basics, branching and iteration, strings, comparisons, and loops, which align with the paper's focus on variables, loops, and decision statements.
+
+*Why it unblocks this paper:* This MIT OpenCourseWare playlist is a well-structured introduction to computer science and programming in Python, covering variables, loops, decision statements, and other fundamentals directly relevant to the paper's programming concepts.
+
+*If you want all of it:* 10.0 hours across 38 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [CS50's Introduction to Programming with Python](https://www.youtube.com/playlist?list=PLc-uHEA8f0uSiWT_R5l1RgJXKLHsVYWAc) — Chibudom obasi · 7 videos · 6.9h across 7 episodes
+
+**Watch only this:** Episodes 0 through 2, about 3 hours — covering functions, variables, conditionals, and loops, which are the key programming constructs illustrated by the magic tricks.
+
+*Why it unblocks this paper:* This short-form playlist provides concise, clear explanations of programming basics including functions, variables, conditionals, and loops, matching the core concepts used in the magic-based programming assignments but in a much shorter total time.
+
+*If you want all of it:* 6.9 hours across 7 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-minesh-patel"
-source_hash: "cdbcb8c7278912e4c5b0f40b510c06b1e88557d318d6eb81fd57ce9990f5bbfd"
+source_hash: "e0545de749a13d169ee2a929568a2dda3dd6b0b0a92935d3e12be45400ae8d95"
 sequence: 288
 generator: "outreach-garden: managed"
 ---
@@ -54,6 +54,38 @@ Research interests: intersection between computer architecture, systems, and dep
 - [GitHub](https://github.com/CMU-SAFARI/BEER)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** DRAM architecture and reliability
+**The paper assumes:** DRAM internal architecture, memory cell operation, read disturbance errors, and reliability mechanisms
+**Already in this field?** Skip this entirely if you already understand DRAM chip design, common failure modes like RowHammer, and standard reliability techniques in memory systems.
+
+To understand the DiscoRD paper on DRAM read disturbance thresholds, a solid grasp of DRAM architecture, operation, and reliability challenges is essential. The rigorous course option provides a comprehensive university-level foundation in computer architecture including memory systems, while the fast track offers a concise, focused introduction to DRAM fundamentals and operation. Choose the course for deep, structured learning; choose the fast track for a quick, visual primer on DRAM concepts relevant to the paper.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Advanced Computer Architecture](https://www.youtube.com/playlist?list=PLwdnzlV3ogoWJhBxBYu-K4l-q-nNHd24D) — NPTEL IIT Guwahati · 34 videos · 19.7h across 34 episodes
+
+**Watch only this:** Lectures 13 to 16 (Introduction to Cache Memory, Block Replacement Techniques & Write Strategy, Optimization Techniques in Cache Memory, Advanced Cache Optimization Techniques), about 2.3 hours — these focus on memory system design and optimization relevant to DRAM reliability and disturbance.
+
+*Why it unblocks this paper:* This NPTEL IIT Guwahati Advanced Computer Architecture playlist covers fundamental and advanced topics in computer architecture including detailed lectures on memory hierarchy and cache memory, which are crucial for understanding DRAM operation and reliability issues addressed in the paper.
+
+*If you want all of it:* 19.7 hours across 34 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [DRAM](https://www.youtube.com/playlist?list=PLMeF8KgQb-8xldKQVxmTKA8plUWM7JZhw) — Paul Ji · 14 videos · 2.7h across the first 13 episodes
+
+**Watch only this:** First 7 episodes (DRAM 02 : DRAM cell 동작원리 만., RAM Explained - Random Access Memory, Different Types of DRAM: SDRAM/DDR1/DDR2/DDR3/DDR4/LPDDR/GDDR, What is DRAM?, OLD Dynamic Random Access Memory (DRAM). Part 1: Memory Cell Arrays, Dynamic Random Access Memory (DRAM). Part 2: Read and Write Cycles, Dynamic Random Access Memory (DRAM). Part 3: Binary Decoders), about 1.4 hours — covers DRAM cell basics, operation, and types relevant to the paper.
+
+*Why it unblocks this paper:* Paul Ji's DRAM playlist provides a clear, visual, and concise explanation of DRAM fundamentals, including cell operation, read/write cycles, and types of DRAM, which directly supports understanding the experimental methodology and terminology used in the paper.
+
+*If you want all of it:* 2.7 hours across the first 13 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

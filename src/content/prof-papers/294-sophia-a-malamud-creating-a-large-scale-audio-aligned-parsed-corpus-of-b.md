@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-sophia-a-malamud"
-source_hash: "9525a9a8ce433fdf5e6a998acbda489f335307afd93ba007109809420c0fbbc2"
+source_hash: "b49f41dc82c6734a7aad53df083ff9d3222d5ea3f8dcb35dbaa8f202a807fc42"
 sequence: 294
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,38 @@ Research interests: Linguistics, Semantics, Pragmatics, Bilingualism, Philosophy
 - [Lab website](https://people.brandeis.edu/~smalamud/MILa/about.html)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** corpus linguistics and syntactic annotation
+**The paper assumes:** corpus linguistics, syntactic annotation, morphological tagging, and annotation pipelines
+**Already in this field?** Skip this entirely if you already understand how linguistic corpora are constructed and annotated with morphological and syntactic information.
+
+To understand the BiRCh corpus paper, which involves detailed corpus linguistics and syntactic annotation of bilingual child speech, background knowledge on corpus construction, morphological tagging, and syntactic parsing is essential. The rigorous course option offers a deep, structured university-level introduction to linguistics with focused lectures on morphology and syntax, ideal for thorough comprehension. The fast track provides a concise, clear introduction to corpus linguistics basics, suitable for quickly grasping core concepts relevant to corpus annotation and analysis.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [MIT 24.900 Introduction to Linguistics, Spring 2022](https://www.youtube.com/playlist?list=PLUl4u3cNGP63BZGNOqrF2qf_yxOjuG35j) — MIT OpenCourseWare · 24 videos · 27.1h across 24 episodes
+
+**Watch only this:** Lectures 2, 3, and 4 (Morphology Parts 1-3), plus Lectures 11 through 17 (Syntax Parts 1-7 and Semantics Part 1), totaling about 10.5 hours — this subset covers morphological analysis, syntactic structure, and semantic foundations necessary for understanding the annotation schemes and parsing approaches used in the paper.
+
+*Why it unblocks this paper:* MIT's Introduction to Linguistics covers morphology and syntax in depth, including multiple lectures on morphology and syntax that directly relate to the paper's focus on morphological and syntactic annotation pipelines and parsing ambiguity.
+
+*If you want all of it:* 27.1 hours across all 24 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Corpus Linguistics for Beginners](https://www.youtube.com/playlist?list=PLwdHW2uSo6DV1-_5wQYQOplVnj8PPcoXU) — Yassine Iabdounane · 11 videos · 3.0h across 11 episodes
+
+**Watch only this:** Episodes 1 through 4 (Introduction, Types of Corpora, Compiling and Analyzing a Corpus, and Part-of-Speech Tagging), about 1 hour — these episodes cover the essentials of corpus linguistics and tagging needed to grasp the paper's methodology.
+
+*Why it unblocks this paper:* This concise series on Corpus Linguistics for Beginners introduces corpus concepts, annotation, and searching techniques clearly and efficiently, providing a practical foundation for understanding corpus compilation and annotation relevant to the BiRCh project.
+
+*If you want all of it:* 3.0 hours across 11 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

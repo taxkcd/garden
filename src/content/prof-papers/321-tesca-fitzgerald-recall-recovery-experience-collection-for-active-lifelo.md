@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-tesca-fitzgerald"
-source_hash: "916feb50427c4e511fa8630c1a80e1834de31802e1d8dfbc53d91b368ab0541a"
+source_hash: "7538cfb0d012c5cac0951684f6473de5d06c7cfcb3c60f77c44d5931232449e7"
 sequence: 321
 generator: "outreach-garden: managed"
 ---
@@ -54,6 +54,38 @@ Research interests: Broadly, my interests include interactive robot learning, co
 - [Google Scholar](https://scholar.google.com/citations?user=UTmj6K4AAAAJ)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Continual Learning in Machine Learning
+**The paper assumes:** machine learning continual learning methods, catastrophic forgetting, replay techniques, elastic weight consolidation
+**Already in this field?** Skip this entirely if you already understand continual learning concepts and common strategies to prevent forgetting in neural networks.
+
+This background focuses on continual learning in machine learning, a core topic for understanding how the paper tackles catastrophic forgetting and balances adaptation and retention in vision-language-action models. The rigorous course option provides a deep, structured university lecture series on continual learning and related meta-learning topics, while the fast track offers a concise, focused playlist of explainers specifically on continual learning methods and challenges. Choose the course for comprehensive mastery or the fast track for a targeted, time-efficient overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS330: Deep Multi-Task and Meta Learning I Autumn 2022](https://www.youtube.com/playlist?list=PLoROMvodv4rNjRoawgt72BBNwL2V7doGI) — Stanford Online · 17 videos · 21.5h across 17 episodes
+
+**Watch only this:** Lectures 15 and 16: 'Stanford CS330 Deep Multi-Task & Meta Learning - Lifelong Learning I 2022 I Lecture 15' and 'Stanford CS330 Deep Multi-Task & Meta Learning - Frontiers and Open Challenges I 2022 I Lecture 16', about 2.5 hours total — these focus on lifelong/continual learning principles, challenges, and state-of-the-art methods.
+
+*Why it unblocks this paper:* Stanford CS330: Deep Multi-Task and Meta Learning I Autumn 2022 covers lifelong learning and continual learning in depth, including challenges like catastrophic forgetting and methods such as replay and regularization, directly relevant to the paper's continual learning evaluation.
+
+*If you want all of it:* 21.5 hours across 17 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Continual Learning](https://www.youtube.com/playlist?list=PLEdpjt8KmmQMWVwz4us2TifyABRa0NvJJ) — Jiri Fajtl · 27 videos · 18.0h across the first 25 episodes
+
+**Watch only this:** First 6 episodes covering intrinsic rewards, variational continual learning, enabling continual learning in neural networks, datasets and benchmarks, compositionality, and iCaRL, about 4.3 hours total — these provide a solid foundational overview of continual learning techniques and challenges.
+
+*Why it unblocks this paper:* Jiri Fajtl's 'Continual Learning' playlist offers a clear, concise series of explainers on continual learning concepts, methods, and benchmarks, well-suited for quickly grasping the key ideas needed to understand the paper's continual learning contributions.
+
+*If you want all of it:* 18 hours across the first 25 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

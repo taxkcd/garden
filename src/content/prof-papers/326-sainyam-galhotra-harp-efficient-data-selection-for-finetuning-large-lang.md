@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-sainyam-galhotra"
-source_hash: "832cfc1b42385425d630825ca70a5038d10797d11887a53973326d151317c311"
+source_hash: "ee8897f761512ab38222c6e948f53e1f513ff2085184939f18d9e8b49aa92681"
 sequence: 326
 generator: "outreach-garden: managed"
 ---
@@ -56,6 +56,38 @@ Research interests: Data science tools for analytics, data management, causal in
 - [LinkedIn](https://www.linkedin.com/in/sainyam/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Bayesian hierarchical modeling
+**The paper assumes:** Bayesian hierarchical modeling, empirical Bayes estimation, hierarchical data structures
+**Already in this field?** Skip this entirely if you already understand Bayesian hierarchical models and empirical Bayes methods for parameter estimation in hierarchical data.
+
+To fully understand HARP's hierarchical data organization and empirical Bayes utility estimation, a solid grasp of Bayesian hierarchical modeling is essential. The rigorous course option offers a deep, structured foundation in probability and Bayesian inference, while the fast track provides a concise, focused introduction to Bayesian statistics and hierarchical modeling concepts. Choose the rigorous course for thorough theoretical grounding; choose the fast track for a quicker, intuition-driven overview that still covers key ideas relevant to HARP.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [MIT 18.650 Statistics for Applications, Fall 2016](https://www.youtube.com/playlist?list=PLUl4u3cNGP60uVBMaoNERc6knT_MgPKS0) — MIT OpenCourseWare · 22 videos · 28.0h across 22 episodes
+
+**Watch only this:** Episodes 1 through 6 (Introduction to Statistics, Parametric Inference, and Maximum Likelihood Estimation) plus Episodes 17 and 18 (Bayesian Statistics and Bayesian Statistics cont.), about 10.5 hours total — these cover foundational probability, inference, and Bayesian methods critical for grasping HARP's methodology.
+
+*Why it unblocks this paper:* MIT's 18.650 Statistics for Applications course covers Bayesian statistics and parametric inference in depth, including hierarchical modeling concepts essential to understanding empirical Bayes shrinkage and utility estimation in HARP.
+
+*If you want all of it:* All 22 episodes, approximately 28 hours.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Bayesian statistics](https://www.youtube.com/playlist?list=PLiPzlsSXuOTpuYjA6Zv6xWb1ng8KIaleH) — Moudud Hasan · 7 videos · 8.1h across the first 6 episodes
+
+**Watch only this:** First 5 episodes (up to 'Jonathan Sedar - Hierarchical Bayesian Modelling with PyMC3 and PySTAN'), about 6.75 hours — these cover Bayesian fundamentals and hierarchical modeling relevant to understanding HARP's utility estimation.
+
+*Why it unblocks this paper:* Moudud Hasan's Bayesian statistics playlist offers a concise and clear introduction to Bayesian analysis and hierarchical Bayesian modeling, providing intuition and practical examples that align well with HARP's empirical Bayes approach.
+
+*If you want all of it:* All 6 episodes with duration data, about 8.1 hours.
 
 ## Track 1 — Academic deep-dives (long-form)
 

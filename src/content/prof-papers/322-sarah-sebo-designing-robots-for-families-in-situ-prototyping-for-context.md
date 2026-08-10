@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-sarah-sebo"
-source_hash: "e5a7b5def29daec3edff795e9d163db15e9298d9863849bea625f33b88f30e85"
+source_hash: "be749308d3212224f0321bec9c46a17521ccf31c3b2ce42668a51503442900b4"
 sequence: 322
 generator: "outreach-garden: managed"
 ---
@@ -55,6 +55,38 @@ Research interests: Human-Computer Interaction, Human-Robot Interaction, Robotic
 - [LinkedIn](https://www.linkedin.com/in/sarah-sebo-4b208a77/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Human-Robot Interaction
+**The paper assumes:** human-robot interaction principles, socially assistive robotics design, contextual sensing and interaction, user-centered design methods
+**Already in this field?** Skip this entirely if you already have foundational knowledge in human-robot interaction and socially assistive robot design.
+
+To understand the design and deployment of social robots for family routines, foundational knowledge in Human-Robot Interaction (HRI) is essential. The rigorous course option provides a deep, university-level exploration of robotics concepts including autonomy, sensing, and interaction design, while the fast track offers a concise, accessible introduction to HRI principles and evaluation methods. Choose the rigorous course for comprehensive technical depth and the fast track for a quick yet solid conceptual grounding.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Robotics](https://www.youtube.com/playlist?list=PLoROMvodv4rNsMOMF1LG3ohsTqZVJVeVp) — Stanford Online · 40 videos · 33.2h across the first 39 episodes
+
+**Watch only this:** Episodes 4-7: 'Integrated Learning and Planning', 'Interactive Autonomy', 'Unlocking Autonomous Medical Robotics', and 'Mechanical Intelligence in Locomotion', about 3.4 hours total — these cover robot autonomy, interaction, and sensing challenges relevant to family robot deployment.
+
+*Why it unblocks this paper:* This Stanford Robotics playlist covers foundational and advanced topics in robotics, including autonomous navigation, interactive autonomy, and robot learning from human experience, all directly relevant to the paper's focus on mobile social robots with contextual sensing and interaction.
+
+*If you want all of it:* Approximately 33.2 hours across the first 39 episodes.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Introduction to Human-Robot Interaction Course](https://www.youtube.com/playlist?list=PLBK7yyieyrAZWuYPDmQTB8UHnhXZrP1px) — Rose-Hulman Online · 34 videos · 3.4h across 34 episodes
+
+**Watch only this:** Episodes 1-7: 'Introduction to Human-Robot Interaction' through 'Robot Teams', about 42 minutes total — these episodes introduce core HRI concepts and interaction design relevant to family robot reminders.
+
+*Why it unblocks this paper:* This short-form Introduction to Human-Robot Interaction course by Rose-Hulman Online provides a clear, concise survey of HRI concepts including interaction taxonomies, evaluation, and interfaces, which are crucial to understanding the social and contextual aspects of the paper's robot design.
+
+*If you want all of it:* About 3.4 hours across 34 episodes.
 
 ## Track 1 — Academic deep-dives (long-form)
 

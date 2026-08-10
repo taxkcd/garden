@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-nathan-d-cahill"
-source_hash: "513f00643a58f446660b586df73684edc0b390b3e92fe0feb75b8e0eb243b635"
+source_hash: "01c37f67a6412fc513f9f892f79d71734aa4233a05bde54c0a09a9dabed7c756"
 sequence: 285
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: computer vision, machine learning, and medical image analysi
 - [Resolved homepage](https://people.rit.edu/ndcsma/index.html)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Information Theory for Machine Learning
+**The paper assumes:** information theory, entropy measures, divergence metrics, unsupervised learning principles, transfer learning basics
+**Already in this field?** Skip this entirely if you already understand information theoretic concepts like entropy and divergence and their application in machine learning.
+
+This background focuses on information theory concepts essential for understanding the unsupervised learning framework used in ASSERT to summarize intrusion alerts into attack models. The rigorous course option offers a deep, structured university-level treatment of information theory fundamentals, while the fast track provides a shorter, more accessible series covering the core concepts efficiently. Choose the lane that fits your available time and desired depth.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Student Lectures - Information Theory](https://www.youtube.com/playlist?list=PL4d5ZtfQonW3iAhXvTYCnoGEeRhxhKHMc) — Oxford Mathematics · 8 videos · 6.9h across 8 episodes
+
+**Watch only this:** Lectures 1 through 5, about 4.25 hours — covering entropy, basic properties, codes, typical sequences, and optimal codes to build a solid theoretical foundation.
+
+*Why it unblocks this paper:* This Oxford Mathematics 3rd year student lecture series covers foundational information theory topics such as entropy, codes, and typical sequences, which are directly relevant to understanding the metrics (cross-entropy, Jensen-Shannon Divergence) and coding concepts used in ASSERT's attack model synthesis.
+
+*If you want all of it:* All 8 lectures, about 6.9 hours total.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Information Theory](https://www.youtube.com/playlist?list=PLlrYM4cD5gcBhTfpQJbN0mmN6HrAAfuDE) — Swin · 9 videos · 6.4h across 9 episodes
+
+**Watch only this:** Episodes 1 and 2, about 1.4 hours total — covering introduction to information theory and the stunning link between entropy, time, and information.
+
+*Why it unblocks this paper:* This concise Swin playlist provides a clear and visual introduction to information theory basics, including entropy and its intuitive interpretations, suitable for quickly grasping the key concepts needed to understand ASSERT's use of information theoretic measures.
+
+*If you want all of it:* All 9 episodes, about 6.4 hours total.
 
 ## Track 1 — Academic deep-dives (long-form)
 

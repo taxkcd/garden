@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-yixuan-he"
-source_hash: "bae6aa831d490b5d27cd2750abbba842f3f2a9914b049b876c806fb223522a2b"
+source_hash: "270802087506de8a3895c77b2d5fe4c4db999d06373505bacc17d732ad638236"
 sequence: 311
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: graph neural networks, machine learning, and mathematical mo
 - [Resolved homepage](https://sherylhyx.github.io/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** temporal network analysis
+**The paper assumes:** temporal network analysis, dynamic graph theory, and temporal community detection
+**Already in this field?** Skip this entirely if you already understand how networks evolve over time and how to analyze dynamic graphs and communities.
+
+This background focuses on temporal network analysis, essential for understanding and modeling networks that evolve over time, as in the ProxFuse method for chimpanzee social interactions. The rigorous course option provides a deep, structured university-level foundation in graph machine learning including temporal aspects, while the fast track offers a shorter, intuition-driven introduction to network science concepts relevant to temporal networks. Choose the course for comprehensive mastery; choose the fast track for a quicker conceptual grasp.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS224W Machine Learning with Graphs I Jure Leskovec](https://www.youtube.com/playlist?list=PLoROMvodv4rOP-ImU-O1rYRg2RFxomvFp) — Stanford Online · 47 videos · 24.1h across 47 episodes
+
+**Watch only this:** Lectures 1.1 to 1.3 (Why Graphs, Applications, Choice of Graph Representation), 2.1 to 2.3 (Traditional Feature-based Methods: Node, Link, Graph), and 3.1 to 3.3 (Node Embeddings, Random Walk Approaches, Embedding Entire Graphs), totaling about 6.5 hours — this subset covers core graph concepts and embeddings relevant to temporal network analysis.
+
+*Why it unblocks this paper:* Stanford CS224W Machine Learning with Graphs by Jure Leskovec is a top-tier university course covering graph representations, dynamic graphs, and node embeddings, foundational for understanding temporal network fusion and similarity measures used in ProxFuse.
+
+*If you want all of it:* 24.1 hours across 47 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Network Science](https://www.youtube.com/playlist?list=PLXxwyLP9N6SDqz05QXo22TzD_bFpEXE9X) — Joshua Yoon · 19 videos · 19.5h across 19 episodes
+
+**Watch only this:** Episodes 1 (Raissa D'Souza - "The Science of Networks"), 15 (Temporal Analysis of Complex Networks), and 17 (Social Network Analysis - From Graph Theory to Applications), totaling about 3 hours — these episodes focus on temporal network concepts and social network analysis relevant to the paper.
+
+*Why it unblocks this paper:* Joshua Yoon's Network Science playlist offers clear, visual, and intuitive explanations of network concepts including temporal analysis of complex networks, providing a concise introduction to the key ideas behind temporal network structures and dynamics.
+
+*If you want all of it:* 19.5 hours across 19 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

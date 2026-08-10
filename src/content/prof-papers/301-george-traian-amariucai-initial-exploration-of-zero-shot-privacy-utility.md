@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-george-traian-amariucai"
-source_hash: "12904385077fb69ecf6cec8003ccaea495977611a2ebe380cbd01771ec4bc78d"
+source_hash: "40867ee1107554446141b10e7023bcf6271b32afebd21f4b0c844e92b3aaf575"
 sequence: 301
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: cyber security and its intersections with probability and in
 - [Professor website](http://www.cs.ksu.edu/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Privacy in Machine Learning
+**The paper assumes:** machine learning privacy, inference attacks, privacy-utility tradeoffs, data sanitization methods
+**Already in this field?** Skip this entirely if you already understand core concepts of privacy in machine learning, including inference attacks and privacy-utility tradeoffs.
+
+This background is designed to provide foundational knowledge on privacy in machine learning, focusing on privacy-utility tradeoffs, inference privacy, and data sanitization techniques relevant to the paper's use of GPT-4 for tabular data privacy. The rigorous course offers a deep, structured understanding suitable for thorough preparation, while the fast track provides a concise, accessible introduction to key concepts for quicker comprehension.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Data Protection - Privacy and Security](https://www.youtube.com/playlist?list=PLy7-2HDH5IPdLQSl49Ko6iPdbdYBqGc0h) — London Data School · 69 videos · 32.5h across the first 60 episodes
+
+**Watch only this:** Episodes 1-9 ("Privacy and data protection" through "Michael Kearns: Differential Privacy"), about 4.8 hours — these cover foundational privacy concepts, differential privacy basics, and privacy in machine learning, providing essential context for the paper's privacy methods and evaluations.
+
+*Why it unblocks this paper:* This extensive playlist from London Data School covers privacy and data protection comprehensively, including differential privacy, privacy definitions, and practical privacy-preserving AI techniques, directly relevant to understanding privacy-utility tradeoffs and sanitization methods compared in the paper.
+
+*If you want all of it:* About 32.5 hours across the first 60 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Data Analytics in Security and Privacy](https://www.youtube.com/playlist?list=PLMPUUgLIYH1b_XgSfiU9KCFbpaAK7uSy3) — C3 Digital Transformation Institute · 12 videos · 6.2h across 12 episodes
+
+**Watch only this:** Episodes 1-6 ("Welcome and Opening Remarks" through "What Does It Mean to “Verify” a Neural Network?"), about 3 hours — these episodes provide a concise overview of privacy challenges and ML robustness relevant to the paper's context.
+
+*Why it unblocks this paper:* This shorter playlist by C3 Digital Transformation Institute offers a focused introduction to data analytics in security and privacy, including discussions on trustworthy machine learning and adversarial examples, which align well with the paper's focus on privacy-utility tradeoffs and adversarial baselines.
+
+*If you want all of it:* About 6.2 hours across 12 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

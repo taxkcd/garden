@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-eftychios-sifakis"
-source_hash: "415b93fe0f82ccb3bfe6936e4ec0932453f703ed23c7dc43c86ab9e449a999d7"
+source_hash: "7d0c06905154a0dca99582125715b18e5eca9a555297104feeb95ab9bbf2145c"
 sequence: 318
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,38 @@ Research interests: computer graphics, physics-based modeling/simulation and sci
 - [Google Scholar](https://scholar.google.com/citations?user=swFWoHwAAAAJ)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Sparse 3D Deep Learning
+**The paper assumes:** sparse 3D deep learning, sparse voxel grids, sparse convolutional neural networks
+**Already in this field?** Skip this entirely if you already understand sparse 3D deep learning concepts and sparse convolutional neural networks.
+
+To understand the innovations and technical contributions of the 𝑓 VDB framework for sparse 3D deep learning, it is essential to grasp how sparse 3D data is represented and processed using deep learning techniques such as sparse voxel grids and sparse convolution kernels. The rigorous option provides a deep dive into foundational and advanced deep learning concepts relevant to 3D vision, while the fast track offers a concise, intuition-driven explanation of neural networks and convolutional architectures that underpin these methods. Choose the rigorous course for comprehensive mastery and the fast track for a focused, time-efficient conceptual grounding.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS231N Deep Learning for Computer Vision I 2025](https://www.youtube.com/playlist?list=PLoROMvodv4rOmsNzYBMe0gJY2XS8AQg16) — Stanford Online · 18 videos · 21.2h across 18 episodes
+
+**Watch only this:** Lectures 1 through 7 and Lecture 15, about 8.5 hours — covering introduction, CNNs, training, and specifically the 3D vision lecture to understand spatial deep learning and convolutional kernels.
+
+*Why it unblocks this paper:* Stanford CS231N Deep Learning for Computer Vision I 2025 covers convolutional neural networks, 3D vision, and generative models with detailed lectures that directly relate to sparse 3D deep learning and GPU-accelerated architectures, providing the rigorous foundation needed to understand 𝑓 VDB's contributions.
+
+*If you want all of it:* 21.2 hours across 18 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Neural Networks / Deep Learning](https://www.youtube.com/playlist?list=PLblh5JKOoLUIxGDQs4LFFD--41Vzf-ME1) — StatQuest with Josh Starmer · 33 videos · 10.9h across 33 episodes
+
+**Watch only this:** Episodes 1 through 14, about 4.5 hours — covering the essential main ideas of neural networks, backpropagation, convolutional neural networks, and related concepts.
+
+*Why it unblocks this paper:* StatQuest with Josh Starmer's Neural Networks / Deep Learning playlist provides clear, visual, and intuitive explanations of neural networks, backpropagation, convolutional neural networks, and attention mechanisms, which are foundational to understanding sparse 3D deep learning frameworks like 𝑓 VDB in a fraction of the time.
+
+*If you want all of it:* 10.9 hours across 33 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

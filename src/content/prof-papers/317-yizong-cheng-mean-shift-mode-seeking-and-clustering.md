@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-yizong-cheng"
-source_hash: "2f490515411e276c4000790b7ee9f34084540c99b5042c71804fad6180ddd16b"
+source_hash: "0b92fad62b1dd8655af998ecfe3fc5e34fae9636d52885c6cfb67d0d1bf84cc5"
 sequence: 317
 generator: "outreach-garden: managed"
 ---
@@ -51,6 +51,38 @@ Research interests: Self-organizing algorithms; Similarity and uncertainty repre
 - [Faculty/profile page](https://researchdirectory.uc.edu/p/chengy)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Kernel Density Estimation
+**The paper assumes:** kernel density estimation, nonparametric density estimation, and kernel functions
+**Already in this field?** Skip this entirely if you already understand kernel density estimation and how kernels are used to estimate probability densities from data.
+
+To fully understand the mean shift algorithm and its theoretical foundations, a solid grasp of kernel density estimation (KDE) is essential, as the algorithm performs gradient ascent on KDE surfaces. The rigorous course option offers a deep dive into the theory and mathematical underpinnings of KDE and related machine learning concepts, while the fast track provides a concise, intuition-focused introduction to kernel methods that supports quick comprehension of the key ideas relevant to mean shift.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS229M: Machine Learning Theory - Fall 2021](https://www.youtube.com/playlist?list=PLoROMvodv4rP8nAmISxFINlGKSK4rbLKh) — Stanford Online · 20 videos · 28.3h across 20 episodes
+
+**Watch only this:** Lectures 8 (Refined generalization bounds for neural nets, Kernel methods), 18 (Unsupervised learning, mixture of Gaussians, moment methods), and 19 (Mixture of Gaussians, spectral clustering), about 4.5 hours total — these cover kernel methods, density estimation, and clustering theory relevant to mean shift.
+
+*Why it unblocks this paper:* Stanford CS229M is a graduate-level machine learning theory course that covers kernel methods, including kernel density estimation and related concentration inequalities, providing the rigorous mathematical background necessary to understand the convergence and mode-seeking properties of mean shift.
+
+*If you want all of it:* Approximately 28.3 hours across all 20 episodes.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Learn Machine Learning | Kernel SVM in Python](https://www.youtube.com/playlist?list=PLGey__rsxvBVkqarr-phzvp7DJEmUAXKD) — Learn Machine Learning · 7 videos · 0.8h across 7 episodes
+
+**Watch only this:** Episodes 1 through 4, about 28 minutes total — covering kernel SVM intuition, mapping to higher dimensions, the kernel trick, and types of kernel functions, which give a solid conceptual basis for kernel density estimation.
+
+*Why it unblocks this paper:* This short series from Learn Machine Learning provides a clear, visual, and intuitive introduction to kernel methods, including the kernel trick and kernel functions, which are foundational to understanding kernel density estimation and the mean shift algorithm without heavy mathematical overhead.
+
+*If you want all of it:* Approximately 0.8 hours across all 7 episodes.
 
 ## Track 1 — Academic deep-dives (long-form)
 

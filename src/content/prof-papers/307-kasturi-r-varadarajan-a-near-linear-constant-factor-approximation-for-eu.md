@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-kasturi-r-varadarajan"
-source_hash: "1133bf214810cae2b0c57a69b53dc6ef722e07c3ff3dcd5dfa18672ea926f5e4"
+source_hash: "2c7b5560af52bbec88a27ec1c9485a82efb80cd3a43ab02c0878b42a0a8d0959"
 sequence: 307
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: In principle, all of theoretical computer science. In practi
 - [Resolved homepage](http://www.cs.uiowa.edu/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Computational Geometry
+**The paper assumes:** computational geometry, geometric data structures, approximation algorithms for geometric optimization
+**Already in this field?** Skip this entirely if you already have a solid understanding of computational geometry and geometric approximation algorithms.
+
+To understand the algorithmic techniques and geometric concepts in the paper on Euclidean bipartite matching, a solid grasp of computational geometry is essential, especially spatial subdivisions like quadtrees and geometric optimization. The rigorous course option offers a deep, structured university-level treatment, while the fast track provides a concise, visual introduction to core computational geometry concepts, suitable for quick background preparation.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [CENG 773 - Computational Geometry](https://www.youtube.com/playlist?list=PLuiPz6iU5SQ8W6v1F5OgogHel4T6KjKob) — METUOpenCourseWare · 29 videos · 22.8h across 29 episodes
+
+**Watch only this:** Lectures 1.1 through 5.3, about 14 hours — these cover fundamental computational geometry concepts, convex hulls, range searching, and spatial data structures necessary for grasping the paper's approach.
+
+*Why it unblocks this paper:* This METUOpenCourseWare Computational Geometry course covers foundational topics including spatial data structures and geometric algorithms, which are directly relevant to understanding hierarchical subdivisions and approximation algorithms used in the paper.
+
+*If you want all of it:* 22.8 hours across all 29 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Computational geometry](https://www.youtube.com/playlist?list=PLPVMDqmMcxRzFhx451DxS7oGnG5KUGU-_) — Erik Nordeus · 11 videos · 0.7h across 11 episodes
+
+**Watch only this:** Episodes 1 through 6, about 18 minutes — these cover triangulations, convex hulls, and related geometric algorithms that form the conceptual basis for the paper's spatial subdivision techniques.
+
+*Why it unblocks this paper:* Erik Nordeus's Computational Geometry playlist provides short, clear visual explainers on key geometric algorithms and data structures, giving an intuitive grasp of concepts like triangulations and convex hulls that underpin the paper's methods.
+
+*If you want all of it:* 0.7 hours across all 11 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-jason-j-corso"
-source_hash: "6a5a637b61cdec1bd1abb156cd401e2c27a28d017125584bd36c20b0abcc3c30"
+source_hash: "ee9540091da63bc32d83ba6f35ce42debf44fdb5dbeec212bbb7bcc953633249"
 sequence: 299
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,38 @@ Research interests: high-level computer vision, video understanding, activity re
 - [Google Scholar](https://scholar.google.com/citations?hl=en&user=g9bV-_sAAAAJ)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Deep learning for computer vision
+**The paper assumes:** convolutional neural networks, attention mechanisms, multimodal deep learning, visual feature extraction, neural language models
+**Already in this field?** Skip this entirely if you have hands-on experience with deep learning models for image and video understanding, including attention-based architectures.
+
+To understand the grounded video description model in this paper, a solid grasp of deep learning techniques for computer vision is essential, especially convolutional neural networks, attention mechanisms, and multimodal learning integrating vision and language. The rigorous course option offers a comprehensive, structured university-level deep dive into these topics, while the fast track provides a shorter, more accessible series covering the core concepts efficiently. Choose the rigorous course if you want deep mastery; choose the fast track if you want a focused, time-efficient background.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS231N Deep Learning for Computer Vision I 2025](https://www.youtube.com/playlist?list=PLoROMvodv4rOmsNzYBMe0gJY2XS8AQg16) — Stanford Online · 18 videos · 21.2h across 18 episodes
+
+**Watch only this:** Lectures 4 (Neural Networks and Backpropagation), 5 (Image Classification with CNNs), 6 (CNN Architectures), 8 (Attention and Transformers), 9 (Object Detection, Image Segmentation, Visualizing), and 10 (Video Understanding), about 7 hours total — these cover the core deep learning building blocks, attention mechanisms, object grounding, and video modeling needed to understand the paper.
+
+*Why it unblocks this paper:* This is Stanford's professional education version of CS231N Deep Learning for Computer Vision, taught by leading experts, covering CNNs, attention, video understanding, and vision-language models in depth, directly relevant to the paper's methods.
+
+*If you want all of it:* 21.2 hours across all 18 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Stanford CS231N | Deep Learning for Computer Vision | Spring 2025](https://www.youtube.com/playlist?list=PLT1jZ5o0K_ZIb5pFviSNR2oeDW2Wkd90e) — Mash · 17 videos · 20.1h across 17 episodes
+
+**Watch only this:** Lectures 4 (Neural Networks and Backpropagation), 5 (Image Classification with CNNs), 6 (CNN Architectures), 8 (Attention and Transformers), 9 (Object Detection, Image Segmentation, Visualizing), and 10 (Video Understanding), about 7 hours total — these episodes focus on the essential concepts for understanding the paper's model.
+
+*Why it unblocks this paper:* This playlist covers the same Stanford CS231N course content with a slightly different production, providing a concise and clear explanation of CNNs, attention, object detection, and video understanding, suitable for a quicker but still rigorous overview.
+
+*If you want all of it:* 20.1 hours across all 17 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

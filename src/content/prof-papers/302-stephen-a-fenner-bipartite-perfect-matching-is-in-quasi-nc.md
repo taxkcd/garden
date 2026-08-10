@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-stephen-a-fenner"
-source_hash: "2f77d58d616157f48c5aa00f18f07f6540da6944c87e09d876b05886538db315"
+source_hash: "477a686a044f01fbcdc45af40ab2317e990ad0244d9ecc6b53fea38479a7e3ba"
 sequence: 302
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: Algorithms & Computation Theory
 - [Resolved homepage](https://www.cse.sc.edu/~fenner/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Parallel Algorithms and Circuit Complexity
+**The paper assumes:** parallel algorithms, circuit complexity, uniform Boolean circuits, NC complexity classes, derandomization techniques
+**Already in this field?** Skip this entirely if you already understand the basics of parallel computation models, circuit complexity classes like NC, and derandomization methods in theoretical computer science.
+
+To understand the paper 'Bipartite Perfect Matching is in quasi-NC', a solid grasp of parallel algorithms and circuit complexity is essential, especially concepts like uniform Boolean circuits, poly-logarithmic depth, and derandomization techniques. The rigorous course option provides a deep, structured university-level treatment of circuit complexity theory, ideal for readers seeking comprehensive mastery. The fast track offers a concise, focused playlist on parallel and distributed computing fundamentals, suitable for readers who want a quicker but still relevant introduction to the key ideas underpinning the paper's results.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Circuit Complexity Theory](https://www.youtube.com/playlist?list=PLFW6lRTa1g80mLxSKThHMRccovvJ9r0cp) — IIT KANPUR-NPTEL · 60 videos · 30.0h across 60 episodes
+
+**Watch only this:** Lectures 1-24 (Introduction through Division in NC1), about 12 hours — covering the basics of circuit complexity, lower bounds, bounded depth classes, and division in NC1, which provide the theoretical foundation for understanding quasi-NC2 results.
+
+*Why it unblocks this paper:* This IIT Kanpur NPTEL course on Circuit Complexity Theory covers foundational and advanced topics in circuit complexity, including uniform circuits, bounded depth classes, and polynomial size circuits, directly relevant to the paper's focus on quasi-NC2 circuit constructions and derandomization.
+
+*If you want all of it:* 30.0 hours across 60 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Parallel and Distributed Computing](https://www.youtube.com/playlist?list=PLjVeg5SOLp2mb0aJ0BkYm4oj4XqtOOKSv) — Computer Box · 21 videos · 4.2h across 21 episodes
+
+**Watch only this:** Lectures 1, 4, 16, and 18 (Parallel vs Distributed Computing, Parallel Programming Basics, Parallel Algorithms, Parallel Algorithm Models), about 50 minutes total — these cover the essential concepts of parallelism and parallel algorithms relevant to the paper.
+
+*Why it unblocks this paper:* This Computer Box playlist on Parallel and Distributed Computing offers clear, concise explanations of parallel computing concepts, architectures, and models, providing an accessible introduction to parallel algorithms and the context for parallel complexity classes like quasi-NC.
+
+*If you want all of it:* 4.2 hours across 21 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

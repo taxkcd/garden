@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-steven-l-tanimoto"
-source_hash: "1867e240445e33ab35eaa34205ba339baff91d78af2e01c56c47fc56288a3c7e"
+source_hash: "ea6786ef3dcb00778e946febe5d0e096a9fe2edda6ebcaffbba7f5ba4ebb9dc1"
 sequence: 286
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,38 @@ Research interests: Artificial Intelligence, Human-computer interaction, Robotic
 - [Resolved homepage](http://www.cs.washington.edu/people/faculty/steve-tanimoto/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** program analysis and code representation
+**The paper assumes:** program analysis, semantic code representation, code synchronization techniques
+**Already in this field?** Skip this entirely if you already understand program analysis methods and how code can be represented and tracked semantically for tooling purposes.
+
+To understand Codetations' core technical contribution—maintaining synchronized, semantic annotations on evolving code—you need a solid grasp of program analysis and code representation techniques. The rigorous course option offers a deep dive into program analysis fundamentals, while the fast track provides a focused introduction to graph-based representations relevant to semantic anchoring. Choose the rigorous lane for comprehensive understanding or the fast track for a quicker, intuition-driven overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Program Analysis at University of Stuttgart (Prof. Dr. Michael Pradel)](https://www.youtube.com/playlist?list=PLBmY8PAxzwIEGtnJiucyGAnwWpxACE633) — Michael Pradel · 39 videos · 14.6h across 39 episodes
+
+**Watch only this:** Lectures 1 through 15 ("Introduction (Parts 1-3)" through "Call Graph Analysis (Part 2, CHA and RTA)"), about 5.5 hours — covering basics, operational semantics, data flow, and call graph analysis to grasp semantic code representations and tracking.
+
+*Why it unblocks this paper:* This University of Stuttgart course on Program Analysis by Prof. Dr. Michael Pradel covers foundational concepts such as operational semantics, data flow analysis, and call graph analysis, which are essential for understanding how code can be represented and tracked semantically to maintain annotation synchronization.
+
+*If you want all of it:* All 39 lectures, approximately 14.6 hours.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Stanford CS224W: Machine Learning with Graphs](https://www.youtube.com/playlist?list=PLoROMvodv4rPLKxIpqhjhPgdQy7imNkDn) — Stanford Online · 60 videos · 22.4h across 60 episodes
+
+**Watch only this:** Lectures 1.1 through 3.3 ("Why Graphs" through "Embedding Entire Graphs"), about 1.1 hours — these cover graph basics, applications, and embedding techniques relevant to semantic code representation.
+
+*Why it unblocks this paper:* Stanford's CS224W: Machine Learning with Graphs provides a clear, well-structured introduction to graph representations and embeddings, which underpin semantic anchoring methods used in Codetations to track code changes and maintain annotation alignment.
+
+*If you want all of it:* All 60 lectures, approximately 22.4 hours.
 
 ## Track 1 — Academic deep-dives (long-form)
 

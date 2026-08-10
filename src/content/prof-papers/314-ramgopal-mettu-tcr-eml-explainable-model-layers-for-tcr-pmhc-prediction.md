@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-ramgopal-mettu"
-source_hash: "dc9bc309b9326af5e678d7341c4667b2d78b5915c196605c4ad9239bf5db0d76"
+source_hash: "3f356b179f6b6fbc5a715c5ea8837d28a90b38594372d9ffd512d0f9bdab4ff9"
 sequence: 314
 generator: "outreach-garden: managed"
 ---
@@ -56,6 +56,38 @@ Research interests: computational biology, immunology, robotics, novel algorithm
 - [LinkedIn](https://www.linkedin.com/in/ramgopal-mettu/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** protein language models
+**The paper assumes:** protein language models, deep learning for protein sequences, transformer architectures in computational biology
+**Already in this field?** Skip this entirely if you already understand how protein language models work and their role in computational biology.
+
+This background focuses on protein language models (PLMs), which are foundational to the TCR-EML paper's methodology. The rigorous course option offers a deep, structured university-level introduction to proteogenomics and protein-related sequence analysis, providing a broad and detailed context. The fast track is a concise, targeted series on protein modeling and design with machine learning, including a dedicated episode on protein language models, ideal for quickly grasping core concepts relevant to pretrained embeddings and explainability in protein sequence modeling.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [July 2019-Introduction to Proteogenomics](https://www.youtube.com/playlist?list=PLOzRYVm0a65ejXQYPTNNRNbLmeqzCzsc-) — NPTEL IIT Bombay · 81 videos · 26.7h across the first 60 episodes
+
+**Watch only this:** Lectures 1 to 5 (Introduction to Genomics parts I-III and Sequence Alignment), plus Lectures 11 and 12 (Introduction to Proteomics and Protein Quantification), totaling about 3.5 hours — these cover the essential biological and computational foundations for protein language models.
+
+*Why it unblocks this paper:* This NPTEL IIT Bombay course covers proteogenomics and foundational genomics and proteomics topics, providing rigorous background on protein sequences, their biochemical context, and computational analysis, which underpins understanding protein language models used in TCR-EML.
+
+*If you want all of it:* About 26.7 hours across the first 60 episodes.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Protein Modeling and Design with PyRosetta and Machine Learning (Rosetta Commons RaMP Bootcamp 2023)](https://www.youtube.com/playlist?list=PLFavr8uo6kSqDB1cbXUDFZSooNk537teC) — RosettaCommons · 12 videos · 7.0h across 12 episodes
+
+**Watch only this:** Episode 8: 'Protein Language Models' (about 34 minutes) — this single episode concisely explains the concept and application of protein language models, ideal for quickly understanding the backbone embeddings in TCR-EML.
+
+*Why it unblocks this paper:* This RosettaCommons bootcamp playlist includes a dedicated episode on protein language models within a broader machine learning and protein modeling context, providing a focused, accessible introduction to PLMs relevant to the TCR-EML approach.
+
+*If you want all of it:* About 7.0 hours across 12 episodes.
 
 ## Track 1 — Academic deep-dives (long-form)
 

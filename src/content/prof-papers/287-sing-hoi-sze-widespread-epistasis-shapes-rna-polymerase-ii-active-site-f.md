@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-sing-hoi-sze"
-source_hash: "81b54033ba360ffb03418872b13a36a71abf44d6dc893a475098643af3da435b"
+source_hash: "05f74f66b107e7f0cd4d29d3d700c5fb22c26b8f94a702c343186bb1f7ea6e85"
 sequence: 287
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: application of computational techniques to solve problems in
 - [Resolved homepage](https://people.engr.tamu.edu/shsze/shsze/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Statistical genetics and epistasis
+**The paper assumes:** statistical genetics, epistasis, genetic interaction analysis, coevolutionary analysis
+**Already in this field?** Skip this entirely if you already understand genetic interaction concepts and statistical methods for epistasis analysis in molecular biology.
+
+This background focuses on statistical genetics and epistasis, essential for understanding the genetic interactions and coevolutionary analyses in the RNA polymerase II trigger loop studied in the paper. The rigorous course provides a foundational university-level biology perspective including genetics and molecular biology concepts, while the fast track offers a concise, focused introduction to epistasis and related genetic interactions for quicker comprehension.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [MIT 7.016 Introductory Biology, Fall 2018](https://www.youtube.com/playlist?list=PLUl4u3cNGP63LmSVIVzy584-ZbjbJ-Y63) — MIT OpenCourseWare · 35 videos · 27.9h across 35 episodes
+
+**Watch only this:** Lectures 12 to 14 (Genetics 1 – Cell Division & Segregating Genetic Material; Genetics 2 – Rules of Inheritance; Genetics 3 – Linkage, Crossing Over), about 2 hours 20 minutes — these cover core genetics concepts and linkage essential for grasping epistasis and genetic interactions.
+
+*Why it unblocks this paper:* MIT 7.016 Introductory Biology covers genetics, transcription, and molecular biology fundamentals, including detailed genetics lectures that build the necessary foundation to understand epistasis and genetic interaction networks in a biological context relevant to this paper.
+
+*If you want all of it:* 27.9 hours across 35 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [EPISTASIS- A-level Biology Inheritance.  Genetic crosses showing how one gene masks another by Miss](https://www.youtube.com/playlist?list=PLAfJ97t4yE0zzvRUFT12OyM-sFr06ZYd7) — creativemindmm · 8 videos · 1.5h across 8 episodes
+
+**Watch only this:** Episodes 1 to 4 (EPISTASIS- A-level Biology Inheritance; Genetic Recombination and Gene Mapping; Beyond Mendelian Genetics: Complex Patterns of Inheritance; Epistasis types - dominant, recessive, double dominant, dominant recessive epistasis), about 45 minutes — these cover the essential concepts of epistasis and gene interactions.
+
+*Why it unblocks this paper:* The 'EPISTASIS- A-level Biology Inheritance' playlist provides a concise, clear introduction to epistasis and related genetic concepts, directly addressing the key subject of genetic interactions in an accessible format suitable for rapid background preparation.
+
+*If you want all of it:* 1.5 hours across 8 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

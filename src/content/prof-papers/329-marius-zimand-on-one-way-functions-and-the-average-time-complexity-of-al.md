@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-marius-zimand"
-source_hash: "30e3e6ce83659143a50bfaa674ee0e7eaf6a65f5edb58fa890e9f7255f94dea5"
+source_hash: "113bf85881a49bf82c383db0be62f948bd4de39e8acda1706091237867587504"
 sequence: 329
 generator: "outreach-garden: managed"
 ---
@@ -50,6 +50,38 @@ Research interests: computational complexity, algorithmic information theory, cr
 - [Faculty/profile page](https://www.towson.edu/fcsm/departments/computerinfosci/facultystaff/mzimand.html)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Computational Complexity Theory
+**The paper assumes:** computational complexity theory, one-way functions, average-case complexity, polynomial-time algorithms, Kolmogorov complexity basics
+**Already in this field?** Skip this entirely if you already have a solid undergraduate-level understanding of computational complexity theory and cryptographic primitives.
+
+This background focuses on computational complexity theory, which is essential for understanding the equivalence between one-way functions and the average-case hardness of almost-optimal compression discussed in the paper. The rigorous course provides a deep and structured foundation in complexity theory, while the fast track offers a concise, intuition-driven introduction to the core concepts, suitable for quickly grasping the essentials before diving into the paper.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [MIT 18.404J Theory of Computation, Fall 2020](https://www.youtube.com/playlist?list=PLUl4u3cNGP60_JNv2MmK3wkOt9syvfQWY) — MIT OpenCourseWare · 25 videos · 32.3h across 25 episodes
+
+**Watch only this:** Lectures 8 (Undecidability), 9 (Reducibility), 12 (Time Complexity), 14 (P and NP, SAT, Poly-Time Reducibility), 15 (NP-Completeness), 16 (Cook-Levin Theorem), 23 (Probabilistic Computation, BPP), and 24 (Probabilistic Computation cont.), about 10.3 hours total — these cover the key complexity concepts relevant to one-way functions and average-case hardness.
+
+*Why it unblocks this paper:* MIT 18.404J Theory of Computation is a comprehensive university-level course covering foundational topics in computational complexity theory, including undecidability, reducibility, NP-completeness, and probabilistic computation, all of which underpin the paper's theoretical framework.
+
+*If you want all of it:* 32.3 hours across 25 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Computational Complexity Lectures](https://www.youtube.com/playlist?list=PLdUzuimxVcC0DENcdT8mfhI3iRRJLVjqH) — Computer Science Theory Explained · 90 videos · 7.9h across the first 60 episodes
+
+**Watch only this:** Episodes 1 (Complexity Theory - Introduction) through 23 (Probabilistic Computation, BPP), about 3 hours total — this subset covers the essential concepts of complexity classes, reductions, and probabilistic computation relevant to the paper.
+
+*Why it unblocks this paper:* The Computational Complexity Lectures series by Computer Science Theory Explained offers clear, concise explanations of fundamental complexity theory concepts such as Turing machines, reductions, NP-completeness, and the halting problem, providing a quick but solid introduction to the theoretical background needed for this paper.
+
+*If you want all of it:* 7.9 hours across the first 60 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

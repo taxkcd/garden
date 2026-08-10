@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-rui-hu"
-source_hash: "64aa428e0606e1cfb803ccff5800c4dd640f275661aae739b953291c6362046b"
+source_hash: "4a5cd834a345b6474b56088251325651f9be92b1313b0ce68c148c0fc3edef9c"
 sequence: 298
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,27 @@ Research interests: AI Security & Efficiency, Federated Learning, Data Privacy, 
 - [LinkedIn](https://www.linkedin.com/in/hu-rui-profile/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Federated Learning and Parameter-Efficient Fine-Tuning
+**The paper assumes:** federated learning fundamentals, parameter-efficient fine-tuning methods, LoRA adaptation, Non-IID data handling in distributed training
+**Already in this field?** Skip this entirely if you already understand federated learning basics and parameter-efficient fine-tuning techniques such as LoRA.
+
+To understand the key concepts behind Fed-pilot, including federated learning fundamentals, heterogeneous client constraints, and parameter-efficient fine-tuning techniques like LoRA, this background offers two complementary learning paths. The rigorous course provides a deep, structured dive into federated learning and PEFT within a university setting, ideal for thorough mastery. The fast track offers a concise, practical tutorial series focused on federated AI simulations, perfect for quickly grasping the core ideas and implementation aspects.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Federated AI Simulations with Flower (2025 Tutorial)](https://www.youtube.com/playlist?list=PLNG4feLHqCWkdlSrEL2xbCtGa6QBxlUZb) — Flower · 9 videos · 3.4h across 9 episodes
+
+**Watch only this:** Watch episodes 1 (Introduction), 2 (Launching Your First Simulation), 4 (Defining Strategy Callbacks), and 6 (Building Custom Strategies); about 1.5 hours total. These episodes cover the basics of federated learning simulation, client strategy, and aggregation.
+
+*Why it unblocks this paper:* The 2025 Flower tutorial series offers a concise, hands-on introduction to federated AI simulations, including client heterogeneity and aggregation strategies, providing practical insights into federated learning pipelines relevant to Fed-pilot.
+
+*If you want all of it:* 3.4 hours across 9 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

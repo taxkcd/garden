@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-david-heath"
-source_hash: "2c91af2f73b275e6b565d820f0aaf573f34690eb8411194217f4243bc043dfeb"
+source_hash: "4518e5c11a1f7889e9d48a7e0db0b25e44b32ae11dff9cd2313022c027fccc92"
 sequence: 323
 generator: "outreach-garden: managed"
 ---
@@ -54,6 +54,38 @@ Research interests: Secure Multiparty Computation (MPC), Zero Knowledge proofs, 
 - [DBLP](https://dblp.org/pid/19/72.html)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Boolean circuit complexity
+**The paper assumes:** Boolean circuit complexity, combinational logic circuits, parallel computation models
+**Already in this field?** Skip this entirely if you already have a solid understanding of Boolean circuit complexity and combinational circuit models.
+
+This background focuses on Boolean circuit complexity, essential for understanding the theoretical foundations of the paper's novel cyclic Boolean circuit model simulating PRAM. The rigorous course option provides a deep, structured university-level treatment of circuit analysis and logic fundamentals, while the fast track offers a concise, intuition-driven introduction to Boolean algebra and logic gates. Choose the course for thorough mastery or the fast track for a quicker conceptual grasp.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [AC Electrical Circuit Analysis](https://www.youtube.com/playlist?list=PLxuejeK2BP_cIbdalFX_Y9X-nlv2kRxq3) — Electronics with Professor Fiore · 58 videos · 17.9h across 58 episodes
+
+**Watch only this:** Episodes 1-24, about 7.3 hours — covering introduction, fundamentals, complex numbers, impedance, RLC circuits, and logic gates to build a solid understanding of circuit behavior and Boolean logic relevant to the paper.
+
+*Why it unblocks this paper:* This playlist, 'AC Electrical Circuit Analysis' by Electronics with Professor Fiore, covers fundamental concepts of circuits and complex numbers that underpin Boolean circuit complexity theory. It includes detailed episodes on logic gates and circuit analysis, providing a rigorous foundation relevant to understanding combinational and cyclic Boolean circuits in the paper.
+
+*If you want all of it:* 17.9 hours across 58 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Boolean Algebra](https://www.youtube.com/playlist?list=PL5Raijva2y4TnhX9kisTdyre2OoKMI_dc) — Swati Chawla · 6 videos · 2.0h across 6 episodes
+
+**Watch only this:** Episodes 1-3, about 1 hour — covering Boolean logic basics, logic gates, and Boolean laws to quickly grasp the fundamental concepts needed for the paper.
+
+*Why it unblocks this paper:* The 'Boolean Algebra' playlist by Swati Chawla offers a focused and clear introduction to Boolean logic and logic gates, directly relevant to the Boolean circuit complexity concepts in the paper. It is concise and well-structured for quick comprehension of the core logical operations and simplifications.
+
+*If you want all of it:* 2.0 hours across 6 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

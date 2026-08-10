@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-daniel-wichs"
-source_hash: "e3ea4e1fc64835812c982a4eaa58fa28bbc658026597fe4fffeee3c5d49ed5f3"
+source_hash: "e2ed062058df8ba31b3eaa9587bf89eef86e2f1a578d8aade77f590e395856fb"
 sequence: 320
 generator: "outreach-garden: managed"
 ---
@@ -54,6 +54,38 @@ Research interests: cryptography, Computing on encrypted data and program obfusc
 - [DBLP](http://dblp.uni-trier.de/pers/ht/w/Wichs:Daniel)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Algebraic coding theory
+**The paper assumes:** algebraic coding theory, Reed-Solomon codes, error-correcting codes, list decoding and list recovery
+**Already in this field?** Skip this entirely if you already have a solid understanding of algebraic coding theory and Reed-Solomon codes, including their decoding algorithms.
+
+This background focuses on algebraic coding theory, essential for understanding the constructions and security assumptions in the paper, especially regarding Reed-Solomon and folded Reed-Solomon codes. The rigorous course option offers a deep, structured university-level treatment of algebraic codes, while the fast track provides a concise, accessible introduction covering the core concepts needed to grasp the paper's technical contributions efficiently.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Algebraic Coding Theory (Mary Wootters, Stanford University, 2021)](https://www.youtube.com/playlist?list=PLidiQIHRzpXLSQBywYbSZ5PUhkR6VWM2P) — Theoretical Computer Science School (TCSS) · 58 videos · 13.1h across 58 episodes
+
+**Watch only this:** Lectures 1 Video 1 through Lecture 5 Video 2 (17 episodes, ~3.7 hours) — covering motivation, basic definitions, finite fields, linear codes, Reed-Solomon codes, their dual view, and the Berlekamp-Welch decoding algorithm.
+
+*Why it unblocks this paper:* This Stanford University course by Mary Wootters thoroughly covers algebraic coding theory, including Reed-Solomon codes, their dual views, and decoding algorithms, directly relevant to the paper's core constructions and assumptions.
+
+*If you want all of it:* 13.1 hours across 58 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Algebraic Coding Theory](https://www.youtube.com/playlist?list=PLkvhuSoxwjI_UudECvFYArvG0cLbFlzSr) — Mary Wootters · 56 videos · 12.5h across 56 episodes
+
+**Watch only this:** Lectures 1 Video 1 through Lecture 5 Video 2 (17 episodes, ~3.7 hours) — same core coverage as the rigorous course's minimum subset, focusing on foundational concepts and Reed-Solomon codes.
+
+*Why it unblocks this paper:* This concise series by Mary Wootters covers the essential topics of algebraic coding theory with clear explanations and overlaps significantly with the rigorous course, making it a faster way to grasp the key concepts relevant to the paper.
+
+*If you want all of it:* 12.5 hours across 56 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

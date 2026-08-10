@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-calton-pu"
-source_hash: "3a62f3eac8bff559835d22e5a9efd0c6f9231fbd285053a24ed5b2cf37761966"
+source_hash: "f39e3c6acda6f65cc3577abb014985bf6324cbfb3a6408df99ca167b7342bb7a"
 sequence: 304
 generator: "outreach-garden: managed"
 ---
@@ -55,6 +55,38 @@ Research interests: service computing, distributed and cloud computing, and dyna
 - [DBLP](https://dblp.org/pid/p/CaltonPu.html)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Federated Learning and Personalization
+**The paper assumes:** federated learning fundamentals, personalization in distributed ML, non-iid data challenges, parameter-efficient fine-tuning
+**Already in this field?** Skip this entirely if you already understand federated learning concepts, client heterogeneity, and adapter-based model fine-tuning.
+
+To understand the FedHFT paper, a solid grasp of federated learning fundamentals, personalization techniques, and handling of heterogeneous clients is essential. The rigorous course offers a deep dive into distributed optimization and federated learning algorithms, while the fast track provides a practical, hands-on tutorial on federated AI simulations using Flower, ideal for quickly grasping implementation and core concepts.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [July 2024 - Distributed Optimization and Machine Learning](https://www.youtube.com/playlist?list=PLOzRYVm0a65fhKDS8cYIC7YCuVGJ4FOJx) — NPTEL IIT Bombay · 48 videos · 23.8h across 48 episodes
+
+**Watch only this:** Watch Week 11: Lectures 42 (Introduction to Federated Learning), 43 (FedAvg Algorithm), 44 (Convergence Analysis of FL), and Week 12: Lectures 45 (Sources of Computational Heterogeneity in FL), 46 (Objective Inconsistency Problem), and 47 (General Update Rule), about 3 hours total — these cover core federated learning concepts, heterogeneity, and optimization relevant to FedHFT.
+
+*Why it unblocks this paper:* This NPTEL IIT Bombay course covers federated learning fundamentals, including client heterogeneity, federated averaging, convergence, and optimization algorithms, directly relevant to understanding FedHFT's approach to heterogeneous edge clients and clustering.
+
+*If you want all of it:* 23.8 hours across 48 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Federated AI Simulations with Flower (2025 Tutorial)](https://www.youtube.com/playlist?list=PLNG4feLHqCWkdlSrEL2xbCtGa6QBxlUZb) — Flower · 9 videos · 3.4h across 9 episodes
+
+**Watch only this:** Watch episodes 1 to 5 (Introduction, Launching Your First Simulation, Understanding Flower Apps, Defining Strategy Callbacks, Sending ClientApp Metrics), about 1.8 hours total — this subset covers the essentials of federated learning simulation and client-server interaction.
+
+*Why it unblocks this paper:* The Flower 2025 tutorial series provides a concise, practical introduction to federated AI simulations, covering environment setup, client creation, aggregation strategies, and scaling, which helps quickly understand federated learning workflows and personalization strategies relevant to FedHFT.
+
+*If you want all of it:* 3.4 hours across 9 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

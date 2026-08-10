@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-yi-jen-chiang"
-source_hash: "1b16d89054689b3570e58bdf374f5b77352b47d87c5480a3c7230200fe289cb1"
+source_hash: "20c3d81cbe5b84e1a165a0623015750f7b3aab38957b877e57f0f73c1e82a279"
 sequence: 312
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,38 @@ Research interests: Computer Graphics and Visualization, Computer Algorithms
 - [Resolved homepage](https://engineering.nyu.edu/faculty/yi-jen-chiang)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Computational Geometry
+**The paper assumes:** computational geometry, polygon decomposition, configuration space in robotics, geometric predicates
+**Already in this field?** Skip this entirely if you already have a solid understanding of computational geometry concepts applied to robotics and polygonal shape analysis.
+
+Understanding computational geometry is essential for grasping the core techniques in this paper, such as polygon decomposition, configuration spaces, and geometric predicates used in motion planning for complex planar robots. The rigorous course option provides a deep and structured university-level treatment of computational geometry, ideal for thorough comprehension. The fast track offers a concise, intuition-driven series that covers key concepts efficiently, suitable for readers who want a solid foundation without investing extensive time.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Computational Geometry Lecture Videos (METU-CENG) (Fall 2020-2021)](https://www.youtube.com/playlist?list=PL0X39D1PSBWP0PoU0NZY8NHpA7340PeLA) — Tolga Can · 22 videos · 19.8h across 22 episodes
+
+**Watch only this:** Episodes 1 through 13, about 11.5 hours — covering course intro, geometric preliminaries, polygon triangulation, art gallery problem, and foundational robot motion planning concepts.
+
+*Why it unblocks this paper:* This Middle East Technical University course by Tolga Can covers fundamental computational geometry topics including polygon triangulation, configuration spaces, and robot motion planning, directly relevant to the paper's methods and theoretical foundations.
+
+*If you want all of it:* All 22 episodes, about 19.8 hours.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Computational Geometry](https://www.youtube.com/playlist?list=PLubYOWSl9mIvTio-1bXWnhE9LdeXfox1z) — Philipp Kindermann · 56 videos · 8.0h across 56 episodes
+
+**Watch only this:** Episodes 1 through 14, about 2 hours — including convex hull, sweep-line algorithms, polygon triangulation, and orthogonal range queries.
+
+*Why it unblocks this paper:* Philipp Kindermann's Computational Geometry playlist offers clear, concise, and well-structured short videos that cover key concepts such as polygon triangulation, sweep-line algorithms, and range queries, providing an efficient overview of the computational geometry needed for understanding the paper.
+
+*If you want all of it:* All 56 episodes, about 8 hours.
 
 ## Track 1 — Academic deep-dives (long-form)
 

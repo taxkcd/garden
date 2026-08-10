@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-safwan-wshah"
-source_hash: "df3762088f0bb96696bd0e6e50dabacb3ee11123346f1c300c48ae0c904a5fa8"
+source_hash: "5d1939bad282eb5860715a1d20325e2bf1de540161e697142bdf98ce7b8a85cd"
 sequence: 305
 generator: "outreach-garden: managed"
 ---
@@ -54,6 +54,38 @@ Research interests: Machine Learning, Image & Video Processing, Deep Learning, P
 - [Google Scholar](https://scholar.google.com/citations?user=Q7NskmwAAAAJ&hl=en)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Deep learning for object detection
+**The paper assumes:** deep convolutional neural networks for object detection and localization
+**Already in this field?** Skip this entirely if you already understand modern deep learning object detection architectures like RetinaNet and their training losses.
+
+To understand the deep learning techniques behind GPS-RetinaNet for object detection and geolocalization in this paper, it is essential to grasp convolutional neural networks, object detection architectures, and loss functions like focal loss. The rigorous course offers a comprehensive, in-depth academic treatment, while the fast track provides a concise, practical introduction to core object detection concepts and techniques. Choose the rigorous option for deep theoretical and practical mastery, or the fast track for a focused, time-efficient overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS231N Deep Learning for Computer Vision I 2025](https://www.youtube.com/playlist?list=PLoROMvodv4rOmsNzYBMe0gJY2XS8AQg16) — Stanford Online · 18 videos · 21.2h across 18 episodes
+
+**Watch only this:** Lectures 5 through 9 (Image Classification with CNNs, CNN Architectures, Recurrent Neural Networks, Attention and Transformers, Object Detection, Image Segmentation, Visualizing), about 6 hours total — these cover CNN fundamentals, architectures, and object detection methods including focal loss and detection heads.
+
+*Why it unblocks this paper:* Stanford CS231N Deep Learning for Computer Vision I 2025 covers convolutional neural networks, object detection architectures, focal loss, and related topics essential to understanding GPS-RetinaNet's design and training.
+
+*If you want all of it:* All 18 lectures, approximately 21.2 hours.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Object Detection Series (Deep Learning)](https://www.youtube.com/playlist?list=PLhhyoLH6Ijfw0TpCTVTNk42NN08H6UvNq) — Aladdin Persson · 6 videos · 4.9h across 6 episodes
+
+**Watch only this:** Episodes 1 through 4 (Introduction to Object Detection in Deep Learning, Intersection over Union Explained and PyTorch Implementation, Non Max Suppression Explained and PyTorch Implementation, Mean Average Precision (mAP) Explained and PyTorch Implementation), about 3.3 hours total — these cover the core concepts and metrics needed to grasp the paper's detection approach.
+
+*Why it unblocks this paper:* Aladdin Persson's Object Detection Series provides clear, concise explanations and PyTorch implementations of key object detection concepts such as IoU, non-max suppression, mAP, and YOLO architectures, which are directly relevant to understanding the paper's detector design and evaluation.
+
+*If you want all of it:* All 6 episodes, approximately 4.9 hours.
 
 ## Track 1 — Academic deep-dives (long-form)
 

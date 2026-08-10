@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-zachary-wartell"
-source_hash: "946302415183164d8aac7e5ed4708183905a8eb69b8ca18cf8cf9389fcd4b2f6"
+source_hash: "1048a713307bbae4e6e7d595269ec4bd10ad579e2ae977ecefd7c815f586794c"
 sequence: 291
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,27 @@ Research interests: Virtual Reality and Mixed Reality User Interfaces, Visualiza
 - [Lab website](http://www.viscenter.uncc.edu/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** 3D User Interface Design
+**The paper assumes:** 3D user interface design, spatial interaction techniques, and 6DOF input device principles
+**Already in this field?** Skip this entirely if you already understand 3D interaction design principles and how 6DOF input devices work in virtual reality environments.
+
+To understand the HyFinBall paper on hybrid 2D/3D user interfaces in VR, background knowledge in 3D user interface design and human-computer interaction principles is essential. The rigorous course option offers a comprehensive university-level introduction to human-computer interaction, covering foundational UI design concepts that underpin 3D and hybrid input techniques. The fast track provides a concise, practical introduction to UI design in Unreal Engine, focusing on user interface construction relevant to VR applications, suitable for quickly grasping core UI concepts without deep theory.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Unreal Engine UMG Design for Beginners: Master User Interface (UI/UX)](https://www.youtube.com/playlist?list=PLUEJPqKDLa6IgcQ6rGAl5UlulNyWioAbO) — VR Division · 4 videos · 0.9h across 4 episodes
+
+**Watch only this:** all 4 episodes, about 0.9 hours — covering basics of UMG, canvas panel, buttons, and modular UI design
+
+*Why it unblocks this paper:* This beginner-friendly Unreal Engine UI design series quickly introduces practical UI construction techniques, including button creation and modular UI, which are directly relevant to implementing hybrid interfaces like HyFinBall in VR environments.
+
+*If you want all of it:* 0.9 hours across 4 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

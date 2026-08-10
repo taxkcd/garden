@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-xiaowei-jia"
-source_hash: "5e8c54885c2c4356b89bc6fb627c6c01af527c11c6734b2eefa61bb42305e652"
+source_hash: "0b4e89391e76d1951c3536dacb9fd868fe197bd92a830335f3758d1901624ba3"
 sequence: 306
 generator: "outreach-garden: managed"
 ---
@@ -51,6 +51,27 @@ Research interests: data mining, machine learning
 - [Resolved homepage](https://sites.pitt.edu/~xiaowei/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Knowledge-Guided Machine Learning
+**The paper assumes:** fundamental concepts and methods of knowledge-guided machine learning
+**Already in this field?** Skip this entirely if you already understand the principles and techniques of integrating domain knowledge into machine learning models.
+
+To understand the paper on Knowledge-Guided Machine Learning (KGML), it is essential to grasp how scientific knowledge integrates with machine learning models to improve interpretability, generalizability, and scientific consistency. The rigorous course option provides a deep, structured university-level exploration of foundational machine learning concepts relevant to KGML, while the fast track offers a concise, clear introduction to core machine learning principles, enabling a quicker but solid background.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Machine Learning Models From Scratch](https://www.youtube.com/playlist?list=PLBJTi3LBVoPteqtnB_EyWJtEjAsR2kxuf) — Chirag Patil · 13 videos · 4.6h across 13 episodes
+
+**Watch only this:** Episodes 1-7, about 2.5 hours — covering what is machine learning, terminologies, KNN explanation and implementation, logistic regression intuition and implementation, and gradient descent.
+
+*Why it unblocks this paper:* This playlist offers a concise, practical introduction to core machine learning models and concepts with Python implementations, giving a quick but effective grounding in ML fundamentals relevant to KGML without requiring extensive time.
+
+*If you want all of it:* About 4.6 hours across all 13 episodes.
 
 ## Track 1 — Academic deep-dives (long-form)
 

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-azhar-ilyas"
-source_hash: "f7f0a036b1470ae0d169e08ac3bb567b330485337a75b995140528297c9026c4"
+source_hash: "418fd42d9fdc8e0d61cb28da22c96432d3eab379ffda0142d4a9a8920230c0fd"
 sequence: 292
 generator: "outreach-garden: managed"
 ---
@@ -54,6 +54,38 @@ Research interests: Biomedical Engineering, Nanoscience, and Nanotechnology, app
 - [LinkedIn](https://www.linkedin.com/in/azhar-ilyas-b55368b/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Nanoparticle Drug Delivery Systems
+**The paper assumes:** nanoparticle drug delivery principles, cellular uptake mechanisms, endosomal escape processes, nanocarrier design and characterization
+**Already in this field?** Skip this entirely if you already understand the fundamentals of nanoparticle-based drug delivery and intracellular trafficking mechanisms.
+
+This background focuses on nanoparticle drug delivery systems, essential for understanding the nanomaterial carriers and mechanisms discussed in the gene therapy paper. The rigorous course provides a deep, structured university-level foundation on novel drug delivery systems, while the fast track offers a concise, visual introduction to key nanocarrier types and concepts. Readers should choose based on their available time and depth of understanding needed; the fast track is a quick, clear primer, whereas the course is a comprehensive study.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [July 2025 - Novel Drug Delivery Systems](https://www.youtube.com/playlist?list=PLOzRYVm0a65fzX1L9PK9Eo_yw91ytldV7) — NPTEL IIT Bombay · 61 videos
+
+**Watch only this:** Watch Week 01: Lectures 01-05 (Fundamentals and polymers), Week 02: Lectures 06-10 (Nanoparticles introduction and lipid-based nanocarriers), and Week 03: Lectures 11-15 (Nanostructured lipid carriers, vesicular systems, inorganic nanocarriers, and evaluation) — about 7.5 hours total.
+
+*Why it unblocks this paper:* This NPTEL IIT Bombay course by Prof. Sathish Dyawanapelly covers fundamentals and advanced topics in novel drug delivery systems, including polymer- and lipid-based nanocarriers, evaluation, targeting, and controlled release, directly relevant to the paper's focus on nanomaterial carriers for gene editing delivery.
+
+*If you want all of it:* About 28.1 hours across the first 60 episodes.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Nanocarrier Systems for Drug Delivery](https://www.youtube.com/playlist?list=PLMkuCiEkBSGfMu8DUhl2rZdRJr-STAUss) — From Sage to Synthesis · 8 videos · 0.6h across 8 episodes
+
+**Watch only this:** Watch all 8 episodes, each about 4 minutes, totaling approximately 0.6 hours.
+
+*Why it unblocks this paper:* This short series by From Sage to Synthesis offers clear, concise explainers on major nanocarrier types such as liposomes, dendrimers, micelles, and exosomes, providing a quick visual overview of key nanomaterial delivery platforms relevant to the paper.
+
+*If you want all of it:* 0.6 hours total across all 8 episodes.
 
 ## Track 1 — Academic deep-dives (long-form)
 

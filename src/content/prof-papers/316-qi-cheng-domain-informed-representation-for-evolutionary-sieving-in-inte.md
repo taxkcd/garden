@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-qi-cheng"
-source_hash: "3c71793d3ca3027f80b103e94b5dd6626ab0e444c4c2414b96451e64a843ecd8"
+source_hash: "e4d29151c51619a7368b38e48b78358cd54f5d9e75e9542feab87c0393419dec"
 sequence: 316
 generator: "outreach-garden: managed"
 ---
@@ -55,3 +55,24 @@ Research interests: theoretical computer science, cryptography, coding theory, c
 - [Resolved homepage](http://www.cs.ou.edu/~qcheng/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Lattice Theory and Algorithms
+**The paper assumes:** lattice theory, lattice basis reduction algorithms, computational number theory, and lattice-based cryptography
+**Already in this field?** Skip this entirely if you already have a solid understanding of lattice theory and classical lattice reduction algorithms like LLL and BKZ.
+
+To understand the paper's advances in evolutionary sieving for the Shortest Vector Problem (SVP) in integral and module lattices, a solid grasp of lattice theory, lattice basis reduction algorithms (LLL, BKZ), and module lattices is essential. The rigorous course option offers a deep, structured university-level lecture series on lattice theory fundamentals, suitable for thorough mastery. The fast track provides a concise, focused explainer series on lattice basis reduction algorithms, giving a practical and intuition-driven overview that covers key algorithms relevant to the paper's contributions.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Lattice Basis Reduction](https://www.youtube.com/playlist?list=PLA1qgQLL41SQ5oQDDH4V5ApkxnoKi_8jl) — Cryptography 101 · 8 videos · 2.3h across 8 episodes
+
+**Watch only this:** Episodes V0 through V4 (Overview, Introduction to Lattices, Gauss's Algorithm, Gram-Schmidt Orthogonalization, and The LLL Algorithm), about 1.5 hours — enough to grasp key lattice reduction algorithms foundational to the paper.
+
+*Why it unblocks this paper:* This short series from Cryptography 101 focuses specifically on lattice basis reduction algorithms including LLL, Gauss's algorithm, and Gram-Schmidt orthogonalization, which are directly relevant to the paper's improvements over classical lattice reduction methods and the design of crossover operators.
+
+*If you want all of it:* All 8 episodes, about 2.3 hours.

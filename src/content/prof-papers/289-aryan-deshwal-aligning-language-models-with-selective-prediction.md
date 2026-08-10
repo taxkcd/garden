@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-aryan-deshwal"
-source_hash: "1b0b62bec7312cde333eef6625ddbaed951b0556af39e4f826b6a01cd982c4e9"
+source_hash: "1d39daa25738a1f081296f92d6be642b9f7a2f85bc00132f7aa7c5c967c44cdf"
 sequence: 289
 generator: "outreach-garden: managed"
 ---
@@ -54,6 +54,38 @@ Research interests: Nanoporous Materials Discovery
 - [Semantic Scholar](https://www.semanticscholar.org/search)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Reinforcement Learning
+**The paper assumes:** reinforcement learning fundamentals, policy optimization, reward design
+**Already in this field?** Skip this entirely if you already understand reinforcement learning algorithms and their application to sequence prediction tasks.
+
+To understand the core method RLSR in the paper, which is a reinforcement learning framework optimizing selective prediction, a solid grasp of reinforcement learning fundamentals is essential. The rigorous course option offers a deep, structured university-level introduction to reinforcement learning algorithms, while the fast track provides a concise, intuition-driven visual explanation series that covers key concepts quickly. Choose the course for a thorough foundation and the fast track for a quick, clear conceptual overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS224R Deep Reinforcement Learning](https://www.youtube.com/playlist?list=PLoROMvodv4rPwxE0ONYRa_itZFdaKCylL) — Stanford Online · 19 videos · 20.6h across 19 episodes
+
+**Watch only this:** Lectures 1-4 (Class Intro, Imitation Learning, Policy Gradients, Actor-Critic Methods), about 4.3 hours — these cover foundational RL concepts and policy optimization crucial for grasping RLSR.
+
+*Why it unblocks this paper:* Stanford CS224R Deep Reinforcement Learning is a recent, comprehensive university course focused on deep reinforcement learning algorithms, including policy optimization and reward design, directly relevant to understanding RLSR's training approach for selective prediction in LLMs.
+
+*If you want all of it:* All 19 episodes, about 20.6 hours
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Reinforcement Learning Explained – Animated Examples](https://www.youtube.com/playlist?list=PLgcKMlJueAM5OK104-hP_wBpOjZCHGfTf) — Reinforcement Learning Explained–Animated Learning · 9 videos
+
+**Watch only this:** First 5 episodes (A Car Learns to Steer Around a Bull, AI Learns to Find Treasure, How AI Learns from Delayed Rewards, Two-Armed Bandit, AI Learns the Best Cannon Angle), about 30-40 minutes — these provide a solid intuitive grasp of RL fundamentals.
+
+*Why it unblocks this paper:* The 'Reinforcement Learning Explained – Animated Examples' playlist uses clear animations and intuitive examples to quickly convey core RL concepts such as learning from delayed rewards and policy improvement, making it an excellent fast introduction to the principles underlying RLSR.
+
+*If you want all of it:* All 9 episodes, approximately 1 hour
 
 ## Track 1 — Academic deep-dives (long-form)
 

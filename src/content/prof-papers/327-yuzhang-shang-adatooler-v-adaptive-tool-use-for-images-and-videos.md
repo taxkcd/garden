@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-yuzhang-shang"
-source_hash: "da8fa44c33eb657e1ac38f8072a5e0591b6622c25544b9ad1a57eeb1aba3e93f"
+source_hash: "e3e4459c80fc554b762ae4209dcf3cf43be9d7a4775e935b451a97142fa52199"
 sequence: 327
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: Artificial Intelligence, Computer Science
 - [LinkedIn](https://www.linkedin.com/in/yuzhang-shang-644b82283/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** reinforcement learning
+**The paper assumes:** foundations of reinforcement learning, policy gradient methods, reward shaping, and actor-critic algorithms
+**Already in this field?** Skip this entirely if you already understand reinforcement learning fundamentals and policy gradient algorithms.
+
+This background focuses on reinforcement learning (RL), which is central to understanding the AT-GRPO algorithm used in AdaTooler-V for adaptive tool-use. The rigorous course option offers a deep, structured university-level introduction to modern deep RL methods, ideal for readers seeking comprehensive mastery. The fast track provides a concise, visually intuitive series that covers core RL concepts and the specific Group Relative Policy Optimization (GRPO) method relevant to the paper, suitable for readers who want a quick yet solid grasp.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS224R Deep Reinforcement Learning](https://www.youtube.com/playlist?list=PLoROMvodv4rPwxE0ONYRa_itZFdaKCylL) — Stanford Online · 19 videos · 20.6h across 19 episodes
+
+**Watch only this:** Lectures 1-5 (Class Intro, Imitation Learning, Policy Gradients, Actor-Critic Methods, Off-Policy Actor Critic), about 5.4 hours — these cover foundational RL algorithms and policy optimization methods essential to understanding AT-GRPO.
+
+*Why it unblocks this paper:* Stanford CS224R Deep Reinforcement Learning is a recent, authoritative university course that covers deep RL algorithms including policy gradients and actor-critic methods, which underpin AT-GRPO. It also includes lectures specifically on RL for LLMs and reasoning, directly relevant to AdaTooler-V's training approach.
+
+*If you want all of it:* 20.6 hours across all 19 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Reinforcement learning VIsualized.](https://www.youtube.com/playlist?list=PL059o-2XfQvfgy4OsGADaCoYRc6OV_DxA) — AGI Lambda · 6 videos · 0.8h across 6 episodes
+
+**Watch only this:** Episodes 1-4 (Where to use Reinforcement Learning | Part 1, Approximating a World Model with Neural Networks | overview, When AI Developed its own Language | Part 1, Group Relative Policy Optimization(GRPO) Visualized), about 28 minutes — covers RL basics and the GRPO method critical for understanding the paper's approach.
+
+*Why it unblocks this paper:* The 'Reinforcement learning VIsualized.' series by AGI Lambda is a concise, visually rich explainer set that includes an episode on Group Relative Policy Optimization (GRPO), the core technique behind AT-GRPO. It efficiently introduces classical RL concepts and the specific algorithmic innovation used in the paper.
+
+*If you want all of it:* About 48 minutes across all 6 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

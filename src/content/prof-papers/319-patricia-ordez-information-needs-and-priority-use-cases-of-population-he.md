@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-patricia-ordonez"
-source_hash: "c06f69ae77f2f2241e7297c96e39d4cc551542df3a22e09ef76116fcf5eaf5d3"
+source_hash: "5c7958ab82a971d084824d71f962118f2322e8f595d366c2f0b8a324b1ff9fea"
 sequence: 319
 generator: "outreach-garden: managed"
 ---
@@ -51,6 +51,38 @@ Research interests: machine learning, data mining, and visualization to multivar
 - [Faculty/profile page](https://informationsystems.umbc.edu/home/faculty-and-staff/faculty/patti-ordonez-ph-d)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Mixed Methods Research
+**The paper assumes:** qualitative thematic analysis, quantitative cluster analysis, and mixed methods research design
+**Already in this field?** Skip this entirely if you already understand how qualitative and quantitative research methods are combined and analyzed in health research.
+
+This background focuses on Mixed Methods Research, essential for understanding the combined qualitative and quantitative approaches used in the paper to assess population health researchers' needs in disaster preparedness. The rigorous course offers a deep, structured university-level lecture series, while the fast track provides a concise, clear explainer series suitable for quickly grasping core concepts without extensive time commitment.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Mixed Methods Research Design Lecture](https://www.youtube.com/playlist?list=PLoB3TwtWkaraW1MP2wfM3BltC9J1F4VlI) — Angelo Mark Walag · 8 videos · 11.0h across 8 episodes
+
+**Watch only this:** Episodes 1-4 ("Chapter 1 The Nature of Mixed Methods Research" through "Chapter 4 Complex Applications of Core Mixed Methods Designs"), about 5.5 hours — these cover the nature, foundations, core designs, and complex applications of mixed methods research, providing a solid grasp of the methodology used in the paper.
+
+*Why it unblocks this paper:* This university lecture series by Angelo Mark Walag thoroughly covers the foundations, core designs, data collection, and analysis in Mixed Methods Research, directly supporting understanding of the paper's mixed-methods approach combining interviews and card sorting with cluster analysis.
+
+*If you want all of it:* All 8 episodes, about 11.0 hours
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Mixed Methods Research](https://www.youtube.com/playlist?list=PLXx5fobeAXT2RDhArh0QOa25YcLMANYyO) — Dr. Muhammad Ilyas Khan · 17 videos · 3.4h across 17 episodes
+
+**Watch only this:** Episodes 1-6 ("Mixed Methods Research in Social Sciences: What, Why, How?" through "Triangulation, and Mixed-Methods Research: Difference?"), about 1.1 hours — these episodes cover the essential concepts, rationale, design types, and triangulation in mixed methods research.
+
+*Why it unblocks this paper:* This concise series by Dr. Muhammad Ilyas Khan offers clear, focused explanations on what mixed methods research is, its design types, sampling, triangulation, and validity, enabling a quick but comprehensive understanding of the mixed methods approach relevant to the paper.
+
+*If you want all of it:* All 17 episodes, about 3.4 hours
 
 ## Track 1 — Academic deep-dives (long-form)
 

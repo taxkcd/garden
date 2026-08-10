@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-jianhua-chen"
-source_hash: "42c0d4c8d973787a7092b8eca4902ec5ec79048831b2b5f02ec46146dac10b6c"
+source_hash: "92b0c74f3bd3a347a265aa7850f255321d7a7e358431a9479647ca0f45995609"
 sequence: 303
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: Machine Learning and Data Mining, Data Clustering, Applicati
 - [Resolved homepage](http://www.csc.lsu.edu/~chen)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** linear mixed models
+**The paper assumes:** linear mixed models, hierarchical linear modeling, random effects modeling
+**Already in this field?** Skip this entirely if you already understand linear mixed models and their application to clustered or longitudinal data.
+
+To understand the core methodology of this paper, which relies on linear mixed models (LMMs) to explain predictions on clustered data, it is essential to grasp the theory and application of hierarchical linear models and mixed effects. The rigorous course option provides a comprehensive university-level lecture series on hierarchical linear models, ideal for deep mastery. The fast track offers a concise, well-structured short-form series on generalized linear models including mixed models, suitable for a quicker but solid conceptual foundation.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [UCLA STATS 205 - Hierarchical Linear Models (Spring 2024)](https://www.youtube.com/playlist?list=PLAYxx7zX5F1O2HbRr4gORnscbM9EszYbK) — JSB UCLA · 16 videos · 20.0h across 16 episodes
+
+**Watch only this:** Lectures 14 (zero-inflated count regression; random effects), 15 (linear mixed model), and 16 (review), about 3.7 hours total — these focus on random effects and LMM parameter estimation essential for understanding the paper's explanation method.
+
+*Why it unblocks this paper:* This UCLA STATS 205 Spring 2024 series is a rigorous university course dedicated to hierarchical linear models, covering linear mixed models in detail, including parameter estimation and random effects modeling, which directly aligns with the paper's methodology.
+
+*If you want all of it:* About 20.0 hours across all 16 episodes.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Generalized Linear Models (GLM's)](https://www.youtube.com/playlist?list=PLJ71tqAZr197DkSiGT7DD9dMYxkyZX0ti) — Meerkat Statistics · 27 videos · 4.4h across the first 21 episodes
+
+**Watch only this:** Episodes 9 (GLM - 14 - Mixed models (LMM, GLMM)) and 10 (2 Examples - Mixed vs. Regular Models), about 24 minutes total — these cover the core concepts of mixed models needed to understand the paper's use of LMM.
+
+*Why it unblocks this paper:* This Meerkat Statistics series on Generalized Linear Models includes focused episodes on mixed models (LMM, GLMM) and related concepts, providing a clear, visual, and intuition-driven introduction to mixed effects models relevant to the paper's approach.
+
+*If you want all of it:* About 4.4 hours across the first 21 episodes.
 
 ## Track 1 — Academic deep-dives (long-form)
 

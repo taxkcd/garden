@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-vaibhav-v-unhelkar"
-source_hash: "98ab3a0c52cf80943d5fd9fd57c92c9d3f9bb33f70cf7f9a9d5d8c0253a1350f"
+source_hash: "ec657b551a12a49d57135e4eba585f3a2f1708e21513f7ab1259e97502095ca2"
 sequence: 328
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,38 @@ Research interests: human-robot interaction (HRI), interactive machine learning,
 - [Lab website](https://unhelkar.github.io/group/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Hierarchical Reinforcement Learning
+**The paper assumes:** hierarchical reinforcement learning, semi-Markov decision processes, options framework
+**Already in this field?** Skip this entirely if you already understand hierarchical reinforcement learning concepts and their mathematical foundations.
+
+To understand the hierarchical reward design approach in this paper, a solid grasp of hierarchical reinforcement learning (HRL) concepts is essential. The rigorous course option provides a deep, structured university-level treatment of deep reinforcement learning including hierarchical RL, suitable for readers seeking comprehensive understanding. The fast track offers a concise, focused playlist specifically on hierarchical reinforcement learning, ideal for readers who want a quicker but still substantive introduction to the key ideas relevant to this paper.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS224R Deep Reinforcement Learning](https://www.youtube.com/playlist?list=PLoROMvodv4rPwxE0ONYRa_itZFdaKCylL) — Stanford Online · 19 videos · 20.6h across 19 episodes
+
+**Watch only this:** Lectures 1-15 (Class Intro through Hierarchical RL and IL), about 16.25 hours — this covers foundational RL concepts and the specific hierarchical RL lecture that underpins the paper's approach.
+
+*Why it unblocks this paper:* Stanford CS224R Deep Reinforcement Learning is a recent, authoritative university course covering deep RL methods including a dedicated lecture on Hierarchical RL and its integration with policy learning, which aligns closely with the paper's technical foundation.
+
+*If you want all of it:* All 19 lectures, about 20.6 hours
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Hierarchical Reinforcement Learning](https://www.youtube.com/playlist?list=PLHD22PKARkdR5qnXSwYOzZY4VjIDvZWan) — Sean Kugele · 9 videos · 4.2h across 9 episodes
+
+**Watch only this:** Episodes 1-5 (Hierarchical Reinforcement Learning through Learning with Options), about 2.25 hours — these cover the core hierarchical RL concepts needed to grasp the paper's approach.
+
+*Why it unblocks this paper:* Sean Kugele's Hierarchical Reinforcement Learning playlist is a concise, focused series specifically on hierarchical RL concepts such as options, semi-MDPs, and value function decomposition, directly relevant to understanding hierarchical reward design.
+
+*If you want all of it:* All 9 episodes, about 4.2 hours
 
 ## Track 1 — Academic deep-dives (long-form)
 

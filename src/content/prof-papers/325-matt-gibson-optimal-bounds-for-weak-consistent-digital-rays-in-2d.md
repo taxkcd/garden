@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-matt-gibson"
-source_hash: "1b33e70d0aee501856bb2d01a53bc663bef8403226666d2008eba09ceacd4d34"
+source_hash: "47cdd9987fb389732575901407f82ad9e275158f7ddf0a19ea1189dfa2d2a4a4"
 sequence: 325
 generator: "outreach-garden: managed"
 ---
@@ -51,6 +51,38 @@ Research interests: developing algorithms for image segmentation, digital geomet
 - [Professor website](https://www.cs.utsa.edu/~gibson/#)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Digital Geometry and Discrete Lines
+**The paper assumes:** digital geometry, discrete lines, Hausdorff distance, L-infinity metric, digital convexity
+**Already in this field?** Skip this entirely if you already understand the fundamentals of digital geometry and how Euclidean lines are approximated in discrete grids.
+
+To understand the paper on Optimal Bounds for Weak Consistent Digital Rays in 2D, a solid grasp of digital geometry and discrete lines is essential. The rigorous course option offers a deep, structured university-level treatment of discrete curves and related geometry, while the fast track provides a concise, focused introduction to digital image processing concepts relevant to digital line representations. Choose the course for thorough theoretical foundations or the fast track for a quicker, practical overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [CS 468: Differential Geometry for Computer Science](https://www.youtube.com/playlist?list=PL_deCdukpyu1rdH85XsEEREbpoqEauiJl) — Andrei Krishkevich · 19 videos · 23.1h across 19 episodes
+
+**Watch only this:** Lectures 1 through 3 (Introduction, Differential Geometry of Curves, Discrete Curves), about 3.6 hours — these cover the essential discrete geometry concepts and curve theory needed to grasp the paper's constructions and error analysis.
+
+*Why it unblocks this paper:* This university lecture series by Andrei Krishkevich covers discrete curves and surfaces, including discrete geometry concepts foundational to understanding digital line segment systems and their properties, directly relevant to the paper's focus on WCDRs in 2D grids.
+
+*If you want all of it:* All 19 lectures, approximately 23.1 hours, for comprehensive coverage of differential and discrete geometry relevant to computer science.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Digital Image Processing Series](https://www.youtube.com/playlist?list=PLbwfaPBgAKFEPBg-OFzmjFWmRKKrYigLi) — College Friendly · 27 videos · 5.7h across 27 episodes
+
+**Watch only this:** Episodes 4 (Relationship between pixels Neighborhood and Adjacency of Pixels), 5 (Distance Measures Between Pixels With Examples), and 22 (Image Segmentation in digital image processing), about 36 minutes total — these episodes give a quick yet targeted overview of digital geometry concepts and segmentation applications.
+
+*Why it unblocks this paper:* This Digital Image Processing series by College Friendly includes focused episodes on pixel adjacency, distance measures, and image segmentation, providing practical background on digital grid representations and error metrics relevant to digital line segment approximations in the paper.
+
+*If you want all of it:* All 27 episodes, approximately 5.7 hours, for a broader understanding of digital image processing concepts.
 
 ## Track 1 — Academic deep-dives (long-form)
 
