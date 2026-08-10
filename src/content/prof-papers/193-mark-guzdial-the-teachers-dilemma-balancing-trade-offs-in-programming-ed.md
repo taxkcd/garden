@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-mark-guzdial"
-source_hash: "37328151ed1bb0bba843fa22db81ab354070507efea51154f45d1150e301d4f5"
+source_hash: "8ebf03481237616e4a9416842be25a3fc123f64b952fa3e33c327ed1ef855f7c"
 sequence: 193
 generator: "outreach-garden: managed"
 ---
@@ -56,32 +56,32 @@ This paper studies how K-12 computing teachers select programming languages and 
 _The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
 
 **What you're missing:** Educational Technology and Learning Analytics
-**The paper assumes:** educational technology principles, learning analytics methods, cognitive load theory, scaffolding in education
-**Already in this field?** Skip this entirely if you already understand foundational concepts in educational technology, learning analytics, and cognitive load theory as applied to instructional design.
+**The paper assumes:** foundations of educational technology, learning analytics methodologies, and cognitive load theory
+**Already in this field?** Skip this entirely if you already have a solid understanding of educational technology principles and learning analytics approaches in K-12 settings.
 
-This background selection supports understanding the educational technology and learning analytics foundations crucial for grasping the trade-offs in programming education for emergent bilingual students. The rigorous course offers a deep dive into learning, media, and technology concepts, including cognitive load theory and scaffolding, while the fast track provides a concise, accessible introduction to educational technology principles. Choose the course for comprehensive academic depth or the fast track for a focused, time-efficient overview.
+This background provides foundational knowledge in Educational Technology and Learning Analytics, essential for understanding the trade-offs and design considerations in programming education for emergent bilingual students. The rigorous course offers a deep dive into learning analytics concepts and methods, while the fast track playlist gives a concise overview of educational technology principles relevant to teaching and learning contexts. Choose the course for comprehensive understanding and the fast track for a quicker, practical grasp.
 
 ### The course
 _Rigorous, and the one to pick if you want to hold this material properly._
 
-▶ [MIT CMS.595 Learning, Media, and Technology, Spring 2024](https://www.youtube.com/playlist?list=PLUl4u3cNGP62o50fmQKmfbn8HKPvdx9hK) — MIT OpenCourseWare · 10 videos · 11.5h across 10 episodes
+▶ [September 2020 - Learning Analytics Tool](https://www.youtube.com/playlist?list=PLOzRYVm0a65e5FCHRUCkvmdBqGk8AdWaV) — NPTEL IIT Bombay · 68 videos · 13.5h across the first 60 episodes
 
-**Watch only this:** Episodes 02 (How People Learn: Cognitive Load Theory) and 16 (Start-Up and the Curse of the Familiar), about 2.3 hours total — these cover cognitive load and educational technology context critical to the paper's themes.
+**Watch only this:** Watch episodes 1-13 (Course Introduction through Demo of Weka), about 3 hours — these cover the core concepts of learning analytics, data collection, preprocessing, and tools relevant to educational data analysis.
 
-*Why it unblocks this paper:* This MIT OpenCourseWare series, taught by Justin Reich, covers cognitive load theory, scaffolding, and educational technology fundamentals directly relevant to understanding programming education challenges for emergent bilingual students.
+*Why it unblocks this paper:* This NPTEL IIT Bombay course on Learning Analytics Tool covers fundamental concepts and techniques in learning analytics, including data collection, preprocessing, and ethical considerations, which underpin the paper's use of reflexive thematic analysis and learning analytics frameworks to study programming education for emergent bilingual students.
 
-*If you want all of it:* All 10 episodes, about 11.5 hours total.
+*If you want all of it:* About 13.5 hours across the first 60 episodes (full course length)
 
 ### The fast track
 _Same ground, a fraction of the time — for when you just need to read the paper._
 
-▶ [ICT // Educational technology](https://www.youtube.com/playlist?list=PLwYNH4ItnuZvjs9h8dhM_MGGMkiFK3XKK) — Study Point For Govt Job · 12 videos · 3.3h across 12 episodes
+▶ [Educational Technology and ICT](https://www.youtube.com/playlist?list=PL0vYBqfemEroVTSnwm0tTWsjzOWm_DFwm) — Education Empowerment · 17 videos · 4.7h across 17 episodes
 
-**Watch only this:** Episodes 1 (Educational technology-meaning,nature,scope, significance) and 6 (Forms of educational technology / behavioural technology /instructional design), about 32 minutes total — these give a focused introduction to educational technology and instructional design.
+**Watch only this:** Watch episodes 1-5 (Historical Development through Teaching Learning Aids), about 1.3 hours — these episodes give a solid overview of educational technology foundations and teaching aids important for programming education.
 
-*Why it unblocks this paper:* This short-form playlist provides clear, concise explanations of educational technology concepts, including instructional design and teaching modalities, suitable for quickly grasping foundational ideas relevant to the paper.
+*Why it unblocks this paper:* This playlist provides a concise and clear introduction to Educational Technology and ICT, covering key concepts such as teaching methods, instructional media, and assessment strategies, which are directly relevant to understanding the educational context and instructional design considerations discussed in the paper.
 
-*If you want all of it:* All 12 episodes, about 3.3 hours total.
+*If you want all of it:* About 4.7 hours across 17 episodes (full playlist length)
 
 ## Track 1 — Academic deep-dives (long-form)
 
