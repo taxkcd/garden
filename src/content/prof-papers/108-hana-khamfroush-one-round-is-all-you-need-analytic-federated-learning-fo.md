@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-hana-khamfroush"
-source_hash: "ee588ea3b69ec2974ecf4a174179dfcd7b40638debd944a733e63b9793b92865"
+source_hash: "046fdffecfc9d1f0a17e42cdd5a6a36359f53b4d7f38e4b0161228cf9e2ee201"
 sequence: 108
 generator: "outreach-garden: managed"
 ---
@@ -62,22 +62,33 @@ Research interests: text mining, quality control, statistics, asymmetric distrib
 
 _The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
 
-**What you're missing:** Federated Learning and Multi-Label Classification
-**The paper assumes:** federated learning fundamentals, multi-label classification methods, distributed machine learning aggregation techniques
-**Already in this field?** Skip this entirely if you already understand federated learning basics and multi-label classification challenges in distributed settings.
+**What you're missing:** federated learning fundamentals
+**The paper assumes:** federated learning principles, distributed optimization, multi-client model aggregation
+**Already in this field?** Skip this entirely if you already understand the fundamentals of federated learning, including client-server model training, communication constraints, and heterogeneity challenges.
 
-This background selection is designed to prepare you for understanding the federated learning framework and multi-label classification challenges addressed in the paper, especially under task heterogeneity and analytic closed-form aggregation methods. The rigorous course option offers a deep, structured university-level foundation in federated learning concepts and related machine learning principles, while the fast track provides a concise, practical introduction to federated learning with a focus on implementation and core ideas. Choose the course for comprehensive theoretical grounding and the fast track for a quick, applied overview.
+To understand the core contributions of this paper on analytic federated learning for multi-label medical image classification, it is essential to grasp the fundamentals of federated learning, including how distributed clients collaboratively train models without sharing raw data, the challenges of communication rounds, and handling heterogeneous data distributions. The two options below provide complementary learning paths: the rigorous course offers a deep, structured dive into federated learning fundamentals and optimization, while the fast track delivers a concise, focused introduction to federated learning concepts and practical considerations, suitable for quickly building intuition.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [July 2024 - Distributed Optimization and Machine Learning](https://www.youtube.com/playlist?list=PLOzRYVm0a65fhKDS8cYIC7YCuVGJ4FOJx) — NPTEL IIT Bombay · 48 videos · 23.8h across 48 episodes
+
+**Watch only this:** Watch Week 11: Lecture 42: Introduction to Federated Learning (~29 min), Week 11: Lecture 43: FedAvg Algorithm (~29 min), Week 11: Lecture 44: Convergence Analysis of FL (~29 min), and Week 12: Lecture 45: Sources of Computational Heterogeneity in FL (~29 min) for a focused understanding of federated learning basics and heterogeneity challenges, totaling about 2 hours.
+
+*Why it unblocks this paper:* This NPTEL IIT Bombay course covers distributed optimization and federated learning fundamentals, including key topics like FedAvg, convergence analysis, and heterogeneity in federated learning, directly relevant to understanding the analytic federated learning framework proposed in the paper.
+
+*If you want all of it:* The full playlist contains 48 episodes totaling approximately 23.8 hours.
 
 ### The fast track
 _Same ground, a fraction of the time — for when you just need to read the paper._
 
-▶ [Federated Learning with TensorFlow tutorial](https://www.youtube.com/playlist?list=PLTgRMOcmRb3Nf5etrOiB9aeJFA_wcK3Bi) — Packt · 5 videos · 0.8h across 5 episodes
+▶ [Federated and Collaborative Learning Boot Camp](https://www.youtube.com/playlist?list=PLgKuh-lKre10lDgh9jx2vjV2_tYYvKN1G) — Simons Institute for the Theory of Computing · 20 videos · 17.7h across the first 19 episodes
 
-**Watch only this:** Episodes 1-3 ("Federated Learning with TensorFlow: The Course Overview | packtpub.com" through "Federated Learning with TensorFlow: Load and Prepare | packtpub.com"), about 27 minutes — these cover the basics of federated learning, dataset loading, and preparation, sufficient for a quick conceptual understanding.
+**Watch only this:** Watch the first 5 episodes: 'Toward Provably Private Federated Learning', 'Opening Remarks', 'Short Talks', 'Tutorial: Federated Optimization, Part I', and 'Tutorial: Federated Optimization, Part II', totaling about 4.5 hours, to gain a solid foundational understanding of federated learning principles and optimization techniques.
 
-*Why it unblocks this paper:* This short Packt series provides a concise, practical introduction to federated learning concepts and TensorFlow implementations, ideal for quickly grasping the core ideas behind federated learning relevant to the paper without deep theoretical overhead.
+*Why it unblocks this paper:* This Simons Institute boot camp playlist offers concise, well-structured tutorials on federated learning fundamentals, optimization, privacy, and incentives, providing a clear and practical overview of federated learning concepts relevant to the paper's contributions.
 
-*If you want all of it:* All 5 episodes, approximately 48 minutes
+*If you want all of it:* The playlist has 20 episodes with about 17.7 hours of content across the first 19 episodes.
 
 ## Track 1 — Academic deep-dives (long-form)
 
