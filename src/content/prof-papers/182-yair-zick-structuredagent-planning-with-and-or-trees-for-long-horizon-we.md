@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-yair-zick"
-source_hash: "8e5bf37f424bfaea4546417ec47e3c814a71795b60bba5de9f8e46d2e650b974"
+source_hash: "f26b1fe7a4c168d4e22c7d5e261ce75d3734de0a2208898b917d4055685c56df"
 sequence: 182
 generator: "outreach-garden: managed"
 ---
@@ -56,33 +56,33 @@ Research interests: Computational aspects of game theory and fair division, fair
 
 _The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
 
-**What you're missing:** Hierarchical Task Planning AND/OR Trees
-**The paper assumes:** hierarchical task planning, AND/OR tree search algorithms, and symbolic AI planning
-**Already in this field?** Skip this entirely if you already understand hierarchical planning methods and AND/OR tree representations in AI task decomposition.
+**What you're missing:** Hierarchical Planning and AND/OR Trees
+**The paper assumes:** hierarchical planning, AND/OR tree representations, search algorithms in AI planning
+**Already in this field?** Skip this entirely if you already understand hierarchical task decomposition and AND/OR tree-based planning algorithms in AI.
 
-To understand STRUCTUREDAGENT's core hierarchical planning framework using AND/OR trees, it is essential to grasp hierarchical task planning concepts and tree-based decomposition of tasks. The rigorous course option offers a deep, university-level treatment of planning and learning, ideal for readers seeking comprehensive understanding and theoretical foundations. The fast track provides a concise, focused introduction to hierarchical task network planning and related planning concepts, suitable for readers who want a quick yet solid grasp of the key ideas without investing many hours.
+This background focuses on hierarchical planning and AND/OR trees, which are central to the STRUCTUREDAGENT framework for decomposing complex web tasks into subgoals and alternative strategies. The rigorous course option provides a deep, foundational understanding of AI planning, search, and decision-making principles, while the fast track offers a concise, intuition-driven introduction to hierarchical control structures similar to AND/OR trees. Choose the course for a thorough theoretical grounding; choose the fast track for a quick, practical grasp of hierarchical task decomposition concepts.
 
 ### The course
 _Rigorous, and the one to pick if you want to hold this material properly._
 
-▶ [CSE574 Planning & Learning (Fall 2022 ASU)](https://www.youtube.com/playlist?list=PLNONVE5W8PCRvVliwpI5PGcRBI5xdywha) — Subbarao Kambhampati · 15 videos · 36.6h across 15 episodes
+▶ [Stanford CS221: Artificial Intelligence: Principles and Techniques | Autumn 2025](https://www.youtube.com/playlist?list=PLoROMvodv4rMeDqwS1yFl3j3sR_-MQNEN) — Stanford Online · 20 videos · 24.9h across 20 episodes
 
-**Watch only this:** Lectures 1-4 plus Lectures 8-9, about 12 hours total — covering introduction to planning, atomic transition systems, refinement planning strategies, planning heuristics, and hierarchical task networks.
+**Watch only this:** Lectures 5 (Search I), 6 (Search II), 7 (Markov Decision Processes), 10 (Games I), and 11 (Games II), about 6 hours total — these cover search algorithms, MDPs, and game-tree concepts essential for AND/OR tree planning.
 
-*Why it unblocks this paper:* This ASU course by Subbarao Kambhampati covers hierarchical planning and task networks in depth, including abstraction, hierarchy, and planning heuristics, directly relevant to understanding AND/OR tree-based hierarchical planning frameworks like STRUCTUREDAGENT.
+*Why it unblocks this paper:* Stanford CS221 covers foundational AI principles including search, planning, and game playing, which directly relate to hierarchical AND/OR tree planning and decision-making frameworks like STRUCTUREDAGENT. The lectures on search, Markov decision processes, and games provide the theoretical basis for understanding AND/OR trees and hierarchical planning algorithms.
 
-*If you want all of it:* 36.6 hours across all 15 episodes
+*If you want all of it:* 24.9 hours across 20 episodes
 
 ### The fast track
 _Same ground, a fraction of the time — for when you just need to read the paper._
 
-▶ [ai unit 6 planning](https://www.youtube.com/playlist?list=PL_xGuJKqvelB_Hniz9Ivoqjt6j8l30tng) — SPPU CS & IT Solutions · 11 videos · 2.0h across 11 episodes
+▶ [Introduction to Behavior Trees](https://www.youtube.com/playlist?list=PLFQdM4LOGDr_vYJuo8YTRcmv3FrwczdKg) — Petter Ögren · 17 videos · 6.1h across 17 episodes
 
-**Watch only this:** Episodes 1-3, about 30 minutes total — covering hierarchical task network planning, planning graphs, and state space search planning.
+**Watch only this:** Episodes 1 through 7, about 2.5 hours total — covering basic behavior tree concepts, decision structures, backward chaining, and modularity, which align well with AND/OR tree planning principles.
 
-*Why it unblocks this paper:* This short-form playlist provides a clear, concise introduction to hierarchical task network planning and classical AI planning algorithms, giving a quick but relevant overview of hierarchical planning concepts needed to understand the paper's approach.
+*Why it unblocks this paper:* The 'Introduction to Behavior Trees' playlist offers a clear, visual, and modular explanation of hierarchical control structures closely related to AND/OR trees. It introduces hierarchical task decomposition, decision nodes, and modular planning concepts in a concise and accessible manner, ideal for quickly grasping the core ideas behind STRUCTUREDAGENT's planning framework.
 
-*If you want all of it:* 2.0 hours across 11 episodes
+*If you want all of it:* 6.1 hours across 17 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 
