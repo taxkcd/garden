@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-daniel-j-sorin"
-source_hash: "8d8888694739a1efef31628ed2c6898c848ac5f366e1f4c81e71db4f744d3e7b"
+source_hash: "914c7935b6c471f7f7bae67e7cc8fc74cb6d159af6509256beaf646ee97a4ed7"
 sequence: 346
 generator: "outreach-garden: managed"
 ---
@@ -58,32 +58,32 @@ Research interests: Computer architecture, Multicore memory systems, Fault-toler
 _The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
 
 **What you're missing:** Statistical Model Checking
-**The paper assumes:** statistical model checking, probabilistic model verification, temporal logic properties
-**Already in this field?** Skip this entirely if you already understand statistical model checking and its application to probabilistic systems verification.
+**The paper assumes:** statistical model checking, probabilistic model verification, temporal logic for system properties
+**Already in this field?** Skip this entirely if you already understand statistical model checking and its application to probabilistic system verification.
 
-To rigorously understand the Statistical Model Checking (SMC) methodology used in the paper, it is essential to grasp the statistical foundations of sampling, inference, and hypothesis testing that underpin SMC. The two options below provide complementary learning paths: the course offers a deep, structured university-level foundation in statistical data analysis and sampling distributions, while the fast track provides a concise, focused introduction to key statistical concepts like confidence intervals and hypothesis testing relevant to SMC. Choose the course for thorough mastery or the fast track for a quicker, practical overview.
+This background focuses on Statistical Model Checking (SMC), the core methodology used in the paper to rigorously evaluate microarchitectural side-channel attacks without relying on simplified probabilistic models. The rigorous course option provides a deep, university-level understanding of validation and statistical inference techniques relevant to SMC, while the fast track offers a concise, intuitive introduction to key statistical concepts like confidence intervals and hypothesis testing that underpin SMC. Choose the course for comprehensive mastery or the fast track for a quick, practical grasp.
 
 ### The course
 _Rigorous, and the one to pick if you want to hold this material properly._
 
-▶ [Planning Data Analysis | Complete University Course | Lecture Series 📊](https://www.youtube.com/playlist?list=PLJ2sdJpZ0upDi1BSvQdGhfMnhLmbaYFSf) — Maths With Hanif · 15 videos · 2.5h across 15 episodes
+▶ [Stanford AA228V I Validation of Safety Critical Systems I 2025](https://www.youtube.com/playlist?list=PLoROMvodv4rOq1LMLI8U7djzDb8--xpaC) — Stanford Online · 17 videos · 20.1h across 17 episodes
 
-**Watch only this:** Episodes 9 to 14 (Sampling distribution of means with replacement, Sampling distribution of means without replacement, Sampling distribution of means with replacement, Estimating the variance of a population, Estimating the difference between two population means, Estimating the mean from small samples), about 1 hour total — these episodes cover sampling distributions and estimation critical to SMC.
+**Watch only this:** Episodes 1-4 (Introduction & Overview, System Modeling, Property Specification 1, Property Specification 2), about 4.7 hours — these cover the foundations of validation problems, system modeling, and property specification essential to understanding SMC.
 
-*Why it unblocks this paper:* This university lecture series on Planning Data Analysis covers core statistical concepts such as sampling distributions, estimation, and confidence intervals, which are fundamental to understanding the statistical inference techniques used in Statistical Model Checking.
+*Why it unblocks this paper:* Stanford AA228V Validation of Safety Critical Systems I is a rigorous university course that covers property specification, sampling-based validation, and statistical model checking techniques directly relevant to the paper's methodology of using SMC for security evaluation.
 
-*If you want all of it:* 2.5 hours across 15 episodes
+*If you want all of it:* All 17 episodes, about 20.1 hours
 
 ### The fast track
 _Same ground, a fraction of the time — for when you just need to read the paper._
 
 ▶ [Introduction to Statistics and Data Analysis](https://www.youtube.com/playlist?list=PLMrJAkhIeNNT14qn1c5qdL29A1UaHamjx) — Steve Brunton · 35 videos · 9.9h across 35 episodes
 
-**Watch only this:** Episodes 6 (Normal Approximation to Sample Mean), 7 (Confidence Intervals), 8 (Central Limit Theorem Example & Hypothesis Testing), and 9 (Hypothesis Testing in Statistics), about 1 hour total — these episodes focus on the statistical inference methods used in SMC.
+**Watch only this:** Episodes 6-8 (Normal Approximation to Sample Mean, Confidence Intervals, Central Limit Theorem Example & Hypothesis Testing), about 50 minutes — these episodes cover the key statistical concepts needed to grasp SMC's confidence interval calculations and hypothesis testing.
 
-*Why it unblocks this paper:* This concise series by Steve Brunton provides clear, visual explanations of statistics and data analysis concepts including confidence intervals and hypothesis testing, which directly support understanding the statistical guarantees and inference in SMC.
+*Why it unblocks this paper:* Steve Brunton's Introduction to Statistics and Data Analysis provides a clear, visual, and concise introduction to confidence intervals, hypothesis testing, and statistical inference, which are foundational to understanding the statistical guarantees and sampling methods used in SMC.
 
-*If you want all of it:* 9.9 hours across 35 episodes
+*If you want all of it:* All 35 episodes, about 9.9 hours
 
 ## Track 1 — Academic deep-dives (long-form)
 
