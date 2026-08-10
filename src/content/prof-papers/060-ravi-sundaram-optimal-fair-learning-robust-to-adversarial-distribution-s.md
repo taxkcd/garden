@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-ravi-sundaram"
-source_hash: "bed3bb05d0faf04288ca793b6a2aa5a585dee23a13a6c45a1319aef05508c334"
+source_hash: "9c39055e86721fe146a6eef748304f15b59b66047030292dc25a9e081ee888e8"
 sequence: 60
 generator: "outreach-garden: managed"
 ---
@@ -54,56 +54,65 @@ This paper studies how to design fair machine learning classifiers that remain a
 
 _Everything the paper assumes you already know, in the order you should learn it. Some stages have no visible connection to the paper's title — that is the point: this is the background the paper never explains._
 
-This playlist provides foundational and core background knowledge necessary to understand the paper on robust fair learning under adversarial distribution shifts. It covers probability theory basics, statistical learning theory with a focus on binary classification and Bayes optimal classifiers, and fairness definitions in machine learning. The resources are carefully selected university-level lecture series and expert videos to build a solid theoretical understanding before tackling the paper.
+This playlist provides foundational and core background knowledge necessary to understand the paper on Optimal Fair Learning Robust to Adversarial Distribution Shift. It covers probability theory basics, statistical learning and binary classification concepts, fairness definitions in machine learning, adversarial robustness principles, randomized algorithms, and computational complexity. The resources are carefully selected university-level courses and lecture series, with guidance on which parts to focus on to efficiently prepare for the paper.
 
-**The paper assumes:** probability theory, statistical learning theory, binary classification, group fairness definitions in machine learning, adversarial robustness concepts, computational complexity theory, algorithm design for fair classifiers
-**Time to work through:** roughly 20-25 hours if you watch all recommended parts, about 10-12 hours if you follow the skip guidance
-**Already in this field?** Skip stages 1-3 if you have a solid background in probability, machine learning fundamentals, and fairness in ML; focus on stages 4-6 to understand the robustness and computational complexity aspects.
+**The paper assumes:** probability theory, statistical learning theory, binary classification, group fairness definitions in machine learning, adversarial robustness concepts, computational complexity theory, randomized algorithms
+**Time to work through:** roughly 40-50 hours if you watch all recommended parts, about 25-30 hours if you follow the skip guidance
+**Already in this field?** Skip stages 1-3 if you have a solid background in probability, machine learning fundamentals, and fairness in ML; focus on stages 4-6 for robustness and computational complexity aspects.
 
 ### Stage 1 · Probability Theory and Statistics *(foundational)*
-The paper relies on concepts like probability distributions, total variation distance, and statistical expectations to model data shifts and adversarial noise.
+The paper relies on concepts like probability distributions, total variation distance, and expectation to formalize distribution shifts and classifier accuracy under noise.
 
-▶ **Course:** [Statistics And Probability 2.0](https://www.youtube.com/playlist?list=PLU6SqdYcYsfJPF-4HphQQ8OceDtqhlSW8) — Dr.Gajendra Purohit · 67 videos · 22.9h across the first 60 episodes
+▶ **Course:** [Probability Bootcamp](https://www.youtube.com/playlist?list=PLMrJAkhIeNNR3sNYvfgiKgcStwuPSts9V) — Steve Brunton · 44 videos · 10.6h across 44 episodes
 
-*What to watch:* Watch the first 24 episodes of the "Statistics And Probability 2.0" playlist by Dr.Gajendra Purohit, covering sample space, probability, conditional probability, random variables, expectation, variance, and key distributions like binomial, Poisson, and normal. These episodes provide a comprehensive foundation in probability theory relevant to understanding distribution shifts and total variation distance.
+*What to watch:* Watch the first 24 episodes of the "Probability Bootcamp" playlist by Steve Brunton, covering fundamental probability concepts including sample spaces, random variables, distributions, and expectation, which are essential to understand total variation distance and probabilistic modeling in the paper.
 
 *Move on when you can:* Explain total variation distance between two probability distributions and compute it for simple discrete distributions.
 
-### Stage 2 · Statistical Learning Theory and Binary Classification *(core)*
-Understanding binary classification, Bayes optimal classifiers, and accuracy metrics is essential to grasp the paper’s focus on fair classifiers and their performance under distribution shifts.
+### Stage 2 · Statistical Learning and Binary Classification *(core)*
+Understanding the basics of binary classification, Bayes optimal classifiers, and accuracy metrics is essential to grasp the Fair Bayes Optimal Classifier framework used in the paper.
 
-▶ **Course:** [Bayes classification - Machine Learning](https://www.youtube.com/playlist?list=PL4gu8xQu0_5IdcQr6VJusAjZ_iTgYWKXN) — Mahesh Huddar · 33 videos · 4.9h across 33 episodes
+▶ **Course:** [Mathematical Foundations for Machine Learning](https://www.youtube.com/playlist?list=PLgMDNELGJ1CYPJS6m_ygxb4KtHYxh1HjR) — NPTEL - Indian Institute of Science, Bengaluru · 71 videos · 40.3h across the first 60 episodes
 
-*What to watch:* Focus on the "Bayes classification - Machine Learning" playlist by Mahesh Huddar, especially the videos titled "Bayes Optimal Classifier Problem Solved Step by Step Machine Learning by Vidya Mahesh Huddar" and related examples explaining the Bayes optimal classifier concept and its optimality in binary classification.
+*What to watch:* Focus on the NPTEL "Mathematical Foundations for Machine Learning" playlist episodes 47 to 69, which cover classification basics, Bayes optimal classifiers, and logistic regression, providing the theoretical foundation for the Fair Bayes Optimal Classifier discussed in the paper.
 
-*Move on when you can:* Derive the Bayes optimal classifier for a binary classification problem and explain its optimality in terms of expected accuracy.
+*Move on when you can:* Derive the Bayes optimal classifier for a binary classification problem and compute its expected accuracy.
 
 ### Stage 3 · Fairness in Machine Learning *(core)*
-The paper studies fairness constraints like Demographic Parity, Equal Opportunity, and Predictive Equality, which are foundational to formulating fair classification problems.
+The paper studies fairness constraints like Demographic Parity, Equal Opportunity, and Predictive Equality, so familiarity with these group fairness definitions and their implications is critical.
 
-▶ **Course:** [Stanford CS329H: Machine Learning from Human Preferences I Autumn 2024](https://www.youtube.com/playlist?list=PLoROMvodv4rNm525zyAObP4al43WAifZz) — Stanford Online · 8 videos · 10.3h across 8 episodes
+▶ **Course:** [Multigroup Fairness and the Validity of Statistical Judgment](https://www.youtube.com/playlist?list=PLgKuh-lKre11rbrWykJchIZpTXiDa0hX9) — Simons Institute for the Theory of Computing · 27 videos · 17.5h across 27 episodes
 
-*What to watch:* Watch the "Stanford CS329H: Machine Learning from Human Preferences I Autumn 2024" playlist by Stanford Online, focusing on the introductory lectures and the ethics episode to understand fairness definitions and their implications in machine learning.
+*What to watch:* Watch the "Multigroup Fairness and the Validity of Statistical Judgment" playlist by the Simons Institute for the Theory of Computing, focusing on the first 10 episodes that introduce group fairness definitions and their implications, which directly relate to the fairness constraints analyzed in the paper.
 
-*Move on when you can:* Define Demographic Parity, Equal Opportunity, and Predictive Equality and provide examples of classifiers satisfying each.
+*Move on when you can:* Define Demographic Parity, Equal Opportunity, and Predictive Equality, and explain how they constrain classifier predictions.
 
 ### Stage 4 · Adversarial Robustness and Distribution Shift *(advanced)*
-The paper’s main contribution is about robustness of fair classifiers under adversarial distribution shifts, requiring understanding of adversarial noise models and robustness metrics like Lipschitz continuity.
+The core problem is robustness of classifiers under adversarial distribution shifts; understanding adversarial noise models and robustness metrics like Lipschitz continuity is necessary to follow the theoretical results.
 
-▶ **Course:** [Adversarial Approaches in Machine Learning](https://www.youtube.com/playlist?list=PLgKuh-lKre10nDWIOpTW_G0g8HLWuLt7U) — Simons Institute for the Theory of Computing · 21 videos · 18.2h across 21 episodes
+▶ **Course:** [Deep Learning Course, by Dr. Soleymani, Sharif University, Spring 2024](https://www.youtube.com/playlist?list=PLDRc6k7DgmPqHPrxGIrHnbOsKh1iSb9W4) — Sharif ML Lab · 23 videos · 28.6h across 23 episodes
 
-*What to watch:* Watch the Simons Institute for the Theory of Computing's "Adversarial Approaches in Machine Learning" playlist, focusing on the first 10 episodes that cover min-max optimization, adversarial robustness, and distributional robustness concepts relevant to adversarial distribution shifts.
+*What to watch:* Watch the "Deep Learning Course, by Dr. Soleymani, Sharif University, Spring 2024" playlist, focusing on the last episode (Session 24: Adversarial robustness) which covers adversarial distribution shifts and robustness concepts relevant to the paper's main contributions.
 
-*Move on when you can:* Explain adversarial distribution shift and demonstrate how a classifier’s accuracy can change under small perturbations of the data distribution.
+*Move on when you can:* Explain what adversarial distribution shift means and describe how Lipschitz conditions can bound accuracy changes under such shifts.
 
-### Stage 5 · Computational Complexity and Algorithmic Hardness *(advanced)*
-The paper contrasts NP-completeness of deterministic fair classifier computation with polynomial-time algorithms for randomized classifiers, requiring knowledge of complexity classes and reductions.
+### Stage 5 · Randomized Algorithms and Their Analysis *(advanced)*
+The paper’s key contribution involves randomized classifiers that randomize on at most one data point; understanding randomized algorithm design and analysis is needed to appreciate this approach and its computational benefits.
+
+▶ **Course:** [MIT 6.5220 Randomized Algorithms Fall 2025](https://www.youtube.com/playlist?list=PL278F9gM5aZb8HXAh2yT3QmwyYQZrQUNH) — David Karger's Lectures · 31 videos · 45.4h across 31 episodes
+
+*What to watch:* Focus on the "MIT 6.5220 Randomized Algorithms Fall 2025" playlist by David Karger, watching the first 10 lectures which introduce randomized algorithms, their analysis, and examples, providing the theoretical background to understand the paper's randomized Fair BOCs.
+
+*Move on when you can:* Describe how randomization can improve algorithm robustness and give an example of a randomized algorithm with provable guarantees.
+
+### Stage 6 · Computational Complexity and NP-Completeness *(advanced)*
+The paper contrasts polynomial-time computability of randomized Fair BOCs with NP-completeness of deterministic ones; understanding complexity classes and reductions is essential to grasp these results.
 
 ▶ **Course:** [MIT 18.404J Theory of Computation, Fall 2020](https://www.youtube.com/playlist?list=PLUl4u3cNGP60_JNv2MmK3wkOt9syvfQWY) — MIT OpenCourseWare · 25 videos · 32.3h across 25 episodes
 
-*What to watch:* Watch the "MIT 18.404J Theory of Computation, Fall 2020" playlist by MIT OpenCourseWare, focusing on lectures 14 (P and NP, SAT, Poly-Time Reducibility), 15 (NP-Completeness), and 16 (Cook-Levin Theorem) to understand NP-completeness and reductions.
+*What to watch:* Watch the "MIT 18.404J Theory of Computation, Fall 2020" playlist by MIT OpenCourseWare, focusing on episodes 14 to 16 which cover P vs NP, polynomial-time reductions, and NP-completeness proofs, equipping you to understand the complexity results in the paper.
 
-*Move on when you can:* Explain NP-completeness and provide an example of a reduction proving a problem is NP-complete.
+*Move on when you can:* Explain the concept of NP-completeness and outline a reduction proving a problem is NP-complete.
 
 _Work through the stages in order. Once the last one lands, the paper — and the two tracks below — should read cleanly._
 

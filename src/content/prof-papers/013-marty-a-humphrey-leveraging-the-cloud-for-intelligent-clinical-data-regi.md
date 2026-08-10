@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-humphrey-html"
-source_hash: "72d08c6c2175ced23993fc40e409212027df9e4a1339fa691a2226306ee3ca6e"
+source_hash: "3ca990386c5040a9b3e50ebca904b73fb2a86c31266d26877e565b2eefdf1554"
 sequence: 13
 generator: "outreach-garden: managed"
 ---
@@ -63,56 +63,65 @@ Research interests: text mining, quality control, statistics, asymmetric distrib
 
 _Everything the paper assumes you already know, in the order you should learn it. Some stages have no visible connection to the paper's title — that is the point: this is the background the paper never explains._
 
-This playlist provides foundational and core knowledge necessary to understand the research paper on leveraging cloud computing for intelligent clinical data registries. It covers essential concepts in cloud computing, healthcare data management and standards, AWS core services, serverless architecture, and clinical audio processing. The resources are carefully selected to build up the reader's understanding step-by-step, focusing on relevant technical and domain-specific knowledge required to grasp the paper's contributions and context.
+This playlist provides foundational knowledge to prepare for reading the paper 'Leveraging the Cloud for Intelligent Clinical Data Registries.' It covers essential topics from cloud computing basics, healthcare data management, privacy regulations, AWS cloud services, clinical data visualization, to speech recognition technologies. Work through the stages in order to build a comprehensive understanding of the technical and domain-specific concepts the paper relies on.
 
-**The paper assumes:** cloud computing fundamentals, clinical data management, AWS core services, healthcare data privacy regulations, serverless architectures, clinical audio transcription technologies
-**Time to work through:** roughly 20-25 hours if you watch everything, about 10-12 hours if you follow the skip guidance
-**Already in this field?** Skip stages 1-3 if you already have experience with cloud computing and healthcare data systems; focus on stages 4-6 for domain-specific knowledge and AWS service integration.
+**The paper assumes:** cloud computing fundamentals, clinical data management, healthcare data privacy regulations, serverless architectures, AWS cloud services, medical informatics, audio transcription technologies
+**Time to work through:** roughly 20-25 hours if you watch all recommended playlist segments; about 10-12 hours if you follow the skip guidance
+**Already in this field?** Skip stages 1-3 if you already have a background in cloud computing and healthcare data management; focus on stages 4-6 for AWS-specific and clinical transcription knowledge.
 
 ### Stage 1 · Introduction to Cloud Computing *(foundational)*
-Understanding cloud infrastructure concepts such as scalability, load balancing, and serverless computing is essential to grasp the architecture of CPOP described in the paper.
+Understanding cloud infrastructure concepts like scalability, load balancing, and serverless computing is fundamental to grasping the architecture of CPOP described in the paper.
 
-▶ **Course:** [Cloud Computing(Lectures) Full Course](https://www.youtube.com/playlist?list=PLV8vIYTIdSnaKSiSGvJf2QquSN4lEzGob) — Easy Engineering Classes · 40 videos · 5.5h across 40 episodes
+▶ **Course:** [CS435 - Cloud Computing](https://www.youtube.com/playlist?list=PLKyB9RYzaFRi_DmwhX_vcg8XK8k_EO9VY) — Virtual University of Pakistan · 288 videos · 8.0h across the first 60 episodes
 
-*What to watch:* Watch the first 14 episodes of the 'Cloud Computing(Lectures) Full Course' by Easy Engineering Classes. These cover cloud computing introduction, working models, benefits, characteristics, cloud service models (SaaS, PaaS, IaaS), and cloud infrastructure essentials, which are directly relevant to the paper's cloud architecture.
+*What to watch:* Watch the first 24 episodes of the 'CS435 - Cloud Computing' playlist by Virtual University of Pakistan, which cover cloud computing basics, service models (IaaS, PaaS, SaaS), virtualization, and scalability concepts relevant to the paper's architecture.
 
-*Move on when you can:* Explain the differences between IaaS, PaaS, and SaaS and describe how auto-scaling and load balancing work in cloud environments.
+*Move on when you can:* Explain the differences between IaaS, PaaS, and SaaS cloud service models and describe how auto-scaling and load balancing work in cloud environments.
 
 ### Stage 2 · Healthcare Data Management and Standards *(core)*
-Understanding clinical data registries, longitudinal patient data, and healthcare data privacy regulations like HIPAA is critical to grasp the data management and privacy challenges addressed by CPOP.
+The paper addresses challenges in collecting and managing longitudinal clinical data registries, so understanding healthcare data structures and registry purposes is essential.
 
-▶ **Course:** [Foundations for Population Health in Community/Public Health Nursing (6th) | Complete Chapter Summaries](https://www.youtube.com/playlist?list=PLI3TocC2xS24n-b9-DkqUhLUCSnsya5RO) — Last Minute Lecture · 40 videos · 28.1h across 40 episodes
+▶ **Course:** [Healthcare Data Analyst Course](https://www.youtube.com/playlist?list=PLRZeOeu51BQMinKJXU4wVSFnzvzvZH3Hh) — Dr Data Insight · 13 videos · 0.9h across 13 episodes
 
-*What to watch:* Focus on the first 10 episodes of 'Foundations for Population Health in Community/Public Health Nursing (6th) | Complete Chapter Summaries' by Last Minute Lecture. These episodes cover public health nursing, healthcare systems overview, law and policy activism, economics, ethics, and evidence-based practice, providing a solid foundation on healthcare data management and regulatory context.
+*What to watch:* Focus on the 'Healthcare Data Analyst Course' playlist by Dr Data Insight, especially episodes explaining NHS datasets, healthcare data analytics basics, and problems solved by data analytics to understand clinical data registries and longitudinal data challenges.
 
-*Move on when you can:* Describe the structure and purpose of clinical data registries and explain key healthcare data privacy regulations such as HIPAA.
+*Move on when you can:* Describe the structure and purpose of clinical data registries and explain challenges in collecting and managing longitudinal patient data across providers.
 
-### Stage 3 · Amazon Web Services Core Services *(core)*
-The paper uses AWS services such as Cognito, RDS, Lambda, and API Gateway; familiarity with these services is necessary to understand the system design and implementation details.
+### Stage 3 · Healthcare Privacy and Security Regulations (HIPAA) *(core)*
+HIPAA compliance and data privacy are critical design requirements in the paper, so knowledge of HIPAA rules and their impact on clinical data systems is necessary.
+
+▶ **Course:** [HIPAA COMPLIANCE COURSE](https://www.youtube.com/playlist?list=PL08dnWP9X5YfguX5bpYoVpPbWyj1iawBa) — EarthTab Business School · 11 videos · 1.2h across 11 episodes
+
+*What to watch:* Watch the 'HIPAA COMPLIANCE COURSE' playlist by EarthTab Business School, focusing on modules covering HIPAA privacy and security rules, enforcement, and cloud/technology compliance to understand regulatory impacts on system design.
+
+*Move on when you can:* Summarize key HIPAA privacy and security rules and explain how they impact the design of clinical data systems.
+
+### Stage 4 · AWS Cloud Services and Serverless Architectures *(advanced)*
+The paper uses AWS services like Cognito, RDS, Lambda, and API Gateway for authentication, data storage, and serverless APIs, which are central to the platform's implementation.
 
 ▶ **Course:** [AWS Certified Cloud Practitioner](https://www.youtube.com/playlist?list=PLRAV69dS1uWSj3ltu0ym1LwWg4509PZ0N) — Hitesh Choudhary · 12 videos · 3.8h across 12 episodes
 
-*What to watch:* Watch the entire 'AWS Certified Cloud Practitioner' playlist by Hitesh Choudhary, focusing especially on IAM, EC2, storage, and security-related episodes. This course provides practical and conceptual knowledge of AWS core services relevant to the paper's implementation.
+*What to watch:* Watch the 'AWS Certified Cloud Practitioner' playlist by Hitesh Choudhary, focusing on episodes covering IAM (Identity and Access Management), AWS CLI configuration, and introduction to core AWS services to understand setting up authentication and serverless APIs.
 
-*Move on when you can:* Demonstrate how to set up user authentication with AWS Cognito and explain the role of AWS Lambda and API Gateway in serverless architectures.
+*Move on when you can:* Demonstrate how to set up user authentication with AWS Cognito and create a simple serverless API using AWS Lambda and API Gateway.
 
-### Stage 4 · Serverless Architecture and Microservices *(advanced)*
-CPOP employs serverless APIs and a microservices approach for scalability and maintainability; understanding these architectural patterns is essential to follow the system design and scalability claims.
+### Stage 5 · Medical Informatics and Clinical Data Visualization *(advanced)*
+The paper involves patient and doctor interfaces for data entry and visualization, requiring understanding of clinical informatics principles and visualization techniques for medical data.
 
-▶ **Course:** [AWS Serverless Course](https://www.youtube.com/playlist?list=PLqbNDdqyX9E00P3CqyTVwIyVKG6nbB7V0) — TrickSumo · 10 videos · 4.7h across 10 episodes
+▶ **Course:** [Excel for Healthcare Analytics Zero to Hero Boot Camp](https://www.youtube.com/playlist?list=PL_1_dS1EJWpyYzGyot4KV6DvRdPmM4jrI) — Jesse Andrist · 13 videos · 4.7h across 13 episodes
 
-*What to watch:* Watch the full 'AWS Serverless Course' playlist by TrickSumo. This series covers securing APIs with Cognito, deploying serverless applications, Lambda layers, and building serverless APIs, directly aligning with the paper's use of serverless architecture.
+*What to watch:* Focus on the 'Excel for Healthcare Analytics Zero to Hero Boot Camp' playlist by Jesse Andrist, especially episodes on data cleaning, pivot tables, charts, visualization, and building dashboards to learn practical clinical data visualization and dashboard design.
 
-*Move on when you can:* Design a simple serverless application using AWS Lambda and API Gateway and explain how load balancing and auto-scaling are achieved.
+*Move on when you can:* Design a basic clinical data dashboard that visualizes patient outcomes and supports data entry for medical surveys.
 
-### Stage 5 · Clinical Audio Processing and Speech Transcription *(advanced)*
-The paper evaluates Amazon Transcribe for doctor-patient audio transcription, so knowledge of speech-to-text technologies and their challenges in clinical contexts is required to understand the evaluation and limitations.
+### Stage 6 · Speech Recognition and Audio Transcription Technologies *(advanced)*
+The paper evaluates Amazon Transcribe for doctor-patient audio transcription, so familiarity with speech-to-text technologies and evaluation metrics like word error rate is needed.
 
-▶ **Course:** [Stanford CS229: Machine Learning led by Andrew Ng | Autumn 2018](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU) — Stanford Online · 21 videos · 27.9h across 21 episodes
+▶ **Course:** [Speech Technology_Prof. Umesh](https://www.youtube.com/playlist?list=PLZ2ps__7DhBaI_g3_V-CFrgFIf-0Yksiv) — IIT Madras - B.S. Degree Programme · 73 videos · 22.5h across the first 60 episodes
 
-*What to watch:* Watch the first 12 lectures of 'Stanford CS229: Machine Learning led by Andrew Ng | Autumn 2018' by Stanford Online. These lectures cover supervised learning, neural networks, error analysis, and debugging ML models, which provide foundational knowledge for understanding automatic speech recognition and transcription errors.
+*What to watch:* Watch the first 10 episodes of the 'Speech Technology_Prof. Umesh' playlist by IIT Madras, which cover speech production, digital signal processing, feature extraction, and error analysis foundational to understanding automatic speech recognition and word error rate.
 
-*Move on when you can:* Explain the basics of automatic speech recognition and discuss common sources of error in clinical audio transcription.
+*Move on when you can:* Explain how automatic speech recognition works and calculate word error rate from sample transcription outputs.
 
 _Work through the stages in order. Once the last one lands, the paper — and the two tracks below — should read cleanly._
 

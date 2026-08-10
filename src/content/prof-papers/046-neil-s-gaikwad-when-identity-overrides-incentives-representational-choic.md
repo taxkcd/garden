@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-gaikwad"
-source_hash: "bedeec49606df18de3f3b66b5dd21373f1d6963e189bb06548827bd053298ae8"
+source_hash: "d7c83dcac756c9387e5c14a18583d4dfb355c67809a413cb62bf975d5c94ee69"
 sequence: 46
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,63 @@ Research interests: machine learning and social computing, human-AI collaborativ
 - [LinkedIn](https://www.linkedin.com/in/neilgaikwad)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_Everything the paper assumes you already know, in the order you should learn it. Some stages have no visible connection to the paper's title — that is the point: this is the background the paper never explains._
+
+This playlist provides foundational to advanced knowledge necessary to understand the research paper on multi-agent LLM systems and their strategic behavior influenced by personas. It covers essential mathematical foundations, machine learning and neural network basics, transformer architectures and prompt engineering, game theory concepts for strategic decision-making, and advanced multi-agent system design and social computing. Work through these resources in order to build a comprehensive understanding before reading the paper.
+
+**The paper assumes:** game theory including Nash equilibria, large language model architectures and prompting, multi-agent systems, strategic decision-making, and AI governance concepts
+**Time to work through:** roughly 100-115 hours if you watch everything, about 60-70 hours if you follow the skip guidance for each playlist
+**Already in this field?** Skip stages 1-3 if you already have a background in game theory, multi-agent systems, and large language models; focus on the later stages about persona conditioning and strategic behavior in LLMs.
+
+### Stage 1 · Probability and Linear Algebra Foundations *(foundational)*
+Understanding LLMs and their behavior requires knowledge of probability distributions and linear algebra operations such as vector spaces and matrix multiplication, which underpin embeddings and model computations.
+
+▶ **Course:** [MIT 18.06 Linear Algebra, Spring 2005](https://www.youtube.com/playlist?list=PLE7DDD91010BC51F8) — MIT OpenCourseWare · 36 videos · 28.0h across 36 episodes
+
+*What to watch:* Watch the MIT 18.06 Linear Algebra, Spring 2005 playlist by Prof. Gilbert Strang, focusing on episodes 1 through 23 which cover the geometry of linear equations, matrix operations, vector spaces, subspaces, eigenvalues, and diagonalization—core concepts needed to understand embeddings and neural network computations.
+
+*Move on when you can:* Explain how a vector space represents word embeddings and compute basic matrix-vector products used in neural network layers.
+
+### Stage 2 · Introduction to Machine Learning and Neural Networks *(core)*
+LLMs are built on neural network architectures trained via machine learning; grasping these fundamentals is essential to understand model behavior and conditioning via prompts or personas.
+
+▶ **Course:** [Stanford CS229: Machine Learning led by Andrew Ng | Autumn 2018](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU) — Stanford Online · 21 videos · 27.9h across 21 episodes
+
+*What to watch:* Focus on the Stanford CS229: Machine Learning led by Andrew Ng | Autumn 2018 playlist, especially lectures 1 through 12, which cover supervised learning, neural networks, backpropagation, and training via gradient descent—fundamental concepts to understand how LLMs learn and are conditioned.
+
+*Move on when you can:* Describe how a feedforward neural network processes input data and explain the concept of training via gradient descent.
+
+### Stage 3 · Large Language Models and Prompt Engineering *(core)*
+The paper studies multi-agent systems composed of LLMs and manipulates their behavior through persona prompts; understanding transformer architectures and prompt conditioning is critical to follow the experimental design.
+
+▶ **Course:** [Stanford CS224N Natural Language Processing with Deep Learning I Spring 2024 I Professor Christopher Manning](https://www.youtube.com/playlist?list=PLoROMvodv4rOaMFbaqxPDoLWjDaRAdP9D) — Stanford Online · 23 videos · 27.5h across 23 episodes
+
+*What to watch:* Use the Stanford CS224N Natural Language Processing with Deep Learning I Spring 2024 playlist, focusing on lectures 7 through 14 which cover attention mechanisms, transformers, pretraining, prompting, and reasoning with LLMs—key to understanding how prompt design influences LLM behavior.
+
+*Move on when you can:* Explain the transformer architecture and demonstrate how prompt design can influence LLM output behavior.
+
+### Stage 4 · Game Theory and Strategic Decision-Making *(core)*
+The paper analyzes multi-agent interactions modeled as strategic games and evaluates Nash equilibria; understanding game theory concepts is necessary to interpret equilibrium selection and payoff structures.
+
+▶ **Course:** [Game Theory (Yale ECON 159)](https://www.youtube.com/playlist?list=PL8hA0lYK0I4k3FTLCCWISQNW3UwHh3MLY) — alsike · 24 videos · 28.5h across 24 episodes
+
+*What to watch:* Watch the Yale Game Theory (Yale ECON 159) playlist by alsike, focusing on episodes 1 through 10 which introduce Nash equilibrium, best responses, mixed strategies, and strategic thinking—foundational for analyzing the multi-agent strategic games in the paper.
+
+*Move on when you can:* Define Nash equilibrium and solve for equilibria in simple multi-player strategic games.
+
+### Stage 5 · Multi-Agent Systems and Social Computing *(advanced)*
+The paper focuses on multi-agent LLM systems interacting in policy simulations; knowledge of multi-agent coordination, communication, and social behavior modeling is required to understand system-level outcomes.
+
+▶ **Course:** [Agentic AI Masterclass: Building Multi-Agent Systems with AutoGen, LangGraph & CrewAI](https://www.youtube.com/playlist?list=PLdKd-j64gDcDjZgJw6bECfdcTx0YrrSVF) — Analytics Vidhya · 29 videos · 5.7h across the first 28 episodes
+
+*What to watch:* Watch the Agentic AI Masterclass: Building Multi-Agent Systems with AutoGen, LangGraph & CrewAI playlist by Analytics Vidhya, focusing on the first 15 episodes which cover the architecture, message flow, agent communication, and building multi-agent systems—critical to grasp how multi-agent LLM systems operate and are governed.
+
+*Move on when you can:* Model a multi-agent interaction scenario and analyze how agent communication protocols affect collective outcomes.
+
+_Work through the stages in order. Once the last one lands, the paper — and the two tracks below — should read cleanly._
 
 ## Track 1 — Academic deep-dives (long-form)
 

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-amy-ogan"
-source_hash: "0ed99c5edfcd754c123f73b23ddd00fc96f40a48397016e7f8fa661f45c6c1bf"
+source_hash: "6f75a92b85636a5306897223eeb5467c72de68d60f2846135d6992bb0588cb84"
 sequence: 6
 generator: "outreach-garden: managed"
 ---
@@ -59,56 +59,65 @@ Research interests: Learning Sciences and Educational Technologies, Human-Center
 
 _Everything the paper assumes you already know, in the order you should learn it. Some stages have no visible connection to the paper's title — that is the point: this is the background the paper never explains._
 
-This playlist provides foundational knowledge necessary to understand the research paper on youth engagement with algorithmic bias and fairer AI. It covers core concepts of machine learning, algorithmic bias and fairness, human-centered AI and participatory design, moral and ethical reasoning in technology, and qualitative research methods in HCI and education. Work through these stages in order to build a comprehensive background before reading the paper.
+This playlist provides foundational to advanced background knowledge needed to fully understand the research paper on youth engagement in identifying and mitigating algorithmic bias in AI. It covers basic computer science and programming, core AI and machine learning concepts, algorithmic fairness and bias, AI ethics and social implications, participatory design and human-centered AI, and qualitative research methods in HCI. Work through the stages in order to build a comprehensive understanding before reading the paper.
 
-**The paper assumes:** foundations of machine learning and AI, basics of algorithmic bias and fairness, principles of human-centered AI and participatory design, fundamentals of moral and ethical reasoning in technology, qualitative research methods in HCI and education
-**Time to work through:** roughly 40-50 hours if you watch all selected playlists fully, about 20-25 hours if you follow the skip guidance to focus on key lectures.
-**Already in this field?** Skip stages 1-3 if you already have a background in AI and algorithmic fairness; focus on stages 4-6 if you are familiar with technical AI concepts but new to ethical engagement and participatory methods.
+**The paper assumes:** foundations of computer science, basics of artificial intelligence and machine learning, social implications of technology, algorithmic fairness concepts, participatory design methods, qualitative research methodologies in HCI
+**Time to work through:** roughly 60-70 hours if you watch all recommended playlists fully, about 30-40 hours if you follow the skip guidance for focused viewing
+**Already in this field?** Skip stages 1-3 if you have a solid background in computer science and AI fundamentals; skip stages 4-5 if you are familiar with AI ethics and participatory design research methods.
 
-### Stage 1 · Introduction to Machine Learning and AI *(foundational)*
-Understanding how AI models are built and make decisions is essential to grasp how algorithmic bias arises and affects outputs, which is central to the paper's research problem.
+### Stage 1 · Introduction to Computer Science and Programming *(foundational)*
+Understanding basic computing concepts and programming logic is essential to grasp how AI systems are built and how users interact with them, which underpins discussions about AI biases and interventions in the paper.
+
+▶ **Course:** [MIT 6.00 Intro to Computer Science & Programming, Fall 2008](https://www.youtube.com/playlist?list=PL4C4720A6F225E074) — MIT OpenCourseWare · 24 videos · 19.8h across 24 episodes
+
+*What to watch:* Watch the first 12 lectures of the MIT 6.00 Intro to Computer Science & Programming, Fall 2008 playlist. These cover fundamental programming concepts like variables, conditionals, loops, functions, and basic data structures, providing a solid programming foundation relevant for understanding AI system construction.
+
+*Move on when you can:* Write a simple program that takes input and produces output, and explain basic data structures like arrays and conditionals.
+
+### Stage 2 · Fundamentals of Artificial Intelligence and Machine Learning *(core)*
+Understanding AI and machine learning basics is critical to comprehend how algorithms make decisions and where biases can emerge, which underpins the paper’s focus on algorithmic bias and fairness.
 
 ▶ **Course:** [Stanford CS229: Machine Learning led by Andrew Ng | Autumn 2018](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU) — Stanford Online · 21 videos · 27.9h across 21 episodes
 
-*What to watch:* Watch the first 12 lectures of the Stanford CS229: Machine Learning led by Andrew Ng (Autumn 2018) playlist. These cover supervised learning, linear regression, logistic regression, neural networks, and model evaluation, which provide the core machine learning concepts needed for this paper.
+*What to watch:* Watch the first 10 lectures of the Stanford CS229: Machine Learning led by Andrew Ng (Autumn 2018) playlist. These cover supervised learning, linear regression, logistic regression, perceptrons, naive Bayes, support vector machines, kernels, and model evaluation, providing a solid foundation in machine learning concepts relevant to algorithmic bias.
 
-*Move on when you can:* Explain how a simple supervised learning model is trained and used to make predictions on new data.
+*Move on when you can:* Explain supervised learning and describe how a classification algorithm works on a simple dataset.
 
-### Stage 2 · Algorithmic Bias and Fairness in AI *(core)*
-The paper centers on identifying and mitigating algorithmic bias, so understanding types of bias, fairness definitions, and how bias arises in AI systems is essential to grasp the research problem and proposed solutions.
+### Stage 3 · Algorithmic Fairness and Bias in AI Systems *(advanced)*
+The paper builds on concepts of algorithmic bias and fairness, so familiarity with types of biases, fairness metrics, and challenges in mitigating bias is necessary to understand the research problem and proposed solutions.
 
-▶ **Course:** [Algorithmic Bias and Fairness: Crash Course AI #18 (CrashCourse) and others](https://www.youtube.com/playlist?list=PLAJhhi2fYsY89vn_JR7kUTnnTfrEsfbYT) — foosballchic44 · 7 videos · 1.1h across 7 episodes
+▶ **Course:** [AI Bias](https://www.youtube.com/playlist?list=PLPIiOMbRPBkbk2fw4NUZ4gVNCMvdxDMt-) — wissen85 · 12 videos · 6.9h across 12 episodes
 
-*What to watch:* Focus on the entire 'Algorithmic Bias and Fairness: Crash Course AI #18' video within the foosballchic44 playlist, especially the episodes titled 'Algorithmic Bias and Fairness: Crash Course AI #18' and 'Algorithmic bias explained'. These explain common sources of bias and fairness metrics clearly and concisely.
+*What to watch:* Watch the entire 'AI Bias' playlist by wissen85, especially the first four episodes which cover algorithmic bias, fairness trade-offs, emerging fairness theory, and the Gender Shades project. These provide a comprehensive introduction to algorithmic bias and fairness concepts critical for understanding the paper’s focus.
 
-*Move on when you can:* Describe common sources of bias in AI and differentiate between group fairness and individual fairness metrics.
+*Move on when you can:* Identify examples of algorithmic bias and explain at least two fairness definitions used in AI research.
 
-### Stage 3 · Human-Centered AI and Participatory Design *(core)*
-The study involves youth and parents as stakeholders in AI design, requiring knowledge of human-centered AI principles and participatory design methods to understand how users can shape AI systems ethically.
+### Stage 4 · Ethics and Social Implications of AI *(advanced)*
+The paper discusses ethical considerations and societal impacts of AI, especially on marginalized youth, so knowledge of AI ethics frameworks and social justice issues related to technology is essential.
+
+▶ **Course:** [🎓 Ethics in Artificial Intelligence | Complete Course](https://www.youtube.com/playlist?list=PLERT_RRq6vDXnd0hkuidNKaQIRcj5PLJG) — Horizon Trax · 9 videos · 0.7h across 9 episodes
+
+*What to watch:* Watch the full '🎓 Ethics in Artificial Intelligence | Complete Course' playlist by Horizon Trax. The episodes systematically cover why ethics matters, defining fairness, bias prevention, transparency, accountability, global perspectives, case studies, and future challenges, providing a thorough grounding in AI ethics relevant to the paper.
+
+*Move on when you can:* Discuss ethical dilemmas in AI deployment and summarize key principles of responsible AI.
+
+### Stage 5 · Participatory Design and Human-Centered AI *(advanced)*
+Since the paper involves youth as stakeholders in AI design, understanding participatory design methods and human-centered AI approaches is crucial to appreciate the workshop methodology and design implications.
 
 ▶ **Course:** [Generative AI Program](https://www.youtube.com/playlist?list=PLoROMvodv4rMbaJmLqUr7VboM3Ps2zqZf) — Stanford Online · 22 videos · 2.2h across 22 episodes
 
-*What to watch:* Watch the episodes 'James Landay Explains Why AI Should Be Human-Centered' and 'Stanford Webinar - Human-Centered AI: Designing Systems People Trust' from the Stanford Online Generative AI Program playlist. These provide focused insights on human-centered AI principles and participatory design relevant to the paper.
+*What to watch:* Watch the entire 'Generative AI Program' playlist by Stanford Online, focusing on episodes about human-centered AI, including 'James Landay Explains Why AI Should Be Human-Centered' and 'Stanford Webinar - Human-Centered AI: Designing Systems People Trust'. These provide insights into participatory design and human-centered AI principles relevant to youth engagement in AI fairness.
 
-*Move on when you can:* Outline key principles of human-centered AI and describe how participatory design engages users in technology development.
+*Move on when you can:* Describe the participatory design process and explain how user involvement shapes technology development.
 
-### Stage 4 · Moral and Ethical Reasoning in Technology *(advanced)*
-The paper discusses youth's capacity for moral reasoning about AI harms and fairness, so understanding ethical theories and moral development relevant to technology use is necessary to appreciate the participants' reflections and the paper's ethical framing.
+### Stage 6 · Qualitative Research Methods in Human-Computer Interaction *(advanced)*
+The paper uses qualitative methods like focus groups and thematic analysis to gather and interpret data, so familiarity with qualitative research design and analysis in HCI is needed to understand the study’s approach and validity.
 
-▶ **Course:** [Business Ethics – Full Course | Business Environment | CSR | Corporate Governance | B.Com | BBA | MBA | M.Com | UGC NET Commerce](https://www.youtube.com/playlist?list=PLvU96yp7wo4vtfFvmcW2k_ZdsiZm4n3sl) — Learning Academy of Commerce · 72 videos · 3.7h across the first 60 episodes
+▶ **Course:** [Research](https://www.youtube.com/playlist?list=PL7GJaJ4Md7_lsIdQDlg5ztarv4V0ofC8-) — Urooj Khan · 35 videos · 15.2h across 35 episodes
 
-*What to watch:* Watch the first 10 episodes of the 'Business Ethics – Full Course' playlist by Learning Academy of Commerce. These cover foundational ethical concepts and theories that apply to evaluating AI fairness and harms.
+*What to watch:* Watch the first 5 episodes of the 'Research' playlist by Urooj Khan, especially those covering research methodology basics, qualitative research methods, and data collection tools. These provide a solid introduction to qualitative research design and analysis applicable to HCI studies like the paper’s workshops.
 
-*Move on when you can:* Explain basic ethical theories (e.g., utilitarianism, deontology) and how they apply to evaluating AI fairness and harms.
-
-### Stage 5 · Qualitative Research Methods in HCI and Education *(advanced)*
-The paper uses workshops, focus groups, interviews, and thematic analysis to gather and interpret data, so familiarity with qualitative research methods in human-computer interaction and educational contexts is crucial to understand the study design and analysis.
-
-▶ **Course:** [EDU407 | Research Methods in Education](https://www.youtube.com/playlist?list=PLKyB9RYzaFRiXTeV7QmRrs479qZ2LI4qD) — Virtual University of Pakistan · 192 videos · 7.4h across the first 60 episodes
-
-*What to watch:* Watch the first 15 episodes of the 'EDU407 | Research Methods in Education' playlist by Virtual University of Pakistan. These cover qualitative research approaches, data collection methods, and analysis techniques relevant to the paper's methodology.
-
-*Move on when you can:* Design a basic qualitative study including data collection via interviews and perform thematic coding on sample transcripts.
+*Move on when you can:* Design a basic qualitative study and perform thematic coding on sample interview transcripts.
 
 _Work through the stages in order. Once the last one lands, the paper — and the two tracks below — should read cleanly._
 
