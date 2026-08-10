@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-gregory-b-white"
-source_hash: "80381f72cf8d19b24da7f582d13bc21bc407c5d3b66c3753813941c91e4859d5"
+source_hash: "fb60992d916a3e4eca0f9f168bd71ab04ccd8f05d3edd2d9f0ce258bb907ef9b"
 sequence: 139
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,38 @@ Research interests: Automated information sharing, Detection of intrusive cyber 
 - [Google Scholar](https://scholar.google.com/citations?user=yT6jxa8AAAAJ&hl=en)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Fundamentals of Cybersecurity
+**The paper assumes:** basic cybersecurity principles, threat modeling, cybersecurity frameworks, and security best practices
+**Already in this field?** Skip this entirely if you already have a foundational understanding of cybersecurity concepts and common security practices.
+
+This background provides foundational knowledge in cybersecurity principles essential for understanding the educational games and their impact described in the paper. The rigorous course offers a deep, structured university-level introduction to cybersecurity concepts, suitable for readers seeking comprehensive technical grounding. The fast track is a concise, well-produced explainer series that covers core ideas quickly and accessibly, ideal for readers needing a solid overview without extensive time investment.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Harvard university's CS50 (Cyber security course) 2024/2025](https://www.youtube.com/playlist?list=PLqkQbEY7o5XYn9my1CcJxtTgR6pgKCBoy) — {Fabian Codes HQ} · 15 videos · 28.4h across 15 episodes
+
+**Watch only this:** Episodes 0 through 4 ("CS50 Cybersecurity - Lecture 0 - Securing Accounts" to "CS50 Cybersecurity - Lecture 4 - Preserving Privacy"), about 9.4 hours total — these cover core cybersecurity concepts relevant to the educational games' content and learning goals.
+
+*Why it unblocks this paper:* Harvard university's CS50 Cybersecurity course is a thorough, university-level series that covers fundamental cybersecurity topics such as securing accounts, data, systems, software, and privacy, directly aligning with the paper's focus on foundational cybersecurity principles.
+
+*If you want all of it:* All 15 episodes, about 28.4 hours total.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Intro to Cybersecurity](https://www.youtube.com/playlist?list=PLQVJk9oC5JKq15cieChuOU9zFdf-FlnMi) — CBT Nuggets · 7 videos · 0.9h across 7 episodes
+
+**Watch only this:** All 7 episodes, about 0.9 hours total — the entire playlist is short and covers the basics efficiently.
+
+*Why it unblocks this paper:* The CBT Nuggets "Intro to Cybersecurity" playlist is a concise, clear, and well-structured series that introduces essential cybersecurity concepts and career context in under an hour, providing a quick yet solid foundation for readers new to the subject.
+
+*If you want all of it:* Same as minimum watch, 0.9 hours.
 
 ## Track 1 — Academic deep-dives (long-form)
 

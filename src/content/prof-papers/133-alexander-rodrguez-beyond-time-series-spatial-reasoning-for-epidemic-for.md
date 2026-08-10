@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-alexander-rodriguez"
-source_hash: "cffb740553f005a50dbaa35fd16044bfda4f4f1a28f68df562008dccc4898d16"
+source_hash: "428af52734cf5372de737e3b90369d9d599421e0f0b114e5247ffc31073d9216"
 sequence: 133
 generator: "outreach-garden: managed"
 ---
@@ -54,6 +54,38 @@ Research interests: AI methods for modeling complex spatiotemporal dynamics to s
 - [GitHub](https://github.com/complex-ai-lab)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Attention-based deep learning
+**The paper assumes:** deep learning with attention mechanisms, Transformer architectures, and multimodal fusion models
+**Already in this field?** Skip this entirely if you already have a solid understanding of Transformer models and attention mechanisms in deep learning.
+
+This background focuses on attention-based deep learning, which is central to understanding the M-SPICE model's architecture and multimodal fusion mechanisms in the paper. The rigorous course option offers a deep dive into attention and Transformer architectures within a broader deep learning for computer vision context, ideal for readers seeking comprehensive mastery. The fast track provides a concise, intuition-driven introduction to neural networks and attention mechanisms, suitable for readers who want a solid conceptual grasp quickly without extensive time investment.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS231N Deep Learning for Computer Vision I 2025](https://www.youtube.com/playlist?list=PLoROMvodv4rOmsNzYBMe0gJY2XS8AQg16) — Stanford Online · 18 videos · 21.2h across 18 episodes
+
+**Watch only this:** Lectures 1, 4, 7, and 8 (Introduction; Neural Networks and Backpropagation; Recurrent Neural Networks; Attention and Transformers), about 4.5 hours — this subset covers foundational deep learning concepts leading up to attention mechanisms critical for the paper.
+
+*Why it unblocks this paper:* Stanford CS231N Deep Learning for Computer Vision I 2025 includes a dedicated lecture on Attention and Transformers, providing rigorous coverage of attention mechanisms essential to understanding M-SPICE's multimodal fusion and temporal-spatial integration.
+
+*If you want all of it:* 21.2 hours across 18 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Neural networks](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi) — 3Blue1Brown · 10 videos · 3.6h across 10 episodes
+
+**Watch only this:** Episodes 1, 3, 6, and 7 (But what is a neural network?; Backpropagation, intuitively; Transformers, the tech behind LLMs; Attention in transformers, step-by-step), about 1.5 hours — this covers the essential intuition behind neural networks and attention.
+
+*Why it unblocks this paper:* 3Blue1Brown's Neural Networks series offers clear, visual, and intuitive explanations of neural networks and attention in transformers, making it an excellent quick primer on the core concepts underlying the paper's attention-based model.
+
+*If you want all of it:* 3.6 hours across 10 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

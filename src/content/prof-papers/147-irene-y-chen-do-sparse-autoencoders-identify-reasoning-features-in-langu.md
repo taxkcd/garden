@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-irene-y-chen"
-source_hash: "d3ff1ee8a10bd630a401635c3c09cd8c1c491960ba252523da4615a398b5d8eb"
+source_hash: "4acdd316e490615b5ada414dfcc58a148a32011eebe9e53510bdfa78b90ea761"
 sequence: 147
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,27 @@ This paper investigates whether sparse autoencoders (SAEs), a tool used to inter
 - [Professor website](https://www.urmc.rochester.edu/people/112363645-irene-y-chen)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Sparse coding and autoencoders
+**The paper assumes:** machine learning autoencoders, sparse coding, and neural network interpretability
+**Already in this field?** Skip this entirely if you already understand the principles of sparse autoencoders and their role in feature learning and interpretability.
+
+Understanding sparse autoencoders and sparse coding is essential for grasping the theoretical and practical aspects of how these models identify features in large language models, particularly the bias toward lexical cues over reasoning features. The rigorous course offers a deep, structured university-level treatment of the topic, while the fast track provides a concise, intuition-focused introduction suitable for quickly building foundational knowledge before diving into the paper.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [ML-autoencoders](https://www.youtube.com/playlist?list=PLeAZNHYyAdx-_wXw1j5Jbu4nw7B0BAK9g) — anchorcult · 17 videos · 2.3h across the first 14 episodes
+
+**Watch only this:** Watch the first 14 episodes, about 2.3 hours total — these cover the basics of autoencoders, sparse autoencoders, and their training, providing a solid intuitive foundation.
+
+*Why it unblocks this paper:* This short-form playlist offers clear, visual, and concise explanations of autoencoders and sparse autoencoders, ideal for quickly understanding the architecture and sparsity concepts crucial for interpreting the paper's theoretical and empirical analyses.
+
+*If you want all of it:* All 17 episodes, approximately 2.8 hours total.
 
 ## Track 1 — Academic deep-dives (long-form)
 

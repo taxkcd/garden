@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-huck-bennett"
-source_hash: "63291942157e3475c444ea15a1823aa4acfbca4d5ebedd88073cfde87e071dbe"
+source_hash: "dee51515e69712168b233db01a35096248999b74758b27d8675f1d4af6912dcc"
 sequence: 101
 generator: "outreach-garden: managed"
 ---
@@ -49,6 +49,38 @@ This paper studies the problem of deciding when two self-dual lattices or self-d
 - [Faculty/profile page](https://home.cs.colorado.edu/~hbennett)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Algebraic Number Theory
+**The paper assumes:** algebraic number theory, quadratic forms, lattice theory, and module theory
+**Already in this field?** Skip this entirely if you have a solid understanding of algebraic number theory and lattice structures, including quadratic forms and module decompositions.
+
+This background focuses on algebraic number theory concepts essential for understanding self-dual lattices, their decompositions, and characteristic vectors, which are central to the paper's complexity and algorithmic results. The rigorous course provides a deep, structured foundation suitable for thorough study, while the fast track offers a concise introduction to key algebraic number theory ideas, enabling quicker comprehension of the paper's algebraic underpinnings.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [MA524 Algebraic Number Theory (Spring Semester 2020-21)](https://www.youtube.com/playlist?list=PLR3C3NSCyhZQLANHMMCiSrTg6OJcSMpzD) — Department of Mathematics IIT Bombay · 21 videos · 23.3h across 21 episodes
+
+**Watch only this:** Lectures 1 through 9 (MA524 Algebraic Number Theory Lecture 1 to Lecture 9), about 10 hours — covering foundational algebraic number theory, quadratic forms, and lattice-related concepts needed to understand the paper's structural decompositions and characteristic vectors.
+
+*Why it unblocks this paper:* This is a comprehensive university-level algebraic number theory course from IIT Bombay covering fundamental topics such as quadratic forms, modules, and lattice structures, directly relevant to the paper's focus on self-dual lattices and their algebraic properties.
+
+*If you want all of it:* 23.3 hours across 21 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Introduction to Algebraic Number Theory](https://www.youtube.com/playlist?list=PLrxMOPBU4kZVycw-cevJeqw7zJhHDGPbd) — Vimal Vinod (dalekvim) · 16 videos · 1.6h across 16 episodes
+
+**Watch only this:** Episodes 1 through 10, about 1 hour — covering algebraic numbers, examples, proofs, Pell equations, and ring structures to quickly build intuition for the paper's algebraic concepts.
+
+*Why it unblocks this paper:* This short-form series provides clear, concise explanations of algebraic number theory basics, including algebraic numbers, Pell equations, and ring structures, which are key to grasping the algebraic framework of self-dual lattices and codes in the paper.
+
+*If you want all of it:* 1.6 hours across 16 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

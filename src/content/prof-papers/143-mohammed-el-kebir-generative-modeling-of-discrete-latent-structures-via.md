@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-mohammed-el-kebir"
-source_hash: "58eb3524abe5b7cbd9b502f1fc5439575bfc71e3382a9578e4cead4f22a2c13e"
+source_hash: "fb7aeb10ef61bcadc2353d531760c50bb90d950906e213ca5e12ba02a4cfa2c3"
 sequence: 143
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: tumor phylogenetics, intra-tumor heterogeneity, phylogeny in
 - [Resolved homepage](http://www.el-kebir.net/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Reinforcement Learning
+**The paper assumes:** policy gradient reinforcement learning, reward shaping, off-policy sampling, maximum likelihood estimation in RL
+**Already in this field?** Skip this entirely if you already understand policy gradient methods and reward-based optimization in reinforcement learning.
+
+This background focuses on reinforcement learning (RL) fundamentals essential to understanding the GReinSS framework introduced in the paper, which relies on policy gradients, dynamic reward scaling, and off-policy learning. The rigorous course option offers a deep, structured university-level treatment of modern deep RL algorithms, while the fast track provides a concise, intuitive introduction suitable for quickly grasping core RL concepts relevant to the paper.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS224R Deep Reinforcement Learning](https://www.youtube.com/playlist?list=PLoROMvodv4rPwxE0ONYRa_itZFdaKCylL) — Stanford Online · 19 videos · 20.6h across 19 episodes
+
+**Watch only this:** Lectures 3 (Policy Gradients), 4 (Actor-Critic Methods), 5 (Off-Policy Actor Critic), and 8 (Reward Learning), about 4.3 hours total — these cover the core RL algorithms and dynamic reward concepts critical for understanding GReinSS.
+
+*Why it unblocks this paper:* Stanford CS224R Deep Reinforcement Learning is a comprehensive, up-to-date course that covers policy gradients, actor-critic methods, off-policy learning, and reward learning in depth, directly matching the key methods used in GReinSS.
+
+*If you want all of it:* 20.6 hours across all 19 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Reinforcement learning unit 3](https://www.youtube.com/playlist?list=PLtU2RuPOzscNxcZS5sIUrzpKCtF2LheB9) — Vedanshi · 10 videos · 1.6h across 10 episodes
+
+**Watch only this:** Episodes 1 (Introduction to Reinforcement Learning), 2 (How does Reinforcement Learning Work), 5 (Deep Learning meets Reinforcement Learning), and 6 (Design the Best Reward Function), about 36 minutes total — enough to grasp key RL ideas and reward shaping relevant to GReinSS.
+
+*Why it unblocks this paper:* This short-form series by Vedanshi offers a clear, visual introduction to reinforcement learning basics, including environment-agent interaction, policy gradients, and reward design, providing a quick but solid conceptual foundation for the paper's RL framework.
+
+*If you want all of it:* 1.6 hours across all 10 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

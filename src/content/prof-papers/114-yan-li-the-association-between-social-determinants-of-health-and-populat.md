@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-yan-li"
-source_hash: "b977d3d511516a292a7ec7205a547270297c66111b6bbd18077accdb285e6878"
+source_hash: "f3576ced921f75d1f1950347c224fd3571e1f9e653d477e2f5a996a93c49e59a"
 sequence: 114
 generator: "outreach-garden: managed"
 ---
@@ -50,6 +50,38 @@ Research interests: Data science, Machine Learning, Natural Language Processing,
 - [Faculty/profile page](https://www.cgu.edu/people/yan-li)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** linear mixed effects modeling
+**The paper assumes:** linear mixed-effects models, hierarchical linear modeling, multilevel regression analysis
+**Already in this field?** Skip this entirely if you already understand hierarchical or mixed-effects regression models and their application in ecological or population health studies.
+
+This background focuses on linear mixed-effects modeling, the core statistical method used in the paper to analyze social determinants of health at multiple geographic levels. The rigorous course option offers a deep, university-level treatment of hierarchical linear models, ideal for readers seeking comprehensive understanding. The fast track provides a concise, visual introduction to linear mixed-effects models, suitable for readers who want a quick but solid grasp of the key concepts and interpretation.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [UCLA STATS 205 - Hierarchical Linear Models (Spring 2024)](https://www.youtube.com/playlist?list=PLAYxx7zX5F1O2HbRr4gORnscbM9EszYbK) — JSB UCLA · 16 videos · 20.0h across 16 episodes
+
+**Watch only this:** Lectures 14 (zero-inflated count regression; random effects), 15 (linear mixed model), and 16 (review), about 3.5 hours total — these focus specifically on mixed models and their interpretation.
+
+*Why it unblocks this paper:* This UCLA STATS 205 course on Hierarchical Linear Models (Spring 2024) is directly relevant as it covers linear mixed models in depth, including fixed and random effects, model diagnostics, and parameter estimation, matching the paper's analytical approach.
+
+*If you want all of it:* 20.0 hours across 16 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Linear mixed effects models](https://www.youtube.com/playlist?list=PL8bwrFnwghzjCgbL16w8zBMRgwEDfNP2r) — Stats, stat · 5 videos · 0.7h across 5 episodes
+
+**Watch only this:** Episodes 1 through 4, about 0.5 hours total — these cover the essentials of linear mixed effects models and how to interpret results.
+
+*Why it unblocks this paper:* This short playlist from 'Stats, stat' provides a clear, concise introduction to linear mixed effects models, covering initial results, input options, output interpretation, and reporting, ideal for quickly understanding the method used in the paper.
+
+*If you want all of it:* 0.7 hours across 5 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

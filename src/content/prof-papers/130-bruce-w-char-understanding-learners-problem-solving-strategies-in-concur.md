@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-bruce-w-char"
-source_hash: "f73979120f9a5aa363fcfa6a2857720b911051d0b898847ad12515600f382a28"
+source_hash: "eeb55dc44770a23c9d62ab2cf6b7482cacc0a819e4a00c6f44f5b54178075449"
 sequence: 130
 generator: "outreach-garden: managed"
 ---
@@ -51,6 +51,38 @@ Research interests: Symbolic and numeric mathematical computation, problem solvi
 - [Identity evidence](http://drexel.edu/cci/contact/Faculty/Char-Bruce)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Concurrent and Parallel Programming
+**The paper assumes:** fundamental concepts of concurrent and parallel programming including threads, synchronization, and non-determinism
+**Already in this field?** Skip this entirely if you already understand the basics of concurrent and parallel programming, including thread management and synchronization mechanisms.
+
+To understand the problem-solving strategies and learning outcomes in concurrent and parallel programming (CPP) explored in the paper, foundational knowledge of CPP concepts such as threads, synchronization, and parallel execution is essential. The rigorous course option offers a deep, structured university-level lecture series covering these topics comprehensively, while the fast track provides a concise, visual introduction to core CPP concepts suitable for quick grounding or review.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS149 I Parallel Computing I 2023 I Kayvon Fatahalian and Kunle Olukotun](https://www.youtube.com/playlist?list=PLoROMvodv4rMp7MTFr4hQsDEcX7Bx6Odp) — Stanford Online · 19 videos · 24.3h across 19 episodes
+
+**Watch only this:** Lectures 1-6, about 7.5 hours — covering Why Parallelism, Multi-Core Processors, Programming Abstractions, Parallel Programming Basics, and Performance Optimization (Work Distribution, Scheduling, Locality, Communication, Contention). This subset provides a solid foundation in CPP concepts necessary to understand the paper's game-based learning context.
+
+*Why it unblocks this paper:* This is a recent, authoritative Stanford university course on parallel computing taught by experts, covering fundamental CPP concepts including threads, synchronization, memory consistency, and GPU programming, directly relevant to the paper's focus on CPP problem-solving strategies.
+
+*If you want all of it:* 24.3 hours across 19 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Concurrent Programming](https://www.youtube.com/playlist?list=PLlsmxlJgn1HJDgOjsG3DbdTx0kmUhCWuy) — Geekific · 10 videos · 1.3h across the first 9 episodes
+
+**Watch only this:** First 7 episodes, about 56 minutes — covering threads, synchronization keywords, thread creation, locks and semaphores, atomic variables, CompletableFuture, and the Dining Philosophers problem. This subset covers essential CPP concepts to quickly grasp the paper's context.
+
+*Why it unblocks this paper:* This short-form playlist by Geekific offers clear, concise visual explainers on core concurrent programming concepts such as threads, synchronization, locks, and common concurrency problems, providing an accessible introduction aligned with the paper's focus on CPP concepts and problem-solving strategies.
+
+*If you want all of it:* 1.3 hours across the first 9 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

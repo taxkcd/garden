@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-gabriel-tsechpenakis"
-source_hash: "aba2de518496ea8efa4ccab9bd94e19677a1524f426ba7b459c7a88eb76dfc0b"
+source_hash: "5cb0109398106c88520c0e989748afaf0223b96f8869f7aac167ebf6442ef170"
 sequence: 99
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,38 @@ Research interests: Computer Vision and Computational Biomedicine, 2D/3D segment
 - [LinkedIn](https://www.linkedin.com/in/gavriil-tsechpenakis/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Molecular and Cellular Neurobiology
+**The paper assumes:** basic molecular neurobiology, protein ubiquitination pathways, neuronal cell biology, and hippocampal neuron structure
+**Already in this field?** Skip this entirely if you already have a solid undergraduate-level understanding of molecular neurobiology and neuronal cell biology.
+
+To understand the molecular and cellular neurobiology underlying FKBP51's regulation of neuronal morphology and protein interactions, foundational knowledge in molecular cell biology and neurobiology is essential. The rigorous course option offers a deep dive into molecular cell biology concepts relevant to protein regulation and cytoskeleton, while the fast track provides a concise neurobiology-focused series that integrates cellular physiology and pathology, helping grasp key neurobiological mechanisms efficiently.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Molecular Cell Biology Lecture Series](https://www.youtube.com/playlist?list=PLEr5Mk7NJ1PfjEonN9vqIIl6WXceckKfo) — Molecular Cell Biology Lecture Series · 42 videos · 22.6h across 42 episodes
+
+**Watch only this:** Lectures 3 Part A & B (Proteins), 9 Part A & B (Translation, Protein Folding, and Proteolysis), and 13 Part A & B (Cytoskeleton), about 3.5 hours total — these cover protein biology and cytoskeletal components critical to the paper's molecular mechanisms.
+
+*Why it unblocks this paper:* This Molecular Cell Biology Lecture Series covers fundamental topics such as protein structure and function, transcription, translation, protein folding and proteolysis, and cytoskeleton biology, all directly relevant to understanding FKBP51's post-translational regulation and interactions with Parkin and microtubule-associated proteins.
+
+*If you want all of it:* 22.6 hours across 42 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Integrated Neurobiology: Structure, Function, and Pathology](https://www.youtube.com/playlist?list=PLXNNy0F5-i23kue8VGHTjV5c12-O66uWW) — Medicine & Meaning · 14 videos · 7.6h across 14 episodes
+
+**Watch only this:** Episodes 13 (Synaptic Transmission & Neurochemistry) and 14 (Cellular Neurophysiology: Resting & Action Potentials Explained), about 1 hour total — these provide essential neurobiological background on neuronal function and signaling.
+
+*Why it unblocks this paper:* The Integrated Neurobiology series offers a concise, clinically oriented overview of neuroanatomy, cellular physiology, and pathology, including synaptic transmission and cellular neurophysiology, which helps quickly contextualize the neuronal morphology and functional implications of FKBP51 regulation.
+
+*If you want all of it:* 7.6 hours across 14 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-haitao-wang"
-source_hash: "553a7bbbf993adcc2846b168aa0b3da26f4e0ac1ee6d8c86e36fae2a48bf7119"
+source_hash: "d86f2b9bf7f9042e72142d95f7d7b543c27aae841df672a7ed868b6d1f789f2c"
 sequence: 105
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: computational geometry, algorithms and data structures, theo
 - [Resolved homepage](http://www.cs.utah.edu/~hwang)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Computational Geometry
+**The paper assumes:** polygon decompositions, visibility polygons, geometric data structures, stabbing queries, hierarchical cuttings
+**Already in this field?** Skip this entirely if you already have a solid undergraduate-level understanding of computational geometry focusing on polygon algorithms and geometric data structures.
+
+This background prepares the reader to understand the computational geometry concepts essential for the paper on visibility queries in simple polygons, including polygon decompositions, visibility polygons, and geometric data structures. The rigorous course option offers a deep, structured university-level lecture series, while the fast track provides a concise, intuition-focused playlist for quicker comprehension. Choose the rigorous course for thorough theoretical grounding and the fast track for a rapid but solid overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Computational Geometry Lecture Videos (METU-CENG) (Fall 2020-2021)](https://www.youtube.com/playlist?list=PL0X39D1PSBWP0PoU0NZY8NHpA7340PeLA) — Tolga Can · 22 videos · 19.8h across 22 episodes
+
+**Watch only this:** Episodes 1 through 7 ("CENG570 Computational Geometry: Course Intro" through "CENG570 Comp Geo: Polygon Triangulation, the Art Gallery Guarding Problem Part #2"), about 6 hours 10 minutes — these cover geometric preliminaries, polygon triangulation, and visibility concepts foundational for understanding the paper's decomposition and query structures.
+
+*Why it unblocks this paper:* This is a full university course on computational geometry from Middle East Technical University, covering polygon triangulation, visibility graphs, and related geometric data structures directly relevant to the paper's focus on polygon decompositions and visibility queries.
+
+*If you want all of it:* All 22 episodes, about 19.8 hours.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Computational Geometry](https://www.youtube.com/playlist?list=PLTZbNwgO5ebqdDy16sKYjmfCzkzoS0fxN) — saurabhschool · 6 videos · 1.1h across 6 episodes
+
+**Watch only this:** All 6 episodes, about 1.1 hours — covers line segment properties, intersection algorithms, closest pair, and convex hull algorithms that build intuition for polygon visibility and decomposition.
+
+*Why it unblocks this paper:* This short playlist provides clear, concise explanations of core computational geometry problems such as line segment intersection and convex hulls, which underpin understanding polygon visibility and decomposition techniques in a fraction of the time.
+
+*If you want all of it:* All 6 episodes, about 1.1 hours.
 
 ## Track 1 — Academic deep-dives (long-form)
 

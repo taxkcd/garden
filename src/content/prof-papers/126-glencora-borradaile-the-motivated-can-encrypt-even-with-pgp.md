@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-glencora-borradaile"
-source_hash: "ee69ea63abf5c61c98d5e8c671ac2de86340dd81740ca9d83e5366cb89e347b7"
+source_hash: "a48ed5b23ae1ebbd9b0c075009658e2be9652da10b72ff08635c81d4c714383e"
 sequence: 126
 generator: "outreach-garden: managed"
 ---
@@ -50,6 +50,38 @@ This study investigates whether activists who face real privacy threats can over
 - [Identity evidence](http://eecs.oregonstate.edu/people/borradaile-glencora)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Qualitative Comparative Analysis
+**The paper assumes:** set-theoretic methods for social science, Qualitative Comparative Analysis methodology, small-N case study analysis
+**Already in this field?** Skip this entirely if you already understand Qualitative Comparative Analysis and its application in social science research.
+
+This background focuses on Qualitative Comparative Analysis (QCA), the core methodology used in the paper to analyze combinations of factors influencing long-term PGP adoption. The rigorous course option provides a comprehensive, structured university-level treatment of research methodology including QCA foundations, while the fast track offers a concise, focused introduction to fuzzy-set QCA specifically, ideal for quickly grasping the key concepts and procedures relevant to the paper.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Research Methodology-Lecture Series-NTA-CUET](https://www.youtube.com/playlist?list=PLKDFo-lgDXbPJtUqQtB5-VQGCmbMD02qp) — The Scientific Guru's · 35 videos · 12.6h across 35 episodes
+
+**Watch only this:** Lectures 1 to 4 (Research Problem, Research Design, Sampling Design & Data Collection) plus Lecture 7 (Data Analysis - Reliability & Validity), about 1.75 hours total — these cover the core research methodology concepts underpinning QCA logic and small-N case analysis.
+
+*Why it unblocks this paper:* This Research Methodology lecture series by The Scientific Guru's covers essential research design, data collection, and analysis methods foundational to understanding QCA's place in social science research. It provides the rigorous context needed to appreciate the paper's methodology and interpret its findings.
+
+*If you want all of it:* Approximately 12.6 hours across all 35 episodes.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [fsQCA (Fuzzy-set Qualitative Comparative Analysis)](https://www.youtube.com/playlist?list=PLA_SZVmfyUOO47I1i-rD8ZUwFOsxOzFwK) — Research Bay · 15 videos · 2.9h across 15 episodes
+
+**Watch only this:** Episodes 8 (Transforming Likert Scores for fsQCA), 9 (fsQCA- Introduction to Configurational Analysis), 10 (Principles Behind fsQCA), and 11 (Core & Peripheral Conditions in fsQCA), about 45 minutes total — these episodes cover the essential fsQCA concepts and procedures needed to understand the paper's analysis.
+
+*Why it unblocks this paper:* This concise fsQCA playlist by Research Bay directly addresses fuzzy-set Qualitative Comparative Analysis, the exact variant of QCA used in the paper. It walks through key steps like data calibration, truth table analysis, and necessity testing, providing a focused, practical introduction to the methodology.
+
+*If you want all of it:* Approximately 2.9 hours across all 15 episodes.
 
 ## Track 1 — Academic deep-dives (long-form)
 

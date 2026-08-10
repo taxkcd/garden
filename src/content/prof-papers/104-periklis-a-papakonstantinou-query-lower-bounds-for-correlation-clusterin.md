@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-periklis-a-papakonstantinou"
-source_hash: "cdefe799cde5f0cd52c3cde38e7e0b89d87e072ee9b10f437a2efbc1715a8e6d"
+source_hash: "05d354d5aee29b615901bcdddec035a153a8af6446ba1f11cebb6835161ccc28"
 sequence: 104
 generator: "outreach-garden: managed"
 ---
@@ -54,6 +54,38 @@ Research interests: foundations of computing, computational complexity, mathemat
 - [Resolved homepage](http://papakons.business.rutgers.edu/#)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** communication complexity theory
+**The paper assumes:** communication complexity, information theory, and theoretical computer science
+**Already in this field?** Skip this entirely if you already have a solid understanding of communication complexity and its applications in theoretical computer science.
+
+This background focuses on communication complexity theory, which is central to understanding the query lower bounds and memory-query tradeoffs in the paper. The rigorous course option provides a deep, structured university-level lecture series covering fundamental and advanced concepts in information theory and communication complexity. The fast track offers a concise tutorial series on information theory basics, suitable for quickly grasping key concepts underpinning the paper's techniques.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Information and Coding Theory (Madhur Tulsiani, TTIC, 2021)](https://www.youtube.com/playlist?list=PLidiQIHRzpXJujWKblOWPKoiD2ltRihYj) — Theoretical Computer Science School (TCSS) · 17 videos · 22.6h across 17 episodes
+
+**Watch only this:** Lectures 1-5 and 15-16, about 8.5 hours — covering entropy, mutual information, Fano's inequality, and communication complexity lower bounds relevant to the paper's techniques.
+
+*Why it unblocks this paper:* This course by Madhur Tulsiani at TTIC covers foundational information theory and communication complexity topics, including Fano's inequality and communication lower bounds, which are directly used in the paper's proofs and technical approach.
+
+*If you want all of it:* 22.6 hours across all 17 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Introduction to Information Theory Tutorial](https://www.youtube.com/playlist?list=PLF0b3ThojznQAEXlZQmbTTFNH96i2iZPC) — Complexity Explorer · 12 videos · 2.1h across 12 episodes
+
+**Watch only this:** Episodes 1-7, about 1.2 hours — covering measuring information, entropy, mutual information, and fundamental formulas of information theory.
+
+*Why it unblocks this paper:* This short tutorial series from Complexity Explorer provides clear, visual explanations of core information theory concepts like entropy, mutual information, and communication capacity, enabling a quick but solid grasp of the theoretical tools used in the paper.
+
+*If you want all of it:* 2.1 hours across all 12 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-lawrence-o-hall"
-source_hash: "3765e437ab0af28d35effde26dc99aaed3409598d24086886e52be4baebcbf03"
+source_hash: "0c1c2753b84e3c083e7d6966ec03e5b28db97c861ff64a27c6e4ab57bfd5fb55"
 sequence: 120
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: distributed machine learning, data mining, pattern recogniti
 - [Professor website](https://cse.usf.edu/~lohall/rtn.pdf)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** time series forecasting
+**The paper assumes:** time series forecasting methods and evaluation metrics
+**Already in this field?** Skip this entirely if you already understand time series forecasting techniques and their evaluation in machine learning contexts.
+
+This background focuses on time series forecasting, a core methodology used in the paper to model and predict social media information diffusion. The rigorous course option provides a deep, structured university-level understanding of forecasting methods, while the fast track offers a concise, intuition-driven introduction suitable for quickly grasping key concepts without extensive time investment. Choose the lane that fits your available time and depth of interest.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Jan 2024 Business Forecasting | IIT Bombay](https://www.youtube.com/playlist?list=PLOzRYVm0a65diLBYrP7EpXv7FZFM0Zf3z) — NPTEL IIT Bombay · 38 videos · 21.7h across 38 episodes
+
+**Watch only this:** Lectures 4A and 4B (Components of a Time Series & Measures of Forecast Accuracy), Lectures 5A and 5B (Moving Average Methods), Lectures 9A and 10A (Exponential Smoothing and Trend Projections), Lectures 14A and 14B (ARIMA models), about 4.5 hours total — these cover the essential time series concepts and models relevant to the paper's methodology.
+
+*Why it unblocks this paper:* This IIT Bombay Business Forecasting course covers a comprehensive range of forecasting methods including time series components, model building, and evaluation metrics, directly supporting the paper's use of specialized time series forecasting models and critique of traditional metrics like RMSE and MAE.
+
+*If you want all of it:* 21.7 hours across 38 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Basic Introduction to Time Series Analysis & Forecasting (in R Studio)](https://www.youtube.com/playlist?list=PLasapTYuX87FXPUVye-xuCFmWOPDBKChi) — Data & Donuts · 5 videos · 0.4h across 5 episodes
+
+**Watch only this:** Episodes 1 to 5 (VERY BASIC introduction to TIME SERIES ANALYSIS through Time Series Forecast Evaluation), about 25 minutes total — this concise set covers the foundational ideas and evaluation methods needed to follow the paper's approach.
+
+*Why it unblocks this paper:* This short playlist by Data & Donuts provides a clear, beginner-friendly introduction to time series analysis and forecasting concepts, including decomposition and evaluation metrics, which are crucial for understanding the paper's modular forecasting approach and metric critiques.
+
+*If you want all of it:* 0.4 hours across 5 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-daniel-grosu"
-source_hash: "c59a6d28ec8dee50073eac11297b11c7ba0a9d47cc7a2692eccac5ec75e3641c"
+source_hash: "f43ea2e3e58c9d96e40e2b1d448cb305fddad0193b9379ba2ede7732c627e486"
 sequence: 122
 generator: "outreach-garden: managed"
 ---
@@ -57,6 +57,38 @@ Research interests: cloud and edge computing; parallel and distributed algorithm
 - [Social profile](https://twitter.com/WayneStateEng)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Graph theory and algorithms
+**The paper assumes:** graph theory, bipartite graphs, cliques, graph algorithms, maximum bipartite matching, shortest path algorithms
+**Already in this field?** Skip this entirely if you already have a solid undergraduate-level understanding of graph theory and classical graph algorithms.
+
+To understand the paper on speeding up graph algorithms via clique partitioning, a solid grasp of graph theory fundamentals and classical graph algorithms like bipartite matching and shortest paths is essential. The rigorous course option offers a comprehensive university-level introduction to algorithms including graph algorithms, while the fast track provides a concise, focused series of explainers on key graph algorithms relevant to this paper. Choose the course for deep theoretical grounding and the fast track for a quicker, intuition-driven overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [MIT 6.006 Introduction to Algorithms, Fall 2011](https://www.youtube.com/playlist?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb) — MIT OpenCourseWare · 47 videos · 41.8h across 47 episodes
+
+**Watch only this:** Lectures 13 to 18 (Breadth-First Search, Depth-First Search, Single-Source Shortest Paths, Dijkstra, Bellman-Ford, Speeding up Dijkstra), about 5.3 hours — these cover core graph traversal and shortest path algorithms essential for the paper.
+
+*Why it unblocks this paper:* MIT 6.006 Introduction to Algorithms, Fall 2011 is a rigorous, authoritative university course covering fundamental graph algorithms such as BFS, DFS, shortest paths (Dijkstra, Bellman-Ford), and maximum bipartite matching, which are directly relevant to understanding the CPGR algorithm and its improvements.
+
+*If you want all of it:* 41.8 hours across 47 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Graph Algorithms Roadmap: BFS → DFS → A* → Flow Algorithms](https://www.youtube.com/playlist?list=PL0TTjZzXXI78EJFmAAjdbnCTiIzLHQvpV) — Arun Tyagi · 14 videos · 7.4h across 14 episodes
+
+**Watch only this:** Episodes 1, 2, 3, 7, 8, and 10 (Find Eventual Safe States, Topological Sort using DFS, Kahn's Algorithm, Kruskal's Algorithm, Floyd-Warshall Algorithm, Bellman-Ford Algorithm Explained), about 3 hours — these cover fundamental graph traversal, shortest paths, and matching-related algorithms relevant to the paper.
+
+*Why it unblocks this paper:* The 'Graph Algorithms Roadmap: BFS → DFS → A* → Flow Algorithms' playlist by Arun Tyagi provides concise, clear, and well-structured explainers on key graph algorithms including BFS, DFS, shortest paths, and flow algorithms, which align well with the paper's focus on graph restructuring and matching algorithms.
+
+*If you want all of it:* 7.4 hours across 14 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

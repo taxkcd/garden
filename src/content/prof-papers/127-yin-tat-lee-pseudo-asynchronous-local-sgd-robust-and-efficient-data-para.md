@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-yin-tat-lee"
-source_hash: "b27f5d2cf0d6be429eb6cedd5d8d33157003c97c894184d80520507b101f583b"
+source_hash: "0266ede250fddf6c6acb0e41cfcfb15e21e99f100640583d3dfcdf5fbf323966"
 sequence: 127
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: convex optimization, convex geometry, graph algorithms, onli
 - [Resolved homepage](https://www.cs.washington.edu/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Convex Optimization
+**The paper assumes:** convex optimization theory, smooth and strongly convex functions, proximal methods, convergence analysis of optimization algorithms
+**Already in this field?** Skip this entirely if you already have a solid understanding of convex optimization theory and convergence proofs for gradient-based algorithms.
+
+This background focuses on convex optimization, which is essential for understanding the theoretical convergence guarantees and algorithmic design of PALSGD in the paper. The rigorous course option provides a deep, structured university-level treatment of convex optimization concepts, while the fast track offers a shorter, more accessible playlist covering the same foundational topics for quicker comprehension. Choose the rigorous course if you want a thorough understanding of the mathematical foundations; choose the fast track if you need a solid but time-efficient overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford EE364A Convex Optimization I Stephen Boyd I 2023](https://www.youtube.com/playlist?list=PLoROMvodv4rMJqxxviPa4AmDClvcbHi6h) — Stanford Online · 18 videos · 23.7h across 18 episodes
+
+**Watch only this:** Lectures 1-7, about 9 hours — covering introduction, convex sets and functions, optimality conditions, and proximal operators, which form the theoretical basis for PALSGD's convergence guarantees.
+
+*Why it unblocks this paper:* This is the Stanford EE364A Convex Optimization I course by Stephen Boyd, a leading expert in convex optimization. It covers key concepts like L-smoothness, strong convexity, and proximal methods that are directly relevant to the PALSGD theoretical analysis and convergence proofs.
+
+*If you want all of it:* All 18 lectures, about 23.7 hours.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Mathematics - Convex Optimization](https://www.youtube.com/playlist?list=PLbMVogVj5nJQHFqfiSdgaLCCWvDcm1W4l) — nptelhrd · 42 videos · 31.5h across 42 episodes
+
+**Watch only this:** Episodes 1-8, about 6 hours — covering convex sets, functions, optimization basics, and proximal gradient methods, sufficient for understanding the key theoretical ideas behind PALSGD.
+
+*Why it unblocks this paper:* This NPTEL series on Mathematics - Convex Optimization provides concise, clear explanations of convex optimization fundamentals. It is shorter per episode and covers the core concepts needed to grasp the PALSGD method's theoretical underpinnings in a more time-efficient manner.
+
+*If you want all of it:* All 42 episodes, about 31.5 hours.
 
 ## Track 1 — Academic deep-dives (long-form)
 

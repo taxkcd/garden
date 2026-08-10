@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-david-zuckerman"
-source_hash: "8d2976df7c0ece0188f4f48c047489e76d355f42d5ebd960b6989f744b3b2ba4"
+source_hash: "1ce392574099f5059f0c9abbf7a1d03ecb9ee8a8492b37785ad1b87a36ca1e12"
 sequence: 98
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: pseudorandomness and the role of randomness in computing, co
 - [Resolved homepage](https://www.cs.utexas.edu/~diz/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** probability theory and random processes
+**The paper assumes:** undergraduate probability theory, concentration inequalities, random variables and expectations
+**Already in this field?** Skip this entirely if you have completed an undergraduate course covering probability theory with a focus on concentration inequalities and random processes.
+
+This background focuses on probability theory and random processes, essential for understanding the probabilistic analysis and tail bounds in the paper on linear hashing. The rigorous course option provides a deep and structured university-level treatment of probability, suitable for readers seeking thorough mastery. The fast track offers a concise, intuition-driven introduction to key probability concepts, ideal for readers needing a quicker but solid foundation.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [6.041 Probabilistic Systems Analysis and Applied Probability](https://www.youtube.com/playlist?list=PLUl4u3cNGP61MdtwGTqZA0MreSaDybji8) — MIT OpenCourseWare · 25 videos · 21.1h across 25 episodes
+
+**Watch only this:** Episodes 1 through 13 ("1. Probability Models and Axioms" to "13. Bernoulli Process"), about 10.8 hours — these cover probability axioms, conditioning, independence, counting, and discrete random variables, which are critical for understanding the paper's probabilistic framework.
+
+*Why it unblocks this paper:* MIT's 6.041 Probabilistic Systems Analysis and Applied Probability course covers foundational probability models, random variables, conditioning, and tail bounds, directly supporting the paper's use of probabilistic inequalities and expected maximum load analysis.
+
+*If you want all of it:* All 25 episodes, about 21.1 hours
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Random variables and probability distributions | Probability and Statistics | Khan Academy](https://www.youtube.com/playlist?list=PLU5aQXLWR3_xDN0M2ZeZ_zHIia0e42_3O) — Khan Academy Probability and Statistics · 19 videos · 2.9h across 19 episodes
+
+**Watch only this:** Episodes 1 through 9 ("Random variables" to "Comparing insurance with expected value"), about 1.4 hours — these cover random variables, distributions, and expectation, giving a quick but solid grounding in probability essentials.
+
+*Why it unblocks this paper:* Khan Academy's Probability and Statistics playlist offers clear, visual explanations of random variables and probability distributions, providing an accessible introduction to the core concepts needed to grasp the paper's probabilistic arguments.
+
+*If you want all of it:* All 19 episodes, about 2.9 hours
 
 ## Track 1 — Academic deep-dives (long-form)
 

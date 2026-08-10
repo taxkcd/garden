@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-eric-bach"
-source_hash: "4c18c35a636cabc7af731d9d526c7a032616a49de2c1caec3212a13fbd8cf84a"
+source_hash: "cf819496557011c85fee08a61f3f3f366cc962acf7c2d4285cc6bd3643daccb4"
 sequence: 115
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: Theoretical computer science, computational number theory, a
 - [Resolved homepage](https://pages.cs.wisc.edu/~bach/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** measure-theoretic probability
+**The paper assumes:** measure-theoretic probability, convergence of random variables, Lebesgue integration, probability measures
+**Already in this field?** Skip this entirely if you already have a solid understanding of measure-theoretic probability and rigorous probability theory.
+
+This background focuses on measure-theoretic probability, which is essential for understanding the rigorous proofs and asymptotic error analysis in the paper. The course option provides a deep, structured university-level treatment suitable for readers seeking full mastery of the foundational concepts and tools. The fast track offers a concise, intuition-driven introduction to the same subject, ideal for readers who want a solid grasp of key ideas without investing extensive time.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Introduction to Probability Theory and Stochastic Processes](https://www.youtube.com/playlist?list=PLp6ek2hDcoNBtK-hVSSPlbBzfxXwWON4x) — NPTEL IIT Delhi · 93 videos · 18.7h across the first 60 episodes
+
+**Watch only this:** Episodes 1 through 23, about 7 hours — covering from probability space axioms through jointly continuous random variables, which includes all foundational measure-theoretic probability concepts needed to understand the paper's proofs.
+
+*Why it unblocks this paper:* This NPTEL IIT Delhi course covers probability theory and stochastic processes with a strong foundation in measure theory, including probability spaces, random variables, and convergence concepts, directly supporting the paper's rigorous proofs and measure-theoretic probability framework.
+
+*If you want all of it:* About 18.7 hours across the first 60 episodes.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Measure Theoretic Probability](https://www.youtube.com/playlist?list=PLcwjc2OQcM4vCdi7mKHrcfKogSELKnEio) — Axiom Tutor · 12 videos · 1.6h across 12 episodes
+
+**Watch only this:** Videos 1 through 9, about 1.5 hours — covering introduction, motivation, probability measures, sigma algebras, and measurable functions, sufficient for grasping the measure-theoretic foundations used in the paper.
+
+*Why it unblocks this paper:* This Axiom Tutor playlist offers a concise and focused introduction to measure-theoretic probability, covering key concepts such as sigma algebras, probability measures, and measurable functions, providing a quick but rigorous overview aligned with the paper's needs.
+
+*If you want all of it:* About 1.6 hours across all 12 episodes.
 
 ## Track 1 — Academic deep-dives (long-form)
 

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-jason-d-hartline"
-source_hash: "8cab3970d3c0c4af07d52f57c41502eb4604b420832623a267e17d4211af6ca2"
+source_hash: "f6517a36e4313ccbb618d4ac307eb308d3997cfe4de51a0b02a49d5654711571"
 sequence: 117
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,38 @@ Research interests: design and analysis methodologies from computer science to u
 - [Lab website](https://onlinemarketslab.northwestern.edu/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Mechanism Design and Auction Theory
+**The paper assumes:** mechanism design, auction theory, incentive compatibility, individual rationality, pricing mechanisms, approximation algorithms in economics
+**Already in this field?** Skip this entirely if you already have a solid understanding of mechanism design and auction theory, including incentive compatibility and pricing-based mechanisms.
+
+To understand the paper on simple mechanisms for agents with non-linear utilities, a solid grasp of mechanism design and auction theory is essential, especially concepts like incentive compatibility, individual rationality, and pricing-based mechanisms such as sequential posted pricing. The rigorous course option offers a deep, structured dive into advanced mechanism design principles, while the fast track provides a focused, shorter playlist that covers core auction market theory concepts relevant to the paper. Choose the rigorous course for a comprehensive theoretical foundation and the fast track for a quicker, intuition-driven overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Advanced Mechanism Design (Stanford CS364B, Winter 2014)](https://www.youtube.com/playlist?list=PLEGCF-WLh2RI77PL4gwLld_OU9Zh3TCX9) — Tim Roughgarden Lectures · 21 videos · 25.1h across 21 episodes
+
+**Watch only this:** Lectures 1-6 (Frontiers in Mechanism Design Lectures 1 to 6), about 7 hours — covering incentive compatibility, unit-demand bidders, clinching auctions, and gross substitutes, which build the foundation for understanding pricing-based mechanisms and approximation in auctions.
+
+*Why it unblocks this paper:* This Stanford course by Tim Roughgarden covers advanced mechanism design topics including incentive compatibility, Bayesian incentive-compatibility, and revenue-maximizing auctions, directly underpinning the theoretical framework and approximation guarantees discussed in the paper.
+
+*If you want all of it:* 25.1 hours across 21 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Auction Market Theory](https://www.youtube.com/playlist?list=PL1vQ1_bH1I4Cno0YOeVjbuXl04PgFrWnz) — Hamilton · 14 videos · 9.1h across the first 9 episodes
+
+**Watch only this:** First 3 episodes (Auction Market Theory Basics, Auction Market Theory - Volume Profile - Rob Mitchell, Volume Profile And Order Flow Analysis Understanding The Market Through Market Generated Information), about 3 hours — sufficient to grasp core auction theory concepts and market structure relevant to mechanism design.
+
+*Why it unblocks this paper:* This playlist on Auction Market Theory by Hamilton provides a concise and clear introduction to auction concepts, volume profile, and order flow analysis, which helps build intuition about auction mechanisms and market behavior relevant to the paper's focus on simple pricing mechanisms.
+
+*If you want all of it:* 9.1 hours across the first 9 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

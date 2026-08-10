@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-saurabh-sinha"
-source_hash: "61be5beaa5a904616db52424e8049ba34a95136ef9961caf4c3086ed15c547e4"
+source_hash: "f6ef3a865bdf39ae681a60cdead7c5c8fdd126d72cc779e3c7ee57d83e7b669f"
 sequence: 111
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: gene regulation; single-cell multi-omics; spatial omics data
 - [Google Scholar](https://scholar.google.com/citations?user=7BM1uyYAAAAJ&hl=en)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Causal inference in machine learning
+**The paper assumes:** causal inference theory, treatment effect estimation, confounding adjustment, interpretable machine learning
+**Already in this field?** Skip this entirely if you already understand causal inference concepts and their integration with machine learning models.
+
+This background focuses on causal inference in machine learning, essential for understanding the theoretical foundations and practical implications of interpreting SHAP values as causal estimands under confounding, as done in the CIMLA paper. The rigorous course option offers a deep dive into causal effect estimation and machine learning integration, while the fast track provides a concise, intuition-driven introduction to core causal inference concepts and frameworks. Choose the course for comprehensive mastery and the fast track for a quick yet solid conceptual grounding.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Machine Learning & Causal Inference: A Short Course](https://www.youtube.com/playlist?list=PLxq_lXOUlvQAoWZEqhRqHNezS30lI49G-) — Stanford Graduate School of Business · 19 videos · 10.3h across 19 episodes
+
+**Watch only this:** Episodes 4-8, about 2.7 hours — covering Prediction vs. Estimation, Average Treatment Effects introduction, Confounding, Propensity Scores, and Double Robustness, which are foundational for understanding causal estimands and confounding addressed by CIMLA.
+
+*Why it unblocks this paper:* This Stanford Graduate School of Business course systematically covers machine learning methods for causal inference, including treatment effects, confounding, and heterogeneous effects, directly relevant to CIMLA's approach of estimating local treatment effects with ML and SHAP.
+
+*If you want all of it:* 10.3 hours across 19 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Causal Inference](https://www.youtube.com/playlist?list=PLLFnyzDUVf86oJ9tRvaxQqjd71Azz3_AX) — AI, ML, SWE, Tech Expert · 8 videos · 2.5h across 8 episodes
+
+**Watch only this:** Episodes 2, 3, 4, and 7, about 1.2 hours — covering Must Know Causal Inference Frameworks, Confounding Variables, Causal Graphs and Do-Calculus (Part 1), and Potential Outcomes, essential for understanding the causal assumptions and estimands in the paper.
+
+*Why it unblocks this paper:* This short series provides clear, visual explanations of causal inference basics, including confounding, causal graphs, and potential outcomes, giving a quick but solid conceptual framework to grasp the assumptions and causal interpretation of SHAP values in CIMLA.
+
+*If you want all of it:* 2.5 hours across 8 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

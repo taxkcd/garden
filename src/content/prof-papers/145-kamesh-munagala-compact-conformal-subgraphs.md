@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-kamesh-munagala"
-source_hash: "eca1837f40aa6bae2e82b774768525355009885af91f394f0223c09601fbacf7"
+source_hash: "3c40c921c26204813d5658ad29fa84e09fcb2e74785b8b263a63be4f54ba6766"
 sequence: 145
 generator: "outreach-garden: managed"
 ---
@@ -54,6 +54,38 @@ Research interests: theoretical computer science, approximation algorithms, onli
 - [DBLP](https://dblp.org/pid/m/KameshMunagala.html)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Combinatorial Optimization
+**The paper assumes:** combinatorial optimization, approximation algorithms, linear programming relaxation, graph and hypergraph theory
+**Already in this field?** Skip this entirely if you already have a solid understanding of combinatorial optimization and approximation algorithms, including LP relaxations and rounding techniques.
+
+To understand the combinatorial optimization foundations behind the paper "Compact Conformal Subgraphs," these two carefully selected resources provide complementary learning paths. The rigorous course offers a deep dive into linear programming, approximation algorithms, and graph optimization concepts essential for grasping the paper's LP rounding algorithm and bicriteria guarantees. The fast track playlist delivers a concise, intuition-driven introduction to combinatorial optimization and approximation algorithms, suitable for quickly building relevant background without a heavy time commitment.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Combinatorial Optimisation (University of Warwick MA252)](https://www.youtube.com/playlist?list=PLtxJg53s2o0PqIAEphtjIaqXTouaWYR0j) — Jonathan Noel · 26 videos · 15.1h across 26 episodes
+
+**Watch only this:** Lectures 1-3 (Linear Programming Introduction, Farkas' Lemma, Strong Duality for Linear Programming), Lectures 7-9 (Menger's Theorem, Max-Flow Min-Cut, Ford-Fulkerson Algorithm), and Lectures 10-12 (Complexity Theory, Reductions, SAT and k-SAT, NP-completeness reductions), about 5.5 hours total — this subset covers the core LP theory, min-cut algorithms, and complexity background relevant to the paper.
+
+*Why it unblocks this paper:* This University of Warwick course by Jonathan Noel covers linear programming, max-flow min-cut, complexity theory, NP-completeness, and approximation algorithms, directly supporting the paper's combinatorial optimization formulation and LP rounding approach with theoretical rigor.
+
+*If you want all of it:* 15.1 hours across all 26 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Combinatorial Optimzn and RL](https://www.youtube.com/playlist?list=PLNOX2_l5bk66rhbj7tH_DY037eMMGlkPw) — David Urpani · 7 videos · 2.2h across 7 episodes
+
+**Watch only this:** Episodes 1-4 (How to Make a Path Planning Algorithm Easily, Ant Colony Optimization and Genetic Algorithms for the TSP, Approximation Algorithms: Traveling Salesman Problem, Traveling Salesman Problem Visualization), about 1.2 hours total — these cover key combinatorial optimization ideas and approximation algorithms with intuitive examples.
+
+*Why it unblocks this paper:* David Urpani's short playlist provides clear, visual explanations of combinatorial optimization concepts including path planning, approximation algorithms for TSP, and heuristic methods, offering an accessible introduction to combinatorial optimization relevant to understanding the paper's problem context and algorithmic approach.
+
+*If you want all of it:* 2.2 hours across all 7 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

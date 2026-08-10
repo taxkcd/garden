@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-piotr-krysta"
-source_hash: "9a914e9de209be46f210acd9386a6cbc3f5d130715129c8e5d5236546f108c33"
+source_hash: "0e43630d37c4dea8dfcf54ac586288a4d5f55193b8b2b949ea0ed6607635bf6f"
 sequence: 146
 generator: "outreach-garden: managed"
 ---
@@ -56,6 +56,38 @@ Research interests: theoretical computer science with an emphasis on algorithmic
 - [DBLP](https://dblp.org/pid/k/PiotrKrysta.html)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Algorithmic Mechanism Design
+**The paper assumes:** algorithmic mechanism design, truthful mechanism design, approximation algorithms for auctions, single-parameter agent models
+**Already in this field?** Skip this entirely if you already understand the basics of truthful mechanism design and approximation algorithms in auction settings.
+
+To understand the design of truthful mechanisms and approximation algorithms for capacity-constrained position auctions, a solid grasp of algorithmic mechanism design and game theory is essential. The rigorous course offers a deep, structured university-level treatment of these topics, while the fast track provides a concise, accessible introduction to the core concepts of game theory and mechanism design. Choose the rigorous course for comprehensive understanding and the fast track for a quicker conceptual overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Algorithmic Game Theory (Stanford CS364A, Fall 2013)](https://www.youtube.com/playlist?list=PLEGCF-WLh2RJBqmxvZ0_ie-mleCFhi2N4) — Tim Roughgarden Lectures · 20 videos · 25.2h across 20 episodes
+
+**Watch only this:** Lectures 2-5 (Mechanism Design Basics, Myerson's Lemma, Algorithmic Mechanism Design, Revenue-Maximizing Auctions), about 5 hours — these cover the core concepts of mechanism design, monotonicity, and truthful auctions needed to understand the paper's mechanisms.
+
+*Why it unblocks this paper:* This Stanford course by Tim Roughgarden covers algorithmic game theory and mechanism design fundamentals, including monotonicity, truthfulness, and approximation algorithms, directly relevant to the paper's focus on truthful randomized mechanisms for capacity-constrained matching.
+
+*If you want all of it:* All 20 lectures, about 25.2 hours.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Game Theory and Algorithmic Mechanism Design](https://www.youtube.com/playlist?list=PLeyWfpm2PI_ek2mCJJhjX3G6QRS7LaW9c) — Swaprava Nath, IIT Bombay · 63 videos · 18.6h across the first 60 episodes
+
+**Watch only this:** Modules 01-03 (Introduction to Game Theory, Introduction to Mechanism Design, The Game of Chess), about 54 minutes — these modules introduce the foundational ideas of game theory and mechanism design relevant to the paper.
+
+*Why it unblocks this paper:* This lecture series from IIT Bombay provides a clear, concise introduction to game theory and algorithmic mechanism design, covering key concepts like Nash equilibrium, mechanism design basics, and truthful mechanisms in a shorter format suitable for quick background.
+
+*If you want all of it:* First 60 episodes, about 18.6 hours.
 
 ## Track 1 — Academic deep-dives (long-form)
 

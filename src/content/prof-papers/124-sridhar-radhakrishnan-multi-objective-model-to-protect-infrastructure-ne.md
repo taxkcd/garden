@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-sridhar-radhakrishnan"
-source_hash: "da2ca99dec0de18ae2db5098c7ef8f29efb0424a03a057bab7abcfe398e022cf"
+source_hash: "b32cd6f19695a0a83cb95ed74ec147801fb2dd02c6dc1b6ecf222ee774b2c773"
 sequence: 124
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: Design, implementation and analysis of network protocols and
 - [Identity evidence](https://sridharradhakrishnan.info)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Epidemiological modeling with SIR
+**The paper assumes:** epidemiological compartmental models, SIR model dynamics, probabilistic infection and recovery processes, cellular automata simulation of epidemics
+**Already in this field?** Skip this entirely if you already understand the SIR epidemiological model and its use in simulating contagion processes on networks.
+
+This background focuses on epidemiological modeling with the susceptible-infected-recovered (SIR) model, which is central to understanding the disinformation diffusion mechanism in the paper. The rigorous course offers a deep, structured university-level introduction to mathematical modeling including SIR dynamics, while the fast track provides a concise, intuition-driven explainer series specifically on the SIR model and its application to disease spread, suitable for quickly grasping the core concepts.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [EXCELing with Mathematical Modeling](https://www.youtube.com/playlist?list=PLLy_2iUCG87CZucbP4tMMnOYOwExq0E9_) — IIT Roorkee July 2018 · 62 videos · 29.8h across the first 60 episodes
+
+**Watch only this:** Lectures 15 (Growth Models(Continuous model)), 9 (Linear Stability Analysis-I), and 10 (Linear Stability Analysis-II), about 1.5 hours total — these cover continuous growth models and stability analysis essential to SIR modeling.
+
+*Why it unblocks this paper:* This IIT Roorkee course covers mathematical modeling comprehensively, including growth models and stability analysis relevant to SIR modeling. It provides a rigorous foundation for understanding the assumptions and dynamics of epidemiological models like the one used in the paper.
+
+*If you want all of it:* About 29.8 hours across the first 60 episodes.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [SIR Model Spread of Disease](https://www.youtube.com/playlist?list=PLwndNzpz2DictX7vXoLi0alA9RaP-lXIN) — Raulitango · 12 videos · 5.5h across the first 10 episodes
+
+**Watch only this:** Episodes 1 to 4 (SIR Model For Disease Spread- 1. Introduction through Python Implementation via coLaboratory Notebooks), about 2 hours total — these cover the fundamentals and practical implementation of the SIR model.
+
+*Why it unblocks this paper:* This playlist by Raulitango is a focused, well-structured series on the SIR model for disease spread, including introduction, preparation, numerical methods, and implementation. It provides a clear, visual, and practical understanding of the SIR model in about 5.5 hours total.
+
+*If you want all of it:* About 5.5 hours across the first 10 episodes.
 
 ## Track 1 — Academic deep-dives (long-form)
 

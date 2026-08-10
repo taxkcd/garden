@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-gerald-j-sussman"
-source_hash: "fc1a1766b311c6ccdd964e85c853cb46102aae81f4616ec89d0e2115888a9461"
+source_hash: "24e4f65022cabafa07582dff8d56b2ccca66da7e8a46a8b2da7511f3023ea897"
 sequence: 118
 generator: "outreach-garden: managed"
 ---
@@ -54,6 +54,38 @@ Research interests: understanding the problem-solving strategies used by scienti
 - [Lab website](https://www.csail.mit.edu/research/sussman-lab)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Sparse Representations in Machine Learning
+**The paper assumes:** sparse representations, boolean feature encoding, constraint propagation in machine learning
+**Already in this field?** Skip this entirely if you already understand sparse coding and its role in machine learning models, especially boolean sparse features and constraint-based learning.
+
+To understand the core mechanism of sparse boolean feature representations enabling fast, one-shot learning in the paper, background in sparse representations in machine learning is essential. The rigorous course option offers a deep, structured university-level introduction to machine learning concepts including representation learning, while the fast track provides a concise, intuition-driven overview suitable for quickly grasping the essentials of sparse spaces and phonology in AI.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS229 Machine Learning | Spring 2026](https://www.youtube.com/playlist?list=PLaqpC4kq8Gpw) — Stanford Online · 17 videos · 20.6h across 17 episodes
+
+**Watch only this:** Lectures 1-6 plus Lecture 12 (Representation Learning), about 7.5 hours total — covering introduction, supervised learning setup, key algorithms, dataset advice, and representation learning to grasp sparse encodings.
+
+*Why it unblocks this paper:* Stanford CS229 Machine Learning is a comprehensive graduate-level course covering foundational machine learning concepts including representation learning, which is critical to understanding sparse representations and their role in fast generalization as used in the paper.
+
+*If you want all of it:* About 20.6 hours across all 17 episodes.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [MIT 6.034 Artificial Intelligence, Fall 2010](https://www.youtube.com/playlist?list=PLUl4u3cNGP63gFHB6xb-kVBiQHYe_4hSi) — MIT OpenCourseWare · 30 videos · 24.3h across 30 episodes
+
+**Watch only this:** Lectures 14 (Learning: Sparse Spaces, Phonology) and 15 (Learning: Near Misses, Felicity Conditions), about 1.5 hours total — these directly address sparse representations and learning behaviors similar to those in the paper.
+
+*Why it unblocks this paper:* MIT 6.034 Artificial Intelligence offers focused lectures on AI topics including learning in sparse spaces and phonology, providing a concise and clear introduction to the key ideas of sparse representations and constraint-based learning relevant to the paper.
+
+*If you want all of it:* About 24.3 hours across all 30 episodes.
 
 ## Track 1 — Academic deep-dives (long-form)
 

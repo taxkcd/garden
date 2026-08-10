@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-alberto-cano"
-source_hash: "b68e700230d528e3d76ce2e2cb5e5f298c1179eda248f4101240b12fb20dcae6"
+source_hash: "61813a75483db3b4cc8d24d312f6af242495ed59f8d6c188b884d2089ced6b97"
 sequence: 140
 generator: "outreach-garden: managed"
 ---
@@ -56,6 +56,38 @@ Research interests: Machine learning: classification, multi-label learning, imba
 - [LinkedIn](https://www.linkedin.com/in/albertocanorojas)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Concept Drift in Data Streams
+**The paper assumes:** concept drift in data streams, streaming machine learning, adaptive decision trees
+**Already in this field?** Skip this entirely if you already understand the fundamentals of concept drift and adaptive learning in streaming data contexts.
+
+To understand this paper on proactive concept drift adaptation in data streams, it is essential to grasp the fundamentals of concept drift, its types, and standard reactive adaptation methods. The rigorous course option offers a deep, structured introduction to machine learning principles that underpin concept drift handling, while the fast track provides focused, concise explainers specifically on concept drift and its practical challenges. Choose the course for a thorough foundation and the fast track for a targeted, time-efficient overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Lecture Collection | Machine Learning](https://www.youtube.com/playlist?list=PLA89DCFA6ADACE599) — Stanford · 20 videos · 25.2h across 20 episodes
+
+**Watch only this:** Lectures 1-5, about 6.25 hours — covering foundational machine learning concepts, model evaluation, and introduction to learning algorithms relevant to concept drift adaptation.
+
+*Why it unblocks this paper:* This Stanford Machine Learning course by Andrew Ng covers foundational machine learning concepts essential to understanding model adaptation, including handling changing data distributions, which is critical for grasping concept drift and proactive/reactive strategies.
+
+*If you want all of it:* 25.2 hours across 20 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Concept Drift](https://www.youtube.com/playlist?list=PLZ5_EQH6uyVsjzEHaPwlfzoxtX_KkL_aG) — scottlanyon · 11 videos · 8.3h across 11 episodes
+
+**Watch only this:** Episodes 1-4, about 3 hours — covering concept drift detection, MLOps context, model monitoring, and handling predictive analytics changes.
+
+*Why it unblocks this paper:* This playlist by scottlanyon is dedicated specifically to concept drift, covering detection, monitoring, and handling in production, providing a focused and practical understanding aligned with the paper's subject.
+
+*If you want all of it:* 8.3 hours across 11 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

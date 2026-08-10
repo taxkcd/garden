@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-atri-rudra"
-source_hash: "694c7641be5a63b119948f767d6b171e4481ca65c698e8fc4ffc7f63469cbaf0"
+source_hash: "a73bdc1a5176fe46f775b902bd8751e30ab62a2bee8136623f74b333a94a37ec"
 sequence: 121
 generator: "outreach-garden: managed"
 ---
@@ -54,6 +54,38 @@ Research interests: Theoretical Computer Science, Algorithms and Theory, interse
 - [DBLP](https://dblp.org/pid/04/4980.html)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** structured matrix factorization
+**The paper assumes:** linear algebra, matrix factorization techniques, structured low-rank approximations
+**Already in this field?** Skip this entirely if you already have a solid understanding of matrix factorization methods and their structured variants in machine learning contexts.
+
+To understand MonarchRT's core method of structured matrix factorization for efficient 3D self-attention approximation, a solid grasp of matrix factorization and applied linear algebra is essential. The rigorous course option provides a deep and comprehensive foundation in applied linear algebra, including matrix operations and factorizations relevant to the paper's techniques. The fast track offers a focused, shorter series on matrix factorization concepts, ideal for quickly grasping the essentials without the full depth of a university course.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford ENGR108: Introduction to Applied Linear Algebra —Vectors, Matrices, and Least Squares](https://www.youtube.com/playlist?list=PLoROMvodv4rMz-WbFQtNUsUElIh2cPmN9) — Stanford Online · 54 videos · 18.5h across 54 episodes
+
+**Watch only this:** Lectures 1 through 10, about 3.5 hours — covering introduction, vector notation, matrix operations, inner products, complexity, linear functions, Taylor approximation, norms, distances, and standard deviation, which build the necessary linear algebra background for understanding structured matrix factorizations.
+
+*Why it unblocks this paper:* Stanford ENGR108 by Professor Stephen Boyd is a highly authoritative, comprehensive introduction to applied linear algebra, covering vectors, matrices, and least squares methods foundational to structured matrix factorizations like Monarch parameterization.
+
+*If you want all of it:* 18.5 hours across all 54 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Recommendation System & Matrix Factorization](https://www.youtube.com/playlist?list=PLKR38d5oOkclOo6k-cvATTR7yurkN4j9A) — Mathematics behind Data Science · 13 videos · 8.5h across 13 episodes
+
+**Watch only this:** Episodes 1 through 4, about 2.5 hours — covering recommendation systems overview, content-based vs collaborative filtering, similarity algorithms, and matrix factorization for PCA and SVD, which give a focused introduction to matrix factorization techniques.
+
+*Why it unblocks this paper:* The 'Recommendation System & Matrix Factorization' playlist provides a concise, clear introduction to matrix factorization concepts with practical examples, suitable for quickly grasping the core ideas behind matrix factorization relevant to MonarchRT.
+
+*If you want all of it:* 8.5 hours across all 13 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

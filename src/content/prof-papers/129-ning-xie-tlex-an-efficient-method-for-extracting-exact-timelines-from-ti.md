@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-ning-xie"
-source_hash: "89963920a499905c050af06e1a93fc7f49f06c66206a226d79ab3dff32a0de66"
+source_hash: "63128916b5a072cc7cc024a60a1da23eb7c214e610e1c9cbd863430df9802134"
 sequence: 129
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,38 @@ Research interests: sub-linear algorithms (especially property testing and local
 - [Online Publications](https://users.cs.fiu.edu/~nxie/papers/pubs.html)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Temporal Constraint Reasoning
+**The paper assumes:** qualitative temporal reasoning, temporal constraint networks, point algebra, and consistency checking algorithms
+**Already in this field?** Skip this entirely if you already understand qualitative temporal reasoning and constraint satisfaction methods for temporal graphs.
+
+This background focuses on Temporal Constraint Reasoning, which is essential to understand how TLEX models temporal relations, checks consistency, and extracts exact timelines from TimeML annotated graphs. The rigorous course option offers a structured, university-level introduction to relevant constraint and graph-based reasoning methods, while the fast track provides a concise, practical overview of analytical reasoning techniques that underpin constraint satisfaction and ordering problems. Choose the course for depth and formal understanding; choose the fast track for a quicker, intuition-driven grasp of core reasoning concepts.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Game Theory Operation Research](https://www.youtube.com/playlist?list=PLU6SqdYcYsfKZ6yXyOqCSSlwe59SI8Jyg) — Dr.Gajendra Purohit · 5 videos · 1.8h across 5 episodes
+
+**Watch only this:** Episodes 1-4, about 1.4 hours — covering saddle points, zero-sum games, dominance rules, and graphical methods, which build the foundation for understanding constraint graphs and ordering.
+
+*Why it unblocks this paper:* This playlist on Game Theory and Operations Research covers graph-based reasoning and scheduling algorithms, which share foundational concepts with temporal constraint satisfaction and topological sorting used in TLEX. It provides a rigorous, formal treatment of constraint problems relevant to temporal graphs.
+
+*If you want all of it:* 1.8 hours across all 5 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Analytical Reasoning Lectures](https://www.youtube.com/playlist?list=PLLshazbJTbB3Qki01jSUl84ij_1HXTkTU) — PASS Education System · 18 videos · 5.7h across the first 17 episodes
+
+**Watch only this:** Episodes 1-5, about 1.7 hours — covering basic analytical reasoning concepts and tricks that provide a practical understanding of reasoning under constraints.
+
+*Why it unblocks this paper:* This Analytical Reasoning lecture series offers concise, clear explanations of reasoning techniques that underpin constraint satisfaction and ordering problems, crucial for grasping the intuition behind TLEX’s timeline extraction and consistency checking.
+
+*If you want all of it:* 5.7 hours across the first 17 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

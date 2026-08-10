@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-fei-li"
-source_hash: "cf351158586076c0e0763ab947c3dd4ae2478d2ddaa471fa935a383450d73af2"
+source_hash: "aeb0c4aae77a238c98111d7f0189c68190f5748f8e15d56f6226030e060ac404"
 sequence: 131
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: Design and analysis of algorithms: scheduling algorithms; on
 - [Professor website](https://sites.google.com/site/algorithmlabgmu/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** combinatorial optimization and integer programming
+**The paper assumes:** combinatorial optimization, integer programming, mixed integer linear programming, NP-hardness theory
+**Already in this field?** Skip this entirely if you already understand integer programming formulations and combinatorial optimization methods for NP-hard scheduling and routing problems.
+
+This background playlist selection focuses on combinatorial optimization and integer programming, which are essential to understanding the shipment rerouting problem formulations and solution methods in the paper. The rigorous course provides a deep, structured university-level treatment of combinatorial optimization concepts including integer linear programming, while the fast track offers a concise, focused introduction to integer linear programming with practical examples. Readers should pick the rigorous course for comprehensive understanding or the fast track for a quick, practical grasp of the core concepts.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Combinatorial Optimisation (University of Warwick MA252)](https://www.youtube.com/playlist?list=PLtxJg53s2o0PqIAEphtjIaqXTouaWYR0j) — Jonathan Noel · 26 videos · 15.1h across 26 episodes
+
+**Watch only this:** Lectures 19-21: 'Introduction to Integer Linear Programming', 'Totally unimodular matrices and polytopes', and 'Totally Unimodular Matrices from Bipartite Graphs' (about 1 hour 42 minutes total) — these cover integer programming fundamentals and key polyhedral concepts relevant to the paper's formulations.
+
+*Why it unblocks this paper:* This University of Warwick course on combinatorial optimization covers foundational topics including integer linear programming, NP-completeness, and optimization algorithms, directly supporting the paper's focus on mixed integer programming formulations and NP-hardness of the shipment rerouting problem.
+
+*If you want all of it:* All 26 episodes, about 15.1 hours total.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Intro to Integer Linear Programming](https://www.youtube.com/playlist?list=PLD3fYc0bAjC_iCOOsHZkxosZFDbcA7Kwf) — Joshua Emmanuel · 13 videos · 1.3h across 13 episodes
+
+**Watch only this:** Episodes 1-6: 'Integer Linear Programming - Graphical Method - Optimal Solution, Mixed, Rounding, Relaxation' through 'Solve Integer LP using LINDO (free)' (about 40 minutes total) — these cover the basics of integer programming formulation and solution techniques.
+
+*Why it unblocks this paper:* This concise 13-episode series introduces integer linear programming with clear examples and explanations of binary variables, constraints, and solving methods, providing a practical and accessible overview of the core integer programming concepts used in the paper.
+
+*If you want all of it:* All 13 episodes, about 1.3 hours total.
 
 ## Track 1 — Academic deep-dives (long-form)
 

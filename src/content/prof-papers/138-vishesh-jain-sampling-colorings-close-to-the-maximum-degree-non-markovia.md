@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-vishesh-jain"
-source_hash: "c2e6699e2e2a1725a2fbae5328d3404a9735234e1a42c630b643ca3283155cc9"
+source_hash: "7639c1827483a69f9d374dd4963d28432f4adacd2ac616ec8f371e915eccf962"
 sequence: 138
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: broadly interested in probability, combinatorics, and theore
 - [Resolved homepage](https://jainvishesh.github.io/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Markov chain Monte Carlo
+**The paper assumes:** Markov chain Monte Carlo methods, coupling techniques, mixing time analysis, and probabilistic graphical models
+**Already in this field?** Skip this entirely if you already understand Markov chain Monte Carlo methods, coupling arguments, and mixing time proofs at a graduate level.
+
+To understand the advanced coupling techniques and mixing time analysis in this paper, a solid grasp of Markov chain Monte Carlo (MCMC) methods, especially Glauber dynamics and coupling arguments, is essential. The rigorous course provides a detailed, foundational treatment of discrete-time Markov chains and Poisson processes, which underpin the theoretical framework of the paper. The fast track offers a concise, intuition-driven introduction to MCMC concepts, suitable for quickly gaining the core ideas without deep technical detail.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Discrete-time Markov Chains and Poisson Processes](https://www.youtube.com/playlist?list=PLwdnzlV3ogoXEZ6rpZLKzzlypKnsa-ySx) — NPTEL IIT Guwahati · 35 videos · 21.5h across 35 episodes
+
+**Watch only this:** Lectures 1 through 23 (Lec 1: Review of Basic Probability I to Lec 23: Some Problems II), about 13.8 hours — these cover the essential Markov chain theory, hitting times, strong Markov property, and stationary distributions needed to follow the paper's arguments.
+
+*Why it unblocks this paper:* This NPTEL IIT Guwahati course thoroughly covers discrete-time Markov chains and Poisson processes, including foundational probability, Markov properties, hitting times, and stationary distributions, all crucial for understanding the rigorous coupling and mixing time proofs in the paper.
+
+*If you want all of it:* All 35 episodes, about 21.5 hours.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Markov Chain Monte Carlo](https://www.youtube.com/playlist?list=PL2wNuDhSPrhim3vGE2WUtVfaYDBbnXAJW) — David Cruz · 11 videos · 3.4h across 11 episodes
+
+**Watch only this:** Episodes 2, 5, and 6 (Introduction to Bayesian statistics, part 2: MCMC and the Metropolis–Hastings algorithm; Markov Chain Monte Carlo; Markov Chain Monte Carlo and the Metropolis Algorithm), about 54 minutes total — these focus on the core MCMC algorithms and coupling ideas relevant to the paper.
+
+*Why it unblocks this paper:* David Cruz's Markov Chain Monte Carlo playlist offers clear, concise explanations of MCMC fundamentals, including the Metropolis–Hastings algorithm and coupling concepts, providing an accessible overview that prepares the reader to grasp the paper's main techniques quickly.
+
+*If you want all of it:* All 11 episodes, about 3.4 hours.
 
 ## Track 1 — Academic deep-dives (long-form)
 

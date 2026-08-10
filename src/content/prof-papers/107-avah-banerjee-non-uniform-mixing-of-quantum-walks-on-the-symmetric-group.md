@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-avah-banerjee"
-source_hash: "1460e30e0bc82e0d79355ebe433ff3f3f68e89ebc48bcc2b1dfa9cb2463c38fa"
+source_hash: "489e46f2f890f2e0a30707daf3400240b46adc7501495689c8b4692b6663fe4d"
 sequence: 107
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,38 @@ Research interests: high-precision physics ML, quantum circuits, ML models, stru
 - [Lab website](https://semiqlassical.tech/#founders)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Representation Theory of Finite Groups
+**The paper assumes:** representation theory of finite groups, character theory, irreducible representations of symmetric groups
+**Already in this field?** Skip this entirely if you already have a solid understanding of finite group representation theory and character theory, especially for the symmetric group.
+
+This background focuses on the representation theory of finite groups, especially the symmetric group, which is essential for understanding the spectral decomposition and character theory used in the paper on quantum walks. The rigorous course offers a deep and structured university-level treatment, while the fast track provides a concise, accessible introduction to the core concepts. Choose the course for thorough mastery or the fast track for a quicker conceptual grasp.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Representation Theory of Finite Groups](https://www.youtube.com/playlist?list=PLgMDNELGJ1CYSbqKp1TEL2BGdGX6QXHoo) — NPTEL - Indian Institute of Science, Bengaluru · 57 videos · 30.6h across 57 episodes
+
+**Watch only this:** Lectures 47 to 56 (Fourier analysis on finite groups through Classification of irreducible representations of symmetric group), about 5.3 hours — these cover the spectral decomposition, irreps, and character theory crucial for the paper.
+
+*Why it unblocks this paper:* This NPTEL course by the Indian Institute of Science, Bengaluru, covers representation theory of finite groups with detailed lectures on irreducible representations of the symmetric group, character theory, and Fourier analysis on non-abelian groups, directly matching the paper's mathematical tools.
+
+*If you want all of it:* All 57 lectures, about 30.6 hours.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Representation Theory](https://www.youtube.com/playlist?list=PL57457844458A5A1F) — MathDoctorBob · 18 videos · 5.0h across 18 episodes
+
+**Watch only this:** Episodes RT1 to RT8.3 (Representation Theory Basics through Finite Groups: Projection to Irreducibles), about 2.1 hours — these cover the essential concepts of irreducible representations and character theory needed to understand the paper's approach.
+
+*Why it unblocks this paper:* MathDoctorBob's Representation Theory playlist offers clear, concise explanations of finite group representation theory basics, unitary representations, character orthogonality, and classification of irreducibles, providing a solid conceptual foundation in about one-sixth the time of the full course.
+
+*If you want all of it:* All 18 episodes, about 5.0 hours.
 
 ## Track 1 — Academic deep-dives (long-form)
 

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-miranda-c-parker"
-source_hash: "a2974f2b0b252c39f58f8e7e4ff399349b7dbbb4fc8ffde66a18373badf8ba34"
+source_hash: "86d395ba48ab2a9b4dee5d880da3f6a662e1ccf491063692897a4021bb0b0d34"
 sequence: 142
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,27 @@ This paper investigates whether the widely used Second CS1 (SCS1) assessment for
 - [Semantic Scholar](https://www.semanticscholar.org/search)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Psychometrics and Factor Analysis
+**The paper assumes:** psychometric theory, factor analysis methods, reliability measurement, classical test theory
+**Already in this field?** Skip this entirely if you already understand psychometric assessment methods, factor analysis, and reliability evaluation in educational measurement.
+
+This background focuses on psychometrics and factor analysis, essential for understanding the paper's use of confirmatory and exploratory factor analysis to evaluate the internal structure and reliability of the SCS1 assessment. The rigorous course option offers a deep, university-level lecture series covering core psychometric concepts and factor analysis in detail, while the fast track provides a concise, focused introduction to structural equation modeling, including confirmatory factor analysis, suitable for quickly grasping key ideas without extensive time commitment.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [A First-Course in Structural Equation Modeling (SEM)](https://www.youtube.com/playlist?list=PLM9LEwZScFMTzTh8PqTU0O0CK0MKmy1gV) — Craig Wells - Statistics and Psychometrics · 7 videos · 0.6h across 7 episodes
+
+**Watch only this:** Episodes 1 to 7 (complete playlist), about 0.6 hours total
+
+*Why it unblocks this paper:* This short-form playlist by Craig Wells provides a clear, concise introduction to structural equation modeling and confirmatory factor analysis, covering key concepts in about 0.6 hours, making it an efficient way to quickly understand the core psychometric techniques used in the paper.
+
+*If you want all of it:* All 7 episodes, about 0.6 hours total
 
 ## Track 1 — Academic deep-dives (long-form)
 

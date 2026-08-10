@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-haym-hirsh"
-source_hash: "565a665a42063bf663b3fab486d170510fe51afcb720f94314c9718f5639def9"
+source_hash: "a833e01e76ee54680c873ed575291e8fff43dbaa4da752fb9775f608b02e7c60"
 sequence: 100
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,38 @@ Research interests: foundations and applications of machine learning, data minin
 - [Google Scholar](http://scholar.google.com/citations?user=lB6jgT4AAAAJ)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** machine learning for health data
+**The paper assumes:** machine learning fundamentals, supervised learning, model interpretability, and data challenges in health informatics
+**Already in this field?** Skip this entirely if you already have a solid understanding of machine learning concepts and their application to complex biomedical or nutritional datasets.
+
+To deeply understand the application of AI and machine learning methods in precision nutrition, especially the handling of complex, multimodal health data, these two background options provide complementary learning paths. The rigorous course offers a comprehensive, university-level foundation in machine learning for healthcare, while the fast track provides a concise, targeted introduction to applied machine learning in health data, suitable for quickly grasping key concepts and methods relevant to the paper.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [MIT 6.S897 Machine Learning for Healthcare, Spring 2019](https://www.youtube.com/playlist?list=PLUl4u3cNGP60B0PQXVQyGNdCyCTDU1Q5j) — MIT OpenCourseWare · 25 videos · 31.2h across 25 episodes
+
+**Watch only this:** Lectures 1 through 8 ("What Makes Healthcare Unique?" to "Natural Language Processing (NLP), Part 2"), about 9.9 hours — these cover healthcare data uniqueness, clinical data, risk stratification, time-series, and NLP foundations essential for understanding AI in precision nutrition.
+
+*Why it unblocks this paper:* MIT's 'Machine Learning for Healthcare' course covers foundational and advanced ML topics specifically tailored to healthcare data, including clinical data characteristics, causal inference, and precision medicine, directly aligning with the paper's focus on AI/ML methods for complex nutritional and multi-omic data.
+
+*If you want all of it:* 31.2 hours across 25 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [HDS-203: Applied Machine Learning for Health Data](https://www.youtube.com/playlist?list=PLbk8Qfk7_hvk-bjg150zaPZdIdDreVXK7) — Universal Digital Health · 14 videos · 2.7h across 14 episodes
+
+**Watch only this:** Episodes 1, 6, 10, and 12 ("Introduction to Machine Learning in Healthcare", "Gradient Boosting & XGBoost Explained for Healthcare", "Random Forest Explained with Healthcare Examples", and "K-Nearest Neighbor Explained for Healthcare"), about 44 minutes total — these provide a quick yet focused overview of essential ML methods applicable to health data.
+
+*Why it unblocks this paper:* The 'Applied Machine Learning for Health Data' series by Universal Digital Health offers concise, clear explanations of key ML methods used in healthcare contexts, including model evaluation, clustering, and ensemble methods, which are directly relevant to the AI/ML techniques discussed in the paper.
+
+*If you want all of it:* 2.7 hours across 14 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

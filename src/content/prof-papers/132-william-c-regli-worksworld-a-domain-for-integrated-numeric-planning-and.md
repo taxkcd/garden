@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-william-c-regli"
-source_hash: "a6396987c3feddac115b328148ce4a9d3c2e0990191e64d1d9d157d371a2fdce"
+source_hash: "db6735cea868f9bf1ac29ac9cea0dc7966893275d354c488b832c3f605a17e9c"
 sequence: 132
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,38 @@ Research interests: artificial intelligence, AI Agents, design and evaluation of
 - [Google Scholar](https://scholar.google.com/citations?user=-MSUomIAAAAJ)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Automated Planning and Scheduling
+**The paper assumes:** automated planning, PDDL domain modeling, numeric planning, heuristic search planning, integrated scheduling
+**Already in this field?** Skip this entirely if you have prior coursework or experience in AI automated planning and scheduling, including familiarity with PDDL and numeric planning extensions.
+
+To understand the WORKSWORLD paper, a solid grasp of automated planning and scheduling—especially numeric planning with PDDL and integrated scheduling—is essential. The rigorous course offers a deep, structured university-level introduction to AI planning concepts, while the fast track provides a concise, practical overview of advanced production planning and scheduling concepts relevant to workflow automation. Choose the course for a thorough theoretical foundation and the fast track for a quick, applied understanding.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Artificial Intelligence](https://www.youtube.com/playlist?list=PLsz8d8r2a996F2Fi-tB9N2HCp4qoaNjU_) — Online PM Courses - Mike Clayton · 22 videos · 12.9h across 22 episodes
+
+**Watch only this:** Episodes 1-4: 'What is Artificial Intelligence (AI)?', 'Artificial Intelligence in Project Management: AI and PM Primer', 'How to Use Machine Learning in Project Estimating, Scheduling, and Planning', and 'How can AI Transform Project Management?' — about 2.3 hours total. These cover core AI planning and scheduling concepts relevant to the paper.
+
+*Why it unblocks this paper:* This playlist covers foundational and advanced AI topics including planning and scheduling relevant to numeric planning domains like WORKSWORLD. It provides a broad AI context with episodes on machine learning, decision-making, and agentic AI that underpin the paper's approach.
+
+*If you want all of it:* All 22 episodes, approximately 12.9 hours.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Advanced Production Planning And Scheduling- APS](https://www.youtube.com/playlist?list=PLY4Z1m6hYtSVOq3avQgn-WHxtWD38M1G_) — META Smart Factory · 8 videos · 1.6h across 8 episodes
+
+**Watch only this:** Episodes 1-3: 'What is Advanced Planning and Scheduling & What are the components of APS?', 'Why do we use Advanced Planning and Scheduling (APS)', and 'How to benefit from Advanced Planning and Scheduling Systems (APS)' — about 33 minutes total. These give a concise overview of planning and scheduling principles.
+
+*Why it unblocks this paper:* This short series focuses specifically on advanced production planning and scheduling, providing clear, practical explanations of APS components and functions that align well with the workflow scheduling challenges addressed by WORKSWORLD.
+
+*If you want all of it:* All 8 episodes, approximately 1.6 hours.
 
 ## Track 1 — Academic deep-dives (long-form)
 

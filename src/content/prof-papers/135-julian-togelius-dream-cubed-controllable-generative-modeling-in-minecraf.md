@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-julian-togelius"
-source_hash: "f868f351f429c232d1fb245d0b58d8d84bd9452db4447f8121c51c040917e171"
+source_hash: "b83371e7657933149fdb351907fcbc0836e422ddf1ea71b05f0528564cb57715"
 sequence: 135
 generator: "outreach-garden: managed"
 ---
@@ -54,6 +54,38 @@ Research interests: AI, player modelling, procedural content generation, automat
 - [Lab website](http://game.engineering.nyu.edu/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** diffusion probabilistic models
+**The paper assumes:** diffusion probabilistic models, generative modeling with diffusion, and discrete versus continuous diffusion processes
+**Already in this field?** Skip this entirely if you already understand the fundamentals of diffusion probabilistic models and their application in generative AI.
+
+To understand the core generative modeling techniques used in the paper 'Dream Cubed,' specifically discrete masked diffusion and continuous DDPMs for 3D Minecraft world generation, a solid grasp of diffusion probabilistic models is essential. The rigorous course option offers a deep, structured university-level treatment of diffusion models, suitable for thorough mastery. The fast track provides a concise, intuition-driven introduction to diffusion models, ideal for quickly gaining practical understanding without extensive time investment.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CME296: Diffusion & Large Vision Models](https://www.youtube.com/playlist?list=PLoROMvodv4rNdy8rt2rZ4T2xM0OjADnfu) — Stanford Online · 8 videos · 14.0h across 8 episodes
+
+**Watch only this:** Lectures 1-6, about 10.5 hours — covering diffusion basics, score matching, flow matching, latent space and guidance, architectures, and model training to understand the core principles and implementation of diffusion models.
+
+*Why it unblocks this paper:* Stanford CME296 is a recent, focused course on diffusion and large vision models, covering foundational theory, architectures, training, and evaluation of diffusion models including diffusion transformers, which aligns closely with the paper's use of 3D diffusion transformers and discrete diffusion techniques.
+
+*If you want all of it:* All 8 episodes, about 14 hours.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Diffusion Models](https://www.youtube.com/playlist?list=PLyXDCTF4yPcSNIvlUmJPYC8s2oskmaFZB) — AI Focus · 17 videos · 1.4h across 17 episodes
+
+**Watch only this:** First 10 episodes, about 40 minutes — covering score matching, denoising diffusion, conditional diffusion, and guidance techniques to grasp the essential concepts behind diffusion models.
+
+*Why it unblocks this paper:* This AI Focus playlist offers short, clear videos introducing popular diffusion models and their applications, providing a quick yet comprehensive overview of diffusion probabilistic models relevant to image and 3D generation, suitable for rapid background preparation.
+
+*If you want all of it:* All 17 episodes, about 1.4 hours.
 
 ## Track 1 — Academic deep-dives (long-form)
 

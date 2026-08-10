@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-zeev-dvir"
-source_hash: "1cdae7be76f03475b1951fe0103cdfba198b0c66fa7fea395111298c75e435f4"
+source_hash: "785a5ee2b446a5bf06d6b5acf2996a690eb92f2ccf959c80bbb79c59bc9c1272"
 sequence: 123
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: theoretical computer science, computational complexity, pseu
 - [Resolved homepage](https://www.cs.princeton.edu/~zdvir/index.html)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Algebraic Combinatorics
+**The paper assumes:** algebraic combinatorics, polynomial method, additive combinatorics, finite field geometry
+**Already in this field?** Skip this entirely if you already have a solid understanding of algebraic combinatorics and the polynomial method in combinatorial geometry.
+
+This background focuses on algebraic combinatorics, which is essential for understanding the algebraic and combinatorial techniques used in incidence theorems, such as the polynomial method and additive combinatorics. The rigorous course option offers a deep, structured university-level treatment, while the fast track provides a concise, focused introduction to the core concepts, suitable for quickly gaining intuition and foundational knowledge.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [MIT 18.217 Graph Theory and Additive Combinatorics, Fall 2019](https://www.youtube.com/playlist?list=PLUl4u3cNGP62qauV_CpT1zKaGG_Vj5igX) — MIT OpenCourseWare · 26 videos · 33.9h across 26 episodes
+
+**Watch only this:** Lectures 1 through 5 (about 6.5 hours) cover the foundational graph theory and additive combinatorics concepts, including algebraic constructions and dependent random choice, which are crucial for understanding incidence bounds and combinatorial geometry.
+
+*Why it unblocks this paper:* MIT's '18.217 Graph Theory and Additive Combinatorics' is a comprehensive university course that covers additive combinatorics and algebraic methods in depth, including the polynomial method and Szemerédi's regularity lemma, which are central to the paper's techniques and results.
+
+*If you want all of it:* All 26 lectures totaling about 33.9 hours provide a thorough grounding in graph theory, additive combinatorics, and related algebraic methods.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Algebraic Methods in Combinatorics](https://www.youtube.com/playlist?list=PL0NRmB0fnLJQaWrLAEt7wlVtdHrKuz-pw) — Harvard CMSA · 15 videos · 14.5h across the first 14 episodes
+
+**Watch only this:** Episodes 4 ('Geometric Energies: Between Discrete Geometry and Additive Combinatorics'), 8 ('Subspace evasion, list decoding, and dimension expanders'), 9 ('The polynomial method in Fourier analysis'), and 13 ('Cutting curves into segments and incidence geometry'), about 4 hours total, provide a targeted overview of the algebraic combinatorics tools used in incidence theorems.
+
+*Why it unblocks this paper:* Harvard CMSA's 'Algebraic Methods in Combinatorics' workshop playlist offers focused talks on the polynomial method, incidence geometry, and additive combinatorics, directly aligned with the paper's key techniques and results, but in a shorter, more accessible format.
+
+*If you want all of it:* All 14 episodes (about 14.5 hours) cover a broad range of algebraic combinatorics topics relevant to incidence geometry and combinatorial applications.
 
 ## Track 1 — Academic deep-dives (long-form)
 

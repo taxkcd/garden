@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-jing-yuan"
-source_hash: "c3d06eb856f2448ffa150e9acb0bb9f5cb4e20e81e4a9a16811a4f376f0cec4b"
+source_hash: "f98c366f9dc0ccb58d55a6139c3635ab21d5490484aec8497018d7b6e5958244"
 sequence: 128
 generator: "outreach-garden: managed"
 ---
@@ -51,6 +51,38 @@ Research interests: optimization, social computing and machine learning
 - [Professor website](https://sites.google.com/view/jing-yuan-unt)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Deep Reinforcement Learning
+**The paper assumes:** foundations of deep reinforcement learning, actor-critic methods, policy gradient algorithms, and variance reduction techniques
+**Already in this field?** Skip this entirely if you already have a solid understanding of deep reinforcement learning concepts and actor-critic algorithms.
+
+To understand the deep reinforcement learning framework UP-AAC proposed in the paper, it is essential to grasp actor-critic architectures, policy gradient methods, and variance reduction techniques under uncertainty. The rigorous course option provides a comprehensive, university-level deep dive into these topics, while the fast track offers a concise, intuition-focused introduction to actor-critic methods and policy gradients. Choose the rigorous course for a thorough foundation or the fast track for a quick but solid conceptual overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS224R Deep Reinforcement Learning](https://www.youtube.com/playlist?list=PLoROMvodv4rPwxE0ONYRa_itZFdaKCylL) — Stanford Online · 19 videos · 20.6h across 19 episodes
+
+**Watch only this:** Lectures 3 (Policy Gradients), 4 (Actor-Critic Methods), and 5 (Off-Policy Actor Critic), about 3.25 hours total — these cover the core actor-critic and policy gradient concepts needed to understand the asymmetric actor-critic design.
+
+*Why it unblocks this paper:* Stanford CS224R Deep Reinforcement Learning by Stanford Online is a top-tier university course that covers actor-critic methods, policy gradients, and advanced RL topics directly relevant to the UP-AAC framework. It includes dedicated lectures on actor-critic architectures and policy optimization, essential for understanding the paper's contributions.
+
+*If you want all of it:* Approximately 20.6 hours across all 19 episodes.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Lecture DeepRL1 - Introduction to Deep Reinforcement Learning](https://www.youtube.com/playlist?list=PL7SYVykTNxXaaTsGrJ6dswVGemRC1F_ZZ) — Gerstner Lab · 6 videos · 1.1h across 6 episodes
+
+**Watch only this:** Episodes DeepRL1.1 (Introduction to Deep Reinforcement Learning), DeepRL1.2 (From Policy Gradient to Deep Reinforcement Learning), and DeepRL1.3 (Actor Critic Architecture and Advantage Actor Critic), about 33 minutes total — these episodes cover the foundational ideas of policy gradients and actor-critic methods.
+
+*Why it unblocks this paper:* Gerstner Lab's 'Lecture DeepRL1 - Introduction to Deep Reinforcement Learning' is a concise, well-structured series focusing on the actor-critic architecture and policy gradient methods. It provides a clear and visual introduction to the key concepts underlying the paper's method in about one hour.
+
+*If you want all of it:* About 1.1 hours across all 6 episodes.
 
 ## Track 1 — Academic deep-dives (long-form)
 

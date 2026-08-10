@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-ying-cai"
-source_hash: "ecd02ee340df810f82064ebd98f0bca4bfc73ce9005ea4091152e7b7d8bd51f3"
+source_hash: "cb2d75c81d0706fef14faefe55dd2d7e0fdd62bf14dc67a10591ed80bd374197"
 sequence: 119
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: database management, security and privacy
 - [Resolved homepage](https://faculty.sites.iastate.edu/yingcai/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Cryptographic Data Structures
+**The paper assumes:** cryptographic hash functions, Merkle trees, digital signatures, authenticated data structures
+**Already in this field?** Skip this entirely if you already understand cryptographic hash trees and digital signature schemes used in secure data verification.
+
+To understand the verification of analytic query results using cryptographic data structures like Merkle hash trees and intersection trees, this background provides two complementary learning paths. The rigorous course offers a deep, university-level cryptography foundation including Merkle trees and digital signatures, essential for grasping the security proofs and construction of IFMH-trees. The fast track is a concise, visual introduction to fundamental data structures and hashing concepts, ideal for quickly building intuition about Merkle trees and their role in verification without extensive cryptographic detail.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [CMU Introduction to Cryptography Course](https://www.youtube.com/playlist?list=PLI3cKEs5b6gvelkJnHf16r3ADhYvcQjdr) — Vipul Goyal · 23 videos · 31.1h across 23 episodes
+
+**Watch only this:** Lectures 10 (Message Authentication Codes, Collision Resistant Hash Functions), 11 (Digital Signatures), and 15 (Bitcoin and Merkle Trees), about 4.5 hours total — these cover the cryptographic primitives and Merkle tree structures essential for understanding the paper's verification methods.
+
+*Why it unblocks this paper:* This Carnegie Mellon University Introduction to Cryptography course by Vipul Goyal covers foundational cryptographic concepts including hash functions, digital signatures, and specifically Merkle trees (Lecture 15), which are central to the IFMH-tree construction and security guarantees in the paper.
+
+*If you want all of it:* All 23 lectures, about 31.1 hours.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Data Structures Visualization | Log2Base2 - The Visual Learning Platform](https://www.youtube.com/playlist?list=PLhb7SOmGNUc5AZurO-im4t_RDr-ymjz0d) — Log2Base2® · 12 videos · 0.7h across 12 episodes
+
+**Watch only this:** Episodes 1 (Visualize Data Structures & Algorithms | Log2Base2), 2 (Real-Life Applications of Data Structures – Animated Explanation), and 11 (Visualize Data Structures & Algorithms | Log2Base2), about 10 minutes total — these episodes cover the basics of data structures and hashing relevant to Merkle trees.
+
+*Why it unblocks this paper:* This short-form series by Log2Base2® visually explains data structures and hashing concepts, including Merkle trees, in a clear and intuitive way. It provides a quick, accessible overview of the data structures underlying the IFMH-tree without deep cryptographic detail.
+
+*If you want all of it:* All 12 episodes, about 42 minutes.
 
 ## Track 1 — Academic deep-dives (long-form)
 

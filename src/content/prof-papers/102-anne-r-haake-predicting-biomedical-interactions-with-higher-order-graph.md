@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-anne-r-haake"
-source_hash: "5d6a3347d36071313cec23a77699834b6854be7fb5b83ee28773a2311ad0ad7f"
+source_hash: "3b81344700f5a56a5f114b6929613e0281068b3cbe9bca5791c10a4ec03a3802"
 sequence: 102
 generator: "outreach-garden: managed"
 ---
@@ -51,6 +51,38 @@ This paper introduces a novel deep learning model called Higher-Order Graph Conv
 - [Identity evidence](http://hccl.gccis.rit.edu/index.php/people/8-faculty/2-anne-haake)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Graph Neural Networks
+**The paper assumes:** graph neural networks, graph convolutional networks, node embedding methods
+**Already in this field?** Skip this entirely if you already understand graph neural networks and their convolutional variants.
+
+This background playlist selection is designed to help you understand the core concepts and methods behind graph neural networks (GNNs), which are essential for grasping the Higher-Order Graph Convolutional Network (HOGCN) model introduced in the paper. The rigorous course option provides a deep and structured university-level treatment of graph machine learning and GNNs, while the fast track offers a concise, visual introduction to the key ideas and techniques in a fraction of the time. Choose the rigorous course if you want a comprehensive foundation, or the fast track if you need a quick but solid conceptual overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS224W Machine Learning with Graphs I Jure Leskovec](https://www.youtube.com/playlist?list=PLoROMvodv4rOP-ImU-O1rYRg2RFxomvFp) — Stanford Online · 47 videos · 24.1h across 47 episodes
+
+**Watch only this:** Lectures 1.1 to 1.3 (Why Graphs, Applications, Choice of Graph Representation), 3.1 to 3.3 (Node Embeddings, Random Walk Approaches, Embedding Entire Graphs), 7.1 to 7.3 (General Perspective on GNNs, Single Layer of a GNN, Stacking Layers), and 8.1 to 8.3 (Graph Augmentation, Training GNNs, Setting up GNN Prediction Tasks), about 7.5 hours total — these cover foundational graph concepts, embedding techniques, and GNN architectures needed to understand HOGCN.
+
+*Why it unblocks this paper:* Stanford CS224W by Jure Leskovec is a top-tier university course that covers graph machine learning comprehensively, including graph convolutional networks, node embeddings, and advanced GNN architectures, directly relevant to understanding HOGCN's design and evaluation.
+
+*If you want all of it:* 24.1 hours across 47 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Graph Neural Networks (Hands-on)](https://www.youtube.com/playlist?list=PLB1nTQo4_y6sfLtCrGAKG_l7xOHjtYqBk) — LLMs Explained - Aggregate Intellect - AI.SCIENCE · 6 videos · 0.6h across 6 episodes
+
+**Watch only this:** All 6 episodes, about 36 minutes total — this short series covers the essential concepts of graph structure, graph convolution, attention, and embedding methods quickly and accessibly.
+
+*Why it unblocks this paper:* The 'Graph Neural Networks (Hands-on)' series by LLMs Explained offers a concise and clear introduction to graph neural networks, covering graph basics, simple graph convolution, attention mechanisms, and popular embedding methods like DeepWalk and node2vec, which are directly relevant to the paper's comparisons and methods.
+
+*If you want all of it:* 0.6 hours across 6 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

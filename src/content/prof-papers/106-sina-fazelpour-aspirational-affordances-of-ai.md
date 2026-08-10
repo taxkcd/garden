@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-sina-fazelpour"
-source_hash: "75cdd0c4d8b70493c143058fd25bd0de5c279313da8f7bebd01a7f18869ac9ca"
+source_hash: "cef50dd0ae0404a7fb67b43302241522e7967a54b3d69f6551e96e85c7a569e8"
 sequence: 106
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,27 @@ Research interests: philosophy, technology ethics, cognitive science, artificial
 - [Google Scholar](https://scholar.google.com/citations?user=GPRnVkMAAAAJ&hl=en)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Philosophy of Technology and AI Ethics
+**The paper assumes:** philosophy of technology, AI ethics, epistemic injustice, and sociotechnical evaluation frameworks
+**Already in this field?** Skip this entirely if you already have a solid understanding of philosophy of technology and AI ethics, including concepts of epistemic injustice and sociotechnical analysis.
+
+To understand the philosophical and ethical foundations crucial for grasping the concept of aspirational affordances and harms in AI, this background offers two complementary options. The rigorous course provides a deep, structured university-level lecture series on AI ethics and philosophy of technology, ideal for comprehensive study. The fast track offers a concise, well-produced explainer series that quickly introduces key ideas in AI philosophy and ethics, suitable for readers seeking a focused yet insightful overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Artificial Intelligence lecture series by Dr. Hamid Tizhoosh](https://www.youtube.com/playlist?list=PLuSHkCaAsbz126t2mRtJylUQ-4QkToCh_) — Enlight&entertainMe · 26 videos · 31.9h across 26 episodes
+
+**Watch only this:** Watch 'Ethics of Artificial Intelligence - Part 1' and 'Ethics of Artificial Intelligence - Part 2' (Lectures 23 and 24), totaling about 2.4 hours — these two episodes focus specifically on AI ethics and moral considerations relevant to the paper's themes.
+
+*Why it unblocks this paper:* This extensive lecture series by Dr. Hamid Tizhoosh covers ethics of artificial intelligence in depth, including foundational concepts and ethical challenges that align closely with the paper's focus on AI's societal and epistemic impacts. The detailed lectures on AI ethics provide the rigorous philosophical grounding necessary to understand aspirational harms and sociotechnical evaluation frameworks.
+
+*If you want all of it:* 31.9 hours across 26 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

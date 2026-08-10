@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-yaacov-yesha"
-source_hash: "bb27f6ddb7daa8366cacb6156b6675c5973be1c6971379c6d909194dbb8de248"
+source_hash: "d8f86f4023976d999ff8f689320ba0ac61531acb9542389b530cfd31a4d621d3"
 sequence: 134
 generator: "outreach-garden: managed"
 ---
@@ -55,6 +55,38 @@ Research interests: Cloud computing, SSME, Web services, IT services, service or
 - [Google Scholar](https://scholar.google.com/scholar)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Generative Adversarial Networks
+**The paper assumes:** deep learning, generative adversarial networks, cycle-consistent adversarial loss, convolutional neural networks
+**Already in this field?** Skip this entirely if you already understand the fundamentals of GANs and cycle-consistent GAN architectures.
+
+This background focuses on Generative Adversarial Networks (GANs), essential for understanding the CCS-GAN method in the paper, which uses cycle-consistent adversarial loss and pulmonary segmentation to generate synthetic COVID-19 CT images. The rigorous course provides a deep, structured understanding of GANs and related generative models, while the fast track offers a concise, intuition-driven introduction to GAN concepts and implementations. Choose the course for comprehensive mastery or the fast track for a quicker, practical grasp.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS236: Deep Generative Models I 2023 I Stefano Ermon](https://www.youtube.com/playlist?list=PLoROMvodv4rPOWA-omMM6STXaWW4FvJT8) — Stanford Online · 18 videos · 23.6h across 18 episodes
+
+**Watch only this:** Lectures 9 and 10 - GANs (about 2.6 hours total) provide a focused, rigorous introduction to GAN theory, training dynamics, and variants including cycle-consistent GANs, sufficient to understand CCS-GAN's core methodology.
+
+*Why it unblocks this paper:* Stanford CS236: Deep Generative Models I 2023 by Stefano Ermon covers GANs in depth, including cycle-consistent GANs, with detailed lectures on adversarial training and evaluation, directly relevant to CCS-GAN's architecture and training.
+
+*If you want all of it:* All 18 lectures, about 23.6 hours, covering a broad range of deep generative models beyond GANs.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Generative Adversarial Networks (GAN)](https://www.youtube.com/playlist?list=PLZsOBAyNTZwboR4_xj-n3K6XBTweC4YVD) — DigitalSreeni · 15 videos · 7.4h across 15 episodes
+
+**Watch only this:** Episodes 1 (What are Generative Adversarial Networks), 9 and 10 (Unpaired image to image translation using cycleGAN - Introduction and Keras implementation), about 1.5 hours total, cover the essentials of GANs and cycle-consistent GANs relevant to the paper.
+
+*Why it unblocks this paper:* DigitalSreeni's GAN playlist offers clear, concise explanations and practical Keras implementations, including cycleGAN and related image-to-image translation topics, ideal for quickly grasping the concepts behind CCS-GAN.
+
+*If you want all of it:* All 15 episodes, about 7.4 hours, covering a wide range of GAN types and applications.
 
 ## Track 1 — Academic deep-dives (long-form)
 

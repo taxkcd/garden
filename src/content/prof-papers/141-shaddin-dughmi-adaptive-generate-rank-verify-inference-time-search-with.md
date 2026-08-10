@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-shaddin-dughmi"
-source_hash: "b119579afce74862611f867645f32e67d182a315c490bedb646480a2c089e994"
+source_hash: "22877f07a3f4e6a260973ef2a6d6132a6d67f37b6b5675afbaa0cb6f58240d12"
 sequence: 141
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,38 @@ Research interests: Questions that stimulate the development of new algorithmic 
 - [Professor website](https://viterbi-web.usc.edu/~shaddin/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Cost-Sensitive Active Learning
+**The paper assumes:** cost-sensitive active learning, active search algorithms, adaptive sampling under uncertainty
+**Already in this field?** Skip this entirely if you already understand active learning theory with cost considerations and adaptive search algorithms in machine learning.
+
+This background focuses on cost-sensitive active learning and adaptive inference-time search strategies, which are central to understanding the ADAP algorithm's theoretical and practical contributions in the paper. The rigorous course option offers a deep dive into advanced machine learning concepts including learning theory and adaptive algorithms, while the fast track provides a concise, accessible introduction to machine learning fundamentals relevant to cost-sensitive decision making. Choose the course for thorough theoretical grounding and the fast track for a quicker, intuition-driven overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Advanced Machine Learning (lecture series)](https://www.youtube.com/playlist?list=PLemsnf33Vij4-kv-JTjDthaGUYUnQbbws) — Florian Marquardt · 33 videos · 44.8h across 33 episodes
+
+**Watch only this:** Lectures 8 to 24, about 13.5 hours — covering entropy, Bayes, inductive bias, mutual information, natural gradient, variational autoencoders, generative adversarial networks, recurrent and graph neural networks, attention mechanisms, transformers, implicit layers, and reinforcement learning including policy gradient and trust regions. This subset provides the theoretical tools and adaptive learning concepts relevant to the paper's approach.
+
+*Why it unblocks this paper:* Florian Marquardt's Advanced Machine Learning lecture series covers foundational and advanced topics in machine learning theory, including inductive bias, information theory, and reinforcement learning, which underpin the cost-sensitive active search framework and adaptive policies studied in the paper.
+
+*If you want all of it:* 44.8 hours across all 33 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Machine Learning Specialization by Andrew Ng](https://www.youtube.com/playlist?list=PLkDaE6sCZn6FNC6YRfRQc_FbeQrF8BwGI) — DeepLearningAI · 41 videos · 5.2h across 41 episodes
+
+**Watch only this:** Episodes #1 through #24, about 5.2 hours — covering the basics of machine learning, loss functions, overfitting, bias-variance tradeoff, and foundational supervised learning techniques necessary to grasp the paper's context.
+
+*Why it unblocks this paper:* The Machine Learning Specialization by Andrew Ng offers clear, concise explanations of core machine learning concepts such as supervised learning, model evaluation, and learning theory fundamentals, providing a practical and accessible foundation for understanding adaptive inference and cost-sensitive decision making.
+
+*If you want all of it:* 5.2 hours across all 41 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

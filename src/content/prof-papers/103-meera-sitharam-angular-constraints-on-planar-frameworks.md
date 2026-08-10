@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-meera-sitharam"
-source_hash: "852da5e26662e431eec0d3f2d66e9a69ec3bc4b50a5c51d027a9e4ec67429262"
+source_hash: "80a0999f36ba862546423709babe107f38a23fb607629ccca5eebb59588fdff1"
 sequence: 103
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,38 @@ This paper studies the rigidity of planar frameworks when constraints are placed
 - [Social profile](https://twitter.com/geoplexity?ref_src=twsrc%5Etfw)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Rigidity theory and matroids
+**The paper assumes:** rigidity theory of frameworks, combinatorial matroid theory, algebraic matroids, and geometric constraint systems
+**Already in this field?** Skip this entirely if you already have a solid understanding of rigidity theory and matroid theory as applied to geometric frameworks.
+
+This background prepares you to understand the combinatorial and algebraic foundations of rigidity theory and matroids, which are central to the paper's characterization of angle rigidity in planar frameworks. The rigorous course offers a deep, structured university-level treatment of graph theory fundamentals relevant to rigidity and matroids, while the fast track provides a concise, intuition-driven introduction to linear algebra concepts that underpin the matrix and algebraic methods used in the paper. Choose the course for thorough mastery or the fast track for a quick conceptual grasp.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [MIT 18.217 Graph Theory and Additive Combinatorics, Fall 2019](https://www.youtube.com/playlist?list=PLUl4u3cNGP62qauV_CpT1zKaGG_Vj5igX) — MIT OpenCourseWare · 26 videos · 33.9h across 26 episodes
+
+**Watch only this:** Lectures 1-5, about 6.5 hours — covering the bridge between graph theory and additive combinatorics, forbidden subgraphs, and algebraic constructions relevant to rigidity theory.
+
+*Why it unblocks this paper:* MIT 18.217 Graph Theory and Additive Combinatorics covers graph theory concepts, including forbidden subgraphs and combinatorial structures, which are foundational for understanding rigidity matroids and sparsity conditions used in the paper's combinatorial characterizations.
+
+*If you want all of it:* 33.9 hours across 26 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Essence of linear algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) — 3Blue1Brown · 16 videos · 3.0h across 16 episodes
+
+**Watch only this:** Episodes 1-7, about 1.3 hours — covering vectors, linear combinations, transformations, matrix multiplication, determinants, inverses, and null spaces essential for the paper's matrix-based results.
+
+*Why it unblocks this paper:* 3Blue1Brown's Essence of linear algebra provides a visual and intuitive foundation for understanding matrices, rank, and linear transformations, which are crucial for grasping the angle-rigidity matrix and algebraic matroid constructions in the paper.
+
+*If you want all of it:* 3.0 hours across 16 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-anantaa-kotal"
-source_hash: "8feee933cc1f46590a333b3494c7aed65423eee6845aa0506bba9423bee542eb"
+source_hash: "3fd4383c694980719b84e8912431d6c2a96ec86fa04cf647cb8fd33320db75a2"
 sequence: 112
 generator: "outreach-garden: managed"
 ---
@@ -50,6 +50,27 @@ Research interests: trustworthy and generative AI across public health, security
 - [Faculty/profile page](https://hb2504.utep.edu/Home/Profile?username=akotal)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Differential Privacy in Machine Learning
+**The paper assumes:** differential privacy theory, privacy-preserving machine learning algorithms, and DP-SGD optimization
+**Already in this field?** Skip this entirely if you already understand differential privacy concepts and how they apply to training machine learning models with privacy guarantees.
+
+This background focuses on Differential Privacy in Machine Learning, specifically the principles and mechanisms underlying Differential Privacy Stochastic Gradient Descent (DP-SGD) used in the paper's GAN discriminator to protect sensitive data. The rigorous course offers a deep, university-level understanding of differential privacy concepts and their application in machine learning, while the fast track provides a concise, intuition-driven introduction suitable for quickly grasping the core ideas and privacy guarantees relevant to synthetic data generation.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Differential Privacy](https://www.youtube.com/playlist?list=PLeq952jBvqP8VBQS1nOJ_dXp-SJ-F0tmF) — Xplorer · 23 videos · 13.2h across 23 episodes
+
+**Watch only this:** Episodes 1-3 ('What is Differential Privacy?', 'Differential Privacy - Simply Explained', 'The Definition of Differential Privacy - Cynthia Dwork'), plus Episodes 7-9 ('Tutorial: Differential Privacy and Learning: The Tools, The Results, and The Frontier', 'Differentially Private Algorithms: Some Primitives and Paradigms - Kunal Talwar', 'Composition: The Key to Differential Privacy is Success - Guy Rothblum'), about 3.5 hours total — these cover core definitions, intuition, and DP in learning relevant to DP-SGD.
+
+*Why it unblocks this paper:* The 'Differential Privacy' playlist by Xplorer offers clear, well-structured explainers on differential privacy fundamentals and mechanisms, including synthetic data generation and DP algorithms, providing a quick yet thorough conceptual grounding for readers new to the topic.
+
+*If you want all of it:* All 23 episodes, approximately 13.2 hours.
 
 ## Track 1 — Academic deep-dives (long-form)
 

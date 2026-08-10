@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-zeyu-guo"
-source_hash: "f088b7c87779a7378922b9de4d214c5ce0dd5dd8ed76de7e80ecdb1f06b72e18"
+source_hash: "c38904cc8508b97ac552694cc17445acac9ca511266818bedfdb4b2ce582489d"
 sequence: 116
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: pseudorandomness, coding theory, algebraic complexity theory
 - [Resolved homepage](https://zeyuguo.bitbucket.io/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Algebraic Geometry for Computer Science
+**The paper assumes:** algebraic geometry over finite fields, polynomial factorization theory, irreducibility and indecomposability of polynomials, algebraic methods in theoretical computer science
+**Already in this field?** Skip this entirely if you already have a solid undergraduate or beginning graduate understanding of algebraic geometry concepts applied to polynomials over finite fields and their factorization.
+
+This background focuses on algebraic geometry concepts essential for understanding the construction and analysis of pseudorandom generators in the paper, including polynomial factorization, irreducibility, and indecomposability over finite fields. The rigorous course option offers a comprehensive university-level introduction to algebraic geometry, while the fast track provides a concise, computationally oriented series that covers key ideas more quickly. Choose the course for deep foundational knowledge or the fast track for a focused, practical overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Introduction to Algebraic Geometry_Prof. Arijit Dey](https://www.youtube.com/playlist?list=PLyqSpQzTE6M9zTmxVqW0ksQS_0ina-kxv) — NPTEL-NOC IITM · 77 videos · 25.6h across the first 60 episodes
+
+**Watch only this:** Episodes 1 through 20 (Introduction To Algebraic Geometry - Course Introduction through Tutorial 3: Some Applications of Dimension Theory), about 8.5 hours — these cover foundational algebraic geometry concepts including commutative algebra, affine algebraic sets, irreducibility, and dimension theory essential for understanding the paper's techniques.
+
+*Why it unblocks this paper:* This NPTEL course by Prof. Arijit Dey covers algebraic geometry topics such as affine algebraic sets, irreducibility, Zariski topology, and projective varieties, which are directly relevant to the paper's use of algebraic geometry tools in pseudorandom generator construction and polynomial factorization.
+
+*If you want all of it:* First 60 episodes, about 25.6 hours — for a thorough grounding in algebraic geometry relevant to theoretical computer science.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Computational Algebraic Geometry](https://www.youtube.com/playlist?list=PL5ErEZ81Tyqc1RixHj65XA32ejrS2eEFK) — Emre Sertöz · 48 videos · 13.9h across 48 episodes
+
+**Watch only this:** Lectures 1.1 through 4.2 (Introduction through Projective Closure), about 1.5 hours — these cover the basics of algebraic geometry, affine and projective spaces, and computational tools relevant to polynomial factorization and irreducibility.
+
+*Why it unblocks this paper:* This Computational Algebraic Geometry series by Emre Sertöz offers concise, clear lectures focused on computational aspects of algebraic geometry, including affine and projective spaces, polynomial ideals, and factorization techniques, providing a practical and intuition-driven introduction suitable for quickly grasping the algebraic tools used in the paper.
+
+*If you want all of it:* All 48 episodes, about 13.9 hours — for a more complete computational perspective on algebraic geometry.
 
 ## Track 1 — Academic deep-dives (long-form)
 
