@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-ning-xie"
-source_hash: "72dc5f51fa309c76c4a448c5f317ec52706862747db3228f6542299a36bc8605"
+source_hash: "ec1d9220c35f16b444f7abbc27d3bedf9e2961864ed9330017d4f5a994998cce"
 sequence: 129
 generator: "outreach-garden: managed"
 ---
@@ -59,32 +59,32 @@ Research interests: sub-linear algorithms (especially property testing and local
 _The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
 
 **What you're missing:** Temporal Constraint Reasoning
-**The paper assumes:** qualitative temporal reasoning, temporal constraint satisfaction problems, point algebra in temporal reasoning
-**Already in this field?** Skip this entirely if you already understand qualitative temporal reasoning and constraint satisfaction frameworks for temporal information.
+**The paper assumes:** qualitative temporal reasoning, temporal constraint networks, point algebra, temporal graph consistency
+**Already in this field?** Skip this entirely if you already understand qualitative temporal reasoning and constraint satisfaction methods for temporal graphs.
 
-To understand TLEX's approach to extracting exact timelines from TimeML temporal graphs, a solid grasp of temporal constraint reasoning is essential. The rigorous course option offers a deep, structured university-level introduction to relevant algorithmic and reasoning concepts, while the fast track provides a concise, focused overview of analytical reasoning techniques that underpin constraint satisfaction and consistency checking. Choose the course for a comprehensive foundation; choose the fast track for a quicker, practical grasp of the core reasoning skills needed.
+To understand the core methods of the TLEX paper, especially the transformation of TimeML temporal graphs into constraint graphs and the exact consistency checking and timeline extraction, background in temporal constraint reasoning is essential. The rigorous course offers a deep, structured university-level exploration of simulation principles and state space modeling relevant to temporal reasoning, while the fast track provides a concise, focused introduction to probabilistic reasoning concepts that underpin uncertainty and temporal relations in AI. Choose the course for a thorough foundation and the fast track for a quick, intuition-driven overview.
 
 ### The course
 _Rigorous, and the one to pick if you want to hold this material properly._
 
-▶ [Game Theory Operation Research](https://www.youtube.com/playlist?list=PLU6SqdYcYsfKZ6yXyOqCSSlwe59SI8Jyg) — Dr.Gajendra Purohit · 5 videos · 1.8h across 5 episodes
+▶ [CMPT 394-858 Simulation Principles Fall 2025](https://www.youtube.com/playlist?list=PLcAxwev2PmV8VwDUWu7fZ7WMzSPb369J0) — Nathaniel Osgood · 22 videos · 20.7h across 22 episodes
 
-**Watch only this:** Episodes 1-3, about 1 hour 3 minutes — covering saddle points, pure and mixed strategies, and dominance rules, which provide foundational understanding of constraint reasoning and optimization.
+**Watch only this:** Episodes 2, 4, 5, 7, 8, and 16, about 5.5 hours total — covering state space reconstruction, networks in complex systems, algebra of state charts, hazard rates, agent-based predator-prey models, and tipping points in temporal models.
 
-*Why it unblocks this paper:* This playlist on Game Theory and Operations Research covers fundamental concepts in constraint reasoning and graph-based problem solving, which are directly relevant to understanding temporal constraint graphs, consistency checking, and topological sorting used in TLEX.
+*Why it unblocks this paper:* This university lecture series by Nathaniel Osgood covers state space, temporal behavior, and modeling principles that underpin temporal constraint reasoning and consistency checking, directly relevant to understanding TLEX's approach to temporal graphs and timeline extraction.
 
-*If you want all of it:* 1.8 hours across 5 episodes
+*If you want all of it:* 20.7 hours across all 22 episodes
 
 ### The fast track
 _Same ground, a fraction of the time — for when you just need to read the paper._
 
-▶ [Analytical Reasoning Lectures](https://www.youtube.com/playlist?list=PLLshazbJTbB3Qki01jSUl84ij_1HXTkTU) — PASS Education System · 18 videos · 5.7h across the first 17 episodes
+▶ [Probabilistic Reasoning](https://www.youtube.com/playlist?list=PLRGtPY3Slae6-hgreaNTjzg-3o9QWE07H) — Yashwanth Boggavarapu · 6 videos · 1.0h across 6 episodes
 
-**Watch only this:** Episodes 1-5, about 1 hour 40 minutes — covering basic analytical reasoning concepts and tricks that build intuition for constraint satisfaction and logical ordering.
+**Watch only this:** Episodes 1-4, about 36 minutes total — covering reasoning under uncertainty, probabilistic reasoning, Bayesian networks, and example networks.
 
-*Why it unblocks this paper:* This Analytical Reasoning playlist offers concise, clear lectures on reasoning techniques that support understanding temporal constraints and logical consistency, essential for grasping TLEX's timeline extraction method.
+*Why it unblocks this paper:* This short playlist offers a clear, concise introduction to probabilistic reasoning and Bayesian networks, providing foundational intuition about reasoning under uncertainty and temporal dependencies, which complements understanding temporal constraint reasoning in TLEX.
 
-*If you want all of it:* 5.7 hours across the first 17 episodes
+*If you want all of it:* 1.0 hour across all 6 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 
