@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-yyzhou"
-source_hash: "7bd59ef45cb09b8c6dadb8ed89545e44394f9a71ec100b09934caf681ab560df"
+source_hash: "1874d699963e0b8e5aaaffb1e275538d74f928cd81ece557c12c22bcb7557415"
 sequence: 26
 generator: "outreach-garden: managed"
 ---
@@ -55,33 +55,22 @@ This paper studies how auto-active formal verification tools like Dafny affect r
 
 _The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
 
-**What you're missing:** Formal Methods and Program Verification
-**The paper assumes:** formal methods, program verification, formal specification languages, and automated theorem proving
-**Already in this field?** Skip this entirely if you already understand the basics of formal verification techniques and how formal specifications are used to prove program correctness.
+**What you're missing:** Formal Methods and Formal Verification
+**The paper assumes:** formal methods, formal verification, software specification, and proof techniques
+**Already in this field?** Skip this entirely if you already understand the basics of formal verification and formal methods applied to software engineering.
 
-This background is designed to provide foundational knowledge on formal methods and program verification, essential for understanding the challenges and impacts of auto-active verification tools like Dafny discussed in the paper. The rigorous course option offers a structured, in-depth university lecture series for comprehensive learning, while the fast track provides a concise, focused explainer series to quickly grasp key concepts without extensive time commitment.
-
-### The course
-_Rigorous, and the one to pick if you want to hold this material properly._
-
-▶ [CS636 Short Lectures | Formal Methods | VU Midterm & Final Term Preparation](https://www.youtube.com/playlist?list=PLhkQ-b-MvWXY3WXekZqf3g8wkafhtMPfh) — STUDENT OF THE YEAR HUB · 58 videos · 13.4h across 58 episodes
-
-**Watch only this:** Episodes 1.1 Introduction to Formal Methods Part 1, 1.2 Introduction to Formal Methods Part 2, 1.3 Introduction to Mathematical Notations, 4.1 Introduction to Formal Verification Part 1, 4.2 Introduction to Formal Verification Part 2, and 4.3 Introduction to Transition Systems — about 1.5 hours total. These episodes provide a solid grounding in formal methods and verification basics needed to understand the paper's context.
-
-*Why it unblocks this paper:* This CS636 Formal Methods course from the Virtual University of Pakistan covers foundational topics such as formal specifications, verification, assertions, and transition systems, directly relevant to understanding the formal verification concepts and challenges in the paper.
-
-*If you want all of it:* 13.4 hours across all 58 episodes
+To understand the impact of auto-active formal verification tools like Dafny on software development, it is essential to grasp the foundational concepts of formal methods and formal verification, including formal specifications, proofs, and verification conditions. The rigorous course offers a deep, structured university-level introduction to formal methods for software engineering, while the fast track provides a concise, visual primer on formal verification concepts suitable for quick comprehension or initial familiarization.
 
 ### The fast track
 _Same ground, a fraction of the time — for when you just need to read the paper._
 
 ▶ [Formal Methods for Verification and Model Checking](https://www.youtube.com/playlist?list=PLZ5_EQH6uyVucnu20SS2BFQdVp_m_bznu) — scottlanyon · 7 videos · 1.5h across 7 episodes
 
-**Watch only this:** Episodes 2 Very Basic Introduction to Formal Verification, 3 Formally Proving Code Correctness: An Example, and 4 Formal verification: A quick primer — about 36 minutes total. These cover the essential ideas of formal verification and proof that underpin the paper's discussion.
+**Watch only this:** Episodes 1 to 4 ("model checking intro" through "Formal verification: A quick primer"), about 48 minutes — enough to grasp the essential concepts of formal verification and its practical application.
 
-*Why it unblocks this paper:* This short series by scottlanyon offers a clear, concise introduction to formal verification concepts, including formal proofs and model checking, which quickly builds intuition relevant to the paper's focus on verification tool usability and proof debugging.
+*Why it unblocks this paper:* This short-form playlist provides a clear and concise introduction to formal verification and model checking, including practical examples of proving code correctness, which aligns well with the paper's focus on verification challenges and tool usability.
 
-*If you want all of it:* 1.5 hours across 7 episodes
+*If you want all of it:* All 7 episodes, about 1.5 hours.
 
 ## Track 1 — Academic deep-dives (long-form)
 
