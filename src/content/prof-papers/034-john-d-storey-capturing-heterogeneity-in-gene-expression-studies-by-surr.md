@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-storeylab-org"
-source_hash: "4a113fedd320df17bead213c82f6fcfe9f97367a6db98ad749f45a7c8b082d33"
+source_hash: "439e4f890fb8cb1d6275c070248b30ecec3a826a52dcfdc5386878fe4a757177"
 sequence: 34
 generator: "outreach-garden: managed"
 ---
@@ -54,6 +54,27 @@ Research interests: quantitative methods in genomics, functional genomics, high-
 - [Google Scholar](http://scholar.google.com/citations?user=oi4x2XIAAAAJ)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Statistical Factor Analysis
+**The paper assumes:** statistical factor analysis, latent variable modeling, and matrix decomposition methods
+**Already in this field?** Skip this entirely if you already understand factor analysis and latent variable models in statistics.
+
+To understand the Surrogate Variable Analysis (SVA) method in this paper, a solid grasp of factor analysis is essential, as SVA is a supervised factor analysis approach that estimates hidden sources of variation in gene expression data. The rigorous course option offers a deep, university-level treatment of factor analysis concepts, models, and assumptions, while the fast track provides a concise, focused introduction to factor analysis methods and interpretation. Choose the rigorous course for a thorough foundation and the fast track for a quicker, intuition-driven overview.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Factor Analysis-Concept, methods, and interpretation](https://www.youtube.com/playlist?list=PLfQyI6J-c7LzK1hFUs3_fDG-PEyP0QR8u) — Rakesh Pandey · 7 videos · 5.5h across 7 episodes
+
+**Watch only this:** Episodes 1-3 (Factor analysis Concept and meaning, Basic assumptions terminology and related statistics, and Factor analysis procedure part I), about 2.5 hours — provides a solid conceptual and procedural overview.
+
+*Why it unblocks this paper:* This playlist by Rakesh Pandey offers a concise and clear explanation of factor analysis concepts, procedures, and interpretation, suitable for quickly understanding the key ideas behind factor analysis as used in SVA.
+
+*If you want all of it:* All 7 episodes, about 5.5 hours total.
 
 ## Track 1 — Academic deep-dives (long-form)
 

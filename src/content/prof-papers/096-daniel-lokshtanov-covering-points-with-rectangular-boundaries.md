@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-daniel-lokshantov"
-source_hash: "0059c37ebd7b96aef0e551073f852ccdeb3ca47cdaa208c115357506cf4dea56"
+source_hash: "47f7e0a5162a49f8636f7f5cf37544330b8e7a4bd720bf49a2d431d8ae780d06"
 sequence: 96
 generator: "outreach-garden: managed"
 ---
@@ -55,6 +55,38 @@ Research interests: Algorithms and Theory
 - [Resolved homepage](https://sites.cs.ucsb.edu/~daniello/index.html)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Parameterized Complexity Theory
+**The paper assumes:** parameterized complexity theory, fixed-parameter tractability, W[1]-hardness, parameterized reductions, complexity classes beyond P and NP
+**Already in this field?** Skip this entirely if you already understand the basics of parameterized complexity theory and fixed-parameter tractability.
+
+This background focuses on Parameterized Complexity Theory, which is essential to understand the hardness proofs, fixed-parameter tractability results, and reductions used in the paper on boundary covering with rectangles. The rigorous course option provides a deep, structured university-level treatment of complexity theory foundations, while the fast track offers a concise, focused lecture series on parameterized algorithms and kernelization techniques. Choose the course for a thorough theoretical grounding or the fast track for a quicker, targeted introduction to key concepts relevant to the paper.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Undergrad Complexity Theory at CMU](https://www.youtube.com/playlist?list=PLm3J0oaFux3YL5vLXpzOyJiLtqLp6dCW2) — Ryan O'Donnell · 28 videos · 37.6h across 28 episodes
+
+**Watch only this:** Lectures 6 through 12, about 8 hours — covering Problems in P, SAT, NP, Nondeterminism, Reductions, NP-Completeness and the Cook-Levin Theorem, and NP-Completeness Reductions.
+
+*Why it unblocks this paper:* Ryan O'Donnell's 'Undergrad Complexity Theory at CMU' is a comprehensive, authoritative university lecture series covering complexity classes, NP-completeness, reductions, and related foundational topics that underpin parameterized complexity theory. It provides the theoretical context needed to understand W[1]-hardness and NP-completeness results in the paper.
+
+*If you want all of it:* 37.6 hours across all 28 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Lectures on Parameterized Complexity-NPTEK-NOC IITM](https://www.youtube.com/playlist?list=PLXjzCrdVznQKl23enbxogOf-elcr0DbZk) — FPT Complexity · 43 videos · 30.2h across 43 episodes
+
+**Watch only this:** Episodes mod01lec01 through mod01lec06, about 4.2 hours — covering Invitation to FPT, Formalizing FPT, and Kernelization techniques.
+
+*Why it unblocks this paper:* The 'Lectures on Parameterized Complexity-NPTEK-NOC IITM' playlist offers a focused, well-structured introduction to parameterized algorithms, kernelization, branching, and iterative compression, directly relevant to understanding fixed-parameter tractability and W[1]-hardness as used in the paper.
+
+*If you want all of it:* 30.2 hours across all 43 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

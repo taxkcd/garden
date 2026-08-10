@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-marco-alvarez"
-source_hash: "d4fc2573d9813843c4bcfdf9e62958cd4995fc28ab52e525168d502946326bf1"
+source_hash: "47f14eeca964601f1fa51a8c8cc0478347367cf16b471e45459b5c269b40b0c8"
 sequence: 109
 generator: "outreach-garden: managed"
 ---
@@ -54,6 +54,38 @@ Research interests: Artificial Intelligence, Deep Learning, programming language
 - [LinkedIn](https://www.linkedin.com/in/marcoalvarez)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Graph Neural Networks
+**The paper assumes:** graph neural networks, graph theory basics, deep learning on graphs
+**Already in this field?** Skip this entirely if you already understand graph neural networks and their application in machine learning.
+
+To understand the AI-based anomaly detection methods surveyed in the paper, especially those leveraging graph neural networks (GNNs) and attention mechanisms, a solid grasp of graph neural networks is essential. The rigorous course option offers a comprehensive, university-level deep dive into graph machine learning, while the fast track provides a concise, intuition-driven introduction to GNN concepts and key architectures. Choose the course for depth and theory, or the fast track for a quick, practical overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS224W Machine Learning with Graphs I Jure Leskovec](https://www.youtube.com/playlist?list=PLoROMvodv4rOP-ImU-O1rYRg2RFxomvFp) — Stanford Online · 47 videos · 24.1h across 47 episodes
+
+**Watch only this:** Lectures 1.1 to 1.3 (Why Graphs, Applications, Graph Representation), 6.1 to 6.3 (Introduction to GNNs, Basics of Deep Learning, Deep Learning for Graphs), and 7.1 to 7.3 (General Perspective on GNNs, Single Layer, Stacking Layers) — about 4.5 hours total. This subset covers graph fundamentals, GNN basics, and architectural insights critical for understanding the paper.
+
+*Why it unblocks this paper:* Stanford CS224W is a top-tier university course focused specifically on machine learning with graphs, covering foundational concepts, node embeddings, graph neural networks, and attention mechanisms, directly aligning with the paper's emphasis on graph-based deep learning for anomaly detection.
+
+*If you want all of it:* 24.1 hours across all 47 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Graph Neural Networks (Hands-on)](https://www.youtube.com/playlist?list=PLB1nTQo4_y6sfLtCrGAKG_l7xOHjtYqBk) — LLMs Explained - Aggregate Intellect - AI.SCIENCE · 6 videos · 0.6h across 6 episodes
+
+**Watch only this:** All 6 episodes (Introduction to Graphs, Graph Definition, ML Tasks on Graphs, Simple Graph Convolution, Graph Attention Networks, DeepWalk and Node2Vec) — about 36 minutes total. This covers the essential concepts and key GNN variants relevant to the paper's methods.
+
+*Why it unblocks this paper:* This short series provides a clear, visual, and intuitive introduction to graph neural networks, including graph definitions, simple graph convolutions, graph attention networks, and popular embedding methods like DeepWalk and Node2Vec, making it ideal for quickly grasping the core ideas used in the paper.
+
+*If you want all of it:* 0.6 hours across 6 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

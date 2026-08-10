@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-aniruddhabora-github-io"
-source_hash: "0ae0ebe6ecf5fd2c41ac6e047dffb9235dd46f1b8d884a9d4ad2bd58e3da8303"
+source_hash: "ac57985666f20aa2b415fa223097b8da0d9b9df74fbeefedf5ccd39587090437"
 sequence: 14
 generator: "outreach-garden: managed"
 ---
@@ -55,6 +55,38 @@ Research interests: Physics-Informed and Scientific Machine Learning, Generative
 - [LinkedIn](https://www.linkedin.com/in/aniruddha-bora-49b73a80/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Neural Operators and Scientific Machine Learning
+**The paper assumes:** neural operators, operator learning, deep learning for PDEs, scientific machine learning, convolutional autoencoders
+**Already in this field?** Skip this entirely if you already understand neural operator theory and its application in scientific machine learning for PDEs and climate modeling.
+
+To understand the core methodology of this paper, which centers on Deep Operator Networks (DeepONet) combined with convolutional autoencoders for bias correction in climate models, a solid grasp of neural operators and their role in scientific machine learning is essential. The rigorous course option offers a comprehensive university-level lecture series on AI applications in science and engineering, including operator learning, while the fast track provides a focused, concise set of lectures specifically on deep learning and operator learning in scientific computing. Choose the rigorous course for deep foundational knowledge and the fast track for a quicker, targeted introduction.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [ETH Zürich | AI in the Sciences and Engineering 2025 Lecture Series](https://www.youtube.com/playlist?list=PLJkYEExhe7rYBo2KBwsirSF-B0R3Q0nt7) — CAMLab, ETH Zürich · 14 videos · 17.9h across 14 episodes
+
+**Watch only this:** Lectures 5 to 9 (Operator Learning Introduction, FNO, ReNO, Transformers, Graph-based Models), about 6.3 hours — these cover the fundamentals and variants of operator learning essential to understand DeepONet and its context.
+
+*Why it unblocks this paper:* This ETH Zürich AI in the Sciences and Engineering 2025 lecture series covers operator learning in depth, including DeepONet and related neural operator architectures, directly matching the paper's core methodology of learning bias corrections via neural operators.
+
+*If you want all of it:* All 14 episodes, about 17.9 hours — for full context on AI applications in science and engineering beyond operator learning.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [ETH Zürich | Deep Learning in Scientific Computing 2023](https://www.youtube.com/playlist?list=PLJkYEExhe7rYY5HjpIJbgo-tDZ3bIAqAm) — CAMLab, ETH Zürich · 13 videos · 18.3h across 13 episodes
+
+**Watch only this:** Episodes 7 to 11 (Introduction to Operator Learning Parts 1 & 2, Deep Operator Networks, Neural Operators, Fourier Neural Operators and Convolutional Neural Operators), about 7 hours — these lectures directly explain the neural operator techniques central to the paper.
+
+*Why it unblocks this paper:* This ETH Zürich Deep Learning in Scientific Computing 2023 series includes focused lectures on physics-informed neural networks and operator learning, including DeepONet and Fourier Neural Operators, providing a concise yet thorough introduction to the key concepts used in the paper.
+
+*If you want all of it:* All 13 episodes, about 18.3 hours — for a broader understanding of deep learning in scientific computing.
 
 ## Track 1 — Academic deep-dives (long-form)
 

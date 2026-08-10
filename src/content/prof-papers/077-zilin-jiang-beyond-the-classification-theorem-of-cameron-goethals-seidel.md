@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-zilin-jiang"
-source_hash: "ee2500630a1e066b2c4766e6c3bbe637187c65c21f114a418eef8751cef88a45"
+source_hash: "5b4d221191e1708ae69e83ecc21d5956772f50a60004834b50db793212c4837f"
 sequence: 77
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,38 @@ Research interests: discrete geometry, graph theory, topological combinatorics
 - [Resolved homepage](https://zilin.one/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Spectral Graph Theory
+**The paper assumes:** spectral graph theory, eigenvalues of graphs, adjacency matrix theory
+**Already in this field?** Skip this entirely if you already have a solid understanding of spectral graph theory and graph eigenvalue analysis.
+
+This background selection prepares the reader to understand the spectral graph theory foundations crucial for the paper's classification of graphs by their smallest eigenvalues. The rigorous course option offers a deep, structured university-level treatment of graph theory and additive combinatorics with spectral methods, while the fast track provides a concise, focused introduction to spectral graph theory concepts, ideal for quickly grasping the essentials without extensive time investment.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [MIT 18.217 Graph Theory and Additive Combinatorics, Fall 2019](https://www.youtube.com/playlist?list=PLUl4u3cNGP62qauV_CpT1zKaGG_Vj5igX) — MIT OpenCourseWare · 26 videos · 33.9h across 26 episodes
+
+**Watch only this:** Lectures 1-5, about 6.5 hours — covering foundational graph theory, forbidden subgraphs, and algebraic constructions essential for understanding spectral bounds and classifications.
+
+*Why it unblocks this paper:* MIT 18.217 is a comprehensive university course covering graph theory with a strong emphasis on spectral methods and forbidden subgraph characterizations, directly relevant to the paper's approach and results.
+
+*If you want all of it:* 33.9 hours across 26 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Spectral Graph Theory](https://www.youtube.com/playlist?list=PL_4Jjqx0pZY9KxSbGUuJYm6V5lucJvJkc) — Sanjoy Das · 6 videos · 1.4h across 6 episodes
+
+**Watch only this:** Episodes 1-3, about 42 minutes — covering unnormalized Laplacian, sum of squares property, and Fiedler vector, which are foundational to spectral graph theory and eigenvalue analysis.
+
+*Why it unblocks this paper:* Sanjoy Das's Spectral Graph Theory playlist offers a clear, concise introduction to key spectral graph theory concepts such as graph Laplacians and spectral clustering, providing an accessible overview aligned with the paper's spectral focus.
+
+*If you want all of it:* 1.4 hours across 6 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

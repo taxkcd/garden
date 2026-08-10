@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-raj-sunderraman"
-source_hash: "69a768654fa097dd33a31d1b64e2f5da39ac0f419ad4f0c99c2cf29158804757"
+source_hash: "82fa2a8c86e58fcf4b57c8aed846bd9c2c69c9253126678d51bb3b4ac16b92e5"
 sequence: 76
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,38 @@ Research interests: theory and practice of Databases, Logic Programming, and the
 - [DBLP](https://dblp.org/pid/s/RSunderraman.html)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Functional Programming Principles
+**The paper assumes:** functional programming concepts and principles
+**Already in this field?** Skip this entirely if you already understand the core concepts and rationale behind functional programming.
+
+To understand the pedagogical approach of teaching a purely functional subset of Python in introductory courses, it is essential to grasp the core principles of functional programming such as immutability, pure functions, and higher-order functions. The rigorous course option provides a comprehensive university-level introduction to programming fundamentals with some functional programming concepts, suitable for deep foundational understanding. The fast track offers a concise, focused introduction to functional programming concepts using Haskell, which, while a different language, clearly illustrates the core functional programming principles relevant to the paper's approach.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [MIT 6.00 Intro to Computer Science & Programming, Fall 2008](https://www.youtube.com/playlist?list=PL4C4720A6F225E074) — MIT OpenCourseWare · 24 videos · 19.8h across 24 episodes
+
+**Watch only this:** Lectures 1-6, about 4.9 hours — covering introduction to programming, functions, recursion, and an introduction to functional programming concepts, which provide the foundational understanding needed for the paper's approach.
+
+*Why it unblocks this paper:* MIT 6.00 Intro to Computer Science & Programming, Fall 2008 is a rigorous university course that introduces programming fundamentals including functional programming concepts such as pure functions, immutability, and higher-order functions, aligning well with the paper's focus on teaching a functional subset of Python in introductory courses.
+
+*If you want all of it:* 19.8 hours across 24 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Intro to Functional Programming with Haskell Course](https://www.youtube.com/playlist?list=PLMWwct3_kb-2xtOziG1gQYMVr691GadR4) — LigerLearn · 6 videos · 3.7h across 6 episodes
+
+**Watch only this:** Episodes 1-4, about 2.5 hours — covering lambda calculus primer, installing Haskell, an introduction for beginners, and algebraic data types, which cover the essential functional programming principles relevant to the paper.
+
+*Why it unblocks this paper:* The 'Intro to Functional Programming with Haskell Course' by LigerLearn is a concise, well-structured series that introduces core functional programming concepts such as lambda calculus, pure functions, and algebraic data types in about 3.7 hours, providing a quick yet clear foundation complementary to the paper's focus.
+
+*If you want all of it:* 3.7 hours across 6 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

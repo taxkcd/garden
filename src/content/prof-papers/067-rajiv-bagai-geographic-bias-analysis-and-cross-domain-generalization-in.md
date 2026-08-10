@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-rajiv-bagai"
-source_hash: "c45713493c42e5bdc655fd07b3ddfb06bfb3a21ed9fe4a0a8a7a40093a06de62"
+source_hash: "5e6e45c77176a170367c0a4959bfd5bae0a53912592eb45966b0d9724e52b10e"
 sequence: 67
 generator: "outreach-garden: managed"
 ---
@@ -51,6 +51,38 @@ Research interests: Data Privacy and Web Anonymity, Incomplete and/or Inconsiste
 - [Resolved homepage](https://www.wichita.edu/profiles/academics/engineering/SoC/01_Faculty/Bagai-Rajiv.php)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Domain Adaptation in Machine Learning
+**The paper assumes:** domain adaptation methods, domain shift problem, transfer learning in computer vision
+**Already in this field?** Skip this entirely if you already understand domain adaptation techniques and their role in machine learning generalization.
+
+This background focuses on domain adaptation in machine learning, a key technique used in the paper to address geographic bias and improve model generalization across diverse disaster locations. The rigorous course option provides a deep, structured university-level treatment of domain adaptation and related meta-learning topics, ideal for readers seeking comprehensive understanding. The fast track offers a shorter, focused playlist of expert talks that cover domain adaptation theory and practice efficiently, suitable for readers who want a solid conceptual grasp without committing to a full course.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS330: Deep Multi-Task and Meta Learning I Autumn 2022](https://www.youtube.com/playlist?list=PLoROMvodv4rNjRoawgt72BBNwL2V7doGI) — Stanford Online · 17 videos · 21.5h across 17 episodes
+
+**Watch only this:** Lectures 13 and 14: 'Stanford CS330 Deep Multi-Task & Meta Learning - Domain Adaptation' and 'Domain Generalization' (~75 minutes each, total about 2.5 hours). These two lectures cover the core concepts and techniques of domain adaptation and generalization essential for this paper.
+
+*Why it unblocks this paper:* Stanford CS330 is a rigorous, university-level course on deep multi-task and meta learning that includes dedicated lectures on domain adaptation and domain generalization, directly relevant to understanding the methods and challenges addressed in the paper.
+
+*If you want all of it:* All 17 episodes, approximately 21.5 hours.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Domain Adaptation and Related Areas](https://www.youtube.com/playlist?list=PLgKuh-lKre120r9EsuQRuZ9FKQ3SZ6N0a) — Simons Institute for the Theory of Computing · 25 videos · 15.1h across the first 21 episodes
+
+**Watch only this:** First 6 episodes: 'Label Noise: Ignorance is Bliss' through 'Transfer learning via local convergence rates of the nonparametric least squares estimator' (~43 minutes each, total about 4.3 hours). These cover foundational theory and practical approaches to domain adaptation.
+
+*Why it unblocks this paper:* The Simons Institute playlist 'Domain Adaptation and Related Areas' offers a concise series of expert talks that provide a focused overview of domain adaptation theory and recent advances, suitable for quickly grasping the key ideas behind domain shift mitigation used in the paper.
+
+*If you want all of it:* First 21 episodes, approximately 15.1 hours.
 
 ## Track 1 — Academic deep-dives (long-form)
 

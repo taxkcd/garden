@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-ajiang"
-source_hash: "30ccd39fbfaac7affef17cc4233fccea4eb5035b7dd2e973d26afd0e832cb609"
+source_hash: "9aeda0081b573c0095578680381f27dfaec50cba0a5ff41c91851965064f53e2"
 sequence: 33
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: information theory and coding theory, data storage, machine 
 - [Resolved homepage](https://people.engr.tamu.edu/ajiang/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Error Correcting Codes
+**The paper assumes:** error correcting codes, LDPC codes, Tanner graphs, decoding algorithms, stopping sets
+**Already in this field?** Skip this entirely if you already understand the fundamentals of error correcting codes, LDPC codes, Tanner graph representations, and standard decoding methods.
+
+This background focuses on foundational knowledge of error correcting codes (ECC), especially LDPC codes and Tanner graphs, which are essential to understanding the stopping set elimination problem and collaborative decoding model in the paper. The rigorous course offers a deep, structured university-level treatment of ECC theory and decoding algorithms, while the fast track provides a concise, visual introduction to core ECC concepts and common codes. Choose the rigorous course for thorough mastery and the fast track for a quick but solid conceptual grasp.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [LDPC and Polar Codes in 5G Standard](https://www.youtube.com/playlist?list=PLyqSpQzTE6M81HJ26ZaNv0V3ROBrcv-Kc) — NPTEL-NOC IITM · 37 videos · 14.7h across 37 episodes
+
+**Watch only this:** Episodes 11 to 23 (Low Density Parity Check Codes: definition, properties and introduction to protograph construction through Debugging and Improvements to the MATLAB Implementation), about 4.5 hours — these cover LDPC code basics, Tanner graphs, iterative decoding, and practical decoding implementations.
+
+*Why it unblocks this paper:* This NPTEL-NOC IITM course on 'LDPC and Polar Codes in 5G Standard' covers LDPC codes in detail, including Tanner graph construction, iterative decoding algorithms, and practical implementation aspects, directly relevant to the paper's focus on LDPC stopping sets and collaborative decoding.
+
+*If you want all of it:* All 37 episodes, about 14.7 hours.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Error Detection & Correction Codes Explained | Block Codes, CRC, Hamming](https://www.youtube.com/playlist?list=PLgwJf8NK-2e4YXLjJ-Btbp2cbtDH8ilfK) — Engineering Funda · 21 videos · 5.4h across 21 episodes
+
+**Watch only this:** First 7 episodes (Introduction to Block Codes Explained through Hamming Code Explained), about 1.75 hours — these cover the basics of block codes, parity checks, and Hamming codes essential for grasping ECC fundamentals.
+
+*Why it unblocks this paper:* This Engineering Funda playlist offers concise, clear explanations of error detection and correction codes including block codes, Hamming codes, cyclic codes, and convolutional codes, providing a quick but solid foundation in ECC concepts relevant to understanding the paper's context.
+
+*If you want all of it:* All 21 episodes, about 5.4 hours.
 
 ## Track 1 — Academic deep-dives (long-form)
 

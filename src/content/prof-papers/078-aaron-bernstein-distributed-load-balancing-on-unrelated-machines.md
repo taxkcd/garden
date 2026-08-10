@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-aaron-bernstein"
-source_hash: "bd268693a4bf8b06cb556896c015c7582f1fc752bab256d476a68a289e2d9f94"
+source_hash: "d485ec533c79547a382168b89bf66b66b3c7fc5b49d547610d4edbdd01256ada"
 sequence: 78
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: Design and analysis of algorithms, especially graph algorith
 - [Resolved homepage](https://wp.nyu.edu/tandonschoolofengineering-aaronbernstein/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Distributed Algorithms
+**The paper assumes:** distributed computing models, distributed graph algorithms, and complexity of distributed algorithms
+**Already in this field?** Skip this entirely if you already have a solid understanding of distributed algorithms and the CONGEST model.
+
+To understand the distributed algorithms and communication constraints central to this paper on load balancing in the CONGEST model, a solid grasp of distributed systems concepts is essential. The rigorous course option offers a comprehensive university-level lecture series on distributed systems, covering foundational models, communication, and consensus protocols. The fast track provides a concise, focused playlist on distributed systems basics and key algorithms, suitable for quickly gaining intuition and practical understanding without the full depth of a formal course.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Distributed Systems lecture series](https://www.youtube.com/playlist?list=PLeKd45zvjcDFUEv_ohr_HdUFe97RItdiB) — Martin Kleppmann · 23 videos · 6.9h across 23 episodes
+
+**Watch only this:** Episodes 1.1 through 2.4 (Distributed Systems 1.1: Introduction to Distributed Systems 2.4: Fault tolerance), about 2.5 hours — this covers the core distributed system models, communication basics, and fault tolerance necessary to grasp the paper's distributed algorithmic context.
+
+*Why it unblocks this paper:* Martin Kleppmann's Distributed Systems lecture series is a rigorous, well-structured university course that covers fundamental distributed computing concepts such as system models, communication, fault tolerance, and consensus algorithms. These topics are directly relevant to understanding the CONGEST model and the distributed coordination challenges addressed in the paper.
+
+*If you want all of it:* All 23 episodes, about 6.9 hours — for a comprehensive understanding of distributed systems including time, ordering, replication, consensus, and consistency.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Distributed Computing](https://www.youtube.com/playlist?list=PLBWHhTKgiQmGVsU8VF4ZFPrZgF_4VmeXi) — TheJunkMailBot · 6 videos · 1.6h across 6 episodes
+
+**Watch only this:** First 4 episodes (Parallel & Distributed Computing - Gossip Protocol through Distributed Systems 4.3: Broadcast algorithms), about 1 hour — these cover essential distributed communication and coordination techniques foundational to understanding the paper's algorithmic approach.
+
+*Why it unblocks this paper:* TheJunkMailBot's Distributed Computing playlist offers concise, clear explanations of distributed computing concepts including broadcast algorithms and consensus protocols like RAFT and Paxos. This playlist provides a quick, practical introduction to key distributed algorithms and communication patterns relevant to the paper's focus on distributed load balancing in constrained communication models.
+
+*If you want all of it:* All 6 episodes, about 1.6 hours — including consensus algorithms RAFT and Paxos for broader context.
 
 ## Track 1 — Academic deep-dives (long-form)
 

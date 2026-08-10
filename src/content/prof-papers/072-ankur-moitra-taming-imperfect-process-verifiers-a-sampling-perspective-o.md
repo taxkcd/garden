@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-ankur-moitra"
-source_hash: "ef6bb15c46332e1ecc7318a9bbbe996c656048cf4c5b3c8b831f6e013093532e"
+source_hash: "490eef11606b7e6c70f7dd2a030ddbcedf89e91cd4ee71b906baaca993e3324a"
 sequence: 72
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,38 @@ Research interests: algorithms with provable guarantees for various problems in 
 - [Lab website](http://www.csail.mit.edu/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Markov Chain Monte Carlo
+**The paper assumes:** Markov chains, Markov Chain Monte Carlo algorithms, mixing time analysis, random walks on trees, approximate sampling techniques
+**Already in this field?** Skip this entirely if you already understand Markov Chain Monte Carlo methods and their theoretical analysis, including mixing times and random walk algorithms.
+
+This background focuses on Markov Chain Monte Carlo (MCMC) methods, which are central to understanding the VGB algorithm's theoretical foundations in the paper. The rigorous course option offers a deep, structured university-level treatment of probabilistic graphical models and Monte Carlo methods, ideal for readers seeking comprehensive mastery. The fast track provides a concise, intuition-driven explainer series on MCMC, suitable for readers who want a solid conceptual grasp quickly without extensive time investment.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [CMU 10-708 PGM — Spring 2020](https://www.youtube.com/playlist?list=PLoZgVqqHOumTqxIhcdcpOAJOOimrRCGZn) — CMU 10-708 PGM · 28 videos · 35.8h across 28 episodes
+
+**Watch only this:** Lectures 9 and 10, about 2.5 hours — these cover Monte Carlo Methods and Advanced MCMC Methods, providing the core theoretical background needed to understand the paper's sampling algorithm.
+
+*Why it unblocks this paper:* This CMU 10-708 Probabilistic Graphical Models course includes dedicated lectures on Monte Carlo methods and advanced MCMC techniques, directly covering the theoretical tools (like the Sinclair-Jerrum random walk) that underpin VGB's design and guarantees.
+
+*If you want all of it:* 35.8 hours across 28 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Markov Chain Monte Carlo](https://www.youtube.com/playlist?list=PL2wNuDhSPrhim3vGE2WUtVfaYDBbnXAJW) — David Cruz · 11 videos · 3.4h across 11 episodes
+
+**Watch only this:** Episodes 2, 5, and 6, about 54 minutes total — these cover MCMC introduction, the Metropolis algorithm, and Markov Chain Monte Carlo basics, sufficient for a quick yet solid conceptual understanding.
+
+*Why it unblocks this paper:* David Cruz's Markov Chain Monte Carlo playlist offers clear, visual, and intuition-first explanations of MCMC concepts, including the Metropolis-Hastings algorithm and Gibbs sampling, which are foundational to grasping the stochastic backtracking approach in VGB.
+
+*If you want all of it:* 3.4 hours across 11 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-marijn-heule"
-source_hash: "9eef04c105b4a6b5b9f6fc7452bbfc76b442ff90e467b3be2c54221d0e759ad6"
+source_hash: "63bd0160a874e6b335f917eb517225a7a92304f1b5f940a32026657f53bb6331"
 sequence: 62
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,38 @@ Research interests: solving hard-combinatorial problems in areas such as formal 
 - [Google Scholar](https://scholar.google.com/citations?user=5Bu6aSMAAAAJ)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Graph theory and graph algorithms
+**The paper assumes:** graph theory, graph algorithms, combinatorial optimization
+**Already in this field?** Skip this entirely if you already have a solid undergraduate-level understanding of graph theory and common graph algorithms.
+
+This background focuses on graph theory and graph algorithms, which are central to understanding the theoretical framework and efficient implementation of Bounded Variable Addition (BVA) in the paper. The rigorous course option offers a deep, structured university-level introduction to graph concepts and algorithms, while the fast track provides a concise, visual, and intuitive overview suitable for quickly grasping core ideas without extensive time investment.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [MIT 6.006 Introduction to Algorithms, Spring 2020](https://www.youtube.com/playlist?list=PLUl4u3cNGP63EdVPNLG3ToM6LaEUuStEY) — MIT OpenCourseWare · 32 videos · 35.3h across 32 episodes
+
+**Watch only this:** Lectures 9 (Breadth-First Search), 10 (Depth-First Search), 22 (Graph Theory & Algorithms), and 23 (Graph DS & Breadth First Search), totaling about 4 hours — these cover essential graph traversal and data structures relevant to understanding the paper's graph framework and algorithmic improvements.
+
+*Why it unblocks this paper:* MIT 6.006 Introduction to Algorithms is a comprehensive and authoritative course covering fundamental graph algorithms such as BFS, DFS, shortest paths, and graph data structures, which underpin the graph-theoretic characterizations and biclique partition algorithms used in the paper.
+
+*If you want all of it:* 35.3 hours across 32 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Data Structures & Algorithms — The Complete Visual Course · datarekha](https://www.youtube.com/playlist?list=PLXdI0d1HZAKo) — datarekha · 33 videos · 0.8h across 33 episodes
+
+**Watch only this:** Episodes 21 (Graph Theory & Algorithms) and 22 (Graph DS & Breadth First Search), totaling about 2 minutes — these focused videos give a rapid visual overview of graph concepts and BFS relevant to the paper.
+
+*Why it unblocks this paper:* Data Structures & Algorithms — The Complete Visual Course by datarekha offers a highly visual and concise introduction to graph representations and traversals, providing quick intuition on graph basics that support understanding the paper's graph-theoretic approach without requiring a large time commitment.
+
+*If you want all of it:* 0.8 hours across 33 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

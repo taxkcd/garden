@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-audrey-k-bowden"
-source_hash: "487b087c5d02eeab85adac20636105b5da0a1727a128385a20062f249ae5846c"
+source_hash: "135cce416408456a00eb68d80f3a9563a371e7f9ede6d66a6bcffae13c88ccef"
 sequence: 65
 generator: "outreach-garden: managed"
 ---
@@ -58,6 +58,38 @@ Research interests: Biomedical Imaging, Biophotonics, Image Processing, Imaging,
 - [Google Scholar](https://scholar.google.com/citations?user=hdkdN6oAAAAJ&hl=en)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** microfabrication techniques for biomedical devices
+**The paper assumes:** microfabrication methods, soft lithography, 3D printing for biomedical devices, PDMS molding techniques
+**Already in this field?** Skip this entirely if you already understand microfabrication processes used in biomedical device prototyping, including 3D printing and PDMS molding.
+
+This background focuses on microfabrication techniques relevant to biomedical devices, specifically the fabrication of microwell inserts using 3D printing and PDMS molding as in the paper. The rigorous course option provides a deep, structured university-level understanding of microfabrication processes, while the fast track offers a concise, visual introduction to key concepts in microfabrication suitable for quickly grasping the essentials without extensive time investment.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [MIT 6.774 Physics of Microfabrication: Front End Processing, Fall 2004](https://www.youtube.com/playlist?list=PLUl4u3cNGP61IMhYaHL_x-RzNUIDJD9XK) — MIT OpenCourseWare · 21 videos · 25.1h across 21 episodes
+
+**Watch only this:** Lectures 3 through 6 (4 episodes, ~4.7 hours) — covering wafer fabrication, cleaning, oxidation, and Si/SiO2 interface fundamentals to understand substrate preparation and mold fabrication basics.
+
+*Why it unblocks this paper:* MIT's 'Physics of Microfabrication: Front End Processing' is a comprehensive university lecture series covering fundamental microfabrication processes including wafer fabrication, oxidation, doping, and etching, which underpin the fabrication methods used in the paper.
+
+*If you want all of it:* All 21 episodes, approximately 25.1 hours.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Microfabrication](https://www.youtube.com/playlist?list=PLAnTN9OpSarRZOSz-emDPN6ihMZ4-9G_o) — Lucas Spencer · 9 videos · 3.4h across the first 8 episodes
+
+**Watch only this:** Episodes 1 through 4 (4 episodes, ~1.7 hours) — covering fabrication steps for NMOS, semiconductor fabrication basics, and a microfabrication summary to quickly grasp core concepts.
+
+*Why it unblocks this paper:* Lucas Spencer's 'Microfabrication' playlist provides a clear, concise introduction to microfabrication steps and photolithography, directly relevant to understanding the fabrication workflow and challenges in the paper, in a much shorter time.
+
+*If you want all of it:* All 9 episodes, approximately 3.4 hours.
 
 ## Track 1 — Academic deep-dives (long-form)
 

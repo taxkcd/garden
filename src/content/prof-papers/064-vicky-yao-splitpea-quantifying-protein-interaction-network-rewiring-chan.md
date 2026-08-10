@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-vicky-yao"
-source_hash: "585a6861e4f84352a7c70f38edfe85b7b8a982c2fe71281d6bfaed536319fee4"
+source_hash: "2b99994ac74e99b064e7e35d9f279cac708a20ac98c629947d8748b68b9ac210"
 sequence: 64
 generator: "outreach-garden: managed"
 ---
@@ -51,6 +51,38 @@ Research interests: Computational biology, machine learning and statistical meth
 - [Professor website](https://www.cs.rice.edu/~vy/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** protein interaction networks
+**The paper assumes:** protein-protein interaction networks and domain-domain interactions
+**Already in this field?** Skip this entirely if you already understand the biological and computational concepts of protein interaction networks and domain-domain interactions.
+
+To understand the Splitpea paper, which focuses on how alternative splicing rewires protein-protein interaction networks in cancer, a solid grasp of protein interaction networks is essential. The rigorous course option offers a deep, structured university-level foundation in computational and systems biology with dedicated lectures on protein interaction networks, while the fast track provides a concise, practical introduction to protein interaction networks and their analysis using Cytoscape, suitable for quickly gaining intuition and practical skills.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [MIT 7.91J Foundations of Computational and Systems Biology](https://www.youtube.com/playlist?list=PLUl4u3cNGP63uK-oWiLgO7LLJV6ZCWXac) — MIT OpenCourseWare · 22 videos · 27.8h across 22 episodes
+
+**Watch only this:** Watch episode 16 'Protein Interaction Networks' (~75 minutes) for focused coverage on protein interaction networks; optionally include episode 14 'Predicting Protein Interactions' (~75 minutes) for additional context on PPI prediction methods, totaling about 2.5 hours.
+
+*Why it unblocks this paper:* MIT's 'Foundations of Computational and Systems Biology' includes a dedicated lecture on protein interaction networks (Lecture 16) within a comprehensive systems biology framework, providing rigorous theoretical and practical background relevant to understanding PPI network rewiring in cancer.
+
+*If you want all of it:* The full course comprises 22 episodes totaling approximately 27.8 hours.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Cytoscape & Network Anlysis](https://www.youtube.com/playlist?list=PLSzG4ZVMuDV8zZGlT71yx094Ten_Fjd5T) — QcSciPhi · 6 videos · 3.2h across 6 episodes
+
+**Watch only this:** Watch the first three episodes: 'Protein Protein Interactions String Cytoscape', 'Cytoscape Introduction and Enrichment Map', and 'Network Visualization and Analysis with Cytoscape' (~31 minutes each), totaling about 1.5 hours.
+
+*Why it unblocks this paper:* The 'Cytoscape & Network Analysis' playlist offers a concise, practical introduction to protein-protein interaction networks and their visualization and analysis using Cytoscape, directly relevant for understanding and exploring PPI network rewiring with accessible, well-produced tutorials.
+
+*If you want all of it:* The full playlist has 6 episodes totaling about 3.2 hours.
 
 ## Track 1 — Academic deep-dives (long-form)
 

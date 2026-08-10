@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-vijay-v-vazirani"
-source_hash: "f08b3f19a77107ff946bc79c5c64afdd27ff27a4734add8ab01f692b0d1e8e54"
+source_hash: "5f0af0083186e54cb9262438cbef66a67ed356872066efeae9540e361afe9666"
 sequence: 94
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,38 @@ Research interests: Algorithmic problems in mathematical economics and game theo
 - [Lab website](https://acoi.ics.uci.edu/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Convex Optimization
+**The paper assumes:** convex optimization, primal-dual algorithms, polyhedral theory, and convex cost functions
+**Already in this field?** Skip this entirely if you already have a solid understanding of convex optimization and primal-dual methods in algorithmic game theory or mathematical economics.
+
+This background on Convex Optimization is essential for understanding the algorithmic design and theoretical guarantees in the paper, especially the handling of convex seller costs, primal-dual methods, and min-cut invariants. The rigorous course option offers a deep, structured university-level treatment suitable for thorough mastery, while the fast track provides a shorter, focused introduction to key convex optimization concepts for quicker preparation.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford EE364A Convex Optimization I Stephen Boyd I 2023](https://www.youtube.com/playlist?list=PLoROMvodv4rMJqxxviPa4AmDClvcbHi6h) — Stanford Online · 18 videos · 23.7h across 18 episodes
+
+**Watch only this:** Lectures 1 through 8, about 10.5 hours — covering introduction, convex sets, functions, optimization problems, duality, and primal-dual methods, which are critical for understanding the paper's approach.
+
+*Why it unblocks this paper:* Stanford EE364A Convex Optimization I by Stephen Boyd is a top-tier, authoritative course that covers convex optimization fundamentals, primal-dual methods, and convex analysis in depth, directly supporting the paper's algorithmic and theoretical framework.
+
+*If you want all of it:* All 18 lectures, about 23.7 hours.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Mathematics - Convex Optimization](https://www.youtube.com/playlist?list=PLbMVogVj5nJQHFqfiSdgaLCCWvDcm1W4l) — nptelhrd · 42 videos · 31.5h across 42 episodes
+
+**Watch only this:** Episodes 1 through 10, about 7.3 hours — covering basic convex optimization theory, convex sets, functions, and introductory optimization methods.
+
+*Why it unblocks this paper:* The 'Mathematics - Convex Optimization' series by nptelhrd offers a concise, well-structured introduction to convex optimization concepts including convex sets, functions, and optimization techniques, suitable for quickly grasping the essentials relevant to the paper.
+
+*If you want all of it:* All 42 episodes, about 31.5 hours.
 
 ## Track 1 — Academic deep-dives (long-form)
 

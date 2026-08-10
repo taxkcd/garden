@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-roger-azevedo"
-source_hash: "dbfc14d282fad83139183e5f23409fa5801b643d6bc768814d22cd432f03148a"
+source_hash: "bcf7b633a5a4a774e274dc66b3a9bdcc7b51ecaa97d31d663b548eff35f3ee5e"
 sequence: 63
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,38 @@ Research interests: Advanced learning and training technologies, Human digital t
 - [Google Scholar](https://scholar.google.com/citations?user=gAFP2yQAAAAJ&hl=en&oi=ao)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Foundations of Artificial Intelligence
+**The paper assumes:** fundamental artificial intelligence concepts, machine learning principles, and generative model architectures
+**Already in this field?** Skip this entirely if you already have a solid undergraduate-level understanding of artificial intelligence and machine learning fundamentals.
+
+This background provides foundational knowledge in artificial intelligence, focusing on core concepts such as large language models, generative AI mechanisms, and AI-driven personalized learning systems, which are essential to understand the paper's discussion on generative AI in education. The rigorous course offers a deep, structured dive into AI principles and techniques, while the fast track provides a concise, accessible introduction suitable for readers with limited time. Choose the course for comprehensive mastery or the fast track for a quick, clear overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS221: Artificial Intelligence: Principles and Techniques | Autumn 2025](https://www.youtube.com/playlist?list=PLoROMvodv4rMeDqwS1yFl3j3sR_-MQNEN) — Stanford Online · 20 videos · 24.9h across 20 episodes
+
+**Watch only this:** Lectures 1-4 (Course Overview and Learning I-III) plus Lecture 17 (Language Models), about 5 hours total — these cover core AI foundations, learning algorithms, and language models critical for grasping generative AI mechanisms.
+
+*Why it unblocks this paper:* Stanford CS221: Artificial Intelligence: Principles and Techniques | Autumn 2025 is a rigorous, university-level course covering foundational AI topics including learning algorithms, language models, and AI & society, directly relevant to understanding generative AI's role and challenges in education.
+
+*If you want all of it:* Approximately 24.9 hours across all 20 episodes.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Artificial Intelligence](https://www.youtube.com/playlist?list=PL8dPuuaLjXtO65LeD2p4_Sb5XQ51par_b) — CrashCourse · 21 videos · 4.3h across 21 episodes
+
+**Watch only this:** Episodes 1-8 (What Is AI?, Supervised Learning, Neural Networks and Deep Learning, Training Neural Networks, AI Reading Handwriting LAB, Unsupervised Learning, Natural Language Processing, AI Sound LAB), about 1.5 hours total — these cover fundamental AI concepts and language processing relevant to generative AI.
+
+*Why it unblocks this paper:* CrashCourse's Artificial Intelligence series provides a well-produced, concise introduction to AI and machine learning concepts, including neural networks and natural language processing, which are essential for understanding generative AI in education without requiring a large time commitment.
+
+*If you want all of it:* Approximately 4.3 hours across all 21 episodes.
 
 ## Track 1 — Academic deep-dives (long-form)
 

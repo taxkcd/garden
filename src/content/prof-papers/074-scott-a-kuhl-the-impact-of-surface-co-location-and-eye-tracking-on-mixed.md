@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-scott-a-kuhl"
-source_hash: "75780eddf00b64d0b25fd3f7c76bd733328313a833dafb0ccab343bb9f955c4d"
+source_hash: "6729264972b51a5b126cced6d260a7d8440da31a145402089ff3d021104dc9bf"
 sequence: 74
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: computer graphics, immersive virtual environments, head-moun
 - [Resolved homepage](https://www.mtu.edu/cs/department/people/faculty/kuhl/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Human-Computer Interaction
+**The paper assumes:** human-computer interaction principles, user interface design, usability evaluation methods
+**Already in this field?** Skip this entirely if you already understand core human-computer interaction concepts and usability study methodologies.
+
+This background is designed to provide foundational knowledge in Human-Computer Interaction (HCI), which is essential to understand the design, evaluation, and usability considerations in mixed reality typing interfaces explored in the paper. The rigorous course option offers a deep dive into HCI concepts through a university lecture series, while the fast track provides a concise, well-structured introduction suitable for quickly grasping key principles relevant to this research.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Human Computer Interaction (In English)](https://www.youtube.com/playlist?list=PLyqSpQzTE6M-KVz-9blW7qq_LgDPSOtEE) — NPTEL-NOC IITM · 45 videos · 26.3h across 45 episodes
+
+**Watch only this:** Lectures 1 Part 1, 1 Part 2, 2 Part 1, 2 Part 2, Interaction 3 Part 1, Interaction 3 Part 2, User Perspective 4 part 1 and 4 part 2, Cognitive Aspects in Human-Computer Interaction — about 4 hours total. These cover core HCI concepts, interaction design, and user study considerations essential for this paper.
+
+*Why it unblocks this paper:* This is a comprehensive university-level course on Human-Computer Interaction by Prof. Rajiv Ratn Shah, covering fundamental concepts such as design principles, interaction models, user perspectives, and cognitive aspects, all directly relevant to understanding the experimental design and user study analysis in the paper.
+
+*If you want all of it:* 26.3 hours across 45 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Human Computer Interaction](https://www.youtube.com/playlist?list=PLlgPXNRcnX3EtESM59QVohcQBJ6N7H4JF) — IxDF - Interaction Design Foundation · 11 videos · 1.0h across 11 episodes
+
+**Watch only this:** Episodes 1 through 7 and episode 8 (What Is Error and Types of Errors in Human-Computer Interaction) — about 40 minutes total. These episodes cover the essential HCI design concepts and error understanding relevant to the paper's focus on typing performance and error reduction.
+
+*Why it unblocks this paper:* This short-form playlist by the Interaction Design Foundation provides a clear and concise introduction to HCI fundamentals, including design principles, human memory, perception, and error types, which are critical for quickly understanding the usability and error analysis aspects of the paper.
+
+*If you want all of it:* 1.0 hour across 11 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-craig-b-zilles"
-source_hash: "cd5077ac8ec8fe883bb6e1c845907275aa34ea13a0f1adbde55589ab08f513e0"
+source_hash: "d2d51183a5f36559894acfb02b6993d069bbfa6f3db1295b2d1c900499dcab9e"
 sequence: 93
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: learning analytics, computer-based testing, CS 1, plagiarism
 - [Resolved homepage](http://zilles.cs.illinois.edu/bio.html)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** handwritten mathematical expression recognition
+**The paper assumes:** handwritten mathematical expression recognition techniques and challenges
+**Already in this field?** Skip this entirely if you already understand how handwritten math is transcribed into machine-readable form and the common pitfalls involved.
+
+This background focuses on handwritten mathematical expression recognition, a critical component for understanding the transcription challenges in automated grading of handwritten math using vision-capable LLMs. The rigorous course offers a deep dive into convolutional neural networks and visual recognition techniques foundational to handwriting recognition, while the fast track provides a concise, project-based introduction to handwritten digit recognition, suitable for quickly grasping practical aspects of the problem.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Lecture Collection | Convolutional Neural Networks for Visual Recognition (Spring 2017)](https://www.youtube.com/playlist?list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv) — Stanford University School of Engineering · 16 videos · 19.5h across 16 episodes
+
+**Watch only this:** Lectures 1-7, about 8.5 hours — covering introduction, image classification, loss functions, neural networks, convolutional neural networks, and training methods to build a solid foundation in visual recognition relevant to handwriting transcription.
+
+*Why it unblocks this paper:* This Stanford University course on Convolutional Neural Networks for Visual Recognition covers fundamental computer vision techniques, including image classification and neural network architectures, which are essential for understanding the transcription of handwritten mathematical expressions by vision-capable LLMs.
+
+*If you want all of it:* 19.5 hours across 16 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Project: Handwritten Digit Recognition](https://www.youtube.com/playlist?list=PLiWNvnK7PSPE--36RIdeHg8Sgg02w9chE) — TechMePlease · 9 videos · 4.9h across 9 episodes
+
+**Watch only this:** Episodes 1-4, about 2 hours — covering project demo, data collection, dataset generation, and model training/testing to quickly understand the end-to-end process of handwriting recognition.
+
+*Why it unblocks this paper:* This concise project-based series on Handwritten Digit Recognition provides a practical and accessible introduction to the core techniques of handwriting recognition, focusing on dataset creation, model training, and live prediction, which directly relate to the transcription challenges discussed in the paper.
+
+*If you want all of it:* 4.9 hours across 9 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

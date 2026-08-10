@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-josh-mccoy"
-source_hash: "870afa6126022456fadf11e9fa90f56c09f0098b65f7ae5ad9f5be51b804c910"
+source_hash: "bb292402720ac9d0047432089bc8ae5998f98d4243d87e4b3ac575652f9797d0"
 sequence: 83
 generator: "outreach-garden: managed"
 ---
@@ -51,6 +51,38 @@ Research interests: game technology, social science, artificial intelligence and
 - [Professor website](http://joshmccoy.com)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Reinforcement Learning
+**The paper assumes:** fundamental reinforcement learning concepts, Markov decision processes, Q-learning, deep Q-networks, policy evaluation and improvement
+**Already in this field?** Skip this entirely if you already understand the basics of reinforcement learning algorithms and their application to sequential decision-making problems.
+
+To understand the reinforcement learning (RL) methods used in the Dominion AI research paper, it is essential to grasp core RL concepts such as Markov decision processes, Q-learning, policy gradients, and exploration strategies. The rigorous course option offers a deep, structured university-level introduction to these topics, while the fast track provides a concise, intuition-driven overview suitable for quickly building foundational understanding before diving into the paper.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS224R Deep Reinforcement Learning](https://www.youtube.com/playlist?list=PLoROMvodv4rPwxE0ONYRa_itZFdaKCylL) — Stanford Online · 19 videos · 20.6h across 19 episodes
+
+**Watch only this:** Lectures 1-7 (Class Intro through Offline RL), about 7.5 hours — these cover foundational RL concepts, policy gradients, actor-critic methods, Q-learning, and offline RL, which are critical to understanding the paper's RL approach.
+
+*Why it unblocks this paper:* Stanford CS224R Deep Reinforcement Learning is a comprehensive, authoritative course covering deep RL algorithms including Q-learning and exploration, directly relevant to the Rainbow DQN baseline bot and challenges discussed in the paper.
+
+*If you want all of it:* All 19 episodes, about 20.6 hours
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Reinforcement Learning for LLMs](https://www.youtube.com/playlist?list=PLs8w1Cdi-zvbUan-KlgwKN2CycndyKXXS) — Luis Serrano Academy · 6 videos · 2.5h across 6 episodes
+
+**Watch only this:** Episodes 1, 2, and 6 (RLHF, PPO, and deep RL intro), about 1.2 hours — these episodes cover key RL training methods and deep Q-learning concepts relevant to the paper's baseline bot.
+
+*Why it unblocks this paper:* Luis Serrano Academy's Reinforcement Learning for LLMs playlist offers clear, visual explanations of RL fundamentals including Q-networks and policy gradients, providing an accessible and focused introduction to the core ideas behind the paper's RL techniques.
+
+*If you want all of it:* All 6 episodes, about 2.5 hours
 
 ## Track 1 — Academic deep-dives (long-form)
 

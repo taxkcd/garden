@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-alberto-e-cerpa"
-source_hash: "fc01f5e36f7a7c22d24b60ebb5a42e4a49efb9c75cbfed01ae9880b725b8f4fe"
+source_hash: "5fd9efbe7284af79137d1e066a2d79018f12c778f349616663d9fbf492e60cda"
 sequence: 95
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ This paper addresses the challenges of data dissemination in multi-hop wireless 
 - [Identity evidence](https://directory.ucmerced.edu/person/acerpa)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Wireless Networks and MAC Protocols
+**The paper assumes:** wireless networking fundamentals, MAC protocols, CSMA mechanisms, link quality metrics, and multi-hop wireless communication
+**Already in this field?** Skip this entirely if you already understand wireless network architectures, MAC layer contention protocols like CSMA, and the impact of link quality on multi-hop wireless communication.
+
+To understand the design and evaluation of the Enhanced Dynamic Relay Point Protocol (EDRP) for multi-hop wireless IoT networks, a solid grasp of wireless networking fundamentals and Medium Access Control (MAC) protocols, especially contention-based ones like CSMA, is essential. The rigorous course option offers a comprehensive university-level lecture series on computer networks covering wireless LANs and MAC protocols in depth, while the fast track provides a concise, focused playlist on IoT networking and MAC protocols tailored for quick conceptual understanding. Choose the course for deep technical grounding or the fast track for a rapid, practical overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Computer Networks Lecture Series](https://www.youtube.com/playlist?list=PLbszJxGNQ27lBrmoN34YNdfP-2XGRsflR) — iSmile Academy · 28 videos · 17.8h across 28 episodes
+
+**Watch only this:** Lectures 19, 20, and 21 (MAC Protocols, Wired LAN Ethernet, Wireless LAN CSMA/CA Bluetooth), about 1 hour 54 minutes total — these focus on MAC protocols and wireless LANs relevant to contention-based access and CSMA.
+
+*Why it unblocks this paper:* This iSmile Academy Computer Networks lecture series covers key wireless networking concepts including CSMA/CA and wireless LANs, which are fundamental to understanding the MAC layer challenges and solutions like LQ-CSMA in EDRP.
+
+*If you want all of it:* 17.8 hours across all 28 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [IoT Unit 3 FULL Playlist | Network & Communication in IoT Explained Super Easy | Score 90+ in Exams 🔥](https://www.youtube.com/playlist?list=PLUC5PNETuY-YWjQcXkh47RdVHrw-mw5OJ) — EveryOra · 7 videos · 0.8h across 7 episodes
+
+**Watch only this:** Episodes 1 and 2 (Wireless Medium Access Issues in IoT, MAC Protocol Survey in IoT), about 12 minutes total — these cover the essentials of wireless MAC protocols and contention issues in IoT networks.
+
+*Why it unblocks this paper:* This EveryOra IoT Unit 3 playlist provides a concise, clear explanation of wireless medium access issues and MAC protocols in IoT, directly addressing contention-based MAC challenges and data dissemination relevant to the paper.
+
+*If you want all of it:* 0.8 hours across all 7 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

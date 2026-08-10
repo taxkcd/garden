@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-yangpliu-github-io"
-source_hash: "88c3eaa25f59227d9eadc8d24c27e3b386fc1e4ba6f11fe5be6ab6c177971d4e"
+source_hash: "91421476dd64e48869026542c8ef281d7c45aa8a1ad35a95be9c41980b81e13f"
 sequence: 30
 generator: "outreach-garden: managed"
 ---
@@ -51,6 +51,38 @@ Research interests: graph algorithms, optimization, high-dimensional geometry, a
 - [Faculty/profile page](https://yangpliu.github.io)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Convex Optimization and Interior Point Methods
+**The paper assumes:** convex optimization theory, interior point methods, potential reduction algorithms, combinatorial optimization
+**Already in this field?** Skip this entirely if you already have a solid understanding of convex optimization and interior point methods, especially their application to combinatorial problems.
+
+To understand the core algorithmic approach of this paper, which relies heavily on interior point methods (IPM) and convex optimization, it is essential to grasp the fundamentals of convex optimization and IPMs. The rigorous course option provides a deep, structured, and authoritative treatment of convex optimization, ideal for readers seeking a thorough understanding. The fast track offers a more concise, intuition-driven introduction to optimization methods, including IPMs, suitable for readers who want a quicker but still solid conceptual grasp before diving into the paper.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford EE364A Convex Optimization I Stephen Boyd I 2023](https://www.youtube.com/playlist?list=PLoROMvodv4rMJqxxviPa4AmDClvcbHi6h) — Stanford Online · 18 videos · 23.7h across 18 episodes
+
+**Watch only this:** Lectures 1 through 11 (Stanford EE364A Convex Optimization I Stephen Boyd I 2023 I Lecture 1 to Lecture 11), about 14.5 hours — covering convex sets, functions, duality, and interior point methods, which are essential to understand the paper's IPM framework.
+
+*Why it unblocks this paper:* This is a comprehensive, authoritative Stanford course on convex optimization by Stephen Boyd, covering the theory and methods including interior point methods, which are central to the paper's approach.
+
+*If you want all of it:* All 18 lectures, about 23.7 hours total.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Optimization Methods for Machine Learning and Engineering (KIT Winter Term 20/21)](https://www.youtube.com/playlist?list=PLdkTDauaUnQpzuOCZyUUZc0lxf4-PXNR5) — Julius Pfrommer · 41 videos · 17.5h across 41 episodes
+
+**Watch only this:** Episodes 1.1 through 3.3 (Optimization Methods - Motivation and Historical Perspective to The Interior Point Method), about 2.5 hours total — covering the basics of optimization, convexity, and the interior point method relevant to the paper.
+
+*Why it unblocks this paper:* This playlist offers a concise and clear introduction to optimization methods, including a dedicated episode on interior point methods, providing a faster conceptual overview suitable for readers pressed for time.
+
+*If you want all of it:* All 41 episodes, about 17.5 hours total.
 
 ## Track 1 — Academic deep-dives (long-form)
 

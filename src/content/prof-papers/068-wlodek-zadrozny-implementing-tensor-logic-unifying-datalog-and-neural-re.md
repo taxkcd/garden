@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-wlodek-zadrozny"
-source_hash: "d03df5cf21f1966550e3a34f04a6c5d54ab56b94a624cc4c95937ba716c36389"
+source_hash: "924089ca31b0a22feda3f97e47d44325f3d267aecf988b7b33616cfa3e251bb6"
 sequence: 68
 generator: "outreach-garden: managed"
 ---
@@ -57,6 +57,38 @@ Research interests: text mining, quality control, statistics, asymmetric distrib
 - [Lab website](https://www.researchgate.net/lab/Triss-Ashton-Lab)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Tensor algebra and Einstein summation
+**The paper assumes:** tensor algebra, Einstein summation notation, multilinear algebra, tensor contractions
+**Already in this field?** Skip this entirely if you already understand tensor algebra and Einstein summation notation used in machine learning or physics.
+
+This background focuses on understanding tensor algebra and Einstein summation notation, which are fundamental to the paper's core idea of representing logical inference rules as tensor contractions. The rigorous course option provides a deep, structured university-level treatment of the necessary linear algebra and tensor concepts, while the fast track offers a concise, intuition-driven introduction to tensors and Einstein notation for quicker comprehension. Readers should choose the lane that fits their time and depth needs: the fast track for a quick, visual grasp, or the course for a thorough mathematical foundation.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [MIT 18.S096 Matrix Calculus For Machine Learning And Beyond, IAP 2023](https://www.youtube.com/playlist?list=PLUl4u3cNGP62EaLLH92E_VCN4izBKK6OE) — MIT OpenCourseWare · 17 videos · 13.9h across 17 episodes
+
+**Watch only this:** Lectures 1 Part 1 through 4 Part 2 (8 episodes, about 6.5 hours) — covering introduction, derivatives as linear operators, Jacobians, vectorization of matrix functions, Kronecker products, and gradients, which build the foundation for tensor operations and Einstein summation.
+
+*Why it unblocks this paper:* MIT's 'Matrix Calculus For Machine Learning And Beyond' is a rigorous, focused course covering matrix calculus and tensor operations essential to understanding tensor contractions and Einstein summation notation used in the paper's implementation of Tensor Logic.
+
+*If you want all of it:* All 17 episodes, about 13.9 hours.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Math 🧮 Tensors 2025 November 28](https://www.youtube.com/playlist?list=PLTnG-3tUosD8cOJyYEjY0crgiaFz78h7g) — wael gomaa · 14 videos · 2.8h across 14 episodes
+
+**Watch only this:** Episodes 1 through 3 (about 33 minutes) — covering what tensors are, understanding tensors like a physicist, and tensor contraction with Einstein notation, providing a quick yet solid conceptual foundation.
+
+*Why it unblocks this paper:* Wael Gomaa's 'Math 🧮 Tensors 2025 November 28' playlist offers a concise and intuitive introduction to tensors, tensor contraction, and Einstein notation, directly addressing the core concepts needed to grasp the paper's tensor logic framework in a fraction of the time.
+
+*If you want all of it:* All 14 episodes, about 2.8 hours.
 
 ## Track 1 — Academic deep-dives (long-form)
 

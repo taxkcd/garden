@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-quinn-o-snell"
-source_hash: "05de6289a71144b2bc1e767325062a418346df5c3a5d739c4ee4bcd06b0bd4e3"
+source_hash: "72f641be7567676b0397af51750a716e0016cf8fadfd2e12c1034df91e38ccc5"
 sequence: 73
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: Natural Language Processing and Large Language Models, Big D
 - [Identity evidence](https://faculty.cs.byu.edu/~snell)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** interpretable machine learning
+**The paper assumes:** machine learning models, tree-based ensemble methods, SHAP values, model interpretability techniques
+**Already in this field?** Skip this entirely if you already understand machine learning basics and how SHAP values explain model predictions.
+
+This background focuses on interpretable machine learning, essential for understanding how the paper's LightGBM model predicts adolescent suicidal thoughts and behaviors and how SHAP values explain feature importance. The rigorous course provides a deep, structured university-level treatment of interpretability in AI, while the fast track offers a concise, practical introduction to interpretable machine learning concepts and SHAP explanations. Choose the course for comprehensive mastery or the fast track for a focused, time-efficient overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS221: Artificial Intelligence: Principles and Techniques | Autumn 2019](https://www.youtube.com/playlist?list=PLoROMvodv4rO1NB9TD4iUZ3qghGEGtqNX) — Stanford Online · 19 videos · 25.1h across 19 episodes
+
+**Watch only this:** Lectures 1-4 (Overview Artificial Intelligence Course; Machine Learning 1 - Linear Classifiers, SGD; Machine Learning 2 - Features, Neural Networks; Machine Learning 3 - Generalization, K-means), about 5.3 hours — these cover core machine learning concepts and model interpretability foundations relevant to tree-based models and feature importance.
+
+*Why it unblocks this paper:* Stanford CS221 is a comprehensive university course on AI principles and techniques, including machine learning fundamentals and interpretability concepts, providing the rigorous foundation needed to understand the paper's use of LightGBM and SHAP for prediction and explanation.
+
+*If you want all of it:* All 19 episodes, about 25.1 hours
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Interpretable Machine Learning - Kaggle Course](https://www.youtube.com/playlist?list=PLpdmBGJ6ELUJaQDlOzg3tCoGc4ouyE55_) — 1littlecoder · 5 videos · 2.1h across 5 episodes
+
+**Watch only this:** All 5 episodes (Kaggle 30 Days of ML Days 15-19), about 2.1 hours — covers use cases, feature importance, partial dependence plots, SHAP explanations, and SHAP summary plots, sufficient to grasp the interpretability methods used in the paper.
+
+*Why it unblocks this paper:* This Kaggle course playlist provides a concise, practical introduction to interpretable machine learning with a focus on feature importance and SHAP values, directly matching the paper's interpretability approach and offering clear, example-driven explanations.
+
+*If you want all of it:* All 5 episodes, about 2.1 hours
 
 ## Track 1 — Academic deep-dives (long-form)
 

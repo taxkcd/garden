@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-uzi-vishkin"
-source_hash: "a74c6d784cc438fdd59ff8a5f3176d97b47b791787ef2c597c653907e61f083a"
+source_hash: "8f69bd86cc75a4eca77243590761a58cd73ceccd9d75a35e2fe63dd936210ce1"
 sequence: 80
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: parallel algorithms and architectures
 - [Google Scholar](https://scholar.google.com/citations?user=1r8HluQAAAAJ)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Computational Complexity Theory
+**The paper assumes:** complexity classes NC and P, parallel algorithms complexity, P-completeness theory, parallel time and depth measures
+**Already in this field?** Skip this entirely if you already understand the basics of complexity classes, especially NC and P-completeness, and parallel algorithm complexity measures.
+
+To understand the empirical challenge for NC theory in parallelizing Horn-SAT, a solid grasp of computational complexity theory—especially the classes P, NC, and P-completeness—is essential. The rigorous course option offers a deep, structured university-level treatment of these foundational concepts, while the fast track provides a concise, focused introduction to complexity theory fundamentals, suitable for quickly gaining the necessary background.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Undergrad Complexity Theory at CMU](https://www.youtube.com/playlist?list=PLm3J0oaFux3YL5vLXpzOyJiLtqLp6dCW2) — Ryan O'Donnell · 28 videos · 37.6h across 28 episodes
+
+**Watch only this:** Lectures 1-7 (Course Overview through SAT), about 9.3 hours — these cover Turing machines, complexity classes P and NP, and SAT, which are foundational for grasping P-completeness and parallel complexity.
+
+*Why it unblocks this paper:* Ryan O'Donnell's 'Undergrad Complexity Theory at CMU' is a comprehensive undergraduate course that covers P, NP, reductions, P-completeness, and related complexity classes in depth, directly supporting understanding of the theoretical context of Horn-SAT's parallel complexity.
+
+*If you want all of it:* All 28 lectures, about 37.6 hours.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Computational Complexity Lectures](https://www.youtube.com/playlist?list=PLdUzuimxVcC0DENcdT8mfhI3iRRJLVjqH) — Computer Science Theory Explained · 90 videos · 7.9h across the first 60 episodes
+
+**Watch only this:** Episodes 1-23 (Introduction through SAT and NP-Completeness), about 2.7 hours — these episodes cover the essential complexity theory concepts needed to appreciate the paper's context.
+
+*Why it unblocks this paper:* The 'Computational Complexity Lectures' by Computer Science Theory Explained provide concise, clear explanations of complexity theory basics including P, NP, reductions, and SAT, enabling a quick but solid understanding of the key concepts relevant to the paper.
+
+*If you want all of it:* All 60 episodes, about 7.9 hours.
 
 ## Track 1 — Academic deep-dives (long-form)
 

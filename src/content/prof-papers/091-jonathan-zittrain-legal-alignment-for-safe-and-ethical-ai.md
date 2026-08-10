@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-jonathan-zittrain"
-source_hash: "1f100c2c91692575ce6c43ad7c9e4e2ddc7d163b192b8aecd1c8ca163ed0cc86"
+source_hash: "5529b3c98764b779eb61a332f5c923a6fb9c347f358af4452363768902c901e0"
 sequence: 91
 generator: "outreach-garden: managed"
 ---
@@ -54,6 +54,38 @@ Research interests: the ethics and governance of artificial intelligence; battle
 - [Social profile](https://twitter.com/zittrain)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Legal Reasoning and Interpretation
+**The paper assumes:** legal reasoning methods, statutory interpretation, and foundational legal theory
+**Already in this field?** Skip this entirely if you have prior coursework or experience in law focusing on legal interpretation and reasoning methods.
+
+This background focuses on legal reasoning and interpretation, essential for understanding how legal rules and methods can guide AI decision-making and alignment as discussed in the paper. The rigorous course option offers a deep, structured university-level introduction to legal reasoning, while the fast track provides a concise, accessible series of lectures that cover core concepts quickly. Readers should pick the lane that fits their time and depth needs; the fast track is a focused primer, not a watered-down version.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Law School](https://www.youtube.com/playlist?list=PLR6aNJ2ciHUHs6PZ_tBXRHdJBTkPtSzlG) — Robert Rumsey · 19 videos · 7.6h across the first 18 episodes
+
+**Watch only this:** Episodes 5 (Law School Exam Tips: How to Answer an Exam Line by Line), 6 (Learned Hand Formula), 7 (US v. Carroll Towing), and 8 (Proximate Cause), about 1.7 hours total — these focus on legal reasoning frameworks and application of legal rules, crucial for grasping the paper's core pathways.
+
+*Why it unblocks this paper:* Robert Rumsey's 'Law School' playlist is a structured, university-level series that covers foundational legal reasoning concepts and key cases, providing the rigorous grounding needed to understand legal interpretation methods like analogical reasoning and purposivism relevant to the paper.
+
+*If you want all of it:* About 7.6 hours across the first 18 episodes.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Legal Reasoning And Arguments](https://www.youtube.com/playlist?list=PLZm1k88wCvIEC_vyHN1lWpbrLrwqWE92t) — ARJUN LEGAL WORLD · 20 videos · 3.0h across 20 episodes
+
+**Watch only this:** Lectures 1 through 6, about 48 minutes total — these cover foundational legal reasoning and argument structures relevant to interpreting and applying legal rules as the paper requires.
+
+*Why it unblocks this paper:* The 'Legal Reasoning And Arguments' series by ARJUN LEGAL WORLD offers clear, concise lectures on legal reasoning and argumentation, covering essential concepts in about 3 hours, making it a practical fast track for readers needing a quick yet substantive introduction.
+
+*If you want all of it:* About 3.0 hours across all 20 episodes.
 
 ## Track 1 — Academic deep-dives (long-form)
 

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-cvarela"
-source_hash: "20599afaab76430efda792eacea1c297b08d1905423c613023a15b6a72d8c82b"
+source_hash: "8a5a3b1a4506e18ff7f9d26bef98191ee68c97e88ecb593edf9ea9c1591d5ef0"
 sequence: 35
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: safer flight systems, software verification, cloud and edge 
 - [Lab website](http://wcl.cs.rpi.edu/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Time Series Forecasting and Uncertainty
+**The paper assumes:** time series forecasting, ARMA models, statistical uncertainty quantification, probabilistic modeling
+**Already in this field?** Skip this entirely if you already understand statistical time series forecasting methods and how to model uncertainty in predictions.
+
+This background focuses on time series forecasting and uncertainty quantification, essential for understanding the proactive VM scheduling framework in the paper that relies on ARMA models and probabilistic constraints. The rigorous course provides a deep, structured university-level treatment of uncertainty analysis and experimentation, while the fast track offers a concise, intuitive introduction to time series analysis and forecasting concepts. Choose the course for a comprehensive foundation; choose the fast track for a quick, practical grasp of key ideas.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Introduction to Uncertainty Analysis and Experimentation](https://www.youtube.com/playlist?list=PLp6ek2hDcoNCmPwJug1TJBKJfWXePepyG) — NPTEL IIT Delhi · 30 videos · 25.7h across 30 episodes
+
+**Watch only this:** Episodes mod01lec01 through mod02lec06, about 5 hours — covering introduction, basic uncertainty concepts, and statistical modeling needed to grasp uncertainty quantification in forecasting.
+
+*Why it unblocks this paper:* This NPTEL IIT Delhi course on Uncertainty Analysis and Experimentation covers statistical modeling of uncertainty, which directly supports understanding the paper's approach to modeling uncertainty in MST and workload forecasts.
+
+*If you want all of it:* Approximately 25.7 hours across all 30 episodes.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Basic Introduction to Time Series Analysis & Forecasting (in R Studio)](https://www.youtube.com/playlist?list=PLasapTYuX87FXPUVye-xuCFmWOPDBKChi) — Data & Donuts · 5 videos · 0.4h across 5 episodes
+
+**Watch only this:** All 5 episodes, about 24 minutes total — enough to cover the basics of time series components, forecasting intuition, and error analysis.
+
+*Why it unblocks this paper:* This concise 5-episode series by Data & Donuts provides a beginner-friendly introduction to time series analysis and forecasting, including decomposition and error evaluation, which aligns well with the paper's use of ARMA models and uncertainty estimation.
+
+*If you want all of it:* About 24 minutes across all 5 episodes.
 
 ## Track 1 — Academic deep-dives (long-form)
 

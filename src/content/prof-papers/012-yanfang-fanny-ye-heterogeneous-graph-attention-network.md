@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-yanfang-fanny-ye"
-source_hash: "90e0763482d01c3c0506b5a1cf028433a7cc98899aec661218acf8e386ea8159"
+source_hash: "468c26ce7adf8f85b9e4d15e10fb67ea674b1724055401d300b83f51a9f0c453"
 sequence: 12
 generator: "outreach-garden: managed"
 ---
@@ -54,6 +54,38 @@ Research interests: artificial intelligence (AI), machine learning (ML), data mi
 - [Google Scholar](https://scholar.google.com/citations?user=egjr888AAAAJ)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Graph Neural Networks
+**The paper assumes:** graph neural networks, attention mechanisms in graphs, node embedding techniques, heterogeneous graph modeling
+**Already in this field?** Skip this entirely if you already understand graph neural networks and attention-based graph models.
+
+To understand the Heterogeneous Graph Attention Network (HAN) paper, a solid grasp of graph neural networks (GNNs) and attention mechanisms on graph data is essential. The rigorous course option provides a deep, structured university-level foundation on graph machine learning, while the fast track offers a concise, visual introduction to GNN concepts including graph attention networks. Choose the course for comprehensive mastery or the fast track for a quick, intuitive overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS224W Machine Learning with Graphs I Jure Leskovec](https://www.youtube.com/playlist?list=PLoROMvodv4rOP-ImU-O1rYRg2RFxomvFp) — Stanford Online · 47 videos · 24.1h across 47 episodes
+
+**Watch only this:** Lectures 3.1 - Node Embeddings (30 min), 7.1 - A general Perspective on GNNs (30 min), 7.2 - A Single Layer of a GNN (30 min), 7.3 - Stacking layers of a GNN (30 min), 8.2 - Training Graph Neural Networks (30 min), and 8.3 - Setting up GNN Prediction Tasks (30 min), totaling about 3 hours — these cover the core GNN concepts and training relevant to HAN.
+
+*Why it unblocks this paper:* This Stanford CS224W course by Jure Leskovec is a highly authoritative, comprehensive university lecture series on machine learning with graphs, covering node embeddings, graph neural networks, and attention mechanisms, directly relevant to understanding HAN's hierarchical attention on heterogeneous graphs.
+
+*If you want all of it:* 24.1 hours across 47 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Graph Neural Networks (Hands-on)](https://www.youtube.com/playlist?list=PLB1nTQo4_y6sfLtCrGAKG_l7xOHjtYqBk) — LLMs Explained - Aggregate Intellect - AI.SCIENCE · 6 videos · 0.6h across 6 episodes
+
+**Watch only this:** All 6 episodes (about 36 minutes) — covers graph basics, machine learning tasks on graphs, simple graph convolution, graph attention networks, and node embedding methods like DeepWalk.
+
+*Why it unblocks this paper:* This short-form series 'Graph Neural Networks (Hands-on)' from LLMs Explained offers a clear, visual, and concise introduction to graph neural networks and graph attention networks in about 36 minutes total, providing an accessible fast track to the key concepts needed for HAN.
+
+*If you want all of it:* 0.6 hours across 6 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-andrey-a-popov"
-source_hash: "523d24632a9e7f67e6e7fd1327247f062e37b7125df9dbd7333354566aa35e20"
+source_hash: "9320bf1cfed25628bf93b54f9cde3363002e33bcfc9bb8fb25aeb766f3ec4fb7"
 sequence: 97
 generator: "outreach-garden: managed"
 ---
@@ -57,6 +57,27 @@ Research interests: fusing theory-driven and data-driven methods for scientific 
 - [GitHub](https://github.com/AndreyAPopov)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Ensemble Kalman Filtering
+**The paper assumes:** ensemble Kalman filter theory, data assimilation methods, stochastic filtering algorithms
+**Already in this field?** Skip this entirely if you already have a solid understanding of ensemble Kalman filtering and data assimilation techniques.
+
+To understand the Model Forest Ensemble Kalman Filter paper, a solid grasp of the Ensemble Kalman Filter (EnKF) framework is essential, including ensemble propagation, Kalman gain computation, and data assimilation updates. The rigorous course option offers a detailed, step-by-step university-level introduction to Kalman filtering concepts, while the fast track provides a concise, intuition-driven explainer series suitable for quickly gaining the core ideas without deep implementation details. Choose the lane that fits your available time and depth of study needs.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Ensemble Kalman Filter](https://www.youtube.com/playlist?list=PLmDMxoLY-3kbjuz2lqzormAbZ9YuRvcFt) — Christian Yungtay · 14 videos · 3.7h across 14 episodes
+
+**Watch only this:** Episodes 1-4 ("Ensemble Kalman Filter", "Data assimilation using Kalman Filters", "Data Assimilation: Ensemble Methods", "Explaining the intuition behind Bayesian inference") totaling about 1 hour — these episodes cover the core EnKF concepts and Bayesian background needed to follow the paper's methodology.
+
+*Why it unblocks this paper:* Christian Yungtay's Ensemble Kalman Filter playlist offers clear, visual explanations of EnKF concepts, Bayesian inference intuition, and covariance matrix understanding, providing a quick yet conceptually rich overview that supports grasping the paper's assimilation framework.
+
+*If you want all of it:* All 14 episodes, about 3.7 hours.
 
 ## Track 1 — Academic deep-dives (long-form)
 

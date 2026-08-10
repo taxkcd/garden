@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-kent-quanrud"
-source_hash: "db19df77de68ef1c8963efcb64fb50dce8dd37af65e4ee510628bbb2ae2cb3c8"
+source_hash: "932516c62e2ef8b2ced8fc5a7a9c1f586b78e9cc7f838a99d197bd95dcd57fe6"
 sequence: 87
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,38 @@ Research interests: the design and analysis of algorithms in theoretical compute
 - [DBLP](https://dblp.org/pid/157/8351.html)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Graph algorithms and network flows
+**The paper assumes:** graph theory, network flow algorithms, minimum cut and connectivity concepts, randomized algorithms for graphs
+**Already in this field?** Skip this entirely if you have completed an advanced undergraduate course on graph algorithms covering network flows and minimum cut problems.
+
+To understand the advanced randomized algorithms and flow-based techniques in the paper on approximating directed connectivity, a solid grasp of graph algorithms and network flow fundamentals is essential. The rigorous course option offers a comprehensive university-level lecture series on graph algorithms and flows, ideal for deep theoretical understanding. The fast track provides a concise, intuition-driven playlist focused specifically on network flow concepts, suitable for quickly gaining the core insights needed to follow the paper's methods.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [MIT 6.006 Introduction to Algorithms, Fall 2011](https://www.youtube.com/playlist?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb) — MIT OpenCourseWare · 47 videos · 41.8h across 47 episodes
+
+**Watch only this:** Lectures 13 (Breadth-First Search), 14 (Depth-First Search, Topological Sort), 15 (Single-Source Shortest Paths Problem), 16 (Dijkstra), 17 (Bellman-Ford), 23 (Computational Complexity), and 24 (Topics in Algorithms Research), about 6.5 hours total. These cover graph traversal, shortest paths, and complexity background relevant to flow and connectivity.
+
+*Why it unblocks this paper:* MIT 6.006 Introduction to Algorithms, Fall 2011 covers foundational graph algorithms including BFS, DFS, shortest paths, and network flow concepts essential for understanding flow computations and graph contractions used in the paper.
+
+*If you want all of it:* 41.8 hours across 47 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Graph Network Flow](https://www.youtube.com/playlist?list=PLJlBfw5j7ib_6xhr7lrc_WL8X6abiY_rU) — EVERTON SANTOS DE ANDRADE JUNIOR · 30 videos · 8.3h across 30 episodes
+
+**Watch only this:** Episodes 1 (Max-Flow Min-Cut Theorem & Ford-Fulkerson Algorithm), 4 (Ford-Fulkerson in 5 minutes), 8 (Edmonds Karp Algorithm), and 9 (Minimum cuts and maximum flow rate), about 1 hour total. These provide a focused introduction to max-flow min-cut theory and algorithms.
+
+*Why it unblocks this paper:* The 'Graph Network Flow' playlist by Everton Santos de Andrade Junior focuses specifically on network flow algorithms and minimum cut concepts, directly relevant to the paper's core techniques involving flow computations and cut certification.
+
+*If you want all of it:* 8.3 hours across 30 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

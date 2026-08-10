@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-suranjan-chakraborty"
-source_hash: "7db971e70d86a8dca0f98171985ac64a0818dec2d9ac6eea0d7a70b987bada7c"
+source_hash: "03757d3d422012548b7b8d968a2f918b4bf8f5d6060f5ac14470126965b140b8"
 sequence: 86
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: Requirements Engineering, Socio-cognitive process in Softwar
 - [Google Scholar](https://scholar.google.com/citations?user=IoDHDz8AAAAJ&hl=en)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Natural Language Processing with Deep Learning
+**The paper assumes:** foundations of natural language processing, deep learning for NLP, large language models, prompt engineering techniques
+**Already in this field?** Skip this entirely if you already understand how large language models are built and used, including prompt engineering and semantic similarity evaluation in NLP.
+
+This background focuses on natural language processing (NLP) with deep learning, essential for understanding the large language models and prompt engineering techniques used in the O3DG dataset generation pipeline. The rigorous course option provides a comprehensive, university-level deep dive into NLP concepts and models, while the fast track offers a concise, practical introduction to NLP fundamentals and classical vs deep learning approaches. Choose the course for in-depth mastery and the fast track for a quick but solid conceptual foundation.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS224N Natural Language Processing with Deep Learning I Spring 2024 I Professor Christopher Manning](https://www.youtube.com/playlist?list=PLoROMvodv4rOaMFbaqxPDoLWjDaRAdP9D) — Stanford Online · 23 videos · 27.5h across 23 episodes
+
+**Watch only this:** Lectures 1-3 (Intro and Word Vectors, Word Vectors and Language Models, Backpropagation and Neural Networks), Lecture 7 (Attention, Final Projects and LLM Intro), Lecture 8 (Self-Attention and Transformers), Lecture 9 (Pretraining), and Lecture 10 (Post-training by Archit Sharma), about 9 hours total — these cover core NLP models, LLM foundations, and prompt engineering concepts.
+
+*Why it unblocks this paper:* This is the Stanford CS224N Natural Language Processing with Deep Learning Spring 2024 course by Professor Christopher Manning, a leading expert in NLP. It covers foundational and advanced topics including word vectors, language models, transformers, and prompt engineering, directly relevant to understanding LLMs and semantic similarity metrics used in O3DG.
+
+*If you want all of it:* 27.5 hours across all 23 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Learning Machine Learning | Natural Language Processing (NLP) in R](https://www.youtube.com/playlist?list=PLGey__rsxvBXNOv0Yq9jWcgo_iBH_Z9U_) — Learn Machine Learning · 14 videos · 2.0h across 14 episodes
+
+**Watch only this:** Episodes 1-4 (NLP Intuition, Types of NLP, Classical vs Deep Learning Models, Bag Of Words Model), about 30 minutes total — these provide a quick, intuitive overview of NLP and foundational models relevant to the paper.
+
+*Why it unblocks this paper:* This Learn Machine Learning playlist offers a concise and clear introduction to NLP concepts including classical vs deep learning models and practical NLP steps, suitable for quickly grasping the basics behind LLMs and prompt engineering without deep mathematical detail.
+
+*If you want all of it:* 2.0 hours across all 14 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

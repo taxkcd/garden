@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-jianer-chen"
-source_hash: "1186b27702a4c8a4ffee327359406ea7541fc78ae020ba3c89323307d4bcd932"
+source_hash: "78258df069039a0ffaba41d2f662ce7d219319d471f023314692361efa379341"
 sequence: 75
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: Jianer Chen's main research is centered on computer algorith
 - [Resolved homepage](https://people.engr.tamu.edu/j-chen3/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Streaming Algorithms and Randomized Hashing
+**The paper assumes:** streaming algorithms, universal hashing, randomized algorithms, ℓ0-sampling techniques, data stream complexity
+**Already in this field?** Skip this entirely if you already understand streaming algorithms and randomized hashing techniques used in graph data streams.
+
+This background focuses on streaming algorithms and randomized hashing techniques essential for understanding the design and analysis of the paper's graph k-matching streaming algorithms. The rigorous course option provides a deep, structured university-level introduction to fundamental algorithms including hashing and data structures, while the fast track offers a shorter, more accessible path covering the core hashing and algorithmic concepts needed to grasp the paper's methods efficiently.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [MIT 6.006 Introduction to Algorithms, Spring 2020](https://www.youtube.com/playlist?list=PLUl4u3cNGP63EdVPNLG3ToM6LaEUuStEY) — MIT OpenCourseWare · 32 videos · 35.3h across 32 episodes
+
+**Watch only this:** Episodes 4 (Hashing), 5 (Linear Sorting), and 6 (Binary Trees, Part 1), totaling about 3.3 hours — these cover hashing fundamentals and data structures underpinning streaming algorithms.
+
+*Why it unblocks this paper:* MIT 6.006 Introduction to Algorithms (Spring 2020) is a comprehensive, authoritative course taught by leading professors that covers hashing, data structures, and algorithmic foundations critical to understanding streaming and randomized hashing techniques used in the paper.
+
+*If you want all of it:* 35.3 hours across 32 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [MIT 6.006 Introduction to Algorithms, Fall 2011](https://www.youtube.com/playlist?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb) — MIT OpenCourseWare · 47 videos · 41.8h across 47 episodes
+
+**Watch only this:** Lectures 8 (Hashing with Chaining), 9 (Table Doubling, Karp-Rabin), and 10 (Open Addressing, Cryptographic Hashing), about 2.7 hours total — focused coverage of hashing methods relevant to the paper.
+
+*Why it unblocks this paper:* MIT 6.006 Introduction to Algorithms (Fall 2011) offers a well-structured, slightly shorter playlist with clear lectures on hashing and algorithmic techniques, providing a concise yet solid foundation for the paper's streaming algorithm concepts.
+
+*If you want all of it:* 41.8 hours across 47 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

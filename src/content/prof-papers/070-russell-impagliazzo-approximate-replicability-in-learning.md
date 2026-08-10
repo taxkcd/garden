@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-russell-impagliazzo"
-source_hash: "a75c7dc602951bcf7e8fa7cb3d0ee137ce23f4d332458557defd9f84ddf69740"
+source_hash: "1fc6a8df3b9b8540997ba66bd8606f542a9c97bc9512e4f40a954e57b81251b6"
 sequence: 70
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: computational complexity theory, proof complexity, the theor
 - [Resolved homepage](http://cseweb.ucsd.edu/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Statistical Learning Theory
+**The paper assumes:** PAC learning, VC dimension, sample complexity, agnostic learning, algorithmic stability
+**Already in this field?** Skip this entirely if you have completed an introductory graduate-level course on statistical learning theory or have equivalent knowledge of PAC learning and VC dimension.
+
+This background focuses on Statistical Learning Theory, which is essential for understanding the theoretical foundations of replicability relaxations, sample complexity, and PAC learning discussed in the paper. The rigorous course option provides a structured, university-level introduction to core concepts, while the fast track offers a concise, intuition-driven overview to quickly grasp the fundamentals before diving into the paper.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Statistical Learning with Python](https://www.youtube.com/playlist?list=PLoROMvodv4rPP6braWoRt5UCXYZ71GZIQ) — Stanford Online · 108 videos · 10.7h across the first 60 episodes
+
+**Watch only this:** Watch episodes 1.1 Opening Remarks, 1.2 Examples and Framework, 2.1 Introduction to Regression Models, 2.3 Model Selection and Bias Variance Tradeoff, 2.4 Classification, 3.1 Simple linear regression, 3.2 Hypothesis Testing and Confidence Intervals, and 4.1 Introduction to Classification Problems — about 1.5 hours total. These cover the foundational statistical learning concepts needed to understand the paper.
+
+*Why it unblocks this paper:* Stanford Online's "Statistical Learning with Python" is a comprehensive, authoritative university-level course covering PAC learning, VC dimension, sample complexity, and classification, directly relevant to the paper's theoretical framework.
+
+*If you want all of it:* The full first 60 episodes total about 10.7 hours, covering a broad range of statistical learning topics beyond the immediate needs of this paper.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Introduction to Statistics and Data Analysis](https://www.youtube.com/playlist?list=PLMrJAkhIeNNT14qn1c5qdL29A1UaHamjx) — Steve Brunton · 35 videos · 9.9h across 35 episodes
+
+**Watch only this:** Watch episodes 1 Introduction to Statistics and Data Analysis, 2 Population Statistics and Random Sampling, 6 Normal Approximation to Sample Mean, 7 Confidence Intervals, 8 Central Limit Theorem Example & Hypothesis Testing, and 9 Hypothesis Testing in Statistics — about 1.5 hours total. This subset covers key statistical principles relevant to understanding sample complexity and stability in learning.
+
+*Why it unblocks this paper:* Steve Brunton's "Introduction to Statistics and Data Analysis" playlist offers clear, concise explanations of hypothesis testing, sampling, confidence intervals, and related statistical concepts that underpin learning theory, providing a quick yet solid foundation.
+
+*If you want all of it:* The full playlist has 35 episodes totaling about 9.9 hours.
 
 ## Track 1 — Academic deep-dives (long-form)
 

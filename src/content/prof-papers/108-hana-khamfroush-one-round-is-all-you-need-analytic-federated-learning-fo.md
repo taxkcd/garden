@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-hana-khamfroush"
-source_hash: "9bd568327f0862eaad46ec57dd1cab8150251a3d389ce6696989e5809fca0a2c"
+source_hash: "ee588ea3b69ec2974ecf4a174179dfcd7b40638debd944a733e63b9793b92865"
 sequence: 108
 generator: "outreach-garden: managed"
 ---
@@ -57,6 +57,27 @@ Research interests: text mining, quality control, statistics, asymmetric distrib
 - [Lab website](https://www.researchgate.net/lab/Triss-Ashton-Lab)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Federated Learning and Multi-Label Classification
+**The paper assumes:** federated learning fundamentals, multi-label classification methods, distributed machine learning aggregation techniques
+**Already in this field?** Skip this entirely if you already understand federated learning basics and multi-label classification challenges in distributed settings.
+
+This background selection is designed to prepare you for understanding the federated learning framework and multi-label classification challenges addressed in the paper, especially under task heterogeneity and analytic closed-form aggregation methods. The rigorous course option offers a deep, structured university-level foundation in federated learning concepts and related machine learning principles, while the fast track provides a concise, practical introduction to federated learning with a focus on implementation and core ideas. Choose the course for comprehensive theoretical grounding and the fast track for a quick, applied overview.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Federated Learning with TensorFlow tutorial](https://www.youtube.com/playlist?list=PLTgRMOcmRb3Nf5etrOiB9aeJFA_wcK3Bi) — Packt · 5 videos · 0.8h across 5 episodes
+
+**Watch only this:** Episodes 1-3 ("Federated Learning with TensorFlow: The Course Overview | packtpub.com" through "Federated Learning with TensorFlow: Load and Prepare | packtpub.com"), about 27 minutes — these cover the basics of federated learning, dataset loading, and preparation, sufficient for a quick conceptual understanding.
+
+*Why it unblocks this paper:* This short Packt series provides a concise, practical introduction to federated learning concepts and TensorFlow implementations, ideal for quickly grasping the core ideas behind federated learning relevant to the paper without deep theoretical overhead.
+
+*If you want all of it:* All 5 episodes, approximately 48 minutes
 
 ## Track 1 — Academic deep-dives (long-form)
 

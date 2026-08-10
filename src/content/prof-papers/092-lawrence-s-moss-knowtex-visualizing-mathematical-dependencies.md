@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-lawrence-s-moss"
-source_hash: "8f91e8ed55e0b15fffa819094a31bc601ecf0b16dc314c613f17f09bd1d41d56"
+source_hash: "4c030e873d051ad3fb324d9df90a3ff38914371a92491fa5f2fef06137f76040"
 sequence: 92
 generator: "outreach-garden: managed"
 ---
@@ -57,6 +57,38 @@ Research interests: text mining, quality control, statistics, asymmetric distrib
 - [Lab website](https://www.researchgate.net/lab/Triss-Ashton-Lab)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** mathematical logic and dependency graphs
+**The paper assumes:** mathematical logic, formal proof dependencies, and graph-based knowledge representation
+**Already in this field?** Skip this entirely if you already understand how mathematical statements depend on each other logically and how these dependencies can be represented as graphs.
+
+To understand the KnowTeX paper, it is essential to grasp mathematical logic and how dependencies between statements can be represented and visualized as graphs. The rigorous course offers a deep, structured university-level introduction to knowledge representation and reasoning in AI, covering logic and dependency concepts in detail. The fast track provides a concise, focused introduction to propositional logic, which underpins the logical dependencies KnowTeX visualizes, suitable for quick grounding or review.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Artificial Intelligence:Knowledge Representation and Reasoning](https://www.youtube.com/playlist?list=PLyqSpQzTE6M-t-Qr2Z0Gf_KP5RC97uOKC) — NPTEL-NOC IITM · 117 videos · 20.4h across the first 60 episodes
+
+**Watch only this:** Episodes 1.1 - Introduction, 1.8 - Hierarchies in Representation, 1.9 - Logic and Representation: A Quick Tour, 2.3 - Truth, Logic, and Provability, 2.5 - Entailment and Proof, 2.7 - Patterns in Arguments, 2.8 - Rules of Inference; about 2.5 hours total — these provide a focused grounding on logic, representation, and inference relevant to dependency graphs.
+
+*Why it unblocks this paper:* This NPTEL course on Knowledge Representation and Reasoning covers foundational topics in logic, entailment, proof, and hierarchical representation, directly relevant to understanding the logical and conceptual dependencies that KnowTeX visualizes.
+
+*If you want all of it:* About 20.4 hours across the first 60 episodes.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Propositional Logic | Chapter 1 | Discrete Mathematics](https://www.youtube.com/playlist?list=PLBlnK6fEyqRjZU477sHY1rUFlNZO0_Q9x) — Neso Academy · 31 videos · 3.7h across 31 episodes
+
+**Watch only this:** Episodes 1 - Introduction to Discrete Mathematics, 2 - Motivation & Introduction to Propositional Logic, 3 - Propositional Logic, Propositional Variables & Compound Propositions, 4 - Logical Operators − Negation, Conjunction & Disjunction, 6-8 - Logical Operators − Implication (Parts 1-3), 9 - Converse, Contrapositive and Inverse, 11 - Truth Table Example: ~p V ~q, 16 - Conditional Statements: if p then q, 22 - Logical Argument Forms: Generalizations, Specialization, Contradiction; about 1.5 hours total — these episodes cover the core concepts of propositional logic and inference needed to follow KnowTeX's dependency logic.
+
+*Why it unblocks this paper:* This Neso Academy playlist offers a clear, concise introduction to propositional logic, covering logical operators, implications, equivalences, and inference rules, which are fundamental to understanding the logical dependencies marked by KnowTeX commands.
+
+*If you want all of it:* About 3.7 hours across 31 episodes.
 
 ## Track 1 — Academic deep-dives (long-form)
 

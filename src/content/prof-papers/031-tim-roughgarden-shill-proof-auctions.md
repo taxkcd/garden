@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-timroughgarden-org"
-source_hash: "0494088de80da05e35038d82dbb71c2b7ff0e2fc3bc6459d54ed4ae5cfeed082"
+source_hash: "626c77a418f3c01ab4f69dd7dbe45395b09d639e50eb83a4a44f2772d17435af"
 sequence: 31
 generator: "outreach-garden: managed"
 ---
@@ -51,6 +51,38 @@ Research interests: Economics & Computation, Game Theory, Web3 & Blockchain, Cry
 - [Identity evidence](http://timroughgarden.org)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Algorithmic Game Theory
+**The paper assumes:** mechanism design, auction theory, game theory equilibria, and algorithmic game theory
+**Already in this field?** Skip this entirely if you already have a solid understanding of algorithmic game theory and mechanism design, including auction formats and equilibrium concepts.
+
+To deeply understand the auction design and shill-proofness concepts in this paper, a solid foundation in algorithmic game theory is essential. The rigorous course option provides a comprehensive university-level treatment of mechanism design, equilibria, and auctions, while the fast track offers a concise, intuition-driven introduction to core algorithmic game theory concepts. Choose the rigorous course for thorough mastery or the fast track for a quicker but still substantive overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Algorithmic Game Theory (Stanford CS364A, Fall 2013)](https://www.youtube.com/playlist?list=PLEGCF-WLh2RJBqmxvZ0_ie-mleCFhi2N4) — Tim Roughgarden Lectures · 20 videos · 25.2h across 20 episodes
+
+**Watch only this:** Lectures 1 through 6 (Introduction and Examples; Mechanism Design Basics; Myerson's Lemma; Algorithmic Mechanism Design; Revenue-Maximizing Auctions; Simple Near-Optimal Auctions), about 7.5 hours total — these cover the fundamentals of mechanism design and auction theory needed to understand shill-proof auctions.
+
+*Why it unblocks this paper:* This is Tim Roughgarden's Stanford course on Algorithmic Game Theory, covering mechanism design, revenue-maximizing auctions, and equilibrium concepts in depth, directly aligned with the paper's theoretical contributions and the professor's expertise.
+
+*If you want all of it:* All 20 lectures, about 25.2 hours total.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Algorithmic Game Theory Lectures](https://www.youtube.com/playlist?list=PLdUzuimxVcC0QCFYP0Af3TNldswjL8_ep) — Computer Science Theory Explained · 26 videos · 4.6h across 26 episodes
+
+**Watch only this:** Episodes 1 through 10 (Algorithmic Game Theory - Introduction through Pure Nash Equilibrium - a Further Example), about 1.7 hours total — these episodes provide a solid conceptual grounding in game theory and equilibria.
+
+*Why it unblocks this paper:* This playlist by Computer Science Theory Explained offers a clear, concise introduction to algorithmic game theory concepts including Nash equilibria and mechanism design basics, suitable for quickly grasping the strategic and computational foundations relevant to the paper.
+
+*If you want all of it:* All 26 episodes, about 4.6 hours total.
 
 ## Track 1 — Academic deep-dives (long-form)
 

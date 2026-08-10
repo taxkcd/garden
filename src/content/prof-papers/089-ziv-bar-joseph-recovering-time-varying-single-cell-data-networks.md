@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-ziv-bar-joseph"
-source_hash: "08e49d316453886602cf66a555b4ba0c93563b5c90eda362e33e72bb55a2d79b"
+source_hash: "9d6b905dfd89673093f777274651421e83335827dbe94e7ff8d6ab04ffe183ab"
 sequence: 89
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,38 @@ Research interests: computational Biology, Bioinformatics and Machine learning
 - [Lab website](http://www.sb.cs.cmu.edu/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Deep learning for graph data
+**The paper assumes:** graph neural networks, self-attention mechanisms, recurrent neural networks, meta-learning in machine learning
+**Already in this field?** Skip this entirely if you already understand graph neural networks and attention-based deep learning models in computational biology or machine learning.
+
+To understand the deep learning methods used in Marlene for reconstructing dynamic gene regulatory networks, it is essential to grasp graph neural networks (GNNs) and attention mechanisms applied to graph data. The rigorous course provides a comprehensive, research-level foundation in machine learning with graphs, while the fast track offers a concise, intuition-focused introduction to graph neural networks suitable for quick background preparation.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS224W Machine Learning with Graphs I Jure Leskovec](https://www.youtube.com/playlist?list=PLoROMvodv4rOP-ImU-O1rYRg2RFxomvFp) — Stanford Online · 47 videos · 24.1h across 47 episodes
+
+**Watch only this:** Lectures 1.1 to 1.3 (Why Graphs, Applications, Choice of Graph Representation), 3.1 to 3.3 (Node Embeddings, Random Walk Approaches, Embedding Entire Graphs), 6.1 to 6.3 (Introduction to Graph Neural Networks, Basics of Deep Learning, Deep Learning for Graphs), and 7.1 to 7.3 (General Perspective on GNNs, Single Layer, Stacking Layers) — about 7.5 hours total.
+
+*Why it unblocks this paper:* This is a comprehensive Stanford course by Jure Leskovec on machine learning with graphs, covering graph representations, embeddings, and graph neural networks in depth, directly relevant to understanding Marlene's use of self-attention and GRUs on graph-structured biological data.
+
+*If you want all of it:* 47 episodes, approximately 24.1 hours total.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Graph Neural Networks](https://www.youtube.com/playlist?list=PLV8yxwGOxvvoNkzPfCx2i8an--Tkt7O8Z) — DeepFindr · 27 videos · 6.6h across 27 episodes
+
+**Watch only this:** Episodes 1 to 3 (Introduction, GNNs and Variants, PyTorch Geometric and Molecule Data), 6 (Understanding Graph Attention Networks), and 18 (Friendly Introduction to Temporal Graph Neural Networks) — about 1.5 hours total.
+
+*Why it unblocks this paper:* This short-form series by DeepFindr provides a clear, visual, and project-based introduction to graph neural networks, including attention mechanisms and temporal graph networks, which aligns well with the dynamic graph construction in Marlene.
+
+*If you want all of it:* 27 episodes, approximately 6.6 hours total.
 
 ## Track 1 — Academic deep-dives (long-form)
 

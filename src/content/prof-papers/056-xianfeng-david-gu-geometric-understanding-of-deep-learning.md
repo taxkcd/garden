@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-xianfeng-david-gu"
-source_hash: "1a3fc3054866fa5145e7b5be706008d2512c2fe168e6798eedaa0c14d675445f"
+source_hash: "89934e3c1264f1a84742da89e1bdf0e0d51a3dcbcee0fddf8aedab6686f7756c"
 sequence: 56
 generator: "outreach-garden: managed"
 ---
@@ -54,6 +54,38 @@ Research interests: Optimal transportation, Explainable AI, 3D Vision, Computati
 - [Google Scholar](https://scholar.google.com/citations?user=Y063_CIAAAAJ&hl=en)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Geometric measure theory
+**The paper assumes:** manifold theory, measure theory on manifolds, geometric complexity, and optimal transport theory
+**Already in this field?** Skip this entirely if you already have a solid understanding of manifolds, measure theory, and optimal transport in the context of machine learning or applied geometry.
+
+This background focuses on geometric measure theory, which is essential for understanding the geometric and measure-theoretic foundations underlying the paper's framework on deep learning and manifolds. The rigorous course offers a deep, structured university-level introduction to functional analysis and measure theory concepts relevant to manifolds and measures, while the fast track provides a concise, graduate-level introduction to geometric measure theory with a focus on key concepts and theorems. Choose the rigorous course for a thorough mathematical foundation, or the fast track for a quicker, intuition-driven overview that still covers the core ideas.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [MIT 18.102 Introduction to Functional Analysis, Spring 2021](https://www.youtube.com/playlist?list=PLUl4u3cNGP63micsJp_--fRAjZXPrQzW_) — MIT OpenCourseWare · 23 videos · 30.3h across 23 episodes
+
+**Watch only this:** Lectures 6 to 13 (The Double Dual and the Outer Measure of a Subset of Real Numbers through Basic Hilbert Space Theory), about 6.5 hours — these cover outer measure, sigma algebras, Lebesgue measure, measurable functions, and Lp spaces relevant to geometric measure theory.
+
+*Why it unblocks this paper:* MIT 18.102 Introduction to Functional Analysis covers measure theory, sigma algebras, Lebesgue measure, and integration, which are foundational for understanding the geometric and measure-theoretic aspects of manifolds and complexity measures used in the paper.
+
+*If you want all of it:* 30.3 hours across 23 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Geometric Measure Theory](https://www.youtube.com/playlist?list=PLp0TNqYe2DSEA8r9xYJnJCibS1pN-NQq3) — snyggification · 51 videos · 11.0h across 51 episodes
+
+**Watch only this:** Episodes 1 to 12 (Measures through Frostman Measures), about 2.5 hours — these cover the foundational measure concepts, covering lemmas, and Hausdorff measure and dimension, which are crucial for understanding manifold structures in the paper.
+
+*Why it unblocks this paper:* The Geometric Measure Theory playlist by snyggification provides a focused graduate-level introduction to the interplay between geometry and measure, covering key concepts like Hausdorff measure, dimension, and covering theorems that directly relate to the paper's use of manifold complexity and measure.
+
+*If you want all of it:* 11.0 hours across 51 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

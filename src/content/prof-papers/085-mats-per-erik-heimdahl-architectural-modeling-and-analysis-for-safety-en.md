@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-mats-per-erik-heimdahl"
-source_hash: "d7d1fa5f1bfd3f426d17e4745a8fb0b84a6b957f8721543370760e4cdec494a7"
+source_hash: "99fc48d39a4a3e46bc2e1049a7943f1663f6dd49ed368369324f4ee91994ffdc"
 sequence: 85
 generator: "outreach-garden: managed"
 ---
@@ -55,6 +55,38 @@ Research interests: software engineering, automated software engineering, softwa
 - [Google Scholar](https://scholar.google.com/citations?hl=en&user=a1VRT-wAAAAJ&view_op=list_works&citft=1&email_for_op=cscicomm%40umn.edu&sortby=pubdate)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Model Checking and Formal Verification
+**The paper assumes:** model checking, formal verification, temporal logic, and system architecture modeling
+**Already in this field?** Skip this entirely if you already have a solid understanding of model checking and formal methods applied to system verification.
+
+This background focuses on model checking and formal verification, essential for understanding the Safety Annex approach in the paper, which relies on model checking to verify safety properties and analyze fault propagation in system architectures. The rigorous course option provides a deep, structured university-level introduction to formal methods and model checking, while the fast track offers a concise, intuition-driven series of explainers to quickly grasp the core concepts and practical significance. Choose the lane that fits your available time and depth needs; both will prepare you to understand the paper's verification techniques.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Formal Methods for System Verification](https://www.youtube.com/playlist?list=PLwdnzlV3ogoU0I4OqKZvuaPc_EoUPifbP) — NPTEL IIT Guwahati · 25 videos · 12.7h across 25 episodes
+
+**Watch only this:** Lectures 1-4 (Formal Methods for System Verification: Course Introduction, Spectrum of Logic, Propositional Logic, Decision Problems of Propositional Logic) plus Lectures 20-22 (Introduction to Formal Property Verification, Correctness, Consistencies and Completeness of Formal Properties, Introduction to Model Checking), about 3.5 hours total — these cover the core formal verification concepts and model checking basics needed to understand the paper's approach.
+
+*Why it unblocks this paper:* This NPTEL IIT Guwahati course is a rigorous university lecture series specifically on formal methods for system verification, covering foundational logic, model checking algorithms, and property verification, directly relevant to the paper's use of model checking and formal property specification.
+
+*If you want all of it:* All 25 episodes, about 12.7 hours total.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Formal Methods for Verification and Model Checking](https://www.youtube.com/playlist?list=PLZ5_EQH6uyVucnu20SS2BFQdVp_m_bznu) — scottlanyon · 7 videos · 1.5h across 7 episodes
+
+**Watch only this:** Episodes 1-4 (model checking intro, Very Basic Introduction to Formal Verification, Formally Proving Code Correctness: An Example, Formal verification: A quick primer), about 50 minutes total — these episodes give a solid intuitive foundation on model checking and formal verification relevant to the paper.
+
+*Why it unblocks this paper:* This short playlist by scottlanyon provides clear, concise introductions to formal verification and model checking concepts with practical examples, ideal for quickly grasping the key ideas behind the Safety Annex's verification techniques without deep theoretical overhead.
+
+*If you want all of it:* All 7 episodes, about 1.5 hours total.
 
 ## Track 1 — Academic deep-dives (long-form)
 

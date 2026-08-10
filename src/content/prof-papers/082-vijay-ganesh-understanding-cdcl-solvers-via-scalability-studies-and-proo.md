@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-vijay-ganesh"
-source_hash: "0dbe8aea17234599670dce2ac41b50e1399b46aa8b82bfbd6faa6e5a35932df9"
+source_hash: "c8e75368460f32d389539f9aa7faad13365a849534a2965f7afe87618cc11849"
 sequence: 82
 generator: "outreach-garden: managed"
 ---
@@ -58,6 +58,38 @@ Research interests: theory and practice of SAT/SMT solvers and their application
 - [LinkedIn](https://www.linkedin.com/in/ganeshvijay/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** SAT solving and CDCL algorithms
+**The paper assumes:** propositional satisfiability solving, CDCL algorithm, Boolean formula representations, and SAT solver heuristics
+**Already in this field?** Skip this entirely if you already understand how CDCL SAT solvers work and their role in solving Boolean satisfiability problems.
+
+To understand this paper on CDCL SAT solvers and their scalability, you need solid background on SAT solving algorithms and the CDCL approach. The rigorous course option provides a deep, structured university-level introduction to algorithms foundational to SAT solving, while the fast track offers a concise, focused series of expert talks on SAT/SMT solving theory and practice. Choose the course for a thorough algorithmic foundation; choose the fast track for a targeted, research-level overview of SAT solving concepts relevant to this paper.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [MIT 6.006 Introduction to Algorithms, Fall 2011](https://www.youtube.com/playlist?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb) — MIT OpenCourseWare · 47 videos · 41.8h across 47 episodes
+
+**Watch only this:** Lectures 1 through 24 (Algorithmic Thinking through Computational Complexity), about 21 hours — this covers models of computation, complexity, and foundational algorithms relevant to SAT solving.
+
+*Why it unblocks this paper:* MIT 6.006 Introduction to Algorithms, Fall 2011 covers fundamental algorithmic concepts including computational models and complexity, which are essential to understanding the theoretical underpinnings of SAT solving and CDCL algorithms discussed in the paper.
+
+*If you want all of it:* 41.8 hours across 47 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Theoretical Foundations of SAT/SMT Solving](https://www.youtube.com/playlist?list=PLgKuh-lKre12fucRD-v7EeRt8u6yj2APY) — Simons Institute for the Theory of Computing · 52 videos · 35.2h across the first 46 episodes
+
+**Watch only this:** Episodes 1 through 15 (Encodings Showcase through P, NP and Proof Complexity), about 11 hours — this subset covers key SAT solving concepts, CDCL heuristics, and proof complexity relevant to the paper.
+
+*Why it unblocks this paper:* The Theoretical Foundations of SAT/SMT Solving playlist by the Simons Institute provides a focused, expert-level overview of SAT solving theory, CDCL heuristics, and proof complexity, directly aligned with the paper's core topics like proofdoors and solver scalability.
+
+*If you want all of it:* 35.2 hours across the first 46 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-sohini-ramachandran"
-source_hash: "95bca7c309ea1c004b48bffa4acb15579825beb45368e43e21b31c96c4a34044"
+source_hash: "f22d8c5e9bd130aed6ef28adf5b490e83547e1b9ee7f2b119f0defc6da07f265"
 sequence: 69
 generator: "outreach-garden: managed"
 ---
@@ -51,6 +51,38 @@ Research interests: Determining the causes and consequences of human genetic var
 - [Resolved homepage](https://brown.edu/Research/Ramachandran_Lab)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Bayesian mixture models
+**The paper assumes:** Bayesian mixture models, variational inference, and nonparametric Bayesian statistics
+**Already in this field?** Skip this entirely if you already understand Bayesian mixture modeling and variational inference methods.
+
+This background covers Bayesian mixture models, essential for understanding the infinite mixture model and variational inference used in ML-MAGES to cluster multitrait genetic associations. The rigorous course option offers a deep, university-level treatment of Bayesian and nonparametric models, ideal for thorough comprehension. The fast track provides a concise, intuition-focused introduction to Bayesian mixture models and related concepts, suitable for quickly grasping the core ideas without extensive time investment.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Bayesian and Nonparametric Models (POLS 506)](https://www.youtube.com/playlist?list=PLgIPpm6tJZoTykIcy7nuOeO56AaoCljQo) — cjg2121 · 11 videos · 6.8h across the first 6 episodes
+
+**Watch only this:** Episodes 4 (Practical MCMC for Estimating Models), 5 (Simple Bayesian Models), and 6 (Basic Monte Carlo Procedures and Sampling), about 3.4 hours total — these cover Bayesian inference, MCMC, and sampling techniques foundational for understanding Bayesian mixture models.
+
+*Why it unblocks this paper:* This university lecture series by cjg2121 covers Bayesian and nonparametric statistics, including mixture models and practical MCMC methods, directly relevant to the paper's clustering approach using infinite mixture models and variational inference.
+
+*If you want all of it:* All 11 episodes, approximately 6.8 hours across the first 6 episodes and about 12 hours total for the full playlist.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [bayesian](https://www.youtube.com/playlist?list=PLE1sgbR0H7PK9-0vRKKZL-QjWo1Ibknx9) — Guillermo Kopp · 13 videos · 4.8h across 13 episodes
+
+**Watch only this:** Episodes 1 (Dirichlet Process Mixture Models and Gibbs Sampling), 10 (EM algorithm: how it works), and 11 (Clustering (4): Gaussian Mixture Models and EM), about 1.1 hours total — these specifically explain mixture models and inference algorithms used in the paper.
+
+*Why it unblocks this paper:* This concise playlist by Guillermo Kopp includes focused videos on Dirichlet Process Mixture Models, Bayesian inference, and the EM algorithm, providing an accessible introduction to Bayesian mixture models and clustering relevant to the paper's methods.
+
+*If you want all of it:* All 13 episodes, approximately 4.8 hours total.
 
 ## Track 1 — Academic deep-dives (long-form)
 

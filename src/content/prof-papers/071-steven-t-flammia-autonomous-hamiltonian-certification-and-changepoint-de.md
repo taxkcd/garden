@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-steven-t-flammia"
-source_hash: "6a9c0b512df7d18a3b3a80630400477332df73df9169e8dbecd939b1457b73c1"
+source_hash: "65ac2312294c96275b41d1bf646b554e700146c2c4bd415d4ef8eb8d6a6fc6a4"
 sequence: 71
 generator: "outreach-garden: managed"
 ---
@@ -55,6 +55,38 @@ Research interests: Quantum information theory, Condensed matter theory, Topolog
 - [GitHub](https://github.com/sflammia)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Quantum Hamiltonian Estimation
+**The paper assumes:** quantum Hamiltonian estimation, quantum state evolution, operator norms, adaptive quantum measurements
+**Already in this field?** Skip this entirely if you already understand quantum Hamiltonian estimation methods and the mathematical framework of quantum state evolution and measurement.
+
+To understand the autonomous Hamiltonian certification and changepoint detection protocols in this paper, a solid grasp of quantum Hamiltonian estimation and time evolution in quantum mechanics is essential. The rigorous course option provides a deep, structured university-level foundation on quantum mechanics including Hamiltonians and time evolution, while the fast track offers a concise, intuition-focused summary of key quantum mechanics concepts relevant to Hamiltonians and their dynamics. Choose the course for thorough understanding and the fast track for a quicker conceptual overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [MIT 8.04 Quantum Physics I, Spring 2013 (2013)](https://www.youtube.com/playlist?list=PLUl4u3cNGP61-9PEhRognw5vryrSEVLPr) — MIT OpenCourseWare · 25 videos · 32.6h across 25 episodes
+
+**Watch only this:** Lectures 5 (Operators and the Schrödinger Equation), 6 (Time Evolution and the Schrödinger Equation), 7 (More on Energy Eigenstates), and 23 (More on Spin), about 5.2 hours total — these cover the Hamiltonian operator, time evolution, and spin systems essential for the paper's methods.
+
+*Why it unblocks this paper:* MIT OpenCourseWare's 'Quantum Physics I' is a rigorous university-level course covering foundational quantum mechanics topics including time evolution, operators, and Hamiltonians, which are directly relevant to understanding the certification and changepoint detection protocols based on Hamiltonian dynamics.
+
+*If you want all of it:* All 25 lectures, about 32.6 hours total.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [The Feynman Lectures on Physics (Vol. 3) – Quantum Mechanics Explained | Complete Chapter Summaries](https://www.youtube.com/playlist?list=PLI3TocC2xS245Oc3BN348AcaECXtbkDbG) — Last Minute Lecture · 22 videos · 4.9h across 22 episodes
+
+**Watch only this:** Episodes 7 (Time Dependence of Amplitudes), 8 (The Hamiltonian Matrix Explained), and 11 (More Two-State Systems – Pauli Matrices), about 40 minutes total — these episodes cover time evolution, Hamiltonians, and spin-1/2 systems relevant to the paper.
+
+*Why it unblocks this paper:* The 'Feynman Lectures on Physics (Vol. 3) – Quantum Mechanics Explained' playlist provides concise, well-structured chapter summaries focusing on quantum behavior, Hamiltonians, and time dependence, offering an accessible yet precise overview of quantum mechanics concepts needed for understanding Hamiltonian certification.
+
+*If you want all of it:* All 22 episodes, about 4.9 hours total.
 
 ## Track 1 — Academic deep-dives (long-form)
 

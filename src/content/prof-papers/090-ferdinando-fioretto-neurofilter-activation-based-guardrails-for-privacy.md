@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-ferdinando-fioretto"
-source_hash: "144d738772cd66fc2a03ad9a3100a473ee05f801ea4afd52919410d09cf57445"
+source_hash: "a7b587fe0193a0ef4f4a6ff7b648dd0f2e35dd04c19f959fdc49a0f53a8bed58"
 sequence: 90
 generator: "outreach-garden: managed"
 ---
@@ -56,6 +56,38 @@ Research interests: Foundational ML and Generative AI under Constraints, AI for 
 - [Social profile](https://twitter.com/nandofioretto)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Neural Network Interpretability
+**The paper assumes:** neural network internals, activation representations, linear probing methods, interpretability techniques in deep learning
+**Already in this field?** Skip this entirely if you already understand neural network interpretability methods and how to analyze intermediate activations with probing techniques.
+
+Understanding neural network interpretability is crucial for grasping the methodology behind NeuroFilter, which probes internal activations of LLMs to detect privacy-violating intent. The rigorous course option provides a deep, structured academic foundation on neural network interpretability, while the fast track offers a concise, intuition-driven explanation suitable for quickly building core understanding without extensive time investment.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS230: Deep Learning | Autumn 2018](https://www.youtube.com/playlist?list=PLoROMvodv4rOABXSygHTsbvUz4G_YQhOb) — Stanford Online · 10 videos · 12.4h across 10 episodes
+
+**Watch only this:** Watch Lecture 7 - Interpretability of Neural Network (~74 minutes) to focus specifically on interpretability techniques, plus Lecture 2 - Deep Learning Intuition (~74 minutes) for foundational understanding, totaling about 2.5 hours.
+
+*Why it unblocks this paper:* Stanford CS230 includes a dedicated lecture on neural network interpretability (Lecture 7) within a comprehensive deep learning course taught by Andrew Ng, providing rigorous academic coverage directly relevant to understanding activation probing methods used in NeuroFilter.
+
+*If you want all of it:* The entire 10-lecture series totals approximately 12.4 hours.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Neural Networks / Deep Learning](https://www.youtube.com/playlist?list=PLblh5JKOoLUIxGDQs4LFFD--41Vzf-ME1) — StatQuest with Josh Starmer · 33 videos · 10.9h across 33 episodes
+
+**Watch only this:** Watch the first 10 episodes covering the essential main ideas of neural networks, backpropagation, activation functions, and softmax (~3.2 hours total, ~19 minutes each), which provide a solid fast-track understanding of neural network internals relevant to activation probing.
+
+*Why it unblocks this paper:* StatQuest with Josh Starmer offers a well-produced, clear, and intuition-first playlist on neural networks that covers core concepts including backpropagation, activation functions, and transformers, which underpin the interpretability and probing techniques in NeuroFilter.
+
+*If you want all of it:* The full 33-episode playlist totals about 10.9 hours.
 
 ## Track 1 — Academic deep-dives (long-form)
 

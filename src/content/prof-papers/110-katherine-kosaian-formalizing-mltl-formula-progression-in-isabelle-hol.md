@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-katherine-cordwell"
-source_hash: "d7efc9ac90d4e705e756a27e5899617ba9552861dc3f0ed794c4f37292639756"
+source_hash: "f492ce1438d25f51317ef3582e742e773af92b29e9934a79450f6e823b69d932"
 sequence: 110
 generator: "outreach-garden: managed"
 ---
@@ -54,6 +54,38 @@ Research interests: formal verification, interactive theorem proving, ways in wh
 - [Google Scholar](https://scholar.google.com/citations?user=tDH2uIoAAAAJ&hl=en&oi=ao)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** temporal logic and formal verification
+**The paper assumes:** temporal logic, linear temporal logic semantics, formal verification methods, theorem proving basics
+**Already in this field?** Skip this entirely if you already understand temporal logic semantics and have experience with formal verification or theorem proving.
+
+To understand the formalization of MLTL formula progression in Isabelle/HOL, a solid grasp of temporal logic and formal verification is essential. The rigorous course option offers a comprehensive university-level treatment of safety-critical system validation, including temporal logic and runtime monitoring, while the fast track provides a concise, focused introduction to linear temporal logic concepts and semantics. Choose the rigorous course for deep foundational knowledge and the fast track for a quick, clear conceptual overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford AA228V I Validation of Safety Critical Systems I 2025](https://www.youtube.com/playlist?list=PLoROMvodv4rOq1LMLI8U7djzDb8--xpaC) — Stanford Online · 17 videos · 20.1h across 17 episodes
+
+**Watch only this:** Episodes 3 and 4: 'Property Specification 1' and 'Property Specification 2', plus Episode 16: 'Runtime Monitoring', about 3.5 hours total (~70 minutes each episode). These cover temporal logic specification and runtime verification concepts crucial for understanding MLTL formalization.
+
+*Why it unblocks this paper:* This Stanford course covers property specification and runtime monitoring in safety-critical systems, directly relevant to MLTL and its formal verification in Isabelle/HOL. It provides a rigorous foundation in validation techniques and temporal logic applications in embedded and aerospace systems.
+
+*If you want all of it:* All 17 episodes, approximately 20.1 hours.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Lectures on Linear Temporal Logic](https://www.youtube.com/playlist?list=PLMBx8HjvK7672qEl6bdnXdzYEbLP_lWPw) — Andrei Popescu · 9 videos · 1.3h across 9 episodes
+
+**Watch only this:** Episodes 1-5: 'Introduction to LTL. Part 1: Basic Intuition' through 'Introduction to LTL. Part 5: Formal Semantics', about 40 minutes total (~8 minutes each). These episodes cover the core concepts of LTL syntax and semantics needed to grasp MLTL formalization.
+
+*Why it unblocks this paper:* This concise series by Andrei Popescu introduces Linear Temporal Logic (LTL) with clear explanations of syntax, semantics, and formula equivalence, providing a focused primer on temporal logic foundational to MLTL understanding.
+
+*If you want all of it:* All 9 episodes, approximately 1.3 hours.
 
 ## Track 1 — Academic deep-dives (long-form)
 

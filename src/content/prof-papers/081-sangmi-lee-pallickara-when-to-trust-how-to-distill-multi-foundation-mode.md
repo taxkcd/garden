@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-sangmi-lee-pallickara"
-source_hash: "dcf6819f36725776b69ddfb2246059cea697e5ebe6fc1a86d5dce63b44b441d2"
+source_hash: "108d11425c79db914e73c9aa7f36c6f817354ca19552622a6bbb819644f75a09"
 sequence: 81
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: Big Data for the sciences, predictive analytics, storage, re
 - [Resolved homepage](https://www.cs.colostate.edu/~sangmi/index.html)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Knowledge Distillation in Machine Learning
+**The paper assumes:** knowledge distillation techniques, teacher-student model training, uncertainty-aware model compression
+**Already in this field?** Skip this entirely if you already understand the fundamentals of knowledge distillation and teacher-student training methods in machine learning.
+
+To understand the core methodology of the paper, which centers on knowledge distillation from multiple large foundation models into a lightweight student model with adaptive routing and uncertainty gating, background on knowledge distillation in machine learning is essential. The rigorous course option provides a deep, structured university-level treatment of knowledge distillation within the broader context of ML hardware and systems, while the fast track offers a concise, focused explainer series specifically on knowledge distillation concepts and techniques. Choose the course for comprehensive depth and system-level insights, or the fast track for a quicker, concept-driven introduction.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Machine Learning Hardware and Systems (Cornell Tech, Spring 2022)](https://www.youtube.com/playlist?list=PL0mFAhrXqy9CuopJhAB8GVu_Oy7J0ery6) — Prof. Mohamed Abdelfattah · 21 videos · 19.9h across the first 20 episodes
+
+**Watch only this:** Watch Lecture 9: Knowledge Distillation (~59 minutes) for focused coverage of the topic within the course.
+
+*Why it unblocks this paper:* This Cornell Tech course includes a dedicated lecture on knowledge distillation (Lecture 9) within a broader ML hardware and systems context, providing rigorous coverage of the principles and practical considerations relevant to distillation frameworks like Guard.
+
+*If you want all of it:* The full playlist is about 19.9 hours across the first 20 episodes, covering ML hardware, efficiency, and related topics.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Knowledge Distillation](https://www.youtube.com/playlist?list=PLzXhOfVed5oYjv0tKuzKgvZlIGLheQ9FV) — jeromeeusebius · 9 videos · 3.6h across 9 episodes
+
+**Watch only this:** Watch episodes 1-4 (approximately 1.5 hours total) to cover fundamental concepts and examples of knowledge distillation.
+
+*Why it unblocks this paper:* This concise 9-episode playlist by jeromeeusebius is dedicated specifically to knowledge distillation, explaining core concepts, examples, and recent advances in an accessible manner, ideal for quickly grasping the essentials relevant to the paper.
+
+*If you want all of it:* The entire playlist is about 3.6 hours across 9 episodes.
 
 ## Track 1 — Academic deep-dives (long-form)
 
