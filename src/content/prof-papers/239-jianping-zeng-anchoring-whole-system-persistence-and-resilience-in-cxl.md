@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-jianping-zeng"
-source_hash: "118b73f3994332cfe6247287a5f00a976ddad22b209d0ea47d75bc1f73851bfe"
+source_hash: "a1dd0825039e57f63eda58fbf5686aa1af75370bf8bf73b7b72c4e20058a88a1"
 sequence: 239
 generator: "outreach-garden: managed"
 ---
@@ -59,32 +59,32 @@ Research interests: co-design of compilers and computer architectures, driven by
 _The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
 
 **What you're missing:** Computer Architecture and Memory Systems
-**The paper assumes:** computer architecture, memory hierarchy design, persistent memory systems, error correction codes in hardware
-**Already in this field?** Skip this entirely if you already have a solid understanding of modern computer architecture focusing on memory systems and hardware error resilience.
+**The paper assumes:** computer architecture, memory hierarchy design, error correcting codes in memory, persistent memory technologies, and interconnect standards like CXL
+**Already in this field?** Skip this entirely if you already have a solid undergraduate-level understanding of computer architecture and memory systems, including ECC and persistent memory concepts.
 
-To understand the ANCHOR paper's design and evaluation, a solid grasp of modern computer architecture focusing on memory systems, persistent memory, and error correction is essential. The rigorous course option offers a deep, structured university-level lecture series on parallel computing and memory systems, while the fast track provides a concise, focused playlist on memory organization fundamentals. Choose the rigorous course for comprehensive depth or the fast track for a quicker, practical overview.
+To understand the ANCHOR paper's contributions on whole-system persistence and resilience in CXL-based memory systems, a solid grasp of modern computer architecture and memory systems is essential. The rigorous course option offers a deep, structured university-level lecture series on parallel computing and memory system fundamentals, while the fast track provides a concise, focused playlist on memory interfacing and hierarchy, covering key concepts efficiently for quicker preparation.
 
 ### The course
 _Rigorous, and the one to pick if you want to hold this material properly._
 
 ▶ [Stanford CS149 I Parallel Computing I 2023 I Kayvon Fatahalian and Kunle Olukotun](https://www.youtube.com/playlist?list=PLoROMvodv4rMp7MTFr4hQsDEcX7Bx6Odp) — Stanford Online · 19 videos · 24.3h across 19 episodes
 
-**Watch only this:** Lectures 1 through 12, about 9.5 hours — covering parallelism basics, multi-core architecture, cache coherence, and memory consistency essential for grasping memory system design and error resilience.
+**Watch only this:** Lectures 1 through 12, about 9.2 hours — covering from parallelism basics, multi-core architecture, cache coherence, to memory consistency, which are foundational for grasping memory system resilience and persistence.
 
-*Why it unblocks this paper:* Stanford CS149 covers modern multi-core processors, memory hierarchies, cache coherence, and memory consistency, which are foundational to understanding the dual-path store architecture, ECC modes, and CXL-attached memory in ANCHOR.
+*Why it unblocks this paper:* Stanford CS149 covers modern multi-core processor architecture, cache coherence, memory consistency, and memory system design, all critical to understanding ANCHOR's dual-path store architecture, ECC usage, and CXL-attached SSD integration.
 
 *If you want all of it:* 24.3 hours across 19 episodes
 
 ### The fast track
 _Same ground, a fraction of the time — for when you just need to read the paper._
 
-▶ [Memory Organisation Playlist](https://www.youtube.com/playlist?list=PL3R9-um41JszyaKeoc9qP8Bn45XzqJycj) — Shanu Kuttan CSE Classes · 23 videos · 4.8h across 23 episodes
+▶ [Memory Interfacing & Hierarchy | Chapter 2 | Computer Organization & Architecture](https://www.youtube.com/playlist?list=PLBlnK6fEyqRjdT1xkkBZSXKwFKqQoYhwy) — Neso Academy · 45 videos · 8.1h across 45 episodes
 
-**Watch only this:** Episodes L-3.1 through L-3.12, about 2.5 hours — covering memory hierarchy, cache memory, and cache mapping types to quickly build intuition on memory system fundamentals.
+**Watch only this:** Episodes 1 through 6, about 1 hour — covering Introduction to Memory, Memory Hierarchy & Interfacing, and basics of Cache Memory and Direct Memory Mapping, which are key to understanding the paper's memory architecture context.
 
-*Why it unblocks this paper:* The Memory Organisation Playlist by Shanu Kuttan CSE Classes provides clear, concise explanations of memory hierarchy, cache mapping, and memory types, giving a practical foundation for understanding the memory system components and buffering techniques used in ANCHOR.
+*Why it unblocks this paper:* This Neso Academy playlist on Memory Interfacing & Hierarchy provides a clear, concise introduction to memory technologies, cache mapping, and memory hierarchy concepts relevant to understanding the memory system design and persistence mechanisms in ANCHOR.
 
-*If you want all of it:* 4.8 hours across 23 episodes
+*If you want all of it:* 8.1 hours across 45 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 
