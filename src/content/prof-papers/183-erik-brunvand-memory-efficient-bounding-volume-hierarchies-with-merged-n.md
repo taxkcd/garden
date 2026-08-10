@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-erik-brunvand"
-source_hash: "14353df8dd5fc7598a1d5da9335aeb2eebb7ac6875f144a3de6d455c8cbe309e"
+source_hash: "f9ed893d10ad9ef868788c3f303b6c00c0d432dcf0d8fcb363c181826281d684"
 sequence: 183
 generator: "outreach-garden: managed"
 ---
@@ -59,21 +59,21 @@ Research interests: computer architecture and VLSI systems, self-timed and async
 _The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
 
 **What you're missing:** Bounding Volume Hierarchies
-**The paper assumes:** bounding volume hierarchies, acceleration structures for ray tracing, surface area heuristic, BVH traversal algorithms
-**Already in this field?** Skip this entirely if you already understand BVHs and their role in ray tracing acceleration, including standard construction and traversal methods.
+**The paper assumes:** computer graphics acceleration structures, bounding volume hierarchies, ray tracing algorithms
+**Already in this field?** Skip this entirely if you already understand BVH construction, traversal, and their role in hardware ray tracing acceleration.
 
-To understand the innovations in memory-efficient bounding volume hierarchies (BVHs) for hardware ray tracing presented in this paper, it is essential to grasp the fundamentals of BVHs, their construction, traversal, and traditional heuristics like the surface area heuristic (SAH). The rigorous course option provides a deep, structured university-level introduction to computer graphics with detailed coverage of BVHs and ray tracing acceleration structures, while the fast track offers a concise, focused playlist on BVHs and related memory/cache concepts for a quicker but still solid grounding.
+This background focuses on Bounding Volume Hierarchies (BVHs), a fundamental acceleration structure for ray tracing, which is central to understanding the memory-efficient BVH construction and traversal techniques presented in the paper. The rigorous course option offers a deep, structured university-level introduction to computer graphics and ray tracing concepts including BVHs, suitable for thorough comprehension. The fast track provides a concise, targeted set of explainers on BVHs and related memory and cache concepts, ideal for quickly grasping the essentials without extensive time investment.
 
 ### The fast track
 _Same ground, a fraction of the time — for when you just need to read the paper._
 
 ▶ [_exjobb](https://www.youtube.com/playlist?list=PLdDv6CILzxnH0X-3cq7H6OQ0sgGDeJ-YG) — David Nilsson · 9 videos
 
-**Watch only this:** Watch the 'Bounding Volume Hierarchy' episode only, about 10-15 minutes — it directly explains BVHs and their role in graphics acceleration.
+**Watch only this:** Episodes 2 (Bounding Volume Hierarchy) and 4 (Memory & Caches), about 25 minutes total — these two episodes succinctly cover BVH basics and memory/cache concepts critical for understanding the paper's memory-efficiency focus.
 
-*Why it unblocks this paper:* This playlist by David Nilsson includes a focused episode on Bounding Volume Hierarchies and related memory/cache topics, providing a quick, intuitive introduction to BVHs and their performance implications relevant to the paper's focus on memory efficiency.
+*Why it unblocks this paper:* This short series by David Nilsson includes a focused episode on Bounding Volume Hierarchies and related memory/cache topics, providing a clear, intuition-driven introduction to BVHs and memory considerations relevant to the paper.
 
-*If you want all of it:* 9 episodes total, approximately 1.5 to 2 hours
+*If you want all of it:* All 9 episodes, approximately 2.5 hours total.
 
 ## Track 1 — Academic deep-dives (long-form)
 
