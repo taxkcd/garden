@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-adam-m-smith"
-source_hash: "345604001b69301929a311b0e3a4a9be290afd51ca82201d5e11be177028d16b"
+source_hash: "82fd1e11f6cebcef982e72737e2ae311a0771b8f8b7e7640e5ba9067024dc319"
 sequence: 136
 generator: "outreach-garden: managed"
 ---
@@ -60,32 +60,21 @@ This paper introduces a new method for designing procedural content generation (
 _The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
 
 **What you're missing:** Binary Decision Diagrams
-**The paper assumes:** Boolean function representation, symbolic model checking, and Binary Decision Diagrams
-**Already in this field?** Skip this entirely if you already understand Binary Decision Diagrams and symbolic methods for Boolean function manipulation.
+**The paper assumes:** Binary Decision Diagrams, symbolic Boolean function representation, symbolic model checking
+**Already in this field?** Skip this entirely if you already understand Binary Decision Diagrams and their use in symbolic computation and model checking.
 
-This background focuses on Binary Decision Diagrams (BDDs), the core data structure and method used in the paper to efficiently represent and manipulate large combinatorial design–interaction spaces. The rigorous course option offers a deep, foundational understanding from a leading computer scientist, suitable for readers who want comprehensive mastery. The fast track provides a concise, example-driven introduction to BDDs and ROBDDs, ideal for readers seeking a quick but solid grasp of the essentials to understand the paper's methods.
-
-### The course
-_Rigorous, and the one to pick if you want to hold this material properly._
-
-▶ [Donald Knuth Lectures](https://www.youtube.com/playlist?list=PL94E35692EB9D36F3) — Stanford Online · 118 videos · 72.9h across the first 60 episodes
-
-**Watch only this:** Stanford Lecture: Donald Knuth - "Dancing Links" (2018) (about 72 minutes) — this lecture covers advanced data structures including BDDs and their applications relevant to symbolic search and combinatorial problems.
-
-*Why it unblocks this paper:* Donald Knuth's Stanford lecture series is authoritative and covers foundational concepts in algorithms and data structures, including BDDs, with deep insights from a pioneer in the field. This rigorous resource aligns well with the paper's reliance on BDDs for symbolic representation and manipulation.
-
-*If you want all of it:* About 72.9 hours across the first 60 episodes, but only the specific lecture on "Dancing Links" is recommended for focused study on BDDs.
+This background playlist selection focuses on Binary Decision Diagrams (BDDs), the core data structure and symbolic computation tool used in the paper to efficiently represent and manipulate large combinatorial design–interaction spaces. The rigorous course option offers a detailed, example-driven introduction to BDDs and their reduced forms, suitable for readers seeking a deep understanding of the data structure and its operations. The fast track provides a concise, visual, and intuitive explanation of BDD concepts, ideal for readers who want a quick but solid grasp of the essentials to follow the paper's methods.
 
 ### The fast track
 _Same ground, a fraction of the time — for when you just need to read the paper._
 
 ▶ [Binary Decision Diagram (BDD) and ROBDD](https://www.youtube.com/playlist?list=PLv87vmTj1b7FsqteIPo_F1RJTXnuO8vxG) — Last Bencher Comrade · 5 videos · 1.4h across 5 episodes
 
-**Watch only this:** Episodes 1-3: "Binary Decision Diagram (BDD) [Theory+Example]", "Reduced Order Binary Decision Diagram (ROBDD)  [Theory+Example]", and "BDD example | ROBDD example | Shortcut Trick for BDD and ROBDD" (about 48 minutes total).
+**Watch only this:** Episodes 1-2, about 32 minutes — covering the fundamental theory and examples of BDD and ROBDD, sufficient for a quick but solid conceptual understanding.
 
-*Why it unblocks this paper:* This short playlist from Last Bencher Comrade provides a clear, concise introduction to Binary Decision Diagrams and Reduced Ordered BDDs with theory and examples, directly covering the key concepts needed to understand the paper's use of BDDs.
+*Why it unblocks this paper:* Though the same playlist as the rigorous option, the early episodes serve well as a fast-track introduction due to their clear, example-driven explanations and manageable length. This is the best available concise series specifically on BDDs, avoiding unrelated or overly broad content.
 
-*If you want all of it:* About 1.4 hours across all 5 episodes.
+*If you want all of it:* All 5 episodes, about 1.4 hours — if more depth is desired.
 
 ## Track 1 — Academic deep-dives (long-form)
 
