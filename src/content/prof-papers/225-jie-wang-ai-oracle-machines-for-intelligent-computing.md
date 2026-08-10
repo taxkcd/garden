@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-jie-wang"
-source_hash: "6fa5cee9e4fe228b941bbf5a9c642b061d226a3ac43e37ccf1e38e15089f8c34"
+source_hash: "5b1d9e53c1e2528e358573baebb528b652c23494c6c151180a6b9baeea9be3d9"
 sequence: 225
 generator: "outreach-garden: managed"
 ---
@@ -54,32 +54,32 @@ This paper introduces AI-oracle machines, which are enhanced Oracle Turing Machi
 _The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
 
 **What you're missing:** Oracle Turing Machines
-**The paper assumes:** computability theory, Turing machines, oracle machines, and formal models of computation
-**Already in this field?** Skip this entirely if you already understand the theory of Turing machines and oracle machines in computability theory.
+**The paper assumes:** computability theory, Turing machines, oracle machines, and computational complexity
+**Already in this field?** Skip this entirely if you already understand the theory and formalism of Oracle Turing Machines and their role in computational complexity.
 
-Understanding Oracle Turing Machines is fundamental to grasping the computational framework behind AI-oracle machines introduced in this paper. The rigorous course option offers a deep, university-level treatment of computational complexity and oracle machines, suitable for readers seeking thorough theoretical grounding. The fast track provides a concise, focused introduction to key concepts like oracle Turing machines and related complexity theory topics, ideal for readers needing a quicker but solid conceptual overview.
+To understand the AI-oracle machines framework in this paper, a solid grasp of Oracle Turing Machines and their role in computational complexity is essential. The rigorous course option provides a deep, formal foundation suitable for readers seeking comprehensive mastery, while the fast track offers a concise, focused introduction to key concepts for those with limited time. Choose the lane that fits your preparation needs: the fast track covers the essentials quickly, and the course dives into detailed theory and proofs.
 
 ### The course
 _Rigorous, and the one to pick if you want to hold this material properly._
 
 ▶ [NPTEL - Computational Complexity (CS115)](https://www.youtube.com/playlist?list=PLkfK3Z-ZQJvk5T6Gh65SoDrG6rdmqNaEI) — Neha Kuntewar · 13 videos · 24.4h across 13 episodes
 
-**Watch only this:** Watch 'Computational Complexity- Week 4 - PSPACE and Oracle Turing Machines' (about 112 minutes) to focus specifically on oracle Turing machines, plus 'Computational Complexity- Week 1 - Introduction to Complexity Classes P and NP' (about 112 minutes) for foundational context, totaling approximately 3.7 hours.
+**Watch only this:** Watch episode 10: 'Computational Complexity- Week 4 - PSPACE and Oracle Turing Machines', about 112 minutes (~1.9 hours) — this lecture specifically introduces Oracle Turing Machines and their complexity context, which is central to the paper's formalization.
 
-*Why it unblocks this paper:* This NPTEL Computational Complexity course includes a dedicated lecture on Oracle Turing Machines (Week 4) within a comprehensive complexity theory curriculum, directly covering the formal computational model extended by AI-oracle machines in the paper.
+*Why it unblocks this paper:* This NPTEL course on Computational Complexity includes a dedicated lecture on PSPACE and Oracle Turing Machines, directly covering the formal foundations needed to understand the AI-oracle machine framework in the paper.
 
-*If you want all of it:* The full course is 24.4 hours across 13 episodes.
+*If you want all of it:* The full course is 24.4 hours across 13 episodes, providing extensive background on computational complexity beyond just Oracle Turing Machines.
 
 ### The fast track
 _Same ground, a fraction of the time — for when you just need to read the paper._
 
 ▶ [Computational Complexity Lectures](https://www.youtube.com/playlist?list=PLdUzuimxVcC0DENcdT8mfhI3iRRJLVjqH) — Computer Science Theory Explained · 90 videos · 7.9h across the first 60 episodes
 
-**Watch only this:** Watch episodes 9 'Cook Reductions and Oracle Turing Machines' and 10 'The Halting Problem' (each about 7 minutes), plus episode 1 'Complexity Theory - Introduction' for context, totaling about 21 minutes.
+**Watch only this:** Watch episode 10: 'Cook Reductions and Oracle Turing Machines', about 7 minutes — this video directly explains Oracle Turing Machines and their role in complexity theory, providing a quick, intuitive introduction.
 
-*Why it unblocks this paper:* This short-form series 'Computational Complexity Lectures' offers concise, clear explainers on oracle Turing machines and related complexity theory topics, including an episode specifically on 'Cook Reductions and Oracle Turing Machines', providing a quick yet authoritative introduction.
+*Why it unblocks this paper:* This short-form series 'Computational Complexity Lectures' by Computer Science Theory Explained offers concise, clear explainers on Oracle Turing Machines and related complexity topics, suitable for quickly grasping the core ideas relevant to the paper.
 
-*If you want all of it:* The first 60 episodes total about 7.9 hours.
+*If you want all of it:* The first 60 episodes total about 7.9 hours, covering a broad range of complexity theory topics.
 
 ## Track 1 — Academic deep-dives (long-form)
 
