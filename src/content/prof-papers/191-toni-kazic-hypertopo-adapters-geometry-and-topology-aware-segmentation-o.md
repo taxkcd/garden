@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-toni-kazic"
-source_hash: "6cdfe883559fd4ef5d384418a4366df0189b853047a5b9c10f772b3bb492bbb5"
+source_hash: "804429b48102d5f44a05b892d454b8b8aa4ab040c97cb7edcbd94e11cd00dd2b"
 sequence: 191
 generator: "outreach-garden: managed"
 ---
@@ -58,21 +58,32 @@ Research interests: Methods to infer the structure of complex networks using the
 _The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
 
 **What you're missing:** Geometric Deep Learning
-**The paper assumes:** manifold learning, non-Euclidean geometry in machine learning, topology-aware loss functions, geometric deep learning architectures
-**Already in this field?** Skip this entirely if you already have a solid understanding of geometric deep learning concepts and manifold-based representation learning.
+**The paper assumes:** manifold learning, hyperbolic geometry embeddings, topology-aware neural networks, geometric deep learning methods
+**Already in this field?** Skip this entirely if you already understand neural network embeddings on manifolds and topology-aware loss functions in deep learning.
 
-This background is tailored to provide foundational and advanced understanding of geometric deep learning concepts critical for grasping the HyperTopo-Adapters paper, which leverages product manifolds combining hyperbolic, Euclidean, and spherical geometries for topology-aware segmentation. The rigorous course offers a deep dive into the mathematical and algorithmic principles, while the fast track provides a more concise, intuition-driven overview suitable for quick familiarization or review.
+This background focuses on geometric deep learning, essential for understanding the HyperTopo-Adapters paper's use of non-Euclidean product manifolds (hyperbolic, Euclidean, spherical) to capture hierarchical and topological features in leaf lesion segmentation. The rigorous course offers a deep, structured university-level foundation, while the fast track provides a concise, intuition-driven overview suitable for quickly grasping core concepts without extensive time investment.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [MIT 6.7960 Deep Learning, Fall 2024](https://www.youtube.com/playlist?list=PLUl4u3cNGP63URZnh5iqBzDTDYPUTQT-8) — MIT OpenCourseWare · 24 videos · 29.5h across 24 episodes
+
+**Watch only this:** Lectures 4 (Architectures: Grids), 5 (Architectures: Graphs), 11 (Representation Learning: Reconstruction-Based), 12 (Representation Learning: Similarity-Based), and 23 (Metrized Deep Learning), about 6 hours total — these cover the core geometric deep learning concepts and metric learning needed to understand the paper's manifold embedding and topology-aware training.
+
+*Why it unblocks this paper:* MIT 6.7960 Deep Learning (Fall 2024) covers advanced deep learning architectures including geometric deep learning on grids and graphs, representation learning, and metric learning, which are directly relevant to understanding manifold embeddings and topology-aware losses in this paper.
+
+*If you want all of it:* 29.5 hours across all 24 episodes
 
 ### The fast track
 _Same ground, a fraction of the time — for when you just need to read the paper._
 
 ▶ [Graph neural networks and geometric deep learning](https://www.youtube.com/playlist?list=PLUyeLOe23o-9MoC2XLB7_BMIkjvyl4hEb) — Adam Safron · 14 videos · 10.6h across 14 episodes
 
-**Watch only this:** Episodes 3 (Principles and applications of relational inductive biases in deep learning), 5 (Theoretical Foundations of Graph Neural Networks), 7 (Stanford CS224W: Machine Learning with Graphs | 2021 | Lecture 1.1 - Why Graphs), and 11 (AI Research Directions in 2021), totaling about 3 hours. This selection covers key geometric deep learning principles and graph-based methods relevant to the paper.
+**Watch only this:** Episodes 3 (Principles and applications of relational inductive biases in deep learning), 5 (Theoretical Foundations of Graph Neural Networks), 7 (Stanford CS224W: Machine Learning with Graphs | 2021 | Lecture 1.1 - Why Graphs), and 12 (11 – Graph Convolutional Networks (GCNs)), about 3.5 hours total — these give a concise yet solid intuition and theory background on geometric deep learning relevant to the paper.
 
-*Why it unblocks this paper:* Adam Safron's 'Graph neural networks and geometric deep learning' playlist offers clear, well-produced, and intuition-focused videos that introduce geometric deep learning concepts, graph neural networks, and related topics, providing a practical and accessible overview aligned with the paper's use of geometric embeddings and topology-aware learning.
+*Why it unblocks this paper:* Adam Safron's 'Graph neural networks and geometric deep learning' playlist provides clear, focused explanations on geometric deep learning and graph neural networks, including theoretical foundations and applications, which align well with the paper's use of hyperbolic and spherical embeddings and topology-aware losses.
 
-*If you want all of it:* All 14 episodes, approximately 10.6 hours.
+*If you want all of it:* 10.6 hours across all 14 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 
