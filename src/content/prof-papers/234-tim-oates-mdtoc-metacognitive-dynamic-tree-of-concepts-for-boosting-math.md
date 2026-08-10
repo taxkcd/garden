@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-tim-oates"
-source_hash: "44c8d7df657aee7a0644710a6e43447ab4d7394f8e1373043c9d203806cd6741"
+source_hash: "c6dcc1998dcebcf7f0168f66d3335f9e49fbcc03994b895955b86e2bb72ea6a0"
 sequence: 234
 generator: "outreach-garden: managed"
 ---
@@ -57,32 +57,32 @@ This paper introduces MDToC, a novel prompting technique for large language mode
 _The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
 
 **What you're missing:** Metacognition in Artificial Intelligence
-**The paper assumes:** metacognition in artificial intelligence, cognitive architectures, and metareasoning frameworks
-**Already in this field?** Skip this entirely if you already understand metacognitive reasoning frameworks and their application in AI systems.
+**The paper assumes:** metacognition in artificial intelligence, hierarchical reasoning frameworks, iterative error correction in LLMs
+**Already in this field?** Skip this entirely if you already understand metacognitive frameworks and their application in AI reasoning systems.
 
-This background focuses on metacognition in artificial intelligence, which is central to understanding the MDToC framework's planning, monitoring, and reviewing phases for improving mathematical reasoning in large language models. The rigorous course option offers a deep, foundational mathematical perspective on machine learning concepts relevant to metacognition, while the fast track provides a concise, accessible introduction to metacognitive concepts and their importance, suitable for readers seeking a quicker conceptual grasp.
+This background focuses on metacognition in artificial intelligence, essential for understanding the MDToC paper's three-phase prompting framework that structures reasoning into planning, monitoring, and reviewing. The rigorous course option provides a deep, structured university-level foundation in AI concepts including reasoning and representations, while the fast track offers a concise, intuitive introduction to key AI ideas for quicker comprehension. Choose the course for thorough mastery or the fast track for a time-efficient overview.
 
 ### The course
 _Rigorous, and the one to pick if you want to hold this material properly._
 
-▶ [Mathematical Foundations of Machine Learning](https://www.youtube.com/playlist?list=PLgMDNELGJ1Cay-Q9Cn8KcpUcC58NDWuiu) — NPTEL - Indian Institute of Science, Bengaluru · 89 videos · 30.9h across the first 60 episodes
+▶ [MIT 6.034 Artificial Intelligence, Fall 2010](https://www.youtube.com/playlist?list=PLUl4u3cNGP63gFHB6xb-kVBiQHYe_4hSi) — MIT OpenCourseWare · 30 videos · 24.3h across 30 episodes
 
-**Watch only this:** Episodes 1 through 20, about 10.3 hours — covering foundational probability theory, function approximation, entropy, KL divergence, and latent variable models to build a solid mathematical foundation for metacognitive AI reasoning.
+**Watch only this:** Episodes 1. Introduction and Scope, 2. Reasoning: Goal Trees and Problem Solving, 3. Reasoning: Goal Trees and Rule-Based Expert Systems, 18. Representations: Classes, Trajectories, Transitions, and 19. Architectures: GPS, SOAR, Subsumption, Society of Mind — about 4 hours total, focusing on reasoning structures and representations relevant to metacognition.
 
-*Why it unblocks this paper:* This NPTEL course from the Indian Institute of Science, Bengaluru, covers foundational mathematical concepts underpinning machine learning, which are essential for rigorously understanding the theoretical basis of metacognitive frameworks like MDToC in AI reasoning.
+*Why it unblocks this paper:* MIT 6.034 Artificial Intelligence, Fall 2010 is a comprehensive, authoritative university course covering core AI reasoning and representation concepts that underpin metacognitive frameworks like MDToC. Its episodes on reasoning, planning, and representations directly relate to the paper's structured prompting technique.
 
-*If you want all of it:* About 30.9 hours across the first 60 episodes
+*If you want all of it:* Approximately 24.3 hours across all 30 episodes.
 
 ### The fast track
 _Same ground, a fraction of the time — for when you just need to read the paper._
 
-▶ [Metacognitive IQ](https://www.youtube.com/playlist?list=PL1aqy1JVkDJaBwzCqL6CevR-G4QjDHfCs) — The Voice Of A.I. Academy Radio · 14 videos · 4.8h across 14 episodes
+▶ [Intelligent system/Artificial intelligence](https://www.youtube.com/playlist?list=PLuYIx9-eYNx6MytZXL-V-GdtuPPp8bWA1) — lucifer morningstar · 12 videos · 2.5h across the first 11 episodes
 
-**Watch only this:** Episodes 1 through 6, about 2 hours — including '5 Signs You Have "Metacognitive IQ"', 'The Secrets of Metacognition', and 'Metacognition: An Important Skill for Modern Times' to quickly grasp core metacognitive concepts relevant to AI.
+**Watch only this:** First 6 episodes covering AI basics, hierarchical planning, and probabilistic reasoning — about 1.3 hours total.
 
-*Why it unblocks this paper:* This playlist from The Voice Of A.I. Academy Radio provides clear, concise explainers on metacognition, focusing on its definition, importance, and application, which aligns well with the metacognitive processes used in MDToC for AI reasoning.
+*Why it unblocks this paper:* The 'Intelligent system/Artificial intelligence' playlist by lucifer morningstar offers a concise, accessible introduction to AI concepts including hierarchical planning and probabilistic reasoning, which align with the metacognitive phases of planning and monitoring in MDToC. It is well-suited for a quick conceptual grasp.
 
-*If you want all of it:* About 4.8 hours across all 14 episodes
+*If you want all of it:* About 2.5 hours across the first 11 episodes.
 
 ## Track 1 — Academic deep-dives (long-form)
 
