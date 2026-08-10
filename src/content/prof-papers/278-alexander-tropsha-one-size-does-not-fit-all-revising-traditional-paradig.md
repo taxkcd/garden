@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-alexander-tropsha"
-source_hash: "5f3d23b2a7b4c4d227f635fcbd961323ab93c1d42f34287b150cdc3796a52004"
+source_hash: "f2a5568d0b000dedd639a0607e566e2fad79aa883fe391542c1da25d037a8165"
 sequence: 278
 generator: "outreach-garden: managed"
 ---
@@ -50,6 +50,63 @@ This study challenges the traditional practice of balancing datasets and using b
 - [Identity evidence](https://scholar.google.com/citations?user=Ov5nq0wAAAAJ)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_Everything the paper assumes you already know, in the order you should learn it. Some stages have no visible connection to the paper's title — that is the point: this is the background the paper never explains._
+
+This playlist provides foundational and core knowledge necessary to understand and critically evaluate the paper on revising QSAR model accuracy assessment for virtual screening. It covers probability and statistics fundamentals to grasp classification metrics, an introduction to machine learning focusing on classification and model evaluation, cheminformatics essentials for molecular descriptor understanding, QSAR modeling and virtual screening concepts, and advanced handling of imbalanced datasets in classification. Work through these stages in order to build a solid base before engaging with the paper's content.
+
+**The paper assumes:** machine learning fundamentals, supervised classification, cheminformatics basics, QSAR modeling, imbalanced data handling, virtual screening evaluation metrics
+**Time to work through:** roughly 40-45 hours if you watch all recommended content, about 25-30 hours following the skip guidance
+**Already in this field?** Skip stages 1-3 if you have a solid background in machine learning and cheminformatics; focus on stages 4-6 for domain-specific knowledge and evaluation metrics.
+
+### Stage 1 · Probability and Statistics Fundamentals *(foundational)*
+Understanding classification metrics like PPV, balanced accuracy, and AUROC requires a solid grasp of probability distributions, confusion matrices, and statistical measures of classifier performance.
+
+▶ **Course:** [Statistics 110: Probability](https://www.youtube.com/playlist?list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo) — Harvard University · 35 videos · 27.1h across 35 episodes
+
+*What to watch:* Watch the first 24 lectures of the 'Statistics 110: Probability' playlist by Harvard University, focusing on probability concepts, random variables, distributions, expectation, and key probability theorems. These lectures provide a rigorous foundation for understanding confusion matrix components and derived metrics.
+
+*Move on when you can:* Explain and compute confusion matrix components (TP, FP, TN, FN) and derive precision, recall, and accuracy from them.
+
+### Stage 2 · Introduction to Machine Learning *(foundational)*
+The paper builds on supervised learning concepts, especially classification algorithms and model evaluation, which are fundamental to understanding QSAR model training and assessment.
+
+▶ **Course:** [Stanford CS229: Machine Learning led by Andrew Ng | Autumn 2018](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU) — Stanford Online · 21 videos · 27.9h across 21 episodes
+
+*What to watch:* Focus on the first 10 lectures of the 'Stanford CS229: Machine Learning led by Andrew Ng | Autumn 2018' playlist, covering supervised learning setup, logistic regression, decision trees, ensemble methods, and model evaluation techniques. These lectures provide a comprehensive introduction to classification and performance metrics relevant to QSAR modeling.
+
+*Move on when you can:* Train a simple binary classifier and evaluate its performance using accuracy and precision metrics on a labeled dataset.
+
+### Stage 3 · Cheminformatics and Molecular Descriptors *(core)*
+QSAR modeling relies on representing chemical compounds numerically via molecular descriptors; understanding these representations is essential to grasp how models predict biological activity.
+
+▶ **Course:** [Cheminformatics Crash Course](https://www.youtube.com/playlist?list=PLVayZSzAgeBWFdS4m_UvAH6euj2kv57v6) — shityakoff · 9 videos · 1.4h across 9 episodes
+
+*What to watch:* Watch the entire 'Cheminformatics Crash Course' playlist by shityakoff. This concise 9-episode series covers the fundamentals of cheminformatics, including molecular representations and descriptor calculations, which are crucial for understanding QSAR input features.
+
+*Move on when you can:* Explain common molecular descriptors and compute simple descriptors for a given molecule using cheminformatics tools.
+
+### Stage 4 · QSAR Modeling and Virtual Screening *(core)*
+The paper compares traditional QSAR modeling practices and virtual screening workflows, so familiarity with QSAR model construction, validation, and virtual screening concepts is critical.
+
+▶ **Course:** [Drug Discovery in Code — Hands-On Computational Drug Discovery in Python](https://www.youtube.com/playlist?list=PLZgfNuGT2FVs) — Life Sciences AI Applications · 10 videos · 0.5h across 10 episodes
+
+*What to watch:* Watch the full 'Drug Discovery in Code — Hands-On Computational Drug Discovery in Python' playlist by Life Sciences AI Applications. This 10-episode series walks through practical QSAR model building, data handling, and virtual screening workflows, directly aligning with the paper's approach.
+
+*Move on when you can:* Build a QSAR model using a dataset of compounds and predict activity; explain the role of training, validation, and test sets in virtual screening.
+
+### Stage 5 · Handling Imbalanced Datasets in Classification *(advanced)*
+The paper challenges the practice of dataset balancing and discusses imbalanced training; understanding techniques and pitfalls in imbalanced classification is necessary to follow the arguments.
+
+▶ [Live Discussion On Handling Imbalanced Dataset- Machine ...](https://www.youtube.com/watch?v=pDw_JHHvj-0) — Krish Naik · 1:20:07
+
+*What to watch:* Watch the single video 'Live Discussion On Handling Imbalanced Dataset- Machine ...' by Krish Naik. This detailed discussion covers practical aspects of handling imbalanced datasets, feature engineering, and their impact on model performance metrics, directly relevant to the paper's focus.
+
+*Move on when you can:* Describe common methods for handling imbalanced data (e.g., resampling, weighting) and explain their impact on classifier performance metrics.
+
+_Work through the stages in order. Once the last one lands, the paper — and the two tracks below — should read cleanly._
 
 ## Track 1 — Academic deep-dives (long-form)
 
