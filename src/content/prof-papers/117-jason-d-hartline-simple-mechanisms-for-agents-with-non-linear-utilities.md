@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-jason-d-hartline"
-source_hash: "f6517a36e4313ccbb618d4ac307eb308d3997cfe4de51a0b02a49d5654711571"
+source_hash: "8792e7bf104d58f90d4949cab406de44e3a4deae9742aac4401a25730081f77c"
 sequence: 117
 generator: "outreach-garden: managed"
 ---
@@ -59,32 +59,32 @@ Research interests: design and analysis methodologies from computer science to u
 _The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
 
 **What you're missing:** Mechanism Design and Auction Theory
-**The paper assumes:** mechanism design, auction theory, incentive compatibility, individual rationality, pricing mechanisms, approximation algorithms in economics
-**Already in this field?** Skip this entirely if you already have a solid understanding of mechanism design and auction theory, including incentive compatibility and pricing-based mechanisms.
+**The paper assumes:** mechanism design, auction theory, incentive compatibility, individual rationality, posted pricing mechanisms, approximation algorithms in economics
+**Already in this field?** Skip this entirely if you already have a solid understanding of mechanism design and auction theory, including incentive compatibility and posted pricing mechanisms.
 
-To understand the paper on simple mechanisms for agents with non-linear utilities, a solid grasp of mechanism design and auction theory is essential, especially concepts like incentive compatibility, individual rationality, and pricing-based mechanisms such as sequential posted pricing. The rigorous course option offers a deep, structured dive into advanced mechanism design principles, while the fast track provides a focused, shorter playlist that covers core auction market theory concepts relevant to the paper. Choose the rigorous course for a comprehensive theoretical foundation and the fast track for a quicker, intuition-driven overview.
+To understand the paper "Simple Mechanisms for Agents with Non-linear Utilities," a solid grasp of mechanism design and auction theory fundamentals is essential, especially concepts like incentive compatibility, individual rationality, posted pricing mechanisms, and approximation guarantees. The rigorous course option offers a deep, structured university-level treatment of these topics, while the fast track provides a concise, accessible introduction covering the core ideas efficiently. Choose the rigorous course if you want a thorough theoretical foundation; choose the fast track if you need a quicker, intuition-focused overview.
 
 ### The course
 _Rigorous, and the one to pick if you want to hold this material properly._
 
-▶ [Advanced Mechanism Design (Stanford CS364B, Winter 2014)](https://www.youtube.com/playlist?list=PLEGCF-WLh2RI77PL4gwLld_OU9Zh3TCX9) — Tim Roughgarden Lectures · 21 videos · 25.1h across 21 episodes
+▶ [Algorithmic Game Theory (Stanford CS364A, Fall 2013)](https://www.youtube.com/playlist?list=PLEGCF-WLh2RJBqmxvZ0_ie-mleCFhi2N4) — Tim Roughgarden Lectures · 20 videos · 25.2h across 20 episodes
 
-**Watch only this:** Lectures 1-6 (Frontiers in Mechanism Design Lectures 1 to 6), about 7 hours — covering incentive compatibility, unit-demand bidders, clinching auctions, and gross substitutes, which build the foundation for understanding pricing-based mechanisms and approximation in auctions.
+**Watch only this:** Lectures 1-6 (Introduction and Examples; Mechanism Design Basics; Myerson's Lemma; Algorithmic Mechanism Design; Revenue-Maximizing Auctions; Simple Near-Optimal Auctions), about 7.5 hours — these cover the foundational theory and classical auction results needed to grasp the paper's contributions.
 
-*Why it unblocks this paper:* This Stanford course by Tim Roughgarden covers advanced mechanism design topics including incentive compatibility, Bayesian incentive-compatibility, and revenue-maximizing auctions, directly underpinning the theoretical framework and approximation guarantees discussed in the paper.
+*Why it unblocks this paper:* This Stanford course by Tim Roughgarden covers algorithmic game theory and mechanism design in depth, including key topics like Myerson's Lemma, revenue-maximizing auctions, and simple near-optimal auctions, which are directly relevant to understanding the reduction framework and ζ-resemblance in the paper.
 
-*If you want all of it:* 25.1 hours across 21 episodes
+*If you want all of it:* All 20 lectures, about 25.2 hours.
 
 ### The fast track
 _Same ground, a fraction of the time — for when you just need to read the paper._
 
-▶ [Auction Market Theory](https://www.youtube.com/playlist?list=PL1vQ1_bH1I4Cno0YOeVjbuXl04PgFrWnz) — Hamilton · 14 videos · 9.1h across the first 9 episodes
+▶ [Algorithmic Game Theory - Lectures](https://www.youtube.com/playlist?list=PL7MXmlHHoocG-3LRKvRaHkuyNDBCldloU) — Elia Grady · 20 videos · 25.2h across 20 episodes
 
-**Watch only this:** First 3 episodes (Auction Market Theory Basics, Auction Market Theory - Volume Profile - Rob Mitchell, Volume Profile And Order Flow Analysis Understanding The Market Through Market Generated Information), about 3 hours — sufficient to grasp core auction theory concepts and market structure relevant to mechanism design.
+**Watch only this:** Episodes 1-6 (Introduction and Examples; Mechanism Design Basics; Myerson's Lemma; Algorithmic Mechanism Design; Revenue-Maximizing Auctions; Simple Near-Optimal Auctions), about 7.5 hours — these episodes provide a focused overview of the key concepts relevant to the paper.
 
-*Why it unblocks this paper:* This playlist on Auction Market Theory by Hamilton provides a concise and clear introduction to auction concepts, volume profile, and order flow analysis, which helps build intuition about auction mechanisms and market behavior relevant to the paper's focus on simple pricing mechanisms.
+*Why it unblocks this paper:* This playlist is a clear, concise rendition of the Stanford CS364A course on Algorithmic Game Theory by Elia Grady, covering the same core topics with a focus on mechanism design and auctions, suitable for quickly building intuition about simple mechanisms and approximation guarantees.
 
-*If you want all of it:* 9.1 hours across the first 9 episodes
+*If you want all of it:* All 20 episodes, about 25.2 hours.
 
 ## Track 1 — Academic deep-dives (long-form)
 
