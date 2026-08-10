@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-eric-sedgwick"
-source_hash: "ed5fdb8b389e30ce0b9e17ba1f08b226d2afe8a43a141d4935c96a7b1aa71fde"
+source_hash: "e6a40e064aa696a3d55abef4d6cfd7280a822bb7afcf49358c1017e3d30420ac"
 sequence: 199
 generator: "outreach-garden: managed"
 ---
@@ -52,38 +52,6 @@ Research interests: Computational Topology
 - [Identity evidence](https://www.cdm.depaul.edu/about/Pages/People/facultyinfo.aspx?fid=121)
 
 ## Learning path
-
-## Foundations playlist — start here
-
-_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
-
-**What you're missing:** Normal Surface Theory
-**The paper assumes:** normal surface theory, 3-manifold triangulations, and crushing operations
-**Already in this field?** Skip this entirely if you already have a solid understanding of normal surface theory and its applications in 3-manifold topology.
-
-Normal surface theory is fundamental to understanding the algorithmic decomposition of knots in this paper, particularly the use of quad vertex normal 2-spheres and crushing operations within triangulations. The rigorous course option provides a structured, university-level introduction to triangulations and related geometric concepts, suitable for deep comprehension. The fast track offers a concise, intuition-focused series on differential geometry and surface theory, giving a quicker but still relevant grounding in surfaces that supports grasping the core ideas behind normal surfaces.
-
-### The course
-_Rigorous, and the one to pick if you want to hold this material properly._
-
-▶ [Delaunay Triangulation | Computational Geometry - Lecture 08](https://www.youtube.com/playlist?list=PLubYOWSl9mIuEaEho05RoZy9OKpNE843H) — Philipp Kindermann · 5 videos · 0.6h across 5 episodes
-
-**Watch only this:** Episodes 1-3, about 0.35 hours — covering the basics of Delaunay triangulations and their properties, which underpin the triangulation concepts used in the paper.
-
-*Why it unblocks this paper:* This playlist on Delaunay Triangulation from a computational geometry lecture series covers triangulations in depth, which is essential for understanding the edge-ideal triangulations and normal surface theory used in the paper's algorithm.
-
-*If you want all of it:* All 5 episodes, about 0.6 hours total.
-
-### The fast track
-_Same ground, a fraction of the time — for when you just need to read the paper._
-
-▶ [Differential Geometry (Surface theory)](https://www.youtube.com/playlist?list=PLpPohmv-3HkqtMKnSJCwkCAPLI_ZzsVnn) — ClickVector · 8 videos · 0.7h across 8 episodes
-
-**Watch only this:** Episodes 1-4, about 0.2 hours — covering fundamental forms, tangent planes, and surface theory basics needed to understand embedded surfaces in 3-manifolds.
-
-*Why it unblocks this paper:* This short-form series on Differential Geometry (Surface theory) provides a clear and concise introduction to surfaces, tangent planes, and curvature, offering intuition about surfaces embedded in space relevant to normal surface theory.
-
-*If you want all of it:* All 8 episodes, about 0.7 hours total.
 
 ## Track 1 — Academic deep-dives (long-form)
 
