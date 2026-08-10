@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-marijn-heule"
-source_hash: "63bd0160a874e6b335f917eb517225a7a92304f1b5f940a32026657f53bb6331"
+source_hash: "adc86f71d7acc9819f52bc91bb060f2640f872e65e78f5095eabb8be8eca0b4d"
 sequence: 62
 generator: "outreach-garden: managed"
 ---
@@ -59,32 +59,32 @@ Research interests: solving hard-combinatorial problems in areas such as formal 
 _The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
 
 **What you're missing:** Graph theory and graph algorithms
-**The paper assumes:** graph theory, graph algorithms, combinatorial optimization
-**Already in this field?** Skip this entirely if you already have a solid undergraduate-level understanding of graph theory and common graph algorithms.
+**The paper assumes:** undergraduate graph theory, graph algorithms, combinatorial optimization
+**Already in this field?** Skip this entirely if you already have a solid undergraduate-level understanding of graph theory and graph algorithms.
 
-This background focuses on graph theory and graph algorithms, which are central to understanding the theoretical framework and efficient implementation of Bounded Variable Addition (BVA) in the paper. The rigorous course option offers a deep, structured university-level introduction to graph concepts and algorithms, while the fast track provides a concise, visual, and intuitive overview suitable for quickly grasping core ideas without extensive time investment.
+This background playlist selection focuses on graph theory and graph algorithms, which are essential for understanding the theoretical framework and algorithmic improvements in the paper on Bounded Variable Addition (BVA) and its graph-theoretic characterization. The rigorous course option provides a deep and structured university-level foundation, while the fast track offers a concise, visual introduction to key graph algorithms, enabling efficient preparation depending on your available time and depth of study desired.
 
 ### The course
 _Rigorous, and the one to pick if you want to hold this material properly._
 
-▶ [MIT 6.006 Introduction to Algorithms, Spring 2020](https://www.youtube.com/playlist?list=PLUl4u3cNGP63EdVPNLG3ToM6LaEUuStEY) — MIT OpenCourseWare · 32 videos · 35.3h across 32 episodes
+▶ [MIT 18.217 Graph Theory and Additive Combinatorics, Fall 2019](https://www.youtube.com/playlist?list=PLUl4u3cNGP62qauV_CpT1zKaGG_Vj5igX) — MIT OpenCourseWare · 26 videos · 33.9h across 26 episodes
 
-**Watch only this:** Lectures 9 (Breadth-First Search), 10 (Depth-First Search), 22 (Graph Theory & Algorithms), and 23 (Graph DS & Breadth First Search), totaling about 4 hours — these cover essential graph traversal and data structures relevant to understanding the paper's graph framework and algorithmic improvements.
+**Watch only this:** Lectures 1 through 5 ("A bridge between graph theory and additive combinatorics" through "Forbidding a subgraph IV: dependent random choice"), about 6.5 hours — these cover foundational graph theory concepts and bipartite subgraph results relevant to the paper's theoretical framework.
 
-*Why it unblocks this paper:* MIT 6.006 Introduction to Algorithms is a comprehensive and authoritative course covering fundamental graph algorithms such as BFS, DFS, shortest paths, and graph data structures, which underpin the graph-theoretic characterizations and biclique partition algorithms used in the paper.
+*Why it unblocks this paper:* MIT 18.217 Graph Theory and Additive Combinatorics is a rigorous university course that covers advanced graph theory topics, including bipartite subgraphs and combinatorial constructions, which align closely with the paper's use of strict polarized rectifier networks and biclique partitions in characterizing BVA reencodings.
 
-*If you want all of it:* 35.3 hours across 32 episodes
+*If you want all of it:* All 26 lectures, approximately 33.9 hours.
 
 ### The fast track
 _Same ground, a fraction of the time — for when you just need to read the paper._
 
-▶ [Data Structures & Algorithms — The Complete Visual Course · datarekha](https://www.youtube.com/playlist?list=PLXdI0d1HZAKo) — datarekha · 33 videos · 0.8h across 33 episodes
+▶ [Graph Algorithms](https://www.youtube.com/playlist?list=PLt3m77nldMNuO9zl_9UAPXkTP69ZGNjcR) — i3ommar · 7 videos · 0.6h across 7 episodes
 
-**Watch only this:** Episodes 21 (Graph Theory & Algorithms) and 22 (Graph DS & Breadth First Search), totaling about 2 minutes — these focused videos give a rapid visual overview of graph concepts and BFS relevant to the paper.
+**Watch only this:** Episodes 1 through 5 ("Topological Sorting Visually Explained" through "Breadth First Search Visually Explained | BFS | Graphs"), about 20 minutes — these cover essential graph traversal and ordering algorithms foundational to graph algorithmic reasoning.
 
-*Why it unblocks this paper:* Data Structures & Algorithms — The Complete Visual Course by datarekha offers a highly visual and concise introduction to graph representations and traversals, providing quick intuition on graph basics that support understanding the paper's graph-theoretic approach without requiring a large time commitment.
+*Why it unblocks this paper:* This short-form playlist by i3ommar provides clear, visual explanations of fundamental graph algorithms such as BFS, DFS, Dijkstra's algorithm, and topological sorting, which are crucial for understanding the algorithmic aspects of the paper's efficient BVA implementation using biclique partitions.
 
-*If you want all of it:* 0.8 hours across 33 episodes
+*If you want all of it:* All 7 episodes, about 36 minutes.
 
 ## Track 1 — Academic deep-dives (long-form)
 
