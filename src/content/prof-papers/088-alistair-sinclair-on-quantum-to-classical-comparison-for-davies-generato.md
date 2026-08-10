@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-alistair-sinclair"
-source_hash: "406bf3259c0f4111dc65db6efaa8f4359d49ab177db80a8158d815c23e60231d"
+source_hash: "0c9320f1702a1ba6ea2ab9836e79139942ce7e6f3288b1660568470a2f2ed479"
 sequence: 88
 generator: "outreach-garden: managed"
 ---
@@ -58,30 +58,30 @@ Research interests: Design and analysis of algorithms, especially randomized one
 _The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
 
 **What you're missing:** Quantum Markov semigroups
-**The paper assumes:** quantum Markov semigroups, Lindblad operators, spectral gap theory in open quantum systems
-**Already in this field?** Skip this entirely if you already understand the theory of quantum Markov semigroups and their spectral analysis.
+**The paper assumes:** quantum Markov semigroups, Lindblad generators, spectral gap theory, detailed balance in quantum dynamics
+**Already in this field?** Skip this entirely if you already understand the theory of quantum Markov semigroups and their spectral properties, including Lindblad operators and detailed balance.
 
-To understand the spectral gap properties of the Davies generator and the comparison between quantum and classical Markov semigroups in this paper, foundational knowledge of open quantum system dynamics and quantum Markov semigroups is essential. The rigorous course option offers a detailed, university-level lecture series on open quantum system dynamics, while the fast track provides a concise, focused introduction to the theory of open quantum systems suitable for quickly grasping the core concepts relevant to the paper.
+To understand the spectral gap comparisons between quantum and classical Davies generators in this paper, a solid grasp of quantum Markov semigroups and open quantum systems is essential. The rigorous course option offers a deep, structured university-level lecture series on quantum optics and open quantum systems, ideal for thorough preparation. The fast track provides a concise, focused lecture series on the theory of open quantum systems, suitable for quickly gaining the core concepts relevant to the paper.
 
 ### The course
 _Rigorous, and the one to pick if you want to hold this material properly._
 
-▶ [Open Quantum System Dynamics - Sabrina Maniscalco - Paraty 2019](https://www.youtube.com/playlist?list=PLd9T7y2ABtzJuN2YgujzWZ6fL-llEyuUd) — Paraty Quantum Information School and Workshop · 9 videos · 5.0h across 9 episodes
+▶ [Quantum Optics 2 - PHYS 581 - Spring 2024](https://www.youtube.com/playlist?list=PLHcA4cxtrmJiN2I244j3Mkay7c9T_fc43) — UNM CQuIC · 27 videos · 34.7h across 27 episodes
 
-**Watch only this:** Episodes 1-6 (Sabrina Maniscalco - Part I to Part VI), about 3.3 hours — these cover the introduction to open quantum systems, quantum Markovian dynamics, and master equations relevant to Davies generators.
+**Watch only this:** Lectures 16 to 19 (Introduction to open quantum systems; Irreversible bipartite system-reservoir interaction, Lindblad Master Equation; Derivation of the Lindblad Master Equation Born-Markov approximation I and II), about 5 hours — these cover the Lindblad framework and Davies generator background needed for the paper.
 
-*Why it unblocks this paper:* This course by Sabrina Maniscalco is a focused university-level lecture series on open quantum system dynamics, covering the mathematical and physical foundations necessary to understand quantum Markov semigroups and Lindbladians, which are central to the paper's analysis.
+*Why it unblocks this paper:* This University of New Mexico Quantum Optics 2 course covers foundational and advanced topics in open quantum systems, Lindblad master equations, and quantum trajectories, directly relevant to understanding the Davies generator and spectral gap analysis in the paper.
 
-*If you want all of it:* All 9 episodes, about 5.0 hours.
+*If you want all of it:* All 27 lectures, about 34.7 hours.
 
 ### The fast track
 _Same ground, a fraction of the time — for when you just need to read the paper._
 
 ▶ [Lectures on Theoretical Physics: "Introduction to the Theory of Open Quantum Systems" by dr P. Szańkowski, Spring 2025](https://www.youtube.com/playlist?list=PLa8M0LSKnl2qVfkBZm7Y4OJl2Ey6jXpFc) — Division of Theoretical Physics IPPAS · 16 videos · 31.8h across 16 episodes
 
-**Watch only this:** Episodes 1-5 (Hamiltonian, Evolution Operator, Density Matrices, Stochastic Processes, Stochastic Maps), about 10 hours — these episodes establish the core framework of open quantum systems and quantum Markov semigroups.
+**Watch only this:** Episodes 1, 3, 11, 12, and 13 (Hamiltonian, Evolution Operator, and Time-ordering; Density Matrices, Super-operators and Unitary Maps; Master Equation; Born-Markov Approximation; Dynamics of Thermalization Pt.1), about 6 hours total — these cover the essential theory of open quantum systems and Lindblad dynamics relevant to the paper.
 
-*Why it unblocks this paper:* This playlist provides a concise and clear introduction to the theory of open quantum systems, including master equations and thermalization dynamics, which directly relate to the Davies generator and spectral gap concepts in the paper.
+*Why it unblocks this paper:* This concise lecture series on open quantum systems by the Division of Theoretical Physics IPPAS focuses on the theory of open quantum systems, master equations, and thermalization dynamics, providing a clear and focused introduction to the Davies Lindbladian and related spectral properties.
 
 *If you want all of it:* All 16 episodes, about 31.8 hours.
 
