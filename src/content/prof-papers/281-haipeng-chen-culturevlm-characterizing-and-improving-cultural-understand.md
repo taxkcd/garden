@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-haipeng-chen"
-source_hash: "c1e1cc13b0cc74fb6845c212f33f4107c6c7d5d75faed26edfd15ef77448f838"
+source_hash: "015d92a6c55be0dbccd4404e0e4f876678039e2e54334c0b9c1c95949df27210"
 sequence: 281
 generator: "outreach-garden: managed"
 ---
@@ -62,32 +62,32 @@ Research interests: Use-Inspired AI, reinforcement learning, generative AI, opti
 _The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
 
 **What you're missing:** Vision-Language Models
-**The paper assumes:** vision-language model architectures, multimodal deep learning, and model fine-tuning techniques
-**Already in this field?** Skip this entirely if you already understand how vision-language models work, including their architectures and training methods.
+**The paper assumes:** vision-language model architectures, multimodal learning, and model fine-tuning techniques
+**Already in this field?** Skip this entirely if you already understand how vision-language models work, including their training and fine-tuning.
 
-To understand the CultureVLM paper, a solid grasp of vision-language models (VLMs) is essential, including how they integrate visual and textual data and how they are trained and fine-tuned. The rigorous course option offers a deep, structured university-level introduction to deep learning for computer vision, including vision-language topics, while the fast track provides a concise, focused explainer series on recent vision-language model advances and competitions. Choose the rigorous course for comprehensive foundational knowledge or the fast track for a quicker, up-to-date overview of VLM research developments.
+To understand the CultureVLM paper, a solid grasp of vision-language models (VLMs) is essential, including their architecture, training, and evaluation, especially how they integrate visual and textual data. The rigorous course option offers a deep, structured university-level dive into deep learning for computer vision, including vision and language, while the fast track provides a concise, intuition-focused introduction to convolutional neural networks, a core building block of VLMs. Choose the rigorous lane for comprehensive mastery or the fast track for a quicker, foundational overview.
 
 ### The course
 _Rigorous, and the one to pick if you want to hold this material properly._
 
-▶ [Stanford CS231N Deep Learning for Computer Vision I 2025](https://www.youtube.com/playlist?list=PLoROMvodv4rOmsNzYBMe0gJY2XS8AQg16) — Stanford Online · 18 videos · 21.2h across 18 episodes
+▶ [Stanford CS231N Deep Learning for Computer Vision I 2025](https://www.youtube.com/playlist?list=PLoROMvodv4rOmsNzYBMe0gJY2XS8AQg16) — Stanford Online · 18 videos
 
-**Watch only this:** Lectures 1 through 8, about 9.3 hours — covering introduction, image classification, CNNs, RNNs, and especially Lecture 8 on Attention and Transformers, which are foundational for vision-language models.
+**Watch only this:** Lectures 1 through 8, about 9.3 hours — covering introduction, image classification, optimization, CNNs, architectures, RNNs, and transformers, culminating in vision and language (Lecture 16) for foundational understanding of VLMs.
 
-*Why it unblocks this paper:* Stanford CS231N Deep Learning for Computer Vision is a top-tier university course that covers core deep learning concepts for vision, including CNNs, attention, transformers, and vision-language models, directly relevant to understanding VLM architectures and training paradigms used in CultureVLM.
+*Why it unblocks this paper:* Stanford CS231N Deep Learning for Computer Vision I 2025 is a top-tier university course that covers the fundamentals of deep learning for vision, including CNN architectures and vision-language topics, directly relevant to understanding VLMs and their fine-tuning as in CultureVLM.
 
-*If you want all of it:* All 18 lectures, about 21.2 hours.
+*If you want all of it:* 21.2 hours across all 18 episodes
 
 ### The fast track
 _Same ground, a fraction of the time — for when you just need to read the paper._
 
-▶ [Vision-Language Model Competition: DeepSeek-VL and Rivals](https://www.youtube.com/playlist?list=PLXKyJu0coDeXFGNeId8wRs-5vdC0DJKqS) — Byte Goose AI. · 13 videos · 4.7h across 13 episodes
+▶ [Convolutional Neural Networks (Course 4 of the Deep Learning Specialization)](https://www.youtube.com/playlist?list=PLkDaE6sCZn6Gl29AoE31iwdVwSG-KnDzF) — DeepLearningAI · 42 videos · 6.0h across 42 episodes
 
-**Watch only this:** Episodes 7 and 11, about 44 minutes total — 'CLIP: Contrastive Language–Image Pretraining model' and 'Veo 3: Visual Reasoning Through Chain-of-Frames' cover core VLM concepts and recent model architectures.
+**Watch only this:** Episodes 1 through 11, about 1.5 hours — covering computer vision basics, edge detection, convolutions, pooling, and CNN examples to build core understanding of visual feature extraction.
 
-*Why it unblocks this paper:* The Vision-Language Model Competition: DeepSeek-VL and Rivals playlist offers concise, recent explainers on state-of-the-art vision-language models, including CLIP and related architectures, providing a quick yet focused overview of VLM advances relevant to the paper's context.
+*Why it unblocks this paper:* DeepLearningAI's Convolutional Neural Networks series offers a well-produced, clear, and concise introduction to CNNs, which are foundational to vision models. This fast track provides essential intuition and technical understanding quickly, suitable for readers short on time.
 
-*If you want all of it:* All 13 episodes, about 4.7 hours.
+*If you want all of it:* 6.0 hours across all 42 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 
