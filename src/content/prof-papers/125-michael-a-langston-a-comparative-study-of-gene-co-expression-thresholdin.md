@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-michael-a-langston"
-source_hash: "24a46eca2969e7d29d37f33a590d446a4abf5679d5fbec7ed700bce0eac83d8f"
+source_hash: "c7ecdb27299b38ff6903c1aa0875876ddbba28e4d3211902ccf12186a8e8613b"
 sequence: 125
 generator: "outreach-garden: managed"
 ---
@@ -51,6 +51,38 @@ Research interests: Big Data Analytics, Combinatorial Optimization, Computer and
 - [Faculty/profile page](http://web.eecs.utk.edu/~langston)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Graph Theory and Network Analysis
+**The paper assumes:** graph theory, network analysis, graph clustering algorithms, spectral graph theory
+**Already in this field?** Skip this entirely if you already have a solid understanding of graph theory and network analysis concepts including clustering and spectral methods.
+
+Understanding gene co-expression thresholding algorithms requires a solid grasp of graph theory and network analysis concepts such as cliques, spectral methods, and network topology. For a rigorous and comprehensive foundation, the university lecture series offers in-depth coverage of graph machine learning and network structures. For a quicker, intuition-driven introduction focused on core network analysis concepts, the short-form series provides concise, practical labs in social network analysis using R, which aligns well with the paper's focus on clustering and network metrics.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS224W: Machine Learning with Graphs](https://www.youtube.com/playlist?list=PLoROMvodv4rPLKxIpqhjhPgdQy7imNkDn) — Stanford Online · 60 videos · 22.4h across 60 episodes
+
+**Watch only this:** Lectures 1.1 to 5.3 (17 episodes, about 6.2 hours) — covering graph basics, traditional feature-based methods, node embeddings, PageRank, and clustering methods, which provide the essential background for the paper's graph thresholding and clustering approaches.
+
+*Why it unblocks this paper:* Stanford CS224W: Machine Learning with Graphs is a comprehensive course covering graph representations, spectral methods, clustering, and node embeddings, directly relevant to understanding thresholding algorithms and evaluation metrics like maximal clique ratio used in the paper.
+
+*If you want all of it:* 22.4 hours across 60 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Social Network Analysis: A Beginner's Lab in R](https://www.youtube.com/playlist?list=PL1M5TsfDV6VsyfMHfkDcUW71ADKcUNCUI) — Mod•U: Powerful Concepts in Social Science · 15 videos · 2.2h across 15 episodes
+
+**Watch only this:** Episodes 1 to 6 (about 48 minutes) — covering basics of social network analysis, network layouts, data structures, and clustering, providing a quick but solid grounding in network concepts relevant to the paper.
+
+*Why it unblocks this paper:* Social Network Analysis: A Beginner's Lab in R offers a concise, practical introduction to key network concepts such as clustering, centrality measures, and network layouts, which are foundational for understanding gene co-expression networks and thresholding effects.
+
+*If you want all of it:* 2.2 hours across 15 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 
