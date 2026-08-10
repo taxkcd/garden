@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-gursimran-singh-walia"
-source_hash: "6c97c21c08d55ce6a585ae4b3398527333b82d8d70bbb6db02aac147f94733de"
+source_hash: "c76df85abeb48f17c27d608612a17610b7ad8228e476ae3c0f4b7baa5aef617b"
 sequence: 271
 generator: "outreach-garden: managed"
 ---
@@ -58,33 +58,33 @@ Research interests: Utilizing quantitative survey-based, qualitative and experim
 
 _The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
 
-**What you're missing:** Software Engineering Fundamentals
-**The paper assumes:** software design principles, software engineering methodologies, software quality assurance, and software error classification
-**Already in this field?** Skip this entirely if you already have a solid understanding of core software engineering concepts and software design error taxonomies.
+**What you're missing:** Software Design and Architecture
+**The paper assumes:** software design principles, software architecture patterns, software engineering fundamentals
+**Already in this field?** Skip this entirely if you already have a solid understanding of software design principles and architectural patterns in software engineering.
 
-To fully understand the taxonomy validation and implications of software design errors discussed in the paper, foundational knowledge of software engineering fundamentals, especially software design principles and quality assurance, is essential. The rigorous course option offers a deep, structured university-level lecture series on computer engineering fundamentals relevant to software design. The fast track provides a concise, focused playlist on software quality assurance, ideal for quickly grasping key concepts related to software design errors and their prevention.
+To deeply understand the taxonomy of software design errors validated in this paper, a solid grasp of software design principles and architectural patterns is essential. The rigorous course option offers a comprehensive university-level lecture series covering foundational and advanced software engineering topics, while the fast track provides a concise, focused explainer series on software architecture and design principles. Choose the course for thorough academic depth or the fast track for a quicker, intuition-driven overview.
 
 ### The course
 _Rigorous, and the one to pick if you want to hold this material properly._
 
-▶ [LECTURE SERIES IN COMPUTER ENGINEERING](https://www.youtube.com/playlist?list=PLX04tETu2GLApoZaeCq7FeQJOBOfKxUWN) — Engineering Lecture Series · 24 videos · 11.6h across 24 episodes
+▶ [Software Engineering by Prof. Rajib Mall](https://www.youtube.com/playlist?list=PLbRMhDVUMngf8oZR3DpKMvYhZKga90JVt) — NPTEL IIT Kharagpur · 60 videos · 28.2h across 60 episodes
 
-**Watch only this:** Episodes 8 to 9: 'Step-by-Step Guide to Creating Effective Flowcharts for Engineers. MODULE 031' (~28 min) and 'Design Process and Flowcharting. Engineering Lecture Series MODULE 029' (~28 min), about 56 minutes total — these focus on design process fundamentals critical to grasping software design errors.
+**Watch only this:** Lectures 19 to 24 (Design Fundamentals, Modular Design, Classification of Cohesion, Classification of Coupling, Introduction to structured analysis and structured design, Basics of Data Flow Diagrams), about 2.8 hours — these cover core design principles and architectural concepts critical for interpreting design errors.
 
-*Why it unblocks this paper:* This Computer Engineering Lecture Series covers foundational concepts in computing and design processes, which underpin understanding software design errors and their taxonomy validation in the paper.
+*Why it unblocks this paper:* This NPTEL IIT Kharagpur series by Prof. Rajib Mall covers fundamental software engineering concepts including design fundamentals, modular design, cohesion, coupling, and structured design, directly relevant to understanding software design errors and their taxonomy.
 
-*If you want all of it:* 11.6 hours across 24 episodes
+*If you want all of it:* 28.2 hours across 60 episodes
 
 ### The fast track
 _Same ground, a fraction of the time — for when you just need to read the paper._
 
-▶ [Software Quality Assurance](https://www.youtube.com/playlist?list=PLptLP7KjDoqVNLwIJVlkyi85XIlE7Y9WD) — Software Engineering · 16 videos · 3.2h across 16 episodes
+▶ [Software Architecture and Design](https://www.youtube.com/playlist?list=PL4JxLacgYgqTgS8qQPC17fM-NWMTr5GW6) — A Dev' Story · 10 videos · 1.3h across 10 episodes
 
-**Watch only this:** Episodes 1 to 5: 'What is Software Quality Assurance - Full SQA Course Lecture 01 Urdu/Hindi' (~12 min), 'Lecture 2 Software Defects in Software Quality Assurance Series Urdu Hindi' (~12 min), 'lecture 3 - Defect Origin, Defect discovery and Effective Defect elimination techniques Urdu / Hindi' (~12 min), 'Lecture 4 - Defect Removal Method | Software Quality Assurance | SQA' (~12 min), and 'Lecture 5 Defect Prevention in Software Quality Assurance' (~12 min), about 1 hour total — these cover core concepts of software design errors and prevention.
+**Watch only this:** Episodes 1 to 4 (Getting the Basics - Software Architecture Introduction parts 1 and 2, Distributed Cache explained, What is Event Driven Architecture?), about 28 minutes — these episodes introduce essential architecture concepts relevant to understanding design errors and their organizational impact.
 
-*Why it unblocks this paper:* This Software Quality Assurance playlist directly addresses software defects, design errors, and quality assurance techniques, aligning closely with the paper's focus on error taxonomy validation and training tools.
+*Why it unblocks this paper:* This short-form series by A Dev' Story offers clear, concise explanations of software architecture basics and common architectural patterns, providing a quick yet solid foundation to grasp the context of software design errors and their practical implications.
 
-*If you want all of it:* 3.2 hours across 16 episodes
+*If you want all of it:* 1.3 hours across 10 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 
