@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-trong-nghia-hoang"
-source_hash: "78dde2a9e0a55ebb65b4fedd9a760de92ffb9edf8bf1865006cdd6b859350eb6"
+source_hash: "569e28fe4bbcab6fb401b472f7e834bb46f4c4101190bc63adc10fafd84cf8ea"
 sequence: 150
 generator: "outreach-garden: managed"
 ---
@@ -57,21 +57,32 @@ This paper proposes a novel method to improve how transformer models estimate un
 _The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
 
 **What you're missing:** Probabilistic Machine Learning
-**The paper assumes:** probabilistic modeling, Gaussian processes, variational inference, uncertainty quantification in machine learning
-**Already in this field?** Skip this entirely if you already understand probabilistic machine learning concepts including Gaussian processes and variational inference.
+**The paper assumes:** probabilistic modeling, Gaussian processes, variational inference, diffusion models in machine learning
+**Already in this field?** Skip this entirely if you already understand probabilistic modeling frameworks, Gaussian processes, and variational inference methods in machine learning.
 
-To understand the core methodology of this paper, which models transformer feature transformations as probabilistic diffusion processes for uncertainty calibration, a solid grasp of probabilistic machine learning concepts—especially Gaussian processes and variational inference—is essential. The rigorous course offers a deep, structured dive into these topics, while the fast track provides a concise, focused introduction to the foundational probabilistic concepts needed to follow the paper's approach.
+To deeply understand the probabilistic foundations and variational inference techniques underlying the diffusion-inspired reconfiguration of transformers for uncertainty calibration, this background provides two complementary learning paths. The rigorous course offers a comprehensive university-level treatment of diffusion models and related generative modeling concepts, while the fast track delivers concise, intuition-driven explanations of core probabilistic machine learning concepts including Gaussian processes and variational inference. Choose the rigorous course for a thorough grounding and the fast track for a focused, time-efficient conceptual overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CME296: Diffusion & Large Vision Models](https://www.youtube.com/playlist?list=PLoROMvodv4rNdy8rt2rZ4T2xM0OjADnfu) — Stanford Online · 8 videos · 14.0h across 8 episodes
+
+**Watch only this:** Lectures 1-3 (Diffusion, Score matching, Flow matching), about 5.25 hours — these cover the foundational theory of diffusion models and probabilistic mappings essential to understanding the paper's method.
+
+*Why it unblocks this paper:* Stanford CME296: Diffusion & Large Vision Models directly covers diffusion processes, score matching, and diffusion transformers, which are central to the paper's approach of modeling transformer feature transformations as a diffusion process and training via variational inference.
+
+*If you want all of it:* All 8 lectures, about 14 hours — for a complete understanding including architectures, training, evaluation, and trending topics.
 
 ### The fast track
 _Same ground, a fraction of the time — for when you just need to read the paper._
 
-▶ ["17. Bayesian Statistics" (MIT OpenCourseWare), ...](https://www.youtube.com/playlist?list=PLcd9tgLrnYmgvxsS-1MdUZH71vvZeMEb5) — elizabethx0 · 8 videos · 3.7h across 8 episodes
+▶ [Probabilistic Machine Learning](https://www.youtube.com/playlist?list=PL8ru1Gu3oL0RGN164eClIUUbdMnUG6bwy) — André Gadelha · 17 videos · 4.2h across 17 episodes
 
-**Watch only this:** Episodes 1 (17. Bayesian Statistics), 5 (Gaussian Processes), and 6 (Bayesian Linear Regression : Data Science Concepts), totaling about 1.3 hours — enough to grasp the key probabilistic concepts relevant to the paper.
+**Watch only this:** Episodes 13-16 (Gaussian Processes, The determinant, Variational Inference ELBO, Challenges in Variational Inference), about 1 hour — these episodes focus on the key probabilistic tools used in the paper.
 
-*Why it unblocks this paper:* This concise Bayesian statistics playlist includes a focused episode on Gaussian processes and covers foundational Bayesian inference concepts, providing a quick yet solid introduction to the probabilistic modeling and inference techniques critical for understanding the paper.
+*Why it unblocks this paper:* André Gadelha's Probabilistic Machine Learning playlist offers clear, concise explanations of Gaussian processes, variational inference, and related probabilistic concepts that underpin the paper's uncertainty calibration approach, making it an excellent quick conceptual primer.
 
-*If you want all of it:* All 8 episodes, about 3.7 hours.
+*If you want all of it:* All 17 episodes, about 4.2 hours — for a broader understanding of probabilistic machine learning concepts.
 
 ## Track 1 — Academic deep-dives (long-form)
 
