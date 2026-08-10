@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-shaddin-dughmi"
-source_hash: "22877f07a3f4e6a260973ef2a6d6132a6d67f37b6b5675afbaa0cb6f58240d12"
+source_hash: "379aa2319ae6fdb0773ece83799264970d3ca91420e83be2de31e606ca891d7b"
 sequence: 141
 generator: "outreach-garden: managed"
 ---
@@ -58,33 +58,33 @@ Research interests: Questions that stimulate the development of new algorithmic 
 
 _The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
 
-**What you're missing:** Cost-Sensitive Active Learning
-**The paper assumes:** cost-sensitive active learning, active search algorithms, adaptive sampling under uncertainty
-**Already in this field?** Skip this entirely if you already understand active learning theory with cost considerations and adaptive search algorithms in machine learning.
+**What you're missing:** Cost-sensitive active search
+**The paper assumes:** cost-sensitive active search, adaptive decision making under uncertainty, threshold policies in sequential search
+**Already in this field?** Skip this entirely if you already understand cost-sensitive active search frameworks and adaptive sequential decision algorithms under uncertainty.
 
-This background focuses on cost-sensitive active learning and adaptive inference-time search strategies, which are central to understanding the ADAP algorithm's theoretical and practical contributions in the paper. The rigorous course option offers a deep dive into advanced machine learning concepts including learning theory and adaptive algorithms, while the fast track provides a concise, accessible introduction to machine learning fundamentals relevant to cost-sensitive decision making. Choose the course for thorough theoretical grounding and the fast track for a quicker, intuition-driven overview.
+This background is essential for understanding the paper's core formulation of inference-time generation, scoring, and verification as a cost-sensitive active search problem with unknown score and success distributions. The rigorous course option offers a deep dive into foundational machine learning concepts including learning theory and decision-making under uncertainty, which underpin the paper's theoretical contributions. The fast track provides a concise, intuition-driven introduction to decision analysis techniques relevant to cost-sensitive decision making, enabling a quicker grasp of threshold policies and adaptive algorithms without extensive time investment.
 
 ### The course
 _Rigorous, and the one to pick if you want to hold this material properly._
 
-▶ [Advanced Machine Learning (lecture series)](https://www.youtube.com/playlist?list=PLemsnf33Vij4-kv-JTjDthaGUYUnQbbws) — Florian Marquardt · 33 videos · 44.8h across 33 episodes
+▶ [Stanford CS229: Machine Learning led by Andrew Ng | Autumn 2018](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU) — Stanford Online · 21 videos · 27.9h across 21 episodes
 
-**Watch only this:** Lectures 8 to 24, about 13.5 hours — covering entropy, Bayes, inductive bias, mutual information, natural gradient, variational autoencoders, generative adversarial networks, recurrent and graph neural networks, attention mechanisms, transformers, implicit layers, and reinforcement learning including policy gradient and trust regions. This subset provides the theoretical tools and adaptive learning concepts relevant to the paper's approach.
+**Watch only this:** Lectures 1-4 and 8-9, about 7 hours — covering introduction, supervised learning basics, decision trees, ensemble methods, and learning theory sections to grasp the problem formalization and threshold policies.
 
-*Why it unblocks this paper:* Florian Marquardt's Advanced Machine Learning lecture series covers foundational and advanced topics in machine learning theory, including inductive bias, information theory, and reinforcement learning, which underpin the cost-sensitive active search framework and adaptive policies studied in the paper.
+*Why it unblocks this paper:* Stanford CS229 by Andrew Ng covers foundational machine learning concepts including learning theory, decision theory, and adaptive control, which are directly relevant to understanding the paper's formalization of cost-sensitive active search and the design of the ADAP algorithm.
 
-*If you want all of it:* 44.8 hours across all 33 episodes
+*If you want all of it:* 27.9 hours across 21 episodes
 
 ### The fast track
 _Same ground, a fraction of the time — for when you just need to read the paper._
 
-▶ [Machine Learning Specialization by Andrew Ng](https://www.youtube.com/playlist?list=PLkDaE6sCZn6FNC6YRfRQc_FbeQrF8BwGI) — DeepLearningAI · 41 videos · 5.2h across 41 episodes
+▶ [Decision Analysis](https://www.youtube.com/playlist?list=PLD3fYc0bAjC-FbzlruUEYIO-El4PjDVCv) — Joshua Emmanuel · 19 videos · 1.8h across 19 episodes
 
-**Watch only this:** Episodes #1 through #24, about 5.2 hours — covering the basics of machine learning, loss functions, overfitting, bias-variance tradeoff, and foundational supervised learning techniques necessary to grasp the paper's context.
+**Watch only this:** Episodes 1-5, about 25 minutes — covering maximax/maximin, expected value, payoff tables, decision trees, and expected value of sample information to quickly understand threshold decision rules and cost tradeoffs.
 
-*Why it unblocks this paper:* The Machine Learning Specialization by Andrew Ng offers clear, concise explanations of core machine learning concepts such as supervised learning, model evaluation, and learning theory fundamentals, providing a practical and accessible foundation for understanding adaptive inference and cost-sensitive decision making.
+*Why it unblocks this paper:* Joshua Emmanuel's Decision Analysis playlist offers concise, clear explainers on decision-making frameworks, expected value calculations, and decision trees, which provide practical intuition for cost-sensitive decision policies and adaptive verification strategies in the paper.
 
-*If you want all of it:* 5.2 hours across all 41 episodes
+*If you want all of it:* 1.8 hours across 19 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 
