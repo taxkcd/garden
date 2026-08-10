@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-harish-ravichandar"
-source_hash: "b5d003443af4dd205b54759643e0e453c92cbb0f3be4754d280359fb4c0446fc"
+source_hash: "8bd86c7ad0456e621198ff9f32fd0ab31f3367db07828cc9929e387639edfdb1"
 sequence: 10
 generator: "outreach-garden: managed"
 ---
@@ -51,6 +51,63 @@ Research interests: Robot Learning; Human-Centered Robotics; Multi-Agent Systems
 - [Lab website](https://gt-star-lab.github.io/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_Everything the paper assumes you already know, in the order you should learn it. Some stages have no visible connection to the paper's title — that is the point: this is the background the paper never explains._
+
+This playlist provides foundational and core knowledge necessary to understand the research paper on inferring implicit trait preferences for task allocation in heterogeneous teams. It covers essential mathematical concepts like linear algebra and multivariate statistics, core algorithmic techniques such as constrained optimization and coalition formation in multi-agent systems, and advanced topics including robot learning from demonstrations and multi-robot task allocation frameworks. Work through the stages in order to build a solid background before engaging with the paper.
+
+**The paper assumes:** linear algebra, multivariate statistics, constrained optimization, multi-agent systems, coalition formation algorithms, robot learning from demonstrations, multi-robot task allocation
+**Time to work through:** roughly 70-80 hours if you watch all recommended lectures, about 40-45 hours if you follow the skip guidance.
+**Already in this field?** Skip stages 1-3 if you have a solid background in linear algebra, optimization, and multi-agent coordination; focus on stages 4-6 for domain-specific knowledge.
+
+### Stage 1 · Linear Algebra and Vector Spaces *(foundational)*
+The paper uses vector representations of agent traits and tasks, and cosine similarity measures to infer trait preferences, which require understanding vector operations and norms.
+
+▶ **Course:** [MIT 18.06 Linear Algebra, Spring 2005](https://www.youtube.com/playlist?list=PLE7DDD91010BC51F8) — MIT OpenCourseWare · 36 videos · 28.0h across 36 episodes
+
+*What to watch:* Watch the MIT 18.06 Linear Algebra, Spring 2005 playlist by MIT OpenCourseWare, focusing on episodes 1 through 23. These cover the geometry of linear equations, matrix operations, vector spaces, orthogonality, projections, and eigenvalues—all essential for understanding vector operations and cosine similarity used in the paper.
+
+*Move on when you can:* Compute cosine similarity between two vectors and explain its geometric interpretation.
+
+### Stage 2 · Multivariate Statistics and Data Variation *(foundational)*
+Trait preference inference relies on analyzing variation and consistency in trait allocations across expert demonstrations, requiring knowledge of variance, covariance, and statistical measures of consistency.
+
+▶ **Course:** [STA633 | Multivariate Analysis](https://www.youtube.com/playlist?list=PLKyB9RYzaFRjLaNp9_-GWZ_EAcxVj0CiW) — Virtual University of Pakistan · 86 videos · 9.5h across the first 60 episodes
+
+*What to watch:* Focus on the STA633 | Multivariate Analysis playlist by Virtual University of Pakistan, especially episodes 1 to 27. These cover data matrices, mean vectors, variance-covariance matrices, correlation matrices, and multivariate normal distributions, which are crucial for understanding trait variation and consistency analysis in the paper.
+
+*Move on when you can:* Calculate variance and covariance matrices for multivariate data and interpret their meaning in terms of data spread and correlation.
+
+### Stage 3 · Constrained Optimization and Weighted Objective Functions *(core)*
+The task allocation problem is formulated as a constrained optimization with weighted trait preferences, so understanding how to set up and solve such problems is essential.
+
+▶ **Course:** [Stanford EE364A Convex Optimization I Stephen Boyd I 2023](https://www.youtube.com/playlist?list=PLoROMvodv4rMJqxxviPa4AmDClvcbHi6h) — Stanford Online · 18 videos · 23.7h across 18 episodes
+
+*What to watch:* Watch the Stanford EE364A Convex Optimization I Stephen Boyd 2023 playlist by Stanford Online, focusing on lectures 1 through 10. These cover problem formulation, convex sets, functions, and basic optimization techniques including Lagrange multipliers, which are foundational for the paper's weighted constrained optimization approach.
+
+*Move on when you can:* Formulate and solve a simple constrained optimization problem with weighted objectives using Lagrange multipliers or numerical solvers.
+
+### Stage 4 · Multi-Agent Systems and Coalition Formation *(core)*
+The paper addresses task allocation in heterogeneous multi-agent teams and uses coalition formation algorithms, so familiarity with multi-agent coordination and coalition concepts is required.
+
+▶ **Course:** [Introduction to Multi-Agent Systems](https://www.youtube.com/playlist?list=PLFW6lRTa1g81K7Ar6OT5YyK8p3sQ0B5bB) — IIT KANPUR-NPTEL · 56 videos · 31.3h across 56 episodes
+
+*What to watch:* Watch the Introduction to Multi-Agent Systems playlist by IIT KANPUR-NPTEL, focusing on lectures 1 through 22. These cover fundamental concepts of multi-agent systems, coordination, and coalition formation, directly relevant to understanding the paper's coalition formation approach for task allocation.
+
+*Move on when you can:* Explain the concept of coalition formation and solve a basic multi-agent task allocation problem using trait-based constraints.
+
+### Stage 5 · Robot Learning from Demonstrations *(advanced)*
+The method infers implicit trait preferences by analyzing expert demonstrations, so understanding how demonstrations are used to learn task-relevant information is critical.
+
+▶ **Course:** [Stanford CS224R Deep Reinforcement Learning](https://www.youtube.com/playlist?list=PLoROMvodv4rPwxE0ONYRa_itZFdaKCylL) — Stanford Online · 19 videos · 20.6h across 19 episodes
+
+*What to watch:* Watch the Stanford CS224R Deep Reinforcement Learning playlist by Stanford Online, focusing on lectures 1 and 2 which cover class introduction and imitation learning. These provide foundational understanding of how expert demonstrations can be used to infer task constraints and preferences in robot learning.
+
+*Move on when you can:* Describe how expert demonstrations can be used to infer task constraints or preferences in robot learning.
+
+_Work through the stages in order. Once the last one lands, the paper — and the two tracks below — should read cleanly._
 
 ## Track 1 — Academic deep-dives (long-form)
 
