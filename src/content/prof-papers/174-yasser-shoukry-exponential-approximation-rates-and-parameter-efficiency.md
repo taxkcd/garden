@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-yasser-shoukry"
-source_hash: "0269e75ee8871ace997ac349366759bf457c09856ec0fe949c7154eb75038493"
+source_hash: "df456b81bd5f1d6b31f5121ab540d33adbb2ed7af8b024e0bd5e428afff94eb5"
 sequence: 174
 generator: "outreach-garden: managed"
 ---
@@ -59,32 +59,32 @@ Research interests: develop algorithms and tools to reason about the resilience,
 _The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
 
 **What you're missing:** Approximation Theory for Machine Learning
-**The paper assumes:** approximation theory, polynomial approximation, function smoothness, uniform convergence, neural network approximation
-**Already in this field?** Skip this entirely if you already have a solid understanding of approximation theory as applied to machine learning and neural networks.
+**The paper assumes:** approximation theory, polynomial approximation, error bounds in function approximation, neural network approximation theory
+**Already in this field?** Skip this entirely if you already understand the fundamentals of approximation theory as applied to neural networks and polynomial function approximation.
 
-This background focuses on approximation theory as it applies to machine learning, specifically polynomial approximation and Bernstein polynomials, which are central to understanding the theoretical contributions of the paper on DeepBern-Nets. The rigorous course option offers a deep dive into structured representations and approximation in data science, suitable for those seeking a thorough mathematical foundation. The fast track provides a concise, focused introduction to Bernstein polynomials and the Weierstrass approximation theorem, ideal for readers who want a quick but solid grasp of the key concepts relevant to the paper.
+This background playlist selection focuses on approximation theory relevant to machine learning, specifically polynomial approximation and error bounds critical to understanding the theoretical contributions of DeepBern-Nets in the paper. The rigorous course option provides a deep, structured university-level introduction to machine learning concepts including neural networks and optimization, while the fast track offers a concise, focused series on hyperparameter tuning and optimization techniques that underpin training dynamics and approximation efficiency. Choose the course for a thorough foundational understanding, or the fast track for a quicker, practical grasp of key concepts related to training and approximation.
 
 ### The course
 _Rigorous, and the one to pick if you want to hold this material properly._
 
-▶ [Mathematics of data: Structured representations for sensing, approximation and learning](https://www.youtube.com/playlist?list=PLuD_SqLtxSdX_w1Ztexpzl_EJgFQSkWez) — The Alan Turing Institute · 11 videos · 7.9h across 11 episodes
+▶ [Stanford CS229: Machine Learning led by Andrew Ng | Autumn 2018](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU) — Stanford Online · 21 videos · 27.9h across 21 episodes
 
-**Watch only this:** Episodes 1 and 2: 'Nonlinear approximation by deep ReLU networks - Ron DeVore, Texas A&M' and 'Approximation with deep networks - Remi Gribonval, Inria', about 1.5 hours total — these provide the core theoretical background on approximation rates and neural network function approximation.
+**Watch only this:** Lectures 1, 4, 7, 10, and 11 — about 6.5 hours total. These cover introduction, perceptrons and generalized linear models, kernels, introduction to neural networks, and backpropagation/improving neural networks, providing the theoretical and practical foundation needed to grasp the paper's core contributions.
 
-*Why it unblocks this paper:* This workshop series from The Alan Turing Institute covers approximation theory in machine learning with lectures by leading experts, including nonlinear approximation by deep ReLU networks and approximation with deep networks, directly relating to the paper's theoretical analysis of neural network approximation rates.
+*Why it unblocks this paper:* Stanford CS229 by Andrew Ng is a rigorous, authoritative university course covering machine learning fundamentals including neural networks, learning theory, and optimization, which are essential to understanding the approximation theory and parameter efficiency proofs in the paper.
 
-*If you want all of it:* All 11 episodes, about 7.9 hours total.
+*If you want all of it:* Approximately 27.9 hours across all 21 episodes.
 
 ### The fast track
 _Same ground, a fraction of the time — for when you just need to read the paper._
 
-▶ [Real Analysis I](https://www.youtube.com/playlist?list=PLhWyf911na-UTfr92l7VfS6iHvWEScz0R) — Ch-35: IIT Madras: Metallurgical and Others · 10 videos · 2.1h across 10 episodes
+▶ [Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization (Course 2 of the Deep Learning Specialization)](https://www.youtube.com/playlist?list=PLkDaE6sCZn6Hn0vK8co82zjQtt3T2Nkqc) — DeepLearningAI · 34 videos · 4.7h across 34 episodes
 
-**Watch only this:** Episodes 35.1 'Weierstrass approximation theorem', 35.2 'Bernstein Polynomials', and 35.3 'Properties of Bernstein polynomials', about 36 minutes total — these three episodes cover the essential approximation theory and Bernstein polynomial properties.
+**Watch only this:** Episodes 1-3, 10-12, and 20 — about 1.5 hours total. These cover train/dev/test sets, bias/variance, basic ML recipe, vanishing/exploding gradients, weight initialization, numerical gradient approximations, and tuning process, giving a practical overview of key training concepts relevant to the paper.
 
-*Why it unblocks this paper:* This concise playlist from IIT Madras covers Bernstein polynomials and the Weierstrass approximation theorem in a clear, focused manner, directly addressing the mathematical foundations needed to understand the paper's use of Bernstein polynomial activations.
+*Why it unblocks this paper:* DeepLearningAI's 'Improving Deep Neural Networks' playlist offers concise, well-produced explainers on optimization, regularization, and training dynamics that directly relate to the paper's focus on efficient training and parameter reduction with Bernstein activations.
 
-*If you want all of it:* All 10 episodes, about 2.1 hours total.
+*If you want all of it:* Approximately 4.7 hours across all 34 episodes.
 
 ## Track 1 — Academic deep-dives (long-form)
 
