@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-jmgroh"
-source_hash: "f0bddfb5f34377bdc9b088d6dfa0f58fb78579f8c7111397d4f339744560c81f"
+source_hash: "fa6d391c09f4be86c1c67d28553f4e452a4bff996b55941f79eb168661a6d438"
 sequence: 40
 generator: "outreach-garden: managed"
 ---
@@ -54,6 +54,63 @@ Research interests: neural representations of space, sensory information encodin
 - [Social profile](https://twitter.com/JMGrohNeuro)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_Everything the paper assumes you already know, in the order you should learn it. Some stages have no visible connection to the paper's title — that is the point: this is the background the paper never explains._
+
+This playlist provides foundational and core background knowledge to prepare for understanding the research paper on eye movement related eardrum oscillations (EMREOs). It covers essential anatomy of sensory organs, the nature of eye movements especially saccades, coordinate systems relevant to sensory integration, signal processing techniques for biological oscillations, and linear regression modeling used in the analysis. Work through the stages in order to build a comprehensive base before engaging with the paper.
+
+**The paper assumes:** basic human anatomy and physiology of the auditory and visual systems, principles of eye movements and saccades, fundamentals of sensory coordinate systems, signal processing of biological oscillations, linear regression modeling, cross-species comparative neuroscience methods
+**Time to work through:** roughly 15-20 hours if you watch all selected playlist episodes, with skip guidance to reduce time to about 8-10 hours
+**Already in this field?** Skip stages 1-3 if you have a solid background in sensory neuroscience and signal processing; focus on stages 4-6 for specialized knowledge on eye movement-related auditory phenomena and cross-species experimental techniques.
+
+### Stage 1 · Human Sensory System Anatomy *(foundational)*
+Understanding the anatomical structures of the ear and eye is essential to grasp how eye movements might influence eardrum oscillations and how auditory and visual spatial information are processed.
+
+▶ **Course:** [Senses Playlist – Vision, Hearing, Equilibrium, Smell, Taste, and Skin Sensation](https://www.youtube.com/playlist?list=PLmzZnYRTmRK9pMxStigNjoCRCnWHN4EcY) — Taim Talks Med · 5 videos
+
+*What to watch:* Watch the entire 'Senses Playlist – Vision, Hearing, Equilibrium, Smell, Taste, and Skin Sensation' by Taim Talks Med, focusing especially on the first two episodes: 'Eye Anatomy | How You Actually See (Special Senses)' and 'Ear Anatomy | How You Actually Hear (Special Senses)'. These provide clear, concise coverage of the relevant sensory organ anatomy.
+
+*Move on when you can:* Explain the basic anatomy of the human ear (outer, middle, inner ear) and eye, including key structures involved in hearing and eye movement control.
+
+### Stage 2 · Eye Movements and Saccades *(foundational)*
+The paper investigates eardrum oscillations time-locked to saccade onset; understanding saccade generation, types, and metrics is critical to follow experimental design and interpretation.
+
+▶ **Course:** [Eye - Anatomy & Physiology - New](https://www.youtube.com/playlist?list=PLO2O9UjkQxLd1O03L3Ua2JiCGBchdWTXq) — Dr. Najeeb Lectures · 14 videos · 6.4h across the first 12 episodes
+
+*What to watch:* Focus on the 'Eye - Anatomy & Physiology - New' playlist by Dr. Najeeb Lectures, specifically the episode titled 'Saccades | Conjugate Eye Movement'. This lecture thoroughly explains saccades, their control, and characteristics relevant to the paper's eye movement measurements.
+
+*Move on when you can:* Describe the types of eye movements, especially saccades, and explain how saccade onset and displacement are measured.
+
+### Stage 3 · Coordinate Systems in Sensory Processing *(core)*
+The research problem centers on reconciling auditory head-centered and visual eye-centered spatial information; understanding these coordinate frames is key to appreciating the significance of EMREOs.
+
+▶ **Course:** [MIT 9.13 The Human Brain, Spring 2019](https://www.youtube.com/playlist?list=PLUl4u3cNGP60IKRN_pFptIBxeiMc0MCJP) — MIT OpenCourseWare · 17 videos · 20.2h across 17 episodes
+
+*What to watch:* Watch the MIT OpenCourseWare playlist 'MIT 9.13 The Human Brain, Spring 2019', focusing on episodes that cover sensory processing and spatial representation such as '2. Neuroanatomy', '8. Navigation I', and '9. Navigation II'. These provide a solid introduction to coordinate systems in the brain relevant to sensory integration.
+
+*Move on when you can:* Explain the difference between head-centered and eye-centered coordinate systems and why sensory integration requires transformations between them.
+
+### Stage 4 · Signal Processing of Biological Oscillations *(core)*
+The study analyzes oscillatory eardrum signals recorded via microphones; knowledge of signal processing techniques such as filtering, time-locking, and spectral analysis is necessary to understand data acquisition and analysis.
+
+▶ **Course:** [EE675 Biomedical Signal Processing](https://www.youtube.com/playlist?list=PL_WlMgvjbPRn0zfyDQzf5jfL6sJsonA18) — Biomedical Engineering, ECE, KAU · 23 videos · 30.8h across 23 episodes
+
+*What to watch:* Focus on the first 10 lectures of the 'EE675 Biomedical Signal Processing' course by Biomedical Engineering, ECE, KAU. These lectures cover fundamental signal processing concepts and techniques applicable to biological oscillatory data, including filtering and time-frequency analysis.
+
+*Move on when you can:* Perform basic signal processing on biological oscillatory data, including filtering and time-frequency analysis.
+
+### Stage 5 · Linear Regression and Statistical Modeling *(core)*
+The paper uses linear regression models to relate EMREO signals to eye movement parameters; understanding regression analysis is essential to interpret the modeling approach and results.
+
+▶ **Course:** [Linear Regression and Linear Models](https://www.youtube.com/playlist?list=PLblh5JKOoLUIzaEkCLIUxQFjPIlapw8nU) — StatQuest with Josh Starmer · 9 videos · 2.1h across 9 episodes
+
+*What to watch:* Watch the 'Linear Regression and Linear Models' playlist by StatQuest with Josh Starmer, focusing on the first 5 episodes which cover the essence of linear regression, fitting lines to data, and multiple regression. These videos clearly explain the concepts and interpretation of regression coefficients.
+
+*Move on when you can:* Derive and apply a linear regression model to relate dependent variables to multiple predictors and interpret regression coefficients.
+
+_Work through the stages in order. Once the last one lands, the paper — and the two tracks below — should read cleanly._
 
 ## Track 1 — Academic deep-dives (long-form)
 

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-varsha-dani"
-source_hash: "90953b9046610bc903c2d07062ebf6337622a421ac32bbd5d37e3c0fd5aae95c"
+source_hash: "ae84184fcf75c0c8d3923da08be01ebefa9535ef047e9182e380356da5bc6c46"
 sequence: 52
 generator: "outreach-garden: managed"
 ---
@@ -54,6 +54,72 @@ This paper presents an improved algorithm for reconstructing the positions of ve
 - [Identity evidence](https://scholar.google.com/citations?user=qA3IkiwAAAAJ&hl=en)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_Everything the paper assumes you already know, in the order you should learn it. Some stages have no visible connection to the paper's title — that is the point: this is the background the paper never explains._
+
+This playlist provides a structured learning path to prepare for understanding the paper on reconstructing random geometric graphs with improved distortion bounds. It covers foundational linear algebra and probability theory, core graph theory and random geometric graph models, and advanced topics in metric geometry and graph embedding algorithms. Follow the stages in order to build the necessary mathematical and algorithmic background before tackling the paper.
+
+**The paper assumes:** undergraduate-level linear algebra, probability theory, graph theory, metric geometry, random geometric graphs, and geometric embedding algorithms
+**Time to work through:** roughly 70-80 hours if you watch all recommended content, about 40-50 hours if you follow the skip guidance.
+**Already in this field?** Skip stages 1-3 if you have a solid background in discrete mathematics and probability; skip stage 4 if you are familiar with random geometric graph models and their properties.
+
+### Stage 1 · Linear Algebra Fundamentals *(foundational)*
+The paper relies on Euclidean geometry and vector space concepts to understand vertex embeddings and distance calculations in Euclidean and other metric spaces.
+
+▶ **Course:** [Mathematics for Machine Learning - Linear Algebra](https://www.youtube.com/playlist?list=PLiiljHvN6z1_o1ztXTKWPrShrMrBLo5P3) — Digital Media - Imperial College London · 37 videos · 7.8h across 37 episodes
+
+*What to watch:* Watch the "Mathematics for Machine Learning - Linear Algebra" playlist from Imperial College London, focusing on episodes 1.1 through 3.5. These cover vectors, vector operations, basis and linear independence, matrix transformations, and solving linear systems, which are essential for understanding Euclidean embeddings and distance computations in the paper.
+
+*Move on when you can:* Explain how to compute Euclidean distances between points represented as vectors and perform basic matrix operations.
+
+### Stage 2 · Probability Theory and Concentration Inequalities *(foundational)*
+Random geometric graphs are probabilistic models; understanding concentration bounds and probabilistic reasoning is essential for grasping the paper's high-probability guarantees and error bounds.
+
+▶ **Course:** [6.041 Probabilistic Systems Analysis and Applied Probability](https://www.youtube.com/playlist?list=PLUl4u3cNGP61MdtwGTqZA0MreSaDybji8) — MIT OpenCourseWare · 25 videos · 21.1h across 25 episodes
+
+*What to watch:* Use the MIT OpenCourseWare playlist "6.041 Probabilistic Systems Analysis and Applied Probability" and focus on the first 12 episodes covering probability models, conditioning, independence, discrete and continuous random variables, and covariance. These provide the probabilistic foundations and concentration inequalities needed to understand the paper's error bounds and probabilistic guarantees.
+
+*Move on when you can:* State and apply Chernoff or Hoeffding bounds to bound deviations of sums of independent random variables.
+
+### Stage 3 · Graph Theory and Shortest Path Algorithms *(core)*
+The paper uses graph distances, shortest paths, and neighborhood structures extensively to estimate Euclidean distances and reconstruct embeddings from adjacency matrices.
+
+▶ **Course:** [Introduction to Graph Algorithms](https://www.youtube.com/playlist?list=PLgMDNELGJ1CajIGnWor0zilGWhxAfunZx) — NPTEL - Indian Institute of Science, Bengaluru · 38 videos · 19.1h across 38 episodes
+
+*What to watch:* Watch the "Introduction to Graph Algorithms" playlist by NPTEL, focusing on lectures 16 to 37, which cover BFS, DFS, shortest path algorithms including Dijkstra's algorithm, and graph connectivity. These lectures explain shortest path computations and neighborhood overlaps critical for the hybrid distance estimation method in the paper.
+
+*Move on when you can:* Implement and explain Dijkstra's or BFS shortest path algorithm on unweighted graphs and analyze neighborhood overlaps.
+
+### Stage 4 · Random Geometric Graph Models *(core)*
+Understanding the construction, properties, and typical behaviors of random geometric graphs is crucial since the paper reconstructs vertex positions from such graphs and assumes uniform vertex distributions and connection radius r.
+
+▶ [The evolution of the random geometric graph](https://www.youtube.com/watch?v=NUisb1-INIE) — EPFLNooC · 4:30 · 14 years ago
+
+*What to watch:* Watch the video "The evolution of the random geometric graph" by EPFLNooC. This concise 4.5-minute animation visually explains how random geometric graphs are generated and how the connection radius influences edge formation, providing an intuitive grasp of the model used in the paper.
+
+*Move on when you can:* Describe how random geometric graphs are generated and explain the role of the connection radius in edge formation.
+
+### Stage 5 · Metric Geometry and Embeddings *(advanced)*
+The paper deals with embedding graphs into Euclidean spaces and other metric spaces like spheres and hypercubes, requiring knowledge of metric spaces, distortion, and geometric properties of neighborhoods.
+
+▶ **Course:** [SY BCS || Semester 4 || Computational Geometry](https://www.youtube.com/playlist?list=PLtYAi9x2wsSXxS997VgtMw5z2U8YQxVEZ) — Kadam's Study Center · 10 videos · 4.9h across 10 episodes
+
+*What to watch:* Watch the "SY BCS || Semester 4 || Computational Geometry" playlist by Kadam's Study Center, focusing on the first 5 episodes covering two-dimensional transformations, projections, and plane curves. These lectures introduce geometric transformations and metric concepts relevant to understanding distortion and embeddings in the paper.
+
+*Move on when you can:* Explain the concept of metric distortion and how embeddings preserve or distort distances between points.
+
+### Stage 6 · Graph Embedding and Reconstruction Algorithms *(advanced)*
+The immediate precursor to this paper is the existing body of work on reconstructing vertex positions from random geometric graphs with distortion proportional to r, including methods based on shortest path distances and neighborhood overlaps.
+
+▶ **Course:** [Stanford CS224W: Machine Learning with Graphs](https://www.youtube.com/playlist?list=PLoROMvodv4rPLKxIpqhjhPgdQy7imNkDn) — Stanford Online · 60 videos · 22.4h across 60 episodes
+
+*What to watch:* Watch the "Stanford CS224W: Machine Learning with Graphs" playlist by Stanford Online, focusing on lectures that cover graph embeddings, graph distances, and reconstruction algorithms (roughly lectures 1-10). These provide a comprehensive overview of graph embedding techniques and their limitations, setting the stage for understanding the improvements in the paper.
+
+*Move on when you can:* Summarize a known algorithm that reconstructs vertex positions from adjacency matrices with distortion O(r) and explain its limitations.
+
+_Work through the stages in order. Once the last one lands, the paper — and the two tracks below — should read cleanly._
 
 ## Track 1 — Academic deep-dives (long-form)
 

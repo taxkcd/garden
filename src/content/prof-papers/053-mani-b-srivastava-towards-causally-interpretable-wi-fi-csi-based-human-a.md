@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-mani-b-srivastava"
-source_hash: "5ab16def5deee3a1fe2c96151d53024f60267489e86ee906350e58ce1319af1f"
+source_hash: "eb8c9c846126664f153aafc7a233a6f5efc3bec7cd7039bd123e3b88b971d510"
 sequence: 53
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,63 @@ Research interests: Embedded software, ubiquitous and mobile computing, human-cy
 - [Lab website](http://nesl.ee.ucla.edu/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_Everything the paper assumes you already know, in the order you should learn it. Some stages have no visible connection to the paper's title — that is the point: this is the background the paper never explains._
+
+This playlist provides foundational and core knowledge needed to understand the paper on causally interpretable Wi-Fi CSI-based human activity recognition. It covers essential mathematics, wireless signal processing, machine learning with variational autoencoders, causal discovery in time series, and advanced symbolic reasoning with temporal logic. Work through the stages in order to build up from basic linear algebra and probability to the specialized techniques used in the paper.
+
+**The paper assumes:** linear algebra, probability theory, signal processing fundamentals, variational autoencoders, causal discovery methods, temporal logic, human activity recognition from sensor data
+**Time to work through:** roughly 80-100 hours if you watch all recommended lectures, about 50-60 hours if you follow the skip guidance to focus on key parts
+**Already in this field?** Skip stages 1-3 if you have a solid background in linear algebra, probability, and machine learning basics; skip stage 4 if you already know variational autoencoders well; skip stage 5 if you have experience with causal inference methods.
+
+### Stage 1 · Linear Algebra and Probability Theory *(foundational)*
+Understanding the paper’s use of high-dimensional Wi-Fi CSI data compression, latent variable models, and statistical causal tests requires solid knowledge of vector spaces, matrices, eigenvalues, random variables, and distributions.
+
+▶ **Course:** [MIT 18.06 Linear Algebra, Spring 2005](https://www.youtube.com/playlist?list=PLE7DDD91010BC51F8) — MIT OpenCourseWare · 36 videos · 28.0h across 36 episodes
+
+*What to watch:* Watch the MIT 18.06 Linear Algebra playlist by Prof. Gilbert Strang, focusing on episodes 1 through 23, which cover geometry of linear equations, matrix operations, subspaces, projections, determinants, and eigenvalues. These topics provide the mathematical foundation for understanding latent space representations and matrix computations in the paper.
+
+*Move on when you can:* Explain eigenvalue decomposition and compute probabilities for basic random variables; perform matrix multiplication and inversion.
+
+### Stage 2 · Digital Signal Processing and Wireless Channel Modeling *(foundational)*
+The paper processes Wi-Fi Channel State Information (CSI), which involves understanding wireless signal propagation, multipath effects, and time-frequency signal representations.
+
+▶ **Course:** [Wireless Communications](https://www.youtube.com/playlist?list=PL3nE1Yo1b4CrAfN3lndrMImPFuS1hR5U-) — Prof. Bruno Clerckx · 10 videos · 19.1h across 10 episodes
+
+*What to watch:* Focus on the 'Wireless Communications' playlist by Prof. Bruno Clerckx, especially episodes 1 to 4, which cover time representation, channel modeling, fading, and MIMO systems. These provide a solid understanding of wireless channel characteristics and CSI relevant to the paper.
+
+*Move on when you can:* Describe the concept of channel state information and explain how multipath propagation affects wireless signals.
+
+### Stage 3 · Machine Learning Fundamentals and Variational Autoencoders *(core)*
+The paper uses categorical variational autoencoders with Gumbel-Softmax latent variables to compress raw CSI data into discrete latent codes, requiring understanding of probabilistic generative models and neural networks.
+
+▶ **Course:** [Stanford CS236: Deep Generative Models I 2023 I Stefano Ermon](https://www.youtube.com/playlist?list=PLoROMvodv4rPOWA-omMM6STXaWW4FvJT8) — Stanford Online · 18 videos · 23.6h across 18 episodes
+
+*What to watch:* Watch the Stanford CS236: Deep Generative Models I 2023 playlist, focusing on lectures 1 through 6 for background and VAE fundamentals, and lecture 17 on discrete latent variable models. This sequence covers the theory and implementation of VAEs, including discrete latent spaces relevant to the paper's compression method.
+
+*Move on when you can:* Derive the evidence lower bound (ELBO) for a variational autoencoder and implement a simple VAE with discrete latent variables.
+
+### Stage 4 · Causal Discovery and Time Series Analysis *(core)*
+The paper applies LPCMCI causal discovery with partial correlation tests on latent trajectories to infer temporal dependencies, so knowledge of causal inference methods and temporal data analysis is essential.
+
+▶ **Course:** [Causal Inference](https://www.youtube.com/playlist?list=PLrxbIDql7nhvdxz9X9ys1N-BjhvMfkclP) — Austin Ray · 185 videos · 61.7h across the first 60 episodes
+
+*What to watch:* Focus on the 'Causal Inference' playlist by Austin Ray, specifically episodes covering causal discovery from observational data and time series causal inference. Supplement with the 'Time Series Analysis' playlist by ritvikmath for understanding autocorrelation, stationarity, and ARMA models. This combination provides the causal and temporal analysis background needed for LPCMCI and partial correlation tests.
+
+*Move on when you can:* Explain the concept of Granger causality and perform causal discovery using partial correlation tests on time series data.
+
+### Stage 5 · Temporal Logic and Symbolic Reasoning *(advanced)*
+The paper translates causal dependencies into Linear Temporal Logic (LTL) rules for interpretable classification, requiring familiarity with formal logic, temporal operators, and symbolic model checking.
+
+▶ **Course:** [Lectures on Linear Temporal Logic](https://www.youtube.com/playlist?list=PLMBx8HjvK7672qEl6bdnXdzYEbLP_lWPw) — Andrei Popescu · 9 videos · 1.3h across 9 episodes
+
+*What to watch:* Watch the 'Lectures on Linear Temporal Logic' playlist by Andrei Popescu, covering all 9 episodes. This concise series introduces LTL syntax, semantics, and practical specification patterns, directly supporting understanding of the paper's LTL rule extraction and symbolic classifier.
+
+*Move on when you can:* Write and interpret LTL formulas expressing temporal properties and verify simple temporal logic specifications.
+
+_Work through the stages in order. Once the last one lands, the paper — and the two tracks below — should read cleanly._
 
 ## Track 1 — Academic deep-dives (long-form)
 

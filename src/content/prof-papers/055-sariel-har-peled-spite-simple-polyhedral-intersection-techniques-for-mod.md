@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-sariel-har-peled"
-source_hash: "cf580f72169c164a47a25f7a73711bacd1cbeb495fb530b9ca82472ff98a14d0"
+source_hash: "ba129bc752fea750a50de6fde3f43ecc81ae592bd12ae550dc5e05acae044a8c"
 sequence: 55
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,63 @@ Research interests: Theory and Algorithms
 - [Professor website](https://sarielhp.org/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_Everything the paper assumes you already know, in the order you should learn it. Some stages have no visible connection to the paper's title — that is the point: this is the background the paper never explains._
+
+This playlist provides foundational knowledge necessary to understand the SPITE paper on efficient roadmap updates for motion planning in modified environments. It covers linear algebra and geometry basics, computational geometry fundamentals, robot motion planning and configuration spaces, collision detection and swept volumes, and hierarchical spatial data structures. Work through these stages in order to build the mathematical, algorithmic, and robotics background needed to grasp the paper's contributions.
+
+**The paper assumes:** computational geometry, motion planning algorithms, configuration space concepts, collision detection, hierarchical spatial data structures, multi-query roadmap methods
+**Time to work through:** roughly 60-70 hours if you watch all recommended content, about 40 hours if you follow the skip guidance
+**Already in this field?** Skip stages 1-3 if you already have a solid background in computational geometry and motion planning basics.
+
+### Stage 1 · Linear Algebra and Geometry Basics *(foundational)*
+Understanding 3D volumes, transformations, and bounding boxes requires solid knowledge of vectors, matrices, and geometric primitives, which underpin the representation of robot configurations and obstacles.
+
+▶ **Course:** [Mathematics for Machine Learning - Linear Algebra](https://www.youtube.com/playlist?list=PLiiljHvN6z1_o1ztXTKWPrShrMrBLo5P3) — Digital Media - Imperial College London · 37 videos · 7.8h across 37 episodes
+
+*What to watch:* Watch the first 20 episodes of the “Mathematics for Machine Learning: Linear Algebra” playlist by Digital Media - Imperial College London, covering vectors, operations, matrix transformations, basis changes, and determinants. These provide a comprehensive and structured introduction to linear algebra concepts relevant for 3D geometry and transformations in the paper.
+
+*Move on when you can:* Explain how to represent and transform a 3D point using matrices and compute intersections of simple geometric shapes like bounding boxes.
+
+### Stage 2 · Computational Geometry Fundamentals *(core)*
+The paper relies on concepts like convex polyhedra, axis-aligned bounding boxes, and intersection tests, which are central topics in computational geometry.
+
+▶ **Course:** [CENG 773 - Computational Geometry](https://www.youtube.com/playlist?list=PLuiPz6iU5SQ8W6v1F5OgogHel4T6KjKob) — METUOpenCourseWare · 29 videos · 22.8h across 29 episodes
+
+*What to watch:* Use the “CENG 773 - Computational Geometry” playlist by METUOpenCourseWare, focusing on lectures 1.1 through 5.3 to cover convex polyhedra, bounding volumes, and intersection algorithms. This course is a university-level series that directly addresses the geometric concepts used in the paper.
+
+*Move on when you can:* Implement and explain algorithms for intersection tests between convex polyhedra and bounding volumes.
+
+### Stage 3 · Robot Motion Planning and Configuration Spaces *(core)*
+The paper models robot configurations and motions in configuration space and uses roadmaps for planning, so understanding configuration spaces and motion planning algorithms is essential.
+
+▶ **Course:** [Motion Planning Lectures 2024](https://www.youtube.com/playlist?list=PLsT3MNDma2r4-qX3VUKcHwzrNVuvZufCR) — Intelligent Multi-Robot Coordination Lab · 13 videos · 19.3h across 13 episodes
+
+*What to watch:* Watch the entire “Motion Planning Lectures 2024” playlist by Intelligent Multi-Robot Coordination Lab, especially lectures 1 through 7, which introduce configuration spaces, roadmaps, and basic motion planning algorithms like PRM and RRT. This recent university course aligns well with the paper's focus on roadmap updates.
+
+*Move on when you can:* Describe the concept of configuration space and implement a basic roadmap planner like PRM or RRT.
+
+### Stage 4 · Collision Detection and Swept Volumes *(advanced)*
+SPITE approximates robot motions as 3D swept volumes (cigars) and performs collision detection with obstacles, requiring knowledge of swept volume computation and efficient collision queries.
+
+▶ [Collision Detection Part 8: Capsule Collision](https://www.youtube.com/watch?v=giSMk3JVNUM) — Peter Brobby | Brobotics · 14:57 · 9 months ago
+
+*What to watch:* Focus on the video “Collision Detection Part 8: Capsule Collision” by Peter Brobby | Brobotics. It explains collision detection between capsules (similar to cigars) and line segments, which closely relates to the paper's use of capped cylinders for swept volumes.
+
+*Move on when you can:* Explain how to compute swept volumes for simple robot motions and implement collision checks between swept volumes and obstacles.
+
+### Stage 5 · Hierarchical Spatial Data Structures *(advanced)*
+The paper uses axis-aligned bounding box trees (AABB trees) to store cigars for fast intersection queries, so understanding hierarchical spatial indexing structures is critical.
+
+▶ **Course:** [CG I](https://www.youtube.com/playlist?list=PLNN7GxlpFSq7jPXBTqaD4OvBuyRo1HvlR) — Creto Vidal · 34 videos · 34.8h across 34 episodes
+
+*What to watch:* Watch the playlist “CG I” by Creto Vidal, focusing on lectures 12 and 13 which cover geometric queries and spatial data structures including bounding volume hierarchies. This university-level course provides a solid foundation for understanding AABB trees used in the paper.
+
+*Move on when you can:* Build and query an AABB tree for a set of 3D objects and explain its advantages over grid-based spatial partitioning.
+
+_Work through the stages in order. Once the last one lands, the paper — and the two tracks below — should read cleanly._
 
 ## Track 1 — Academic deep-dives (long-form)
 

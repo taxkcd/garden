@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-kalantar"
-source_hash: "3c118c403ec2d8d8b852b0d787f0ff456a8e0624e006b203596bc0cdbbef8081"
+source_hash: "fe0974004e79ceddb38f4b58d96f0cb1e31a4285021fd161d6272a8d6bf47d68"
 sequence: 25
 generator: "outreach-garden: managed"
 ---
@@ -51,6 +51,72 @@ This paper presents the All Vertex Triangle Algorithm (AVTA), a robust and effic
 - [Professor website](http://www.cs.rutgers.edu/~kalantar/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_Everything the paper assumes you already know, in the order you should learn it. Some stages have no visible connection to the paper's title — that is the point: this is the background the paper never explains._
+
+This playlist provides a structured learning path to build the foundational and advanced knowledge necessary to understand the paper "Robust Vertex Enumeration for Convex Hulls in High Dimensions." It covers essential mathematical concepts such as linear algebra and convex geometry, core computational geometry algorithms including convex hull methods, algorithmic complexity and robustness analysis, dimensionality reduction techniques like Johnson-Lindenstrauss random projections, and machine learning models relevant to the paper's applications. Follow the stages in order to progressively build the background needed before reading the paper.
+
+**The paper assumes:** linear algebra including vector spaces and matrix operations, Euclidean geometry, convex sets and convex hulls, computational geometry algorithms, basics of machine learning models like topic modeling and non-negative matrix factorization, and algorithmic complexity analysis
+**Time to work through:** roughly 70-80 hours if you watch everything, about 40-45 hours if you follow the skip guidance
+**Already in this field?** Skip stages 1-3 if you have a solid undergraduate background in linear algebra, geometry, and basic computational geometry; focus on stages 4-6 for algorithmic and application-specific foundations.
+
+### Stage 1 · Linear Algebra Fundamentals *(foundational)*
+Understanding points, vectors, distances, and transformations in Euclidean space is essential because the paper deals with convex hulls in high-dimensional vector spaces and uses matrix operations extensively.
+
+▶ **Course:** [MIT 18.06 Linear Algebra, Spring 2005](https://www.youtube.com/playlist?list=PLE7DDD91010BC51F8) — MIT OpenCourseWare · 36 videos · 28.0h across 36 episodes
+
+*What to watch:* Watch the MIT OpenCourseWare playlist 'MIT 18.06 Linear Algebra, Spring 2005' episodes 1 through 23. These cover the geometry of linear equations, matrix operations, vector spaces, orthogonality, projections, determinants, and eigenvalues, which are all foundational to understanding convex hull computations and the matrix manipulations in the paper.
+
+*Move on when you can:* Compute the convex combination of vectors and perform matrix-vector multiplication; explain the concept of vector norms and distances in Euclidean space.
+
+### Stage 2 · Euclidean Geometry and Convex Sets *(foundational)*
+The concept of convex hulls, vertices, and robustness parameters relies on understanding convex sets and geometric properties in Euclidean spaces.
+
+▶ **Course:** [Convex Hull or Mixing Things | Computational Geometry - Lecture 01](https://www.youtube.com/playlist?list=PLubYOWSl9mIuVdf6VnLIrtF9Y0Sa4Dvoq) — Philipp Kindermann · 5 videos · 0.7h across 5 episodes
+
+*What to watch:* Watch the playlist 'Convex Hull or Mixing Things | Computational Geometry - Lecture 01' by Philipp Kindermann, all 5 episodes. These lectures introduce convex hulls and convex sets clearly and build intuition about convexity, which is critical for understanding the paper's focus on convex hull vertex enumeration.
+
+*Move on when you can:* Explain what a convex set is and prove that the convex hull of a finite set of points is the smallest convex set containing them.
+
+### Stage 3 · Computational Geometry Algorithms *(core)*
+The paper builds on vertex enumeration and convex hull algorithms like Quickhull and the Triangle Algorithm, so familiarity with these computational geometry methods is necessary.
+
+▶ **Course:** [Computational Geometry](https://www.youtube.com/playlist?list=PLMDFPuH4ZxUGe-qreA6cde5g7PywDvrsD) — Algorithms Lab · 23 videos · 10.6h across 23 episodes
+
+*What to watch:* Watch the 'Computational Geometry' playlist by Algorithms Lab, focusing on the first 5 episodes which cover Convex Hull Algorithms and foundational computational geometry concepts. This will provide a solid understanding of classical convex hull algorithms like Quickhull, which the paper compares against.
+
+*Move on when you can:* Implement or describe the Quickhull algorithm and the Triangle Algorithm for convex hull vertex enumeration in low dimensions.
+
+### Stage 4 · Algorithmic Complexity and Robustness Analysis *(core)*
+The paper analyzes the complexity of AVTA in terms of robustness parameters and perturbations, so understanding algorithmic complexity, robustness concepts, and perturbation analysis is critical.
+
+▶ **Course:** [MIT 6.046J Design and Analysis of Algorithms, Spring 2015](https://www.youtube.com/playlist?list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp) — MIT OpenCourseWare · 34 videos · 39.5h across 34 episodes
+
+*What to watch:* Watch the MIT OpenCourseWare playlist 'MIT 6.046J Design and Analysis of Algorithms, Spring 2015', focusing on episodes 1, 2, 15, and 16 which cover algorithm analysis, divide and conquer strategies including convex hull, and complexity classes. These provide the necessary background to understand big-O notation and complexity analysis relevant to the paper.
+
+*Move on when you can:* Explain big-O notation and analyze the complexity of a given convex hull algorithm; describe how input perturbations affect algorithmic output.
+
+### Stage 5 · Dimensionality Reduction and Random Projections *(advanced)*
+AVTA leverages Johnson-Lindenstrauss random projections to reduce dimensionality while preserving vertex structure, so understanding these techniques is essential to grasp the paper’s approach.
+
+▶ [W1_L6: Johnson-lindenstrauss lemma - introduction](https://www.youtube.com/watch?v=QNmBund3UXk) — IIT Madras - B.S. Degree Programme · 1 year ago
+
+*What to watch:* Watch the video 'W1_L6: Johnson-lindenstrauss lemma - introduction' by IIT Madras - B.S. Degree Programme. This lecture introduces the Johnson-Lindenstrauss lemma and explains how random projections approximately preserve distances in high-dimensional spaces, directly relating to the paper's dimensionality reduction technique.
+
+*Move on when you can:* Explain the Johnson-Lindenstrauss lemma and demonstrate how random projections preserve distances approximately in high-dimensional data.
+
+### Stage 6 · Machine Learning Models: Topic Modeling and NMF *(advanced)*
+The paper applies AVTA to topic modeling and non-negative matrix factorization, so understanding these models and their geometric interpretations is necessary to appreciate the applications.
+
+▶ **Course:** [18.409 Algorithmic Aspects of Machine Learning Spring 2015 MIT](https://www.youtube.com/playlist?list=PLB3sDpSRdrOvI1hYXNsa6Lety7K8FhPpx) — Brando Miranda · 24 videos · 29.0h across 24 episodes
+
+*What to watch:* Watch the '18.409 Algorithmic Aspects of Machine Learning Spring 2015 MIT' playlist by Brando Miranda, focusing on lectures 3 and 4 which cover Non-negative Matrix Factorization (NMF) and probabilistic NMF, and lecture 6 on tensor methods related to topic models. These provide a solid foundation for the machine learning applications discussed in the paper.
+
+*Move on when you can:* Describe the basic principles of topic modeling and non-negative matrix factorization and explain how convex geometry relates to these models.
+
+_Work through the stages in order. Once the last one lands, the paper — and the two tracks below — should read cleanly._
 
 ## Track 1 — Academic deep-dives (long-form)
 

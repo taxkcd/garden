@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-amyzhang-github-io"
-source_hash: "9f42869495f2dbc66db6e10a468a52a9b566276b5a158821c4740fe19333d915"
+source_hash: "bfc08dddafbb386ed28c8e94b6e5b540e15000fcff2024da5fa3f9955ff04a0f"
 sequence: 22
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,63 @@ Research interests: theory and algorithms for sequential decision-making problem
 - [Lab website](https://midi-lab.github.io/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_Everything the paper assumes you already know, in the order you should learn it. Some stages have no visible connection to the paper's title — that is the point: this is the background the paper never explains._
+
+This playlist provides a structured learning path to build foundational and core knowledge necessary to understand the paper on Regularized Latent Dynamics Prediction for Behavioral Foundation Models. It covers essential mathematical concepts, optimization techniques, reinforcement learning fundamentals, representation learning in RL, latent dynamics modeling, and successor features for zero-shot RL. Work through the stages in order to progressively build the background needed to grasp the paper's methods and contributions.
+
+**The paper assumes:** linear algebra, probability theory, optimization, reinforcement learning fundamentals, representation learning in RL, latent dynamics modeling, successor features and zero-shot reinforcement learning
+**Time to work through:** roughly 90-100 hours if you watch all recommended lectures, about 50 hours if you follow the skip guidance.
+**Already in this field?** Skip stages 1-3 if you have a solid background in machine learning and reinforcement learning theory; focus on stages 4-6 for specialized knowledge on representation learning and zero-shot RL.
+
+### Stage 1 · Linear Algebra and Probability Basics *(foundational)*
+Understanding vector spaces, matrix operations, eigenvalues, and probability distributions is essential for grasping latent state representations, orthogonality regularization, and stochastic modeling used throughout the paper.
+
+▶ **Course:** [MIT 18.06 Linear Algebra, Spring 2005](https://www.youtube.com/playlist?list=PLE7DDD91010BC51F8) — MIT OpenCourseWare · 36 videos · 28.0h across 36 episodes
+
+*What to watch:* Watch the MIT 18.06 Linear Algebra, Spring 2005 playlist by Prof. Gilbert Strang, focusing on episodes 1 through 23 to cover geometry, matrix operations, subspaces, orthogonality, and eigenvalues/eigenvectors which are critical for understanding the orthogonality regularization and latent space representations in the paper.
+
+*Move on when you can:* Explain how to compute eigenvalues and eigenvectors of a matrix and perform basic probability calculations such as expectation and conditional probability.
+
+### Stage 2 · Optimization and Gradient-Based Learning *(foundational)*
+The paper relies on gradient-based optimization to train neural encoders and predictors with regularization terms, so understanding gradient descent, loss functions, and regularization is critical.
+
+▶ **Course:** [Stanford CS229: Machine Learning led by Andrew Ng | Autumn 2018](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU) — Stanford Online · 21 videos · 27.9h across 21 episodes
+
+*What to watch:* Follow the Stanford CS229: Machine Learning Autumn 2018 playlist by Andrew Ng, focusing on lectures 1, 2, 10, and 11 which cover gradient descent, linear regression, neural networks, backpropagation, and regularization to understand how the paper trains models with orthogonality regularization.
+
+*Move on when you can:* Derive the gradient descent update rule for a simple loss function and explain the role of regularization in preventing overfitting.
+
+### Stage 3 · Fundamentals of Reinforcement Learning *(core)*
+The paper builds on RL concepts such as states, actions, policies, and Bellman backups; understanding Markov decision processes and policy evaluation is necessary to follow the motivation and evaluation of zero-shot RL.
+
+▶ **Course:** [RL Course by David Silver](https://www.youtube.com/playlist?list=PLzuuYNsE1EZAXYR4FJ75jcJseBmo4KQ9-) — Adam Acosta · 11 videos · 16.5h across 11 episodes
+
+*What to watch:* Watch the first 5 lectures of the RL Course by David Silver playlist (Adam Acosta channel) covering introduction, Markov decision processes, planning by dynamic programming, and model-free prediction and control to grasp the RL fundamentals underpinning the paper's zero-shot RL approach.
+
+*Move on when you can:* Formulate a Markov decision process and explain the Bellman equation for policy evaluation.
+
+### Stage 4 · Representation Learning in Reinforcement Learning *(core)*
+The paper focuses on learning effective state representations via latent dynamics prediction and orthogonality regularization, so familiarity with representation learning techniques and challenges like feature collapse is required.
+
+▶ [Amy Zhang | Representations for Hierarchical Reinforcement ...](https://www.youtube.com/watch?v=nyXXX3fIzMw) — Deep RL Course · 1:20:46
+
+*What to watch:* Watch the talk 'Amy Zhang | Representations for Hierarchical Reinforcement Learning' by Deep RL Course channel to get direct insights from the paper's co-author on representation learning challenges and solutions relevant to this paper.
+
+*Move on when you can:* Describe common representation learning objectives in RL and explain the problem of feature collapse in latent space embeddings.
+
+### Stage 5 · Latent Dynamics Modeling and Prediction *(advanced)*
+Understanding how to model and predict latent state transitions from current states and actions is central to the RLDP method; this includes knowledge of latent variable models and dynamics prediction losses.
+
+▶ **Course:** [Stanford CS234 I Reinforcement Learning I Spring 2024 I Emma Brunskill](https://www.youtube.com/playlist?list=PLoROMvodv4rN4wG6Nk6sNpTEbuOSosZdX) — Stanford Online · 16 videos · 20.2h across 16 episodes
+
+*What to watch:* Watch the Stanford CS234 Reinforcement Learning I Spring 2024 playlist by Emma Brunskill, focusing on lectures 1 through 6 to cover RL introduction, MDPs, planning, policy evaluation, Q-learning, and policy search which provide the background to latent dynamics modeling and prediction in RL.
+
+*Move on when you can:* Implement a latent dynamics predictor that forecasts next latent states given current latent states and actions.
+
+_Work through the stages in order. Once the last one lands, the paper — and the two tracks below — should read cleanly._
 
 ## Track 1 — Academic deep-dives (long-form)
 

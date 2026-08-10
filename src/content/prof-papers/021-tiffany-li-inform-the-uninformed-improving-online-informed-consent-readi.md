@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-wli69"
-source_hash: "fc9e969be54a61c2913c5de39e22d391bfa447d11003821566c16b9485fc45db"
+source_hash: "092a7862cc81a0409bcb4f1499c9c1a7226678f5e0cbfa8ad29c40a51b220e9e"
 sequence: 21
 generator: "outreach-garden: managed"
 ---
@@ -50,6 +50,72 @@ Research interests: human-computer interaction, educational data mining, and res
 - [Faculty/profile page](https://www.stevens.edu/profile/wli69)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_Everything the paper assumes you already know, in the order you should learn it. Some stages have no visible connection to the paper's title — that is the point: this is the background the paper never explains._
+
+This playlist provides foundational and core knowledge necessary to understand the research paper on improving online informed consent with an AI-powered chatbot. It covers basic programming concepts to understand chatbot construction, natural language processing fundamentals to grasp AI language understanding, human-computer interaction principles to analyze user engagement and power dynamics, ethics and legal frameworks of informed consent to appreciate the ethical context, chatbot design and hybrid AI systems to understand the architecture of the chatbot used, and experimental design and evaluation in HCI to comprehend the study methodology. Work through these stages in order to build a comprehensive background before reading the paper.
+
+**The paper assumes:** human-computer interaction fundamentals, natural language processing basics, chatbot design principles, informed consent ethical frameworks, experimental design and evaluation methods in HCI
+**Time to work through:** Roughly 80-90 hours if you watch all recommended content fully, about 40-50 hours if you follow the skip guidance provided.
+**Already in this field?** Skip stages 1-2 if you already have a background in computer science fundamentals and introductory natural language processing.
+
+### Stage 1 · Introduction to Computer Science *(foundational)*
+Understanding basic programming concepts and computational thinking is essential to grasp how the hybrid AI chatbot system is constructed and evaluated in the paper.
+
+▶ **Course:** [MIT 6.100L Introduction to CS and Programming using Python, Fall 2022](https://www.youtube.com/playlist?list=PLUl4u3cNGP62A-ynp6v6-LGBCzeH3VAQB) — MIT OpenCourseWare · 26 videos · 27.8h across 26 episodes
+
+*What to watch:* Watch the MIT 6.100L Introduction to CS and Programming using Python, Fall 2022 playlist, focusing on episodes 1 through 12 to cover fundamental programming constructs like variables, conditionals, loops, functions, and basic debugging. This foundation will help you understand how chatbot software processes input and produces output.
+
+*Move on when you can:* Explain how a simple program processes user input and produces output, and describe basic programming constructs like variables, conditionals, and loops.
+
+### Stage 2 · Natural Language Processing Fundamentals *(core)*
+The chatbot’s AI modules rely on NLP concepts such as tokenization, intent recognition, and dialogue management, which are crucial to understand how the chatbot processes and generates human language.
+
+▶ **Course:** [Stanford CS224N Natural Language Processing with Deep Learning I Spring 2024 I Professor Christopher Manning](https://www.youtube.com/playlist?list=PLoROMvodv4rOaMFbaqxPDoLWjDaRAdP9D) — Stanford Online · 23 videos · 27.5h across 23 episodes
+
+*What to watch:* Focus on the Stanford CS224N Natural Language Processing with Deep Learning I Spring 2024 playlist, especially lectures 1 through 7, which cover word vectors, language models, neural networks, sequence models, and attention mechanisms. These lectures provide a solid foundation in modern NLP techniques relevant to chatbot design.
+
+*Move on when you can:* Describe the main steps in processing text input for a chatbot, including tokenization and intent classification.
+
+### Stage 3 · Human-Computer Interaction Principles *(core)*
+The paper evaluates participant engagement, power dynamics, and user satisfaction, which are central topics in HCI explaining how users interact with AI systems and how design affects user experience.
+
+▶ **Course:** [Human Computer Interaction (In English)](https://www.youtube.com/playlist?list=PLyqSpQzTE6M-KVz-9blW7qq_LgDPSOtEE) — NPTEL-NOC IITM · 45 videos · 26.3h across 45 episodes
+
+*What to watch:* Watch the first 15 lectures of the 'Human Computer Interaction (In English)' playlist by NPTEL-NOC IITM, which cover introduction, design principles, interaction design, user perspective, and cognitive aspects. These lectures provide a comprehensive understanding of usability, engagement, and power asymmetry relevant to the paper.
+
+*Move on when you can:* Explain key HCI concepts such as usability, user engagement, and power asymmetry in human-AI interaction.
+
+### Stage 4 · Ethics and Legal Frameworks of Informed Consent *(core)*
+Understanding the ethical principles and legal requirements of informed consent is essential to appreciate the research problem and motivation behind improving online consent processes.
+
+▶ **Course:** [Ethics Review of Health Research](https://www.youtube.com/playlist?list=PLyqSpQzTE6M_m4bggem0rGz_k7j8e95-_) — NPTEL-NOC IITM · 29 videos · 10.4h across 29 episodes
+
+*What to watch:* Watch the 'Ethics Review of Health Research' playlist by NPTEL-NOC IITM, focusing on the first 10 episodes which cover ethics review, informed consent, and related challenges. This will provide a solid grounding in the ethical context of the paper.
+
+*Move on when you can:* Summarize the ethical principles behind informed consent and describe common challenges in online consent processes.
+
+### Stage 5 · Chatbot Design and Hybrid AI Systems *(advanced)*
+The paper’s approach uses a hybrid chatbot combining rule-based and AI modules; understanding chatbot architectures and hybrid AI design is necessary to grasp how Rumi functions and its trade-offs.
+
+▶ **Course:** [Chatbot Builder AI Foundations Course](https://www.youtube.com/playlist?list=PLDVGIhiET-YHNWIIYY193CE-Kw8CEsEbO) — Chatbot Builder AI · 14 videos · 1.3h across 14 episodes
+
+*What to watch:* Watch the 'Chatbot Builder AI Foundations Course' playlist, focusing on the first 7 episodes which cover basics of AI chatbots, mastering chatbot functions, and linking chatbot platforms. This course provides practical insights into building hybrid chatbots similar to Rumi.
+
+*Move on when you can:* Design a simple chatbot that uses both scripted rules and AI-based intent recognition to handle user queries.
+
+### Stage 6 · Experimental Design and Evaluation in HCI *(advanced)*
+The paper’s methodology involves between-subject studies measuring comprehension, power relations, and response quality, so knowledge of experimental design and analysis in HCI is required to understand and critique the study.
+
+▶ **Course:** [Human Computer Interaction](https://www.youtube.com/playlist?list=PLlgPXNRcnX3EtESM59QVohcQBJ6N7H4JF) — IxDF - Interaction Design Foundation · 11 videos · 1.0h across 11 episodes
+
+*What to watch:* Watch the 'Human Computer Interaction' playlist by IxDF - Interaction Design Foundation, focusing on all 11 episodes which cover experimental design, user testing, and evaluation methods. This will help you understand how to design and analyze between-subject experiments relevant to the paper.
+
+*Move on when you can:* Design a between-subject experiment to compare two user interfaces and analyze user comprehension and satisfaction data.
+
+_Work through the stages in order. Once the last one lands, the paper — and the two tracks below — should read cleanly._
 
 ## Track 1 — Academic deep-dives (long-form)
 

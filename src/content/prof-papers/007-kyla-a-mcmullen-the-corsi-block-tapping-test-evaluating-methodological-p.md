@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-kyla"
-source_hash: "467caa8531bcaa4e56649f6a016e643a343693225fdcb78ae50590906d5e9930"
+source_hash: "23cd5b715ee37092ec5e684365269c8d49a2a1b557f5424578f66db1fab0ab89"
 sequence: 7
 generator: "outreach-garden: managed"
 ---
@@ -50,6 +50,72 @@ This paper systematically reviews 39 studies of the Corsi Block-Tapping Test (CB
 - [Identity evidence](https://www.cise.ufl.edu/people/faculty/kyla)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_Everything the paper assumes you already know, in the order you should learn it. Some stages have no visible connection to the paper's title — that is the point: this is the background the paper never explains._
+
+This playlist provides foundational to advanced background knowledge necessary to fully understand the research paper on the Corsi Block-Tapping Test (CBT) and its digital adaptations. It begins with core cognitive psychology concepts, moves through experimental design principles, neuropsychological assessment methods, human-computer interaction fundamentals, digital cognitive testing frameworks, and culminates with focused material on the spatial memory testing and the CBT itself. Work through the stages in order to build a comprehensive understanding of the paper's context, methodology critiques, and proposed digital framework.
+
+**The paper assumes:** cognitive psychology of spatial memory, experimental design and methodology in psychology, neuropsychological assessment techniques, human-computer interaction basics, digital cognitive testing frameworks
+**Time to work through:** roughly 80-90 hours if you watch all recommended playlist content, about 40-45 hours if you follow the skip guidance for each playlist
+**Already in this field?** Skip stages 1-2 if you have a background in cognitive psychology or neuropsychological testing; skip stages 3-4 if you are familiar with experimental design and human-computer interaction principles.
+
+### Stage 1 · Introduction to Cognitive Psychology *(foundational)*
+This paper focuses on spatial memory assessment, a core topic in cognitive psychology; understanding basic cognitive processes and memory systems is essential to grasp the significance of the Corsi Block-Tapping Test and its parameters.
+
+▶ **Course:** [Introduction to Cognitive Psychology](https://www.youtube.com/playlist?list=PLzf4HHlsQFwI3bFX5Sm96FEa7JDOkp7Qh) — Humanities and Social Sciences · 30 videos · 26.6h across 30 episodes
+
+*What to watch:* Watch the 'Introduction to Cognitive Psychology' playlist by Humanities and Social Sciences, focusing especially on episodes covering memory: 'Memory Introduction', 'Short Term Memory', 'Working Memory', and 'Long Term Memory Encoding'. These episodes provide a solid foundation on memory systems relevant to spatial memory and CBT.
+
+*Move on when you can:* Explain the difference between working memory and long-term memory, and describe the role of spatial memory within working memory.
+
+### Stage 2 · Fundamentals of Experimental Design in Psychology *(foundational)*
+The paper critiques methodological inconsistencies and reporting standards in CBT studies; understanding experimental design principles such as control variables, standardization, and reproducibility is necessary to appreciate these critiques.
+
+▶ **Course:** [Experimental Psychology Lectures](https://www.youtube.com/playlist?list=PL1cnrE5NS1O5ojrrQXv3IM_wGXeHa41mm) — Statistically Human · 22 videos · 34.9h across 22 episodes
+
+*What to watch:* Focus on the 'Experimental Psychology Lectures' playlist by Statistically Human, especially episodes 1 through 14 which cover the scientific method, research ethics, experimental and nonexperimental designs, and hypothesis formulation. These provide a comprehensive foundation for understanding experimental design issues raised in the paper.
+
+*Move on when you can:* Design a simple psychological experiment with clearly defined independent and dependent variables and explain how to control for confounding factors.
+
+### Stage 3 · Neuropsychological Assessment Methods *(core)*
+The Corsi Block-Tapping Test is a neuropsychological tool; familiarity with common cognitive tests, their administration, scoring, and interpretation is required to understand the paper’s analysis of CBT parameters and methodological variability.
+
+▶ **Course:** [PSYC 770 (Psychological Testing and Assessment)](https://www.youtube.com/playlist?list=PLfJYfW-oDYY3j-jM4r6L2KX_q_QGKvj-W) — Keith Donohue · 22 videos · 22.9h across 22 episodes
+
+*What to watch:* Use the 'PSYC 770 (Psychological Testing and Assessment)' playlist by Keith Donohue, focusing on lectures 14a ('introduction to neuropsychology') and 15a ('basics of neuropsychological testing'). These provide direct coverage of neuropsychological assessment concepts relevant to CBT.
+
+*Move on when you can:* Describe the purpose, procedure, and scoring of at least two standard neuropsychological tests including the Corsi Block-Tapping Test.
+
+### Stage 4 · Human-Computer Interaction (HCI) Principles *(core)*
+The paper discusses digital adaptations of the CBT and challenges in standardizing digital versus physical test versions; understanding HCI concepts such as user interface design, input modalities, and usability is critical to follow these discussions.
+
+▶ **Course:** [Human Computer Interaction (HCI)](https://www.youtube.com/playlist?list=PLQ-nEJNYlEV1CfTcLCx_S7D2of3QAsvTT) — CS & IT Tutorials by Vrushali 👩‍🎓 · 56 videos · 11.1h across 56 episodes
+
+*What to watch:* Watch the 'Human Computer Interaction (HCI)' playlist by CS & IT Tutorials by Vrushali, focusing on episodes HCI 1.1 through HCI 1.8 which cover introduction, goals, benefits, components, user-centered design, and principles of HCI. These episodes provide a solid grounding in HCI relevant to digital CBT design.
+
+*Move on when you can:* Explain key HCI concepts and evaluate how interface design can impact user performance in cognitive tests.
+
+### Stage 5 · Digital Cognitive Testing and Assessment Frameworks *(advanced)*
+The paper proposes a standardized open-source digital CBT framework and compares 2D digital and 3D physical test versions; knowledge of existing digital cognitive assessment tools and frameworks is necessary to understand the paper’s context and contributions.
+
+▶ [Dr. Kate Papp - Digital Cognitive Assessments in Preclinical Alzheimer’s Disease](https://www.youtube.com/watch?v=EpOYQnm0oJY) — a2 Collective · 3 years ago
+
+*What to watch:* Watch the keynote talk 'Dr. Kate Papp - Digital Cognitive Assessments in Preclinical Alzheimer’s Disease' by a2 Collective. This video provides an expert overview of digital cognitive testing platforms, their design, and challenges, directly relevant to the paper’s focus on digital CBT frameworks.
+
+*Move on when you can:* Compare and contrast at least two digital cognitive testing platforms, discussing their design, standardization, and challenges.
+
+### Stage 6 · Spatial Memory Testing and the Corsi Block-Tapping Test *(advanced)*
+This is the immediate precursor to the paper’s focus; understanding the original CBT methodology, its parameters (block size, spatial paths, timing), and its role in assessing spatial memory is essential to grasp the paper’s systematic review and critique.
+
+▶ **Course:** [cognitive psychology](https://www.youtube.com/playlist?list=PL775BnL3oMDgOmSnzZGLyRc3B1z7QGgjW) — rockville1999 · 34 videos · 4.1h across the first 29 episodes
+
+*What to watch:* Focus on the 'cognitive psychology' playlist by rockville1999, specifically the episode titled 'PEBL Corsi Block-tapping Task' which demonstrates the test and explains its procedure. This episode provides practical insight into CBT administration and parameter variations.
+
+*Move on when you can:* Administer a standard Corsi Block-Tapping Test and explain how variations in parameters might affect test outcomes.
+
+_Work through the stages in order. Once the last one lands, the paper — and the two tracks below — should read cleanly._
 
 ## Track 1 — Academic deep-dives (long-form)
 

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-holder"
-source_hash: "665851676ff67879739377b60f8cf18059120c8128b652c820b694a5b1b7d6a7"
+source_hash: "63dfcb15b1e1cb074e8d188634c2dc9c71fe9324eca07dd3fe560f15648ad608"
 sequence: 49
 generator: "outreach-garden: managed"
 ---
@@ -54,6 +54,63 @@ Research interests: Artificial Intelligence, Machine Learning, Data Mining, Grap
 - [Lab website](http://ailab.wsu.edu/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_Everything the paper assumes you already know, in the order you should learn it. Some stages have no visible connection to the paper's title — that is the point: this is the background the paper never explains._
+
+This playlist provides foundational to advanced knowledge necessary to understand and engage with the research paper on open-world AI. It covers probability and statistics fundamentals, core machine learning concepts, reinforcement learning basics, anomaly and novelty detection techniques, and advanced meta-learning and transfer learning methods. Work through these resources in order to build a solid conceptual and practical base before reading the paper.
+
+**The paper assumes:** foundations of probability and statistics, machine learning fundamentals including supervised and unsupervised learning, reinforcement learning basics, anomaly and novelty detection methods, meta-learning and transfer learning concepts, and hybrid AI architectures combining symbolic and neural methods
+**Time to work through:** roughly 80-90 hours if you watch everything, about 50-60 hours if you follow the skip guidance
+**Already in this field?** Skip stages 1-3 if you have a solid background in machine learning and reinforcement learning; skip stages 4-5 if you are familiar with novelty detection and meta-learning; skip stage 6 if you already understand current open-world AI frameworks and evaluation methodologies.
+
+### Stage 1 · Probability and Statistics Foundations *(foundational)*
+Open-world AI relies on probabilistic reasoning to detect novelty and uncertainty in data distributions that differ from training sets, as well as statistical methods to evaluate agent performance under novel conditions.
+
+▶ **Course:** [10. Probability & Statistics for ML | Complete Playlist](https://www.youtube.com/playlist?list=PLVyM62CSsh3WmT4vnxhtiPLp1ZNxfgqNQ) — Decode AiML · 59 videos · 26.1h across 59 episodes
+
+*What to watch:* Watch the first 24 episodes of the "10. Probability & Statistics for ML | Complete Playlist" by Decode AiML, covering core topics from basic probability, conditional probability, Bayes theorem, to descriptive statistics and hypothesis testing. These episodes provide the statistical foundation needed for understanding anomaly detection and evaluation metrics discussed in the paper.
+
+*Move on when you can:* Explain how to compute and interpret probability distributions and statistical hypothesis tests relevant to anomaly detection.
+
+### Stage 2 · Machine Learning Fundamentals *(core)*
+Understanding supervised, unsupervised, and reinforcement learning is essential since open-world AI builds on these paradigms to detect and adapt to novel situations beyond training data.
+
+▶ **Course:** [Stanford CS229: Machine Learning led by Andrew Ng | Autumn 2018](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU) — Stanford Online · 21 videos · 27.9h across 21 episodes
+
+*What to watch:* Focus on the first 12 lectures of the "Stanford CS229: Machine Learning led by Andrew Ng | Autumn 2018" playlist, which cover supervised learning algorithms, decision trees, ensemble methods, and an introduction to neural networks and reinforcement learning. This core content grounds the reader in essential ML concepts that underpin novelty detection and adaptation methods surveyed in the paper.
+
+*Move on when you can:* Derive and implement a supervised learning algorithm and explain the difference between supervised, unsupervised, and reinforcement learning.
+
+### Stage 3 · Reinforcement Learning Basics *(core)*
+Open-world AI agents often operate in interactive environments requiring sequential decision-making and adaptation, which are modeled by reinforcement learning frameworks.
+
+▶ **Course:** [RL Course by David Silver](https://www.youtube.com/playlist?list=PLzuuYNsE1EZAXYR4FJ75jcJseBmo4KQ9-) — Adam Acosta · 11 videos · 16.5h across 11 episodes
+
+*What to watch:* Watch the first 5 lectures of the "RL Course by David Silver" playlist by Adam Acosta, covering introduction to reinforcement learning, Markov decision processes, dynamic programming, and model-free prediction and control. These lectures provide the theoretical and practical foundation for understanding adaptive agent behavior in open-world settings.
+
+*Move on when you can:* Formulate a Markov Decision Process and implement a basic Q-learning algorithm.
+
+### Stage 4 · Anomaly and Novelty Detection Techniques *(advanced)*
+The paper discusses novelty detection as a core challenge; understanding classical and modern methods for detecting out-of-distribution data and anomalies is critical to grasping the surveyed approaches.
+
+▶ **Course:** [Visual Anomaly Detection with Deep Learning](https://www.youtube.com/playlist?list=PLoSULBSCtofdd9Lbp_6uDV0Vqet0afri5) — Intelligent Machines · 10 videos · 1.9h across 10 episodes
+
+*What to watch:* Watch the entire "Visual Anomaly Detection with Deep Learning" playlist by Intelligent Machines, which walks through state-of-the-art visual anomaly detection methods using the Mvtec dataset and PyTorch implementations. This focused series provides practical and theoretical insights into anomaly detection techniques relevant to open-world AI novelty detection.
+
+*Move on when you can:* Implement a novelty detection algorithm and evaluate its detection accuracy on a dataset with known anomalies.
+
+### Stage 5 · Meta-Learning and Transfer Learning *(advanced)*
+Open-world AI requires rapid adaptation to novel tasks with minimal data, which meta-learning and transfer learning techniques address; these concepts underpin few-shot and zero-shot adaptation discussed in the paper.
+
+▶ **Course:** [Stanford CS330: Deep Multi-Task and Meta Learning I Autumn 2022](https://www.youtube.com/playlist?list=PLoROMvodv4rNjRoawgt72BBNwL2V7doGI) — Stanford Online · 17 videos · 21.5h across 17 episodes
+
+*What to watch:* Watch the first 10 lectures of the "Stanford CS330: Deep Multi-Task and Meta Learning I Autumn 2022" playlist, focusing on multi-task learning basics, transfer learning, black box meta-learning, optimization-based meta-learning, and non-parametric few-shot learning. These lectures provide a comprehensive introduction to meta-learning and transfer learning techniques critical for rapid adaptation in open-world AI.
+
+*Move on when you can:* Explain the difference between meta-learning and transfer learning and implement a simple model-agnostic meta-learning (MAML) algorithm.
+
+_Work through the stages in order. Once the last one lands, the paper — and the two tracks below — should read cleanly._
 
 ## Track 1 — Academic deep-dives (long-form)
 

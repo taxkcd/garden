@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-baruah"
-source_hash: "8d8e32a81f1efe36a0d43c91760bfdc2d43a9b86b153c69ea090211efbd89c19"
+source_hash: "9bdacc175301f5d16e2ffdf2becd26916652c491ead3b6c7fc29216a43821548"
 sequence: 8
 generator: "outreach-garden: managed"
 ---
@@ -51,6 +51,54 @@ This paper presents a novel framework that uses deep learning to analyze whether
 - [Resolved homepage](https://sites.wustl.edu/baruah/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_Everything the paper assumes you already know, in the order you should learn it. Some stages have no visible connection to the paper's title — that is the point: this is the background the paper never explains._
+
+This playlist provides foundational and core background knowledge necessary to understand the paper on learning-assisted schedulability analysis. It covers discrete mathematics and algorithms, computational complexity theory, real-time systems and scheduling theory, and deep learning fundamentals. Each stage is selected to build the conceptual and technical skills needed to grasp the paper's theoretical framework, scheduling models, and machine learning approach.
+
+**The paper assumes:** real-time scheduling theory, computational complexity theory (NP and coNP classes), deep learning fundamentals, fixed-priority and earliest-deadline-first scheduling algorithms, certificate-based verification methods, embedded systems performance evaluation
+**Time to work through:** roughly 70-80 hours if you watch all selected playlists fully, about 40-45 hours if you follow the skip guidance
+**Already in this field?** Skip stages 1-3 if you already have a background in real-time systems and computational complexity theory; skip stage 4 if you are familiar with deep learning basics.
+
+### Stage 1 · Discrete Mathematics and Algorithms *(foundational)*
+Understanding the paper requires familiarity with discrete structures and algorithmic thinking, as schedulability analysis and complexity classes rely on algorithmic problem formulations and proofs.
+
+▶ **Course:** [MIT 6.1200J Mathematics for Computer Science,  Spring 2024](https://www.youtube.com/playlist?list=PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d) — MIT OpenCourseWare · 24 videos · 31.7h across 24 episodes
+
+*What to watch:* Watch the first 12 lectures of the MIT 6.1200J Mathematics for Computer Science, Spring 2024 playlist, which cover predicates, sets, proofs, induction, asymptotics, recurrences, divisibility, modular arithmetic, and graph theory. These topics provide the discrete math and algorithmic foundations needed for complexity and scheduling theory.
+
+*Move on when you can:* Explain the concept of algorithmic complexity and solve basic problems involving graphs, sets, and combinatorics.
+
+### Stage 2 · Computational Complexity Theory *(core)*
+The paper’s framework hinges on classifying schedulability problems into NP and coNP complexity classes, which is essential to understand the theoretical applicability and limitations of the approach.
+
+▶ **Course:** [MIT 18.404J Theory of Computation, Fall 2020](https://www.youtube.com/playlist?list=PLUl4u3cNGP60_JNv2MmK3wkOt9syvfQWY) — MIT OpenCourseWare · 25 videos · 32.3h across 25 episodes
+
+*What to watch:* Focus on lectures 14-16 from the MIT 18.404J Theory of Computation, Fall 2020 playlist, which cover P and NP, NP-completeness, and the Cook-Levin theorem. These lectures explain NP, coNP, NP-completeness, and why Fixed-Priority schedulability is NP-complete while EDF schedulability is coNP-complete.
+
+*Move on when you can:* Define NP, coNP, NP-completeness, and coNP-completeness, and explain why Fixed-Priority schedulability is NP-complete while EDF schedulability is coNP-complete.
+
+### Stage 3 · Real-Time Systems and Scheduling Theory *(core)*
+The paper focuses on schedulability analysis for constrained-deadline sporadic task systems under Fixed-Priority and EDF scheduling, so understanding these scheduling paradigms and task models is critical.
+
+▶ **Course:** [Real Time Systems (RTS) Full Course | RTOS, Scheduling, Tasks & Embedded Systems](https://www.youtube.com/playlist?list=PLO_V2QoJrqQlruVk9fizCXNYvxeqnMHkR) — NetworkExploit · 9 videos · 1.4h across 9 episodes
+
+*What to watch:* Watch the entire 'Real Time Systems (RTS) Full Course | RTOS, Scheduling, Tasks & Embedded Systems' playlist by NetworkExploit. Pay special attention to episodes covering Deadline Monotonic scheduling, Earliest Deadline First, and sporadic task models to understand the scheduling algorithms and task characteristics used in the paper.
+
+*Move on when you can:* Describe the sporadic task model, Fixed-Priority (Deadline-Monotonic) scheduling, and Earliest-Deadline First scheduling, and perform basic schedulability tests.
+
+### Stage 4 · Deep Learning Fundamentals *(core)*
+The paper uses multilayer perceptrons to classify schedulability, so knowledge of neural network architectures, training, and inference is necessary to understand the learning-based framework.
+
+▶ **Course:** [Stanford CS229: Machine Learning led by Andrew Ng | Autumn 2018](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU) — Stanford Online · 21 videos · 27.9h across 21 episodes
+
+*What to watch:* Focus on lectures 10 and 11 from the Stanford CS229: Machine Learning led by Andrew Ng playlist, which cover neural networks and backpropagation. These provide the essential understanding of multilayer perceptrons and training algorithms used in the paper's deep learning framework.
+
+*Move on when you can:* Build and train a simple multilayer perceptron for classification and explain forward and backward propagation.
+
+_Work through the stages in order. Once the last one lands, the paper — and the two tracks below — should read cleanly._
 
 ## Track 1 — Academic deep-dives (long-form)
 

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-fergun"
-source_hash: "8f6c000d8edee25dbe2bd5be3ad6d8d6d7b831ff4cf5f6738d85c4362dc9fb79"
+source_hash: "9a21c3533a378403d840664f407637711289ea81c06e1dade903ba59de5f87ec"
 sequence: 48
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,63 @@ Research interests: Big data algorithms, streaming algorithms, randomized algori
 - [Google Scholar](https://scholar.google.com/citations?user=sVV6YxwAAAAJ&hl=en)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_Everything the paper assumes you already know, in the order you should learn it. Some stages have no visible connection to the paper's title — that is the point: this is the background the paper never explains._
+
+This playlist provides foundational knowledge required to understand the paper on palindrome recognition in the streaming model. It covers discrete mathematics basics for understanding strings and palindromes, algorithm design and analysis principles including randomized algorithms, string pattern matching techniques like Karp-Rabin fingerprinting, streaming algorithms with sublinear space constraints, and approximation algorithms with error bounds. Work through these stages in order to build a solid theoretical and practical background before reading the paper.
+
+**The paper assumes:** discrete mathematics, string algorithms, randomized algorithms, streaming algorithms, sublinear space complexity, Karp-Rabin fingerprinting, approximation algorithms
+**Time to work through:** roughly 40-50 hours if you watch all recommended lectures, about 20-25 hours if you follow the skip guidance
+**Already in this field?** Skip stages 1-3 if you already have a solid background in algorithms and discrete math; focus on stages 4-6 for streaming and randomized algorithm techniques.
+
+### Stage 1 · Discrete Mathematics and String Basics *(foundational)*
+Understanding strings, substrings, palindromes, and basic combinatorial properties of strings is essential since the paper deals with palindromic substrings and their structural properties.
+
+▶ **Course:** [Discrete Math I (Entire Course)](https://www.youtube.com/playlist?list=PLl-gb0E4MII28GykmtuBXNUNoej-vY5Rz) — Kimberly Brehm · 80 videos · 13.4h across the first 60 episodes
+
+*What to watch:* Watch the first 20 episodes of the 'Discrete Math I (Entire Course)' playlist by Kimberly Brehm, focusing on the introduction to sets, relations, and basic logic. These episodes cover the foundational discrete math concepts needed to understand string structures and palindromes.
+
+*Move on when you can:* Explain what a palindrome is, identify palindromic substrings in a given string, and describe basic string operations like substring extraction and indexing.
+
+### Stage 2 · Algorithm Design and Analysis *(foundational)*
+The paper relies on algorithmic concepts such as time and space complexity, randomized algorithms, and approximation guarantees, which require a solid grasp of algorithm design principles.
+
+▶ **Course:** [MIT 6.006 Introduction to Algorithms, Spring 2020](https://www.youtube.com/playlist?list=PLUl4u3cNGP63EdVPNLG3ToM6LaEUuStEY) — MIT OpenCourseWare · 32 videos · 35.3h across 32 episodes
+
+*What to watch:* Focus on the first 15 lectures of the 'MIT 6.006 Introduction to Algorithms, Spring 2020' playlist by MIT OpenCourseWare. These cover fundamental algorithmic concepts including complexity analysis, data structures, sorting, and searching, which are essential for understanding the algorithms in the paper.
+
+*Move on when you can:* Analyze the time and space complexity of a given algorithm and explain the difference between deterministic and randomized algorithms.
+
+### Stage 3 · String Pattern Matching Algorithms *(core)*
+The paper builds on substring comparison techniques and pattern matching concepts, including fingerprinting methods like Karp-Rabin, which are fundamental to efficient palindrome detection.
+
+▶ **Course:** [CS213.3x Algorithms](https://www.youtube.com/playlist?list=PL_uaeekrhGzLglTBo2pY9A_aXlnJdL6f4) — Studio IIT Bombay · 23 videos · 8.1h across 23 episodes
+
+*What to watch:* Watch the 'CS213.3x S119 Rabin-Karp Algorithm' episode in the 'CS213.3x Algorithms' playlist by Studio IIT Bombay. This episode explains the Karp-Rabin fingerprinting algorithm in detail, which is directly used in the paper for substring comparisons.
+
+*Move on when you can:* Implement the Karp-Rabin algorithm for substring search and explain how fingerprinting reduces comparison time.
+
+### Stage 4 · Streaming Algorithms and Sublinear Space Computation *(core)*
+The paper addresses palindrome recognition in the streaming model with sublinear memory constraints, so understanding streaming algorithm models and space limitations is critical.
+
+▶ **Course:** [Sketching and Algorithm Design](https://www.youtube.com/playlist?list=PLgKuh-lKre10-e2TWPCB0JdacFEnHHS31) — Simons Institute for the Theory of Computing · 24 videos · 19.3h across 24 episodes
+
+*What to watch:* Watch the first 5 videos of the 'Sketching and Algorithm Design' playlist by Simons Institute for the Theory of Computing. These cover the streaming model, sketching techniques, and sublinear space algorithms, providing the theoretical background for the paper's streaming algorithms.
+
+*Move on when you can:* Describe the streaming model of computation and design a simple streaming algorithm that uses sublinear space.
+
+### Stage 5 · Randomized Algorithms and Probabilistic Analysis *(core)*
+The paper uses randomized fingerprinting and probabilistic guarantees for approximation, so knowledge of randomized algorithm techniques and error probability analysis is required.
+
+▶ **Course:** [MIT 6.046J Design and Analysis of Algorithms, Spring 2015](https://www.youtube.com/playlist?list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp) — MIT OpenCourseWare · 34 videos · 39.5h across 34 episodes
+
+*What to watch:* Watch the first 12 lectures of the 'MIT 6.046J Design and Analysis of Algorithms, Spring 2015' playlist by MIT OpenCourseWare, focusing on the lectures about randomization, universal hashing, and randomized select. These provide a solid foundation in randomized algorithms and their analysis.
+
+*Move on when you can:* Explain the concept of randomized algorithms and analyze the probability of error in a randomized fingerprinting scheme.
+
+_Work through the stages in order. Once the last one lands, the paper — and the two tracks below — should read cleanly._
 
 ## Track 1 — Academic deep-dives (long-form)
 

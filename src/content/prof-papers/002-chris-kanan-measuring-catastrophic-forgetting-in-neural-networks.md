@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-www-chriskanan-com"
-source_hash: "9daf6b7616d4ba935a23f16728959eec038e2275600c585dd818939ca7c050cb"
+source_hash: "22f07f92b065c618478eacbb3dd6c97ea93e4a8485bf4abc73ae4924271fd568"
 sequence: 2
 generator: "outreach-garden: managed"
 ---
@@ -56,6 +56,63 @@ Research interests: artificial intelligence, deep learning, continual learning, 
 - [See my publications page for links to specific projects, code, and datasets.](https://www.chriskanan.com/publications/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_Everything the paper assumes you already know, in the order you should learn it. Some stages have no visible connection to the paper's title — that is the point: this is the background the paper never explains._
+
+This playlist provides foundational and core knowledge necessary to understand the research paper on catastrophic forgetting in neural networks. It covers essential mathematics, probability, supervised learning, deep learning architectures, and advanced continual learning concepts. The resources are carefully selected university-level courses and lectures to build a solid conceptual and practical understanding before engaging with the paper.
+
+**The paper assumes:** linear algebra, calculus, probability theory, supervised machine learning, deep learning fundamentals, neural network architectures, continual learning concepts, incremental learning methods
+**Time to work through:** roughly 70-80 hours if you watch everything, about 40-45 hours if you follow the skip guidance
+**Already in this field?** Skip stages 1-3 if you have a solid background in machine learning and deep learning fundamentals; focus on stages 4-6 if you are familiar with neural networks but new to continual learning and catastrophic forgetting.
+
+### Stage 1 · Linear Algebra and Calculus Foundations *(foundational)*
+Understanding neural networks requires knowledge of vectors, matrices, derivatives, and gradients, which are essential for grasping how models learn and update parameters.
+
+▶ **Course:** [MIT 18.06SC Linear Algebra, Fall 2011](https://www.youtube.com/playlist?list=PL221E2BBF13BECF6C) — MIT OpenCourseWare · 74 videos · 29.1h across the first 60 episodes
+
+*What to watch:* Focus on the MIT 18.06SC Linear Algebra playlist episodes 1-10, which cover the geometry of linear equations, elimination with matrices, matrix multiplication and inverses, LU factorization, and vector subspaces. These topics provide the linear algebra foundation needed to understand neural network computations.
+
+*Move on when you can:* Compute the gradient of a simple function and perform matrix multiplication relevant to neural network layers.
+
+### Stage 2 · Probability and Statistics for Machine Learning *(foundational)*
+Machine learning models rely on probabilistic reasoning and statistical concepts to interpret data, optimize models, and evaluate performance metrics used in the paper.
+
+▶ **Course:** [10. Probability & Statistics for ML | Complete Playlist](https://www.youtube.com/playlist?list=PLVyM62CSsh3WmT4vnxhtiPLp1ZNxfgqNQ) — Decode AiML · 59 videos · 26.1h across 59 episodes
+
+*What to watch:* Use the '10. Probability & Statistics for ML | Complete Playlist' by Decode AiML, focusing on episodes 10.7 through 10.15, which cover fundamental probability concepts, conditional probability, Bayes theorem, and Naive Bayes algorithm. These are critical for understanding probabilistic modeling and evaluation in machine learning.
+
+*Move on when you can:* Explain the concept of likelihood and compute basic probabilities for classification tasks.
+
+### Stage 3 · Supervised Machine Learning and Optimization *(core)*
+The paper assumes familiarity with supervised learning paradigms, loss functions, and optimization algorithms like gradient descent that underpin neural network training.
+
+▶ **Course:** [Stanford CS229: Machine Learning led by Andrew Ng | Autumn 2018](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU) — Stanford Online · 21 videos · 27.9h across 21 episodes
+
+*What to watch:* Watch the Stanford CS229 Machine Learning playlist led by Andrew Ng, focusing on lectures 1 through 4, which cover linear regression, gradient descent, and perceptron models. These provide a solid foundation in supervised learning and optimization techniques relevant to training neural networks.
+
+*Move on when you can:* Implement a simple supervised classifier and optimize its parameters using gradient descent.
+
+### Stage 4 · Deep Learning and Neural Network Architectures *(core)*
+The paper builds on deep neural networks, including multilayer perceptrons and convolutional networks, which are fundamental to understanding the models evaluated and compared.
+
+▶ **Course:** [Neural Networks and Deep Learning (Course 1 of the Deep Learning Specialization)](https://www.youtube.com/playlist?list=PLkDaE6sCZn6Ec-XTbcX1uRg2_u4xOEky0) — DeepLearningAI · 43 videos · 5.7h across 43 episodes
+
+*What to watch:* Focus on the DeepLearningAI Neural Networks and Deep Learning playlist, especially the first 20 episodes covering the basics of neural networks, supervised learning with neural nets, activation functions, gradient descent, and vectorization. This will provide the core understanding of deep learning architectures used in the paper.
+
+*Move on when you can:* Design and train a basic feedforward neural network on a classification dataset like MNIST.
+
+### Stage 5 · Continual and Incremental Learning in Neural Networks *(advanced)*
+Catastrophic forgetting occurs in continual learning settings; understanding incremental learning paradigms and challenges is critical to grasp the paper's problem statement and evaluation setup.
+
+▶ [Continual Learning and Catastrophic Forgetting](https://www.youtube.com/watch?v=vjaq03IYgSk) — Paul Hand · 42:07 · 6 years ago
+
+*What to watch:* Watch the video 'Continual Learning and Catastrophic Forgetting' by Paul Hand, which provides a focused lecture on the problem of catastrophic forgetting, methods to mitigate it, and the context of continual learning in neural networks. This concise resource directly addresses the core research problem of the paper.
+
+*Move on when you can:* Describe the problem of catastrophic forgetting and outline common incremental learning scenarios.
+
+_Work through the stages in order. Once the last one lands, the paper — and the two tracks below — should read cleanly._
 
 ## Track 1 — Academic deep-dives (long-form)
 

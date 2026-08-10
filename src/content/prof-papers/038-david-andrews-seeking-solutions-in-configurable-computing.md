@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-dandrews"
-source_hash: "3dc8763892733edc4e8096011e8f6516884f63420e4ee1bb2ecf1cf76d01b8e9"
+source_hash: "252845fcc916a8778e0799f4777914a3d6c8eedee308351f61000b9adef095ba"
 sequence: 38
 generator: "outreach-garden: managed"
 ---
@@ -54,6 +54,63 @@ Research interests: embedded systems architectures
 - [Google Scholar](https://scholar.google.com/citations?user=MnzsE_MAAAAJ&hl=en)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_Everything the paper assumes you already know, in the order you should learn it. Some stages have no visible connection to the paper's title — that is the point: this is the background the paper never explains._
+
+This playlist provides foundational to advanced background knowledge necessary to understand the 1997 paper on configurable computing. It begins with digital logic design fundamentals to grasp the building blocks of programmable hardware, then covers computer architecture principles to understand processor integration and system capacity. Core topics include FPGA architecture and programming, and embedded systems with hardware/software co-design, which are central to the paper's discussion of configurable computing systems. Finally, an advanced stage on CAD tools for hardware development addresses the challenges in synthesis and compilation highlighted in the paper. Follow the stages in order to build a comprehensive understanding before reading the paper.
+
+**The paper assumes:** digital logic design, computer architecture, FPGA fundamentals, hardware description languages, embedded systems programming, hardware/software co-design, CAD tools for hardware, benchmarking methodologies for computing systems
+**Time to work through:** roughly 60-70 hours if you watch all recommended content, about 40-45 hours if you follow the skip guidance.
+**Already in this field?** Skip stages 1-3 if you have a solid background in digital logic, computer architecture, and FPGA basics; focus on stages 4-6 for deeper understanding of configurable computing architectures and development tools.
+
+### Stage 1 · Digital Logic Design Fundamentals *(foundational)*
+Understanding configurable computing requires knowledge of how digital circuits are constructed from logic gates, as FPGAs and programmable hardware are built from these basic components.
+
+▶ **Course:** [CS302 Digital Logic And Design](https://www.youtube.com/playlist?list=PLKyB9RYzaFRis7YicWZvQtC7yx282bCbk) — Virtual University of Pakistan · 45 videos · 40.8h across 45 episodes
+
+*What to watch:* Watch the first 24 lectures of the 'CS302 Digital Logic And Design' playlist by Virtual University of Pakistan. These cover logic gates, Boolean algebra, Karnaugh maps, combinational and sequential circuits, and flip-flops, which are essential for understanding FPGA hardware granularity and configuration.
+
+*Move on when you can:* Design and simulate a combinational logic circuit using basic gates and explain how flip-flops enable sequential logic.
+
+### Stage 2 · Computer Architecture Principles *(foundational)*
+Configurable computing systems integrate processors with programmable hardware; understanding CPU architecture, memory hierarchy, and instruction execution is essential to grasp CPU proximity and system capacity discussions.
+
+▶ **Course:** [Spring 2015 -- Computer Architecture Lectures -- Carnegie Mellon](https://www.youtube.com/playlist?list=PL5PHm2jkkXmi5CxxI7b3JCL1TWybTDtKq) — Carnegie Mellon Computer Architecture · 39 videos · 64.3h across 39 episodes
+
+*What to watch:* Focus on the first 20 lectures of the 'Spring 2015 -- Computer Architecture Lectures -- Carnegie Mellon' playlist by Carnegie Mellon Computer Architecture. These cover introduction, ISA, microarchitecture, pipelining, branch prediction, and especially memory hierarchy and caches, which are critical to understanding processor integration in configurable systems.
+
+*Move on when you can:* Explain the fetch-decode-execute cycle and describe the role of caches and memory in processor performance.
+
+### Stage 3 · FPGA Architecture and Programming *(core)*
+The paper discusses FPGA gate capacity, configuration speed, and memory interfacing; knowledge of FPGA internal structure, configuration methods, and hardware description languages is critical to understand these limitations.
+
+▶ **Course:** [Introduction to FPGA](https://www.youtube.com/playlist?list=PLEBQazB0HUyT1WmMONxRZn9NmQ_9CIKhb) — DigiKey · 12 videos · 4.2h across 12 episodes
+
+*What to watch:* Watch the entire 'Introduction to FPGA' playlist by DigiKey, especially parts 1 through 8, which explain FPGA architecture, configuration, Verilog basics, finite state machines, and memory blocks. This will provide a solid understanding of FPGA internals and programming relevant to the paper's discussion.
+
+*Move on when you can:* Write and simulate a simple hardware design in VHDL or Verilog and explain the FPGA configuration process.
+
+### Stage 4 · Embedded Systems and Hardware/Software Co-Design *(core)*
+Configurable computing combines programmable processors with hardware accelerators; understanding embedded system design and co-design methodologies is necessary to appreciate the integration challenges and tool support issues discussed.
+
+▶ **Course:** [Hardware Software Codesign for Edge AI](https://www.youtube.com/playlist?list=PLXlqOmLpWgZlMNRV1cYhbegd8dXYjd_j-) — AIoTBlocks · 12 videos · 9.4h across 12 episodes
+
+*What to watch:* Focus on the 'Hardware Software Codesign for Edge AI' playlist by AIoTBlocks, especially lectures 1 through 7, which cover co-design concepts, Zynq MPSoC architecture, and programming models. This playlist provides practical insights into hardware/software partitioning and embedded system integration relevant to configurable computing.
+
+*Move on when you can:* Design a simple embedded system combining a microcontroller with a hardware accelerator and explain trade-offs in hardware/software partitioning.
+
+### Stage 5 · Computer-Aided Design (CAD) Tools for Hardware *(advanced)*
+The paper highlights challenges in CAD and compilation tools for configurable computing; familiarity with synthesis, place-and-route, and timing analysis tools is required to understand these development complexities.
+
+▶ **Course:** [Embedded Linux and FPGAs](https://www.youtube.com/playlist?list=PLUQpHm_JtukJ5tUmlcWKpcVbGfYy0MfxI) — IIT Madras - BS in Electronic Systems · 78 videos · 17.0h across the first 60 episodes
+
+*What to watch:* Watch the first 40 lectures of the 'Embedded Linux and FPGAs' playlist by IIT Madras - BS in Electronic Systems. These cover hardware access, AXI bus protocols, simulation, and embedded Linux device drivers, providing a strong foundation in hardware design tools and workflows relevant to CAD challenges in configurable computing.
+
+*Move on when you can:* Use a hardware synthesis tool to convert HDL code into a gate-level netlist and explain the place-and-route process.
+
+_Work through the stages in order. Once the last one lands, the paper — and the two tracks below — should read cleanly._
 
 ## Track 1 — Academic deep-dives (long-form)
 

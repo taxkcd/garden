@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-luke-s-zettlemoyer"
-source_hash: "8a4ed5f442e3a6da890f1a9c259c3dede42c498456bea5be015085e8ea161422"
+source_hash: "4ef4e08ff39f7e1424b3ac814d4db93875ff3e3a00bfa53fe5e53733cc1cfa48"
 sequence: 54
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,63 @@ This paper introduces the Byte Latent Transformer (BLT), a novel large language 
 - [Professor website](https://www.cs.washington.edu/people/faculty/luke-zettlemoyer/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_Everything the paper assumes you already know, in the order you should learn it. Some stages have no visible connection to the paper's title — that is the point: this is the background the paper never explains._
+
+This playlist provides foundational and core background knowledge necessary to understand the Byte Latent Transformer paper. It covers essential mathematical concepts like linear algebra and probability, the information theory underpinning entropy-based patching, neural network sequence modeling, transformer architectures including attention mechanisms, and tokenization methods relevant to byte-level language models. Work through these resources in order to build a solid understanding before reading the paper.
+
+**The paper assumes:** linear algebra, probability theory, information theory basics, neural network fundamentals, sequence modeling, transformer architectures, tokenization methods in NLP
+**Time to work through:** Approximately 70-80 hours if you watch all recommended content fully; about 40-45 hours if you follow the skip guidance to focus on the most relevant lectures.
+**Already in this field?** Skip stages 1-3 if you have a solid understanding of linear algebra, probability, and neural networks; skip stage 4 if you are familiar with transformer models; skip stage 5 if you already understand tokenization and byte-level modeling in NLP.
+
+### Stage 1 · Linear Algebra and Probability Foundations *(foundational)*
+The paper relies on concepts like vector representations, matrix operations, and probabilistic modeling of byte sequences, which require a solid grasp of linear algebra and probability theory to understand model computations and entropy-based patching.
+
+▶ **Course:** [MIT 18.06 Linear Algebra, Spring 2005](https://www.youtube.com/playlist?list=PLE7DDD91010BC51F8) — MIT OpenCourseWare · 36 videos · 28.0h across 36 episodes
+
+*What to watch:* Watch the MIT 18.06 Linear Algebra, Spring 2005 playlist by MIT OpenCourseWare, focusing on episodes 1 through 23 which cover matrix multiplication, vector spaces, eigenvalues, and diagonalization—core concepts needed to understand transformations and probability computations in the paper.
+
+*Move on when you can:* Explain how matrix multiplication is used to transform input vectors and compute probabilities of discrete events.
+
+### Stage 2 · Information Theory and Entropy *(core)*
+Entropy is central to the paper's dynamic patching mechanism, which segments byte sequences based on the entropy of the next byte prediction; understanding entropy and information content is essential to grasp this approach.
+
+▶ **Course:** [Information Theory, Pattern Recognition, and Neural Networks](https://www.youtube.com/playlist?list=PLruBu5BI5n4aFpG32iMbdWoRVAA-Vcso6) — Jakob Foerster · 16 videos · 17.6h across 16 episodes
+
+*What to watch:* Focus on the 'Information Theory, Pattern Recognition, and Neural Networks' playlist by Jakob Foerster, specifically lectures 1 through 5 which introduce entropy, Shannon's source coding theorem, and symbol codes—these provide the theoretical foundation for entropy-based patching in BLT.
+
+*Move on when you can:* Calculate the entropy of a discrete probability distribution and explain its significance in measuring uncertainty.
+
+### Stage 3 · Neural Networks and Sequence Modeling *(core)*
+The paper builds on neural network models for sequence data, including local encoders and decoders; understanding recurrent and feedforward neural networks for sequences is necessary to follow the architecture design.
+
+▶ **Course:** [Recurrent Neural Networks (RNNs)  by Andrew NG [Full Course]](https://www.youtube.com/playlist?list=PLBAGcD3siRDittPwQDGIIAWkjz-RucAc7) — Deep Learning Boston · 33 videos · 5.3h across 33 episodes
+
+*What to watch:* Watch the 'Recurrent Neural Networks (RNNs) by Andrew NG [Full Course]' playlist by Deep Learning Boston, focusing on the first 15 episodes which cover RNN basics, backpropagation through time, LSTM, GRU, and word embeddings—key to understanding sequence modeling in BLT.
+
+*Move on when you can:* Implement a simple recurrent neural network to predict the next element in a sequence.
+
+### Stage 4 · Transformer Architectures and Attention Mechanisms *(advanced)*
+The Byte Latent Transformer extends the transformer architecture with cross-attention and latent global transformers; understanding self-attention, cross-attention, and transformer design is critical to comprehend the model's structure.
+
+▶ **Course:** [Stanford CME295: Transformers and Large Language Models I Autumn 2025](https://www.youtube.com/playlist?list=PLoROMvodv4rOCXd21gf0CF4xr35yINeOy) — Stanford Online · 9 videos · 16.2h across 9 episodes
+
+*What to watch:* Use the 'Stanford CME295: Transformers and Large Language Models I Autumn 2025' playlist by Stanford Online, watching all 9 lectures which comprehensively cover transformer basics, advanced models, training, tuning, reasoning, and evaluation—providing deep insight into transformer architectures relevant to BLT.
+
+*Move on when you can:* Derive the self-attention computation and explain how attention weights are calculated and applied in transformers.
+
+### Stage 5 · Tokenization and Byte-Level Modeling in NLP *(advanced)*
+The paper contrasts traditional fixed-vocabulary tokenization with byte-level modeling and introduces dynamic patching; understanding tokenization methods, byte representations, and their trade-offs is necessary to appreciate the motivation and evaluation.
+
+▶ **Course:** [Stanford CS336: Language Modeling from Scratch | Spring 2026](https://www.youtube.com/playlist?list=PLoROMvodv4rMqXOcazWaTUHhq-yembLCV) — Stanford Online · 18 videos · 24.2h across 18 episodes
+
+*What to watch:* Watch the 'Stanford CS336: Language Modeling from Scratch | Spring 2026' playlist by Stanford Online, focusing on lectures 1, 3, and 12 which cover tokenization, architectures, and evaluation—these provide a thorough understanding of tokenization and byte-level modeling trade-offs relevant to BLT.
+
+*Move on when you can:* Compare and contrast subword tokenization methods with byte-level input representations and explain their impact on model robustness and efficiency.
+
+_Work through the stages in order. Once the last one lands, the paper — and the two tracks below — should read cleanly._
 
 ## Track 1 — Academic deep-dives (long-form)
 

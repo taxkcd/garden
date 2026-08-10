@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-daniel-j-sorin"
-source_hash: "71a7ac99a3c911e6d4506125ad36aa51a9f28ad50cfe7f0d2031a43faedbcdad"
+source_hash: "1e029a746c8e708aee9ed36ae685feaa786bd44d7fe3cbde87394ed542e43d11"
 sequence: 346
 generator: "outreach-garden: managed"
 ---

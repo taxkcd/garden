@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-souyoungjin-github-io"
-source_hash: "abab9655cf87ceef577fd2e766c14272f1437b1ec8f75915576ba178bce08419"
+source_hash: "a28f2899495ea10abc774e2858b26b7cb739b7c406fe13341f3dcf1560e55ac7"
 sequence: 47
 generator: "outreach-garden: managed"
 ---
@@ -54,6 +54,54 @@ Research interests: Teaching Machines to See and Feel, empathy-driven video unde
 - [Google Scholar](https://scholar.google.com/citations?user=_B-_CzYAAAAJ&hl=en)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_Everything the paper assumes you already know, in the order you should learn it. Some stages have no visible connection to the paper's title — that is the point: this is the background the paper never explains._
+
+This playlist provides foundational and core background knowledge necessary to understand the CRYSTAL benchmark paper on transparent multimodal reasoning evaluation. It covers essential mathematics, machine learning fundamentals, basics of natural language processing and computer vision, multimodal deep learning models, and evaluation metrics. Work through the stages in order to build a solid understanding of the concepts and techniques the paper builds upon.
+
+**The paper assumes:** linear algebra, probability theory, machine learning fundamentals, natural language processing, computer vision basics, multimodal deep learning, reinforcement learning for language models
+**Time to work through:** roughly 110-120 hours if you watch everything, about 60-70 hours if you follow the skip guidance
+**Already in this field?** Skip stages 1-3 if you have a solid background in machine learning and deep learning fundamentals; skip stages 4-5 if you are already familiar with multimodal models and evaluation metrics for language and vision tasks.
+
+### Stage 1 · Linear Algebra and Probability Theory *(foundational)*
+Understanding vector spaces, matrices, and probability distributions is essential for grasping embeddings, similarity metrics, and probabilistic reasoning used throughout the paper, such as semantic clustering and reward calculations.
+
+▶ **Course:** [MIT 18.06 Linear Algebra, Spring 2005](https://www.youtube.com/playlist?list=PLE7DDD91010BC51F8) — MIT OpenCourseWare · 36 videos · 28.0h across 36 episodes
+
+*What to watch:* Watch the MIT 18.06 Linear Algebra, Spring 2005 playlist episodes 1 through 23, which cover the geometry of linear equations, matrix operations, subspaces, eigenvalues, and diagonalization. These topics provide the mathematical foundation for understanding data embeddings and transformations relevant to the paper.
+
+*Move on when you can:* Explain how matrix multiplication can represent transformations of data embeddings and compute probabilities of simple events using basic distributions.
+
+### Stage 2 · Machine Learning Fundamentals *(foundational)*
+The paper builds on concepts like model training, evaluation metrics, and reinforcement learning, which require a solid understanding of supervised learning, loss functions, and optimization.
+
+▶ **Course:** [Stanford CS229: Machine Learning led by Andrew Ng | Autumn 2018](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU) — Stanford Online · 21 videos · 27.9h across 21 episodes
+
+*What to watch:* Focus on the Stanford CS229: Machine Learning led by Andrew Ng | Autumn 2018 playlist, especially lectures 1 through 12 for supervised learning, loss functions, gradient descent, and evaluation metrics, and lectures 16 through 20 for reinforcement learning basics and reward models. This coverage aligns well with the paper's use of reinforcement learning and evaluation metrics.
+
+*Move on when you can:* Derive the gradient descent update rule for a simple linear regression model and explain the difference between precision and recall metrics.
+
+### Stage 3 · Natural Language Processing and Computer Vision Basics *(core)*
+CRYSTAL evaluates multimodal models combining vision and language; understanding tokenization, embeddings, convolutional neural networks, and image feature extraction is necessary to follow the benchmark design and model inputs.
+
+▶ **Course:** [Stanford CS231N Deep Learning for Computer Vision I 2025](https://www.youtube.com/playlist?list=PLoROMvodv4rOmsNzYBMe0gJY2XS8AQg16) — Stanford Online · 18 videos · 21.2h across 18 episodes
+
+*What to watch:* Watch the Stanford CS231N Deep Learning for Computer Vision I 2025 playlist episodes 1 through 6 to learn image classification basics, CNN architectures, and optimization, and complement this with Stanford CS224N: Natural Language Processing with Deep Learning | Winter 2021 playlist episodes 1 through 9 to understand word vectors, neural classifiers, backpropagation, and attention mechanisms. Together, these cover the core vision and language basics needed.
+
+*Move on when you can:* Describe how word embeddings are generated and explain the architecture of a basic CNN for image classification.
+
+### Stage 4 · Multimodal Deep Learning Models *(core)*
+The paper assumes knowledge of multimodal large language models (MLLMs) that integrate text and images, including transformer architectures and cross-modal attention mechanisms used in generating reasoning trajectories.
+
+▶ **Course:** [Stanford CS224N Natural Language Processing with Deep Learning I Spring 2024 I Professor Christopher Manning](https://www.youtube.com/playlist?list=PLoROMvodv4rOaMFbaqxPDoLWjDaRAdP9D) — Stanford Online · 23 videos · 27.5h across 23 episodes
+
+*What to watch:* Focus on the Stanford CS224N Natural Language Processing with Deep Learning I Spring 2024 playlist episodes 7 through 16, which cover attention, transformers, pretraining, and multimodal deep learning. These lectures explain transformer architectures and cross-modal attention essential to understanding multimodal LLMs in the paper.
+
+*Move on when you can:* Explain how a transformer model can be extended to process both text and image inputs and describe cross-modal attention.
+
+_Work through the stages in order. Once the last one lands, the paper — and the two tracks below — should read cleanly._
 
 ## Track 1 — Academic deep-dives (long-form)
 

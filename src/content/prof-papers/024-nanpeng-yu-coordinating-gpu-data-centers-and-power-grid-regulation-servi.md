@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-nyu"
-source_hash: "23e2812e06a8a78727886263e6f4126bec451e5934d7894dc39f6e241ce830cd"
+source_hash: "ff193686d521cec7401f5d72165e60db8152b7c2a9ba41341255915e5c96390c"
 sequence: 24
 generator: "outreach-garden: managed"
 ---
@@ -50,6 +50,63 @@ This paper addresses the challenge of increasing energy consumption and carbon e
 - [Identity evidence](https://intra.ece.ucr.edu/~nyu)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_Everything the paper assumes you already know, in the order you should learn it. Some stages have no visible connection to the paper's title — that is the point: this is the background the paper never explains._
+
+This playlist provides foundational and core knowledge necessary to understand the research paper on coordinating GPU data centers with power grid frequency regulation for carbon benefits. It covers essential concepts in electric power systems, GPU architecture and power management, carbon emission metrics, unit commitment optimization in power systems, and data center workload scheduling and power capping. The resources are carefully selected university-level lecture series and authoritative videos to build a solid background before engaging with the paper.
+
+**The paper assumes:** power system frequency regulation, GPU power management and modulation, carbon emission metrics in power grids, unit commitment modeling, data center workload scheduling and optimization
+**Time to work through:** Approximately 40-50 hours if you watch all recommended lectures; about 20-25 hours if you follow the selective episode guidance.
+**Already in this field?** Skip stages 1-3 if you have a background in electrical power systems and GPU data center power management; focus on stages 4-6 for grid emission modeling and frequency regulation optimization.
+
+### Stage 1 · Electric Power Systems Fundamentals *(foundational)*
+Understanding power grid operation, including generation, load, and frequency regulation basics, is essential to grasp the paper's discussion on grid stability and frequency regulation services.
+
+▶ **Course:** [Electric Power Systems Lectures](https://www.youtube.com/playlist?list=PL5TKV1tzb09lKvDmGWkJ8XtoxulLI8TF8) — Engineering Devotion · 51 videos · 18.5h across 51 episodes
+
+*What to watch:* Watch the first 24 lectures of the 'Electric Power Systems Lectures' playlist by Engineering Devotion, which cover fundamental concepts such as power system structure, transmission lines, loads, and basics of frequency regulation.
+
+*Move on when you can:* Explain how power grids maintain frequency stability and the role of regulation reserves in balancing supply and demand.
+
+### Stage 2 · GPU Architecture and Power Management *(foundational)*
+The paper relies on detailed knowledge of GPU hardware characteristics, power consumption behavior, and power modulation techniques to design EcoCenter's power capping and core allocation strategies.
+
+▶ **Course:** [CUDA Programming Course -- Parallel Computing using Nvidia GPUs](https://www.youtube.com/playlist?list=PL1ysOEBe5977vlocXuRt6KBCYu_sdu1Ru) — Learn Computer Science · 39 videos · 28.7h across 39 episodes
+
+*What to watch:* Focus on the first 20 lectures of the 'CUDA Programming Course -- Parallel Computing using Nvidia GPUs' playlist by Learn Computer Science to understand GPU architecture, memory hierarchy, and power-related topics relevant to GPU power modulation.
+
+*Move on when you can:* Describe GPU power states, static vs dynamic power consumption, and common methods for GPU power modulation.
+
+### Stage 3 · Carbon Emission Metrics and Environmental Impact of Power Systems *(core)*
+The novel Exogenous Carbon metric builds on existing carbon intensity metrics and requires understanding how carbon emissions are accounted for in power generation and regulation reserves.
+
+▶ [What is carbon intensity?](https://www.youtube.com/watch?v=71jvUU4xgiY) — Clean Energy · 1 year ago
+
+*What to watch:* Watch the 'What is carbon intensity?' video by Clean Energy to understand traditional carbon intensity metrics and their limitations, especially regarding regulation reserves and hidden emissions.
+
+*Move on when you can:* Compare traditional carbon intensity metrics with approaches that include regulation reserve emissions and explain their limitations.
+
+### Stage 4 · Unit Commitment and Economic Dispatch in Power Systems *(core)*
+The paper uses unit commitment simulations to model hidden emissions and optimize data center participation, so understanding these optimization problems and their role in grid operation is critical.
+
+▶ **Course:** [Power System Operation and Control](https://www.youtube.com/playlist?list=PL_ZyPC6TGtkotDYK1ICtGgmXE4pxUF2Un) — Power Systemz · 56 videos · 20.9h across 56 episodes
+
+*What to watch:* Watch the first 10 lectures of the 'Power System Operation and Control' playlist by Power Systemz, which cover unit commitment introduction, constraints, and economic load dispatch formulation and examples.
+
+*Move on when you can:* Formulate the unit commitment problem and explain how it determines generation schedules and reserve requirements.
+
+### Stage 5 · Data Center Workload Scheduling and Power Capping *(core)*
+EcoCenter coordinates GPU core allocation and workload co-location to achieve precise power modulation without impacting latency-sensitive tasks, requiring knowledge of workload scheduling and power management in data centers.
+
+▶ **Course:** [Introduction to Data Centres](https://www.youtube.com/playlist?list=PLU8vzoWkqoZ8KRimyHPBiw82HZPPudtxR) — Laminar Projects · 10 videos · 0.4h across 10 episodes
+
+*What to watch:* Watch the entire 'Introduction to Data Centres' playlist by Laminar Projects to understand data center basics, including workload types, power management, and infrastructure relevant to scheduling and power capping.
+
+*Move on when you can:* Design a simple workload scheduling policy that balances latency-critical and best-effort tasks under power constraints.
+
+_Work through the stages in order. Once the last one lands, the paper — and the two tracks below — should read cleanly._
 
 ## Track 1 — Academic deep-dives (long-form)
 

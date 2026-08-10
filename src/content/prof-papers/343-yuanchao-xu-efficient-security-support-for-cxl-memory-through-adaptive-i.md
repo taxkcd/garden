@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-yuanchao-xu"
-source_hash: "0f684f144787e328b118d26c8ea4d8a2b4d4e8a25937757ca6534aed289b0ce9"
+source_hash: "7b586e6fd3ad1459574a17309b0bf778957cdb3844f4cd349938ecca04c04b85"
 sequence: 343
 generator: "outreach-garden: managed"
 ---

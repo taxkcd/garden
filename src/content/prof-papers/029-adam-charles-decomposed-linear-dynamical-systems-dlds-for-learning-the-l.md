@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-ascharles"
-source_hash: "123c6034c4d2b6624e8e48d7fa6af6701a86c7547dcc1e196765d2983de27c6c"
+source_hash: "e128b6725548c721f49db22e5620c5001dae44dd1354b6f87dfaf142cf8062b7"
 sequence: 29
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,72 @@ Research interests: machine learning and signal processing for neural imaging, d
 - [Google Scholar](https://scholar.google.com/citations?user=c8RKLp0AAAAJ&hl=en)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_Everything the paper assumes you already know, in the order you should learn it. Some stages have no visible connection to the paper's title — that is the point: this is the background the paper never explains._
+
+This foundational playlist prepares you to understand the key mathematical and computational concepts underlying the decomposed Linear Dynamical Systems (dLDS) model for neural population dynamics. It covers linear algebra fundamentals, probability and Bayesian inference, dynamical systems theory, dimensionality reduction techniques, sparse coding and dictionary learning, and neural population dynamics modeling. Work through these resources in order to build a solid base before tackling the paper.
+
+**The paper assumes:** linear algebra including eigen-decomposition and matrix exponentials, probability theory and Bayesian inference, dynamical systems theory, dimensionality reduction techniques, sparse coding and dictionary learning, linear dynamical systems and switched linear dynamical systems, neural population dynamics modeling
+**Time to work through:** roughly 45-55 hours if you watch everything, about 25-30 hours if you follow the skip guidance
+**Already in this field?** Skip stages 1-3 if you have a strong background in linear algebra, probability, and dynamical systems; skip stages 4-5 if you are familiar with sparse coding and dictionary learning; skip stage 6 if you have worked with linear dynamical systems and switched LDS models before.
+
+### Stage 1 · Linear Algebra and Matrix Analysis *(foundational)*
+The paper models neural dynamics using linear operators, matrix exponentials, and eigen-decompositions; understanding these is essential to grasp how dynamic operators and latent states evolve.
+
+▶ **Course:** [MIT 18.06 Linear Algebra, Spring 2005](https://www.youtube.com/playlist?list=PLE7DDD91010BC51F8) — MIT OpenCourseWare · 36 videos · 28.0h across 36 episodes
+
+*What to watch:* Watch the MIT OpenCourseWare playlist 'MIT 18.06 Linear Algebra, Spring 2005', focusing on episodes 21 (Eigenvalues and Eigenvectors), 22 (Diagonalization and Powers of A), and 23 (Differential Equations and exp(At)) to understand eigen-decomposition and matrix exponentials relevant to the paper's dynamic operators.
+
+*Move on when you can:* Compute eigenvalues and eigenvectors of a matrix and use them to diagonalize it; calculate the matrix exponential of a simple 2x2 matrix.
+
+### Stage 2 · Probability Theory and Bayesian Inference *(foundational)*
+The model training uses expectation-maximization and probabilistic latent variable frameworks, requiring solid understanding of probability distributions, conditional probability, and Bayesian inference.
+
+▶ **Course:** [Bayesian statistics: a comprehensive course](https://www.youtube.com/playlist?list=PLFDbGp5YzjqXQ4oE4w9GVWdiokWB9gEpm) — Ox educ · 55 videos · 6.2h across 55 episodes
+
+*What to watch:* Use the 'Bayesian statistics: a comprehensive course' playlist by Ox educ, focusing on the first 15 episodes covering Bayes' theorem, conditional probability, and inference basics to build intuition for the EM algorithm and probabilistic modeling in the paper.
+
+*Move on when you can:* Derive Bayes’ theorem and perform basic inference in a Gaussian latent variable model.
+
+### Stage 3 · Dynamical Systems Theory *(core)*
+The paper builds on continuous and discrete-time dynamical systems to model neural activity evolution; understanding stability, attractors, and nonlinear dynamics is crucial.
+
+▶ **Course:** [Lecture Collection | Linear Dynamical Systems](https://www.youtube.com/playlist?list=PL06960BA52D0DB32B) — Stanford · 20 videos · 24.4h across 20 episodes
+
+*What to watch:* Watch the 'Lecture Collection | Linear Dynamical Systems' playlist from Stanford, focusing on the first 10 lectures to grasp linear dynamical systems fundamentals, stability, and state evolution relevant to the dLDS model.
+
+*Move on when you can:* Analyze stability of fixed points in a nonlinear dynamical system and simulate trajectories over time.
+
+### Stage 4 · Dimensionality Reduction Techniques *(core)*
+The latent neural activity is assumed to lie on a low-dimensional manifold; familiarity with PCA, factor analysis, and manifold learning is needed to understand the model’s latent space assumptions.
+
+▶ **Course:** [Dimensionality reduction](https://www.youtube.com/playlist?list=PLpmpvzHlU7zNKLh9A_JIYo7T_i2uExPte) — komal joshi · 10 videos · 1.8h across 10 episodes
+
+*What to watch:* Use the 'Dimensionality reduction' playlist by komal joshi, focusing on episodes 1-8 which cover PCA, covariance, and data preprocessing to understand how to extract low-dimensional representations from high-dimensional neural data.
+
+*Move on when you can:* Apply PCA to a high-dimensional dataset and interpret the principal components.
+
+### Stage 5 · Sparse Coding and Dictionary Learning *(advanced)*
+dLDS decomposes dynamics into sparse combinations of dictionary elements; understanding sparse representations and dictionary learning algorithms is required to follow the model formulation and training.
+
+▶ **Course:** [Dictionary Learning (Hugo Larochelle) 8.1-8.8](https://www.youtube.com/playlist?list=PL3NhDSZB5I7upZOMSBKrPV0qi3Mn0JbcA) — John Franklin · 10 videos · 4.0h across 10 episodes
+
+*What to watch:* Watch the 'Dictionary Learning (Hugo Larochelle) 8.1-8.8' playlist by John Franklin, covering sparse coding definitions, inference algorithms like ISTA, and dictionary update methods to understand the sparse coding framework used in dLDS.
+
+*Move on when you can:* Implement a basic sparse coding algorithm and explain how dictionary elements are learned from data.
+
+### Stage 6 · Neural Population Dynamics Modeling *(advanced)*
+The application domain involves modeling neural population activity and interpreting latent dynamics; familiarity with neural data types, calcium imaging, and common neural dynamics models is necessary to contextualize the work.
+
+▶ **Course:** [Lecture NDC3 - Neuronal Populations](https://www.youtube.com/playlist?list=PL7SYVykTNxXYaxM6yIy-Vu6nHuXucu8NK) — Gerstner Lab · 7 videos · 1.4h across 7 episodes
+
+*What to watch:* Watch the 'Lecture NDC3 - Neuronal Populations' playlist by Gerstner Lab, focusing on all episodes to understand population activity, cortical columns, connectivity, and asynchronous states relevant to neural dynamics modeling in the paper.
+
+*Move on when you can:* Explain how latent dynamical models are used to analyze neural population recordings and describe common challenges in neural data modeling.
+
+_Work through the stages in order. Once the last one lands, the paper — and the two tracks below — should read cleanly._
 
 ## Track 1 — Academic deep-dives (long-form)
 

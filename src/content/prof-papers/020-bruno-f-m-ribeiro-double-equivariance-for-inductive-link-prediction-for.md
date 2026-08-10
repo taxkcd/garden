@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-ribeirob"
-source_hash: "566a896015d657989eff4c64daf28cd85622687ec86c38bbc4c00e01160f467b"
+source_hash: "ea3ea2df801249a33d4b3a7aa95edac7980e966981218699f9b79dbf905a9fce"
 sequence: 20
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,54 @@ Research interests: mathematical challenges and potential solutions for harnessi
 - [Google Scholar](https://scholar.google.com/citations?hl=en&user=KIEleCsAAAAJ&view_op=list_works&sortby=pubdate)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_Everything the paper assumes you already know, in the order you should learn it. Some stages have no visible connection to the paper's title — that is the point: this is the background the paper never explains._
+
+This playlist provides foundational and core knowledge to prepare for understanding the paper on double equivariance in fully inductive link prediction for knowledge graphs. It covers essential linear algebra and probability concepts, foundational graph theory, machine learning with graph neural networks, knowledge graphs and link prediction, and advanced topics on permutation equivariance in machine learning. The resources are carefully selected university-level courses and lecture series that build the necessary mathematical, theoretical, and practical background in a structured manner.
+
+**The paper assumes:** linear algebra, graph theory, probability theory, machine learning fundamentals, graph neural networks, knowledge graph embeddings, permutation equivariance in neural networks
+**Time to work through:** roughly 80-90 hours if you watch everything, about 50-60 hours if you follow the skip guidance
+**Already in this field?** Skip stages 1-3 if you have a solid background in linear algebra, probability, and graph neural networks; focus on stages 4-6 for specialized knowledge on knowledge graphs and equivariant models.
+
+### Stage 1 · Linear Algebra and Probability Foundations *(foundational)*
+Understanding vector spaces, matrices, eigenvalues, and probability distributions is essential for grasping graph representations, embeddings, and stochastic methods like Monte Carlo sampling used in the paper.
+
+▶ **Course:** [MIT 18.06 Linear Algebra, Spring 2005](https://www.youtube.com/playlist?list=PLE7DDD91010BC51F8) — MIT OpenCourseWare · 36 videos · 28.0h across 36 episodes
+
+*What to watch:* Watch the MIT 18.06 Linear Algebra, Spring 2005 playlist by Prof. Gilbert Strang, focusing on episodes 1 through 23 which cover geometry of linear equations, matrix operations, subspaces, projections, determinants, and eigenvalues/eigenvectors. These topics directly support understanding matrix representations and spectral methods in the paper.
+
+*Move on when you can:* Explain eigen decomposition of a matrix and compute expectation and variance of a discrete random variable.
+
+### Stage 2 · Graph Theory and Network Basics *(foundational)*
+The paper deals with knowledge graphs and permutation of nodes and relations; foundational graph theory concepts like graphs, adjacency matrices, and graph isomorphisms are critical to understand these structures and their symmetries.
+
+▶ **Course:** [Graph Theory discrete mathematics](https://www.youtube.com/playlist?list=PL15h-I4HvELIhCh5VwKcvh9BQFFRnAFJr) — Ganitya · 12 videos · 2.4h across 12 episodes
+
+*What to watch:* Use the 'Graph Theory discrete mathematics' playlist by Ganitya, focusing on the first 5 episodes which cover graph definitions, types, matrix representations, and graph isomorphism. These provide a clear introduction to graph structures and symmetries relevant to permutation equivariance.
+
+*Move on when you can:* Define a graph, adjacency matrix, and explain graph isomorphism with examples.
+
+### Stage 3 · Machine Learning and Graph Neural Networks *(core)*
+The paper builds on graph neural networks (GNNs) and their homogeneous variants; understanding message passing, node embeddings, and GNN architectures is necessary to follow model design and improvements like ISDEA+.
+
+▶ **Course:** [Stanford CS224W: Machine Learning with Graphs](https://www.youtube.com/playlist?list=PLoROMvodv4rPLKxIpqhjhPgdQy7imNkDn) — Stanford Online · 60 videos · 22.4h across 60 episodes
+
+*What to watch:* Focus on the Stanford CS224W: Machine Learning with Graphs playlist by Stanford Online, specifically lectures 6.1 to 7.3 which cover introduction to GNNs, deep learning basics for graphs, and detailed single-layer and multi-layer GNN architectures. This section explains message passing and node embeddings foundational to the paper's models.
+
+*Move on when you can:* Derive the update rule for a single message-passing step in a GNN by hand.
+
+### Stage 4 · Permutation Equivariance and Invariance in Machine Learning *(advanced)*
+The core theoretical framework of the paper is double permutation-equivariant representations; understanding equivariance, invariance, and their role in neural network design is crucial to grasp the paper’s formal definitions and proofs.
+
+▶ **Course:** [KAIST CS479 Machine Learning for 3D Data (Fall 2023)](https://www.youtube.com/playlist?list=PLyi5FHzX7hBzv6p_USmzLvL8TBKWljOph) — Minhyuk Sung · 19 videos · 23.8h across 19 episodes
+
+*What to watch:* Watch the KAIST CS479 Machine Learning for 3D Data (Fall 2023) playlist by Minhyuk Sung, focusing on lectures 1 through 7 and lecture 19 (Rotation Invariance/Equivariance). These cover equivariance concepts, representations, and their applications in neural networks, directly relevant to the paper's double equivariance framework.
+
+*Move on when you can:* Explain permutation equivariance and demonstrate how a function can be equivariant or invariant to permutations of inputs.
+
+_Work through the stages in order. Once the last one lands, the paper — and the two tracks below — should read cleanly._
 
 ## Track 1 — Academic deep-dives (long-form)
 

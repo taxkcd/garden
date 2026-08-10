@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-steffen-heber"
-source_hash: "75113e6dd805b535a270f3998157d080568890edb42b89af8104aa341ce92375"
+source_hash: "c89fc60a0525354a1703feb9d9bab7da33d27f7fb99fd217759956cdfba0de5f"
 sequence: 345
 generator: "outreach-garden: managed"
 ---

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-humphrey-html"
-source_hash: "cd638c2e4b08ac229965fb4b0a45ae1bd0633132bfa8130ee3bfe2ccc54d7143"
+source_hash: "72d08c6c2175ced23993fc40e409212027df9e4a1339fa691a2226306ee3ca6e"
 sequence: 13
 generator: "outreach-garden: managed"
 ---
@@ -58,6 +58,63 @@ Research interests: text mining, quality control, statistics, asymmetric distrib
 - [Lab website](https://www.researchgate.net/lab/Triss-Ashton-Lab)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_Everything the paper assumes you already know, in the order you should learn it. Some stages have no visible connection to the paper's title — that is the point: this is the background the paper never explains._
+
+This playlist provides foundational and core knowledge necessary to understand the research paper on leveraging cloud computing for intelligent clinical data registries. It covers essential concepts in cloud computing, healthcare data management and standards, AWS core services, serverless architecture, and clinical audio processing. The resources are carefully selected to build up the reader's understanding step-by-step, focusing on relevant technical and domain-specific knowledge required to grasp the paper's contributions and context.
+
+**The paper assumes:** cloud computing fundamentals, clinical data management, AWS core services, healthcare data privacy regulations, serverless architectures, clinical audio transcription technologies
+**Time to work through:** roughly 20-25 hours if you watch everything, about 10-12 hours if you follow the skip guidance
+**Already in this field?** Skip stages 1-3 if you already have experience with cloud computing and healthcare data systems; focus on stages 4-6 for domain-specific knowledge and AWS service integration.
+
+### Stage 1 · Introduction to Cloud Computing *(foundational)*
+Understanding cloud infrastructure concepts such as scalability, load balancing, and serverless computing is essential to grasp the architecture of CPOP described in the paper.
+
+▶ **Course:** [Cloud Computing(Lectures) Full Course](https://www.youtube.com/playlist?list=PLV8vIYTIdSnaKSiSGvJf2QquSN4lEzGob) — Easy Engineering Classes · 40 videos · 5.5h across 40 episodes
+
+*What to watch:* Watch the first 14 episodes of the 'Cloud Computing(Lectures) Full Course' by Easy Engineering Classes. These cover cloud computing introduction, working models, benefits, characteristics, cloud service models (SaaS, PaaS, IaaS), and cloud infrastructure essentials, which are directly relevant to the paper's cloud architecture.
+
+*Move on when you can:* Explain the differences between IaaS, PaaS, and SaaS and describe how auto-scaling and load balancing work in cloud environments.
+
+### Stage 2 · Healthcare Data Management and Standards *(core)*
+Understanding clinical data registries, longitudinal patient data, and healthcare data privacy regulations like HIPAA is critical to grasp the data management and privacy challenges addressed by CPOP.
+
+▶ **Course:** [Foundations for Population Health in Community/Public Health Nursing (6th) | Complete Chapter Summaries](https://www.youtube.com/playlist?list=PLI3TocC2xS24n-b9-DkqUhLUCSnsya5RO) — Last Minute Lecture · 40 videos · 28.1h across 40 episodes
+
+*What to watch:* Focus on the first 10 episodes of 'Foundations for Population Health in Community/Public Health Nursing (6th) | Complete Chapter Summaries' by Last Minute Lecture. These episodes cover public health nursing, healthcare systems overview, law and policy activism, economics, ethics, and evidence-based practice, providing a solid foundation on healthcare data management and regulatory context.
+
+*Move on when you can:* Describe the structure and purpose of clinical data registries and explain key healthcare data privacy regulations such as HIPAA.
+
+### Stage 3 · Amazon Web Services Core Services *(core)*
+The paper uses AWS services such as Cognito, RDS, Lambda, and API Gateway; familiarity with these services is necessary to understand the system design and implementation details.
+
+▶ **Course:** [AWS Certified Cloud Practitioner](https://www.youtube.com/playlist?list=PLRAV69dS1uWSj3ltu0ym1LwWg4509PZ0N) — Hitesh Choudhary · 12 videos · 3.8h across 12 episodes
+
+*What to watch:* Watch the entire 'AWS Certified Cloud Practitioner' playlist by Hitesh Choudhary, focusing especially on IAM, EC2, storage, and security-related episodes. This course provides practical and conceptual knowledge of AWS core services relevant to the paper's implementation.
+
+*Move on when you can:* Demonstrate how to set up user authentication with AWS Cognito and explain the role of AWS Lambda and API Gateway in serverless architectures.
+
+### Stage 4 · Serverless Architecture and Microservices *(advanced)*
+CPOP employs serverless APIs and a microservices approach for scalability and maintainability; understanding these architectural patterns is essential to follow the system design and scalability claims.
+
+▶ **Course:** [AWS Serverless Course](https://www.youtube.com/playlist?list=PLqbNDdqyX9E00P3CqyTVwIyVKG6nbB7V0) — TrickSumo · 10 videos · 4.7h across 10 episodes
+
+*What to watch:* Watch the full 'AWS Serverless Course' playlist by TrickSumo. This series covers securing APIs with Cognito, deploying serverless applications, Lambda layers, and building serverless APIs, directly aligning with the paper's use of serverless architecture.
+
+*Move on when you can:* Design a simple serverless application using AWS Lambda and API Gateway and explain how load balancing and auto-scaling are achieved.
+
+### Stage 5 · Clinical Audio Processing and Speech Transcription *(advanced)*
+The paper evaluates Amazon Transcribe for doctor-patient audio transcription, so knowledge of speech-to-text technologies and their challenges in clinical contexts is required to understand the evaluation and limitations.
+
+▶ **Course:** [Stanford CS229: Machine Learning led by Andrew Ng | Autumn 2018](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU) — Stanford Online · 21 videos · 27.9h across 21 episodes
+
+*What to watch:* Watch the first 12 lectures of 'Stanford CS229: Machine Learning led by Andrew Ng | Autumn 2018' by Stanford Online. These lectures cover supervised learning, neural networks, error analysis, and debugging ML models, which provide foundational knowledge for understanding automatic speech recognition and transcription errors.
+
+*Move on when you can:* Explain the basics of automatic speech recognition and discuss common sources of error in clinical audio transcription.
+
+_Work through the stages in order. Once the last one lands, the paper — and the two tracks below — should read cleanly._
 
 ## Track 1 — Academic deep-dives (long-form)
 

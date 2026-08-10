@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-pavanturaga-com"
-source_hash: "b55c88f47f8502c0b3bfa9ca592bb4c73158ad7bb97542e493d105c41aa3984f"
+source_hash: "9d7c9f11f83ef83557e4adab26eeebe7b59fbd087a9fb646447bf87dd021ef9a"
 sequence: 4
 generator: "outreach-garden: managed"
 ---
@@ -55,6 +55,63 @@ Research interests: computer vision, machine learning, immersive technologies, h
 - [Social profile](https://twitter.com/pturaga1)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_Everything the paper assumes you already know, in the order you should learn it. Some stages have no visible connection to the paper's title — that is the point: this is the background the paper never explains._
+
+This playlist provides foundational and core knowledge required to understand the paper on geometry preserving loss functions for blackbox generative model adaptation. It covers essential mathematical concepts like linear algebra and manifold geometry, probability theory for modeling latent distributions, deep learning fundamentals including neural networks and optimization, generative adversarial networks (GANs) which are central to the paper's use of pre-trained generators and inversion, and advanced diffusion models relevant to the latent sampler design. Work through these stages in order to build a solid base before engaging with the paper.
+
+**The paper assumes:** linear algebra including vector spaces and manifolds, probability theory and statistics, deep learning fundamentals, generative adversarial networks (GANs), diffusion models, GAN inversion techniques, domain adaptation in generative modeling
+**Time to work through:** roughly 90-100 hours if you watch all recommended lectures; about 50-60 hours if you follow the skip guidance for each playlist.
+**Already in this field?** Skip stages 1-3 if you have a solid background in linear algebra, probability, and deep learning fundamentals; skip stages 4-5 if you are already familiar with GANs and diffusion models.
+
+### Stage 1 · Linear Algebra and Manifold Geometry *(foundational)*
+Understanding latent spaces as manifolds and geometric concepts like tangent spaces and distance preservation requires solid linear algebra and differential geometry foundations, which are critical for the geometry-preserving loss in the paper.
+
+▶ **Course:** [MIT 18.06 Linear Algebra, Spring 2005](https://www.youtube.com/playlist?list=PLE7DDD91010BC51F8) — MIT OpenCourseWare · 36 videos · 28.0h across 36 episodes
+
+*What to watch:* Watch the first 23 lectures of the 'MIT 18.06 Linear Algebra, Spring 2005' playlist by MIT OpenCourseWare, covering geometry of linear equations, elimination, matrix multiplication and inverse, subspaces, basis, dimension, orthogonality, projections, determinants, and eigenvalues. These topics provide the necessary background to understand tangent spaces and pairwise distances in high-dimensional latent spaces.
+
+*Move on when you can:* Explain what a tangent space is at a point on a manifold and compute pairwise distances between vectors in a high-dimensional space.
+
+### Stage 2 · Probability Theory and Statistical Modeling *(foundational)*
+Modeling latent distributions and training diffusion models require understanding probability distributions, sampling, and statistical inference concepts, which underpin the latent sampler and geometry-preserving losses.
+
+▶ **Course:** [Stanford CS109 Introduction to Probability for Computer Scientists I 2022 I Chris Piech](https://www.youtube.com/playlist?list=PLoROMvodv4rOpr_A7B9SriE_iZmkanvUg) — Stanford Online · 29 videos · 35.4h across 29 episodes
+
+*What to watch:* Complete the 'Stanford CS109 Introduction to Probability for Computer Scientists I 2022' playlist by Stanford Online, focusing especially on lectures 1 through 16 that cover counting, probability axioms, conditional probability, random variables, expectation, variance, and the normal distribution. This will build a strong foundation in probability theory relevant to diffusion modeling and latent space sampling.
+
+*Move on when you can:* Derive and explain the properties of Gaussian distributions and perform sampling from simple probability distributions.
+
+### Stage 3 · Deep Learning Fundamentals *(core)*
+The approach builds on neural networks including convolutional architectures and optimization via gradient descent, essential to understand GANs, diffusion models, and inversion methods used in the paper.
+
+▶ **Course:** [Neural Networks and Deep Learning (Course 1 of the Deep Learning Specialization)](https://www.youtube.com/playlist?list=PLkDaE6sCZn6Ec-XTbcX1uRg2_u4xOEky0) — DeepLearningAI · 43 videos · 5.7h across 43 episodes
+
+*What to watch:* Focus on the first 20 lectures of the 'Neural Networks and Deep Learning (Course 1 of the Deep Learning Specialization)' playlist by DeepLearningAI, which cover neural network basics, supervised learning, backpropagation, gradient descent, vectorization, and logistic regression. These fundamentals are crucial before moving to more advanced generative models.
+
+*Move on when you can:* Implement and train a simple feedforward neural network on a classification task using backpropagation.
+
+### Stage 4 · Generative Adversarial Networks (GANs) *(core)*
+The paper uses pre-trained GAN generators and GAN inversion methods, so understanding GAN architectures, training dynamics, and latent space representations is critical.
+
+▶ **Course:** [Stanford CS236: Deep Generative Models I 2023 I Stefano Ermon](https://www.youtube.com/playlist?list=PLoROMvodv4rPOWA-omMM6STXaWW4FvJT8) — Stanford Online · 18 videos · 23.6h across 18 episodes
+
+*What to watch:* Watch the 'Stanford CS236: Deep Generative Models I 2023' playlist by Stanford Online, focusing on lectures 9 and 10 which cover GANs in depth, including their training objectives and architectures. This course also covers related generative models providing broader context.
+
+*Move on when you can:* Explain the GAN training objective and implement a basic GAN to generate simple images.
+
+### Stage 5 · Diffusion Models for Generative Modeling *(advanced)*
+The latent sampler in the paper is a 1D diffusion model; understanding diffusion probabilistic models and their training and sampling procedures is necessary to grasp this component.
+
+▶ **Course:** [Stanford CME296: Diffusion & Large Vision Models](https://www.youtube.com/playlist?list=PLoROMvodv4rNdy8rt2rZ4T2xM0OjADnfu) — Stanford Online · 8 videos · 14.0h across 8 episodes
+
+*What to watch:* Complete the 'Stanford CME296: Diffusion & Large Vision Models' playlist by Stanford Online, which thoroughly covers diffusion models including forward and reverse processes, score matching, architectures, training, and evaluation. This course directly addresses the diffusion modeling techniques used in the paper.
+
+*Move on when you can:* Describe the forward and reverse diffusion processes and implement a simple diffusion model for image generation.
+
+_Work through the stages in order. Once the last one lands, the paper — and the two tracks below — should read cleanly._
 
 ## Track 1 — Academic deep-dives (long-form)
 

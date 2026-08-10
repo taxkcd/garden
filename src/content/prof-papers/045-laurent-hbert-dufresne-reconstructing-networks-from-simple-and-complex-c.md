@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-laurent-hebert-dufresne"
-source_hash: "4f3420bbd857ea89efc7f1bb7836ddb44b9f121f944d37faba08e2960d44842f"
+source_hash: "be6568a835e74269bfdc61c658d211ae50da1a09bd56454d3d8614e340050a77"
 sequence: 45
 generator: "outreach-garden: managed"
 ---
@@ -51,6 +51,72 @@ This paper develops a new nonparametric Bayesian method to reconstruct both the 
 - [Resolved homepage](https://www.uvm.edu/cems/cs/profiles/laurent-hebert-dufresne)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_Everything the paper assumes you already know, in the order you should learn it. Some stages have no visible connection to the paper's title — that is the point: this is the background the paper never explains._
+
+This playlist provides foundational and core background knowledge necessary to understand the paper 'Reconstructing networks from simple and complex contagions'. It covers essential graph theory concepts, probability and stochastic processes, Bayesian inference and nonparametric methods, Markov Chain Monte Carlo sampling, and epidemic contagion models on networks. The resources are arranged in a logical order to build up the reader's understanding before engaging with the paper's advanced network reconstruction techniques.
+
+**The paper assumes:** graph theory, probability theory, Bayesian inference, Markov Chain Monte Carlo methods, epidemic contagion models, network science, statistical network reconstruction
+**Time to work through:** roughly 70-80 hours if you watch everything, about 40-45 hours if you follow the skip guidance
+**Already in this field?** Skip stages 1-3 if you have a solid background in probability, graph theory, and Bayesian statistics; focus on stages 4-6 if you already understand epidemic models and network reconstruction techniques.
+
+### Stage 1 · Graph Theory Fundamentals *(foundational)*
+This paper models networks as graphs and uses concepts like adjacency matrices, node degree, and k-core decomposition; understanding these is essential to grasp network structure and contagion spreading.
+
+▶ **Course:** [Stanford CS224W: Machine Learning with Graphs](https://www.youtube.com/playlist?list=PLoROMvodv4rPLKxIpqhjhPgdQy7imNkDn) — Stanford Online · 60 videos · 22.4h across 60 episodes
+
+*What to watch:* Focus on the first 3 lectures of the Stanford CS224W playlist: 'Lecture 1.1 - Why Graphs', 'Lecture 1.2 - Applications of Graph ML', and 'Lecture 1.3 - Choice of Graph Representation​'. These cover graph basics, representations, and key concepts like adjacency matrices and node properties relevant to the paper.
+
+*Move on when you can:* Explain what an adjacency matrix is and compute the degree and coreness of nodes in a simple graph.
+
+### Stage 2 · Probability Theory and Stochastic Processes *(foundational)*
+The contagion dynamics and Bayesian inference rely on probability distributions and Markovian assumptions; understanding random variables, conditional probability, and Markov chains is critical.
+
+▶ **Course:** [6.041 Probabilistic Systems Analysis and Applied Probability](https://www.youtube.com/playlist?list=PLUl4u3cNGP61MdtwGTqZA0MreSaDybji8) — MIT OpenCourseWare · 25 videos · 21.1h across 25 episodes
+
+*What to watch:* Watch the MIT OpenCourseWare playlist 6.041 Probabilistic Systems Analysis and Applied Probability, focusing especially on episodes 1-4 (probability models, conditioning, independence) and episodes 16-18 (Markov Chains I-III) to understand Markovian dynamics used in contagion modeling.
+
+*Move on when you can:* Derive the transition probabilities of a simple Markov chain and compute conditional probabilities for infection events.
+
+### Stage 3 · Bayesian Inference and Nonparametric Methods *(core)*
+The method uses Bayesian frameworks with beta priors and nonparametric modeling to infer network structure and contagion parameters; understanding Bayesian updating, priors, posteriors, and nonparametric concepts is necessary.
+
+▶ **Course:** [S22 MATH 347 Bayesian Statistics](https://www.youtube.com/playlist?list=PL_lWxa4iVNt2GBPOVZMVKD4jYl9Q7hs2K) — Jingchen (Monika) Hu · 73 videos · 20.1h across the first 60 episodes
+
+*What to watch:* Focus on the first 10 episodes of the 'S22 MATH 347 Bayesian Statistics' playlist by Jingchen (Monika) Hu, which cover Bayesian inference basics, beta priors, and updating. These provide the foundation for understanding the paper's Bayesian nonparametric approach.
+
+*Move on when you can:* Perform Bayesian updating with beta priors and explain the concept of nonparametric Bayesian inference.
+
+### Stage 4 · Markov Chain Monte Carlo (MCMC) Sampling *(core)*
+The paper employs MCMC algorithms (edge-flip Markov chains) to sample from posterior distributions over networks and contagion parameters; understanding MCMC principles and implementation is essential.
+
+▶ [Markov Chain Monte Carlo (MCMC) : Data Science Concepts](https://www.youtube.com/watch?v=yApmR-c_hKU) — ritvikmath · 5 years ago
+
+*What to watch:* Watch the 'Markov Chain Monte Carlo (MCMC) : Data Science Concepts' video by ritvikmath. It clearly explains the basics of MCMC, combining Markov chains and Monte Carlo sampling, which is critical to grasp the paper's sampling methodology.
+
+*Move on when you can:* Implement a simple Metropolis-Hastings MCMC sampler and explain convergence diagnostics.
+
+### Stage 5 · Epidemic Contagion Models on Networks *(core)*
+The paper builds on susceptible-infected-susceptible (SIS) models and distinguishes simple versus complex contagions; understanding these epidemic models and their network-based formulations is crucial.
+
+▶ **Course:** [ENG340/599 Network Modeling With Tellurium Fall 2020](https://www.youtube.com/playlist?list=PLiEtieOeWbMKy_-ryeK6dD3GzT_YVJCxX) — James Glazier · 16 videos · 47.4h across 16 episodes
+
+*What to watch:* Focus on the first 4 lectures of the 'ENG340/599 Network Modeling With Tellurium Fall 2020' playlist by James Glazier, which cover network modeling basics and epidemiology models including SI, SIS, and SIR. These provide a solid understanding of contagion dynamics on networks.
+
+*Move on when you can:* Simulate a basic SIS model on a network and explain the difference between simple and complex contagion.
+
+### Stage 6 · Network Reconstruction and Inference Techniques *(advanced)*
+The paper extends existing network reconstruction methods from contagion data, which typically assume simple contagions; understanding classical reconstruction approaches and their limitations is necessary to appreciate the paper’s contributions.
+
+▶ [MIT CompBio Lecture 11 - Network inference and analysis (Fall '19)](https://www.youtube.com/watch?v=n9ZFRYdeHIo) — Manolis Kellis · 1:16:12 · 6 years ago
+
+*What to watch:* Watch the 'MIT CompBio Lecture 11 - Network inference and analysis (Fall '19)' by Manolis Kellis. This lecture covers network inference from biological data, including methods relevant to reconstructing networks from contagion time series, providing direct context for the paper's methodology.
+
+*Move on when you can:* Describe a standard method for reconstructing networks from contagion time series assuming simple contagion dynamics.
+
+_Work through the stages in order. Once the last one lands, the paper — and the two tracks below — should read cleanly._
 
 ## Track 1 — Academic deep-dives (long-form)
 

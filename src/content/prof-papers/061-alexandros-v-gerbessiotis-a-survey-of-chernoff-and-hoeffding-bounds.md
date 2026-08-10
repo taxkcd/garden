@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-alexandros-v-gerbessiotis"
-source_hash: "97c36439967bb9eb04b1b968ae9d53d8ae1e475715d1dc914315c2de24b8a8bf"
+source_hash: "bc3c1826078ced4de4cb0eccead546ebc39941033bc2dc4898071f8100e40f33"
 sequence: 61
 generator: "outreach-garden: managed"
 ---
@@ -56,6 +56,63 @@ Research interests: Parallel Model, Parallel Algorithm, Bulk Synchronous Paralle
 - [Resolved homepage](https://researchwith.njit.edu/en/persons/alexandros-gerbessiotis/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_Everything the paper assumes you already know, in the order you should learn it. Some stages have no visible connection to the paper's title — that is the point: this is the background the paper never explains._
+
+This playlist provides a structured foundation in probability theory and related mathematical tools essential for understanding the Chernoff and Hoeffding bounds surveyed in the paper. It should be worked through in the given order, starting from fundamental probability concepts, moving through moment generating functions and inequalities, concentration inequalities, properties of Bernoulli and bounded random variables, and culminating with information theory concepts like Kullback-Leibler divergence. Each stage builds the necessary background to fully grasp the detailed proofs and applications discussed in the paper.
+
+**The paper assumes:** undergraduate probability theory, random variables and distributions, moment generating functions, basic inequalities in probability, concentration inequalities for independent variables
+**Time to work through:** roughly 60-70 hours if you watch all recommended playlist episodes, about 35-40 hours if you follow the skip guidance provided for each stage
+**Already in this field?** Skip stages 1-3 if you have completed an undergraduate probability course covering random variables, expectation, variance, and moment generating functions.
+
+### Stage 1 · Probability Theory Fundamentals *(foundational)*
+Understanding random variables, expectation, and independence is essential to follow the paper's detailed proofs of Chernoff and Hoeffding bounds, which rely on these core probability concepts.
+
+▶ **Course:** [6.041 Probabilistic Systems Analysis and Applied Probability](https://www.youtube.com/playlist?list=PLUl4u3cNGP61MdtwGTqZA0MreSaDybji8) — MIT OpenCourseWare · 25 videos · 21.1h across 25 episodes
+
+*What to watch:* Watch the first 13 episodes of the MIT OpenCourseWare '6.041 Probabilistic Systems Analysis and Applied Probability' playlist, covering probability models, conditioning, independence, counting, and discrete random variables including the Bernoulli process. These episodes provide a solid foundation in the probability concepts directly used in the paper.
+
+*Move on when you can:* Explain the definition of a random variable, compute expectations and variances, and demonstrate the concept of independence between random variables.
+
+### Stage 2 · Moment Generating Functions and Markov's Inequality *(core)*
+Chernoff bounds are derived using moment generating functions and Markov's inequality; understanding these tools is essential to follow the proofs and derivations in the paper.
+
+▶ **Course:** [Moment Generating Functions](https://www.youtube.com/playlist?list=PLdxWrq0zBgPU0DUvONdlNpgndFr0e6qt3) — Christina Knudson (Dr. Knudson) · 8 videos · 0.7h across 8 episodes
+
+*What to watch:* Focus on the first 6 episodes of the 'Moment Generating Functions' playlist by Christina Knudson, which thoroughly explain the definition, properties, and applications of MGFs. Supplement this with the 'IIT JAM Statistics 2027 | Markov & Chebyshev Inequalities' video for a detailed explanation of Markov's inequality and its use in tail bounds.
+
+*Move on when you can:* Derive the moment generating function of a Bernoulli random variable and use Markov's inequality to bound tail probabilities.
+
+### Stage 3 · Concentration Inequalities for Independent Random Variables *(core)*
+The paper surveys Chernoff and Hoeffding bounds, which are specific concentration inequalities for sums of independent random variables; prior knowledge of simpler concentration inequalities is necessary to appreciate the improvements and generalizations.
+
+▶ **Course:** [EE230 - Probability and Random Variables](https://www.youtube.com/playlist?list=PLuiPz6iU5SQ8ra5kjxx770vk_famaeuvz) — METUOpenCourseWare · 40 videos · 28.5h across 40 episodes
+
+*What to watch:* Watch the first 10 lectures of the 'EE230 - Probability and Random Variables' playlist by METUOpenCourseWare, which cover probability spaces, independence, expectation, variance, and introduce Markov and Chebyshev inequalities. These provide the necessary background to understand the limitations that Chernoff and Hoeffding bounds improve upon.
+
+*Move on when you can:* State and prove basic concentration inequalities such as Markov's and Chebyshev's inequalities and explain their limitations.
+
+### Stage 4 · Bernoulli and Bounded Random Variables *(core)*
+Chernoff bounds apply primarily to sums of independent Bernoulli random variables, and Hoeffding bounds extend to bounded variables; understanding these classes of variables and their properties is critical to grasp the paper's scope.
+
+▶ **Course:** [Introduction to Probability Theory and Stochastic Processes](https://www.youtube.com/playlist?list=PLp6ek2hDcoNBtK-hVSSPlbBzfxXwWON4x) — NPTEL IIT Delhi · 93 videos · 18.7h across the first 60 episodes
+
+*What to watch:* Watch the first 22 episodes of the NPTEL IIT Delhi 'Introduction to Probability Theory and Stochastic Processes' playlist, which cover random variables, their distributions, expectation, variance, and common discrete distributions including Bernoulli and bounded variables. This playlist provides a comprehensive understanding of the variable types central to the paper.
+
+*Move on when you can:* Model a sum of independent Bernoulli trials and explain the concept of bounded random variables with examples.
+
+### Stage 5 · Kullback-Leibler Divergence and Information Theory Basics *(advanced)*
+The paper uses the Kullback-Leibler divergence in expressing Chernoff bounds explicitly; familiarity with this divergence and its properties is needed to understand the tightness and form of the bounds.
+
+▶ **Course:** [Information Theory](https://www.youtube.com/playlist?list=PLgMDNELGJ1CYS-8dlMGPIaowVfeda4nUj) — NPTEL - Indian Institute of Science, Bengaluru · 68 videos · 21.9h across the first 60 episodes
+
+*What to watch:* Focus on the first 20 episodes of the NPTEL - Indian Institute of Science, Bengaluru 'Information Theory' playlist, which cover the basics of information, entropy, and culminate in detailed explanations of Kullback-Leibler divergence and its properties. This will provide the theoretical foundation to understand the divergence terms in the Chernoff bounds.
+
+*Move on when you can:* Define Kullback-Leibler divergence between two Bernoulli distributions and compute it for given parameters.
+
+_Work through the stages in order. Once the last one lands, the paper — and the two tracks below — should read cleanly._
 
 ## Track 1 — Academic deep-dives (long-form)
 

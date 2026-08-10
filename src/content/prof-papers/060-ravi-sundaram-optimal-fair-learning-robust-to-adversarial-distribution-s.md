@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-ravi-sundaram"
-source_hash: "31babf411226302a93c7ec9854fdf01765d3ae98616a0a2faefee46979ff3dc3"
+source_hash: "bed3bb05d0faf04288ca793b6a2aa5a585dee23a13a6c45a1319aef05508c334"
 sequence: 60
 generator: "outreach-garden: managed"
 ---
@@ -49,6 +49,63 @@ This paper studies how to design fair machine learning classifiers that remain a
 - [Faculty/profile page](http://www.ccs.neu.edu/home/koods)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_Everything the paper assumes you already know, in the order you should learn it. Some stages have no visible connection to the paper's title — that is the point: this is the background the paper never explains._
+
+This playlist provides foundational and core background knowledge necessary to understand the paper on robust fair learning under adversarial distribution shifts. It covers probability theory basics, statistical learning theory with a focus on binary classification and Bayes optimal classifiers, and fairness definitions in machine learning. The resources are carefully selected university-level lecture series and expert videos to build a solid theoretical understanding before tackling the paper.
+
+**The paper assumes:** probability theory, statistical learning theory, binary classification, group fairness definitions in machine learning, adversarial robustness concepts, computational complexity theory, algorithm design for fair classifiers
+**Time to work through:** roughly 20-25 hours if you watch all recommended parts, about 10-12 hours if you follow the skip guidance
+**Already in this field?** Skip stages 1-3 if you have a solid background in probability, machine learning fundamentals, and fairness in ML; focus on stages 4-6 to understand the robustness and computational complexity aspects.
+
+### Stage 1 · Probability Theory and Statistics *(foundational)*
+The paper relies on concepts like probability distributions, total variation distance, and statistical expectations to model data shifts and adversarial noise.
+
+▶ **Course:** [Statistics And Probability 2.0](https://www.youtube.com/playlist?list=PLU6SqdYcYsfJPF-4HphQQ8OceDtqhlSW8) — Dr.Gajendra Purohit · 67 videos · 22.9h across the first 60 episodes
+
+*What to watch:* Watch the first 24 episodes of the "Statistics And Probability 2.0" playlist by Dr.Gajendra Purohit, covering sample space, probability, conditional probability, random variables, expectation, variance, and key distributions like binomial, Poisson, and normal. These episodes provide a comprehensive foundation in probability theory relevant to understanding distribution shifts and total variation distance.
+
+*Move on when you can:* Explain total variation distance between two probability distributions and compute it for simple discrete distributions.
+
+### Stage 2 · Statistical Learning Theory and Binary Classification *(core)*
+Understanding binary classification, Bayes optimal classifiers, and accuracy metrics is essential to grasp the paper’s focus on fair classifiers and their performance under distribution shifts.
+
+▶ **Course:** [Bayes classification - Machine Learning](https://www.youtube.com/playlist?list=PL4gu8xQu0_5IdcQr6VJusAjZ_iTgYWKXN) — Mahesh Huddar · 33 videos · 4.9h across 33 episodes
+
+*What to watch:* Focus on the "Bayes classification - Machine Learning" playlist by Mahesh Huddar, especially the videos titled "Bayes Optimal Classifier Problem Solved Step by Step Machine Learning by Vidya Mahesh Huddar" and related examples explaining the Bayes optimal classifier concept and its optimality in binary classification.
+
+*Move on when you can:* Derive the Bayes optimal classifier for a binary classification problem and explain its optimality in terms of expected accuracy.
+
+### Stage 3 · Fairness in Machine Learning *(core)*
+The paper studies fairness constraints like Demographic Parity, Equal Opportunity, and Predictive Equality, which are foundational to formulating fair classification problems.
+
+▶ **Course:** [Stanford CS329H: Machine Learning from Human Preferences I Autumn 2024](https://www.youtube.com/playlist?list=PLoROMvodv4rNm525zyAObP4al43WAifZz) — Stanford Online · 8 videos · 10.3h across 8 episodes
+
+*What to watch:* Watch the "Stanford CS329H: Machine Learning from Human Preferences I Autumn 2024" playlist by Stanford Online, focusing on the introductory lectures and the ethics episode to understand fairness definitions and their implications in machine learning.
+
+*Move on when you can:* Define Demographic Parity, Equal Opportunity, and Predictive Equality and provide examples of classifiers satisfying each.
+
+### Stage 4 · Adversarial Robustness and Distribution Shift *(advanced)*
+The paper’s main contribution is about robustness of fair classifiers under adversarial distribution shifts, requiring understanding of adversarial noise models and robustness metrics like Lipschitz continuity.
+
+▶ **Course:** [Adversarial Approaches in Machine Learning](https://www.youtube.com/playlist?list=PLgKuh-lKre10nDWIOpTW_G0g8HLWuLt7U) — Simons Institute for the Theory of Computing · 21 videos · 18.2h across 21 episodes
+
+*What to watch:* Watch the Simons Institute for the Theory of Computing's "Adversarial Approaches in Machine Learning" playlist, focusing on the first 10 episodes that cover min-max optimization, adversarial robustness, and distributional robustness concepts relevant to adversarial distribution shifts.
+
+*Move on when you can:* Explain adversarial distribution shift and demonstrate how a classifier’s accuracy can change under small perturbations of the data distribution.
+
+### Stage 5 · Computational Complexity and Algorithmic Hardness *(advanced)*
+The paper contrasts NP-completeness of deterministic fair classifier computation with polynomial-time algorithms for randomized classifiers, requiring knowledge of complexity classes and reductions.
+
+▶ **Course:** [MIT 18.404J Theory of Computation, Fall 2020](https://www.youtube.com/playlist?list=PLUl4u3cNGP60_JNv2MmK3wkOt9syvfQWY) — MIT OpenCourseWare · 25 videos · 32.3h across 25 episodes
+
+*What to watch:* Watch the "MIT 18.404J Theory of Computation, Fall 2020" playlist by MIT OpenCourseWare, focusing on lectures 14 (P and NP, SAT, Poly-Time Reducibility), 15 (NP-Completeness), and 16 (Cook-Levin Theorem) to understand NP-completeness and reductions.
+
+*Move on when you can:* Explain NP-completeness and provide an example of a reduction proving a problem is NP-complete.
+
+_Work through the stages in order. Once the last one lands, the paper — and the two tracks below — should read cleanly._
 
 ## Track 1 — Academic deep-dives (long-form)
 

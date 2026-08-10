@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-www-anniehliang-com"
-source_hash: "246afb8c31d144bbf198572d837f31dd8fd31c8c5e4329eda827a403a3aa6ac7"
+source_hash: "9a9d8e3426f86c2d8530e62a4f0ff36fe71acfd4b12bddeca97f91a7fb0900ff"
 sequence: 42
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,63 @@ Research interests: economic and social implications of AI systems, the use of m
 - [Resolved homepage](https://anniehliang.com)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_Everything the paper assumes you already know, in the order you should learn it. Some stages have no visible connection to the paper's title — that is the point: this is the background the paper never explains._
+
+This playlist provides foundational and advanced knowledge necessary to understand the paper on delegating decisions to an AI with unknown alignment. It covers probability theory and statistics to model uncertainty, decision theory under ambiguity to analyze tradeoffs, Bayesian inference for reasoning about unknown AI objectives, game theory for economic delegation models, and information design for controlling AI input informativeness. Work through these stages in order to build a solid conceptual and technical base before reading the paper.
+
+**The paper assumes:** probability theory, decision theory under uncertainty, Bayesian inference, game theory, information design, and economic models of delegation
+**Time to work through:** roughly 60-70 hours if you watch all recommended content, about 30-35 hours if you follow the skip guidance for each playlist.
+**Already in this field?** Skip stages 1-3 if you have a solid background in probability, decision theory, and game theory; focus on stages 4-6 for the economic and information design aspects.
+
+### Stage 1 · Probability Theory and Statistics *(foundational)*
+The paper models uncertainty about AI alignment and treatment outcomes using probabilistic frameworks and conditional success probabilities, which require a solid understanding of probability distributions and statistical inference.
+
+▶ **Course:** [Stanford CS109 Introduction to Probability for Computer Scientists I 2022 I Chris Piech](https://www.youtube.com/playlist?list=PLoROMvodv4rOpr_A7B9SriE_iZmkanvUg) — Stanford Online · 29 videos · 35.4h across 29 episodes
+
+*What to watch:* Watch the Stanford CS109 playlist episodes 1 through 19 to cover fundamentals of probability, conditional probability, Bayes' theorem, random variables, distributions, and inference. Skip later episodes on machine learning models as they are less relevant here.
+
+*Move on when you can:* Calculate conditional probabilities and explain Bayes’ theorem with examples involving binary outcomes.
+
+### Stage 2 · Decision Theory under Uncertainty *(core)*
+The designer’s delegation problem involves making decisions under ambiguity about AI objectives and outcomes, requiring knowledge of expected utility, worst-case analysis, and tradeoffs between risk and reward.
+
+▶ **Course:** [Decision Analysis](https://www.youtube.com/playlist?list=PLD3fYc0bAjC-FbzlruUEYIO-El4PjDVCv) — Joshua Emmanuel · 19 videos · 1.8h across 19 episodes
+
+*What to watch:* Focus on the 'Decision Analysis' playlist by Joshua Emmanuel, especially episodes 1 through 6, which cover maximin, maximax, minimax regret, expected value, and decision trees—key concepts for understanding risk-reward tradeoffs in delegation.
+
+*Move on when you can:* Formulate and solve a simple decision problem involving ambiguous probabilities and explain maximin and expected utility criteria.
+
+### Stage 3 · Bayesian Inference and Ambiguity Modeling *(core)*
+The paper assumes ambiguity sets over conditional success probabilities and uses Bayesian reasoning about unknown AI alignment, so understanding Bayesian updating and ambiguity sets is essential.
+
+▶ **Course:** [SHOC603: Bayesian Inference](https://www.youtube.com/playlist?list=PL1KQspYAzJMHdMYZpPYgCJbDRpGGi4WBp) — Statistica Hub · 9 videos · 6.8h across 9 episodes
+
+*What to watch:* Watch the 'SHOC603: Bayesian Inference' playlist by Statistica Hub, focusing on lectures 1 through 8 to understand Bayesian framework, Bayes' rule for events and random variables, and tackling problems with Bayesian inference.
+
+*Move on when you can:* Perform Bayesian updating with ambiguous priors and explain the concept of ambiguity sets in probabilistic models.
+
+### Stage 4 · Game Theory and Economic Models of Delegation *(advanced)*
+The delegation framework builds on economic game theory concepts where a principal delegates decisions to an agent (AI) with potentially misaligned incentives, requiring understanding of principal-agent models and strategic interaction.
+
+▶ **Course:** [Game Theory 101 Full Course](https://www.youtube.com/playlist?list=PLKI1h_nAkaQoDzI4xDIXzx6U2ergFmedo) — William Spaniel · 86 videos · 8.2h across the first 60 episodes
+
+*What to watch:* Watch the 'Game Theory 101 Full Course' playlist by William Spaniel, focusing on episodes 1 through 24 to cover Nash equilibrium, strategic reasoning, subgame perfection, repeated games, and asymmetric information, which are foundational for understanding delegation and incentive alignment.
+
+*Move on when you can:* Explain the principal-agent problem and solve a simple delegation game with asymmetric information.
+
+### Stage 5 · Information Design and Mechanism Design *(advanced)*
+The paper extends information design theory by controlling the informativeness of AI inputs and treatment quotas, so familiarity with Bayesian persuasion and mechanism design is necessary to understand the input restrictions and tradeoffs.
+
+▶ **Course:** [July 2022 - Introduction to Game Theory and Mechanism Design](https://www.youtube.com/playlist?list=PLOzRYVm0a65dbzLZE-Y4Uh2QhVA7TBLXN) — NPTEL IIT Bombay · 63 videos · 19.5h across the first 60 episodes
+
+*What to watch:* Watch the 'July 2022 - Introduction to Game Theory and Mechanism Design' playlist by NPTEL IIT Bombay, focusing on modules 1 and 2 (Introduction to Game Theory and Mechanism Design) and modules on Bayesian persuasion and equilibrium concepts relevant to information design.
+
+*Move on when you can:* Describe Bayesian persuasion and design an information structure to influence agent behavior in a simple setting.
+
+_Work through the stages in order. Once the last one lands, the paper — and the two tracks below — should read cleanly._
 
 ## Track 1 — Academic deep-dives (long-form)
 

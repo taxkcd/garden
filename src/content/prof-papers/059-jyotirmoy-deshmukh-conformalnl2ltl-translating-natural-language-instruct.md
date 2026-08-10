@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-jyotirmoy-deshmukh"
-source_hash: "a5aba74111e579474b6ac4c3cd8e7dff1636d036e586ec3f241769816b34ee46"
+source_hash: "68b2f4bd84465782f6266670c56ca8a8da2d8f900413b81c43de6d5d173dfb1d"
 sequence: 59
 generator: "outreach-garden: managed"
 ---
@@ -51,6 +51,63 @@ Research interests: application of formal methods to reason about cyber-physical
 - [Professor website](http://www-bcf.usc.edu/~jdeshmuk/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_Everything the paper assumes you already know, in the order you should learn it. Some stages have no visible connection to the paper's title — that is the point: this is the background the paper never explains._
+
+This playlist provides foundational and core knowledge necessary to understand the ConformalNL2LTL paper. It covers formal logic and automata theory to grasp LTL syntax and semantics, linear temporal logic specifically for robot task specification, natural language processing fundamentals to understand the translation from natural language to logic, large language models and question-answering systems to comprehend the collaborative LLM approach, and conformal prediction theory for uncertainty quantification and correctness guarantees. Work through these stages in order to build a solid background before reading the paper.
+
+**The paper assumes:** formal logic and automata theory, linear temporal logic (LTL), natural language processing fundamentals, large language models (LLMs), conformal prediction theory, robot task specification and planning
+**Time to work through:** roughly 70-80 hours if you watch all recommended parts, about 40-50 hours if you follow the skip guidance
+**Already in this field?** Skip stages 1-3 if you already have a solid background in formal logic, temporal logic, and natural language processing; focus on stages 4-6 for machine learning and conformal prediction aspects.
+
+### Stage 1 · Formal Logic and Automata Theory *(foundational)*
+Understanding Linear Temporal Logic (LTL) formulas and their semantics requires a solid grasp of propositional and temporal logic, as well as automata theory concepts used to represent and verify temporal properties.
+
+▶ **Course:** [Theory of Automata | TOC](https://www.youtube.com/playlist?list=PLWOYfELdRyrBqrlohEwsBOgDfy0FTHlGz) — Virtual Institute of Computer Science (VICS) · 65 videos · 16.3h across the first 60 episodes
+
+*What to watch:* Watch the first 24 episodes of the 'Theory of Automata | TOC' playlist by Virtual Institute of Computer Science (VICS), covering foundational automata theory concepts including finite automata, deterministic and nondeterministic automata, transition graphs, and Kleene's theorem proofs, which are essential for understanding LTL automata.
+
+*Move on when you can:* Explain the syntax and semantics of LTL and construct a Büchi automaton for a given LTL formula.
+
+### Stage 2 · Linear Temporal Logic (LTL) for Robot Task Specification *(core)*
+The paper translates natural language instructions into LTL formulas to specify robot tasks; understanding LTL operators, formula construction, and their use in specifying temporal behaviors is essential.
+
+▶ [Introduction to LTL. Part 1: Basic Intuition](https://www.youtube.com/watch?v=a9fo3dUly8A) — Andrei Popescu · 5 years ago
+
+*What to watch:* Focus on the single video 'Introduction to LTL. Part 1: Basic Intuition' by Andrei Popescu to gain a concise and clear introduction to LTL syntax and semantics, which is directly relevant to how the paper formulates robot task specifications.
+
+*Move on when you can:* Write LTL formulas expressing common robot task specifications such as sequencing, safety, and liveness properties.
+
+### Stage 3 · Natural Language Processing Fundamentals *(core)*
+The translation starts from natural language instructions; knowledge of syntax, semantics, parsing, and semantic representation in NLP is necessary to understand how instructions can be mapped to formal logic.
+
+▶ **Course:** [Stanford CS224N Natural Language Processing with Deep Learning I Spring 2024 I Professor Christopher Manning](https://www.youtube.com/playlist?list=PLoROMvodv4rOaMFbaqxPDoLWjDaRAdP9D) — Stanford Online · 23 videos · 27.5h across 23 episodes
+
+*What to watch:* Watch the first 10 lectures of the 'Stanford CS224N Natural Language Processing with Deep Learning I Spring 2024' playlist by Stanford Online, covering word vectors, language models, backpropagation, dependency parsing, and recurrent neural networks to build a strong foundation in NLP relevant to parsing and representing instructions.
+
+*Move on when you can:* Demonstrate how to parse and semantically represent simple natural language instructions relevant to robot tasks.
+
+### Stage 4 · Large Language Models and Question-Answering Systems *(advanced)*
+The method uses two large language models collaboratively to perform question-answering tasks for translation; understanding LLM architectures, capabilities, and limitations is crucial to grasp the approach.
+
+▶ **Course:** [Stanford CME295: Transformers and Large Language Models I Autumn 2025](https://www.youtube.com/playlist?list=PLoROMvodv4rOCXd21gf0CF4xr35yINeOy) — Stanford Online · 9 videos · 16.2h across 9 episodes
+
+*What to watch:* Watch all 9 lectures of the 'Stanford CME295: Transformers and Large Language Models I Autumn 2025' playlist by Stanford Online to understand transformer architecture, LLM training, tuning, reasoning, and evaluation, which underpin the collaborative LLM question-answering approach in the paper.
+
+*Move on when you can:* Describe the architecture of transformer-based LLMs and implement a simple QA pipeline using a pretrained model.
+
+### Stage 5 · Conformal Prediction Theory and Uncertainty Quantification *(advanced)*
+Conformal prediction is used to provide user-specified correctness guarantees and quantify uncertainty in the translation outputs; understanding its statistical foundations and application to machine learning is key.
+
+▶ **Course:** [Stanford CS229 Machine Learning | Spring 2026](https://www.youtube.com/playlist?list=PLaqpC4kq8Gpw) — Stanford Online · 17 videos · 20.6h across 17 episodes
+
+*What to watch:* Watch the first 10 lectures of the 'Stanford CS229 Machine Learning | Spring 2026' playlist by Stanford Online, focusing on supervised learning setup, weighted least squares, and learning theory topics that provide the statistical foundation necessary to understand conformal prediction and uncertainty quantification.
+
+*Move on when you can:* Explain the conformal prediction framework and apply it to quantify uncertainty in a classification or regression task.
+
+_Work through the stages in order. Once the last one lands, the paper — and the two tracks below — should read cleanly._
 
 ## Track 1 — Academic deep-dives (long-form)
 

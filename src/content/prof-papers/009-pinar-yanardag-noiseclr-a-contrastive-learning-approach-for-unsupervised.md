@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-pinar-yanardag-html"
-source_hash: "0330c18af9c0b6b00b652be074879fd6cb846045e1026d5ea531d0698cff3b1d"
+source_hash: "edd13950a1d165458d79d2be043623da547675ac69949d451f6d0e95e5cc995f"
 sequence: 9
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,63 @@ Research interests: graph kernels, submodular optimization, human-AI collaborati
 - [Google Scholar](https://scholar.google.com/citations?user=qzczdd8AAAAJ&hl=en)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_Everything the paper assumes you already know, in the order you should learn it. Some stages have no visible connection to the paper's title — that is the point: this is the background the paper never explains._
+
+This playlist provides foundational and advanced background knowledge necessary to understand the NoiseCLR paper on unsupervised discovery of interpretable directions in diffusion models. It covers essential mathematics, probability, machine learning fundamentals, generative models, and contrastive learning. The playlist is designed to be worked through in order, starting from linear algebra and calculus, progressing through probability and statistics, core machine learning concepts, and culminating in advanced topics like generative models and contrastive representation learning.
+
+**The paper assumes:** linear algebra, multivariate calculus, probability theory, machine learning fundamentals, deep learning architectures, generative models including GANs and diffusion models, contrastive learning methods, latent space manipulation in generative models
+**Time to work through:** roughly 100-120 hours if you watch everything, about 70-80 hours if you follow the skip guidance
+**Already in this field?** Skip stages 1-3 if you have a solid background in machine learning and deep learning fundamentals; skip stage 4 if you are already familiar with generative models like GANs and diffusion models.
+
+### Stage 1 · Linear Algebra and Multivariate Calculus *(foundational)*
+Understanding vector spaces, matrix operations, and gradients is essential for grasping how latent spaces and neural network parameters are manipulated in diffusion models and contrastive learning.
+
+▶ **Course:** [Mathematical Foundations for Machine Learning](https://www.youtube.com/playlist?list=PLgMDNELGJ1CYPJS6m_ygxb4KtHYxh1HjR) — NPTEL - Indian Institute of Science, Bengaluru · 71 videos · 40.3h across the first 60 episodes
+
+*What to watch:* Watch the first 60 episodes of the "Mathematical Foundations for Machine Learning" playlist by NPTEL - Indian Institute of Science, Bengaluru, focusing on lectures covering multivariate functions, gradients, matrix derivatives, and optimization (roughly episodes 50 to 69). These cover the necessary linear algebra and calculus concepts relevant to neural networks and latent space manipulations.
+
+*Move on when you can:* Explain how to compute gradients of a multivariate function and perform matrix-vector multiplication relevant to neural network layers.
+
+### Stage 2 · Probability and Statistics for Machine Learning *(foundational)*
+Diffusion models and contrastive learning rely on probabilistic modeling and statistical measures; understanding distributions, expectations, and divergences is critical for interpreting noise prediction and contrastive objectives.
+
+▶ **Course:** [Stanford CS109 Introduction to Probability for Computer Scientists I 2022 I Chris Piech](https://www.youtube.com/playlist?list=PLoROMvodv4rOpr_A7B9SriE_iZmkanvUg) — Stanford Online · 29 videos · 35.4h across 29 episodes
+
+*What to watch:* Watch the entire "Stanford CS109 Introduction to Probability for Computer Scientists I 2022" playlist by Stanford Online. This course covers fundamental probability concepts including expectation, variance, and KL divergence, which are crucial for understanding the probabilistic foundations of diffusion models and contrastive learning.
+
+*Move on when you can:* Derive and explain the concept of expectation, variance, and KL divergence between probability distributions.
+
+### Stage 3 · Fundamentals of Machine Learning and Deep Learning *(core)*
+The paper builds on neural network training, feature extraction, and optimization techniques; knowledge of supervised and unsupervised learning, backpropagation, and representation learning is required to understand the method's framework.
+
+▶ **Course:** [Neural Networks and Deep Learning (Course 1 of the Deep Learning Specialization)](https://www.youtube.com/playlist?list=PLkDaE6sCZn6Ec-XTbcX1uRg2_u4xOEky0) — DeepLearningAI · 43 videos · 5.7h across 43 episodes
+
+*What to watch:* Focus on the first 20 episodes of the "Neural Networks and Deep Learning (Course 1 of the Deep Learning Specialization)" by DeepLearningAI, which cover neural network basics, supervised learning, gradient descent, and backpropagation. These topics are essential to grasp the training and optimization aspects of the NoiseCLR contrastive learning framework.
+
+*Move on when you can:* Implement a simple neural network and train it using gradient descent on a classification task.
+
+### Stage 4 · Generative Models: GANs and Diffusion Models *(advanced)*
+NoiseCLR operates on latent spaces of large-scale diffusion models and compares to GAN-based methods; understanding how these models generate data and represent latent semantics is necessary to follow the editing and direction discovery process.
+
+▶ **Course:** [Stanford CS236: Deep Generative Models I 2023 I Stefano Ermon](https://www.youtube.com/playlist?list=PLoROMvodv4rPOWA-omMM6STXaWW4FvJT8) — Stanford Online · 18 videos · 23.6h across 18 episodes
+
+*What to watch:* Watch the full "Stanford CS236: Deep Generative Models I 2023" playlist by Stanford Online, focusing especially on lectures covering GANs (lectures 9-10), score-based models, and diffusion models (lectures 13-16). This course provides a comprehensive understanding of generative model architectures and training, crucial for understanding NoiseCLR's application to diffusion models.
+
+*Move on when you can:* Explain the architecture and training procedure of GANs and diffusion models and describe how latent spaces encode semantic information.
+
+### Stage 5 · Contrastive Learning and Representation Learning *(advanced)*
+The core of NoiseCLR is a contrastive learning framework that discovers disentangled semantic directions; understanding contrastive loss, positive/negative sample construction, and feature space alignment is key to grasping the method.
+
+▶ **Course:** [Representation Learning MSc course SS2023 HHU Dusseldorf](https://www.youtube.com/playlist?list=PL3mKiGE4zNJJ83K4c3IBka6eYfe6v71dS) — Nikolas Adaloglou · 21 videos · 16.4h across 21 episodes
+
+*What to watch:* Watch the entire "Representation Learning MSc course SS2023 HHU Dusseldorf" playlist by Nikolas Adaloglou, focusing on lectures 4 and 5 which cover contrastive learning methods such as SimCLR and MoCo in detail. This course thoroughly explains contrastive loss functions and representation learning techniques essential to NoiseCLR.
+
+*Move on when you can:* Derive the contrastive loss function and implement a simple contrastive learning algorithm on unlabeled data.
+
+_Work through the stages in order. Once the last one lands, the paper — and the two tracks below — should read cleanly._
 
 ## Track 1 — Academic deep-dives (long-form)
 

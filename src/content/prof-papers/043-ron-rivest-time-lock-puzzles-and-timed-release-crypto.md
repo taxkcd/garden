@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-rivest"
-source_hash: "0f9461fc571653d747710953afaf9d45631d13258afc852087d8c2c4221d9a1b"
+source_hash: "defbd04adefe3a6413200aeedcec7c32448ef962cefcb5f1d81164b25e878c19"
 sequence: 43
 generator: "outreach-garden: managed"
 ---
@@ -54,6 +54,63 @@ Research interests: cryptography, computer and network security, algorithms, vot
 - [GitHub](https://www.github.com/ron-rivest)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_Everything the paper assumes you already know, in the order you should learn it. Some stages have no visible connection to the paper's title — that is the point: this is the background the paper never explains._
+
+This playlist provides a structured learning path to prepare for understanding the 1996 paper on time-lock puzzles and timed-release cryptography by Rivest, Shamir, and Wagner. It covers foundational number theory concepts essential for modular arithmetic and repeated squaring, core cryptography topics including RSA and secret sharing, computational complexity focusing on sequential versus parallel computation, advanced cryptographic protocol design with threshold security, and the specific context of timed-release cryptography. Work through the stages in order to build the necessary background before reading the paper.
+
+**The paper assumes:** number theory including modular arithmetic and prime factorization, classical cryptography including RSA and secret sharing, computational complexity especially sequential vs parallel computation, and basic cryptographic protocol design
+**Time to work through:** roughly 70-80 hours if you watch all recommended lectures, about 35-40 hours if you follow the skip guidance
+**Already in this field?** Skip stages 1-3 if you already have a solid undergraduate background in number theory and classical cryptography such as RSA and secret sharing schemes.
+
+### Stage 1 · Elementary Number Theory *(foundational)*
+The paper’s core construction relies on modular arithmetic, repeated squaring modulo a composite number, and properties of primes, which are fundamental number theory concepts.
+
+▶ **Course:** [Introduction to number theory (Berkeley Math 115)](https://www.youtube.com/playlist?list=PL8yHsr3EFj53L8sMbzIhhXSAOpuZ1Fov8) — Richard E Borcherds · 53 videos · 26.2h across 53 episodes
+
+*What to watch:* Watch the first 25 lectures of the "Introduction to number theory (Berkeley Math 115)" playlist by Richard E Borcherds, focusing especially on lectures covering divisibility, Euclid's algorithm, primes, modular arithmetic, Fermat's and Euler's theorems, and repeated squaring. These provide the mathematical foundation for understanding the time-lock puzzle construction.
+
+*Move on when you can:* Compute modular exponentiation by repeated squaring and explain why factoring a composite number is hard.
+
+### Stage 2 · Introduction to Cryptography *(core)*
+Understanding RSA encryption, public-key cryptography, and secret sharing is essential because the paper builds on RSA-like assumptions and uses secret-sharing schemes for trusted agents.
+
+▶ **Course:** [Introduction to Cryptography Lectures](https://www.youtube.com/playlist?list=PL3boZvi-wmN6r4HUGUpRSk5uhEcTNfjSS) — Introduction to Cryptography by Christof Paar · 27 videos · 37.6h across 27 episodes
+
+*What to watch:* Focus on the first 15 lectures of the "Introduction to Cryptography Lectures" playlist by Christof Paar, especially lectures on modular arithmetic, RSA cryptosystem, and secret sharing concepts. These lectures explain the cryptographic primitives and RSA algorithm that underpin the paper's constructions.
+
+*Move on when you can:* Explain the RSA algorithm and implement a simple secret sharing scheme.
+
+### Stage 3 · Computational Complexity and Sequential Computation *(core)*
+The paper’s time-lock puzzle depends on the concept of intrinsically sequential computations that resist parallel speedup, requiring knowledge of complexity theory and parallel vs sequential models.
+
+▶ **Course:** [MIT 18.404J Theory of Computation, Fall 2020](https://www.youtube.com/playlist?list=PLUl4u3cNGP60_JNv2MmK3wkOt9syvfQWY) — MIT OpenCourseWare · 25 videos · 32.3h across 25 episodes
+
+*What to watch:* Watch the first 12 lectures of the "MIT 18.404J Theory of Computation, Fall 2020" playlist by MIT OpenCourseWare, focusing on the introduction, Turing machines, time complexity, and the difference between parallel and sequential computation. These lectures clarify the theoretical basis for intrinsically sequential puzzles.
+
+*Move on when you can:* Describe the difference between parallel and sequential computation and give examples of intrinsically sequential problems.
+
+### Stage 4 · Cryptographic Protocol Design and Security Models *(advanced)*
+The paper assumes familiarity with designing secure protocols, threat models, and notions like threshold security and trusted agents, which are critical to understanding the trusted agent scheme.
+
+▶ **Course:** [Cryptography and network security](https://www.youtube.com/playlist?list=PL9FuOtXibFjV77w2eyil4Xzp8eooqsPp8) — Abhishek Sharma · 70 videos · 11.4h across the first 60 episodes
+
+*What to watch:* Watch the first 20 lectures of the "Cryptography and network security" playlist by Abhishek Sharma, focusing on security goals, threat models, secret sharing, and protocol design. These lectures provide practical understanding of threshold cryptography and security assumptions relevant to the trusted agent scheme in the paper.
+
+*Move on when you can:* Design a simple cryptographic protocol with threshold secret sharing and analyze its security assumptions.
+
+### Stage 5 · Timed-Release Cryptography and Time-Lock Concepts *(advanced)*
+Before this paper, timed-release cryptography concepts and early time-lock puzzle ideas provide the immediate context and motivation for the constructions and analyses presented.
+
+▶ **Course:** [Cryptography Lecture Series](https://www.youtube.com/playlist?list=PL2jrku-ebl3H50FiEPr4erSJiJHURM9BX) — Tyler Larson · 24 videos · 32.7h across 24 episodes
+
+*What to watch:* Watch the first 14 lectures of the "Cryptography Lecture Series" playlist by Tyler Larson, especially those covering modular arithmetic, RSA, and cryptographic primitives. These lectures introduce timed-release encryption concepts and foundational cryptographic tools that set the stage for understanding time-lock puzzles.
+
+*Move on when you can:* Explain the concept of timed-release encryption and describe existing time-lock puzzle approaches prior to 1996.
+
+_Work through the stages in order. Once the last one lands, the paper — and the two tracks below — should read cleanly._
 
 ## Track 1 — Academic deep-dives (long-form)
 

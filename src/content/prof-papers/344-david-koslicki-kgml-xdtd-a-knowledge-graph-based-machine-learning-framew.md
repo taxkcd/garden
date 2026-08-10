@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-david-koslicki"
-source_hash: "6ee07c0f2d04def6ea484cb4632d55233a55cb066059c7b1608d8d9060f30401"
+source_hash: "2426570af6bcd092a4ba4ca46a0b8c9d6570fe4468d4f3f9a851cc87dd97b732"
 sequence: 344
 generator: "outreach-garden: managed"
 ---

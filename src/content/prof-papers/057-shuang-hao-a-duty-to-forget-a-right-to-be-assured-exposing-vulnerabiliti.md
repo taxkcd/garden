@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-shuang-hao"
-source_hash: "5af016acf7d589489b2af0440c99bb7bbe897164c5a103c88907d410f6af7c14"
+source_hash: "867fef6986528bbaf96ba38c8e92ce12c3edcf621633b6d8263111b4333bea33"
 sequence: 57
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,63 @@ Research interests: security and privacy, particularly developing data-driven an
 - [Google Scholar](https://scholar.google.com/citations?user=GYkFAcQAAAAJ&hl=en)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_Everything the paper assumes you already know, in the order you should learn it. Some stages have no visible connection to the paper's title — that is the point: this is the background the paper never explains._
+
+This playlist provides foundational knowledge necessary to understand the research paper on vulnerabilities in machine unlearning services. It covers essential mathematical concepts, core machine learning principles, deep learning architectures relevant to image classification, adversarial machine learning techniques focusing on black-box attacks, and the privacy regulations motivating machine unlearning. Work through the stages in order to build a solid base before engaging with the paper's novel contributions.
+
+**The paper assumes:** linear algebra, probability theory, supervised machine learning, deep learning architectures (CNNs), adversarial machine learning, privacy regulations in ML, and machine unlearning techniques
+**Time to work through:** roughly 100-110 hours if you watch everything, about 70 hours if you follow the skip guidance
+**Already in this field?** Skip stages 1-3 if you have a solid background in machine learning fundamentals and deep learning architectures; focus on stages 4-6 for security and unlearning specifics.
+
+### Stage 1 · Linear Algebra and Probability Basics *(foundational)*
+Understanding vector spaces, matrix operations, and probability distributions is essential for grasping how machine learning models represent data and make predictions, which underpins all subsequent concepts in the paper.
+
+▶ **Course:** [MIT 18.06 Linear Algebra, Spring 2005](https://www.youtube.com/playlist?list=PLE7DDD91010BC51F8) — MIT OpenCourseWare · 36 videos · 28.0h across 36 episodes
+
+*What to watch:* Watch the MIT 18.06 Linear Algebra, Spring 2005 playlist by MIT OpenCourseWare, focusing on episodes 1 through 23. These cover the geometry of linear equations, matrix operations, subspaces, eigenvalues, and diagonalization, which are critical for understanding data transformations and model computations.
+
+*Move on when you can:* Explain how matrix multiplication is used to transform input data in a neural network layer and compute probabilities of class membership using Bayes’ theorem.
+
+### Stage 2 · Supervised Machine Learning Fundamentals *(core)*
+The paper builds on concepts like classification tasks, model training, loss functions, and evaluation metrics (e.g., accuracy), which are foundational to understanding how models learn and are assessed.
+
+▶ **Course:** [Stanford CS229 Machine Learning | Spring 2026](https://www.youtube.com/playlist?list=PLaqpC4kq8Gpw) — Stanford Online · 17 videos · 20.6h across 17 episodes
+
+*What to watch:* Watch the Stanford CS229 Machine Learning | Spring 2026 playlist by Stanford Online, focusing on lectures 1 through 12. These cover supervised learning setup, linear models, neural networks, and evaluation metrics, providing a comprehensive introduction to supervised learning relevant to the paper's classification tasks.
+
+*Move on when you can:* Train a simple classifier on labeled data and evaluate its accuracy on a test set.
+
+### Stage 3 · Deep Learning and Convolutional Neural Networks *(core)*
+The paper uses CNN architectures like VGG and ResNet for image classification; understanding CNN layers, feature extraction, and backpropagation is critical to follow the model and unlearning methods discussed.
+
+▶ **Course:** [Stanford CS231N Deep Learning for Computer Vision I 2025](https://www.youtube.com/playlist?list=PLoROMvodv4rOmsNzYBMe0gJY2XS8AQg16) — Stanford Online · 18 videos · 21.2h across 18 episodes
+
+*What to watch:* Watch the Stanford CS231N Deep Learning for Computer Vision I 2025 playlist by Stanford Online, focusing on lectures 1 through 7. These cover introduction, linear classifiers, neural networks, CNN architectures, and backpropagation, which are essential to understand the models and unlearning techniques in the paper.
+
+*Move on when you can:* Describe the role of convolutional and pooling layers in extracting image features and explain how gradients update network weights during training.
+
+### Stage 4 · Adversarial Machine Learning and Black-box Attacks *(advanced)*
+The paper proposes black-box attack strategies (blending and pushing) that manipulate input data to degrade model performance; understanding adversarial examples and black-box threat models is necessary to grasp these attacks.
+
+▶ **Course:** [Adversarial Machine learning](https://www.youtube.com/playlist?list=PLqY9uEMecYPXC4sCrNRJ5uHwmTr3FpTui) — Hugh Medal · 16 videos · 11.9h across 16 episodes
+
+*What to watch:* Watch the Adversarial Machine learning playlist by Hugh Medal, focusing on the lectures about adversarial examples and black-box attacks. This series provides a detailed introduction to adversarial attacks, defenses, and black-box threat models relevant to the paper's attack strategies.
+
+*Move on when you can:* Implement a simple black-box adversarial attack that perturbs input samples to cause misclassification without access to model internals.
+
+### Stage 5 · Privacy Regulations and Machine Unlearning Concepts *(advanced)*
+The motivation for machine unlearning arises from privacy laws like GDPR and CCPA; understanding these regulations and the concept of unlearning (removing data influence from trained models) is essential to contextualize the problem.
+
+▶ **Course:** [Stanford CS229: Machine Learning led by Andrew Ng | Autumn 2018](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU) — Stanford Online · 21 videos · 27.9h across 21 episodes
+
+*What to watch:* Watch the Stanford CS229: Machine Learning led by Andrew Ng | Autumn 2018 playlist by Stanford Online, focusing on lectures 1 through 12. These cover foundational machine learning concepts and include discussions on data splits, model evaluation, and learning theory, which help understand the context of privacy regulations and unlearning.
+
+*Move on when you can:* Explain the right to be forgotten under GDPR and describe how machine unlearning methods aim to comply with such regulations.
+
+_Work through the stages in order. Once the last one lands, the paper — and the two tracks below — should read cleanly._
 
 ## Track 1 — Academic deep-dives (long-form)
 

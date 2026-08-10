@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-mathcancer-org"
-source_hash: "d2a7c681f588c5f0f85c7850fea77caaae4b54a20ebe18921010edf9b3c68c8f"
+source_hash: "ab52b99f1eb607160b411c24bc67062bebed6c3ce71fee4884019e7987c6d48b"
 sequence: 3
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,63 @@ Research interests: data-driven computational systems that can help engineer the
 - [Social profile](https://mastodon.online/@MathCancer)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_Everything the paper assumes you already know, in the order you should learn it. Some stages have no visible connection to the paper's title — that is the point: this is the background the paper never explains._
+
+This playlist provides foundational and core background knowledge necessary to understand the PhysiBoSS-Models paper. It covers essential biology concepts, agent-based modeling, Boolean networks with stochasticity, multiscale biological modeling, scientific software development practices including version control, and Python programming relevant to computational biology. The resources are curated university-level courses and expert lectures, with specific guidance on which parts to focus on for efficient learning.
+
+**The paper assumes:** cell and molecular biology basics, agent-based modeling, Boolean networks, multiscale biological modeling, software version control, Python programming for scientific computing
+**Time to work through:** roughly 60-70 hours if you watch everything, about 30-35 hours if you follow the skip guidance
+**Already in this field?** Skip stages 1-3 if you have a background in computational biology or systems biology; skip stages 4-5 if you are experienced with agent-based modeling platforms and Boolean network simulations.
+
+### Stage 1 · Cell and Molecular Biology Fundamentals *(foundational)*
+Understanding the biological context of cell populations and intracellular signaling is essential to grasp the purpose and structure of multiscale models like those in PhysiBoSS.
+
+▶ **Course:** [Molecular Cell Biology Lecture Series](https://www.youtube.com/playlist?list=PLEr5Mk7NJ1PfjEonN9vqIIl6WXceckKfo) — Molecular Cell Biology Lecture Series · 42 videos · 22.6h across 42 episodes
+
+*What to watch:* Watch the first 24 episodes covering cell chemistry, proteins, genome structure, DNA replication, transcription, translation, cell signaling, and cell cycle control. These episodes provide a comprehensive molecular cell biology foundation relevant to intracellular signaling and cell behavior modeling.
+
+*Move on when you can:* Explain the basic structure and function of cells, including signaling pathways and gene regulatory networks.
+
+### Stage 2 · Introduction to Agent-Based Modeling *(core)*
+PhysiBoSS integrates agent-based modeling to simulate cell populations; without understanding agent-based models, the simulation framework and its assumptions are unclear.
+
+▶ **Course:** [Agent Based Modelling](https://www.youtube.com/playlist?list=PLzv58M2GAfm5V3cbIYOeM4xv-QOLfTVoK) — National Centre for Research Methods (NCRM) · 10 videos · 2.7h across 10 episodes
+
+*What to watch:* Focus on the entire 'Agent Based Modelling' playlist by the National Centre for Research Methods (NCRM), especially the introductory videos explaining agent-based modeling concepts, time in models, and model analysis. This concise 2.7-hour course is directly relevant to designing simple agent-based models.
+
+*Move on when you can:* Design a simple agent-based model simulating interactions between autonomous agents with defined rules.
+
+### Stage 3 · Boolean Networks and Stochastic Modeling *(core)*
+PhysiBoSS uses stochastic Boolean networks to model intracellular signaling; understanding Boolean network dynamics and stochasticity is critical to follow the model construction and simulation.
+
+▶ [CompuCell3D WS 2025: 8.1: Stochastic Boolean Networks with MaBoSS [Pedro dal Castel] August 6, 2025](https://www.youtube.com/watch?v=wC8okEk_aGc) — CompuCell3D · 1:35:51 · Streamed 1 year ago
+
+*What to watch:* Watch the 'CompuCell3D WS 2025: 8.1: Stochastic Boolean Networks with MaBoSS' video for a focused, practical introduction to Boolean network modeling with stochastic updates in a biological context. This 1.5-hour workshop segment directly relates to the paper's modeling approach.
+
+*Move on when you can:* Simulate a Boolean network with stochastic update rules and interpret its state transitions.
+
+### Stage 4 · Multiscale Biological Modeling *(advanced)*
+The paper builds on multiscale modeling that couples intracellular signaling with cell population dynamics; knowledge of multiscale frameworks is necessary to understand the integration challenges and model design.
+
+▶ **Course:** [CompuCell3D Workshop 2025](https://www.youtube.com/playlist?list=PLmj-KAP6Sc2TFwSiY82sGQBUlA0pYAy5I) — CompuCell3D · 50 videos · 57.4h across 50 episodes
+
+*What to watch:* Focus on the first 20 episodes of the 'CompuCell3D Workshop 2025' playlist, which cover introduction, cell behaviors, intracellular networks, parameterization, and visualization. These provide practical insights into building and simulating multiscale biological models relevant to PhysiBoSS-Models.
+
+*Move on when you can:* Describe how models at different biological scales (molecular, cellular, tissue) can be coupled and simulated together.
+
+### Stage 5 · Scientific Software Development and Version Control *(core)*
+PhysiBoSS-Models relies on GitHub for version control, continuous integration, and collaborative development; understanding these tools is essential to appreciate the database infrastructure and reproducibility aspects.
+
+▶ **Course:** [Complete Git and GitHub Tutorial for Beginners by Apna College, etc](https://www.youtube.com/playlist?list=PLMSNxvR49560VlBuhg0YMC-YXndsTAVCN) — flytome · 9 videos · 13.9h across 9 episodes
+
+*What to watch:* Watch the entire 'Complete Git and GitHub Tutorial for Beginners' playlist by Apna College (flytome channel). It covers cloning, committing, branching, and collaboration workflows essential for managing scientific software projects like PhysiBoSS-Models.
+
+*Move on when you can:* Use Git and GitHub to clone a repository, commit changes, and manage branches.
+
+_Work through the stages in order. Once the last one lands, the paper — and the two tracks below — should read cleanly._
 
 ## Track 1 — Academic deep-dives (long-form)
 

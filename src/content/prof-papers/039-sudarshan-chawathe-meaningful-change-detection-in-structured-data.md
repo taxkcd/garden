@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-sudarshan-s-chawathe"
-source_hash: "da92afe7dd10341b1fcd5f4224e9498ab007166651343491da5e1bcb9c4923fa"
+source_hash: "d6c253e9a22f251b52a17ca498b9719ffc36a4b1e3b04521dddc7048fae55c87"
 sequence: 39
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,63 @@ Research interests: diverse topics in data management, especially big data, data
 - [Identity evidence](https://umaine.edu/scis/faculty-and-staff/sudarshan-s-chawathe)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_Everything the paper assumes you already know, in the order you should learn it. Some stages have no visible connection to the paper's title — that is the point: this is the background the paper never explains._
+
+This playlist provides foundational and core knowledge needed to understand the paper 'Meaningful Change Detection in Structured Data'. It covers discrete mathematics and graph theory, data structures focusing on trees, algorithm design and complexity, tree edit distance algorithms, and combinatorial optimization related to bipartite graph matching. Work through these resources in order to build the mathematical and algorithmic background necessary to grasp the paper's problem formulation, heuristic algorithm design, and complexity analysis.
+
+**The paper assumes:** discrete mathematics, graph theory, tree data structures, algorithm design and analysis, combinatorial optimization, edit distance algorithms for trees, bipartite graph matching and edge cover problems
+**Time to work through:** roughly 20-25 hours if you watch all recommended parts, about 12-15 hours if you follow the skip guidance
+**Already in this field?** Skip stages 1-3 if you have a solid background in discrete math, graph theory, and standard tree edit distance algorithms.
+
+### Stage 1 · Discrete Mathematics and Graph Theory *(foundational)*
+The paper models structured data as rooted labeled trees and transforms change detection into a minimum-cost edge cover problem on bipartite graphs, requiring understanding of graphs, trees, and their properties.
+
+▶ **Course:** [Graph Theory (Discrete Math)](https://www.youtube.com/playlist?list=PLROOIV7hGpZgYfHsJDlAAQh1ngyfIIBDP) — Mathispower4u · 47 videos · 3.6h across 47 episodes
+
+*What to watch:* Watch the playlist 'Graph Theory (Discrete Math)' by Mathispower4u, focusing on episodes 1-13 to cover graph definitions, bipartite graphs, trees, and rooted trees. These episodes provide a solid foundation on graph types and properties relevant to the paper's modeling.
+
+*Move on when you can:* Explain the difference between a tree and a general graph, and demonstrate how to represent a rooted labeled tree as a graph structure.
+
+### Stage 2 · Data Structures: Trees and Hierarchical Models *(foundational)*
+The paper operates on hierarchically structured data represented as rooted labeled trees, so understanding tree data structures, traversal methods, and hierarchical modeling is essential.
+
+▶ **Course:** [Data Structures and Algorithms Design](https://www.youtube.com/playlist?list=PLFW6lRTa1g83G4WDJOXocqhy_XdMraBJW) — IIT KANPUR-NPTEL · 40 videos · 38.2h across 40 episodes
+
+*What to watch:* Watch the 'Data Structures and Algorithms Design' playlist by IIT KANPUR-NPTEL, focusing on lectures 22-24 which cover graph data structures, breadth-first search, and complexity/applications of BFS, plus lectures 9-11 for abstract data structures and lists. These parts provide understanding of trees and hierarchical data structures relevant to the paper.
+
+*Move on when you can:* Implement basic tree traversals (preorder, postorder) and explain how hierarchical data can be represented using trees.
+
+### Stage 3 · Algorithm Design and Complexity Analysis *(core)*
+The paper discusses NP-hardness of the problem and develops heuristic algorithms with complexity analysis (e.g., O(n^3) worst case), so understanding algorithm design paradigms and complexity classes is necessary.
+
+▶ **Course:** [MIT 6.006 Introduction to Algorithms, Spring 2020](https://www.youtube.com/playlist?list=PLUl4u3cNGP63EdVPNLG3ToM6LaEUuStEY) — MIT OpenCourseWare · 32 videos · 35.3h across 32 episodes
+
+*What to watch:* Watch the MIT 6.006 Introduction to Algorithms, Spring 2020 playlist by MIT OpenCourseWare, focusing on episodes 1-3 for algorithm basics and asymptotic behavior, and episodes 23-24 for computational complexity and topics in algorithm research. This will build understanding of algorithm analysis and NP-hardness concepts.
+
+*Move on when you can:* Analyze the time complexity of a given algorithm and explain the concept of NP-hardness with examples.
+
+### Stage 4 · Tree Edit Distance and Change Detection Algorithms *(core)*
+The paper extends traditional tree edit distance methods by including move and copy operations, so familiarity with classical insert, delete, and update edit operations on trees is required.
+
+▶ [Tree Edit Distance (and Levenshtein Distance)](https://www.youtube.com/watch?v=6Ur8B35xCj8) — Anna · 5 years ago
+
+*What to watch:* Watch the video 'Tree Edit Distance (and Levenshtein Distance)' by Anna, which explains the classical tree edit distance algorithms and their computation. Focus on understanding how insert, delete, and update operations are used to compute edit distance between trees.
+
+*Move on when you can:* Compute the edit distance between two small labeled trees using insert, delete, and update operations.
+
+### Stage 5 · Combinatorial Optimization and Bipartite Graph Matching *(advanced)*
+The paper transforms the change detection problem into a minimum-cost edge cover problem on bipartite graphs and uses pruning and heuristic methods, requiring knowledge of bipartite matching and edge cover problems.
+
+▶ **Course:** [Combinatorial Optimisation (University of Warwick MA252)](https://www.youtube.com/playlist?list=PLtxJg53s2o0PqIAEphtjIaqXTouaWYR0j) — Jonathan Noel · 26 videos · 15.1h across 26 episodes
+
+*What to watch:* Watch the 'Combinatorial Optimisation (University of Warwick MA252)' playlist by Jonathan Noel, focusing on lectures 4-6 which cover introduction to matching, König's theorem, and the Hungarian algorithm. These lectures provide the necessary background on bipartite matching and minimum-cost edge covers.
+
+*Move on when you can:* Solve a minimum-cost bipartite matching problem using the Hungarian algorithm and explain the concept of edge covers.
+
+_Work through the stages in order. Once the last one lands, the paper — and the two tracks below — should read cleanly._
 
 ## Track 1 — Academic deep-dives (long-form)
 

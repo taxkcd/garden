@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-index-html"
-source_hash: "6a9e5bc5ebd6e56c0bbbd65d3e3d5ac2569641babcb783d5a4bef56b97fad131"
+source_hash: "3a22e32af43c40a22e085ad0683c99ab611296bda2f766e66ecc8ae9a79c693d"
 sequence: 5
 generator: "outreach-garden: managed"
 ---
@@ -48,6 +48,72 @@ This paper studies how multiple large language model (LLM) agents deliberate tog
 - [Faculty/profile page](http://www.cse.unt.edu/~rdantu/index.html)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_Everything the paper assumes you already know, in the order you should learn it. Some stages have no visible connection to the paper's title — that is the point: this is the background the paper never explains._
+
+This playlist provides foundational and core knowledge needed to understand the paper "Hidden Anchors in Multi-Agent LLM Deliberation." It covers essential mathematical concepts like linear algebra and probability, introduces dynamical systems theory relevant to modeling opinion evolution, explains classical multi-agent consensus and opinion dynamics models, and covers the fundamentals of large language models. The final advanced stage on system identification is included to understand parameter estimation techniques used in the paper. Follow the stages in order to build a solid background before reading the paper.
+
+**The paper assumes:** linear algebra, probability theory, dynamical systems, multi-agent consensus models, large language model fundamentals, opinion dynamics, system identification
+**Time to work through:** roughly 70-80 hours if you watch everything, about 40-45 hours if you follow the skip guidance for each playlist.
+**Already in this field?** Skip stages 1-3 if you have a solid background in linear algebra, probability, and dynamical systems; skip stage 4 if you already understand multi-agent consensus and opinion dynamics models.
+
+### Stage 1 · Linear Algebra and Probability Basics *(foundational)*
+The paper models opinions and anchors as vectors and probabilities, requiring understanding of vector spaces, convex hulls, and probability distributions to follow the mathematical formulation and data representation.
+
+▶ **Course:** [MIT 18.06 Linear Algebra, Spring 2005](https://www.youtube.com/playlist?list=PLE7DDD91010BC51F8) — MIT OpenCourseWare · 36 videos · 28.0h across 36 episodes
+
+*What to watch:* Watch the MIT 18.06 Linear Algebra, Spring 2005 playlist by Prof. Gilbert Strang, focusing on episodes 1 through 23 which cover geometry of linear equations, matrix operations, vector spaces, subspaces, independence, basis, dimension, projections, determinants, and eigenvalues. These topics provide the linear algebra foundation needed to understand convex hulls and vector operations in the paper.
+
+*Move on when you can:* Explain what a convex hull is and compute it for a small set of points; calculate basic probabilities and conditional probabilities.
+
+### Stage 2 · Introduction to Dynamical Systems *(foundational)*
+The deliberation process is modeled as a closed-loop dynamical system; understanding state evolution, fixed points, and stability is essential to grasp how opinions evolve over rounds.
+
+▶ **Course:** [Dynamical Systems and Ergodic Theory (ETH Zurich)](https://www.youtube.com/playlist?list=PLgJq62Zrc2XIdpQQ2ryKjTmqGENNPDfAy) — QCE · 25 videos · 37.6h across 25 episodes
+
+*What to watch:* Focus on the first 10 lectures of the ETH Zurich Dynamical Systems and Ergodic Theory playlist, which introduce discrete-time dynamical systems, iteration of functions, fixed points, and stability analysis. These concepts directly relate to the closed-loop opinion dynamics modeled in the paper.
+
+*Move on when you can:* Derive and analyze a simple discrete-time linear dynamical system and determine its fixed points and stability.
+
+### Stage 3 · Multi-Agent Systems and Consensus Models *(core)*
+The paper compares its hidden-anchor model to classical open-loop consensus models like DeGroot and Friedkin–Johnsen; understanding these is critical to appreciate the novelty and limitations of prior approaches.
+
+▶ **Course:** [Introduction to Multi-Agent Systems](https://www.youtube.com/playlist?list=PLFW6lRTa1g81K7Ar6OT5YyK8p3sQ0B5bB) — IIT KANPUR-NPTEL · 56 videos · 31.3h across 56 episodes
+
+*What to watch:* Watch the IIT KANPUR-NPTEL Introduction to Multi-Agent Systems playlist, focusing on the early lectures (1-22) that cover fundamentals of multi-agent systems, consensus algorithms, and opinion convergence. This will provide the background to understand classical consensus models referenced in the paper.
+
+*Move on when you can:* Derive the DeGroot consensus update rule and simulate opinion convergence in a small network of agents.
+
+### Stage 4 · Opinion Dynamics and Social Influence Models *(core)*
+The paper builds on opinion dynamics theory to model how agents' beliefs evolve and influence each other, including latent internal beliefs (anchors); familiarity with these models is necessary to understand the paper’s assumptions and comparisons.
+
+▶ **Course:** [Social Psychology Mini-Lectures](https://www.youtube.com/playlist?list=PL1Veqqo7Ddg7mAlVmVvyD2dQXQlAxas3I) — Professor Q · 88 videos · 4.5h across the first 60 episodes
+
+*What to watch:* Focus on the first 20 episodes of the Social Psychology Mini-Lectures playlist by Professor Q, which cover social influence, conformity, compliance, and opinion formation theories. These lectures provide the social psychology foundation for understanding opinion dynamics and models like Friedkin–Johnsen.
+
+*Move on when you can:* Explain the Friedkin–Johnsen model and simulate opinion updates with stubborn agents.
+
+### Stage 5 · Large Language Models Fundamentals *(core)*
+The agents in the paper are LLMs whose outputs form the opinion trajectories; understanding LLM architectures, output probabilities, and reasoning capabilities is needed to interpret the experimental setup and results.
+
+▶ **Course:** [Stanford CME295: Transformers and Large Language Models I Autumn 2025](https://www.youtube.com/playlist?list=PLoROMvodv4rOCXd21gf0CF4xr35yINeOy) — Stanford Online · 9 videos · 16.2h across 9 episodes
+
+*What to watch:* Watch the Stanford CME295: Transformers and Large Language Models I Autumn 2025 playlist, focusing on lectures 1 through 6 which cover the Transformer architecture, LLM training, tuning, and reasoning. This will give a solid understanding of how LLMs generate outputs and probabilities relevant to the paper's experiments.
+
+*Move on when you can:* Describe the transformer architecture and explain how LLMs generate probability distributions over tokens.
+
+### Stage 6 · System Identification and Parameter Estimation *(advanced)*
+The paper recovers latent hidden anchors by fitting the closed-loop dynamical model to observed opinion trajectories, requiring knowledge of system identification techniques and validation procedures.
+
+▶ **Course:** [System Identification Course](https://www.youtube.com/playlist?list=PLX0qIDrAEpIo) — Real Control Engineering · 18 videos · 2.4h across the first 17 episodes
+
+*What to watch:* Watch the Real Control Engineering System Identification Course playlist, focusing on the first 10 episodes which cover parameter estimation methods including least squares, maximum likelihood, model selection, and validation techniques. These are directly applicable to the paper's system identification approach.
+
+*Move on when you can:* Perform parameter estimation for a simple dynamical system given observed state trajectories and validate the model on held-out data.
+
+_Work through the stages in order. Once the last one lands, the paper — and the two tracks below — should read cleanly._
 
 ## Track 1 — Academic deep-dives (long-form)
 

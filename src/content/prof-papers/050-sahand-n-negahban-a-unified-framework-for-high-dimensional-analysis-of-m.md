@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-sahand-n-negahban"
-source_hash: "141a8a682a3412e2e2f94812b3cb3c0b67c4021ea7fc8f1b9cea9fbd671ee98e"
+source_hash: "4dae5ae0cf75a0df8237256c4689008748c4df527c3d933cc008fc1064c30b55"
 sequence: 50
 generator: "outreach-garden: managed"
 ---
@@ -51,6 +51,72 @@ This paper develops a general theoretical framework to analyze a wide class of h
 - [Identity evidence](https://sahandnegahban.com/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_Everything the paper assumes you already know, in the order you should learn it. Some stages have no visible connection to the paper's title — that is the point: this is the background the paper never explains._
+
+This playlist provides foundational and core background knowledge essential for understanding the theoretical framework and results in the paper on high-dimensional analysis of M-estimators with decomposable regularizers. It covers linear algebra and calculus fundamentals, probability and statistical inference, convex optimization theory, classical statistical estimation including M-estimators, and advanced topics in high-dimensional statistics and structured regularization. The resources are carefully selected university-level lecture series and videos to build the necessary mathematical and statistical intuition before engaging with the paper.
+
+**The paper assumes:** linear algebra, multivariate calculus, probability theory, convex optimization, statistical estimation theory, high-dimensional statistics, regularized regression methods
+**Time to work through:** roughly 80-100 hours if you watch everything, about 50-60 hours if you follow the skip guidance for each playlist
+**Already in this field?** Skip stages 1-3 if you have a solid background in linear algebra, probability, and basic convex optimization; focus on stages 4-6 to prepare specifically for high-dimensional regularized M-estimators.
+
+### Stage 1 · Linear Algebra and Multivariate Calculus *(foundational)*
+The paper relies heavily on concepts like vector spaces, norms, matrix decompositions (e.g., singular value decomposition), and gradients of multivariate functions, which are essential for understanding decomposability and optimization of M-estimators.
+
+▶ **Course:** [MIT 18.06 Linear Algebra, Spring 2005](https://www.youtube.com/playlist?list=PLE7DDD91010BC51F8) — MIT OpenCourseWare · 36 videos · 28.0h across 36 episodes
+
+*What to watch:* Watch the first 24 lectures of the MIT 18.06 Linear Algebra, Spring 2005 playlist by MIT OpenCourseWare. These cover the geometry of linear equations, matrix factorizations, subspaces, projections, orthogonality, determinants, eigenvalues, and diagonalization, which are critical for understanding matrix decompositions and linear algebraic structures used in the paper.
+
+*Move on when you can:* Explain the singular value decomposition of a matrix and compute gradients of multivariate functions involving vectors and matrices.
+
+### Stage 2 · Probability Theory and Statistical Inference *(foundational)*
+Understanding the behavior of estimators under randomness, concentration inequalities, and noise models (e.g., sub-Gaussian noise) is critical for grasping the finite-sample error bounds and probabilistic guarantees in the paper.
+
+▶ **Course:** [6.041 Probabilistic Systems Analysis and Applied Probability](https://www.youtube.com/playlist?list=PLUl4u3cNGP61MdtwGTqZA0MreSaDybji8) — MIT OpenCourseWare · 25 videos · 21.1h across 25 episodes
+
+*What to watch:* Focus on the first 24 lectures of the MIT 6.041 Probabilistic Systems Analysis and Applied Probability playlist by MIT OpenCourseWare. These cover probability models, conditioning, independence, discrete and continuous random variables, covariance, and the law of large numbers, which are foundational for understanding concentration inequalities and statistical inference relevant to the paper.
+
+*Move on when you can:* Derive and apply concentration inequalities such as Hoeffding's or Bernstein's inequality to bound deviations of random variables.
+
+### Stage 3 · Convex Optimization and Duality *(core)*
+The paper formulates M-estimators as convex optimization problems and uses properties like strong convexity and subgradients; understanding convex sets, functions, and optimization algorithms is necessary to follow the theoretical analysis.
+
+▶ **Course:** [Stanford EE364A Convex Optimization I Stephen Boyd I 2023](https://www.youtube.com/playlist?list=PLoROMvodv4rMJqxxviPa4AmDClvcbHi6h) — Stanford Online · 18 videos · 23.7h across 18 episodes
+
+*What to watch:* Watch the entire Stanford EE364A Convex Optimization I Stephen Boyd 2023 playlist by Stanford Online. This series thoroughly covers convex sets, functions, duality, optimality conditions, and strong convexity, which are essential to understand the convex optimization framework and restricted strong convexity conditions used in the paper.
+
+*Move on when you can:* Formulate and solve a convex optimization problem with constraints and explain the concept of strong convexity and subgradients.
+
+### Stage 4 · Classical Statistical Estimation and M-Estimators *(core)*
+M-estimators generalize maximum likelihood estimators and form the basis for the paper’s framework; familiarity with their definition, properties, and examples like least squares and logistic regression is essential.
+
+▶ **Course:** [MIT 18.650 Statistics for Applications, Fall 2016](https://www.youtube.com/playlist?list=PLUl4u3cNGP60uVBMaoNERc6knT_MgPKS0) — MIT OpenCourseWare · 22 videos · 28.0h across 22 episodes
+
+*What to watch:* Watch the full MIT 18.650 Statistics for Applications, Fall 2016 playlist by MIT OpenCourseWare, focusing especially on lectures covering maximum likelihood estimation, parametric inference, regression, and generalized linear models. These provide a solid foundation on M-estimators and their asymptotic properties relevant to the paper.
+
+*Move on when you can:* Derive the M-estimator for linear regression and explain its asymptotic properties.
+
+### Stage 5 · High-Dimensional Statistics and Sparsity *(advanced)*
+The paper addresses challenges when the number of parameters exceeds the sample size, focusing on sparsity and low-dimensional structure; understanding sparsity concepts, Lasso, and related regularization methods is critical.
+
+▶ **Course:** [High-Dimensional Probability](https://www.youtube.com/playlist?list=PLPjEEUWIWhQV7X6dXfrVP3w0KBBLBVJ0j) — Roman Vershynin · 41 videos · 43.7h across 41 episodes
+
+*What to watch:* Watch the first 15 lectures of the High-Dimensional Probability playlist by Roman Vershynin. These lectures cover concentration of measure, random matrices, and foundational high-dimensional probability tools that underpin the analysis of sparsity and restricted eigenvalue conditions in the paper.
+
+*Move on when you can:* Explain the Lasso estimator, its sparsity-inducing property, and derive error bounds under restricted eigenvalue conditions.
+
+### Stage 6 · Regularization Techniques and Structured Sparsity *(advanced)*
+The paper generalizes beyond simple sparsity to group sparsity and low-rank matrix estimation using decomposable regularizers; knowledge of group Lasso, nuclear norm regularization, and structured sparsity is required.
+
+▶ **Course:** [MIT Course 9.520 - Statistical Learning Theory and Applications, Fall 2015](https://www.youtube.com/playlist?list=PLyGKBDfnk-iDj3FBd0Avr_dLbrU8VG73O) — MITCBMM · 26 videos · 36.9h across 26 episodes
+
+*What to watch:* Watch the first 12 lectures of the MIT Course 9.520 - Statistical Learning Theory and Applications, Fall 2015 playlist by MITCBMM. These lectures cover the learning problem, regularization, Tikhonov regularization, logistic regression, sparsity-based regularization, proximal methods, and structured sparsity, which directly relate to decomposable regularizers and structured sparsity in the paper.
+
+*Move on when you can:* Formulate the group Lasso and nuclear norm regularized problems and explain their decomposability properties.
+
+_Work through the stages in order. Once the last one lands, the paper — and the two tracks below — should read cleanly._
 
 ## Track 1 — Academic deep-dives (long-form)
 

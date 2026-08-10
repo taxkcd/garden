@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-www-ristoffer-ch"
-source_hash: "f675edb23971f9ab6305e48726de34a0f4874f2028899a5a704bce4a4e776a12"
+source_hash: "3ba2a57ac74f348d0abc9df918aa148357d157beee0b6e1f34bbb02c01d3d08e"
 sequence: 36
 generator: "outreach-garden: managed"
 ---
@@ -54,6 +54,72 @@ Research interests: robotics, computer vision, and machine learning
 - [GitHub](https://github.com/arpg)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_Everything the paper assumes you already know, in the order you should learn it. Some stages have no visible connection to the paper's title — that is the point: this is the background the paper never explains._
+
+This playlist provides foundational and core knowledge necessary to understand the advanced SLAM techniques surveyed in the paper on underground SLAM systems. It covers linear algebra and probability theory essential for sensor fusion and uncertainty modeling, robotics kinematics for understanding robot motion and coordinate transformations, probabilistic state estimation for filtering noisy sensor data, sensor modalities focusing on LIDAR and sensor data processing, graph-based SLAM optimization techniques for back-end mapping, and multi-robot systems and communication protocols critical for collaborative SLAM in constrained environments. Follow the selected parts of each resource in order to build a solid base before engaging with the paper.
+
+**The paper assumes:** linear algebra, probability theory, optimization, robotics kinematics and dynamics, sensor modalities (especially LIDAR), graph-based SLAM frameworks, multi-robot systems and communication protocols
+**Time to work through:** roughly 60-70 hours if you watch everything, about 35-40 hours if you follow the skip guidance
+**Already in this field?** Skip stages 1-3 if you have a solid background in robotics fundamentals, linear algebra, and probabilistic state estimation; focus on stages 4-6 for SLAM-specific and multi-robot system knowledge.
+
+### Stage 1 · Linear Algebra and Probability Theory *(foundational)*
+Understanding SLAM algorithms requires knowledge of vector spaces, matrices, eigenvalues, and probabilistic reasoning to model sensor noise and uncertainty, which underpin sensor fusion and state estimation.
+
+▶ **Course:** [MIT 18.06 Linear Algebra, Spring 2005](https://www.youtube.com/playlist?list=PLE7DDD91010BC51F8) — MIT OpenCourseWare · 36 videos · 28.0h across 36 episodes
+
+*What to watch:* Watch the first 24 episodes of the "MIT 18.06 Linear Algebra, Spring 2005" playlist by MIT OpenCourseWare, covering geometry of linear equations, matrix operations, subspaces, projections, and eigenvalues. These topics provide the mathematical foundation for covariance matrices and coordinate transformations used in SLAM.
+
+*Move on when you can:* Explain how covariance matrices represent uncertainty and perform matrix multiplication to transform coordinate frames.
+
+### Stage 2 · Robotics Kinematics and Dynamics *(foundational)*
+SLAM depends on modeling robot motion and sensor poses; grasping forward and inverse kinematics, coordinate transformations, and motion models is essential to interpret sensor data and predict robot states.
+
+▶ **Course:** [Robotics 101](https://www.youtube.com/playlist?list=PL1YrgW7ROFofBqPGiWAmTqIwDc5SrzZrA) — Engineering Simplified · 17 videos · 2.7h across 17 episodes
+
+*What to watch:* Focus on the first 24 episodes of the "Robotics 101" playlist by Engineering Simplified, which cover robot kinematics, coordinate transformations, forward and inverse kinematics, and homogeneous transformations. These provide practical understanding of robot pose estimation critical for SLAM front-end processing.
+
+*Move on when you can:* Derive the forward kinematics of a mobile robot and explain coordinate frame transformations between robot and world frames.
+
+### Stage 3 · Probabilistic State Estimation and Filtering *(core)*
+SLAM algorithms fuse noisy sensor data over time using Bayesian filters like the Kalman filter and particle filter; understanding these is critical to grasping front-end sensor fusion and back-end optimization.
+
+▶ **Course:** [ECE497: Advanced Mobile Robotics](https://www.youtube.com/playlist?list=PLBK7yyieyrAYyvfgPyqoPAaG9JRDTfm78) — Rose-Hulman Online · 27 videos · 4.5h across 27 episodes
+
+*What to watch:* Watch the full "ECE497: Advanced Mobile Robotics" playlist by Rose-Hulman Online, especially lectures on probabilistic robotics, Bayes filters, Kalman filters, motion and sensor models. These lectures explain the mathematical and algorithmic basis of state estimation used in SLAM.
+
+*Move on when you can:* Derive the Kalman filter update equations and implement a simple localization filter using noisy sensor inputs.
+
+### Stage 4 · Sensor Modalities and Data Processing in Robotics *(core)*
+The paper emphasizes LIDAR-centric SLAM and multi-modal sensor fusion; understanding how LIDAR, IMU, and cameras work and how their data is processed is necessary to follow system architectures and sensor degradation challenges.
+
+▶ [Getting Started with LIDAR](https://www.youtube.com/watch?v=VhbFbxyOI1k) — DroneBot Workshop · 47:27 · 8 years ago
+
+*What to watch:* Watch the "Getting Started with LIDAR" video by DroneBot Workshop to understand how 3D LIDAR sensors generate point clouds and common preprocessing steps. This concise video provides practical insight into LIDAR data acquisition and processing relevant to the paper's focus.
+
+*Move on when you can:* Explain how a 3D LIDAR sensor generates point clouds and describe common preprocessing steps like filtering and feature extraction.
+
+### Stage 5 · Graph-Based SLAM and Optimization Techniques *(advanced)*
+The paper discusses factor graph optimization and back-end SLAM architectures; knowledge of pose graph SLAM, loop closure detection, and nonlinear optimization methods is essential to understand system design and limitations.
+
+▶ **Course:** [SLAM Course (2012)](https://www.youtube.com/playlist?list=PLgnQpQtFTOGQECnBvZSV61oxTrkPut-nc) — Cyrill Stachniss · 24 videos · 21.1h across 24 episodes
+
+*What to watch:* Watch the full "SLAM Course (2012)" playlist by Cyrill Stachniss, focusing on lectures about pose graph SLAM, least squares optimization, and hierarchical pose graphs. This course covers the mathematical formulation and optimization techniques central to the paper's back-end SLAM discussion.
+
+*Move on when you can:* Formulate a pose graph SLAM problem and perform nonlinear least squares optimization to minimize pose errors.
+
+### Stage 6 · Multi-Robot Systems and Communication Protocols *(advanced)*
+The paper surveys multi-robot SLAM architectures (centralized, decentralized, distributed) and communication constraints in subterranean environments; understanding multi-agent coordination, network topologies, and data sharing protocols is critical.
+
+▶ **Course:** [Mobile Robot Systems Course - Amanda Prorok, University of Cambridge](https://www.youtube.com/playlist?list=PLaTKfS3-bDpDyOwrxLcQRGxY9XJw33ANo) — Prorok Lab · 10 videos · 11.6h across 10 episodes
+
+*What to watch:* Watch the "Mobile Robot Systems Course - Amanda Prorok, University of Cambridge" playlist, focusing on lectures 7, 8, and 9 which cover multi-robot systems, multi-robot assignment methods, and multi-robot path planning. These provide foundational understanding of multi-robot coordination and communication relevant to the paper.
+
+*Move on when you can:* Compare centralized and decentralized multi-robot SLAM architectures and explain how mesh networks support communication in constrained environments.
+
+_Work through the stages in order. Once the last one lands, the paper — and the two tracks below — should read cleanly._
 
 ## Track 1 — Academic deep-dives (long-form)
 

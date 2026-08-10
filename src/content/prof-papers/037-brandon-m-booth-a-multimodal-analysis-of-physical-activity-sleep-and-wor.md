@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-brandon-booth-php"
-source_hash: "2bcc4ce33da136b243644e9de99bff240be6422144463e74dae1e5fdade5ecd5"
+source_hash: "05fc5bdaa41e35a91739f0040100dd744577f2c4f5f9f84ecd789b576c5adf2d"
 sequence: 37
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,72 @@ Research interests: Human-centered computing, psychometrics, mobile health, arti
 - [LinkedIn](http://www.linkedin.com/in/brandonmbooth5)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_Everything the paper assumes you already know, in the order you should learn it. Some stages have no visible connection to the paper's title — that is the point: this is the background the paper never explains._
+
+This foundational playlist prepares you to understand the interdisciplinary research paper on nurse well-being using wearable sensor data. It covers essential biological concepts of circadian rhythms, the technology behind wearable sensors, statistical methods for analyzing behavioral and physiological data, psychometric self-report measures, longitudinal data analysis, and multimodal data integration techniques. Work through the stages in order to build a comprehensive background before reading the paper.
+
+**The paper assumes:** human physiology basics, circadian rhythms, wearable sensor technology, time series data analysis, statistical hypothesis testing, psychometrics and self-report measures, longitudinal study design and analysis
+**Time to work through:** roughly 35-40 hours if you watch all recommended playlist portions, about 20 hours if you follow the skip guidance.
+**Already in this field?** Skip stages 1-3 if you already have a background in human physiology, wearable sensor data, and basic statistics; focus on stages 4-6 for specialized knowledge in psychometrics and longitudinal multimodal data analysis.
+
+### Stage 1 · Human Physiology and Circadian Rhythms *(foundational)*
+Understanding the biological basis of sleep, physical activity, and circadian rhythms is essential to grasp why shift work affects nurse well-being and how physiological variables are measured and interpreted.
+
+▶ **Course:** [Circadian Rhythms](https://www.youtube.com/playlist?list=PLyCpXVPynGqDi-DOqRcgESKLGCzPAIY-f) — omigodponies · 15 videos · 5.4h across the first 12 episodes
+
+*What to watch:* Watch the first 12 episodes of the 'Circadian Rhythms' playlist by omigodponies, which total about 5.4 hours. These episodes cover the molecular basis of circadian rhythms, their role in humans, and the impact of light and sleep disorders, providing a solid foundation for understanding circadian disruption in shift workers.
+
+*Move on when you can:* Explain the role of circadian rhythms in regulating sleep-wake cycles and describe how shift work can disrupt these rhythms.
+
+### Stage 2 · Wearable Sensor Technology and Data Acquisition *(foundational)*
+This paper relies on data from commercial wearable sensors (e.g., Fitbit Charge 2) to objectively measure physical activity and sleep; understanding sensor types, data collection methods, and limitations is critical.
+
+▶ **Course:** [PEC303:Biomedical Signal Processing](https://www.youtube.com/playlist?list=PLeefXVKiX48rcnK0TentV2rXrQoIhuqpy) — Course on Biomedical Signal Processing · 45 videos · 13.2h across 45 episodes
+
+*What to watch:* Focus on the first 10 lectures of the 'PEC303:Biomedical Signal Processing' playlist by Course on Biomedical Signal Processing, which cover electrical activity of the heart, ECG data acquisition, heart rate measurement, and noise/artifact handling. These provide a technical foundation for how wearable sensors capture physiological signals relevant to the study.
+
+*Move on when you can:* Describe how wearable sensors measure heart rate, activity, and sleep stages, and discuss common sources of noise or bias in such data.
+
+### Stage 3 · Statistical Methods for Behavioral and Physiological Data *(core)*
+The paper uses statistical hypothesis testing and regression models to compare groups and associate sensor data with self-reports; knowledge of these methods is necessary to understand the analyses and results.
+
+▶ **Course:** [Introduction to Econometrics | IIT Madras](https://www.youtube.com/playlist?list=PLyqSpQzTE6M-YZKVfuVSYqZnMfyDNLtkw) — NPTEL-NOC IITM · 65 videos · 29.2h across the first 60 episodes
+
+*What to watch:* Watch the first 24 episodes of the 'Introduction to Econometrics | IIT Madras' playlist by NPTEL-NOC IITM, focusing on hypothesis testing and classical linear regression models. These lectures provide a rigorous introduction to the statistical methods used in the paper's analyses.
+
+*Move on when you can:* Perform and interpret t-tests and linear regression analyses comparing two groups on physiological and behavioral variables.
+
+### Stage 4 · Psychometrics and Self-Report Measures in Health Research *(core)*
+Self-reported assessments of affect, anxiety, life satisfaction, and sleep quality are key components; understanding psychometric concepts and common instruments like PSQI is required to interpret these measures.
+
+▶ **Course:** [Crash course in Psychometrics](https://www.youtube.com/playlist?list=PLsaUytEFNsp0d3iP6Z4fW55YzVWZPHf1b) — The Psychometric World · 6 videos · 0.7h across 6 episodes
+
+*What to watch:* Focus on the first 6 episodes of the 'Crash course in Psychometrics' playlist by The Psychometric World, which introduce psychometric testing, reliability, validity, and use cases. This concise series explains how self-report measures complement sensor data in health research.
+
+*Move on when you can:* Explain the purpose and scoring of the Pittsburgh Sleep Quality Index (PSQI) and how self-report data complement sensor data.
+
+### Stage 5 · Time Series and Longitudinal Data Analysis *(advanced)*
+The study analyzes 10 weeks of continuous sensor data and repeated self-reports, requiring understanding of longitudinal data structures, handling missing data, and modeling temporal patterns.
+
+▶ **Course:** [Introduction to Statistics and Data Analysis](https://www.youtube.com/playlist?list=PLMrJAkhIeNNT14qn1c5qdL29A1UaHamjx) — Steve Brunton · 35 videos · 9.9h across 35 episodes
+
+*What to watch:* Watch the first 20 episodes of the 'Introduction to Statistics and Data Analysis' playlist by Steve Brunton, which cover sampling, confidence intervals, hypothesis testing, and parameter estimation. These lectures provide foundational concepts needed to analyze longitudinal sensor data and address compliance issues.
+
+*Move on when you can:* Describe methods for analyzing longitudinal sensor data, including handling irregular sampling and participant compliance issues.
+
+### Stage 6 · Multimodal Data Integration and Behavioral Analytics *(advanced)*
+The paper integrates wearable sensor data with self-reports to study complex human behaviors; understanding frameworks for multimodal data fusion and behavioral pattern analysis is essential to follow the methodology.
+
+▶ **Course:** [Research Data Analysis in SPSS](https://www.youtube.com/playlist?list=PLiz_0G_dAQ4xDAb6SzWtqf9M-XtSsA1Ox) — The Concepts · 33 videos · 13.0h across 33 episodes
+
+*What to watch:* Watch the entire 'Research Data Analysis in SPSS' playlist by The Concepts, focusing on lessons covering data cleaning, correlation, and linear regression analysis. This playlist teaches how to combine and analyze multimodal datasets like sensor and psychometric data to identify behavioral patterns.
+
+*Move on when you can:* Outline approaches to combine physiological sensor data with psychometric self-reports to identify behavioral patterns related to shift work.
+
+_Work through the stages in order. Once the last one lands, the paper — and the two tracks below — should read cleanly._
 
 ## Track 1 — Academic deep-dives (long-form)
 

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-nima-karimian-aspx"
-source_hash: "b040311c9fda4e7c87e6d504efd2d8ba0bba4c60757278461b56e0f7d8beed24"
+source_hash: "5c4886411e0ebd033f48bfd9411de890407af80ef9d57d33321481dcbc99e60a"
 sequence: 18
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,63 @@ Research interests: biometrics, cybersecurity, generative AI, and trustworthy AI
 - [LinkedIn](https://www.linkedin.com/in/nima-karimian-2966ba53/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_Everything the paper assumes you already know, in the order you should learn it. Some stages have no visible connection to the paper's title — that is the point: this is the background the paper never explains._
+
+This playlist provides foundational and advanced background knowledge necessary to understand the GRU-AUNet paper on contactless fingerprint presentation attack detection. It covers essential mathematics, machine learning basics, deep learning fundamentals, attention mechanisms including transformers, domain adaptation techniques, and biometric anti-spoofing concepts. The resources are carefully selected university-level courses and lectures, with specific viewing guidance to efficiently prepare you for the paper's technical content.
+
+**The paper assumes:** linear algebra, probability and statistics, machine learning fundamentals, deep learning architectures, attention mechanisms in neural networks, domain adaptation techniques, biometric anti-spoofing methods
+**Time to work through:** roughly 90-110 hours if you watch everything, about 50-60 hours if you follow the skip guidance
+**Already in this field?** Skip stages 1-3 if you have a solid background in machine learning and deep learning fundamentals; skip stages 4-5 if you are already familiar with attention mechanisms and domain adaptation in biometrics.
+
+### Stage 1 · Linear Algebra and Probability Basics *(foundational)*
+Understanding tensors, matrix operations, and probability distributions is essential to grasp neural network computations, loss functions like Focal and Contrastive Loss, and statistical evaluation metrics used in the paper.
+
+▶ **Course:** [MIT 18.06 Linear Algebra, Spring 2005](https://www.youtube.com/playlist?list=PLE7DDD91010BC51F8) — MIT OpenCourseWare · 36 videos · 28.0h across 36 episodes
+
+*What to watch:* Watch the first 24 lectures (episodes 1-24) of the "MIT 18.06 Linear Algebra, Spring 2005" playlist by MIT OpenCourseWare. These cover matrix multiplication, inverse, spaces, eigenvalues, and diagonalization, which are crucial for understanding the linear algebra foundations in the paper.
+
+*Move on when you can:* Explain matrix multiplication and compute the probability of an event from a given distribution; derive the expectation and variance of a random variable.
+
+### Stage 2 · Introduction to Machine Learning *(foundational)*
+The paper builds on supervised and unsupervised learning concepts, class imbalance handling, and feature discrimination, which require understanding of basic ML models, loss functions, and evaluation metrics.
+
+▶ **Course:** [Stanford CS229: Machine Learning led by Andrew Ng | Autumn 2018](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU) — Stanford Online · 21 videos · 27.9h across 21 episodes
+
+*What to watch:* Focus on the first 12 lectures (episodes 1-12) of the "Stanford CS229: Machine Learning led by Andrew Ng | Autumn 2018" playlist. These cover supervised learning, loss functions, and evaluation metrics foundational for understanding the paper's learning approach and loss design.
+
+*Move on when you can:* Implement a simple classification algorithm and explain the role of loss functions and evaluation metrics like accuracy and confusion matrix.
+
+### Stage 3 · Deep Learning Fundamentals *(core)*
+The paper uses convolutional neural networks, recurrent units (GRU), and UNet architectures, so understanding backpropagation, CNNs, RNNs, and basic deep learning frameworks is critical.
+
+▶ **Course:** [Neural Networks and Deep Learning (Course 1 of the Deep Learning Specialization)](https://www.youtube.com/playlist?list=PLkDaE6sCZn6Ec-XTbcX1uRg2_u4xOEky0) — DeepLearningAI · 43 videos · 5.7h across 43 episodes
+
+*What to watch:* Watch the first 20 videos (episodes 1-20) of the "Neural Networks and Deep Learning (Course 1 of the Deep Learning Specialization)" playlist by DeepLearningAI. These cover neural network basics, backpropagation, and vectorization needed to understand the GRU and CNN components in the paper.
+
+*Move on when you can:* Build and train a CNN and a GRU-based RNN on a simple dataset and explain how backpropagation updates weights.
+
+### Stage 4 · Attention Mechanisms and Transformer Architectures *(advanced)*
+GRU-AUNet replaces traditional skip connections with GRU-enhanced attention mechanisms and integrates a Swin Transformer-based UNet, requiring knowledge of attention, self-attention, and transformer models.
+
+▶ **Course:** [Transformers in Deep Learning Course](https://www.youtube.com/playlist?list=PLuhqtP7jdD8CQTxwVsuiFYGvHtFpNhlR3) — Learn With Jay · 11 videos · 4.3h across 11 episodes
+
+*What to watch:* Watch the entire "Transformers in Deep Learning Course" playlist by Learn With Jay (all 11 episodes). This series thoroughly explains self-attention, multi-head attention, positional encoding, and encoder-decoder architectures, which are essential to understand the paper's attention and transformer components.
+
+*Move on when you can:* Explain the self-attention mechanism and implement a simple transformer encoder layer.
+
+### Stage 5 · Domain Adaptation and Unsupervised Learning in Computer Vision *(advanced)*
+The paper addresses domain adaptation for generalization across datasets and uses unsupervised learning techniques with only genuine images, so understanding domain shift, adaptation methods, and unsupervised loss functions is necessary.
+
+▶ **Course:** [Modern computer vision | IIT Madras](https://www.youtube.com/playlist?list=PLyqSpQzTE6M8X3Veh5ijSQ2UGFFEZIpKf) — NPTEL-NOC IITM · 90 videos · 21.4h across the first 60 episodes
+
+*What to watch:* Watch the first 30 episodes of the "Modern computer vision | IIT Madras" playlist by NPTEL-NOC IITM. These cover deep learning, domain adaptation concepts, and loss functions relevant to unsupervised learning and domain generalization in computer vision.
+
+*Move on when you can:* Describe domain adaptation challenges and implement a simple domain adaptation method for image classification.
+
+_Work through the stages in order. Once the last one lands, the paper — and the two tracks below — should read cleanly._
 
 ## Track 1 — Academic deep-dives (long-form)
 

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-patrey"
-source_hash: "d953631ad1dd20ca48b05ac4396a8abe05e570abf49bcf5ea1554ec75cc58064"
+source_hash: "3a164d81d279e19f0b1daac0c268d14b170c3fff960297a7cfb668dd15a2d346"
 sequence: 28
 generator: "outreach-garden: managed"
 ---
@@ -54,6 +54,72 @@ Research interests: cybersecurity, privacy, trust, and fairness, with a focus on
 - [Google Scholar](http://scholar.google.ca/citations?user=2s3sftgAAAAJ&hl=en)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_Everything the paper assumes you already know, in the order you should learn it. Some stages have no visible connection to the paper's title — that is the point: this is the background the paper never explains._
+
+This playlist provides a structured learning path to build foundational and advanced knowledge necessary to understand the paper on adversarial sharpening masks for DeepFake anti-forensics. It covers essential mathematics, machine learning fundamentals, deep learning with CNNs, generative adversarial networks, image forensics, and adversarial machine learning. Follow the stages in order to progressively develop the skills and concepts needed to grasp the paper's methodology and contributions.
+
+**The paper assumes:** linear algebra, probability theory, machine learning fundamentals, convolutional neural networks, generative adversarial networks, image forensics, adversarial machine learning
+**Time to work through:** roughly 90-110 hours if you watch everything, about 60 hours if you follow the skip guidance
+**Already in this field?** Skip stages 1-3 if you have a solid background in machine learning and deep learning, and skip stages 4-5 if you are already familiar with GANs and image forensics techniques.
+
+### Stage 1 · Linear Algebra and Probability Basics *(foundational)*
+Understanding neural networks and adversarial methods requires knowledge of vectors, matrices, eigenvalues, and probability distributions, which underpin model representations and uncertainty handling in the paper.
+
+▶ **Course:** [MIT 18.06 Linear Algebra, Spring 2005](https://www.youtube.com/playlist?list=PLE7DDD91010BC51F8) — MIT OpenCourseWare · 36 videos · 28.0h across 36 episodes
+
+*What to watch:* Watch the MIT 18.06 Linear Algebra, Spring 2005 playlist by Prof. Gilbert Strang, focusing on episodes 1 through 23 to cover matrix operations, vector spaces, eigenvalues, and diagonalization relevant to neural network computations.
+
+*Move on when you can:* Explain matrix multiplication and compute eigenvalues of a given matrix; calculate probabilities and expectations for simple random variables.
+
+### Stage 2 · Machine Learning Fundamentals *(core)*
+The paper builds on supervised and unsupervised learning concepts, loss functions, optimization, and evaluation metrics essential for training and assessing GANs and forensic detectors.
+
+▶ **Course:** [Stanford CS229: Machine Learning led by Andrew Ng | Autumn 2018](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU) — Stanford Online · 21 videos · 27.9h across 21 episodes
+
+*What to watch:* Watch the Stanford CS229: Machine Learning led by Andrew Ng | Autumn 2018 playlist, focusing on lectures 1 through 12 to understand supervised learning, loss functions, optimization, and model evaluation foundational to GAN training.
+
+*Move on when you can:* Derive gradient descent update for a simple linear regression model and explain overfitting and regularization concepts.
+
+### Stage 3 · Deep Learning and Convolutional Neural Networks *(core)*
+DeepFakes and the proposed networks rely on CNN architectures for image feature extraction and generation, making CNNs fundamental to understanding the model design and image processing in the paper.
+
+▶ **Course:** [Convolutional Neural Networks (Course 4 of the Deep Learning Specialization)](https://www.youtube.com/playlist?list=PLkDaE6sCZn6Gl29AoE31iwdVwSG-KnDzF) — DeepLearningAI · 42 videos · 6.0h across 42 episodes
+
+*What to watch:* Watch the DeepLearningAI Convolutional Neural Networks playlist, focusing on the first 11 episodes which cover convolution, padding, strided convolutions, pooling layers, and simple CNN examples relevant to image generation and processing.
+
+*Move on when you can:* Implement a simple CNN for image classification and explain convolution, pooling, and activation layers.
+
+### Stage 4 · Generative Adversarial Networks (GANs) *(advanced)*
+The paper’s core method uses a two-module GAN framework; understanding GAN training dynamics, generator and discriminator roles, and adversarial loss is critical to grasping the approach.
+
+▶ **Course:** [Generative Adversarial Networks (GANs) Playlist](https://www.youtube.com/playlist?list=PLhhyoLH6IjfwIp8bZnzX8QR30TRcHO8Va) — Aladdin Persson · 15 videos · 8.6h across 15 episodes
+
+*What to watch:* Watch the Generative Adversarial Networks (GANs) Playlist by Aladdin Persson, focusing on the first 6 episodes which introduce GAN concepts, build a simple GAN, and implement DCGAN from scratch to understand adversarial training.
+
+*Move on when you can:* Describe the GAN training loop and implement a basic GAN to generate simple images.
+
+### Stage 5 · Image Forensics and DeepFake Detection *(advanced)*
+The paper targets DeepFake detection evasion; familiarity with forensic algorithms, detection features, and common DeepFake generation methods is necessary to understand the disruption goals and evaluation.
+
+▶ **Course:** [DEEPFAKE DETECTION METHODS](https://www.youtube.com/playlist?list=PLgi1pDxQBCovetWjJIL1H_IC7SY13TIyr) — Rinzler Coloso · 12 videos · 7.0h across 12 episodes
+
+*What to watch:* Watch the DEEPFAKE DETECTION METHODS playlist by Rinzler Coloso, focusing on the first 6 episodes which cover DeepFake detection models, MesoNet, and practical detection projects to understand forensic detection techniques.
+
+*Move on when you can:* Explain common DeepFake detection techniques and identify typical artifacts used for forensic classification.
+
+### Stage 6 · Adversarial Machine Learning and Anti-Forensics *(advanced)*
+The paper’s novelty lies in adversarial sharpening masks to fool detectors; understanding adversarial attacks, defenses, and anti-forensics strategies is essential to appreciate the method’s design and impact.
+
+▶ **Course:** [[CS188 SP24] Lectures](https://www.youtube.com/playlist?list=PLp8QV47qJEg67UTShQ4er4RYQ3rOeDKxv) — CS 188 (Artificial Intelligence) at UC Berkeley · 27 videos · 35.2h across 27 episodes
+
+*What to watch:* Watch the [CS188 SP24] Lectures playlist from UC Berkeley, focusing on lectures covering adversarial examples and attacks (around lectures 21-27) to learn how adversarial perturbations are designed to fool classifiers.
+
+*Move on when you can:* Design a simple adversarial example to fool a classifier and explain the concept of adversarial perturbations.
+
+_Work through the stages in order. Once the last one lands, the paper — and the two tracks below — should read cleanly._
 
 ## Track 1 — Academic deep-dives (long-form)
 

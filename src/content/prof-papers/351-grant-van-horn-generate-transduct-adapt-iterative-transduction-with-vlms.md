@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-grant-van-horn"
-source_hash: "8160386ec9ed9daafda1925335b1afaa7b8fb617f142190fafa9f595b50573de"
+source_hash: "6834f858e9e7cb2c34b2008f372e9864503825b8de4a316254b3442722080417"
 sequence: 351
 generator: "outreach-garden: managed"
 ---

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-hassani"
-source_hash: "d4fa33ed6de41a669d9c2c09cb93f72fcc5ace9dd4fc0506d3211bf4e4d3b05c"
+source_hash: "c7567db92c8f3817c4138f59d2a5f8417880729bb65fa83431d86a8d630be88e"
 sequence: 41
 generator: "outreach-garden: managed"
 ---
@@ -56,6 +56,63 @@ Research interests: Foundations of Machine Learning, Submodular Optimization, Fe
 - [LinkedIn](https://www.linkedin.com/in/hamed-hassani-111999319/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_Everything the paper assumes you already know, in the order you should learn it. Some stages have no visible connection to the paper's title — that is the point: this is the background the paper never explains._
+
+This playlist provides foundational and advanced knowledge necessary to understand the SmoothLLM paper, which defends large language models against adversarial jailbreaking attacks. It covers essential mathematics, machine learning fundamentals, natural language processing, transformer architectures, and adversarial machine learning. Work through the stages in order to build a comprehensive understanding before reading the paper.
+
+**The paper assumes:** linear algebra, probability theory, machine learning fundamentals, natural language processing, large language models, adversarial machine learning, randomized smoothing
+**Time to work through:** roughly 110-130 hours if you watch everything, about 70-80 hours if you follow the skip guidance
+**Already in this field?** Skip stages 1-3 if you have a solid background in machine learning and NLP; skip stage 4 if you are familiar with adversarial attacks and defenses in ML.
+
+### Stage 1 · Linear Algebra and Probability *(foundational)*
+Understanding vector spaces, matrices, and probability distributions is essential for grasping how language models represent data and how randomized perturbations affect inputs and outputs.
+
+▶ **Course:** [MIT 18.06 Linear Algebra, Spring 2005](https://www.youtube.com/playlist?list=PLE7DDD91010BC51F8) — MIT OpenCourseWare · 36 videos · 28.0h across 36 episodes
+
+*What to watch:* Watch the MIT 18.06 Linear Algebra, Spring 2005 playlist by MIT OpenCourseWare, focusing on episodes 1 through 23 to cover the geometry of linear equations, matrix operations, subspaces, and eigenvalues/eigenvectors, which are crucial for understanding the mathematical foundations of randomized smoothing.
+
+*Move on when you can:* Explain eigenvectors and eigenvalues, and compute probabilities of discrete events and conditional probabilities.
+
+### Stage 2 · Machine Learning Fundamentals *(core)*
+This paper builds on concepts like supervised learning, model training, and evaluation metrics, which are foundational to understanding how LLMs are developed and assessed.
+
+▶ **Course:** [Stanford CS229: Machine Learning led by Andrew Ng | Autumn 2018](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU) — Stanford Online · 21 videos · 27.9h across 21 episodes
+
+*What to watch:* Watch the Stanford CS229: Machine Learning led by Andrew Ng playlist, focusing on lectures 1 through 12 to understand linear regression, gradient descent, overfitting, regularization, and neural networks, which underpin the training and evaluation of language models.
+
+*Move on when you can:* Derive the gradient descent update rule for a simple linear regression model and explain overfitting and regularization.
+
+### Stage 3 · Natural Language Processing and Language Models *(core)*
+The paper focuses on large language models and their behavior with textual inputs, so familiarity with tokenization, embeddings, and language modeling is critical.
+
+▶ **Course:** [Stanford CS224N Natural Language Processing with Deep Learning I Spring 2024 I Professor Christopher Manning](https://www.youtube.com/playlist?list=PLoROMvodv4rOaMFbaqxPDoLWjDaRAdP9D) — Stanford Online · 23 videos · 27.5h across 23 episodes
+
+*What to watch:* Watch the Stanford CS224N Natural Language Processing with Deep Learning I Spring 2024 playlist, focusing on lectures 1 through 9 to learn about word vectors, language models, neural networks, attention, and transformers, which are foundational for understanding LLM inputs and outputs.
+
+*Move on when you can:* Describe how word embeddings work and explain the architecture of a transformer-based language model.
+
+### Stage 4 · Large Language Models and Transformer Architectures *(advanced)*
+SmoothLLM targets large-scale transformer-based LLMs like LLaMA and Vicuna; understanding their architecture, training, and inference mechanisms is necessary to follow the defense design.
+
+▶ **Course:** [Stanford CME295: Transformers and Large Language Models I Autumn 2025](https://www.youtube.com/playlist?list=PLoROMvodv4rOCXd21gf0CF4xr35yINeOy) — Stanford Online · 9 videos · 16.2h across 9 episodes
+
+*What to watch:* Watch the Stanford CME295: Transformers and Large Language Models I Autumn 2025 playlist in full, as it covers the transformer architecture, training, tuning, reasoning, evaluation, and current trends, providing a comprehensive understanding of LLM internals relevant to SmoothLLM.
+
+*Move on when you can:* Explain the self-attention mechanism and describe how transformers process input sequences during inference.
+
+### Stage 5 · Adversarial Machine Learning *(advanced)*
+The paper addresses adversarial jailbreak attacks on LLMs; knowledge of adversarial examples, attack strategies, and defense mechanisms is essential to understand the problem and SmoothLLM’s approach.
+
+▶ **Course:** [Adversarial Machine learning](https://www.youtube.com/playlist?list=PLqY9uEMecYPXC4sCrNRJ5uHwmTr3FpTui) — Hugh Medal · 16 videos · 11.9h across 16 episodes
+
+*What to watch:* Watch the Adversarial Machine Learning playlist by Hugh Medal, focusing on the lectures that introduce adversarial examples, attacks, and defenses to gain a solid understanding of adversarial robustness concepts applied in SmoothLLM.
+
+*Move on when you can:* Implement a basic adversarial attack (e.g., FGSM) on a neural network and explain the concept of adversarial robustness.
+
+_Work through the stages in order. Once the last one lands, the paper — and the two tracks below — should read cleanly._
 
 ## Track 1 — Academic deep-dives (long-form)
 

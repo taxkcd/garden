@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-mark-a-horowitz"
-source_hash: "5f25423bbe1e54c030a784b22ae51c4578651ba8e9cc3f93850f51205295b47b"
+source_hash: "ca63f068df355577856f295d50ed639c39fc7e95bbaf5dbf179133426195108b"
 sequence: 58
 generator: "outreach-garden: managed"
 ---
@@ -55,6 +55,72 @@ Research interests: high-performance digital systems, computer-aided design tool
 - [ORCID](https://orcid.org/0000-0003-3245-7542)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_Everything the paper assumes you already know, in the order you should learn it. Some stages have no visible connection to the paper's title — that is the point: this is the background the paper never explains._
+
+This playlist provides a structured learning path to prepare for understanding the paper on a fast large-integer extended GCD algorithm and its hardware design. It covers foundational number theory concepts, classical algorithms for GCD computation, digital arithmetic techniques including carry-save adders, cryptographic applications of modular arithmetic, hardware design principles for cryptographic accelerators, and constant-time algorithm security considerations. Work through the stages in order to build the necessary mathematical and hardware background before reading the paper.
+
+**The paper assumes:** number theory including Euclid’s algorithm and extended GCD, binary arithmetic and carry-save adders, digital logic design and ASIC architecture, cryptographic applications of modular inversion and verifiable delay functions, hardware-software co-design principles
+**Time to work through:** roughly 40-45 hours if you watch everything, about 20-25 hours if you follow the skip guidance
+**Already in this field?** Skip stages 1-3 if you already have a solid background in number theory, digital arithmetic, and basic cryptographic algorithms; focus on stages 4-6 for hardware acceleration and algorithmic details.
+
+### Stage 1 · Elementary Number Theory *(foundational)*
+Understanding the extended greatest common divisor (XGCD) algorithm requires familiarity with basic number theory concepts such as divisibility, greatest common divisors, Bézout’s identity, and modular arithmetic, which underpin the cryptographic operations discussed.
+
+▶ **Course:** [September 2020 - A basic course in number theory](https://www.youtube.com/playlist?list=PLOzRYVm0a65fuj_5fuj1BLeQNULrM4Irj) — NPTEL IIT Bombay · 64 videos · 29.4h across the first 60 episodes
+
+*What to watch:* Watch the first 20 episodes of the "September 2020 - A basic course in number theory" playlist by NPTEL IIT Bombay, covering integers, divisibility, primes, Euclid's algorithm, and Bézout coefficients, which directly relate to the paper's use of XGCD.
+
+*Move on when you can:* Explain and compute the GCD of two integers using Euclid’s algorithm and derive Bézout coefficients for given inputs.
+
+### Stage 2 · Algorithms for GCD Computation *(core)*
+The paper compares Euclid’s division-based algorithm with Stein’s subtraction-based algorithm for XGCD; understanding these classical algorithms and their computational trade-offs is essential to grasp the motivation and improvements presented.
+
+▶ [GCD, Bezout, and Modular Inverses | The Extended Euclidean Algorithm](https://www.youtube.com/watch?v=YZfPcvbwwvI) — William Y. Feng · 4 years ago
+
+*What to watch:* Focus on the video "GCD, Bezout, and Modular Inverses | The Extended Euclidean Algorithm" by William Y. Feng, which explains the extended Euclidean algorithm and its application to solving integer equations, directly relevant to the paper's algorithmic basis.
+
+*Move on when you can:* Implement and analyze both Euclid’s and Stein’s algorithms for GCD and extended GCD, explaining iteration counts and computational complexity.
+
+### Stage 3 · Digital Arithmetic and Carry-Save Adders *(core)*
+The hardware design leverages carry-save adders (CSAs) to accelerate addition operations and reduce carry propagation delays, a key factor in achieving faster iteration times independent of input bitwidth.
+
+▶ [The Carry Save Adder](https://www.youtube.com/watch?v=8vOfmNuXx1Y) — Electronic Circuits Engineering · 1 year ago
+
+*What to watch:* Watch the video "The Carry Save Adder" by Electronic Circuits Engineering, which clearly explains the operation and benefits of carry-save adders, crucial for understanding the hardware acceleration techniques used in the paper.
+
+*Move on when you can:* Describe the operation of carry-save adders and demonstrate how they add multiple binary numbers efficiently without immediate carry propagation.
+
+### Stage 4 · Cryptographic Applications of Modular Arithmetic *(core)*
+The paper’s focus on verifiable delay functions (VDFs) and modular inversion requires understanding how modular arithmetic is used in cryptography, including elliptic curve cryptography and the role of modular inverses.
+
+▶ **Course:** [Cryptography Course](https://www.youtube.com/playlist?list=PLE4V3KXzxPRQYUil17HB6XcIu-JMebD7n) — Dr. Julian Hosp - Business Investing Performance · 16 videos · 6.3h across 16 episodes
+
+*What to watch:* Watch the first 10 episodes of the "Cryptography Course" playlist by Dr. Julian Hosp - Business Investing Performance, especially episodes covering modular arithmetic, modular inverses, and elliptic curve cryptography, to understand the cryptographic context of the paper.
+
+*Move on when you can:* Explain the use of modular inversion in elliptic curve cryptography and the concept and purpose of verifiable delay functions.
+
+### Stage 5 · Hardware Design for Cryptographic Accelerators *(advanced)*
+The paper presents an ASIC hardware design optimized for XGCD computation; understanding ASIC design principles, hardware-software co-design, and performance trade-offs is necessary to appreciate the architectural choices and speedups achieved.
+
+▶ **Course:** [RISC-V Processor Design - Free VLSI Course](https://www.youtube.com/playlist?list=PL3_RRtJ5Iqgg94er7ErGAUSyhTXwPv6zy) — Maven Silicon · 10 videos · 1.8h across 10 episodes
+
+*What to watch:* Watch the "RISC-V Processor Design - Free VLSI Course" playlist by Maven Silicon, focusing on episodes 1-5 which cover processor architecture, microcontroller design, and system-on-chip concepts relevant to ASIC design for cryptographic accelerators.
+
+*Move on when you can:* Outline the design considerations for implementing cryptographic algorithms in ASICs and explain how hardware parallelism and pipelining improve performance.
+
+### Stage 6 · Constant-Time Algorithms and Side-Channel Resistance *(advanced)*
+The paper emphasizes constant-time execution to prevent timing side-channel attacks, a critical security property in cryptographic hardware that the reader must understand to appreciate the design’s security benefits.
+
+▶ **Course:** [MIT 6.046J Design and Analysis of Algorithms, Spring 2015](https://www.youtube.com/playlist?list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp) — MIT OpenCourseWare · 34 videos · 39.5h across 34 episodes
+
+*What to watch:* Watch the first 5 episodes of the "MIT 6.046J Design and Analysis of Algorithms, Spring 2015" playlist by MIT OpenCourseWare, focusing on algorithm design principles and timing considerations that underpin constant-time algorithm design.
+
+*Move on when you can:* Explain what constant-time algorithms are and why they are important for cryptographic security, including examples of timing attacks.
+
+_Work through the stages in order. Once the last one lands, the paper — and the two tracks below — should read cleanly._
 
 ## Track 1 — Academic deep-dives (long-form)
 

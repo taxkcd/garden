@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-rkiyer"
-source_hash: "fe08193ddb1b47eb067c89f43c5351bc26412d85af182cf63d8c9c03cbf21601"
+source_hash: "e4ea52ad6d8444a7c645ef86837a46c3ef4e0fbd934480403ec0e84f9b00d6d9"
 sequence: 16
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,63 @@ Research interests: Reliable and secure networks and systems, Measurement and mo
 - [Resolved homepage](https://depend.csl.illinois.edu/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_Everything the paper assumes you already know, in the order you should learn it. Some stages have no visible connection to the paper's title — that is the point: this is the background the paper never explains._
+
+This playlist provides a structured learning path to prepare for understanding the ASAP paper on accelerated short-read alignment using programmable hardware. It starts with foundational molecular biology and genomics concepts to ground the biological context, then covers core algorithmic techniques for sequence alignment and edit distance computation. Next, it introduces the computational workflows of short-read alignment in genomics, followed by advanced topics on FPGA architecture and digital logic design essential for hardware implementation. Finally, it covers hardware acceleration and approximate computing principles to grasp the design innovations and trade-offs in ASAP. Follow the stages in order to build a comprehensive background before reading the paper.
+
+**The paper assumes:** molecular biology basics, sequence alignment algorithms, Levenshtein distance and dynamic programming, FPGA architecture and digital logic design, hardware acceleration techniques, approximate computing methods, short-read genomic data processing
+**Time to work through:** roughly 70-80 hours if you watch all recommended content, about 40-45 hours if you follow the skip guidance
+**Already in this field?** Skip stages 1-3 if you already have a background in bioinformatics and sequence alignment algorithms; skip stages 4-5 if you are experienced with FPGA design and hardware acceleration.
+
+### Stage 1 · Molecular Biology and Genomics Basics *(foundational)*
+Understanding the biological context of short-read alignment requires knowledge of DNA structure, sequencing technologies, and the importance of sequence alignment in genomics applications such as variant discovery and personalized medicine.
+
+▶ **Course:** [MIT 7.01SC Fundamentals of Biology](https://www.youtube.com/playlist?list=PLF83B8D8C87426E44) — MIT OpenCourseWare · 39 videos · 12.0h across 39 episodes
+
+*What to watch:* Watch the playlist 'MIT 7.01SC Fundamentals of Biology' episodes 12-17 to cover DNA structure, replication, transcription, and translation, which provide the essential molecular biology background relevant to sequencing and alignment.
+
+*Move on when you can:* Explain the structure of DNA, the concept of sequencing reads, and why aligning these reads to a reference genome is critical in genomic analysis.
+
+### Stage 2 · Sequence Alignment Algorithms and Edit Distance *(core)*
+The paper centers on accelerating Levenshtein distance computation, a fundamental metric for sequence similarity used in short-read alignment tools; understanding dynamic programming algorithms for edit distance is essential to grasp the problem ASAP addresses.
+
+▶ **Course:** [CENG 465 - Introduction to Bioinformatics (Spring 2020-2021)](https://www.youtube.com/playlist?list=PL0X39D1PSBWPfCPbHb8GC7hoev8SG4Aye) — Tolga Can · 40 videos · 34.3h across 40 episodes
+
+*What to watch:* Focus on the 'CENG 465 - Introduction to Bioinformatics (Spring 2020-2021)' playlist episodes 3-7, which cover pairwise sequence alignment and the dynamic programming approach to compute edit distance, including gap, match, and mismatch penalties.
+
+*Move on when you can:* Manually compute the Levenshtein distance between two short DNA sequences using the dynamic programming matrix and explain the role of gap, match, and mismatch penalties.
+
+### Stage 3 · Short-Read Alignment in Genomics *(core)*
+Familiarity with short-read alignment workflows, popular tools like SNAP, and the computational challenges posed by large-scale sequencing data is necessary to understand the motivation and integration context of ASAP.
+
+▶ **Course:** [Algorithmic Thinking in Bioinformatics](https://www.youtube.com/playlist?list=PLZ2ps__7DhBZo3cm7feryq5oLAHbSsLEL) — IIT Madras - B.S. Degree Programme · 63 videos · 25.1h across the first 60 episodes
+
+*What to watch:* Watch the 'Algorithmic Thinking in Bioinformatics' playlist episodes 15-17, which introduce sequence alignment, dynamic programming algorithms, and short-read alignment concepts relevant to understanding ASAP's application domain.
+
+*Move on when you can:* Describe the workflow of a short-read aligner and identify why edit distance computation dominates runtime in these tools.
+
+### Stage 4 · FPGA Architecture and Digital Logic Design *(advanced)*
+ASAP is implemented on FPGA hardware using circuit propagation delays and clock gating; understanding FPGA architecture, programmable logic elements, and timing concepts is crucial to follow the hardware design and implementation details.
+
+▶ **Course:** [Introduction to FPGA](https://www.youtube.com/playlist?list=PLEBQazB0HUyT1WmMONxRZn9NmQ_9CIKhb) — DigiKey · 12 videos · 4.2h across 12 episodes
+
+*What to watch:* Focus on the 'Introduction to FPGA' playlist episodes 1-6, which cover the basics of FPGA architecture, logic implementation using lookup tables and flip-flops, and introduce timing concepts including clocks and finite state machines.
+
+*Move on when you can:* Explain the basic structure of an FPGA, how logic is implemented using lookup tables and flip-flops, and the concept of propagation delay and clock gating in digital circuits.
+
+### Stage 5 · Hardware Acceleration and Approximate Computing *(advanced)*
+The paper builds on delay-based computation models (RaceLogic) and uses approximation techniques to accelerate LD computation; knowledge of hardware acceleration principles and approximate computing methods is needed to understand the design trade-offs and innovations.
+
+▶ **Course:** [Stanford CS149 I Parallel Computing I 2023 I Kayvon Fatahalian and Kunle Olukotun](https://www.youtube.com/playlist?list=PLoROMvodv4rMp7MTFr4hQsDEcX7Bx6Odp) — Stanford Online · 19 videos · 24.3h across 19 episodes
+
+*What to watch:* Watch the Stanford CS149 Parallel Computing 2023 playlist episodes 1, 18, and 19, which cover the motivation for parallelism, hardware specialization, and memory access optimizations, providing a solid foundation on hardware acceleration concepts relevant to ASAP.
+
+*Move on when you can:* Describe how hardware accelerators improve performance over CPUs and explain the concept of approximate computing with an example of a delay-based computation model.
+
+_Work through the stages in order. Once the last one lands, the paper — and the two tracks below — should read cleanly._
 
 ## Track 1 — Academic deep-dives (long-form)
 

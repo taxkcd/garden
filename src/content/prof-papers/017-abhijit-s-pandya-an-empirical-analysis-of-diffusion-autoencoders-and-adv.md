@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-dr-pandya-php"
-source_hash: "0bd1ecf6a25797e3379e1f8d40e330097e04b25c0ad2a1e66af59af55ff68de3"
+source_hash: "09d8d057472952842339b13feb35d4cbeb685a9698fe3dd19672d8fcc2e14d5c"
 sequence: 17
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,54 @@ Research interests: Drug Discovery: Apply computational intelligence algorithms 
 - [Professor website](http://www.cse.fau.edu/~abhi/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_Everything the paper assumes you already know, in the order you should learn it. Some stages have no visible connection to the paper's title — that is the point: this is the background the paper never explains._
+
+This foundational playlist prepares you with the essential mathematical, statistical, and machine learning concepts needed to understand advanced generative models and their application to medical imaging for dementia prediction. Work through the stages in order, starting with calculus and linear algebra, then probability and statistics, followed by core machine learning and deep learning concepts, and finally advanced generative models including GANs, VAEs, and diffusion models. Each stage builds the necessary background to grasp the paper's methodology and results.
+
+**The paper assumes:** linear algebra, multivariate calculus, probability theory, machine learning fundamentals, deep learning architectures, convolutional neural networks, generative models including GANs and VAEs, diffusion probabilistic models, medical imaging basics, MRI data characteristics, and evaluation metrics for generative models
+**Time to work through:** roughly 90-110 hours if you watch everything, about 60-70 hours if you follow the selective episode guidance
+**Already in this field?** Skip stages 1-3 if you already have a solid foundation in mathematics and machine learning basics; skip stages 4-6 if you have prior experience with deep generative models and medical image analysis.
+
+### Stage 1 · Linear Algebra and Multivariate Calculus *(foundational)*
+Understanding neural network operations, optimization algorithms, and image data representations requires solid knowledge of vectors, matrices, derivatives, and gradients, which are foundational to all deep learning models used in the paper.
+
+▶ **Course:** [MIT 18.02 Multivariable Calculus, Fall 2007](https://www.youtube.com/playlist?list=PL4C4C8A7D06566F38) — MIT OpenCourseWare · 35 videos · 28.3h across 35 episodes
+
+*What to watch:* Focus on the MIT 18.02 Multivariable Calculus playlist, especially lectures 1-24 which cover dot products, matrices, partial derivatives, gradients, and Lagrange multipliers. These topics are crucial for understanding backpropagation and optimization in neural networks.
+
+*Move on when you can:* Derive the gradient of a multivariate function and perform matrix multiplications relevant to neural network forward and backward passes.
+
+### Stage 2 · Probability and Statistics for Machine Learning *(foundational)*
+Generative models like VAEs, GANs, and diffusion models rely heavily on probabilistic concepts such as distributions, likelihoods, and sampling; evaluation metrics like Frechet Inception Distance also require statistical understanding.
+
+▶ **Course:** [Stanford CS109 Introduction to Probability for Computer Scientists I 2022 I Chris Piech](https://www.youtube.com/playlist?list=PLoROMvodv4rOpr_A7B9SriE_iZmkanvUg) — Stanford Online · 29 videos · 35.4h across 29 episodes
+
+*What to watch:* Use the Stanford CS109 Introduction to Probability for Computer Scientists I 2022 playlist, focusing on lectures 1-19 which cover combinatorics, probability basics, random variables, distributions, inference, and evaluation metrics. This will build a strong foundation for understanding probabilistic modeling and evaluation in generative models.
+
+*Move on when you can:* Explain probability distributions and compute likelihoods; interpret evaluation metrics like FID in the context of generative models.
+
+### Stage 3 · Introduction to Machine Learning and Deep Learning *(core)*
+The paper assumes familiarity with supervised learning, neural networks, backpropagation, and convolutional neural networks (CNNs), which are essential for understanding the classification models (ResNet, DenseNet) and the training of generative models.
+
+▶ **Course:** [Stanford CS229: Machine Learning led by Andrew Ng | Autumn 2018](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU) — Stanford Online · 21 videos · 27.9h across 21 episodes
+
+*What to watch:* Focus on the Stanford CS229: Machine Learning led by Andrew Ng | Autumn 2018 playlist, especially lectures 10 and 11 covering neural networks and backpropagation. This will provide a solid understanding of the core deep learning concepts used in the paper's classification models.
+
+*Move on when you can:* Implement a basic CNN for image classification and explain backpropagation and gradient descent.
+
+### Stage 4 · Generative Models: GANs and Variational Autoencoders *(advanced)*
+The paper compares GANs, data-efficient GANs, and VAEs for synthetic MRI generation; understanding their architectures, training challenges, and latent space representations is critical to grasping the experimental setup and results.
+
+▶ **Course:** [Stanford CS236: Deep Generative Models I 2023 I Stefano Ermon](https://www.youtube.com/playlist?list=PLoROMvodv4rPOWA-omMM6STXaWW4FvJT8) — Stanford Online · 18 videos · 23.6h across 18 episodes
+
+*What to watch:* Watch the Stanford CS236: Deep Generative Models I 2023 playlist, focusing on lectures 5-6 for VAEs and 9-10 for GANs. These lectures explain the architecture, training, and challenges of these generative models, directly relevant to the paper's comparisons.
+
+*Move on when you can:* Explain the architecture and training procedure of GANs and VAEs; implement a simple GAN and VAE on image data.
+
+_Work through the stages in order. Once the last one lands, the paper — and the two tracks below — should read cleanly._
 
 ## Track 1 — Academic deep-dives (long-form)
 

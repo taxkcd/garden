@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-vempala"
-source_hash: "b1f39141829dc23f3613b76b13c0f6adfbee6721c8d015c51398539fc447a527"
+source_hash: "056799e2b09e88b1f9f12edf8b2e4198ec47e47f7b8c5fecfc8b6c5c73f77171"
 sequence: 44
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,72 @@ Research interests: Algorithms, Geometry, Randomness, Brain
 - [C4G Projects](https://c4g.gatech.edu/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_Everything the paper assumes you already know, in the order you should learn it. Some stages have no visible connection to the paper's title — that is the point: this is the background the paper never explains._
+
+This playlist provides foundational and core background knowledge necessary to understand the localization method for high-dimensional inequalities as surveyed in the paper. It covers essential linear algebra, measure-theoretic probability, convex geometry, functional inequalities, stochastic processes, and spectral theory. The resources are chosen to build up the mathematical maturity and specific concepts needed before engaging with the paper's advanced topics.
+
+**The paper assumes:** linear algebra, measure-theoretic probability, convex geometry, functional analysis, stochastic processes, spectral theory, Markov chains
+**Time to work through:** roughly 80-90 hours if you watch everything, about 40-50 hours if you follow the skip guidance for each playlist.
+**Already in this field?** Skip stages 1-3 if you have a strong background in advanced probability and convex geometry; focus on stochastic localization and spectral methods if familiar with classical localization.
+
+### Stage 1 · Linear Algebra and Multivariate Calculus *(foundational)*
+Understanding vectors, norms, inner products, eigenvalues, and diagonalization is crucial for grasping the geometry of high-dimensional Euclidean spaces and logconcave distributions discussed in the paper.
+
+▶ **Course:** [MIT 18.06 Linear Algebra, Spring 2005](https://www.youtube.com/playlist?list=PLE7DDD91010BC51F8) — MIT OpenCourseWare · 36 videos · 28.0h across 36 episodes
+
+*What to watch:* Watch the MIT 18.06 Linear Algebra, Spring 2005 playlist by Prof. Gilbert Strang, focusing on episodes 1 through 23. These cover the geometry of linear equations, matrix operations, subspaces, orthogonality, projections, determinants, eigenvalues, and diagonalization, which are directly relevant to the paper's mathematical framework.
+
+*Move on when you can:* Compute eigenvalues and eigenvectors of a symmetric matrix and explain the geometric meaning of a norm and inner product in R^n.
+
+### Stage 2 · Measure-Theoretic Probability and Integration *(foundational)*
+The paper's analysis of logconcave measures and stochastic localization relies on formal probability measures, integration, and expectation in high dimensions.
+
+▶ **Course:** [Measure Theory and Probability](https://www.youtube.com/playlist?list=PL4fpys7KOcYgADHOJEib_vf47MrTJtAOH) — Sukkur IBA University- Mathematics · 91 videos · 24.9h across the first 60 episodes
+
+*What to watch:* Use the 'Measure Theory and Probability' playlist by Sukkur IBA University- Mathematics, focusing on the first 20 episodes. These cover probability measures, sigma-algebras, measurable functions, and Lebesgue integration, providing the rigorous foundation for probability densities and expectations used in the paper.
+
+*Move on when you can:* Formally define a probability measure on R^n and compute expectations and variances of random vectors with given densities.
+
+### Stage 3 · Convex Geometry and Logconcave Distributions *(core)*
+The localization method and the conjectures surveyed revolve around convex bodies and logconcave distributions, so understanding convex sets and isotropic position is essential.
+
+▶ **Course:** [John's Theorem and Optimal Design](https://www.youtube.com/playlist?list=PLRLO7K1KN6_qjeE6GfFCA7ZqTq7yDxOgt) — Max Entrippy · 9 videos · 4.9h across 9 episodes
+
+*What to watch:* Watch the 'John's Theorem and Optimal Design' playlist by Max Entrippy, especially lectures 1 through 7. These lectures explain convex geometry concepts, including convex bodies, ellipsoids, and isotropic position, which are foundational for the paper's geometric inequalities.
+
+*Move on when you can:* Prove that the uniform distribution on a convex body is logconcave and explain the concept of isotropic position for a convex body.
+
+### Stage 4 · Functional Inequalities and Isoperimetry *(core)*
+Key conjectures like KLS and thin-shell involve functional inequalities such as Poincaré and isoperimetric inequalities, which describe measure concentration in high dimensions.
+
+▶ **Course:** [Functional Analysis](https://www.youtube.com/playlist?list=PLyqSpQzTE6M8mjwWBz0vXpmJQwR46JIdS) — NPTEL-NOC IITM · 75 videos · 24.6h across the first 60 episodes
+
+*What to watch:* Focus on the first 20 episodes of the 'Functional Analysis' playlist by NPTEL-NOC IITM. These cover normed spaces, linear maps, Hahn-Banach theorem, and geometric versions of functional analysis, which underpin the functional inequalities and spectral gap concepts in the paper.
+
+*Move on when you can:* State and prove a basic Poincaré inequality for a logconcave measure and explain its geometric significance.
+
+### Stage 5 · Stochastic Processes and Martingales *(advanced)*
+The stochastic localization method uses continuous martingale processes and stochastic calculus, so understanding martingales and stochastic differential equations is critical.
+
+▶ **Course:** [MIT 6.262 Discrete Stochastic Processes, Spring 2011](https://www.youtube.com/playlist?list=PLEEF5322B331C1B98) — MIT OpenCourseWare · 25 videos · 33.1h across 25 episodes
+
+*What to watch:* Watch the 'MIT 6.262 Discrete Stochastic Processes, Spring 2011' playlist by MIT OpenCourseWare, focusing on episodes 1 through 24. These cover probability review, Markov chains, and martingales, providing the stochastic process background necessary for the paper's stochastic localization approach.
+
+*Move on when you can:* Derive the martingale property for a given stochastic process and solve a simple stochastic differential equation.
+
+### Stage 6 · Spectral Theory and Heat Semigroups *(advanced)*
+Spectral analysis of operators like the heat semigroup adjoint is crucial for bounding thin-shell constants and understanding mixing rates discussed in the paper.
+
+▶ **Course:** [MIT 18.102 Introduction to Functional Analysis, Spring 2021](https://www.youtube.com/playlist?list=PLUl4u3cNGP63micsJp_--fRAjZXPrQzW_) — MIT OpenCourseWare · 23 videos · 30.3h across 23 episodes
+
+*What to watch:* Use the 'MIT 18.102 Introduction to Functional Analysis, Spring 2021' playlist by MIT OpenCourseWare, focusing on lectures 14 through 23. These cover Hilbert spaces, adjoint operators, compact operators, and the spectral theorem, which are key to understanding the spectral methods in the paper.
+
+*Move on when you can:* Explain the spectral decomposition of a self-adjoint operator and describe the heat semigroup and its adjoint on L2 spaces.
+
+_Work through the stages in order. Once the last one lands, the paper — and the two tracks below — should read cleanly._
 
 ## Track 1 — Academic deep-dives (long-form)
 

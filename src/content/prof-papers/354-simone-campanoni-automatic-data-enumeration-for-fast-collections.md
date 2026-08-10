@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-simone-campanoni"
-source_hash: "72419bb91336b3a066395ae56165cb8aac11ba2ef845309b5c2e89af01608c48"
+source_hash: "e181ac7342fc393bcddad76d08b6908fb32cbd3125984e8e8c6fbb3c457ec19f"
 sequence: 354
 generator: "outreach-garden: managed"
 ---

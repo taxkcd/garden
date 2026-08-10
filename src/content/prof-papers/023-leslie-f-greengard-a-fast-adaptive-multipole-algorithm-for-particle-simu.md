@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-greengar"
-source_hash: "ff12afe0bd2790cf2848dc20c230b5f4365e5cf95c172edcffa968417ddd38a9"
+source_hash: "a1f09d04741015d33050e163846e4165da51741fed0956712aef5ee55462f56d"
 sequence: 23
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,63 @@ Research interests: Scientific computing, fast algorithms, adaptive methods, int
 - [A Short Course on Fast Multipole Methods](http://math.nyu.edu/faculty/greengar/shortcourse_fmm.pdf)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_Everything the paper assumes you already know, in the order you should learn it. Some stages have no visible connection to the paper's title — that is the point: this is the background the paper never explains._
+
+This playlist provides foundational and core knowledge necessary to understand the fast adaptive multipole algorithm for particle simulations. It covers essential mathematics, physics, numerical methods, and algorithmic complexity concepts. Work through the stages in order to build a solid background before reading the paper.
+
+**The paper assumes:** multivariable calculus, classical mechanics, numerical linear algebra, computational complexity, numerical methods for partial differential equations, and classical fast multipole method
+**Time to work through:** roughly 90-100 hours if you watch all selected playlists fully, about 50-60 hours if you follow the recommended episode ranges and skip non-essential parts.
+**Already in this field?** Skip stages 1-3 if you have a strong background in numerical analysis and computational physics, especially if you are familiar with multipole expansions and hierarchical algorithms.
+
+### Stage 1 · Multivariable Calculus and Vector Calculus *(foundational)*
+Understanding gradients, divergence, and integrals in multiple dimensions is crucial for grasping the physical and mathematical formulation of potentials and forces in particle systems governed by Coulomb's law.
+
+▶ **Course:** [MIT 18.02 Multivariable Calculus, Fall 2007](https://www.youtube.com/playlist?list=PL4C4C8A7D06566F38) — MIT OpenCourseWare · 35 videos · 28.3h across 35 episodes
+
+*What to watch:* Watch the first 24 lectures of the MIT 18.02 Multivariable Calculus, Fall 2007 playlist, focusing on vector fields, gradient, divergence, line integrals, Green's theorem, and flux. These topics directly relate to the mathematical tools used in the paper.
+
+*Move on when you can:* Compute the gradient and divergence of vector fields and evaluate surface and volume integrals in two dimensions.
+
+### Stage 2 · Classical Mechanics and Electrostatics *(foundational)*
+The paper simulates Coulombic interactions and potential fields, so understanding classical mechanics and electrostatics, including Coulomb's law and potentials, is essential to comprehend the physical problem.
+
+▶ **Course:** [8.02x - MIT Physics II: Electricity and Magnetism](https://www.youtube.com/playlist?list=PLyQSN7X0ro2314mKyUiOILaOC2hk6Pc3j) — Lectures by Walter Lewin. They will make you ♥ Physics. · 40 videos · 31.7h across 40 episodes
+
+*What to watch:* Watch the first 10 lectures of the 8.02x - MIT Physics II: Electricity and Magnetism playlist by Walter Lewin, focusing on electric charges, Coulomb's law, electric field lines, Gauss' law, electrostatic potential, and energy. These lectures provide a thorough physics foundation for the paper.
+
+*Move on when you can:* Explain Coulomb's law and derive the potential and force between charged particles in two dimensions.
+
+### Stage 3 · Numerical Linear Algebra and Matrix Computations *(core)*
+Efficient numerical methods for matrix-vector products and understanding sparse vs dense matrices are fundamental to the algorithm's computational complexity and storage efficiency.
+
+▶ **Course:** [MIT 18.06 Linear Algebra, Spring 2005](https://www.youtube.com/playlist?list=PLE7DDD91010BC51F8) — MIT OpenCourseWare · 36 videos · 28.0h across 36 episodes
+
+*What to watch:* Watch the first 12 lectures of the MIT 18.06 Linear Algebra, Spring 2005 playlist by Gilbert Strang, covering the geometry of linear equations, elimination with matrices, multiplication, inverse matrices, LU factorization, and fundamental subspaces. These topics underpin the numerical methods used in the paper.
+
+*Move on when you can:* Perform matrix-vector multiplication efficiently and explain the concept of sparse and dense matrices.
+
+### Stage 4 · Computational Complexity and Algorithm Analysis *(core)*
+Understanding asymptotic notation and complexity analysis is essential to appreciate the paper's claim of O(N) computational complexity and its comparison to naive O(N^2) methods.
+
+▶ **Course:** [MIT 6.006 Introduction to Algorithms, Spring 2020](https://www.youtube.com/playlist?list=PLUl4u3cNGP63EdVPNLG3ToM6LaEUuStEY) — MIT OpenCourseWare · 32 videos · 35.3h across 32 episodes
+
+*What to watch:* Watch the first 10 lectures of the MIT 6.006 Introduction to Algorithms, Spring 2020 playlist, focusing on algorithms and computation, data structures, sets and sorting, hashing, linear sorting, and binary trees. These lectures provide a solid foundation in algorithm analysis relevant to the paper.
+
+*Move on when you can:* Analyze and compare the time complexity of naive and optimized algorithms for pairwise particle interactions.
+
+### Stage 5 · Numerical Methods for Partial Differential Equations *(core)*
+The multipole expansions approximate solutions to potential fields governed by PDEs like Laplace's equation; understanding numerical PDE methods helps grasp how these approximations are constructed and used.
+
+▶ **Course:** [Student Lectures - Differential Equations](https://www.youtube.com/playlist?list=PL4d5ZtfQonW0fTwPsRvvg9hMJllVyj1l3) — Oxford Mathematics · 12 videos · 9.5h across 12 episodes
+
+*What to watch:* Watch the entire Student Lectures - Differential Equations playlist by Oxford Mathematics, focusing on lectures covering differential equations, Fourier series, and numerical solutions of differential equations. These provide the necessary background on PDEs relevant to multipole expansions.
+
+*Move on when you can:* Explain the boundary value problems for Laplace's equation and implement a basic numerical solver.
+
+_Work through the stages in order. Once the last one lands, the paper — and the two tracks below — should read cleanly._
 
 ## Track 1 — Academic deep-dives (long-form)
 

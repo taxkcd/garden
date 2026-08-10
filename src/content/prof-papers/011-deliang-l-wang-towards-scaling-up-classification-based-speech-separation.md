@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-dwang"
-source_hash: "7ce31a8f6804bc76ae07f8a1c9cdf6a7ac49be7789327f3a8d150c77cb6e87f9"
+source_hash: "7448ad72de45a1053b8abbe00a39b03c3886d36ea020c24858a4bc48af90e511"
 sequence: 11
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,54 @@ This paper addresses the challenge of separating speech from background noise us
 - [Resolved homepage](https://web.cse.ohio-state.edu/~arora.9/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_Everything the paper assumes you already know, in the order you should learn it. Some stages have no visible connection to the paper's title — that is the point: this is the background the paper never explains._
+
+This playlist provides foundational and core knowledge necessary to understand the paper 'Towards Scaling Up Classification-Based Speech Separation.' It covers essential mathematical concepts, digital signal processing fundamentals, machine learning basics, deep neural networks and feature learning, and support vector machines. Work through the stages in order to build a solid background before reading the paper.
+
+**The paper assumes:** linear algebra, probability theory, digital signal processing, machine learning fundamentals, deep neural networks, support vector machines, speech enhancement and separation techniques
+**Time to work through:** Roughly 70-80 hours if you watch all recommended content, about 40-45 hours if you follow the skip guidance.
+**Already in this field?** Skip stages 1-3 if you have a solid background in signal processing and machine learning basics; focus on stages 4-6 if you already understand deep learning and classical speech separation methods.
+
+### Stage 1 · Linear Algebra and Probability Theory *(foundational)*
+Understanding vector spaces, matrix operations, eigenvalues, and probability distributions is essential to grasp feature representations, statistical modeling, and optimization methods used throughout the paper.
+
+▶ **Course:** [MIT 18.06 Linear Algebra, Spring 2005](https://www.youtube.com/playlist?list=PLE7DDD91010BC51F8) — MIT OpenCourseWare · 36 videos · 28.0h across 36 episodes
+
+*What to watch:* Watch the MIT 18.06 Linear Algebra, Spring 2005 playlist by MIT OpenCourseWare, focusing on episodes 1 through 23 which cover linear equations, matrix operations, subspaces, projections, determinants, and eigenvalues—key concepts for understanding feature transformations and statistical modeling in the paper.
+
+*Move on when you can:* Explain how matrix multiplication can represent linear transformations and compute the expectation and variance of a given random variable.
+
+### Stage 2 · Digital Signal Processing Fundamentals *(foundational)*
+The paper processes raw audio signals and extracts acoustic features; knowledge of time-frequency analysis, Fourier transforms, and filtering is critical to understand feature extraction and mask estimation.
+
+▶ **Course:** [Digital Signal Processing (DSP)](https://www.youtube.com/playlist?list=PLUQpHm_JtukLkIO7QB6dp3KITCOM0ChGq) — IIT Madras - BS in Electronic Systems · 107 videos · 20.2h across the first 60 episodes
+
+*What to watch:* Use the 'Digital Signal Processing (DSP)' playlist by IIT Madras - BS in Electronic Systems, focusing on the first 60 episodes which cover signals, sampling, convolution, Fourier transforms, and system properties essential for understanding STFT and acoustic feature extraction in the paper.
+
+*Move on when you can:* Compute the short-time Fourier transform (STFT) of a speech signal and explain how it represents frequency content over time.
+
+### Stage 3 · Machine Learning Basics *(core)*
+The paper builds on supervised classification methods; understanding concepts like classification, feature extraction, overfitting, and evaluation metrics is necessary to follow the system design and performance analysis.
+
+▶ **Course:** [Stanford CS229: Machine Learning led by Andrew Ng | Autumn 2018](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU) — Stanford Online · 21 videos · 27.9h across 21 episodes
+
+*What to watch:* Watch the Stanford CS229: Machine Learning led by Andrew Ng | Autumn 2018 playlist by Stanford Online, focusing on lectures 1 through 12 to cover supervised learning, classification algorithms including logistic regression and SVMs, overfitting, and evaluation metrics relevant to the paper's classification approach.
+
+*Move on when you can:* Train a simple classifier (e.g., logistic regression) on labeled data and evaluate its accuracy on a test set.
+
+### Stage 4 · Deep Neural Networks and Feature Learning *(core)*
+The proposed system uses deep neural networks with restricted Boltzmann machine pre-training to learn discriminative features; understanding DNN architectures, training algorithms, and unsupervised pre-training is vital to grasp the feature learning approach.
+
+▶ **Course:** [Neural Networks and Deep Learning (Course 1 of the Deep Learning Specialization)](https://www.youtube.com/playlist?list=PLkDaE6sCZn6Ec-XTbcX1uRg2_u4xOEky0) — DeepLearningAI · 43 videos · 5.7h across 43 episodes
+
+*What to watch:* Focus on the 'Neural Networks and Deep Learning (Course 1 of the Deep Learning Specialization)' playlist by DeepLearningAI, especially the first 20 episodes covering neural network basics, supervised learning with neural networks, backpropagation, and feature learning, which underpin the paper's DNN feature extraction and RBM pre-training.
+
+*Move on when you can:* Implement a feedforward neural network and explain the role of pre-training with RBMs in improving training stability.
+
+_Work through the stages in order. Once the last one lands, the paper — and the two tracks below — should read cleanly._
 
 ## Track 1 — Academic deep-dives (long-form)
 

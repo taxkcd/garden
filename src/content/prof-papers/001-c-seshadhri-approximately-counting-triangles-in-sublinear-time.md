@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-sesh"
-source_hash: "7641a8225a9cd270579e2f930db032389e4d2590fc031b1d9005562ab6b62c65"
+source_hash: "bad2916931a4f762d3a1c111227ebdf3ff69fb1e5e35c4d9d18ba1d7a1607dec"
 sequence: 1
 generator: "outreach-garden: managed"
 ---
@@ -54,6 +54,54 @@ Research interests: theoretical study of algorithms, especially those with a mix
 - [DBLP](https://dblp.org/pid/60/4210.html)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_Everything the paper assumes you already know, in the order you should learn it. Some stages have no visible connection to the paper's title — that is the point: this is the background the paper never explains._
+
+This playlist provides foundational and core knowledge necessary to understand the paper "Approximately Counting Triangles in Sublinear Time." It covers essential graph theory concepts, probability and randomized algorithms, sublinear-time algorithms with query models, and sampling and variance reduction techniques. Work through these stages in order to build a solid theoretical background before diving into the paper.
+
+**The paper assumes:** graph theory fundamentals, randomized algorithms, sublinear algorithms, query complexity, sampling techniques in graphs, complexity lower bounds, and variance reduction methods
+**Time to work through:** roughly 40-50 hours if you watch all recommended lectures, about 25-30 hours if you follow the skip guidance.
+**Already in this field?** Skip stages 1-3 if you have a solid background in graph theory, randomized algorithms, and sublinear-time algorithm design.
+
+### Stage 1 · Discrete Mathematics and Graph Theory *(foundational)*
+Understanding the basic concepts of graphs, such as vertices, edges, degrees, and triangles, is essential because the paper focuses on counting triangles in graphs and uses graph terminology and properties throughout.
+
+▶ **Course:** [MIT 6.1200J Mathematics for Computer Science,  Spring 2024](https://www.youtube.com/playlist?list=PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d) — MIT OpenCourseWare · 24 videos · 31.7h across 24 episodes
+
+*What to watch:* Watch the MIT 6.1200J Mathematics for Computer Science, Spring 2024 playlist, focusing on episodes 11 (Graphs and Coloring), 13 (Connectivity and Trees), and 15-17 (Relations and Counting, Counting Techniques, More Counting Techniques) to grasp graph basics and counting methods relevant to triangle counting.
+
+*Move on when you can:* Explain what a triangle in a graph is and compute the degree of vertices in simple graphs.
+
+### Stage 2 · Probability and Randomized Algorithms *(foundational)*
+The paper uses randomized sampling and probabilistic guarantees to approximate triangle counts, so a solid grasp of probability theory and the design and analysis of randomized algorithms is necessary.
+
+▶ **Course:** [MIT 6.046J Design and Analysis of Algorithms, Spring 2015](https://www.youtube.com/playlist?list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp) — MIT OpenCourseWare · 34 videos · 39.5h across 34 episodes
+
+*What to watch:* Focus on the MIT 6.046J Design and Analysis of Algorithms, Spring 2015 playlist, especially lectures 6 (Randomization: Matrix Multiply, Quicksort), 7 (Randomization: Skip Lists), and 8 (Randomization: Universal & Perfect Hashing) to understand randomized algorithm design and analysis principles.
+
+*Move on when you can:* Calculate the probability of an event in a simple randomized algorithm and explain the concept of high probability bounds.
+
+### Stage 3 · Sampling and Variance Reduction Techniques *(core)*
+The algorithm relies on sampling vertices and edges and uses variance reduction methods like weighting triangles based on light endpoints to improve estimation accuracy.
+
+▶ [Variance Reduction Techniques in Monte Carlo Methods](https://www.youtube.com/watch?v=cVyVHKPnZ9s) — QuantVerse · 6 months ago
+
+*What to watch:* Watch the video "Variance Reduction Techniques in Monte Carlo Methods" by QuantVerse for a concise introduction to variance reduction methods relevant to sampling algorithms used in the paper.
+
+*Move on when you can:* Implement a simple sampling algorithm and explain how weighting can reduce variance in estimates.
+
+### Stage 4 · Graph Parameter Estimation and Triangle Counting Algorithms *(advanced)*
+Prior methods for triangle counting and graph parameter estimation form the basis for the paper’s approach; understanding these is necessary to appreciate the improvements and assumptions made.
+
+▶ [Lecture #9 - Graph Analytics - Triangle Counting](https://www.youtube.com/watch?v=quLDt39KQ5Y) — Programming Massively Parallel Processors · 49:32 · 3 years ago
+
+*What to watch:* Watch the video "Lecture #9 - Graph Analytics - Triangle Counting" from Programming Massively Parallel Processors to learn about existing triangle counting algorithms and their limitations in large graphs.
+
+*Move on when you can:* Describe a known triangle counting algorithm and its limitations in large graphs.
+
+_Work through the stages in order. Once the last one lands, the paper — and the two tracks below — should read cleanly._
 
 ## Track 1 — Academic deep-dives (long-form)
 
