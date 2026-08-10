@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-alexander-tropsha"
-source_hash: "f2a5568d0b000dedd639a0607e566e2fad79aa883fe391542c1da25d037a8165"
+source_hash: "e629d859b634c6008df27f89792a65af28c49f0960ac0a46d8c678d46de0349c"
 sequence: 278
 generator: "outreach-garden: managed"
 ---
@@ -53,60 +53,35 @@ This study challenges the traditional practice of balancing datasets and using b
 
 ## Foundations playlist — start here
 
-_Everything the paper assumes you already know, in the order you should learn it. Some stages have no visible connection to the paper's title — that is the point: this is the background the paper never explains._
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
 
-This playlist provides foundational and core knowledge necessary to understand and critically evaluate the paper on revising QSAR model accuracy assessment for virtual screening. It covers probability and statistics fundamentals to grasp classification metrics, an introduction to machine learning focusing on classification and model evaluation, cheminformatics essentials for molecular descriptor understanding, QSAR modeling and virtual screening concepts, and advanced handling of imbalanced datasets in classification. Work through these stages in order to build a solid base before engaging with the paper's content.
+**What you're missing:** Machine learning classification metrics
+**The paper assumes:** classification performance metrics, imbalanced dataset evaluation, virtual screening model assessment
+**Already in this field?** Skip this entirely if you already understand classification metrics for imbalanced data and their application in machine learning model evaluation.
 
-**The paper assumes:** machine learning fundamentals, supervised classification, cheminformatics basics, QSAR modeling, imbalanced data handling, virtual screening evaluation metrics
-**Time to work through:** roughly 40-45 hours if you watch all recommended content, about 25-30 hours following the skip guidance
-**Already in this field?** Skip stages 1-3 if you have a solid background in machine learning and cheminformatics; focus on stages 4-6 for domain-specific knowledge and evaluation metrics.
+This background focuses on machine learning classification metrics, crucial for understanding the evaluation of QSAR models in virtual screening as discussed in the paper. The rigorous course provides a deep, structured university-level treatment of classification metrics and their theoretical foundations, while the fast track offers a concise, intuitive introduction to classification and related metrics, ideal for quickly grasping key concepts without extensive time investment.
 
-### Stage 1 · Probability and Statistics Fundamentals *(foundational)*
-Understanding classification metrics like PPV, balanced accuracy, and AUROC requires a solid grasp of probability distributions, confusion matrices, and statistical measures of classifier performance.
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
 
-▶ **Course:** [Statistics 110: Probability](https://www.youtube.com/playlist?list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo) — Harvard University · 35 videos · 27.1h across 35 episodes
+▶ [Stanford CS229: Machine Learning Course | Summer 2019 (Anand Avati)](https://www.youtube.com/playlist?list=PLoROMvodv4rNH7qL6-efu_q2_bPuy0adh) — Stanford Online · 23 videos · 43.0h across 23 episodes
 
-*What to watch:* Watch the first 24 lectures of the 'Statistics 110: Probability' playlist by Harvard University, focusing on probability concepts, random variables, distributions, expectation, and key probability theorems. These lectures provide a rigorous foundation for understanding confusion matrix components and derived metrics.
+**Watch only this:** Lectures 5 (Perceptron and Logistic Regression), 9 (Bayesian Methods - Parametric & Non), 12 (Bias and Variance & Regularization), 21 (Evaluation Metrics), and 22 (Practical Tips and Course Recap), about 9 hours total — these cover classification basics, probabilistic foundations, bias-variance tradeoff, and detailed evaluation metrics.
 
-*Move on when you can:* Explain and compute confusion matrix components (TP, FP, TN, FN) and derive precision, recall, and accuracy from them.
+*Why it unblocks this paper:* Stanford CS229 is a comprehensive, authoritative machine learning course that includes detailed lectures on evaluation metrics, including a dedicated lecture on evaluation metrics (Lecture 21). This course covers the theoretical underpinnings and practical implications of metrics like balanced accuracy, PPV, AUROC, and more, directly relevant to the paper's focus.
 
-### Stage 2 · Introduction to Machine Learning *(foundational)*
-The paper builds on supervised learning concepts, especially classification algorithms and model evaluation, which are fundamental to understanding QSAR model training and assessment.
+*If you want all of it:* 43.0 hours across 23 episodes
 
-▶ **Course:** [Stanford CS229: Machine Learning led by Andrew Ng | Autumn 2018](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU) — Stanford Online · 21 videos · 27.9h across 21 episodes
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
 
-*What to watch:* Focus on the first 10 lectures of the 'Stanford CS229: Machine Learning led by Andrew Ng | Autumn 2018' playlist, covering supervised learning setup, logistic regression, decision trees, ensemble methods, and model evaluation techniques. These lectures provide a comprehensive introduction to classification and performance metrics relevant to QSAR modeling.
+▶ [Classification & Metrics](https://www.youtube.com/playlist?list=PLAiQ4trJO7GgwI-QjsiWE1Q5LHFc1nmUx) — AI Upskill Lab · 6 videos · 0.3h across 6 episodes
 
-*Move on when you can:* Train a simple binary classifier and evaluate its performance using accuracy and precision metrics on a labeled dataset.
+**Watch only this:** All 6 episodes, about 18 minutes total — this concise series covers classification concepts and key metrics relevant to the paper's evaluation focus.
 
-### Stage 3 · Cheminformatics and Molecular Descriptors *(core)*
-QSAR modeling relies on representing chemical compounds numerically via molecular descriptors; understanding these representations is essential to grasp how models predict biological activity.
+*Why it unblocks this paper:* The 'Classification & Metrics' series by AI Upskill Lab is a short, clear, and well-structured explainer playlist that covers classification basics, confusion matrices, and the implications of false positives and false negatives, which are central to understanding the paper's critique of balanced accuracy and promotion of PPV-N.
 
-▶ **Course:** [Cheminformatics Crash Course](https://www.youtube.com/playlist?list=PLVayZSzAgeBWFdS4m_UvAH6euj2kv57v6) — shityakoff · 9 videos · 1.4h across 9 episodes
-
-*What to watch:* Watch the entire 'Cheminformatics Crash Course' playlist by shityakoff. This concise 9-episode series covers the fundamentals of cheminformatics, including molecular representations and descriptor calculations, which are crucial for understanding QSAR input features.
-
-*Move on when you can:* Explain common molecular descriptors and compute simple descriptors for a given molecule using cheminformatics tools.
-
-### Stage 4 · QSAR Modeling and Virtual Screening *(core)*
-The paper compares traditional QSAR modeling practices and virtual screening workflows, so familiarity with QSAR model construction, validation, and virtual screening concepts is critical.
-
-▶ **Course:** [Drug Discovery in Code — Hands-On Computational Drug Discovery in Python](https://www.youtube.com/playlist?list=PLZgfNuGT2FVs) — Life Sciences AI Applications · 10 videos · 0.5h across 10 episodes
-
-*What to watch:* Watch the full 'Drug Discovery in Code — Hands-On Computational Drug Discovery in Python' playlist by Life Sciences AI Applications. This 10-episode series walks through practical QSAR model building, data handling, and virtual screening workflows, directly aligning with the paper's approach.
-
-*Move on when you can:* Build a QSAR model using a dataset of compounds and predict activity; explain the role of training, validation, and test sets in virtual screening.
-
-### Stage 5 · Handling Imbalanced Datasets in Classification *(advanced)*
-The paper challenges the practice of dataset balancing and discusses imbalanced training; understanding techniques and pitfalls in imbalanced classification is necessary to follow the arguments.
-
-▶ [Live Discussion On Handling Imbalanced Dataset- Machine ...](https://www.youtube.com/watch?v=pDw_JHHvj-0) — Krish Naik · 1:20:07
-
-*What to watch:* Watch the single video 'Live Discussion On Handling Imbalanced Dataset- Machine ...' by Krish Naik. This detailed discussion covers practical aspects of handling imbalanced datasets, feature engineering, and their impact on model performance metrics, directly relevant to the paper's focus.
-
-*Move on when you can:* Describe common methods for handling imbalanced data (e.g., resampling, weighting) and explain their impact on classifier performance metrics.
-
-_Work through the stages in order. Once the last one lands, the paper — and the two tracks below — should read cleanly._
+*If you want all of it:* 0.3 hours across 6 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 
