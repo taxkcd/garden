@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-steven-t-flammia"
-source_hash: "65ac2312294c96275b41d1bf646b554e700146c2c4bd415d4ef8eb8d6a6fc6a4"
+source_hash: "659d97be0ff3fddeaf507101c7c53b3ec1210d31d3dcc91d40173834971ee73c"
 sequence: 71
 generator: "outreach-garden: managed"
 ---
@@ -60,33 +60,33 @@ Research interests: Quantum information theory, Condensed matter theory, Topolog
 
 _The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
 
-**What you're missing:** Quantum Hamiltonian Estimation
-**The paper assumes:** quantum Hamiltonian estimation, quantum state evolution, operator norms, adaptive quantum measurements
-**Already in this field?** Skip this entirely if you already understand quantum Hamiltonian estimation methods and the mathematical framework of quantum state evolution and measurement.
+**What you're missing:** quantum Hamiltonian dynamics
+**The paper assumes:** quantum mechanics of Hamiltonian operators, unitary evolution, and operator norm metrics
+**Already in this field?** Skip this entirely if you already understand quantum system evolution under Hamiltonians and the associated mathematical formalism.
 
-To understand the autonomous Hamiltonian certification and changepoint detection protocols in this paper, a solid grasp of quantum Hamiltonian estimation and time evolution in quantum mechanics is essential. The rigorous course option provides a deep, structured university-level foundation on quantum mechanics including Hamiltonians and time evolution, while the fast track offers a concise, intuition-focused summary of key quantum mechanics concepts relevant to Hamiltonians and their dynamics. Choose the course for thorough understanding and the fast track for a quicker conceptual overview.
+To understand the autonomous Hamiltonian certification and changepoint detection protocols in this paper, a solid grasp of quantum Hamiltonian dynamics is essential. The rigorous course option offers a deep, structured university-level treatment of quantum perturbation theory and Hamiltonian spectral properties, ideal for thorough comprehension. The fast track provides a concise, focused introduction to the Schrödinger equation and time evolution in quantum mechanics, suitable for quickly gaining the core concepts needed to follow the paper's methods.
 
 ### The course
 _Rigorous, and the one to pick if you want to hold this material properly._
 
-▶ [MIT 8.04 Quantum Physics I, Spring 2013 (2013)](https://www.youtube.com/playlist?list=PLUl4u3cNGP61-9PEhRognw5vryrSEVLPr) — MIT OpenCourseWare · 25 videos · 32.6h across 25 episodes
+▶ [MIT 8.06 Quantum Physics III, Spring 2018](https://www.youtube.com/playlist?list=PLUl4u3cNGP60Zcz8LnCDFI8RPqRhJbb4L) — MIT OpenCourseWare · 100 videos · 17.4h across the first 60 episodes
 
-**Watch only this:** Lectures 5 (Operators and the Schrödinger Equation), 6 (Time Evolution and the Schrödinger Equation), 7 (More on Energy Eigenstates), and 23 (More on Spin), about 5.2 hours total — these cover the Hamiltonian operator, time evolution, and spin systems essential for the paper's methods.
+**Watch only this:** Lectures L1.1 through L3.4 (episodes 1 to 12), about 3.4 hours — covering perturbation theory, energy and state corrections, and basis considerations essential for grasping Hamiltonian dynamics and their perturbations.
 
-*Why it unblocks this paper:* MIT OpenCourseWare's 'Quantum Physics I' is a rigorous university-level course covering foundational quantum mechanics topics including time evolution, operators, and Hamiltonians, which are directly relevant to understanding the certification and changepoint detection protocols based on Hamiltonian dynamics.
+*Why it unblocks this paper:* MIT 8.06 Quantum Physics III is a rigorous university course covering perturbation theory, energy corrections, and Hamiltonian spectral properties, directly relevant to understanding the paper's theoretical analysis of Hamiltonian differences and state evolution.
 
-*If you want all of it:* All 25 lectures, about 32.6 hours total.
+*If you want all of it:* About 17.4 hours across the first 60 episodes.
 
 ### The fast track
 _Same ground, a fraction of the time — for when you just need to read the paper._
 
-▶ [The Feynman Lectures on Physics (Vol. 3) – Quantum Mechanics Explained | Complete Chapter Summaries](https://www.youtube.com/playlist?list=PLI3TocC2xS245Oc3BN348AcaECXtbkDbG) — Last Minute Lecture · 22 videos · 4.9h across 22 episodes
+▶ [Time evolution in quantum mechanics](https://www.youtube.com/playlist?list=PL8W2boV7eVflUqUY3dLhQdYuZjlbXi0mU) — Professor M does Science · 6 videos · 2.0h across 6 episodes
 
-**Watch only this:** Episodes 7 (Time Dependence of Amplitudes), 8 (The Hamiltonian Matrix Explained), and 11 (More Two-State Systems – Pauli Matrices), about 40 minutes total — these episodes cover time evolution, Hamiltonians, and spin-1/2 systems relevant to the paper.
+**Watch only this:** All 6 episodes, about 2.0 hours — covering the Schrödinger equation, time evolution operators, Ehrenfest theorem, constants of motion, time-energy uncertainty, and Schrödinger vs. Heisenberg pictures.
 
-*Why it unblocks this paper:* The 'Feynman Lectures on Physics (Vol. 3) – Quantum Mechanics Explained' playlist provides concise, well-structured chapter summaries focusing on quantum behavior, Hamiltonians, and time dependence, offering an accessible yet precise overview of quantum mechanics concepts needed for understanding Hamiltonian certification.
+*Why it unblocks this paper:* This short playlist focuses specifically on time evolution in quantum mechanics, including the Schrödinger equation and time evolution operators, providing a concise and intuitive foundation for understanding how quantum states evolve under Hamiltonians, which is central to the paper's protocols.
 
-*If you want all of it:* All 22 episodes, about 4.9 hours total.
+*If you want all of it:* 2.0 hours across 6 episodes.
 
 ## Track 1 — Academic deep-dives (long-form)
 
