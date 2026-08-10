@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-debswapna-bhattacharya"
-source_hash: "619a457bd7e1399d9cddfbd4c3ebc7b7e27be91fb4eeec67acb375474043b0aa"
+source_hash: "a2c990ebb954dd0c6c49026b96b11228ca218c68d7b861753493f1d36af3dab2"
 sequence: 282
 generator: "outreach-garden: managed"
 ---
@@ -57,32 +57,32 @@ Research interests: computational biology & bioinformatics, applied machine lear
 _The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
 
 **What you're missing:** Geometric Deep Learning
-**The paper assumes:** equivariant graph neural networks, geometric deep learning, SO(3)-equivariance, spatial graph convolutions
-**Already in this field?** Skip this entirely if you already understand equivariant graph neural networks and geometric deep learning principles applied to 3D molecular structures.
+**The paper assumes:** equivariant graph neural networks, geometric deep learning, SO(3)-equivariance, message passing on graphs, 3D molecular representation learning
+**Already in this field?** Skip this entirely if you already understand equivariant graph neural networks and geometric deep learning concepts applied to 3D molecular data.
 
-To understand the ORIGAMI paper's core methodology, which hinges on geometric deep learning and SO(3)-equivariant graph neural networks for protein interface assessment, a solid grasp of geometric deep learning concepts and graph neural networks is essential. The rigorous course option offers a deep, structured university-level foundation in 3D data and graph machine learning, while the fast track provides a concise, intuition-driven series of expert talks and explanations focused on graph neural networks and geometric deep learning principles. Choose the rigorous course for comprehensive mastery or the fast track for a focused, time-efficient conceptual overview.
+To understand the ORIGAMI paper's core methodology—an orientation-aware graph neural network preserving SO(3)-equivariance for protein interface assessment—this background focuses on geometric deep learning, especially on graphs and equivariant neural networks. The rigorous course option offers a deep, structured university-level treatment of 3D data and geometric deep learning principles, while the fast track provides a concise, intuition-driven series of expert talks and explanations on graph neural networks and geometric deep learning. Choose the rigorous course for a thorough foundation and the fast track for a quicker, concept-focused overview.
 
 ### The course
 _Rigorous, and the one to pick if you want to hold this material properly._
 
-▶ [Stanford CS224W Machine Learning with Graphs I Jure Leskovec](https://www.youtube.com/playlist?list=PLoROMvodv4rOP-ImU-O1rYRg2RFxomvFp) — Stanford Online · 47 videos · 24.1h across 47 episodes
+▶ [KAIST CS479: Machine Learning for 3D Data (Spring 2026)](https://www.youtube.com/playlist?list=PLyi5FHzX7hBxJnkFZa-9oVZnTsQcux79M) — Minhyuk Sung · 15 videos · 15.4h across 15 episodes
 
-**Watch only this:** Lectures 6.1 (Introduction to Graph Neural Networks), 7.1 (A general Perspective on GNNs), 7.2 (A Single Layer of a GNN), 7.3 (Stacking layers of a GNN), 8.1 (Graph Augmentation for GNNs), and 8.2 (Training Graph Neural Networks), about 3 hours 5 minutes total — these cover the core GNN concepts and training relevant to ORIGAMI's architecture.
+**Watch only this:** Lectures 2, 3, 4 (both parts), and 15 — about 5 hours total. These cover 3D representations, point clouds, 3D rotations/quaternions, and 3D generation, which are essential to grasping the geometric deep learning and equivariant message passing in the paper.
 
-*Why it unblocks this paper:* Stanford CS224W is a comprehensive, authoritative university course on machine learning with graphs, covering foundational and advanced topics including graph neural networks, message passing, and embedding techniques that directly underpin the ORIGAMI architecture's graph convolutional design and equivariant message passing.
+*Why it unblocks this paper:* KAIST CS479: Machine Learning for 3D Data (Spring 2026) is a university-level course that covers 3D representations, rotations, point clouds, and implicit neural representations, directly relevant to understanding SO(3)-equivariance and spatial graph neural networks used in ORIGAMI.
 
-*If you want all of it:* 24.1 hours across all 47 episodes
+*If you want all of it:* 15.4 hours across all 15 episodes.
 
 ### The fast track
 _Same ground, a fraction of the time — for when you just need to read the paper._
 
 ▶ [Graph neural networks and geometric deep learning](https://www.youtube.com/playlist?list=PLUyeLOe23o-9MoC2XLB7_BMIkjvyl4hEb) — Adam Safron · 14 videos · 10.6h across 14 episodes
 
-**Watch only this:** Episodes 5 (Theoretical Foundations of Graph Neural Networks), 7 (Stanford CS224W: Machine Learning with Graphs | 2021 | Lecture 1.1 - Why Graphs), and 12 (11 – Graph Convolutional Networks (GCNs)), about 2 hours 15 minutes total — these provide essential theory and intuition on GNNs and geometric deep learning.
+**Watch only this:** Episodes 3, 5, 7, 11, and 13 — about 3.75 hours total. These cover relational inductive biases, theoretical foundations, Stanford CS224W introduction to graphs, applications, and graph convolutional networks, giving a focused overview of GNNs and geometric deep learning.
 
-*Why it unblocks this paper:* Adam Safron's playlist offers a focused, expert-curated set of talks and explanations on graph neural networks and geometric deep learning, including theoretical foundations and applications, providing a clear and accessible overview of the key concepts needed to understand ORIGAMI's equivariant GNN approach in a fraction of the time.
+*Why it unblocks this paper:* Adam Safron's 'Graph neural networks and geometric deep learning' playlist offers a concise, expert-curated set of talks and explanations on graph neural networks and geometric deep learning principles, providing intuition and foundational knowledge relevant to the paper's approach.
 
-*If you want all of it:* 10.6 hours across 14 episodes
+*If you want all of it:* 10.6 hours across all 14 episodes.
 
 ## Track 1 — Academic deep-dives (long-form)
 
