@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-joel-s-bader"
-source_hash: "f46cc24a7420a1b33dd3f83add8117f29cafda7d3fa2eef2d824e5a3164f0058"
+source_hash: "3e81c396271f58efc6ff5f59e4a2e571655c1adb4317579d29fb249bfec0c88d"
 sequence: 157
 generator: "outreach-garden: managed"
 ---
@@ -58,32 +58,32 @@ Research interests: relationship between genotype and phenotype, applications to
 _The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
 
 **What you're missing:** Bayesian network inference
-**The paper assumes:** Bayesian network inference, probabilistic graphical models, and naïve Bayes modeling
-**Already in this field?** Skip this entirely if you already understand Bayesian networks and probabilistic inference methods used in computational biology.
+**The paper assumes:** Bayesian network inference, probabilistic graphical models, naïve Bayes classifiers
+**Already in this field?** Skip this entirely if you already understand Bayesian network models and probabilistic inference methods in computational biology or machine learning.
 
-This background focuses on Bayesian network inference, which is central to understanding the SIGNET method's probabilistic modeling and data integration approach in the paper. The rigorous course provides a deep and structured foundation in Bayesian networks, covering syntax, semantics, independence, inference algorithms, and learning. The fast track offers a concise, intuition-driven introduction to the same topics, suitable for readers who want a solid grasp quickly without the full depth.
+This background prepares the reader to understand the Bayesian network inference methods underlying the SIGNET model for causal gene prioritization in GWAS loci. The rigorous course option offers a deep, structured university-level introduction to Bayesian networks and inference, ideal for readers seeking comprehensive mastery. The fast track provides a concise, visual, and intuition-focused playlist on Bayesian networks, suitable for readers who want a solid conceptual grasp quickly without extensive time investment.
 
 ### The course
 _Rigorous, and the one to pick if you want to hold this material properly._
 
-▶ [Learning and Reasoning with Bayesian Networks](https://www.youtube.com/playlist?list=PLlDG_zCuBub6ywAIrM1DfJp8xaeVjyvwx) — UCLA Automated Reasoning Group · 36 videos · 22.2h across 36 episodes
+▶ [[CS188 SP24] Lectures](https://www.youtube.com/playlist?list=PLp8QV47qJEg67UTShQ4er4RYQ3rOeDKxv) — CS 188 (Artificial Intelligence) at UC Berkeley · 27 videos · 35.2h across 27 episodes
 
-**Watch only this:** Lectures 1a, 2a, 2b, 3a, 3b, 4a, 4b, 5a, 5b, 6a, 6b — about 6.5 hours total. This subset covers the basics of probability, Bayesian network syntax and semantics, independence, and key inference algorithms necessary to understand the paper's model and inference approach.
+**Watch only this:** Lectures 11 to 13 (Bayes Nets, Bayes Nets: Inference, Bayes Nets: Sampling), about 3.9 hours total — these cover Bayesian network basics, inference methods, and sampling techniques essential to understanding SIGNET's modeling and optimization.
 
-*Why it unblocks this paper:* This UCLA course by Adnan Darwiche is a comprehensive university-level lecture series focused specifically on Bayesian networks, covering foundational concepts, independence, inference methods, and parameter learning, all directly relevant to the Bayesian modeling in SIGNET.
+*Why it unblocks this paper:* The CS188 Artificial Intelligence course from UC Berkeley includes dedicated lectures on Bayesian networks, inference, and sampling, directly covering the probabilistic modeling and inference techniques SIGNET uses. It is a rigorous, university-level series taught by reputable instructors, providing a strong foundation in Bayesian network concepts and algorithms.
 
-*If you want all of it:* 22.2 hours across 36 episodes
+*If you want all of it:* 35.2 hours across 27 episodes
 
 ### The fast track
 _Same ground, a fraction of the time — for when you just need to read the paper._
 
-▶ [Bayesian](https://www.youtube.com/playlist?list=PLAQje4L5NVW7g6moHxjPiXcAqTcHwVaDI) — LASTMINBOOST · 13 videos · 1.5h across 13 episodes
+▶ [Bayesian Networks](https://www.youtube.com/playlist?list=PLbpt-wYz7rZsvghlD9Fef0lNEvWp-bnok) — alientransistor · 20 videos · 9.5h across 20 episodes
 
-**Watch only this:** Episodes 1, 2, 3, 4, 5, 6 — about 36 minutes total. These six episodes cover the core ideas and examples of Bayesian belief networks needed for a quick but solid understanding of the paper's Bayesian integration approach.
+**Watch only this:** Episodes 2, 3, 4, 5, 7, 10, 11, 15 (about 3 hours total) — these cover Bayesian network basics, conditional probabilities, independence, inference, and sampling, providing a concise conceptual foundation.
 
-*Why it unblocks this paper:* This short-form playlist by LASTMINBOOST provides clear, example-driven explanations of Bayesian belief networks and solved numerical examples, giving an accessible and intuitive overview of Bayesian network concepts relevant to the paper's method.
+*Why it unblocks this paper:* The 'Bayesian Networks' playlist by alientransistor offers clear, visual explanations of Bayesian networks, conditional probabilities, independence, and inference with concrete examples. It is well-suited for quickly building intuition about Bayesian network structure and inference relevant to SIGNET's naïve Bayes model and probabilistic integration.
 
-*If you want all of it:* 1.5 hours across 13 episodes
+*If you want all of it:* 9.5 hours across 20 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 
