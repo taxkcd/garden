@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-ajiang"
-source_hash: "9aeda0081b573c0095578680381f27dfaec50cba0a5ff41c91851965064f53e2"
+source_hash: "0ad3b0eccb23cb50a4de01b5e9448aa50ae41b89b0b17b32bd5875e5b99bbb7c"
 sequence: 33
 generator: "outreach-garden: managed"
 ---
@@ -59,31 +59,31 @@ _The background this paper assumes and never explains. Two ways in — a full co
 
 **What you're missing:** Error Correcting Codes
 **The paper assumes:** error correcting codes, LDPC codes, Tanner graphs, decoding algorithms, stopping sets
-**Already in this field?** Skip this entirely if you already understand the fundamentals of error correcting codes, LDPC codes, Tanner graph representations, and standard decoding methods.
+**Already in this field?** Skip this entirely if you already understand the fundamentals of error correcting codes and LDPC decoding.
 
-This background focuses on foundational knowledge of error correcting codes (ECC), especially LDPC codes and Tanner graphs, which are essential to understanding the stopping set elimination problem and collaborative decoding model in the paper. The rigorous course offers a deep, structured university-level treatment of ECC theory and decoding algorithms, while the fast track provides a concise, visual introduction to core ECC concepts and common codes. Choose the rigorous course for thorough mastery and the fast track for a quick but solid conceptual grasp.
+To understand the paper on collaborative decoding using natural redundancy and LDPC codes, a solid grasp of error-correcting codes, especially LDPC codes and their decoding algorithms, is essential. The rigorous course offers a deep dive into LDPC and Polar codes as used in 5G standards, covering foundational concepts and practical decoding techniques. The fast track provides a concise, algebraic introduction to error-correcting codes, ideal for quickly building intuition and fundamental knowledge without the extensive time commitment.
 
 ### The course
 _Rigorous, and the one to pick if you want to hold this material properly._
 
 ▶ [LDPC and Polar Codes in 5G Standard](https://www.youtube.com/playlist?list=PLyqSpQzTE6M81HJ26ZaNv0V3ROBrcv-Kc) — NPTEL-NOC IITM · 37 videos · 14.7h across 37 episodes
 
-**Watch only this:** Episodes 11 to 23 (Low Density Parity Check Codes: definition, properties and introduction to protograph construction through Debugging and Improvements to the MATLAB Implementation), about 4.5 hours — these cover LDPC code basics, Tanner graphs, iterative decoding, and practical decoding implementations.
+**Watch only this:** Episodes 1 (Intoduction - LDPC and Polar Codes in 5G Standard), 12 (Low Density Parity Check Codes: definition, properties and introduction to protograph construction), 13 (LDPC Codes in 5G: protograph, base matrix, expansion), 19 (Soft-Input Soft-Output Iterative Message Passing Decoder for LDPC Codes), and 20 (A Toy Example Illustration of the SISO MInsum Iterative Message Passing Decoder), about 2 hours total.
 
-*Why it unblocks this paper:* This NPTEL-NOC IITM course on 'LDPC and Polar Codes in 5G Standard' covers LDPC codes in detail, including Tanner graph construction, iterative decoding algorithms, and practical implementation aspects, directly relevant to the paper's focus on LDPC stopping sets and collaborative decoding.
+*Why it unblocks this paper:* This NPTEL course specifically covers LDPC codes, their Tanner graph structure, and iterative decoding algorithms, directly relevant to the paper's focus on stopping sets and collaborative decoding models.
 
-*If you want all of it:* All 37 episodes, about 14.7 hours.
+*If you want all of it:* Approximately 14.7 hours across all 37 episodes.
 
 ### The fast track
 _Same ground, a fraction of the time — for when you just need to read the paper._
 
-▶ [Error Detection & Correction Codes Explained | Block Codes, CRC, Hamming](https://www.youtube.com/playlist?list=PLgwJf8NK-2e4YXLjJ-Btbp2cbtDH8ilfK) — Engineering Funda · 21 videos · 5.4h across 21 episodes
+▶ [Error-Correcting Codes](https://www.youtube.com/playlist?list=PLA1qgQLL41STeC3RoWeEONqX48dMjdLVY) — Cryptography 101 · 37 videos · 9.8h across 37 episodes
 
-**Watch only this:** First 7 episodes (Introduction to Block Codes Explained through Hamming Code Explained), about 1.75 hours — these cover the basics of block codes, parity checks, and Hamming codes essential for grasping ECC fundamentals.
+**Watch only this:** Episodes V0 (Introduction), V1a (Basic definitions and concepts), V3a (Introduction to linear codes), V3b (Dual code and parity-check matrices), and V3f (Syndrome decoding), about 1.25 hours total.
 
-*Why it unblocks this paper:* This Engineering Funda playlist offers concise, clear explanations of error detection and correction codes including block codes, Hamming codes, cyclic codes, and convolutional codes, providing a quick but solid foundation in ECC concepts relevant to understanding the paper's context.
+*Why it unblocks this paper:* This Cryptography 101 playlist offers a clear, algebraic introduction to error-correcting codes, including linear codes and parity-check matrices, which underpin the LDPC code concepts in the paper, making it a concise primer.
 
-*If you want all of it:* All 21 episodes, about 5.4 hours.
+*If you want all of it:* Approximately 9.8 hours across all 37 episodes.
 
 ## Track 1 — Academic deep-dives (long-form)
 
