@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-anh-nguyen"
-source_hash: "aff517456f849a661c4030e64f21858521ca17988c2984924d3340e74e594e1a"
+source_hash: "f0a1c00924f5c92a7394309dca271a15a699aa9aa883a6e7de52259015b74250"
 sequence: 170
 generator: "outreach-garden: managed"
 ---
@@ -58,32 +58,32 @@ Research interests: understanding the weaknesses, behaviors, and inner-workings 
 _The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
 
 **What you're missing:** Explainable AI and Human-AI Interaction
-**The paper assumes:** foundations of explainable AI, human-AI interaction principles, and evaluation of AI explanations
-**Already in this field?** Skip this entirely if you already understand core concepts of explainable AI and how humans interact with AI explanations in interactive systems.
+**The paper assumes:** explainable AI principles, human-AI interaction design, interpretability evaluation methods
+**Already in this field?** Skip this entirely if you already understand the basics of explainable AI and how humans interact with AI explanations.
 
-To understand the design and evaluation of interactive explanation interfaces for improving human verification of LLM reasoning, foundational knowledge in explainable AI (XAI) and human-AI interaction is essential. The rigorous course option offers a deep, structured university-level introduction to AI concepts that underpin explainability and interaction design, while the fast track provides concise, accessible explainers focused on human-AI interaction principles and relevant AI technologies. Choose the course for comprehensive depth and the fast track for a focused, time-efficient overview.
+To understand the design and evaluation of interactive explanation interfaces for improving human verification of LLM reasoning, foundational knowledge in explainable AI (XAI) and human-computer interaction (HCI) is essential. The rigorous course option offers a comprehensive university-level lecture series on Human-Computer Interaction, covering cognitive aspects, design principles, and user perspectives relevant to interpretability and usability. The fast track provides a concise, focused playlist on Explainable AI concepts and techniques, ideal for quickly grasping the core ideas behind AI interpretability and explanation methods.
 
 ### The course
 _Rigorous, and the one to pick if you want to hold this material properly._
 
-▶ [An Introduction to Artificial Intelligence](https://www.youtube.com/playlist?list=PLp6ek2hDcoNB_YJCruBFjhF79f5ZHyBuz) — NPTEL IIT Delhi · 99 videos · 20.3h across the first 60 episodes
+▶ [Human Computer Interaction (In English)](https://www.youtube.com/playlist?list=PLyqSpQzTE6M-KVz-9blW7qq_LgDPSOtEE) — NPTEL-NOC IITM · 45 videos · 26.3h across 45 episodes
 
-**Watch only this:** Episodes 1-10 ("An Introduction to Artificial Intelligence | Prof. Mausam" through "Introduction: Examples Tasks, Phases of AI & Course Plan"), about 3.5 hours — these cover AI basics, reasoning, and agent concepts relevant to explainability and human-AI interaction.
+**Watch only this:** Episodes 1-4 (Introduction to HCI parts 1 & 2, Good Design Vs Bad Design, HCI Project), plus Episodes 19-20 (Cognitive Aspects in Human-Computer Interaction and Introduction to Behance), totaling about 3.5 hours — these provide foundational knowledge on HCI principles, cognitive load, and design relevant to interactive explanation interfaces.
 
-*Why it unblocks this paper:* This NPTEL IIT Delhi course provides a thorough introduction to artificial intelligence concepts, including foundational knowledge about AI reasoning and agent design, which are crucial for understanding the motivation and mechanisms behind explainable AI and interactive interfaces in the paper.
+*Why it unblocks this paper:* This 45-episode university lecture series by Prof. Rajiv Ratn Shah covers Human-Computer Interaction comprehensively, including cognitive aspects and design principles that directly relate to the paper's focus on reducing cognitive load and improving explanation usability in AI systems.
 
-*If you want all of it:* About 20.3 hours across the first 60 episodes
+*If you want all of it:* 26.3 hours across all 45 episodes
 
 ### The fast track
 _Same ground, a fraction of the time — for when you just need to read the paper._
 
-▶ [Human-AI Interaction](https://www.youtube.com/playlist?list=PLrP4pPp4AwxOxwevZWlBvSNz-F5wFHGdx) — Infinitivity Design Labs · 12 videos · 3.7h across 12 episodes
+▶ [Explainable AI](https://www.youtube.com/playlist?list=PLV8yxwGOxvvovp-j6ztxhF3QcKXT6vORU) — DeepFindr · 13 videos · 3.5h across 13 episodes
 
-**Watch only this:** Episodes 1-4 ("Generative Model That Won 2024 Nobel Prize" through "How a Brain Implant and AI Gave a Woman with Paralysis Her Voice Back"), about 1.2 hours — these episodes introduce AI capabilities and human-AI interaction context relevant to understanding explanation interfaces.
+**Watch only this:** Episodes 1-5 (Introduction, By-design interpretable models, LIME, SHAP, Counterfactual explanations), about 1.25 hours — these cover the core XAI methods and principles necessary to understand the motivation and evaluation of explanation interfaces.
 
-*Why it unblocks this paper:* This concise series by Infinitivity Design Labs focuses on human-AI interaction and foundational AI concepts, providing clear, intuition-driven explanations that align well with the paper's focus on interactive explanation interfaces and human verification.
+*Why it unblocks this paper:* This 13-episode playlist by DeepFindr offers a concise and clear introduction to Explainable AI concepts and popular explanation techniques like LIME and SHAP, which underpin the interpretability goals of the paper's interactive explanation formats.
 
-*If you want all of it:* About 3.7 hours across 12 episodes
+*If you want all of it:* 3.5 hours across all 13 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 
