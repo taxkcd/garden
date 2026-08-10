@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-emily-prud-hommeaux"
-source_hash: "b9ddc655580ea8f7cec76e364ec5b58e0976f77943ae3f4c6e8586b42b4a7b4a"
+source_hash: "f492daaefd2789092c759b19fb3e5c0ba12bf071775a7f1c666ab0307878489c"
 sequence: 66
 generator: "outreach-garden: managed"
 ---
@@ -57,32 +57,32 @@ This study investigates how to efficiently build part-of-speech (POS) tagging tr
 _The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
 
 **What you're missing:** active learning in NLP
-**The paper assumes:** active learning, uncertainty sampling, conditional random fields, part-of-speech tagging, machine learning for NLP
-**Already in this field?** Skip this entirely if you already understand active learning methods and their application in natural language processing tasks.
+**The paper assumes:** active learning methods, uncertainty sampling, part-of-speech tagging, natural language processing
+**Already in this field?** Skip this entirely if you already understand active learning techniques and their application in NLP tasks like POS tagging.
 
-To understand the active learning (AL) methodology used in the paper on POS tagging training sets, it is essential to grasp AL principles and their application in NLP. The rigorous course option offers a deep, structured university-level lecture series covering foundational and advanced NLP topics including active learning, while the fast track provides a concise, focused playlist with practical insights on AL and related NLP techniques. Choose the course for comprehensive mastery or the fast track for a quicker, practical overview.
+This background focuses on active learning in natural language processing (NLP), a core method used in the paper for efficient POS tagging training set construction. The rigorous course option offers a deep, structured university-level understanding of NLP fundamentals and active learning context, while the fast track provides a concise, practical introduction to active learning annotation powered by spaCy and Prodigy, suitable for quick comprehension and applied insight. Choose the course for comprehensive theoretical grounding and the fast track for a practical, time-efficient overview.
 
 ### The course
 _Rigorous, and the one to pick if you want to hold this material properly._
 
-▶ [Stanford CS224N: Natural Language Processing with Deep Learning | 2023](https://www.youtube.com/playlist?list=PLoROMvodv4rMFqRtEuo6SGjY4XbRIVRd4) — Stanford Online · 23 videos · 29.2h across 23 episodes
+▶ [Stanford CS224N Natural Language Processing with Deep Learning I Spring 2024 I Professor Christopher Manning](https://www.youtube.com/playlist?list=PLoROMvodv4rOaMFbaqxPDoLWjDaRAdP9D) — Stanford Online · 23 videos · 27.5h across 23 episodes
 
-**Watch only this:** Lectures 1-3 (Intro & Word Vectors, Neural Classifiers, Backprop and Neural Networks) plus Lecture 10 (Prompting, Reinforcement Learning from Human Feedback) and Lecture 17 (Model Analysis and Explanation), about 7.5 hours total — these provide the necessary background on NLP models, learning paradigms, and evaluation to understand active learning in this context.
+**Watch only this:** Lectures 1 (Intro and Word Vectors), 4 (Dependency Parsing), 5 (Recurrent Neural Networks), 6 (Sequence to Sequence Models), and 12 (Efficient Training, Shikhar Murty) — about 6 hours total. These cover core NLP techniques, parsing, sequence modeling, and efficient training strategies related to active learning.
 
-*Why it unblocks this paper:* Stanford CS224N: Natural Language Processing with Deep Learning (2023) is a top-tier university course that covers NLP fundamentals and advanced topics, including active learning concepts relevant to POS tagging and uncertainty sampling, which are central to the paper's methodology and results.
+*Why it unblocks this paper:* Stanford CS224N Natural Language Processing with Deep Learning (Spring 2024) is a top-tier university course covering foundational NLP concepts including sequence models, dependency parsing, and annotation methods relevant to active learning. It provides the theoretical and practical background needed to understand the paper's use of active learning with CRFs and uncertainty sampling for POS tagging.
 
-*If you want all of it:* 29.2 hours across 23 episodes
+*If you want all of it:* 27.5 hours across 23 episodes
 
 ### The fast track
 _Same ground, a fraction of the time — for when you just need to read the paper._
 
-▶ [NLP](https://www.youtube.com/playlist?list=PLUYrJZjXcgXBwlBHEWfRokyGus-WCJ0bw) — Daphné pertsekos · 7 videos · 4.8h across 7 episodes
+▶ [NLP with Spacy](https://www.youtube.com/playlist?list=PLGZ2RJ3mzrLtETkEU_EsO0KTADJogEuBy) — oon arfiandwi (OonID) · 18 videos · 10.1h across 18 episodes
 
-**Watch only this:** Videos: 'TRAINING A NEW ENTITY TYPE with Prodigy – annotation powered by active learning', 'Conditional Random Fields - Stanford University (By Daphne Koller)', and 'TRAINING A NEW ENTITY TYPE with Prodigy – annotation powered by active learning' (repeated for emphasis), about 2 hours total — these cover the core AL concepts and CRF models used in the paper.
+**Watch only this:** Episodes 2 (TRAINING A NEW ENTITY TYPE with Prodigy – annotation powered by active learning) and 10 (TRAINING AN INSULTS CLASSIFIER with Prodigy in ~1 hour) — about 1.5 hours total. These focus directly on active learning annotation techniques and practical training.
 
-*Why it unblocks this paper:* This concise playlist by Daphné pertsekos includes focused videos on active learning annotation, conditional random fields, and practical training of new entity types with active learning, directly relevant to the paper's use of AL for POS tagging.
+*Why it unblocks this paper:* The 'NLP with spaCy' playlist by OonID offers practical, concise tutorials on NLP annotation and training workflows, including active learning powered annotation with Prodigy. It is well-suited for quickly grasping how active learning is applied in real-world NLP tasks like POS tagging.
 
-*If you want all of it:* 4.8 hours across 7 episodes
+*If you want all of it:* 10.1 hours across 18 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 
