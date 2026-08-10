@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-wenbin-zhang"
-source_hash: "383964aeb129bcd566d7b90b90ffc467faf009559ba3cd9350500e8b141b4f81"
+source_hash: "95ed449542a07ba31bc9b596754dbd4cd06eb157d650f7040f5e3ba8776bfc51"
 sequence: 260
 generator: "outreach-garden: managed"
 ---
@@ -51,6 +51,38 @@ Research interests: designing machine learning algorithms that provide theoretic
 - [Resolved homepage](https://users.cs.fiu.edu/~wbzhang/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Fairness in Machine Learning
+**The paper assumes:** fairness definitions in machine learning, group fairness metrics, fairness constraints and mitigation techniques
+**Already in this field?** Skip this entirely if you already understand core fairness concepts and metrics in machine learning, including group fairness and bias mitigation methods.
+
+This background focuses on fairness in machine learning, particularly group fairness metrics and mitigation strategies relevant to graph neural networks with limited demographic information, as studied in the paper. The rigorous course offers a deep, structured understanding of fairness concepts and ethical considerations in ML, while the fast track provides a concise, accessible introduction to fairness criteria and practical case studies. Choose the course for comprehensive theoretical grounding and the fast track for a quick, clear overview to grasp key fairness ideas efficiently.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [MIT RES.EC-001 Exploring Fairness in Machine Learning, Spring 2020](https://www.youtube.com/playlist?list=PLUl4u3cNGP63IFQn8FklBOUhYVcmaxpOX) — MIT OpenCourseWare · 9 videos · 1.3h across 9 episodes
+
+**Watch only this:** Episodes 2-6, about 40 minutes — covering background, fairness criteria, protected attributes, and fairness through unawareness, which are essential to grasp the fairness concepts and metrics applied in FairGLite.
+
+*Why it unblocks this paper:* This MIT OpenCourseWare series directly addresses fairness in machine learning with focused episodes on fairness criteria, protected attributes, and case studies on bias mitigation, providing foundational knowledge critical to understanding fairness constraints and metrics used in the paper.
+
+*If you want all of it:* 1.3 hours across 9 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [fairness](https://www.youtube.com/playlist?list=PLgnhCjrW64uTDL2-nLcL6P6No18cCHuSN) — Jess Hoffmann · 10 videos · 1.4h across 10 episodes
+
+**Watch only this:** Episodes 4-6, about 24 minutes — focusing on fairness testing, learning fairly with minimal data, and power dynamics in algorithmic fairness, directly relating to the paper's proxy-based fairness constraints and adaptive confidence strategy.
+
+*Why it unblocks this paper:* Jess Hoffmann's playlist offers concise, well-produced explainers on fairness in machine learning, including robustness, fairness testing, and bias mitigation, which provide an intuitive and practical understanding of fairness challenges and solutions relevant to the paper's approach.
+
+*If you want all of it:* 1.4 hours across 10 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

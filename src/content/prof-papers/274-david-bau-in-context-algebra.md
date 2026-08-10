@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-david-bau"
-source_hash: "11bacbd43226da1393065a0a8bccbd946909de87fb5a14b86e20c7fa9129bf17"
+source_hash: "7893ef81784ec4e76d1961e598a7fb1bcbe9eb92acfbf5c0cc88006cab609695"
 sequence: 274
 generator: "outreach-garden: managed"
 ---
@@ -54,6 +54,38 @@ Research interests: understanding the rich internal structure of deep networks, 
 - [DBLP](http://dblp.uni-trier.de/pers/hd/b/Bau:David)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Abstract Algebra and Group Theory
+**The paper assumes:** undergraduate abstract algebra, group theory, finite groups, algebraic structures
+**Already in this field?** Skip this entirely if you already understand the basics of group theory and abstract algebra, including group operations and properties.
+
+This background is essential for understanding the algebraic structures and concepts underlying the paper's in-context algebra task, such as groups, identity elements, cancellation, associativity, and closure. The rigorous course option offers a deep, university-level treatment of abstract algebra with a focus on group theory, ideal for readers seeking comprehensive mastery. The fast track provides a concise, visual introduction to the core concepts of linear algebra and abstract vector spaces, which supports grasping the algebraic reasoning in the paper more quickly and intuitively.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Harvard MATH E-222 Abstract Algebra, lecturer Benedict Gross supporting book Algebra by Michael Artin](https://www.youtube.com/playlist?list=PLzUeAPxtWcqzr80lS25FrzMn7a36BuXhj) — Jeroen Zuijderhoudt · 38 videos · 32.9h across 38 episodes
+
+**Watch only this:** Lectures math e222 L05 20030924 through math e222 L10 20031006, about 5 lectures (~4 hours 15 minutes) — covering group definitions, examples, identity elements, and group properties essential to understand the paper's algebraic setting.
+
+*Why it unblocks this paper:* This is a full Harvard abstract algebra course by Professor Benedict Gross, covering groups, group operations, identity, and related algebraic structures in depth, directly matching the paper's focus on finite groups and algebraic reasoning.
+
+*If you want all of it:* All 38 lectures, about 32.9 hours
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Essence of linear algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) — 3Blue1Brown · 16 videos · 3.0h across 16 episodes
+
+**Watch only this:** Episodes 1 through 6, about 1 hour 6 minutes — covering vectors, linear combinations, linear transformations, matrix multiplication, and 3D transformations to build intuition for algebraic operations.
+
+*Why it unblocks this paper:* 3Blue1Brown's Essence of linear algebra series provides a visually intuitive and concise introduction to linear algebra concepts, including vector spaces and transformations, which underpin understanding of algebraic structures and symbolic reasoning in the paper.
+
+*If you want all of it:* All 16 episodes, about 3 hours
 
 ## Track 1 — Academic deep-dives (long-form)
 

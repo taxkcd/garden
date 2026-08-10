@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-nancy-fulda"
-source_hash: "8e4d9d4d98f37591b2ddd0968f9086acf7c15323bb2d23d1deafe92efd8a67f5"
+source_hash: "1e81c77a281ed77288cb1da718aace6da81649f063dee26ff9adb45d04b417db"
 sequence: 273
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,38 @@ Research interests: Deep learning, neuromorphic computing, large-scale language 
 - [Lab website](http://dragn.ai/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Multilingual Neural Machine Translation
+**The paper assumes:** multilingual neural machine translation, Transformer architecture, zero-shot translation
+**Already in this field?** Skip this entirely if you already understand the basics of multilingual neural machine translation and zero-shot translation in Transformer models.
+
+To understand the paper on neuron-level language tag injection for zero-shot multilingual neural machine translation (MNMT), it is essential to grasp how MNMT models work, especially Transformer architectures and zero-shot translation mechanisms. The rigorous course option offers a deep, structured university-level foundation in natural language processing and deep learning, including Transformers and sequence-to-sequence models. The fast track provides a concise, focused series on neural machine translation concepts and attention mechanisms, suitable for quickly gaining practical intuition about MNMT and zero-shot translation.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS224N Natural Language Processing with Deep Learning I Spring 2024 I Professor Christopher Manning](https://www.youtube.com/playlist?list=PLoROMvodv4rOaMFbaqxPDoLWjDaRAdP9D) — Stanford Online · 23 videos · 27.5h across 23 episodes
+
+**Watch only this:** Lectures 6-8 (Sequence to Sequence Models, Attention, and Transformers), about 3.5 hours — these cover the core MNMT architectures and attention mechanisms relevant to the paper.
+
+*Why it unblocks this paper:* Stanford CS224N is a comprehensive, authoritative NLP course covering deep learning, sequence-to-sequence models, and Transformers, which are foundational to understanding MNMT and the paper's method of language tag injection.
+
+*If you want all of it:* 27.5 hours across 23 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [neural machine translation](https://www.youtube.com/playlist?list=PL465JIMp_Cl4dhOIpyzYnrnIq9MAfwigL) — Aisha Elbadrawy · 13 videos · 11.8h across the first 12 episodes
+
+**Watch only this:** Episodes 1-5 (Neural Machine Translation basics, Models with Attention, and Google's Multilingual NMT System), about 5 hours — these episodes directly explain MNMT and zero-shot translation relevant to the paper.
+
+*Why it unblocks this paper:* This playlist by Aisha Elbadrawy focuses specifically on neural machine translation and attention models, providing clear, concise explanations of MNMT and zero-shot translation concepts in about 12 episodes.
+
+*If you want all of it:* 11.8 hours across the first 12 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

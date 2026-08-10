@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-sumanta-n-pattanaik"
-source_hash: "a03b33f680c6fc43c30c441bcbebe983ab7fbc0254c1d0f4b204c260c066127d"
+source_hash: "5e3557c111a0017c4d89889e6ba1b7994afbcf19e5edad46e1de05f0025c97c3"
 sequence: 265
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: Computer Graphics, Virtual Reality and Visualization
 - [Lab website](http://graphics.cs.ucf.edu/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** coordinate-based neural networks
+**The paper assumes:** coordinate-based neural networks, implicit neural representations, multi-layer perceptrons for spatial data
+**Already in this field?** Skip this entirely if you already understand neural implicit representations and coordinate-based MLPs for spatial data modeling.
+
+To understand the core methods in this paper on efficient neural representation of volumetric data using coordinate-based networks, it is essential to grasp how coordinate-based neural networks (MLPs) work to encode spatial information. The rigorous course option offers a deep, structured university-level lecture series on convolutional neural networks and foundational neural network concepts, while the fast track provides a concise, well-produced short-form series that covers neural networks and convolutional networks with clear visual intuition. Choose the rigorous course for a comprehensive foundation and the fast track for a quicker, intuition-focused overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Lecture Collection | Convolutional Neural Networks for Visual Recognition (Spring 2017)](https://www.youtube.com/playlist?list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv) — Stanford University School of Engineering · 16 videos · 19.5h across 16 episodes
+
+**Watch only this:** Lectures 4 to 7 (Introduction to Neural Networks, Convolutional Neural Networks, Training Neural Networks I & II), about 4.9 hours total — these cover the fundamentals of neural networks and CNNs relevant to coordinate-based networks.
+
+*Why it unblocks this paper:* This Stanford University course covers foundational and advanced topics in neural networks and convolutional neural networks, including training, architectures, and optimization, which are essential to understanding coordinate-based neural networks and their application to volumetric data compression.
+
+*If you want all of it:* All 16 lectures, about 19.5 hours total.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Neural networks](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi) — 3Blue1Brown · 10 videos · 3.6h across 10 episodes
+
+**Watch only this:** Episodes 1 to 4 (But what is a neural network?, Gradient descent, how neural networks learn, Backpropagation intuitively, Backpropagation calculus), about 1.4 hours total — these episodes cover the core concepts of neural networks and training.
+
+*Why it unblocks this paper:* 3Blue1Brown's Neural Networks series provides clear, visual, and intuitive explanations of neural networks and backpropagation, which are foundational to understanding coordinate-based neural networks used in this paper.
+
+*If you want all of it:* All 10 episodes, about 3.6 hours total.
 
 ## Track 1 — Academic deep-dives (long-form)
 

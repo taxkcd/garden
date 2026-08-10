@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-ronak-etemadpour"
-source_hash: "31afedb3be7fe9e90d383158e7e2a16c260e9526aaae55d9035dd1fe2f20c827"
+source_hash: "7588f0804a8ea09f8bbfc2200cf5e9a630400df5fdcba81ff23dcbc53bbf6e7b"
 sequence: 268
 generator: "outreach-garden: managed"
 ---
@@ -56,6 +56,38 @@ Research interests: text mining, quality control, statistics, asymmetric distrib
 - [Lab website](https://www.researchgate.net/lab/Triss-Ashton-Lab)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Inter-Annotator Agreement Statistics
+**The paper assumes:** inter-annotator agreement metrics, Fleiss' Kappa statistic, categorical data reliability analysis
+**Already in this field?** Skip this entirely if you already understand statistical methods for measuring agreement among multiple annotators, especially Fleiss' Kappa.
+
+To understand the statistical foundation of inter-annotator agreement crucial for this paper, two complementary background options are offered. The rigorous course provides a deep, structured university-level introduction to statistics concepts including categorical data and association measures that underpin agreement metrics like Fleiss' Kappa. The fast track offers a concise, focused explainer series specifically on agreement testing and reliability statistics, ideal for quickly grasping key concepts and metrics relevant to annotator agreement analysis. Choose the rigorous course for a thorough grounding, or the fast track for a targeted, time-efficient overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Statistics for Data Science - Hindi Course](https://www.youtube.com/playlist?list=PLZ2ps__7DhBbhK4gNFIWwx9cct193V0_b) — IIT Madras - B.S. Degree Programme · 70 videos · 29.4h across the first 60 episodes
+
+**Watch only this:** Episodes W1_L1_Introduction and types of Data - Basic definitions through W4_L3_Association between two categorical variables - Relative frequencies (episodes 1-17), about 8.3 hours — these cover data types, categorical data description, and association measures relevant to agreement statistics.
+
+*Why it unblocks this paper:* This IIT Madras course covers foundational statistics topics including categorical data description and association measures, which are essential to understanding inter-annotator agreement metrics like Fleiss' Kappa used in the paper.
+
+*If you want all of it:* About 29.4 hours across the first 60 episodes.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Agreement Testing A30 2024 August 12](https://www.youtube.com/playlist?list=PLqRWVl_MGhBm5rDQgiwIh_dlY1yvVAe5C) — Wael Aly Saad · 52 videos · 10.9h across 52 episodes
+
+**Watch only this:** First 4 episodes: 'Cohen's Kappa (Inter-Rater-Reliability)', 'Weighted Cohen's Kappa (Inter-Rater-Reliability)', 'Fleiss Kappa [Simply Explained]', and 'Cronbach's Alpha (Simply explained)', about 48 minutes — these provide a concise, clear introduction to inter-annotator agreement metrics.
+
+*Why it unblocks this paper:* This playlist by Wael Aly Saad focuses specifically on agreement testing and reliability statistics including Fleiss' Kappa and Cohen's Kappa, directly addressing the key metrics and concepts used in the paper's analysis.
+
+*If you want all of it:* About 10.9 hours across 52 episodes.
 
 ## Track 1 — Academic deep-dives (long-form)
 

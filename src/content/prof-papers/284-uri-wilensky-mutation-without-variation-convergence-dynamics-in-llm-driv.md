@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-uri-wilensky"
-source_hash: "43c129bf4c86b35876e51629ca7d3dcb77b8402939e7c69ec30008b3ddf3d477"
+source_hash: "708bfe9754f4931258b225ce193712e051b01afe1cee15d7e888e5601b2fd21a"
 sequence: 284
 generator: "outreach-garden: managed"
 ---
@@ -50,6 +50,38 @@ This paper investigates how large language models (LLMs) behave when used repeat
 - [Lab website](https://ccl.northwestern.edu/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Dynamical Systems Theory
+**The paper assumes:** dynamical systems theory, attractors, state space analysis, and cycle detection
+**Already in this field?** Skip this entirely if you already understand the basics of dynamical systems, including attractors and cycle behavior in discrete state spaces.
+
+This background covers Dynamical Systems Theory, essential for understanding the paper's modeling of LLM-driven mutation as a dynamical system with attractors, cycles, and convergence behavior. The rigorous course option offers a deep, university-level introduction to linear dynamical systems, while the fast track provides a concise, intuition-focused series on iteration and discrete dynamical systems. Choose the course for a thorough foundation or the fast track for a quicker conceptual grasp.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Lecture Collection | Linear Dynamical Systems](https://www.youtube.com/playlist?list=PL06960BA52D0DB32B) — Stanford · 20 videos · 24.4h across 20 episodes
+
+**Watch only this:** Lectures 1-6, about 7.3 hours — covering introduction, state space, linear system basics, and foundational concepts necessary to understand attractors and system dynamics.
+
+*Why it unblocks this paper:* Stanford's 'Lecture Collection | Linear Dynamical Systems' is a comprehensive university course covering foundational concepts in linear dynamical systems, including state space, attractors, and system behavior, directly relevant to the paper's dynamical systems framework for LLM mutation chains.
+
+*If you want all of it:* 24.4 hours across 20 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Introduction to Dynamical Systems](https://www.youtube.com/playlist?list=PLmU0FIlJY-MkI5q6KDdH9x6cUTg5sVqoc) — Bill Kinney · 17 videos · 9.8h across 17 episodes
+
+**Watch only this:** Episodes 1-6, about 3.4 hours — covering iteration, dynamics, Newton's method, and cobweb plots to build intuition on discrete dynamical systems and cycles.
+
+*Why it unblocks this paper:* Bill Kinney's 'Introduction to Dynamical Systems' playlist offers a clear, visual, and intuition-first introduction to iteration, discrete dynamical systems, and cycles, which aligns well with the paper's focus on mutation chain dynamics and cyclic attractors.
+
+*If you want all of it:* 9.8 hours across 17 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

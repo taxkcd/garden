@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-michael-r-genesereth"
-source_hash: "739033b3f22842038abca21c095dd2454356ee0cac40b9d2f6f54d6eb2329fa6"
+source_hash: "e468582f5e31e3b582fa5d287d0f5768b253ed0ae392bf1c04d4d3fba9818c39"
 sequence: 261
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: Computational Logic and applications of that work in Enterpr
 - [Resolved homepage](http://logic.stanford.edu/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Knowledge Representation and Reasoning
+**The paper assumes:** formal logic, ontologies, automated reasoning, knowledge representation formalisms, symbolic AI
+**Already in this field?** Skip this entirely if you already have a solid understanding of formal knowledge representation methods and automated reasoning in AI.
+
+This background focuses on Knowledge Representation and Reasoning (KRR), essential for understanding the formal methods and frameworks proposed in the paper for building interoperable, verifiable knowledge modules for AI. The rigorous course option offers a deep, structured university-level introduction to foundational concepts, while the fast track provides a concise, accessible overview suitable for quickly grasping key ideas without extensive time commitment.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Automated Reasoning](https://www.youtube.com/playlist?list=PLlDG_zCuBub5AyHuxnw8vfgx7Wd-P-4XN) — UCLA Automated Reasoning Group · 37 videos · 25.8h across 37 episodes
+
+**Watch only this:** Lectures 1A through 5B (Lecture 1A: Introduction & Boolean Logic to Lecture 5B: More on SAT & Local Search), about 9.5 hours — these cover core logic, resolution, and SAT solving foundational to knowledge representation and reasoning.
+
+*Why it unblocks this paper:* This UCLA Automated Reasoning Group course by Adnan Darwiche covers foundational logic, automated reasoning techniques, and knowledge compilation, directly relevant to the paper's emphasis on formalizing knowledge and reasoning infrastructure for AI. It is authoritative and comprehensive, addressing both theory and practical reasoning methods.
+
+*If you want all of it:* All 37 episodes, about 25.8 hours.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [9.3 - Knowledge Representation](https://www.youtube.com/playlist?list=PLAXUYU7PbJhi18Iyxr0xaHI8JJXlHnuTq) — Engineering Student · 8 videos · 1.3h across 8 episodes
+
+**Watch only this:** All 8 episodes, about 1.3 hours — covers essential KRR topics including logic and probabilistic reasoning.
+
+*Why it unblocks this paper:* This short playlist by Engineering Student provides a clear, visual introduction to key KRR concepts such as logic, semantic networks, frames, and Bayesian belief networks in under 1.5 hours, making it a practical quick-start for readers needing a conceptual overview aligned with the paper's themes.
+
+*If you want all of it:* All 8 episodes, about 1.3 hours.
 
 ## Track 1 — Academic deep-dives (long-form)
 

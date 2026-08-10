@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-michael-m-swift"
-source_hash: "9e7ac34d296b7aadf2e8cf26fa72e321b40d4321f2693a60c2663eedaec4f6fd"
+source_hash: "4f15fe10caad46e6fae61c8e9c248ce6d99a384cce0fff01c546729536e27509"
 sequence: 259
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,38 @@ Research interests: hardware/operating system boundary, including virtual memory
 - [Lab website](http://scail.cs.wisc.edu/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Operating Systems Design
+**The paper assumes:** undergraduate operating systems design and kernel communication primitives
+**Already in this field?** Skip this entirely if you have completed a rigorous undergraduate course covering OS kernel design, inter-process communication, and synchronization.
+
+To understand the OQUEUE abstraction and its role in enabling efficient, observable communication in operating systems, a solid grasp of OS kernel design, inter-subsystem communication, and synchronization is essential. The rigorous course offers a deep, structured dive into these foundational topics, while the fast track provides a concise, intuition-focused overview suitable for quickly gaining the necessary conceptual background. Choose the course for thorough understanding and the fast track for a quick but clear introduction.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [CS 377 Spring '14: Operating Systems](https://www.youtube.com/playlist?list=PLacuG5pysFbDQU8kKxbUh4K5c1iL5_k7k) — UMass OS · 23 videos · 26.5h across 23 episodes
+
+**Watch only this:** Lectures 1 through 9 (Introduction, OS and Architecture, OS Structures, Processes, CPU Scheduling, Threads, Synchronization and Locks, Semaphores and Monitors, Readers and Writers), about 10.5 hours — these cover the fundamentals of OS design, process management, and synchronization essential for grasping OQUEUE's design and implementation.
+
+*Why it unblocks this paper:* This University of Massachusetts Amherst course covers core operating system concepts including processes, synchronization, and communication mechanisms in detail, directly supporting understanding of kernel primitives and inter-subsystem communication relevant to OQUEUEs.
+
+*If you want all of it:* All 23 lectures, about 26.5 hours
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Operating Systems Theory](https://www.youtube.com/playlist?list=PL9vTTBa7QaQPdvEuMTqS9McY-ieaweU8M) — Core Dumped · 11 videos · 3.2h across 11 episodes
+
+**Watch only this:** Episodes 1 through 6 (A PROGRAM is not a PROCESS, The Most Successful Idea in Computer Science, How a Single Bit Inside Your Processor Shields Your Operating System's Integrity, IPC: To Share Memory Or To Send Messages, Why Are Threads Needed On Single Core Processors, Threads On Multicore Systems), about 1.7 hours — these episodes cover the essential OS concepts and IPC mechanisms relevant to OQUEUEs.
+
+*Why it unblocks this paper:* This concise series by Core Dumped provides clear, visual explanations of key OS concepts such as IPC, threads, synchronization, and memory protection, giving a quick but solid conceptual foundation for understanding OQUEUEs without deep technical detail.
+
+*If you want all of it:* All 11 episodes, about 3.2 hours
 
 ## Track 1 — Academic deep-dives (long-form)
 

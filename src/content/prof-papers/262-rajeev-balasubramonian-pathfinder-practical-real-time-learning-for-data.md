@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-rajeev-balasubramonian"
-source_hash: "99eb23024f7ab04b5f035d68b6eb6b553f99955b57a0fd3779b8ba99313e49be"
+source_hash: "b2478f1875e5db3227ae23fbd3143d4a1bf073ce138c6e136565eb7d59df45fa"
 sequence: 262
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,38 @@ Research interests: my research focuses on many aspects of computer architecture
 - [Lab website](http://arch.cs.utah.edu/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Spiking Neural Networks
+**The paper assumes:** spiking neural networks, spike timing dependent plasticity, neural coding and learning in SNNs
+**Already in this field?** Skip this entirely if you already understand spiking neural networks and their learning mechanisms like STDP.
+
+To understand the core methodology of the Pathfinder paper, which uses spiking neural networks (SNNs) trained online with spike timing dependent plasticity (STDP), it is essential to grasp the fundamentals of SNN neuron models, coding schemes, and learning rules. The rigorous course offers a deep, structured university-level introduction to neural computation including spiking neurons, while the fast track provides a concise, practical tutorial series focused on FPGA SNN accelerators and their training, suitable for quickly gaining intuition and practical insights. Choose the rigorous course for a thorough theoretical foundation and the fast track for a focused, application-oriented overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [MIT 9.40 Introduction to Neural Computation, Spring 2018](https://www.youtube.com/playlist?list=PLUl4u3cNGP61I4aI5T6OaFfRK2gihjiMm) — MIT OpenCourseWare · 20 videos · 24.6h across 20 episodes
+
+**Watch only this:** Episodes 1 through 8, about 9.7 hours — covering neuron models, synapses, and spike trains to build a solid understanding of spiking neural network basics.
+
+*Why it unblocks this paper:* MIT 9.40 Introduction to Neural Computation is a comprehensive university course covering neuron models, spike trains, synapses, and learning rules foundational to understanding spiking neural networks and STDP, directly relevant to Pathfinder's approach.
+
+*If you want all of it:* All 20 episodes, about 24.6 hours.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Spiker+ - Spiking Neural Networks at the Edge](https://www.youtube.com/playlist?list=PLkIAXI4vJ8EgfZki2WRh2Da_h-w6gKbsd) — SMILIES Group Politecnico di Torino · 8 videos · 1.0h across 8 episodes
+
+**Watch only this:** Episodes 1 through 5, about 35 minutes — covering introduction, netbuilder, VHDL generator, data loaders, and training to understand SNN accelerator design and training basics.
+
+*Why it unblocks this paper:* Spiker+ is a concise tutorial series on FPGA spiking neural network accelerators, including training with STDP, providing a practical and application-focused introduction that complements the theoretical depth of the MIT course.
+
+*If you want all of it:* All 8 episodes, about 1 hour.
 
 ## Track 1 — Academic deep-dives (long-form)
 

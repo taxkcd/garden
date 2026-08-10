@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-phillip-b-gibbons"
-source_hash: "c9d58c4d61106f1eafd2b357c0fb856245d12732c5b913c888e21313d8acd4ad"
+source_hash: "8820cda31a3ebe27699d7ef3fa7a813eaaa37a4cfab59840e7fdf744259f5737"
 sequence: 246
 generator: "outreach-garden: managed"
 ---
@@ -49,6 +49,38 @@ AdaDINO is a new framework designed to run large vision-language models efficien
 - [Professor website](https://www.cs.cmu.edu/~gibbons)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Neural Architecture Search
+**The paper assumes:** neural architecture search methods, adaptive deep learning model design, and efficient model compression techniques
+**Already in this field?** Skip this entirely if you already understand neural architecture search and adaptive model optimization techniques in deep learning.
+
+To understand AdaDINO's core method of integrating neural architecture search (NAS) into vision foundation models for adaptive edge deployment, it is essential to grasp NAS fundamentals and how it enables efficient subnet selection. The rigorous course offers a deep, structured university-level treatment of convolutional neural networks and efficient methods relevant to NAS, while the fast track provides a concise, accessible introduction to CNNs and related concepts to quickly build foundational intuition. Choose the rigorous course for comprehensive depth or the fast track for a focused, time-efficient overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Lecture Collection | Convolutional Neural Networks for Visual Recognition (Spring 2017)](https://www.youtube.com/playlist?list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv) — Stanford University School of Engineering · 16 videos · 19.5h across 16 episodes
+
+**Watch only this:** Lectures 5 (Convolutional Neural Networks), 6 (Training Neural Networks I), 7 (Training Neural Networks II), and 15 (Efficient Methods and Hardware for Deep Learning), about 5.5 hours total — these cover CNN fundamentals, training, and efficiency methods relevant to NAS.
+
+*Why it unblocks this paper:* This Stanford University course covers convolutional neural networks and efficient methods for deep learning, including lectures on architectures and training that underpin NAS approaches used in AdaDINO. It provides a rigorous foundation to understand how NAS integrates with vision models for adaptive subnet selection.
+
+*If you want all of it:* 19.5 hours across 16 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Convolutional Neural Networks (Course 4 of the Deep Learning Specialization)](https://www.youtube.com/playlist?list=PLkDaE6sCZn6Gl29AoE31iwdVwSG-KnDzF) — DeepLearningAI · 42 videos · 6.0h across 42 episodes
+
+**Watch only this:** Episodes C4W1L07 (One Layer of a Convolutional Net), C4W1L09 (Pooling Layers), C4W1L11 (Why Convolutions), and C4W2L05 (Network In Network), about 32 minutes total — these build a quick foundation on CNN layers and architectures relevant to NAS.
+
+*Why it unblocks this paper:* This DeepLearningAI series offers concise, clear explanations of convolutional neural networks and related concepts in short episodes, providing a quick but solid introduction to the core ideas behind CNNs and efficiency that support understanding NAS in AdaDINO.
+
+*If you want all of it:* 6.0 hours across 42 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

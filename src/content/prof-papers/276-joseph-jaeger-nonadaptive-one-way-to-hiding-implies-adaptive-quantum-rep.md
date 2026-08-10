@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-joseph-jaeger"
-source_hash: "e060ed0588c1b2336e5ffaccd5de93b13eefd4d71a70da00d6bb434f000984a6"
+source_hash: "4342c42f2c8e86ecf0ae44c3011a999fc52974a5ff6d1464811f728102d05321"
 sequence: 276
 generator: "outreach-garden: managed"
 ---
@@ -55,6 +55,38 @@ Research interests: I work on cryptography, which lies at the intersection of co
 - [DBLP](https://dblp.org/pers/hd/j/Jaeger:Joseph)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Quantum cryptography and quantum random oracles
+**The paper assumes:** quantum cryptography, quantum random oracle model, quantum query complexity, quantum oracle reprogramming
+**Already in this field?** Skip this entirely if you already have a solid understanding of quantum cryptography and the quantum random oracle model.
+
+To understand the advanced quantum cryptographic proof techniques in this paper, especially the quantum random oracle model and the one-way to hiding (O2H) theorem, a solid grasp of quantum cryptography fundamentals and quantum algorithms is essential. The rigorous course provides a deep, structured university-level foundation, while the fast track offers a concise, accessible introduction to post-quantum cryptography concepts relevant to the paper's context. Choose the rigorous lane for thorough theoretical grounding; choose the fast track for a quick but focused conceptual overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Quantum Algorithms and Cryptography | IIT Madras](https://www.youtube.com/playlist?list=PLyqSpQzTE6M8Pp2Z8kOAVyoSbw1UOPWQY) — NPTEL-NOC IITM · 59 videos · 23.1h across 59 episodes
+
+**Watch only this:** Episodes #1 to #16 ("Quantum Algorithms & Cryptography | Quantum Algorithms & Cryptography" through "Introduction to Cryptography | Part 3 | Quantum Algorithms & Cryptography"), about 6 hours 10 minutes — these cover quantum information basics, quantum gates, no-cloning, and introductory quantum cryptography needed to follow the paper's techniques.
+
+*Why it unblocks this paper:* This NPTEL IIT Madras course on Quantum Algorithms and Cryptography covers quantum information basics, quantum computation, and cryptography, including quantum oracles and algorithms foundational to understanding quantum random oracles and adaptive quantum reprogramming.
+
+*If you want all of it:* 23.1 hours across 59 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Post-Quantum Cryptography (Tanja Lange, Eindhoven University of Technology, 2021)](https://www.youtube.com/playlist?list=PLidiQIHRzpXLBZZhZ82k1n-AgBo8ioC1t) — Theoretical Computer Science School (TCSS) · 36 videos · 9.3h across 36 episodes
+
+**Watch only this:** Episodes 3 to 9 ("Quantum computing for cryptographers I" through "Quantum computing for cryptographers IV - Grover's algorithm"), about 1 hour 45 minutes — these cover quantum computing fundamentals and algorithms essential to understanding quantum adversaries and oracles.
+
+*Why it unblocks this paper:* This Theoretical Computer Science School series by Tanja Lange provides a concise post-quantum cryptography introduction, including quantum computing basics for cryptographers and cryptographic primitives, which quickly builds intuition relevant to the quantum random oracle model and adaptive reprogramming.
+
+*If you want all of it:* 9.3 hours across 36 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

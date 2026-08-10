@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-rob-patro"
-source_hash: "07872ef49011ebaa5c8fdf8c8b7a6b35fbe16ee3b17d5ed0fe3b22fe3aea9937"
+source_hash: "43a830d43625f90060b881388cb20c5b28be1605ec3df5dacf6429cd13684f46"
 sequence: 250
 generator: "outreach-garden: managed"
 ---
@@ -54,6 +54,38 @@ Research interests: Analyzing high-throughput genomics data, with a focus on tra
 - [Resolved homepage](https://combine-lab.github.io/contact/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** compact data structures
+**The paper assumes:** minimal perfect hash functions, integer compression techniques, succinct and compact data structures, approximate membership data structures
+**Already in this field?** Skip this entirely if you already understand advanced compact data structures and their applications in bioinformatics indexing.
+
+This background focuses on compact data structures critical for understanding Kaminari's indexing and query methods, including minimal perfect hash functions, integer compression, and color set merging. The rigorous course provides a deep, structured university-level treatment of advanced data structures relevant to the paper, while the fast track offers a concise, visual introduction to hashing techniques foundational to these data structures. Choose the course for comprehensive mastery or the fast track for a quick, intuitive grasp.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [MIT 6.851 Advanced Data Structures, Spring 2012](https://www.youtube.com/playlist?list=PLUl4u3cNGP61hsJNdULdudlRL493b-XZf) — MIT OpenCourseWare · 22 videos · 29.9h across 22 episodes
+
+**Watch only this:** Lectures 10 (Dictionaries), 11 (Integer Models), 17 (Succinct Structures I), and 18 (Succinct Structures II), about 5.4 hours total — these cover the essential data structures and compression methods underpinning Kaminari's approach.
+
+*Why it unblocks this paper:* MIT 6.851 Advanced Data Structures covers a broad range of advanced data structures including minimal perfect hash functions, succinct structures, and integer models, directly relevant to Kaminari's core indexing and compression techniques.
+
+*If you want all of it:* 29.9 hours across 22 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Hashing in Data Structures](https://www.youtube.com/playlist?list=PLndX8heiWwEpgLMJ4yc9reRYgcL1oQPQ1) — Scratch Learners · 7 videos · 1.2h across 7 episodes
+
+**Watch only this:** Episodes 1 (Introduction to Hashing), 2 (Hashing Techniques Part 1), and 3 (Types of Hashing Techniques Part 2), about 30 minutes total — these give a solid quick overview of hashing relevant to the paper.
+
+*Why it unblocks this paper:* The 'Hashing in Data Structures' playlist provides a focused, accessible introduction to hashing concepts, collision resolution, and hash functions, foundational for understanding minimal perfect hash functions and color set merging in Kaminari.
+
+*If you want all of it:* 1.2 hours across 7 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-scott-a-mahlke"
-source_hash: "824e6c6e6a06aff0b21004f42f77274f22cfa5570eb71a7fdb8fd04adc319c22"
+source_hash: "0eee39379d4c7af108f7ddac7c3b8d6a09a6809b89dceba54a02364fe61395ff"
 sequence: 257
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,38 @@ Research interests: compilers, computer architecture, and high-level synthesis
 - [Lab website](http://www.eecs.umich.edu/acal)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** GPU memory hierarchy and scheduling
+**The paper assumes:** GPU architecture, memory hierarchy, and scheduling algorithms
+**Already in this field?** Skip this entirely if you already understand GPU memory systems and how GPU scheduling coordinates compute and data transfer.
+
+To understand the core contributions of the Strata paper, especially its GPU-assisted I/O and cache-aware scheduling mechanisms, a solid grasp of GPU memory hierarchies and scheduling is essential. The rigorous course option offers a deep, structured university-level treatment of GPU architecture and memory systems, ideal for comprehensive understanding. The fast track provides a concise, focused introduction to GPU programming and memory hierarchy concepts, suitable for quickly gaining practical intuition and foundational knowledge.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [AAA649 GPU Architecture (Fa 2022)](https://www.youtube.com/playlist?list=PLNwFw4ux9bQRbPM0XzJ22WfqypLMEU9zh) — Gunjae Koo · 9 videos · 17.2h across 9 episodes
+
+**Watch only this:** Episodes 3 to 8 (Overall GPU Architecture, Dynamically Scheduled Processors (Review), Streaming Multiprocessor I, Streaming Multiprocessor II, GPU Memory Hierarchy, GPU Memory Spaces), about 11.4 hours — these cover the essential GPU architecture and memory concepts needed for the paper.
+
+*Why it unblocks this paper:* This university-level course by Gunjae Koo covers GPU architecture in detail, including GPU memory hierarchy and memory spaces, which are directly relevant to understanding Strata's GPU-assisted I/O and scheduling optimizations.
+
+*If you want all of it:* All 9 episodes, about 17.2 hours.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [GPU Programming](https://www.youtube.com/playlist?list=PL5XwKDZZlwaY7t0M5OLprpkJUIrF8Lc9j) — Simon Oz · 11 videos · 1.5h across 11 episodes
+
+**Watch only this:** Episodes 5 to 7 (Performance Characteristics, Memory Hierarchy, Tiling With Shared Memory), about 24 minutes — these episodes succinctly explain GPU memory and performance trade-offs critical to the paper.
+
+*Why it unblocks this paper:* This concise GPU Programming series by Simon Oz includes focused episodes on GPU memory hierarchy and performance characteristics, providing a practical and accessible introduction to GPU memory and scheduling relevant to Strata's approach.
+
+*If you want all of it:* All 11 episodes, about 1.5 hours.
 
 ## Track 1 — Academic deep-dives (long-form)
 

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-shuang-sean-luan"
-source_hash: "8b273e8b3e96ae0af8637a577360e54bd4c1210812985c2ffa1498018e1c2a0c"
+source_hash: "7d226ea91570c7cb6aa08060964260b99d6d739073b1a4f8b52de87671a26424"
 sequence: 248
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: (1) biomedical engineering and medical informatics, (2) algo
 - [Resolved homepage](http://www.cs.unm.edu/~sluan/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Computational Geometry Algorithms
+**The paper assumes:** computational geometry, geometric algorithms, combinatorial optimization, traveling salesman problem, algorithm design and analysis
+**Already in this field?** Skip this entirely if you already understand computational geometry algorithms and combinatorial optimization techniques such as the Traveling Salesman Problem.
+
+This background focuses on computational geometry algorithms, essential for understanding the algorithmic development of the 3D scanning path in the DKSC method for brain radiosurgery. The rigorous course provides a deep, structured university-level treatment of computational geometry, while the fast track offers a concise, visual introduction to key concepts for quicker comprehension. Choose the rigorous course for thorough mastery or the fast track for a rapid, intuition-focused overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [CENG 773 - Computational Geometry](https://www.youtube.com/playlist?list=PLuiPz6iU5SQ8W6v1F5OgogHel4T6KjKob) — METUOpenCourseWare · 29 videos · 22.8h across 29 episodes
+
+**Watch only this:** Lectures 1.1 through 3, about 3.5 hours — covering foundational concepts, polygonal paths, and introductory geometric algorithms necessary to understand 3D scanning path construction.
+
+*Why it unblocks this paper:* This METUOpenCourseWare Computational Geometry course covers fundamental algorithms and concepts in computational geometry, including path and polygon algorithms relevant to the Traveling Salesman Problem and 3D geometric constructions, directly supporting the paper's core algorithmic innovations.
+
+*If you want all of it:* 22.8 hours across 29 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Computational geometry](https://www.youtube.com/playlist?list=PLPVMDqmMcxRzFhx451DxS7oGnG5KUGU-_) — Erik Nordeus · 11 videos · 0.7h across 11 episodes
+
+**Watch only this:** First 5 episodes, about 15 minutes — covering convex hulls, triangulation, and polygon algorithms that underpin geometric path planning.
+
+*Why it unblocks this paper:* Erik Nordeus's Computational Geometry playlist provides short, clear visual explanations of core computational geometry algorithms and concepts, ideal for quickly grasping the geometric intuition behind the DKSC scanning path and dose kernel placement.
+
+*If you want all of it:* 0.7 hours across 11 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

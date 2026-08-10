@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-andrew-perrault"
-source_hash: "7178ba4f3e3c33b3d790cc5ebca3b263d4f2b69466e2423ceb1fd3c74d5d674e"
+source_hash: "226fa2a49c78566d6effdf938f79eec1b9aec5bd1fc789997060bc6a2d32ec3f"
 sequence: 242
 generator: "outreach-garden: managed"
 ---
@@ -51,6 +51,38 @@ Research interests: reinforcement learning and optimization and their applicatio
 - [Faculty/profile page](https://aperrault.github.io)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Reinforcement Learning
+**The paper assumes:** foundations of reinforcement learning, policy gradient methods, Q-learning, hierarchical reinforcement learning
+**Already in this field?** Skip this entirely if you already understand reinforcement learning fundamentals including policy optimization and value-based methods.
+
+This background focuses on reinforcement learning (RL), specifically hierarchical RL and multi-agent coordination, which are central to the paper's approach for optimizing resource allocation in outbreak control. The rigorous course option offers a deep, structured university-level treatment of core RL concepts including policy gradients, actor-critic methods, Q-learning, multi-armed bandits, and hierarchical RL. The fast track provides a shorter, more intuitive series of explainers that cover key RL advances and hierarchical methods, suitable for quickly grasping the main ideas without full technical depth.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS224R Deep Reinforcement Learning](https://www.youtube.com/playlist?list=PLoROMvodv4rPwxE0ONYRa_itZFdaKCylL) — Stanford Online · 19 videos · 20.6h across 19 episodes
+
+**Watch only this:** Lectures 1-8 and 15 (Class Intro, Imitation Learning, Policy Gradients, Actor-Critic Methods, Off-Policy Actor Critic, Q-Learning, Offline RL, Reward Learning, and Hierarchical RL and IL), about 7.5 hours total — this subset covers core RL algorithms and hierarchical RL needed to understand the paper's methodology.
+
+*Why it unblocks this paper:* Stanford CS224R Deep Reinforcement Learning is a comprehensive, authoritative university course that covers foundational RL algorithms, policy optimization, multi-armed bandits, and hierarchical RL, directly relevant to the paper's hierarchical PPO and DQN methods for constrained resource allocation.
+
+*If you want all of it:* About 20.6 hours across all 19 episodes.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Reinforcement Learning](https://www.youtube.com/playlist?list=PL1v8zpldgH3rJk6UKP_npByDuE7v1WSdt) — Yannic Kilcher · 67 videos · 33.8h across the first 60 episodes
+
+**Watch only this:** Episodes 6 (Reinforcement Learning, Fast and Slow), 7 (Learning World Graphs to Accelerate Hierarchical Reinforcement Learning), and 11 (A neurally plausible model learns successor representations in partially observable environments), about 1.5 hours total — these cover foundational RL concepts and hierarchical RL relevant to the paper.
+
+*Why it unblocks this paper:* Yannic Kilcher's Reinforcement Learning playlist offers concise, well-explained videos on key RL advances including hierarchical RL, model-based RL, and multi-agent methods, providing an accessible yet substantive overview aligned with the paper's focus on hierarchical RL for outbreak control.
+
+*If you want all of it:* About 33.8 hours across the first 60 episodes.
 
 ## Track 1 — Academic deep-dives (long-form)
 

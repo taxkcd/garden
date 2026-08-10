@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-roman-v-yampolskiy"
-source_hash: "cc0db1934d63123e7cc2fa5a8a5c7d38a459c49b75a11761e5f7505beac6aa9d"
+source_hash: "d96330417ab129570529c7817141a8d4fa12a81cd17868a96cfec805e634fd86"
 sequence: 270
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: behavioral biometrics, digital forensics, pattern recognitio
 - [Identity evidence](http://cecs.louisville.edu/ry)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Computational Complexity Theory
+**The paper assumes:** computational complexity theory, undecidability, computational irreducibility, complexity classes, reducibility
+**Already in this field?** Skip this entirely if you already understand the basics of computational complexity, undecidability, and related theoretical computer science concepts.
+
+This background focuses on computational complexity theory, which is essential for understanding the theoretical limits of monitoring advanced AI systems as discussed in the paper. The rigorous course option offers a deep, structured university-level treatment of complexity theory, while the fast track provides a concise, focused introduction to undecidability and related concepts critical to grasping the paper's core arguments. Choose the option that fits your available time and depth needs; both cover foundational ideas relevant to the paper's formalization and impossibility results.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [MIT 18.404J Theory of Computation, Fall 2020](https://www.youtube.com/playlist?list=PLUl4u3cNGP60_JNv2MmK3wkOt9syvfQWY) — MIT OpenCourseWare · 25 videos · 32.3h across 25 episodes
+
+**Watch only this:** Lectures 5 through 12, covering Turing Machines, TM Variants, Church-Turing Thesis, Decision Problems, Undecidability, and Reducibility, about 6.5 hours — these provide the core theoretical background on computability and undecidability essential for the paper's arguments.
+
+*Why it unblocks this paper:* This MIT OpenCourseWare series is a comprehensive, authoritative university-level course on theory of computation, covering undecidability, reducibility, complexity classes, and related topics foundational to understanding computational irreducibility and limits of predictability in AI monitoring.
+
+*If you want all of it:* All 25 lectures, about 32.3 hours — for a complete understanding of theory of computation including complexity classes and advanced topics.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Undecidability & Conclusion | Chapter 16 | Theory of Computation](https://www.youtube.com/playlist?list=PLBlnK6fEyqRh99y3P1k4dji6irGtrEZUm) — Neso Academy · 7 videos · 1.4h across 7 episodes
+
+**Watch only this:** Episodes 1 through 4, covering Decidability and Undecidability, Universal Turing Machine, The Halting Problem, and Undecidability of the Halting Problem, about 44 minutes — these episodes cover the essential concepts of undecidability relevant to the paper.
+
+*Why it unblocks this paper:* This Neso Academy playlist offers a concise, clear introduction to undecidability and the limits of computation, focusing on the halting problem and related undecidability results that underpin the paper's claims about the impossibility of perfect AI monitoring.
+
+*If you want all of it:* All 7 episodes, about 1.4 hours — for a fuller but still brief overview of undecidability and its implications.
 
 ## Track 1 — Academic deep-dives (long-form)
 

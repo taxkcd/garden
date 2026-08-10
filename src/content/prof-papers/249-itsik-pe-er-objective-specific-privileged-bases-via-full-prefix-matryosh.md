@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-itsik-pe-er"
-source_hash: "b7cc908b0f976c3097b5599b39f14407c7dcfa9b260749986df7238e59512b76"
+source_hash: "8019399a1af4482c26536e0ffa73f477a0cfd07d538de5b9ec1534e08489778b"
 sequence: 249
 generator: "outreach-garden: managed"
 ---
@@ -55,6 +55,38 @@ Research interests: Computational methods to understand high-throughput biologic
 - [ORCID](https://orcid.org/0000-0002-6128-7231)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** linear algebra and dimensionality reduction
+**The paper assumes:** linear algebra, eigen decomposition, principal component analysis, linear discriminant analysis, dimensionality reduction
+**Already in this field?** Skip this entirely if you already have a solid understanding of linear algebra and classical dimensionality reduction methods such as PCA and LDA.
+
+This background playlist selection is designed to provide foundational understanding of linear algebra and dimensionality reduction techniques critical to grasping the theoretical and empirical contributions of the paper on full-prefix Matryoshka learning. The rigorous course offers a deep dive into machine learning concepts including PCA and LDA, while the fast track provides a concise, intuition-driven visual introduction to core linear algebra concepts relevant to the paper. Choose the rigorous course for comprehensive coverage or the fast track for a quicker, visual conceptual grounding.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS229: Machine Learning led by Andrew Ng | Autumn 2018](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU) — Stanford Online · 21 videos · 27.9h across 21 episodes
+
+**Watch only this:** Lectures 14 (EM Algorithm & Factor Analysis), 15 (PCA and ICA), 16 (Independent Component Analysis & RL), and 19 (Reward Model & Linear Dynamical System), totaling about 4.5 hours — these cover PCA, dimensionality reduction, and related linear algebra concepts essential for the paper.
+
+*Why it unblocks this paper:* Stanford CS229 by Andrew Ng covers machine learning fundamentals including dimensionality reduction methods such as PCA and LDA, which are central to understanding the paper’s theoretical proofs and empirical validations involving linear autoencoders and supervised discriminative objectives.
+
+*If you want all of it:* Approximately 27.9 hours across all 21 episodes.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Essence of linear algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) — 3Blue1Brown · 16 videos · 3.0h across 16 episodes
+
+**Watch only this:** Episodes 1 (Vectors), 2 (Linear combinations, span, and basis vectors), 3 (Linear transformations and matrices), 13 (Change of basis), and 14 (Eigenvectors and eigenvalues), totaling about 55 minutes — these episodes provide the core linear algebra intuition needed for the paper.
+
+*Why it unblocks this paper:* 3Blue1Brown’s Essence of linear algebra series offers a visually intuitive and concise explanation of linear algebra concepts such as basis, linear transformations, eigenvectors, and change of basis, which are foundational to understanding the paper’s focus on privileged bases and ordered embeddings.
+
+*If you want all of it:* About 3.0 hours across all 16 episodes.
 
 ## Track 1 — Academic deep-dives (long-form)
 

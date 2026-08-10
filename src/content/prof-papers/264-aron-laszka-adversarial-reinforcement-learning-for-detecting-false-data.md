@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-aron-laszka"
-source_hash: "1e963644be309473d8a1391bf85c626aaca982ac025b59a2f597361423c73170"
+source_hash: "b6d8e933b71fd08f982707c54bc6354ac0bc9f97cd4c278afa6758eb411febf7"
 sequence: 264
 generator: "outreach-garden: managed"
 ---
@@ -51,6 +51,27 @@ Research interests: artificial intelligence and cyber-physical systems, machine 
 - [Resolved homepage](https://aronlaszka.com/author/aron-laszka/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** multi-agent reinforcement learning
+**The paper assumes:** multi-agent reinforcement learning, zero-sum stochastic games, and policy space response oracles
+**Already in this field?** Skip this entirely if you already understand multi-agent reinforcement learning and game-theoretic equilibrium computation methods.
+
+This background focuses on multi-agent reinforcement learning (MARL), which is essential to understand the adversarial game-theoretic framework and equilibrium strategy computation used in the paper. The rigorous course option offers a deep, structured university-level treatment of MARL concepts, while the fast track provides a concise, intuition-driven introduction suitable for quickly grasping the core ideas without extensive time commitment.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Introduction to Deep Multi-Agent Reinforcement Learning](https://www.youtube.com/playlist?list=PLFihX_3MLxS9iS3Hz8VDWAyU4QCdjQUKr) — The Agent Whisperer · 5 videos · 0.8h across 5 episodes
+
+**Watch only this:** All 5 episodes, about 0.8 hours total — covering MARL problem formulation, return estimation, actor-critic foundations, A3C/A2C algorithms, and centralized training with decentralized execution.
+
+*Why it unblocks this paper:* This short playlist offers a clear, concise introduction to deep multi-agent reinforcement learning, including problem formulation, actor-critic methods, and centralized training with decentralized execution, providing a quick yet solid conceptual foundation relevant to the paper's approach.
+
+*If you want all of it:* Same as minimum watch, 0.8 hours.
 
 ## Track 1 — Academic deep-dives (long-form)
 

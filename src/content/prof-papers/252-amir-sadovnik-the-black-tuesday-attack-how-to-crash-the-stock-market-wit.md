@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-amir-sadovnik"
-source_hash: "44e0f306fdf9dbdb798cc30ad1fd00eaedca6959fd7606c0a2cd5d9e38e9a031"
+source_hash: "dec8328ef3a963aaf15b71d28e69239cb52da457849990f2ec2a4297466b35ab"
 sequence: 252
 generator: "outreach-garden: managed"
 ---
@@ -54,6 +54,38 @@ Research interests: computer vision, signal processing, natural language process
 - [Resolved homepage](https://web.eecs.utk.edu/~asadovni/index.html)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Adversarial Machine Learning
+**The paper assumes:** machine learning models, adversarial examples, adversarial attacks and defenses, transferability of adversarial examples
+**Already in this field?** Skip this entirely if you already understand adversarial machine learning concepts and techniques, including attack construction and defense strategies.
+
+To understand the Black Tuesday Attack paper, a solid grasp of adversarial machine learning is essential, as it underpins the attack methodology and defense analysis. The rigorous course option offers a deep, structured university-level introduction to deep learning and adversarial robustness, while the fast track provides a focused, concise series on adversarial machine learning concepts and defenses. Choose the course for comprehensive foundational knowledge or the fast track for a quicker, targeted overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS230: Deep Learning I Autumn 2025](https://www.youtube.com/playlist?list=PLoROMvodv4rNRRGdS0rBbXOUGA0wjdh1X) — Stanford Online · 9 videos · 13.9h across 9 episodes
+
+**Watch only this:** Lectures 1-4, about 6 hours — covering introduction to deep learning, supervised learning, full project cycle, and adversarial robustness and generative models. Stop after Lecture 4 to get the core adversarial ML concepts needed for this paper.
+
+*Why it unblocks this paper:* Stanford CS230 Autumn 2025 covers deep learning foundations including a dedicated lecture on adversarial robustness, directly relevant to understanding adversarial examples and defenses in financial forecasting models.
+
+*If you want all of it:* 13.9 hours across 9 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Adversarial Machine learning](https://www.youtube.com/playlist?list=PLqY9uEMecYPXC4sCrNRJ5uHwmTr3FpTui) — Hugh Medal · 16 videos · 11.9h across 16 episodes
+
+**Watch only this:** Episodes 1-5, about 3.7 hours — covering adversarial examples, adversarial training, defenses, and foundational talks by key researchers. This subset gives a solid quick grounding in adversarial ML relevant to the paper.
+
+*Why it unblocks this paper:* Hugh Medal's Adversarial Machine Learning playlist provides a focused, well-structured introduction to adversarial examples, attacks, and defenses, matching the paper's core technical background in a concise format.
+
+*If you want all of it:* 11.9 hours across 16 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

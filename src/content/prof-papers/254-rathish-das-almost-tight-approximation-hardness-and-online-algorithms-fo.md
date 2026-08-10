@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-rathish-das"
-source_hash: "57af7801a8a1ffb0bb57241263c2c1df1550b0ee3c5a977f54ebd414396583e1"
+source_hash: "14ac687c297ce86991d1c9a105b5288f8f09195548dd4a1c6d439f9bd1051483"
 sequence: 254
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: systems algorithms, approximation algorithms, randomized alg
 - [Resolved homepage](https://www.rathishdas.com/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Computational Complexity Theory
+**The paper assumes:** computational complexity theory, hardness of approximation, polynomial-time reductions, complexity classes P and NP, time hierarchy theorems
+**Already in this field?** Skip this entirely if you already understand the basics of computational complexity theory, NP-completeness, and approximation hardness proofs.
+
+This background is designed to provide a solid foundation in computational complexity theory, which is essential for understanding the hardness of approximation results and complexity assumptions in the paper on resource scheduling. The rigorous course option offers a deep and structured university-level treatment, while the fast track provides a concise, intuition-focused introduction to the core concepts, suitable for quickly grasping the essentials without extensive time commitment.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [MIT 18.404J Theory of Computation, Fall 2020](https://www.youtube.com/playlist?list=PLUl4u3cNGP60_JNv2MmK3wkOt9syvfQWY) — MIT OpenCourseWare · 25 videos · 32.3h across 25 episodes
+
+**Watch only this:** Episodes 1-16, about 20.5 hours — covering Introduction, Finite Automata, Nondeterminism, Pumping Lemmas, Turing Machines, Church-Turing Thesis, Reducibility, Computation History Method, Recursion Theorem, Time Complexity, P and NP, NP-Completeness, and the Cook-Levin Theorem. Stop after episode 16 to grasp all foundational complexity theory needed for understanding hardness results.
+
+*Why it unblocks this paper:* This MIT OpenCourseWare series covers the full spectrum of computational complexity theory topics relevant to the paper, including NP-completeness, polynomial-time reductions, and hardness proofs, taught in a rigorous academic setting.
+
+*If you want all of it:* 32.3 hours across 25 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Computational Complexity Lectures](https://www.youtube.com/playlist?list=PLdUzuimxVcC0DENcdT8mfhI3iRRJLVjqH) — Computer Science Theory Explained · 90 videos · 7.9h across the first 60 episodes
+
+**Watch only this:** First 23 episodes, about 2.9 hours — covering Complexity Theory Introduction, Turing Machines, Halting Problem, Rice's Theorem, Gödel's Incompleteness, P, NP, Karp Reductions, SAT, and NP-Completeness. This subset covers the essential concepts needed to understand the paper's complexity assumptions and reductions.
+
+*Why it unblocks this paper:* This playlist from Computer Science Theory Explained provides clear, concise explanations of core computational complexity concepts such as NP-completeness, reductions, and the Cook-Levin theorem, ideal for quickly understanding the theoretical underpinnings of the paper's hardness results.
+
+*If you want all of it:* 7.9 hours across 90 episodes (only first 60 are available, but 23 suffice for core concepts)
 
 ## Track 1 — Academic deep-dives (long-form)
 

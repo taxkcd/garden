@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-in-kee-kim"
-source_hash: "181451bf87e9453fe9ac48a18debafcc03f75ba57be1fd52b05991ac45c842dd"
+source_hash: "6d1c39052d9cbac56847cd567c425e9c986b978f32aee77eb4ab5f2d8bf40f09"
 sequence: 244
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: Cloud Computing, Edge/IoT Systems
 - [Professor website](https://inkeekim.github.io/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Statistical Dependence and Distance Covariance
+**The paper assumes:** statistical dependence measures, distance covariance, nonlinear correlation statistics
+**Already in this field?** Skip this entirely if you already understand statistical dependence concepts and the theory and application of distance covariance in data analysis.
+
+This background focuses on understanding statistical dependence and specifically distance covariance, which is central to the CORAL method in the paper for guiding adaptive hardware configuration searches. The rigorous course option offers a deep, university-level treatment of statistics including correlation and regression concepts, while the fast track provides a concise, accessible introduction to fundamental probability and statistics concepts suitable for quick comprehension. Choose the course for thorough mastery or the fast track for a rapid yet solid grounding.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [MIT 18.650 Statistics for Applications, Fall 2016](https://www.youtube.com/playlist?list=PLUl4u3cNGP60uVBMaoNERc6knT_MgPKS0) — MIT OpenCourseWare · 22 videos · 28.0h across 22 episodes
+
+**Watch only this:** Lectures 1 (Introduction to Statistics), 13 (Regression), 14 (Regression cont.), 15 (Regression cont.), and 4 (Parametric Inference cont. and Maximum Likelihood Estimation) — about 6 hours total. These cover correlation concepts and regression essential for grasping dependence measures.
+
+*Why it unblocks this paper:* MIT's '18.650 Statistics for Applications' is a comprehensive university course covering parametric inference, hypothesis testing, regression, and correlation, providing the rigorous statistical foundation needed to understand distance covariance and its application in CORAL.
+
+*If you want all of it:* 28.0 hours across 22 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Statistics and probability | 7th Grade | Khan Academy](https://www.youtube.com/playlist?list=PLSQl0a2vh4HB6wAjVm5BnIybSh6izZExi) — Khan Academy · 16 videos · 1.6h across 16 episodes
+
+**Watch only this:** Episodes 1 (Probability from compound sample space), 3 (Constructing probability model from observations), 6 (Intuitive sense of probabilities), and 15 (Probability explained | Independent and dependent events) — about 20 minutes total.
+
+*Why it unblocks this paper:* Khan Academy's 'Statistics and probability | 7th Grade' playlist offers clear, concise explanations of probability and basic statistics concepts, including probability models and independent/dependent events, which build intuition for understanding statistical dependence quickly.
+
+*If you want all of it:* 1.6 hours across 16 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

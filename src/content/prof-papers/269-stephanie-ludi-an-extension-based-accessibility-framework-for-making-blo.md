@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-stephanie-ludi"
-source_hash: "ea6b3b05c654051b2a6f3499fce7c3fdf316594e791bbe2d2ea06762e7a42758"
+source_hash: "6bdd20f2c12debb29bfe00b4508df1f7be8333c948b245b441759a229b851a23"
 sequence: 269
 generator: "outreach-garden: managed"
 ---
@@ -50,6 +50,38 @@ This paper presents a new software framework called the Extension-Based Accessib
 - [Identity evidence](http://www.cse.unt.edu/~ludi)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Accessibility in Human-Computer Interaction
+**The paper assumes:** accessibility principles in human-computer interaction, assistive technology design, and screen reader integration
+**Already in this field?** Skip this entirely if you already understand core accessibility concepts in HCI and how assistive technologies like screen readers interact with software interfaces.
+
+To understand the accessibility challenges and design principles behind the Extension-Based Accessibility Framework (EAF) for Blockly, foundational knowledge in Accessibility within Human-Computer Interaction (HCI) is essential. The rigorous course option provides a deep, structured university-level introduction to HCI concepts including accessibility, while the fast track offers a concise, focused series on accessibility topics from the perspective of blind and low-vision users. Choose the course for comprehensive theoretical grounding and the fast track for a practical, user-centered accessibility overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Human Computer Interaction (In English)](https://www.youtube.com/playlist?list=PLyqSpQzTE6M-KVz-9blW7qq_LgDPSOtEE) — NPTEL-NOC IITM · 45 videos · 26.3h across 45 episodes
+
+**Watch only this:** Episodes 1-8: 'Human Computer Interaction (In English) - Intro video' through 'Inclusivity, Accessibility and Design Principles', about 4.7 hours total — these cover foundational HCI concepts, design principles, and accessibility essentials.
+
+*Why it unblocks this paper:* This NPTEL-NOC IITM course by Prof. Rajiv Ratn Shah covers core HCI concepts including accessibility and inclusive design principles, which are crucial to understanding the design rationale behind EAF’s modular, non-invasive accessibility framework for Blockly.
+
+*If you want all of it:* All 45 episodes, approximately 26.3 hours total.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Accessibility](https://www.youtube.com/playlist?list=PLFYdvD6EeUNl5Q8MSG52cZe4wHTxrX3cy) — Professor K Explains · 14 videos · 2.2h across the first 13 episodes
+
+**Watch only this:** Episodes 1-12: 'How I use technology as a blind person! - Molly Burke (CC)' through 'How I Use Screen Reading And Magnification- Voice Over- Talk Back', about 2 hours total — these provide essential context on accessibility challenges and assistive technology usage.
+
+*Why it unblocks this paper:* This playlist by Professor K Explains offers a concise, user-focused introduction to accessibility from the perspective of blind and low-vision users, including practical insights on screen readers and assistive technologies, directly relevant to the paper’s focus on making Blockly accessible.
+
+*If you want all of it:* All 14 episodes, approximately 2.2 hours total.
 
 ## Track 1 — Academic deep-dives (long-form)
 

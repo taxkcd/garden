@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-thomas-y-yeh"
-source_hash: "bcac82157539b95c02a339814f52389e0049c235f3733a8962c02545668fcf11"
+source_hash: "6c8a7481f90b5e1194a0d7148d81282424bb434c19c45e3be0355d3ab3b90cbe"
 sequence: 255
 generator: "outreach-garden: managed"
 ---
@@ -55,6 +55,38 @@ Research interests: computer science education, machine learning acceleration, a
 - [Social profile](http://www.google.com/url?q=http%3A%2F%2Ftwitter.com&sa=D&sntz=1&usg=AOvVaw1AY-RzXps0l7kS4XYKZzQm)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** floating point numerical representation
+**The paper assumes:** floating point number formats, numerical precision and representation, computer arithmetic
+**Already in this field?** Skip this entirely if you already understand floating point number formats and their role in numerical computing and machine learning.
+
+This background focuses on floating point numerical representation, essential for understanding the Adaptive Floating Point (AFP) format introduced in the paper. The rigorous course option provides a thorough university-level treatment of IEEE 754 floating point standards and arithmetic, while the fast track offers a concise, clear introduction to the same topic for quicker comprehension. Choose the course for deep foundational knowledge and the fast track for a focused, time-efficient overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [IEEE 754 Standard for Floating Point Binary Arithmetic by Computer Science Lessons and more](https://www.youtube.com/playlist?list=PLOtqaDAZ-_OAIUIknq-p2I3eSzMKyISK2) — silversax06 · 17 videos · 4.0h across 17 episodes
+
+**Watch only this:** Episodes 1-6, about 1.4 hours — covering IEEE 754 standard introduction, decimal to floating point conversion, single precision representation, and floating point arithmetic basics.
+
+*Why it unblocks this paper:* This playlist by silversax06 covers the IEEE 754 Standard for Floating Point Binary Arithmetic in detail, including conversion methods, representation, and arithmetic operations, directly relevant to understanding AFP's improvements over standard floating point formats.
+
+*If you want all of it:* All 17 episodes, about 4.0 hours.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [IEEE 754 Floating number representation](https://www.youtube.com/playlist?list=PL9swaD_pqVQmp4seDlwngI1U6XffIhfER) — Гаджимvрад Исрафилов · 6 videos · 1.1h across 6 episodes
+
+**Watch only this:** Episodes 1-4, about 40 minutes — covering decimal to IEEE 754 conversion, floating point number representation, and the IEEE 754 standard.
+
+*Why it unblocks this paper:* This concise 6-episode playlist by Гаджимvрад Исрафилов provides a focused overview of IEEE 754 floating point representation and standards, suitable for quickly grasping the core concepts needed to understand AFP.
+
+*If you want all of it:* All 6 episodes, about 1.1 hours.
 
 ## Track 1 — Academic deep-dives (long-form)
 

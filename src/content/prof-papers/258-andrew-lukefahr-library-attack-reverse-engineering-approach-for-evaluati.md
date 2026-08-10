@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-andrew-lukefahr"
-source_hash: "3baa58f18c14a2dbc0d5713c25b2d11ffc83d995661ca4b2be058636afac839c"
+source_hash: "c936e03fdcf0c7906e6d99117053c9a2479705cb1fac55cc86f396f7f1842366"
 sequence: 258
 generator: "outreach-garden: managed"
 ---
@@ -51,6 +51,38 @@ Research interests: Field-Programmable Gate Array (FPGA) security, FPGA bitstrea
 - [Lab website](http://sailin.luddy.indiana.edu/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** hardware design and netlist analysis
+**The paper assumes:** digital hardware design, netlist representation, and structural analysis of hardware circuits
+**Already in this field?** Skip this entirely if you already understand digital hardware design concepts, netlist formats, and how to analyze hardware circuit structures.
+
+To understand the Library-Attack paper, a solid grasp of hardware design, netlist representations, and structural analysis of hardware designs is essential. The rigorous course option offers a comprehensive university-level lecture series on digital hardware design, covering combinational and sequential circuits, logic minimization, and state machines, which underpin netlist understanding. The fast track provides a shorter, focused playlist on hardware modeling using Verilog, giving practical insight into hardware description and design representation relevant to netlist construction and manipulation.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Digital Hardware Design by Prof.M.Balakrishnan](https://www.youtube.com/playlist?list=PLBCE46DD08E83F210) — Satish Kashyap · 37 videos · 26.7h across 37 episodes
+
+**Watch only this:** lectures 3 to 13, about 7.5 hours — covering combinational circuit design, iterative circuits, logic minimization, sequential circuits, state equivalence, minimization, and state machine synthesis
+
+*Why it unblocks this paper:* This university-level lecture series by Prof. M. Balakrishnan covers fundamental and advanced topics in digital hardware design, including combinational and sequential circuits, logic minimization, and state machine synthesis, which are directly relevant to understanding hardware netlists and their structural analysis as used in the paper.
+
+*If you want all of it:* 26.7 hours across 37 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Hardware Modeling using Verilog](https://www.youtube.com/playlist?list=PLJ5C_6qdAvBELELTSPgzYkQg3HgclQh-5) — Computer Science and Engineering · 42 videos · 21.0h across 42 episodes
+
+**Watch only this:** episodes 1 to 6, about 3 hours — covering Introduction, Design Representation, Getting Started with Verilog, and VLSI Design Styles parts 1 and 2
+
+*Why it unblocks this paper:* This playlist provides concise, clear explanations on hardware modeling using Verilog, including design representation and modeling styles, which are essential for quickly grasping how hardware designs are described and manipulated at the netlist level.
+
+*If you want all of it:* 21.0 hours across 42 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-hadar-averbuch-elor"
-source_hash: "25b84d0f79914c876385ef110bfca84c44a6d60ecaf2b10a5e4ef9fb64d0b7d5"
+source_hash: "4e7df51c3f9d4886fab5b2e147624840610a38623e0d1a180f6881f1eee6ed90"
 sequence: 277
 generator: "outreach-garden: managed"
 ---
@@ -56,6 +56,38 @@ Research interests: computer vision and graphics, with a focus on building multi
 - [Social profile](https://twitter.com/ElorHadar)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Attention Mechanisms in Deep Learning
+**The paper assumes:** transformer attention mechanisms, self-attention and cross-attention in deep learning, neural network internal representations
+**Already in this field?** Skip this entirely if you already understand transformer attention mechanisms and their role in generative models.
+
+This background focuses on understanding attention mechanisms in deep learning, especially self-attention and cross-attention in transformer architectures, which are central to the paper's novel cross-image attention method for zero-shot appearance transfer. The rigorous course option provides a deep, structured university-level treatment of attention in computer vision, while the fast track offers a concise, visual, and code-oriented introduction to attention mechanisms for quicker comprehension. Choose the course for thorough mastery and the fast track for a focused, intuitive overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS231N Deep Learning for Computer Vision I 2025](https://www.youtube.com/playlist?list=PLoROMvodv4rOmsNzYBMe0gJY2XS8AQg16) — Stanford Online · 18 videos · 21.2h across 18 episodes
+
+**Watch only this:** Lecture 8: Attention and Transformers (~70 minutes) — this single lecture covers the core attention mechanisms needed to understand the paper's cross-image attention approach.
+
+*Why it unblocks this paper:* Stanford CS231N Deep Learning for Computer Vision I 2025 includes a dedicated lecture on Attention and Transformers (Lecture 8) that covers the foundational concepts of self-attention and cross-attention mechanisms relevant to the paper's method. This course is authoritative, university-level, and focused on computer vision, matching the paper's domain and technical depth.
+
+*If you want all of it:* Approximately 21.2 hours across all 18 episodes if a comprehensive understanding of deep learning for computer vision is desired.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Attention Mechanism in Deep Learning.](https://www.youtube.com/playlist?list=PL23RutZ7d6NpL7HvvxDxwhAXIg53z7B_K) — Datum Learning · 6 videos · 1.2h across 6 episodes
+
+**Watch only this:** Episodes 1-6 (all episodes, ~1.2 hours total) — the entire short series is brief and covers all necessary aspects from basics to cross-attention.
+
+*Why it unblocks this paper:* The 'Attention Mechanism in Deep Learning.' series by Datum Learning is a concise, well-structured visual introduction that covers the full attention mechanism including cross-attention with code examples, matching the paper's focus on cross-image attention. It is short and focused, ideal for quickly grasping the key concepts.
+
+*If you want all of it:* 1.2 hours across 6 episodes.
 
 ## Track 1 — Academic deep-dives (long-form)
 

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-brent-e-harrison"
-source_hash: "04b408192cf6e46c3c7e2cb814d20ab5a91fd967ce2fa5c2df5c228e3bbea690"
+source_hash: "482a38223237752d637bb4d016f07ce5fd91a725adbca020af329e8f472baffd"
 sequence: 251
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ This paper introduces a new multi-modal dataset based on the Goofus & Gallant ch
 - [Semantic Scholar](https://www.semanticscholar.org/search)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** multimodal machine learning
+**The paper assumes:** multimodal machine learning methods, transformer architectures, and multimodal data fusion techniques
+**Already in this field?** Skip this entirely if you already understand how machine learning models integrate and process multiple data modalities such as images and text.
+
+To understand the multimodal machine learning techniques used in the Goofus & Gallant Story Corpus paper, it is essential to grasp how models integrate and process both visual and textual data. The rigorous course option provides a deep, structured university-level introduction to multimodal machine learning, ideal for readers seeking comprehensive knowledge. The fast track offers a concise, well-produced explainer series that covers core concepts quickly, suitable for those needing a practical overview without a large time investment.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [CMU Fall 2023 Multimodal Machine Learning course (11-777)](https://www.youtube.com/playlist?list=PL-Fhd_vrvisMYs8A5j7sj8YW1wHhoJSmW) — LP Morency · 18 videos · 20.1h across the first 17 episodes
+
+**Watch only this:** Lectures 1.1 - Introduction, 1.2 - Multimodal Research Task, 3.1 - Multimodal Representation Fusion, 4.1 - Multimodal Alignment, 5.1 - Multimodal Transformers - Part1, 6.1 - Multimodal Transformers - Part2, about 8 hours total (7 lectures × ~70 min each). This subset covers the core multimodal concepts and transformer architectures used in the paper.
+
+*Why it unblocks this paper:* This is a recent, in-depth Carnegie Mellon University course on multimodal machine learning taught by LP Morency, covering foundational concepts, multimodal fusion, transformers, and reasoning—directly relevant to the paper's use of transformer-based multimodal models.
+
+*If you want all of it:* About 20.1 hours across the first 17 episodes.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Ms. Coffee Bean's Multimodalities](https://www.youtube.com/playlist?list=PLpZBeKTZRGPNKxoNaeMD9GViU_aH_HJab) — AI Coffee Break with Letitia · 15 videos · 2.7h across 15 episodes
+
+**Watch only this:** Episodes 1 - 5 (What nobody tells you about MULTIMODAL Machine Learning! to Why Multimodal Machine Learning models do not work. Part 2/2 – The CAUSES), about 50 minutes total (5 episodes × ~10 min each). These cover the definition, challenges, and foundational ideas of multimodal ML.
+
+*Why it unblocks this paper:* This short series by AI Coffee Break with Letitia provides clear, accessible explanations of multimodal machine learning concepts, including transformers combining vision and language, pretraining, and challenges, making it a great quick primer for understanding the paper's multimodal approach.
+
+*If you want all of it:* About 2.7 hours across all 15 episodes.
 
 ## Track 1 — Academic deep-dives (long-form)
 

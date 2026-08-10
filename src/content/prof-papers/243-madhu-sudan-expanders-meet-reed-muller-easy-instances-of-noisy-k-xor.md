@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-madhu-sudan"
-source_hash: "8f7d4df884e70b114c9a0db541bc6ce1a3313ba4f45f1f4281f57e21b3dc53e5"
+source_hash: "208101d92c5c3a4edb52054ad2f8f6d4230fec41ac22c8ff9d35943d18009c0a"
 sequence: 243
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,27 @@ Research interests: Communication & Computing, Coding theory, Property Testing, 
 - [Lab website](http://toc.seas.harvard.edu/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Coding Theory and Reed-Muller Codes
+**The paper assumes:** coding theory, error-correcting codes, Reed-Muller codes, decoding algorithms, linear codes over F2
+**Already in this field?** Skip this entirely if you already understand error-correcting codes and Reed-Muller code constructions and decoding algorithms.
+
+To understand the core methods and results of the paper "Expanders Meet Reed-Muller: Easy Instances of Noisy k-XOR," a solid grasp of coding theory, especially Reed-Muller codes and their decoding algorithms, is essential. The rigorous option offers a comprehensive university-level course covering the theoretical foundations and advanced topics, while the fast track provides a shorter, focused playlist that introduces key concepts efficiently for quicker preparation.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Information and Coding Theory (Madhur Tulsiani, TTIC, 2021)](https://www.youtube.com/playlist?list=PLidiQIHRzpXJujWKblOWPKoiD2ltRihYj) — Theoretical Computer Science School (TCSS) · 17 videos · 22.6h across 17 episodes
+
+**Watch only this:** Lectures 12 through 18, about 9.2 hours — covering linear codes, explicit constructions, Reed-Solomon and Reed-Muller codes, local decoding, and capacity-achieving properties relevant to the paper's methods.
+
+*Why it unblocks this paper:* This course by Madhur Tulsiani at TTIC covers information and coding theory in depth, including Reed-Muller codes and their decoding, which are central to the paper's approach connecting expander graphs and coding theory.
+
+*If you want all of it:* 22.6 hours across all 17 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

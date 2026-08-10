@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-tiffany-barnes"
-source_hash: "6bae9ff8709d8ff391b560851877fc4d572d65fdb11280ec2091ed1dff09ddb3"
+source_hash: "9138220656358126e2ebfd0b5bfd0be1ecacc10fda1c2a4588ff12288a198107"
 sequence: 280
 generator: "outreach-garden: managed"
 ---
@@ -54,6 +54,27 @@ Research interests: artificial intelligence in education, educational data minin
 - [ORCID](https://orcid.org/0000-0002-6500-9976)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Retrieval-Augmented Generation in NLP
+**The paper assumes:** retrieval-augmented generation, large language models, and neural information retrieval
+**Already in this field?** Skip this entirely if you already understand how retrieval-augmented generation integrates external document retrieval with large language model generation.
+
+This background focuses on Retrieval-Augmented Generation (RAG), the core technique used by MerryQuery to integrate external knowledge with large language models for trustworthy, context-aware educational assistance. The rigorous course option offers a comprehensive, detailed tutorial series ideal for deep understanding and practical implementation, while the fast track provides a concise, well-structured introduction suitable for quickly grasping the key concepts and architecture of RAG.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Retrieval Augmented Generation Explained](https://www.youtube.com/playlist?list=PLS2hxDii0-fgd1xjNS3skgRVK_n4paNhi) — IT Hawkly · 4 videos · 1.4h across 4 episodes
+
+**Watch only this:** Episodes 2-4, about 1 hour — focusing on vector databases, what RAG is, and inferencing and reasoning, which together explain the essential concepts needed to grasp how RAG enhances LLMs.
+
+*Why it unblocks this paper:* This short series by IT Hawkly offers a clear, concise explanation of RAG fundamentals, vector databases, and inferencing, ideal for quickly understanding the conceptual framework behind RAG without deep implementation details.
+
+*If you want all of it:* 1.4 hours across 4 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

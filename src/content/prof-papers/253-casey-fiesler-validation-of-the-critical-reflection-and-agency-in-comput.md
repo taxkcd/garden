@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-casey-fiesler"
-source_hash: "68ad69a21594c13e03b078f0b64ba11eb8406f7921cc725f491d427c43a63459"
+source_hash: "39a3332082b62630c22b07c0ace52ef688be20920cce35c2fa903f4a847e35db"
 sequence: 253
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,38 @@ Research interests: technology ethics and law, human-computer-interaction, onlin
 - [Social profile](https://bsky.app/profile/cfiesler.bsky.social)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** psychometrics and survey validation
+**The paper assumes:** psychometric theory, factor analysis, reliability and validity assessment in survey research
+**Already in this field?** Skip this entirely if you already understand psychometric methods for survey instrument validation, including factor analysis and reliability metrics.
+
+This background focuses on psychometrics and survey validation, essential for understanding how the Critical Reflection and Agency in Computing Index was validated in the paper. The rigorous course option offers a deep, structured university-level introduction to machine learning concepts including statistical pattern recognition and validation techniques, while the fast track provides concise, clear explanations of core psychometric concepts suitable for quick comprehension. Choose the course for thorough foundational knowledge or the fast track for a rapid, focused overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS229: Machine Learning led by Andrew Ng | Autumn 2018](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU) — Stanford Online · 21 videos · 27.9h across 21 episodes
+
+**Watch only this:** Lectures 1-4, about 5.3 hours — covering linear regression, gradient descent, generalized linear models, and Naive Bayes to understand model fitting and validation basics relevant to factor analysis and reliability assessment.
+
+*Why it unblocks this paper:* Stanford CS229 by Andrew Ng covers foundational statistical and machine learning methods including model validation and reliability concepts, which underpin psychometric validation techniques used in the paper.
+
+*If you want all of it:* 27.9 hours across 21 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Crash course in Psychometrics](https://www.youtube.com/playlist?list=PLsaUytEFNsp0d3iP6Z4fW55YzVWZPHf1b) — The Psychometric World · 6 videos · 0.7h across 6 episodes
+
+**Watch only this:** Episodes 1-4, about 28 minutes — covering introduction, what psychometric tests are, ability and personality tests, and reliability and validity essentials.
+
+*Why it unblocks this paper:* The Psychometric World crash course provides a concise, clear introduction to psychometric testing, reliability, and validity, directly addressing the core concepts needed to understand survey validation in the paper.
+
+*If you want all of it:* 0.7 hours across 6 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

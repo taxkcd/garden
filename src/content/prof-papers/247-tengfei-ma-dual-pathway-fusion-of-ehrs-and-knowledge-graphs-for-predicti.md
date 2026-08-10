@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-tengfei-ma"
-source_hash: "bed13cef3639522dc6f160c5dda37b34df01393174a1a4239f391cab73c26adf"
+source_hash: "34034a0a9db701b188563b097592d2bbd33aec92690d67b8c8264bbc3a43120b"
 sequence: 247
 generator: "outreach-garden: managed"
 ---
@@ -54,6 +54,38 @@ Research interests: machine learning, natural language processing (NLP) and biom
 - [Google Scholar](https://scholar.google.com/citations?user=9OvNakkAAAAJ&hl=en)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Graph Neural Networks
+**The paper assumes:** graph neural networks, graph embeddings, deep learning on graphs, knowledge graph representation learning
+**Already in this field?** Skip this entirely if you already understand graph neural networks and their application to biomedical knowledge graphs and EHR data.
+
+This background focuses on Graph Neural Networks (GNNs), which are central to understanding the fusion teacher-student framework in the paper for predicting drug-drug interactions. The rigorous course offers a deep, structured university-level treatment of GNNs, ideal for readers seeking comprehensive mastery. The fast track provides a concise, intuitive introduction to GNN concepts, suitable for readers needing a quick but solid grasp to follow the paper's methodology.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS224W Machine Learning with Graphs I Jure Leskovec](https://www.youtube.com/playlist?list=PLoROMvodv4rOP-ImU-O1rYRg2RFxomvFp) — Stanford Online · 47 videos · 24.1h across 47 episodes
+
+**Watch only this:** Lectures 6.1 (Introduction to Graph Neural Networks), 7.1 (A general Perspective on GNNs), 7.2 (A Single Layer of a GNN), 7.3 (Stacking layers of a GNN), and 8.2 (Training Graph Neural Networks), about 2.5 hours total — these cover core GNN concepts, architectures, and training relevant to the paper's models.
+
+*Why it unblocks this paper:* Stanford CS224W by Jure Leskovec is a top-tier university course dedicated to machine learning with graphs, covering foundational and advanced GNN topics essential for understanding the paper's graph embedding fusion and relation scoring mechanisms.
+
+*If you want all of it:* 24.1 hours across 47 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Graph Neural Networks (Hands-on)](https://www.youtube.com/playlist?list=PLB1nTQo4_y6sfLtCrGAKG_l7xOHjtYqBk) — LLMs Explained - Aggregate Intellect - AI.SCIENCE · 6 videos · 0.6h across 6 episodes
+
+**Watch only this:** Sessions 1 through 5 (Introduction to Graphs, Graph Definition, ML Tasks on Graphs, Simple Graph Convolution, Graph Attention Networks), about 25 minutes total — these episodes succinctly cover the essential GNN concepts and models used in the paper.
+
+*Why it unblocks this paper:* The 'Graph Neural Networks (Hands-on)' series by LLMs Explained offers a brief, clear introduction to GNN basics and key architectures like graph convolution and attention, providing an accessible overview that supports quick comprehension of the paper's GNN components.
+
+*If you want all of it:* 0.6 hours across 6 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

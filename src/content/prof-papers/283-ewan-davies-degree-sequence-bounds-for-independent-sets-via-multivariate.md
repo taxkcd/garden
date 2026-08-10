@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-ewan-davies"
-source_hash: "e585e5ca532e128e42f598c6225548bc8c4d91cd34cff7f0ce3cf72f3f03d0b9"
+source_hash: "947d0121070c6a1f1d762eb33f4f791253c92b00c8369c2b520423fcbea259b6"
 sequence: 283
 generator: "outreach-garden: managed"
 ---
@@ -50,6 +50,38 @@ This paper develops new mathematical bounds on the expected size of independent 
 - [Resolved homepage](https://www.ewandavies.org/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** spectral graph theory
+**The paper assumes:** spectral graph theory, linear algebra of graphs, eigenvalues and eigenvectors of adjacency matrices
+**Already in this field?** Skip this entirely if you already understand spectral graph theory and how eigenvalues relate to graph properties.
+
+This background focuses on spectral graph theory, which is essential for understanding the novel spectral analysis techniques used in the paper to analyze local occupancy linear programs and prove matrix invertibility. The rigorous course option provides a comprehensive university-level introduction to algebraic and spectral graph theory, ideal for deep mastery. The fast track offers a concise, intuition-driven series on graph Laplacians and spectral clustering, suitable for quickly grasping key spectral concepts relevant to the paper's methods.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Introduction to Algebraic Graph Theory_Prof. Ranveer](https://www.youtube.com/playlist?list=PLyqSpQzTE6M_ciAYiv53KZyKncwXZw8TU) — NPTEL-NOC IITM · 45 videos
+
+**Watch only this:** Episodes 7 to 15, about 4.5 hours — covering eigenvalues and eigenvectors, adjacency matrices, the spectral theorem, Rayleigh quotient, Perron-Frobenius theorem, and spectral bounds on graph parameters relevant to the paper's spectral analysis.
+
+*Why it unblocks this paper:* This NPTEL-NOC IITM course by Prof. Ranveer covers foundational and advanced topics in algebraic and spectral graph theory, including eigenvalues, spectral theorems, Perron-Frobenius theory, and spectral bounds on graph parameters, directly supporting the paper's spectral LP analysis and invertibility proofs.
+
+*If you want all of it:* 19.9 hours across 45 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Spectral Graph Theory](https://www.youtube.com/playlist?list=PL_4Jjqx0pZY9KxSbGUuJYm6V5lucJvJkc) — Sanjoy Das · 6 videos · 1.4h across 6 episodes
+
+**Watch only this:** Episodes 1 to 4, about 1 hour — covering unnormalized Laplacian, sum of squares property, Fiedler vector, and multidimensional embedding to quickly build intuition on spectral graph properties.
+
+*Why it unblocks this paper:* Sanjoy Das's concise series on spectral graph theory focuses on graph Laplacians, eigenvalues, and spectral clustering, providing an accessible and visual introduction to key spectral concepts that underpin the paper's spectral LP approach.
+
+*If you want all of it:* 1.4 hours across 6 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

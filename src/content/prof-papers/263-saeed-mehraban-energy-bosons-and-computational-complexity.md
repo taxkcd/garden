@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-saeed-mehraban"
-source_hash: "4fa0eec5af8c8894e962941154328437a2c2d952e6692f4c2200c9472d5a8e89"
+source_hash: "8e5954eff619e3697e2bcc6984734f3a7d84fe8bcef46aa937a6413789392d2c"
 sequence: 263
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,38 @@ Research interests: quantum computation and information and their connections wi
 - [Google Scholar](https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AJsN-F4FwKODZ1ZycKwSWvnHECqxwIOv0En6Xv3upO_Y8GqP9yluRfdfgqaeAA75A6BlDuLLW-dF-2gjKw6vKx_2PonGodOnN-ZSXwECpcs6fNuqh3PE6b1AxUiV6L4JmLP_ULNIYtbVRRvepP0Mf1SrOFcpWQqP9g&user=tVif3VUAAAAJ)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** continuous-variable quantum computing
+**The paper assumes:** continuous-variable quantum computing, bosonic quantum systems, Gaussian states and gates, polynomial Hamiltonians
+**Already in this field?** Skip this entirely if you already understand the theory and operations of continuous-variable quantum computing and bosonic modes.
+
+This background provides foundational understanding of continuous-variable (CV) quantum computing, essential for grasping the paper's focus on energy as a computational resource and complexity in bosonic quantum systems. The rigorous course offers a deep, structured university-level introduction to quantum computing concepts including states, gates, and measurements, while the fast track provides a concise, accessible overview suitable for quickly gaining the necessary intuition and terminology. Choose the rigorous course for thorough preparation or the fast track for a quicker, yet solid, conceptual grounding.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Introduction to quantum computing course 2022](https://www.youtube.com/playlist?list=PLo0Vs5tDeRLRIPcJ83SN91M-asGuaa1AD) — NYU Quantum Technology Lab · 25 videos · 28.9h across 25 episodes
+
+**Watch only this:** Lectures 1, 4, 5, 6, 7, 8, 9, 11, 12, 13, 15, 16, 19, 20, 21, 22 (about 12 hours) — focusing on quantum states, measurements, gates, and composite systems to build the necessary foundation for CV quantum computing.
+
+*Why it unblocks this paper:* This NYU Quantum Technology Lab course by Prof. Tim Byrnes covers quantum computing fundamentals including quantum states, measurements, gates, and composite systems, which are crucial for understanding continuous-variable quantum computation models and energy-based complexity results in the paper.
+
+*If you want all of it:* 28.9 hours across 25 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Introduction to Quantum Computing NPTEL IITM-IBM](https://www.youtube.com/playlist?list=PLuBwWyD3M82x9PfxeF7oxb0E122mQAWh6) — sukanya srinivasan · 26 videos · 12.3h across 26 episodes
+
+**Watch only this:** Episodes mod01lec04 to mod01lec09 (about 2.5 hours) — covering quantum computing basics, postulates, measurements, and gates to quickly grasp core concepts needed for the paper.
+
+*Why it unblocks this paper:* This concise NPTEL IITM-IBM series by sukanya srinivasan provides a clear, well-structured introduction to quantum computing basics, gates, measurements, and algorithms, offering a quick yet solid conceptual overview relevant to continuous-variable quantum computing principles in the paper.
+
+*If you want all of it:* 12.3 hours across 26 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

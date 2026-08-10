@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-alexander-j-hartemink"
-source_hash: "d06b724bb6ea6b5613287e15fce01bee1ff7c4d77c570d79e1d086e15059b214"
+source_hash: "c4d078ffa51107fb114e92ef92dd3e76f0f706f1c42d6ed8ac3206b5a55f6a2a"
 sequence: 256
 generator: "outreach-garden: managed"
 ---
@@ -54,6 +54,38 @@ Research interests: development of new algorithms in statistical machine learnin
 - [ORCID](https://orcid.org/0000-0002-1292-2606)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Gaussian process regression
+**The paper assumes:** probabilistic regression models, kernel methods, Gaussian processes, Bayesian inference
+**Already in this field?** Skip this entirely if you already understand Gaussian process regression and kernel-based Bayesian modeling.
+
+This background focuses on Gaussian process regression, the key statistical modeling technique used in the paper to predict transcript dynamics from chromatin features. The rigorous course option provides a deep, university-level introduction to Gaussian processes, suitable for readers seeking a thorough understanding of the theory and applications. The fast track offers a concise, intuition-driven explainer series that covers the essential concepts quickly, ideal for readers who want to grasp the fundamentals efficiently without extensive time investment.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Gaussian Process Summer School 2024](https://www.youtube.com/playlist?list=PLZ_xn3EIbxZEoWLlm9y6OizFkontrhA6G) — Gaussian Process Summer School · 8 videos · 10.7h across 8 episodes
+
+**Watch only this:** Lectures 1 and 2: 'GPSS2024: A first introduction to Gaussian processes' and 'GPSS2024: A second introduction to Gaussian processes', about 2 hours 38 minutes total — these provide the foundational theory and intuition needed to understand Gaussian processes and regression.
+
+*Why it unblocks this paper:* The Gaussian Process Summer School 2024 playlist is a recent, authoritative university-level lecture series that covers Gaussian processes comprehensively, including kernel design, inference, and biological applications, directly relevant to the paper's use of Gaussian process regression models in computational genomics.
+
+*If you want all of it:* All 8 episodes, about 10.7 hours total.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Gaussian Process](https://www.youtube.com/playlist?list=PLC60FEACD382C3B0F) — DeepSchoolAi · 11 videos · 2.6h across 11 episodes
+
+**Watch only this:** Episodes 1, 5, 9, and 10: '(ML 19.1) Gaussian processes - definition and first examples', '(ML 19.5) Positive semidefinite kernels (Covariance functions)', '(ML 19.9) GP regression - introduction', and '(ML 19.10) GP regression - the key step', about 54 minutes total — these cover the core concepts and regression steps needed to understand the paper’s modeling.
+
+*Why it unblocks this paper:* The DeepSchoolAi 'Gaussian Process' playlist offers a clear, concise introduction to Gaussian processes and regression in about 2.6 hours, covering definitions, kernel functions, and regression modeling, which aligns well with the paper’s computational approach while respecting the reader's time.
+
+*If you want all of it:* All 11 episodes, about 2.6 hours total.
 
 ## Track 1 — Academic deep-dives (long-form)
 

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-michael-gribskov"
-source_hash: "46cd5a408bbd67cbaddd67f6005657783f42226f7bd601e7b9567d3d69b92767"
+source_hash: "45e257c413aca94a9f56a1346d4b0020b7694a608fb76bcd51155056081d4cdf"
 sequence: 245
 generator: "outreach-garden: managed"
 ---
@@ -54,6 +54,38 @@ Research interests: Biological systems controlled by complex networks of interac
 - [Lab website](https://structure.bio.purdue.edu/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Epigenomics and Chromatin Biology
+**The paper assumes:** chromatin structure, epigenetic regulation, nucleosome positioning, gene regulation mechanisms
+**Already in this field?** Skip this entirely if you already understand chromatin biology and epigenetic regulation of gene expression.
+
+To understand the bibliometric review of ATAC-seq and its application in gene expression, foundational knowledge of epigenomics and chromatin biology is essential. The rigorous course option offers a deep dive into molecular cell biology with detailed lectures on genome structure, chromatin, and transcriptional control, while the fast track provides a concise, focused introduction to chromatin structure and gene expression regulation. Choose the course for comprehensive understanding or the fast track for a quicker, targeted overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Molecular Cell Biology Lecture Series](https://www.youtube.com/playlist?list=PLEr5Mk7NJ1PfjEonN9vqIIl6WXceckKfo) — Molecular Cell Biology Lecture Series · 42 videos · 22.6h across 42 episodes
+
+**Watch only this:** Watch Lectures 4 Part A and B (Nucleus, Genome Structure and Chromatin), Lectures 10 Part A and B (Transcriptional Control), and Lectures 11 Part A and B (Transcriptional and Post-transcriptional Control), about 3.2 hours total — these provide the core molecular biology background relevant to chromatin and gene expression.
+
+*Why it unblocks this paper:* This Molecular Cell Biology Lecture Series covers genome structure, chromatin, and transcriptional control in detail, directly supporting understanding of chromatin accessibility and gene regulation mechanisms central to ATAC-seq.
+
+*If you want all of it:* 22.6 hours across 42 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Gene expression and Chromatin](https://www.youtube.com/playlist?list=PLu42_A8Z_l1vRvjIkgfOykGLxjfzOtzAI) — Muzi · 8 videos · 3.2h across the first 7 episodes
+
+**Watch only this:** Watch the first 4 episodes: 'Chromatin Structure and the Control of Gene Expression', 'Throwing Transcription for a Loop: The Role of Chromatin Insulators in the 3D Nucleus', 'Genome in 3D: Modeling Chromosome Organization', and 'How does DNA fold? The loop extrusion model', about 1.8 hours total — these cover essential chromatin biology concepts relevant to ATAC-seq.
+
+*Why it unblocks this paper:* This playlist titled 'Gene expression and Chromatin' offers a concise and focused introduction to chromatin structure and gene expression control, matching the paper's focus on chromatin accessibility and regulatory mechanisms.
+
+*If you want all of it:* 3.2 hours across the first 7 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-gursimran-singh-walia"
-source_hash: "111787d7922b55c33ba431158654bb8ed44c65550c42779d6e8f77e18bcacd8b"
+source_hash: "6c97c21c08d55ce6a585ae4b3398527333b82d8d70bbb6db02aac147f94733de"
 sequence: 271
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,38 @@ Research interests: Utilizing quantitative survey-based, qualitative and experim
 - [Resolved homepage](https://www.augusta.edu/faculty/directory/view.php?id=JASMITH8#profile)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Software Engineering Fundamentals
+**The paper assumes:** software design principles, software engineering methodologies, software quality assurance, and software error classification
+**Already in this field?** Skip this entirely if you already have a solid understanding of core software engineering concepts and software design error taxonomies.
+
+To fully understand the taxonomy validation and implications of software design errors discussed in the paper, foundational knowledge of software engineering fundamentals, especially software design principles and quality assurance, is essential. The rigorous course option offers a deep, structured university-level lecture series on computer engineering fundamentals relevant to software design. The fast track provides a concise, focused playlist on software quality assurance, ideal for quickly grasping key concepts related to software design errors and their prevention.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [LECTURE SERIES IN COMPUTER ENGINEERING](https://www.youtube.com/playlist?list=PLX04tETu2GLApoZaeCq7FeQJOBOfKxUWN) — Engineering Lecture Series · 24 videos · 11.6h across 24 episodes
+
+**Watch only this:** Episodes 8 to 9: 'Step-by-Step Guide to Creating Effective Flowcharts for Engineers. MODULE 031' (~28 min) and 'Design Process and Flowcharting. Engineering Lecture Series MODULE 029' (~28 min), about 56 minutes total — these focus on design process fundamentals critical to grasping software design errors.
+
+*Why it unblocks this paper:* This Computer Engineering Lecture Series covers foundational concepts in computing and design processes, which underpin understanding software design errors and their taxonomy validation in the paper.
+
+*If you want all of it:* 11.6 hours across 24 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Software Quality Assurance](https://www.youtube.com/playlist?list=PLptLP7KjDoqVNLwIJVlkyi85XIlE7Y9WD) — Software Engineering · 16 videos · 3.2h across 16 episodes
+
+**Watch only this:** Episodes 1 to 5: 'What is Software Quality Assurance - Full SQA Course Lecture 01 Urdu/Hindi' (~12 min), 'Lecture 2 Software Defects in Software Quality Assurance Series Urdu Hindi' (~12 min), 'lecture 3 - Defect Origin, Defect discovery and Effective Defect elimination techniques Urdu / Hindi' (~12 min), 'Lecture 4 - Defect Removal Method | Software Quality Assurance | SQA' (~12 min), and 'Lecture 5 Defect Prevention in Software Quality Assurance' (~12 min), about 1 hour total — these cover core concepts of software design errors and prevention.
+
+*Why it unblocks this paper:* This Software Quality Assurance playlist directly addresses software defects, design errors, and quality assurance techniques, aligning closely with the paper's focus on error taxonomy validation and training tools.
+
+*If you want all of it:* 3.2 hours across 16 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

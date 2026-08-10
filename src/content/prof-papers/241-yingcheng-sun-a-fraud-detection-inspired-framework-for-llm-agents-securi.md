@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-yingcheng-sun"
-source_hash: "994159fd0a3e5884f198d46f54cd2a6ca54b30db9e266acbac97b712bbdee8d9"
+source_hash: "305c89e66069b244022a015134ad185592a5f6e1ef909d6213e9306d107a995e"
 sequence: 241
 generator: "outreach-garden: managed"
 ---
@@ -51,6 +51,38 @@ Research interests: Information Retrieval, Machine Learning and Software Enginee
 - [Resolved homepage](https://yingchengsun.github.io/academic/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Machine Learning for Anomaly Detection
+**The paper assumes:** machine learning for anomaly detection, supervised classification, feature engineering for sequential data
+**Already in this field?** Skip this entirely if you already understand supervised machine learning methods for anomaly and fraud detection, including feature design and evaluation.
+
+This background focuses on machine learning methods for anomaly detection, crucial for understanding the paper's approach to detecting adversarial interaction trajectories in LLM agents using structured features and lightweight classifiers. The rigorous course option provides a comprehensive foundation in machine learning concepts relevant to anomaly detection, while the fast track offers a concise, practical introduction to anomaly detection techniques, suitable for quickly grasping core ideas without deep theoretical detail.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS229: Machine Learning led by Andrew Ng | Autumn 2018](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU) — Stanford Online · 21 videos · 27.9h across 21 episodes
+
+**Watch only this:** Lectures 1-9 (covering introduction, linear models, logistic regression, decision trees, ensemble methods), about 12 hours — this subset covers core supervised learning and ensemble methods relevant to anomaly detection with structured features.
+
+*Why it unblocks this paper:* Stanford CS229 by Andrew Ng is a highly authoritative, broad machine learning course covering supervised learning, ensemble methods, and decision trees, which underpin classic anomaly detection and fraud detection techniques like XGBoost. It provides the theoretical and practical foundation needed to understand the paper's feature engineering and model choice.
+
+*If you want all of it:* 27.9 hours across 21 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Anomaly Detection](https://www.youtube.com/playlist?list=PL3N9eeOlCrP5DflJUcymWEKhfhLx2MhRO) — AIEngineering · 6 videos · 3.4h across 6 episodes
+
+**Watch only this:** Episodes 1-3 (Autoencoder Explained, Anomaly Detection with AutoEncoders using Tensorflow, Anomaly Detection model on Time Series data in Python), about 1.5 hours — these provide a solid practical introduction to anomaly detection methods and their implementation.
+
+*Why it unblocks this paper:* The 'Anomaly Detection' series by AIEngineering offers focused, practical explanations of anomaly detection methods including autoencoders and isolation forests, which are common in anomaly and fraud detection contexts. It is concise and directly relevant to understanding anomaly detection techniques applicable to the paper's problem.
+
+*If you want all of it:* 3.4 hours across 6 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

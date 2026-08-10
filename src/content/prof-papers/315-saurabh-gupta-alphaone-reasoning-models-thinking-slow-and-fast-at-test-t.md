@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-saurabh-gupta"
-source_hash: "bc2efd7dcc8c548306fcdd5c0c318887976601bb509599672f12675fd0970b8a"
+source_hash: "3deb440f5a2bc43079f829c9d747df72e4ac3fe083c6521d5913526b8a738de0"
 sequence: 315
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,38 @@ Research interests: Robotics, vision, and artificial intelligence
 - [Professor website](http://saurabhg.web.illinois.edu/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Probabilistic Modeling and Stochastic Processes
+**The paper assumes:** probabilistic modeling, Bernoulli processes, stochastic scheduling, Markov processes
+**Already in this field?** Skip this entirely if you already understand basic probability theory, Bernoulli processes, and stochastic modeling in machine learning contexts.
+
+This background playlist selection focuses on probabilistic modeling and stochastic processes, which are essential to understanding the stochastic scheduling and Bernoulli process-based slow thinking modulation in the AlphaOne paper. The rigorous course option provides a deep, structured university-level foundation, while the fast track offers a concise, visual introduction to key stochastic concepts for quicker comprehension. Choose the lane that fits your available time and depth needs; the fast track is a focused primer, not a watered-down version.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [6.041 Probabilistic Systems Analysis and Applied Probability](https://www.youtube.com/playlist?list=PLUl4u3cNGP61MdtwGTqZA0MreSaDybji8) — MIT OpenCourseWare · 25 videos · 21.1h across 25 episodes
+
+**Watch only this:** Lectures 1 (Probability Models and Axioms), 2 (Conditioning and Bayes' Rule), 3 (Independence), 5-7 (Discrete Random Variables I-III), 12 (Iterated Expectations), and 13 (Bernoulli Process), about 6 hours total — these cover the necessary probability foundations and the Bernoulli process crucial for understanding the paper's stochastic slow thinking scheduling.
+
+*Why it unblocks this paper:* MIT's 6.041 Probabilistic Systems Analysis and Applied Probability course covers foundational probability models, Bernoulli processes, and stochastic processes in a rigorous, lecture-based format, directly supporting the paper's use of Bernoulli sampling and stochastic scheduling.
+
+*If you want all of it:* 21.1 hours across all 25 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Stochastic Calculus Explained Visually](https://www.youtube.com/playlist?list=PLD5zpXPUmJv1X4uWIBCRqFd0ZcxP9y12g) — Quant Catalysts · 6 videos · 0.4h across 6 episodes
+
+**Watch only this:** Episodes 1-3 (Your Journey into Randomness Begins!, Random Walks Unveiled!, Brownian Motion Unveiled), about 10 minutes total — these episodes introduce the core stochastic concepts relevant to the paper's method.
+
+*Why it unblocks this paper:* The 'Stochastic Calculus Explained Visually' series by Quant Catalysts offers a short, visually intuitive introduction to randomness, random walks, and related stochastic concepts, providing a quick grasp of the stochastic ideas underlying the paper's Bernoulli process and token scheduling.
+
+*If you want all of it:* Approximately 24 minutes across all 6 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

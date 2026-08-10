@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-david-fernandez-baca"
-source_hash: "62ea63ab29da3e44e5550bd0edcb4b60737fef01f1ac2088313354ce68b8eaea"
+source_hash: "30bcc48803a5bee836e887efdc78e57b432108116cc21f2485c515d582f8a7ad"
 sequence: 272
 generator: "outreach-garden: managed"
 ---
@@ -51,6 +51,38 @@ Research interests: combinatorial algorithms, exact algorithms for NP-hard probl
 - [Resolved homepage](https://faculty.sites.iastate.edu/fernande/#main-content)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Exact algorithms for NP-hard problems
+**The paper assumes:** NP-completeness theory, exact exponential-time algorithms, combinatorial optimization, local search algorithms
+**Already in this field?** Skip this entirely if you already understand the theory and design of exact algorithms for NP-hard combinatorial problems and their complexity analysis.
+
+To understand the exact algorithms developed for the no-rainbow r-coloring problem and their complexity, it is essential to have a solid grasp of exact algorithms for NP-hard problems, including techniques like backtracking, local search, and probabilistic methods. The rigorous course provides a deep, structured foundation in algorithms, while the fast track offers a concise, accessible introduction to computational problems and complexity classes relevant to NP-hardness and exact algorithms. Choose the rigorous course for a thorough understanding or the fast track for a quicker conceptual overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [MIT 6.006 Introduction to Algorithms, Spring 2020](https://www.youtube.com/playlist?list=PLUl4u3cNGP63EdVPNLG3ToM6LaEUuStEY) — MIT OpenCourseWare · 32 videos · 35.3h across 32 episodes
+
+**Watch only this:** Episodes 1 to 16, about 17.5 hours — covering algorithms and computation, data structures, sorting, hashing, graph algorithms (BFS, DFS, shortest paths), and dynamic programming, which provide the necessary background for exact algorithm design and complexity analysis.
+
+*Why it unblocks this paper:* MIT 6.006 Introduction to Algorithms is a comprehensive, authoritative university course that covers fundamental algorithmic techniques, complexity, and problem-solving strategies essential to understanding exact algorithms for NP-hard problems like no-rainbow coloring.
+
+*If you want all of it:* 35.3 hours across 32 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Chapter-03 - Algorithms and Problem Solving | 1st Year Computer Science | New Book 2025](https://www.youtube.com/playlist?list=PLo9avRiV3ZLSkhu6Qi8mJn8khl3Jwcu6I) — CS with Sir Iqbal · 15 videos · 3.4h across 15 episodes
+
+**Watch only this:** Episodes 1 to 11, about 2.3 hours — covering computational problems, complexity classes, algorithm analysis, and key algorithm design techniques like backtracking and dynamic programming relevant to exact algorithms.
+
+*Why it unblocks this paper:* This concise 15-episode series from 'CS with Sir Iqbal' introduces computational problems, complexity classes (P, NP, NP-Complete), and algorithm design techniques including backtracking and dynamic programming, providing a quick yet clear foundation on NP-hard problems and exact algorithms.
+
+*If you want all of it:* 3.4 hours across 15 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

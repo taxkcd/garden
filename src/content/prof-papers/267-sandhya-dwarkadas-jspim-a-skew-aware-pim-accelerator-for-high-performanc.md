@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-sandhya-dwarkadas"
-source_hash: "3b1f77c31a1254a457a6720f5f04e3840d1a570f1f130415ab397598b598105b"
+source_hash: "6273cf716c527acc23152016d01985b26ff92389ac61093c057451af907c9fbe"
 sequence: 267
 generator: "outreach-garden: managed"
 ---
@@ -52,6 +52,38 @@ Research interests: Parallel and distributed computing, Computer architecture, I
 - [DBLP](https://dblp.org/pid/62/1421.html)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Database Systems and Join Algorithms
+**The paper assumes:** database join algorithms, hash join methods, data skew in databases, memory bottlenecks in query processing
+**Already in this field?** Skip this entirely if you already have a solid understanding of database join algorithms and their performance characteristics.
+
+This background is designed to provide foundational knowledge on database systems and join algorithms, crucial for understanding the JSPIM paper's contributions to accelerating join operations with Processing-in-Memory architectures. The rigorous course option offers a deep, structured university-level lecture series covering core database concepts and join algorithms in detail, while the fast track provides a shorter, more focused subset of the same course for quicker comprehension without sacrificing essential understanding.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [CMU Intro to Database Systems (15-445/645 - Fall 2024)](https://www.youtube.com/playlist?list=PLSE8ODhjZXjYDBpQnSymaectKjxCy6BYq) — CMU Database Group · 26 videos · 33.9h across 26 episodes
+
+**Watch only this:** Lectures #01 - Relational Model & Algebra, #07 - Hash Tables, and #12 - Join Algorithms: Hash, Sort-Merge, Nested Loop Joins, totaling about 3.5 hours (approx. 78 min + 78 min + 78 min). This subset covers the essential database and join algorithm concepts needed to understand JSPIM's contributions.
+
+*Why it unblocks this paper:* This is a comprehensive, authoritative university course from CMU Database Group (Fall 2024) that covers database fundamentals, hash tables, and join algorithms in depth, directly relevant to the paper's focus on join acceleration and hash join redesign.
+
+*If you want all of it:* 33.9 hours across 26 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [CMU Intro to Database Systems (15-445/645 - Fall 2023)](https://www.youtube.com/playlist?list=PLSE8ODhjZXjbj8BMuIrRcacnQh20hmY9g) — CMU Database Group · 26 videos · 33.3h across 26 episodes
+
+**Watch only this:** Lectures F2023 #01 - Relational Model & Algebra, F2023 #07 - Hash Tables, and F2023 #11 - Join Algorithms, totaling about 3.8 hours (approx. 76 min + 76 min + 76 min). This focused subset provides a concise yet solid foundation for understanding the paper.
+
+*Why it unblocks this paper:* This Fall 2023 CMU Intro to Database Systems playlist is a well-produced, clear, and slightly shorter version of the same course, covering the same fundamental topics including hash tables and join algorithms, suitable for a quicker but still rigorous overview.
+
+*If you want all of it:* 33.3 hours across 26 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

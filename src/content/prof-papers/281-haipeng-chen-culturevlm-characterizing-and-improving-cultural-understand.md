@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-haipeng-chen"
-source_hash: "67be8fe4090981d6f03153952b3c88122df7a5421116f93d22502550712d231e"
+source_hash: "c1e1cc13b0cc74fb6845c212f33f4107c6c7d5d75faed26edfd15ef77448f838"
 sequence: 281
 generator: "outreach-garden: managed"
 ---
@@ -56,6 +56,38 @@ Research interests: Use-Inspired AI, reinforcement learning, generative AI, opti
 - [Social profile](http://twitter.com/HaipengChen2)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Vision-Language Models
+**The paper assumes:** vision-language model architectures, multimodal deep learning, and model fine-tuning techniques
+**Already in this field?** Skip this entirely if you already understand how vision-language models work, including their architectures and training methods.
+
+To understand the CultureVLM paper, a solid grasp of vision-language models (VLMs) is essential, including how they integrate visual and textual data and how they are trained and fine-tuned. The rigorous course option offers a deep, structured university-level introduction to deep learning for computer vision, including vision-language topics, while the fast track provides a concise, focused explainer series on recent vision-language model advances and competitions. Choose the rigorous course for comprehensive foundational knowledge or the fast track for a quicker, up-to-date overview of VLM research developments.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS231N Deep Learning for Computer Vision I 2025](https://www.youtube.com/playlist?list=PLoROMvodv4rOmsNzYBMe0gJY2XS8AQg16) — Stanford Online · 18 videos · 21.2h across 18 episodes
+
+**Watch only this:** Lectures 1 through 8, about 9.3 hours — covering introduction, image classification, CNNs, RNNs, and especially Lecture 8 on Attention and Transformers, which are foundational for vision-language models.
+
+*Why it unblocks this paper:* Stanford CS231N Deep Learning for Computer Vision is a top-tier university course that covers core deep learning concepts for vision, including CNNs, attention, transformers, and vision-language models, directly relevant to understanding VLM architectures and training paradigms used in CultureVLM.
+
+*If you want all of it:* All 18 lectures, about 21.2 hours.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Vision-Language Model Competition: DeepSeek-VL and Rivals](https://www.youtube.com/playlist?list=PLXKyJu0coDeXFGNeId8wRs-5vdC0DJKqS) — Byte Goose AI. · 13 videos · 4.7h across 13 episodes
+
+**Watch only this:** Episodes 7 and 11, about 44 minutes total — 'CLIP: Contrastive Language–Image Pretraining model' and 'Veo 3: Visual Reasoning Through Chain-of-Frames' cover core VLM concepts and recent model architectures.
+
+*Why it unblocks this paper:* The Vision-Language Model Competition: DeepSeek-VL and Rivals playlist offers concise, recent explainers on state-of-the-art vision-language models, including CLIP and related architectures, providing a quick yet focused overview of VLM advances relevant to the paper's context.
+
+*If you want all of it:* All 13 episodes, about 4.7 hours.
 
 ## Track 1 — Academic deep-dives (long-form)
 

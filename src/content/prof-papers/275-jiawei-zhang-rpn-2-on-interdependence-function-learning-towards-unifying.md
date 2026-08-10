@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-jiawei-zhang"
-source_hash: "2d2eb851abdf9d46b12f56649a45e71c576835297c8ca3156d355924b5cc93ed"
+source_hash: "bc9e483f66828910dcda98720127f771e223eb3203b841a7b33467636e496b2a"
 sequence: 275
 generator: "outreach-garden: managed"
 ---
@@ -54,6 +54,38 @@ Research interests: Information Fusion and Data Mining across Multiple Informati
 - [More information here](https://www.ifmlab.org/opening.html)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Graph Neural Networks
+**The paper assumes:** foundations of graph neural networks, message passing algorithms, and graph representation learning
+**Already in this field?** Skip this entirely if you already understand graph neural networks and their role in modeling data interdependence.
+
+To understand the core concept of this paper, which unifies CNNs, RNNs, GNNs, and Transformers through explicit interdependence functions, a solid grasp of Graph Neural Networks (GNNs) is essential. The rigorous course option offers a comprehensive, university-level deep dive into graph machine learning, while the fast track provides a concise, well-structured introduction to GNNs with practical insights and examples. Choose the rigorous course for depth and theory, or the fast track for a quicker, intuition-focused overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS224W Machine Learning with Graphs I Jure Leskovec](https://www.youtube.com/playlist?list=PLoROMvodv4rOP-ImU-O1rYRg2RFxomvFp) — Stanford Online · 47 videos · 24.1h across 47 episodes
+
+**Watch only this:** Lectures 1.1 to 1.3 (Why Graphs, Applications of Graph ML, Choice of Graph Representation), 3.1 to 3.3 (Node Embeddings, Random Walk Approaches, Embedding Entire Graphs), 6.1 to 7.3 (Introduction to Graph Neural Networks, Deep Learning for Graphs, GNN layers and stacking), about 11.5 hours total — this subset covers foundational graph concepts, embeddings, and GNN architectures essential for the paper.
+
+*Why it unblocks this paper:* Stanford CS224W is a top-tier university course by Jure Leskovec that thoroughly covers graph machine learning fundamentals, including graph representations, node embeddings, and graph neural networks, directly relevant to understanding the interdependence functions and unification framework in the paper.
+
+*If you want all of it:* 24.1 hours across 47 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Graph Neural Networks](https://www.youtube.com/playlist?list=PLV8yxwGOxvvoNkzPfCx2i8an--Tkt7O8Z) — DeepFindr · 27 videos · 6.6h across 27 episodes
+
+**Watch only this:** Episodes 1 to 3 (Understanding Graph Neural Networks Parts 1-3), Episodes 5 and 6 (Using edge features, Graph Attention Networks), about 1.8 hours total — these videos cover GNN basics, variants, and practical implementation relevant to the paper's graph interdependence functions.
+
+*Why it unblocks this paper:* DeepFindr's 'Graph Neural Networks' playlist offers a clear, concise introduction to GNNs with practical examples, variants, and PyTorch Geometric usage, providing an accessible yet thorough overview that supports understanding the paper's focus on interdependence modeling in graphs.
+
+*If you want all of it:* 6.6 hours across 27 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 

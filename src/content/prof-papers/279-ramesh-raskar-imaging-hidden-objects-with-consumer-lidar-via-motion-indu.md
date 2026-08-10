@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-ramesh-raskar"
-source_hash: "d8266addea1e0498b7379f6911839cf1673bda0060c3aba339431745a85712e9"
+source_hash: "69012964ad38f0bc80e4da6837a8a1d0100d6ac0476cafcd36807ed5b26010fd"
 sequence: 279
 generator: "outreach-garden: managed"
 ---
@@ -56,6 +56,38 @@ Research interests: Distributed AI agent architectures, Machine Learning and Ima
 - [Social profile](https://twitter.com/raskarmit)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Bayesian Filtering and Particle Filters
+**The paper assumes:** Bayesian filtering, particle filtering, sequential Monte Carlo methods, state-space models
+**Already in this field?** Skip this entirely if you already understand Bayesian state estimation and particle filtering algorithms in probabilistic robotics or signal processing contexts.
+
+This background playlist selection focuses on Bayesian filtering and particle filters, which are central to the paper's approach for real-time tracking and camera localization using consumer LiDAR. The rigorous course provides a deep theoretical and practical foundation suitable for readers seeking comprehensive understanding, while the fast track offers a concise, intuition-driven introduction for those needing a quicker grasp of particle filtering concepts. Choose the lane that fits your available time and depth of study preference.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [ROB 530 W22 - Mobile Robotics](https://www.youtube.com/playlist?list=PLdMorpQLjeXmbFaVku4JdjmQByHHqTd1F) — UMich-CURLY · 29 videos · 45.8h across 29 episodes
+
+**Watch only this:** Lectures 1-4 (Introduction, Bayes Filters-Kalman Filtering, Nonlinear Kalman Filtering, Particle Filtering), about 6.3 hours — these cover the fundamentals of Bayesian filtering and particle filters essential to understanding the paper's inference framework.
+
+*Why it unblocks this paper:* This University of Michigan Mobile Robotics course covers Bayesian filtering and particle filtering in depth, including relevant topics like motion and uncertainty propagation, localization, and SLAM, directly supporting the paper's use of particle filtering for multi-object tracking and camera pose estimation.
+
+*If you want all of it:* All 29 episodes, about 45.8 hours — for a comprehensive understanding of probabilistic robotics techniques including advanced topics like SLAM and optimization.
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Particle Filter](https://www.youtube.com/playlist?list=PL3EFm54Q_261f64hRtOeWM_emabLvgkgt) — Mehmet İşcan · 9 videos · 2.3h across 9 episodes
+
+**Watch only this:** Episodes 1-4 (Particle Filter Design - Les 1 to Les 4), about 1 hour — these cover Bayesian estimation, sequential Bayesian estimation, and Monte Carlo methods foundational to particle filtering.
+
+*Why it unblocks this paper:* This short-form series by Mehmet İşcan provides a clear, step-by-step explanation of particle filters from Bayesian estimation basics to algorithm derivation and practical examples, offering a focused and accessible introduction aligned with the paper's particle filtering approach.
+
+*If you want all of it:* All 9 episodes, about 2.3 hours — for a complete practical and theoretical overview of particle filter design and implementation.
 
 ## Track 1 — Academic deep-dives (long-form)
 
