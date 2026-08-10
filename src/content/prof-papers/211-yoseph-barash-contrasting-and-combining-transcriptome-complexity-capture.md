@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-yoseph-barash"
-source_hash: "770459220ab1a1c8c4461ce5d5f129e9a8b58d1d2c60662237a4bc4960fba8ae"
+source_hash: "1d8745068a92cc4dc5f6acc76a30778632eda9dd2a585a343114f5dfc40233e7"
 sequence: 211
 generator: "outreach-garden: managed"
 ---
@@ -59,33 +59,22 @@ Research interests: The lab develops machine learning algorithms that integrate 
 
 _The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
 
-**What you're missing:** RNA sequencing data analysis
-**The paper assumes:** RNA sequencing technologies, transcriptome analysis methods, splice junction detection algorithms, and RNA-seq data biases
-**Already in this field?** Skip this entirely if you already understand RNA sequencing technologies and computational transcriptome analysis workflows.
+**What you're missing:** RNA-seq data analysis
+**The paper assumes:** RNA sequencing technologies, RNA-seq data processing, splice junction detection methods, transcriptome variation analysis
+**Already in this field?** Skip this entirely if you already understand RNA sequencing data generation and computational analysis methods for transcriptome variation.
 
-This background is designed to provide foundational knowledge on RNA sequencing data analysis, crucial for understanding the comparative evaluation and integration of short- and long-read RNA-seq data in the paper. The rigorous course offers a deep dive into next-generation sequencing technologies and data analysis workflows, while the fast track provides a concise, practical tutorial series focused on RNA-seq data processing steps. Choose the course for comprehensive understanding or the fast track for a quick, hands-on introduction.
-
-### The course
-_Rigorous, and the one to pick if you want to hold this material properly._
-
-▶ [Next Generation Sequencing Technologies : Data Analysis And Applications](https://www.youtube.com/playlist?list=PLmsR2Fv1p6b4VvwYz48-FJud9lwxQT-O9) — CH 31: IIT Madras 01: Instrumentation & Others · 60 videos · 32.1h across 60 episodes
-
-**Watch only this:** Lectures 10 (Data QC and Trimming), 13 (Data Download and Exploration), 14 (Hands-on 1 - Data exploration and QC), 15 (Hands-on 1 - Data QC and Trimming), 46 (Hands-on 2: Preliminary Data Analysis), and 48 (Differential Gene Expression Analysis I), about 3.2 hours total — these cover key RNA-seq data processing and quality control steps relevant to the paper.
-
-*Why it unblocks this paper:* This IIT Madras course covers next-generation sequencing technologies and data analysis in depth, including data quality control, trimming, alignment, and variant calling, which underpin understanding RNA-seq data characteristics and biases relevant to the paper's comparative analysis of short- and long-read sequencing.
-
-*If you want all of it:* 32.1 hours across 60 episodes
+This background selection is designed to provide foundational knowledge on RNA-seq data analysis, crucial for understanding the comparative evaluation of short- and long-read RNA sequencing technologies in the paper. The rigorous course offers a deep dive into RNA-seq concepts, data processing, and analysis methods, while the fast track provides a concise, practical introduction to RNA-seq data analysis workflows. Readers can choose the fast track for a quick yet solid overview or the course for a comprehensive understanding of the subject.
 
 ### The fast track
 _Same ground, a fraction of the time — for when you just need to read the paper._
 
-▶ [RNA Seq Data Analysis Tutorial](https://www.youtube.com/playlist?list=PLvK49Q0ARs91nb8lIpErL2bYU64ADmqc2) — Farhan Haq · 10 videos · 1.2h across 10 episodes
+▶ [RNA-seq course (2019)](https://www.youtube.com/playlist?list=PLjiXAZO27elBj3KYi7ACscgOxlNkNOxPc) — Chipster Tutorials · 9 videos · 1.8h across 9 episodes
 
-**Watch only this:** Episodes 1 through 7 (Downloading sequencing data on windows - SRA Tool kit - Step 1 through Indexing BAM file using samtools - Step 6), about 50 minutes total — these cover the core RNA-seq data preparation and alignment steps necessary to understand the paper's data processing.
+**Watch only this:** Episodes 1-4, about 48 minutes — covering introduction, quality control, preprocessing, and alignment, which are foundational for understanding RNA-seq data characteristics and analysis.
 
-*Why it unblocks this paper:* This concise tutorial series by Farhan Haq walks through essential RNA-seq data analysis steps from downloading data to gene expression quantification, providing a practical and accessible introduction to RNA-seq workflows that align well with the paper's focus on RNA-seq data processing and analysis.
+*Why it unblocks this paper:* The 'RNA-seq course (2019)' by Chipster Tutorials is a concise and clear introduction to RNA-seq data analysis methods and tools, providing a practical overview that quickly equips the reader with the essentials to understand sequencing data processing and analysis relevant to the paper.
 
-*If you want all of it:* 1.2 hours across 10 episodes
+*If you want all of it:* 1.8 hours across all 9 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 
