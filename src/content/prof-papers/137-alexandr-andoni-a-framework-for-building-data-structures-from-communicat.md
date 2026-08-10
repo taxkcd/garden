@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-alexandr-andoni"
-source_hash: "73a07156edf713e2c867ac83739b7342c6f08b2830bca77595a047caffb43665"
+source_hash: "7a1e1ba1ac2144e6d5b69106c062811c5c8777f6582d104dc282780d0e578e78"
 sequence: 137
 generator: "outreach-garden: managed"
 ---
@@ -59,51 +59,35 @@ Research interests: sublinear algorithms (streaming and property testing), high-
 
 ## Foundations playlist — start here
 
-_Everything the paper assumes you already know, in the order you should learn it. Some stages have no visible connection to the paper's title — that is the point: this is the background the paper never explains._
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
 
-This playlist provides foundational knowledge necessary to understand the paper's contributions connecting communication complexity protocols to data structure design for high-dimensional pattern matching. It covers discrete mathematics and probability, classical data structures and algorithms, communication complexity theory, the Partial Match problem in high dimensions, and randomized data-dependent data structures. Work through the stages in order to build the theoretical and practical background needed before reading the paper.
+**What you're missing:** Communication Complexity
+**The paper assumes:** communication complexity theory, interactive proof systems, randomized protocols, complexity measures in communication
+**Already in this field?** Skip this entirely if you already understand the basics of communication complexity, including randomized and Arthur-Merlin protocols, and their role in algorithmic lower bounds.
 
-**The paper assumes:** discrete mathematics, probability theory, communication complexity, data structures for high-dimensional pattern matching, randomized algorithms, complexity theory, interactive proof systems
-**Time to work through:** roughly 60-70 hours if you watch everything, about 35-40 hours if you follow the skip guidance
-**Already in this field?** Skip stages 1-3 if you have a solid background in discrete math, probability, and basic communication complexity; focus on stages 4-6 for specialized knowledge in communication protocols and data-dependent data structures.
+This background focuses on Communication Complexity, which is central to understanding the paper's framework connecting communication protocols to data structure design. The rigorous course option offers a deep, structured university-level treatment of theoretical computer science topics including interactive proofs and communication complexity foundations. The fast track provides a shorter, more accessible lecture series focused on communication and networks, giving intuition and context around communication protocols relevant to the paper's themes. Choose the course for a thorough theoretical foundation; choose the fast track for a quicker conceptual overview.
 
-### Stage 1 · Discrete Mathematics and Probability *(foundational)*
-The paper relies on combinatorial arguments and probabilistic reasoning, such as product distributions and error bounds in randomized protocols, which require a solid foundation in discrete math and probability.
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
 
-▶ **Course:** [Discrete Math I (Entire Course)](https://www.youtube.com/playlist?list=PLl-gb0E4MII28GykmtuBXNUNoej-vY5Rz) — Kimberly Brehm · 80 videos · 13.4h across the first 60 episodes
+▶ [MIT 18.404J Theory of Computation, Fall 2020](https://www.youtube.com/playlist?list=PLUl4u3cNGP60_JNv2MmK3wkOt9syvfQWY) — MIT OpenCourseWare · 25 videos · 32.3h across 25 episodes
 
-*What to watch:* Watch the first 20 episodes of the "Discrete Math I (Entire Course)" playlist by Kimberly Brehm, covering propositional logic, quantifiers, rules of inference, and basic set theory. These topics provide the logical and combinatorial foundations needed to understand the paper's use of product distributions and combinatorial set arguments.
+**Watch only this:** Episodes 23 (Probabilistic Computation, BPP), 24 (Probabilistic Computation cont.), and 25 (Interactive Proof Systems, IP), about 3.8 hours total — these focus on probabilistic and interactive proof systems relevant to UAM protocols and communication complexity.
 
-*Move on when you can:* Explain and compute probabilities of events under product distributions and solve basic combinatorial problems involving sets and subsets.
+*Why it unblocks this paper:* MIT 18.404J Theory of Computation covers interactive proof systems, probabilistic computation, and complexity classes, which are foundational to understanding communication complexity models like UAM and the paper's protocol constructions.
 
-### Stage 2 · Data Structures and Algorithms *(core)*
-Understanding classical data structures and algorithmic techniques is essential to grasp the design and analysis of data-dependent data structures and query time-space tradeoffs discussed in the paper.
+*If you want all of it:* 32.3 hours across 25 episodes
 
-▶ **Course:** [CS301 Data Structures](https://www.youtube.com/playlist?list=PL9382BBC24F8460EE) — Virtual University of Pakistan · 45 videos · 38.7h across 45 episodes
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
 
-*What to watch:* Focus on the first 24 lectures of the "CS301 Data Structures" playlist by Virtual University of Pakistan, which cover fundamental data structures like arrays, linked lists, trees, and hashing, along with their operations and complexities. This knowledge is critical to understand the data-dependent data structures constructed in the paper.
+▶ [Communication & Networks](https://www.youtube.com/playlist?list=PLZDU8a6AcnujbqlQqy1klXSO9V8TnMwN9) — Center for Science of Information NSF STC · 23 videos · 22.7h across the first 21 episodes
 
-*Move on when you can:* Implement and analyze standard data structures like hash tables, trees, and understand query/update time complexities.
+**Watch only this:** Episodes 1 (Madhu Sudan - Reliable Communication Amid Uncertainty) and 18 (Boole Shannon Lecture with Madhu Sudan of Harvard University), about 2 hours total — these cover key concepts in communication complexity and information theory foundational to the paper.
 
-### Stage 3 · Communication Complexity Theory *(core)*
-The framework reduces data structure design to communication protocols; understanding models like deterministic, randomized, and especially Arthur-Merlin communication protocols is critical to follow the paper’s approach.
+*Why it unblocks this paper:* The 'Communication & Networks' series from the Center for Science of Information NSF STC provides accessible lectures on communication theory and protocols, giving practical and theoretical insights into communication complexity relevant to the paper's focus.
 
-▶ **Course:** [Communication Complexity (Dmitry Sokolov, KTH, 2020)](https://www.youtube.com/playlist?list=PLidiQIHRzpXKV3zHTydUgm1j2gwxpxFQJ) — Theoretical Computer Science School (TCSS) · 8 videos · 12.3h across 8 episodes
-
-*What to watch:* Watch the entire "Communication Complexity (Dmitry Sokolov, KTH, 2020)" playlist, which provides a focused and comprehensive introduction to communication complexity, covering basic definitions, canonical problems like set disjointness, and randomized protocols. This playlist is well-suited to grasp the communication models used in the paper.
-
-*Move on when you can:* Describe the communication complexity model and prove lower and upper bounds for canonical problems like set disjointness.
-
-### Stage 4 · Randomized and Data-Dependent Data Structures *(advanced)*
-The paper’s data structures are data-dependent and randomized, leveraging distributional assumptions; understanding these concepts and their contrast with data-independent structures is essential to grasp the paper’s contributions and limitations.
-
-▶ **Course:** [Advanced Algorithms (COMPSCI 224)](https://www.youtube.com/playlist?list=PL2SOU6wwxB0uP4rJgf5ayhHWgw7akUWSf) — Harvard University · 25 videos · 35.5h across 25 episodes
-
-*What to watch:* Watch the first 20 lectures of the "Advanced Algorithms (COMPSCI 224)" playlist by Harvard University, which cover randomized algorithms and data structures, including analysis of expected query times and data-dependent techniques. This will help understand the paper's data-dependent data structures and their performance guarantees.
-
-*Move on when you can:* Explain the difference between data-dependent and data-independent data structures and analyze a randomized data structure’s expected query time.
-
-_Work through the stages in order. Once the last one lands, the paper — and the two tracks below — should read cleanly._
+*If you want all of it:* 22.7 hours across the first 21 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 
