@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-evi-micha"
-source_hash: "71d7e718a3ca6c65ddfc7ebebe3ab08b77e3a89561c1a7aa9f63746bfb2f00cf"
+source_hash: "91c68a3c567b99a93d89ac9978d89cfa474ecc3c883bb5faf59acbb5a737ffd2"
 sequence: 231
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,38 @@ Research interests: computational social choice, algorithmic fairness
 - [Lab website](https://viterbi-web.usc.edu/~cstheory/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** algorithmic fairness in machine learning
+**The paper assumes:** algorithmic fairness definitions, fairness metrics for classification and ranking, and fairness evaluation methodologies in machine learning
+**Already in this field?** Skip this entirely if you already understand core algorithmic fairness concepts and metrics used in machine learning decision-making.
+
+This background focuses on algorithmic fairness in machine learning, a critical foundation to understand the fairness metrics and demographic bias analyses used in the paper on LLMs for organ allocation. The rigorous course option offers a deep, structured university-level exploration of fairness concepts within machine learning from human preferences, while the fast track provides a concise, accessible series of short videos that introduce key ideas and ethical considerations quickly. Choose the course for comprehensive understanding or the fast track for a time-efficient conceptual overview.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS329H: Machine Learning from Human Preferences I Autumn 2024](https://www.youtube.com/playlist?list=PLoROMvodv4rNm525zyAObP4al43WAifZz) — Stanford Online · 8 videos · 10.3h across 8 episodes
+
+**Watch only this:** Lectures 1-4 (Introduction, Preference Models, Model-based Preference Optimization, Mechanism Design), about 5 hours — these cover foundational fairness concepts, preference modeling, and mechanisms relevant to fairness metrics and decision aggregation.
+
+*Why it unblocks this paper:* Stanford CS329H: Machine Learning from Human Preferences I Autumn 2024 directly addresses mechanisms for capturing human and societal preferences in AI, including algorithmic fairness, preference models, and fairness-related ethics and voting, which align closely with the paper's focus on fairness metrics and collective decision-making in organ allocation.
+
+*If you want all of it:* 10.3 hours across all 8 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [AI & Data Ethics: Algorithmic Bias and Black Box AI](https://www.youtube.com/playlist?list=PLBLQ273cJUXn9IVf41Ese-dy-hHkWWmAU) — Philosophers NU-London · 20 videos · 3.4h across the first 19 episodes
+
+**Watch only this:** First 6 episodes (Algorithmic Bias and Fairness: Crash Course AI #18, Ethics In AI And Artificial Narrow Intelligence, Fair, Ethical and Just: Can an AI Algorithm Check all the Boxes?, AI Bias, AI & The Blackbox Problem, Decoding racial bias in artificial intelligence), about 1 hour — these cover core fairness concepts, bias examples, and ethical implications relevant to the paper.
+
+*Why it unblocks this paper:* The 'AI & Data Ethics: Algorithmic Bias and Black Box AI' playlist offers clear, well-produced short videos focused on algorithmic bias, fairness, and ethical challenges in AI, providing a quick yet substantive introduction to the key fairness issues the paper investigates.
+
+*If you want all of it:* Approximately 3.4 hours across the first 19 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 
