@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-rajiv-bagai"
-source_hash: "5e6e45c77176a170367c0a4959bfd5bae0a53912592eb45966b0d9724e52b10e"
+source_hash: "e436f9748cc40ac8dbaa9d07bbe1925d5f564403c3b25f6d1a94c8f0d0f6056d"
 sequence: 67
 generator: "outreach-garden: managed"
 ---
@@ -57,32 +57,32 @@ Research interests: Data Privacy and Web Anonymity, Incomplete and/or Inconsiste
 _The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
 
 **What you're missing:** Domain Adaptation in Machine Learning
-**The paper assumes:** domain adaptation methods, domain shift problem, transfer learning in computer vision
-**Already in this field?** Skip this entirely if you already understand domain adaptation techniques and their role in machine learning generalization.
+**The paper assumes:** domain adaptation methods, domain shift challenges, supervised and unsupervised transfer learning
+**Already in this field?** Skip this entirely if you already understand domain adaptation techniques and their role in machine learning generalization under distribution shifts.
 
-This background focuses on domain adaptation in machine learning, a key technique used in the paper to address geographic bias and improve model generalization across diverse disaster locations. The rigorous course option provides a deep, structured university-level treatment of domain adaptation and related meta-learning topics, ideal for readers seeking comprehensive understanding. The fast track offers a shorter, focused playlist of expert talks that cover domain adaptation theory and practice efficiently, suitable for readers who want a solid conceptual grasp without committing to a full course.
+This background covers domain adaptation in machine learning, essential for understanding how the paper improves building damage assessment models across geographic shifts. The rigorous course provides a deep theoretical and practical foundation in domain adaptation and related transfer learning concepts, while the fast track offers concise, focused explanations on domain adaptation techniques for quicker comprehension. Choose the course for thorough mastery or the fast track for an efficient conceptual overview.
 
 ### The course
 _Rigorous, and the one to pick if you want to hold this material properly._
 
-▶ [Stanford CS330: Deep Multi-Task and Meta Learning I Autumn 2022](https://www.youtube.com/playlist?list=PLoROMvodv4rNjRoawgt72BBNwL2V7doGI) — Stanford Online · 17 videos · 21.5h across 17 episodes
+▶ [AI LLM Stanford CS229](https://www.youtube.com/playlist?list=PLw5wPprzytQl3vyLdR_yzn5sZFtmGjUUD) — G.William Dole · 59 videos · 73.0h across 59 episodes
 
-**Watch only this:** Lectures 13 and 14: 'Stanford CS330 Deep Multi-Task & Meta Learning - Domain Adaptation' and 'Domain Generalization' (~75 minutes each, total about 2.5 hours). These two lectures cover the core concepts and techniques of domain adaptation and generalization essential for this paper.
+**Watch only this:** Stanford CS330 Deep Multi-Task & Meta Learning - Domain Adaptation I 2022 I Lecture 13 and Domain Generalization I 2022 I Lecture 14, about 2.5 hours total — these two focused lectures cover domain adaptation concepts and generalization strategies essential for understanding the paper's methodology.
 
-*Why it unblocks this paper:* Stanford CS330 is a rigorous, university-level course on deep multi-task and meta learning that includes dedicated lectures on domain adaptation and domain generalization, directly relevant to understanding the methods and challenges addressed in the paper.
+*Why it unblocks this paper:* This Stanford CS229/CS330 playlist includes dedicated lectures on domain adaptation and domain generalization, directly covering the theoretical foundations and practical methods relevant to the paper's approach of supervised fine-tuning and unsupervised CORAL domain adaptation.
 
-*If you want all of it:* All 17 episodes, approximately 21.5 hours.
+*If you want all of it:* 73.0 hours across 59 episodes
 
 ### The fast track
 _Same ground, a fraction of the time — for when you just need to read the paper._
 
-▶ [Domain Adaptation and Related Areas](https://www.youtube.com/playlist?list=PLgKuh-lKre120r9EsuQRuZ9FKQ3SZ6N0a) — Simons Institute for the Theory of Computing · 25 videos · 15.1h across the first 21 episodes
+▶ [Papers Explained - Machine Learning](https://www.youtube.com/playlist?list=PL8hTotro6aVHhn5QUB3HDJTu3rPJ48LeP) — DataMListic · 21 videos · 3.7h across 21 episodes
 
-**Watch only this:** First 6 episodes: 'Label Noise: Ignorance is Bliss' through 'Transfer learning via local convergence rates of the nonparametric least squares estimator' (~43 minutes each, total about 4.3 hours). These cover foundational theory and practical approaches to domain adaptation.
+**Watch only this:** The episode 'Adversarial Discriminative Domain Adaptation (ADDA) Paper Explained', about 10 minutes — this single episode gives a clear, focused overview of domain adaptation concepts applicable to the paper's domain shift challenges.
 
-*Why it unblocks this paper:* The Simons Institute playlist 'Domain Adaptation and Related Areas' offers a concise series of expert talks that provide a focused overview of domain adaptation theory and recent advances, suitable for quickly grasping the key ideas behind domain shift mitigation used in the paper.
+*Why it unblocks this paper:* The 'Papers Explained - Machine Learning' playlist by DataMListic includes a concise explainer on 'Adversarial Discriminative Domain Adaptation (ADDA)', which provides an accessible introduction to domain adaptation techniques relevant to the paper's unsupervised adaptation methods.
 
-*If you want all of it:* First 21 episodes, approximately 15.1 hours.
+*If you want all of it:* 3.7 hours across 21 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 
