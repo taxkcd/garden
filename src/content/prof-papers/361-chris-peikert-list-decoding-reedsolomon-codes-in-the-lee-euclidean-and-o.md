@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-chris-peikert"
-source_hash: "a8611cfc54968e1bea3f2c5d034a2d511ddf035ba7002a262b927a60e97e6da3"
+source_hash: "83efd4e6c6787a29e4589cd1b24c8914470f3e8f6e8669db18e6b60e3cb3b1f5"
 sequence: 361
 generator: "outreach-garden: managed"
 ---
@@ -59,33 +59,33 @@ Research interests: cryptography, lattices, coding theory, algorithms, and compu
 
 _The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
 
-**What you're missing:** Fourier analysis and lattice theory
-**The paper assumes:** Fourier analysis on finite groups and Euclidean spaces, lattice theory and geometry of numbers, Poisson summation formula
-**Already in this field?** Skip this entirely if you already have a solid undergraduate or beginning graduate-level understanding of Fourier analysis and lattice theory in the context of coding and cryptography.
+**What you're missing:** Fourier analysis on finite groups
+**The paper assumes:** Fourier transform on finite abelian groups, harmonic analysis on cyclic groups, discrete Fourier analysis in coding theory
+**Already in this field?** Skip this entirely if you already have experience with discrete Fourier analysis on finite groups or have studied harmonic analysis in coding or cryptography contexts.
 
-This background focuses on Fourier analysis and lattice theory, which are foundational to understanding the paper's approach to list decoding Reed–Solomon codes in ℓp metrics. The rigorous course option provides a deep, structured university-level treatment of Fourier transforms and their applications, ideal for readers seeking comprehensive mastery. The fast track offers a concise, well-structured introduction to Fourier series, suitable for quickly grasping key concepts and intuition without extensive time investment.
+This background focuses on Fourier analysis on finite groups, specifically the Fourier transform on finite cyclic groups, which is central to understanding the weighting functions and Fourier-analytic techniques used in the paper's list decoding algorithm. The rigorous course option offers a deep, structured university-level treatment of Fourier series and related concepts, while the fast track provides a concise, visual introduction to Fourier series and transforms suitable for quickly grasping the core ideas without extensive time investment.
 
 ### The course
 _Rigorous, and the one to pick if you want to hold this material properly._
 
-▶ [Lecture Collection | The Fourier Transforms and Its Applications](https://www.youtube.com/playlist?list=PLB24BC7956EE040CD) — Stanford · 30 videos · 25.6h across 30 episodes
+▶ [Math 139 Fourier Analysis (Spring 2025)](https://www.youtube.com/playlist?list=PLun8-Z_lTkC6KKx-T2OvCMfoIzSKO-Iv5) — Winston Ou · 34 videos · 27.8h across 34 episodes
 
-**Watch only this:** Lectures 1-12, about 10.3 hours — covering the fundamentals of Fourier transforms, properties, convolution, and Poisson summation, which are essential for understanding the paper's analytic methods.
+**Watch only this:** Episodes 1-10, about 8 hours — covering background material, Fourier series definitions, uniqueness, convolutions, Cesaro and Abel means, and Poisson integrals, which provide the essential Fourier analysis foundation needed for the paper.
 
-*Why it unblocks this paper:* This Stanford lecture series by Professor Brad Osgood thoroughly covers Fourier transforms and their applications, including the theoretical foundations and techniques like Poisson summation that are central to the paper's Fourier-analytic framework.
+*Why it unblocks this paper:* This university-level course by Winston Ou covers Fourier analysis comprehensively, including Fourier series, convolution, Poisson summation, and Fourier transforms, which are directly relevant to the paper's use of Fourier-analytic frameworks and lattice theory in decoding algorithms.
 
-*If you want all of it:* 25.6 hours across 30 episodes
+*If you want all of it:* 27.8 hours across 34 episodes
 
 ### The fast track
 _Same ground, a fraction of the time — for when you just need to read the paper._
 
-▶ [FOURIER SERIES - BY TIKLE'S ACADEMY](https://www.youtube.com/playlist?list=PLNKD1qB9pptvLY76pTUOr5iorMU7m1yPo) — TIKLE'S ACADEMY OF MATHS · 22 videos · 8.7h across 22 episodes
+▶ [Fourier Series (Khan Academy)](https://www.youtube.com/playlist?list=PLH_Vuq97YgbcuEWn1q9iFfucAEynBUYpk) — ESSC EESC Some Lectures · 13 videos · 1.8h across 13 episodes
 
-**Watch only this:** Lectures 1-8, about 3 hours — covering the definition, formulas, even/odd functions, expansions, and basic sums, which give a solid quick foundation in Fourier series.
+**Watch only this:** Episodes 1-6, about 45 minutes — covering the visual introduction to Fourier transform, Fourier series basics, and key integral formulas, sufficient to grasp the core Fourier concepts used in the paper.
 
-*Why it unblocks this paper:* This 8.7-hour series from TIKLE'S ACADEMY offers a clear, focused introduction to Fourier series, including definitions, expansions, and problem-solving, providing a practical and intuitive grasp of Fourier analysis relevant to the paper's use of Fourier transforms.
+*Why it unblocks this paper:* This short-form playlist from ESSC EESC Some Lectures offers a clear, visual introduction to Fourier series and transforms in under two hours, ideal for quickly understanding the key concepts of Fourier analysis that underpin the paper's approach.
 
-*If you want all of it:* 8.7 hours across 22 episodes
+*If you want all of it:* 1.8 hours across 13 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 
