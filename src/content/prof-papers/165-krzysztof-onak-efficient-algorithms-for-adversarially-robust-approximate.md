@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-krzysztof-onak"
-source_hash: "6b20ea252e820b7d5da8f285372a0ab5e75560fdac23194b185aa6bf31852ef1"
+source_hash: "406801a33ef6df7acf693804f9a18ce20c96b6f71ae89db7f5e25cdf50f4c17d"
 sequence: 165
 generator: "outreach-garden: managed"
 ---
@@ -56,33 +56,22 @@ Research interests: theoretical foundations of algorithms for big data and their
 
 _The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
 
-**What you're missing:** adversarially robust algorithms
-**The paper assumes:** adversarial robustness in algorithms, differential privacy basics, randomized algorithm design under adaptive adversaries
-**Already in this field?** Skip this entirely if you already understand adversarial robustness concepts in algorithms and how differential privacy can be used to achieve robustness guarantees.
+**What you're missing:** differential privacy theory
+**The paper assumes:** mathematical foundations of differential privacy, privacy-preserving algorithm design, and the Laplace mechanism
+**Already in this field?** Skip this entirely if you already understand the theory and algorithms of differential privacy, including its formal definitions and standard mechanisms.
 
-This background focuses on adversarially robust algorithms, particularly relevant for understanding the theoretical foundations and techniques used in the paper on adversarially robust Approximate Nearest Neighbor search. The rigorous course offers a deep, structured university-level introduction to AI concepts including robustness, while the fast track provides a concise, targeted survey of adversarial robustness and differential privacy in AI and cryptography. Choose the rigorous course for a thorough foundation and the fast track for a focused, time-efficient overview.
-
-### The course
-_Rigorous, and the one to pick if you want to hold this material properly._
-
-▶ [An Introduction to Artificial Intelligence](https://www.youtube.com/playlist?list=PLp6ek2hDcoNB_YJCruBFjhF79f5ZHyBuz) — NPTEL IIT Delhi · 99 videos · 20.3h across the first 60 episodes
-
-**Watch only this:** Episodes 1-20 ("An Introduction to Artificial Intelligence | Prof. Mausam" through "Local Search: The Example of N-Queens Part-2"), about 6.5 hours — these cover AI fundamentals, search strategies, and local search techniques relevant to understanding algorithmic robustness and adversarial models.
-
-*Why it unblocks this paper:* This NPTEL IIT Delhi course on Artificial Intelligence covers foundational AI concepts including search algorithms and robustness, providing the theoretical grounding necessary to understand adversarial robustness in ANN algorithms and related algorithmic frameworks.
-
-*If you want all of it:* About 20.3 hours across the first 60 episodes
+This background focuses on differential privacy theory, which is essential to understand the privacy-based robustification techniques used in the paper's adversarially robust approximate nearest neighbor algorithms. The rigorous course option offers a deep, structured university-level introduction to differential privacy, while the fast track provides a concise, intuition-driven explainer series for a quicker grasp of the core concepts and mechanisms.
 
 ### The fast track
 _Same ground, a fraction of the time — for when you just need to read the paper._
 
-▶ [PhD Course on AI and Cryptography (Trieste, June 2023)](https://www.youtube.com/playlist?list=PLj3Zm3oqZotP_WZQjfxl3zDfSeoN9o_yp) — Luca Mariot · 10 videos · 10.9h across 10 episodes
+▶ [Database anonymization](https://www.youtube.com/playlist?list=PLZeK3TZueogEhGK0kTztL5ALQ_MkxgFCv) — Security and Privacy Academy · 16 videos · 2.0h across 16 episodes
 
-**Watch only this:** Episodes 1-5 ("Course overview and introduction to cryptography" through "Differential Privacy for Adversarial Robustness"), about 5.5 hours — these cover the cryptographic foundations, adversarial examples, and differential privacy methods crucial for understanding the paper's robust ANN algorithms.
+**Watch only this:** Episodes 'Differential Privacy explained', 'The Mathematics Behind Differential Privacy', and 'Differential Privacy Mechanisms Explained', about 20 minutes total — these three episodes give a solid, intuition-first overview of differential privacy relevant to the paper.
 
-*Why it unblocks this paper:* This PhD course on AI and Cryptography directly addresses adversarial robustness and differential privacy techniques, which are central to the paper's approach, providing a concise and focused overview of the key concepts in about 11 hours total.
+*Why it unblocks this paper:* This short-form series by Security and Privacy Academy provides clear, concise explainers on differential privacy fundamentals, including the Laplace mechanism and mathematical foundations, suitable for quickly understanding the privacy tools leveraged in the paper.
 
-*If you want all of it:* About 10.9 hours across all 10 episodes
+*If you want all of it:* 2.0 hours across 16 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 
