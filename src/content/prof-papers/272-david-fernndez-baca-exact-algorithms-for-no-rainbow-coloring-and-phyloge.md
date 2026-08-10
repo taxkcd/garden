@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-david-fernandez-baca"
-source_hash: "30bcc48803a5bee836e887efdc78e57b432108116cc21f2485c515d582f8a7ad"
+source_hash: "57939af26ce17034e5e4f803c9f7303c38d2fe0d0a79e7090b81606c16100fd4"
 sequence: 272
 generator: "outreach-garden: managed"
 ---
@@ -56,33 +56,33 @@ Research interests: combinatorial algorithms, exact algorithms for NP-hard probl
 
 _The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
 
-**What you're missing:** Exact algorithms for NP-hard problems
-**The paper assumes:** NP-completeness theory, exact exponential-time algorithms, combinatorial optimization, local search algorithms
-**Already in this field?** Skip this entirely if you already understand the theory and design of exact algorithms for NP-hard combinatorial problems and their complexity analysis.
+**What you're missing:** Exact Algorithms for NP-hard Problems
+**The paper assumes:** computational complexity theory, exact exponential-time algorithms, local search algorithms, randomized algorithm analysis
+**Already in this field?** Skip this entirely if you already understand NP-completeness, exact algorithm design techniques, and probabilistic runtime analysis for NP-hard problems.
 
-To understand the exact algorithms developed for the no-rainbow r-coloring problem and their complexity, it is essential to have a solid grasp of exact algorithms for NP-hard problems, including techniques like backtracking, local search, and probabilistic methods. The rigorous course provides a deep, structured foundation in algorithms, while the fast track offers a concise, accessible introduction to computational problems and complexity classes relevant to NP-hardness and exact algorithms. Choose the rigorous course for a thorough understanding or the fast track for a quicker conceptual overview.
+To understand the exact algorithms for the no-rainbow coloring problem and their complexity, it is essential to grasp NP-hardness, exact exponential-time algorithm design techniques like local search and backtracking, and probabilistic analysis of randomized algorithms. The rigorous course provides a deep, university-level foundation in algorithm design and analysis, while the fast track offers a concise, accessible introduction to key concepts in algorithm complexity and NP-completeness. Choose the rigorous course for thorough understanding and the fast track for a quick yet solid overview.
 
 ### The course
 _Rigorous, and the one to pick if you want to hold this material properly._
 
-▶ [MIT 6.006 Introduction to Algorithms, Spring 2020](https://www.youtube.com/playlist?list=PLUl4u3cNGP63EdVPNLG3ToM6LaEUuStEY) — MIT OpenCourseWare · 32 videos · 35.3h across 32 episodes
+▶ [MIT 6.046J Design and Analysis of Algorithms, Spring 2015](https://www.youtube.com/playlist?list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp) — MIT OpenCourseWare · 34 videos · 39.5h across 34 episodes
 
-**Watch only this:** Episodes 1 to 16, about 17.5 hours — covering algorithms and computation, data structures, sorting, hashing, graph algorithms (BFS, DFS, shortest paths), and dynamic programming, which provide the necessary background for exact algorithm design and complexity analysis.
+**Watch only this:** Lectures 12 (Greedy Algorithms: Minimum Spanning Tree), 16 (Complexity: P, NP, NP-completeness, Reductions), and 18 (NP-Complete Problems), about 3.5 hours total — these cover complexity theory and NP-completeness essential for understanding the problem's hardness and algorithmic approaches.
 
-*Why it unblocks this paper:* MIT 6.006 Introduction to Algorithms is a comprehensive, authoritative university course that covers fundamental algorithmic techniques, complexity, and problem-solving strategies essential to understanding exact algorithms for NP-hard problems like no-rainbow coloring.
+*Why it unblocks this paper:* This MIT OpenCourseWare playlist on Design and Analysis of Algorithms covers complexity classes including NP-completeness and exact algorithm techniques, directly relevant to the paper's focus on exact algorithms for NP-hard problems like no-rainbow coloring.
 
-*If you want all of it:* 35.3 hours across 32 episodes
+*If you want all of it:* 39.5 hours across 34 episodes
 
 ### The fast track
 _Same ground, a fraction of the time — for when you just need to read the paper._
 
-▶ [Chapter-03 - Algorithms and Problem Solving | 1st Year Computer Science | New Book 2025](https://www.youtube.com/playlist?list=PLo9avRiV3ZLSkhu6Qi8mJn8khl3Jwcu6I) — CS with Sir Iqbal · 15 videos · 3.4h across 15 episodes
+▶ [Chapter 03 - Algorithm and Problem Solving](https://www.youtube.com/playlist?list=PLSw9kNHHr5i1Gq0EuA476cED6TWmVHnGm) — Flare College · 17 videos · 2.4h across 17 episodes
 
-**Watch only this:** Episodes 1 to 11, about 2.3 hours — covering computational problems, complexity classes, algorithm analysis, and key algorithm design techniques like backtracking and dynamic programming relevant to exact algorithms.
+**Watch only this:** Episodes 8 (Dynamic Programing & Backtracking), 12 (Complexity Classes (P, NP, NP-hard, NP-complete)), and 13 (Tractable Vs Intractable Problems), about 24 minutes total — these episodes cover the key algorithmic techniques and complexity classes relevant to the paper.
 
-*Why it unblocks this paper:* This concise 15-episode series from 'CS with Sir Iqbal' introduces computational problems, complexity classes (P, NP, NP-Complete), and algorithm design techniques including backtracking and dynamic programming, providing a quick yet clear foundation on NP-hard problems and exact algorithms.
+*Why it unblocks this paper:* This concise playlist from Flare College introduces algorithms, complexity classes (P, NP, NP-hard, NP-complete), and backtracking, providing a quick and clear foundation for understanding the computational complexity and algorithmic techniques used in the paper.
 
-*If you want all of it:* 3.4 hours across 15 episodes
+*If you want all of it:* 2.4 hours across 17 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 
