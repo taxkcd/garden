@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-jonathan-zittrain"
-source_hash: "5529b3c98764b779eb61a332f5c923a6fb9c347f358af4452363768902c901e0"
+source_hash: "d5d2c03f18e3b4ad35353afc4793ba37b553d72fcad50da1152d773e5900d01e"
 sequence: 91
 generator: "outreach-garden: managed"
 ---
@@ -60,32 +60,32 @@ Research interests: the ethics and governance of artificial intelligence; battle
 _The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
 
 **What you're missing:** Legal Reasoning and Interpretation
-**The paper assumes:** legal reasoning methods, statutory interpretation, and foundational legal theory
-**Already in this field?** Skip this entirely if you have prior coursework or experience in law focusing on legal interpretation and reasoning methods.
+**The paper assumes:** legal reasoning, statutory interpretation methods, and foundational legal concepts
+**Already in this field?** Skip this entirely if you already have a background in legal theory or have studied courses on legal reasoning and statutory interpretation.
 
-This background focuses on legal reasoning and interpretation, essential for understanding how legal rules and methods can guide AI decision-making and alignment as discussed in the paper. The rigorous course option offers a deep, structured university-level introduction to legal reasoning, while the fast track provides a concise, accessible series of lectures that cover core concepts quickly. Readers should pick the lane that fits their time and depth needs; the fast track is a focused primer, not a watered-down version.
+This background playlist selection focuses on legal reasoning and interpretation, which is essential for understanding how legal rules and methods guide AI decision-making in the context of legal alignment. The rigorous course option offers a deep dive into statutory interpretation and legal theory from leading legal scholars, while the fast track provides a concise, accessible introduction to core legal reasoning concepts suitable for readers with limited time. Choose the lane that fits your available time and desired depth of understanding.
 
 ### The course
 _Rigorous, and the one to pick if you want to hold this material properly._
 
-▶ [Law School](https://www.youtube.com/playlist?list=PLR6aNJ2ciHUHs6PZ_tBXRHdJBTkPtSzlG) — Robert Rumsey · 19 videos · 7.6h across the first 18 episodes
+▶ [The Antonin Scalia Lecture Series](https://www.youtube.com/playlist?list=PL2q2U2nTrWq1bz6_l-PPEUf9Pw-blX6Pl) — Harvard Law School · 9 videos · 9.6h across 9 episodes
 
-**Watch only this:** Episodes 5 (Law School Exam Tips: How to Answer an Exam Line by Line), 6 (Learned Hand Formula), 7 (US v. Carroll Towing), and 8 (Proximate Cause), about 1.7 hours total — these focus on legal reasoning frameworks and application of legal rules, crucial for grasping the paper's core pathways.
+**Watch only this:** Episodes 1-3: '2025 Scalia Lecture | Judge Rachel Kovner: Are We All Textualists Now?', '2024 Scalia Lecture | Aditya Bamzai: Statutory Interpretation and the Separation of Powers', and '2023 Scalia Lecture | William Baude: Beyond Textualism?', about 3.2 hours total — these cover foundational interpretive theories essential for understanding legal alignment.
 
-*Why it unblocks this paper:* Robert Rumsey's 'Law School' playlist is a structured, university-level series that covers foundational legal reasoning concepts and key cases, providing the rigorous grounding needed to understand legal interpretation methods like analogical reasoning and purposivism relevant to the paper.
+*Why it unblocks this paper:* The Antonin Scalia Lecture Series by Harvard Law School features expert lectures on statutory interpretation and legal reasoning by prominent judges and scholars, directly relevant to the paper's focus on legal interpretive methods like textualism and purposivism that inform AI alignment.
 
-*If you want all of it:* About 7.6 hours across the first 18 episodes.
+*If you want all of it:* 9.6 hours across all 9 episodes
 
 ### The fast track
 _Same ground, a fraction of the time — for when you just need to read the paper._
 
 ▶ [Legal Reasoning And Arguments](https://www.youtube.com/playlist?list=PLZm1k88wCvIEC_vyHN1lWpbrLrwqWE92t) — ARJUN LEGAL WORLD · 20 videos · 3.0h across 20 episodes
 
-**Watch only this:** Lectures 1 through 6, about 48 minutes total — these cover foundational legal reasoning and argument structures relevant to interpreting and applying legal rules as the paper requires.
+**Watch only this:** Lectures 1-6, about 48 minutes total — covering basics of legal reasoning, argument structures, and introduction to legal interpretation.
 
-*Why it unblocks this paper:* The 'Legal Reasoning And Arguments' series by ARJUN LEGAL WORLD offers clear, concise lectures on legal reasoning and argumentation, covering essential concepts in about 3 hours, making it a practical fast track for readers needing a quick yet substantive introduction.
+*Why it unblocks this paper:* The 'Legal Reasoning And Arguments' series by ARJUN LEGAL WORLD offers a clear, concise introduction to legal reasoning and argumentation in short episodes, providing a practical overview of legal interpretive methods and reasoning skills relevant to the paper's themes in a fraction of the time.
 
-*If you want all of it:* About 3.0 hours across all 20 episodes.
+*If you want all of it:* 3.0 hours across 20 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 
