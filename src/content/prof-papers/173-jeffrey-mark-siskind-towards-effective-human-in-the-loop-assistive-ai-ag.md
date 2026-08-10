@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-jeffrey-mark-siskind"
-source_hash: "06b6f7fcb45bf2487683ffbb3545bd3f82933657b53ae7ca9d4193dd0a954a68"
+source_hash: "31871b5cff9b896e9c059fd939a0fe9fac88c8e49cb00376c6d2bb4995a285b6"
 sequence: 173
 generator: "outreach-garden: managed"
 ---
@@ -51,6 +51,38 @@ This paper presents a new evaluation framework and a multimodal dataset to asses
 - [Resolved homepage](https://engineering.purdue.edu/~qobi/)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** Multimodal Human-AI Interaction
+**The paper assumes:** multimodal AI systems, human-computer interaction, augmented reality interfaces, interactive AI guidance
+**Already in this field?** Skip this entirely if you already understand how AI systems integrate vision and language modalities to interact with humans in real time for task guidance.
+
+To understand this paper on human-in-the-loop assistive AI agents, a solid grasp of multimodal human-AI interaction principles is essential, especially how vision, language, and real-time feedback integrate to guide physical tasks. The rigorous course option offers a comprehensive university-level introduction to Human-Computer Interaction (HCI), covering foundational concepts and design principles in depth. The fast track provides a concise, focused series on Human-AI Interaction, ideal for quickly gaining key insights into interactive AI systems and evaluation without committing to a full semester course.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Human Computer Interaction (In English)](https://www.youtube.com/playlist?list=PLyqSpQzTE6M-KVz-9blW7qq_LgDPSOtEE) — NPTEL-NOC IITM · 45 videos · 26.3h across 45 episodes
+
+**Watch only this:** Episodes 1 to 4 ("Human Computer Interaction (In English) - Intro video", "Introduction to Human-Computer Interaction (HCI): Lecture 1 Part 1", "Introduction to Human-Computer Interaction (HCI):Lecture 1 Part 2", "Good Design Vs Bad Design"), about 2.3 hours — these provide essential background on HCI principles and design thinking relevant to interactive AI guidance.
+
+*Why it unblocks this paper:* This NPTEL IITM course on Human Computer Interaction by Prof. Rajiv Ratn Shah covers core HCI concepts, interaction design, user perspectives, and cognitive aspects, which are foundational for understanding multimodal human-AI interaction and evaluation frameworks used in the paper.
+
+*If you want all of it:* 26.3 hours across 45 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [HAII-2024 Human-AI Interaction (2024)](https://www.youtube.com/playlist?list=PLs7DWGc_wmwRRpqbvV-kSzGkoWfUlIDcq) — Luigi De Russis · 6 videos · 2.4h across 6 episodes
+
+**Watch only this:** Episodes 1 to 5 ("HAII2024-L01: Course Introduction" through "HAII2024-L05: Designing and evaluating interactive AI systems."), about 2 hours — these cover the fundamentals and evaluation methods critical for understanding the paper's approach.
+
+*Why it unblocks this paper:* The HAII-2024 Human-AI Interaction series offers a concise, up-to-date overview of human-AI interaction fundamentals, design, and evaluation, directly aligned with the paper's focus on interactive AI agents and user experience metrics.
+
+*If you want all of it:* 2.4 hours across 6 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 
