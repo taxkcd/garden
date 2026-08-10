@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-alva-l-couch"
-source_hash: "93c676c8aa986ed3e361cb03662fee46fb51d8f5ca48554c3090fb9f419a97f7"
+source_hash: "0147f3eb5fee6cd6d155cfdb47cd96366180bb4034405f60c33b3d3d700a0939"
 sequence: 113
 generator: "outreach-garden: managed"
 ---
@@ -64,32 +64,21 @@ Research interests: science education, networking and information infrastructure
 _The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
 
 **What you're missing:** Research Data Management
-**The paper assumes:** fundamentals of research data management and metadata standards
-**Already in this field?** Skip this entirely if you already understand research data management concepts, metadata standards, and FAIR data principles.
+**The paper assumes:** metadata standards, FAIR data principles, and research data infrastructure
+**Already in this field?** Skip this entirely if you already understand the basics of metadata standards and FAIR principles in scientific data management.
 
-To understand the improvements and context of MEDFORD-in-a-Box for metadata creation and research data management, it is essential to grasp core concepts of research data management including metadata standards, FAIR principles, and data packaging. The rigorous course offers a structured, university-level introduction to these topics, while the fast track provides a concise, practical overview suitable for quick comprehension and immediate application.
-
-### The course
-_Rigorous, and the one to pick if you want to hold this material properly._
-
-▶ [TU Delft - Research Data Management 101 (RDM101)](https://www.youtube.com/playlist?list=PLdHnT1NHNDE-A9wLpAfho_Wum9Xw6Q0_E) — Data Stewardship TU Delft · 13 videos · 0.5h across 13 episodes
-
-**Watch only this:** Episodes 6-9: 'RDM101- Module3: Key Elements of FAIR - Documentation and Metadata', 'Interoperability', 'Access to Data', and 'Persistent Identifiers' — about 8 minutes total. These cover the FAIR principles and metadata essentials needed to understand MEDFORD's role.
-
-*Why it unblocks this paper:* This TU Delft Research Data Management 101 course is directly focused on research data management fundamentals, including metadata and FAIR principles, which are central to the paper's contributions on metadata usability and packaging.
-
-*If you want all of it:* All 13 episodes, about 30 minutes total, for a complete foundational overview of research data management concepts relevant to the paper.
+To understand the improvements and future directions of MEDFORD-in-a-Box for metadata description and research data management, it is essential to grasp the fundamentals of research data management and FAIR data principles. The rigorous course offers a deep dive into data management concepts, while the fast track provides concise, focused explanations ideal for quickly building foundational knowledge.
 
 ### The fast track
 _Same ground, a fraction of the time — for when you just need to read the paper._
 
-▶ [Data Management Courses - Fast Track Learning](https://www.youtube.com/playlist?list=PLmEqVh8_i9736qJR_zTl1sRQ9rYI8ii3h) — Global Data Store LLC · 11 videos · 2.0h across 11 episodes
+▶ [Data Management, Analysis, and Write-up](https://www.youtube.com/playlist?list=PL9aiuPvCB-J79yoyg8t9tz5msd_KbQ-lE) — Medical Research Lounge · 12 videos · 6.5h across 12 episodes
 
-**Watch only this:** Episodes 1-3: 'Introduction to Data Management (Online Course - Preview)', 'Data Management - Introduction', and 'Data Management - Metadata Management' — about 30 minutes total, covering core concepts and metadata basics.
+**Watch only this:** Episodes 1-4, about 2 hours — focusing on data coding, cleaning, processing, and organization to quickly grasp essential data management practices relevant to metadata creation and validation.
 
-*Why it unblocks this paper:* This Global Data Store LLC playlist provides a concise, practical introduction to data management topics including metadata management and data governance, which align well with the paper's focus on simplifying metadata creation and validation.
+*Why it unblocks this paper:* This concise series from Medical Research Lounge covers key aspects of data management, analysis, and write-up, providing practical insights into organizing and validating research data, which complements the paper's focus on usability and validation improvements.
 
-*If you want all of it:* All 11 episodes, about 2 hours total, for a broader but still accessible overview of data management principles.
+*If you want all of it:* 6.5 hours across 12 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 
