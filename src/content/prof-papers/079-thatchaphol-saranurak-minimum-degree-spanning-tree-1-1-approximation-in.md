@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-thatchaphol-saranurak"
-source_hash: "722fc9356c476d1258359f55b3219f6ca962f5e5c6a31a6d7ce46fc60ca3beaf"
+source_hash: "3e3aadd23c58b18a17877c9c69a412ae1cc6afd27722ae3dcc7b835bb8dfba41"
 sequence: 79
 generator: "outreach-garden: managed"
 ---
@@ -58,32 +58,32 @@ Research interests: Fast graph algorithms in different models of computation; Ro
 _The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
 
 **What you're missing:** Advanced Graph Algorithms
-**The paper assumes:** graph theory, spanning trees, approximation algorithms, dynamic graph algorithms, potential function analysis
-**Already in this field?** Skip this entirely if you have completed an upper-level undergraduate or graduate course on graph algorithms covering spanning trees, approximation methods, and dynamic graph data structures.
+**The paper assumes:** graph theory, combinatorial optimization, approximation algorithms, and advanced algorithm design techniques
+**Already in this field?** Skip this entirely if you have completed a rigorous undergraduate or graduate course covering graph algorithms beyond basics, including approximation and dynamic graph techniques.
 
-To deeply understand the advanced graph algorithmic techniques used in the paper on minimum degree spanning trees, a solid grasp of graph algorithms including spanning trees, dynamic graph data structures, and algorithmic analysis is essential. The rigorous course option provides a comprehensive university-level treatment of fundamental graph algorithms, while the fast track offers a concise, visual introduction to core graph concepts and algorithms, suitable for quickly building intuition and foundational knowledge.
+To deeply understand the advanced graph algorithmic techniques used in the paper on Minimum Degree Spanning Tree approximations, a rigorous background in graph algorithms and combinatorial optimization is essential. The two options below provide complementary learning paths: the rigorous course offers a comprehensive, structured foundation in graph algorithms, while the fast track gives a concise, focused overview of key algorithmic concepts relevant to the paper, saving time without sacrificing core understanding.
 
 ### The course
 _Rigorous, and the one to pick if you want to hold this material properly._
 
-▶ [CS502 | Fundamentals of Algorithms | Final Term Lectures](https://www.youtube.com/playlist?list=PLgAefgTUtqWzGpaRLgV1ZFMoFMh1hqUCk) — Hamzaversity · 27 videos · 5.6h across 27 episodes
+▶ [Introduction to Graph Algorithms](https://www.youtube.com/playlist?list=PLgMDNELGJ1CajIGnWor0zilGWhxAfunZx) — NPTEL - Indian Institute of Science, Bengaluru · 38 videos
 
-**Watch only this:** Lectures 28 to 37 (10 episodes) covering Graphs Definitions, Traversal, Minimum Spanning Trees, Kruskal's and Prim's Algorithms, about 2 hours total — these provide the core graph algorithm knowledge needed to grasp the paper's approach.
+**Watch only this:** Lectures 23 to 27 (Kruskal's Algorithm, parts 1-3), Lecture 29 (DFS), Lecture 30 (Algorithm for Cut Vertex), and Lectures 33 to 37 (Strongly Connected Components parts 1-4, BFS), about 4.5 hours total — these cover MST construction, DFS-based graph decompositions, and connectivity concepts critical for the paper's approach.
 
-*Why it unblocks this paper:* This university-level course covers fundamental graph algorithms including minimum spanning trees, graph traversals, and shortest paths, which are foundational to understanding the paper's algorithmic framework and runtime analysis.
+*Why it unblocks this paper:* This NPTEL course by the Indian Institute of Science, Bengaluru, covers fundamental and advanced graph algorithms including DFS, BFS, MST algorithms (Kruskal's and Prim's), and strongly connected components, which are foundational to understanding augmenting chains, forest decompositions, and dynamic graph algorithms used in the paper.
 
-*If you want all of it:* All 27 episodes, about 5.6 hours total.
+*If you want all of it:* 19.1 hours across all 38 episodes
 
 ### The fast track
 _Same ground, a fraction of the time — for when you just need to read the paper._
 
-▶ [Graphs - Data Structure & Algorithms](https://www.youtube.com/playlist?list=PLGjplNEQ1it-0w_PkFtKzH0ZExo6Lvm6R) — Shradha Khapra · 26 videos · 9.8h across 26 episodes
+▶ [Analysis of Algorithms](https://www.youtube.com/playlist?list=PLgPbN3w-ia_MzatWGASfuPg9hon_Fsz1V) — Professor Bryce · 25 videos · 10.7h across 25 episodes
 
-**Watch only this:** Episodes 1 (Introduction to Graphs), 2 (BFS Traversal), 3 (DFS Traversal), 17 (Prim's Algorithm), and 19 (Kruskal's Algorithm), about 1.8 hours total — these cover essential graph concepts and MST algorithms efficiently.
+**Watch only this:** Episodes 5 (Graph Traversal), 10 (Minimum Spanning Trees), 8 and 9 (Greedy Stays Ahead and Greedy Exchange Arguments), about 1.75 hours total — these episodes focus on MSTs and greedy algorithm principles that underpin the paper's augmenting chain method.
 
-*Why it unblocks this paper:* This concise playlist offers focused visual explanations of graph data structures and algorithms including BFS, DFS, and minimum spanning trees, providing quick intuition and practical understanding relevant to the paper's graph algorithmic techniques.
+*Why it unblocks this paper:* This concise series by Professor Bryce offers clear, intuition-driven explanations of core algorithmic concepts including graph traversal, MSTs, greedy algorithms, and complexity analysis, providing a quick yet solid grounding in the algorithmic techniques relevant to the paper's framework.
 
-*If you want all of it:* All 26 episodes, about 9.8 hours total.
+*If you want all of it:* 10.7 hours across 25 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 
