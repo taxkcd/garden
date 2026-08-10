@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-rachit-nigam"
-source_hash: "25592662cc5f8960a0ecc92a77dcede6699981e41a09d4e57d93ce4adf795afb"
+source_hash: "80e4f384692e7b7208ca1d4a1e2b828f7abbd3f9c56eb67c7216f8758afb28e6"
 sequence: 228
 generator: "outreach-garden: managed"
 ---
@@ -59,32 +59,32 @@ Research interests: I build programming languages and compilers to make it easy 
 _The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
 
 **What you're missing:** Hardware Description Languages and Type Systems
-**The paper assumes:** hardware description languages, type systems for hardware, parameterized hardware design, static verification with SMT solvers
-**Already in this field?** Skip this entirely if you already have experience with hardware description languages and their type systems, especially in parameterized hardware design contexts.
+**The paper assumes:** hardware description languages, type systems for hardware, static verification with SMT solvers
+**Already in this field?** Skip this entirely if you already have experience with hardware description languages and their type systems, especially with parameterized hardware design and formal verification techniques.
 
-To understand the core concepts of the paper on latency-abstract interfaces and Lilac, a solid grasp of hardware description languages (HDLs) and their type systems is essential. The rigorous course option offers a comprehensive university-level deep dive into Verilog-based hardware modeling, covering fundamental design representation and language features. The fast-track option provides a similarly structured but more concise series on Verilog hardware modeling, suitable for quickly gaining practical understanding of HDLs relevant to the paper's context.
+To understand the innovations in the paper on latency-abstract interfaces and Lilac, foundational knowledge of hardware description languages (HDLs) and their type systems is essential. The rigorous course option offers a comprehensive university-level lecture series on computer engineering fundamentals including HDLs, while the fast track provides a focused, concise playlist on Verilog hardware modeling that covers core HDL concepts efficiently. Choose the course for deep, structured learning and the fast track for a quicker, practical grasp of HDLs relevant to the paper.
 
 ### The course
 _Rigorous, and the one to pick if you want to hold this material properly._
 
-▶ [NPTEL: Hardware Modelling using Verilog [Full Course]](https://www.youtube.com/playlist?list=PLRsFfXmDi9IYCNlvNjrsD8bLMmNE0UxBH) — P S · 41 videos
+▶ [LECTURE SERIES IN COMPUTER ENGINEERING](https://www.youtube.com/playlist?list=PLX04tETu2GLApoZaeCq7FeQJOBOfKxUWN) — Engineering Lecture Series · 24 videos · 11.6h across 24 episodes
 
-**Watch only this:** Episodes 1-24, about 12.2 hours — covering Introduction, Design Representation, Getting Started with Verilog, VLSI Design Styles, Verilog Language Features parts 1-3, Verilog Operators, Modeling Examples, Description Styles, Procedural Assignment parts 1-3, and Blocking/Non-blocking Assignments parts 1-4. This subset provides a thorough grounding in Verilog and hardware modeling necessary to grasp the paper's technical approach.
+**Watch only this:** Episodes 6, 7, 8, and 9: 'Multiple Choice Questions & Answers on Computer Hardware and Software Fundamentals Part 1 & 2', 'Introduction to Combinational Logic Circuits', and 'Step-by-Step Guide to Creating Effective Flowcharts for Engineers' — about 2 hours total. These episodes introduce hardware fundamentals and design thinking necessary for grasping HDLs.
 
-*Why it unblocks this paper:* This NPTEL course on Hardware Modelling using Verilog is a rigorous university-level series that covers hardware description languages in depth, including design representation and language features, which are foundational to understanding Lilac's extensions and type system.
+*Why it unblocks this paper:* This Computer Engineering Lecture Series covers fundamental concepts in computer hardware and software, including combinational logic circuits and computer programming tools, providing a rigorous foundation for understanding HDLs and their type systems as used in Lilac.
 
-*If you want all of it:* 20.9 hours across 41 episodes
+*If you want all of it:* All 24 episodes, approximately 11.6 hours.
 
 ### The fast track
 _Same ground, a fraction of the time — for when you just need to read the paper._
 
 ▶ [Hardware Modeling using Verilog](https://www.youtube.com/playlist?list=PLJ5C_6qdAvBELELTSPgzYkQg3HgclQh-5) — Computer Science and Engineering · 42 videos · 21.0h across 42 episodes
 
-**Watch only this:** Episodes 1-24, about 12.1 hours — covering Introduction, Design Representation, Getting Started with Verilog, VLSI Design Styles, Verilog Language Features parts 1-3, Verilog Operators, Modeling Examples, Description Styles, Procedural Assignment parts 1-3, and Blocking/Non-blocking Assignments parts 1-4. This subset matches the rigorous course's scope but in a slightly shorter total time.
+**Watch only this:** Episodes 1 to 10: 'Introduction' through 'VERILOG MODELING EXAMPLES' — about 5 hours total. These episodes cover the basics of Verilog and hardware modeling, sufficient to understand the HDL context of Lilac.
 
-*Why it unblocks this paper:* This concise Hardware Modeling using Verilog series by Computer Science and Engineering covers the same core topics as the rigorous course but in a shorter format, making it ideal for quickly acquiring practical knowledge of HDLs relevant to the paper's contributions.
+*Why it unblocks this paper:* This playlist on Hardware Modeling using Verilog offers a concise, focused introduction to HDLs, covering Verilog language features and modeling examples that directly relate to hardware description and verification concepts central to the paper.
 
-*If you want all of it:* 21.0 hours across 42 episodes
+*If you want all of it:* All 42 episodes, approximately 21 hours.
 
 ## Track 1 — Academic deep-dives (long-form)
 
