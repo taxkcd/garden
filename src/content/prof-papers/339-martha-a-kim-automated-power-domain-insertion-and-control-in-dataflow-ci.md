@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-martha-a-kim"
-source_hash: "1036bf223aed0c66003688774ff60b97581b1b3654c63b3997581d56bd9c63d6"
+source_hash: "5ef65dda441957fca1546d8ae57049cb8161de2a43d71d550c241e225423820e"
 sequence: 339
 generator: "outreach-garden: managed"
 ---
@@ -59,32 +59,32 @@ Research interests: computer architecture, parallel programming, compilers, low-
 _The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
 
 **What you're missing:** Dataflow Circuit Design
-**The paper assumes:** digital circuit design with dataflow architectures and token-based communication
-**Already in this field?** Skip this entirely if you already understand the principles and operation of dataflow circuits and their role in hardware design.
+**The paper assumes:** dataflow circuit design and semantics, hardware synthesis for dataflow architectures, token-based circuit communication
+**Already in this field?** Skip this entirely if you already understand dataflow circuit architectures and their execution models, including token semantics and hardware synthesis approaches.
 
-To understand the automated power domain insertion and control in dataflow circuits presented in the paper, it is essential to grasp the fundamentals of dataflow circuit design, including concepts like actors, token sequences, and control/data planes. The rigorous course option provides a deep, structured university-level introduction to digital design and synthesis, covering foundational topics that underpin dataflow circuit design. The fast track offers a shorter, more focused series that covers the core concepts efficiently for readers who want a quicker but still solid grounding.
+To understand the core contributions of this paper on automated power domain insertion and control in dataflow circuits, a solid grasp of digital hardware design principles, especially sequential and combinational circuit design, is essential. The rigorous course option offers a comprehensive university-level lecture series covering foundational and advanced topics in digital hardware design, while the fast track provides a shorter, more focused introduction to key concepts in digital logic design through Verilog HDL, suitable for quickly gaining relevant intuition and practical understanding.
 
 ### The course
 _Rigorous, and the one to pick if you want to hold this material properly._
 
-▶ [CSE320 Digital Design and Synthesis](https://www.youtube.com/playlist?list=PL2QVJTyww325GtAM2FuGF24BfBFxy_t6R) — Ahbiya H · 34 videos · 24.9h across 34 episodes
+▶ [Digital Hardware Design by Prof.M.Balakrishnan](https://www.youtube.com/playlist?list=PLBCE46DD08E83F210) — Satish Kashyap · 37 videos · 26.7h across 37 episodes
 
-**Watch only this:** lectures 4 through 7 (Combinational and Iterative Circuits) plus lectures 9 through 12 (Sequential Circuits and State Machine Synthesis), and lecture 27 (Data Flow and Behavioral Modeling), about 7.5 hours total — these cover core digital design concepts and dataflow modeling relevant to the paper's approach.
+**Watch only this:** Lectures 1 through 13 (Introduction, Combinational Circuit Design, Iterative Circuits, Logic Minimization, Sequential Circuits, State Machine Synthesis, and Implementation) totaling about 9.3 hours — this subset covers the essential digital hardware concepts needed to grasp dataflow circuit design and control logic synthesis.
 
-*Why it unblocks this paper:* This university-level course on digital design and synthesis by Ahbiya H covers combinational and sequential circuits, state machines, and dataflow and behavioral modeling, providing the rigorous foundation needed to understand the partitioning of actors and token-based control in dataflow circuits.
+*Why it unblocks this paper:* This university lecture series by Prof. M. Balakrishnan covers fundamental and advanced topics in digital hardware design, including combinational and sequential circuits, state machines, and asynchronous design, which are crucial for understanding dataflow circuit partitioning and correctness proofs in the paper.
 
-*If you want all of it:* 24.9 hours across 34 episodes
+*If you want all of it:* All 37 episodes totaling approximately 26.7 hours for a thorough grounding in digital hardware design.
 
 ### The fast track
 _Same ground, a fraction of the time — for when you just need to read the paper._
 
-▶ [Design of Digital Circuits - ETH Zürich - Spring 2019](https://www.youtube.com/playlist?list=PL5Q2soXY2Zi8J58xLKBNFQFHRO3GrXxA9) — Onur Mutlu Lectures · 35 videos · 43.3h across 35 episodes
+▶ [DIGITAL LOGIC DESIGN THROUGH VERILOG HDL](https://www.youtube.com/playlist?list=PL1c7TacmqqVJoHzmRxQDyMrxaKBmO87LJ) — EG ELECTRONICS · 17 videos · 1.7h across the first 14 episodes
 
-**Watch only this:** Lectures 4 (Combinational Logic I), 6 (Sequential Logic Design), 16 (OoO, DataFlow, Loads/Stores), and 27 (Systolic Arrays and Beyond), about 5.5 hours total — these provide a focused overview of digital and dataflow circuit design principles relevant to the paper.
+**Watch only this:** First 10 episodes (VLSI Design Flow through Gate Level and Data Flow Programming Differences) totaling about 70 minutes — enough to understand basic digital logic design and modeling approaches.
 
-*Why it unblocks this paper:* Onur Mutlu's 'Design of Digital Circuits' lecture series from ETH Zürich offers clear, well-structured explanations of digital circuit design, including dataflow concepts, in a concise format suitable for quick background preparation.
+*Why it unblocks this paper:* This concise playlist on digital logic design through Verilog HDL provides a practical and focused introduction to digital logic concepts and hardware description languages, which helps quickly build intuition about circuit design and control logic relevant to the paper's automated synthesis approach.
 
-*If you want all of it:* 43.3 hours across 35 episodes
+*If you want all of it:* All 14 episodes totaling about 1.7 hours for a complete overview of the playlist.
 
 ## Track 1 — Academic deep-dives (long-form)
 
