@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-gautam-biswas"
-source_hash: "034e4f5aea80d33a2f152c72c6f637970c94ea768292b9b755bb241413a0a053"
+source_hash: "7d8a28ecb775b452259adbe0f04d879e4ccd076197153de3279d6aaa5c2becc8"
 sequence: 171
 generator: "outreach-garden: managed"
 ---
@@ -62,21 +62,21 @@ Research interests: biomedical optics, microfluidics, and point of care diagnost
 _The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
 
 **What you're missing:** Cognitive Science and Learning Theories
-**The paper assumes:** cognitive science theories of learning, educational psychology, formative assessment frameworks, scaffolding in education
-**Already in this field?** Skip this entirely if you already have a solid understanding of cognitive and educational psychology theories related to learning and scaffolding.
+**The paper assumes:** foundations of cognitive science, learning theories including social cognitive theory and zone of proximal development, and evidence-centered design in education
+**Already in this field?** Skip this entirely if you already understand core cognitive and educational psychology theories relevant to adaptive learning and scaffolding.
 
-To understand the theoretical framework of adaptive scaffolding in LLM-based pedagogical agents, it is essential to grasp foundational cognitive science and learning theories such as Evidence-Centered Design, Social Cognitive Theory, and Vygotsky’s Zone of Proximal Development. The rigorous course option offers a structured, university-level lecture series covering cognitive science comprehensively, while the fast track provides a concise, focused series on cognitive science fundamentals suitable for quick grounding without deep time investment.
+This background covers foundational cognitive science and learning theories essential to understanding the theoretical framework of adaptive scaffolding in LLM-based pedagogical agents, specifically Evidence-Centered Design, Social Cognitive Theory, and Vygotsky’s Zone of Proximal Development. The rigorous course option offers a deep, structured university-level lecture series on cognitive neuroscience, providing a comprehensive grounding in cognitive processes relevant to learning and pedagogy. The fast track option is a concise, well-structured explainer series on child development and learning theories, covering key theorists and concepts directly relevant to the paper’s framework, suitable for a quicker but solid conceptual grasp.
 
 ### The fast track
 _Same ground, a fraction of the time — for when you just need to read the paper._
 
-▶ [Cognitive Science - Memory](https://www.youtube.com/playlist?list=PLfKl_7ysUk507sosowTGV-J17oW0epAAt) — Leng Yuen Sia · 16 videos · 4.9h across the first 15 episodes
+▶ [Child Development and Learning Theories - Psychology](https://www.youtube.com/playlist?list=PLnrrU5OO3L9urQxICinyBRlHP51SQDVsy) — Mister Simplify · 13 videos · 2.5h across 13 episodes
 
-**Watch only this:** Episodes 1-5: 'The Neuroscience of Memory - Eleanor Maguire', 'AP Psychology - Memory - Part 1 - The Basics', 'AP Psychology - Memory - Part 2 - Types of Processing', 'AP Psychology - Memory - Part 3 - Long-Term Potentiation (LTP)', and 'AP Psychology - Memory - Unit Review - 10 Toughest Terms', about 1.5 hours total — these provide a focused overview of memory and learning relevant to the paper’s cognitive science foundation.
+**Watch only this:** Episodes 1, 6, 8, and 9, about 44 minutes total — focusing on Bandura's Social Learning Theory, Vygotsky’s theory of Social Development, Social Learning Theory, and Piaget's Theory of Cognitive Development to quickly grasp core theories used in the paper.
 
-*Why it unblocks this paper:* This concise series by Leng Yuen Sia offers clear, visual explanations of cognitive science topics including memory and learning processes, which are central to understanding how the pedagogical agent scaffolds learning. It is a well-produced, intuition-first series that quickly builds relevant background.
+*Why it unblocks this paper:* This Child Development and Learning Theories series by Mister Simplify provides clear, concise explanations of key cognitive and social learning theories including Bandura’s Social Learning Theory and Vygotsky’s Social Development Theory, directly relevant to the paper’s integration of SCT and ZPD in adaptive scaffolding.
 
-*If you want all of it:* Approximately 4.9 hours across 15 episodes
+*If you want all of it:* All 13 episodes, about 2.5 hours
 
 ## Track 1 — Academic deep-dives (long-form)
 
