@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-thomas-y-yeh"
-source_hash: "6c8a7481f90b5e1194a0d7148d81282424bb434c19c45e3be0355d3ab3b90cbe"
+source_hash: "866ed57b78dcc86234b60d03d3cc04c9fd3c0de5d837a78322168129ae5dc12e"
 sequence: 255
 generator: "outreach-garden: managed"
 ---
@@ -60,33 +60,33 @@ Research interests: computer science education, machine learning acceleration, a
 
 _The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
 
-**What you're missing:** floating point numerical representation
-**The paper assumes:** floating point number formats, numerical precision and representation, computer arithmetic
-**Already in this field?** Skip this entirely if you already understand floating point number formats and their role in numerical computing and machine learning.
+**What you're missing:** floating point numerical formats
+**The paper assumes:** floating point number representation, numerical precision and rounding, block floating point formats, floating point arithmetic in machine learning
+**Already in this field?** Skip this entirely if you already understand floating point number systems and their use in machine learning hardware and software.
 
-This background focuses on floating point numerical representation, essential for understanding the Adaptive Floating Point (AFP) format introduced in the paper. The rigorous course option provides a thorough university-level treatment of IEEE 754 floating point standards and arithmetic, while the fast track offers a concise, clear introduction to the same topic for quicker comprehension. Choose the course for deep foundational knowledge and the fast track for a focused, time-efficient overview.
+Understanding floating point numerical formats is crucial for grasping the design and advantages of Adaptive Floating Point (AFP) in this paper. The rigorous course option offers a detailed, structured exploration of floating point representation within computer architecture, ideal for deep technical comprehension. The fast track provides a concise, focused series on floating point numerical techniques, perfect for quickly building foundational intuition and key concepts relevant to AFP.
 
 ### The course
 _Rigorous, and the one to pick if you want to hold this material properly._
 
-▶ [IEEE 754 Standard for Floating Point Binary Arithmetic by Computer Science Lessons and more](https://www.youtube.com/playlist?list=PLOtqaDAZ-_OAIUIknq-p2I3eSzMKyISK2) — silversax06 · 17 videos · 4.0h across 17 episodes
+▶ [Computer architecture](https://www.youtube.com/playlist?list=PLSh0x_wm6XkcjTVHRK2H9D_N-wFDNrOVF) — The computer school · 37 videos · 4.9h across 37 episodes
 
-**Watch only this:** Episodes 1-6, about 1.4 hours — covering IEEE 754 standard introduction, decimal to floating point conversion, single precision representation, and floating point arithmetic basics.
+**Watch only this:** Watch episodes 4 (Floating point representation || full course in hindi), 5 (Biased exponent || computer architecture || full course in hindi|| #ugcnet #gate_preparation), and 6 (#Explicit and implicit normalization || computer architecture || #ugcnet #gate_preparation), about 22 minutes total — these cover floating point formats, exponent biasing, and normalization essential for AFP.
 
-*Why it unblocks this paper:* This playlist by silversax06 covers the IEEE 754 Standard for Floating Point Binary Arithmetic in detail, including conversion methods, representation, and arithmetic operations, directly relevant to understanding AFP's improvements over standard floating point formats.
+*Why it unblocks this paper:* This comprehensive computer architecture course includes dedicated lectures on floating point representation and related concepts, providing the rigorous background needed to understand AFP's shared exponent and private offset design.
 
-*If you want all of it:* All 17 episodes, about 4.0 hours.
+*If you want all of it:* 4.9 hours across 37 episodes
 
 ### The fast track
 _Same ground, a fraction of the time — for when you just need to read the paper._
 
-▶ [IEEE 754 Floating number representation](https://www.youtube.com/playlist?list=PL9swaD_pqVQmp4seDlwngI1U6XffIhfER) — Гаджимvрад Исрафилов · 6 videos · 1.1h across 6 episodes
+▶ [Computer Numerical Techniques](https://www.youtube.com/playlist?list=PL6HD6MMTq7lfeZMTjq-MSZRdCQrJ1-4re) — StudyStool · 12 videos · 0.9h across 12 episodes
 
-**Watch only this:** Episodes 1-4, about 40 minutes — covering decimal to IEEE 754 conversion, floating point number representation, and the IEEE 754 standard.
+**Watch only this:** Watch episodes 4 (IEEE Standard 754  Floating point Representation | 32 - bit Single precision | IGNOU | StudyStool |), 6 (Relative Error in Floating Point Number | Numerical Techniques | IGNOU | BCA | StudyStool |), and 9 (Rounding Error while represent Floating Point Numbers | StudyStool |), about 12 minutes total — these cover floating point basics, error types, and rounding relevant to AFP.
 
-*Why it unblocks this paper:* This concise 6-episode playlist by Гаджимvрад Исрафилов provides a focused overview of IEEE 754 floating point representation and standards, suitable for quickly grasping the core concepts needed to understand AFP.
+*Why it unblocks this paper:* This short-form series by StudyStool offers clear, concise explanations of floating point representation, rounding errors, and IEEE 754 standards, providing a quick yet solid foundation for understanding AFP's numerical format innovations.
 
-*If you want all of it:* All 6 episodes, about 1.1 hours.
+*If you want all of it:* 0.9 hours across 12 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 
