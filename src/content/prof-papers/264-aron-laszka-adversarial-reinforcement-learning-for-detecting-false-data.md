@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-aron-laszka"
-source_hash: "b6d8e933b71fd08f982707c54bc6354ac0bc9f97cd4c278afa6758eb411febf7"
+source_hash: "69016680d0496ba1ffdada9648e243808843b79aeba58acc3bf1edbed2eed602"
 sequence: 264
 generator: "outreach-garden: managed"
 ---
@@ -57,19 +57,30 @@ Research interests: artificial intelligence and cyber-physical systems, machine 
 _The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
 
 **What you're missing:** multi-agent reinforcement learning
-**The paper assumes:** multi-agent reinforcement learning, zero-sum stochastic games, and policy space response oracles
-**Already in this field?** Skip this entirely if you already understand multi-agent reinforcement learning and game-theoretic equilibrium computation methods.
+**The paper assumes:** foundations of reinforcement learning, multi-agent learning algorithms, game-theoretic solution concepts in RL
+**Already in this field?** Skip this entirely if you already understand reinforcement learning principles extended to multi-agent settings and game-theoretic equilibrium computation.
 
-This background focuses on multi-agent reinforcement learning (MARL), which is essential to understand the adversarial game-theoretic framework and equilibrium strategy computation used in the paper. The rigorous course option offers a deep, structured university-level treatment of MARL concepts, while the fast track provides a concise, intuition-driven introduction suitable for quickly grasping the core ideas without extensive time commitment.
+To understand the adversarial reinforcement learning methods used in this paper, especially the multi-agent deep reinforcement learning and game-theoretic equilibrium computations, background in multi-agent reinforcement learning is essential. The rigorous course option provides a deep, structured university-level foundation, while the fast track offers a concise, intuition-focused introduction to the core concepts. Choose the course if you want a thorough understanding of the theory and algorithms; choose the fast track if you want a quick but solid conceptual grasp to follow the paper's methodology.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Princeton University Lectures - Foundations of Reinforcement Learning](https://www.youtube.com/playlist?list=PLYXvCE1En13epbogBmgafC_Yyyk9oQogl) — Chi Jin @ Princeton · 22 videos · 28.5h across 22 episodes
+
+**Watch only this:** Lectures 19 and 20: 'Two-Player Zero-Sum Games' and 'Multiplayer General-Sum Games', plus Lecture 18: 'Multiagent Reinforcement Learning' — about 3.8 hours total (3 lectures × ~77 minutes each). These cover the game-theoretic and multi-agent RL foundations needed to understand the paper's approach.
+
+*Why it unblocks this paper:* This Princeton University lecture series on Foundations of Reinforcement Learning includes dedicated lectures on multi-agent reinforcement learning and two-player zero-sum games, directly relevant to the paper's zero-sum game formulation and equilibrium strategy computation.
+
+*If you want all of it:* All 22 lectures, about 28.5 hours.
 
 ### The fast track
 _Same ground, a fraction of the time — for when you just need to read the paper._
 
 ▶ [Introduction to Deep Multi-Agent Reinforcement Learning](https://www.youtube.com/playlist?list=PLFihX_3MLxS9iS3Hz8VDWAyU4QCdjQUKr) — The Agent Whisperer · 5 videos · 0.8h across 5 episodes
 
-**Watch only this:** All 5 episodes, about 0.8 hours total — covering MARL problem formulation, return estimation, actor-critic foundations, A3C/A2C algorithms, and centralized training with decentralized execution.
+**Watch only this:** All 5 episodes, about 0.8 hours total, providing a quick yet comprehensive overview of deep multi-agent reinforcement learning concepts relevant to the paper.
 
-*Why it unblocks this paper:* This short playlist offers a clear, concise introduction to deep multi-agent reinforcement learning, including problem formulation, actor-critic methods, and centralized training with decentralized execution, providing a quick yet solid conceptual foundation relevant to the paper's approach.
+*Why it unblocks this paper:* This short playlist by The Agent Whisperer offers a concise and clear introduction to deep multi-agent reinforcement learning, covering problem formulation, actor-critic methods, and centralized training with decentralized execution, which are key to grasping the paper's multi-agent RL techniques.
 
 *If you want all of it:* Same as minimum watch, 0.8 hours.
 
