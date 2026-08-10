@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-william-c-regli"
-source_hash: "db6735cea868f9bf1ac29ac9cea0dc7966893275d354c488b832c3f605a17e9c"
+source_hash: "3fe36e109b530f1f7eb5d9923cba078fd4b8a35c4116a9e773d2651fa2964aea"
 sequence: 132
 generator: "outreach-garden: managed"
 ---
@@ -59,32 +59,32 @@ Research interests: artificial intelligence, AI Agents, design and evaluation of
 _The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
 
 **What you're missing:** Automated Planning and Scheduling
-**The paper assumes:** automated planning, PDDL domain modeling, numeric planning, heuristic search planning, integrated scheduling
-**Already in this field?** Skip this entirely if you have prior coursework or experience in AI automated planning and scheduling, including familiarity with PDDL and numeric planning extensions.
+**The paper assumes:** automated planning formalisms, PDDL language, heuristic search planning algorithms, numeric planning and scheduling
+**Already in this field?** Skip this entirely if you already understand automated planning concepts, PDDL modeling, and heuristic numeric planners.
 
-To understand the WORKSWORLD paper, a solid grasp of automated planning and scheduling—especially numeric planning with PDDL and integrated scheduling—is essential. The rigorous course offers a deep, structured university-level introduction to AI planning concepts, while the fast track provides a concise, practical overview of advanced production planning and scheduling concepts relevant to workflow automation. Choose the course for a thorough theoretical foundation and the fast track for a quick, applied understanding.
+To understand the WORKSWORLD paper, which centers on numeric automated planning and scheduling using PDDL and heuristic search, background in automated planning fundamentals and heuristic search methods is essential. The rigorous course option offers a deep, structured university-level introduction to AI planning concepts, while the fast track provides a concise, focused series on heuristic search and planning fundamentals, ideal for quickly grasping core ideas without extensive time investment.
 
 ### The course
 _Rigorous, and the one to pick if you want to hold this material properly._
 
-▶ [Artificial Intelligence](https://www.youtube.com/playlist?list=PLsz8d8r2a996F2Fi-tB9N2HCp4qoaNjU_) — Online PM Courses - Mike Clayton · 22 videos · 12.9h across 22 episodes
+▶ [MIT 6.034 Artificial Intelligence, Fall 2010](https://www.youtube.com/playlist?list=PLUl4u3cNGP63gFHB6xb-kVBiQHYe_4hSi) — MIT OpenCourseWare · 30 videos · 24.3h across 30 episodes
 
-**Watch only this:** Episodes 1-4: 'What is Artificial Intelligence (AI)?', 'Artificial Intelligence in Project Management: AI and PM Primer', 'How to Use Machine Learning in Project Estimating, Scheduling, and Planning', and 'How can AI Transform Project Management?' — about 2.3 hours total. These cover core AI planning and scheduling concepts relevant to the paper.
+**Watch only this:** Episodes 1 through 5 (Introduction and Scope; Reasoning: Goal Trees and Problem Solving; Reasoning: Goal Trees and Rule-Based Expert Systems; Search: Depth-First, Hill Climbing, Beam; Search: Optimal, Branch and Bound, A*), about 4 hours — these cover the core search and planning concepts needed to grasp numeric planning and heuristic search.
 
-*Why it unblocks this paper:* This playlist covers foundational and advanced AI topics including planning and scheduling relevant to numeric planning domains like WORKSWORLD. It provides a broad AI context with episodes on machine learning, decision-making, and agentic AI that underpin the paper's approach.
+*Why it unblocks this paper:* MIT 6.034 Artificial Intelligence is a comprehensive university course covering foundational AI topics including search, planning, and reasoning, which are directly relevant to understanding PDDL-based planning and heuristic search techniques used in WORKSWORLD.
 
-*If you want all of it:* All 22 episodes, approximately 12.9 hours.
+*If you want all of it:* 24.3 hours across 30 episodes
 
 ### The fast track
 _Same ground, a fraction of the time — for when you just need to read the paper._
 
-▶ [Advanced Production Planning And Scheduling- APS](https://www.youtube.com/playlist?list=PLY4Z1m6hYtSVOq3avQgn-WHxtWD38M1G_) — META Smart Factory · 8 videos · 1.6h across 8 episodes
+▶ [Pathfinding Fundamentals (Master's of AI: Automated Planning)](https://www.youtube.com/playlist?list=PLQR-u-WfDtry8eJdUL2RV8fchH3QQEWDn) — Thomas Nobes · 27 videos · 7.8h across 27 episodes
 
-**Watch only this:** Episodes 1-3: 'What is Advanced Planning and Scheduling & What are the components of APS?', 'Why do we use Advanced Planning and Scheduling (APS)', and 'How to benefit from Advanced Planning and Scheduling Systems (APS)' — about 33 minutes total. These give a concise overview of planning and scheduling principles.
+**Watch only this:** Episodes 1 through 15 (Welcome to Pathfinding Fundamentals; L01: Representing Planning Problems; L02: The Search Process; L03: Search Nodes Explained; L04: The Search Space vs the State Space; L05: Search Strategies; L06: Breadth-First Search (BFS); L07: Uniform-Cost Search (UCS); L08: Depth-First Search (DFS); L09: Depth-First Iterative Deepening (DFID); L10: Graph Search vs Tree Search; L11: Greedy Best-First Search (GBFS); L12: The A* Algorithm; L13: The A* Algorithm is Optimally Efficient; L14: Improving the A* Algorithm), about 4.5 hours — these episodes cover the essential heuristic search algorithms and planning problem representations needed to understand ENHSP and numeric planning.
 
-*Why it unblocks this paper:* This short series focuses specifically on advanced production planning and scheduling, providing clear, practical explanations of APS components and functions that align well with the workflow scheduling challenges addressed by WORKSWORLD.
+*Why it unblocks this paper:* Pathfinding Fundamentals by Thomas Nobes is a well-produced, concise series focused on heuristic search algorithms and planning problem representations, directly aligning with the numeric planning and heuristic search methods central to WORKSWORLD.
 
-*If you want all of it:* All 8 episodes, approximately 1.6 hours.
+*If you want all of it:* 7.8 hours across 27 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 
