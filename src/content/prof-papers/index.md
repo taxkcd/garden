@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/366-abdullah-muzahid-pai-fast-accurate-and-full-benchmark-performance-projec|366 · PAI: Fast, Accurate, and Full Benchmark Performance Projection with AI — Abdullah Muzahid]] · 2026-08-11
 - [[prof-papers/365-etienne-vouga-recovering-physically-plausible-human-object-interactions|365 · Recovering Physically Plausible Human-Object Interactions from Monocular Videos — Etienne Vouga]] · 2026-08-11
 - [[prof-papers/364-lior-pachter-optimizing-alluvial-plots|364 · Optimizing alluvial plots — Lior Pachter]] · 2026-08-11
 - [[prof-papers/363-matthew-berger-seeing-the-many-exploring-parameter-distributions-conditi|363 · Seeing the Many: Exploring Parameter Distributions Conditioned on Features in Surrogates — Matthew Berger]] · 2026-08-11
