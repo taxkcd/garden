@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/369-mohammad-mohammadi-amiri-lcguard-latent-communication-guard-for-safe-kv|369 · LCGuard: Latent Communication Guard for Safe KV Sharing in Multi-Agent Systems — Mohammad Mohammadi Amiri]] · 2026-08-11
 - [[prof-papers/368-prashant-pandey-inferscale-gpu-native-kv-injection-for-personalized-llm|368 · InferScale: GPU-Native KV Injection for Personalized LLM Serving — Prashant Pandey]] · 2026-08-11
 - [[prof-papers/367-robert-j-brunner-extended-isolation-forest|367 · Extended Isolation Forest — Robert J. Brunner]] · 2026-08-11
 - [[prof-papers/366-abdullah-muzahid-pai-fast-accurate-and-full-benchmark-performance-projec|366 · PAI: Fast, Accurate, and Full Benchmark Performance Projection with AI — Abdullah Muzahid]] · 2026-08-11
