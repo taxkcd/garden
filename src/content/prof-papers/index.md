@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/363-matthew-berger-seeing-the-many-exploring-parameter-distributions-conditi|363 · Seeing the Many: Exploring Parameter Distributions Conditioned on Features in Surrogates — Matthew Berger]] · 2026-08-11
 - [[prof-papers/362-alex-zelikovsky-fastr-reimagining-fastq-via-compact-image-inspired-repre|362 · FASTR: Reimagining FASTQ via Compact Image-inspired Representation — Alex Zelikovsky]] · 2026-08-11
 - [[prof-papers/361-chris-peikert-list-decoding-reedsolomon-codes-in-the-lee-euclidean-and-o|361 · List Decoding Reed–Solomon Codes in the Lee, Euclidean, and Other Metrics — Chris Peikert]] · 2026-08-09
 - [[prof-papers/360-minwoo-lee-bamm-bidirectional-autoregressive-motion-model|360 · BAMM: Bidirectional Autoregressive Motion Model — Minwoo Lee]] · 2026-08-09
