@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/365-etienne-vouga-recovering-physically-plausible-human-object-interactions|365 · Recovering Physically Plausible Human-Object Interactions from Monocular Videos — Etienne Vouga]] · 2026-08-11
 - [[prof-papers/364-lior-pachter-optimizing-alluvial-plots|364 · Optimizing alluvial plots — Lior Pachter]] · 2026-08-11
 - [[prof-papers/363-matthew-berger-seeing-the-many-exploring-parameter-distributions-conditi|363 · Seeing the Many: Exploring Parameter Distributions Conditioned on Features in Surrogates — Matthew Berger]] · 2026-08-11
 - [[prof-papers/362-alex-zelikovsky-fastr-reimagining-fastq-via-compact-image-inspired-repre|362 · FASTR: Reimagining FASTQ via Compact Image-inspired Representation — Alex Zelikovsky]] · 2026-08-11
