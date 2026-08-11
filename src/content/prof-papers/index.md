@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/368-prashant-pandey-inferscale-gpu-native-kv-injection-for-personalized-llm|368 · InferScale: GPU-Native KV Injection for Personalized LLM Serving — Prashant Pandey]] · 2026-08-11
 - [[prof-papers/367-robert-j-brunner-extended-isolation-forest|367 · Extended Isolation Forest — Robert J. Brunner]] · 2026-08-11
 - [[prof-papers/366-abdullah-muzahid-pai-fast-accurate-and-full-benchmark-performance-projec|366 · PAI: Fast, Accurate, and Full Benchmark Performance Projection with AI — Abdullah Muzahid]] · 2026-08-11
 - [[prof-papers/365-etienne-vouga-recovering-physically-plausible-human-object-interactions|365 · Recovering Physically Plausible Human-Object Interactions from Monocular Videos — Etienne Vouga]] · 2026-08-11
