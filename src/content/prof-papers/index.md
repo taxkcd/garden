@@ -1,6 +1,6 @@
 ---
 title: "Professor papers and learning paths"
-date: 2026-08-11
+date: 2026-08-12
 tags:
   - research-paper
   - learning-path
@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/375-feodor-f-dragan-fast-deterministic-algorithms-for-computing-all-eccentri|375 · Fast deterministic algorithms for computing all eccentricities in (hyperbolic) Helly graphs — Feodor F. Dragan]] · 2026-08-11
 - [[prof-papers/374-thomas-watson-erdosselfridge-theorem-for-nonmonotone-cnfs|374 · Erdős–Selfridge Theorem for Nonmonotone CNFs — Thomas Watson]] · 2026-08-11
 - [[prof-papers/373-tim-kraska-autoslo-practical-latency-slos-on-cloud-data-warehouses-exten|373 · AutoSLO: Practical Latency SLOs on Cloud Data Warehouses – Extended Version — Tim Kraska]] · 2026-08-11
 - [[prof-papers/372-mridul-aanjaneya-cablerobotgraphsim-a-graph-neural-network-for-modeling|372 · CableRobotGraphSim: A Graph Neural Network for Modeling Partially Observable Cable-Driven Robot Dynamics — Mridul Aanjaneya]] · 2026-08-11
