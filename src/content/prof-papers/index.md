@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/381-daniele-micciancio-application-aware-approximate-homomorphic-encryption|381 · Application-Aware Approximate Homomorphic Encryption: Configuring FHE for Practical Use — Daniele Micciancio]] · 2026-08-12
 - [[prof-papers/380-ren-ng-novel-color-via-stimulation-of-individual-photoreceptors-at-popul|380 · Novel color via stimulation of individual photoreceptors at population scale — Ren Ng]] · 2026-08-12
 - [[prof-papers/379-zhiru-zhang-gate-the-filter-not-the-message-node-channel-mixtures-for-pr|379 · Gate the Filter, Not the Message: Node-Channel Mixtures for Pre-Propagation GNNs — Zhiru Zhang]] · 2026-08-12
 - [[prof-papers/378-jamie-payton-an-architecture-to-support-learning-based-adaptation-of-per|378 · An Architecture to Support Learning-based Adaptation of Persistent Queries in Mobile Environments — Jamie Payton]] · 2026-08-12
