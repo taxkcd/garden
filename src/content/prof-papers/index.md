@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/384-natalie-stanley-spatial-coordinates-as-a-cell-language-a-multi-sentence|384 · Spatial Coordinates as a Cell Language: A Multi-Sentence Framework for Imaging Mass Cytometry Analysis — Natalie Stanley]] · 2026-08-12
 - [[prof-papers/383-yin-li-deep-learning-to-assess-laryngoscope-insertion-depth-during-neona|383 · Deep learning to assess laryngoscope insertion depth during neonatal intubation with video laryngoscopy — Yin Li]] · 2026-08-12
 - [[prof-papers/382-suguman-bansal-certificate-guided-evaluation-of-reinforcement-learning-g|382 · Certificate-Guided Evaluation of Reinforcement Learning Generalization — Suguman Bansal]] · 2026-08-12
 - [[prof-papers/381-daniele-micciancio-application-aware-approximate-homomorphic-encryption|381 · Application-Aware Approximate Homomorphic Encryption: Configuring FHE for Practical Use — Daniele Micciancio]] · 2026-08-12
