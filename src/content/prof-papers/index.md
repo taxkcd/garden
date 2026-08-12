@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/377-jorge-fandinno-bound-founded-semantics-for-answer-set-programming-with-d|377 · Bound-Founded Semantics for Answer Set Programming with Difference Constraints: Preliminary Report — Jorge Fandinno]] · 2026-08-12
 - [[prof-papers/376-matthew-j-patitz-powers-and-limitations-of-synchronous-self-assembly|376 · Powers and Limitations of Synchronous Self-Assembly — Matthew J. Patitz]] · 2026-08-12
 - [[prof-papers/375-feodor-f-dragan-fast-deterministic-algorithms-for-computing-all-eccentri|375 · Fast deterministic algorithms for computing all eccentricities in (hyperbolic) Helly graphs — Feodor F. Dragan]] · 2026-08-11
 - [[prof-papers/374-thomas-watson-erdosselfridge-theorem-for-nonmonotone-cnfs|374 · Erdős–Selfridge Theorem for Nonmonotone CNFs — Thomas Watson]] · 2026-08-11
