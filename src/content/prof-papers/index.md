@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/379-zhiru-zhang-gate-the-filter-not-the-message-node-channel-mixtures-for-pr|379 · Gate the Filter, Not the Message: Node-Channel Mixtures for Pre-Propagation GNNs — Zhiru Zhang]] · 2026-08-12
 - [[prof-papers/378-jamie-payton-an-architecture-to-support-learning-based-adaptation-of-per|378 · An Architecture to Support Learning-based Adaptation of Persistent Queries in Mobile Environments — Jamie Payton]] · 2026-08-12
 - [[prof-papers/377-jorge-fandinno-bound-founded-semantics-for-answer-set-programming-with-d|377 · Bound-Founded Semantics for Answer Set Programming with Difference Constraints: Preliminary Report — Jorge Fandinno]] · 2026-08-12
 - [[prof-papers/376-matthew-j-patitz-powers-and-limitations-of-synchronous-self-assembly|376 · Powers and Limitations of Synchronous Self-Assembly — Matthew J. Patitz]] · 2026-08-12
