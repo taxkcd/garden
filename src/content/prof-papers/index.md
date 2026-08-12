@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/382-suguman-bansal-certificate-guided-evaluation-of-reinforcement-learning-g|382 · Certificate-Guided Evaluation of Reinforcement Learning Generalization — Suguman Bansal]] · 2026-08-12
 - [[prof-papers/381-daniele-micciancio-application-aware-approximate-homomorphic-encryption|381 · Application-Aware Approximate Homomorphic Encryption: Configuring FHE for Practical Use — Daniele Micciancio]] · 2026-08-12
 - [[prof-papers/380-ren-ng-novel-color-via-stimulation-of-individual-photoreceptors-at-popul|380 · Novel color via stimulation of individual photoreceptors at population scale — Ren Ng]] · 2026-08-12
 - [[prof-papers/379-zhiru-zhang-gate-the-filter-not-the-message-node-channel-mixtures-for-pr|379 · Gate the Filter, Not the Message: Node-Channel Mixtures for Pre-Propagation GNNs — Zhiru Zhang]] · 2026-08-12
