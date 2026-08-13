@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/386-rahul-simha-craql-a-composable-language-for-querying-source-code|386 · CRAQL: A Composable Language for Querying Source Code — Rahul Simha]] · 2026-08-13
 - [[prof-papers/385-vladik-kreinovich-fairness-testing-through-extreme-value-theory|385 · Fairness Testing through Extreme Value Theory — Vladik Kreinovich]] · 2026-08-13
 - [[prof-papers/384-natalie-stanley-spatial-coordinates-as-a-cell-language-a-multi-sentence|384 · Spatial Coordinates as a Cell Language: A Multi-Sentence Framework for Imaging Mass Cytometry Analysis — Natalie Stanley]] · 2026-08-12
 - [[prof-papers/383-yin-li-deep-learning-to-assess-laryngoscope-insertion-depth-during-neona|383 · Deep learning to assess laryngoscope insertion depth during neonatal intubation with video laryngoscopy — Yin Li]] · 2026-08-12
