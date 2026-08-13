@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/388-rui-kuang-ctfactomo-reconstructing-3d-spatial-structures-of-rna-tomograp|388 · CTFacTomo: Reconstructing 3D spatial structures of RNA tomography transcriptomes by collapsed tensor factorization — Rui Kuang]] · 2026-08-13
 - [[prof-papers/387-hau-chan-large-language-models-for-designing-participatory-budgeting-rul|387 · Large Language Models for Designing Participatory Budgeting Rules — Hau Chan]] · 2026-08-13
 - [[prof-papers/386-rahul-simha-craql-a-composable-language-for-querying-source-code|386 · CRAQL: A Composable Language for Querying Source Code — Rahul Simha]] · 2026-08-13
 - [[prof-papers/385-vladik-kreinovich-fairness-testing-through-extreme-value-theory|385 · Fairness Testing through Extreme Value Theory — Vladik Kreinovich]] · 2026-08-13
