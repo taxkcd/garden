@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/390-bedrich-benes-floraforge-llm-assisted-procedural-generation-of-editable|390 · FloraForge: LLM-Assisted Procedural Generation of Editable and Analysis-Ready 3D Plant Geometric Models For Agricultural Applications — Bedrich Benes]] · 2026-08-13
 - [[prof-papers/389-shichao-pei-zero-shot-relational-learning-for-multimodal-knowledge-graph|389 · Zero-Shot Relational Learning for Multimodal Knowledge Graphs — Shichao Pei]] · 2026-08-13
 - [[prof-papers/388-rui-kuang-ctfactomo-reconstructing-3d-spatial-structures-of-rna-tomograp|388 · CTFacTomo: Reconstructing 3D spatial structures of RNA tomography transcriptomes by collapsed tensor factorization — Rui Kuang]] · 2026-08-13
 - [[prof-papers/387-hau-chan-large-language-models-for-designing-participatory-budgeting-rul|387 · Large Language Models for Designing Participatory Budgeting Rules — Hau Chan]] · 2026-08-13
