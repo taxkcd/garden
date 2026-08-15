@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-vladimir-a-kulyukin"
-source_hash: "3cc417ffa4967be9e8098d74f73d0fba84709ac41e86849ca7259688bd84d8b7"
+source_hash: "8faf977877f61dec2fda8885d2a4352ba4c1f37272e0c7a41394de95f9e85d7e"
 sequence: 447
 generator: "outreach-garden: managed"
 ---
