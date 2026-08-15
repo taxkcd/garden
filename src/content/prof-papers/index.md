@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/444-gill-bejerano-whole-genome-comparisons-identify-repeated-regulatory-chan|444 · Whole-genome Comparisons Identify Repeated Regulatory Changes Underlying Convergent Appendage Evolution in Diverse Fish Lineages — Gill Bejerano]] · 2026-08-15
 - [[prof-papers/443-apan-qasem-gpu-accelerated-parallel-solutions-to-the-quadratic-assignmen|443 · GPU-accelerated Parallel Solutions to the Quadratic Assignment Problem — Apan Qasem]] · 2026-08-15
 - [[prof-papers/442-rishab-goyal-adaptively-secure-flexible-and-identity-based-broadcast-enc|442 · Adaptively-Secure Flexible and Identity-Based Broadcast Encryption from Decomposed LWE — Rishab Goyal]] · 2026-08-15
 - [[prof-papers/441-jeremy-t-fineman-parallel-batch-dynamic-maximal-independent-set|441 · Parallel Batch-Dynamic Maximal Independent Set — Jeremy T. Fineman]] · 2026-08-15
