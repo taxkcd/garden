@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/436-diana-franklin-investigating-high-school-and-pre-high-school-teachers-pe|436 · Investigating High School and Pre-High School Teachers’ Perceptions and Experiences Introducing Quantum Concepts: A Survey of QuanTime and other Quantum-related Activities — Diana Franklin]] · 2026-08-15
 - [[prof-papers/435-arpita-ghosh-cardinal-contests|435 · Cardinal Contests — Arpita Ghosh]] · 2026-08-15
 - [[prof-papers/434-yongge-wang-encryption-based-covert-channel-for-large-language-models|434 · Encryption Based Covert Channel for Large Language Models — Yongge Wang]] · 2026-08-15
 - [[prof-papers/433-chris-donahue-decomposer-learning-to-decompile-symbolic-music-to-program|433 · DECOMPOSER: Learning to Decompile Symbolic Music to Programs — Chris Donahue]] · 2026-08-14
