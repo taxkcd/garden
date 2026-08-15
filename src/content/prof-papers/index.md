@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/435-arpita-ghosh-cardinal-contests|435 · Cardinal Contests — Arpita Ghosh]] · 2026-08-15
 - [[prof-papers/434-yongge-wang-encryption-based-covert-channel-for-large-language-models|434 · Encryption Based Covert Channel for Large Language Models — Yongge Wang]] · 2026-08-15
 - [[prof-papers/433-chris-donahue-decomposer-learning-to-decompile-symbolic-music-to-program|433 · DECOMPOSER: Learning to Decompile Symbolic Music to Programs — Chris Donahue]] · 2026-08-14
 - [[prof-papers/432-rakesh-m-verma-guided-perturbation-sensitivity-gps-detecting-adversarial|432 · Guided Perturbation Sensitivity (GPS): Detecting Adversarial Text via Embedding Stability and Word Importance — Rakesh M. Verma]] · 2026-08-15
