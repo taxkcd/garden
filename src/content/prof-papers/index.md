@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/447-vladimir-a-kulyukin-on-signifiable-computability-part-iii-a-note-on-unna|447 · On Signifiable Computability: Part III: A Note on Unnameable Functions on Natural Numbers — Vladimir A. Kulyukin]] · 2026-08-15
 - [[prof-papers/446-changxi-zheng-agentic-real2sim-physics-based-world-modeling-with-vision|446 · Agentic Real2Sim: Physics-based World Modeling with Vision-Language Agents — Changxi Zheng]] · 2026-08-15
 - [[prof-papers/445-weina-wang-noise-schedule-design-for-diffusion-models-an-optimal-control|445 · Noise Schedule Design for Diffusion Models: An Optimal Control Perspective — Weina Wang]] · 2026-08-15
 - [[prof-papers/444-gill-bejerano-whole-genome-comparisons-identify-repeated-regulatory-chan|444 · Whole-genome Comparisons Identify Repeated Regulatory Changes Underlying Convergent Appendage Evolution in Diverse Fish Lineages — Gill Bejerano]] · 2026-08-15
