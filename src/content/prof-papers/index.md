@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/449-john-keyser-towards-unstructured-unlabeled-optical-mocap-a-video-helps|449 · Towards Unstructured Unlabeled Optical Mocap: A Video Helps! — John Keyser]] · 2026-08-15
 - [[prof-papers/448-yongshan-ding-co-designing-error-mitigation-and-error-detection-for-logi|448 · Co-Designing Error Mitigation and Error Detection for Logical Qubits — Yongshan Ding]] · 2026-08-15
 - [[prof-papers/447-vladimir-a-kulyukin-on-signifiable-computability-part-iii-a-note-on-unna|447 · On Signifiable Computability: Part III: A Note on Unnameable Functions on Natural Numbers — Vladimir A. Kulyukin]] · 2026-08-15
 - [[prof-papers/446-changxi-zheng-agentic-real2sim-physics-based-world-modeling-with-vision|446 · Agentic Real2Sim: Physics-based World Modeling with Vision-Language Agents — Changxi Zheng]] · 2026-08-15
