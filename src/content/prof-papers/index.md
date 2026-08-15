@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/450-feng-hao-liu-optimizing-encrypted-neural-networks-model-design-quantizat|450 · Optimizing Encrypted Neural Networks: Model Design, Quantization and Fine-Tuning Using FHEW/TFHE — Feng-Hao Liu]] · 2026-08-15
 - [[prof-papers/449-john-keyser-towards-unstructured-unlabeled-optical-mocap-a-video-helps|449 · Towards Unstructured Unlabeled Optical Mocap: A Video Helps! — John Keyser]] · 2026-08-15
 - [[prof-papers/448-yongshan-ding-co-designing-error-mitigation-and-error-detection-for-logi|448 · Co-Designing Error Mitigation and Error Detection for Logical Qubits — Yongshan Ding]] · 2026-08-15
 - [[prof-papers/447-vladimir-a-kulyukin-on-signifiable-computability-part-iii-a-note-on-unna|447 · On Signifiable Computability: Part III: A Note on Unnameable Functions on Natural Numbers — Vladimir A. Kulyukin]] · 2026-08-15
