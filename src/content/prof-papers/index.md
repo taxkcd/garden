@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/439-adam-o-neill-revisiting-the-security-of-sparkle|439 · Revisiting the Security of Sparkle — Adam O'Neill]] · 2026-08-15
 - [[prof-papers/438-jitendra-malik-contrastive-action-image-pre-training-for-visuomotor-cont|438 · Contrastive Action-Image Pre-training for Visuomotor Control — Jitendra Malik]] · 2026-08-15
 - [[prof-papers/437-mahmut-t-kandemir-asymvlm-asymmetric-token-pruning-for-efficient-vision|437 · AsymVLM: Asymmetric Token Pruning for Efficient Vision-Language Model Inference — Mahmut T. Kandemir]] · 2026-08-15
 - [[prof-papers/436-diana-franklin-investigating-high-school-and-pre-high-school-teachers-pe|436 · Investigating High School and Pre-High School Teachers’ Perceptions and Experiences Introducing Quantum Concepts: A Survey of QuanTime and other Quantum-related Activities — Diana Franklin]] · 2026-08-15
