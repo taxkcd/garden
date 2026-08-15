@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/433-chris-donahue-decomposer-learning-to-decompile-symbolic-music-to-program|433 · DECOMPOSER: Learning to Decompile Symbolic Music to Programs — Chris Donahue]] · 2026-08-14
 - [[prof-papers/432-rakesh-m-verma-guided-perturbation-sensitivity-gps-detecting-adversarial|432 · Guided Perturbation Sensitivity (GPS): Detecting Adversarial Text via Embedding Stability and Word Importance — Rakesh M. Verma]] · 2026-08-15
 - [[prof-papers/431-chenglin-miao-towards-unveiling-vulnerabilities-of-large-reasoning-model|431 · Towards Unveiling Vulnerabilities of Large Reasoning Models in Machine Unlearning — Chenglin Miao]] · 2026-08-13
 - [[prof-papers/430-chenghong-wang-bolt-bandwidth-optimized-lightning-fast-oblivious-map-pow|430 · BOLT: Bandwidth-Optimized Lightning-Fast Oblivious Map powered by Secure HBM Accelerators — Chenghong Wang]] · 2026-08-13
