@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-lior-pachter"
-source_hash: "e3df21edb8120bae275fe2c8bf4952d2cfe0daa4f60373ad2da70d390a1f8cd0"
+source_hash: "c587f08ed979abb4830882ef3eee0191576417dd2fcba1d55f8db3b2c3a1189b"
 sequence: 364
 generator: "outreach-garden: managed"
 ---

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-matthew-j-patitz"
-source_hash: "ab8080ad983d5d8b18f7878ed7093f4226bbd70447dd79c865bddb93843f2fe3"
+source_hash: "3cbc3a967a7f04fc89a59b9aab62bffca2e4f3d5dabab0670d3abbde463fc430"
 sequence: 376
 generator: "outreach-garden: managed"
 ---

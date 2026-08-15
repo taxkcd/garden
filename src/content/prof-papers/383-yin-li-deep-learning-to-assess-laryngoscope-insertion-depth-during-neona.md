@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-yin-li"
-source_hash: "88cc6224fa718ba798338bfb584591ea8994e4788d60583afe98773cb1c9cd77"
+source_hash: "43dc7539ca44e7d857b1ab5a189804eb9c06a50beb4fff80acf9cb6b8628b5ca"
 sequence: 383
 generator: "outreach-garden: managed"
 ---

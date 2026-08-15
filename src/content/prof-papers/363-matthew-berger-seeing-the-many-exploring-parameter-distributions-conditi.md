@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-matthew-berger"
-source_hash: "26a19343d49692115fe5862e54792bee62163d9a87e5848dc47b834b6d7e5b80"
+source_hash: "168927f3c743ad0704a34e6bfe775a3daa00cd4aeed2b0a0f30ceda4f58053c1"
 sequence: 363
 generator: "outreach-garden: managed"
 ---

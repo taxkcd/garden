@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-ren-ng"
-source_hash: "db8bfe409de35021212adb69fe52f300f921409bf4a912c74734d2e85160e613"
+source_hash: "fe3ae895d4903abc4e6c56abbdb6a20be7f625fd190e19fc0b642fcb2fccd8d1"
 sequence: 380
 generator: "outreach-garden: managed"
 ---

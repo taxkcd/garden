@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-feodor-f-dragan"
-source_hash: "900a956699b03b4c978d25630fd002c88a7e97ca00ef8c226b7ab868266df3bd"
+source_hash: "475f39378da0a8bca64768bf2c01f62672b13a85aefd4c19d2b437ffc04fd807"
 sequence: 375
 generator: "outreach-garden: managed"
 ---

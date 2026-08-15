@@ -1,6 +1,6 @@
 ---
 title: "Professor papers and learning paths"
-date: 2026-08-13
+date: 2026-08-15
 tags:
   - research-paper
   - learning-path
@@ -12,6 +12,48 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/432-rakesh-m-verma-guided-perturbation-sensitivity-gps-detecting-adversarial|432 · Guided Perturbation Sensitivity (GPS): Detecting Adversarial Text via Embedding Stability and Word Importance — Rakesh M. Verma]] · 2026-08-15
+- [[prof-papers/431-chenglin-miao-towards-unveiling-vulnerabilities-of-large-reasoning-model|431 · Towards Unveiling Vulnerabilities of Large Reasoning Models in Machine Unlearning — Chenglin Miao]] · 2026-08-13
+- [[prof-papers/430-chenghong-wang-bolt-bandwidth-optimized-lightning-fast-oblivious-map-pow|430 · BOLT: Bandwidth-Optimized Lightning-Fast Oblivious Map powered by Secure HBM Accelerators — Chenghong Wang]] · 2026-08-13
+- [[prof-papers/429-tinoosh-mohsenin-multi-rag-a-multimodal-retrieval-augmented-generation-s|429 · Multi-RAG: A Multimodal Retrieval-Augmented Generation System for Adaptive Video Understanding — Tinoosh Mohsenin]] · 2026-08-13
+- [[prof-papers/428-ming-shao-robust-defense-strategies-for-multimodal-contrastive-learning|428 · Robust Defense Strategies for Multimodal Contrastive Learning: Efficient Fine-tuning Against Backdoor Attacks — Ming Shao]] · 2026-08-13
+- [[prof-papers/427-xiaohu-guo-wonderhuman-hallucinating-unseen-parts-in-dynamic-3d-human-re|427 · WonderHuman: Hallucinating Unseen Parts in Dynamic 3D Human Reconstruction — Xiaohu Guo]] · 2026-08-13
+- [[prof-papers/426-serdar-bozdag-ta-rnn-an-attention-based-time-aware-recurrent-neural-netw|426 · TA-RNN: an Attention-based Time-aware Recurrent Neural Network Architecture for Electronic Health Records — Serdar Bozdag]] · 2026-08-13
+- [[prof-papers/425-brian-curless-comic-agentic-sketch-comedy-generation|425 · COMIC: Agentic Sketch Comedy Generation — Brian Curless]] · 2026-08-15
+- [[prof-papers/424-mohammad-mahmoody-graph-of-attacks-improved-black-box-and-interpretable|424 · Graph of Attacks: Improved Black-Box and Interpretable Jailbreaks for LLMs — Mohammad Mahmoody]] · 2026-08-15
+- [[prof-papers/423-abdullah-uz-tansel-on-the-implementations-of-the-bitemporal-rdf-model-an|423 · On the Implementations of the BiTemporal RDF Model: An Experimental Approach — Abdullah Uz Tansel]] · 2026-08-15
+- [[prof-papers/422-sunoo-park-ai-watermarking-bridging-policy-discourse-and-technical-capab|422 · “AI Watermarking”: Bridging Policy Discourse and Technical Capabilities — Sunoo Park]] · 2026-08-15
+- [[prof-papers/421-viacheslav-fofanov-high-throughput-targeted-amplicon-screening-tool-for|421 · High-throughput targeted amplicon screening tool for characterizing intrahost diversity in Staphylococcus aureus directly from sample — Viacheslav Fofanov]] · 2026-08-15
+- [[prof-papers/420-yakov-nekrich-optimal-cost-construction-of-shallow-cuttings-for-3-d-domi|420 · Optimal-Cost Construction of Shallow Cuttings for 3-D Dominance Ranges in the I/O-Model — Yakov Nekrich]] · 2026-08-15
+- [[prof-papers/419-jason-ernst-learning-a-pairwise-epigenomic-and-transcription-factor-bind|419 · Learning a pairwise epigenomic and transcription factor binding association score across the human genome — Jason Ernst]] · 2026-08-15
+- [[prof-papers/418-babak-salimi-token-swap-a-lightweight-method-to-disrupt-memorized-sequen|418 · TOKEN SWAP: A Lightweight Method to Disrupt Memorized Sequences in LLMs — Babak Salimi]] · 2026-08-15
+- [[prof-papers/417-eric-rotenberg-delinquent-loop-pre-execution-using-predicated-helper-thr|417 · Delinquent Loop Pre-execution Using Predicated Helper Threads — Eric Rotenberg]] · 2026-08-15
+- [[prof-papers/416-yuanyuan-yang-robust-indoor-localization-via-conformal-methods-and-varia|416 · Robust Indoor Localization via Conformal Methods and Variational Bayesian Adaptive Filtering — Yuanyuan Yang]] · 2026-08-15
+- [[prof-papers/415-luca-daniel-guaranteeing-conservation-of-integrals-with-projection-in-ph|415 · Guaranteeing Conservation of Integrals with Projection in Physics-Informed Neural Networks — Luca Daniel]] · 2026-08-15
+- [[prof-papers/414-andrew-c-freeman-an-evaluation-of-abr-switching-for-time-shifted-clients|414 · An Evaluation of ABR Switching for Time-Shifted Clients in MoQ — Andrew C. Freeman]] · 2026-08-15
+- [[prof-papers/413-stefano-lonardi-abaffinity-a-large-language-model-for-predicting-antibod|413 · AbAffinity: A Large Language Model for Predicting Antibody Binding Affinity against SARS-CoV-2 — Stefano Lonardi]] · 2026-08-15
+- [[prof-papers/412-wu-chi-feng-context-aware-image-denoising-with-auto-threshold-canny-edge|412 · Context-Aware Image Denoising with Auto-Threshold Canny Edge Detection to Suppress Adversarial Perturbation — Wu-chi Feng]] · 2026-08-14
+- [[prof-papers/411-benjamin-m-gyori-assembly-and-reasoning-over-semantic-mappings-at-scale|411 · Assembly and reasoning over semantic mappings at scale for biomedical data integration — Benjamin M. Gyori]] · 2026-08-14
+- [[prof-papers/410-srinivas-aluru-scement-scalable-and-memory-efficient-integration-of-larg|410 · SCEMENT: scalable and memory efficient integration of large-scale single-cell RNA-sequencing data — Srinivas Aluru]] · 2026-08-14
+- [[prof-papers/409-xu-yuan-fedact-concurrent-federated-intelligence-across-heterogeneous-da|409 · FedACT: Concurrent Federated Intelligence across Heterogeneous Data Sources — Xu Yuan]] · 2026-08-14
+- [[prof-papers/408-cihang-xie-let-rgb-be-the-language-of-vision|408 · Let RGB Be the Language of Vision — Cihang Xie]] · 2026-08-14
+- [[prof-papers/407-h-v-jagadish-the-general-stability-of-ranking|407 · The General Stability of Ranking — H. V. Jagadish]] · 2026-08-14
+- [[prof-papers/406-deming-chen-a3c3-ai-algorithm-and-accelerator-co-design-co-search-and-co|406 · A3C3: AI Algorithm and Accelerator Co-design, Co-search, and Co-generation — Deming Chen]] · 2026-08-14
+- [[prof-papers/405-a-lynn-abbott-d3vl-understanding-driving-scenes-from-3d-time-series-data|405 · D3VL: Understanding Driving Scenes from 3D Time Series Data and Video with Language Models — A. Lynn Abbott]] · 2026-08-14
+- [[prof-papers/404-ruoshi-liu-video-generators-are-robot-policies|404 · Video Generators are Robot Policies — Ruoshi Liu]] · 2026-08-14
+- [[prof-papers/403-xukai-zou-can-we-trust-the-similarity-measurement-in-federated-learning|403 · Can We Trust the Similarity Measurement in Federated Learning? — Xukai Zou]] · 2026-08-14
+- [[prof-papers/402-jeremy-dawson-xct-sam-sequential-parameter-efficient-domain-adaptation-o|402 · XCT-SAM: Sequential Parameter-Efficient Domain Adaptation of SAM for Industrial XCT Defect Segmentation — Jeremy Dawson]] · 2026-08-13
+- [[prof-papers/401-reuth-mirsky-artificial-intelligent-disobedience-rethinking-the-agency-o|401 · Artificial Intelligent Disobedience: Rethinking the Agency of Our Artificial Teammates — Reuth Mirsky]] · 2026-08-13
+- [[prof-papers/400-tolga-tasdizen-weakly-supervised-contrastive-learning-for-histopathology|400 · Weakly Supervised Contrastive Learning for Histopathology Patch Embeddings — Tolga Tasdizen]] · 2026-08-13
+- [[prof-papers/399-yalin-wang-prompt-ot-an-optimal-transport-regularization-paradigm-for-kn|399 · Prompt-OT: An Optimal Transport Regularization Paradigm for Knowledge Preservation in Vision-Language Model Adaptation — Yalin Wang]] · 2026-08-13
+- [[prof-papers/398-wayne-b-hayes-unrealpose-leveraging-game-engine-kinematics-for-large-sca|398 · UnrealPose: Leveraging Game Engine Kinematics for Large-Scale Synthetic Human Pose Data — Wayne B. Hayes]] · 2026-08-13
+- [[prof-papers/397-kien-a-hua-da-vpt-semantic-guided-visual-prompt-tuning-for-vision-transf|397 · DA-VPT: Semantic-Guided Visual Prompt Tuning for Vision Transformers — Kien A. Hua]] · 2026-08-13
+- [[prof-papers/396-mohammad-a-islam-making-ai-less-thirsty-uncovering-and-addressing-the-se|396 · Making AI Less “Thirsty”: Uncovering and Addressing the Secret Water Footprint of AI Models — Mohammad A. Islam]] · 2026-08-13
+- [[prof-papers/395-john-d-kececioglu-heuristic-shortest-hyperpaths-in-cell-signaling-hyperg|395 · Heuristic shortest hyperpaths in cell signaling hypergraphs — John D. Kececioglu]] · 2026-08-13
+- [[prof-papers/394-aniket-kittur-from-overload-to-insight-scaffolding-creative-ideation-thr|394 · From Overload to Insight: Scaffolding Creative Ideation through Structuring Inspiration — Aniket Kittur]] · 2026-08-13
+- [[prof-papers/393-cauligi-s-raghavendra-armor-robust-and-efficient-cnn-based-sar-atr-throu|393 · ARMOR: Robust and Efficient CNN-Based SAR ATR through Model-Hardware Co-Design — Cauligi S. Raghavendra]] · 2026-08-13
+- [[prof-papers/392-kanad-ghose-verifiable-sustainability-in-data-centers|392 · Verifiable Sustainability in Data Centers — Kanad Ghose]] · 2026-08-13
+- [[prof-papers/391-dongxiao-zhu-attention-smoothing-is-all-you-need-for-unlearning|391 · Attention Smoothing Is All You Need for Unlearning — Dongxiao Zhu]] · 2026-08-13
 - [[prof-papers/390-bedrich-benes-floraforge-llm-assisted-procedural-generation-of-editable|390 · FloraForge: LLM-Assisted Procedural Generation of Editable and Analysis-Ready 3D Plant Geometric Models For Agricultural Applications — Bedrich Benes]] · 2026-08-13
 - [[prof-papers/389-shichao-pei-zero-shot-relational-learning-for-multimodal-knowledge-graph|389 · Zero-Shot Relational Learning for Multimodal Knowledge Graphs — Shichao Pei]] · 2026-08-13
 - [[prof-papers/388-rui-kuang-ctfactomo-reconstructing-3d-spatial-structures-of-rna-tomograp|388 · CTFacTomo: Reconstructing 3D spatial structures of RNA tomography transcriptomes by collapsed tensor factorization — Rui Kuang]] · 2026-08-13

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-zhiru-zhang"
-source_hash: "befa62b4906cb9ee985d52671e8503aaaf76ac604f2f0666f17821192f159ee5"
+source_hash: "1f6a8eb3d9841c839c64b24d42f41d9b2bdec8b293f27e77e9dcfc24bdbb55b8"
 sequence: 379
 generator: "outreach-garden: managed"
 ---

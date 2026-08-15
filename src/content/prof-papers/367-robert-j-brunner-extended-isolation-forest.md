@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-robert-j-brunner"
-source_hash: "f8db9e0529ef9fd02554a30d90ef27dd79d3ff4c24007873953f9c2d1ef24609"
+source_hash: "975224de98349d0d2d917230bf730666aafe785760ce96b34d3bbc73f0da372a"
 sequence: 367
 generator: "outreach-garden: managed"
 ---

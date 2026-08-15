@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-shichao-pei"
-source_hash: "3f98fbd761f6ef59c20b9d2d3aafda274e44bfd47c303c5f269315fc718491fa"
+source_hash: "801d756ed8ad6f11a2c32b8830d8418846cd8848d670b9253983774fbd46a88c"
 sequence: 389
 generator: "outreach-garden: managed"
 ---

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-saining-xie"
-source_hash: "cedefa6634fe71ec939f8eba26f113f698bf846921a9955cb6afb2810124005c"
+source_hash: "055ee3548eeb1123a0ce6c18f29de8f4c059c16c5fe498a87a9c70e0d90f3bb7"
 sequence: 370
 generator: "outreach-garden: managed"
 ---

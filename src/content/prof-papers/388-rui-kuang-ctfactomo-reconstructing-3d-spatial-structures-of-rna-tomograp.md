@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-rui-kuang"
-source_hash: "72f4c2ef01c35ed761702f585943725dada5fca4a0fd46704cea3ee813a39897"
+source_hash: "e58788dbda737d34a57db7570607e0b55067bf30600d116b3a1fa4757b3e7f46"
 sequence: 388
 generator: "outreach-garden: managed"
 ---
