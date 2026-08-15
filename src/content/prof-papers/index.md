@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/442-rishab-goyal-adaptively-secure-flexible-and-identity-based-broadcast-enc|442 · Adaptively-Secure Flexible and Identity-Based Broadcast Encryption from Decomposed LWE — Rishab Goyal]] · 2026-08-15
 - [[prof-papers/441-jeremy-t-fineman-parallel-batch-dynamic-maximal-independent-set|441 · Parallel Batch-Dynamic Maximal Independent Set — Jeremy T. Fineman]] · 2026-08-15
 - [[prof-papers/440-tijana-milenkovic-traditional-machine-learning-vs-deep-learning-from-dyn|440 · Traditional machine learning vs. deep learning from dynamic graph representations of proteins’ 3D folds in the task of protein structure classification — Tijana Milenkovic]] · 2026-08-15
 - [[prof-papers/439-adam-o-neill-revisiting-the-security-of-sparkle|439 · Revisiting the Security of Sparkle — Adam O'Neill]] · 2026-08-15
