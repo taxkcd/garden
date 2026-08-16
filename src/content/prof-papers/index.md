@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/452-philipp-krhenbhl-mask-aware-policy-gradients-for-diffusion-language-mode|452 · Mask-Aware Policy Gradients for Diffusion Language Models — Philipp Krähenbühl]] · 2026-08-16
 - [[prof-papers/451-xiaobai-sun-algebraic-vertex-ordering-of-a-sparse-graph-for-adjacency-ac|451 · Algebraic Vertex Ordering of a Sparse Graph for Adjacency Access Locality and Graph Compression — Xiaobai Sun]] · 2026-08-16
 - [[prof-papers/450-feng-hao-liu-optimizing-encrypted-neural-networks-model-design-quantizat|450 · Optimizing Encrypted Neural Networks: Model Design, Quantization and Fine-Tuning Using FHEW/TFHE — Feng-Hao Liu]] · 2026-08-15
 - [[prof-papers/449-john-keyser-towards-unstructured-unlabeled-optical-mocap-a-video-helps|449 · Towards Unstructured Unlabeled Optical Mocap: A Video Helps! — John Keyser]] · 2026-08-15
