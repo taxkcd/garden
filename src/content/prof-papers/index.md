@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/456-frdric-gibou-optimal-control-for-stochastic-neural-oscillators|456 · Optimal control for stochastic neural oscillators — Frédéric Gibou]] · 2026-08-16
 - [[prof-papers/455-lei-jiang-cutbackdoor-a-circuit-cut-triggered-backdoor-attack-on-variati|455 · CutBackdoor: A Circuit Cut Triggered Backdoor Attack on Variational Quantum Algorithms — Lei Jiang]] · 2026-08-16
 - [[prof-papers/454-jaroslaw-zola-skim-accurately-classifying-metagenomic-ont-reads-in-limit|454 · SKiM: accurately classifying metagenomic ONT reads in limited memory — Jaroslaw Zola]] · 2026-08-16
 - [[prof-papers/453-fereydoun-hormozdiari-a-multimodal-cell-free-rna-language-model-for-liqu|453 · A multimodal cell-free RNA language model for liquid biopsy applications — Fereydoun Hormozdiari]] · 2026-08-16
