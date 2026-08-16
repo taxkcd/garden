@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/474-qing-cao-a-two-step-linear-programming-approach-for-repeater-placement-i|474 · A two-step linear programming approach for repeater placement in large-scale quantum networks — Qing Cao]] · 2026-08-16
 - [[prof-papers/473-pinaki-mazumder-symmetry-induced-quantum-inspired-parallelism-of-classic|473 · Symmetry-induced quantum-inspired parallelism of classical dynamic systems — Pinaki Mazumder]] · 2026-08-16
 - [[prof-papers/472-bin-ren-understanding-and-reducing-metadata-driven-host-overheads-in-sam|472 · Understanding and Reducing Metadata-Driven Host Overheads in Sampling-Based GNN Training — Bin Ren]] · 2026-08-16
 - [[prof-papers/471-stefanie-mueller-chromolcd-lcd-based-compact-reprogrammer-for-on-the-fly|471 · ChromoLCD: LCD-based Compact Reprogrammer for On-the-fly High-Resolution Images on Photochromic Surfaces — Stefanie Mueller]] · 2026-08-16
