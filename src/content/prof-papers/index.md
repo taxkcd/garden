@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/462-alex-szalay-learning-at-the-right-pace-adaptive-data-scheduling-improves|462 · Learning at the Right Pace: Adaptive Data Scheduling Improves LLM Reinforcement Learning — Alex Szalay]] · 2026-08-16
 - [[prof-papers/461-zhaohua-ding-white-matter-engagement-in-brain-networks-assessed-by-integ|461 · White Matter Engagement in Brain Networks Assessed by Integration of Functional and Structural Connectivity — Zhaohua Ding]] · 2026-08-16
 - [[prof-papers/460-vladimir-pavlovic-few-step-diffusion-language-models-via-trajectory-self|460 · Few-Step Diffusion Language Models via Trajectory Self-Distillation — Vladimir Pavlovic]] · 2026-08-16
 - [[prof-papers/459-luay-nakhleh-nestedbd-bayesian-inference-of-phylogenetic-trees-from-sing|459 · NestedBD: Bayesian inference of phylogenetic trees from single-cell copy number profiles under a birth-death model — Luay Nakhleh]] · 2026-08-16
