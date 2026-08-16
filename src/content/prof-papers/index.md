@@ -1,6 +1,6 @@
 ---
 title: "Professor papers and learning paths"
-date: 2026-08-16
+date: 2026-08-17
 tags:
   - research-paper
   - learning-path
