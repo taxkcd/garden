@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/471-stefanie-mueller-chromolcd-lcd-based-compact-reprogrammer-for-on-the-fly|471 · ChromoLCD: LCD-based Compact Reprogrammer for On-the-fly High-Resolution Images on Photochromic Surfaces — Stefanie Mueller]] · 2026-08-16
 - [[prof-papers/470-stavros-tripakis-ltlguard-formalizing-ltl-specifications-with-compact-la|470 · LTLGuard: Formalizing LTL Specifications with Compact Language Models and Lightweight Symbolic Reasoning — Stavros Tripakis]] · 2026-08-16
 - [[prof-papers/469-jernej-barbic-quadratic-running-time-example-for-rupperts-refinement-alg|469 · Quadratic Running Time Example for Ruppert’s Refinement Algorithm — Jernej Barbic]] · 2026-08-16
 - [[prof-papers/468-jun-zhuang-large-language-models-can-help-mitigate-barren-plateaus-in-qu|468 · Large Language Models Can Help Mitigate Barren Plateaus in Quantum Neural Networks — Jun Zhuang]] · 2026-08-16
