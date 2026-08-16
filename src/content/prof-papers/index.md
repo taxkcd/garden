@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/458-rosa-i-arriaga-using-large-language-models-to-simulate-multiple-humans-a|458 · Using Large Language Models to Simulate Multiple Humans and Replicate Human Subject Studies — Rosa I. Arriaga]] · 2026-08-16
 - [[prof-papers/457-huiping-cao-deep-clustering-for-large-scale-interpretable-time-series-se|457 · Deep clustering for large-scale interpretable time series segmentation — Huiping Cao]] · 2026-08-16
 - [[prof-papers/456-frdric-gibou-optimal-control-for-stochastic-neural-oscillators|456 · Optimal control for stochastic neural oscillators — Frédéric Gibou]] · 2026-08-16
 - [[prof-papers/455-lei-jiang-cutbackdoor-a-circuit-cut-triggered-backdoor-attack-on-variati|455 · CutBackdoor: A Circuit Cut Triggered Backdoor Attack on Variational Quantum Algorithms — Lei Jiang]] · 2026-08-16
