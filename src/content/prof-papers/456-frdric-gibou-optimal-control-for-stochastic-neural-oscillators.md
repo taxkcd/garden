@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-frederic-gibou"
-source_hash: "bfdf2c315b794c04ce796d826ab67d54f39bb211ddff1d7e86b503bc085a4b32"
+source_hash: "a0bdd6569a5c33652bdf577978381e6de5442eb56cc6997f9db1c216db7d2f9e"
 sequence: 456
 generator: "outreach-garden: managed"
 ---
