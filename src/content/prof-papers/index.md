@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/465-dana-dachman-soled-revisiting-ml-training-under-fully-homomorphic-encryp|465 · Revisiting ML Training under Fully Homomorphic Encryption: Convergence Guarantees, Differential Privacy, and Efficient Algorithms — Dana Dachman-Soled]] · 2026-08-16
 - [[prof-papers/464-pratik-soni-hyperveritas-verifying-image-transformations-at-scale-on-boo|464 · HyperVerITAS: Verifying Image Transformations at Scale on Boolean Hypercubes — Pratik Soni]] · 2026-08-16
 - [[prof-papers/463-raymond-a-yeh-dream-chunk-reactive-action-chunking-with-latent-world-mod|463 · DREAM-Chunk: Reactive Action Chunking with Latent World Model — Raymond A. Yeh]] · 2026-08-16
 - [[prof-papers/462-alex-szalay-learning-at-the-right-pace-adaptive-data-scheduling-improves|462 · Learning at the Right Pace: Adaptive Data Scheduling Improves LLM Reinforcement Learning — Alex Szalay]] · 2026-08-16
