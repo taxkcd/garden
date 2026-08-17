@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/480-yunhui-guo-mitigating-the-idood-tradeoff-in-open-set-test-time-adaptatio|480 · Mitigating the ID–OOD Tradeoff in Open-Set Test-Time Adaptation — Yunhui Guo]] · 2026-08-17
 - [[prof-papers/479-jinwei-ye-real-time-3d-simulation-of-heat-induced-air-turbulence|479 · Real-Time 3D Simulation of Heat-Induced Air Turbulence — Jinwei Ye]] · 2026-08-17
 - [[prof-papers/478-adam-finkelstein-ditvc-one-shot-voice-conversion-via-diffusion-transform|478 · DiTVC: One-Shot Voice Conversion via Diffusion Transformer with Environment and Speaking Rate Cloning — Adam Finkelstein]] · 2026-08-16
 - [[prof-papers/477-murat-kantarcioglu-bypassing-ai-control-protocols-via-agent-as-a-proxy-a|477 · Bypassing AI Control Protocols via Agent-as-a-Proxy Attacks — Murat Kantarcioglu]] · 2026-08-16
