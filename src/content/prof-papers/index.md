@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/485-dong-lao-on-the-viability-of-monocular-depth-pre-training-for-semantic-s|485 · On the Viability of Monocular Depth Pre-training for Semantic Segmentation — Dong Lao]] · 2026-08-19
 - [[prof-papers/484-ilya-volkovich-upper-and-lower-bounds-for-the-linear-ordering-principle|484 · Upper and Lower Bounds for the Linear Ordering Principle — Ilya Volkovich]] · 2026-08-19
 - [[prof-papers/483-dennis-e-shasha-dbtunesuite-an-extendible-experimental-suite-to-test-the|483 · DBTuneSuite: An Extendible Experimental Suite to Test the Time Performance of Multi-layer Tuning Options on Database Management Systems — Dennis E. Shasha]] · 2026-08-19
 - [[prof-papers/482-omer-khan-opmos-ordered-parallel-algorithm-for-multi-objective-shortest|482 · OPMOS: Ordered Parallel Algorithm for Multi-Objective Shortest-Paths — Omer Khan]] · 2026-08-17
