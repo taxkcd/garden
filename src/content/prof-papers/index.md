@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/488-adriana-schulz-a-solver-aided-hierarchical-language-for-llm-driven-cad-d|488 · A Solver-Aided Hierarchical Language for LLM-Driven CAD Design — Adriana Schulz]] · 2026-08-19
 - [[prof-papers/487-dimitrios-i-diochnos-on-imbalanced-regression-with-hoeffding-trees|487 · On Imbalanced Regression with Hoeffding Trees — Dimitrios I. Diochnos]] · 2026-08-19
 - [[prof-papers/486-fahad-saeed-end-to-end-deep-attention-based-multitask-pipeline-for-predi|486 · End-to-end deep attention-based multitask pipeline for predicting uncertainty-quantified peptide properties from mass spectrometry data — Fahad Saeed]] · 2026-08-19
 - [[prof-papers/485-dong-lao-on-the-viability-of-monocular-depth-pre-training-for-semantic-s|485 · On the Viability of Monocular Depth Pre-training for Semantic Segmentation — Dong Lao]] · 2026-08-19
