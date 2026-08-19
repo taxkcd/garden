@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/484-ilya-volkovich-upper-and-lower-bounds-for-the-linear-ordering-principle|484 · Upper and Lower Bounds for the Linear Ordering Principle — Ilya Volkovich]] · 2026-08-19
 - [[prof-papers/483-dennis-e-shasha-dbtunesuite-an-extendible-experimental-suite-to-test-the|483 · DBTuneSuite: An Extendible Experimental Suite to Test the Time Performance of Multi-layer Tuning Options on Database Management Systems — Dennis E. Shasha]] · 2026-08-19
 - [[prof-papers/482-omer-khan-opmos-ordered-parallel-algorithm-for-multi-objective-shortest|482 · OPMOS: Ordered Parallel Algorithm for Multi-Objective Shortest-Paths — Omer Khan]] · 2026-08-17
 - [[prof-papers/481-samah-mohamed-saeed-pauli-error-propagation-based-gate-rescheduling-for|481 · Pauli Error Propagation-Based Gate Rescheduling for Quantum Circuit Error Mitigation — Samah Mohamed Saeed]] · 2026-08-17
