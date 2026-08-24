@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-vladimir-pavlovic"
-source_hash: "f83d4babc2cc500bc57a5877e50263c6e5aa81467bafdfa22ce2dc257e75a456"
+source_hash: "e84ab7cc51aa5ea54c2459732ae2539cfce960cd8e7bede25aa05381777b5967"
 sequence: 460
 generator: "outreach-garden: managed"
 ---

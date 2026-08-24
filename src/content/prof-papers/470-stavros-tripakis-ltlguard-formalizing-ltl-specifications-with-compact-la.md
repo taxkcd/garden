@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-stavros-tripakis"
-source_hash: "134d46b9ba3d32b70560a85765b807d52e48ba3f6cae4f678a02ba176aecaa0e"
+source_hash: "de350bdc63c78a7275aad4cf8cc5a7676dba12cff3cb147e921a72d8b977497f"
 sequence: 470
 generator: "outreach-garden: managed"
 ---

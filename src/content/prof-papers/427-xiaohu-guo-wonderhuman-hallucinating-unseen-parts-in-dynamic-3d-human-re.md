@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-xiaohu-guo"
-source_hash: "b98316808a27226e45eef8945b410d6015bfc1b4b9b9eb90df193c2692842dbe"
+source_hash: "6f968e2be6b86286314dc0bae22823d7ece9da972c2c0260e7eeaa11ce001f2b"
 sequence: 427
 generator: "outreach-garden: managed"
 ---

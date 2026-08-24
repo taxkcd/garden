@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-adam-finkelstein"
-source_hash: "3358720239429c1c6a110117259407dfcde418f5866cfb40514fa3e3a75568e6"
+source_hash: "8454685f4d32269f44b0ce9eb69d3f6f71b0b72a7400c294edc61e8d1cd200c4"
 sequence: 478
 generator: "outreach-garden: managed"
 ---

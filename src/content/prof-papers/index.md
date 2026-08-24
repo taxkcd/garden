@@ -1,6 +1,6 @@
 ---
 title: "Professor papers and learning paths"
-date: 2026-08-19
+date: 2026-08-24
 tags:
   - research-paper
   - learning-path
@@ -12,6 +12,12 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/497-patanjali-slpsk-security-enclave-architecture-for-heterogeneous-security|497 · Security Enclave Architecture for Heterogeneous Security Primitives for Supply-Chain Attacks — Patanjali SLPSK]] · 2026-08-24
+- [[prof-papers/496-fengguang-song-fzmodules-a-heterogeneous-computing-framework-for-customi|496 · FZModules: A Heterogeneous Computing Framework for Customizable Scientific Data Compression Pipelines — Fengguang Song]] · 2026-08-24
+- [[prof-papers/495-jugal-k-kalita-analyzing-code-injection-attacks-on-llm-based-multi-agent|495 · Analyzing Code Injection Attacks on LLM-based Multi-Agent Systems in Software Development — Jugal K. Kalita]] · 2026-08-24
+- [[prof-papers/494-sajedul-rahim-talukder-skillvetbench-llm-as-judge-for-multi-dimensional|494 · SkillVetBench: LLM-as-Judge for Multi-Dimensional Security Risk Evaluation in Open-Source LLM Agent Skills — Sajedul Rahim Talukder]] · 2026-08-24
+- [[prof-papers/493-yury-makarychev-approximation-algorithms-for-satisfiable-and-nearly-sati|493 · Approximation Algorithms for Satisfiable and Nearly Satisfiable Ordering CSPs — Yury Makarychev]] · 2026-08-24
+- [[prof-papers/492-usman-roshan-medi-gemma-a-hybrid-clinical-decision-support-system-integr|492 · Medi-Gemma: A Hybrid Clinical Decision Support System Integrating Deterministic EMR Analytics and Retrieval-Augmented Generation — Usman Roshan]] · 2026-08-16
 - [[prof-papers/491-sanjam-garg-bypassing-prompt-guards-in-production-with-controlled-releas|491 · Bypassing Prompt Guards in Production with Controlled-Release Prompting — Sanjam Garg]] · 2026-08-19
 - [[prof-papers/490-molei-tao-p-rism-efficient-test-time-scaling-via-hierarchical-search-and|490 · P RISM: Efficient Test-Time Scaling via Hierarchical Search and Self-Verification for Discrete Diffusion Language Models — Molei Tao]] · 2026-08-19
 - [[prof-papers/489-leonard-mcmillan-fmlrc-hybrid-long-read-error-correction-using-an-fm-ind|489 · FMLRC: Hybrid long read error correction using an FM-index — Leonard McMillan]] · 2026-08-19

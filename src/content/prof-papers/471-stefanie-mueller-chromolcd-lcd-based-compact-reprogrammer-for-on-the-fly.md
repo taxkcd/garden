@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-stefanie-mueller"
-source_hash: "053ae92b9c61e1855001ab351c45245cfc361a3d21c717a88f86989471181a7d"
+source_hash: "865fd78dab63146472d39277d7269587f5abd3c9ae2f0818be606ccf164dd215"
 sequence: 471
 generator: "outreach-garden: managed"
 ---

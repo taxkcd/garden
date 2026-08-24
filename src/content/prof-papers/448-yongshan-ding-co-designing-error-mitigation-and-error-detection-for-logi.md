@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-yongshan-ding"
-source_hash: "d61ce9e53f121475f5384698a4f40af6a17de5ced253f133b21400b2fb4768a1"
+source_hash: "603762fd4b6cd7d44595622ebc1d36d53b08767fba3564902f7b8ef1985fec43"
 sequence: 448
 generator: "outreach-garden: managed"
 ---

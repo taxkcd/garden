@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-stanislaw-jarecki"
-source_hash: "d987d33e226f4a6af9f220bd96dfa1b91e76aee49d67f7fff7e8d72d6acc759e"
+source_hash: "a9766f6c18eb98921f998374216fb9aa66ffc83976453816f06d841ad08d131e"
 sequence: 466
 generator: "outreach-garden: managed"
 ---

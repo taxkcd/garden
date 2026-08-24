@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-weina-wang"
-source_hash: "8e369e05a96b0027b4a65b24962b9f3dfd1e482a749e49bc083ad39255f3bd9b"
+source_hash: "207bcb534f9ab8c2676de0712513da465d58cc85b8e85a053016eb8188b50136"
 sequence: 445
 generator: "outreach-garden: managed"
 ---

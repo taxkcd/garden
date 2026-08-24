@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-ilya-volkovich"
-source_hash: "b1b646c750a6764c10150d6243a4590e2abe5a100cca5e3682f488f78e909a26"
+source_hash: "7535c1b84b7318aa40402b00854301c7637a703d2e8729ae4de20313a832c83d"
 sequence: 484
 generator: "outreach-garden: managed"
 ---

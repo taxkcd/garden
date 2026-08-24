@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-adriana-schulz"
-source_hash: "73afd324edec1c1f5683d3ed46df66229cbe518a5439d004e3abbfa5ecba8bb1"
+source_hash: "7e3079e58cb7c45165fa6c88c84ea291a0aa1ab14a5ca0d8adc4555ad2b7c00a"
 sequence: 488
 generator: "outreach-garden: managed"
 ---

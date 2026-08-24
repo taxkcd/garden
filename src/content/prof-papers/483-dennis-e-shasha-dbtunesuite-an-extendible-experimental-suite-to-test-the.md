@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-dennis-e-shasha"
-source_hash: "824d8fbafc6c409ad577d843f9692dce5e6347e6ec473b0438bf82d0ae6dec0e"
+source_hash: "df298e313e27b44d742b0679bcc8cb61167555478cc494b62a52c7864b4f1a15"
 sequence: 483
 generator: "outreach-garden: managed"
 ---

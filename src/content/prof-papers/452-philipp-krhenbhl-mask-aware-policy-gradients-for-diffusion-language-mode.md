@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-philipp-krahenbuhl"
-source_hash: "86c6bf2a8226cc611d29ea1dde64ca31217eb50eaff5c39901e3c137d5462635"
+source_hash: "c910f6f3dc2990814d50ebc3fbf63cc4bb87baf4c22b5cfcb70ee181a28e401b"
 sequence: 452
 generator: "outreach-garden: managed"
 ---
