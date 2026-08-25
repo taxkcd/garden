@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-patanjali-slpsk"
-source_hash: "1891297bac41038d2617ffb94c148fe797a9162cf6fec0181a7b94a55769cdf9"
+source_hash: "60ad755389c122892b50b54414289e006a19af9ec0f6d768517323d7efb258b0"
 sequence: 497
 generator: "outreach-garden: managed"
 ---

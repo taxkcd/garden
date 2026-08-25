@@ -1,6 +1,6 @@
 ---
 title: "Professor papers and learning paths"
-date: 2026-08-24
+date: 2026-08-25
 tags:
   - research-paper
   - learning-path
@@ -12,6 +12,8 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/499-marco-vieira-unreliable-in-practice-a-comprehensive-study-of-errors-in-l|499 · Unreliable in Practice? A Comprehensive Study of Errors in LLM-Generated Code — Marco Vieira]] · 2026-08-25
+- [[prof-papers/498-garrett-e-katz-why-the-agent-made-that-decision-contrastive-explanation|498 · Why the Agent Made that Decision: Contrastive Explanation Learning for Reinforcement Learning — Garrett E. Katz]] · 2026-08-25
 - [[prof-papers/497-patanjali-slpsk-security-enclave-architecture-for-heterogeneous-security|497 · Security Enclave Architecture for Heterogeneous Security Primitives for Supply-Chain Attacks — Patanjali SLPSK]] · 2026-08-24
 - [[prof-papers/496-fengguang-song-fzmodules-a-heterogeneous-computing-framework-for-customi|496 · FZModules: A Heterogeneous Computing Framework for Customizable Scientific Data Compression Pipelines — Fengguang Song]] · 2026-08-24
 - [[prof-papers/495-jugal-k-kalita-analyzing-code-injection-attacks-on-llm-based-multi-agent|495 · Analyzing Code Injection Attacks on LLM-based Multi-Agent Systems in Software Development — Jugal K. Kalita]] · 2026-08-24

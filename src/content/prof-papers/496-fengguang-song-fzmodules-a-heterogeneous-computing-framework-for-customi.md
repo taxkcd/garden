@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-fengguang-song"
-source_hash: "f64ddb05ce660aca363a3f487f7b9b6c948cfd0d0bca23bd4b5c4ba7463feb98"
+source_hash: "ebedde63887e841f39b3746225c1589fe1b127ff16985d0a60933a978e70076e"
 sequence: 496
 generator: "outreach-garden: managed"
 ---

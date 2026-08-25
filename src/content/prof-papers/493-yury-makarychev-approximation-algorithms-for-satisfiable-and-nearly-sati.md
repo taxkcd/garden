@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-yury-makarychev"
-source_hash: "2c0cb037b2a398f3a8b39e12ad75a7d310a0df76105ac45da9b42c2ebb77aa78"
+source_hash: "73e2f6ad330898d756eb32a052c3c67538187fc89e980c41ea4fa073d7efbf8e"
 sequence: 493
 generator: "outreach-garden: managed"
 ---
