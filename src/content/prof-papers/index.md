@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/502-huiyuan-yang-you-only-need-one-stage-novel-view-synthesis-from-a-single|502 · You Only Need One Stage: Novel-View Synthesis From A Single Blind Face Image — Huiyuan Yang]] · 2026-08-26
 - [[prof-papers/501-rui-li-bayesian-neighborhood-adaptation-for-graph-neural-networks|501 · Bayesian Neighborhood Adaptation for Graph Neural Networks — Rui Li]] · 2026-08-26
 - [[prof-papers/500-kathleen-m-carley-social-theory-should-be-a-structural-prior-for-agentic|500 · Social Theory Should Be a Structural Prior for Agentic AI: A Formal Framework for Multi-Agent Social Systems — Kathleen M. Carley]] · 2026-08-26
 - [[prof-papers/499-marco-vieira-unreliable-in-practice-a-comprehensive-study-of-errors-in-l|499 · Unreliable in Practice? A Comprehensive Study of Errors in LLM-Generated Code — Marco Vieira]] · 2026-08-25
