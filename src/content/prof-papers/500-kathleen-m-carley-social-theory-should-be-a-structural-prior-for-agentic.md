@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-kathleen-m-carley"
-source_hash: "1a02cf197216288c65b52a3c10af8e56c6caca3a0dad8e9bd11481812a12d751"
+source_hash: "df86988ee72940cb61fd1a950153f30730a8611386d33a1dc9519f6c6a84479b"
 sequence: 500
 generator: "outreach-garden: managed"
 ---
