@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-huiyuan-yang"
-source_hash: "cdfcdb27bbf51a4e0c534bbb2139718221c6c8aea889e538592b61395c30e110"
+source_hash: "4761ceefd8593d6e0e66184e87e6e727bd278d21cdc84902a6bb5044ab48a8cc"
 sequence: 502
 generator: "outreach-garden: managed"
 ---

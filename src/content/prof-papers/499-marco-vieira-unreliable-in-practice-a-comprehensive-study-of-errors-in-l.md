@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-marco-vieira"
-source_hash: "bb62ce332921cd0558ca1e56c29e29d2185ef8abd9ca66d39c7b36a3bfc0cdd3"
+source_hash: "60499dcd2e716f469d629ab6d66cb53713e21f656ff18411aae615c9e6d7b49b"
 sequence: 499
 generator: "outreach-garden: managed"
 ---

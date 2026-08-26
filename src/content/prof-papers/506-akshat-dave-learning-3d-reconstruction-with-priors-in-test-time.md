@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-akshat-dave"
-source_hash: "e1dae62abc45605ac81a29f07396faa3a924e3f3cad0d11b5b96cf8bf4f5da16"
+source_hash: "da7dfaa68962021bfbf4e86193baa50ae8aac74309d049baa19fadb3e86b12ee"
 sequence: 506
 generator: "outreach-garden: managed"
 ---

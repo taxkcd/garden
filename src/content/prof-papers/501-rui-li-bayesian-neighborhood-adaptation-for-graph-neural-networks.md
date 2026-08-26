@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-rui-li"
-source_hash: "97178914215bda1402f17a8e7fb7218ada15a0e87a9e00eca8cad65972c7c9bf"
+source_hash: "e92b5fa9500151a8c622dc9dc214e5dd1809789c64523ad1ab76ef9471dbe8bf"
 sequence: 501
 generator: "outreach-garden: managed"
 ---

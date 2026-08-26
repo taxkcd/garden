@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-miao-yin"
-source_hash: "6b6a0f3d83866435d721032660e11f03664e25c602acc1ae3d8066c93496a5f3"
+source_hash: "609113df8e3a597f6efd08a1c5a0cd255148b7465d9bc66007c8863dd3d3550a"
 sequence: 504
 generator: "outreach-garden: managed"
 ---

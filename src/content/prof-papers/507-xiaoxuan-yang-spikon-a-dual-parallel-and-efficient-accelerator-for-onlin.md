@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-xiaoxuan-yang"
-source_hash: "7ded1f9a31affebd99ab54a0ea5f25efc0beec85cb220f576f0c2b707bbf5189"
+source_hash: "975a002b5152fc34398cc5cec7d86501f3fcf21686519829491fc263eb3626f5"
 sequence: 507
 generator: "outreach-garden: managed"
 ---
