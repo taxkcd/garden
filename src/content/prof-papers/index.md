@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/508-andrew-crotty-credo-declarative-control-of-llm-pipelines-via-beliefs-and|508 · Credo: Declarative Control of LLM Pipelines via Beliefs and Policies — Andrew Crotty]] · 2026-08-26
 - [[prof-papers/507-xiaoxuan-yang-spikon-a-dual-parallel-and-efficient-accelerator-for-onlin|507 · SpikON: A Dual-Parallel and Efficient Accelerator for Online Spiking Neural Networks Learning — Xiaoxuan Yang]] · 2026-08-26
 - [[prof-papers/506-akshat-dave-learning-3d-reconstruction-with-priors-in-test-time|506 · Learning 3D Reconstruction with Priors in Test Time — Akshat Dave]] · 2026-08-26
 - [[prof-papers/505-paraschos-koutris-debunking-the-myth-of-join-ordering-toward-robust-sql|505 · Debunking the Myth of Join Ordering: Toward Robust SQL Analytics — Paraschos Koutris]] · 2026-08-26
