@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/505-paraschos-koutris-debunking-the-myth-of-join-ordering-toward-robust-sql|505 · Debunking the Myth of Join Ordering: Toward Robust SQL Analytics — Paraschos Koutris]] · 2026-08-26
 - [[prof-papers/504-miao-yin-allocation-before-ranking-decoupled-token-compression-for-omnil|504 · Allocation Before Ranking: Decoupled Token Compression for OmniLLMs — Miao Yin]] · 2026-08-26
 - [[prof-papers/503-jianhua-ruan-robust-edge-based-biomarker-discovery-improves-prediction-o|503 · Robust edge-based biomarker discovery improves prediction of breast cancer metastasis — Jianhua Ruan]] · 2026-08-26
 - [[prof-papers/502-huiyuan-yang-you-only-need-one-stage-novel-view-synthesis-from-a-single|502 · You Only Need One Stage: Novel-View Synthesis From A Single Blind Face Image — Huiyuan Yang]] · 2026-08-26
