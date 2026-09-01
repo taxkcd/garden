@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/510-danna-gurari-biv-priv-seg-locating-private-content-in-images-taken-by-pe|510 · BIV-Priv-Seg: Locating Private Content in Images Taken by People With Visual Impairments — Danna Gurari]] · 2026-09-01
 - [[prof-papers/509-nael-b-abu-ghazaleh-nvbleed-covert-and-side-channel-attacks-on-nvidia-mu|509 · NVBleed: Covert and Side-Channel Attacks on NVIDIA Multi-GPU Interconnect — Nael B. Abu-Ghazaleh]] · 2026-09-01
 - [[prof-papers/508-andrew-crotty-credo-declarative-control-of-llm-pipelines-via-beliefs-and|508 · Credo: Declarative Control of LLM Pipelines via Beliefs and Policies — Andrew Crotty]] · 2026-08-26
 - [[prof-papers/507-xiaoxuan-yang-spikon-a-dual-parallel-and-efficient-accelerator-for-onlin|507 · SpikON: A Dual-Parallel and Efficient Accelerator for Online Spiking Neural Networks Learning — Xiaoxuan Yang]] · 2026-08-26
