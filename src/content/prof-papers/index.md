@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/530-corey-toler-franklin-unified-local-and-global-attention-interaction-mode|530 · Unified Local and Global Attention Interaction Modeling for Vision Transformers — Corey Toler-Franklin]] · 2026-09-02
 - [[prof-papers/529-david-j-wu-from-lattices-to-tensor-cores-accelerating-private-informatio|529 · From Lattices to Tensor Cores: Accelerating Private Information Retrieval — David J. Wu]] · 2026-09-02
 - [[prof-papers/528-lars-ruthotto-mixed-precision-training-of-neural-odes|528 · Mixed Precision Training of Neural ODEs — Lars Ruthotto]] · 2026-09-02
 - [[prof-papers/527-faisal-nawab-blockplane-a-global-scale-byzantizing-middleware|527 · Blockplane: A Global-Scale Byzantizing Middleware — Faisal Nawab]] · 2026-09-02
