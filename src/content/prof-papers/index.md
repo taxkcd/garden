@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/513-sathya-n-ravi-deep-unlearning-via-randomized-conditionally-independent-h|513 · Deep Unlearning via Randomized Conditionally Independent Hessians — Sathya N. Ravi]] · 2026-09-02
 - [[prof-papers/512-val-tannen-structured-monads-for-generic-first-order-syntax-metatheory|512 · Structured Monads for Generic First-Order Syntax Metatheory — Val Tannen]] · 2026-09-01
 - [[prof-papers/511-peter-j-haas-what-if-analysis-for-business-professionals-current-practic|511 · What-if Analysis for Business Professionals: Current Practices and Future Opportunities — Peter J. Haas]] · 2026-09-01
 - [[prof-papers/510-danna-gurari-biv-priv-seg-locating-private-content-in-images-taken-by-pe|510 · BIV-Priv-Seg: Locating Private Content in Images Taken by People With Visual Impairments — Danna Gurari]] · 2026-09-01
