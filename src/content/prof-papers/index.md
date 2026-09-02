@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/525-eric-a-hansen-a-bucket-based-priority-queue-for-bounded-suboptimal-and-a|525 · A Bucket-Based Priority Queue for Bounded-Suboptimal and Anytime A* Search — Eric A. Hansen]] · 2026-09-02
 - [[prof-papers/524-hemanta-k-maji-disincentivize-collusion-in-verifiable-secret-sharing|524 · Disincentivize Collusion in Verifiable Secret Sharing — Hemanta K. Maji]] · 2026-09-02
 - [[prof-papers/523-dejing-dou-matching-point-of-interests-and-travel-blog-with-multi-view-i|523 · Matching Point of Interests and Travel Blog with Multi-view Information Fusion — Dejing Dou]] · 2026-09-02
 - [[prof-papers/522-utkarshani-jaimini-causaltrace-a-neurosymbolic-causal-analysis-agent-for|522 · CausalTrace: A Neurosymbolic Causal Analysis Agent for Smart Manufacturing — Utkarshani Jaimini]] · 2026-09-02
