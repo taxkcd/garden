@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-andrew-crotty"
-source_hash: "ce018b01e0d2c2f004c00d322c390aa858f477bb1c3b4764d3da9cdcbc289447"
+source_hash: "a222b0011ce9c964f60447374f69a1ce4405a95bacd00649b203a5e168d2b344"
 sequence: 508
 generator: "outreach-garden: managed"
 ---

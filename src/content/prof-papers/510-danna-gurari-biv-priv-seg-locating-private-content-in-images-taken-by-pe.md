@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-danna-gurari"
-source_hash: "f634ff95423d6e7aec3dfa798865a69d47cc06bbde9243e374b03f66e8ad5b7b"
+source_hash: "eed947dba6f45872eaafc328dc344b524524f025c4e961aa423664d5aebee221"
 sequence: 510
 generator: "outreach-garden: managed"
 ---

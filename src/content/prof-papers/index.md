@@ -12,6 +12,11 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/518-cheng-zhang-continual-unlearning-for-text-to-image-diffusion-models-a-re|518 · Continual Unlearning for Text-to-Image Diffusion Models: A Regularization Perspective — Cheng Zhang]] · 2026-09-01
+- [[prof-papers/517-lenore-cowen-milasol-modeling-protein-solubility-by-mixing-up-multiple-p|517 · MiLaSol: Modeling Protein Solubility by Mixing Up Multiple Protein Language Models — Lenore Cowen]] · 2026-09-01
+- [[prof-papers/516-enrique-dunn-neurocs-neural-nocs-supervision-for-monocular-3d-object-loc|516 · NeurOCS: Neural NOCS Supervision for Monocular 3D Object Localization — Enrique Dunn]] · 2026-09-01
+- [[prof-papers/515-david-brooks-rpu-a-reasoning-processing-unit|515 · RPU – A Reasoning Processing Unit — David Brooks]] · 2026-09-01
+- [[prof-papers/514-yao-qiang-not-all-tokens-are-meant-to-be-forgotten|514 · Not All Tokens Are Meant to Be Forgotten — Yao Qiang]] · 2026-08-26
 - [[prof-papers/513-sathya-n-ravi-deep-unlearning-via-randomized-conditionally-independent-h|513 · Deep Unlearning via Randomized Conditionally Independent Hessians — Sathya N. Ravi]] · 2026-09-02
 - [[prof-papers/512-val-tannen-structured-monads-for-generic-first-order-syntax-metatheory|512 · Structured Monads for Generic First-Order Syntax Metatheory — Val Tannen]] · 2026-09-01
 - [[prof-papers/511-peter-j-haas-what-if-analysis-for-business-professionals-current-practic|511 · What-if Analysis for Business Professionals: Current Practices and Future Opportunities — Peter J. Haas]] · 2026-09-01

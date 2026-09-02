@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-val-tannen"
-source_hash: "822b873b3c871e8a14ca15d44f0f9fee8444791ec7515b1d5ad06ba5e4f15087"
+source_hash: "8e7c4910090b06e1ce76496e7f28011b3ccf01ba2eaad6d9709b342f03232c28"
 sequence: 512
 generator: "outreach-garden: managed"
 ---
