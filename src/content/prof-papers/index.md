@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/519-el-kindi-rezig-towards-scalable-visual-data-wrangling-via-direct-manipul|519 · Towards Scalable Visual Data Wrangling via Direct Manipulation — El Kindi Rezig]] · 2026-09-02
 - [[prof-papers/518-cheng-zhang-continual-unlearning-for-text-to-image-diffusion-models-a-re|518 · Continual Unlearning for Text-to-Image Diffusion Models: A Regularization Perspective — Cheng Zhang]] · 2026-09-01
 - [[prof-papers/517-lenore-cowen-milasol-modeling-protein-solubility-by-mixing-up-multiple-p|517 · MiLaSol: Modeling Protein Solubility by Mixing Up Multiple Protein Language Models — Lenore Cowen]] · 2026-09-01
 - [[prof-papers/516-enrique-dunn-neurocs-neural-nocs-supervision-for-monocular-3d-object-loc|516 · NeurOCS: Neural NOCS Supervision for Monocular 3D Object Localization — Enrique Dunn]] · 2026-09-01
