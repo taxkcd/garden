@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/532-malte-f-jung-artificial-intelligence-in-communication-impacts-language-a|532 · Artificial intelligence in communication impacts language and social relationships — Malte F. Jung]] · 2026-09-02
 - [[prof-papers/531-edward-chien-faraday-cage-estimation-of-normals-for-point-clouds-and-rib|531 · Faraday Cage Estimation of Normals for Point Clouds and Ribbon Sketches — Edward Chien]] · 2026-09-02
 - [[prof-papers/530-corey-toler-franklin-unified-local-and-global-attention-interaction-mode|530 · Unified Local and Global Attention Interaction Modeling for Vision Transformers — Corey Toler-Franklin]] · 2026-09-02
 - [[prof-papers/529-david-j-wu-from-lattices-to-tensor-cores-accelerating-private-informatio|529 · From Lattices to Tensor Cores: Accelerating Private Information Retrieval — David J. Wu]] · 2026-09-02
