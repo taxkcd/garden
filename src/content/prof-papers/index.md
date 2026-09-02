@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/523-dejing-dou-matching-point-of-interests-and-travel-blog-with-multi-view-i|523 · Matching Point of Interests and Travel Blog with Multi-view Information Fusion — Dejing Dou]] · 2026-09-02
 - [[prof-papers/522-utkarshani-jaimini-causaltrace-a-neurosymbolic-causal-analysis-agent-for|522 · CausalTrace: A Neurosymbolic Causal Analysis Agent for Smart Manufacturing — Utkarshani Jaimini]] · 2026-09-02
 - [[prof-papers/521-barbara-cutler-autograding-interactive-computer-graphics-applications|521 · Autograding Interactive Computer Graphics Applications — Barbara Cutler]] · 2026-09-02
 - [[prof-papers/520-abdeltawab-m-hendawi-visual-reasoning-evaluation-of-grok-deepseeks-janus|520 · Visual Reasoning Evaluation of Grok, Deepseek’s Janus, Gemini, Qwen, Mistral, and ChatGPT — Abdeltawab M. Hendawi]] · 2026-09-02
