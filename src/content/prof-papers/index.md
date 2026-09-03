@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/539-krzysztof-j-kochut-relations-prediction-for-knowledge-graph-completion-u|539 · Relations Prediction for Knowledge Graph Completion using Large Language Models — Krzysztof J. Kochut]] · 2026-09-03
 - [[prof-papers/538-jian-pei-generalizability-of-large-language-model-based-agents-a-compreh|538 · Generalizability of Large Language Model-Based Agents: A Comprehensive Survey — Jian Pei]] · 2026-09-03
 - [[prof-papers/537-ulrich-neumann-instantsfm-towards-gpu-native-sfm-for-the-deep-learning-e|537 · InstantSfM: Towards GPU-Native SfM for the Deep Learning Era — Ulrich Neumann]] · 2026-09-03
 - [[prof-papers/536-carl-vondrick-towards-llm-agents-for-earth-observation|536 · Towards LLM Agents for Earth Observation — Carl Vondrick]] · 2026-09-03
