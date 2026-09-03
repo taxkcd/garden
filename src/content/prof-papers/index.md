@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/538-jian-pei-generalizability-of-large-language-model-based-agents-a-compreh|538 · Generalizability of Large Language Model-Based Agents: A Comprehensive Survey — Jian Pei]] · 2026-09-03
 - [[prof-papers/537-ulrich-neumann-instantsfm-towards-gpu-native-sfm-for-the-deep-learning-e|537 · InstantSfM: Towards GPU-Native SfM for the Deep Learning Era — Ulrich Neumann]] · 2026-09-03
 - [[prof-papers/536-carl-vondrick-towards-llm-agents-for-earth-observation|536 · Towards LLM Agents for Earth Observation — Carl Vondrick]] · 2026-09-03
 - [[prof-papers/535-michel-a-kinsy-fheon-a-configurable-framework-for-developing-privacy-pre|535 · FHEON: A Configurable Framework for Developing Privacy-Preserving Encrypted Neural Networks — Michel A. Kinsy]] · 2026-09-03
