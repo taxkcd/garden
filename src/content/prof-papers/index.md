@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/534-dipak-ghosal-a-study-of-a-deterministic-networking-framework-for-latency|534 · A Study of a Deterministic Networking Framework for Latency Critical Large Scientific Data Transfers — Dipak Ghosal]] · 2026-09-03
 - [[prof-papers/533-aarushi-goel-weighted-cryptography-with-weight-independent-complexity|533 · Weighted Cryptography with Weight-Independent Complexity — Aarushi Goel]] · 2026-09-02
 - [[prof-papers/532-malte-f-jung-artificial-intelligence-in-communication-impacts-language-a|532 · Artificial intelligence in communication impacts language and social relationships — Malte F. Jung]] · 2026-09-02
 - [[prof-papers/531-edward-chien-faraday-cage-estimation-of-normals-for-point-clouds-and-rib|531 · Faraday Cage Estimation of Normals for Point Clouds and Ribbon Sketches — Edward Chien]] · 2026-09-02
