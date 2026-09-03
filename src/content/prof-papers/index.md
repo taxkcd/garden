@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/536-carl-vondrick-towards-llm-agents-for-earth-observation|536 · Towards LLM Agents for Earth Observation — Carl Vondrick]] · 2026-09-03
 - [[prof-papers/535-michel-a-kinsy-fheon-a-configurable-framework-for-developing-privacy-pre|535 · FHEON: A Configurable Framework for Developing Privacy-Preserving Encrypted Neural Networks — Michel A. Kinsy]] · 2026-09-03
 - [[prof-papers/534-dipak-ghosal-a-study-of-a-deterministic-networking-framework-for-latency|534 · A Study of a Deterministic Networking Framework for Latency Critical Large Scientific Data Transfers — Dipak Ghosal]] · 2026-09-03
 - [[prof-papers/533-aarushi-goel-weighted-cryptography-with-weight-independent-complexity|533 · Weighted Cryptography with Weight-Independent Complexity — Aarushi Goel]] · 2026-09-02
