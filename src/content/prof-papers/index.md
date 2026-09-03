@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/542-adriana-kovashka-probing-logical-reasoning-of-mllms-in-scientific-diagra|542 · Probing Logical Reasoning of MLLMs in Scientific Diagrams — Adriana Kovashka]] · 2026-09-03
 - [[prof-papers/541-hao-zhang-efficient-long-context-language-model-training-by-core-attenti|541 · Efficient Long-context Language Model Training by Core Attention Disaggregation — Hao Zhang]] · 2026-09-03
 - [[prof-papers/540-kim-binsted-web-based-interactive-interest-based-negotiation-training-fo|540 · Web-Based, Interactive, Interest-Based Negotiation Training for Managing Conflict in Isolated Environments: Opportunistic Study With an e-Survey — Kim Binsted]] · 2026-09-03
 - [[prof-papers/539-krzysztof-j-kochut-relations-prediction-for-knowledge-graph-completion-u|539 · Relations Prediction for Knowledge Graph Completion using Large Language Models — Krzysztof J. Kochut]] · 2026-09-03
