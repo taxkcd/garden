@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/540-kim-binsted-web-based-interactive-interest-based-negotiation-training-fo|540 · Web-Based, Interactive, Interest-Based Negotiation Training for Managing Conflict in Isolated Environments: Opportunistic Study With an e-Survey — Kim Binsted]] · 2026-09-03
 - [[prof-papers/539-krzysztof-j-kochut-relations-prediction-for-knowledge-graph-completion-u|539 · Relations Prediction for Knowledge Graph Completion using Large Language Models — Krzysztof J. Kochut]] · 2026-09-03
 - [[prof-papers/538-jian-pei-generalizability-of-large-language-model-based-agents-a-compreh|538 · Generalizability of Large Language Model-Based Agents: A Comprehensive Survey — Jian Pei]] · 2026-09-03
 - [[prof-papers/537-ulrich-neumann-instantsfm-towards-gpu-native-sfm-for-the-deep-learning-e|537 · InstantSfM: Towards GPU-Native SfM for the Deep Learning Era — Ulrich Neumann]] · 2026-09-03
