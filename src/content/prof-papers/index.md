@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/548-tsung-wei-huang-g-pathgen-an-efficient-gpu-parallel-k-critical-path-gene|548 · G-PathGen: An Efficient GPU-Parallel k-Critical Path Generation Algorithm — Tsung-Wei Huang]] · 2026-09-05
 - [[prof-papers/547-b-s-manjunath-click2graph-interactive-panoptic-video-scene-graphs-from-a|547 · Click2Graph: Interactive Panoptic Video Scene Graphs from a Single Click — B. S. Manjunath]] · 2026-09-05
 - [[prof-papers/546-yuhao-zhu-powergs-display-rendering-power-co-optimization-for-foveated-r|546 · PowerGS: Display-Rendering Power Co-Optimization for Foveated Radiance-Field Rendering in Power-Constrained XR Systems — Yuhao Zhu]] · 2026-09-05
 - [[prof-papers/545-yvo-desmedt-oblivis-a-framework-for-delegated-and-efficient-oblivious-tr|545 · Oblivis: A Framework for Delegated and Efficient Oblivious Transfer — Yvo Desmedt]] · 2026-09-05
