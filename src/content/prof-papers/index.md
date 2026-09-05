@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/546-yuhao-zhu-powergs-display-rendering-power-co-optimization-for-foveated-r|546 · PowerGS: Display-Rendering Power Co-Optimization for Foveated Radiance-Field Rendering in Power-Constrained XR Systems — Yuhao Zhu]] · 2026-09-05
 - [[prof-papers/545-yvo-desmedt-oblivis-a-framework-for-delegated-and-efficient-oblivious-tr|545 · Oblivis: A Framework for Delegated and Efficient Oblivious Transfer — Yvo Desmedt]] · 2026-09-05
 - [[prof-papers/544-austin-cory-bart-drafter-a-python-library-for-full-stack-web-development|544 · Drafter: A Python Library for Full-Stack Web Development in CS1 — Austin Cory Bart]] · 2026-09-03
 - [[prof-papers/543-ruben-a-gamboa-using-counterexample-generation-and-theory-exploration-to|543 · Using Counterexample Generation and Theory Exploration to Suggest Missing Hypotheses — Ruben A. Gamboa]] · 2026-09-03
