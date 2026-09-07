@@ -1,6 +1,6 @@
 ---
 title: "Professor papers and learning paths"
-date: 2026-09-05
+date: 2026-09-07
 tags:
   - research-paper
   - learning-path
@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/550-david-c-wilson-comparative-analysis-of-transformers-to-support-fine-grai|550 · Comparative Analysis of Transformers to Support Fine-Grained Emotion Detection in Short-Text Data — David C. Wilson]] · 2026-09-07
 - [[prof-papers/549-ping-liu-probe-diagnosing-residual-concept-capacity-in-erased-text-to-vi|549 · PROBE: Diagnosing Residual Concept Capacity in Erased Text-to-Video Diffusion Models — Ping Liu]] · 2026-09-05
 - [[prof-papers/548-tsung-wei-huang-g-pathgen-an-efficient-gpu-parallel-k-critical-path-gene|548 · G-PathGen: An Efficient GPU-Parallel k-Critical Path Generation Algorithm — Tsung-Wei Huang]] · 2026-09-05
 - [[prof-papers/547-b-s-manjunath-click2graph-interactive-panoptic-video-scene-graphs-from-a|547 · Click2Graph: Interactive Panoptic Video Scene Graphs from a Single Click — B. S. Manjunath]] · 2026-09-05
