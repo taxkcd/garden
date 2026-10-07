@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-jean-baptiste-jeannin"
-source_hash: "7fc3dbd8ed79eaccdf4d1fb8c5c9bb080b565993e8dc81b72ecd6beba9334ae2"
+source_hash: "0c9c298c4c19959689572ee2a7f19208dd86c94fb7d7ee406ba540ee603af9c5"
 sequence: 555
 generator: "outreach-garden: managed"
 ---
