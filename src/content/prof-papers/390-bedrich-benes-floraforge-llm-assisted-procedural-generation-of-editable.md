@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-bedrich-benes"
-source_hash: "6a53500d3a17d74666af9448743cce0530eda74a79c9d0293f218734c559c6b6"
+source_hash: "471c7f4d9c1bffeedb8c3cec67562d4072fbf4b2e839400b6f1f6bf764f8a4c6"
 sequence: 390
 generator: "outreach-garden: managed"
 ---
