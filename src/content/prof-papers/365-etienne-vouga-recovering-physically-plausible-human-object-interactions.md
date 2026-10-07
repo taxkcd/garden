@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-etienne-vouga"
-source_hash: "6d809d2968aee41f0adab749a2caa82db62ec50658a4e40902108b6adcedd007"
+source_hash: "9f0a29a5a87478849912373d9229e3aed908dfbbca76aa671c16ce917286bea5"
 sequence: 365
 generator: "outreach-garden: managed"
 ---
