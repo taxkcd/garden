@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-david-brooks"
-source_hash: "1236ec4ca1908d60e7a1596ebd93b17dd095fb6efa870bccf759549834c33b3d"
+source_hash: "379d4f0510e784aac02da263d3e4df1a751586107b9474f7299290482772ebcd"
 sequence: 515
 generator: "outreach-garden: managed"
 ---
