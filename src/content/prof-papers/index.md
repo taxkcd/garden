@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/555-jean-baptiste-jeannin-towards-formal-verification-of-hybrid-synchronous|555 · Towards Formal Verification of Hybrid Synchronous Programs with Refinement Types — Jean-Baptiste Jeannin]] · 2026-09-01
 - [[prof-papers/554-tao-ju-vhs-a-package-for-homological-simplification-of-voxelized-plant-r|554 · VHS: A package for homological simplification of voxelized plant root data for skeletonization — Tao Ju]] · 2026-09-01
 - [[prof-papers/553-alan-t-sherman-bvot-self-tallying-boardroom-voting-with-oblivious-transf|553 · BVOT: Self-Tallying Boardroom Voting with Oblivious Transfer — Alan T. Sherman]] · 2026-10-06
 - [[prof-papers/552-gary-w-meyer-a-computer-aided-color-appearance-design-system-for-metalli|552 · A Computer Aided Color Appearance Design System for Metallic Car Paint — Gary W. Meyer]] · 2026-10-06
