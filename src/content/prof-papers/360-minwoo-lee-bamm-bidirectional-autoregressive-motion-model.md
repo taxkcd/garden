@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-minwoo-lee"
-source_hash: "b43eb29b910c2d8470845399449784224ba7911eface8daebb47eaa49a8f5250"
+source_hash: "0f55e08018cc9c3ca0d08e12e478cbb2cbb63ffdbf5ed535b88598182b79d278"
 sequence: 360
 generator: "outreach-garden: managed"
 ---
