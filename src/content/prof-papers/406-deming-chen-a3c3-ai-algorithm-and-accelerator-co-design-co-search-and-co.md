@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-deming-chen"
-source_hash: "16055940f6c42499094a11a80fead696357a90c9cb79ea4277d9f3ac1a7b3b4b"
+source_hash: "ef1ca3a2c0962ab9dd7d1007a9e7f6d8b82cdcd685ab5ae2c43fecafd4261d60"
 sequence: 406
 generator: "outreach-garden: managed"
 ---
