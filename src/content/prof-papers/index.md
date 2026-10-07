@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/557-p-thomas-fletcher-medil-implicit-latent-spaces-for-generating-heterogene|557 · MedIL: Implicit Latent Spaces for Generating Heterogeneous Medical Images at Arbitrary Resolutions — P. Thomas Fletcher]] · 2026-08-09
 - [[prof-papers/556-david-starobinski-exploiting-kubernetes-autoscaling-for-economic-denial|556 · Exploiting Kubernetes Autoscaling for Economic Denial of Sustainability — David Starobinski]] · 2026-08-09
 - [[prof-papers/555-jean-baptiste-jeannin-towards-formal-verification-of-hybrid-synchronous|555 · Towards Formal Verification of Hybrid Synchronous Programs with Refinement Types — Jean-Baptiste Jeannin]] · 2026-09-01
 - [[prof-papers/554-tao-ju-vhs-a-package-for-homological-simplification-of-voxelized-plant-r|554 · VHS: A package for homological simplification of voxelized plant root data for skeletonization — Tao Ju]] · 2026-09-01
