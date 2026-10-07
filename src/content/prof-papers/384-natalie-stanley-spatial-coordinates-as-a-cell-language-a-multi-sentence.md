@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-natalie-stanley"
-source_hash: "f77152595f740b4f4d9ba7d948263fd41355023b7f8c0384bafa264c9f5ea150"
+source_hash: "00fe0828ea9133b07c9e2b88edc088f17f9ef076ea3d4b0af21430deaab60c86"
 sequence: 384
 generator: "outreach-garden: managed"
 ---
