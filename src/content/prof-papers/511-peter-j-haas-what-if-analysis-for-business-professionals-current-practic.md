@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-peter-j-haas"
-source_hash: "71491d1e5a14ac3f6a50b0e44f8c6c99a06605d511e3c13f346e9865f369eac9"
+source_hash: "24e28b64bd19b9838db8a7bbaf780ce36d2dbef75fc840ce969f01c210cf71bb"
 sequence: 511
 generator: "outreach-garden: managed"
 ---
