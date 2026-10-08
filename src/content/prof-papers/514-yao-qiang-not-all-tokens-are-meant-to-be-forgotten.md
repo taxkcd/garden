@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-yao-qiang"
-source_hash: "a9db9f4918225d208b2142b41cc5de1ecf85c93f90385753b9949f4172c29b20"
+source_hash: "725bd1bd6d26629e7b4960c49c61e167288438a08de9bcb7bd2db01d4b1aa940"
 sequence: 514
 generator: "outreach-garden: managed"
 ---
@@ -166,3 +166,98 @@ Watch a concise explainer on how tokens work in LLMs to solidify understanding o
 *How the paper uses it:* Understanding tokens deeply supports grasping how the paper differentiates unwanted from general tokens for selective forgetting.
 
 ▶ [Most devs don't understand how LLM tokens work](https://www.youtube.com/watch?v=nKSk_TiR8YA) — Matt Pocock · 10:58 · 11 months ago
+
+
+## Build it — 3 projects to showcase this paper
+
+_A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
+
+These three projects form a progressive learning path to demonstrate understanding of the Targeted Information Forgetting (TIF) framework and its core optimization method, Targeted Preference Optimization (TPO), from the paper. The beginner project reproduces a token-level unwanted information identification and suppression mechanism on a small scale. The intermediate project implements the TPO method on a public dataset to compare forget quality and utility preservation against a baseline. The advanced project extends the framework to address one of the paper's limitations by exploring knowledge-level unlearning or improving unwanted information identification accuracy.
+
+### Beginner — Token-level Unwanted Word Identification and Suppression
+*Effort: a weekend, ~8 hours*
+
+You build a small script that takes a short text sample and identifies unwanted words (UW) versus general words (GW) using a simple discriminative model (e.g., DistilBERT). Then, you simulate a token-level suppression by masking or removing the UW tokens from the text. This reproduces the core idea of selectively targeting only unwanted tokens for forgetting.
+
+**Why it shows you understood the paper:** This project shows you understand the key concept of differentiating unwanted and general tokens in forget samples, which is central to the TIF framework's ability to prevent over-forgetting.
+
+**Grounded in:** TIF exploits an unwanted information identifier to differentiate between unwanted and general information in the forget sample... By specifically targeting only UW for unlearning, our TIF preserves more general information compared to existing methods like NPO.
+
+**Tech stack:** Python 3.11, transformers (Hugging Face), PyTorch
+
+**Data:** Use a small synthetic text sample you create that contains both unwanted and general words to simulate forget samples.
+
+**Build it:**
+
+1. Install Hugging Face transformers and PyTorch.
+2. Load a pretrained DistilBERT model for token classification or sequence labeling.
+3. Create a short text sample containing some unwanted words (e.g., private info) and general words.
+4. Write code to classify tokens as unwanted or general using DistilBERT outputs or heuristics.
+5. Mask or remove the unwanted tokens from the text to simulate token-level forgetting.
+6. Document the process and show before/after text highlighting the selective suppression.
+
+**Ships as:** A Python script and README demonstrating token-level unwanted word identification and selective suppression on a small text sample.
+
+**Stretch goal:** Add a simple generative model prompt (e.g., GPT-2) to compare generative vs discriminative identification of unwanted tokens.
+
+### Intermediate — Implementing Targeted Preference Optimization on a Public Dataset
+*Effort: 2 weekends, ~20 hours*
+
+You implement the core Targeted Preference Optimization (TPO) method described in the paper to selectively unlearn unwanted tokens while preserving general tokens. You apply it to a public text dataset (e.g., a subset of WikiText or OpenWebText) where you define a small forget set with unwanted tokens. You compare your TPO implementation against a simple baseline that suppresses all tokens indiscriminately, measuring forget quality and model utility.
+
+**Why it shows you understood the paper:** This project demonstrates your ability to reimplement the paper's main optimization method and evaluate its effectiveness in balancing unlearning and utility preservation, a key contribution of the paper.
+
+**Grounded in:** TPO integrates Preservation loss to maintain general model utility by retraining on GW, and Logit preference loss to unlearn unwanted information in UW... TPO achieves comparable forget quality to NPO while significantly preserving a higher model utility.
+
+**Tech stack:** Python 3.11, PyTorch, transformers (Hugging Face), numpy, matplotlib
+
+**Data:** Use a publicly available language modeling dataset such as WikiText-2 or a small OpenWebText subset as a proxy for the paper's forget and retain sets.
+
+**Build it:**
+
+1. Set up a language model fine-tuning environment with PyTorch and Hugging Face transformers.
+2. Prepare a small forget set by selecting sentences containing specific unwanted tokens from the dataset.
+3. Implement the TPO loss combining Logit Preference Loss (LPL) for unwanted tokens and Preservation Loss (PL) for general tokens.
+4. Fine-tune the model using TPO on the forget set and compare against a baseline that suppresses all tokens indiscriminately.
+5. Evaluate forget quality (e.g., token suppression accuracy) and model utility (e.g., perplexity on a validation set).
+6. Visualize and report the trade-offs between forget quality and utility preservation.
+
+**Verified links from the paper:**
+
+- <https://github.com/xzhou98/Unlearning-TPO> — a third-party/baseline artifact the paper cites — not the authors' own code
+
+**Ships as:** A GitHub repository with code implementing TPO, evaluation scripts, and a README reporting results comparing TPO to a baseline on a public dataset.
+
+**Stretch goal:** Incorporate generative LM-based unwanted information identification (e.g., GPT-2 prompts) to improve token classification accuracy.
+
+### Advanced — Extending Targeted Information Forgetting to Knowledge-Level Unlearning
+*Effort: 3+ weeks*
+
+You develop an extension of the TIF framework to address the paper's limitation on knowledge-level unlearning, where unwanted information is diffusely embedded rather than localized to specific tokens. This involves designing a method to identify and suppress implicit knowledge representations, possibly by combining token-level TPO with representation-level regularization or probing. You evaluate your method on a synthetic or adapted dataset simulating diffuse unwanted knowledge.
+
+**Why it shows you understood the paper:** This project tackles a stated limitation and future direction of the paper, showing deep comprehension of the framework and creativity in advancing it toward more challenging unlearning scenarios.
+
+**Grounded in:** The framework focuses on sequence-level unlearning by suppressing token generation and may not generalize well to knowledge-level unlearning where information is diffusely embedded in model representations... Future work could explore extending TIF with techniques for knowledge-based identification.
+
+**Tech stack:** Python 3.11, PyTorch, transformers (Hugging Face), scikit-learn, numpy, matplotlib
+
+**Data:** Use a synthetic dataset where unwanted information is embedded in paraphrased or distributed forms, or adapt a public dataset by diffusing unwanted concepts across multiple tokens.
+
+**Build it:**
+
+1. Review the TIF and TPO framework and understand sequence-level unlearning mechanisms.
+2. Design a method to identify diffuse unwanted knowledge, e.g., via representation probing or clustering of hidden states.
+3. Implement a combined loss that applies token-level TPO and representation-level regularization to suppress unwanted knowledge.
+4. Create or adapt a dataset with diffuse unwanted information for evaluation.
+5. Train and evaluate the extended method, comparing forget quality and utility preservation against baseline TPO.
+6. Document challenges, results, and potential improvements.
+
+**Verified links from the paper:**
+
+- <https://github.com/xzhou98/Unlearning-TPO> — a third-party/baseline artifact the paper cites — not the authors' own code
+
+**Ships as:** A GitHub repository with code implementing the knowledge-level unlearning extension, evaluation scripts, and a detailed README discussing methodology, results, and limitations.
+
+**Stretch goal:** Explore integrating generative and discriminative models for improved unwanted knowledge identification in this extended framework.
+
+_The paper's authors did not release their own code; the intermediate and advanced projects rely on reimplementing the core TPO method from the paper's description and using the third-party TPO repository as a reference baseline._

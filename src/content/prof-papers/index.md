@@ -1,6 +1,6 @@
 ---
 title: "Professor papers and learning paths"
-date: 2026-10-07
+date: 2026-10-06
 tags:
   - research-paper
   - learning-path
@@ -12,6 +12,60 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/612-nicolas-loizou-safeguarded-stochastic-polyak-step-sizes-for-non-smooth-o|612 · Safeguarded Stochastic Polyak Step Sizes for Non-smooth Optimization: Robust Performance Without Small (Sub)Gradients — Nicolas Loizou]] · 2026-09-08
+- [[prof-papers/611-dan-suciu-lpbound-pessimistic-cardinality-estimation-using-p-norms-of-de|611 · LpBound: Pessimistic Cardinality Estimation using ℓp-Norms of Degree Sequences — Dan Suciu]] · 2026-09-08
+- [[prof-papers/610-wenbing-zhao-a-novel-deep-neural-network-for-robust-detection-of-seizure|610 · A Novel Deep Neural Network for Robust Detection of Seizures Using EEG Signals — Wenbing Zhao]] · 2026-09-05
+- [[prof-papers/609-gene-cooperman-bootseer-analyzing-and-mitigating-initialization-bottlene|609 · BootSeer: Analyzing and Mitigating Initialization Bottlenecks in Large-Scale LLM Training — Gene Cooperman]] · 2026-09-05
+- [[prof-papers/608-david-j-perreault-high-performance-high-power-inductor-design-for-high-f|608 · High-Performance High-Power Inductor Design for High-Frequency Applications — David J. Perreault]] · 2026-09-05
+- [[prof-papers/607-seungbae-kim-gesture-aware-zero-shot-speech-recognition-for-patients-wit|607 · Gesture-Aware Zero-Shot Speech Recognition for Patients with Language Disorders — Seungbae Kim]] · 2026-09-05
+- [[prof-papers/606-yiqin-zhao-toward-in-context-environment-sensing-for-mobile-augmented-re|606 · Toward In-Context Environment Sensing for Mobile Augmented Reality — Yiqin Zhao]] · 2026-09-03
+- [[prof-papers/605-susan-a-mengel-a-comprehensive-analysis-of-accuracy-and-robustness-in-qu|605 · A Comprehensive Analysis of Accuracy and Robustness in Quantum Neural Networks — Susan A. Mengel]] · 2026-09-03
+- [[prof-papers/604-dong-xu-agentic-rag-driven-multi-omics-analysis-for-pi3k-akt-pathway-der|604 · Agentic RAG-Driven Multi-Omics Analysis for PI3K/AKT Pathway Deregulation in Precision Medicine — Dong Xu]] · 2026-09-03
+- [[prof-papers/603-dan-lin-unidetect-llm-driven-universal-fraud-detection-across-heterogene|603 · UniDetect: LLM-Driven Universal Fraud Detection across Heterogeneous Blockchains — Dan Lin]] · 2026-09-03
+- [[prof-papers/602-katie-a-siek-understanding-fraudulence-in-online-qualitative-studies-fro|602 · Understanding fraudulence in online qualitative studies: From the researcher’s perspective — Katie A. Siek]] · 2026-09-03
+- [[prof-papers/601-yuval-tamir-cortenmm-efficient-memory-management-with-strong-correctness|601 · CortenMM: Efficient Memory Management with Strong Correctness Guarantees — Yuval Tamir]] · 2026-09-03
+- [[prof-papers/600-kunle-olukotun-stardust-compiling-sparse-tensor-algebra-to-a-reconfigura|600 · Stardust: Compiling Sparse Tensor Algebra to a Reconfigurable Dataflow Architecture — Kunle Olukotun]] · 2026-09-02
+- [[prof-papers/599-alan-h-barr-molecular-system-for-an-exponentially-fast-growing-programma|599 · Molecular system for an exponentially fast growing programmable synthetic polymer — Alan H. Barr]] · 2026-09-02
+- [[prof-papers/598-mostafa-h-ammar-understanding-quics-throughput-speedbumps|598 · Understanding QUIC’s Throughput Speedbumps — Mostafa H. Ammar]] · 2026-09-01
+- [[prof-papers/597-hua-wang-learning-semisupervised-enrichment-of-longitudinal-imaginggenet|597 · Learning semi‑supervised enrichment of longitudinal imaging‑genetic data for improved prediction of cognitive decline — Hua Wang]] · 2026-09-01
+- [[prof-papers/596-robert-t-collins-novel-3d-scene-understanding-applications-from-recurren|596 · Novel 3D Scene Understanding Applications From Recurrence in a Single Image — Robert T. Collins]] · 2026-09-01
+- [[prof-papers/595-ziang-xiao-understanding-the-llm-ification-of-chi-unpacking-the-impact-o|595 · Understanding the LLM-ification of CHI: Unpacking the Impact of LLMs at CHI through a Systematic Literature Review — Ziang Xiao]] · 2026-09-01
+- [[prof-papers/594-collin-m-stultz-robustness-beyond-known-groups-with-low-rank-adaptation|594 · Robustness Beyond Known Groups with Low-rank Adaptation — Collin M. Stultz]] · 2026-09-01
+- [[prof-papers/593-panagiotis-manolios-the-dangerous-impact-of-solver-imprecision-on-data-m|593 · The Dangerous Impact of Solver Imprecision on Data Management Techniques (and How to Avoid It) — Panagiotis Manolios]] · 2026-09-01
+- [[prof-papers/592-amol-deshpande-same-data-different-schemas-robustness-of-llm-based-text|592 · Same Data, Different Schemas: Robustness of LLM-based Text-to-SQL — Amol Deshpande]] · 2026-09-01
+- [[prof-papers/591-chad-mourning-air-view-the-aviation-image-repository-for-visibility-esti|591 · AIR-VIEW: The Aviation Image Repository for Visibility Estimation of Weather, A Dataset and Benchmark — Chad Mourning]] · 2026-08-25
+- [[prof-papers/590-mahesh-viswanathan-the-decision-problem-for-regular-first-order-theories|590 · The Decision Problem for Regular First Order Theories — Mahesh Viswanathan]] · 2026-08-24
+- [[prof-papers/589-marc-olano-poisson-problems-in-computer-graphics|589 · Poisson Problems in Computer Graphics — Marc Olano]] · 2026-08-19
+- [[prof-papers/588-giulia-guidi-ocean-fast-estimation-based-sparse-general-matrix-matrix-mu|588 · Ocean: Fast Estimation-Based Sparse General Matrix-Matrix Multiplication on GPU — Giulia Guidi]] · 2026-08-17
+- [[prof-papers/587-nisha-panwar-s-ea-s-earch-secure-and-efficient-selection-queries|587 · S EA S EARCH: Secure and Efficient Selection Queries — Nisha Panwar]] · 2026-08-13
+- [[prof-papers/586-hongyuan-liu-vesta-a-secure-and-efficient-fhe-based-three-party-vectoriz|586 · VESTA: A Secure and Efficient FHE-based Three-Party Vectorized Evaluation System for Tree Aggregation Models — Hongyuan Liu]] · 2026-08-09
+- [[prof-papers/585-chris-piech-interpretability-from-the-ground-up-stakeholder-centric-desi|585 · Interpretability from the Ground Up: Stakeholder-Centric Design of Automated Scoring in Educational Assessments — Chris Piech]] · 2026-08-09
+- [[prof-papers/584-christina-boucher-leveraging-large-language-models-to-predict-antibiotic|584 · Leveraging large language models to predict antibiotic resistance in Mycobacterium tuberculosis — Christina Boucher]] · 2026-08-08
+- [[prof-papers/583-sara-beery-do-large-language-model-benchmarks-test-reliability|583 · Do Large Language Model Benchmarks Test Reliability? — Sara Beery]] · 2026-08-08
+- [[prof-papers/582-borivoje-nikolic-chia-an-open-source-framework-for-principled-agentic-ai|582 · CHIA: An open-source framework for principled, agentic AI-driven hardware/software co-design research — Borivoje Nikolic]] · 2026-08-08
+- [[prof-papers/581-robin-d-dowell-internal-and-external-normalization-of-nascent-rna-sequen|581 · Internal and external normalization of nascent RNA sequencing run-on experiments — Robin D. Dowell]] · 2026-08-08
+- [[prof-papers/580-rajeev-barua-easy-pram-based-high-performance-parallel-programming-with|580 · Easy PRAM-based high-performance parallel programming with ICE — Rajeev Barua]] · 2026-08-08
+- [[prof-papers/579-tom-altman-fixed-points-a-predictor-impossibility-theorem-and-applicatio|579 · Fixed Points, a Predictor-Impossibility Theorem, and Applications — Tom Altman]] · 2026-08-07
+- [[prof-papers/578-calvin-lin-streamlined-on-chip-temporal-prefetching|578 · Streamlined On-Chip Temporal Prefetching — Calvin Lin]] · 2026-08-07
+- [[prof-papers/577-abhishek-jain-snargs-for-np-from-unprovability-of-mathematical-theorems|577 · SNARGs for NP from Unprovability of Mathematical Theorems (Or: How to use the simplicity of cryptographic reasoning) — Abhishek Jain]] · 2026-08-07
+- [[prof-papers/576-pan-xu-optimizing-relevance-and-diversity-in-online-matching-markets-a-t|576 · Optimizing Relevance and Diversity in Online Matching Markets: A Time-Adaptive Attenuation Approach — Pan Xu]] · 2026-08-07
+- [[prof-papers/575-daniel-p-siewiorek-investigating-an-intelligent-system-to-monitor-explai|575 · Investigating an Intelligent System to Monitor & Explain Abnormal Activity Patterns of Older Adults — Daniel P. Siewiorek]] · 2026-08-07
+- [[prof-papers/574-dongjie-wang-text-attributed-knowledge-graph-enrichment-with-large-langu|574 · Text-Attributed Knowledge Graph Enrichment with Large Language Models for Medical Concept Representation — Dongjie Wang]] · 2026-08-06
+- [[prof-papers/573-sai-qian-zhang-qsvd-efficient-low-rank-approximation-for-unified-query-k|573 · QSVD: Efficient Low-rank Approximation for Unified Query-Key-Value Weight Compression in Low-Precision Vision-Language Models — Sai Qian Zhang]] · 2026-08-06
+- [[prof-papers/572-anwar-ghammam-build-code-needs-maintenance-too-a-study-on-refactoring-an|572 · Build Code Needs Maintenance Too: A Study on Refactoring and Technical Debt in Build Systems — Anwar Ghammam]] · 2026-08-06
+- [[prof-papers/571-david-h-smith-iv-redefining-code-comprehension-function-naming-as-a-mech|571 · ReDefining Code Comprehension: Function Naming as a Mechanism for Evaluating Code Comprehension — David H. Smith IV]] · 2026-08-04
+- [[prof-papers/570-david-weintrop-api-can-code-laying-the-computational-foundations-of-data|570 · API Can Code: Laying the Computational Foundations of Data Science in High School Classrooms — David Weintrop]] · 2026-08-03
+- [[prof-papers/569-ozlem-o-garibay-revisiting-the-six-human-centered-artificial-intelligenc|569 · Revisiting the Six Human-Centered Artificial Intelligence Grand Challenges in the Age of Generative AI — Ozlem O. Garibay]] · 2026-08-01
+- [[prof-papers/568-james-g-nagy-nonlinear-rmm-gks-for-large-scale-dynamic-and-streaming-inv|568 · Nonlinear RMM-GKS for Large-Scale Dynamic and Streaming Inverse Problems with Uncertain Forward Operators — James G. Nagy]] · 2026-08-01
+- [[prof-papers/567-amotz-bar-noy-degree-realization-by-bipartite-multigraphs|567 · Degree Realization by Bipartite Multigraphs — Amotz Bar-Noy]] · 2026-07-31
+- [[prof-papers/566-david-p-williamson-semidefinite-programming-relaxations-of-the-traveling|566 · Semidefinite Programming Relaxations of the Traveling Salesman Problem and Their Integrality Gaps — David P. Williamson]] · 2026-07-24
+- [[prof-papers/565-daniel-schwartz-dynamic-reasoning-systems|565 · Dynamic Reasoning Systems — Daniel Schwartz]] · 2026-07-15
+- [[prof-papers/564-saumya-debray-impeding-llm-assisted-cheating-in-introductory-programming|564 · Impeding LLM-assisted Cheating in Introductory Programming Assignments via Adversarial Perturbation — Saumya Debray]] · 2026-07-13
+- [[prof-papers/563-kenneth-a-berman-graph-theoretic-approach-to-qos-guaranteed-spectrum-all|563 · Graph Theoretic Approach to QoS Guaranteed Spectrum Allocation in Cognitive Radio Networks — Kenneth A. Berman]] · 2026-07-13
+- [[prof-papers/562-shan-chieh-yang-guided-reasoning-in-llm-driven-penetration-testing-using|562 · Guided Reasoning in LLM-Driven Penetration Testing Using Structured Attack Trees — Shan-Chieh Yang]] · 2026-07-13
+- [[prof-papers/561-d-wang-extracting-default-mode-network-based-on-graph-neural-network-for|561 · Extracting default mode network based on graph neural network for resting state fMRI study — D. Wang]] · 2026-07-13
+- [[prof-papers/560-aditya-g-parameswaran-semantic-data-processing-with-holistic-data-unders|560 · Semantic Data Processing with Holistic Data Understanding — Aditya G. Parameswaran]] · 2026-07-13
+- [[prof-papers/559-matthew-sinclair-analyzing-gem5-commit-code-inconsistency-with-llms|559 · Analyzing gem5 Commit-Code Inconsistency with LLMs — Matthew Sinclair]] · 2026-07-13
 - [[prof-papers/558-adrienne-decker-student-perceptions-of-equitable-grading-practices|558 · Student Perceptions of Equitable Grading Practices — Adrienne Decker]] · 2026-08-09
 - [[prof-papers/557-p-thomas-fletcher-medil-implicit-latent-spaces-for-generating-heterogene|557 · MedIL: Implicit Latent Spaces for Generating Heterogeneous Medical Images at Arbitrary Resolutions — P. Thomas Fletcher]] · 2026-08-09
 - [[prof-papers/556-david-starobinski-exploiting-kubernetes-autoscaling-for-economic-denial|556 · Exploiting Kubernetes Autoscaling for Economic Denial of Sustainability — David Starobinski]] · 2026-08-09
