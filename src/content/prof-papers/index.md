@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/613-tawanna-dillahunt-designing-digital-tools-to-support-online-job-search-f|613 · Designing Digital Tools to Support Online Job Search for Returning Citizens — Tawanna Dillahunt]] · 2026-09-11
 - [[prof-papers/612-nicolas-loizou-safeguarded-stochastic-polyak-step-sizes-for-non-smooth-o|612 · Safeguarded Stochastic Polyak Step Sizes for Non-smooth Optimization: Robust Performance Without Small (Sub)Gradients — Nicolas Loizou]] · 2026-09-08
 - [[prof-papers/611-dan-suciu-lpbound-pessimistic-cardinality-estimation-using-p-norms-of-de|611 · LpBound: Pessimistic Cardinality Estimation using ℓp-Norms of Degree Sequences — Dan Suciu]] · 2026-09-08
 - [[prof-papers/610-wenbing-zhao-a-novel-deep-neural-network-for-robust-detection-of-seizure|610 · A Novel Deep Neural Network for Robust Detection of Seizures Using EEG Signals — Wenbing Zhao]] · 2026-09-05
