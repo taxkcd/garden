@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/619-jie-gu-llm-mark-a-computing-framework-on-efficient-watermarking-of-large|619 · LLM-MARK: A Computing Framework on Efficient Watermarking of Large Language Models for Authentic Use of Generative AI at Local Devices — Jie Gu]] · 2026-10-10
 - [[prof-papers/618-yun-huang-perspectra-choosing-your-experts-enhances-critical-thinking-in|618 · Perspectra: Choosing Your Experts Enhances Critical Thinking in Multi-Agent Research Ideation — Yun Huang]] · 2026-10-10
 - [[prof-papers/617-john-black-myzone-a-next-generation-online-social-network|617 · MyZone: A Next-Generation Online Social Network — John Black]] · 2026-10-10
 - [[prof-papers/616-michela-taufer-gmia-next-next-generation-global-map-of-irrigated-areas|616 · GMIA-NEXT: Next-Generation Global Map of Irrigated Areas — Michela Taufer]] · 2026-10-10
