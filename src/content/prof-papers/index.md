@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/622-thorsten-joachims-consequences-2025-the-4th-workshop-on-causality-counte|622 · CONSEQUENCES 2025 - The 4th Workshop on Causality, Counterfactuals and Sequential Decision-Making for Recommender Systems — Thorsten Joachims]] · 2026-10-10
 - [[prof-papers/621-victor-l-winter-a-wolf-in-lambs-clothing-computer-science-in-a-mathemati|621 · A Wolf in Lamb’s Clothing: Computer Science in a Mathematics Course — Victor L. Winter]] · 2026-10-10
 - [[prof-papers/620-xubo-song-deep-convolutional-neural-networks-detect-no-morphological-dif|620 · Deep Convolutional Neural Networks Detect no Morphological Differences Between Culture-Positive and Culture-Negative Infectious Keratitis Images — Xubo Song]] · 2026-10-10
 - [[prof-papers/619-jie-gu-llm-mark-a-computing-framework-on-efficient-watermarking-of-large|619 · LLM-MARK: A Computing Framework on Efficient Watermarking of Large Language Models for Authentic Use of Generative AI at Local Devices — Jie Gu]] · 2026-10-10
