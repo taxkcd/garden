@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/618-yun-huang-perspectra-choosing-your-experts-enhances-critical-thinking-in|618 · Perspectra: Choosing Your Experts Enhances Critical Thinking in Multi-Agent Research Ideation — Yun Huang]] · 2026-10-10
 - [[prof-papers/617-john-black-myzone-a-next-generation-online-social-network|617 · MyZone: A Next-Generation Online Social Network — John Black]] · 2026-10-10
 - [[prof-papers/616-michela-taufer-gmia-next-next-generation-global-map-of-irrigated-areas|616 · GMIA-NEXT: Next-Generation Global Map of Irrigated Areas — Michela Taufer]] · 2026-10-10
 - [[prof-papers/615-yu-fu-the-data-says-otherwise-towards-automated-fact-checking-and-commun|615 · “The Data Says Otherwise” – Towards Automated Fact-checking and Communication of Data Claims — Yu Fu]] · 2026-10-10
