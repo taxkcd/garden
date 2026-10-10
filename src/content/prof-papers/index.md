@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/624-guy-e-blelloch-big-atomics-non-blocking-algorithms-with-a-direct-fast-pa|624 · Big Atomics: Non-Blocking Algorithms with a Direct Fast Path — Guy E. Blelloch]] · 2026-10-10
 - [[prof-papers/623-oyewole-oyekoya-fidelity-costs-in-look-alike-avatars-hair-eye-color-and|623 · Fidelity costs in look-alike avatars: hair, eye color, and familiarity in mixed reality — Oyewole Oyekoya]] · 2026-10-10
 - [[prof-papers/622-thorsten-joachims-consequences-2025-the-4th-workshop-on-causality-counte|622 · CONSEQUENCES 2025 - The 4th Workshop on Causality, Counterfactuals and Sequential Decision-Making for Recommender Systems — Thorsten Joachims]] · 2026-10-10
 - [[prof-papers/621-victor-l-winter-a-wolf-in-lambs-clothing-computer-science-in-a-mathemati|621 · A Wolf in Lamb’s Clothing: Computer Science in a Mathematics Course — Victor L. Winter]] · 2026-10-10
