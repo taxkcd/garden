@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/621-victor-l-winter-a-wolf-in-lambs-clothing-computer-science-in-a-mathemati|621 · A Wolf in Lamb’s Clothing: Computer Science in a Mathematics Course — Victor L. Winter]] · 2026-10-10
 - [[prof-papers/620-xubo-song-deep-convolutional-neural-networks-detect-no-morphological-dif|620 · Deep Convolutional Neural Networks Detect no Morphological Differences Between Culture-Positive and Culture-Negative Infectious Keratitis Images — Xubo Song]] · 2026-10-10
 - [[prof-papers/619-jie-gu-llm-mark-a-computing-framework-on-efficient-watermarking-of-large|619 · LLM-MARK: A Computing Framework on Efficient Watermarking of Large Language Models for Authentic Use of Generative AI at Local Devices — Jie Gu]] · 2026-10-10
 - [[prof-papers/618-yun-huang-perspectra-choosing-your-experts-enhances-critical-thinking-in|618 · Perspectra: Choosing Your Experts Enhances Critical Thinking in Multi-Agent Research Ideation — Yun Huang]] · 2026-10-10
