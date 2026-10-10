@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-john-black"
-source_hash: "b6da43153eadbd4fd8bb3eafbad7c796a0212288ec86626b163a7adc89fd846c"
+source_hash: "12955af3932ba14c5442afa5b0a28e54264c4802064a3cd6949783182912b791"
 sequence: 617
 generator: "outreach-garden: managed"
 ---
@@ -24,21 +24,21 @@ generator: "outreach-garden: managed"
 
 ## Paper overview
 
-This paper proposes MyZone, a new design for online social networks (OSNs) that addresses privacy, security, availability, and censorship issues found in current centralized OSNs. It uses a distributed peer-to-peer architecture where users own their data and replicate it on trusted friends' devices. The design aims to be resilient against attacks and network failures, support all main OSN features, and work well even in hostile or partitioned network environments.
+This paper proposes MyZone, a peer-to-peer online social network designed to overcome the privacy, security, and availability shortcomings of current centralized social networks. It uses a distributed architecture where users own their data, replicated only on trusted friends' devices, ensuring privacy and resilience against censorship and attacks.
 
 ### Why it matters
 
-**Research problem:** Current centralized OSNs violate user privacy by allowing service providers full access to user data, are vulnerable to censorship and denial-of-service attacks, and cause user frustration due to multiple platforms and changing policies. There is a need for a distributed OSN architecture that preserves privacy, ensures availability, and resists censorship and attacks.
+**Research problem:** Current online social networks (OSNs) suffer from privacy violations due to centralized data control, vulnerability to censorship and denial-of-service attacks, user confusion from multiple platforms, and security risks from centralized data centers.
 
-**Why it matters:** OSNs have become pervasive social media with hundreds of millions of users, but centralized control leads to privacy violations, censorship by governments, and security vulnerabilities. Users are increasingly concerned about privacy and censorship, and current OSNs fail to provide a trustworthy, resilient platform. A next-generation OSN that addresses these issues would empower users and protect their data and communication.
+**Why it matters:** OSNs have become pervasive social media platforms with huge social impact, but centralized architectures expose users to privacy violations, government censorship, and security breaches, undermining user trust and the social utility of these networks.
 
 **Key contributions:**
 
-- Design of a distributed OSN architecture that preserves user privacy by storing data on user devices and trusted friends' mirrors.
-- A two-layer system design separating secure service infrastructure from OSN application features.
-- A trust model defining multiple trust levels including certificate authority, friend, mirror, and replica trust.
-- Mechanisms for NAT traversal and relay servers to enable connectivity behind firewalls and NATs.
-- Security measures to detect and recover from malicious rendezvous servers and other attacks.
+- Design of a distributed OSN architecture that preserves user privacy by decentralizing data storage to trusted friends.
+- Definition of a trust model with multiple trust levels (certificate authority, user, friend, mirror, replica) to manage data access and replication securely.
+- Development of a service layer that supports NAT traversal, secure peer connections, and resilient rendezvous and relay servers.
+- Security measures addressing confidentiality, integrity, availability, authenticity, and consistency in hostile environments.
+- A local deployment model (Democracy IN A Box) for private OSNs usable under censorship and network partitioning.
 
 ## About the professor
 
@@ -57,183 +57,204 @@ Research interests: cryptography and security, combinatorial algorithms, graph t
 
 _The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
 
-**What you're missing:** Distributed Systems
-**The paper assumes:** distributed systems principles, peer-to-peer networking, replication and consistency models, network security in distributed environments
-**Already in this field?** Skip this entirely if you already understand core distributed systems concepts including replication, consistency, fault tolerance, and peer-to-peer network architectures.
+**What you're missing:** Distributed Systems Security
+**The paper assumes:** distributed systems security, peer-to-peer networking, trust models, secure communication protocols
+**Already in this field?** Skip this entirely if you already understand the principles of secure distributed systems and peer-to-peer network security.
 
-To understand the design and implementation of MyZone, a distributed peer-to-peer online social network, a solid grasp of distributed systems concepts such as replication, consistency, trust models, and network challenges like NAT traversal is essential. The rigorous course option offers a deep, university-level exploration of distributed systems principles, while the fast track provides a concise, intuition-driven introduction to the key ideas, suitable for quickly gaining the necessary background.
+To fully understand the design and security guarantees of MyZone, a distributed peer-to-peer social network, background knowledge in distributed systems security is essential. The rigorous course option provides a deep, structured university-level foundation on computer systems design and security principles relevant to distributed architectures. The fast-track option offers a concise, focused introduction to distributed systems concepts and challenges, suitable for quickly grasping the core ideas behind secure peer-to-peer networks and their trust models.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Jan 2022 - Design and Engineering of Computer Systems](https://www.youtube.com/playlist?list=PLOzRYVm0a65dAAfy0d4aRtj5v0OCAvoCY) — NPTEL IIT Bombay · 54 videos · 22.3h across 54 episodes
+
+**Watch only this:** Lectures 1 through 15 (Introduction to Computer Systems through Optimizing Memory Access), about 6 hours — covering core system design, OS concepts, processes, threads, scheduling, virtualization, and memory management relevant to distributed systems security.
+
+*Why it unblocks this paper:* This NPTEL IIT Bombay course covers comprehensive topics on computer systems design, including operating systems, networking, and security fundamentals that underpin distributed systems security. It provides the rigorous technical foundation needed to understand the service layer components, NAT traversal, and security guarantees MyZone relies on.
+
+*If you want all of it:* 22.3 hours across all 54 episodes
 
 ### The fast track
 _Same ground, a fraction of the time — for when you just need to read the paper._
 
-▶ [Distributed Systems (www.distributedsystemscourse.com)](https://www.youtube.com/playlist?list=PLOE1GTZ5ouRPbpTnrZ3Wqjamfwn_Q5Y9A) — Distributed Systems Course · 18 videos · 4.5h across 18 episodes
+▶ [Distributed Systems - design and algorithms](https://www.youtube.com/playlist?list=PLK_7cs6EN_4PkB8NrlPEqNOi7JSeie8PW) — Database Podcasts · 20 videos · 2.2h across 20 episodes
 
-**Watch only this:** Episodes 1 through 6 (What is a distributed system?, Why build one?, How to learn distributed systems, What could go wrong?, The many types of fail, Byzantine Fault Tolerance), about 1.5 hours — these episodes introduce core concepts and challenges in distributed systems necessary to grasp the paper's context.
+**Watch only this:** Episodes 1 through 7 (Beyond Centralized Data through Ensuring Availability & Fault Tolerance), about 45 minutes — covering distributed architectures, P2P networks, trust, and fault tolerance essential for understanding MyZone's design.
 
-*Why it unblocks this paper:* This short-form series offers clear, focused explainers on distributed systems fundamentals, including failure modes, consensus, consistency, and the CAP theorem, providing an efficient conceptual overview relevant to MyZone's peer-to-peer and trust-based design.
+*Why it unblocks this paper:* This short-form series from Database Podcasts succinctly explains key distributed systems concepts including peer-to-peer networks, trust building, availability, fault tolerance, and cryptography basics. It directly addresses the core challenges MyZone tackles, providing a quick yet substantive overview.
 
-*If you want all of it:* All 18 episodes, about 4.5 hours — for a broader but still concise coverage of distributed systems topics.
+*If you want all of it:* 2.2 hours across all 20 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 
 _Rigorous lectures, seminars and conference talks. Deeper, but longer._
 
-To deeply understand the MyZone paper, start by building foundational knowledge on trust models in distributed systems, NAT traversal techniques, and security and privacy in decentralized social networks. These prerequisites provide the necessary background on trust relationships, network connectivity challenges, and privacy/security concerns that MyZone addresses. Finally, focus on the core concept of distributed peer-to-peer social networks and the authors' own talk if available, to grasp the specific architectural design and innovations of MyZone.
+To deeply understand the MyZone paper, start with foundational concepts including peer-to-peer social networks, distributed trust models, NAT traversal techniques, and secure distributed systems security. These prerequisites provide the necessary background on decentralized architectures, trust management, network connectivity challenges, and security guarantees. Finally, focus on the core concept of distributed OSN architecture, culminating with the authors' own talk if available, to grasp the specific design and implementation details of MyZone.
 
-### Trust models in distributed systems *(prerequisite)*
-Trust models are critical to understanding how MyZone establishes multiple trust levels such as certificate authority, friend trust, and mirror trust to secure data replication and communication. This section covers advanced university lectures on distributed consensus and trust without centralized trust, providing a rigorous foundation for MyZone's trust architecture.
+### Peer-to-peer social networks *(prerequisite)*
+This section covers the principles and challenges of peer-to-peer social networks, which form the architectural foundation of MyZone. Understanding decentralized social networking protocols and their design trade-offs is essential to appreciate how MyZone achieves privacy and resilience.
 
-*How the paper uses it:* MyZone's trust model defines multiple trust levels including certificate authority and friend trust to secure the distributed OSN.
+*How the paper uses it:* MyZone employs a distributed peer-to-peer architecture to decentralize data storage and control.
 
-▶ [Lecture 6: Trust without Trust, Distributed Systems & Consensus](https://www.youtube.com/watch?v=ZMNnjmEfWRo) — Blockchain at Berkeley · 1:21:43 · 4y ago
+▶ [P2P and Online Social Networking Research at Mirage Group](https://www.youtube.com/watch?v=3DgZv7_cfNs) — Microsoft Research · 1:36:07 · 10y ago
+
+### Distributed trust models *(prerequisite)*
+Distributed trust models explain how trust relationships and access control are managed in decentralized systems. This knowledge is critical to understanding MyZone's multi-level trust model that governs data replication and access among friends.
+
+*How the paper uses it:* MyZone defines a trust model with multiple trust levels to securely manage data access and replication.
+
+▶ [Ontology, The Technical Vision of Distributed Trust Networks | NEO DevCon 1](https://www.youtube.com/watch?v=QyaZz0vtONs) — Neo Smart Economy · 23:43 · 8y ago
 
 ### NAT traversal techniques *(prerequisite)*
-NAT traversal is essential for enabling peer-to-peer connectivity behind firewalls and NAT devices, a key challenge MyZone addresses with STUN and relay servers. This section includes detailed technical webinars and lectures explaining NAT traversal mechanisms and their role in secure network communication.
+NAT traversal techniques enable peers behind network address translators to establish direct connections, a key technical challenge in peer-to-peer systems. Understanding these methods is vital to grasp how MyZone's service layer supports secure peer connections.
 
-*How the paper uses it:* MyZone's service layer incorporates NAT traversal and relay servers to enable connectivity behind restrictive network environments.
+*How the paper uses it:* MyZone's service layer supports NAT traversal to enable secure peer-to-peer communication.
 
-▶ [Tailscale Webinar - NAT Traversal explained with Lee Briggs](https://www.youtube.com/watch?v=7EoCa9HP9Bc) — Tailscale · 1:12:07 · 2y ago
+▶ [NAT-T (NAT Traversal) In English for SD-WAN:Encapsulates IPsec traffic in UDP (usually port 4500)](https://www.youtube.com/watch?v=VMeYfLcfB_M) — Anand Routing & Security Academy · 28:12 · 9mo ago
 
-### Security and privacy in decentralized social networks *(prerequisite)*
-Understanding the security and privacy challenges in decentralized social networks is fundamental to appreciating MyZone's design goals. This section presents university-level lectures and research talks on privacy threats, security mechanisms, and decentralized social media architectures.
+### Secure distributed systems security *(prerequisite)*
+This section provides an in-depth look at security mechanisms in distributed systems, including confidentiality, integrity, availability, and authenticity. These concepts underpin MyZone's security guarantees in hostile environments.
 
-*How the paper uses it:* MyZone aims to preserve user privacy and resist attacks by decentralizing data storage and enforcing access control.
+*How the paper uses it:* MyZone ensures security guarantees such as confidentiality, integrity, availability, authenticity, and consistency in its design.
 
-▶ [ARES 2021 - Enabling Privacy-Preserving Rule Mining in Decentralized Social Networks](https://www.youtube.com/watch?v=AKjDMnSdQ_c) — ARES & CD-MAKE Conference · 14:53 · 5y ago
+▶ [UMass CS677 (Spring'24) - Lecture 25 - Distributed Systems Security](https://www.youtube.com/watch?v=NDkf2vzfxOA) — UMass OS · 1:23:25 · Streamed 2y ago
 
-### Distributed peer-to-peer social networks
-This core concept covers the architectural paradigm underlying MyZone's design, focusing on peer-to-peer networking models that enable decentralized social networking. The selected video explains P2P network operation and system design considerations relevant to MyZone's approach.
+### Distributed OSN architecture
+This core section focuses on the architecture of distributed online social networks, highlighting how user data is managed and shared without centralized control. It directly relates to MyZone's design and implementation strategies.
 
-*How the paper uses it:* MyZone uses a distributed peer-to-peer architecture to decentralize social network data and functionality.
+*How the paper uses it:* MyZone's core contribution is its distributed OSN architecture that decentralizes data storage and control.
 
-▶ [How Peer to Peer (P2P) Network works | System Design Interview Basics](https://www.youtube.com/watch?v=2v6KqRB7adg) — ByteMonk · 11:13 · 4y ago
+▶ [Henry Story talks about Open Distributed Social Networks](https://www.youtube.com/watch?v=xf9xULase2U) — Oxford Internet Institute, University of Oxford · 4:50 · 16y ago
 
 ## Track 2 — Beginner → Advanced (short-form)
 
 _Concise, high-quality explainers that build intuition — for when time is short._
 
-This beginner-to-advanced path introduces foundational concepts essential to understanding MyZone, a distributed, privacy-preserving online social network. We start with the basics of peer-to-peer networks to grasp the architectural paradigm, then explore trust models critical for securing distributed systems, followed by NAT traversal techniques that enable connectivity behind firewalls. Finally, we focus on security and privacy challenges specific to decentralized social networks, culminating in a direct look at the MyZone paper talk for author insights.
+To understand the MyZone paper, start by grasping the basics of peer-to-peer social networks to appreciate the decentralized architecture MyZone uses. Next, learn about distributed trust models to see how MyZone manages secure data sharing among friends. Then, study NAT traversal techniques, which enable secure peer connections across network boundaries. After that, explore secure distributed systems security to understand MyZone's guarantees of confidentiality and integrity. Finally, dive into the core concept of distributed OSN architecture to see how MyZone designs and manages user data in a decentralized social network.
 
-### Distributed peer-to-peer social networks *(prerequisite)*
-Peer-to-peer (P2P) networks allow devices (peers) to communicate directly without relying on a central server, which is fundamental to MyZone's architecture. Understanding how P2P differs from client-server models helps grasp how MyZone achieves decentralization and resilience.
+### Peer-to-peer social networks *(prerequisite)*
+Peer-to-peer social networks distribute data and control among users rather than relying on a central server. This decentralization enhances privacy and resilience by allowing direct connections between users. Understanding this concept helps grasp how MyZone avoids centralized data control.
 
-*How the paper uses it:* MyZone uses a distributed peer-to-peer architecture to store user data on user devices and trusted friends, avoiding centralized control.
+*How the paper uses it:* MyZone employs a distributed peer-to-peer architecture to decentralize data storage and control.
 
-▶ [How Peer to Peer (P2P) Network works | System Design Interview Basics](https://www.youtube.com/watch?v=2v6KqRB7adg) — ByteMonk · 11:13 · 4y ago
+▶ [Offline First Peer-to-Peer Social Networks](https://www.youtube.com/watch?v=5KXltaBGMoM) — Offline First · 5:45 · 8y ago
 
-### Trust models in distributed systems *(prerequisite)*
-Trust models define how entities in a distributed system verify and rely on each other, which is crucial for security and data integrity. Learning about different trust levels and consensus mechanisms helps understand how MyZone manages friend trust, mirror trust, and certificate authorities.
+### Distributed trust models *(prerequisite)*
+Distributed trust models define how trust is established and managed in systems without a central authority. They enable secure data sharing and replication by defining trust levels and access controls among peers. This foundation is key to understanding MyZone's approach to secure friend-based data replication.
 
-*How the paper uses it:* MyZone defines multiple trust levels including certificate authority, friend, mirror, and replica trust to secure user data and interactions.
+*How the paper uses it:* MyZone defines a trust model with multiple trust levels to manage data access and replication securely among friends.
 
-▶ [Lecture 6: Trust without Trust, Distributed Systems & Consensus](https://www.youtube.com/watch?v=ZMNnjmEfWRo) — Blockchain at Berkeley · 1:21:43 · 4y ago
+▶ [Explaining Distributed Systems Like I'm 5](https://www.youtube.com/watch?v=CESKgdNiKJw) — HashiCorp, an IBM Company · 12:40 · 4y ago
 
 ### NAT traversal techniques *(prerequisite)*
-Network Address Translation (NAT) traversal techniques enable devices behind routers and firewalls to establish direct connections, which is essential for peer-to-peer communication. Understanding NAT and traversal methods explains how MyZone ensures connectivity despite network barriers.
+NAT traversal techniques allow devices behind network address translators (NATs) to establish direct peer-to-peer connections. This is essential for enabling secure communication in decentralized networks where users are often behind routers. Understanding NAT traversal explains how MyZone achieves reliable peer connections.
 
-*How the paper uses it:* MyZone's service layer includes STUN and relay servers to enable NAT traversal and maintain peer connectivity behind firewalls.
+*How the paper uses it:* MyZone's service layer supports NAT traversal to enable secure peer connections across network boundaries.
 
-▶ [NAT and NAT-Traversal Explained - Network Address Translation](https://www.youtube.com/watch?v=5DhHcIuBn1g) — lemonade in tech · 10:28 · 3y ago
+▶ [NAT Explained - Network Address Translation](https://www.youtube.com/watch?v=FTUV0t6JaDA) — PowerCert Animated Videos · 4:26 · 8y ago
 
-### Security and privacy in decentralized social networks *(prerequisite)*
-Decentralized social networks face unique security and privacy challenges since data is distributed across peers rather than centralized servers. Learning these challenges and mitigation strategies provides context for MyZone's privacy-preserving design.
+### Secure distributed systems security *(prerequisite)*
+Secure distributed systems security covers how confidentiality, integrity, availability, authenticity, and consistency are maintained in systems spread across multiple nodes. This knowledge is critical to understanding how MyZone protects user data and ensures reliable operation in hostile environments.
 
-*How the paper uses it:* MyZone aims to preserve user privacy and resist attacks by storing data only on user devices and trusted mirrors in a distributed manner.
+*How the paper uses it:* MyZone provides security guarantees including confidentiality, integrity, availability, authenticity, and consistency in a distributed OSN.
 
-▶ [Privacy and Security in Online Social Media](https://www.youtube.com/watch?v=AQClJAif5w8) — NPTEL-NOC IITM · 5:51 · 3y ago
+▶ [How Distributed Systems Establish Trust: TLS, Keys & Certificates](https://www.youtube.com/watch?v=n1u7v9KrZaM) — Think Software · 10:22 · 3y ago
 
-### MyZone paper talk *(paper-talk search result; attribution unverified)*
-A direct talk by the authors offers insights into the motivations, design decisions, and challenges of MyZone, complementing the technical understanding gained from foundational concepts.
+### Distributed OSN architecture
+Distributed OSN architecture explains how online social networks can be designed without central servers by distributing data and control among users. This concept ties together the previous topics and shows the overall system design MyZone uses to preserve privacy and availability.
 
-*How the paper uses it:* Hearing from the authors themselves provides deeper understanding of MyZone's architecture and security goals.
+*How the paper uses it:* MyZone's core contribution is its distributed OSN architecture that decentralizes data storage to trusted friends.
 
-▶ [What’s wrong with GenZ? | MA Podcast Season 2 Episode 97 Feat. Yasin Asad](https://www.youtube.com/watch?v=WUHLRhiZESM) — Muhammad Ali · 56:00 · 7d ago
+▶ [Distributed social media - Mastodon & Fediverse Explained](https://www.youtube.com/watch?v=S57uhCQBEk0) — Simply Explained · 6:48 · 7y ago
 
 ## Already in your library
 
 - [Peer-to-Peer Architectural Model: Overlay Network, Unstructured & Structured P2P, Advtgs & Disadvtgs](https://www.youtube.com/watch?v=5TlXplq3wv4) — also for: Managing Edge Resources at Scale: A Peer-to-Peer CDN for On-Demand Video Streaming (Klara Nahrstedt)
 - [What is Network Architecture? full Explanation | Peer to Peer and Client-Server architecture](https://www.youtube.com/watch?v=MvPFBVy2hy4) — also for: Managing Edge Resources at Scale: A Peer-to-Peer CDN for On-Demand Video Streaming (Klara Nahrstedt)
+- [How Peer to Peer (P2P) Network works | System Design Interview Basics](https://www.youtube.com/watch?v=2v6KqRB7adg) — also for: MyZone: A Next-Generation Online Social Network (John Black)
+- [NAT and NAT-Traversal Explained - Network Address Translation](https://www.youtube.com/watch?v=5DhHcIuBn1g) — also for: MyZone: A Next-Generation Online Social Network (John Black)
+- [Introduction to Social Network Analysis [1/5]: Main Concepts](https://www.youtube.com/watch?v=lnLW6ITFY3M) — also for: Modeling information diffusion in social media: data-driven observations (Lawrence O. Hall)
 
 
 ## Build it — 3 projects to showcase this paper
 
 _A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
 
-These three projects form a progression to demonstrate your understanding of MyZone's distributed, privacy-preserving OSN design. The beginner project recreates a core mechanism of user data replication on trusted peers, the intermediate project implements a simplified peer-to-peer OSN service layer with NAT traversal and trust concepts, and the advanced project tackles a key open problem from the paper by designing and evaluating an incentive mechanism for mirror selection and synchronization.
+These three projects form a practical learning ladder to understand and extend the MyZone distributed social network design. The beginner project recreates a core mechanism of peer-to-peer profile replication on trusted mirrors, the intermediate project implements a simplified version of MyZone's secure rendezvous and NAT traversal service layer, and the advanced project tackles the open problem of mirror selection optimization and incentive design for mirror participation, directly addressing a key limitation and future direction from the paper.
 
-### Beginner — Simulate User Profile Replication on Trusted Peers
+### Beginner — Peer-to-Peer Profile Replication Prototype
 *Effort: a weekend, ~8 hours*
 
-You build a small simulation of MyZone's core idea of replicating user profiles only on trusted friends' devices. The simulation models a small network of users and their trust relationships, and demonstrates how profile data is replicated and accessed only by trusted mirrors.
+You build a small peer-to-peer application that simulates user profile replication among trusted friends (mirrors). The app allows a user to create a profile and replicate it to one or two trusted peers, demonstrating basic data sharing and availability when the original user is offline.
 
-**Why it shows you understood the paper:** This project shows you grasp the paper's key privacy-preserving trust model and data replication approach, demonstrating how user data ownership and selective replication work in a distributed OSN.
+**Why it shows you understood the paper:** This project shows you understand the core MyZone concept of decentralizing user data storage to trusted friends to preserve privacy and availability, replicating profiles only on mirrors.
 
-**Grounded in:** Design of a distributed OSN architecture that preserves user privacy by storing data on user devices and trusted friends' mirrors.
+**Grounded in:** User profile availability is ensured by replicating profiles on trusted mirrors.
 
-**Tech stack:** JavaScript, Node.js
+**Tech stack:** Node.js, Express.js, JavaScript, WebRTC (for peer connections)
 
-**Data:** Synthetic data simulating user profiles and friend trust relationships generated within the simulation.
+**Data:** Simulated user profiles created locally; no external dataset needed.
 
 **Build it:**
 
-1. Model a small network of users with friend relationships and trust levels.
-2. Implement profile data objects owned by each user.
-3. Simulate replication of profile data only to trusted friends acting as mirrors.
-4. Implement read access controls so only trusted mirrors can access replicated data.
-5. Demonstrate data availability when original user is offline but mirrors serve data.
+1. Set up a Node.js Express server to serve a simple web UI for profile creation.
+2. Implement WebRTC peer connections to establish direct communication between peers.
+3. Allow a user to create a profile and send a copy to one or two trusted peers (mirrors).
+4. Implement a simple mechanism to retrieve the profile from mirrors when the original user is offline.
+5. Demonstrate profile availability by simulating the original user disconnecting and mirrors serving the profile.
 
-**Ships as:** A Node.js simulation with README explaining the trust model, replication logic, and example runs showing profile availability and privacy.
+**Ships as:** A GitHub repository with a README explaining the replication mechanism, instructions to run the app, and a demo showing profile availability via mirrors.
 
-**Stretch goal:** Add a simple visualization of the network and replication state using a JavaScript graph library.
+**Stretch goal:** Add basic access control so only trusted mirrors can access replicated profiles.
 
-### Intermediate — Implement a Simplified P2P OSN Service Layer with NAT Traversal
+### Intermediate — Simplified MyZone Service Layer with NAT Traversal
 *Effort: 2 weekends, ~20 hours*
 
-You implement a simplified version of MyZone's service layer that supports peer registration, friend discovery, and NAT traversal using STUN and relay servers. The system enforces friend-based trust for profile replication and supports secure socket communication between peers.
+You implement a simplified version of MyZone's service layer focusing on secure peer rendezvous and NAT traversal. The system allows peers behind NATs to discover each other and establish secure connections for profile replication and messaging, mimicking MyZone's infrastructure.
 
-**Why it shows you understood the paper:** This project demonstrates your ability to reimplement the paper's core distributed infrastructure and trust model, including handling NAT traversal challenges and secure peer communication, which are central to MyZone's design.
+**Why it shows you understood the paper:** This project demonstrates comprehension of MyZone's service layer design, including NAT traversal techniques and secure peer connections, which are critical for decentralized OSN functionality.
 
-**Grounded in:** A two-layer system design separating secure service infrastructure from OSN application features; mechanisms for NAT traversal and relay servers to enable connectivity behind firewalls and NATs.
+**Grounded in:** The service layer supports NAT traversal, secure connections, and resilient rendezvous and relay servers.
 
-**Tech stack:** Java 11 or 17, Netty or Java NIO for networking, STUN client library, Docker for relay server
+**Tech stack:** Node.js, Express.js, JavaScript, STUN/TURN servers (e.g., coturn), WebRTC
 
-**Data:** Synthetic user identities and friend trust relationships created for testing peer registration and replication.
+**Data:** Simulated user profiles and peer metadata created locally; no external dataset needed.
 
 **Build it:**
 
-1. Implement a peer registration service with certificate-based identity verification.
-2. Implement a basic STUN client to discover NAT type and public IP/port.
-3. Set up a relay server to forward traffic when direct NAT traversal fails.
-4. Implement friend discovery and trust verification between peers.
-5. Implement secure socket communication between peers using TLS or similar.
-6. Simulate profile replication on trusted friends' devices with access control.
+1. Set up a Node.js server to act as a rendezvous server for peer discovery.
+2. Configure and integrate a public STUN server or coturn TURN server for NAT traversal.
+3. Implement client-side WebRTC logic to register with the rendezvous server and discover peers.
+4. Establish secure peer-to-peer connections using WebRTC data channels.
+5. Demonstrate profile replication or messaging over the established connections.
+6. Compare connection success rates with and without NAT traversal support.
 
-**Ships as:** A Java-based service layer prototype with README documenting architecture, NAT traversal handling, trust enforcement, and instructions to run relay and peer nodes.
+**Ships as:** A GitHub repository with code and documentation showing a working rendezvous and NAT traversal service layer, with instructions to test peer connections behind NATs.
 
-**Stretch goal:** Add logging and detection of malicious rendezvous behavior as described in the paper's security measures.
+**Stretch goal:** Add a simple relay server fallback for peers unable to connect directly.
 
-### Advanced — Design and Evaluate Incentive Mechanisms for Mirror Selection and Synchronization
+### Advanced — Mirror Selection and Incentive Mechanism for MyZone
 *Effort: 3+ weeks*
 
-You design an incentive mechanism, possibly using game-theoretic or reputation-based approaches, to motivate users to act as reliable mirrors in MyZone. You implement a prototype simulation or small-scale deployment to evaluate how incentives affect mirror selection, replication consistency, and system availability.
+You design and implement an algorithmic prototype for mirror selection among friends to optimize profile availability and acceptance, incorporating an incentive mechanism to motivate users to act as mirrors. You simulate a network of users with trust relationships and evaluate mirror assignment strategies.
 
-**Why it shows you understood the paper:** This project addresses a key open problem and future direction identified by the paper, demonstrating deep comprehension of MyZone's limitations and extending its design to improve availability and user participation.
+**Why it shows you understood the paper:** This project addresses a key limitation and future direction from the MyZone paper by tackling mirror selection and incentives, demonstrating deep understanding and capacity to extend the original system design.
 
-**Grounded in:** Mirror selection strategy and incentives for mirrors are not addressed and remain open problems; defining synchronization protocols and timing for mirror updates.
+**Grounded in:** Selection of mirrors among friends for profile replication is not fully addressed and remains an open problem; incentive mechanisms for motivating users to act as mirrors are not developed.
 
-**Tech stack:** TypeScript, Node.js, React (optional for UI)
+**Tech stack:** Python 3.11, NetworkX (for graph modeling), Jupyter Notebook, Matplotlib or Plotly (for visualization)
 
-**Data:** Synthetic network of users with trust relationships and simulated mirror availability and behavior.
+**Data:** Simulated social network graphs with trust levels among users; no real dataset required.
 
 **Build it:**
 
-1. Research incentive mechanisms and game-theoretic models applicable to mirror selection.
-2. Design an incentive protocol that rewards users for acting as mirrors based on availability and trust.
-3. Implement a simulation environment modeling user behavior, mirror selection, and synchronization timing.
-4. Evaluate system availability and consistency metrics under different incentive schemes.
-5. Optionally, build a simple UI to visualize mirror selection and incentive effects.
-6. Document findings and limitations in a detailed README.
+1. Model a social network as a graph with nodes as users and edges representing trust relationships with weights.
+2. Implement mirror selection algorithms based on criteria such as trust level, availability, and resource capacity.
+3. Design a simple incentive mechanism (e.g., credit system) to encourage mirror participation.
+4. Simulate user churn and measure profile availability under different mirror selection and incentive strategies.
+5. Visualize results comparing baseline random mirror selection versus your optimized approach.
+6. Document findings and discuss trade-offs and potential real-world applicability.
 
-**Ships as:** A prototype simulation and analysis demonstrating how incentives impact mirror reliability and synchronization, with code and documentation.
+**Ships as:** A GitHub repository containing simulation code, analysis notebooks, and a detailed README explaining the mirror selection problem, your approach, and evaluation results.
 
-**Stretch goal:** Integrate the incentive mechanism with a minimal P2P OSN prototype implementing MyZone's trust and replication model.
+**Stretch goal:** Extend the simulation to include synchronization timing protocols among mirrors balancing consistency and resource constraints.
