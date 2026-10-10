@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/627-stephan-olariu-reducing-the-environmental-impact-of-midblock-crossing|627 · Reducing the Environmental Impact of Midblock Crossing — Stephan Olariu]] · 2026-10-10
 - [[prof-papers/626-aaron-schulman-lost-in-translation-text-message-spoofing-via-email|626 · Lost in Translation: Text Message Spoofing via Email — Aaron Schulman]] · 2026-10-10
 - [[prof-papers/625-matheus-v-x-ferreira-incentive-compatible-collusion-resistance-via-poste|625 · Incentive-compatible Collusion-resistance via Posted Prices — Matheus V. X. Ferreira]] · 2026-10-10
 - [[prof-papers/624-guy-e-blelloch-big-atomics-non-blocking-algorithms-with-a-direct-fast-pa|624 · Big Atomics: Non-Blocking Algorithms with a Direct Fast Path — Guy E. Blelloch]] · 2026-10-10
