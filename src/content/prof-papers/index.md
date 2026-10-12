@@ -1,6 +1,6 @@
 ---
 title: "Professor papers and learning paths"
-date: 2026-10-11
+date: 2026-10-12
 tags:
   - research-paper
   - learning-path
@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/629-pew-thian-yap-structural-functional-brain-connectivity-generation-via-mu|629 · Structural-Functional Brain Connectivity Generation via Multimodal Hypergraph-based Flow Matching — Pew-Thian Yap]] · 2026-10-12
 - [[prof-papers/628-anu-g-bourgeois-from-chaos-to-clarity-a-framework-for-program-level-ai-l|628 · From Chaos to Clarity: A Framework for Program-Level AI Learning Outcomes — Anu G. Bourgeois]] · 2026-10-11
 - [[prof-papers/627-stephan-olariu-reducing-the-environmental-impact-of-midblock-crossing|627 · Reducing the Environmental Impact of Midblock Crossing — Stephan Olariu]] · 2026-10-10
 - [[prof-papers/626-aaron-schulman-lost-in-translation-text-message-spoofing-via-email|626 · Lost in Translation: Text Message Spoofing via Email — Aaron Schulman]] · 2026-10-10
