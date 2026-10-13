@@ -1,6 +1,6 @@
 ---
 title: "Professor papers and learning paths"
-date: 2026-10-12
+date: 2026-10-13
 tags:
   - research-paper
   - learning-path
@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/631-leen-kiat-soh-plato-pointer-learner-for-agent-and-task-openness|631 · PLATO: Pointer Learner for Agent and Task Openness — Leen-Kiat Soh]] · 2026-10-13
 - [[prof-papers/630-pierre-emmanuel-gaillardon-lightweight-congruence-profiling-for-early-de|630 · Lightweight Congruence Profiling for Early Design Exploration of Heterogeneous FPGAs — Pierre-Emmanuel Gaillardon]] · 2026-10-12
 - [[prof-papers/629-pew-thian-yap-structural-functional-brain-connectivity-generation-via-mu|629 · Structural-Functional Brain Connectivity Generation via Multimodal Hypergraph-based Flow Matching — Pew-Thian Yap]] · 2026-10-12
 - [[prof-papers/628-anu-g-bourgeois-from-chaos-to-clarity-a-framework-for-program-level-ai-l|628 · From Chaos to Clarity: A Framework for Program-Level AI Learning Outcomes — Anu G. Bourgeois]] · 2026-10-11
