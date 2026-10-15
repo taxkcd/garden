@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/644-nan-zhang-topology-of-bound-states-in-the-continuum-from-the-angular-str|644 · Topology of bound states in the continuum from the angular structure of leading radiation — Nan Zhang]] · 2026-10-15
 - [[prof-papers/643-stavros-sintos-faster-relational-algorithms-using-geometric-data-structu|643 · Faster Relational Algorithms Using Geometric Data Structures — Stavros Sintos]] · 2026-10-15
 - [[prof-papers/642-andr-dehon-hilfs-fpga-orchestrated-file-system-for-high-level-synthesis|642 · HiLFS: FPGA-Orchestrated File System for High-Level Synthesis — André DeHon]] · 2026-10-15
 - [[prof-papers/641-jaijeet-s-roychowdhury-high-quality-circuit-based-3-sat-mappings-for-osc|641 · High Quality Circuit-Based 3-SAT Mappings for Oscillator Ising Machines — Jaijeet S. Roychowdhury]] · 2026-10-15
