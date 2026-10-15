@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/641-jaijeet-s-roychowdhury-high-quality-circuit-based-3-sat-mappings-for-osc|641 · High Quality Circuit-Based 3-SAT Mappings for Oscillator Ising Machines — Jaijeet S. Roychowdhury]] · 2026-10-15
 - [[prof-papers/640-jianguo-wang-vector-databases-whats-really-new-and-whats-next-vldb-2024|640 · Vector Databases: What’s Really New and What’s Next? (VLDB 2024 Panel) — Jianguo Wang]] · 2026-10-15
 - [[prof-papers/639-ian-g-harris-asymmetric-capacity-allocation-in-self-refinement-pipelines|639 · Asymmetric Capacity Allocation in Self-Refinement Pipelines — Ian G. Harris]] · 2026-10-15
 - [[prof-papers/638-yanzhao-wu-star-fl-secure-federated-learning-with-spatial-temporal-analy|638 · STAR-FL: Secure Federated Learning with Spatial-Temporal Analysis and Robust Aggregation — Yanzhao Wu]] · 2026-10-15
