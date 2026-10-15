@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/654-gautam-das-determining-attributes-to-maximize-visibility-of-objects|654 · Determining Attributes to Maximize Visibility of Objects — Gautam Das]] · 2026-10-15
 - [[prof-papers/653-david-held-ghost-hierarchical-sub-goal-policies-for-generalizing-robot-m|653 · GHOST: Hierarchical Sub-Goal Policies for Generalizing Robot Manipulation — David Held]] · 2026-10-15
 - [[prof-papers/652-jillian-aurisano-can-ai-agents-understand-spoken-conversations-about-dat|652 · Can AI agents understand spoken conversations about data visualizations in online meetings? — Jillian Aurisano]] · 2026-10-15
 - [[prof-papers/651-dixin-tang-homomorphism-calculus-for-user-defined-aggregations|651 · Homomorphism Calculus for User-Defined Aggregations — Dixin Tang]] · 2026-10-15
