@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/636-ethan-zuckerman-media-cloud-massive-open-source-collection-of-global-new|636 · Media Cloud: Massive Open Source Collection of Global News on the Open Web — Ethan Zuckerman]] · 2026-10-15
 - [[prof-papers/635-wei-xu-cocoa-context-conditional-cultural-alignment-for-large-language-m|635 · CoCoA: Context-Conditional Cultural Alignment for Large Language Models — Wei Xu]] · 2026-10-15
 - [[prof-papers/634-omkant-pandey-collaborative-incrementally-verifiable-computation|634 · Collaborative Incrementally Verifiable Computation — Omkant Pandey]] · 2026-10-15
 - [[prof-papers/633-eleftherios-garyfallidis-prism-differentiable-analysis-by-synthesis-for|633 · PRISM: Differentiable Analysis-by-Synthesis for Fixel Recovery in Diffusion MRI — Eleftherios Garyfallidis]] · 2026-10-15
