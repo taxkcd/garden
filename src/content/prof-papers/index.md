@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/663-barton-p-miller-a-study-of-the-reliability-of-agentic-ai-generated-progr|663 · A Study of the Reliability of Agentic AI-Generated Programs — Barton P. Miller]] · 2026-10-15
 - [[prof-papers/662-julian-panetta-a-neural-preconditioned-poisson-solver-for-mixed-dirichle|662 · A Neural-Preconditioned Poisson Solver for Mixed Dirichlet and Neumann Boundary Conditions — Julian Panetta]] · 2026-10-15
 - [[prof-papers/661-william-h-hsu-a-novel-approach-for-detection-and-ranking-of-trendy-and-e|661 · A Novel Approach for Detection and Ranking of Trendy and Emerging Cyber Threat Events in Twitter Streams — William H. Hsu]] · 2026-10-15
 - [[prof-papers/660-neil-c-rowe-wip-deception-in-depth-using-multiple-layers-of-deception|660 · WiP: Deception-in-Depth Using Multiple Layers of Deception — Neil C. Rowe]] · 2026-10-15
