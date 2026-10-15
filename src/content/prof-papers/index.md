@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/639-ian-g-harris-asymmetric-capacity-allocation-in-self-refinement-pipelines|639 · Asymmetric Capacity Allocation in Self-Refinement Pipelines — Ian G. Harris]] · 2026-10-15
 - [[prof-papers/638-yanzhao-wu-star-fl-secure-federated-learning-with-spatial-temporal-analy|638 · STAR-FL: Secure Federated Learning with Spatial-Temporal Analysis and Robust Aggregation — Yanzhao Wu]] · 2026-10-15
 - [[prof-papers/637-sumitra-mukherjee-an-investigation-of-methods-for-improving-spatial-inva|637 · An Investigation of Methods for Improving Spatial Invariance of Convolutional Neural Networks for Image Classification — Sumitra Mukherjee]] · 2026-10-15
 - [[prof-papers/636-ethan-zuckerman-media-cloud-massive-open-source-collection-of-global-new|636 · Media Cloud: Massive Open Source Collection of Global News on the Open Web — Ethan Zuckerman]] · 2026-10-15
