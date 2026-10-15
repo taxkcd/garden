@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/648-blair-macintyre-transition-techniques-for-externally-guided-multi-scale|648 · Transition Techniques for Externally-Guided Multi-Scale Viewpoint Changes — Blair MacIntyre]] · 2026-10-15
 - [[prof-papers/647-jacob-andreas-deductive-closure-training-of-language-models-for-coherenc|647 · Deductive Closure Training of Language Models for Coherence, Accuracy, and Updatability — Jacob Andreas]] · 2026-10-15
 - [[prof-papers/646-juan-a-garay-nisq-security-and-complexity-via-simple-classical-reasoning|646 · NISQ Security and Complexity via Simple Classical Reasoning — Juan A. Garay]] · 2026-10-15
 - [[prof-papers/645-ali-raza-butt-wisp-waste-and-interference-suppressed-distributed-specula|645 · WISP: Waste- and Interference-Suppressed Distributed Speculative LLM Serving at the Edge via Dynamic Drafting and SLO-Aware Batching — Ali Raza Butt]] · 2026-10-15
