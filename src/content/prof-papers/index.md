@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/653-david-held-ghost-hierarchical-sub-goal-policies-for-generalizing-robot-m|653 · GHOST: Hierarchical Sub-Goal Policies for Generalizing Robot Manipulation — David Held]] · 2026-10-15
 - [[prof-papers/652-jillian-aurisano-can-ai-agents-understand-spoken-conversations-about-dat|652 · Can AI agents understand spoken conversations about data visualizations in online meetings? — Jillian Aurisano]] · 2026-10-15
 - [[prof-papers/651-dixin-tang-homomorphism-calculus-for-user-defined-aggregations|651 · Homomorphism Calculus for User-Defined Aggregations — Dixin Tang]] · 2026-10-15
 - [[prof-papers/650-craig-a-schroeder-second-order-accurate-particle-in-cell-discretization|650 · Second order accurate particle-in-cell discretization of the Navier-Stokes equations — Craig A. Schroeder]] · 2026-10-15
