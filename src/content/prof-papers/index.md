@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/650-craig-a-schroeder-second-order-accurate-particle-in-cell-discretization|650 · Second order accurate particle-in-cell discretization of the Navier-Stokes equations — Craig A. Schroeder]] · 2026-10-15
 - [[prof-papers/649-weiming-xiang-a-transition-system-abstraction-framework-for-neural-netwo|649 · A Transition System Abstraction Framework for Neural Network Dynamical System Models — Weiming Xiang]] · 2026-10-15
 - [[prof-papers/648-blair-macintyre-transition-techniques-for-externally-guided-multi-scale|648 · Transition Techniques for Externally-Guided Multi-Scale Viewpoint Changes — Blair MacIntyre]] · 2026-10-15
 - [[prof-papers/647-jacob-andreas-deductive-closure-training-of-language-models-for-coherenc|647 · Deductive Closure Training of Language Models for Coherence, Accuracy, and Updatability — Jacob Andreas]] · 2026-10-15
