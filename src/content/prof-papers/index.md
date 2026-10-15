@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/646-juan-a-garay-nisq-security-and-complexity-via-simple-classical-reasoning|646 · NISQ Security and Complexity via Simple Classical Reasoning — Juan A. Garay]] · 2026-10-15
 - [[prof-papers/645-ali-raza-butt-wisp-waste-and-interference-suppressed-distributed-specula|645 · WISP: Waste- and Interference-Suppressed Distributed Speculative LLM Serving at the Edge via Dynamic Drafting and SLO-Aware Batching — Ali Raza Butt]] · 2026-10-15
 - [[prof-papers/644-nan-zhang-topology-of-bound-states-in-the-continuum-from-the-angular-str|644 · Topology of bound states in the continuum from the angular structure of leading radiation — Nan Zhang]] · 2026-10-15
 - [[prof-papers/643-stavros-sintos-faster-relational-algorithms-using-geometric-data-structu|643 · Faster Relational Algorithms Using Geometric Data Structures — Stavros Sintos]] · 2026-10-15
