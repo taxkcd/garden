@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/635-wei-xu-cocoa-context-conditional-cultural-alignment-for-large-language-m|635 · CoCoA: Context-Conditional Cultural Alignment for Large Language Models — Wei Xu]] · 2026-10-15
 - [[prof-papers/634-omkant-pandey-collaborative-incrementally-verifiable-computation|634 · Collaborative Incrementally Verifiable Computation — Omkant Pandey]] · 2026-10-15
 - [[prof-papers/633-eleftherios-garyfallidis-prism-differentiable-analysis-by-synthesis-for|633 · PRISM: Differentiable Analysis-by-Synthesis for Fixel Recovery in Diffusion MRI — Eleftherios Garyfallidis]] · 2026-10-15
 - [[prof-papers/632-georg-stadler-optimal-control-under-uncertainty-with-joint-chance-state|632 · Optimal control under uncertainty with joint chance state constraints: almost-everywhere bounds, variance reduction, and application to (bi-)linear elliptic PDEs — Georg Stadler]] · 2026-10-15
