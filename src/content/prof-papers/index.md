@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/656-guoliang-xue-resource-aware-intrusion-detection-in-infrastructure-networ|656 · Resource-Aware Intrusion Detection in Infrastructure Networks: A Game-Theoretic Approach — Guoliang Xue]] · 2026-10-15
 - [[prof-papers/655-binhai-zhu-protein-local-structure-alignment-under-the-discrete-frchet-d|655 · Protein Local Structure Alignment Under the Discrete Fréchet Distance — Binhai Zhu]] · 2026-10-15
 - [[prof-papers/654-gautam-das-determining-attributes-to-maximize-visibility-of-objects|654 · Determining Attributes to Maximize Visibility of Objects — Gautam Das]] · 2026-10-15
 - [[prof-papers/653-david-held-ghost-hierarchical-sub-goal-policies-for-generalizing-robot-m|653 · GHOST: Hierarchical Sub-Goal Policies for Generalizing Robot Manipulation — David Held]] · 2026-10-15
