@@ -1,6 +1,6 @@
 ---
 title: "Professor papers and learning paths"
-date: 2026-10-13
+date: 2026-10-15
 tags:
   - research-paper
   - learning-path
@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/632-georg-stadler-optimal-control-under-uncertainty-with-joint-chance-state|632 · Optimal control under uncertainty with joint chance state constraints: almost-everywhere bounds, variance reduction, and application to (bi-)linear elliptic PDEs — Georg Stadler]] · 2026-10-15
 - [[prof-papers/631-leen-kiat-soh-plato-pointer-learner-for-agent-and-task-openness|631 · PLATO: Pointer Learner for Agent and Task Openness — Leen-Kiat Soh]] · 2026-10-13
 - [[prof-papers/630-pierre-emmanuel-gaillardon-lightweight-congruence-profiling-for-early-de|630 · Lightweight Congruence Profiling for Early Design Exploration of Heterogeneous FPGAs — Pierre-Emmanuel Gaillardon]] · 2026-10-12
 - [[prof-papers/629-pew-thian-yap-structural-functional-brain-connectivity-generation-via-mu|629 · Structural-Functional Brain Connectivity Generation via Multimodal Hypergraph-based Flow Matching — Pew-Thian Yap]] · 2026-10-12
