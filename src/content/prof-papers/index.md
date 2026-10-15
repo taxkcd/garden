@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/659-bryan-a-plummer-modality-agnostic-latent-thinking|659 · Modality-Agnostic Latent Thinking — Bryan A. Plummer]] · 2026-10-15
 - [[prof-papers/658-huan-zhang-two-stage-learning-of-stabilizing-neural-controllers-via-zubo|658 · Two-Stage Learning of Stabilizing Neural Controllers via Zubov Sampling and Iterative Domain Expansion — Huan Zhang]] · 2026-10-15
 - [[prof-papers/657-shahram-ghandeharizadeh-indoor-drone-visual-effects-using-lightbenders|657 · Indoor Drone Visual Effects Using LightBenders — Shahram Ghandeharizadeh]] · 2026-10-15
 - [[prof-papers/656-guoliang-xue-resource-aware-intrusion-detection-in-infrastructure-networ|656 · Resource-Aware Intrusion Detection in Infrastructure Networks: A Game-Theoretic Approach — Guoliang Xue]] · 2026-10-15
