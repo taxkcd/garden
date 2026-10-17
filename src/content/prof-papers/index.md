@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/729-perry-alexander-designing-trustworthy-layered-attestations|729 · Designing Trustworthy Layered Attestations — Perry Alexander]] · 2026-10-17
 - [[prof-papers/728-bruno-c-da-silva-behavior-alignment-via-reward-function-optimization|728 · Behavior Alignment via Reward Function Optimization — Bruno C. da Silva]] · 2026-10-17
 - [[prof-papers/727-charalampos-chelmis-recipe-networks-and-the-principles-of-healthy-food-o|727 · Recipe Networks and the Principles of Healthy Food on the Web — Charalampos Chelmis]] · 2026-10-17
 - [[prof-papers/726-rakesh-v-vohra-optimal-bailouts-in-diversified-financial-networks|726 · Optimal Bailouts in Diversified Financial Networks — Rakesh V. Vohra]] · 2026-10-17
