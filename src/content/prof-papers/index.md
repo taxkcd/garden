@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/742-eric-c-rouchka-systematic-analysis-of-alternative-splicing-in-transcript|742 · Systematic Analysis of Alternative Splicing in Transcriptomes of Multiple Sclerosis Patient Brain Samples — Eric C. Rouchka]] · 2026-10-17
 - [[prof-papers/741-georgia-gkioxari-reconstructing-hand-held-objects-in-3d-from-images-and|741 · Reconstructing Hand-Held Objects in 3D from Images and Videos — Georgia Gkioxari]] · 2026-10-17
 - [[prof-papers/740-deepak-venugopal-disentangling-fine-tuning-from-pre-training-in-visual-c|740 · Disentangling Fine-Tuning from Pre-Training in Visual Captioning with Hybrid Markov Logic — Deepak Venugopal]] · 2026-10-17
 - [[prof-papers/739-atul-ingle-photon-inhibition-for-energy-efficient-single-photon-imaging|739 · Photon Inhibition for Energy-Efficient Single-Photon Imaging — Atul Ingle]] · 2026-10-17
