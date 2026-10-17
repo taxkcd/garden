@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/718-wallapak-tavanapong-synthesized-image-training-techniques-on-improving-m|718 · Synthesized Image Training Techniques: On Improving Model Performance Using Confusion — Wallapak Tavanapong]] · 2026-10-17
 - [[prof-papers/717-younghyun-kim-latent-weight-based-pruning-for-small-binary-neural-networ|717 · Latent Weight-based Pruning for Small Binary Neural Networks — Younghyun Kim]] · 2026-10-17
 - [[prof-papers/716-abdou-youssef-wnet-discrete-wavelets-transform-for-efficient-token-mixin|716 · WNet: Discrete Wavelets Transform for Efficient Token Mixing — Abdou Youssef]] · 2026-10-17
 - [[prof-papers/715-rohan-padhye-fuzzing-with-agents-generators-are-all-you-need|715 · Fuzzing with Agents? Generators Are All You Need — Rohan Padhye]] · 2026-10-17
