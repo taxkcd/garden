@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/728-bruno-c-da-silva-behavior-alignment-via-reward-function-optimization|728 · Behavior Alignment via Reward Function Optimization — Bruno C. da Silva]] · 2026-10-17
 - [[prof-papers/727-charalampos-chelmis-recipe-networks-and-the-principles-of-healthy-food-o|727 · Recipe Networks and the Principles of Healthy Food on the Web — Charalampos Chelmis]] · 2026-10-17
 - [[prof-papers/726-rakesh-v-vohra-optimal-bailouts-in-diversified-financial-networks|726 · Optimal Bailouts in Diversified Financial Networks — Rakesh V. Vohra]] · 2026-10-17
 - [[prof-papers/725-amit-ranjan-trivedi-intelligent-sensing-to-action-for-robust-autonomy-at|725 · Intelligent Sensing-to-Action for Robust Autonomy at the Edge: Opportunities and Challenges — Amit Ranjan Trivedi]] · 2026-10-17
