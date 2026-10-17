@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/699-jared-saia-defending-hash-tables-from-subterfuge-with-depth-charge|699 · Defending Hash Tables from Subterfuge with Depth Charge — Jared Saia]] · 2026-10-17
 - [[prof-papers/698-zijun-cui-knowledge-augmented-deep-learning-and-its-applications-a-surve|698 · Knowledge-augmented Deep Learning and Its Applications: A Survey — Zijun Cui]] · 2026-10-17
 - [[prof-papers/697-khaled-n-khasawneh-evasive-hardware-trojan-through-adversarial-power-tra|697 · Evasive Hardware Trojan through Adversarial Power Trace — Khaled N. Khasawneh]] · 2026-10-17
 - [[prof-papers/696-majid-zamani-hypercertificates-verification-of-discrete-time-dynamical-s|696 · HyperCertificates: Verification of Discrete-Time Dynamical Systems Against HyperLTL Specifications — Majid Zamani]] · 2026-10-17
