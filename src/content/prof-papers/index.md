@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/707-john-regehr-random-testing-for-c-and-c-compilers-with-yarpgen|707 · Random Testing for C and C++ Compilers with YARPGen — John Regehr]] · 2026-10-17
 - [[prof-papers/706-stratis-ioannidis-communication-aware-model-distributed-inference-via-la|706 · Communication-Aware Model Distributed Inference via Latent Representation Compression — Stratis Ioannidis]] · 2026-10-17
 - [[prof-papers/705-chenfanfu-jiang-skill2real-agentic-skill-learning-for-zero-shot-sim-to-r|705 · Skill2Real: Agentic Skill Learning for Zero-Shot Sim-to-Real Robot Manipulation — Chenfanfu Jiang]] · 2026-10-17
 - [[prof-papers/704-fadel-adib-towards-battery-free-machine-learning-and-inference-in-underw|704 · Towards Battery-Free Machine Learning and Inference in Underwater Environments — Fadel Adib]] · 2026-10-17
