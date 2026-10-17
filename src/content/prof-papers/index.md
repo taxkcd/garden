@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/740-deepak-venugopal-disentangling-fine-tuning-from-pre-training-in-visual-c|740 · Disentangling Fine-Tuning from Pre-Training in Visual Captioning with Hybrid Markov Logic — Deepak Venugopal]] · 2026-10-17
 - [[prof-papers/739-atul-ingle-photon-inhibition-for-energy-efficient-single-photon-imaging|739 · Photon Inhibition for Energy-Efficient Single-Photon Imaging — Atul Ingle]] · 2026-10-17
 - [[prof-papers/738-feng-chen-spear-selective-preference-elicitation-with-adaptive-rewards-f|738 · SPEAR: Selective Preference Elicitation with Adaptive Rewards for VLM-Guided Robotic Manipulation — Feng Chen]] · 2026-10-17
 - [[prof-papers/737-aly-e-fathy-development-of-a-metasurfacebased-slot-antenna-for-5g-mimo-a|737 · Development of a metasurface‑based slot antenna for 5G MIMO applications with minimized cross‑polarization and stable radiation patterns through mode manipulation — Aly E. Fathy]] · 2026-10-17
