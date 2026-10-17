@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/735-liu-liu-global-and-local-semantic-completion-learning-for-vision-languag|735 · Global and Local Semantic Completion Learning for Vision-Language Pre-training — Liu Liu]] · 2026-10-17
 - [[prof-papers/734-marten-van-schijndel-the-signal-is-coming-from-inside-the-noun-phrase-tr|734 · The signal is coming from inside the noun phrase! Tracking semantic proto-role inferences during sentence processing — Marten van Schijndel]] · 2026-10-17
 - [[prof-papers/733-sugih-jamin-scalability-and-efficiency-of-push-driven-p2ptv-systems|733 · Scalability and Efficiency of Push-Driven P2PTV Systems — Sugih Jamin]] · 2026-10-17
 - [[prof-papers/732-daniel-j-fremont-scenic-a-language-for-scenario-specification-and-data-g|732 · Scenic: A Language for Scenario Specification and Data Generation — Daniel J. Fremont]] · 2026-10-17
