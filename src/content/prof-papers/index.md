@@ -1,6 +1,6 @@
 ---
 title: "Professor papers and learning paths"
-date: 2026-10-15
+date: 2026-10-17
 tags:
   - research-paper
   - learning-path
@@ -12,6 +12,31 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/689-tal-malkin-accountable-secret-leader-election|689 · Accountable Secret Leader Election — Tal Malkin]] · 2026-10-17
+- [[prof-papers/688-mengxin-zheng-ssl-cleanse-trojan-detection-and-mitigation-in-self-superv|688 · SSL-Cleanse: Trojan Detection and Mitigation in Self-Supervised Learning — Mengxin Zheng]] · 2026-10-17
+- [[prof-papers/687-huaming-zhang-community-detection-clustering-via-gumbel-softmax|687 · Community Detection Clustering via Gumbel Softmax — Huaming Zhang]] · 2026-10-17
+- [[prof-papers/686-hyeran-jeon-uncovering-power-and-frequency-behaviors-and-their-security|686 · Uncovering Power and Frequency Behaviors and Their Security Implications in Edge GPU Platforms — Hyeran Jeon]] · 2026-10-17
+- [[prof-papers/685-sos-s-agaian-factorizephys-matrix-factorization-for-multidimensional-att|685 · FactorizePhys: Matrix Factorization for Multidimensional Attention in Remote Physiological Sensing — Sos S. Agaian]] · 2026-10-17
+- [[prof-papers/684-jinzhen-wang-neurlz-an-online-neural-learning-based-method-to-enhance-sc|684 · NeurLZ: An Online Neural Learning-based Method to Enhance Scientific Lossy Compression — Jinzhen Wang]] · 2026-10-17
+- [[prof-papers/683-zichun-zhong-designing-3d-anisotropic-frame-fields-with-odeco-tensors|683 · Designing 3D Anisotropic Frame Fields with Odeco Tensors — Zichun Zhong]] · 2026-10-17
+- [[prof-papers/682-rada-chirkova-using-extraction-and-evaluation-of-explanations-for-drug-r|682 · Using Extraction and Evaluation of Explanations for Drug-Repurposing on Knowledge Graphs — Rada Chirkova]] · 2026-10-17
+- [[prof-papers/681-ziv-scully-the-gittins-index-a-design-principle-for-decision-making-unde|681 · The Gittins Index: A Design Principle for Decision-Making Under Uncertainty — Ziv Scully]] · 2026-10-17
+- [[prof-papers/680-bryan-s-morse-end-to-end-document-recognition-and-understanding-with-des|680 · End-to-end Document Recognition and Understanding with Dessurt — Bryan S. Morse]] · 2026-10-17
+- [[prof-papers/679-damon-l-woodard-a-performance-comparison-of-multi-agent-reinforcement-le|679 · A Performance Comparison of Multi-Agent Reinforcement Learning Algorithms using PyMARL2 — Damon L. Woodard]] · 2026-10-17
+- [[prof-papers/678-monika-akbar-toward-sensor-to-text-generation-leveraging-llm-based-video|678 · Toward Sensor-to-Text Generation: Leveraging LLM-Based Video Annotations for Stroke Therapy Monitoring — Monika Akbar]] · 2026-10-17
+- [[prof-papers/677-fatemeh-afghah-task-specific-sharpness-aware-o-ran-resource-management-u|677 · Task-Specific Sharpness-Aware O-RAN Resource Management using Multi-Agent Reinforcement Learning — Fatemeh Afghah]] · 2026-10-17
+- [[prof-papers/676-pat-pannuto-the-case-for-crowd-sourcing-communication-to-ble-only-device|676 · The Case for Crowd-Sourcing Communication to BLE-Only Devices — Pat Pannuto]] · 2026-10-17
+- [[prof-papers/675-alexander-marder-demo-decoding-control-information-passively-from-standa|675 · Demo: Decoding Control Information Passively from Standalone 5G Network — Alexander Marder]] · 2026-10-17
+- [[prof-papers/674-ahmed-saeed-svalinn-overload-control-in-large-scale-servers-with-multipl|674 · Svalinn: Overload Control in Large-Scale Servers with Multiple Resource Bottlenecks — Ahmed Saeed]] · 2026-10-17
+- [[prof-papers/673-jenna-wiens-off-by-a-beat-the-effects-of-temporal-misalignment-in-reinfo|673 · Off by a beat: the effects of temporal misalignment in reinforcement learning for sepsis treatment — Jenna Wiens]] · 2026-10-17
+- [[prof-papers/672-c-karen-liu-gaitdynamics-a-generative-foundation-model-for-analyzing-hum|672 · GaitDynamics: A Generative Foundation Model for Analyzing Human Walking and Running — C. Karen Liu]] · 2026-10-17
+- [[prof-papers/671-fuxin-li-object-dynamics-modeling-with-hierarchical-point-cloud-based-re|671 · Object Dynamics Modeling with Hierarchical Point Cloud-based Representations — Fuxin Li]] · 2026-10-10
+- [[prof-papers/670-kaiyuan-yang-design-agnostic-distributed-timing-fault-injection-monitor|670 · Design-Agnostic Distributed Timing Fault Injection Monitor with End-to-End Design Automation — Kaiyuan Yang]] · 2026-10-10
+- [[prof-papers/669-hirak-sarkar-mapping-the-topography-of-spatial-gene-expression-with-inte|669 · Mapping the topography of spatial gene expression with interpretable deep learning — Hirak Sarkar]] · 2026-08-06
+- [[prof-papers/668-dean-m-tullsen-extended-user-interrupts-xui-fast-and-flexible-notificati|668 · Extended User Interrupts (xUI): Fast and Flexible Notification without Polling — Dean M. Tullsen]] · 2026-08-06
+- [[prof-papers/667-john-c-hart-snaxels-on-a-plane|667 · Snaxels on a Plane — John C. Hart]] · 2026-08-05
+- [[prof-papers/666-irfan-a-essa-africa-health-check-probing-cultural-bias-in-medical-llms|666 · Africa Health Check: Probing Cultural Bias in Medical LLMs — Irfan A. Essa]] · 2026-08-05
+- [[prof-papers/665-massimiliano-albanese-towards-ai-driven-human-machine-co-teaming-for-ada|665 · Towards AI-Driven Human-Machine Co-Teaming for Adaptive and Agile Cyber Security Operation Centers — Massimiliano Albanese]] · 2026-08-05
 - [[prof-papers/664-gabriel-taubin-dealing-with-multiple-requirements-in-geometric-arrangeme|664 · Dealing with Multiple Requirements in Geometric Arrangements — Gabriel Taubin]] · 2026-10-15
 - [[prof-papers/663-barton-p-miller-a-study-of-the-reliability-of-agentic-ai-generated-progr|663 · A Study of the Reliability of Agentic AI-Generated Programs — Barton P. Miller]] · 2026-10-15
 - [[prof-papers/662-julian-panetta-a-neural-preconditioned-poisson-solver-for-mixed-dirichle|662 · A Neural-Preconditioned Poisson Solver for Mixed Dirichlet and Neumann Boundary Conditions — Julian Panetta]] · 2026-10-15

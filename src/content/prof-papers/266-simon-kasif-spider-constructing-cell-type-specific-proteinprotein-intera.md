@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-simon-kasif"
-source_hash: "bf52b2f2142990497c2ef6cf182023da2eaca144ae6b423a073778d9b8d5a992"
+source_hash: "341a382eb1331f630dfb3b0c8531040de1acd485b114937184f3e949e095d5f3"
 sequence: 266
 generator: "outreach-garden: managed"
 ---
@@ -53,6 +53,38 @@ Research interests: Computational Biology
 - [Google Scholar](https://scholar.google.com/citations?user=SBNZBMUAAAAJ)
 
 ## Learning path
+
+## Foundations playlist — start here
+
+_The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
+
+**What you're missing:** graph neural networks
+**The paper assumes:** graph neural networks, graph attention mechanisms, supervised learning on graphs
+**Already in this field?** Skip this entirely if you already understand graph neural networks and attention mechanisms in machine learning.
+
+To understand the SPIDER model's core methodology, which is a supervised graph attention-based neural network for predicting cell-type-specific protein–protein interactions, a solid grasp of graph neural networks (GNNs) and graph attention mechanisms is essential. The rigorous course option offers a deep, structured university-level introduction to graph machine learning, ideal for readers seeking comprehensive knowledge. The fast track provides a concise, intuition-focused series on GNNs including graph attention networks, suitable for readers who want a quick but clear understanding of the key concepts.
+
+### The course
+_Rigorous, and the one to pick if you want to hold this material properly._
+
+▶ [Stanford CS224W Machine Learning with Graphs I Jure Leskovec](https://www.youtube.com/playlist?list=PLoROMvodv4rOP-ImU-O1rYRg2RFxomvFp) — Stanford Online · 47 videos · 24.1h across 47 episodes
+
+**Watch only this:** Lectures 1.1 to 1.3 (Why Graphs, Applications, Choice of Graph Representation), Lectures 6.1 to 6.3 (Introduction to Graph Neural Networks, Basics of Deep Learning, Deep Learning for Graphs), and Lectures 7.1 to 7.3 (General Perspective on GNNs, Single Layer of a GNN, Stacking layers of a GNN), totaling about 6.5 hours — this subset covers the core GNN concepts and graph attention mechanisms relevant to SPIDER.
+
+*Why it unblocks this paper:* Stanford CS224W is a top-tier university course on machine learning with graphs, covering foundational and advanced topics including graph attention networks, which directly relate to SPIDER's architecture. It provides a rigorous, detailed understanding of graph representations, embeddings, and GNN training essential for this paper.
+
+*If you want all of it:* 24.1 hours across 47 episodes
+
+### The fast track
+_Same ground, a fraction of the time — for when you just need to read the paper._
+
+▶ [Graph Neural Networks (Hands-on)](https://www.youtube.com/playlist?list=PLB1nTQo4_y6sfLtCrGAKG_l7xOHjtYqBk) — LLMs Explained - Aggregate Intellect - AI.SCIENCE · 6 videos · 0.6h across 6 episodes
+
+**Watch only this:** All 6 episodes, about 0.6 hours total — covers graph basics, machine learning tasks on graphs, simple graph convolution, graph attention networks, and node embedding methods relevant to the paper.
+
+*Why it unblocks this paper:* This short series provides a clear, visual, and concise introduction to graph neural networks, including a dedicated episode on graph attention networks, making it a perfect quick primer for understanding SPIDER's model without the time commitment of a full course.
+
+*If you want all of it:* 0.6 hours across 6 episodes
 
 ## Track 1 — Academic deep-dives (long-form)
 
