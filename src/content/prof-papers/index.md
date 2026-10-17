@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/723-amr-el-abbadi-waffle-an-online-oblivious-datastore-for-protecting-data-a|723 · Waffle: An Online Oblivious Datastore for Protecting Data Access Patterns — Amr El Abbadi]] · 2026-10-17
 - [[prof-papers/722-lawrence-l-larmore-analysis-of-a-memory-efficient-self-stabilizing-bfs-s|722 · Analysis of a Memory-Efficient Self-stabilizing BFS Spanning Tree Construction — Lawrence L. Larmore]] · 2026-10-17
 - [[prof-papers/721-jiayu-xu-does-the-uc-security-notion-for-pake-imply-game-based-security|721 · Does the UC-Security Notion for PAKE Imply Game-Based Security? — Jiayu Xu]] · 2026-10-17
 - [[prof-papers/720-hyun-soo-park-simultaneous-localization-and-affordance-prediction-of-tas|720 · Simultaneous Localization and Affordance Prediction of Tasks from Egocentric Video — Hyun Soo Park]] · 2026-10-17
