@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/695-yiran-chen-a-shape-adaptive-architecture-with-disaggregated-quantization|695 · A Shape-Adaptive Architecture with Disaggregated Quantization for Efficient LLM Serving — Yiran Chen]] · 2026-10-17
 - [[prof-papers/694-michael-b-taylor-tiled-microprocessors|694 · Tiled Microprocessors — Michael B. Taylor]] · 2026-10-17
 - [[prof-papers/693-bryan-c-ward-a-survey-of-security-challenges-and-solutions-for-uas-traff|693 · A Survey of Security Challenges and Solutions for UAS Traffic Management (UTM) and small Unmanned Aerial Systems (sUAS) — Bryan C. Ward]] · 2026-10-17
 - [[prof-papers/692-rana-hanocka-geometry-in-style-3d-stylization-via-surface-normal-deforma|692 · Geometry in Style: 3D Stylization via Surface Normal Deformation — Rana Hanocka]] · 2026-10-17
