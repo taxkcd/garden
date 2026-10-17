@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/732-daniel-j-fremont-scenic-a-language-for-scenario-specification-and-data-g|732 · Scenic: A Language for Scenario Specification and Data Generation — Daniel J. Fremont]] · 2026-10-17
 - [[prof-papers/731-przemyslaw-musialski-beyond-segmentation-structurally-informed-facade-pa|731 · Beyond Segmentation: Structurally Informed Facade Parsing from Imperfect Images — Przemyslaw Musialski]] · 2026-10-17
 - [[prof-papers/730-mohammad-javad-amiri-adachain-a-learned-adaptive-blockchain|730 · AdaChain: A Learned Adaptive Blockchain — Mohammad Javad Amiri]] · 2026-10-17
 - [[prof-papers/729-perry-alexander-designing-trustworthy-layered-attestations|729 · Designing Trustworthy Layered Attestations — Perry Alexander]] · 2026-10-17
