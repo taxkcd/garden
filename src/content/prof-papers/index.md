@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/709-romit-roy-choudhury-unified-diffusion-refinement-for-multi-channel-speec|709 · Unified Diffusion Refinement for Multi-Channel Speech Enhancement and Separation — Romit Roy Choudhury]] · 2026-10-17
 - [[prof-papers/708-roberto-yus-psmark-a-distributed-iot-benchmark-for-publish-subscribe-und|708 · PSMark: A Distributed IoT Benchmark for Publish/Subscribe Under Domain-Based Workloads — Roberto Yus]] · 2026-10-17
 - [[prof-papers/707-john-regehr-random-testing-for-c-and-c-compilers-with-yarpgen|707 · Random Testing for C and C++ Compilers with YARPGen — John Regehr]] · 2026-10-17
 - [[prof-papers/706-stratis-ioannidis-communication-aware-model-distributed-inference-via-la|706 · Communication-Aware Model Distributed Inference via Latent Representation Compression — Stratis Ioannidis]] · 2026-10-17
