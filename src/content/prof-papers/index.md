@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/712-panos-k-chrysanthis-human-data-interaction-exploration-and-visualization|712 · Human-Data Interaction, Exploration, and Visualization in the AI Era: Challenges and Opportunities — Panos K. Chrysanthis]] · 2026-10-17
 - [[prof-papers/711-alexey-tumanov-inshrinkerator-compressing-deep-learning-training-checkpo|711 · Inshrinkerator: Compressing Deep Learning Training Checkpoints via Dynamic Quantization — Alexey Tumanov]] · 2026-10-17
 - [[prof-papers/710-daljit-singh-dhillon-practical-and-accurate-reconstruction-of-an-illumin|710 · Practical and Accurate Reconstruction of an Illuminant’s Spectral Power Distribution for Inverse Rendering Pipelines — Daljit Singh Dhillon]] · 2026-10-17
 - [[prof-papers/709-romit-roy-choudhury-unified-diffusion-refinement-for-multi-channel-speec|709 · Unified Diffusion Refinement for Multi-Channel Speech Enhancement and Separation — Romit Roy Choudhury]] · 2026-10-17
