@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/694-michael-b-taylor-tiled-microprocessors|694 · Tiled Microprocessors — Michael B. Taylor]] · 2026-10-17
 - [[prof-papers/693-bryan-c-ward-a-survey-of-security-challenges-and-solutions-for-uas-traff|693 · A Survey of Security Challenges and Solutions for UAS Traffic Management (UTM) and small Unmanned Aerial Systems (sUAS) — Bryan C. Ward]] · 2026-10-17
 - [[prof-papers/692-rana-hanocka-geometry-in-style-3d-stylization-via-surface-normal-deforma|692 · Geometry in Style: 3D Stylization via Surface Normal Deformation — Rana Hanocka]] · 2026-10-17
 - [[prof-papers/691-farokh-b-bastani-semantically-enhanced-time-series-databases-in-iotedgec|691 · Semantically Enhanced Time Series Databases in IoT‐Edge‐Cloud Infrastructure — Farokh B. Bastani]] · 2026-10-17
