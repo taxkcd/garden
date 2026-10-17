@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/745-fred-g-martin-envisioning-ai-for-k-12-what-should-every-child-know-about|745 · Envisioning AI for K-12: What Should Every Child Know about AI? — Fred G. Martin]] · 2026-10-17
 - [[prof-papers/744-ben-bergen-language-model-behavior-a-comprehensive-survey|744 · Language Model Behavior: A Comprehensive Survey — Ben Bergen]] · 2026-10-17
 - [[prof-papers/743-swaroop-ghosh-design-automation-in-quantum-error-correction|743 · Design Automation in Quantum Error Correction — Swaroop Ghosh]] · 2026-10-17
 - [[prof-papers/742-eric-c-rouchka-systematic-analysis-of-alternative-splicing-in-transcript|742 · Systematic Analysis of Alternative Splicing in Transcriptomes of Multiple Sclerosis Patient Brain Samples — Eric C. Rouchka]] · 2026-10-17
