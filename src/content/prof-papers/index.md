@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/736-mitsunori-ogihara-synchronous-boolean-finite-dynamical-systems-on-direct|736 · Synchronous Boolean Finite Dynamical Systems on Directed Graphs over XOR Functions — Mitsunori Ogihara]] · 2026-10-17
 - [[prof-papers/735-liu-liu-global-and-local-semantic-completion-learning-for-vision-languag|735 · Global and Local Semantic Completion Learning for Vision-Language Pre-training — Liu Liu]] · 2026-10-17
 - [[prof-papers/734-marten-van-schijndel-the-signal-is-coming-from-inside-the-noun-phrase-tr|734 · The signal is coming from inside the noun phrase! Tracking semantic proto-role inferences during sentence processing — Marten van Schijndel]] · 2026-10-17
 - [[prof-papers/733-sugih-jamin-scalability-and-efficiency-of-push-driven-p2ptv-systems|733 · Scalability and Efficiency of Push-Driven P2PTV Systems — Sugih Jamin]] · 2026-10-17
