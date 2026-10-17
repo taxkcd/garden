@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/703-peter-j-love-universal-parent-hamiltonians-for-adiabatic-warm-starts|703 · Universal Parent Hamiltonians for Adiabatic Warm Starts — Peter J. Love]] · 2026-10-17
 - [[prof-papers/702-alok-n-choudhary-microstructural-materials-design-via-deep-adversarial-l|702 · Microstructural Materials Design via Deep Adversarial Learning Methodology — Alok N. Choudhary]] · 2026-10-17
 - [[prof-papers/701-jelena-tesic-benchmarking-automated-mic-detection-the-ai-ready-space-bio|701 · Benchmarking automated MIC detection: the AI-ready space biology SEM dataset and advanced detection methods — Jelena Tesic]] · 2026-10-17
 - [[prof-papers/700-rosanna-bellini-paying-the-price-when-intimate-partners-use-technology-f|700 · Paying the Price: When Intimate Partners Use Technology for Financial Harm — Rosanna Bellini]] · 2026-10-17
