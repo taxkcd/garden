@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/690-david-brumley-towards-automated-dynamic-analysis-for-linux-based-embedde|690 · Towards Automated Dynamic Analysis for Linux-based Embedded Firmware — David Brumley]] · 2026-10-17
 - [[prof-papers/689-tal-malkin-accountable-secret-leader-election|689 · Accountable Secret Leader Election — Tal Malkin]] · 2026-10-17
 - [[prof-papers/688-mengxin-zheng-ssl-cleanse-trojan-detection-and-mitigation-in-self-superv|688 · SSL-Cleanse: Trojan Detection and Mitigation in Self-Supervised Learning — Mengxin Zheng]] · 2026-10-17
 - [[prof-papers/687-huaming-zhang-community-detection-clustering-via-gumbel-softmax|687 · Community Detection Clustering via Gumbel Softmax — Huaming Zhang]] · 2026-10-17
