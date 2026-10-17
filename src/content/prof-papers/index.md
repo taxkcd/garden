@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/692-rana-hanocka-geometry-in-style-3d-stylization-via-surface-normal-deforma|692 · Geometry in Style: 3D Stylization via Surface Normal Deformation — Rana Hanocka]] · 2026-10-17
 - [[prof-papers/691-farokh-b-bastani-semantically-enhanced-time-series-databases-in-iotedgec|691 · Semantically Enhanced Time Series Databases in IoT‐Edge‐Cloud Infrastructure — Farokh B. Bastani]] · 2026-10-17
 - [[prof-papers/690-david-brumley-towards-automated-dynamic-analysis-for-linux-based-embedde|690 · Towards Automated Dynamic Analysis for Linux-based Embedded Firmware — David Brumley]] · 2026-10-17
 - [[prof-papers/689-tal-malkin-accountable-secret-leader-election|689 · Accountable Secret Leader Election — Tal Malkin]] · 2026-10-17
