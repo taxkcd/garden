@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/727-charalampos-chelmis-recipe-networks-and-the-principles-of-healthy-food-o|727 · Recipe Networks and the Principles of Healthy Food on the Web — Charalampos Chelmis]] · 2026-10-17
 - [[prof-papers/726-rakesh-v-vohra-optimal-bailouts-in-diversified-financial-networks|726 · Optimal Bailouts in Diversified Financial Networks — Rakesh V. Vohra]] · 2026-10-17
 - [[prof-papers/725-amit-ranjan-trivedi-intelligent-sensing-to-action-for-robust-autonomy-at|725 · Intelligent Sensing-to-Action for Robust Autonomy at the Edge: Opportunities and Challenges — Amit Ranjan Trivedi]] · 2026-10-17
 - [[prof-papers/724-yu-yin-segment-then-splat-unified-3d-open-vocabulary-segmentation-via-ga|724 · Segment then Splat: Unified 3D Open-Vocabulary Segmentation via Gaussian Splatting — Yu Yin]] · 2026-10-17
