@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/720-hyun-soo-park-simultaneous-localization-and-affordance-prediction-of-tas|720 · Simultaneous Localization and Affordance Prediction of Tasks from Egocentric Video — Hyun Soo Park]] · 2026-10-17
 - [[prof-papers/719-aaron-f-bobick-modeling-human-activity-comprehension-at-human-scale-pred|719 · Modeling human activity comprehension at human scale: prediction, segmentation, and categorization — Aaron F. Bobick]] · 2026-10-17
 - [[prof-papers/718-wallapak-tavanapong-synthesized-image-training-techniques-on-improving-m|718 · Synthesized Image Training Techniques: On Improving Model Performance Using Confusion — Wallapak Tavanapong]] · 2026-10-17
 - [[prof-papers/717-younghyun-kim-latent-weight-based-pruning-for-small-binary-neural-networ|717 · Latent Weight-based Pruning for Small Binary Neural Networks — Younghyun Kim]] · 2026-10-17
