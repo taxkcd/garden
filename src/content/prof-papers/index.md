@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/717-younghyun-kim-latent-weight-based-pruning-for-small-binary-neural-networ|717 · Latent Weight-based Pruning for Small Binary Neural Networks — Younghyun Kim]] · 2026-10-17
 - [[prof-papers/716-abdou-youssef-wnet-discrete-wavelets-transform-for-efficient-token-mixin|716 · WNet: Discrete Wavelets Transform for Efficient Token Mixing — Abdou Youssef]] · 2026-10-17
 - [[prof-papers/715-rohan-padhye-fuzzing-with-agents-generators-are-all-you-need|715 · Fuzzing with Agents? Generators Are All You Need — Rohan Padhye]] · 2026-10-17
 - [[prof-papers/714-d-scott-mccrickard-writing-home-from-afar-connecting-distant-families-th|714 · Writing Home From Afar: Connecting Distant Families through Sharing of Outdoor Experiences with Digital Diaries — D. Scott McCrickard]] · 2026-10-17
