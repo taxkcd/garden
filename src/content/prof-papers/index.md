@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/696-majid-zamani-hypercertificates-verification-of-discrete-time-dynamical-s|696 · HyperCertificates: Verification of Discrete-Time Dynamical Systems Against HyperLTL Specifications — Majid Zamani]] · 2026-10-17
 - [[prof-papers/695-yiran-chen-a-shape-adaptive-architecture-with-disaggregated-quantization|695 · A Shape-Adaptive Architecture with Disaggregated Quantization for Efficient LLM Serving — Yiran Chen]] · 2026-10-17
 - [[prof-papers/694-michael-b-taylor-tiled-microprocessors|694 · Tiled Microprocessors — Michael B. Taylor]] · 2026-10-17
 - [[prof-papers/693-bryan-c-ward-a-survey-of-security-challenges-and-solutions-for-uas-traff|693 · A Survey of Security Challenges and Solutions for UAS Traffic Management (UTM) and small Unmanned Aerial Systems (sUAS) — Bryan C. Ward]] · 2026-10-17
