@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/731-przemyslaw-musialski-beyond-segmentation-structurally-informed-facade-pa|731 · Beyond Segmentation: Structurally Informed Facade Parsing from Imperfect Images — Przemyslaw Musialski]] · 2026-10-17
 - [[prof-papers/730-mohammad-javad-amiri-adachain-a-learned-adaptive-blockchain|730 · AdaChain: A Learned Adaptive Blockchain — Mohammad Javad Amiri]] · 2026-10-17
 - [[prof-papers/729-perry-alexander-designing-trustworthy-layered-attestations|729 · Designing Trustworthy Layered Attestations — Perry Alexander]] · 2026-10-17
 - [[prof-papers/728-bruno-c-da-silva-behavior-alignment-via-reward-function-optimization|728 · Behavior Alignment via Reward Function Optimization — Bruno C. da Silva]] · 2026-10-17
