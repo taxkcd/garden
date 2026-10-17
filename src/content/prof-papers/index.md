@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/725-amit-ranjan-trivedi-intelligent-sensing-to-action-for-robust-autonomy-at|725 · Intelligent Sensing-to-Action for Robust Autonomy at the Edge: Opportunities and Challenges — Amit Ranjan Trivedi]] · 2026-10-17
 - [[prof-papers/724-yu-yin-segment-then-splat-unified-3d-open-vocabulary-segmentation-via-ga|724 · Segment then Splat: Unified 3D Open-Vocabulary Segmentation via Gaussian Splatting — Yu Yin]] · 2026-10-17
 - [[prof-papers/723-amr-el-abbadi-waffle-an-online-oblivious-datastore-for-protecting-data-a|723 · Waffle: An Online Oblivious Datastore for Protecting Data Access Patterns — Amr El Abbadi]] · 2026-10-17
 - [[prof-papers/722-lawrence-l-larmore-analysis-of-a-memory-efficient-self-stabilizing-bfs-s|722 · Analysis of a Memory-Efficient Self-stabilizing BFS Spanning Tree Construction — Lawrence L. Larmore]] · 2026-10-17
