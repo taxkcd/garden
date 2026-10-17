@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/704-fadel-adib-towards-battery-free-machine-learning-and-inference-in-underw|704 · Towards Battery-Free Machine Learning and Inference in Underwater Environments — Fadel Adib]] · 2026-10-17
 - [[prof-papers/703-peter-j-love-universal-parent-hamiltonians-for-adiabatic-warm-starts|703 · Universal Parent Hamiltonians for Adiabatic Warm Starts — Peter J. Love]] · 2026-10-17
 - [[prof-papers/702-alok-n-choudhary-microstructural-materials-design-via-deep-adversarial-l|702 · Microstructural Materials Design via Deep Adversarial Learning Methodology — Alok N. Choudhary]] · 2026-10-17
 - [[prof-papers/701-jelena-tesic-benchmarking-automated-mic-detection-the-ai-ready-space-bio|701 · Benchmarking automated MIC detection: the AI-ready space biology SEM dataset and advanced detection methods — Jelena Tesic]] · 2026-10-17
