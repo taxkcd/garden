@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/715-rohan-padhye-fuzzing-with-agents-generators-are-all-you-need|715 · Fuzzing with Agents? Generators Are All You Need — Rohan Padhye]] · 2026-10-17
 - [[prof-papers/714-d-scott-mccrickard-writing-home-from-afar-connecting-distant-families-th|714 · Writing Home From Afar: Connecting Distant Families through Sharing of Outdoor Experiences with Digital Diaries — D. Scott McCrickard]] · 2026-10-17
 - [[prof-papers/713-madhur-behl-halo-fault-tolerant-safety-architecture-for-high-speed-auton|713 · HALO: Fault-Tolerant Safety Architecture For High-Speed Autonomous Racing — Madhur Behl]] · 2026-10-17
 - [[prof-papers/712-panos-k-chrysanthis-human-data-interaction-exploration-and-visualization|712 · Human-Data Interaction, Exploration, and Visualization in the AI Era: Challenges and Opportunities — Panos K. Chrysanthis]] · 2026-10-17
