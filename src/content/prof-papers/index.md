@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/711-alexey-tumanov-inshrinkerator-compressing-deep-learning-training-checkpo|711 · Inshrinkerator: Compressing Deep Learning Training Checkpoints via Dynamic Quantization — Alexey Tumanov]] · 2026-10-17
 - [[prof-papers/710-daljit-singh-dhillon-practical-and-accurate-reconstruction-of-an-illumin|710 · Practical and Accurate Reconstruction of an Illuminant’s Spectral Power Distribution for Inverse Rendering Pipelines — Daljit Singh Dhillon]] · 2026-10-17
 - [[prof-papers/709-romit-roy-choudhury-unified-diffusion-refinement-for-multi-channel-speec|709 · Unified Diffusion Refinement for Multi-Channel Speech Enhancement and Separation — Romit Roy Choudhury]] · 2026-10-17
 - [[prof-papers/708-roberto-yus-psmark-a-distributed-iot-benchmark-for-publish-subscribe-und|708 · PSMark: A Distributed IoT Benchmark for Publish/Subscribe Under Domain-Based Workloads — Roberto Yus]] · 2026-10-17
