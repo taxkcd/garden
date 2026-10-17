@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/747-cathy-h-wu-interpro-in-2022|747 · InterPro in 2022 — Cathy H. Wu]] · 2026-10-17
 - [[prof-papers/746-antonio-nicolosi-pseudorandom-function-from-learning-burnside-problem|746 · Pseudorandom Function from Learning Burnside Problem — Antonio Nicolosi]] · 2026-10-17
 - [[prof-papers/745-fred-g-martin-envisioning-ai-for-k-12-what-should-every-child-know-about|745 · Envisioning AI for K-12: What Should Every Child Know about AI? — Fred G. Martin]] · 2026-10-17
 - [[prof-papers/744-ben-bergen-language-model-behavior-a-comprehensive-survey|744 · Language Model Behavior: A Comprehensive Survey — Ben Bergen]] · 2026-10-17
