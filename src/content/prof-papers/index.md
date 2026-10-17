@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [[prof-papers/698-zijun-cui-knowledge-augmented-deep-learning-and-its-applications-a-surve|698 · Knowledge-augmented Deep Learning and Its Applications: A Survey — Zijun Cui]] · 2026-10-17
 - [[prof-papers/697-khaled-n-khasawneh-evasive-hardware-trojan-through-adversarial-power-tra|697 · Evasive Hardware Trojan through Adversarial Power Trace — Khaled N. Khasawneh]] · 2026-10-17
 - [[prof-papers/696-majid-zamani-hypercertificates-verification-of-discrete-time-dynamical-s|696 · HyperCertificates: Verification of Discrete-Time Dynamical Systems Against HyperLTL Specifications — Majid Zamani]] · 2026-10-17
 - [[prof-papers/695-yiran-chen-a-shape-adaptive-architecture-with-disaggregated-quantization|695 · A Shape-Adaptive Architecture with Disaggregated Quantization for Efficient LLM Serving — Yiran Chen]] · 2026-10-17
