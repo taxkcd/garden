@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [759 · RepSGG: Novel Representations of Entities and Relationships for Scene Graph Generation — Bir Bhanu](prof-papers/759-bir-bhanu-repsgg-novel-representations-of-entities-and-relationships-for) · 2026-10-19
 - [758 · In the Arms of a Robot: Designing Autonomous Hugging Robots with Intra-Hug Gestures — Hasti Seifi](prof-papers/758-hasti-seifi-in-the-arms-of-a-robot-designing-autonomous-hugging-robots-w) · 2026-10-19
 - [757 · Long-Term Fair Decision Making through Deep Generative Models — Lu Zhang](prof-papers/757-lu-zhang-long-term-fair-decision-making-through-deep-generative-models) · 2026-10-19
 - [756 · A Flexible Formative/Summative Grading System for Large Courses — Sudipto Ghosh](prof-papers/756-sudipto-ghosh-a-flexible-formative-summative-grading-system-for-large-co) · 2026-10-17
