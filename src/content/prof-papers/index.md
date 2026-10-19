@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [772 · TEACh: Task-driven Embodied Agents that Chat — Dilek Hakkani-Tür](prof-papers/772-dilek-hakkani-tr-teach-task-driven-embodied-agents-that-chat) · 2026-10-19
 - [771 · On the Use of Proxies in Political Ad Targeting — Alan Mislove](prof-papers/771-alan-mislove-on-the-use-of-proxies-in-political-ad-targeting) · 2026-10-19
 - [770 · Using AI Assistants in Software Development: A Qualitative Study on Security Practices and Concerns — Heather Lipford](prof-papers/770-heather-lipford-using-ai-assistants-in-software-development-a-qualitativ) · 2026-10-19
 - [769 · Query-Efficient Locally Private Hypothesis Selection via the Scheffe Graph — Gautam Kamath](prof-papers/769-gautam-kamath-query-efficient-locally-private-hypothesis-selection-via-t) · 2026-10-19
