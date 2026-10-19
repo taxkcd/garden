@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [808 · TClone: Low-Latency Forking of Live GUI Environments for Computer-Use Agents — Yiying Zhang](prof-papers/808-yiying-zhang-tclone-low-latency-forking-of-live-gui-environments-for-com) · 2026-10-19
 - [807 · AD-MPCC: Adaptive Differentiable Model Predictive Contouring Control for Autonomous Racing — Rahul Mangharam](prof-papers/807-rahul-mangharam-ad-mpcc-adaptive-differentiable-model-predictive-contour) · 2026-10-19
 - [806 · Nordhaus-Gaddum-type problems for lines in hypergraphs — Peihan Miao](prof-papers/806-peihan-miao-nordhaus-gaddum-type-problems-for-lines-in-hypergraphs) · 2026-10-19
 - [805 · SHEPHERD: Enabling Programmable Meta-Agents via Reversible Agentic Execution Traces — Weiyan Shi](prof-papers/805-weiyan-shi-shepherd-enabling-programmable-meta-agents-via-reversible-age) · 2026-10-19
