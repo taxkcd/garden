@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [811 · Elicitation Complexity of Statistical Properties — Ian A. Kash](prof-papers/811-ian-a-kash-elicitation-complexity-of-statistical-properties) · 2026-10-19
 - [810 · IBeaconMap: Automated Indoor Space Representation for Beacon-Based Wayfinding — Vinod Namboodiri](prof-papers/810-vinod-namboodiri-ibeaconmap-automated-indoor-space-representation-for-be) · 2026-10-19
 - [809 · StarCDN: Moving Content Delivery Networks to Space — Ramesh K. Sitaraman](prof-papers/809-ramesh-k-sitaraman-starcdn-moving-content-delivery-networks-to-space) · 2026-10-19
 - [808 · TClone: Low-Latency Forking of Live GUI Environments for Computer-Use Agents — Yiying Zhang](prof-papers/808-yiying-zhang-tclone-low-latency-forking-of-live-gui-environments-for-com) · 2026-10-19
