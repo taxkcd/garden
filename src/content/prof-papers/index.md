@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [799 · SURT 2.0: Advances in Transducer-based Multi-talker Speech Recognition — Sanjeev Khudanpur](prof-papers/799-sanjeev-khudanpur-surt-2-0-advances-in-transducer-based-multi-talker-spe) · 2026-10-19
 - [798 · Imaging Hidden Objects with Consumer LiDAR via Motion Induced Sampling — Adithya Kumar Pediredla](prof-papers/798-adithya-kumar-pediredla-imaging-hidden-objects-with-consumer-lidar-via-m) · 2026-10-19
 - [797 · Equivalence Checking for Flow-Based Computing using Iterative SAT Solving — Muhammad Rashedul Haq Rashed](prof-papers/797-muhammad-rashedul-haq-rashed-equivalence-checking-for-flow-based-computi) · 2026-10-19
 - [796 · Navigating Tensions, Managing Conflict, and Reaching Academic Harmony in HCI — Yolanda A. Rankin](prof-papers/796-yolanda-a-rankin-navigating-tensions-managing-conflict-and-reaching-acad) · 2026-10-19
