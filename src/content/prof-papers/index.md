@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [786 · AI Consent Futures: A Case Study on Voice Data Collection with Clinicians — Fernando Diaz](prof-papers/786-fernando-diaz-ai-consent-futures-a-case-study-on-voice-data-collection-w) · 2026-10-19
 - [785 · AI Can Be a Powerful Social Innovation for Public Health if Community Engagement Is at the Core — Aron Culotta](prof-papers/785-aron-culotta-ai-can-be-a-powerful-social-innovation-for-public-health-if) · 2026-10-19
 - [784 · Neural Control Variates with Automatic Integration — Gordon Wetzstein](prof-papers/784-gordon-wetzstein-neural-control-variates-with-automatic-integration) · 2026-10-19
 - [783 · Automatic Parallelism Management — Matthew Fluet](prof-papers/783-matthew-fluet-automatic-parallelism-management) · 2026-10-19
