@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [783 · Automatic Parallelism Management — Matthew Fluet](prof-papers/783-matthew-fluet-automatic-parallelism-management) · 2026-10-19
 - [782 · An Agnostic Approach To Building Empirical Type Ia Supernova Light Curves: Evidence for Intrinsic Chromatic Flux Variation using Nearby Supernova Factory Data — Cecilia R. Aragon](prof-papers/782-cecilia-r-aragon-an-agnostic-approach-to-building-empirical-type-ia-supe) · 2026-10-19
 - [781 · Generating Videos with Scene Dynamics — Hamed Pirsiavash](prof-papers/781-hamed-pirsiavash-generating-videos-with-scene-dynamics) · 2026-10-19
 - [780 · CancerKG.ORG–A Web-scale, Interactive, Verifiable Knowledge Graph-LLM Hybrid for Assisting with Optimal Cancer Treatment and Care — Michael N. Gubanov](prof-papers/780-michael-n-gubanov-cancerkg-orga-web-scale-interactive-verifiable-knowled) · 2026-10-19
