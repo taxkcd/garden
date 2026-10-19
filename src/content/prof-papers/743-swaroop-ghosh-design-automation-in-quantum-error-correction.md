@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-swaroop-ghosh"
-source_hash: "93ec9602d365a8564284d7da5c0d8f86f8af00287289caa1a607766be09a5c51"
+source_hash: "8dbaf5cda1e8cc2c3a60ac149c1da7e91beb875f98271cb5b74aa0614712c8c4"
 sequence: 743
 generator: "outreach-garden: managed"
 ---
@@ -199,7 +199,7 @@ You build a small Python simulator that represents stabilizer generators and app
 
 **Ships as:** A Jupyter notebook or Python script repository with code and visualizations illustrating stabilizer formalism and error detection.
 
-**Stretch goal:** Add support for simulating a small [[5,1,3]] code or surface code patch stabilizers to show error correction capability.
+**Stretch goal:** Add support for simulating a small [​[5,1,3]] code or surface code patch stabilizers to show error correction capability.
 
 ### Intermediate — Clifford+T Gate Synthesis and T-Depth Optimization
 *Effort: 1-2 weekends (~15 hours)*

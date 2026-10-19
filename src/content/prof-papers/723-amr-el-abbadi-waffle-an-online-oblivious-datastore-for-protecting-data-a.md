@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-amr-el-abbadi"
-source_hash: "ee5a934116d68fabff70a272fb68d9d5004780ba26924b84ac11b2a8e538c7a9"
+source_hash: "7776dacb270154532ec85fed48d4052ceb4ef42a2ac0cc0ee07ecc7875cb4fc5"
 sequence: 723
 generator: "outreach-garden: managed"
 ---
@@ -50,7 +50,7 @@ Research interests: My research interests are in the fields of fault-tolerant di
 
 - [Faculty/profile page](https://www.cs.ucsb.edu/~amr)
 - [Lab website](http://www.cs.ucsb.edu/~dsl)
-- ['[Alexandria](http://alexandria.sdc.ucsb.edu/)
+- ['\[Alexandria](http://alexandria.sdc.ucsb.edu/)
 - [Yangtze](http://www.cs.ucsb.edu/~dsl/yangtze)
 - [Hardware](http://www.cs.ucsb.edu/~dsl/hardware)
 - [Bibliography Server by Michael Ley @ University of Trier, Germany](http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/a/Abbadi:Amr_El.html)

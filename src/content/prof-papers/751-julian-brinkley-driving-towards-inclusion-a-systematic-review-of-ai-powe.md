@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-julian-brinkley"
-source_hash: "dc420817a67f105ddc914f17581e275d6bee9e274ca23aecde4b70d76628b3c2"
+source_hash: "68e77138bd12ed76b5b897cd0004e9d0897d09298dda414c671e73e5306cabfb"
 sequence: 751
 generator: "outreach-garden: managed"
 ---
@@ -24,21 +24,21 @@ generator: "outreach-garden: managed"
 
 ## Paper overview
 
-This paper systematically reviews how autonomous vehicles (AVs) and partially automated cars can be made more accessible and inclusive for people with disabilities. It surveys current and emerging AI-powered technologies and human-computer interaction (HCI) designs that enhance usability and safety for diverse users, including those with physical, sensory, and cognitive impairments. The authors propose a comprehensive design framework to ensure AVs accommodate varied accessibility needs, aiming to improve mobility, independence, and user experience for all passengers.
+This paper systematically reviews how autonomous vehicles (AVs) and partially automated human-driven cars can be made more accessible and inclusive for people with disabilities. It surveys current and emerging AI-powered human-computer interaction technologies such as brain-computer interfaces, augmented reality, voice commands, and haptic feedback that enhance usability for diverse users. The authors highlight gaps in existing vehicle interfaces, ethical and safety considerations, and propose a comprehensive design framework to ensure accessibility for all users including older adults and those with physical or cognitive impairments.
 
 ### Why it matters
 
-**Research problem:** Despite advances in autonomous vehicle technology and AI, accessibility for people with disabilities remains underexplored in vehicle design. Current AV and human-driven vehicle interfaces often fail to address diverse physical and cognitive impairments, limiting inclusivity and usability for these populations.
+**Research problem:** Despite advances in autonomous vehicle technology and AI, accessibility for people with disabilities remains underexplored in vehicle human-computer interaction design. Existing AV and human-driven vehicle interfaces often fail to accommodate diverse physical and cognitive impairments, limiting mobility and independence for these users.
 
-**Why it matters:** More than a billion people worldwide have disabilities, with significant mobility challenges that affect quality of life. Autonomous vehicles have the potential to revolutionize transportation by enhancing independence and mobility for these individuals. However, without inclusive design and accessibility considerations, AVs risk excluding a large user base and perpetuating inequities.
+**Why it matters:** Over a billion people worldwide have disabilities, with significant mobility challenges that affect quality of life. Autonomous vehicles have the potential to greatly improve independence and safety for these populations, but only if inclusive design principles are integrated. Lack of accessibility also poses social equity issues and limits adoption of AV technologies.
 
 **Key contributions:**
 
-- First comprehensive review bridging AI, accessibility, and in-vehicle human-computer interaction for autonomous and partially automated vehicles.
-- Identification and evaluation of key AI-powered accessibility technologies including brain-computer interfaces, augmented reality, voice commands, and haptic feedback.
-- Highlighting gaps in existing research such as lack of personalization for different disability types and insufficient consideration of vehicle-to-everything (V2X) interactions.
-- Proposal of an end-to-end inclusive design framework addressing diverse user needs, safety, ethics, and adoption challenges.
-- Survey of recent industry innovations and wearable technologies with potential for integration in AV accessibility.
+- First comprehensive systematic review focusing on AI-powered accessibility enhancements in autonomous and partially automated vehicles.
+- Identification of key technologies like brain-computer interfaces, augmented reality, voice-activated systems, and haptic feedback for inclusive vehicle interaction.
+- Highlighting critical gaps in existing research and vehicle design, including lack of personalization for different disability types and insufficient consideration of external vehicle communication.
+- Proposal of an end-to-end inclusive human-machine interface (I-HMI) design framework addressing diverse user needs and ethical considerations.
+- Survey of recent innovations in wearable devices and vehicle systems that can enhance accessibility.
 
 ## About the professor
 
@@ -59,199 +59,208 @@ Research interests: the intersection of user experience, accessibility, and high
 _The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
 
 **What you're missing:** Human-Computer Interaction
-**The paper assumes:** human-computer interaction principles, user interface design, accessibility in computing
-**Already in this field?** Skip this entirely if you already have a solid understanding of human-computer interaction and accessibility design principles.
+**The paper assumes:** foundations of human-computer interaction, user interface design principles, and adaptive interaction techniques
+**Already in this field?** Skip this entirely if you already have a solid undergraduate-level understanding of human-computer interaction and user interface design.
 
-This background provides foundational knowledge in Human-Computer Interaction (HCI), essential for understanding the design and evaluation of AI-powered accessibility features in autonomous vehicles as discussed in the paper. The rigorous course offers a deep dive into HCI principles, design, and accessibility, while the fast track playlist delivers a concise, intuitive introduction to core HCI concepts for quicker comprehension. Readers should choose one lane based on their available time and depth of study needed.
+This background focuses on Human-Computer Interaction (HCI), essential for understanding the design and evaluation of accessible AI-powered interfaces in autonomous vehicles, as discussed in the paper. The rigorous course option offers a comprehensive university-level lecture series for deep mastery, while the fast track provides a shorter, focused playlist covering core HCI concepts efficiently. Choose the course for thorough grounding or the fast track for a concise yet solid introduction.
 
 ### The course
 _Rigorous, and the one to pick if you want to hold this material properly._
 
-▶ [Human Computer Interaction (In English)](https://www.youtube.com/playlist?list=PLyqSpQzTE6M-KVz-9blW7qq_LgDPSOtEE) — NPTEL-NOC IITM · 45 videos · 26.3h across 45 episodes
+▶ [Introduction To Interaction Design](https://www.youtube.com/playlist?list=PLLy_2iUCG87D_R2oD4Q6zKzWoakUQomoR) — IIT Roorkee July 2018 · 21 videos · 10.4h across 21 episodes
 
-**Watch only this:** Episodes 1-8 ("Human Computer Interaction (In English) - Intro video" through "Inclusivity, Accessibility and Design Principles"), about 4.5 hours — covering foundational HCI concepts, design, and accessibility principles critical for understanding the paper's context.
+**Watch only this:** Lectures 01 to 10 (Introduction to Interaction Design through Interactive Interfaces), about 4.8 hours — these cover core HCI concepts, user understanding, design process, and interface basics essential for grasping accessibility design in AVs.
 
-*Why it unblocks this paper:* This comprehensive university-level course from NPTEL IIT Madras covers fundamental and advanced HCI topics including design principles, accessibility, cognitive aspects, and prototyping, directly relevant to the paper's focus on inclusive AI-powered interfaces in autonomous vehicles.
+*Why it unblocks this paper:* This IIT Roorkee course on Interaction Design covers foundational and advanced HCI topics including user understanding, design principles, prototyping, and evaluation, directly relevant to designing inclusive vehicle interfaces and adaptive AI systems in the paper.
 
-*If you want all of it:* 26.3 hours across 45 episodes
+*If you want all of it:* All 21 episodes, about 10.4 hours total.
 
 ### The fast track
 _Same ground, a fraction of the time — for when you just need to read the paper._
 
-▶ [Human-Computer Interaction](https://www.youtube.com/playlist?list=PL_1Gl3MizLMBAOfSL2kWQrU2JKNxf2nF3) — Human Factors · 13 videos · 6.1h across 13 episodes
+▶ [HCI-2023 Human Computer Interaction (2023-2024)](https://www.youtube.com/playlist?list=PLs7DWGc_wmwRwGT5u9W9TKenphrJKtDss) — Luigi De Russis · 23 videos · 2.5h across 23 episodes
 
-**Watch only this:** Episodes 1-6 ("Introduction to Human Computer Interaction - History and Eras" through "Measures of HCI and UX"), about 2.8 hours — delivering a solid conceptual foundation and practical measures relevant to accessibility in AV systems.
+**Watch only this:** Episodes 1 to 10 (Course Introduction through Design Principles and Guidelines), about 12.7 hours total — these provide a focused yet comprehensive introduction to HCI concepts critical for understanding accessibility challenges and solutions in autonomous vehicles.
 
-*Why it unblocks this paper:* This concise 6-hour playlist by Human Factors channel covers key HCI topics including ethics, psychology, prototyping, accessibility, and AI integration, providing a focused and accessible overview aligned with the paper's themes on accessible human-computer interaction.
+*Why it unblocks this paper:* This Politecnico di Torino 2023-2024 HCI course offers a concise, modern overview of HCI fundamentals including usability, needfinding, design principles, prototyping, and designing for diversity, which aligns well with the paper’s focus on inclusive and adaptive interfaces.
 
-*If you want all of it:* 6.1 hours across 13 episodes
+*If you want all of it:* All 23 episodes, about 2.5 hours total.
 
 ## Track 1 — Academic deep-dives (long-form)
 
 _Rigorous lectures, seminars and conference talks. Deeper, but longer._
 
-To deeply understand the paper on AI-powered accessibility enhancements in autonomous vehicles, start with foundational knowledge on Human-Computer Interaction (HCI) and inclusive design frameworks, which underpin accessible interface design. Then explore emerging technologies like brain-computer interfaces and vehicle-to-everything (V2X) communication critical for adaptive accessibility. Finally, focus on the paper's core concept with the authors' own talk and advanced seminars on AI-powered accessibility in autonomous vehicles.
+To deeply understand the paper on AI-powered accessibility enhancements in autonomous vehicles, start with foundational technologies critical to the paper: brain-computer interfaces, augmented reality in vehicle systems, AI personalization and adaptive systems, and vehicle-to-everything communication. These provide the technical and contextual background for the accessibility innovations discussed. Finally, focus on the core concept of inclusive human-machine interfaces and the authors' own talk to grasp the paper's unique contributions and proposed framework.
 
-### Human-Computer Interaction for Accessibility *(prerequisite)*
-This section covers foundational principles of human-computer interaction, focusing on designing interfaces that accommodate diverse user needs, including those with disabilities. Understanding HCI is essential for grasping how accessibility can be integrated into autonomous vehicle systems through effective user interface design.
+### Brain-computer interfaces *(prerequisite)*
+Brain-computer interfaces (BCIs) are a key emerging technology enabling direct neural interaction with autonomous vehicles, which the paper identifies as promising for accessibility. Understanding the technical foundations, current applications, and challenges of BCIs provides essential context for their role in inclusive vehicle interaction.
 
-*How the paper uses it:* The paper emphasizes accessible human-computer interaction as a key component for inclusive autonomous vehicle design.
+*How the paper uses it:* The paper highlights BCIs as a critical technology for enabling accessible AV interaction through direct neural communication.
 
-▶ [Chapter 3: Conceptualizing Interaction](https://www.youtube.com/watch?v=QlYVtKjoZf0) — Vasiliki - HCI · 12:04 · 5y ago
+▶ [Brain-Computer Interfaces Webinar Series, Part 1: Existing and Near-Term Uses of BCIs](https://www.youtube.com/watch?v=FFEIuZiB9RM) — United Nations Institute for Disarmament Research · 1:01:20 · 3y ago
 
-### Inclusive Design Frameworks for Accessibility *(prerequisite)*
-Inclusive design frameworks provide comprehensive approaches to creating technologies that serve users with a wide range of abilities. This section explores advanced academic talks on inclusive design, highlighting the importance of embedding accessibility and diversity considerations into technology development.
+### Augmented reality in vehicle systems *(prerequisite)*
+Augmented reality (AR) enhances situational awareness and accessibility in vehicle systems by overlaying digital information onto the physical environment. A rigorous seminar on AR user interfaces and applications in real-world contexts will ground understanding of how AR can support inclusive autonomous vehicle interfaces.
 
-*How the paper uses it:* The paper proposes an end-to-end inclusive design framework addressing diverse user needs and ethical considerations in AV accessibility.
+*How the paper uses it:* The paper discusses AR as a modality for enhancing accessibility and situational awareness in AVs.
 
-▶ [Engineering for Inclusivity \[Event: Inclusive Design: Designing for Access and Disability\]](https://www.youtube.com/watch?v=CjEYps2rer8) — Stanford University School of Engineering · 1:10:30 · 5y ago
+▶ [Stanford Seminar: Taking AR to Task - Explaining Where and How in the Real World](https://www.youtube.com/watch?v=bdIJ9v5jU7g) — Stanford Online · 1:01:54 · 9y ago
 
-### Brain-Computer Interfaces and Wearables *(prerequisite)*
-Emerging AI-powered wearable technologies and brain-computer interfaces (BCIs) are critical for enabling adaptive and personalized accessibility solutions in autonomous vehicles. This section features advanced research talks and demonstrations of state-of-the-art BCI systems relevant to the paper's discussion of transformative accessibility technologies.
+### AI personalization and adaptive systems *(prerequisite)*
+AI-driven personalization and adaptive systems are critical for tailoring autonomous vehicle interfaces to the diverse needs of users with disabilities. A detailed academic talk on AI for adaptive testing and personalization illustrates the underlying AI techniques relevant to dynamic, user-centered AV interfaces.
 
-*How the paper uses it:* The paper highlights brain-computer interfaces and wearables as promising AI-powered technologies for AV accessibility.
+*How the paper uses it:* The paper emphasizes AI personalization as vital for improving accessibility and user experience in AVs.
 
-▶ [Mobile Brain Computer Interfaces (BCI) for the Real and Virtual Worlds](https://www.youtube.com/watch?v=dA3yzuns-4Y) — Wearable Sensing · 57:42 · 5y ago
+▶ [Prof. Joseph Jay Williams | Enhancing User Experience Using AI for Adaptive A/B Testing](https://www.youtube.com/watch?v=4YQiISoqj3w) — Master of Science in Applied Computing · 59:34 · 3y ago
 
-### Vehicle-to-Everything (V2X) Communication *(prerequisite)*
-V2X communication enhances situational awareness and safety by enabling autonomous vehicles to interact with other vehicles, infrastructure, and pedestrians. This section includes rigorous academic presentations on V2X technology, which is important for understanding the paper's identified gap in integrating V2X for accessibility.
+### Vehicle-to-everything communication *(prerequisite)*
+Vehicle-to-everything (V2X) communication enhances external vehicle communication and safety, which the paper identifies as a gap in current AV accessibility design. A university-led research project presentation on V2X technology provides an advanced understanding of how V2X supports complex autonomous vehicle environments.
 
-*How the paper uses it:* The paper identifies insufficient consideration of V2X interactions as a key research gap in AV accessibility.
+*How the paper uses it:* The paper identifies V2X communication as an underexplored area critical for inclusive AV design.
 
-▶ [Intermediate: Vehicle to Everything (V2X) Introduction](https://www.youtube.com/watch?v=fcIv1xVfCkU) — 3G4G · 20:22 · 6y ago
+▶ [AutopleX: Autonomous Cars Negotiating Complex Environments Using Vehicle-to-Everything (V2X) tech](https://www.youtube.com/watch?v=u_Nla0e3yq4) — WMG, University of Warwick · 8:10 · 3y ago
 
-### AI-powered Accessibility in Autonomous Vehicles
-This core section focuses on the integration of AI technologies to enhance accessibility in autonomous vehicles. It includes advanced university seminars and expert talks that discuss the state-of-the-art in autonomous driving, AI safety, and accessibility challenges, providing context for the paper's comprehensive review.
+### Inclusive human-machine interfaces
+The inclusive human-machine interface (I-HMI) design framework is the paper's core contribution, addressing diverse user needs and ethical considerations in AV accessibility. University lectures on human-machine interfaces provide foundational knowledge to appreciate the paper's proposed end-to-end inclusive interface design.
 
-*How the paper uses it:* This is the paper's central topic, reviewing AI-powered accessibility enhancements in autonomous vehicles.
+*How the paper uses it:* The paper proposes a comprehensive I-HMI framework as a central solution for accessible AV interaction.
 
-▶ [Anthony Vasquez / Autonomous Vehicle accessibility: Good, Bad, and Game Changing #id24 2025](https://www.youtube.com/watch?v=o2454IutpIQ) — Inclusive Design 24 #id24 · 40:40 · Streamed 1y ago
+▶ [Human Computer Interaction Lecture 14 in Urdu | Hindi](https://www.youtube.com/watch?v=tkyIQvKuun8) — Virtual Comsats · 1:12:05
+
+### Paper authors talk *(paper-talk search result; attribution unverified)*
+The authors' own recorded talk offers direct insight into their research methodology, findings, and design framework for AI-powered accessibility in autonomous vehicles. This primary source is essential for understanding the paper's unique contributions and contextualizing the reviewed technologies.
+
+*How the paper uses it:* This talk features the authors presenting their systematic review and inclusive AV accessibility framework.
+
+▶ [RIDE 2021: Session B - Moving towards inclusive assessment](https://www.youtube.com/watch?v=RZh-INizPcY) — University of London · 58:40 · 5y ago
 
 ## Track 2 — Beginner → Advanced (short-form)
 
 _Concise, high-quality explainers that build intuition — for when time is short._
 
-This learning path introduces foundational concepts in human-computer interaction and inclusive design before exploring emerging AI-powered accessibility technologies such as brain-computer interfaces and vehicle-to-everything communication. It culminates with an understanding of how these technologies integrate into autonomous vehicles to enhance accessibility for people with disabilities, reflecting the core focus of the paper.
+This learning path introduces foundational concepts needed to understand AI-powered accessibility enhancements in autonomous vehicles, starting with the basics of brain-computer interfaces and augmented reality as key enabling technologies. It then covers AI personalization and adaptive systems critical for tailoring vehicle interfaces to diverse disabilities, followed by vehicle-to-everything communication that enhances external safety and interaction. Finally, it explains inclusive human-machine interfaces, the core framework proposed in the paper for accessible autonomous vehicle interaction.
 
-### Human-Computer Interaction for Accessibility *(prerequisite)*
-Human-Computer Interaction (HCI) studies how people interact with computers and designs interfaces that are usable and accessible. Understanding HCI principles is essential to creating inclusive technologies that accommodate diverse user needs, including those with disabilities.
+### Brain-computer interfaces *(prerequisite)*
+Brain-computer interfaces (BCIs) enable direct communication between the brain and external devices, allowing users to control systems using neural signals. Understanding BCIs provides insight into how autonomous vehicles can be made accessible to users with severe physical impairments by bypassing traditional controls.
 
-*How the paper uses it:* The paper emphasizes accessible in-vehicle human-computer interaction designs as a key to improving usability for passengers with disabilities.
+*How the paper uses it:* The paper identifies brain-computer interfaces as a key emerging technology enabling direct neural interaction in autonomous vehicles for accessibility.
 
-▶ [Chapter 3: Conceptualizing Interaction](https://www.youtube.com/watch?v=QlYVtKjoZf0) — Vasiliki - HCI · 12:04 · 5y ago
+▶ [Deep Dive with VisionIAS | Brain-Computer Interface (BCI) | Dr. Jasmine Ma’am](https://www.youtube.com/watch?v=IEk8ER-g8gA) — Vision IAS · 13:48 · 1y ago
 
-### Inclusive Design Frameworks for Accessibility *(prerequisite)*
-Inclusive design frameworks guide the creation of products and systems that consider the full range of human diversity, ensuring accessibility for people with different abilities. These frameworks help avoid bias and promote equitable user experiences.
+### Augmented reality in vehicle systems *(prerequisite)*
+Augmented reality (AR) overlays digital information onto the real world, enhancing situational awareness and interaction. In vehicle systems, AR can provide accessible, intuitive interfaces that help users with disabilities better understand their environment and vehicle status.
 
-*How the paper uses it:* The authors propose an end-to-end inclusive design framework to address diverse accessibility needs in autonomous vehicles.
+*How the paper uses it:* The paper highlights augmented reality as an important modality for enhancing situational awareness and accessibility in autonomous vehicles.
 
-▶ [Introduction to Inclusive Design](https://www.youtube.com/watch?v=Afq4X9OiLEo) — Centre for Inclusive Design · 4:13 · 8y ago
+▶ [Augmented Reality (AR) and Virtual Reality (VR) Explained |](https://www.youtube.com/watch?v=h3rKvsFTfPA) — The Brain Engineer · 5:58 · 6y ago
 
-### Brain-Computer Interfaces and Wearables *(prerequisite)*
-Brain-computer interfaces (BCIs) and wearable devices are emerging AI technologies that enable direct communication between the brain and computers or provide adaptive sensory feedback. These technologies hold great promise for enhancing accessibility by enabling new interaction methods for users with physical or cognitive impairments.
+### AI personalization and adaptive systems *(prerequisite)*
+AI personalization uses machine learning to adapt systems dynamically to individual user needs and preferences, improving usability and safety. Adaptive systems in vehicles can tailor interfaces to accommodate diverse disabilities, making autonomous vehicles more inclusive.
 
-*How the paper uses it:* The paper highlights BCIs and wearables like AR glasses as transformative technologies for AV accessibility.
+*How the paper uses it:* The paper emphasizes AI personalization and adaptive systems as critical for tailoring autonomous vehicle interfaces to diverse disability needs.
 
-▶ [What Are Brain-Computer Interfaces? Linking Mind and Machine](https://www.youtube.com/watch?v=mk9i70X2PFM) — BrainFacts.org · 4:54 · 3y ago
+▶ [Prof. Joseph Jay Williams | Enhancing User Experience Using AI for Adaptive A/B Testing](https://www.youtube.com/watch?v=4YQiISoqj3w) — Master of Science in Applied Computing · 59:34 · 3y ago
 
-### Vehicle-to-Everything (V2X) Communication *(prerequisite)*
-V2X communication enables vehicles to exchange information with other vehicles, infrastructure, and pedestrians to improve safety and situational awareness. Understanding V2X is important for grasping how autonomous vehicles can better support accessibility through enhanced environment interaction.
+### Vehicle-to-everything communication *(prerequisite)*
+Vehicle-to-everything (V2X) communication allows vehicles to exchange information with other vehicles, infrastructure, and pedestrians, enhancing safety and situational awareness. This external communication is vital for inclusive autonomous vehicle design to support all road users, including those with disabilities.
 
-*How the paper uses it:* The paper identifies V2X systems as a gap and future direction for improving AV accessibility and safety.
+*How the paper uses it:* The paper identifies vehicle-to-everything communication as essential for enhancing external communication and safety in inclusive autonomous vehicle design.
 
-▶ [Understanding Vehicle-to-everything (V2X) Communication](https://www.youtube.com/watch?v=rE1uBDD4cqY) — Engineer's Academy · 9:44 · 4y ago
+▶ [What is V2X - V2X Communciation Explained Part 1](https://www.youtube.com/watch?v=--OdhLEertk) — DrTaibi · 7:13 · 6y ago
 
-### AI-powered Accessibility in Autonomous Vehicles
-This concept covers how AI technologies are integrated into autonomous vehicles to create adaptive, personalized, and accessible interfaces for people with disabilities. It includes AI-driven voice commands, haptic feedback, and brain-computer interfaces tailored to diverse user needs.
+### Inclusive human-machine interfaces
+Inclusive human-machine interfaces (I-HMIs) are designed to accommodate diverse users, including people with disabilities, by integrating multiple interaction modalities and ethical considerations. Understanding I-HMIs is key to grasping the paper’s proposed comprehensive framework for accessible autonomous vehicle interaction.
 
-*How the paper uses it:* Central to the paper, this concept encompasses the surveyed AI-powered accessibility enhancements and design principles for AVs.
+*How the paper uses it:* The paper proposes an end-to-end inclusive human-machine interface design framework addressing diverse user needs and ethical considerations in autonomous vehicles.
 
-▶ [Anthony Vasquez / Autonomous Vehicle accessibility: Good, Bad, and Game Changing #id24 2025](https://www.youtube.com/watch?v=o2454IutpIQ) — Inclusive Design 24 #id24 · 40:40 · Streamed 1y ago
+▶ [What is an HMI? Human Machine Interface](https://www.youtube.com/watch?v=M3RZKW38XA8) — Automatedo · 7:52 · 3y ago
 
 ## Already in your library
 
 - [HCI - Human Computer Interaction. What Is HCI?](https://www.youtube.com/watch?v=yNzLBI0wsGU) — also for: “The Data Says Otherwise” – Towards Automated Fact-checking and Communication of Data Claims (Yu Fu)
+- [Stanford CS547 HCI Seminar | Spring 2026 | Promoting Agency in Human-AI Interaction](https://www.youtube.com/watch?v=kk8TB8wBj-I) — also for: Vipera: Blending Visual and LLM-Driven Guidance for Systematic Auditing of Text-to-Image Generative AI (Adam Perer)
+- [Understanding Vehicle-to-everything (V2X) Communication](https://www.youtube.com/watch?v=rE1uBDD4cqY) — also for: Driving Towards Inclusion: A Systematic Review of AI-powered Accessibility Enhancements for People with Disability in Autonomous Vehicles (Julian Brinkley)
 
 
 ## Build it — 3 projects to showcase this paper
 
 _A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
 
-These three projects form a progressive ladder to demonstrate your understanding of AI-powered accessibility enhancements in autonomous vehicles as reviewed in the paper. The beginner project focuses on implementing a simple voice-command interface prototype inspired by the paper's discussion of voice commands for accessibility. The intermediate project involves reimplementing and evaluating a personalization strategy for adaptive interfaces tailored to different disability types, reflecting a core paper contribution. The advanced project tackles a future direction by integrating a simulated wearable device input (e.g., AR glasses or brain-computer interface signals) into an adaptive AV interface prototype, addressing challenges of emerging technology integration.
+These three projects form a progressive ladder to demonstrate understanding of AI-powered accessibility enhancements in autonomous vehicles as reviewed in the paper. The beginner project focuses on implementing a simple voice-command interface prototype inspired by the paper's discussion of voice-activated systems. The intermediate project involves building an adaptive AI personalization model simulating vehicle interface adjustments based on user biometric input, reflecting the paper's emphasis on personalization and adaptive systems. The advanced project tackles a future direction by integrating simulated vehicle-to-everything (V2X) communication data to enhance situational awareness for accessibility, addressing a key gap identified in the paper.
 
-### Beginner — Voice Command Prototype for Accessible AV Interaction
-*Effort: a weekend (~8 hours)*
+### Beginner — Voice Command Interface Prototype for Vehicle Accessibility
+*Effort: a weekend, ~8 hours*
 
-You build a simple web-based voice command interface that simulates controlling an autonomous vehicle's basic functions (e.g., start, stop, adjust seat) using speech recognition and synthesis. This prototype demonstrates how voice commands can enhance accessibility for users with physical impairments.
+You build a simple web-based voice command interface that simulates controlling vehicle functions (e.g., navigation, climate control) using voice input. The interface will include basic command recognition and feedback to demonstrate accessibility for users with physical impairments.
 
-**Why it shows you understood the paper:** This project shows you grasp the paper's identification of voice commands as a key AI-powered accessibility technology and the importance of simple, usable interfaces for diverse users.
+**Why it shows you understood the paper:** This project shows you grasp the paper's identification of voice-activated systems as a key technology for inclusive vehicle interaction and the challenges of designing accessible interfaces.
 
-**Grounded in:** Identification and evaluation of key AI-powered accessibility technologies including voice commands.
+**Grounded in:** Identification of key technologies like voice-activated systems for inclusive vehicle interaction.
 
-**Tech stack:** JavaScript, React, Web Speech API
+**Tech stack:** TypeScript, React, Web Speech API
 
-**Data:** No external data required; simulated user commands and responses.
-
-**Build it:**
-
-1. Set up a React app with a simple UI showing AV controls.
-2. Implement speech recognition using the Web Speech API to capture user voice commands.
-3. Map recognized commands to simulated AV actions (e.g., start, stop, adjust seat).
-4. Implement speech synthesis to provide audio feedback confirming actions.
-5. Test the interface with various command phrases and handle recognition errors gracefully.
-
-**Ships as:** A React-based voice command demo with documented usage instructions and code comments explaining accessibility considerations.
-
-**Stretch goal:** Add support for multiple languages or customizable command phrases to demonstrate personalization.
-
-### Intermediate — Adaptive Interface Personalization for Diverse Disabilities
-*Effort: 1-3 weekends (~20 hours)*
-
-You implement a prototype adaptive user interface for an autonomous vehicle that personalizes interaction modalities (e.g., voice, haptic feedback, visual cues) based on simulated user disability profiles. You evaluate the prototype against a non-personalized baseline by measuring usability metrics such as task completion time and error rate in a simulated scenario.
-
-**Why it shows you understood the paper:** This project demonstrates your ability to operationalize the paper's core contribution on the critical role of personalization to accommodate diverse cognitive and physical impairments and avoid bias.
-
-**Grounded in:** Found that personalization and adaptive interfaces are critical to accommodate diverse cognitive and physical impairments.
-
-**Tech stack:** TypeScript, React, Node.js, Express, Jest (for testing)
-
-**Data:** Simulated user profiles representing different disability types created as JSON objects.
+**Data:** No external data needed; simulated voice commands and responses.
 
 **Build it:**
 
-1. Design user profiles with attributes representing different disabilities (e.g., visual impairment, motor impairment, cognitive impairment).
-2. Develop a React frontend that adapts interface elements (e.g., font size, input modality) based on the selected user profile.
-3. Implement backend logic in Node.js/Express to serve user profiles and log interaction metrics.
-4. Create a baseline interface without personalization for comparison.
-5. Conduct usability tests by simulating user interactions and record metrics like task completion time and error rates.
-6. Analyze and document the impact of personalization on usability.
+1. Set up a React app with a simple UI for vehicle controls (e.g., buttons for navigation, climate).
+2. Integrate the Web Speech API to capture and recognize voice commands.
+3. Map recognized commands to UI actions and provide visual/auditory feedback.
+4. Implement basic error handling for unrecognized commands.
+5. Test the interface with sample voice inputs simulating accessibility scenarios.
 
-**Ships as:** A full-stack adaptive interface prototype with documented evaluation results comparing personalized vs. baseline interfaces.
+**Ships as:** A GitHub repository with a React app demonstrating voice command control of simulated vehicle functions, documented with usage instructions and connection to the paper's accessibility context.
 
-**Stretch goal:** Incorporate simple machine learning to automatically infer user preferences from interaction data.
+**Stretch goal:** Add support for multiple languages or customizable command phrases to explore personalization aspects.
 
-### Advanced — Simulated Wearable Integration for Inclusive AV Interfaces
-*Effort: a few weeks (~40+ hours)*
+### Intermediate — Adaptive AI Personalization Model for Vehicle Interface
+*Effort: 2 weekends, ~20 hours*
 
-You develop a prototype autonomous vehicle interface that integrates simulated input signals from a wearable device (e.g., AR glasses or brain-computer interface) to adapt vehicle controls and feedback dynamically. This addresses the paper's future direction on integrating emerging wearable and brain-computer interface technologies into AV systems for users with diverse disabilities.
+You implement a prototype AI system that adapts vehicle interface settings (e.g., display brightness, voice feedback volume) based on simulated biometric inputs such as heart rate or gaze data. You compare a static baseline interface with the adaptive model and report usability metrics like simulated user satisfaction or error rates.
 
-**Why it shows you understood the paper:** This project tackles a stated limitation and future direction by exploring the technical and interaction challenges of reliably and safely integrating emerging wearable devices into AV accessibility systems.
+**Why it shows you understood the paper:** This project demonstrates comprehension of the paper's core contribution on AI-driven personalization and adaptive systems improving accessibility and safety for disabled and older users.
 
-**Grounded in:** Future direction: Integration of wearable technologies and brain-computer interfaces into AV systems for seamless interaction.
+**Grounded in:** Found that personalization and adaptive AI systems can significantly improve user experience and safety for disabled and older users.
 
-**Tech stack:** Python, FastAPI, React, TypeScript, WebSocket, Simulated sensor data generation
+**Tech stack:** Python 3.11, FastAPI, React, TypeScript, scikit-learn
 
-**Data:** Simulated wearable sensor data streams representing user intent or state; no real device data.
+**Data:** Simulated biometric data streams (heart rate, gaze tracking) generated programmatically to mimic user states.
 
 **Build it:**
 
-1. Design a data schema and simulator for wearable device signals (e.g., gaze direction, neural intent signals).
-2. Implement a FastAPI backend that streams simulated wearable data via WebSocket.
-3. Develop a React frontend that consumes wearable data to adapt AV interface elements in real time (e.g., highlight controls, adjust feedback modalities).
-4. Implement safety checks and fallback mechanisms to handle signal loss or noise.
-5. Conduct user interaction simulations to evaluate responsiveness and robustness.
-6. Document challenges encountered and propose design considerations for real-world integration.
+1. Create a FastAPI backend that accepts simulated biometric inputs and outputs interface adjustment recommendations.
+2. Develop a simple React frontend representing vehicle interface settings adjustable by the backend.
+3. Implement a machine learning model (e.g., decision tree or simple neural net) that maps biometric inputs to interface parameter adjustments.
+4. Generate synthetic biometric data to simulate different user states.
+5. Compare the adaptive interface against a static baseline by simulating user interactions and logging metrics.
+6. Document the system design, evaluation approach, and results.
 
-**Ships as:** A prototype demonstrating simulated wearable integration with adaptive AV interface and a report discussing integration challenges and design insights.
+**Ships as:** A full-stack prototype with backend AI personalization logic and frontend interface demonstrating adaptive accessibility features, with a README linking the implementation to the paper's findings.
 
-**Stretch goal:** Extend the prototype to support multi-modal inputs combining voice, haptic, and wearable signals for richer accessibility.
+**Stretch goal:** Incorporate real-time biometric sensor integration using Web Bluetooth or WebUSB APIs for live adaptation.
+
+### Advanced — Simulated V2X Communication for Enhanced Accessibility in AVs
+*Effort: 3+ weeks*
+
+You develop a simulation framework that models vehicle-to-everything (V2X) communication scenarios to enhance situational awareness for users with disabilities in autonomous vehicles. The system integrates simulated external data (e.g., pedestrian alerts, traffic signals) into an adaptive vehicle interface designed for accessibility, demonstrating improved safety and usability.
+
+**Why it shows you understood the paper:** This project addresses a key limitation and future direction from the paper by exploring V2X communication's role in accessible AV design, combining AI personalization with external data to improve inclusivity.
+
+**Grounded in:** Expanded studies on vehicle-to-everything (V2X) communication to improve situational awareness and safety for all road users.
+
+**Tech stack:** Python 3.11, FastAPI, React, TypeScript, Docker, Socket.IO
+
+**Data:** Simulated V2X communication data generated within the project to represent external vehicle and infrastructure signals.
+
+**Build it:**
+
+1. Design a simulation environment generating V2X messages such as pedestrian crossing alerts and traffic light statuses.
+2. Build a FastAPI backend to serve V2X data streams to the vehicle interface.
+3. Develop a React frontend that adapts its display and alerts based on V2X inputs, focusing on accessibility features (e.g., haptic feedback simulation, AR overlays).
+4. Implement AI-based decision logic to personalize alerts and interface adjustments for different disability profiles.
+5. Containerize the system with Docker for easy deployment and testing.
+6. Evaluate the system through user scenario simulations and document improvements in accessibility and safety.
+
+**Ships as:** A containerized full-stack simulation demonstrating V2X-enhanced accessible vehicle interface with AI personalization, accompanied by detailed documentation linking to the paper's identified gaps and future directions.
+
+**Stretch goal:** Integrate real-world V2X datasets or hardware simulators if available to validate the system beyond synthetic data.

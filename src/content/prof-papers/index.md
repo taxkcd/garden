@@ -12,6 +12,13 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [818 · Gendered Impacts of Code Critiquers on Self-Efficacy in First-Year Engineering Students — Laura E. Brown](prof-papers/818-laura-e-brown-gendered-impacts-of-code-critiquers-on-self-efficacy-in-fi) · 2026-10-19
+- [817 · HighP5: Programming using Partitioned Parallel Processing Spaces — Andrew S. Grimshaw](prof-papers/817-andrew-s-grimshaw-highp5-programming-using-partitioned-parallel-processi) · 2026-10-19
+- [816 · RuYi: Optimizing Burst Buffer Through Automated, Fine-Grained Process-to-BB Mapping — Yong Chen](prof-papers/816-yong-chen-ruyi-optimizing-burst-buffer-through-automated-fine-grained-pr) · 2026-10-19
+- [815 · Dust Concentration Forecasting Method for Intermittent Processing of Powder and Granular Materials — Zhiyuan Li](prof-papers/815-zhiyuan-li-dust-concentration-forecasting-method-for-intermittent-proces) · 2026-10-19
+- [814 · Digital twins for noninvasively measuring predictive markers of right heart failure — Amanda Randles](prof-papers/814-amanda-randles-digital-twins-for-noninvasively-measuring-predictive-mark) · 2026-10-19
+- [813 · Incentivizing Secure Software Development: the Role of Voluntary Audit and Liability Waiver — Mingyan Liu](prof-papers/813-mingyan-liu-incentivizing-secure-software-development-the-role-of-volunt) · 2026-10-19
+- [812 · Compact Frequency Estimators in Adversarial Environments — Thomas Shrimpton](prof-papers/812-thomas-shrimpton-compact-frequency-estimators-in-adversarial-environment) · 2026-10-19
 - [811 · Elicitation Complexity of Statistical Properties — Ian A. Kash](prof-papers/811-ian-a-kash-elicitation-complexity-of-statistical-properties) · 2026-10-19
 - [810 · IBeaconMap: Automated Indoor Space Representation for Beacon-Based Wayfinding — Vinod Namboodiri](prof-papers/810-vinod-namboodiri-ibeaconmap-automated-indoor-space-representation-for-be) · 2026-10-19
 - [809 · StarCDN: Moving Content Delivery Networks to Space — Ramesh K. Sitaraman](prof-papers/809-ramesh-k-sitaraman-starcdn-moving-content-delivery-networks-to-space) · 2026-10-19
