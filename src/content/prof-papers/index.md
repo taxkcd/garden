@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [806 · Nordhaus-Gaddum-type problems for lines in hypergraphs — Peihan Miao](prof-papers/806-peihan-miao-nordhaus-gaddum-type-problems-for-lines-in-hypergraphs) · 2026-10-19
 - [805 · SHEPHERD: Enabling Programmable Meta-Agents via Reversible Agentic Execution Traces — Weiyan Shi](prof-papers/805-weiyan-shi-shepherd-enabling-programmable-meta-agents-via-reversible-age) · 2026-10-19
 - [804 · PeerGuard: Defending Multi-Agent Systems Against Backdoor Attacks Through Mutual Reasoning — Xi Li](prof-papers/804-xi-li-peerguard-defending-multi-agent-systems-against-backdoor-attacks-t) · 2026-10-19
 - [803 · Linear temporal constraints for sketch-based synthesizers — Armando Solar-Lezama](prof-papers/803-armando-solar-lezama-linear-temporal-constraints-for-sketch-based-synthe) · 2026-10-19
