@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [763 · Enabling Multi-threading in Heterogeneous Quantum-Classical Programming Models — Vivek Sarkar](prof-papers/763-vivek-sarkar-enabling-multi-threading-in-heterogeneous-quantum-classical) · 2026-10-19
 - [762 · Viewport Prediction for Live 360-Degree Mobile Video Streaming Using User-Content Hybrid Motion Tracking — Sheng Wei](prof-papers/762-sheng-wei-viewport-prediction-for-live-360-degree-mobile-video-streaming) · 2026-10-19
 - [761 · Individuation of 3D perceptual units from neurogeometry of binocular cells — Steven W. Zucker](prof-papers/761-steven-w-zucker-individuation-of-3d-perceptual-units-from-neurogeometry) · 2026-10-19
 - [760 · Vipera: Blending Visual and LLM-Driven Guidance for Systematic Auditing of Text-to-Image Generative AI — Adam Perer](prof-papers/760-adam-perer-vipera-blending-visual-and-llm-driven-guidance-for-systematic) · 2026-10-19
