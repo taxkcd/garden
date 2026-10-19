@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [778 · Fully Distributed Task Offloading in Vehicular Edge Computing — Haibo Wang](prof-papers/778-haibo-wang-fully-distributed-task-offloading-in-vehicular-edge-computing) · 2026-10-19
 - [777 · Stability Analysis using Quadratic Constraints for Systems with Neural Network Controllers — Murat Arcak](prof-papers/777-murat-arcak-stability-analysis-using-quadratic-constraints-for-systems-w) · 2026-10-19
 - [776 · Efficient Privacy-Preserving Sparse Matrix-Vector Multiplication Using Homomorphic Encryption — Wujie Wen](prof-papers/776-wujie-wen-efficient-privacy-preserving-sparse-matrix-vector-multiplicati) · 2026-10-19
 - [775 · On the Opportunities of Large Language Models for Programming Process Data — John Edwards](prof-papers/775-john-edwards-on-the-opportunities-of-large-language-models-for-programmi) · 2026-10-19
