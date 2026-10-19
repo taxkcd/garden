@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [789 · Optimal Scoring Rule Design under Partial Knowledge — Fang-Yi Yu](prof-papers/789-fang-yi-yu-optimal-scoring-rule-design-under-partial-knowledge) · 2026-10-19
 - [788 · Rigorous Error Analysis for Logarithmic Number Systems — Ganesh Gopalakrishnan](prof-papers/788-ganesh-gopalakrishnan-rigorous-error-analysis-for-logarithmic-number-sys) · 2026-10-19
 - [787 · From "Time to BeReal” to “Let Me Post My BeFake:” A Case of Operationalizing Authenticity Through Design — Jeremy P. Birnholtz](prof-papers/787-jeremy-p-birnholtz-from-time-to-bereal-to-let-me-post-my-befake-a-case-o) · 2026-10-19
 - [786 · AI Consent Futures: A Case Study on Voice Data Collection with Clinicians — Fernando Diaz](prof-papers/786-fernando-diaz-ai-consent-futures-a-case-study-on-voice-data-collection-w) · 2026-10-19
