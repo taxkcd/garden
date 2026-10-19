@@ -12,6 +12,8 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [776 · Efficient Privacy-Preserving Sparse Matrix-Vector Multiplication Using Homomorphic Encryption — Wujie Wen](prof-papers/776-wujie-wen-efficient-privacy-preserving-sparse-matrix-vector-multiplicati) · 2026-10-19
+- [775 · On the Opportunities of Large Language Models for Programming Process Data — John Edwards](prof-papers/775-john-edwards-on-the-opportunities-of-large-language-models-for-programmi) · 2026-10-19
 - [774 · Maximum Capacity Overlapping Channel Assignment Based on Max-Cut in 802.11 Wireless Mesh Networks — Xiaojun Shen](prof-papers/774-xiaojun-shen-maximum-capacity-overlapping-channel-assignment-based-on-ma) · 2026-10-19
 - [773 · Universally Composable Succinct Vector Commitments and Applications — Ran Canetti](prof-papers/773-ran-canetti-universally-composable-succinct-vector-commitments-and-appli) · 2026-10-19
 - [772 · TEACh: Task-driven Embodied Agents that Chat — Dilek Hakkani-Tür](prof-papers/772-dilek-hakkani-tr-teach-task-driven-embodied-agents-that-chat) · 2026-10-19
