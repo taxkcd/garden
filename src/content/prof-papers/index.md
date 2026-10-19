@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [765 · Comprehensive mapping of key regulatory networks that drive oncogene expression — David K. Gifford](prof-papers/765-david-k-gifford-comprehensive-mapping-of-key-regulatory-networks-that-dr) · 2026-10-19
 - [764 · Stability and Multigroup Fairness in Ranking with Uncertain Predictions — David Kempe](prof-papers/764-david-kempe-stability-and-multigroup-fairness-in-ranking-with-uncertain) · 2026-10-19
 - [763 · Enabling Multi-threading in Heterogeneous Quantum-Classical Programming Models — Vivek Sarkar](prof-papers/763-vivek-sarkar-enabling-multi-threading-in-heterogeneous-quantum-classical) · 2026-10-19
 - [762 · Viewport Prediction for Live 360-Degree Mobile Video Streaming Using User-Content Hybrid Motion Tracking — Sheng Wei](prof-papers/762-sheng-wei-viewport-prediction-for-live-360-degree-mobile-video-streaming) · 2026-10-19
