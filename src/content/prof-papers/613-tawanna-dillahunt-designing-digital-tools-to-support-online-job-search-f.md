@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-tawanna-dillahunt"
-source_hash: "15fe0e1db7595ea57d7604bfc430b881e3305f605e500f74f461dcd0574723f6"
+source_hash: "9067722d247c26c30cf51b65142e2fabedce08dc690eaefdc77f562322711364"
 sequence: 613
 generator: "outreach-garden: managed"
 ---
@@ -53,7 +53,7 @@ Research interests: My research focuses on the intersection of technology, emplo
 - [Identity evidence](https://dusp.mit.edu/people/tawanna-dillahunt)
 - [Professor website](https://www.tawannadillahunt.com/)
 - [Lab website](http://socialinnovations.us/)
-- [Google Scholar](https://scholar.google.com/citations?user=qPpuKe4AAAAJ&amp;hl=en)
+- [Google Scholar](https://scholar.google.com/citations?user=qPpuKe4AAAAJ&hl=en)
 
 ## Learning path
 

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-fow-sen-choa"
-source_hash: "57622426ceeb84e1697ebb6192e02dfdb30b57b6b2899dfa89b5e81052bdec0f"
+source_hash: "ac20d77e04137376d5860ed02df9b1546421293f609f3d5105f6263eebe05b0f"
 sequence: 51
 generator: "outreach-garden: managed"
 ---
@@ -50,7 +50,7 @@ Research interests: Current treatment techniques for neural diseases and disorde
 
 - [Faculty/profile page](https://www.csee.umbc.edu/people/tenure-track-faculty/fow-sen-choa/)
 - [Identity evidence](http://www.csee.umbc.edu/people/faculty/fow-sen-choa)
-- [Identity evidence](https://www.csee.umbc.edu/people/tenure-track-faculty/fow-sen-choa/ , https://blogs.cs.umbc.edu/choalab/ , https://news.cs.umbc.edu/2011/07/faculty-research-profile-dr-fow-sen-choa/)
+- [Identity evidence](https://www.csee.umbc.edu/people/tenure-track-faculty/fow-sen-choa/)
 - [Identity evidence](https://blogs.cs.umbc.edu/choalab/)
 
 ## Learning path

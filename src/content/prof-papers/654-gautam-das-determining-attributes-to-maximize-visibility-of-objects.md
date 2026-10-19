@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-gautam-das"
-source_hash: "4bf5a0876fa807a6b1341d331111099fd51482506002e8ec07c9d4df7d9fa4f7"
+source_hash: "9dc583974bef140d69c38d346ac9292914724b8965a5f206fc4afa6132fe93cf"
 sequence: 654
 generator: "outreach-garden: managed"
 ---
@@ -50,7 +50,7 @@ Research interests: Big Data Exploration, data management, data analytics, machi
 
 - [Faculty/profile page](http://ranger.uta.edu/~gdas)
 - [Professor website](https://ranger.uta.edu/~gdas)
-- [Lab website](https://carida.uta.edu/, http://dbxlab.uta.edu/)
+- [Lab website](https://carida.uta.edu/)
 
 ## Learning path
 

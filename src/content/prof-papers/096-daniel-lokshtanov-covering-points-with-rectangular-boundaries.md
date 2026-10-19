@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-daniel-lokshantov"
-source_hash: "47f7e0a5162a49f8636f7f5cf37544330b8e7a4bd720bf49a2d431d8ae780d06"
+source_hash: "9443fdbb1694614036c6dcf8cd0b243a5fd1cc5ce91d96d9e8f5e5827b76b739"
 sequence: 96
 generator: "outreach-garden: managed"
 ---
@@ -34,7 +34,7 @@ This paper studies the problem of covering a set of points in the plane such tha
 
 **Key contributions:**
 
-- Proved that BCDAPR is W[1]-hard parameterized by the number of rectangles k.
+- Proved that BCDAPR is W\[1\]-hard parameterized by the number of rectangles k.
 - Proved NP-completeness of boundary covering by axis-aligned L-shapes (BCCAPL) and by continuous axis-parallel rectangles (BCCAPR).
 - Developed a fixed-parameter tractable algorithm for BCCAPR with running time 2^{O(k log k)} * n^{O(1)}.
 - Introduced a novel reduction framework to Distinct Domain Monotone 2-CSP for solving the continuous boundary covering problem.

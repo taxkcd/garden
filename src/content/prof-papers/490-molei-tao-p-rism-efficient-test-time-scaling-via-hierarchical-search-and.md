@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-molei-tao"
-source_hash: "6acc1fc96679d3a3bb9b164e82535e21fcb7f53f8e12ba92b13919a8d4a92a28"
+source_hash: "b6a04459375ee3efbda57c76bbac7b72f42bad42c7bc67aca4e74d20919d7982"
 sequence: 490
 generator: "outreach-garden: managed"
 ---
@@ -50,7 +50,7 @@ Research interests: theoretical and algorithmic foundation of machine learning, 
 
 - [Faculty/profile page](https://mtao8.math.gatech.edu/index.html)
 - [Social profile](https://twitter.com/MoleiTaoMath)
-- ['[GT Machine Learning Center](https://ml.gatech.edu/)
+- ['\[GT Machine Learning Center](https://ml.gatech.edu/)
 - [Algorithms & Randomness Center (ARC)](https://arc.gatech.edu/)
 - [Algorithms, Combinatorics & Optimization (ACO) Program](https://aco.gatech.edu/)
 - [GT Decision & Control Lab](http://dcl.gatech.edu/)

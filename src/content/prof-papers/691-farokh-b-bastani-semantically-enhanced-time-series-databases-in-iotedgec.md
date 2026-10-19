@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-farokh-b-bastani"
-source_hash: "5d9077deeaf86e2f25e63d2722dfea35258041a36604a70c0843af2bb9f8dd93"
+source_hash: "cc288bb2b58b2c9bcb0c686d534a856ee8f7bb3c0370c1b44a7c0af684377fc7"
 sequence: 691
 generator: "outreach-garden: managed"
 ---
@@ -50,7 +50,7 @@ Research interests: AI-Based Automated Software Synthesis and Testing, Embedded 
 
 - [Faculty/profile page](https://www.utdallas.edu/~bastani)
 - [Professor website](http://www.utdallas.edu/~Farokh.Bastani)
-- ['[NSF Industrial & University Cooperative Research Center (IUCRC)](https://personal.utdallas.edu/~Farokh.Bastani/center/iucrc.html)
+- ['\[NSF Industrial & University Cooperative Research Center (IUCRC)](https://personal.utdallas.edu/~Farokh.Bastani/center/iucrc.html)
 
 ## Learning path
 

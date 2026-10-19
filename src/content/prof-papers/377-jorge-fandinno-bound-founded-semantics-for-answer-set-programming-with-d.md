@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-jorge-fandinno"
-source_hash: "d91701a58b63b5f867ed1afadf7cac05823b68615e81b62839606ac4f6597f64"
+source_hash: "737aeb1ee83bde79d5df80b33ea797f18fc03479134e9a1c06cd17f47bd6b599"
 sequence: 377
 generator: "outreach-garden: managed"
 ---
@@ -24,7 +24,7 @@ generator: "outreach-garden: managed"
 
 ## Paper overview
 
-This paper introduces a many-sorted variant of the Bound-founded Logic of Here-and-There (HTb) to provide a unified logical foundation for Answer Set Programming (ASP) extended with difference constraints. It formalizes the semantics of existing hybrid ASP systems like clingo[DL], clingcon, and flingo, explaining their differing behaviors through varying notions of foundedness and ordered domains. The framework enables rigorous semantic analysis, program simplifications, and integration of diverse semantic principles in a single setting.
+This paper introduces a many-sorted variant of the Bound-founded Logic of Here-and-There (HTb) to provide a unified logical foundation for Answer Set Programming (ASP) extended with difference constraints. It formalizes the semantics of existing hybrid ASP systems like clingo\[DL\], clingcon, and flingo, explaining their differing behaviors through varying notions of foundedness and ordered domains. The framework enables rigorous semantic analysis, program simplifications, and integration of diverse semantic principles in a single setting.
 
 ### Why it matters
 
@@ -35,9 +35,9 @@ This paper introduces a many-sorted variant of the Bound-founded Logic of Here-a
 **Key contributions:**
 
 - Introduction of a many-sorted variant of HTb to unify semantics of ASP with difference constraints.
-- Formal semantic characterization of clingo[DL]'s two-step computation as equilibrium models in HTb.
+- Formal semantic characterization of clingo\[DL\]'s two-step computation as equilibrium models in HTb.
 - Embedding of the Logic of Here-and-There with Constraints (HTc) into many-sorted HTb.
-- Demonstration that clingcon, flingo, and clingo[DL] semantics can be captured and unified in HTb.
+- Demonstration that clingcon, flingo, and clingo\[DL\] semantics can be captured and unified in HTb.
 - Proposal of a general founded semantics for ASP with difference constraints treating all constraint atoms as founded.
 
 ## About the professor

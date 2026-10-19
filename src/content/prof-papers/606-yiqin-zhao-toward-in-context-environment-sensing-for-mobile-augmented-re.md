@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-yiqin-zhao"
-source_hash: "06496fb61fd01b9a6db0f4e75e054acd459d0492cfc66e4734ce38c05b59649a"
+source_hash: "26cb19c586dadac8bcb2f0724eb93da4d20ec90bd1faa07edec72d568be46e68"
 sequence: 606
 generator: "outreach-garden: managed"
 ---
@@ -48,7 +48,7 @@ Research interests: Augmented Reality, Mobile Computing, Ubiquitous Computing
 
 ### Research links
 
-- [Faculty/profile page](https://scholar.google.com/citations?user=2Dq4bAcAAAAJ&amp;amp;hl=en)
+- [Faculty/profile page](https://scholar.google.com/citations?user=2Dq4bAcAAAAJ&hl=en)
 - [Identity evidence](https://www.rit.edu/directory/yzigm-yiqin-zhao)
 - [Professor website](https://yiqinzhao.phd/)
 - [Google Scholar](https://scholar.google.com/citations?user=2Dq4bAcAAAAJ&hl=en)

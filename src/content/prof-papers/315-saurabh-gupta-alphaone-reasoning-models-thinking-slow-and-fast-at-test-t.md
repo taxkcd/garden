@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-saurabh-gupta"
-source_hash: "3deb440f5a2bc43079f829c9d747df72e4ac3fe083c6521d5913526b8a738de0"
+source_hash: "fbea90e7c0e7c3c620c3cc1fe57356259362256a4a752bc02c71f2063f7428df"
 sequence: 315
 generator: "outreach-garden: managed"
 ---
@@ -191,7 +191,7 @@ You build a small Python simulation that models the stochastic scheduling of slo
 
 1. Implement a Bernoulli sampling function to insert 'wait' tokens stochastically before the α moment.
 2. Implement a linear annealing schedule function to modulate the probability of inserting 'wait' tokens over time.
-3. Simulate token sequences representing slow thinking followed by fast thinking, replacing 'wait' tokens with '</think>' after the α moment.
+3. Simulate token sequences representing slow thinking followed by fast thinking, replacing 'wait' tokens with '\</think>' after the α moment.
 4. Visualize the token sequence and the transition point (α moment) using matplotlib.
 5. Write a README explaining the α moment concept and how your simulation models the slow-to-fast thinking schedule.
 
@@ -217,7 +217,7 @@ You reimplement the core α1 framework from the paper by coding the α moment sc
 1. Load the AI-MO AMC dataset and preprocess it for input to a small large reasoning model (e.g., a 1.5B parameter LRM or a smaller open model).
 2. Implement the α moment scaling mechanism to scale the thinking phase length by α times.
 3. Implement stochastic slow thinking scheduling by inserting 'wait' tokens before the α moment using Bernoulli sampling with a linear annealing schedule.
-4. Implement deterministic fast thinking after the α moment by replacing 'wait' tokens with '</think>'.
+4. Implement deterministic fast thinking after the α moment by replacing 'wait' tokens with '\</think>'.
 5. Run inference with and without α1 modulation, measure problem-solving accuracy and token length.
 6. Visualize and compare results, reporting improvements consistent with the paper's findings.
 7. Document your implementation details, evaluation protocol, and results in a README.

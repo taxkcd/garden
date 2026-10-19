@@ -12,6 +12,14 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [758 · In the Arms of a Robot: Designing Autonomous Hugging Robots with Intra-Hug Gestures — Hasti Seifi](prof-papers/758-hasti-seifi-in-the-arms-of-a-robot-designing-autonomous-hugging-robots-w) · 2026-10-19
+- [757 · Long-Term Fair Decision Making through Deep Generative Models — Lu Zhang](prof-papers/757-lu-zhang-long-term-fair-decision-making-through-deep-generative-models) · 2026-10-19
+- [756 · A Flexible Formative/Summative Grading System for Large Courses — Sudipto Ghosh](prof-papers/756-sudipto-ghosh-a-flexible-formative-summative-grading-system-for-large-co) · 2026-10-17
+- [755 · Critiquing the "Underrepresented Minorities" Label: Disrupting Inequity — Deborah Anne Trytten](prof-papers/755-deborah-anne-trytten-critiquing-the-underrepresented-minorities-label-di) · 2026-10-17
+- [754 · Neural Injective Functions for Multisets, Measures and Graphs via a Finite Witness Theorem — Steven J. Gortler](prof-papers/754-steven-j-gortler-neural-injective-functions-for-multisets-measures-and-g) · 2026-10-17
+- [753 · Equivalence Checking for Flow-Based Computing using Iterative SAT Solving — Sven Thijssen](prof-papers/753-sven-thijssen-equivalence-checking-for-flow-based-computing-using-iterat) · 2026-10-15
+- [752 · Learning Who Disagrees: Demographic Importance Weighting for Modeling Annotator Distributions with DiADEM — Christopher Homan](prof-papers/752-christopher-homan-learning-who-disagrees-demographic-importance-weightin) · 2026-10-15
+- [751 · Driving Towards Inclusion: A Systematic Review of AI-powered Accessibility Enhancements for People with Disability in Autonomous Vehicles — Julian Brinkley](prof-papers/751-julian-brinkley-driving-towards-inclusion-a-systematic-review-of-ai-powe) · 2026-08-15
 - [750 · Geo-OLM: Enabling Sustainable Earth Observation Studies with Cost-Efficient Open Language Models & State-Driven Workflows — Diana Marculescu](prof-papers/750-diana-marculescu-geo-olm-enabling-sustainable-earth-observation-studies) · 2026-10-19
 - [749 · VRSight: An AI-Driven Scene Description System to Improve Virtual Reality Accessibility for Blind People — Yuhang Zhao](prof-papers/749-yuhang-zhao-vrsight-an-ai-driven-scene-description-system-to-improve-vir) · 2026-10-19
 - [748 · Literature Landscape of Government, Academic, and Industry Efforts in Responsible, Secure, and Trustworthy AI — Jae C. Oh](prof-papers/748-jae-c-oh-multi-agent-sensor-data-collection-with-attrition-risk) · 2026-10-17

@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-deeparnab-chakrabarty"
-source_hash: "83b16beb35f600c5c96686b24467e75de36c1b6a1eb7180074edcbe46253dd30"
+source_hash: "17a8c94dd0779d752a19e7d6e3bdfd3430435c69067185557a5eb3c96bd411fa"
 sequence: 233
 generator: "outreach-garden: managed"
 ---
@@ -37,7 +37,7 @@ This paper studies clustering problems where the distance metric changes over mu
 - Introduced the aggregated clustering problem over multiple metrics with an aggregate cost objective.
 - Proved NP-hardness and inapproximability for T ≥ 3 scenarios, even on simple graph structures.
 - Provided polynomial-time constant-factor approximation algorithms for T = 2 scenarios for k-supplier and k-median problems.
-- Established W[2]-hardness parameterized by k, but gave FPT 3-approximation algorithms parameterized by both k and T.
+- Established W\[2\]-hardness parameterized by k, but gave FPT 3-approximation algorithms parameterized by both k and T.
 - Developed EPAS for metrics with bounded ε-scatter dimension and for metrics induced by bounded-treewidth graphs.
 
 ## About the professor
