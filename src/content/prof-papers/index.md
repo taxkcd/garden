@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [804 · PeerGuard: Defending Multi-Agent Systems Against Backdoor Attacks Through Mutual Reasoning — Xi Li](prof-papers/804-xi-li-peerguard-defending-multi-agent-systems-against-backdoor-attacks-t) · 2026-10-19
 - [803 · Linear temporal constraints for sketch-based synthesizers — Armando Solar-Lezama](prof-papers/803-armando-solar-lezama-linear-temporal-constraints-for-sketch-based-synthe) · 2026-10-19
 - [802 · Quantifying geographic domain shift to decouple the geospatial transferability of human mobility flow generation models — Song Gao](prof-papers/802-song-gao-quantifying-geographic-domain-shift-to-decouple-the-geospatial) · 2026-10-19
 - [801 · On a Foundation Model for Operating Systems — Brighten Godfrey](prof-papers/801-brighten-godfrey-on-a-foundation-model-for-operating-systems) · 2026-10-19
