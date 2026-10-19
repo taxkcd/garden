@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [780 · CancerKG.ORG–A Web-scale, Interactive, Verifiable Knowledge Graph-LLM Hybrid for Assisting with Optimal Cancer Treatment and Care — Michael N. Gubanov](prof-papers/780-michael-n-gubanov-cancerkg-orga-web-scale-interactive-verifiable-knowled) · 2026-10-19
 - [779 · Controlled Supermartingale Functions for Stochastic Differential Equations: Inference and Applications — Sriram Sankaranarayanan](prof-papers/779-sriram-sankaranarayanan-controlled-supermartingale-functions-for-stochas) · 2026-10-19
 - [778 · Fully Distributed Task Offloading in Vehicular Edge Computing — Haibo Wang](prof-papers/778-haibo-wang-fully-distributed-task-offloading-in-vehicular-edge-computing) · 2026-10-19
 - [777 · Stability Analysis using Quadratic Constraints for Systems with Neural Network Controllers — Murat Arcak](prof-papers/777-murat-arcak-stability-analysis-using-quadratic-constraints-for-systems-w) · 2026-10-19
