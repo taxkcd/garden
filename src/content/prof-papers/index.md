@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [750 · Geo-OLM: Enabling Sustainable Earth Observation Studies with Cost-Efficient Open Language Models & State-Driven Workflows — Diana Marculescu](prof-papers/750-diana-marculescu-geo-olm-enabling-sustainable-earth-observation-studies) · 2026-10-19
 - [749 · VRSight: An AI-Driven Scene Description System to Improve Virtual Reality Accessibility for Blind People — Yuhang Zhao](prof-papers/749-yuhang-zhao-vrsight-an-ai-driven-scene-description-system-to-improve-vir) · 2026-10-19
 - [748 · Literature Landscape of Government, Academic, and Industry Efforts in Responsible, Secure, and Trustworthy AI — Jae C. Oh](prof-papers/748-jae-c-oh-multi-agent-sensor-data-collection-with-attrition-risk) · 2026-10-17
 - [747 · InterPro in 2022 — Cathy H. Wu](prof-papers/747-cathy-h-wu-interpro-in-2022) · 2026-10-17
