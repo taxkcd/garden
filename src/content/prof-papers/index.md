@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [770 · Using AI Assistants in Software Development: A Qualitative Study on Security Practices and Concerns — Heather Lipford](prof-papers/770-heather-lipford-using-ai-assistants-in-software-development-a-qualitativ) · 2026-10-19
 - [769 · Query-Efficient Locally Private Hypothesis Selection via the Scheffe Graph — Gautam Kamath](prof-papers/769-gautam-kamath-query-efficient-locally-private-hypothesis-selection-via-t) · 2026-10-19
 - [768 · h–γ Blossoming, h–γ Bernstein Bases, and h–γ Bézier Curves for Translation Invariant (γ1, γ2) Spaces — Ron Goldman](prof-papers/768-ron-goldman-h-blossoming-h-bernstein-bases-and-h-bezier-curves-for-trans) · 2026-10-19
 - [767 · IST: an ontology-guided attention-based autoencoder for interpretable analysis of single-cell transcriptomic data — Haiyan Hu](prof-papers/767-haiyan-hu-ist-an-ontology-guided-attention-based-autoencoder-for-interpr) · 2026-10-19
