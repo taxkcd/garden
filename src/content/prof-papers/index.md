@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [766 · On the Impact of Social Botnets for Spam Distribution and Digital-Influence Manipulation — Guanhua Yan](prof-papers/766-guanhua-yan-on-the-impact-of-social-botnets-for-spam-distribution-and-di) · 2026-10-19
 - [765 · Comprehensive mapping of key regulatory networks that drive oncogene expression — David K. Gifford](prof-papers/765-david-k-gifford-comprehensive-mapping-of-key-regulatory-networks-that-dr) · 2026-10-19
 - [764 · Stability and Multigroup Fairness in Ranking with Uncertain Predictions — David Kempe](prof-papers/764-david-kempe-stability-and-multigroup-fairness-in-ranking-with-uncertain) · 2026-10-19
 - [763 · Enabling Multi-threading in Heterogeneous Quantum-Classical Programming Models — Vivek Sarkar](prof-papers/763-vivek-sarkar-enabling-multi-threading-in-heterogeneous-quantum-classical) · 2026-10-19
