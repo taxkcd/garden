@@ -12,6 +12,13 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [798 · Imaging Hidden Objects with Consumer LiDAR via Motion Induced Sampling — Adithya Kumar Pediredla](prof-papers/798-adithya-kumar-pediredla-imaging-hidden-objects-with-consumer-lidar-via-m) · 2026-10-19
+- [797 · Equivalence Checking for Flow-Based Computing using Iterative SAT Solving — Muhammad Rashedul Haq Rashed](prof-papers/797-muhammad-rashedul-haq-rashed-equivalence-checking-for-flow-based-computi) · 2026-10-19
+- [796 · Navigating Tensions, Managing Conflict, and Reaching Academic Harmony in HCI — Yolanda A. Rankin](prof-papers/796-yolanda-a-rankin-navigating-tensions-managing-conflict-and-reaching-acad) · 2026-10-19
+- [795 · The AWK Programming Language — Brian W. Kernighan](prof-papers/795-brian-w-kernighan-the-awk-programming-language) · 2026-10-19
+- [794 · TherMosaic: Accelerating Perceived Thermal Transitions Through Spatiotemporal Thermal Feedback — Huaishu Peng](prof-papers/794-huaishu-peng-thermosaic-accelerating-perceived-thermal-transitions-throu) · 2026-10-19
+- [793 · Dispersion Control in Micromechanical Evanescent Optical Modulators — Yeshaiahu Fainman](prof-papers/793-yeshaiahu-fainman-dispersion-control-in-micromechanical-evanescent-optic) · 2026-10-19
+- [792 · Allocation Policies Matter for Hybrid Memory Systems — Janki Bhimani](prof-papers/792-janki-bhimani-allocation-policies-matter-for-hybrid-memory-systems) · 2026-10-19
 - [791 · WISP: Waste- and Interference-Suppressed Distributed Speculative LLM Serving at the Edge via Dynamic Drafting and SLO-Aware Batching — Bo Ji](prof-papers/791-bo-ji-wisp-waste-and-interference-suppressed-distributed-speculative-llm) · 2026-10-19
 - [790 · Weakly-Hard Real-Time Flow Scheduling in Time-Sensitive Networks — Monowar Hasan](prof-papers/790-monowar-hasan-weakly-hard-real-time-flow-scheduling-in-time-sensitive-ne) · 2026-10-19
 - [789 · Optimal Scoring Rule Design under Partial Knowledge — Fang-Yi Yu](prof-papers/789-fang-yi-yu-optimal-scoring-rule-design-under-partial-knowledge) · 2026-10-19
