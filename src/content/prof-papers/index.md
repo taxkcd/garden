@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [773 · Universally Composable Succinct Vector Commitments and Applications — Ran Canetti](prof-papers/773-ran-canetti-universally-composable-succinct-vector-commitments-and-appli) · 2026-10-19
 - [772 · TEACh: Task-driven Embodied Agents that Chat — Dilek Hakkani-Tür](prof-papers/772-dilek-hakkani-tr-teach-task-driven-embodied-agents-that-chat) · 2026-10-19
 - [771 · On the Use of Proxies in Political Ad Targeting — Alan Mislove](prof-papers/771-alan-mislove-on-the-use-of-proxies-in-political-ad-targeting) · 2026-10-19
 - [770 · Using AI Assistants in Software Development: A Qualitative Study on Security Practices and Concerns — Heather Lipford](prof-papers/770-heather-lipford-using-ai-assistants-in-software-development-a-qualitativ) · 2026-10-19
