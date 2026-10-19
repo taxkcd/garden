@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [791 · WISP: Waste- and Interference-Suppressed Distributed Speculative LLM Serving at the Edge via Dynamic Drafting and SLO-Aware Batching — Bo Ji](prof-papers/791-bo-ji-wisp-waste-and-interference-suppressed-distributed-speculative-llm) · 2026-10-19
 - [790 · Weakly-Hard Real-Time Flow Scheduling in Time-Sensitive Networks — Monowar Hasan](prof-papers/790-monowar-hasan-weakly-hard-real-time-flow-scheduling-in-time-sensitive-ne) · 2026-10-19
 - [789 · Optimal Scoring Rule Design under Partial Knowledge — Fang-Yi Yu](prof-papers/789-fang-yi-yu-optimal-scoring-rule-design-under-partial-knowledge) · 2026-10-19
 - [788 · Rigorous Error Analysis for Logarithmic Number Systems — Ganesh Gopalakrishnan](prof-papers/788-ganesh-gopalakrishnan-rigorous-error-analysis-for-logarithmic-number-sys) · 2026-10-19
