@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [881 · CENSUS-HWR: a large training dataset for offline handwriting recognition — Mark J. Clement](prof-papers/881-mark-j-clement-census-hwr-a-large-training-dataset-for-offline-handwriti) · 2026-10-20
 - [880 · Efficient Differencing of System-level Provenance Graphs — Tanu Malik](prof-papers/880-tanu-malik-efficient-differencing-of-system-level-provenance-graphs) · 2026-10-20
 - [879 · Beyond Lamport, Towards Probabilistic Fair Ordering — Anirudh Sivaraman](prof-papers/879-anirudh-sivaraman-beyond-lamport-towards-probabilistic-fair-ordering) · 2026-10-20
 - [878 · Securing Elliptic Curve Cryptocurrencies against Quantum Vulnerabilities: Resource Estimates and Mitigations — Dan Boneh](prof-papers/878-dan-boneh-securing-elliptic-curve-cryptocurrencies-against-quantum-vulne) · 2026-10-20
