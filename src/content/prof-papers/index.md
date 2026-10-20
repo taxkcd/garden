@@ -1,6 +1,6 @@
 ---
 title: "Professor papers and learning paths"
-date: 2026-10-19
+date: 2026-10-20
 tags:
   - research-paper
   - learning-path
@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [819 · Towards Scalable Schema Mapping using Large Language Models — Arash Termehchy](prof-papers/819-arash-termehchy-towards-scalable-schema-mapping-using-large-language-mod) · 2026-10-20
 - [818 · Gendered Impacts of Code Critiquers on Self-Efficacy in First-Year Engineering Students — Laura E. Brown](prof-papers/818-laura-e-brown-gendered-impacts-of-code-critiquers-on-self-efficacy-in-fi) · 2026-10-19
 - [817 · HighP5: Programming using Partitioned Parallel Processing Spaces — Andrew S. Grimshaw](prof-papers/817-andrew-s-grimshaw-highp5-programming-using-partitioned-parallel-processi) · 2026-10-19
 - [816 · RuYi: Optimizing Burst Buffer Through Automated, Fine-Grained Process-to-BB Mapping — Yong Chen](prof-papers/816-yong-chen-ruyi-optimizing-burst-buffer-through-automated-fine-grained-pr) · 2026-10-19
