@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [849 · Interpreting Radiologist’s Intention from Eye Movements in Chest X-ray Diagnosis — Zhigang Deng](prof-papers/849-zhigang-deng-interpreting-radiologists-intention-from-eye-movements-in-c) · 2026-10-20
 - [848 · SurrogateSHAP: Training-Free Contributor Attribution for Text-to-Image (T2I) Models — Su-In Lee](prof-papers/848-su-in-lee-surrogateshap-training-free-contributor-attribution-for-text-t) · 2026-10-20
 - [847 · Traffic Engineering in Large-scale Networks with Generalizable Graph Neural Networks — Ruozhou Yu](prof-papers/847-ruozhou-yu-traffic-engineering-in-large-scale-networks-with-generalizabl) · 2026-10-20
 - [846 · Spike-Train Level Backpropagation for Training Deep Recurrent Spiking Neural Networks — Peng Li](prof-papers/846-peng-li-spike-train-level-backpropagation-for-training-deep-recurrent-sp) · 2026-10-20
