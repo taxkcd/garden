@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [841 · MoE-MSC: Mixture of Experts with Multi-Stream Connector for Modality-Aware Medical Image Captioning — Frank Y. Shih](prof-papers/841-frank-y-shih-moe-msc-mixture-of-experts-with-multi-stream-connector-for) · 2026-10-20
 - [840 · HAMoBE: Hierarchical and Adaptive Mixture of Biometric Experts for Video-based Person ReID — Feng Liu](prof-papers/840-feng-liu-hamobe-hierarchical-and-adaptive-mixture-of-biometric-experts-f) · 2026-10-20
 - [839 · How to avoid insider cyber-attacks by creating a corporate culture that infuses trust — Fred B. Schneider](prof-papers/839-fred-b-schneider-how-to-avoid-insider-cyber-attacks-by-creating-a-corpor) · 2026-10-20
 - [838 · Parametric Level-sets Enhanced To Improve Reconstruction (PaLEnTIR) — Eric L. Miller](prof-papers/838-eric-l-miller-parametric-level-sets-enhanced-to-improve-reconstruction-p) · 2026-10-20
