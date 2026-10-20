@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [871 · MedTsLLM: Leveraging LLMs for Multimodal Medical Time Series Analysis — Kimia Ghobadi](prof-papers/871-kimia-ghobadi-medtsllm-leveraging-llms-for-multimodal-medical-time-serie) · 2026-10-20
 - [870 · FairGAT: Fairness-aware Graph Attention Networks — Yanning Shen](prof-papers/870-yanning-shen-fairgat-fairness-aware-graph-attention-networks) · 2026-10-20
 - [869 · 2DIO: Configurable and Cache-Accurate Trace Generation for Storage Benchmarking — Peter Desnoyers](prof-papers/869-peter-desnoyers-2dio-configurable-and-cache-accurate-trace-generation-fo) · 2026-10-20
 - [868 · Decomposed Trust: Privacy, Adversarial Robustness, Ethics, and Fairness in Low-Rank LLMs — Yang Li](prof-papers/868-yang-li-decomposed-trust-privacy-adversarial-robustness-ethics-and-fairn) · 2026-10-20
