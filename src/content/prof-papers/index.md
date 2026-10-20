@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [885 · MobRFFI: Non-cooperative Device Re-identification for Mobility Intelligence — Jason O. Hallstrom](prof-papers/885-jason-o-hallstrom-mobrffi-non-cooperative-device-re-identification-for-m) · 2026-10-20
 - [884 · Social-WM: Safety-Aware Latent World Models for Robot Social Navigation — Mooi Choo Chuah](prof-papers/884-mooi-choo-chuah-social-wm-safety-aware-latent-world-models-for-robot-soc) · 2026-10-20
 - [883 · Vulnerability of clustering under node failure in complex networks — Nam P. Nguyen](prof-papers/883-nam-p-nguyen-vulnerability-of-clustering-under-node-failure-in-complex-n) · 2026-10-20
 - [882 · A11y-CUA Dataset: Characterizing the Accessibility Gap in Computer Use Agents — Amy Pavel](prof-papers/882-amy-pavel-a11y-cua-dataset-characterizing-the-accessibility-gap-in-compu) · 2026-10-20
