@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [861 · Reinforcement Learning-Based Fuzzer for 5G RRC Security Evaluation — Jeffrey H. Reed](prof-papers/861-jeffrey-h-reed-reinforcement-learning-based-fuzzer-for-5g-rrc-security-e) · 2026-10-20
 - [860 · Global Planning for Contact-Rich Manipulation via Local Smoothing of Quasi-dynamic Contact Models — Russ Tedrake](prof-papers/860-russ-tedrake-global-planning-for-contact-rich-manipulation-via-local-smo) · 2026-10-20
 - [859 · Neuro-Inspired Information-Theoretic Hierarchical Perception for Multimodal Learning — Xiongye Xiao](prof-papers/859-xiongye-xiao-neuro-inspired-information-theoretic-hierarchical-perceptio) · 2026-10-20
 - [858 · “Talk to me with left, right, and angles”: Lexical entrainment in spoken Hebrew dialogue — Rivka Levitan](prof-papers/858-rivka-levitan-talk-to-me-with-left-right-and-angles-lexical-entrainment) · 2026-10-20
