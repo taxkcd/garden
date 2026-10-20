@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [860 · Global Planning for Contact-Rich Manipulation via Local Smoothing of Quasi-dynamic Contact Models — Russ Tedrake](prof-papers/860-russ-tedrake-global-planning-for-contact-rich-manipulation-via-local-smo) · 2026-10-20
 - [859 · Neuro-Inspired Information-Theoretic Hierarchical Perception for Multimodal Learning — Xiongye Xiao](prof-papers/859-xiongye-xiao-neuro-inspired-information-theoretic-hierarchical-perceptio) · 2026-10-20
 - [858 · “Talk to me with left, right, and angles”: Lexical entrainment in spoken Hebrew dialogue — Rivka Levitan](prof-papers/858-rivka-levitan-talk-to-me-with-left-right-and-angles-lexical-entrainment) · 2026-10-20
 - [857 · ProbRes: Probabilistic Jump Diffusion for Open-World Egocentric Activity Recognition — Sathyanarayanan N. Aakur](prof-papers/857-sathyanarayanan-n-aakur-probres-probabilistic-jump-diffusion-for-open-wo) · 2026-10-20
