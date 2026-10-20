@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [875 · SMT-Boosted Security Types for Low-Level MPC — Christian Skalka](prof-papers/875-christian-skalka-smt-boosted-security-types-for-low-level-mpc) · 2026-10-20
 - [874 · Lifelong Scalable Multi-Agent Realistic Testbed and A Comprehensive Study on Design Choices in Lifelong AGV Fleet Management Systems — Jiaoyang Li](prof-papers/874-jiaoyang-li-lifelong-scalable-multi-agent-realistic-testbed-and-a-compre) · 2026-10-20
 - [873 · Assessing Automated Fact-Checking for Medical LLM Responses with Knowledge Graphs — Ming Yin](prof-papers/873-ming-yin-assessing-automated-fact-checking-for-medical-llm-responses-wit) · 2026-10-20
 - [872 · A Tripartite Plan-Based Model of Narrative for Narrative Discourse Generation — Colin Potts](prof-papers/872-colin-potts-a-tripartite-plan-based-model-of-narrative-for-narrative-dis) · 2026-10-20
