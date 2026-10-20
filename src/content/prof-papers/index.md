@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [858 · “Talk to me with left, right, and angles”: Lexical entrainment in spoken Hebrew dialogue — Rivka Levitan](prof-papers/858-rivka-levitan-talk-to-me-with-left-right-and-angles-lexical-entrainment) · 2026-10-20
 - [857 · ProbRes: Probabilistic Jump Diffusion for Open-World Egocentric Activity Recognition — Sathyanarayanan N. Aakur](prof-papers/857-sathyanarayanan-n-aakur-probres-probabilistic-jump-diffusion-for-open-wo) · 2026-10-20
 - [856 · RABIT: Efficient Range Queries with Bitmap Indexing — Manos Athanassoulis](prof-papers/856-manos-athanassoulis-rabit-efficient-range-queries-with-bitmap-indexing) · 2026-10-20
 - [855 · Utilizing generative adversarial networks (GANs) for realistic video stream augmentation and enhancement — Magdy A. Bayoumi](prof-papers/855-magdy-a-bayoumi-utilizing-generative-adversarial-networks-gans-for-reali) · 2026-10-20
