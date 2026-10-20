@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [838 · Parametric Level-sets Enhanced To Improve Reconstruction (PaLEnTIR) — Eric L. Miller](prof-papers/838-eric-l-miller-parametric-level-sets-enhanced-to-improve-reconstruction-p) · 2026-10-20
 - [837 · Knowledge-Guided Machine Learning for Stabilizing Near-Shortest Path Routing — Anish Arora](prof-papers/837-anish-arora-knowledge-guided-machine-learning-for-stabilizing-near-short) · 2026-10-20
 - [836 · Learning Performance of Prediction Markets with Kelly Bettors — David M. Pennock](prof-papers/836-david-m-pennock-learning-performance-of-prediction-markets-with-kelly-be) · 2026-10-20
 - [835 · Memory-Access Optimization of Parallel Molecular Dynamics Simulation via Dynamic Data Reordering — Rajiv K. Kalia](prof-papers/835-rajiv-k-kalia-memory-access-optimization-of-parallel-molecular-dynamics) · 2026-10-20
