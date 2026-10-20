@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [853 · Exabiome: Advancing Microbial Science through Exascale Computing — Katherine A. Yelick](prof-papers/853-katherine-a-yelick-exabiome-advancing-microbial-science-through-exascale) · 2026-10-20
 - [852 · Data Skeleton Learning: Scalable Active Clustering with Sparse Graph Structures — Jaideep Srivastava](prof-papers/852-jaideep-srivastava-data-skeleton-learning-scalable-active-clustering-wit) · 2026-10-20
 - [851 · Evaluating effects of focal length and viewing angle in a comparison of recent face landmark and alignment methods — Eric Patterson](prof-papers/851-eric-patterson-evaluating-effects-of-focal-length-and-viewing-angle-in-a) · 2026-10-20
 - [850 · Accurate and Fast Approximate Graph Pattern Mining at Scale — Xuhao Chen](prof-papers/850-xuhao-chen-accurate-and-fast-approximate-graph-pattern-mining-at-scale) · 2026-10-20
