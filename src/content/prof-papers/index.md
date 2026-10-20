@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [866 · Optimizing BLE-Like Neighbor Discovery — Samarjit Chakraborty](prof-papers/866-samarjit-chakraborty-optimizing-ble-like-neighbor-discovery) · 2026-10-20
 - [865 · The Design and Evolution of OCB — Phillip Rogaway](prof-papers/865-phillip-rogaway-the-design-and-evolution-of-ocb) · 2026-10-20
 - [864 · Data Mining for Language Superfamilies Using Congruent Sound Groups — Peter Z. Revesz](prof-papers/864-peter-z-revesz-data-mining-for-language-superfamilies-using-congruent-so) · 2026-10-20
 - [863 · ChopChop: A Programmable Framework for Semantically Constraining the Output of Language Models — Loris D'Antoni](prof-papers/863-loris-d-antoni-chopchop-a-programmable-framework-for-semantically-constr) · 2026-10-20
