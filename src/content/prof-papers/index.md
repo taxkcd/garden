@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [887 · Deepfake Detection: A Systematic Literature Review — Andrew H. Sung](prof-papers/887-andrew-h-sung-deepfake-detection-a-systematic-literature-review) · 2026-10-20
 - [886 · An Evaluation of Strategies for Dimensionality Reduction — Gautam B. Singh](prof-papers/886-gautam-b-singh-an-evaluation-of-strategies-for-dimensionality-reduction) · 2026-10-20
 - [885 · MobRFFI: Non-cooperative Device Re-identification for Mobility Intelligence — Jason O. Hallstrom](prof-papers/885-jason-o-hallstrom-mobrffi-non-cooperative-device-re-identification-for-m) · 2026-10-20
 - [884 · Social-WM: Safety-Aware Latent World Models for Robot Social Navigation — Mooi Choo Chuah](prof-papers/884-mooi-choo-chuah-social-wm-safety-aware-latent-world-models-for-robot-soc) · 2026-10-20
