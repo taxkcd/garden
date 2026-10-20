@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [821 · Deconstructing Denoising Diffusion Models for Self-Supervised Learning — He He](prof-papers/821-he-he-deconstructing-denoising-diffusion-models-for-self-supervised-lear) · 2026-10-20
 - [820 · CLAW: Learning Continuous Latent Action World Models via Adversarial Latent Regularization — Michael Maire](prof-papers/820-michael-maire-claw-learning-continuous-latent-action-world-models-via-ad) · 2026-10-20
 - [819 · Towards Scalable Schema Mapping using Large Language Models — Arash Termehchy](prof-papers/819-arash-termehchy-towards-scalable-schema-mapping-using-large-language-mod) · 2026-10-20
 - [818 · Gendered Impacts of Code Critiquers on Self-Efficacy in First-Year Engineering Students — Laura E. Brown](prof-papers/818-laura-e-brown-gendered-impacts-of-code-critiquers-on-self-efficacy-in-fi) · 2026-10-19
