@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [831 · A streamline coordinate analysis of a turbulent boundary layer subject to pressure gradients and curvature on the windward side of a bump — Kenneth E. Jansen](prof-papers/831-kenneth-e-jansen-a-streamline-coordinate-analysis-of-a-turbulent-boundar) · 2026-10-20
 - [830 · Testing side-channel security of cryptographic implementations against future microarchitectures — Daniel Genkin](prof-papers/830-daniel-genkin-testing-side-channel-security-of-cryptographic-implementat) · 2026-10-20
 - [829 · Accelerated Distributed Riemannian Optimization Algorithms with Random Shuffling — Heng Huang](prof-papers/829-heng-huang-accelerated-distributed-riemannian-optimization-algorithms-wi) · 2026-10-20
 - [828 · XL-HD: Extended Learning in Hyperdimensional Computing via Deterministic Projections for In-Memory Accelerators — Dayane Reis](prof-papers/828-dayane-reis-xl-hd-extended-learning-in-hyperdimensional-computing-via-de) · 2026-10-20
