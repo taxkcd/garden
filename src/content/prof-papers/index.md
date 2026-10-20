@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [868 · Decomposed Trust: Privacy, Adversarial Robustness, Ethics, and Fairness in Low-Rank LLMs — Yang Li](prof-papers/868-yang-li-decomposed-trust-privacy-adversarial-robustness-ethics-and-fairn) · 2026-10-20
 - [867 · 360EAVP: A 360-degree Edition-Aware Video Player — Ravi Prakash](prof-papers/867-ravi-prakash-360eavp-a-360-degree-edition-aware-video-player) · 2026-10-20
 - [866 · Optimizing BLE-Like Neighbor Discovery — Samarjit Chakraborty](prof-papers/866-samarjit-chakraborty-optimizing-ble-like-neighbor-discovery) · 2026-10-20
 - [865 · The Design and Evolution of OCB — Phillip Rogaway](prof-papers/865-phillip-rogaway-the-design-and-evolution-of-ocb) · 2026-10-20
