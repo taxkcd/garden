@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [884 · Social-WM: Safety-Aware Latent World Models for Robot Social Navigation — Mooi Choo Chuah](prof-papers/884-mooi-choo-chuah-social-wm-safety-aware-latent-world-models-for-robot-soc) · 2026-10-20
 - [883 · Vulnerability of clustering under node failure in complex networks — Nam P. Nguyen](prof-papers/883-nam-p-nguyen-vulnerability-of-clustering-under-node-failure-in-complex-n) · 2026-10-20
 - [882 · A11y-CUA Dataset: Characterizing the Accessibility Gap in Computer Use Agents — Amy Pavel](prof-papers/882-amy-pavel-a11y-cua-dataset-characterizing-the-accessibility-gap-in-compu) · 2026-10-20
 - [881 · CENSUS-HWR: a large training dataset for offline handwriting recognition — Mark J. Clement](prof-papers/881-mark-j-clement-census-hwr-a-large-training-dataset-for-offline-handwriti) · 2026-10-20
