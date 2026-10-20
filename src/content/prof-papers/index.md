@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [823 · Mitigating Data Poisoning Attacks to Local Differential Privacy — Boyang Wang](prof-papers/823-boyang-wang-mitigating-data-poisoning-attacks-to-local-differential-priv) · 2026-10-20
 - [822 · High-Sensitivity Sensor Based on Diametrical Graphene Strip Plasma-Induced Transparency — Rabi N. Mahapatra](prof-papers/822-rabi-n-mahapatra-high-sensitivity-sensor-based-on-diametrical-graphene-s) · 2026-10-20
 - [821 · Deconstructing Denoising Diffusion Models for Self-Supervised Learning — He He](prof-papers/821-he-he-deconstructing-denoising-diffusion-models-for-self-supervised-lear) · 2026-10-20
 - [820 · CLAW: Learning Continuous Latent Action World Models via Adversarial Latent Regularization — Michael Maire](prof-papers/820-michael-maire-claw-learning-continuous-latent-action-world-models-via-ad) · 2026-10-20
