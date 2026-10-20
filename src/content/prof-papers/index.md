@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [846 · Spike-Train Level Backpropagation for Training Deep Recurrent Spiking Neural Networks — Peng Li](prof-papers/846-peng-li-spike-train-level-backpropagation-for-training-deep-recurrent-sp) · 2026-10-20
 - [845 · A Survey on Locality Sensitive Hashing Algorithms and their Applications — Parth Nagarkar](prof-papers/845-parth-nagarkar-a-survey-on-locality-sensitive-hashing-algorithms-and-the) · 2026-10-20
 - [844 · Action Flow Matching for Continual Robot Learning — Lantao Liu](prof-papers/844-lantao-liu-action-flow-matching-for-continual-robot-learning) · 2026-10-20
 - [843 · A theory of consciousness from a theoretical computer science perspective: Insights from the Conscious Turing Machine — Lenore Blum](prof-papers/843-lenore-blum-a-theory-of-consciousness-from-a-theoretical-computer-scienc) · 2026-10-20
