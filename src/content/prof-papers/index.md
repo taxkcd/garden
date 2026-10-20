@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [825 · First three years of the international verification of neural networks competition (VNN-COMP) — Stanley Bak](prof-papers/825-stanley-bak-first-three-years-of-the-international-verification-of-neura) · 2026-10-20
 - [824 · Attentional Local Contrast Networks for Infrared Small Target Detection — Kobus Barnard](prof-papers/824-kobus-barnard-attentional-local-contrast-networks-for-infrared-small-tar) · 2026-10-20
 - [823 · Mitigating Data Poisoning Attacks to Local Differential Privacy — Boyang Wang](prof-papers/823-boyang-wang-mitigating-data-poisoning-attacks-to-local-differential-priv) · 2026-10-20
 - [822 · High-Sensitivity Sensor Based on Diametrical Graphene Strip Plasma-Induced Transparency — Rabi N. Mahapatra](prof-papers/822-rabi-n-mahapatra-high-sensitivity-sensor-based-on-diametrical-graphene-s) · 2026-10-20
