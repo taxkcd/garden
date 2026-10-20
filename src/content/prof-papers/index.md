@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [882 · A11y-CUA Dataset: Characterizing the Accessibility Gap in Computer Use Agents — Amy Pavel](prof-papers/882-amy-pavel-a11y-cua-dataset-characterizing-the-accessibility-gap-in-compu) · 2026-10-20
 - [881 · CENSUS-HWR: a large training dataset for offline handwriting recognition — Mark J. Clement](prof-papers/881-mark-j-clement-census-hwr-a-large-training-dataset-for-offline-handwriti) · 2026-10-20
 - [880 · Efficient Differencing of System-level Provenance Graphs — Tanu Malik](prof-papers/880-tanu-malik-efficient-differencing-of-system-level-provenance-graphs) · 2026-10-20
 - [879 · Beyond Lamport, Towards Probabilistic Fair Ordering — Anirudh Sivaraman](prof-papers/879-anirudh-sivaraman-beyond-lamport-towards-probabilistic-fair-ordering) · 2026-10-20
