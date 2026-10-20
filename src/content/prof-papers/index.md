@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [834 · Testing Learning-Enabled Cyber-Physical Systems with Large-Language Models: A Formal Approach — Aloysius K. Mok](prof-papers/834-aloysius-k-mok-testing-learning-enabled-cyber-physical-systems-with-larg) · 2026-10-20
 - [833 · All-day Depth Completion — Achuta Kadambi](prof-papers/833-achuta-kadambi-all-day-depth-completion) · 2026-10-20
 - [832 · Contrast Everything: A Hierarchical Contrastive Framework for Medical Time-Series — Xiang Zhang](prof-papers/832-xiang-zhang-contrast-everything-a-hierarchical-contrastive-framework-for) · 2026-10-20
 - [831 · A streamline coordinate analysis of a turbulent boundary layer subject to pressure gradients and curvature on the windward side of a bump — Kenneth E. Jansen](prof-papers/831-kenneth-e-jansen-a-streamline-coordinate-analysis-of-a-turbulent-boundar) · 2026-10-20
