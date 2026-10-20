@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [856 · RABIT: Efficient Range Queries with Bitmap Indexing — Manos Athanassoulis](prof-papers/856-manos-athanassoulis-rabit-efficient-range-queries-with-bitmap-indexing) · 2026-10-20
 - [855 · Utilizing generative adversarial networks (GANs) for realistic video stream augmentation and enhancement — Magdy A. Bayoumi](prof-papers/855-magdy-a-bayoumi-utilizing-generative-adversarial-networks-gans-for-reali) · 2026-10-20
 - [854 · Leveraging Synthetic Priors for Monocular Depth Estimation in Specular Surgical Environments — Yangming Li](prof-papers/854-yangming-li-leveraging-synthetic-priors-for-monocular-depth-estimation-i) · 2026-10-20
 - [853 · Exabiome: Advancing Microbial Science through Exascale Computing — Katherine A. Yelick](prof-papers/853-katherine-a-yelick-exabiome-advancing-microbial-science-through-exascale) · 2026-10-20
