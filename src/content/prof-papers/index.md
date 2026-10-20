@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [879 · Beyond Lamport, Towards Probabilistic Fair Ordering — Anirudh Sivaraman](prof-papers/879-anirudh-sivaraman-beyond-lamport-towards-probabilistic-fair-ordering) · 2026-10-20
 - [878 · Securing Elliptic Curve Cryptocurrencies against Quantum Vulnerabilities: Resource Estimates and Mitigations — Dan Boneh](prof-papers/878-dan-boneh-securing-elliptic-curve-cryptocurrencies-against-quantum-vulne) · 2026-10-20
 - [877 · Visualization at exascale: Making it all work with VTK-m — Hank Childs](prof-papers/877-hank-childs-visualization-at-exascale-making-it-all-work-with-vtk-m) · 2026-10-20
 - [876 · Rideshare Transparency: Translating Gig Worker Insights on AI Platform Design to Policy — Andrés Monroy-Hernández](prof-papers/876-andrs-monroy-hernndez-rideshare-transparency-translating-gig-worker-insi) · 2026-10-20
