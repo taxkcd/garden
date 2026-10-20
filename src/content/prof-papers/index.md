@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [836 · Learning Performance of Prediction Markets with Kelly Bettors — David M. Pennock](prof-papers/836-david-m-pennock-learning-performance-of-prediction-markets-with-kelly-be) · 2026-10-20
 - [835 · Memory-Access Optimization of Parallel Molecular Dynamics Simulation via Dynamic Data Reordering — Rajiv K. Kalia](prof-papers/835-rajiv-k-kalia-memory-access-optimization-of-parallel-molecular-dynamics) · 2026-10-20
 - [834 · Testing Learning-Enabled Cyber-Physical Systems with Large-Language Models: A Formal Approach — Aloysius K. Mok](prof-papers/834-aloysius-k-mok-testing-learning-enabled-cyber-physical-systems-with-larg) · 2026-10-20
 - [833 · All-day Depth Completion — Achuta Kadambi](prof-papers/833-achuta-kadambi-all-day-depth-completion) · 2026-10-20
