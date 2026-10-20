@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [829 · Accelerated Distributed Riemannian Optimization Algorithms with Random Shuffling — Heng Huang](prof-papers/829-heng-huang-accelerated-distributed-riemannian-optimization-algorithms-wi) · 2026-10-20
 - [828 · XL-HD: Extended Learning in Hyperdimensional Computing via Deterministic Projections for In-Memory Accelerators — Dayane Reis](prof-papers/828-dayane-reis-xl-hd-extended-learning-in-hyperdimensional-computing-via-de) · 2026-10-20
 - [827 · Dish-TS: A General Paradigm for Alleviating Distribution Shift in Time Series Forecasting — Yanjie Fu](prof-papers/827-yanjie-fu-dish-ts-a-general-paradigm-for-alleviating-distribution-shift) · 2026-10-20
 - [826 · FUSE-Traffic: Fusion of Unstructured and Structured Data for Event-aware Traffic Forecasting — Yan Huang](prof-papers/826-yan-huang-fuse-traffic-fusion-of-unstructured-and-structured-data-for-ev) · 2026-10-20
