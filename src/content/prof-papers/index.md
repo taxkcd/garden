@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [872 · A Tripartite Plan-Based Model of Narrative for Narrative Discourse Generation — Colin Potts](prof-papers/872-colin-potts-a-tripartite-plan-based-model-of-narrative-for-narrative-dis) · 2026-10-20
 - [871 · MedTsLLM: Leveraging LLMs for Multimodal Medical Time Series Analysis — Kimia Ghobadi](prof-papers/871-kimia-ghobadi-medtsllm-leveraging-llms-for-multimodal-medical-time-serie) · 2026-10-20
 - [870 · FairGAT: Fairness-aware Graph Attention Networks — Yanning Shen](prof-papers/870-yanning-shen-fairgat-fairness-aware-graph-attention-networks) · 2026-10-20
 - [869 · 2DIO: Configurable and Cache-Accurate Trace Generation for Storage Benchmarking — Peter Desnoyers](prof-papers/869-peter-desnoyers-2dio-configurable-and-cache-accurate-trace-generation-fo) · 2026-10-20
