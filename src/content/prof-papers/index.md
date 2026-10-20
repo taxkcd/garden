@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [827 · Dish-TS: A General Paradigm for Alleviating Distribution Shift in Time Series Forecasting — Yanjie Fu](prof-papers/827-yanjie-fu-dish-ts-a-general-paradigm-for-alleviating-distribution-shift) · 2026-10-20
 - [826 · FUSE-Traffic: Fusion of Unstructured and Structured Data for Event-aware Traffic Forecasting — Yan Huang](prof-papers/826-yan-huang-fuse-traffic-fusion-of-unstructured-and-structured-data-for-ev) · 2026-10-20
 - [825 · First three years of the international verification of neural networks competition (VNN-COMP) — Stanley Bak](prof-papers/825-stanley-bak-first-three-years-of-the-international-verification-of-neura) · 2026-10-20
 - [824 · Attentional Local Contrast Networks for Infrared Small Target Detection — Kobus Barnard](prof-papers/824-kobus-barnard-attentional-local-contrast-networks-for-infrared-small-tar) · 2026-10-20
