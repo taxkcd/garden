@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [854 · Leveraging Synthetic Priors for Monocular Depth Estimation in Specular Surgical Environments — Yangming Li](prof-papers/854-yangming-li-leveraging-synthetic-priors-for-monocular-depth-estimation-i) · 2026-10-20
 - [853 · Exabiome: Advancing Microbial Science through Exascale Computing — Katherine A. Yelick](prof-papers/853-katherine-a-yelick-exabiome-advancing-microbial-science-through-exascale) · 2026-10-20
 - [852 · Data Skeleton Learning: Scalable Active Clustering with Sparse Graph Structures — Jaideep Srivastava](prof-papers/852-jaideep-srivastava-data-skeleton-learning-scalable-active-clustering-wit) · 2026-10-20
 - [851 · Evaluating effects of focal length and viewing angle in a comparison of recent face landmark and alignment methods — Eric Patterson](prof-papers/851-eric-patterson-evaluating-effects-of-focal-length-and-viewing-angle-in-a) · 2026-10-20
