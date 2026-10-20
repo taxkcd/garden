@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [864 · Data Mining for Language Superfamilies Using Congruent Sound Groups — Peter Z. Revesz](prof-papers/864-peter-z-revesz-data-mining-for-language-superfamilies-using-congruent-so) · 2026-10-20
 - [863 · ChopChop: A Programmable Framework for Semantically Constraining the Output of Language Models — Loris D'Antoni](prof-papers/863-loris-d-antoni-chopchop-a-programmable-framework-for-semantically-constr) · 2026-10-20
 - [862 · Flumen: Dynamic Processing in the Photonic Interconnect — Avinash Karanth](prof-papers/862-avinash-karanth-flumen-dynamic-processing-in-the-photonic-interconnect) · 2026-10-20
 - [861 · Reinforcement Learning-Based Fuzzer for 5G RRC Security Evaluation — Jeffrey H. Reed](prof-papers/861-jeffrey-h-reed-reinforcement-learning-based-fuzzer-for-5g-rrc-security-e) · 2026-10-20
