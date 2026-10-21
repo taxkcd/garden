@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [902 · VeriOpt: PPA-Aware High-Quality Verilog Generation via Multi-Role LLMs — Tasnuva Farheen](prof-papers/902-tasnuva-farheen-veriopt-ppa-aware-high-quality-verilog-generation-via-mu) · 2026-10-21
 - [901 · Coordinating Instruments for Multi-Messenger Astrophysics — Roger D. Chamberlain](prof-papers/901-roger-d-chamberlain-coordinating-instruments-for-multi-messenger-astroph) · 2026-10-21
 - [900 · MIRAGE: A Benchmark for Multimodal Information-Seeking and Reasoning in Agricultural Expert-Guided Conversations — Vikram S. Adve](prof-papers/900-vikram-s-adve-mirage-a-benchmark-for-multimodal-information-seeking-and) · 2026-10-21
 - [899 · Teaching Networks to Solve Optimization Problems — Soheil Kolouri](prof-papers/899-soheil-kolouri-teaching-networks-to-solve-optimization-problems) · 2026-10-21
