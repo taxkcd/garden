@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [924 · Open Data Kit 2: Building Mobile Application Frameworks for Disconnected Data Management — Waylon Brunette](prof-papers/924-waylon-brunette-open-data-kit-2-building-mobile-application-frameworks-f) · 2026-07-12
 - [923 · Sentiment Analysis of Twitter Discourse on Omicron Vaccination in the USA Using VADER and BERT — Senn, William](prof-papers/923-senn-william-sentiment-analysis-of-twitter-discourse-on-omicron-vaccinat) · 2026-07-12
 - [922 · Beyond Semantic Similarity: Rethinking Retrieval for Agentic Search via Direct Corpus Interaction — Jiawei Han](prof-papers/922-jiawei-han-beyond-semantic-similarity-rethinking-retrieval-for-agentic-s) · 2026-07-12
 - [921 · Audio Visual Segmentation Through Text Embeddings — Zhiyao Duan](prof-papers/921-zhiyao-duan-audio-visual-segmentation-through-text-embeddings) · 2026-10-19
