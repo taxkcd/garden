@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [893 · Drug Overdose Vital-Signs Evaluator Using Machine Learning — Amanda Watson](prof-papers/893-amanda-watson-drug-overdose-vital-signs-evaluator-using-machine-learning) · 2026-10-21
 - [892 · Speech-based concussion detection in athletes using Mel-spectrograms and convolutional neural networks — Christian Poellabauer](prof-papers/892-christian-poellabauer-speech-based-concussion-detection-in-athletes-usin) · 2026-10-21
 - [891 · Deciding Differential Privacy of Online Algorithms with Multiple Variables — A. Prasad Sistla](prof-papers/891-a-prasad-sistla-deciding-differential-privacy-of-online-algorithms-with) · 2026-10-21
 - [890 · 6TiSCHSet-2026: A Multi-Layer Attack Dataset and Leakage-Aware Intrusion-Detection Benchmark for IETF 6TiSCH Networks — Hakan Aydin](prof-papers/890-hakan-aydin-6tischset-2026-a-multi-layer-attack-dataset-and-leakage-awar) · 2026-10-20
