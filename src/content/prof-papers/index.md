@@ -1,6 +1,6 @@
 ---
 title: "Professor papers and learning paths"
-date: 2026-10-20
+date: 2026-10-21
 tags:
   - research-paper
   - learning-path
@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [891 · Deciding Differential Privacy of Online Algorithms with Multiple Variables — A. Prasad Sistla](prof-papers/891-a-prasad-sistla-deciding-differential-privacy-of-online-algorithms-with) · 2026-10-21
 - [890 · 6TiSCHSet-2026: A Multi-Layer Attack Dataset and Leakage-Aware Intrusion-Detection Benchmark for IETF 6TiSCH Networks — Hakan Aydin](prof-papers/890-hakan-aydin-6tischset-2026-a-multi-layer-attack-dataset-and-leakage-awar) · 2026-10-20
 - [889 · ReVISit 2: A Full Experiment Life Cycle User Study Framework — Andrew M. McNutt](prof-papers/889-andrew-m-mcnutt-revisit-2-a-full-experiment-life-cycle-user-study-framew) · 2026-10-20
 - [888 · Honey Configs: Measuring The Emerging Exploitation of Cloud IP Address Reuse — Paul Barford](prof-papers/888-paul-barford-honey-configs-measuring-the-emerging-exploitation-of-cloud) · 2026-10-20
