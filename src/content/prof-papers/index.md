@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [898 · Scenario-based Compositional Verification of Autonomous Systems with Neural Perception — Rajeev Alur](prof-papers/898-rajeev-alur-scenario-based-compositional-verification-of-autonomous-syst) · 2026-10-21
 - [897 · The effects of motor modularity on performance, learning and generalizability in upper-extremity reaching: a computational analysis — Mazen Al Borno](prof-papers/897-mazen-al-borno-the-effects-of-motor-modularity-on-performance-learning-a) · 2026-10-21
 - [896 · AV-Link: Temporally-Aligned Diffusion Features for Cross-Modal Audio-Video Generation — Vicente Ordonez](prof-papers/896-vicente-ordonez-av-link-temporally-aligned-diffusion-features-for-cross) · 2026-10-21
 - [895 · JMLKelinci+: Detecting Semantic Bugs and Covering Branches with Valid Inputs Using Coverage-guided Fuzzing and Runtime Assertion Checking — Gary T. Leavens](prof-papers/895-gary-t-leavens-jmlkelinci-detecting-semantic-bugs-and-covering-branches) · 2026-10-21
