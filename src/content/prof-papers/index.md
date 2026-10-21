@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [895 · JMLKelinci+: Detecting Semantic Bugs and Covering Branches with Valid Inputs Using Coverage-guided Fuzzing and Runtime Assertion Checking — Gary T. Leavens](prof-papers/895-gary-t-leavens-jmlkelinci-detecting-semantic-bugs-and-covering-branches) · 2026-10-21
 - [894 · Eye Tracking in Virtual Reality: a Broad Review of Applications and Challenges — Eelke Folmer](prof-papers/894-eelke-folmer-eye-tracking-in-virtual-reality-a-broad-review-of-applicati) · 2026-10-21
 - [893 · Drug Overdose Vital-Signs Evaluator Using Machine Learning — Amanda Watson](prof-papers/893-amanda-watson-drug-overdose-vital-signs-evaluator-using-machine-learning) · 2026-10-21
 - [892 · Speech-based concussion detection in athletes using Mel-spectrograms and convolutional neural networks — Christian Poellabauer](prof-papers/892-christian-poellabauer-speech-based-concussion-detection-in-athletes-usin) · 2026-10-21
