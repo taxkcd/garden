@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [917 · Pulse2AI: An Adaptive Framework to Standardize and Process Pulsatile Wearable Sensor Data for Clinical Applications — Roozbeh Jafari](prof-papers/917-roozbeh-jafari-pulse2ai-an-adaptive-framework-to-standardize-and-process) · 2026-10-21
 - [916 · Good Weights: Proactive, Adaptive Dead Reckoning Fusion for Continuous and Robust Visual SLAM — Patricio A. Vela](prof-papers/916-patricio-a-vela-good-weights-proactive-adaptive-dead-reckoning-fusion-fo) · 2026-10-19
 - [915 · Dynamic Selective Protection of Sparse Iterative Solvers via ML Prediction of Soft Error Impacts — Padma Raghavan](prof-papers/915-padma-raghavan-dynamic-selective-protection-of-sparse-iterative-solvers) · 2026-10-19
 - [914 · Breaking the VLB Barrier for Oblivious Reconfigurable Networks — Hakim Weatherspoon](prof-papers/914-hakim-weatherspoon-breaking-the-vlb-barrier-for-oblivious-reconfigurable) · 2026-10-19
