@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [900 · MIRAGE: A Benchmark for Multimodal Information-Seeking and Reasoning in Agricultural Expert-Guided Conversations — Vikram S. Adve](prof-papers/900-vikram-s-adve-mirage-a-benchmark-for-multimodal-information-seeking-and) · 2026-10-21
 - [899 · Teaching Networks to Solve Optimization Problems — Soheil Kolouri](prof-papers/899-soheil-kolouri-teaching-networks-to-solve-optimization-problems) · 2026-10-21
 - [898 · Scenario-based Compositional Verification of Autonomous Systems with Neural Perception — Rajeev Alur](prof-papers/898-rajeev-alur-scenario-based-compositional-verification-of-autonomous-syst) · 2026-10-21
 - [897 · The effects of motor modularity on performance, learning and generalizability in upper-extremity reaching: a computational analysis — Mazen Al Borno](prof-papers/897-mazen-al-borno-the-effects-of-motor-modularity-on-performance-learning-a) · 2026-10-21
