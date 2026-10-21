@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [905 · CS@Mines Successful S-STEM Scholarship Ecosystem for Low-Income and Underrepresented Students — Tracy Camp](prof-papers/905-tracy-camp-cs-mines-successful-s-stem-scholarship-ecosystem-for-low-inco) · 2026-10-21
 - [904 · FLIP2M: Flexible Intra-layer Parallelism and Inter-layer Pipelining for Multi-model AR/VR Workloads — Luca P. Carloni](prof-papers/904-luca-p-carloni-flip2m-flexible-intra-layer-parallelism-and-inter-layer-p) · 2026-10-21
 - [903 · Attribute-Efficient PAC Learning of Sparse Halfspaces with Constant Malicious Noise Rate — Shiwei Zeng](prof-papers/903-shiwei-zeng-attribute-efficient-pac-learning-of-sparse-halfspaces-with-c) · 2026-10-21
 - [902 · VeriOpt: PPA-Aware High-Quality Verilog Generation via Multi-Role LLMs — Tasnuva Farheen](prof-papers/902-tasnuva-farheen-veriopt-ppa-aware-high-quality-verilog-generation-via-mu) · 2026-10-21
