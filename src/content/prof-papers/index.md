@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [913 · HypoRiPPAtlas as an Atlas of hypothetical natural products for mass spectrometry database search — Hosein Mohimani](prof-papers/913-hosein-mohimani-hyporippatlas-as-an-atlas-of-hypothetical-natural-produc) · 2026-10-21
 - [912 · “That’s something that as a senior person you have to consider now”: Unpacking Older Adults’ Preferences for End-of-Life Data Planning — Jed R. Brubaker](prof-papers/912-jed-r-brubaker-thats-something-that-as-a-senior-person-you-have-to-consi) · 2026-10-21
 - [911 · Towards Mixed Criticality Industrial Wireless Sensor-Actuator Network — Mahbubur Rahman](prof-papers/911-mahbubur-rahman-towards-mixed-criticality-industrial-wireless-sensor-act) · 2026-10-19
 - [910 · A Neural Database for Differentially Private Spatial Range Queries — Gabriel Ghinita](prof-papers/910-gabriel-ghinita-a-neural-database-for-differentially-private-spatial-ran) · 2026-10-19
