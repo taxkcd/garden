@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [911 · Towards Mixed Criticality Industrial Wireless Sensor-Actuator Network — Mahbubur Rahman](prof-papers/911-mahbubur-rahman-towards-mixed-criticality-industrial-wireless-sensor-act) · 2026-10-19
 - [910 · A Neural Database for Differentially Private Spatial Range Queries — Gabriel Ghinita](prof-papers/910-gabriel-ghinita-a-neural-database-for-differentially-private-spatial-ran) · 2026-10-19
 - [909 · Agentic Data Environments — Eugene Wu](prof-papers/909-eugene-wu-agentic-data-environments) · 2026-10-19
 - [908 · Locating Software Faults Based on Minimum Debugging Frontier Set — Zhiyuan Li](prof-papers/908-zhiyuan-li-locating-software-faults-based-on-minimum-debugging-frontier) · 2026-10-19
