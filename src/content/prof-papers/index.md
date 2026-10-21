@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [906 · A Diagrammatic Axiomatisation of Behavioural Distance of Nondeterministic Processes — Alexandra Silva](prof-papers/906-alexandra-silva-a-diagrammatic-axiomatisation-of-behavioural-distance-of) · 2026-10-21
 - [905 · CS@Mines Successful S-STEM Scholarship Ecosystem for Low-Income and Underrepresented Students — Tracy Camp](prof-papers/905-tracy-camp-cs-mines-successful-s-stem-scholarship-ecosystem-for-low-inco) · 2026-10-21
 - [904 · FLIP2M: Flexible Intra-layer Parallelism and Inter-layer Pipelining for Multi-model AR/VR Workloads — Luca P. Carloni](prof-papers/904-luca-p-carloni-flip2m-flexible-intra-layer-parallelism-and-inter-layer-p) · 2026-10-21
 - [903 · Attribute-Efficient PAC Learning of Sparse Halfspaces with Constant Malicious Noise Rate — Shiwei Zeng](prof-papers/903-shiwei-zeng-attribute-efficient-pac-learning-of-sparse-halfspaces-with-c) · 2026-10-21
@@ -27,7 +28,6 @@ Research papers encountered through professor outreach, paired with practical le
 - [893 · Drug Overdose Vital-Signs Evaluator Using Machine Learning — Amanda Watson](prof-papers/893-amanda-watson-drug-overdose-vital-signs-evaluator-using-machine-learning) · 2026-10-21
 - [892 · Speech-based concussion detection in athletes using Mel-spectrograms and convolutional neural networks — Christian Poellabauer](prof-papers/892-christian-poellabauer-speech-based-concussion-detection-in-athletes-usin) · 2026-10-21
 - [891 · Deciding Differential Privacy of Online Algorithms with Multiple Variables — A. Prasad Sistla](prof-papers/891-a-prasad-sistla-deciding-differential-privacy-of-online-algorithms-with) · 2026-10-21
-- [890 · 6TiSCHSet-2026: A Multi-Layer Attack Dataset and Leakage-Aware Intrusion-Detection Benchmark for IETF 6TiSCH Networks — Hakan Aydin](prof-papers/890-hakan-aydin-6tischset-2026-a-multi-layer-attack-dataset-and-leakage-awar) · 2026-10-20
 - [889 · ReVISit 2: A Full Experiment Life Cycle User Study Framework — Andrew M. McNutt](prof-papers/889-andrew-m-mcnutt-revisit-2-a-full-experiment-life-cycle-user-study-framew) · 2026-10-20
 - [888 · Honey Configs: Measuring The Emerging Exploitation of Cloud IP Address Reuse — Paul Barford](prof-papers/888-paul-barford-honey-configs-measuring-the-emerging-exploitation-of-cloud) · 2026-10-20
 - [887 · Deepfake Detection: A Systematic Literature Review — Andrew H. Sung](prof-papers/887-andrew-h-sung-deepfake-detection-a-systematic-literature-review) · 2026-10-20
@@ -102,7 +102,6 @@ Research papers encountered through professor outreach, paired with practical le
 - [818 · Gendered Impacts of Code Critiquers on Self-Efficacy in First-Year Engineering Students — Laura E. Brown](prof-papers/818-laura-e-brown-gendered-impacts-of-code-critiquers-on-self-efficacy-in-fi) · 2026-10-19
 - [817 · HighP5: Programming using Partitioned Parallel Processing Spaces — Andrew S. Grimshaw](prof-papers/817-andrew-s-grimshaw-highp5-programming-using-partitioned-parallel-processi) · 2026-10-19
 - [816 · RuYi: Optimizing Burst Buffer Through Automated, Fine-Grained Process-to-BB Mapping — Yong Chen](prof-papers/816-yong-chen-ruyi-optimizing-burst-buffer-through-automated-fine-grained-pr) · 2026-10-19
-- [815 · Dust Concentration Forecasting Method for Intermittent Processing of Powder and Granular Materials — Zhiyuan Li](prof-papers/815-zhiyuan-li-dust-concentration-forecasting-method-for-intermittent-proces) · 2026-10-19
 - [814 · Digital twins for noninvasively measuring predictive markers of right heart failure — Amanda Randles](prof-papers/814-amanda-randles-digital-twins-for-noninvasively-measuring-predictive-mark) · 2026-10-19
 - [813 · Incentivizing Secure Software Development: the Role of Voluntary Audit and Liability Waiver — Mingyan Liu](prof-papers/813-mingyan-liu-incentivizing-secure-software-development-the-role-of-volunt) · 2026-10-19
 - [812 · Compact Frequency Estimators in Adversarial Environments — Thomas Shrimpton](prof-papers/812-thomas-shrimpton-compact-frequency-estimators-in-adversarial-environment) · 2026-10-19
@@ -273,7 +272,6 @@ Research papers encountered through professor outreach, paired with practical le
 - [647 · Deductive Closure Training of Language Models for Coherence, Accuracy, and Updatability — Jacob Andreas](prof-papers/647-jacob-andreas-deductive-closure-training-of-language-models-for-coherenc) · 2026-10-15
 - [646 · NISQ Security and Complexity via Simple Classical Reasoning — Juan A. Garay](prof-papers/646-juan-a-garay-nisq-security-and-complexity-via-simple-classical-reasoning) · 2026-10-15
 - [645 · WISP: Waste- and Interference-Suppressed Distributed Speculative LLM Serving at the Edge via Dynamic Drafting and SLO-Aware Batching — Ali Raza Butt](prof-papers/645-ali-raza-butt-wisp-waste-and-interference-suppressed-distributed-specula) · 2026-10-15
-- [644 · Topology of bound states in the continuum from the angular structure of leading radiation — Nan Zhang](prof-papers/644-nan-zhang-topology-of-bound-states-in-the-continuum-from-the-angular-str) · 2026-10-15
 - [643 · Faster Relational Algorithms Using Geometric Data Structures — Stavros Sintos](prof-papers/643-stavros-sintos-faster-relational-algorithms-using-geometric-data-structu) · 2026-10-15
 - [642 · HiLFS: FPGA-Orchestrated File System for High-Level Synthesis — André DeHon](prof-papers/642-andr-dehon-hilfs-fpga-orchestrated-file-system-for-high-level-synthesis) · 2026-10-15
 - [641 · High Quality Circuit-Based 3-SAT Mappings for Oscillator Ising Machines — Jaijeet S. Roychowdhury](prof-papers/641-jaijeet-s-roychowdhury-high-quality-circuit-based-3-sat-mappings-for-osc) · 2026-10-15
