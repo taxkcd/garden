@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [908 · Locating Software Faults Based on Minimum Debugging Frontier Set — Zhiyuan Li](prof-papers/908-zhiyuan-li-locating-software-faults-based-on-minimum-debugging-frontier) · 2026-10-19
 - [907 · BioPose: Biomechanically-accurate 3D Pose Estimation from Monocular Videos — Ahmed Helmy](prof-papers/907-ahmed-helmy-biopose-biomechanically-accurate-3d-pose-estimation-from-mon) · 2026-10-21
 - [906 · A Diagrammatic Axiomatisation of Behavioural Distance of Nondeterministic Processes — Alexandra Silva](prof-papers/906-alexandra-silva-a-diagrammatic-axiomatisation-of-behavioural-distance-of) · 2026-10-21
 - [905 · CS@Mines Successful S-STEM Scholarship Ecosystem for Low-Income and Underrepresented Students — Tracy Camp](prof-papers/905-tracy-camp-cs-mines-successful-s-stem-scholarship-ecosystem-for-low-inco) · 2026-10-21
