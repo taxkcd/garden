@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [921 · Audio Visual Segmentation Through Text Embeddings — Zhiyao Duan](prof-papers/921-zhiyao-duan-audio-visual-segmentation-through-text-embeddings) · 2026-10-19
 - [920 · Dynamic Retriever for In-Context Knowledge Editing via Policy Optimization — Yanfu Zhang](prof-papers/920-yanfu-zhang-dynamic-retriever-for-in-context-knowledge-editing-via-polic) · 2026-10-21
 - [919 · Bellman Value Decomposition for Task Logic in Safe Optimal Control — Sylvia L. Herbert](prof-papers/919-sylvia-l-herbert-bellman-value-decomposition-for-task-logic-in-safe-opti) · 2026-10-21
 - [918 · Pseudorandomness of Expander Walks via Fourier Analysis on Groups — Sourya Roy](prof-papers/918-sourya-roy-pseudorandomness-of-expander-walks-via-fourier-analysis-on-gr) · 2026-10-19
