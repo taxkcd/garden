@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [936 · NOVA: Fundamental Limits of Knowledge Discovery Through AI — Amir Salman Avestimehr](prof-papers/936-amir-salman-avestimehr-nova-fundamental-limits-of-knowledge-discovery-th) · 2026-10-22
 - [935 · A Comparison of Hard-state and Soft-state Signaling Protocols — Ping Ji](prof-papers/935-ping-ji-a-comparison-of-hard-state-and-soft-state-signaling-protocols) · 2026-10-22
 - [934 · Automatically Tightening Access Control Policies with Restricter — Scott D. Stoller](prof-papers/934-scott-d-stoller-automatically-tightening-access-control-policies-with-re) · 2026-10-22
 - [933 · Small Reward Models via Backward Inference — Yulia Tsvetkov](prof-papers/933-yulia-tsvetkov-small-reward-models-via-backward-inference) · 2026-10-22
