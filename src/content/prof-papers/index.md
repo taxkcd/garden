@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [933 · Small Reward Models via Backward Inference — Yulia Tsvetkov](prof-papers/933-yulia-tsvetkov-small-reward-models-via-backward-inference) · 2026-10-22
 - [932 · LLM4-IC8K: A Large Language Model Powered Integrated Circuit Footprint Geometry Understanding — Mahanth Gowda](prof-papers/932-mahanth-gowda-llm4-ic8k-a-large-language-model-powered-integrated-circui) · 2026-10-22
 - [931 · Personalized Fall Detection By Balancing Data with Selective Feedback Using Contrastive Learning — Anne H. H. Ngu](prof-papers/931-anne-h-h-ngu-personalized-fall-detection-by-balancing-data-with-selectiv) · 2026-10-22
 - [930 · ShIOEnv: A Command Evaluation Environment for Grammar-Constrained Synthesis and Execution Behavior Modeling — Rajendra V. Boppana](prof-papers/930-rajendra-v-boppana-shioenv-a-command-evaluation-environment-for-grammar) · 2026-10-22
