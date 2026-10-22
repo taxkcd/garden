@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [928 · Webs and Flow-Directed Well-Typedness Preserving Program Transformations — Olin Shivers](prof-papers/928-olin-shivers-webs-and-flow-directed-well-typedness-preserving-program-tr) · 2026-10-22
 - [927 · Comprehensive Evaluation of Deep Learning Architectures for Prediction of DNA/RNA Sequence Binding Specificities — Asa Ben-Hur](prof-papers/927-asa-ben-hur-comprehensive-evaluation-of-deep-learning-architectures-for) · 2026-10-22
 - [926 · AutoReP: Automatic ReLU Replacement for Fast Private Network Inference — Shaoyi Huang](prof-papers/926-shaoyi-huang-autorep-automatic-relu-replacement-for-fast-private-network) · 2026-10-22
 - [925 · CAVA: A Visual Analytics System for Exploratory Columnar Data Augmentation Using Knowledge Graphs — Alex Endert](prof-papers/925-alex-endert-cava-a-visual-analytics-system-for-exploratory-columnar-data) · 2026-10-22
