@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [959 · LLMs Cannot Reliably Identify and Reason About Security Vulnerabilities (Yet?): A Comprehensive Evaluation, Framework, and Benchmarks — Ayse K. Coskun](prof-papers/959-ayse-k-coskun-llms-cannot-reliably-identify-and-reason-about-security-vu) · 2026-10-23
 - [958 · Laser Solid‐Phase Synthesis of Robust Single‐Atom Catalysts for CO2 Hydrogenation to Methanol — Qin Lin](prof-papers/958-qin-lin-laser-solidphase-synthesis-of-robust-singleatom-catalysts-for-co) · 2026-10-23
 - [957 · A class of heuristics for the constrained forest problem — Michael J. Laszlo](prof-papers/957-michael-j-laszlo-a-class-of-heuristics-for-the-constrained-forest-proble) · 2026-10-23
 - [956 · Decision Making Strategies and Team Efficacy in Human-AI Teams — Imani N. S. Munyaka](prof-papers/956-imani-n-s-munyaka-decision-making-strategies-and-team-efficacy-in-human) · 2026-10-23
