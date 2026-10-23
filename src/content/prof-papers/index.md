@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [961 · ZeroWaste Dataset: Towards Deformable Object Segmentation in Cluttered Scenes — Sarah Adel Bargal](prof-papers/961-sarah-adel-bargal-zerowaste-dataset-towards-deformable-object-segmentati) · 2026-10-23
 - [960 · LLM4HAR: Generalizable On-device Human Activity Recognition with Pretrained LLMs — Yi Ding](prof-papers/960-yi-ding-llm4har-generalizable-on-device-human-activity-recognition-with) · 2026-10-23
 - [959 · LLMs Cannot Reliably Identify and Reason About Security Vulnerabilities (Yet?): A Comprehensive Evaluation, Framework, and Benchmarks — Ayse K. Coskun](prof-papers/959-ayse-k-coskun-llms-cannot-reliably-identify-and-reason-about-security-vu) · 2026-10-23
 - [958 · Laser Solid‐Phase Synthesis of Robust Single‐Atom Catalysts for CO2 Hydrogenation to Methanol — Qin Lin](prof-papers/958-qin-lin-laser-solidphase-synthesis-of-robust-singleatom-catalysts-for-co) · 2026-10-23
