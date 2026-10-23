@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [965 · HCFM: Helmholtz Component Flow Matching for Time Series Anomaly Detection — Sanjay Madria](prof-papers/965-sanjay-madria-hcfm-helmholtz-component-flow-matching-for-time-series-ano) · 2026-10-23
 - [964 · ChainSplitter: Towards Blockchain-based Industrial IoT Architecture for Supporting Hierarchical Storage — Zhijie Jerry Shi](prof-papers/964-zhijie-jerry-shi-chainsplitter-towards-blockchain-based-industrial-iot-a) · 2026-10-23
 - [963 · Enhancing Sea Ice Concentration Resolution in a Northern Sea Route Strait Using a Generative Adversarial Network — Karianne Bergen](prof-papers/963-karianne-bergen-enhancing-sea-ice-concentration-resolution-in-a-northern) · 2026-10-23
 - [962 · Facilitating the Bootstrapping of a New ISA — David B. Whalley](prof-papers/962-david-b-whalley-facilitating-the-bootstrapping-of-a-new-isa) · 2026-10-23
