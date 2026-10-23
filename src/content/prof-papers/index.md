@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [938 · A Pure Demand Operational Semantics: with Applications to Program Analysis — Scott F. Smith](prof-papers/938-scott-f-smith-a-pure-demand-operational-semantics-with-applications-to-p) · 2026-10-23
 - [937 · Filtering of MS/MS data for peptide identification — Patrick H. Madden](prof-papers/937-patrick-h-madden-filtering-of-ms-ms-data-for-peptide-identification) · 2026-10-23
 - [936 · NOVA: Fundamental Limits of Knowledge Discovery Through AI — Amir Salman Avestimehr](prof-papers/936-amir-salman-avestimehr-nova-fundamental-limits-of-knowledge-discovery-th) · 2026-10-22
 - [935 · A Comparison of Hard-state and Soft-state Signaling Protocols — Ping Ji](prof-papers/935-ping-ji-a-comparison-of-hard-state-and-soft-state-signaling-protocols) · 2026-10-22
