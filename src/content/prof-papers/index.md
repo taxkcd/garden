@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [945 · nope: Strengthening Domain Authentication with Succinct Proofs — Michael Walfish](prof-papers/945-michael-walfish-nope-strengthening-domain-authentication-with-succinct-p) · 2026-10-23
 - [944 · What’s color got to do with it? Face recognition in grayscale — Michael King](prof-papers/944-michael-king-whats-color-got-to-do-with-it-face-recognition-in-grayscale) · 2026-10-23
 - [943 · SyzRetrospector: A Large-Scale Retrospective Study of Syzbot — Ardalan Amiri Sani](prof-papers/943-ardalan-amiri-sani-syzretrospector-a-large-scale-retrospective-study-of) · 2026-10-23
 - [942 · Designing Cloud Servers for Lower Carbon — Akshitha Sriraman](prof-papers/942-akshitha-sriraman-designing-cloud-servers-for-lower-carbon) · 2026-10-23
