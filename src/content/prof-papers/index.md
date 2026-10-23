@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [967 · PlanetServe: A Decentralized, Scalable, and Privacy-Preserving Overlay for Democratizing Large Language Model Serving — Chen Qian](prof-papers/967-chen-qian-planetserve-a-decentralized-scalable-and-privacy-preserving-ov) · 2026-10-23
 - [966 · WikiSkill: Compiling Agent Experience into Persistent Knowledge for Skill Evolution — Tu Vu](prof-papers/966-tu-vu-wikiskill-compiling-agent-experience-into-persistent-knowledge-for) · 2026-10-23
 - [965 · HCFM: Helmholtz Component Flow Matching for Time Series Anomaly Detection — Sanjay Madria](prof-papers/965-sanjay-madria-hcfm-helmholtz-component-flow-matching-for-time-series-ano) · 2026-10-23
 - [964 · ChainSplitter: Towards Blockchain-based Industrial IoT Architecture for Supporting Hierarchical Storage — Zhijie Jerry Shi](prof-papers/964-zhijie-jerry-shi-chainsplitter-towards-blockchain-based-industrial-iot-a) · 2026-10-23
