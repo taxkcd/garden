@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [941 · QuadraNet V2: Efficient and Sustainable Training of High-Order Neural Networks with Quadratic Adaptation — Jinjun Xiong](prof-papers/941-jinjun-xiong-quadranet-v2-efficient-and-sustainable-training-of-high-ord) · 2026-10-23
 - [940 · Plaintext Recovery Against Post-Filtering Access Control — David Cash](prof-papers/940-david-cash-plaintext-recovery-against-post-filtering-access-control) · 2026-10-23
 - [939 · FORMS: Fine-grained Polarized ReRAM-based In-situ Computation for Mixed-signal DNN Accelerator — Caiwen Ding](prof-papers/939-caiwen-ding-forms-fine-grained-polarized-reram-based-in-situ-computation) · 2026-10-23
 - [938 · A Pure Demand Operational Semantics: with Applications to Program Analysis — Scott F. Smith](prof-papers/938-scott-f-smith-a-pure-demand-operational-semantics-with-applications-to-p) · 2026-10-23
