@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [944 · What’s color got to do with it? Face recognition in grayscale — Michael King](prof-papers/944-michael-king-whats-color-got-to-do-with-it-face-recognition-in-grayscale) · 2026-10-23
 - [943 · SyzRetrospector: A Large-Scale Retrospective Study of Syzbot — Ardalan Amiri Sani](prof-papers/943-ardalan-amiri-sani-syzretrospector-a-large-scale-retrospective-study-of) · 2026-10-23
 - [942 · Designing Cloud Servers for Lower Carbon — Akshitha Sriraman](prof-papers/942-akshitha-sriraman-designing-cloud-servers-for-lower-carbon) · 2026-10-23
 - [941 · QuadraNet V2: Efficient and Sustainable Training of High-Order Neural Networks with Quadratic Adaptation — Jinjun Xiong](prof-papers/941-jinjun-xiong-quadranet-v2-efficient-and-sustainable-training-of-high-ord) · 2026-10-23
