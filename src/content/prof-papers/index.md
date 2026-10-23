@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [955 · Understanding LLM Checkpoint/Restore I/O Strategies and Patterns — Jon Calhoun](prof-papers/955-jon-calhoun-understanding-llm-checkpoint-restore-i-o-strategies-and-patt) · 2026-10-23
 - [954 · Frenet-Serret Frame-based Decomposition for Part Segmentation of 3D Curvilinear Structures — Donglai Wei](prof-papers/954-donglai-wei-frenet-serret-frame-based-decomposition-for-part-segmentatio) · 2026-10-23
 - [953 · A Creatively Engaging Introductory Course in Computer Science that Gently Motivates Exploration of Advanced Mathematical Concepts — Eric Freudenthal](prof-papers/953-eric-freudenthal-a-creatively-engaging-introductory-course-in-computer-s) · 2026-10-23
 - [952 · M2TRec: Metadata-aware Multi-task Transformer for Large-scale and Cold-start free Session-based Recommendations — Srijan Kumar](prof-papers/952-srijan-kumar-m2trec-metadata-aware-multi-task-transformer-for-large-scal) · 2026-10-23
