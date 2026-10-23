@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [968 · What Happens When We Fuzz? Investigating OSS-Fuzz Bug History — Andrew Meneely](prof-papers/968-andrew-meneely-what-happens-when-we-fuzz-investigating-oss-fuzz-bug-hist) · 2026-10-23
 - [967 · PlanetServe: A Decentralized, Scalable, and Privacy-Preserving Overlay for Democratizing Large Language Model Serving — Chen Qian](prof-papers/967-chen-qian-planetserve-a-decentralized-scalable-and-privacy-preserving-ov) · 2026-10-23
 - [966 · WikiSkill: Compiling Agent Experience into Persistent Knowledge for Skill Evolution — Tu Vu](prof-papers/966-tu-vu-wikiskill-compiling-agent-experience-into-persistent-knowledge-for) · 2026-10-23
 - [965 · HCFM: Helmholtz Component Flow Matching for Time Series Anomaly Detection — Sanjay Madria](prof-papers/965-sanjay-madria-hcfm-helmholtz-component-flow-matching-for-time-series-ano) · 2026-10-23
