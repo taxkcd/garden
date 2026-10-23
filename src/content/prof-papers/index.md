@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [958 · Laser Solid‐Phase Synthesis of Robust Single‐Atom Catalysts for CO2 Hydrogenation to Methanol — Qin Lin](prof-papers/958-qin-lin-laser-solidphase-synthesis-of-robust-singleatom-catalysts-for-co) · 2026-10-23
 - [957 · A class of heuristics for the constrained forest problem — Michael J. Laszlo](prof-papers/957-michael-j-laszlo-a-class-of-heuristics-for-the-constrained-forest-proble) · 2026-10-23
 - [956 · Decision Making Strategies and Team Efficacy in Human-AI Teams — Imani N. S. Munyaka](prof-papers/956-imani-n-s-munyaka-decision-making-strategies-and-team-efficacy-in-human) · 2026-10-23
 - [955 · Understanding LLM Checkpoint/Restore I/O Strategies and Patterns — Jon Calhoun](prof-papers/955-jon-calhoun-understanding-llm-checkpoint-restore-i-o-strategies-and-patt) · 2026-10-23
