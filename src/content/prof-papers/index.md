@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [963 · Enhancing Sea Ice Concentration Resolution in a Northern Sea Route Strait Using a Generative Adversarial Network — Karianne Bergen](prof-papers/963-karianne-bergen-enhancing-sea-ice-concentration-resolution-in-a-northern) · 2026-10-23
 - [962 · Facilitating the Bootstrapping of a New ISA — David B. Whalley](prof-papers/962-david-b-whalley-facilitating-the-bootstrapping-of-a-new-isa) · 2026-10-23
 - [961 · ZeroWaste Dataset: Towards Deformable Object Segmentation in Cluttered Scenes — Sarah Adel Bargal](prof-papers/961-sarah-adel-bargal-zerowaste-dataset-towards-deformable-object-segmentati) · 2026-10-23
 - [960 · LLM4HAR: Generalizable On-device Human Activity Recognition with Pretrained LLMs — Yi Ding](prof-papers/960-yi-ding-llm4har-generalizable-on-device-human-activity-recognition-with) · 2026-10-23
