@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [951 · Federated Analytics: A survey — Shantanu Sharma](prof-papers/951-shantanu-sharma-federated-analytics-a-survey) · 2026-10-23
 - [950 · IMUOptimize: A Data-Driven Approach to Optimal IMU Placement for Human Pose Estimation with Transformer Architecture — Nirupam Roy](prof-papers/950-nirupam-roy-imuoptimize-a-data-driven-approach-to-optimal-imu-placement) · 2026-10-23
 - [949 · Learning to Reason Efficiently with A* Post-Training — Abulhair Saparov](prof-papers/949-abulhair-saparov-learning-to-reason-efficiently-with-a-post-training) · 2026-10-23
 - [948 · Automatic Calibration in Crowd-sourced Network of Spectrum Sensors — Ali Abedi](prof-papers/948-ali-abedi-automatic-calibration-in-crowd-sourced-network-of-spectrum-sen) · 2026-10-23
