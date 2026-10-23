@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [949 · Learning to Reason Efficiently with A* Post-Training — Abulhair Saparov](prof-papers/949-abulhair-saparov-learning-to-reason-efficiently-with-a-post-training) · 2026-10-23
 - [948 · Automatic Calibration in Crowd-sourced Network of Spectrum Sensors — Ali Abedi](prof-papers/948-ali-abedi-automatic-calibration-in-crowd-sourced-network-of-spectrum-sen) · 2026-10-23
 - [947 · Learning to Act While Waiting: RL Finetuning of Generalist Robot Policies Under Inference Latency — Sergey Levine](prof-papers/947-sergey-levine-learning-to-act-while-waiting-rl-finetuning-of-generalist) · 2026-10-23
 - [946 · Optimal Multiprocessor Locking Protocols Under FIFO Scheduling — Shareef Ahmed](prof-papers/946-shareef-ahmed-optimal-multiprocessor-locking-protocols-under-fifo-schedu) · 2026-10-23
