@@ -1,6 +1,6 @@
 ---
 title: "Professor papers and learning paths"
-date: 2026-10-23
+date: 2026-10-28
 tags:
   - research-paper
   - learning-path
@@ -12,6 +12,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [969 · Assessing Mental Health Counseling Interventions with LLMs — Gita Reese Sukthankar](prof-papers/969-gita-reese-sukthankar-assessing-mental-health-counseling-interventions-w) · 2026-10-28
 - [968 · What Happens When We Fuzz? Investigating OSS-Fuzz Bug History — Andrew Meneely](prof-papers/968-andrew-meneely-what-happens-when-we-fuzz-investigating-oss-fuzz-bug-hist) · 2026-10-23
 - [967 · PlanetServe: A Decentralized, Scalable, and Privacy-Preserving Overlay for Democratizing Large Language Model Serving — Chen Qian](prof-papers/967-chen-qian-planetserve-a-decentralized-scalable-and-privacy-preserving-ov) · 2026-10-23
 - [966 · WikiSkill: Compiling Agent Experience into Persistent Knowledge for Skill Evolution — Tu Vu](prof-papers/966-tu-vu-wikiskill-compiling-agent-experience-into-persistent-knowledge-for) · 2026-10-23
