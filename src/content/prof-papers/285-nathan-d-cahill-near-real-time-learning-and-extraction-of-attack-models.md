@@ -7,7 +7,7 @@ tags:
   - professor-outreach
 draft: false
 source_workspace: "outreach-nathan-d-cahill"
-source_hash: "01c37f67a6412fc513f9f892f79d71734aa4233a05bde54c0a09a9dabed7c756"
+source_hash: "21ca3c3b0dac13e29ed3a7d4da1d40072bc81f699f2efe99d09c616cfb496325"
 sequence: 285
 generator: "outreach-garden: managed"
 ---
@@ -57,197 +57,201 @@ Research interests: computer vision, machine learning, and medical image analysi
 
 _The background this paper assumes and never explains. Two ways in — a full course, or a short-form series covering the same ground. Pick one lane; you do not need both, and you do not need all of either._
 
-**What you're missing:** Information Theory for Machine Learning
-**The paper assumes:** information theory, entropy measures, divergence metrics, unsupervised learning principles, transfer learning basics
-**Already in this field?** Skip this entirely if you already understand information theoretic concepts like entropy and divergence and their application in machine learning.
+**What you're missing:** Information Theory and Unsupervised Learning
+**The paper assumes:** information theory, unsupervised machine learning, statistical divergence measures
+**Already in this field?** Skip this entirely if you already understand information theoretic concepts and their application in unsupervised learning algorithms.
 
-This background focuses on information theory concepts essential for understanding the unsupervised learning framework used in ASSERT to summarize intrusion alerts into attack models. The rigorous course option offers a deep, structured university-level treatment of information theory fundamentals, while the fast track provides a shorter, more accessible series covering the core concepts efficiently. Choose the lane that fits your available time and desired depth.
+This background is essential for understanding the information theoretic and unsupervised learning methods used in the ASSERT system for near real-time attack model extraction from intrusion alerts. The rigorous course provides a comprehensive university-level foundation in machine learning, including unsupervised learning and information theory concepts, while the fast track offers a focused, intuition-driven introduction to information theory to quickly grasp the key measures like entropy, cross-entropy, and divergence used in the paper.
 
 ### The course
 _Rigorous, and the one to pick if you want to hold this material properly._
 
-▶ [Student Lectures - Information Theory](https://www.youtube.com/playlist?list=PL4d5ZtfQonW3iAhXvTYCnoGEeRhxhKHMc) — Oxford Mathematics · 8 videos · 6.9h across 8 episodes
+▶ [Stanford CS229: Machine Learning led by Andrew Ng | Autumn 2018](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU) — Stanford Online · 21 videos · 27.9h across 21 episodes
 
-**Watch only this:** Lectures 1 through 5, about 4.25 hours — covering entropy, basic properties, codes, typical sequences, and optimal codes to build a solid theoretical foundation.
+**Watch only this:** Lectures 1-5 and 8-15, about 11.5 hours — covering foundational machine learning concepts, unsupervised learning methods, and information theoretic measures such as cross-entropy and EM algorithms relevant to the paper's approach.
 
-*Why it unblocks this paper:* This Oxford Mathematics 3rd year student lecture series covers foundational information theory topics such as entropy, codes, and typical sequences, which are directly relevant to understanding the metrics (cross-entropy, Jensen-Shannon Divergence) and coding concepts used in ASSERT's attack model synthesis.
+*Why it unblocks this paper:* Stanford CS229 by Andrew Ng is a highly authoritative and comprehensive machine learning course covering both supervised and unsupervised learning, including clustering and dimensionality reduction, as well as learning theory. It provides the rigorous mathematical and conceptual foundation necessary to fully understand the unsupervised learning framework and information theoretic metrics used in ASSERT.
 
-*If you want all of it:* All 8 lectures, about 6.9 hours total.
+*If you want all of it:* 27.9 hours across all 21 episodes
 
 ### The fast track
 _Same ground, a fraction of the time — for when you just need to read the paper._
 
-▶ [Information Theory](https://www.youtube.com/playlist?list=PLlrYM4cD5gcBhTfpQJbN0mmN6HrAAfuDE) — Swin · 9 videos · 6.4h across 9 episodes
+▶ [Information Theory](https://www.youtube.com/playlist?list=PLgMDNELGJ1CYS-8dlMGPIaowVfeda4nUj) — NPTEL - Indian Institute of Science, Bengaluru · 68 videos · 21.9h across the first 60 episodes
 
-**Watch only this:** Episodes 1 and 2, about 1.4 hours total — covering introduction to information theory and the stunning link between entropy, time, and information.
+**Watch only this:** Episodes 1-20, about 7 hours — covering core information theory concepts including entropy, KL divergence, cross-entropy, and their properties essential for understanding ASSERT's model synthesis.
 
-*Why it unblocks this paper:* This concise Swin playlist provides a clear and visual introduction to information theory basics, including entropy and its intuitive interpretations, suitable for quickly grasping the key concepts needed to understand ASSERT's use of information theoretic measures.
+*Why it unblocks this paper:* The NPTEL Information Theory playlist offers a clear, focused introduction to information theory concepts such as entropy, KL divergence, cross-entropy, and hypothesis testing, which are central to the paper's method for attack model synthesis. It is well-structured and concise compared to the full machine learning course.
 
-*If you want all of it:* All 9 episodes, about 6.4 hours total.
+*If you want all of it:* 21.9 hours across the first 60 episodes (68 total)
 
 ## Track 1 — Academic deep-dives (long-form)
 
 _Rigorous lectures, seminars and conference talks. Deeper, but longer._
 
-To deeply understand the paper 'Near Real-time Learning and Extraction of Attack Models from Intrusion Alerts,' start by building foundational knowledge on key prerequisite topics such as intrusion detection systems, information theoretic unsupervised learning, transfer learning in cybersecurity, attack graph and alert correlation methods, and near real-time streaming data processing. These topics provide the necessary background on the input data, core methodologies, and related state-of-the-art techniques. Finally, focus on the authors' own talks about the ASSERT system to gain direct insight into their novel approach and contributions.
-
-### Intrusion detection systems alerts *(prerequisite)*
-Understanding intrusion detection systems (IDS) and the nature of alerts they generate is essential since ASSERT processes these alerts as input data. This section covers the fundamentals and characteristics of IDS alerts, which form the raw data that ASSERT summarizes and models.
-
-*How the paper uses it:* ASSERT operates on streaming intrusion alerts from IDS like Suricata to extract attack models.
-
-▶ [CSE571-11-20: Intrusion Detection](https://www.youtube.com/watch?v=_AV7Mqkfo1s) — Raj Jain · 57:35
+To deeply understand the paper "Near Real-time Learning and Extraction of Attack Models from Intrusion Alerts," start by building foundational knowledge on the key prerequisite topics: information theoretic unsupervised learning, transfer learning in cybersecurity, attack graph and alert correlation, and streaming data model synthesis. These topics provide the theoretical and practical background for the paper's approach. Finally, focus on the core concept of unsupervised attack model extraction and the authors' own talk about the ASSERT system to grasp the novel contributions and implementation details.
 
 ### Information theoretic unsupervised learning *(prerequisite)*
-ASSERT uses information theoretic unsupervised learning techniques to aggregate alerts and create attack models. This section introduces key concepts such as entropy, cross-entropy, KL divergence, and Jensen-Shannon Divergence, which are central to ASSERT's model synthesis and updating.
+This section covers the foundational machine learning methods used by ASSERT to extract and update attack models without supervision. Understanding unsupervised learning, especially from an information theoretic perspective, is crucial to appreciate how the system synthesizes attack models from noisy alert data streams.
 
-*How the paper uses it:* The core method ASSERT uses to create and update attack models is based on information theoretic unsupervised learning.
+*How the paper uses it:* ASSERT uses information theoretic unsupervised learning to transform streaming intrusion alerts into attack models.
 
-▶ [Information Theory of Deep Learning, Naftali Tishby](https://www.youtube.com/watch?v=XL07WEc2TRI) — Stanford Online · 1:24:44
+▶ [Lecture 5b: Introduction to Unsupervised Learning - Harpreet S. Dhillon](https://www.youtube.com/watch?v=UJrH04lZF4k) — JTG Summer School 2021 at IIT Kanpur · 31:06 · 4y ago
 
 ### Transfer learning in cybersecurity *(prerequisite)*
-Transfer learning is employed in ASSERT to map heterogeneous alert descriptions to a unified Attack Intent Stages framework. This section provides an understanding of transfer learning principles and their application in cybersecurity contexts, which is critical for grasping how ASSERT achieves high mapping accuracy.
+Transfer learning is employed in ASSERT to map heterogeneous intrusion alerts to a unified Attack Intent Stages framework. This section provides insights into transfer learning techniques and their robustness, which is essential for understanding how ASSERT achieves high accuracy in alert-to-AIS mapping.
 
-*How the paper uses it:* ASSERT uses transfer learning to map diverse IDS alerts to a common Attack Intent Stages framework with over 90% accuracy.
+*How the paper uses it:* ASSERT applies transfer learning to map diverse alert descriptions to a common Attack Intent Stages framework.
 
-▶ [Enhancing Generalizability in DDoS Attack Detection Systems ...](https://www.youtube.com/watch?v=zaRsIJy21xM) — Canadian Institute for Cybersecurity (CIC) · 29:47
+▶ [Scalable Binary Analysis for Security feat. Suman Jana | Stanford MLSys Seminar Episode 36](https://www.youtube.com/watch?v=HbVVOb7xTdU) — Stanford MLSys Seminars · 1:00:19 · Streamed 5y ago
 
 ### Attack graph and alert correlation *(prerequisite)*
-Existing methods for summarizing and correlating alerts often rely on attack graphs and correlation rules. Understanding these approaches provides context for ASSERT's novel unsupervised and information theoretic approach to attack model extraction.
+This section introduces existing methods for summarizing and correlating intrusion alerts using attack graphs, providing background on the challenges ASSERT aims to overcome. Understanding these traditional approaches helps contextualize ASSERT's improvements in real-time attack model extraction.
 
-*How the paper uses it:* ASSERT improves upon traditional alert correlation and attack graph tools by providing near real-time, unsupervised attack model extraction without expert configuration.
+*How the paper uses it:* ASSERT improves upon existing alert correlation and attack graph tools by automating model extraction without expert configuration.
 
-▶ [Using Graph Machine Learning To Detect Complex Attacks](https://www.youtube.com/watch?v=SudYC0k9JI4) — TigerGraph · 27:29
+▶ [Attack of the Graph: Visual Tools for Cyber Analysis - Christian Miles](https://www.youtube.com/watch?v=7U7a0O77m4o) — BSides Vancouver · 20:12 · 5y ago
 
-### Near real-time streaming data processing *(prerequisite)*
-Since ASSERT processes large volumes of alerts in near real-time, knowledge of streaming data processing architectures and techniques is important. This section covers how streaming data can be efficiently handled and analyzed in real-time environments.
+### Streaming data model synthesis *(prerequisite)*
+Streaming data model synthesis techniques enable near real-time creation, updating, and merging of attack models from continuous alert streams. This section provides foundational knowledge on stream processing and data model management critical to ASSERT's performance and scalability.
 
-*How the paper uses it:* ASSERT processes over 100,000 alerts per hour in near real-time, requiring efficient streaming data processing methods.
+*How the paper uses it:* ASSERT dynamically creates, updates, and merges attack models in near real-time from streaming alerts.
 
-▶ [Lecture 16: Hot Data Analytics for Real Time Streaming in IoT Platform](https://www.youtube.com/watch?v=xzRVFJyEkRI) — IIT KANPUR-NPTEL · 3 years ago
+▶ [Lecture 9: Introduction to Stream Computing](https://www.youtube.com/watch?v=487-pFiPBME) — Hivecell · 1:20:43 · 7y ago
 
-### ASSERT system talk *(the paper's own talk)*
-The authors' own talks provide the most direct and detailed insight into the ASSERT system, its design, methodology, and evaluation. These talks are invaluable for understanding the paper's contributions and the practical deployment of the system.
+### Unsupervised attack model extraction
+This core concept focuses on the paper's central approach of summarizing intrusion alerts into interpretable attack models without supervision. Understanding model extraction attacks and unsupervised learning in security contexts deepens comprehension of ASSERT's methodology and its novelty.
 
-*How the paper uses it:* Direct insight from the paper authors on the ASSERT system and their approach to near real-time attack model extraction.
+*How the paper uses it:* ASSERT's main contribution is unsupervised extraction of attack models from intrusion alerts.
 
-▶ [https://www.youtube.com › watch?v=2q-c5GtW-3A](https://www.youtube.com/watch?v=2q-c5GtW-3A) — YouTube result via DuckDuckGo
+▶ [Stanford EE104: Introduction to Machine Learning | 2020 | Lecture 18 - unsupervised learning](https://www.youtube.com/watch?v=B3OimYsCH9w) — Stanford Online · 43:00 · 5y ago
 
 ## Track 2 — Beginner → Advanced (short-form)
 
 _Concise, high-quality explainers that build intuition — for when time is short._
 
-To understand the ASSERT system and its approach to near real-time learning of attack models from intrusion alerts, start by learning the basics of intrusion detection systems and the nature of alerts they generate. Then build foundational knowledge on transfer learning and information theoretic unsupervised learning methods, which are core to ASSERT's design. Finally, explore the ASSERT system talks to see how these concepts come together in a practical, deployable cybersecurity tool.
-
-### Intrusion detection systems alerts *(prerequisite)*
-Intrusion Detection Systems (IDS) monitor network traffic to detect suspicious activities and generate alerts. Understanding what these alerts represent and their characteristics is essential to grasp how ASSERT processes and summarizes them.
-
-*How the paper uses it:* ASSERT processes streaming intrusion alerts as its input data to extract attack models.
-
-▶ [Intrusion Detection Systems (IDS) Explained for Beginners](https://www.youtube.com/watch?v=k5usg9_WxJw) — CodeLucky · 10:03
-
-### Transfer learning in cybersecurity *(prerequisite)*
-Transfer learning allows a model trained on one task or dataset to be adapted to another, improving efficiency and accuracy. In cybersecurity, it helps map diverse alert descriptions to a unified framework, enabling consistent analysis.
-
-*How the paper uses it:* ASSERT uses transfer learning to map heterogeneous alert descriptions to the Attack Intent Stages framework with high accuracy.
-
-▶ [Transfer Learning - EXPLAINED!](https://www.youtube.com/watch?v=QHS9ZZBdK-g) — CodeEmporium · 2 years ago
+This beginner-to-advanced path introduces key concepts to understand the ASSERT system for near real-time attack model extraction from intrusion alerts. It starts with foundational machine learning concepts like unsupervised learning and transfer learning, then covers background on alert correlation and streaming data processing. Finally, it focuses on the core idea of unsupervised attack model extraction as used in the paper.
 
 ### Information theoretic unsupervised learning *(prerequisite)*
-Information theoretic unsupervised learning uses concepts like entropy and divergence to discover patterns in data without labeled examples. This approach helps cluster and summarize alerts into meaningful attack models dynamically.
+Unsupervised learning is a type of machine learning where the model learns patterns from unlabeled data without explicit guidance. Information theoretic methods use concepts like entropy and divergence to measure and extract meaningful structures from data. Understanding this helps grasp how ASSERT groups and summarizes intrusion alerts without prior labels.
 
-*How the paper uses it:* ASSERT employs information theoretic unsupervised learning to create, update, and merge attack models in near real-time.
+*How the paper uses it:* ASSERT uses information theoretic unsupervised learning to transform streaming alerts into attack models without expert knowledge.
 
-▶ [Information Theory Basics](https://www.youtube.com/watch?v=bkLHszLlH34) — Intelligent Systems Lab · 16:22
+▶ [Stanford EE104: Introduction to Machine Learning | 2020 | Lecture 18 - unsupervised learning](https://www.youtube.com/watch?v=B3OimYsCH9w) — Stanford Online · 43:00 · 5y ago
 
-### ASSERT system talk *(the paper's own talk)*
-Hearing directly from the authors about ASSERT provides insight into the system's architecture, challenges addressed, and real-world effectiveness. This ties together the foundational concepts into a concrete application.
+### Transfer learning in cybersecurity *(prerequisite)*
+Transfer learning involves leveraging knowledge gained from one task or dataset to improve learning in another, often related, task. In cybersecurity, it helps map diverse and heterogeneous intrusion alerts to a unified framework, enabling consistent interpretation across different alert sources.
 
-*How the paper uses it:* These talks explain ASSERT's design and demonstrate its ability to summarize large volumes of alerts into interpretable attack models.
+*How the paper uses it:* ASSERT employs transfer learning to map heterogeneous alert descriptions to a common Attack Intent Stages framework with high accuracy.
 
-▶ [https://www.youtube.com › watch?v=2q-c5GtW-3A](https://www.youtube.com/watch?v=2q-c5GtW-3A) — YouTube result via DuckDuckGo
+▶ [What is Transfer Learning?](https://www.youtube.com/watch?v=BqqfQnyjmgg) — Hugging Face · 4:06 · 5y ago
+
+### Attack graph and alert correlation *(prerequisite)*
+Attack graphs and alert correlation techniques summarize and link multiple intrusion alerts to reveal underlying attack campaigns or behaviors. These methods help reduce alert overload by grouping related alerts, improving situational awareness for security analysts.
+
+*How the paper uses it:* The paper contrasts ASSERT with existing alert correlation and attack graph tools that require expert knowledge and are less practical in real SOCs.
+
+▶ [Security Alert Correlation | Defender for Cloud in the Field #35](https://www.youtube.com/watch?v=vobhOyNME2s) — Microsoft Security · 14:42 · 3y ago
+
+### Streaming data model synthesis *(prerequisite)*
+Streaming data model synthesis involves continuously creating and updating models from data that arrives in real-time streams. This approach is essential for timely detection and summarization of evolving patterns in fast-moving data like intrusion alerts.
+
+*How the paper uses it:* ASSERT dynamically creates, updates, and merges attack models from streaming alerts in near real-time using efficient unsupervised methods.
+
+▶ [What is Stream Processing? | Batch vs Stream Processing | Data Pipelines | Real-Time Data Processing](https://www.youtube.com/watch?v=ya4298V8Mqo) — BI Insights Inc · 6:20 · 3y ago
+
+## Already in your library
+
+- [Information Theory, Lecture 1: Defining Entropy and Information - Oxford Mathematics 3rd Yr Lecture](https://www.youtube.com/watch?v=ScX2aBFyrVU) — also for: Byte Latent Transformer: Patches Scale Better Than Tokens (Luke S. Zettlemoyer)
+- [Information Theory Basics](https://www.youtube.com/watch?v=bkLHszLlH34) — also for: Near Real-time Learning and Extraction of Attack Models from Intrusion Alerts (Nathan D. Cahill)
+- [Enhancing Generalizability in DDoS Attack Detection Systems ...](https://www.youtube.com/watch?v=zaRsIJy21xM) — also for: Near Real-time Learning and Extraction of Attack Models from Intrusion Alerts (Nathan D. Cahill)
+- [TrustML Seminar: Pin-Yu Chen on Practical Backdoor Attacks and Defenses in Machine Learning Systems](https://www.youtube.com/watch?v=RY8j_2zIvPY) — also for: SSL-Cleanse: Trojan Detection and Mitigation in Self-Supervised Learning (Mengxin Zheng)
+- [Transfer Learning - EXPLAINED!](https://www.youtube.com/watch?v=QHS9ZZBdK-g) — also for: Near Real-time Learning and Extraction of Attack Models from Intrusion Alerts (Nathan D. Cahill)
+- [Data Streaming, Explained](https://www.youtube.com/watch?v=ag9jlVxM_18) — also for: On Imbalanced Regression with Hoeffding Trees (Dimitrios I. Diochnos)
+- [Lec-23: Supervised vs Unsupervised learning with real life example](https://www.youtube.com/watch?v=fM8XdC1EweU) — also for: A Neural-Preconditioned Poisson Solver for Mixed Dirichlet and Neumann Boundary Conditions (Julian Panetta)
 
 
 ## Build it — 3 projects to showcase this paper
 
 _A beginner, an intermediate and an advanced project, each tied to a specific claim in this paper. Build one and it becomes concrete evidence that the paper was understood, not just read._
 
-These three projects form a ladder to demonstrate understanding of the ASSERT system and its core contributions in near real-time learning and extraction of attack models from intrusion alerts. Starting from a beginner-level alert aggregation and visualization prototype, progressing to an intermediate reimplementation of the core unsupervised attack model synthesis method on a public IDS alert dataset, and culminating in an advanced extension addressing the imperfect alert-to-AIS mapping limitation via incremental active learning, each project builds on the previous while leveraging the applicant's existing skills and introducing new concepts relevant to the paper.
+These three projects form a learning ladder to demonstrate understanding of ASSERT's approach to near real-time attack model extraction from intrusion alerts. The beginner project recreates a core metric from the paper to grasp information theoretic model comparison. The intermediate project implements a simplified version of ASSERT's unsupervised attack model synthesis on a simulated alert stream, comparing it to a baseline clustering method. The advanced project extends ASSERT by addressing its limitation on alert-to-AIS mapping accuracy through an incremental active learning approach, showing how to improve robustness in heterogeneous alert environments.
 
-### Beginner — Intrusion Alert Aggregation and Visualization
-*Effort: a weekend, ~8 hours*
+### Beginner — Implement Jensen-Shannon Divergence for Alert Model Comparison
+*Effort: a weekend, ~6 hours*
 
-You build a small prototype that ingests a stream or batch of intrusion detection system (IDS) alerts (e.g., Suricata alerts from a public dataset or synthetically generated), aggregates them by time windows and alert types, and visualizes the aggregated alert counts over time. The project focuses on implementing simple heuristic alert aggregation similar to ASSERT's initial step and presenting the results in a React web app.
+You build a small Python script that computes the Jensen-Shannon Divergence (JSD) between two probability distributions representing alert feature histograms. You will simulate simple alert feature distributions and calculate JSD to understand how ASSERT measures similarity between attack models.
 
-**Why it shows you understood the paper:** This project shows you understand the challenge of alert overload and the need for aggregation to reduce noise, a key motivation and step in ASSERT. It demonstrates familiarity with IDS alert data and the concept of grouping alerts to highlight attack behaviors.
+**Why it shows you understood the paper:** This project shows you understand the key information theoretic metric ASSERT uses to merge and update attack models, demonstrating grasp of the mathematical foundation behind model synthesis.
 
-**Grounded in:** Alert aggregation methods rely on heuristics such as time thresholds which may not capture all relevant attack episodes.
+**Grounded in:** The paper states: 'It employs metrics like cross-entropy and Jensen-Shannon Divergence for model synthesis.'
 
-**Tech stack:** JavaScript, React, Node.js, Express.js
+**Tech stack:** Python 3.11, Jupyter Notebook, NumPy, Matplotlib
 
-**Data:** Use publicly available Suricata IDS alert logs from open datasets or simulate alerts with timestamps and types to mimic real IDS alerts.
+**Data:** Simulated alert feature distributions created as simple probability vectors in code; no external data required.
 
 **Build it:**
 
-1. Collect or simulate a small dataset of IDS alerts with timestamps and alert signatures.
-2. Implement a Node.js backend to ingest alerts and aggregate them by configurable time windows and alert categories.
-3. Build a React frontend to visualize aggregated alert counts over time using charts.
-4. Add controls to adjust aggregation time window and filter alert types.
-5. Document how this aggregation reduces alert noise and helps focus analyst attention.
+1. Implement a function to compute Kullback-Leibler divergence between two distributions.
+2. Use it to implement Jensen-Shannon Divergence between two distributions.
+3. Simulate two or more alert feature histograms as probability distributions.
+4. Calculate and visualize the JSD values between these distributions.
+5. Write a README explaining how JSD relates to ASSERT's model merging.
 
-**Ships as:** A GitHub repo with a simple full-stack app that demonstrates alert aggregation heuristics and interactive visualization, with a README explaining the connection to ASSERT's alert aggregation.
+**Ships as:** A Jupyter notebook or Python script demonstrating JSD calculations on simulated alert distributions, with explanations linking to ASSERT's model synthesis.
 
-**Stretch goal:** Add a basic mapping from alert signatures to Attack Intent Stages (AIS) using a simple keyword-based classifier.
+**Stretch goal:** Add cross-entropy calculations and compare results with JSD on the same distributions.
 
-### Intermediate — Unsupervised Attack Model Synthesis from IDS Alerts
+### Intermediate — Unsupervised Attack Model Extraction from Simulated Intrusion Alerts
 *Effort: 2 weekends, ~20 hours*
 
-You reimplement the core ASSERT method of transforming streaming IDS alerts into homogeneous attack action aggregates and dynamically creating and updating statistical attack models using information theoretic metrics like Jensen-Shannon Divergence. You apply this to a public IDS alert dataset or a simulated equivalent, and compare your synthesized attack models against a simple baseline such as static alert clustering.
+You implement a simplified version of ASSERT's unsupervised learning framework to aggregate streaming intrusion alerts into attack models. Using simulated alert data with heterogeneous alert descriptions mapped to a small set of Attack Intent Stages (AIS), you create, update, and merge statistical attack models in near real-time. You compare your approach against a baseline clustering method (e.g., k-means) and report metrics such as number of meaningful models and model stability.
 
-**Why it shows you understood the paper:** This project demonstrates you grasp the paper's core unsupervised learning framework for near real-time attack model extraction, including the use of information theoretic metrics for model synthesis. It shows ability to implement and evaluate a complex method described in the paper without relying on released code.
+**Why it shows you understood the paper:** This project demonstrates your ability to reimplement the core method of ASSERT from the paper's description, including alert aggregation, AIS mapping, and information theoretic model synthesis, showing practical grasp of near real-time unsupervised attack model extraction.
 
-**Grounded in:** Efficient unsupervised information theoretic methods for near real-time creation, updating, and merging of attack models from streaming alerts.
+**Grounded in:** Key contribution: 'Efficient unsupervised information theoretic methods for near real-time creation, updating, and merging of attack models from streaming alerts.' Key result: 'Successfully extracted and tracked about 20-25 attack models from 25,000 alerts per hour.'
 
-**Tech stack:** Python 3.11, scikit-learn, NumPy, Pandas, Matplotlib
+**Tech stack:** Python 3.11, scikit-learn, NumPy, Pandas, Jupyter Notebook
 
-**Data:** Use a public IDS alert dataset such as the CICIDS2017 dataset or simulate streaming IDS alerts with labeled attack episodes to approximate the paper's input data.
-
-**Build it:**
-
-1. Preprocess the IDS alert dataset to extract features representing alert actions and timestamps.
-2. Implement an unsupervised clustering method that aggregates alerts into homogeneous groups representing attack actions.
-3. Compute information theoretic metrics (e.g., Jensen-Shannon Divergence) to dynamically create, update, and merge attack models from these aggregates.
-4. Compare the resulting attack models against a baseline static clustering approach using metrics like model stability or interpretability.
-5. Visualize the evolution of attack models over time and document the methodology and results.
-
-**Ships as:** A Python project with scripts and notebooks that implement and evaluate the unsupervised attack model synthesis method, with clear documentation linking the implementation to ASSERT's core approach.
-
-**Stretch goal:** Incorporate a simple transfer learning step to map heterogeneous alert descriptions to a unified Attack Intent Stages framework.
-
-### Advanced — Improving Alert-to-AIS Mapping via Incremental Active Learning
-*Effort: 3+ weeks*
-
-You extend the ASSERT approach by addressing the limitation of imperfect mapping from IDS alert signatures to Attack Intent Stages (AIS). You implement an incremental active learning pipeline that iteratively improves the alert-to-AIS classifier by querying an oracle (simulated or manual labels) on uncertain alerts. You evaluate the impact of improved mapping accuracy on the robustness and interpretability of synthesized attack models.
-
-**Why it shows you understood the paper:** This project tackles a stated limitation and future direction from the paper, demonstrating deep comprehension of ASSERT's pipeline and the challenges in heterogeneous alert environments. It shows ability to design and implement an active learning system integrated with unsupervised attack model synthesis, a novel extension.
-
-**Grounded in:** Mapping from IDS alert signatures to Attack Intent Stages is not perfect, which may affect model accuracy. Improving alert-to-AIS mapping accuracy through incremental active learning and expanded datasets.
-
-**Tech stack:** Python 3.11, scikit-learn, PyTorch or TensorFlow, Pandas, Jupyter Notebook
-
-**Data:** Use a public IDS alert dataset or simulated alerts with partial AIS labels to train and evaluate the active learning classifier.
+**Data:** Simulated streaming intrusion alerts generated in code, with alert descriptions mapped to a small AIS label set; no real alert data available.
 
 **Build it:**
 
-1. Implement a baseline alert-to-AIS classifier using transfer learning or supervised learning on labeled alerts.
-2. Design an uncertainty sampling strategy to select alerts for labeling in an active learning loop.
-3. Simulate an oracle by using existing labels or manual annotation for queried alerts.
-4. Iteratively retrain the classifier with newly labeled data and measure improvement in mapping accuracy.
-5. Integrate the improved classifier into the attack model synthesis pipeline and evaluate the effect on model robustness and interpretability.
-6. Document the active learning methodology, results, and implications for ASSERT.
+1. Define a small AIS framework with 4-6 stages based on the paper's description.
+2. Simulate a stream of intrusion alerts with heterogeneous descriptions mapped to AIS labels.
+3. Implement an unsupervised aggregation method to group alerts into homogeneous action aggregates.
+4. Implement attack model creation and updating using Jensen-Shannon Divergence to merge similar models.
+5. Implement a baseline clustering method (e.g., k-means) on the same data for comparison.
+6. Evaluate and report the number of meaningful attack models and model stability over time.
 
-**Ships as:** A comprehensive Python project demonstrating incremental active learning to improve alert-to-AIS mapping, with evaluation showing enhanced attack model quality, and a detailed README connecting the work to the paper's limitations and future directions.
+**Ships as:** A Python project with scripts/notebooks showing the unsupervised attack model extraction pipeline on simulated alerts, comparison with baseline clustering, and evaluation metrics.
 
-**Stretch goal:** Explore integration of the improved attack models with an open-source SIEM platform for real-time SOC workflow.
+**Stretch goal:** Incorporate a simple transfer learning step to improve alert-to-AIS mapping accuracy using a small labeled subset.
 
-_No authors' own code or datasets were released for this paper; public IDS alert datasets or synthetic data must be used as substitutes for the paper's input data._
+### Advanced — Improving Alert-to-AIS Mapping Robustness via Incremental Active Learning
+*Effort: 3+ weeks, ~80 hours*
+
+You extend the intermediate project by implementing an incremental active learning framework to improve the accuracy and robustness of mapping heterogeneous IDS alert signatures to Attack Intent Stages. You simulate evolving alert sources with noisy and novel alert descriptions, and iteratively select alerts for labeling to refine the mapping model. You evaluate the impact on attack model synthesis quality and stability, addressing the paper's stated limitation on imperfect AIS mapping.
+
+**Why it shows you understood the paper:** This project tackles a key limitation and future direction from the paper, demonstrating your ability to apply active learning to improve transfer learning in a cybersecurity context and enhance the robustness of near real-time attack model extraction.
+
+**Grounded in:** Limitation: 'Mapping from IDS alert signatures to Attack Intent Stages is not perfect, which may affect model accuracy.' Future direction: 'Improving alert-to-AIS mapping accuracy through incremental active learning and expanded datasets.'
+
+**Tech stack:** Python 3.11, scikit-learn, PyTorch or TensorFlow, NumPy, Pandas, Jupyter Notebook
+
+**Data:** Simulated evolving intrusion alert streams with noisy and novel alert descriptions mapped to AIS labels; synthetic labels generated for active learning.
+
+**Build it:**
+
+1. Build a baseline alert-to-AIS classifier using transfer learning on simulated labeled alerts.
+2. Simulate evolving alert streams with new and noisy alert descriptions.
+3. Implement an active learning loop that selects uncertain alerts for labeling and incrementally retrains the classifier.
+4. Integrate the improved AIS mapping into the attack model synthesis pipeline from the intermediate project.
+5. Evaluate improvements in AIS mapping accuracy and resulting attack model quality and stability.
+6. Document the approach, challenges, and results in a detailed README.
+
+**Ships as:** A comprehensive Python project demonstrating incremental active learning to improve AIS mapping and its effect on attack model synthesis robustness, with evaluation and documentation.
+
+**Stretch goal:** Integrate a visualization dashboard to monitor model confidence, selected samples, and attack model evolution in near real-time.
+
+_No authors' released code or datasets are available for ASSERT; all data must be simulated based on the paper's descriptions._
