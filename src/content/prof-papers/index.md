@@ -1,6 +1,6 @@
 ---
 title: "Professor papers and learning paths"
-date: 2026-10-28
+date: 2026-11-01
 tags:
   - research-paper
   - learning-path
@@ -13,6 +13,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [974 · High-Performance Semi-Supervised Learning with HARVEST: A Distributed Computer Vision Framework for Expert Labeling — Hari Subramoni](prof-papers/974-hari-subramoni-high-performance-semi-supervised-learning-with-harvest-a) · 2026-11-01
 - [973 · Dynamic Tensor Decomposition via Neural Diffusion-Reaction Processes — Shandian Zhe](prof-papers/973-shandian-zhe-dynamic-tensor-decomposition-via-neural-diffusion-reaction) · 2026-10-22
 - [972 · Efficient Certified RAT Verification — Warren A. Hunt Jr.](prof-papers/972-warren-a-hunt-jr-efficient-certified-rat-verification) · 2026-10-22
 - [971 · Ranking-Constrained Learning with Rationales for Text Classification — Mustafa Bilgic](prof-papers/971-mustafa-bilgic-ranking-constrained-learning-with-rationales-for-text-cla) · 2026-10-20
