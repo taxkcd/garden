@@ -13,6 +13,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [975 · Adverse Health Correlates of Intimate Partner Violence against Older Women: Mining Electronic Health Records — Mehmet Koyutürk](prof-papers/975-mehmet-koyutrk-adverse-health-correlates-of-intimate-partner-violence-ag) · 2026-11-01
 - [974 · High-Performance Semi-Supervised Learning with HARVEST: A Distributed Computer Vision Framework for Expert Labeling — Hari Subramoni](prof-papers/974-hari-subramoni-high-performance-semi-supervised-learning-with-harvest-a) · 2026-11-01
 - [973 · Dynamic Tensor Decomposition via Neural Diffusion-Reaction Processes — Shandian Zhe](prof-papers/973-shandian-zhe-dynamic-tensor-decomposition-via-neural-diffusion-reaction) · 2026-10-22
 - [972 · Efficient Certified RAT Verification — Warren A. Hunt Jr.](prof-papers/972-warren-a-hunt-jr-efficient-certified-rat-verification) · 2026-10-22
