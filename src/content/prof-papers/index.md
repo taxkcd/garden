@@ -13,6 +13,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [981 · Quantum Entangled Multimodal Fusion Networks (QEMFN): Resource-Aware Hybrid Vision-Language Fusion via Trainable Entanglement — Chi-Ren Shyu](prof-papers/981-chi-ren-shyu-quantum-entangled-multimodal-fusion-networks-qemfn-resource) · 2026-11-01
 - [980 · Intrusion Detection Datasets for Cyber-Physical Systems: Taxonomy, Challenges, and Opportunities — Daniel Mossé](prof-papers/980-daniel-moss-intrusion-detection-datasets-for-cyber-physical-systems-taxo) · 2026-11-01
 - [979 · Formal Machine-Verification of MemSnap: An Efficient, Far-Future Linearizable Snapshot Algorithm — Siddhartha Jayanti](prof-papers/979-siddhartha-jayanti-formal-machine-verification-of-memsnap-an-efficient-f) · 2026-11-01
 - [978 · Visual Foresight With a Local Dynamics Model — Robert Platt](prof-papers/978-robert-platt-visual-foresight-with-a-local-dynamics-model) · 2026-11-01
