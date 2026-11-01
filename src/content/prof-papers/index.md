@@ -13,6 +13,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [979 · Formal Machine-Verification of MemSnap: An Efficient, Far-Future Linearizable Snapshot Algorithm — Siddhartha Jayanti](prof-papers/979-siddhartha-jayanti-formal-machine-verification-of-memsnap-an-efficient-f) · 2026-11-01
 - [978 · Visual Foresight With a Local Dynamics Model — Robert Platt](prof-papers/978-robert-platt-visual-foresight-with-a-local-dynamics-model) · 2026-11-01
 - [977 · Deep Reinforcement Agent for Scheduling in HPC — Zhiling Lan](prof-papers/977-zhiling-lan-deep-reinforcement-agent-for-scheduling-in-hpc) · 2026-11-01
 - [976 · Safety Interventions against Adversarial Patches in an Open-Source Driver Assistance System — Lishan Yang](prof-papers/976-lishan-yang-safety-interventions-against-adversarial-patches-in-an-open) · 2026-11-01
