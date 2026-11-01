@@ -13,6 +13,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [973 · Dynamic Tensor Decomposition via Neural Diffusion-Reaction Processes — Shandian Zhe](prof-papers/973-shandian-zhe-dynamic-tensor-decomposition-via-neural-diffusion-reaction) · 2026-10-22
 - [972 · Efficient Certified RAT Verification — Warren A. Hunt Jr.](prof-papers/972-warren-a-hunt-jr-efficient-certified-rat-verification) · 2026-10-22
 - [971 · Ranking-Constrained Learning with Rationales for Text Classification — Mustafa Bilgic](prof-papers/971-mustafa-bilgic-ranking-constrained-learning-with-rationales-for-text-cla) · 2026-10-20
 - [970 · LazyLog: A New Shared Log Abstraction and Design for Modern Low-Latency Applications — Aishwarya Ganesan](prof-papers/970-aishwarya-ganesan-lazylog-a-new-shared-log-abstraction-and-design-for-mo) · 2026-10-20
