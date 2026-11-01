@@ -13,6 +13,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [971 · Ranking-Constrained Learning with Rationales for Text Classification — Mustafa Bilgic](prof-papers/971-mustafa-bilgic-ranking-constrained-learning-with-rationales-for-text-cla) · 2026-10-20
 - [970 · LazyLog: A New Shared Log Abstraction and Design for Modern Low-Latency Applications — Aishwarya Ganesan](prof-papers/970-aishwarya-ganesan-lazylog-a-new-shared-log-abstraction-and-design-for-mo) · 2026-10-20
 - [969 · Assessing Mental Health Counseling Interventions with LLMs — Gita Reese Sukthankar](prof-papers/969-gita-reese-sukthankar-assessing-mental-health-counseling-interventions-w) · 2026-10-28
 - [968 · What Happens When We Fuzz? Investigating OSS-Fuzz Bug History — Andrew Meneely](prof-papers/968-andrew-meneely-what-happens-when-we-fuzz-investigating-oss-fuzz-bug-hist) · 2026-10-23
