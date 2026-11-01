@@ -13,6 +13,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [986 · SIT-LMPC: Safe Information-Theoretic Learning Model Predictive Control for Iterative Tasks — Truong Nghiem](prof-papers/986-truong-nghiem-sit-lmpc-safe-information-theoretic-learning-model-predict) · 2026-10-21
 - [985 · CoRLD: Contrastive Representation Learning Of Deformable Shapes In Images — Miaomiao Zhang](prof-papers/985-miaomiao-zhang-corld-contrastive-representation-learning-of-deformable-s) · 2026-11-01
 - [984 · A Framework for the Interoperability of Cloud Platforms: Towards FAIR Data in SAFE Environments — Stanley C. Ahalt](prof-papers/984-stanley-c-ahalt-a-framework-for-the-interoperability-of-cloud-platforms) · 2026-11-01
 - [983 · QED in Context: An Observation Study of Proof Assistant Users — Andrew Head](prof-papers/983-andrew-head-qed-in-context-an-observation-study-of-proof-assistant-users) · 2026-11-01
