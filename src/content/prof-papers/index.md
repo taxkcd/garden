@@ -13,6 +13,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [984 · A Framework for the Interoperability of Cloud Platforms: Towards FAIR Data in SAFE Environments — Stanley C. Ahalt](prof-papers/984-stanley-c-ahalt-a-framework-for-the-interoperability-of-cloud-platforms) · 2026-11-01
 - [983 · QED in Context: An Observation Study of Proof Assistant Users — Andrew Head](prof-papers/983-andrew-head-qed-in-context-an-observation-study-of-proof-assistant-users) · 2026-11-01
 - [982 · How We Ruined the Internet — Micah D. Beck](prof-papers/982-micah-d-beck-how-we-ruined-the-internet) · 2026-11-01
 - [981 · Quantum Entangled Multimodal Fusion Networks (QEMFN): Resource-Aware Hybrid Vision-Language Fusion via Trainable Entanglement — Chi-Ren Shyu](prof-papers/981-chi-ren-shyu-quantum-entangled-multimodal-fusion-networks-qemfn-resource) · 2026-11-01
