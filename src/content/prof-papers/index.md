@@ -13,6 +13,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [989 · Accurate and Reliable Uncertainty Estimates for Deterministic Predictions: Extensions to Under and Overpredictions — Rebecca E. Morrison](prof-papers/989-rebecca-e-morrison-accurate-and-reliable-uncertainty-estimates-for-deter) · 2026-11-01
 - [988 · TrainVerify: Equivalence-Based Verification for Distributed LLM Training — Peng Huang](prof-papers/988-peng-huang-trainverify-equivalence-based-verification-for-distributed-ll) · 2026-11-01
 - [987 · Slax: a composable JAX library for rapid and flexible prototyping of spiking neural networks — Siddharth Joshi](prof-papers/987-siddharth-joshi-slax-a-composable-jax-library-for-rapid-and-flexible-pro) · 2026-10-22
 - [986 · SIT-LMPC: Safe Information-Theoretic Learning Model Predictive Control for Iterative Tasks — Truong Nghiem](prof-papers/986-truong-nghiem-sit-lmpc-safe-information-theoretic-learning-model-predict) · 2026-10-21
