@@ -13,6 +13,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [999 · The future of robotic artificial intelligence in acute care surgery: an early proving ground and a final frontier for autonomous surgical robotics — Axel Krieger](prof-papers/999-axel-krieger-the-future-of-robotic-artificial-intelligence-in-acute-care) · 2026-11-02
 - [998 · An Experiment on Feature Selection using Logistic Regression — Subhasish Mazumdar](prof-papers/998-subhasish-mazumdar-an-experiment-on-feature-selection-using-logistic-reg) · 2026-11-02
 - [997 · A Reinforcement Learning Framework for Application-Specific TCP Congestion-Control — Muhammad Shahzad](prof-papers/997-muhammad-shahzad-a-reinforcement-learning-framework-for-application-spec) · 2026-11-02
 - [996 · A Method for Studying Semantic Construal in Grammatical Constructions with Interpretable Contextual Embedding Spaces — Katrin Erk](prof-papers/996-katrin-erk-a-method-for-studying-semantic-construal-in-grammatical-const) · 2026-11-02
