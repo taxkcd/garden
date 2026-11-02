@@ -13,6 +13,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [998 · An Experiment on Feature Selection using Logistic Regression — Subhasish Mazumdar](prof-papers/998-subhasish-mazumdar-an-experiment-on-feature-selection-using-logistic-reg) · 2026-11-02
 - [997 · A Reinforcement Learning Framework for Application-Specific TCP Congestion-Control — Muhammad Shahzad](prof-papers/997-muhammad-shahzad-a-reinforcement-learning-framework-for-application-spec) · 2026-11-02
 - [996 · A Method for Studying Semantic Construal in Grammatical Constructions with Interpretable Contextual Embedding Spaces — Katrin Erk](prof-papers/996-katrin-erk-a-method-for-studying-semantic-construal-in-grammatical-const) · 2026-11-02
 - [995 · NUGPR: GPU-Accelerated Gaussian Process Regression with Iterative Algorithms and Low-Rank Approximations — Vivek Sarin](prof-papers/995-vivek-sarin-nugpr-gpu-accelerated-gaussian-process-regression-with-itera) · 2026-11-02
