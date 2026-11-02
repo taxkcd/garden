@@ -13,6 +13,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [1005 · Rainbow Agents: A Collaborative Game For Computational Literacy — Matthew Berland](prof-papers/1005-matthew-berland-rainbow-agents-a-collaborative-game-for-computational-li) · 2026-11-02
 - [1004 · Quantifying uncertainty in protein representations across models and tasks — Yana Bromberg](prof-papers/1004-yana-bromberg-quantifying-uncertainty-in-protein-representations-across) · 2026-11-02
 - [1003 · Efficient Direct-Connect Topologies for Collective Communications — Arvind Krishnamurthy](prof-papers/1003-arvind-krishnamurthy-efficient-direct-connect-topologies-for-collective) · 2026-11-02
 - [1002 · The Continuous Latent Ornstein–Uhlenbeck Dynamics Framework: A Scalable Latent Process Model for Multivariate Longitudinal Categorical Data — Yijie Wang](prof-papers/1002-yijie-wang-the-continuous-latent-ornsteinuhlenbeck-dynamics-framework-a) · 2026-11-02
