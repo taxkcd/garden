@@ -13,6 +13,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [1019 · “All Roads Lead to ChatGPT”: How Generative AI is Eroding Social Interactions and Student Learning Communities — Stephen MacNeil](prof-papers/1019-stephen-macneil-all-roads-lead-to-chatgpt-how-generative-ai-is-eroding-s) · 2026-11-02
 - [1018 · ReLope: From Hidden-State Probing to a Decision Module for Multimodal LLM Routing — Lu Lin](prof-papers/1018-lu-lin-relope-from-hidden-state-probing-to-a-decision-module-for-multimo) · 2026-11-02
 - [1017 · Granthi: Higher-Order Quantum Programming via Unitary Wiring — Radha Jagadeesan](prof-papers/1017-radha-jagadeesan-granthi-higher-order-quantum-programming-via-unitary-wi) · 2026-11-02
 - [1016 · Integrating Homomorphic Encryption and Trusted Execution Technology for Autonomous and Confidential Model Refining in Cloud — Wensheng Zhang](prof-papers/1016-wensheng-zhang-integrating-homomorphic-encryption-and-trusted-execution) · 2026-11-02
