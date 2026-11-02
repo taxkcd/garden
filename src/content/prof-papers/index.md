@@ -13,6 +13,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [1006 · Enabling Homomorphic Analytical Operations on Compressed Scientific Data with Multi-stage Decompression — Xin Liang](prof-papers/1006-xin-liang-enabling-homomorphic-analytical-operations-on-compressed-scien) · 2026-11-02
 - [1005 · Rainbow Agents: A Collaborative Game For Computational Literacy — Matthew Berland](prof-papers/1005-matthew-berland-rainbow-agents-a-collaborative-game-for-computational-li) · 2026-11-02
 - [1004 · Quantifying uncertainty in protein representations across models and tasks — Yana Bromberg](prof-papers/1004-yana-bromberg-quantifying-uncertainty-in-protein-representations-across) · 2026-11-02
 - [1003 · Efficient Direct-Connect Topologies for Collective Communications — Arvind Krishnamurthy](prof-papers/1003-arvind-krishnamurthy-efficient-direct-connect-topologies-for-collective) · 2026-11-02
