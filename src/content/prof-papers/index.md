@@ -13,6 +13,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [1013 · RFI Detection and Identification at OVRO Using Pseudonymetry — Neal Patwari](prof-papers/1013-neal-patwari-rfi-detection-and-identification-at-ovro-using-pseudonymetr) · 2026-11-02
 - [1012 · Animal-Borne Adaptive Acoustic Monitoring — Ákos Lédeczi](prof-papers/1012-kos-ldeczi-animal-borne-adaptive-acoustic-monitoring) · 2026-11-02
 - [1011 · AgAID Institute—AI for agricultural labor and decision support — Anantharaman Kalyanaraman](prof-papers/1011-anantharaman-kalyanaraman-agaid-instituteai-for-agricultural-labor-and-d) · 2026-11-02
 - [1010 · Band Selection via Band Density Prominence Clustering for Hyperspectral Image Classification — Chein-I Chang](prof-papers/1010-chein-i-chang-band-selection-via-band-density-prominence-clustering-for) · 2026-11-02
