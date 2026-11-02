@@ -13,6 +13,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [1010 · Band Selection via Band Density Prominence Clustering for Hyperspectral Image Classification — Chein-I Chang](prof-papers/1010-chein-i-chang-band-selection-via-band-density-prominence-clustering-for) · 2026-11-02
 - [1009 · Towards a Unified Implementation of GEMM in BLIS — Robert A. van de Geijn](prof-papers/1009-robert-a-van-de-geijn-towards-a-unified-implementation-of-gemm-in-blis) · 2026-11-02
 - [1008 · RubriQ: Rubric-Guided Group Relative Policy Optimization for Constraint-Aware Quantum Circuit Synthesis — Ziwen Pan](prof-papers/1008-ziwen-pan-rubriq-rubric-guided-group-relative-policy-optimization-for-co) · 2026-11-02
 - [1007 · ChatMuse: Supporting In-Person Small-Group Conversation Experience with a Proactive Assistive AI Agent in Mixed Reality — Chen Chen](prof-papers/1007-chen-chen-chatmuse-supporting-in-person-small-group-conversation-experie) · 2026-11-02
