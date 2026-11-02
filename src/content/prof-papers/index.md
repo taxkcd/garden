@@ -13,6 +13,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [991 · IncShrink: Architecting Efficient Outsourced Databases using Incremental MPC and Differential Privacy — Johes Bater](prof-papers/991-johes-bater-incshrink-architecting-efficient-outsourced-databases-using) · 2026-11-02
 - [990 · A Text-Based Recommender System that Leverages Explicit Affective State Preferences — Razvan C. Bunescu](prof-papers/990-razvan-c-bunescu-a-text-based-recommender-system-that-leverages-explicit) · 2026-11-02
 - [989 · Accurate and Reliable Uncertainty Estimates for Deterministic Predictions: Extensions to Under and Overpredictions — Rebecca E. Morrison](prof-papers/989-rebecca-e-morrison-accurate-and-reliable-uncertainty-estimates-for-deter) · 2026-11-01
 - [988 · TrainVerify: Equivalence-Based Verification for Distributed LLM Training — Peng Huang](prof-papers/988-peng-huang-trainverify-equivalence-based-verification-for-distributed-ll) · 2026-11-01
