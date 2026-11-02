@@ -13,6 +13,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [1008 · RubriQ: Rubric-Guided Group Relative Policy Optimization for Constraint-Aware Quantum Circuit Synthesis — Ziwen Pan](prof-papers/1008-ziwen-pan-rubriq-rubric-guided-group-relative-policy-optimization-for-co) · 2026-11-02
 - [1007 · ChatMuse: Supporting In-Person Small-Group Conversation Experience with a Proactive Assistive AI Agent in Mixed Reality — Chen Chen](prof-papers/1007-chen-chen-chatmuse-supporting-in-person-small-group-conversation-experie) · 2026-11-02
 - [1006 · Enabling Homomorphic Analytical Operations on Compressed Scientific Data with Multi-stage Decompression — Xin Liang](prof-papers/1006-xin-liang-enabling-homomorphic-analytical-operations-on-compressed-scien) · 2026-11-02
 - [1005 · Rainbow Agents: A Collaborative Game For Computational Literacy — Matthew Berland](prof-papers/1005-matthew-berland-rainbow-agents-a-collaborative-game-for-computational-li) · 2026-11-02
