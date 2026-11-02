@@ -13,6 +13,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [1015 · Power Side-Channel Membership Inference Attack on Embedded Machine Learning — Prabhat Mishra](prof-papers/1015-prabhat-mishra-power-side-channel-membership-inference-attack-on-embedde) · 2026-11-02
 - [1014 · Do Large Language Models Discriminate in Hiring Decisions on the Basis of Race, Ethnicity, and Gender? — Rachel Rudinger](prof-papers/1014-rachel-rudinger-do-large-language-models-discriminate-in-hiring-decision) · 2026-11-02
 - [1013 · RFI Detection and Identification at OVRO Using Pseudonymetry — Neal Patwari](prof-papers/1013-neal-patwari-rfi-detection-and-identification-at-ovro-using-pseudonymetr) · 2026-11-02
 - [1012 · Animal-Borne Adaptive Acoustic Monitoring — Ákos Lédeczi](prof-papers/1012-kos-ldeczi-animal-borne-adaptive-acoustic-monitoring) · 2026-11-02
