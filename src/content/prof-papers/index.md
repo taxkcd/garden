@@ -13,6 +13,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [997 · A Reinforcement Learning Framework for Application-Specific TCP Congestion-Control — Muhammad Shahzad](prof-papers/997-muhammad-shahzad-a-reinforcement-learning-framework-for-application-spec) · 2026-11-02
 - [996 · A Method for Studying Semantic Construal in Grammatical Constructions with Interpretable Contextual Embedding Spaces — Katrin Erk](prof-papers/996-katrin-erk-a-method-for-studying-semantic-construal-in-grammatical-const) · 2026-11-02
 - [995 · NUGPR: GPU-Accelerated Gaussian Process Regression with Iterative Algorithms and Low-Rank Approximations — Vivek Sarin](prof-papers/995-vivek-sarin-nugpr-gpu-accelerated-gaussian-process-regression-with-itera) · 2026-11-02
 - [994 · Is My Model Using the Right Evidence? Systematic Probes for Examining Evidence-Based Tabular Reasoning — Vivek Gupta](prof-papers/994-vivek-gupta-is-my-model-using-the-right-evidence-systematic-probes-for-e) · 2026-11-02
