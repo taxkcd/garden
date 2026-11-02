@@ -13,6 +13,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [1023 · TRAMBA: A Hybrid Transformer and Mamba Architecture for Practical Audio and Bone Conduction Speech Super Resolution and Enhancement on Mobile and Wearable Platforms — Stephen Xia](prof-papers/1023-stephen-xia-tramba-a-hybrid-transformer-and-mamba-architecture-for-pract) · 2026-11-02
 - [1022 · A Survey of Foundation Models for IoT: Taxonomy and Criteria-Based Analysis — Shiwei Fang](prof-papers/1022-shiwei-fang-a-survey-of-foundation-models-for-iot-taxonomy-and-criteria) · 2026-11-02
 - [1021 · Camera, Action, False Alert! Tackling the Flood of False Alerts in Smart Home Cameras — Sunyoung Kim](prof-papers/1021-sunyoung-kim-camera-action-false-alert-tackling-the-flood-of-false-alert) · 2026-11-02
 - [1020 · Deep Incomplete Multi-View Clustering via Hierarchical Imputation and Alignment — Lusi Li](prof-papers/1020-lusi-li-deep-incomplete-multi-view-clustering-via-hierarchical-imputatio) · 2026-11-02
