@@ -13,6 +13,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [994 · Is My Model Using the Right Evidence? Systematic Probes for Examining Evidence-Based Tabular Reasoning — Vivek Gupta](prof-papers/994-vivek-gupta-is-my-model-using-the-right-evidence-systematic-probes-for-e) · 2026-11-02
 - [993 · LLM-Enhanced Energy Contrastive Learning for Out-of-Distribution Detection in Text-Attributed Graphs — Chen Zhao](prof-papers/993-chen-zhao-llm-enhanced-energy-contrastive-learning-for-out-of-distributi) · 2026-11-02
 - [992 · Automated Classification of Breast Cancer Cells Using High-Throughput Holographic Cytometry — Cindy X. Chen](prof-papers/992-cindy-x-chen-automated-classification-of-breast-cancer-cells-using-high) · 2026-11-02
 - [991 · IncShrink: Architecting Efficient Outsourced Databases using Incremental MPC and Differential Privacy — Johes Bater](prof-papers/991-johes-bater-incshrink-architecting-efficient-outsourced-databases-using) · 2026-11-02
