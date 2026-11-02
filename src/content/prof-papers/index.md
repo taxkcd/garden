@@ -13,6 +13,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [1001 · Designing Interfaces for Human-Computer Communication: An OnGoing Collection of Considerations — Elena L. Glassman](prof-papers/1001-elena-l-glassman-designing-interfaces-for-human-computer-communication-a) · 2026-11-02
 - [1000 · Anyone, Anywhere, not Everyone, Everywhere: Starlink Doesn’t End the Digital Divide — Shaddi Hasan](prof-papers/1000-shaddi-hasan-anyone-anywhere-not-everyone-everywhere-starlink-doesnt-end) · 2026-11-02
 - [999 · The future of robotic artificial intelligence in acute care surgery: an early proving ground and a final frontier for autonomous surgical robotics — Axel Krieger](prof-papers/999-axel-krieger-the-future-of-robotic-artificial-intelligence-in-acute-care) · 2026-11-02
 - [998 · An Experiment on Feature Selection using Logistic Regression — Subhasish Mazumdar](prof-papers/998-subhasish-mazumdar-an-experiment-on-feature-selection-using-logistic-reg) · 2026-11-02
