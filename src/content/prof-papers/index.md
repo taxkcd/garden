@@ -13,6 +13,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [1017 · Granthi: Higher-Order Quantum Programming via Unitary Wiring — Radha Jagadeesan](prof-papers/1017-radha-jagadeesan-granthi-higher-order-quantum-programming-via-unitary-wi) · 2026-11-02
 - [1016 · Integrating Homomorphic Encryption and Trusted Execution Technology for Autonomous and Confidential Model Refining in Cloud — Wensheng Zhang](prof-papers/1016-wensheng-zhang-integrating-homomorphic-encryption-and-trusted-execution) · 2026-11-02
 - [1015 · Power Side-Channel Membership Inference Attack on Embedded Machine Learning — Prabhat Mishra](prof-papers/1015-prabhat-mishra-power-side-channel-membership-inference-attack-on-embedde) · 2026-11-02
 - [1014 · Do Large Language Models Discriminate in Hiring Decisions on the Basis of Race, Ethnicity, and Gender? — Rachel Rudinger](prof-papers/1014-rachel-rudinger-do-large-language-models-discriminate-in-hiring-decision) · 2026-11-02
