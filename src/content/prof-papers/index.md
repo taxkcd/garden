@@ -13,6 +13,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [1031 · QPSOFuzz: A Fuzzer Integrating Quantum-behaved Particle Swarm Optimization Algorithm and Logistic Mapping — Yan Tong](prof-papers/1031-yan-tong-qpsofuzz-a-fuzzer-integrating-quantum-behaved-particle-swarm-op) · 2026-11-03
 - [1030 · CryptoTrain: Fast Secure Training on Encrypted Dataset — Xueqiang Wang](prof-papers/1030-xueqiang-wang-cryptotrain-fast-secure-training-on-encrypted-dataset) · 2026-11-03
 - [1029 · Scalable k-d trees for distributed data — William S. Cleveland](prof-papers/1029-william-s-cleveland-scalable-k-d-trees-for-distributed-data) · 2026-11-03
 - [1028 · Polygon: Symbolic Reasoning for SQL using Conflict-Driven Under-Approximation Search — Xinyu Wang](prof-papers/1028-xinyu-wang-polygon-symbolic-reasoning-for-sql-using-conflict-driven-unde) · 2026-11-03
