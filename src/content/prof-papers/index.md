@@ -13,6 +13,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [1052 · Guided Particle Swarm Optimization for Feature Selection: Application to Cancer Genome Data — Simone A. Ludwig](prof-papers/1052-simone-a-ludwig-guided-particle-swarm-optimization-for-feature-selection) · 2026-11-03
 - [1051 · Predicting Asthma-Related Emergency Department Visits Using Big Data — Sudha Ram](prof-papers/1051-sudha-ram-predicting-asthma-related-emergency-department-visits-using-bi) · 2026-11-03
 - [1050 · symbSODA: Configurable and Verifiable Orchestration Automation for Active Malware Deception — Jinpeng Wei](prof-papers/1050-jinpeng-wei-symbsoda-configurable-and-verifiable-orchestration-automatio) · 2026-11-03
 - [1049 · Safe-RULE: Safe Reinforcement UnLEarning — Fanxin Kong](prof-papers/1049-fanxin-kong-safe-rule-safe-reinforcement-unlearning) · 2026-11-03
