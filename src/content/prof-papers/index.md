@@ -13,6 +13,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [1037 · A Theoretical Analysis of Random Regression Test Prioritization — Darko Marinov](prof-papers/1037-darko-marinov-a-theoretical-analysis-of-random-regression-test-prioritiz) · 2026-11-03
 - [1036 · LogBabylon: A Unified Framework for Cross-Log File Integration and Analysis — Stephen Huang](prof-papers/1036-stephen-huang-logbabylon-a-unified-framework-for-cross-log-file-integrat) · 2026-11-03
 - [1035 · Performance of Quality Assurance Procedures for an Applied Climate Information System — Steve Goddard](prof-papers/1035-steve-goddard-performance-of-quality-assurance-procedures-for-an-applied) · 2026-11-03
 - [1034 · Investigating AI-Driven Geometric Modeling for Craniosynostosis Surgical Planning — James K. Hahn](prof-papers/1034-james-k-hahn-investigating-ai-driven-geometric-modeling-for-craniosynost) · 2026-11-03
