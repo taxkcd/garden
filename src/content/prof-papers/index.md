@@ -13,6 +13,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [1045 · VUS: Effective and Efficient Accuracy Measures for Time-Series Anomaly Detection — Michael J. Franklin](prof-papers/1045-michael-j-franklin-vus-effective-and-efficient-accuracy-measures-for-tim) · 2026-11-03
 - [1044 · Stability-based Generalization Bounds for Variational Inference — Roni Khardon](prof-papers/1044-roni-khardon-stability-based-generalization-bounds-for-variational-infer) · 2026-11-03
 - [1043 · Simulating Refractive Distortions and Weather-Induced Artifacts for Resource-Constrained Autonomous Perception — Kyungim Baek](prof-papers/1043-kyungim-baek-simulating-refractive-distortions-and-weather-induced-artif) · 2026-11-03
 - [1042 · Real-Time Liquid Wireless Transport for Video Streaming in Rural and Agricultural Applications — John W. Byers](prof-papers/1042-john-w-byers-real-time-liquid-wireless-transport-for-video-streaming-in) · 2026-11-03
