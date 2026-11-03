@@ -13,6 +13,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [1033 · HuggingGraph: Understanding the Supply Chain of LLM Ecosystem — Yuede Ji](prof-papers/1033-yuede-ji-hugginggraph-understanding-the-supply-chain-of-llm-ecosystem) · 2026-11-03
 - [1032 · Dependent Type Theory as Related to the Bourbaki Notions of Structure and Isomorphism — David A. McAllester](prof-papers/1032-david-a-mcallester-dependent-type-theory-as-related-to-the-bourbaki-noti) · 2026-11-03
 - [1031 · QPSOFuzz: A Fuzzer Integrating Quantum-behaved Particle Swarm Optimization Algorithm and Logistic Mapping — Yan Tong](prof-papers/1031-yan-tong-qpsofuzz-a-fuzzer-integrating-quantum-behaved-particle-swarm-op) · 2026-11-03
 - [1030 · CryptoTrain: Fast Secure Training on Encrypted Dataset — Xueqiang Wang](prof-papers/1030-xueqiang-wang-cryptotrain-fast-secure-training-on-encrypted-dataset) · 2026-11-03
