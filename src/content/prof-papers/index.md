@@ -13,6 +13,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [1048 · 6SEVEN: System for EValuating IPv6 ENumeration algorithms — Erik C. Rye](prof-papers/1048-erik-c-rye-6seven-system-for-evaluating-ipv6-enumeration-algorithms) · 2026-11-03
 - [1047 · DEMO: Rearchitecting Approximation-First Cloud Telemetry — Zaoxing Liu](prof-papers/1047-zaoxing-liu-demo-rearchitecting-approximation-first-cloud-telemetry) · 2026-11-03
 - [1046 · LeanStream: A Speculate-and-Refine Streaming Framework for Efficient on-Device LLM Inference — Shuochao Yao](prof-papers/1046-shuochao-yao-leanstream-a-speculate-and-refine-streaming-framework-for-e) · 2026-11-03
 - [1045 · VUS: Effective and Efficient Accuracy Measures for Time-Series Anomaly Detection — Michael J. Franklin](prof-papers/1045-michael-j-franklin-vus-effective-and-efficient-accuracy-measures-for-tim) · 2026-11-03
