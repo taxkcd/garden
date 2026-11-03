@@ -1,6 +1,6 @@
 ---
 title: "Professor papers and learning paths"
-date: 2026-11-02
+date: 2026-11-03
 tags:
   - research-paper
   - learning-path
@@ -13,6 +13,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [1025 · Challenges and opportunities in portraying emotion in generated sign language — John McDonald](prof-papers/1025-john-mcdonald-challenges-and-opportunities-in-portraying-emotion-in-gene) · 2026-11-03
 - [1024 · Anonymous Credentials from ECDSA — Abhi Shelat](prof-papers/1024-abhi-shelat-anonymous-credentials-from-ecdsa) · 2026-11-02
 - [1023 · TRAMBA: A Hybrid Transformer and Mamba Architecture for Practical Audio and Bone Conduction Speech Super Resolution and Enhancement on Mobile and Wearable Platforms — Stephen Xia](prof-papers/1023-stephen-xia-tramba-a-hybrid-transformer-and-mamba-architecture-for-pract) · 2026-11-02
 - [1022 · A Survey of Foundation Models for IoT: Taxonomy and Criteria-Based Analysis — Shiwei Fang](prof-papers/1022-shiwei-fang-a-survey-of-foundation-models-for-iot-taxonomy-and-criteria) · 2026-11-02
