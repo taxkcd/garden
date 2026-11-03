@@ -13,6 +13,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [1041 · Evaluating Preattentive Features for Detecting Changes in Virtual Environments — Isaac Cho](prof-papers/1041-isaac-cho-evaluating-preattentive-features-for-detecting-changes-in-virt) · 2026-11-03
 - [1040 · A Primal-Dual Subgradient Approach for Fair Meta Learning — Feng Chen](prof-papers/1040-feng-chen-a-primal-dual-subgradient-approach-for-fair-meta-learning) · 2026-11-03
 - [1039 · Quantum Pseudorandom Scramblers — Fang Song](prof-papers/1039-fang-song-quantum-pseudorandom-scramblers) · 2026-11-03
 - [1038 · Securing Cloud FPGAs Against Power Side-Channel Attacks: A Case Study on Iterative AES — Satwik Patnaik](prof-papers/1038-satwik-patnaik-securing-cloud-fpgas-against-power-side-channel-attacks-a) · 2026-11-03
