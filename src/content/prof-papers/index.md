@@ -13,6 +13,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [1047 · DEMO: Rearchitecting Approximation-First Cloud Telemetry — Zaoxing Liu](prof-papers/1047-zaoxing-liu-demo-rearchitecting-approximation-first-cloud-telemetry) · 2026-11-03
 - [1046 · LeanStream: A Speculate-and-Refine Streaming Framework for Efficient on-Device LLM Inference — Shuochao Yao](prof-papers/1046-shuochao-yao-leanstream-a-speculate-and-refine-streaming-framework-for-e) · 2026-11-03
 - [1045 · VUS: Effective and Efficient Accuracy Measures for Time-Series Anomaly Detection — Michael J. Franklin](prof-papers/1045-michael-j-franklin-vus-effective-and-efficient-accuracy-measures-for-tim) · 2026-11-03
 - [1044 · Stability-based Generalization Bounds for Variational Inference — Roni Khardon](prof-papers/1044-roni-khardon-stability-based-generalization-bounds-for-variational-infer) · 2026-11-03
