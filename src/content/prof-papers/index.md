@@ -13,6 +13,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [1034 · Investigating AI-Driven Geometric Modeling for Craniosynostosis Surgical Planning — James K. Hahn](prof-papers/1034-james-k-hahn-investigating-ai-driven-geometric-modeling-for-craniosynost) · 2026-11-03
 - [1033 · HuggingGraph: Understanding the Supply Chain of LLM Ecosystem — Yuede Ji](prof-papers/1033-yuede-ji-hugginggraph-understanding-the-supply-chain-of-llm-ecosystem) · 2026-11-03
 - [1032 · Dependent Type Theory as Related to the Bourbaki Notions of Structure and Isomorphism — David A. McAllester](prof-papers/1032-david-a-mcallester-dependent-type-theory-as-related-to-the-bourbaki-noti) · 2026-11-03
 - [1031 · QPSOFuzz: A Fuzzer Integrating Quantum-behaved Particle Swarm Optimization Algorithm and Logistic Mapping — Yan Tong](prof-papers/1031-yan-tong-qpsofuzz-a-fuzzer-integrating-quantum-behaved-particle-swarm-op) · 2026-11-03
