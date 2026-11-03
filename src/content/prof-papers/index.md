@@ -13,6 +13,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [1027 · Preparing for Future Heterogeneous Systems Using Migrating Threads — Peter M. Kogge](prof-papers/1027-peter-m-kogge-preparing-for-future-heterogeneous-systems-using-migrating) · 2026-11-03
 - [1026 · HYDRA: A Multi-Level Hierarchy-Driven Approach for Robust Anomaly Detection in Time Series — John Paparrizos](prof-papers/1026-john-paparrizos-hydra-a-multi-level-hierarchy-driven-approach-for-robust) · 2026-11-03
 - [1025 · Challenges and opportunities in portraying emotion in generated sign language — John McDonald](prof-papers/1025-john-mcdonald-challenges-and-opportunities-in-portraying-emotion-in-gene) · 2026-11-03
 - [1024 · Anonymous Credentials from ECDSA — Abhi Shelat](prof-papers/1024-abhi-shelat-anonymous-credentials-from-ecdsa) · 2026-11-02
