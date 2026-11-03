@@ -13,6 +13,7 @@ Research papers encountered through professor outreach, paired with practical le
 
 ## Papers
 
+- [1050 · symbSODA: Configurable and Verifiable Orchestration Automation for Active Malware Deception — Jinpeng Wei](prof-papers/1050-jinpeng-wei-symbsoda-configurable-and-verifiable-orchestration-automatio) · 2026-11-03
 - [1049 · Safe-RULE: Safe Reinforcement UnLEarning — Fanxin Kong](prof-papers/1049-fanxin-kong-safe-rule-safe-reinforcement-unlearning) · 2026-11-03
 - [1048 · 6SEVEN: System for EValuating IPv6 ENumeration algorithms — Erik C. Rye](prof-papers/1048-erik-c-rye-6seven-system-for-evaluating-ipv6-enumeration-algorithms) · 2026-11-03
 - [1047 · DEMO: Rearchitecting Approximation-First Cloud Telemetry — Zaoxing Liu](prof-papers/1047-zaoxing-liu-demo-rearchitecting-approximation-first-cloud-telemetry) · 2026-11-03
